@@ -1,6 +1,7 @@
 body {
 	color:black;
 	font-family: 'Crimson Text', serif;
+	font-size:20px;
 }
 
 h1 {
@@ -27,8 +28,8 @@ h1 {
 }
 
 .mainphoto {
-	width:120%;
-	margin-left: -10%;
+	width:140%;
+	margin-left: -20%;
 }
 
 .photo{
