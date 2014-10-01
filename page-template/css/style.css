@@ -36,3 +36,7 @@ h1 {
 	width:100%;
 }
 
+#disqus_thread{
+	display:block
+	;
+}
