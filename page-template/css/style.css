@@ -1,3 +1,8 @@
+body {
+	color:black;
+	font-family:serif;
+}
+
 .navbar {
 	background: #000;
 	border-style: none;
@@ -15,3 +20,13 @@
 .btn-primary:hover {
 	background: #303030;
 }
+
+.mainphoto {
+	width:140%;
+	margin-left: 20%;
+}
+
+.photo{
+	width:100%;
+}
+
