@@ -1,6 +1,11 @@
 body {
 	color:black;
-	font-family:serif;
+	font-family: 'Crimson Text', serif;
+}
+
+h1 {
+	font-family: 'Prata', serif;
+	font-size:40px;
 }
 
 .navbar {
