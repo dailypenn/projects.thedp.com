@@ -6,7 +6,8 @@ body {
 
 h1 {
 	font-family: 'Prata', serif;
-	font-size:40px;
+	font-size:1x;
+	color: white;
 }
 
 .navbar {
