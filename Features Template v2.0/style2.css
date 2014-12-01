@@ -1,0 +1,197 @@
+@import url(http://fonts.googleapis.com/css?family=Average);
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Title and byline */
+
+h1 {
+  font-size: 50px;
+  padding-left: 20%;
+  padding-top: 3%;
+  margin-left: -10%;
+ 
+  font-family: Average;
+}
+
+h2 {
+  font-size: 30px;
+  padding-left: 20%;
+  padding-top: 3%;
+  margin-left: -10%;
+  margin-bottom: .2%;
+  font-family: Average;
+}
+
+h3 {
+  font-size: 30px;
+  padding-left: 23%;
+  padding-top: 3%;
+
+  margin-bottom: .2%;
+  font-family: Average;
+}
+
+#byLine{
+  font-size: 25px;
+  padding-left: 20%;
+  margin-left: -5%;
+  font-family: Average;
+}
+
+p {
+  padding-left: 20%;
+  padding-top: 1.3%;
+  width: 570px;
+  font-size: 20px;
+ }
+
+/* Code for Javascript */
+
+.header {
+  background: url("pics/img0.jpg");
+  background-size:cover;
+  opacity: 1;
+  top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  max-height: 70%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.content {
+  width: 100%;
+  margin: 0;
+  top: 70%;
+  background-color: #FFFFFF;
+  z-index: 2;
+  position: relative;
+}
+
+/* Photos that are in the right */
+
+.tableRight {
+  color: #424242;
+  width: 300px;
+  float: right; 
+  padding-left: 2%;
+  padding-right: 20%;
+  font-family: Roboto;
+  padding-bottom: 1%;
+}
+
+.picRight {
+  float:left;
+  height: 300px;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+
+/* Photos that are in the left */
+
+.picLeft {
+  float:left;
+  height: 300px;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+
+.tableLeft {
+  color: #424242;
+  width: 300px;
+  float: left; 
+  padding-left: 10%;
+  padding-right: 2%;
+  font-family: Roboto;
+  padding-bottom: 1%;
+}
+
+/* Photos that are in the center */
+
+.picCenter {  
+  float:left;
+  max-height: 400px;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  max-width: 570px;
+}
+
+.tableCenter {
+  color: #424242;
+  width: 570px;
+  text-align: left;
+  font-family: Roboto;
+  padding-left: 20%; 
+}
+
+/* Stretch */
+
+.picStretch {  
+  background: url("pics/septa.jpg");
+  background-size:cover;
+  opacity: 1;
+  top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  max-height: 70%;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.imgStretch {  
+  float:left;
+  max-height: 50%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  max-width: 100%;
+}
+
+.tableStretch {
+  color: #424242;
+  text-align: center;
+  font-family: Roboto;
+  padding-left: 20%; 
+}
+
+/* Page Elements */
+#quote {
+  padding-left: 20%;
+  max-width: 460px;
+	font-family: Roboto;
+	color: darkred;
+  font-size: 30px;
+  margin-left: 5%
+}
+
+p.dropcap:first-letter {
+ font-size : 350%;
+ font-weight : bold;
+ float : left;
+ padding-right: 2%;
+ margin-top: -1%;
+ margin-bottom: -3%;
+ padding-bottom: -5%
+}
+
+.pageBreak {
+  text-align: center;
+  margin-left: -20%;
+}
+
+/* Makes padding on the bottom */
+
+#end {
+  padding-bottom: 10%;
+}
