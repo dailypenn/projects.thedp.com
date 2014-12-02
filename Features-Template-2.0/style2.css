@@ -231,11 +231,15 @@ p.dropcap:first-letter {
 .image-slider img {
   user-select: none;
   max-width: 400px;
-  text-align: center;
+  margin-right: 300px;
 }
 
 
 /* Makes padding on the bottom */
+#disqus_thread {
+  text-align: center;
+  width: 570px;
+}
 
 #end {
   padding-bottom: 10%;
