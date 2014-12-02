@@ -200,7 +200,6 @@ p.dropcap:first-letter {
   position:relative;
   display: inline-block;
   line-height: 0;
-  text-align: center;
 }
  
 /* Could use a pseudo-element, but they’re currently
@@ -226,11 +225,13 @@ p.dropcap:first-letter {
   cursor: ew-resize;
   -webkit-filter: drop-shadow(0 0 2px black);
   filter: drop-shadow(0 0 2px black);
+  text-align: center;
 }
  
 .image-slider img {
   user-select: none;
   max-width: 400px;
+  text-align: center;
 }
 
 
