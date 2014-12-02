@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="style2.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+<div class="header">
+  <!-- CONTAINS BACKGROUND IMAGE -->
+</div>
+
+<div class ="content">
+  <h1> This is my website and stuff </h1>
+  <div id="byLine">
+    by Luke Chen and Josh Karnofsky<br>
+    <br>
+    <div style="color: #424242"> Here is the Byline and stuff</div> 
+  </div>
+
+  <script>
+
+      //Every resize of window
+      // $(window).resize(sizeContent);
+
+      //Dynamically assign height
+      function sizeContent() {
+      var newHeight = $("html").height() + "px";
+      $(".header").css("height", newHeight);
+      $(".content").css("top", newHeight);
+      }
+
+      $(window).scroll(function(){
+          $(".header").css("opacity", 1 - $(window).scrollTop() / 500);
+      });
+  </script>
+
+</head>
+
+<body> 
+
+  <p class = "dropcap"> Hey.... 
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    asdfasdfsadfsdafasdf
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    asdfasdfsadfsdafasdf
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod.
+    <table class= "tableRight">  
+      <tr>
+        <td><img class="picRight" src="pics/img2.jpg"></td>
+      </tr>
+      <tr>
+        <td><div>
+          Credit - Luke Chen</div></td>
+      </tr>
+      <tr>
+        <td><div>
+          fig.1 - This is a building at princeton. There can be several lines
+          to a caption. Test.</div></td>
+      </tr>
+    </table>
+    <p>
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </p>
+  <p> 
+    Hey.... 
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <p>
+    Sociosqu dis scelerisque tempus elementum egestas porttitor felis ad, sem consectetuer aliquet facilisi velit. Porta suscipit enim lobortis, id. Nostra massa nulla nascetur elementum class varius placerat consectetuer nostra litora facilisis magna risus. Ultricies urna Facilisi. Suscipit sem.
+  </p>
+  <div id="quote">
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua."
+  </div>
+  <p>
+   Porta suscipit enim lobortis, id. Nostra massa nulla nascetur elementum class varius placerat consectetuer nostra litora facilisis magna risus. Ultricies urna Facilisi. Suscipit sem.
+  </p>  
+  <p>
+    Adipiscing dapibus tortor dui. Euismod, ut iaculis euismod lacinia augue tempor vitae varius. Tincidunt inceptos duis consequat ante iaculis, nisi inceptos, lacinia. Metus sociis maecenas est mollis maecenas metus eros aptent ultricies, potenti fames, inceptos nisl euismod elit. Sociis aenean eleifend scelerisque fringilla praesent turpis neque elit nibh blandit nibh nascetur nec convallis ac vulputate luctus ante
+    <table class= "tableLeft">  
+      <tr>
+	      <td><img class="picLeft" src="pics/img3.jpg"></td>
+	    </tr>
+      <tr>
+        <td><div>
+          Credit</div></td>
+      </tr>
+      <tr>
+	      <td><div>
+          fig.1 - A view of the pulpit rock in Norway. Thanks
+          to Matt Williams for the photo</div></td>
+	    </tr>
+    </table>
+    <p>
+    rhoncus at netus magna tristique ullamcorper morbi dapibus conubia vehicula cum magnis varius commodo netus viverra torquent metus ut ullamcorper viverra justo. Cum tincidunt ut inceptos sagittis sociis mus eleifend dictumst parturient sed turpis mollis phasellus adipiscing fermentum praesent congue Tincidunt facilisi iaculis imperdiet eu elit metus Arcu dignissim euismod montes orci Sollicitudin. Blandit sem. Aliquam facilisi fermentum, fermentum purus leo consequat laoreet. Fermentum nisl orci ultrices dapibus luctus parturient lorem. Nostra integer quisque nisl hac eget.
+  </p>
+  </p>
+  <p> Condimentum curabitur, id ullamcorper curabitur augue cum accumsan. Nullam congue hymenaeos nascetur ac. Hendrerit posuere luctus platea id elementum laoreet interdum odio mollis dapibus purus, lectus, placerat nullam ultricies sociosqu dis scelerisque tempus elementum egestas porttitor felis ad, sem consectetuer aliquet facilisi velit. Porta suscipit enim lobortis, id. Nostra massa nulla nascetur elementum class varius placerat consectetuer nostra litora facilisis magna risus. Ultricies urna Facilisi. Suscipit sem. Sem nisi sociosqu magnis dolor adipiscing fames aptent. Augue habitasse tincidunt dictumst dapibus
+  </p>
+  <p> Condimentum curabitur, id ullamcorper curabitur augue cum accumsan. Nullam congue hymenaeos nascetur ac. Hendrerit posuere luctus platea id elementum laoreet interdum odio mollis dapibus purus, lectus, placerat nullam ultricies sociosqu dis scelerisque tempus elementum egestas porttitor felis ad, sem consectetuer aliquet facilisi velit. Porta suscipit enim lobortis, id. Nostra massa nulla nascetur elementum class varius placerat consectetuer nostra litora facilisis magna risus. Ultricies urna Facilisi. Suscipit sem. Sem nisi sociosqu magnis dolor adipiscing fames aptent. Augue habitasse tincidunt dictumst dapibus. Gravida. Risus urna lacus pharetra in ligula, odio nam class interdum metus suspendisse hymenaeos.
+  </p>
+  <div class="center">
+    <table class= "tableCenter">  
+      <tr>
+        <td><img class="picCenter" src="pics/artm.jpg"></td>
+      </tr>
+      <tr>
+        <td><div>
+          Credit</div></td>
+      </tr>
+      <tr>
+        <td><div>
+          fig.1 - A view of the pulpit rock in Norway. Thanks
+          to Lucas for making the caption work</div></td>
+      </tr>
+    </table>
+  </div>
+  <p> Condimentum curabitur, id ullamcorper curabitur augue cum accumsan. Nullam congue hymenaeos nascetur ac. Hendrerit posuere luctus platea id elementum laoreet interdum odio mollis dapibus purus, lectus, placerat nullam ultricies sociosqu dis scelerisque tempus elementum egestas porttitor felis ad, sem consectetuer aliquet facilisi velit. Porta suscipit enim lobortis, id. Nostra massa nulla nascetur elementum class varius placerat consectetuer nostra litora facilisis magna risus. Ultricies urna Facilisi. Suscipit sem. Sem nisi sociosqu magnis dolor adipiscing fames aptent. Augue habitasse tincidunt dictumst dapibus. Gravida. Risus urna lacus pharetra in ligula, odio nam class interdum metus suspendisse hymenaeos.
+  </p>
+  <h3> Stuff </h3>
+  <p class = dropcap> Condimentum curabitur, id ullamcorper curabitur augue cum accumsan. Nullam congue hymenaeos nascetur ac. Hendrerit posuere luctus platea id elementum laoreet interdum odio mollis dapibus purus, lectus, placerat nullam ultricies sociosqu dis scelerisque tempus elementum egestas porttitor felis ad, sem consectetuer aliquet facilisi velit. Porta suscipit enim lobortis, id. Nostra massa nulla nascetur elementum class varius placerat consectetuer nostra litora facilisis magna risus. Ultricies urna Facilisi. Suscipit sem. Sem nisi sociosqu magnis dolor adipiscing fames aptent. Augue habitasse tincidunt dictumst dapibus. Gravida. Risus urna lacus pharetra in ligula, odio nam class interdum metus suspendisse hymenaeos.
+  </p>
+  <div class="pageBreak"> 
+    * * *
+  </div>
+  <p> Condimentum curabitur, id ullamcorper curabitur augue cum accumsan. Nullam congue hymenaeos nascetur ac. Hendrerit posuere luctus platea id elementum laoreet interdum odio mollis dapibus purus, lectus, placerat nullam ultricies sociosqu dis scelerisque tempus elementum egestas porttitor felis ad, sem consectetuer aliquet facilisi velit. Porta suscipit enim lobortis, id. Nostra massa nulla nascetur elementum class varius placerat consectetuer nostra litora facilisis magna risus. Ultricies urna Facilisi. Suscipit sem. Sem nisi sociosqu magnis dolor adipiscing fames aptent. Augue habitasse tincidunt dictumst dapibus. Gravida. Risus urna lacus pharetra in ligula, odio nam class interdum metus suspendisse hymenaeos.
+  </p>
+  <p> 
+    Hey.... 
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+</body>
+
+<div class="picStretch">
+  <!-- CONTAINS BACKGROUND IMAGE -->
+</div>
+<div class = "picStretch2">
+
+
+  <script>
+
+      //Every resize of window
+      // $(window).resize(sizeContent);
+
+      //Dynamically assign height
+      function sizeContent() {
+      var newHeight = $("html").height() + "px";
+      $(".header").css("height", newHeight);
+      $(".content").css("top", newHeight);
+      }
+
+      $(window).scroll(function(){
+          $(".header").css("opacity", 1 - $(window).scrollTop() / 500);
+      });
+  </script>
+</div>
+<body>
+  <p>
+    Sociosqu dis scelerisque tempus elementum egestas porttitor felis ad, sem consectetuer aliquet facilisi velit. Porta suscipit enim lobortis, id. Nostra massa nulla nascetur elementum class varius placerat consectetuer nostra litora facilisis magna risus. Ultricies urna Facilisi. Suscipit sem.
+  </p>
+  <p id="end"> Condimentum curabitur, id ullamcorper curabitur augue cum accumsan. Nullam congue hymenaeos nascetur ac. Hendrerit posuere luctus platea id elementum laoreet interdum odio mollis dapibus purus, lectus, placerat nullam ultricies sociosqu dis scelerisque tempus elementum egestas porttitor felis ad, sem consectetuer aliquet facilisi velit. Porta suscipit enim lobortis, id. Nostra massa nulla nascetur elementum class varius placerat consectetuer nostra litora facilisis magna risus. Ultricies urna Facilisi. Suscipit sem. Sem nisi sociosqu magnis dolor adipiscing fames aptent. Augue habitasse tincidunt dictumst dapibus. Gravida. Risus urna lacus pharetra in ligula, odio nam class interdum metus suspendisse hymenaeos.
+  </p>
+</body>
+
+    
