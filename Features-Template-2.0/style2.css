@@ -16,7 +16,7 @@ body, html {
 h1 {
   font-size: 50px;
   padding-left: 20%;
-  padding-top: 3%;
+  padding-top: 0%;
   margin-left: -10%;
  
   font-family: Average;
@@ -58,13 +58,13 @@ p {
 /* Code for Javascript */
 
 .header {
-  background: url("pics/pano2-2.jpg");
+  background: url("pics/pano1-32.jpg");
   background-size:cover;
   opacity: 1;
   top: 0;
   margin-left: 0;
   margin-right: 0;
-  max-height: 70%;
+  max-height: 85%;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -74,7 +74,7 @@ p {
 .content {
   width: 100%;
   margin: 0;
-  top: 70%;
+  top: 80%;
   background-color: #FFFFFF;
   z-index: 2;
   position: relative;
