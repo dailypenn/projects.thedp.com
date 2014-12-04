@@ -43,6 +43,7 @@ h3 {
 #byLine{
   font-size: 25px;
   padding-left: 20%;
+  padding-right: 35%;
   margin-left: -5%;
   font-family: Average;
 }
@@ -51,13 +52,13 @@ p {
   padding-left: 20%;
   padding-top: .8%;
   width: 570px;
-  font-size: 20px;
+  font-size: 19px;
  }
 
 /* Code for Javascript */
 
 .header {
-  background: url("pics/img0Sm.jpg");
+  background: url("pics/pano2-2.jpg");
   background-size:cover;
   opacity: 1;
   top: 0;
@@ -208,7 +209,7 @@ p.dropcap:first-letter {
   position: absolute;
   top: 0; bottom: 0; left: 0;
   width: 25px;
-  max-width: 100%;
+  max-width: 57%;
   overflow: hidden;
   resize: horizontal;
 }
@@ -238,6 +239,7 @@ p.dropcap:first-letter {
 /* Makes padding on the bottom */
 #disqus_thread {
   text-align: center;
+  margin-right: 230px;
   width: 570px;
 }
 
