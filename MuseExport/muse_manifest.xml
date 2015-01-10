@@ -1,0 +1,60 @@
+<manifest alg="2" build="569" opt="false" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x,2x" timestamp="1420926110153">
+  <folder name="css">
+    <file name="site_global.css" crc="365011649"/>
+    <file name="master_a-master.css" crc="162560231" ref="index"/>
+    <file name="index.css" crc="4118095464" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="3769949617" ref="index"/>
+    <file name="museutils.js" crc="4050293121" ref="index"/>
+    <file name="jquery.watch.js" crc="3946357177" ref="index"/>
+    <file name="jquery.scrolleffects.js" crc="398671634" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="u191-4.png" crc="4235502724" ref="index"/>
+    <file name="u191-4_2x.png" crc="4079131376" ref="index"/>
+    <file name="u194-4.png" crc="3831590195" ref="index"/>
+    <file name="u194-4_2x.png" crc="168032476" ref="index"/>
+    <file name="u81-4.png" crc="474490093" ref="index"/>
+    <file name="u81-4_2x.png" crc="481932743" ref="index"/>
+    <file name="u85-4.png" crc="228650894" ref="index"/>
+    <file name="u85-4_2x.png" crc="249336515" ref="index"/>
+    <file name="u86-4.png" crc="433488971" ref="index"/>
+    <file name="u86-4_2x.png" crc="221654925" ref="index"/>
+    <file name="u88-4.png" crc="4028412143" ref="index"/>
+    <file name="u88-4_2x.png" crc="4200574289" ref="index"/>
+    <file name="u87-4.png" crc="4194712914" ref="index"/>
+    <file name="u87-4_2x.png" crc="155990061" ref="index"/>
+    <file name="u89-4.png" crc="187724919" ref="index"/>
+    <file name="u89-4_2x.png" crc="470616585" ref="index"/>
+    <file name="u90-4.png" crc="4002667102" ref="index"/>
+    <file name="u90-4_2x.png" crc="4197367455" ref="index"/>
+    <file name="u92-4.png" crc="323437645" ref="index"/>
+    <file name="u92-4_2x.png" crc="283110497" ref="index"/>
+    <file name="pasted image 2048x1536.jpg" crc="501541824" ref="index"/>
+    <file name="pasted image 2048x1536_2x.jpg" crc="417075036" ref="index"/>
+    <file name="u196-4.png" crc="3939725719" ref="index"/>
+    <file name="u196-4_2x.png" crc="400032" ref="index"/>
+    <file name="pasted svg 562x58.svg" crc="4230598172" ref="index"/>
+    <file name="pasted svg 562x58_poster_.png" crc="4265269847" ref="index"/>
+    <file name="u197-4.png" crc="4109229601" ref="index"/>
+    <file name="u197-4_2x.png" crc="106461571" ref="index"/>
+    <file name="u253-4.png" crc="303441949" ref="index"/>
+    <file name="u253-4_2x.png" crc="4078816159" ref="index"/>
+    <file name="u100-4.png" crc="77524808" ref="index"/>
+    <file name="u100-4_2x.png" crc="403133472" ref="index"/>
+    <file name="u200-4.png" crc="395599229" ref="index"/>
+    <file name="u200-4_2x.png" crc="3826652752" ref="index"/>
+    <file name="u94-4.png" crc="4209882718" ref="index"/>
+    <file name="u94-4_2x.png" crc="4208288929" ref="index"/>
+    <file name="u93-4.png" crc="4115882856" ref="index"/>
+    <file name="u93-4_2x.png" crc="3930272323" ref="index"/>
+    <file name="u95-4.png" crc="229371824" ref="index"/>
+    <file name="u95-4_2x.png" crc="4227343875" ref="index"/>
+    <file name="u96-4.png" crc="3818092736" ref="index"/>
+    <file name="u96-4_2x.png" crc="3830033024" ref="index"/>
+    <file name="u98-4.png" crc="4271431223" ref="index"/>
+    <file name="u98-4_2x.png" crc="4247650571" ref="index"/>
+  </folder>
+  <file name="index.html" crc="253312423" mt="1420870045908" redirect="true"/>
+</manifest>
