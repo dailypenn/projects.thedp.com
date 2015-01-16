@@ -1,25 +1,66 @@
-<manifest alg="2" build="569" opt="false" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x,2x" timestamp="1421221338764">
+<manifest alg="2" build="569" opt="false" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x,2x" timestamp="1421387364488">
   <folder name="css">
-    <file name="site_global.css" crc="4075236156"/>
-    <file name="master_a-master.css" crc="388056747" ref="index"/>
-    <file name="index.css" crc="410490447" ref="index"/>
+    <file name="site_global.css" crc="455123156"/>
+    <file name="master_a-master.css" crc="4022584552" ref="index"/>
+    <file name="index.css" crc="34238785" ref="index"/>
   </folder>
   <folder name="scripts">
-    <file name="jquery-1.8.3.min.js" crc="3769949617" ref="index"/>
-    <file name="museutils.js" crc="4050293121" ref="index"/>
-    <file name="jquery.watch.js" crc="3946357177" ref="index"/>
-    <file name="jquery.musepolyfill.bgsize.js" crc="84270510" ref="index"/>
+    <file name="jquery-1.8.3.min.js" crc="3769949617" ref="phone>index:index"/>
+    <file name="museutils.js" crc="4050293121" ref="phone>index:index"/>
+    <file name="jquery.watch.js" crc="3946357177" ref="phone>index:index"/>
+    <file name="pie.js" crc="3827607177" ref="phone>index:index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="84270510" ref="phone>index:index"/>
+    <file name="webpro.js" crc="140723489" ref="phone>index"/>
+    <file name="musewpdisclosure.js" crc="4078529368" ref="phone>index"/>
+    <file name="museredirect.js" crc="490478987" ref="index"/>
     <file name="jquery.scrolleffects.js" crc="398671634" ref="index"/>
   </folder>
   <folder name="images">
+    <file name="pasted svg 562x58.svg" crc="4230598172" ref="phone>index:index"/>
+    <file name="pasted svg 562x58_poster_.png" crc="3904709127" ref="phone>index"/>
+    <file name="u734-4.png" crc="3845515609" ref="phone>index"/>
+    <file name="u734-4_2x.png" crc="367748798" ref="phone>index"/>
+    <file name="blank.gif" crc="4208392903" ref="phone>index"/>
+    <file name="u994.png" crc="452226962" ref="phone>index"/>
+    <file name="u994-m.png" crc="452226962" ref="phone>index"/>
+    <file name="u994-a.png" crc="216431899" ref="phone>index"/>
+    <file name="u994_2x.png" crc="238518934" ref="phone>index"/>
+    <file name="u994-m_2x.png" crc="238518934" ref="phone>index"/>
+    <file name="u994-a_2x.png" crc="3765583447" ref="phone>index"/>
+    <file name="news-mobile-u1211-fr.png" crc="157207041" ref="phone>index"/>
+    <file name="copy-mobile-u1219-fr.png" crc="346178839" ref="phone>index"/>
+    <file name="social-mobile-u1229-fr.png" crc="3789128732" ref="phone>index"/>
+    <file name="photo-mobile-u1250-fr.png" crc="3928664732" ref="phone>index"/>
+    <file name="video-camera-mobile-u1258-fr.png" crc="35044761" ref="phone>index"/>
+    <file name="web-mobile-u1265-fr.png" crc="3850535107" ref="phone>index"/>
+    <file name="street-u1272-fr.png" crc="508916662" ref="phone>index"/>
+    <file name="street-u1272-fr_2x.png" crc="4105367828" ref="phone>index"/>
+    <file name="underthebutton-mobile-u1276-fr.png" crc="529677120" ref="phone>index"/>
+    <file name="u992.png" crc="96751015" ref="phone>index"/>
+    <file name="u992-m.png" crc="96751015" ref="phone>index"/>
+    <file name="u992-a.png" crc="466553512" ref="phone>index"/>
+    <file name="u992_2x.png" crc="3805313565" ref="phone>index"/>
+    <file name="u992-m_2x.png" crc="3805313565" ref="phone>index"/>
+    <file name="u992-a_2x.png" crc="3834885771" ref="phone>index"/>
+    <file name="ad-web-u1414-fr.png" crc="343068696" ref="phone>index"/>
+    <file name="analytics-mobile-u1421-fr.png" crc="265233130" ref="phone>index"/>
+    <file name="finance2-mobile-u1430-fr.png" crc="4144427496" ref="phone>index"/>
+    <file name="innovation-mobile-u1432-fr.png" crc="4065900898" ref="phone>index"/>
+    <file name="circulation-mobile-u1434-fr.png" crc="293949731" ref="phone>index"/>
+    <file name="u1475-4.png" crc="4165476023" ref="phone>index"/>
+    <file name="u1475-4_2x.png" crc="3964950909" ref="phone>index"/>
+    <file name="u1476-4.png" crc="3825406414" ref="phone>index"/>
+    <file name="u1476-4_2x.png" crc="272489102" ref="phone>index"/>
+    <file name="pasted svg 50x50.svg" crc="4142874794" ref="phone>index:index"/>
+    <file name="pasted svg 50x50_poster_.png" crc="4092068578" ref="phone>index"/>
+    <file name="pasted svg 50x502.svg" crc="183267387" ref="phone>index:index"/>
+    <file name="pasted svg 50x50_poster_2.png" crc="110633915" ref="phone>index"/>
+    <file name="u508-4.png" crc="4058515443" ref="index"/>
+    <file name="u508-4_2x.png" crc="4232447478" ref="index"/>
+    <file name="u509-4.png" crc="4243290852" ref="index"/>
+    <file name="u509-4_2x.png" crc="89499424" ref="index"/>
     <file name="u491-4.png" crc="4123157718" ref="index"/>
     <file name="u491-4_2x.png" crc="16067790" ref="index"/>
-    <file name="pasted svg 562x58.svg" crc="4230598172" ref="index"/>
-    <file name="pasted svg 562x58_poster_.png" crc="4265269847" ref="index"/>
-    <file name="u196-4.png" crc="3939725719" ref="index"/>
-    <file name="u196-4_2x.png" crc="400032" ref="index"/>
-    <file name="u197-4.png" crc="4109229601" ref="index"/>
-    <file name="u197-4_2x.png" crc="106461571" ref="index"/>
     <file name="u81-4.png" crc="4007311718" ref="index"/>
     <file name="u81-4_2x.png" crc="404590098" ref="index"/>
     <file name="u310-4.png" crc="4230033034" ref="index"/>
@@ -30,22 +71,22 @@
     <file name="u87-4_2x.png" crc="155990061" ref="index"/>
     <file name="u85-4.png" crc="228650894" ref="index"/>
     <file name="u85-4_2x.png" crc="249336515" ref="index"/>
-    <file name="u89-4.png" crc="3810985908" ref="index"/>
-    <file name="u89-4_2x.png" crc="4097158740" ref="index"/>
-    <file name="u90-4.png" crc="4002667102" ref="index"/>
-    <file name="u90-4_2x.png" crc="4197367455" ref="index"/>
     <file name="u86-4.png" crc="433488971" ref="index"/>
     <file name="u86-4_2x.png" crc="221654925" ref="index"/>
     <file name="u88-4.png" crc="4028412143" ref="index"/>
     <file name="u88-4_2x.png" crc="4200574289" ref="index"/>
+    <file name="u89-4.png" crc="4166388850" ref="index"/>
+    <file name="u89-4_2x.png" crc="3953478968" ref="index"/>
+    <file name="u90-4.png" crc="4002667102" ref="index"/>
+    <file name="u90-4_2x.png" crc="4197367455" ref="index"/>
     <file name="u92-4.png" crc="323437645" ref="index"/>
     <file name="u92-4_2x.png" crc="283110497" ref="index"/>
     <file name="new_york_times_building_0210.jpg" crc="449462185" ref="index"/>
+    <file name="2349632625_7c2813f45b_o.jpg" crc="4273672625" ref="index"/>
     <file name="u290-4.png" crc="314628112" ref="index"/>
     <file name="u290-4_2x.png" crc="4262598216" ref="index"/>
-    <file name="2349632625_7c2813f45b_o.jpg" crc="3772114517" ref="index"/>
-    <file name="u301-4.png" crc="4019791568" ref="index"/>
-    <file name="u301-4_2x.png" crc="66860042" ref="index"/>
+    <file name="u301-4.png" crc="4038913624" ref="index"/>
+    <file name="u301-4_2x.png" crc="459558801" ref="index"/>
     <file name="palestra_interior.jpg" crc="424481952" ref="index"/>
     <file name="u297-4.png" crc="428641699" ref="index"/>
     <file name="u297-4_2x.png" crc="472698262" ref="index"/>
@@ -56,21 +97,22 @@
     <file name="u328-4.png" crc="3772391501" ref="index"/>
     <file name="u328-4_2x.png" crc="230300635" ref="index"/>
     <file name="paintbrush_and_palette.jpg" crc="4239500391" ref="index"/>
+    <file name="video_camera.jpg" crc="4134659438" ref="index"/>
     <file name="u335-4.png" crc="4197812355" ref="index"/>
     <file name="u335-4_2x.png" crc="469060807" ref="index"/>
-    <file name="u446-4.png" crc="3856909022" ref="index"/>
-    <file name="u446-4_2x.png" crc="194853796" ref="index"/>
+    <file name="u559-4.png" crc="15370429" ref="index"/>
+    <file name="u559-4_2x.png" crc="4038729861" ref="index"/>
     <file name="6812407093_e3a25e2f2d_o.jpg" crc="309844246" ref="index"/>
     <file name="u342-4.png" crc="3764962669" ref="index"/>
     <file name="u342-4_2x.png" crc="217593769" ref="index"/>
     <file name="street.jpg" crc="441271694" ref="index"/>
+    <file name="pasted svg 873x245.svg" crc="3786027202" ref="index"/>
+    <file name="pasted svg 873x245_poster_.png" crc="492096550" ref="index"/>
     <file name="u347-4.png" crc="4227668320" ref="index"/>
     <file name="u347-4_2x.png" crc="4035374446" ref="index"/>
     <file name="3211746424_22232f771e_o (2).jpg" crc="407781629" ref="index"/>
-    <file name="u351-4.png" crc="4266230744" ref="index"/>
-    <file name="u351-4_2x.png" crc="126726286" ref="index"/>
-    <file name="u200-4.png" crc="395599229" ref="index"/>
-    <file name="u200-4_2x.png" crc="3826652752" ref="index"/>
+    <file name="u351-4.png" crc="4260356310" ref="index"/>
+    <file name="u351-4_2x.png" crc="328666057" ref="index"/>
     <file name="u93-4.png" crc="452235209" ref="index"/>
     <file name="u93-4_2x.png" crc="3850978155" ref="index"/>
     <file name="u94-4.png" crc="121531448" ref="index"/>
@@ -90,16 +132,17 @@
     <file name="for_sale_-_classifieds.jpg" crc="411174707" ref="index"/>
     <file name="u388-4.png" crc="3838169133" ref="index"/>
     <file name="u388-4_2x.png" crc="304191739" ref="index"/>
-    <file name="u393-4.png" crc="238059250" ref="index"/>
-    <file name="u393-4_2x.png" crc="3811079602" ref="index"/>
+    <file name="u393-4.png" crc="501787294" ref="index"/>
+    <file name="u393-4_2x.png" crc="4197282487" ref="index"/>
     <file name="analyzing_financial_data_(5099605109).jpg" crc="346260833" ref="index"/>
-    <file name="u401-4.png" crc="459496363" ref="index"/>
-    <file name="u401-4_2x.png" crc="3983456526" ref="index"/>
+    <file name="u401-4.png" crc="4287488169" ref="index"/>
+    <file name="u401-4_2x.png" crc="4057494133" ref="index"/>
     <file name="8357022407_5163d9f85e_o.jpg" crc="4160644622" ref="index"/>
-    <file name="u451-4.png" crc="3905660810" ref="index"/>
-    <file name="u451-4_2x.png" crc="4245835821" ref="index"/>
-    <file name="u406-4.png" crc="4207435971" ref="index"/>
-    <file name="u406-4_2x.png" crc="3789583757" ref="index"/>
+    <file name="u451-4.png" crc="4022659660" ref="index"/>
+    <file name="u451-4_2x.png" crc="4001636861" ref="index"/>
+    <file name="innovation-lightbulb.jpg" crc="3845807970" ref="index"/>
+    <file name="u587-4.png" crc="471161876" ref="index"/>
+    <file name="u587-4_2x.png" crc="3758381176" ref="index"/>
     <file name="6277209256_198cdbea86_o.jpg" crc="252394622" ref="index"/>
     <file name="u420-4.png" crc="4066464296" ref="index"/>
     <file name="u420-4_2x.png" crc="211775556" ref="index"/>
@@ -107,6 +150,20 @@
     <file name="u422-4_2x.png" crc="3835964581" ref="index"/>
     <file name="u425-4.png" crc="224140347" ref="index"/>
     <file name="u425-4_2x.png" crc="339844621" ref="index"/>
+    <file name="pasted svg 261x28.svg" crc="7317659" ref="index"/>
+    <file name="pasted svg 261x28_poster_.png" crc="476329583" ref="index"/>
+    <file name="pasted svg 140x30.svg" crc="432641552" ref="index"/>
+    <file name="pasted svg 140x30_poster_.png" crc="3890062464" ref="index"/>
+    <file name="u652-4.png" crc="4165476023" ref="index"/>
+    <file name="u652-4_2x.png" crc="3964950909" ref="index"/>
+    <file name="u653-4.png" crc="3825406414" ref="index"/>
+    <file name="u653-4_2x.png" crc="272489102" ref="index"/>
   </folder>
-  <file name="index.html" crc="3918944555" mt="1421221280366" redirect="true"/>
+  <folder name="phone">
+    <folder name="css">
+      <file name="index.css" crc="4083795793" ref="phone>index"/>
+    </folder>
+    <file name="index.html" crc="3971432536" mt="1421387360665" redirect="true"/>
+  </folder>
+  <file name="index.html" crc="260235962" mt="1421387294029" redirect="true"/>
 </manifest>

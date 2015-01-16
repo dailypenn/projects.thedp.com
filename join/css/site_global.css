@@ -81,12 +81,6 @@ body
 	body { text-rendering:auto; }
 }
 
-a
-{
-	color: inherit;
-	text-decoration: inherit;
-}
-
 a:link
 {
 	color: #C1272D;
@@ -118,6 +112,31 @@ a.nontext /* used to override default properties of 'a' tag */
 	text-decoration: none;
 	font-style: normal;
 	font-weight: normal;
+}
+
+.on-red-background a:link
+{
+	color: #EFD9DA;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.on-red-background a:visited
+{
+	color: #800080;
+	text-decoration: underline;
+}
+
+.on-red-background a:hover
+{
+	color: #0000FF;
+	text-decoration: underline;
+}
+
+.on-red-background a:active
+{
+	color: #EE0000;
+	text-decoration: underline;
 }
 
 .normal_text

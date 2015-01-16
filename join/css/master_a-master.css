@@ -1,3 +1,22 @@
+#u507
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: #791214;
+	position: fixed;
+}
+
+#u510
+{
+	overflow: hidden;
+	position: fixed;
+}
+
+#u508-4,#u509-4
+{
+	position: fixed;
+}
+
 #u176
 {
 	border-style: none;
@@ -7,15 +26,32 @@
 
 #u247
 {
+	-pie-box-shadow: -1px 0px 8px #7F7F7F;
+	-moz-box-shadow: -1px 0px 8px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: -1px 0px 8px -1px rgba(0, 0, 0, 0.5);
+	box-shadow: -1px 0px 8px rgba(0, 0, 0, 0.5);
 	border-style: none;
 	border-color: transparent;
 	background-color: #FFFFFF;
 }
 
-#u486-2,#u486-3,#u486-5,#u486-6,#u486-8
+#u492-4
 {
-	font-size: 16px;
-	line-height: 19px;
+	background-color: transparent;
+	line-height: 22px;
+	font-size: 18px;
+	text-align: left;
+	font-weight: bold;
+	position: fixed;
+}
+
+#u486-10
+{
+	background-color: transparent;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	position: fixed;
 }
 
 #u487-10
@@ -27,8 +63,9 @@
 
 #u487-2
 {
-	font-size: 25px;
-	line-height: 30px;
+	font-size: 29px;
+	line-height: 35px;
+	color: #FFFFFF;
 	font-weight: bold;
 }
 
@@ -36,7 +73,7 @@
 {
 	font-size: 19px;
 	line-height: 23px;
-	color: #C1272D;
+	color: #C1787B;
 	font-weight: bold;
 }
 
@@ -44,39 +81,31 @@
 {
 	font-size: 17px;
 	line-height: 20px;
+	color: #FFFFFF;
 }
 
-#u489-2,#u489-9,#u490-2,#u490-9
-{
-	font-weight: bold;
-}
-
-#u492-4
+#u488-4
 {
 	background-color: transparent;
-	line-height: 22px;
-	font-size: 18px;
-	text-align: left;
-	font-weight: bold;
+	color: #FFFFFF;
 	position: relative;
 }
 
-#u193
-{
-	border-style: none;
-	border-color: transparent;
-	background-color: #791214;
-}
-
-#u194-4
+#u489-16,#u490-17
 {
 	background-color: transparent;
-	text-align: center;
-	font-size: 55px;
-	color: #7F7F7F;
-	line-height: 66px;
-	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 	position: relative;
+}
+
+#u489-2,#u489-10,#u490-2,#u490-10
+{
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+#u487-8,#u489-3,#u489-11,#u490-3,#u490-11
+{
+	color: #FFFFFF;
 }
 
 #u279
@@ -84,6 +113,14 @@
 	border-style: none;
 	border-color: transparent;
 	background: transparent url("../images/new_york_times_building_0210.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+#u544
+{
+	border-style: none;
+	border-color: transparent;
+	background: transparent url("../images/2349632625_7c2813f45b_o.jpg") no-repeat center center;
 	background-size: cover;
 }
 
@@ -95,10 +132,12 @@
 	background-size: cover;
 }
 
-#u486-11,#u488-4,#u489-15,#u490-15,#u303,#u318
+#u536
 {
-	background-color: transparent;
-	position: relative;
+	border-style: none;
+	border-color: transparent;
+	background: transparent url("../images/9386166498_f4a3cd44c8_o.jpg") no-repeat center top;
+	background-size: cover;
 }
 
 #u326
@@ -114,6 +153,14 @@
 	border-style: none;
 	border-color: transparent;
 	background: transparent url("../images/paintbrush_and_palette.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+#u551
+{
+	border-style: none;
+	border-color: transparent;
+	background: transparent url("../images/video_camera.jpg") no-repeat center center;
 	background-size: cover;
 }
 
@@ -137,14 +184,19 @@
 {
 	border-style: none;
 	border-color: transparent;
-	background: transparent url("../images/3211746424_22232f771e_o%20(2).jpg") no-repeat right center;
+	background: transparent url("../images/3211746424_22232f771e_o%20(2).jpg") no-repeat center bottom;
 	background-size: cover;
 }
 
-#u196-4_img,#u197-4_img,#u81-4_img,#u310-4_img,#u325-4_img,#u87-4_img,#u85-4_img,#u89-4_img,#u90-4_img,#u86-4_img,#u88-4_img,#u92-4_img,#u93-4_img,#u94-4_img,#u95-4_img,#u98-4_img,#u96-4_img,#u409-4_img,#u410-4_img,#u411-4_img
+#u194-4,#u200-4
 {
-	display: block;
-	vertical-align: top;
+	background-color: transparent;
+	line-height: 66px;
+	font-size: 55px;
+	color: #7F7F7F;
+	text-align: center;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	position: relative;
 }
 
 #u386
@@ -153,6 +205,23 @@
 	border-color: transparent;
 	background: transparent url("../images/for_sale_-_classifieds.jpg") no-repeat center center;
 	background-size: cover;
+}
+
+#u517,#u576
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: #771115;
+}
+
+#u394-7
+{
+	background-color: transparent;
+	line-height: 20px;
+	font-size: 16px;
+	color: #FFFFFF;
+	text-align: center;
+	position: relative;
 }
 
 #u399
@@ -171,6 +240,14 @@
 	background-size: cover;
 }
 
+#u579
+{
+	border-style: none;
+	border-color: transparent;
+	background: transparent url("../images/innovation-lightbulb.jpg") no-repeat center center;
+	background-size: cover;
+}
+
 #u418
 {
 	border-style: none;
@@ -179,7 +256,7 @@
 	background-size: cover;
 }
 
-#u289,#u300,#u296,#u314,#u327,#u334,#u341,#u346,#u353,#u387,#u400,#u450,#u419
+#u289,#u300,#u296,#u314,#u327,#u334,#u558,#u341,#u346,#u353,#u387,#u400,#u450,#u586,#u419
 {
 	border-style: none;
 	border-color: transparent;
@@ -190,42 +267,61 @@
 	position: fixed;
 }
 
-#u290-4,#u301-4,#u297-4,#u315-4,#u328-4,#u335-4,#u342-4,#u347-4,#u351-4,#u388-4,#u401-4,#u451-4,#u420-4
+#u491-4,#u290-4,#u301-4,#u297-4,#u315-4,#u328-4,#u335-4,#u559-4,#u342-4,#u347-4,#u351-4,#u388-4,#u401-4,#u451-4,#u587-4,#u420-4
 {
 	display: block;
 	vertical-align: top;
 	position: fixed;
 }
 
-#u291-10,#u302-4,#u298-10,#u316-10,#u329-14,#u336-8,#u343-7,#u348-7,#u354-23,#u389-4,#u402-4,#u452-4,#u421-4
+#u291-10,#u302-4,#u298-10,#u316-10,#u329-14,#u336-8,#u560-7,#u343-13,#u348-7,#u354-23,#u389-4,#u402-4,#u452-4,#u588-6,#u421-4
 {
 	background-color: transparent;
+	line-height: 20px;
+	font-size: 16px;
+	color: #6B6B6B;
 	text-align: left;
-	font-size: 16px;
-	color: #6B6B6B;
-	line-height: 20px;
 	position: fixed;
 }
 
-#u491-4,#u446-4,#u200-4,#u393-4,#u406-4,#u422-4,#u425-4
+#u393-4,#u422-4,#u425-4
 {
 	display: block;
 	vertical-align: top;
 	position: relative;
 }
 
-#u447-7,#u394-7,#u407-6,#u423-4,#u424-4
+#u423-4,#u424-4
 {
 	background-color: transparent;
-	text-align: center;
+	line-height: 20px;
 	font-size: 16px;
 	color: #6B6B6B;
-	line-height: 20px;
+	text-align: center;
 	position: relative;
 }
 
-#u247_align_to_page,#editorial,#u193_align_to_page,#u254,#u196-4,#u197-4,#u81-4,#u310-4,#u325-4,#u87-4,#u85-4,#u89-4,#u90-4,#u86-4,#u88-4,#u92-4,#newsreporting,#copy,#sports,#socialmedia,#photo,#design,#video,#web,#street,#anchor-u355,#business,#u93-4,#u94-4,#u95-4,#u98-4,#u96-4,#u409-4,#u410-4,#u411-4,#advertising,#marketing,#finance,#analytics,#innovation,#circulation,#addesign,#frontoffice,#form
+#u643
 {
+	border-style: none;
+	border-color: transparent;
+	background-color: #771015;
+}
+
+#top,#u517_align_to_page,#editorial,#u81-4,#u310-4,#u325-4,#u87-4,#u85-4,#u86-4,#u88-4,#u89-4,#u90-4,#u92-4,#u544_align_to_page,#sports,#newsreporting,#copy,#socialmedia,#u326_align_to_page,#photo,#u338_align_to_page,#design,#video,#u340_align_to_page,#web,#u345_align_to_page,#street,#business,#u350_align_to_page,#anchor-u355,#u93-4,#u94-4,#u95-4,#u98-4,#u96-4,#u409-4,#u410-4,#u411-4,#u386_align_to_page,#marketing,#advertising,#u576_align_to_page,#u399_align_to_page,#analytics,#finance,#innovation,#u418_align_to_page,#circulation,#addesign,#frontoffice,#u643_align_to_page,#u652-4,#u653-4
+{
+	position: relative;
+}
+
+#u508-4_img,#u509-4_img,#u81-4_img,#u310-4_img,#u325-4_img,#u87-4_img,#u85-4_img,#u86-4_img,#u88-4_img,#u89-4_img,#u90-4_img,#u92-4_img,#u93-4_img,#u94-4_img,#u95-4_img,#u98-4_img,#u96-4_img,#u409-4_img,#u410-4_img,#u411-4_img,#u652-4_img,#u653-4_img
+{
+	display: block;
+	vertical-align: top;
+}
+
+#u564,#u669,#u644,#u646,#u648,#u650
+{
+	overflow: hidden;
 	position: relative;
 }
 
