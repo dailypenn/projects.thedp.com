@@ -1,0 +1,63 @@
+<manifest alg="2" build="569" opt="false" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1425711813242">
+  <folder name="css">
+    <file name="site_global.css" crc="3977984863"/>
+    <file name="index.css" crc="423168099" ref="index"/>
+    <file name="iefonts_index.css" crc="508913465" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="3769949617" ref="phone>index:tablet>index:index"/>
+    <file name="museutils.js" crc="4050293121" ref="phone>index:tablet>index:index"/>
+    <file name="jquery.watch.js" crc="3946357177" ref="phone>index:tablet>index:index"/>
+    <file name="webpro.js" crc="140723489" ref="phone>index:tablet>index"/>
+    <file name="musewpslideshow.js" crc="4170221289" ref="phone>index:tablet>index"/>
+    <file name="jquery.museoverlay.js" crc="439400757" ref="phone>index:tablet>index"/>
+    <file name="touchswipe.js" crc="321465556" ref="phone>index:tablet>index"/>
+    <file name="museredirect.js" crc="490478987" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="favicon.ico" crc="3937833068" ref="phone>index"/>
+    <file name="pasted svg 261x28.svg" crc="7317659" ref="phone>index:tablet>index:index"/>
+    <file name="pasted svg 261x28_poster_.png" crc="3997900595" ref="phone>index"/>
+    <file name="pasted svg 104x105.svg" crc="491584563" ref="phone>index:tablet>index:index"/>
+    <file name="pasted svg 104x105_poster_.png" crc="421655477" ref="phone>index"/>
+    <file name="pasted svg 104x1052.svg" crc="4040735504" ref="phone>index:tablet>index:index"/>
+    <file name="pasted svg 104x105_poster_2.png" crc="3934303489" ref="phone>index"/>
+    <file name="pasted svg 104x1053.svg" crc="75174188" ref="phone>index:tablet>index:index"/>
+    <file name="pasted svg 104x105_poster_3.png" crc="59879497" ref="phone>index"/>
+    <file name="pasted svg 104x1054.svg" crc="57392129" ref="phone>index:tablet>index:index"/>
+    <file name="pasted svg 104x105_poster_4.png" crc="3853470311" ref="phone>index"/>
+    <file name="italianmarket_ollyliu.jpg" crc="205872890" ref="phone>index:tablet>index"/>
+    <file name="blank.gif" crc="4208392903" ref="phone>index:tablet>index"/>
+    <file name="longwoodgardens_amandasuarez.jpg" crc="340544086" ref="phone>index:tablet>index"/>
+    <file name="electricfactory_marcuskatz.jpg" crc="413366808" ref="phone>index:tablet>index"/>
+    <file name="wissahickon valley park - chris kao.jpg" crc="3816299045" ref="phone>index:tablet>index"/>
+    <file name="avenueofthearts_gregoryboyek.jpg" crc="141784560" ref="phone>index:tablet>index"/>
+    <file name="racestpier_aliceren.jpg" crc="3871092336" ref="phone>index:tablet>index"/>
+    <file name="govertical_emmahartley.jpg" crc="270568410" ref="phone>index:tablet>index"/>
+    <file name="standrewschapel_amandasuarez.jpg" crc="3907376361" ref="phone>index:tablet>index"/>
+    <file name="magicgardens_ollyliu.jpg" crc="3971378873" ref="phone>index:tablet>index"/>
+    <file name="usedis_schuykill_teresaxu_1.jpg" crc="4252193381" ref="phone>index:tablet>index"/>
+    <file name="baltimoreave_ajonbrodie.jpg" crc="3905747234" ref="phone>index:tablet>index"/>
+    <file name="readingviaduct_katiezhao.jpg" crc="530309402" ref="phone>index:tablet>index"/>
+    <file name="elfrethsalley_aliceren.jpg" crc="99685172" ref="phone>index:tablet>index"/>
+    <file name="franklinfountain_sarahbaraksomartin.jpg" crc="3996093882" ref="phone>index:tablet>index"/>
+    <file name="broadst_gregoryboyek.jpg" crc="4184517417" ref="phone>index:tablet>index"/>
+    <file name="u1099-grad.png" crc="4194345993" ref="phone>index:tablet>index"/>
+    <file name="loading.gif" crc="3815509949" ref="phone>index:tablet>index"/>
+  </folder>
+  <folder name="tablet">
+    <folder name="css">
+      <file name="index.css" crc="3758603339" ref="tablet>index"/>
+      <file name="iefonts_index.css" crc="359931679" ref="tablet>index"/>
+    </folder>
+    <file name="index.html" crc="4214949409" mt="1425708915280" redirect="true"/>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="index.css" crc="3794183853" ref="phone>index"/>
+      <file name="iefonts_index.css" crc="395738533" ref="phone>index"/>
+    </folder>
+    <file name="index.html" crc="4213091772" mt="1425709686531" redirect="true"/>
+  </folder>
+  <file name="index.html" crc="71247824" mt="1425711587197" redirect="true"/>
+</manifest>
