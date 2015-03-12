@@ -1,0 +1,192 @@
+@charset "utf-8";
+* {	
+	margin: 0px; padding: 0px;
+}
+.clear {
+	clear:both;}
+.clearleft {
+	display:block; 
+	clear:left;}
+.clearright{
+	display:block;
+	 clear:right;}
+.hide {
+	display:none;}
+a {
+	color:#B32C0E;
+}
+
+body {
+	background: url(http://www.relicsantiquemall.com/wp-content/uploads/2013/04/black-color-block.gif);
+	background-repeat: repeat-x;
+	height: 400px;
+	}
+#wrap{
+	width:699px;
+	margin:0px auto 15px auto;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+
+}
+
+/*Header*/
+
+#header{
+	height:242px;
+	background:url("https://farm9.staticflickr.com/8583/16090737023_7bde239624_z.jpg") no-repeat left top;
+	clear: both;
+	padding-bottom: 50px;
+}
+/*Header Menu*/
+#topmenu {
+	display:block;
+	list-style:none;
+	
+	float: left;
+	width: 415px;
+}
+#topmenu li {
+	display:inline;
+	float: left;
+}
+#topmenu a {
+	display:block;
+	float:left;
+	height:28px;
+	margin:0px 0px 0px0px;
+	text-decoration:none;
+	padding:9px 15px 0px 15px;
+}
+
+#topmenu a:hover{
+	color:#ffffff;
+	background-color: #8a3b3b;
+	
+}
+#topmenu .active a, #topmenu .active a:visited, #topmenu .active a:active{
+	color:#FFFFFF;
+	background-color: #8a3b3b;
+	}
+
+/*Content*/
+#content {
+	background-color: #FFFFFF;
+}
+#mainpage {
+	width:550px;
+	float:left;
+	padding:5px 5px 5px 0px;
+	
+}
+#mainpage p {
+	line-height:22px;
+	margin:10px 10px 22px 0px;
+}
+#mainpage blockquote {
+	background:#efefef;
+	display:block; 
+	margin:5px;
+	font:Georgia, "Times New Roman", Times, serif; 
+	font-style:italic;}
+h1, h2, h3, h4, h5 {
+	color:#B32C0E;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom: 50px;
+}
+#mainpage h1 {
+	font-size:24px;
+	color: #F2F7F3;
+
+}
+#mainpage h2 {
+	font-size:18px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #B52E10;
+	border-spacing: 5px;
+}
+#mainpage h3 {
+	font-size:20px;}
+#mainpage h4 {
+	font-size:18px;}
+#mainpage h5 {
+	font-size:16px;}
+.style_2 {
+	font-size: 7px;
+	color: #000011;
+	}
+.style_2 a{
+	font-size: 7px;
+	color: #000011;
+	}
+.style_2 a:hover{
+	font-size: 7px;
+	color: #000011;
+	}
+#content #mainpage ol {
+	margin:10px 10px 10px 25px;}
+#content #mainpage ol li {
+	padding:5px 5px 5px 20px;}
+#content #mainpage ul li {
+	display:block; 
+	padding:0px; 
+	border-bottom: dashed 1px #D6E4A7;}
+
+
+
+
+/*Sidebar*/
+#sidebar {
+	margin:0px 0px 0px 0px;
+	width: 225px;
+	float: right;
+}
+#sidebarcontents {
+	padding:5px 0px 5px 0px;
+}
+
+/*Sidemenu*/
+#menu {
+	list-style:none;
+}
+#menu li ul {list-style:none;}
+#menu li ul li {
+	display:block; 
+	height:25px; 
+	border-bottom:solid 1px #efefef;}
+#menu li ul a, #menu li ul a:visited, #menu li ul a:active {
+	display:block; 
+	height:20px; 
+	padding:5px 5px 0px 5px; 
+	text-decoration:none; 
+	color:#333333;}
+#menu li ul  a:hover {
+	background:#F8F9F2;
+	color:#B32C0E;
+}
+#menu h2 {
+	display:block;
+	border-bottom:solid 1px #D2E6CA;
+	padding:5px;
+	margin:10px 0px 0px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#B32C0E;
+	font-weight:bold;
+}
+
+/*footer*/
+#footer {
+	margin:0 auto;
+	width:685px;
+	height:75px;
+	padding:10px;
+	color:#FFFFFF;
+	text-align: center;
+	background:#333333;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	clear: both;
+}
+
