@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Untitled</title>
+<!--Adobe Edge Runtime-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<script>
+	var custHtmlRoot=""; 
+	var script = document.createElement('script'); 
+	script.type= "text/javascript";
+script.src = custHtmlRoot+"edge_includes/edge.5.0.0.min.js";
+	var head = document.getElementsByTagName('head')[0], done=false;
+	script.onload = script.onreadystatechange = function(){
+		if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
+			done=true;
+			var opts ={
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0",
+    maxW: "undefined",
+    width: "238px",
+    height: "643px"
+};
+			opts.htmlRoot =custHtmlRoot;
+			AdobeEdge.loadComposition('pennten_navbar', 'EDGE-144874321', opts,
+			{"dom":{}}, {"dom":{}});		
+			script.onload = script.onreadystatechange = null;
+			head.removeChild(script);
+		}
+	};
+	head.appendChild(script);
+	</script>
+	
+	    <style>
+        .edgeLoad-EDGE-144874321 { visibility:hidden; }
+    </style>
+
+<!--Adobe Edge Runtime End-->
+
+</head>
+<body style="margin:0;padding:0;">
+	<div id="Stage" class="EDGE-144874321">
+	</div>
+</body>
+</html>
