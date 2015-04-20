@@ -1,0 +1,16 @@
+<manifest alg="2" build="328" opt="false" iceEnabled="true" exportTarget="other" resolutions="1x" timestamp="1429494343663">
+  <folder name="css">
+    <file name="site_global.css" crc="475048684"/>
+    <file name="index.css" crc="4223188604" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="3850798583" ref="index"/>
+    <file name="museutils.js" crc="212726984" ref="index"/>
+    <file name="jquery.scrolleffects.js" crc="519931148" ref="index"/>
+    <file name="jquery.watch.js" crc="4125239756" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="denzel_header_2.jpg" crc="4281434295" ref="index"/>
+  </folder>
+  <file name="index.html" crc="3822856203" mt="1429494285395" redirect="true"/>
+</manifest>

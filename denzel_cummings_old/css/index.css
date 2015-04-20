@@ -1,0 +1,92 @@
+.version.index /* version checker */
+{
+	color: #0000FB;
+	background-color: #B8BE7C;
+}
+
+.html
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	width: 960px;
+	min-height: 499.60000000000036px;
+	padding-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#page_position_content
+{
+	padding-top: 42px;
+	padding-bottom: 62px;
+}
+
+#u81-25
+{
+	z-index: 3;
+	width: 320px;
+	min-height: 513px;
+	margin-left: 302px;
+	position: relative;
+}
+
+#u74
+{
+	z-index: 2;
+	height: 818px;
+	border-style: none;
+	border-color: transparent;
+	background: #FFFFFF url("../images/denzel_header_2.jpg") no-repeat center top;
+}
+
+#u74-bw
+{
+	z-index: 2;
+	margin-top: 57px;
+	height: 818px;
+}
+
+#u82-25
+{
+	z-index: 28;
+	width: 320px;
+	min-height: 513px;
+	margin-left: 320px;
+	margin-top: 99px;
+	position: relative;
+}
+
+.js #u82-25.ose_pre_init
+{
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+}
+
+#u85-25
+{
+	z-index: 53;
+	width: 320px;
+	min-height: 513px;
+	margin-left: 320px;
+	margin-top: 134px;
+	position: relative;
+}
+
+body
+{
+	position: relative;
+	min-width: 960px;
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+
