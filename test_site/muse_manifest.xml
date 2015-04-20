@@ -1,0 +1,16 @@
+<manifest alg="2" build="11" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1429495593982">
+  <folder name="css">
+    <file name="site_global.css" crc="422415861"/>
+    <file name="index.css" crc="4160135669" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="3880902115" ref="index"/>
+    <file name="museutils.js" crc="521960461" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="349594875" ref="index"/>
+    <file name="jquery.watch.js" crc="56779320" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="16926812028_60996ba17b_o.jpg" crc="367475567" ref="index"/>
+  </folder>
+  <file name="index.html" crc="4271542522" mt="1429495593196" redirect="true"/>
+</manifest>
