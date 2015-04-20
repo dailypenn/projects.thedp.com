@@ -1,7 +1,7 @@
 .version.index /* version checker */
 {
-	color: #0000F6;
-	background-color: #49A489;
+	color: #000006;
+	background-color: #7A25A8;
 }
 
 .html
@@ -117,9 +117,9 @@
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=59)";
 	filter: alpha(opacity=59);
 	padding: 10px;
-	line-height: 20px;
-	color: #999999;
 	text-align: center;
+	color: #999999;
+	line-height: 20px;
 	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
 	top: 787px;
 	left: 1060px;
@@ -138,21 +138,6 @@
 .SSSlideLoading /* slideshowFreeStyle */
 {
 	background: url("../images/loading.gif") no-repeat center center;
-}
-
-#u253
-{
-	z-index: 185;
-	width: 238px;
-	height: 643px;
-	top: 0px;
-	left: 0px;
-}
-
-#U779_animation
-{
-	width: 238px;
-	height: 643px;
 }
 
 #u622-6
@@ -189,9 +174,9 @@
 	width: 530px;
 	min-height: 360px;
 	background-color: transparent;
-	line-height: 27px;
-	font-size: 18px;
 	color: #1E1E1E;
+	font-size: 18px;
+	line-height: 27px;
 	position: relative;
 	margin-right: -10000px;
 }
@@ -244,8 +229,8 @@
 	width: 542px;
 	min-height: 177px;
 	background-color: transparent;
-	line-height: 56px;
 	font-size: 58px;
+	line-height: 56px;
 	font-family: chunk, serif;
 	font-weight: 400;
 	position: relative;
@@ -259,9 +244,9 @@
 	width: 530px;
 	min-height: 1283px;
 	background-color: transparent;
-	line-height: 28px;
-	font-size: 18px;
 	color: #1E1E1E;
+	font-size: 18px;
+	line-height: 28px;
 	margin-left: 103px;
 	margin-top: 77px;
 	position: relative;
@@ -320,8 +305,8 @@
 	width: 542px;
 	min-height: 112px;
 	background-color: transparent;
-	line-height: 56px;
 	font-size: 58px;
+	line-height: 56px;
 	font-family: chunk, serif;
 	font-weight: 400;
 	position: relative;
@@ -336,9 +321,9 @@
 	width: 530px;
 	min-height: 1200px;
 	background-color: transparent;
-	line-height: 28px;
-	font-size: 18px;
 	color: #1E1E1E;
+	font-size: 18px;
+	line-height: 28px;
 	margin-left: 103px;
 	margin-top: 20px;
 	position: relative;
@@ -402,8 +387,8 @@
 	width: 671px;
 	min-height: 76px;
 	background-color: transparent;
-	line-height: 56px;
 	font-size: 58px;
+	line-height: 56px;
 	font-family: chunk, serif;
 	font-weight: 400;
 	position: relative;
@@ -425,9 +410,9 @@
 	width: 530px;
 	min-height: 1200px;
 	background-color: transparent;
-	line-height: 28px;
-	font-size: 18px;
 	color: #1E1E1E;
+	font-size: 18px;
+	line-height: 28px;
 	margin-left: 103px;
 	margin-top: 20px;
 	position: relative;
@@ -485,9 +470,9 @@
 	width: 530px;
 	min-height: 1004px;
 	background-color: transparent;
-	line-height: 28px;
-	font-size: 18px;
 	color: #1E1E1E;
+	font-size: 18px;
+	line-height: 28px;
 	margin-left: 103px;
 	margin-top: 116px;
 	position: relative;

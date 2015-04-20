@@ -1,31 +1,7 @@
-<manifest alg="2" build="11" opt="false" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x,2x" timestamp="1429481305905">
+<manifest alg="2" build="11" opt="false" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x,2x" timestamp="1429493086439">
   <folder name="css">
     <file name="site_global.css" crc="422415861"/>
-    <file name="master_a-master.css" crc="4262535816" ref="index"/>
-    <file name="index.css" crc="4132021385" ref="index"/>
-  </folder>
-  <folder name="assets">
-    <folder name="pennten_navbar">
-      <folder name="edge_includes">
-        <file name="edge.5.0.0.min.js" crc="430951529" mt="1429480988000"/>
-      </folder>
-      <folder name="images">
-        <file name="photos.png" crc="71726212" mt="1429480988000"/>
-        <file name="Poster.png" crc="40057339" mt="1429480988000"/>
-        <file name="back.svg" crc="479246227" mt="1429480988000"/>
-        <file name="background.svg" crc="380625964" mt="1429480988000"/>
-        <file name="home.svg" crc="3910397101" mt="1429480988000"/>
-        <file name="names.svg" crc="1216981" mt="1429480988000"/>
-        <file name="pennten_logo.svg" crc="419272398" mt="1429480988000"/>
-        <file name="pennten_logo2.svg" crc="419272398" mt="1429480988000"/>
-        <file name="people.svg" crc="250955457" mt="1429480988000"/>
-        <file name="people2.svg" crc="446138076" mt="1429480988000"/>
-        <file name="pic.svg" crc="4098367804" mt="1429480988000"/>
-        <file name="shadow.svg" crc="37291981" mt="1429480988000"/>
-      </folder>
-      <file name="pennten_navbar_edge.js" crc="4131913469" mt="1429480988000"/>
-      <file name="pennten_navbar.html" crc="3966593836" mt="1429480988000"/>
-    </folder>
+    <file name="index.css" crc="108668328" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="3880902115" ref="index"/>
@@ -69,5 +45,5 @@
     <file name="pasted svg 104x1054.svg" crc="57392129" ref="index"/>
     <file name="pasted svg 104x105_poster_4.png" crc="499556600" ref="index"/>
   </folder>
-  <file name="index.html" crc="4087373651" mt="1429481018690" redirect="true"/>
+  <file name="index.html" crc="74716198" mt="1429493033967" redirect="true"/>
 </manifest>
