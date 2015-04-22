@@ -29,7 +29,7 @@ header {
 	padding:10px;
 	width:80%;
 	margin:auto;
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: 300;
 }
 
@@ -37,7 +37,7 @@ header {
 	background-color:black;
 	color:white;
 	padding:10px;
-	font-size: 30px;
+	font-size: 25px;
 	width:80%;
 	margin:auto;
 	font-weight: 300;
@@ -51,7 +51,7 @@ header {
 
 .best-blurb {
 	text-align: justify;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .best-info-text {
