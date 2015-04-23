@@ -55,7 +55,6 @@ body {
 	height:100%;
     background:url(https://s3.amazonaws.com/media.dpn/46209_chrisf.jpg);
   	background-size:cover;
-  	opacity: 0.4;
 }
 
 #box-denzel  {  
@@ -74,7 +73,6 @@ body {
 	height:100%;
     background:url(https://s3.amazonaws.com/media.dpn/46156_danf.jpg);
   	background-size:cover;
-  	opacity: 0.4;
 }
 
 #box-shadrack  {  
@@ -102,7 +100,6 @@ body {
 	height:100%;
     background:url(Allyson.jpg);
   	background-size:cover;
-  	opacity: 0.4;
 }
 
 #box-sayid  {  
