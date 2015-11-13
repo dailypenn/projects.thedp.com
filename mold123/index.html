@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 	<script type='text/javascript'>
 	var googletag = googletag || {};
 	googletag.cmd = googletag.cmd || [];
@@ -41,6 +42,43 @@
     <link href="http://d1q35ni5859stt.cloudfront.net/20151103Q1xMLLXjhg/dist/img/favicon.ico" rel="shortcut icon">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+=======
+
+<link rel="stylesheet" type="text/css" href="style2.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+<div class="header">
+  <!-- CONTAINS BACKGROUND IMAGE -->
+</div>
+
+<div class ="content">
+  <h1> From demolition to collaboration </h1>
+  <div id="byLine">
+    Sixty years ago, Penn&#39s approach to development was all about self-interest. Now, working with the
+    neighborhood is essential to the University&#39s construction stratsdfasdegy.<br>
+    <br>
+    <div style="color: #424242"> By Sophia Witte</div> 
+  </div>
+
+  <script>
+
+      //Every resize of window
+      // $(window).resize(sizeContent);
+
+      //Dynamically assign height
+      function sizeContent() {
+      var newHeight = $("html").height() + "px";
+      $(".header").css("height", newHeight);
+      $(".content").css("top", newHeight);
+      }
+
+      $(window).scroll(function(){
+          $(".header").css("opacity", 1 - $(window).scrollTop() / 500);
+      });
+  </script>
+
+>>>>>>> 4225a84744fdab16568a3878def673f64f650aea
 </head>
 
 <body style= "background: #ffffff; background-size: cover; background-repeat: no-repeat;">
