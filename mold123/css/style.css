@@ -39,6 +39,16 @@ h2 {
 	margin-left: -20%;
 }
 
+#container.div {
+	display:inline-block;
+	vertical-align:top;
+	text-align:center; 
+	width: 10%; 
+	float: left; 
+	display:inline-block;
+	vertical-align:top;
+}
+
 #disqus_thread {
 	display:block;
 	margin-left: 15%;
