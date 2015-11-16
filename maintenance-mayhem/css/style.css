@@ -10,7 +10,10 @@ p {
 	min-width:400px;
 	max-width:800px;
 }
-
+p.divider{
+	font-family: 'Maven Pro', sans-serif;
+	text-align:center;
+}
 h1 {
 	font-family: 'Prblata', serif;
 	font-size:1x;
@@ -39,6 +42,7 @@ td.pic {
 	word-wrap:break-word;
 	padding: 10px;
 	border-left: solid;
+	border-color: black;
 	border-width: 0.5em;
 }
 tr {
@@ -64,7 +68,7 @@ blockquote {
 	padding-left: 15%; 
 	padding-right: 35%;
 	font-size:25px;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Maven Pro', sans-serif;
 	font-weight:bold;
 	min-width:400px;
 }
