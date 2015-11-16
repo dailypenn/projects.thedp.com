@@ -3,17 +3,40 @@ body {
 	font-family: 'Crimson Text', serif;
 	font-size:18px;
 }
-p {
-	margin-left: 15%;
-}
+
 h1 {
 	font-family: 'Prblata', serif;
 	font-size:1x;
 	color: black;
 }
 h2 {
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Andale Mono', sans-serif;
 	font-size:40px;
+	margin-right: 20%;
+}
+
+img.sectiontop {
+	max-height:200px;
+	height:auto; 
+	width:100%;
+	display:block;
+}
+
+td {
+	text-align:center; 
+	word-wrap:break-word;
+
+}
+tr {
+	font-size:18px;
+	font-family: 'Andale Mono', sans-serif;
+	
+}
+table {
+	font-family: 'Andale Mono';
+	table-layout:fixed;
+	margin-top:15px;
+
 }
 
 .navbar {
@@ -37,6 +60,12 @@ h2 {
 .mainphoto {
 	width:170%;
 	margin-left: -20%;
+}
+
+.container{
+	padding-left: 15%; 
+	padding-right: 40%; 
+	position: relative
 }
 
 #container.div {
