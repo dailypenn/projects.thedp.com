@@ -191,3 +191,20 @@ footer {
     .nav-bar .flex-container img {
       padding-top: 130px; }
 
+.stories {
+  width: 75%;
+  margin-top: 35px;
+  padding: 10px;
+}
+
+.stories .row .col-sm-3 {
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: -1px;
+}
+
+.stories .row .col-sm-3 img {
+    width: 100%;
+}
