@@ -1,0 +1,194 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,300);
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css);
+
+
+body {
+    padding-top: 40px;
+    background-color: #f5f5f5;
+}
+
+header {
+    margin-bottom: 35px;
+}
+
+footer {
+  margin-bottom: 35px;
+  color: #555;
+}
+
+footer a {
+  color: #0FA0CE;
+}
+
+.logo-area:hover {
+    color: white;
+    position: relative;
+    margin-top: -5px;
+    box-shadow: 0px 5px 25px #aaa;
+}
+
+/* NAV */
+nav {
+    padding-top: 14px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+
+input {
+    display: none !important; 
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 5px 10px;
+  font-weight: 400;
+  text-align: center;
+  color: #ccc;
+  border: 1px solid transparent;
+}
+
+label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+/*label[for*='1']:before { content: '\f1cb'; }
+label[for*='2']:before { content: '\f17d'; }
+label[for*='3']:before { content: '\f16b'; }
+label[for*='4']:before { content: '\f1a9'; }*/
+
+label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: #555;
+  border: 1px solid #ccc;
+  border-top: 2px solid #8d0101;
+  border-bottom: 1px solid #f5f5f5;
+  box-shadow: 0px -6px 10px #ccc;
+}
+
+@media screen and (max-width: 1020px) {
+  label {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  label {
+    padding: 2px;
+  }
+}
+
+/* Yuck*/
+
+.nine .one-half { /* For Tables */
+    margin-left: 2%;
+}
+
+#content1 .nine {
+    margin: 0;
+}
+
+/* General Classes */
+.inline {
+    display: inline;
+}
+
+.text-highlight {
+    font-weight: 400;
+    color: #8d0101;
+}
+
+.logo-area {
+    background-color: #8d0101;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #F1F1F1;
+    height: 50px;
+    padding-top: 7px;
+    -webkit-transition: 200ms all ease;
+            transition: 200ms all ease;
+}
+
+.logo-area img {
+    vertical-align: middle;
+    width: 50px;
+}
+
+.total {
+    border-top: 1px solid #E1E1E1;
+    margin-top: 31rem;
+    padding-top: 2rem;
+}
+
+.dp-thumbs {
+  margin-left: 7%;
+}
+
+.dp-thumbs img {
+    width: 80%;
+    position: relative;
+    box-shadow: 0px 0px 15px #aaa;
+}
+
+.dp-thumbs .thumb:not(:first-child) {
+    top: -175px;
+}
+
+.dp-thumbs .thumb-1 {
+    -webkit-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+            transform: rotate(2deg);
+}
+
+.dp-thumbs .thumb-2 {
+    -webkit-transform: rotate(4deg);
+        -ms-transform: rotate(4deg);
+            transform: rotate(4deg);
+}
+
+.dp-thumbs .thumb-3 {
+    top: -350px !important;
+    -webkit-transform: rotate(-6deg);
+        -ms-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+}
+
+.dp-thumbs .thumb-4 {
+    top: -475px !important;
+    -webkit-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+            transform: rotate(2deg);
+}
+
+.dp-thumbs .thumb-5 {
+    top: -600px !important;
+    -webkit-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+            transform: rotate(3deg);
+
+}
+
+.dp-text-1 {
+  margin-left: -4% !important;
+}
+
+.shaddow {
+    box-shadow: 0px 0px 15px #aaa;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.nine.push-left {
+  margin-left: 25px !important;
+}
