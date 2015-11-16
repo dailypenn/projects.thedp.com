@@ -1,3 +1,5 @@
+import 
+
 body {
 	color:black;
 	font-family: 'Crimson Text', serif;
@@ -29,7 +31,7 @@ img.sectiontop {
 
 td.title {
 	padding: 0px;
-	
+	font-family: 'Maven Pro', sans-serif;
 }
 
 td.pic {
@@ -41,7 +43,7 @@ td.pic {
 }
 tr {
 	font-size:22px;
-	font-family: 'Andale Mono', sans-serif;
+
 	
 }
 table {
@@ -59,12 +61,12 @@ table {
 }
 
 blockquote {
-	text-align: center;
-	padding-left: 20%; 
-	padding-right: 20%; 
+	padding-left: 15%; 
+	padding-right: 35%;
 	font-size:25px;
 	font-family: 'Roboto Slab', serif;
 	font-weight:bold;
+	min-width:400px;
 }
 
 #container.div {
