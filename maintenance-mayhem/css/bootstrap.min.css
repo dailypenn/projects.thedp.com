@@ -209,7 +209,7 @@
      }
      pre,
      blockquote {
-         page-break-inside: avoid
+        
      }
      thead {
          display: table-header-group

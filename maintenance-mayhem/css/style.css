@@ -57,12 +57,13 @@ table {
 }
 blockquote {
   padding-left: 8%;
-  padding-right: 35%;
+  padding-right: 20%;
   font-size: 25px;
   font-family: 'Maven Pro', sans-serif;
   font-weight: bold;
   min-width: 450px;
-  align:center;
+  
+  width: 700px;
 }
 #container.div {
   display: inline-block;
