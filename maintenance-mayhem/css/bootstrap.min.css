@@ -1275,8 +1275,8 @@
      text-transform: uppercase
  }
  blockquote {
-     padding: 10px 20px;
-     margin: 0 0 20px;
+    
+
      font-size: 17.5px;
  }
  blockquote p:last-child,
@@ -1299,9 +1299,9 @@
  }
  .blockquote-reverse,
  blockquote.pull-right {
-     padding-right: 15px;
+     
      padding-left: 0;
-     text-align: right;
+     
  }
  .blockquote-reverse footer:before,
  blockquote.pull-right footer:before,
