@@ -20,7 +20,8 @@ h1 {
 h2 {
   font-family: 'Andale Mono', sans-serif;
   font-size: 40px;
-  margin-right: 20%;
+  margin-left: 10%;
+  max-width: 600px;
 }
 img.sectiontop {
   max-height: 200px;
