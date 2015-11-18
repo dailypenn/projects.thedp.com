@@ -209,7 +209,7 @@
      }
      pre,
      blockquote {
-         page-break-inside: avoid
+        
      }
      thead {
          display: table-header-group
@@ -956,7 +956,6 @@
      margin-top: 20px;
      margin-bottom: 20px;
      border: 0;
-     margin-left: 15%;
      border-top: 1px solid #999999
  }
  .sr-only {
@@ -1076,7 +1075,6 @@
  h2,
  .h2 {
      font-size: 30px;
-     text-align: center;
  }
  h3,
  .h3 {
@@ -1095,7 +1093,7 @@
      font-size: 12px
  }
  p {
-     margin: 0 0 10px
+
  }
  .lead {
      margin-bottom: 20px;
@@ -1276,8 +1274,8 @@
      text-transform: uppercase
  }
  blockquote {
-     padding: 10px 20px;
-     margin: 0 0 20px;
+    
+
      font-size: 17.5px;
  }
  blockquote p:last-child,
@@ -1300,9 +1298,9 @@
  }
  .blockquote-reverse,
  blockquote.pull-right {
-     padding-right: 15px;
+     
      padding-left: 0;
-     text-align: right;
+     
  }
  .blockquote-reverse footer:before,
  blockquote.pull-right footer:before,
