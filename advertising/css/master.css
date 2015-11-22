@@ -223,3 +223,7 @@ input:checked + label {
 .leaderboard {
   margin-bottom: 20px;
 }
+
+#content1 .row {
+  padding-bottom: 25px;
+}
