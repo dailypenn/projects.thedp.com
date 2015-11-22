@@ -192,3 +192,7 @@ input:checked + label {
 .nine.push-left {
   margin-left: 25px !important;
 }
+
+.leaderboard {
+  margin-bottom: 20px;
+}
