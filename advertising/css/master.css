@@ -25,6 +25,7 @@ footer a {
     color: white;
     position: relative;
     margin-top: -5px;
+    margin-bottom: 5px;
     box-shadow: 0px 5px 25px #aaa;
 }
 
@@ -77,13 +78,22 @@ input:checked + label {
 
 @media screen and (max-width: 1020px) {
   label {
-    font-size: 60%;
+    font-size: 75%;
   }
 }
 
 @media screen and (max-width: 400px) {
   label {
     padding: 2px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .return-text {
+    display: none;
+  }
+  .leaderboard {
+    overflow: hidden;
   }
 }
 
@@ -189,6 +199,31 @@ input:checked + label {
     width: 100%;
 }
 
+.img-responsive.special {
+    width: 75%;
+}
+
+.special:hover {
+    /*color: inherit;*/
+    position: relative;
+    margin-top: -5px;
+    margin-bottom: 5px;
+    box-shadow: 0px 5px 25px #aaa;
+}
+
+.special {
+  -webkit-transition: 200ms all ease;
+          transition: 200ms all ease;
+}
+
 .nine.push-left {
   margin-left: 25px !important;
+}
+
+.leaderboard {
+  margin-bottom: 20px;
+}
+
+#content1 .row {
+  padding-bottom: 25px;
 }
