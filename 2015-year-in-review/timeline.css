@@ -16,7 +16,9 @@ footer {
   padding-bottom: 20px;
   color: #666;
 }
-
+.hero {
+  width: 100%;
+}
 .timeline {
   list-style: none;
   padding: 20px 0 20px;
