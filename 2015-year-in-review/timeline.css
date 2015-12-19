@@ -171,9 +171,11 @@ footer {
 }
 
 li {
-  margin-bottom: -255px !important;
+  margin-bottom: -215px !important;
 }
-
+li:nth-child(1) {
+  margin-bottom: -170px !important;
+}
 li:last-child {
   margin-bottom: 20px !important;
 }
