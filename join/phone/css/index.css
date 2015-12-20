@@ -10,8 +10,8 @@
 
 .version.index /* version checker */
 {
-	color: #0000F3;
-	background-color: #69C751;
+	color: #00001A;
+	background-color: #4033C8;
 }
 
 @-ms-viewport
@@ -48,7 +48,7 @@
 {
 	z-index: 1;
 	width: 380px;
-	min-height: 1907.9499999999998px;
+	min-height: 1907.6902519386372px;
 	background-image: none;
 	border-style: none;
 	border-color: #000000;
@@ -56,9 +56,16 @@
 	padding-bottom: 0px;
 }
 
+#page_position_content
+{
+	margin-bottom: -20px;
+	width: 0.01px;
+}
+
 #u726
 {
 	z-index: 72;
+	min-height: 61px;
 	border-style: none;
 	border-color: transparent;
 	background-color: #771015;
@@ -68,8 +75,6 @@
 #u1467
 {
 	z-index: 354;
-	width: 339px;
-	min-height: 48px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: 13px;
@@ -79,7 +84,7 @@
 #u726-bw
 {
 	z-index: 72;
-	height: 61px;
+	min-height: 61px;
 }
 
 #u724
@@ -97,7 +102,6 @@
 	min-height: 222px;
 	margin-top: -1px;
 	margin-bottom: -1px;
-	height: 222px;
 }
 
 #u735-4
@@ -107,8 +111,8 @@
 	min-height: 24px;
 	background-color: transparent;
 	line-height: 22px;
-	font-size: 18px;
 	text-align: left;
+	font-size: 18px;
 	font-weight: bold;
 	margin-left: 24px;
 	margin-top: 39px;
@@ -131,9 +135,9 @@
 	width: 329px;
 	min-height: 318px;
 	background-color: transparent;
+	text-align: left;
 	font-size: 18px;
 	line-height: 22px;
-	text-align: left;
 	margin-left: 24px;
 	margin-top: 9px;
 	position: relative;
@@ -142,6 +146,7 @@
 #u743
 {
 	z-index: 21;
+	min-height: 430.8000000000002px;
 	border-style: none;
 	border-color: transparent;
 	background-color: #771115;
@@ -187,8 +192,8 @@
 	width: 311px;
 	min-height: 23px;
 	background-color: transparent;
-	color: #FFFFFF;
 	text-align: center;
+	color: #FFFFFF;
 	margin-left: 21px;
 	margin-top: 40px;
 	position: relative;
@@ -201,8 +206,8 @@
 	min-height: 79px;
 	background-color: transparent;
 	line-height: 21px;
-	font-size: 16px;
 	text-align: center;
+	font-size: 16px;
 	margin-left: 6px;
 	margin-top: 7px;
 	position: relative;
@@ -222,8 +227,8 @@
 #u743-bw
 {
 	z-index: 21;
+	min-height: 430.8000000000002px;
 	margin-top: 32px;
-	height: 431px;
 }
 
 #u1466-4
@@ -232,8 +237,8 @@
 	width: 337px;
 	min-height: 20px;
 	background-color: transparent;
-	color: #000000;
 	text-align: left;
+	color: #000000;
 	font-weight: bold;
 	margin-left: 10px;
 	margin-top: 77px;
@@ -263,7 +268,7 @@
 {
 	z-index: 76;
 	height: 52px;
-	width: 381px;
+	width: 382px;
 	vertical-align: top;
 	position: relative;
 	background: url("../../images/u994.png") no-repeat 0px 0px;
@@ -277,19 +282,19 @@
 .hidpi #u994
 {
 	background-image: url("../../images/u994_2x.png");
-	background-size: 381px 52px;
+	background-size: 382px 52px;
 }
 
 .hidpi #u994:active
 {
 	background-image: url("../../images/u994-m_2x.png");
-	background-size: 381px 52px;
+	background-size: 382px 52px;
 }
 
 .hidpi #u994.AccordionPanelTabOpen
 {
 	background-image: url("../../images/u994-a_2x.png");
-	background-size: 380px 51px;
+	background-size: 382px 51px;
 }
 
 #u995
@@ -300,6 +305,7 @@
 	border-color: transparent;
 	background-color: transparent;
 	padding-bottom: 4px;
+	top: -1px;
 	position: relative;
 }
 
@@ -334,17 +340,15 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #999999;
 	font-size: 25px;
 	line-height: 25px;
-	color: #999999;
 	position: relative;
 }
 
 #u1015-4:hover
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -360,8 +364,6 @@
 #u1015-4:active
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -386,9 +388,9 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: #FFFFFF;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255,255,255,0.2);
 	position: relative;
-	-pie-background: rgba(255, 255, 255, 0.2);
+	-pie-background: rgba(255,255,255,0.2);
 }
 
 #u1211
@@ -401,7 +403,7 @@
 	position: relative;
 	margin-right: -10000px;
 	background: #FFFFFF url("../../images/news-mobile-u1211-fr.png") no-repeat left top;
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: rgba(255,255,255,0.15);
 	background-size: cover;
 }
 
@@ -413,10 +415,10 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	line-height: 20px;
-	font-size: 16px;
 	color: #000000;
+	line-height: 20px;
 	text-align: left;
+	font-size: 16px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: 29px;
@@ -443,9 +445,9 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #999999;
 	line-height: 25px;
 	font-size: 25px;
-	color: #999999;
 	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 	position: relative;
 }
@@ -453,8 +455,6 @@
 #u1001-4:hover
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -470,8 +470,6 @@
 #u1001-4:active
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -487,9 +485,7 @@
 #u1001-4.AccordionPanelTabOpen
 {
 	-pie-box-shadow: 6px 6px 8px #F2F2F2;
-	-moz-box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.05);
-	-webkit-box-shadow: 6px 6px 8px -1px rgba(0, 0, 0, 0.05);
-	box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.05);
+	box-shadow: 6px 6px 8px rgba(0,0,0,0.05);
 	border-style: none;
 	border-color: transparent;
 	background-color: #FFFFFF;
@@ -507,9 +503,9 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: #FFFFFF;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255,255,255,0.2);
 	position: relative;
-	-pie-background: rgba(255, 255, 255, 0.2);
+	-pie-background: rgba(255,255,255,0.2);
 }
 
 #u1219
@@ -522,7 +518,7 @@
 	position: relative;
 	margin-right: -10000px;
 	background: #FFFFFF url("../../images/copy-mobile-u1219-fr.png") no-repeat left top;
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: rgba(255,255,255,0.15);
 	background-size: cover;
 }
 
@@ -534,10 +530,10 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	line-height: 20px;
-	font-size: 16px;
 	color: #000000;
+	line-height: 20px;
 	text-align: left;
+	font-size: 16px;
 	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 	position: relative;
 	margin-right: -10000px;
@@ -565,17 +561,15 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #999999;
 	font-size: 25px;
 	line-height: 25px;
-	color: #999999;
 	position: relative;
 }
 
 #u1033-4:hover
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -591,8 +585,6 @@
 #u1033-4:active
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -612,9 +604,9 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: #FFFFFF;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255,255,255,0.2);
 	position: relative;
-	-pie-background: rgba(255, 255, 255, 0.2);
+	-pie-background: rgba(255,255,255,0.2);
 }
 
 #u1227
@@ -627,7 +619,7 @@
 	position: relative;
 	margin-right: -10000px;
 	background: #FFFFFF url("../../images/news-mobile-u1211-fr.png") no-repeat left top;
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: rgba(255,255,255,0.15);
 	background-size: cover;
 }
 
@@ -639,10 +631,10 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	line-height: 20px;
-	font-size: 16px;
 	color: #484848;
+	line-height: 20px;
 	text-align: left;
+	font-size: 16px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: 17px;
@@ -674,17 +666,15 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #999999;
 	font-size: 25px;
 	line-height: 25px;
-	color: #999999;
 	position: relative;
 }
 
 #u1019-4:hover
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -700,8 +690,6 @@
 #u1019-4:active
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -721,9 +709,9 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: #FFFFFF;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255,255,255,0.2);
 	position: relative;
-	-pie-background: rgba(255, 255, 255, 0.2);
+	-pie-background: rgba(255,255,255,0.2);
 }
 
 #u1229
@@ -736,7 +724,7 @@
 	position: relative;
 	margin-right: -10000px;
 	background: #FFFFFF url("../../images/social-mobile-u1229-fr.png") no-repeat left top;
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: rgba(255,255,255,0.15);
 	background-size: cover;
 }
 
@@ -746,10 +734,10 @@
 	width: 338px;
 	min-height: 293px;
 	background-color: transparent;
-	line-height: 20px;
-	font-size: 16px;
 	color: #484848;
+	line-height: 20px;
 	text-align: left;
+	font-size: 16px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: 26px;
@@ -776,17 +764,15 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #999999;
 	font-size: 25px;
 	line-height: 25px;
-	color: #999999;
 	position: relative;
 }
 
 #u1007-4:hover
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -802,8 +788,6 @@
 #u1007-4:active
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -823,10 +807,10 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: #FFFFFF;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255,255,255,0.2);
 	padding-bottom: 1px;
 	position: relative;
-	-pie-background: rgba(255, 255, 255, 0.2);
+	-pie-background: rgba(255,255,255,0.2);
 }
 
 #u1009-14
@@ -836,8 +820,8 @@
 	min-height: 429px;
 	background-color: transparent;
 	line-height: 20px;
-	font-size: 16px;
 	text-align: left;
+	font-size: 16px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: 14px;
@@ -859,7 +843,7 @@
 	position: relative;
 	margin-right: -10000px;
 	background: #FFFFFF url("../../images/photo-mobile-u1250-fr.png") no-repeat left top;
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: rgba(255,255,255,0.15);
 	background-size: cover;
 }
 
@@ -883,17 +867,15 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #999999;
 	font-size: 25px;
 	line-height: 25px;
-	color: #999999;
 	position: relative;
 }
 
 #u1005-4:hover
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -909,8 +891,6 @@
 #u1005-4:active
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -930,9 +910,9 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: #FFFFFF;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255,255,255,0.2);
 	position: relative;
-	-pie-background: rgba(255, 255, 255, 0.2);
+	-pie-background: rgba(255,255,255,0.2);
 }
 
 #u1257
@@ -946,7 +926,7 @@
 	margin-right: -10000px;
 	left: 1px;
 	background: #FFFFFF url("../../images/copy-mobile-u1219-fr.png") no-repeat left top;
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: rgba(255,255,255,0.15);
 	background-size: cover;
 }
 
@@ -956,10 +936,10 @@
 	width: 338px;
 	min-height: 225px;
 	background-color: transparent;
-	line-height: 20px;
-	font-size: 16px;
 	color: #484848;
+	line-height: 20px;
 	text-align: left;
+	font-size: 16px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: 28px;
@@ -986,17 +966,15 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #999999;
 	font-size: 25px;
 	line-height: 25px;
-	color: #999999;
 	position: relative;
 }
 
 #u1023-4:hover
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -1012,8 +990,6 @@
 #u1023-4:active
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -1033,9 +1009,9 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: #FFFFFF;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255,255,255,0.2);
 	position: relative;
-	-pie-background: rgba(255, 255, 255, 0.2);
+	-pie-background: rgba(255,255,255,0.2);
 }
 
 #u1258
@@ -1049,7 +1025,7 @@
 	margin-right: -10000px;
 	left: 1px;
 	background: #FFFFFF url("../../images/video-camera-mobile-u1258-fr.png") no-repeat left top;
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: rgba(255,255,255,0.15);
 	background-size: cover;
 }
 
@@ -1059,10 +1035,10 @@
 	width: 338px;
 	min-height: 229px;
 	background-color: transparent;
-	line-height: 20px;
-	font-size: 16px;
 	color: #484848;
+	line-height: 20px;
 	text-align: left;
+	font-size: 16px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: 20px;
@@ -1089,17 +1065,15 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #999999;
 	font-size: 25px;
 	line-height: 25px;
-	color: #999999;
 	position: relative;
 }
 
 #u1035-4:hover
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -1115,8 +1089,6 @@
 #u1035-4:active
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -1136,9 +1108,9 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: #FFFFFF;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255,255,255,0.2);
 	position: relative;
-	-pie-background: rgba(255, 255, 255, 0.2);
+	-pie-background: rgba(255,255,255,0.2);
 }
 
 #u1265
@@ -1152,7 +1124,7 @@
 	margin-right: -10000px;
 	left: 1px;
 	background: #FFFFFF url("../../images/web-mobile-u1265-fr.png") no-repeat left top;
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: rgba(255,255,255,0.15);
 	background-size: cover;
 }
 
@@ -1163,8 +1135,8 @@
 	min-height: 315px;
 	background-color: transparent;
 	line-height: 20px;
-	font-size: 16px;
 	text-align: left;
+	font-size: 16px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: 26px;
@@ -1191,17 +1163,15 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #999999;
 	font-size: 25px;
 	line-height: 25px;
-	color: #999999;
 	position: relative;
 }
 
 #u1029-4:hover
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -1217,8 +1187,6 @@
 #u1029-4:active
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -1238,9 +1206,9 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: #FFFFFF;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255,255,255,0.2);
 	position: relative;
-	-pie-background: rgba(255, 255, 255, 0.2);
+	-pie-background: rgba(255,255,255,0.2);
 }
 
 #u1028-7
@@ -1249,10 +1217,10 @@
 	width: 338px;
 	min-height: 303px;
 	background-color: transparent;
-	line-height: 20px;
-	font-size: 16px;
 	color: #000000;
+	line-height: 20px;
 	text-align: left;
+	font-size: 16px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: 16px;
@@ -1271,7 +1239,7 @@
 	margin-top: 1px;
 	left: 1px;
 	background: #FFFFFF url("../../images/street-u1272-fr.png") no-repeat left top;
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: rgba(255,255,255,0.15);
 	background-size: cover;
 }
 
@@ -1300,17 +1268,15 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #999999;
 	font-size: 25px;
 	line-height: 25px;
-	color: #999999;
 	position: relative;
 }
 
 #u1013-4:hover
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -1326,8 +1292,6 @@
 #u1013-4:active
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-width: 1px;
 	border-style: solid;
@@ -1343,9 +1307,7 @@
 #u1015-4.AccordionPanelTabOpen,#u1033-4.AccordionPanelTabOpen,#u1019-4.AccordionPanelTabOpen,#u1007-4.AccordionPanelTabOpen,#u1005-4.AccordionPanelTabOpen,#u1023-4.AccordionPanelTabOpen,#u1035-4.AccordionPanelTabOpen,#u1029-4.AccordionPanelTabOpen,#u1013-4.AccordionPanelTabOpen
 {
 	-pie-box-shadow: 6px 6px 8px #F2F2F2;
-	-moz-box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.05);
-	-webkit-box-shadow: 6px 6px 8px -1px rgba(0, 0, 0, 0.05);
-	box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.05);
+	box-shadow: 6px 6px 8px rgba(0,0,0,0.05);
 	border-style: none;
 	border-color: transparent;
 	background-color: #FFFFFF;
@@ -1371,9 +1333,9 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: #FFFFFF;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255,255,255,0.2);
 	position: relative;
-	-pie-background: rgba(255, 255, 255, 0.2);
+	-pie-background: rgba(255,255,255,0.2);
 }
 
 #u1276
@@ -1387,7 +1349,7 @@
 	margin-right: -10000px;
 	left: 1px;
 	background: #FFFFFF url("../../images/underthebutton-mobile-u1276-fr.png") no-repeat left top;
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: rgba(255,255,255,0.15);
 	background-size: cover;
 }
 
@@ -1398,8 +1360,8 @@
 	min-height: 607px;
 	background-color: transparent;
 	line-height: 20px;
-	font-size: 16px;
 	text-align: left;
+	font-size: 16px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: 23px;
@@ -1429,11 +1391,16 @@
 	position: relative;
 }
 
+#u989_position_content
+{
+	margin-bottom: -1px;
+}
+
 #u992
 {
 	z-index: 258;
 	height: 52px;
-	width: 381px;
+	width: 382px;
 	vertical-align: top;
 	position: relative;
 	background: url("../../images/u992.png") no-repeat 0px 0px;
@@ -1447,19 +1414,19 @@
 .hidpi #u992
 {
 	background-image: url("../../images/u992_2x.png");
-	background-size: 381px 52px;
+	background-size: 382px 52px;
 }
 
 .hidpi #u992:active
 {
 	background-image: url("../../images/u992-m_2x.png");
-	background-size: 381px 52px;
+	background-size: 382px 52px;
 }
 
 .hidpi #u992.AccordionPanelTabOpen
 {
 	background-image: url("../../images/u992-a_2x.png");
-	background-size: 380px 51px;
+	background-size: 382px 51px;
 }
 
 #u990
@@ -1469,6 +1436,7 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
+	top: -1px;
 	position: relative;
 }
 
@@ -1502,9 +1470,9 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #999999;
 	line-height: 25px;
 	font-size: 25px;
-	color: #999999;
 	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 	position: relative;
 }
@@ -1512,26 +1480,24 @@
 #u1389-4:hover
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: #F2F2F2;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 25px;
+	width: 371px;
 	margin: 0px;
 }
 
 #u1389-4:active
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: #F2F2F2;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 25px;
+	width: 371px;
 	margin: 0px;
 }
 
@@ -1557,7 +1523,7 @@
 	margin-right: -10000px;
 	margin-top: -1px;
 	background: #FFFFFF url("../../images/ad-web-u1414-fr.png") no-repeat left top;
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255,255,255,0.1);
 	background-size: cover;
 }
 
@@ -1569,10 +1535,10 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	line-height: 20px;
-	font-size: 16px;
 	color: #6B6B6B;
+	line-height: 20px;
 	text-align: left;
+	font-size: 16px;
 	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 	position: relative;
 	margin-right: -10000px;
@@ -1599,35 +1565,33 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #999999;
 	font-size: 25px;
 	line-height: 25px;
-	color: #999999;
 	position: relative;
 }
 
 #u1382-4:hover
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: #F2F2F2;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 25px;
+	width: 371px;
 	margin: 0px;
 }
 
 #u1382-4:active
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: #F2F2F2;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 25px;
+	width: 371px;
 	margin: 0px;
 }
 
@@ -1649,12 +1613,12 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: #EADBDB;
-	background-color: rgba(119, 16, 21, 0.15);
+	background-color: rgba(119,16,21,0.15);
 	padding-bottom: 21px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: -1px;
-	-pie-background: rgba(119, 16, 21, 0.15);
+	-pie-background: rgba(119,16,21,0.15);
 }
 
 #u1411-7
@@ -1665,10 +1629,10 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	line-height: 20px;
-	font-size: 16px;
 	color: #6B6B6B;
+	line-height: 20px;
 	text-align: left;
+	font-size: 16px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: 17px;
@@ -1694,35 +1658,33 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #999999;
 	font-size: 25px;
 	line-height: 25px;
-	color: #999999;
 	position: relative;
 }
 
 #u1403-4:hover
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: #F2F2F2;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 25px;
+	width: 371px;
 	margin: 0px;
 }
 
 #u1403-4:active
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: #F2F2F2;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 25px;
+	width: 371px;
 	margin: 0px;
 }
 
@@ -1741,15 +1703,15 @@
 {
 	z-index: 294;
 	width: 380px;
-	height: 292px;
 	border-style: none;
 	border-color: transparent;
+	padding-bottom: 26px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: -1px;
 	left: -1px;
 	background: #FFFFFF url("../../images/analytics-mobile-u1421-fr.png") no-repeat left top;
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255,255,255,0.1);
 	background-size: cover;
 }
 
@@ -1761,15 +1723,15 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	line-height: 20px;
-	font-size: 16px;
 	color: #6B6B6B;
+	line-height: 20px;
 	text-align: left;
+	font-size: 16px;
 	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 	position: relative;
 	margin-right: -10000px;
-	margin-top: 25px;
-	left: 22px;
+	margin-top: 26px;
+	left: 23px;
 }
 
 #u1383
@@ -1791,35 +1753,33 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #999999;
 	font-size: 25px;
 	line-height: 25px;
-	color: #999999;
 	position: relative;
 }
 
 #u1384-4:hover
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: #F2F2F2;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 25px;
+	width: 371px;
 	margin: 0px;
 }
 
 #u1384-4:active
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: #F2F2F2;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 25px;
+	width: 371px;
 	margin: 0px;
 }
 
@@ -1846,7 +1806,7 @@
 	margin-top: -1px;
 	left: -1px;
 	background: #FFFFFF url("../../images/finance2-mobile-u1430-fr.png") no-repeat left top;
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255,255,255,0.1);
 	background-size: cover;
 }
 
@@ -1858,10 +1818,10 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	line-height: 20px;
-	font-size: 16px;
 	color: #6B6B6B;
+	line-height: 20px;
 	text-align: left;
+	font-size: 16px;
 	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 	position: relative;
 	margin-right: -10000px;
@@ -1888,35 +1848,33 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #999999;
 	font-size: 25px;
 	line-height: 25px;
-	color: #999999;
 	position: relative;
 }
 
 #u1398-4:hover
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: #F2F2F2;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 25px;
+	width: 371px;
 	margin: 0px;
 }
 
 #u1398-4:active
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: #F2F2F2;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 25px;
+	width: 371px;
 	margin: 0px;
 }
 
@@ -1943,7 +1901,7 @@
 	margin-top: -1px;
 	left: -1px;
 	background: #FFFFFF url("../../images/innovation-mobile-u1432-fr.png") no-repeat left top;
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: rgba(255,255,255,0.15);
 	background-size: cover;
 }
 
@@ -1955,10 +1913,10 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	line-height: 20px;
-	font-size: 16px;
 	color: #6B6B6B;
+	line-height: 20px;
 	text-align: left;
+	font-size: 16px;
 	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 	position: relative;
 	margin-right: -10000px;
@@ -1985,35 +1943,33 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #999999;
 	font-size: 25px;
 	line-height: 25px;
-	color: #999999;
 	position: relative;
 }
 
 #u1400-4:hover
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: #F2F2F2;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 25px;
+	width: 371px;
 	margin: 0px;
 }
 
 #u1400-4:active
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: #F2F2F2;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 25px;
+	width: 371px;
 	margin: 0px;
 }
 
@@ -2040,7 +1996,7 @@
 	margin-top: -1px;
 	left: -1px;
 	background: #FFFFFF url("../../images/circulation-mobile-u1434-fr.png") no-repeat left top;
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255,255,255,0.1);
 	background-size: cover;
 }
 
@@ -2052,10 +2008,10 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	line-height: 20px;
-	font-size: 16px;
 	color: #6B6B6B;
+	line-height: 20px;
 	text-align: left;
+	font-size: 16px;
 	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 	position: relative;
 	margin-right: -10000px;
@@ -2082,35 +2038,33 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #999999;
 	font-size: 25px;
 	line-height: 25px;
-	color: #999999;
 	position: relative;
 }
 
 #u1394-4:hover
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: #F2F2F2;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 25px;
+	width: 371px;
 	margin: 0px;
 }
 
 #u1394-4:active
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: #F2F2F2;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 25px;
+	width: 371px;
 	margin: 0px;
 }
 
@@ -2134,10 +2088,10 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	line-height: 20px;
-	font-size: 16px;
 	color: #6B6B6B;
+	line-height: 20px;
 	text-align: left;
+	font-size: 16px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: 25px;
@@ -2163,48 +2117,45 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	color: #999999;
 	font-size: 25px;
 	line-height: 25px;
-	color: #999999;
 	position: relative;
 }
 
 #u1391-4:hover
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: #F2F2F2;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 25px;
+	width: 371px;
 	margin: 0px;
 }
 
 #u1391-4:active
 {
 	-pie-box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 	background-color: #F2F2F2;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 25px;
+	width: 371px;
 	margin: 0px;
 }
 
 #u1389-4.AccordionPanelTabOpen,#u1382-4.AccordionPanelTabOpen,#u1403-4.AccordionPanelTabOpen,#u1384-4.AccordionPanelTabOpen,#u1398-4.AccordionPanelTabOpen,#u1400-4.AccordionPanelTabOpen,#u1394-4.AccordionPanelTabOpen,#u1391-4.AccordionPanelTabOpen
 {
 	-pie-box-shadow: 6px 6px 8px #F2F2F2;
-	-moz-box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.05);
-	-webkit-box-shadow: 6px 6px 8px -1px rgba(0, 0, 0, 0.05);
-	box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.05);
+	box-shadow: 6px 6px 8px rgba(0,0,0,0.05);
 	background-color: #FFFFFF;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 25px;
+	width: 371px;
 	margin: 0px;
 }
 
@@ -2235,19 +2186,36 @@
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
-	line-height: 20px;
-	font-size: 16px;
 	color: #6B6B6B;
+	line-height: 20px;
 	text-align: left;
+	font-size: 16px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: -1px;
 	left: 20px;
 }
 
+#u1529
+{
+	z-index: 366;
+	min-height: 954px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+#u1529-bw
+{
+	z-index: 366;
+	min-height: 954px;
+	margin-top: 29px;
+}
+
 #u1470
 {
 	z-index: 355;
+	min-height: 43px;
 	border-style: none;
 	border-color: transparent;
 	background-color: #771015;
@@ -2261,7 +2229,7 @@
 	width: 65px;
 	margin-right: -10000px;
 	margin-top: 27px;
-	left: 36px;
+	left: 4px;
 }
 
 #u1476-4
@@ -2271,7 +2239,7 @@
 	width: 65px;
 	margin-right: -10000px;
 	margin-top: 27px;
-	left: 124px;
+	left: 92px;
 }
 
 #u1475-4_img,#u1476-4_img
@@ -2283,22 +2251,31 @@
 #u1471
 {
 	z-index: 356;
-	width: 24px;
-	min-height: 24px;
 	overflow: hidden;
 	position: relative;
+	width: 24px;
 	margin-right: -10000px;
 	margin-top: 18px;
-	left: 283px;
+	left: 251px;
 }
 
 #u1473
 {
 	z-index: 357;
-	width: 24px;
-	min-height: 24px;
 	overflow: hidden;
 	position: relative;
+	width: 24px;
+	margin-right: -10000px;
+	margin-top: 18px;
+	left: 284px;
+}
+
+#u1531
+{
+	z-index: 367;
+	overflow: hidden;
+	position: relative;
+	width: 25px;
 	margin-right: -10000px;
 	margin-top: 18px;
 	left: 316px;
@@ -2307,8 +2284,8 @@
 #u1470-bw
 {
 	z-index: 355;
-	margin-top: 137px;
-	height: 43px;
+	min-height: 43px;
+	margin-top: 20px;
 }
 
 body
