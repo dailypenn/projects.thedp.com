@@ -57,6 +57,15 @@ p{
   position: relative;
 }
 
+.dept-list {
+  font-size: 1.4em;
+  
+}
+
+.dept-list a {
+  font-size: 1.4em;
+}
+
 
 /* Centered texts in each section
 * --------------------------------------- */
