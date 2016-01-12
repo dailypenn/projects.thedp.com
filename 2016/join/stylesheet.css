@@ -16,6 +16,10 @@ body{
 h1{
 	font-size: 6em;
 }
+.section.container h1 {
+	color: #fff;
+	text-shadow: black 2px 2px 10px;
+}
 p{
 	font-size: 1.2em;
   text-align: justify;
@@ -32,20 +36,55 @@ p{
   color: #383838;
 }
 
+.section {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+#section2 {
+	background-image: url(https://s3.amazonaws.com/media.dpn/49321_screen_shot_20160112_at_123844_pmo.png);
+}
+
+#section3 {
+	background-image: url();
+}
+
 #section4{
-  background-image: url(img/sports.jpg);
-  padding: 0 0 0 0;
-  color: #fff;
-  text-shadow: black 2px 2px 10px;
+  background-image: url(http://media.dpn.s3.amazonaws.com/49322_palestra_darko.jpg);
+}
+
+#section8 {
+	background-image: url(https://s3.amazonaws.com/media.dpn/49325_videof.jpg);
+}
+
+#section14 {
+	background-image: url(https://s3.amazonaws.com/media.dpn/49324_dsc_5140f.jpg);
+}
+
+#section16 {
+	background-image: url(https://s3.amazonaws.com/media.dpn/49326_street_copyo.jpg);
 }
 
 #section17{
-  background-image: url(img/utb.jpg);
-  padding: -15px -50px 0 0;
-  color: #fff;
-  text-shadow: black 2px 2px 10px;
+  background-image: url(http://media.dpn.s3.amazonaws.com/49323_buttondarko.jpg);
 }
 
+.text-content {
+	color: #fff;
+	text-shadow: black 2px 2px 10px;
+	background-color: rgba(56, 56, 56, 0.5);
+	padding: 15px;
+	border-radius: 7px;
+}
+
+.text-content p,
+.col-sm-6 p, {
+	padding: 15px;
+	padding-bottom: 0;
+	padding-top: 0;
+}
 
 #section4 .fp-tableCell {
   top: -15vh;
@@ -59,7 +98,6 @@ p{
 
 .dept-list {
   font-size: 1.4em;
-  
 }
 
 .dept-list a {
@@ -77,7 +115,7 @@ p{
 * --------------------------------------- */
 #header, #footer{
   position:fixed;
-  height: 50px;
+  height: 70px;
   display:block;
   width: 100%;
   /*background: #333;*/

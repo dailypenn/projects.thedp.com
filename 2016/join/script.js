@@ -7,7 +7,9 @@ $(document).ready(function(){
     sectionsColor: ['#EAE9E9', '#EAE9E9', '#7E8F7C'],
     css3: true,
     scrollingSpeed: 500,
-    scrollBar: true
+    scrollBar: true,
+		paddingTop: '70px',
+		autoScrolling: false
   });
 });
 
