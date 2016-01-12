@@ -1,12 +1,24 @@
-
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Arimo);
 
 
 /* Custom CSS
  * --------------------------------------- */
 body{
-	font-family: arial,helvetica;
+	font-family: 'Arimo', arial,helvetica !important;
 	color: #383838;
 }
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+a:active, a:hover, a:visited {
+	color: #AA1E23 !important;
+}
+
+.nav a, .nav a:active, .nav a:hover, .nav a:visited {
+	color: #fff !important;
+}
+
 .wrap{
 	margin-left: auto;
 	margin-right: auto;
@@ -48,15 +60,43 @@ p{
 }
 
 #section3 {
-	background-image: url();
+	background-image: url(https://s3.amazonaws.com/media.dpn/49337_copyeditingf.jpg);
 }
 
 #section4{
-  background-image: url(http://media.dpn.s3.amazonaws.com/49322_palestra_darko.jpg);
+  background-image: url(https://s3.amazonaws.com/media.dpn/49331_sportsreportingf.jpg);
+}
+
+#section5 {
+	background-image: url(https://s3.amazonaws.com/media.dpn/49330_socialmediaf.jpg);
+}
+
+#section6 {
+	background-image: url(https://s3.amazonaws.com/media.dpn/49329_photodepo.jpg);
+}
+
+#section7 {
+	background-image: url(https://s3.amazonaws.com/media.dpn/49334_designf.jpg);
 }
 
 #section8 {
 	background-image: url(https://s3.amazonaws.com/media.dpn/49325_videof.jpg);
+}
+
+#section9 {
+	background-image: url(https://s3.amazonaws.com/media.dpn/49333_webf.jpg);
+}
+
+#section11 {
+	background-image: url(https://s3.amazonaws.com/media.dpn/49338_advertisingf.jpg);
+}
+
+#section12 {
+	background-image: url(https://s3.amazonaws.com/media.dpn/49339_analyticsf.jpg);
+}
+
+#section13 {
+	background-image: url(https://s3.amazonaws.com/media.dpn/49336_internalconsultingf.jpg);
 }
 
 #section14 {
@@ -74,7 +114,7 @@ p{
 .text-content {
 	color: #fff;
 	text-shadow: black 2px 2px 10px;
-	background-color: rgba(56, 56, 56, 0.5);
+	background-color: rgba(56, 56, 56, 0.75);
 	padding: 15px;
 	border-radius: 7px;
 }

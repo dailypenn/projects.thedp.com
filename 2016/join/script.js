@@ -4,7 +4,6 @@ $(document).ready(function(){
 	});
   $('#fullpage').fullpage({
     anchors: ['intro', 'edz', 'news', 'copy', 'sports', 'social', 'photo', 'design', 'video', 'web', 'biz', 'advertising', 'marketing', 'dpict', 'circulation', 'front-office', '34st','utb', 'join'],
-    sectionsColor: ['#EAE9E9', '#EAE9E9', '#7E8F7C'],
     css3: true,
     scrollingSpeed: 500,
     scrollBar: true,
