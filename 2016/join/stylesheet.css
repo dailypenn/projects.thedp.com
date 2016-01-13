@@ -1,14 +1,18 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Arimo);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Lora);
 
 
 /* Custom CSS
  * --------------------------------------- */
 body{
-	font-family: 'Arimo', arial,helvetica !important;
+	font-family: 'Lora', arial,helvetica !important;
 	color: #383838;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif !important;
+}
+
+h1 {
+	margin-top: 0 !important;
 }
 
 a:active, a:hover, a:visited {
@@ -16,7 +20,11 @@ a:active, a:hover, a:visited {
 }
 
 .nav a, .nav a:active, .nav a:hover, .nav a:visited {
-	color: #fff !important;
+	color: #222 !important;
+}
+
+.nav {
+	border-radius: 0;
 }
 
 .wrap{
@@ -29,12 +37,14 @@ h1{
 	font-size: 6em;
 }
 .section.container h1 {
-	color: #fff;
-	text-shadow: black 2px 2px 10px;
+	color: #222;
 }
 p{
 	font-size: 1.2em;
   text-align: justify;
+	hyphens: auto;
+	word-wrap: break-word;
+	word-break: normal;
 }
 .intro p{
 	width: 50%;
@@ -50,9 +60,12 @@ p{
 
 .section {
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
+}
+
+#section0 {
+	background-image: url(https://s3.amazonaws.com/media.dpn/49340_dsc_3082f.jpg);
 }
 
 #section2 {
@@ -112,9 +125,8 @@ p{
 }
 
 .text-content {
-	color: #fff;
-	text-shadow: black 2px 2px 10px;
-	background-color: rgba(56, 56, 56, 0.75);
+	color: #222;
+	background-color: rgba(229, 229, 229, 0.9);
 	padding: 15px;
 	border-radius: 7px;
 }
