@@ -1,0 +1,78 @@
+html, body {
+	margin: 0;
+}
+
+header {
+	background-color: #233368;
+	border-bottom: 10px solid white;
+}
+iframe {
+	padding-top:5px;
+	display: block;
+	margin: auto;
+}
+table {
+	border: 0px solid black;
+	margin: auto;
+}
+.table-responsive tbody td, th {
+	padding-left:10px;
+	text-align: center;
+	border: 1px solid black;
+}
+.background {
+	background-color:#8a3b3b;
+	padding-bottom: 50px;
+	padding-top:50px;
+	border-bottom:10px solid white;
+}
+
+#frame {
+	background-color: #8a3b3b;
+	width: 83%;
+	margin:auto;
+	height: 910px;
+}
+.poll-area {
+	background-color: #233368;
+	padding-top: 50px;
+	padding-bottom:50px;
+}
+.top {
+	margin: auto;
+	text-align: center;
+	padding: 10px;
+	color:white;
+}
+#space td {
+	width:6%;
+}
+.table-responsive {
+	width:50%;
+	color:black;
+	background-color:white;
+	margin:auto;
+	margin-top:30px;
+	border: 1px black solid;
+}
+#vote {
+	color:white;
+	font-size:20px;
+	padding-bottom:40px;
+	border:0px;
+}
+.advertisements table {
+	height:200px;
+	padding-bottom: 10px;
+}
+.advertisements td {
+	height: 200px;
+	width:400px;
+}
+#ad {
+	height: 250px;
+	width:300px;
+	margin: auto;
+}
+footer {
+	text-align: center;

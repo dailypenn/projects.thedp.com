@@ -1,0 +1,308 @@
+@font-face {
+font-family: 'ChunkFive-Roman';
+font-style: normal;
+font-weight: normal;
+src: local('ChunkFive-Roman'), url('Chunkfive.woff') format('woff');
+}
+
+body {
+	padding:0px;
+	margin:0px;
+}
+
+#intro {
+	padding:0px;
+	margin:auto;
+	width:100vw;
+	height:35vh;
+	text-align:center;
+	font-size: 30px;
+    padding-bottom: 200px;
+
+}
+
+#box-ariel  {  
+	padding:0px;
+	margin:0px;
+	width:100%;
+	height:100%;
+    background:url(Ariel.jpg);
+  	background-size:cover;
+}
+
+#box-taylor  {  
+	padding:0px;
+	margin:0px;
+	width:100%;
+	height:100%;
+    background:url(https://s3.amazonaws.com/media.dpn/46207_taylorf.jpg);
+  	background-size:cover;
+}
+
+#box-seaon  {  
+	padding:0px;
+	margin:0px;
+	width:100%;
+	height:100%;
+    background:url(seaon.jpg);
+  	background-size:cover;
+}
+
+#box-chris  {  
+	padding:0px;
+	margin:0px;
+	width:100%;
+	height:100%;
+    background:url(https://s3.amazonaws.com/media.dpn/46209_chrisf.jpg);
+  	background-size:cover;
+}
+
+#box-denzel  {  
+	padding:0px;
+	margin:0px;
+	width:100%;
+	height:100%;
+    background:url(https://s3.amazonaws.com/media.dpn/46208_denzelf.jpg);
+  	background-size:cover;
+}
+
+#box-daniel  {  
+	padding:0px;
+	margin:0px;
+	width:100%;
+	height:100%;
+    background:url(https://s3.amazonaws.com/media.dpn/46156_danf.jpg);
+  	background-size:cover;
+}
+
+#box-shadrack  {  
+	padding:0px;
+	margin:0px;
+	width:100%;
+	height:100%;
+    background:url(https://s3.amazonaws.com/media.dpn/46211_shadrackf.jpg);
+  	background-size:cover;
+}
+
+#box-adrien  {  
+	padding:0px;
+	margin:0px;
+	width:100%;
+	height:100%;
+    background:url(https://s3.amazonaws.com/media.dpn/46213_adrianf.jpg);
+  	background-size:cover;
+}
+
+#box-allyson  {  
+	padding:0px;
+	margin:0px;
+	width:100%;
+	height:100%;
+    background:url(Allyson.jpg);
+  	background-size:cover;
+}
+
+#box-sayid  {  
+	padding:0px;
+	margin:0px;
+	width:100%;
+	height:100%;
+    background:url(https://s3.amazonaws.com/media.dpn/46212_sayidf.jpg);
+  	background-size:cover;
+
+}
+
+#overlay-taylor  {  
+	padding-left:5%;
+	padding-right:5%;
+	background:rgba(255,255,255,.7);
+    text-align:left;
+    opacity:0;
+    height:100%;
+    
+    -webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+}
+
+#overlay-ariel {  
+	padding-left:5%;
+	padding-right:5%;
+	background:rgba(255,255,255,.7);
+    text-align:left;
+    opacity:0;
+    height:100%;
+    
+    -webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+}
+
+#overlay-seaon {
+	padding-left:5%;
+	padding-right:5%;  
+	background:rgba(255,255,255,.7);
+    text-align:left;
+    opacity:0;
+    height:100%;
+    
+    -webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+}
+
+#overlay-chris {  
+	padding-left:5%;
+	padding-right:5%;
+	background:rgba(255,255,255,.7);
+    text-align:left;
+    opacity:0;
+    height:100%;
+    
+    -webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+}
+
+#overlay-denzel {  
+	padding-left:5%;
+	padding-right:5%;
+	background:rgba(255,255,255,.7);
+    text-align:left;
+    opacity:0;
+    height:100%;
+    
+    -webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+}
+
+#overlay-daniel {  
+	padding-left:5%;
+	padding-right:5%;
+	background:rgba(255,255,255,.7);
+    text-align:left;
+    opacity:0;
+    height:100%;
+    
+    -webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+}
+
+#overlay-shadrack {  
+	padding-left:5%;
+	padding-right:5%;
+	background:rgba(255,255,255,.7);
+    text-align:left;
+    opacity:0;
+    height:100%;
+    
+    -webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+}
+
+#overlay-adrien {  
+	padding-left:5%;
+	padding-right:5%;
+	background:rgba(255,255,255,.7);
+    text-align:left;
+    opacity:0;
+    height:100%;
+    
+    -webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+}
+
+#overlay-allyson {  
+	padding-left:5%;
+	padding-right:5%;
+	background:rgba(255,255,255,.7);
+    text-align:left;
+    opacity:0;
+    height:100%;
+    
+    -webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+}
+
+#overlay-sayid {  
+	padding-left:5%;
+	padding-right:5%;
+	background:rgba(255,255,255,.7);
+    text-align:left;
+    opacity:0;
+    height:100%;
+    
+    -webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+}
+
+#box-ariel:hover #overlay-ariel, #box-taylor:hover #overlay-taylor, #box-seaon:hover #overlay-seaon,
+#box-chris:hover #overlay-chris, #box-denzel:hover #overlay-denzel, #box-daniel:hover #overlay-daniel,
+#box-shadrack:hover #overlay-shadrack, #box-adrien:hover #overlay-adrien, #box-allyson:hover #overlay-allyson,
+#box-sayid:hover #overlay-sayid
+{ 
+    opacity:1;
+}
+
+#plus {  
+	font-family:Helvetica;
+    color:rgba(255,255,255,.85);
+    font-size:10px;
+}
+
+table {
+	background-color: white;
+	padding:0px;
+	margin:0px;
+	width:100vw;
+	height:100vh;
+}
+
+table td {
+	padding:0px;
+	margin:0px;
+	width:20%;
+	height:50%;
+	
+}
+a {
+	font-weight: bold;
+	font-size: 12px;
+	color:black;
+	text-decoration: none;
+	float:right;
+}
+
+#read-link {
+	font-family:'ChunkFive-Roman';
+	font-size:12px;	
+}
+
+h1 {
+	font-family:'ChunkFive-Roman';
+	font-weight:bold;
+	font-size:40px;
+}
+
+h3 {
+	padding-top:10%;
+	font-family:'ChunkFive-Roman';
+	font-weight:bold;
+	font-size:20px;
+}
+
+h5 {
+	font-family:'Arial';
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: 0px;
+	margin:2px;
+}
+
+p {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+   font-size: 17px;
+   padding-bottom: 30px;
+}
+
+img {
+	display:block;
+}
+

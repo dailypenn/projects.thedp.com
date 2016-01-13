@@ -1,0 +1,52 @@
+body {
+	color:black;
+	font-family: 'Crimson Text', serif;
+	font-size:18px;
+}
+
+h1 {
+	font-family: 'Prata', serif;
+	font-size:1x;
+	color: white;
+}
+
+.navbar {
+	background: #000;
+	border-style: none;
+}
+
+.jumbotron {
+	background: rgba(255, 255, 255, .7);
+}
+
+.btn-primary {
+	background: #000;
+	border-style: none;
+}
+
+.btn-primary:hover {
+	background: #303030;
+}
+
+.mainphoto {
+	width:170%;
+	margin-left: -20%;
+}
+
+.photo{
+	width:100%;
+}
+
+#disqus_thread {
+	display:block;
+}
+
+blockquote {
+	
+	width: 400px;
+	text-align: center; 
+	margin-left: -20%;
+	font-size:30px;
+	float:left;
+	font-family: 'Roboto Slab', serif;
+}

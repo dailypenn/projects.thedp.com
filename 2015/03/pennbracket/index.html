@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Penn Bracket</title>
+		<link rel="stylesheet" type="text/css" href="bracket.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+	</head>
+	
+
+	<body>
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		ga('create', 'UA-707447-4', 'auto');
+		
+		ga('send', 'pageview'); 
+		</script>
+		<script>
+		
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '724392004346866',
+		      xfbml      : true,
+		      version    : 'v2.2'
+		    });
+		  };
+		  (function(d, s, id){
+		     var js, fjs = d.getElementsByTagName(s)[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement(s); js.id = id;
+		     js.src = "https://connect.facebook.net/en_US/sdk/debug.js";	
+		     fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=724392004346866&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<header>
+			<div class="top">
+				<img src="https://farm9.staticflickr.com/8583/16090737023_7bde239624_c.jpg" width="800" height="324" style="margin-left:-10%" alt="logoNew"></a><br><br>
+				<button id="vote_now" style="background:transparent;border:none;cursor:pointer"><img src="https://farm9.staticflickr.com/8654/16088357074_69e3a3b16c.jpg" width="225" height="85" alt="vote_now"></button>
+			</div>
+		</header>
+		<div class="background">
+			<div id="frame">
+				<iframe src="http://challonge.com/pennBracket/module?multiplier=.92&match_width_multiplier=1.45" width="99.5%" height="940" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+			</div>
+			<br><br>
+			
+	        	<div style="margin:auto;width:700px"><img src="https://farm9.staticflickr.com/8620/16548393920_8e7f68bc5e_c.jpg" width="800" height="423" alt="Schedule"></div>
+		</div>
+		<div class="advertisements">
+			<table>
+				<tr>
+					<td><div id="ad"><a href="http://www.moriartyspub.com"><img src="https://farm9.staticflickr.com/8634/16549277560_b7af0080aa_o.gif" width="300" height="250" alt="Moriartys March Madness Internet"></a></div></td>
+					<td><div id="ad"><a href="http://www.copabanana.com/uni.php"><img src="https://farm9.staticflickr.com/8644/16114374664_ea0d4e3cb1_o.gif" width="300" height="250" alt="71033_Copabanana"></a></div></td>
+					<td><div id="ad"><a href="http://www.thefreshgrocer.com"><img src="https://79288cb142ad87691458f25ff916d86d14ab480e.googledrive.com/host/0B_dqRBvwNhy4aEdrMDd4dVo2cUE/FreshGrocer.jpg" width="300" height="250" alt="FroGro"></a></div></td>
+				</tr>
+			</table>
+		</div>
+		<div class="poll-area">
+			<iframe src="https://docs.google.com/forms/d/1jL2MWGUbHK6cwAdAVWmJcgYF1cRJCfF35aCvarU86cI/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+			$( '#vote_now' ).click(function () {
+				$('html, body').animate({
+			        scrollTop: $(".poll-area").offset().top
+			    }, 500);
+			});
+		</script>
+	</body>
+	<footer style="font-family:Roboto">
+		<p>&ast;Prize is limited to a group size of 15. Go back to <a href="thedp.com"> thedp.com</a></p>
+		<p>Created by Stephanie Hsu | Matthew Chiaravalloti | Luke Chen </p>
+		<hr style="width:50%">
+		<p>The DP has a growing web development team. If you are interested in joining please email <a href="chen@thedp.com">chen@thedp.com</a></p>
+	</footer>
+</html>
