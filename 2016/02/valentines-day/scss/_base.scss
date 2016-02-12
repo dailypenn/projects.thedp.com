@@ -9,7 +9,7 @@ $sansserif: 'Montserrat', Arial, sans-serif;
 
 body {
 	background: $color_secondary;
-	color: #7b7b7b;
+	color: #fff;
 	font-weight: 400;
 	font-size: 16px;
 	font-family: $serif;
@@ -32,12 +32,16 @@ a {
 
 a:hover, 
 a:focus {
-	color: #333;
+	color: #fff;
 	outline: none;
 }
 
 button:focus {
 	outline: none;
+}
+
+p {
+  color: #7b7b7b !important;
 }
 
 /* Sidebar */
@@ -64,98 +68,6 @@ button:focus {
 
 .sidebar h1 span {
 	display: block;
-}
-
-/* Codrops links */
-.codrops-links {
-	position: relative;
-	display: inline-block;
-	text-align: center;
-	white-space: nowrap;
-	min-height: 45px;
-}
-
-.codrops-links::after {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 1px;
-	height: 100%;
-	background: #ddd;
-	content: '';
-	-webkit-transform: rotate3d(0,0,1,22.5deg);
-	transform: rotate3d(0,0,1,22.5deg);
-}
-
-.codrops-icon {
-	display: inline-block;
-	margin: 0.5em;
-	padding: 0em 0;
-	width: 1.5em;
-	text-decoration: none;
-}
-
-.codrops-icon span {
-	display: none;
-}
-
-.codrops-icon:before {
-	margin: 0 5px;
-	text-transform: none;
-	font-weight: normal;
-	font-style: normal;
-	font-variant: normal;
-	font-family: 'codropsicons';
-	line-height: 1;
-	speak: none;
-}
-
-.codrops-icon--drop:before {
-	content: "\e001";
-}
-
-.codrops-icon--prev:before {
-	content: "\e004";
-}
-
-/* Demo links */
-.codrops-demos {
-	margin: 2em 0 0;
-	font-size: 0.75em;
-}
-
-.codrops-demos a {
-	display: inline-block;
-	margin: 0 0.5em;
-}
-
-.codrops-demos a.current-demo {
-	color: #333;
-	font-weight: bold;
-}
-
-.codrops-demos a.current-demo:focus {
-	color: #aaa;
-}
-
-.related {
-	font-size: 0.85em;
-	padding-bottom: 1em;
-}
-
-.related h3 {
-	margin: 3em 0 0.5em 0;
-	font-size: 0.95em;
-}
-
-.related a {
-	display: block;
-	color: inherit;
-}
-
-.related a:hover,
-.related a:focus {
-	color: #414741;
 }
 
 /* Main content */
@@ -230,7 +142,7 @@ button:focus {
 	display: block;
 	width: 100%;
 	height: 2px;
-	background-color: $color_link;
+	background-color: $color_primary;
 	font-size: 0px;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -246,7 +158,7 @@ button:focus {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: $color_link;
+	background: $color_primary;
 	content: '';
 }
 
@@ -268,10 +180,7 @@ button:focus {
 }
 
 .dropdown {
-	font-weight: bold;
-	margin-left: 5px;
-	cursor: pointer;
-	color: $color_link;
+  display: none;
 }
 
 .dropdown::after {
@@ -280,13 +189,19 @@ button:focus {
 	font-size: 80%;
 }
 
+.top-bar {
+  background-color: $color_secondary;
+}
+
 /* Grid item */
 .grid__item {
 	padding: 45px 55px 30px;
 	position: relative;
 	color: inherit;
 	background: $color_secondary;
+  background-color: #f25c5e;
 	min-height: $item_width;
+  min-width: $item_width;
 	cursor: pointer;
 	text-align: center;
 	display: -webkit-box;
@@ -300,6 +215,20 @@ button:focus {
 	flex-direction: column;
 	-webkit-justify-content: center;
 	justify-content: center;
+  border: 10px solid #fdd0b3 !important;
+}
+
+
+.grid__item:nth-child(3n) {
+  background-color: #f6888b;
+}
+
+.grid__item:nth-child(3n+1) {
+  background-color: #f25c5e;
+}
+
+.grid__item:nth-child(3n+2) {
+  background: #edcf83;
 }
 
 /* Grid item "border" */
@@ -310,7 +239,7 @@ button:focus {
 	right: 55px;
 	bottom: 0px;
 	left: 55px;
-	border-bottom: 1px solid rgba(74,74,74,0.075);
+	border-bottom: 1px solid #color_secondary;
 }
 
 .grid__item * {
@@ -350,7 +279,7 @@ button:focus {
 	position: absolute;
 	width: 100%;
 	height: 3px;
-	background: #a4e7ad;
+	background: $color_link;
 	left: 0;
 	top: -1px;
 	-webkit-transform: scale3d(0,1,1);
@@ -360,7 +289,7 @@ button:focus {
 }
 
 .grid__item--loading .loader::before {
-	-webkit-transition: -webkit-transform 1s;
+	-webkit-transition: -webkit-transform .2s;
 	transition: transform 1s;
 	-webkit-transition-timing-function: cubic-bezier(0.165,0.84,0.44,1);
 	transition-timing-function: cubic-bezier(0.165,0.84,0.44,1);
@@ -760,8 +689,8 @@ button:focus {
 	z-index: 100;
 	top: 0;
 	right: 0;
-	font-size: 18px;
-	color: #ddd;
+	font-size: 28px;
+	color: #7b7b7b;
 	cursor: pointer;
 	pointer-events: none;
 	padding: 20px 30px;
@@ -781,7 +710,7 @@ button:focus {
 }
 
 .close-button:hover {
-	color: #7b7b7b;
+	color: #333;
 }
 
 /* show class for content close button */

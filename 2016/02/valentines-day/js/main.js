@@ -40,9 +40,9 @@
 		closeCtrl = contentItemsContainer.querySelector('.close-button'),
 		current = -1,
 		lockScroll = false, xscroll, yscroll,
-		isAnimating = false,
-		menuCtrl = document.getElementById('menu-toggle'),
-		menuCloseCtrl = sidebarEl.querySelector('.close-button');
+		isAnimating = false;
+		// menuCtrl = document.getElementById('menu-toggle'),
+		// menuCloseCtrl = sidebarEl.querySelector('.close-button');
 
 	/**
 	 * gets the viewport width and height
@@ -66,6 +66,37 @@
 
 	function init() {
 		initEvents();
+    
+    document.getElementById("wots").addEventListener('click', function() {
+      window.location = "http://www.34st.com/article/2016/02/wots-love-week-coming-out-swinging";
+    });
+    document.getElementById("sex-playlist").addEventListener('click', function() {
+      window.location = "http://www.34st.com/article/2016/02/sex-playlist";
+    });
+    document.getElementById("nvnp").addEventListener('click', function() {
+      window.location = "http://www.34st.com/article/2016/02/sgt-peppers-lonely-hearts-club-band";
+    });
+    document.getElementById("sex-tips").addEventListener('click', function() {
+      window.location = "http://www.34st.com/article/2016/02/sexy-time-suggestions";
+    });
+    document.getElementById("bikini-wax").addEventListener('click', function() {
+      window.location = "http://www.34st.com/article/2016/02/dispatch-bikini-wax";
+    });
+    document.getElementById("sexy-mac").addEventListener('click', function() {
+      window.location = "http://www.34st.com/article/2016/02/were-bringing-sexy-mac";
+    });
+    document.getElementById("blind-date").addEventListener('click', function() {
+      window.location = "http://www.34st.com/article/2016/02/blind-dates-2016";
+    });
+    document.getElementById("app").addEventListener('click', function() {
+      window.location = "http://www.thedp.com/article/2016/02/otter-dating-app-to-set-up-your-friends";
+    });
+    document.getElementById("alum-love").addEventListener('click', function() {
+      window.location = "http://www.thedp.com/article/2016/02/penn-alums-share-stories-50s-80s";
+    });
+    document.getElementById("fac-couples").addEventListener('click', function() {
+      window.location = "http://www.thedp.com/article/2016/02/faculty-couples-at-penn";
+    });
 	}
 
 	function initEvents() {
@@ -108,17 +139,17 @@
 		} );
 
 		// hamburger menu button (mobile) and close cross
-		menuCtrl.addEventListener('click', function() {
-			if( !classie.has(sidebarEl, 'sidebar--open') ) {
-				classie.add(sidebarEl, 'sidebar--open');	
-			}
-		});
-
-		menuCloseCtrl.addEventListener('click', function() {
-			if( classie.has(sidebarEl, 'sidebar--open') ) {
-				classie.remove(sidebarEl, 'sidebar--open');
-			}
-		});
+		// menuCtrl.addEventListener('click', function() {
+		// 	if( !classie.has(sidebarEl, 'sidebar--open') ) {
+		// 		classie.add(sidebarEl, 'sidebar--open');	
+		// 	}
+		// });
+    // 
+		// menuCloseCtrl.addEventListener('click', function() {
+		// 	if( classie.has(sidebarEl, 'sidebar--open') ) {
+		// 		classie.remove(sidebarEl, 'sidebar--open');
+		// 	}
+		// });
 	}
 
 	function loadContent(item) {
