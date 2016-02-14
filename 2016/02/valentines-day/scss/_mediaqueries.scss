@@ -1,7 +1,7 @@
 /* Viewport sizes based on column number and sidebar */
 $viewport_xs: 	$item_width + $sidebar_width; /* 1 column */
-$viewport_s: 	$item_width * 2 + $sidebar_width; /* 2 columns */
-$viewport_m: 	$item_width * 3 + $sidebar_width; /* 3 columns */
+$viewport_s: 	$item_width * 1.15 + $sidebar_width; /* 2 columns */
+$viewport_m: 	$item_width * 2.25 + $sidebar_width; /* 3 columns */
 $viewport_l: 	$item_width * 4 + $sidebar_width; /* 4 columns */
 $viewport_xl: 	$item_width * 5 + $sidebar_width; /* 5 columns */
 $viewport_xxl: 	$item_width * 6 + $sidebar_width; /* 6 columns */
@@ -42,7 +42,7 @@ $viewport_xxl: 	$item_width * 6 + $sidebar_width; /* 6 columns */
 	/* 2 columns */
 	.grid__item {
 		width: 50%;
-		// border: none;
+		border: none;
 	}
 
 	.grid__item::before {
@@ -110,6 +110,9 @@ $viewport_xxl: 	$item_width * 6 + $sidebar_width; /* 6 columns */
 	}
 	.sidebar.sidebar--open ~ .main {
 		pointer-events: none;
+	}
+	.top-bar {
+		padding: 22px 15px 10px 60px;
 	}
 	.menu-toggle {
 		display: inline-block;
