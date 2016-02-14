@@ -120,6 +120,9 @@
 		document.getElementById("openn").addEventListener('click', function() {
 			window.location = "#openn";
 		});
+		document.getElementById("cost").addEventListener('click', function() {
+			window.location = "#cost";
+		});
 		routie({
 			'old-couples': function() {
 				document.getElementById("old-couples").click()
@@ -129,6 +132,9 @@
 			},
 			'openn': function() {
 				document.getElementById("openn").click()
+			},
+			'cost': function() {
+				document.getElementById("cost").click()
 			}
 		});
 	}
