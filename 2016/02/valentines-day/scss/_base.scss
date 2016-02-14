@@ -30,7 +30,7 @@ a {
 	text-decoration: none;
 }
 
-a:hover, 
+a:hover,
 a:focus {
 	// color: #000;
 }
@@ -173,7 +173,7 @@ p {
 	flex-direction: column;
 	-webkit-justify-content: center;
 	justify-content: center;
-  // border: 20px solid #eeeff0 !important;
+  border: 20px solid #eeeff0 !important;
 }
 
 
@@ -672,4 +672,22 @@ p {
 .close-button--show {
 	opacity: 1;
 	pointer-events: auto;
+}
+
+.old-photo {
+	width: 40%;
+	float: left;
+	padding: 15px;
+	img {
+		width: 100%;
+	}
+}
+
+.sports-photo {
+	width: 50%;
+	float: left;
+	padding: 15px;
+	img {
+		width: 100%;
+	}
 }

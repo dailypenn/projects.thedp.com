@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2015, Codrops
  * http://www.codrops.com
  */
@@ -58,7 +58,7 @@
 			client = docElem['clientHeight'];
 			inner = window['innerHeight'];
 		}
-		
+
 		return client < inner ? inner : client;
 	}
 	function scrollX() { return window.pageXOffset || docElem.scrollLeft; }
@@ -66,7 +66,7 @@
 
 	function init() {
 		initEvents();
-    
+
     document.getElementById("wots").addEventListener('click', function() {
       window.location = "http://www.34st.com/article/2016/02/wots-love-week-coming-out-swinging";
     });
@@ -97,6 +97,12 @@
     document.getElementById("fac-couples").addEventListener('click', function() {
       window.location = "http://www.thedp.com/article/2016/02/faculty-couples-at-penn";
     });
+		document.getElementById("utb-guide").addEventListener('click', function() {
+			window.location = "http://www.thedp.com/blog/under-the-button/2016/02/utbs-guide-to-galentines-day-aka-the-best-of-yelp-reviews-of-phillys-only-male-strip-club";
+		});
+		document.getElementById("utb-expectations").addEventListener('click', function() {
+			window.location = "http://www.thedp.com/blog/under-the-button/2016/02/valentines-day-expectations-versus-reality";
+		});
 	}
 
 	function initEvents() {
@@ -141,10 +147,10 @@
 		// hamburger menu button (mobile) and close cross
 		// menuCtrl.addEventListener('click', function() {
 		// 	if( !classie.has(sidebarEl, 'sidebar--open') ) {
-		// 		classie.add(sidebarEl, 'sidebar--open');	
+		// 		classie.add(sidebarEl, 'sidebar--open');
 		// 	}
 		// });
-    // 
+    //
 		// menuCloseCtrl.addEventListener('click', function() {
 		// 	if( classie.has(sidebarEl, 'sidebar--open') ) {
 		// 		classie.remove(sidebarEl, 'sidebar--open');
@@ -153,7 +159,7 @@
 	}
 
 	function loadContent(item) {
-		// add expanding element/placeholder 
+		// add expanding element/placeholder
 		var dummy = document.createElement('div');
 		dummy.className = 'placeholder';
 
@@ -161,12 +167,12 @@
 		dummy.style.WebkitTransform = 'translate3d(' + (item.offsetLeft - 5) + 'px, ' + (item.offsetTop - 5) + 'px, 0px) scale3d(' + item.offsetWidth/gridItemsContainer.offsetWidth + ',' + item.offsetHeight/getViewport('y') + ',1)';
 		dummy.style.transform = 'translate3d(' + (item.offsetLeft - 5) + 'px, ' + (item.offsetTop - 5) + 'px, 0px) scale3d(' + item.offsetWidth/gridItemsContainer.offsetWidth + ',' + item.offsetHeight/getViewport('y') + ',1)';
 
-		// add transition class 
+		// add transition class
 		classie.add(dummy, 'placeholder--trans-in');
 
 		// insert it after all the grid items
 		gridItemsContainer.appendChild(dummy);
-		
+
 		// body overlay
 		classie.add(bodyEl, 'view-single');
 
@@ -179,7 +185,7 @@
 		}, 25);
 
 		onEndTransition(dummy, function() {
-			// add transition class 
+			// add transition class
 			classie.remove(dummy, 'placeholder--trans-in');
 			classie.add(dummy, 'placeholder--trans-out');
 			// position the content container
@@ -222,7 +228,7 @@
 				lockScroll = false;
 				window.removeEventListener( 'scroll', noscroll );
 			});
-			
+
 			// reset current
 			current = -1;
 		}, 25);
