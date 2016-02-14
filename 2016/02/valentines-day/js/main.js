@@ -102,8 +102,8 @@
     document.getElementById("alum-love").addEventListener('click', function() {
       window.location = "http://www.thedp.com/article/2016/02/penn-alums-share-stories-50s-80s";
     });
-    document.getElementById("fac-couples").addEventListener('click', function() {
-      window.location = "http://www.thedp.com/article/2016/02/faculty-couples-at-penn";
+    document.getElementById("love-open").addEventListener('click', function() {
+      window.location = "http://www.34st.com/article/2016/02/openn-relationships";
     });
 		document.getElementById("utb-guide").addEventListener('click', function() {
 			window.location = "http://www.thedp.com/blog/under-the-button/2016/02/utbs-guide-to-galentines-day-aka-the-best-of-yelp-reviews-of-phillys-only-male-strip-club";
