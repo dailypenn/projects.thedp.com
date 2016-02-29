@@ -1,30 +1,226 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700' rel='stylesheet' type='text/css'>
     <title></title>
-
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="jquery.bracket.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" type="text/css">
+    <link rel="stylesheet" href="jquery.bracket.min.css" type="text/css">
+    <script src="https://use.typekit.net/psa2uuo.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    </script>
   </head>
+
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="seven columns">
+          <h2>Penn Bracket 2016</h2>
+          The Penn Bracket is <i>The Daily Pennsylvanian's</i> Take on the March Madness Bracket. Vote for your favorite student group for them to advance into the next round.
 
-
-    <div class="brackets">
+          <table class="u-full-width">
+            <thead>
+              <tr>
+                <th>Start Date</th>
+                <th>Printed</th>
+                <th>Vote By Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>3/14/2016</td>
+                <td>64 Teams</td>
+                <td>3/17 @ 11:59pm</td>
+              </tr>
+              <tr>
+                <td>3/18/2016</td>
+                <td>32 Teams</td>
+                <td>3/22 @ 5pm</td>
+              </tr>
+              <tr>
+                <td>3/23/2016</td>
+                <td>16 Teams</td>
+                <td>3/25 @ Noon </td>
+              </tr>
+              <tr>
+                <td>3/26/2016</td>
+                <td>8 Teams</td>
+                <td>3/29 @ 5pm</td>
+              </tr>
+              <tr>
+                <td>3/30/2016</td>
+                <td>4 Teams</td>
+                <td>4/1 @ Noon</td>
+              </tr>
+              <tr>
+                <td>4/2/2016</td>
+                <td>2 Teams</td>
+                <td>4/5 @ 5pm</td>
+              </tr>
+              <tr>
+                <td>4/6/2016</td>
+                <td>Winner!</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="five columns">
+          <iframe src="https://docs.google.com/forms/d/1H6dIebomoNYbHudkgsF8iL1rtp7z25my3jIDQPpk7Tk/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+      </div>
+    </div>
+    <div id="bracket-container">
+      <div class="column-md-6">
+        <div id="ltbracket" class="left" width="100%"></div>
+      </div>
+      <div class="column-md-6">
+        <div id="rtbracket" class="right" width="100%"></div>
+      </div>
     </div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="./jquery.bracket.min.js" charset="utf-8"></script>
-    <script src="script.js">
-      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript">
+
+
     </script>
+    <script src="jquery.bracket.min.js" charset="utf-8" type="text/javascript">
+
+
+    </script>
+    <script src="script.js" type="text/javascript">
+
+
+    </script>
+    <script type="text/javascript">
+      var ltbracketData = {
+        teams: [
+          // PERFORMANCE
+          ["Mask & Wig", "Bloomers"],
+          ["Off the Beat", "Dischord"],
+          ["Masala", "Shabbatones"],
+          ["Penn Band", "Soundworks"],
+          ["Dhamaka", "Penny Loafers"],
+          ["Glee Club", "Hype"],
+          ["PennSori", "Onda Latina"],
+          ["Quaker Girls", "Disney A Cappella"],
+          // EDUCATIONAL
+          ["Wharton Women", "Wharton Latino"],
+          ["SCUE", "DSP"],
+          ["ASAP", "Kite & Key"],
+          ["MERT", "ΑΦΩ"],
+          ["Vagelos MLS", "GPA"],
+          ["IAA", "NEC"],
+          ["SAC", "UA"],
+          ["AOE", "ΘΤ"]
+        ],
+        results: [
+          [
+            [23, 14],
+            [48, 12],
+            [19, 20]
+          ]
+        ]
+      };
+
+      var rtbracketData = {
+        teams: [
+          // CULTURE SLASH SOCIETY
+          ["AIR", "???"],
+          ["Penn Dems", "Coll. Republicans"],
+          ["Humans of UPenn", "Jewish Heritige"],
+          ["PennRunning", "???"],
+          ["Taiwanese Society", "SAS"],
+          ["Table Talk", "Punch Bowl"],
+          ["Lambda Alliance", "Latin@ Coalition"],
+          ["ΑΔΠ", "ΑΠ"],
+          ["ΧΩ", "ΔΔΔ"],
+          ["ΚΑΘ", "ZTA"],
+          ["ΣΔΤ", "ΣΚ"],
+          ["ΣΝ", "ΑΣΦ"],
+          ["Ultimate", "Club Tennis"],
+          ["Club BBall", "Sailing"],
+          ["Quiddich", "Woman's Soccer"],
+          ["???", "???"]
+
+        ],
+        results: [
+          []
+        ]
+      };
+
+      $(function() {
+        $('#ltbracket').bracket({
+          init: ltbracketData,
+          skipConsolationRound: true
+        });
+        $('#rtbracket').bracket({
+          init: rtbracketData,
+          skipConsolationRound: true,
+          dir: 'rl'
+        })
+      })
+
+    </script>
+
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "neuzeit-grotesk", sans-serif;
+        font-weight: 800;
+      }
+      
+      body {
+        font-family: 'Lora', serif;
+        font-size: 14px;
+        overflow-y: hidden;
+      }
+      
+      #bracket-container {
+        padding: 15px;
+        margin: 0;
+        width: 100%;
+      }
+      
+      .left {
+        float: left;
+        overflow-y: hidden;
+        margin-left: -570px;
+      }
+      
+      .right {
+        float: right;
+        overflow-y: hidden;
+        margin-right: -530px;
+      }
+      
+      .column-md-6 {
+        width: 50%;
+        display: inline;
+      }
+      /*CHANGE THESE PER ROUND*/
+      
+      .round:not(:first-child),
+      .connector {
+        display: none;
+      }
+      
+      .seven.columns {
+        width: 52.666667%;
+      }
+
+    </style>
   </body>
+
 </html>
