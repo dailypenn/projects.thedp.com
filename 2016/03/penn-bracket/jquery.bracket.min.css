@@ -64,7 +64,8 @@ div.jQBracket {
     margin-right: 10px;
     float: left; }
   div.jQBracket .match {
-    position: relative; }
+    position: relative;
+    }
   div.jQBracket .editable {
     cursor: pointer; }
   div.jQBracket .team {
@@ -116,7 +117,7 @@ div.jQBracket {
     div.jQBracket .team.win div.score {
       color: #fff; }
     div.jQBracket .team.lose div.score {
-      color: #000; }
+      color: #666; }
     div.jQBracket .team.lose {
       background-color: #fff;
       color: #666; }
@@ -129,8 +130,10 @@ div.jQBracket {
       background-color: #fff;
       color: #000; }
     div.jQBracket .team.highlight {
-      background-color: #3C0;
-      color: #000; }
+      background-color: #aa1e22;
+      color: #fff; }
+    div.jQBracket .team.lose.highlight .score {
+      color: #fff; }
   div.jQBracket .teamContainer {
     z-index: 1;
     position: relative;

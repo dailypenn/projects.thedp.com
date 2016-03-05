@@ -7,21 +7,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700' rel='stylesheet' type='text/css'>
-    <title></title>
+    <title>Penn Bracket 2016 | The Daily Pennsylvanian</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" type="text/css">
     <link rel="stylesheet" href="jquery.bracket.min.css" type="text/css">
     <script src="https://use.typekit.net/psa2uuo.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-707447-4', 'auto');
+  ga('create', 'UA-55281509-16', 'auto');
+  ga('send', 'pageview');
+  </script>
   </head>
 
   <body>
     <div class="container">
+	  <div class="row">
+		  
+	  </div>
       <div class="row">
         <div class="seven columns">
           <center>
-            <h2>Penn Bracket 2016</h2>
+            <h2 class="red">Penn Bracket 2016</h2>
             The Penn Bracket is <i>The Daily Pennsylvanian's</i> Take on the March Madness Bracket. Vote for your favorite student group for them to advance into the next round.
           </center>
           <table class="u-full-width">
@@ -32,8 +45,8 @@
                 <th>Vote By Date</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
+            <tbody> 
+              <tr class="red">
                 <td>3/14/2016</td>
                 <td>64 Teams</td>
                 <td>3/17 @ 11:59pm</td>
@@ -75,6 +88,22 @@
           <iframe src="https://docs.google.com/forms/d/1H6dIebomoNYbHudkgsF8iL1rtp7z25my3jIDQPpk7Tk/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
         </div>
       </div>
+      <div class="row">
+        <center>
+          <hr>
+          <h6>PennBracket is brought to you by</h6>
+          <a href="http://www.copabanana.com/university-city/" onclick="ga('send', 'event', 'Ads', 'click', 'PennBracket-Copa');">
+            <img src="https://s3.amazonaws.com/media.dpn/50801_adpennbracketcopao.gif" alt="" />
+          </a>
+          <a href="http://www.newdecktavern.com" onclick="ga('send', 'event', 'Ads', 'click', 'PennBracket-NewDeck');">
+            <img src="https://s3.amazonaws.com/media.dpn/50799_adpennbracketnewdecko.gif" alt="" />
+          </a>
+          <a href="http://www.moriartyspub.com" onclick="ga('send', 'event', 'Ads', 'click', 'PennBracket-Moriartys');">
+            <img src="https://s3.amazonaws.com/media.dpn/50800_adpennbracketmoriartyso.gif" alt="" />
+          </a>
+          <hr>
+        </center>
+      </div>
     </div>
     <div id="bracket-container">
       <div class="column-md-6">
@@ -94,56 +123,58 @@
       var ltbracketData = {
         teams: [
           // PERFORMANCE
-          ["Mask & Wig", "Bloomers"],
-          ["Off the Beat", "Dischord"],
-          ["Masala", "Shabbatones"],
-          ["Penn Band", "Soundworks"],
+          ["PennBand", "Quaker Girls"],
+          ["PennHype", "GleeClub"],
+          
+          ["Bloomers", "PennSori"],
+          ["Dhamaka", "Shabbatones"],
+          
           ["Dhamaka", "Penny Loafers"],
-          ["Glee Club", "Hype"],
-          ["PennSori", "Onda Latina"],
-          ["Quaker Girls", "Disney A Cappella"],
+          ["Off the Beat", "Dischord"],
+          
+          ["Masala", "Disney ACapella"],
+          ["OndaLatina", "PennyLoafers"],
           // EDUCATIONAL
-          ["Wharton Women", "Wharton Latino"],
-          ["SCUE", "DSP"],
-          ["ASAP", "Kite & Key"],
-          ["MERT", "ΑΦΩ"],
-          ["Vagelos MLS", "GPA"],
-          ["IAA", "NEC"],
-          ["SAC", "UA"],
-          ["AOE", "ΘΤ"]
+          ["UA", "Vag MLS"],
+          ["ASAP", "MERT"],
+          
+          ["Kite & Key", "SAC"],
+          ["ΑΦΩ", "ΦΓN"],
+          
+          ["ΘΤ", "NEC"],
+          ["AIΓ", "AOE"],
+          
+          ["GPA", "SCUE"],
+          ["PClassic", "DSP"]
         ],
         results: [
           [
-            [23, 14],
-            [48, 12],
-            [19, 20]
+		 
           ]
         ]
       };
-
       var rtbracketData = {
         teams: [
           // CULTURE SLASH SOCIETY
-          ["AIR", "???"],
-          ["Penn Dems", "Coll. Republicans"],
-          ["Humans of UPenn", "Jewish Heritige"],
-          ["PennRunning", "???"],
-          ["Taiwanese Society", "SAS"],
-          ["Table Talk", "Punch Bowl"],
-          ["Lambda Alliance", "Latin@ Coalition"],
-          ["ΑΔΠ", "ΑΠ"],
-          ["ΧΩ", "ΔΔΔ"],
-          ["ΚΑΘ", "ZTA"],
-          ["ΣΔΤ", "ΣΚ"],
-          ["ΣΝ", "ΑΣΦ"],
-          ["Ultimate", "Club Tennis"],
-          ["Club BBall", "Sailing"],
-          ["Quiddich", "Woman's Soccer"],
-          ["???", "???"]
-
+          ["PennDems", "Penn in Wash."],
+          ["Wharton Latino", "Wharton Women"],
+          ["Lambda Alliance", "Political Coalition"],
+          ["PAGE", "Jewish Heratige"],
+          ["SAS", "Table Talk"],
+          ["Latin@ Coalition", "College Republicans"],
+          ["IAA", "Humans of UPenn"],
+          ["Punch Bowl", "Taiwanese Society"],
+          ["ΚΑΘ", "Sailing"],
+          ["ΑΣΦ", "Quiddich"],
+          ["ΔΔΔ", "Club Tennis"],
+          ["AΦ", "Penn Skiing"],
+          ["ΧΩ", "W Soccer"],
+          ["ΣΚ", "Running"],
+          ["ΣΔΤ", "Club BB"],
+          ["ΣΝ", "Ultimate"]
         ],
         results: [
-          []
+	        [12, 15]
         ]
       };
 
@@ -161,7 +192,7 @@
 
     </script>
 
-    <style>
+    <style>  
       h1,
       h2,
       h3,
@@ -170,6 +201,11 @@
       h6 {
         font-family: "neuzeit-grotesk", sans-serif;
         font-weight: 800;
+      }
+      
+      h6 {
+        font-weight: 100;
+        color: #2e2e2e;
       }
       
       body {
@@ -181,7 +217,7 @@
       #bracket-container {
         padding: 15px;
         margin: 0;
-        width: 100%;
+		overflow-y: hidden;
       }
       
       .left {
@@ -193,7 +229,17 @@
       .right {
         float: right;
         overflow-x: hidden;
-        margin-right: -530px;
+		overflow-x: hidden;
+		width: 150px;     
+		}
+      
+      .red {
+	      color: #aa1e22;
+      }
+      
+      .red-highlight {
+	      color: #fff;
+	      background-color: #aa1e22;
       }
       
       .column-md-6 {
@@ -207,6 +253,13 @@
         display: none;
       }
       
+      div.jQBracket .match {
+/* 	  margin-bottom: 5px; /*MIGHT NEED TO REMOVE ME*/ */
+    	}
+      
+      .column, .columns {
+        margin-left: 7%;
+      }
       .seven.columns {
         width: 52.666667%;
       }
