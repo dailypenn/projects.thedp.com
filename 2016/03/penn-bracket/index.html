@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" type="text/css">
     <link rel="stylesheet" href="jquery.bracket.min.css" type="text/css">
     <script src="https://use.typekit.net/psa2uuo.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/kazzkiq/balloon.css/master/balloon.css" charset="utf-8">
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     </script>
     <script>
@@ -129,7 +130,7 @@
           ["Bloomers", "PennSori"],
           ["Dhamaka", "Shabbatones"],
           
-          ["Mask & Wig", "Penny Loafers"],
+          ["Mask & Wig", "Soundworks"],
           ["Off the Beat", "Dischord"],
           
           ["Masala", "Disney ACapella"],
@@ -189,7 +190,84 @@
           dir: 'rl'
         })
       })
+      
+      $(document).ready(function(){
+        $(".label").each(function () {
+          console.log(this);
+          this.parentElement.setAttribute("data-balloon-pos","down");
+          this.parentElement.setAttribute("data-balloon-length","small");
+        });
+        
+        $(".label:contains('PennBand')")[0].parentElement.setAttribute("data-balloon", "The Penn Band was founded in 1897 and ever since has been one of the University's most progressive traditions.");
+        $(".label:contains('Quaker Girls')")[0].parentElement.setAttribute("data-balloon", "The Quaker Girls heat up halftime of Penn Men's Basketball games!");
+        $(".label:contains('PennHype')")[0].parentElement.setAttribute("data-balloon", "Penn Hype Dance Crew is a University of Pennsylvania based Hip Hop-fusion group.");
+        $(".label:contains('GleeClub')")[0].parentElement.setAttribute("data-balloon", "As the University of Pennsylvania Glee Club endures into the 21st century, it remains an institution atop the world of male choral singing. Featuring a unique blend of musical excellence and theatrical showmanship, the Glee Club has won worldwide acclaim.");
+        $(".label:contains('Bloomers')")[0].parentElement.setAttribute("data-balloon", "The nation's first and only collegiate all-female musical sketch comedy troupe.");
+        $(".label:contains('PennSori')")[0].parentElement.setAttribute("data-balloon", "PennSori is an a cappella group dedicated to serve as a cultural bridge between Korean and American cultures.");
+        $(".label:contains('Dhamaka')")[0].parentElement.setAttribute("data-balloon", "Penn Dhamaka is the University of Pennsylvania's first and only all-male dance troupe.");
+        $(".label:contains('Shabbatones')")[0].parentElement.setAttribute("data-balloon", "Founded in 2001, the Shabbatones are the student-run Jewish a cappella group at the University of Pennsylvania.");
+        $(".label:contains('Mask & Wig')")[0].parentElement.setAttribute("data-balloon", "Founded in 1889, the Mask and Wig Club is the nation’s oldest all-male collegiate comedy group.");
+        $(".label:contains('Soundworks')")[0].parentElement.setAttribute("data-balloon", "Founded in 2001, Soundworks Tap Factory is University of Pennsylvania’s one and only strictly tap dancing group.");
+        $(".label:contains('Off the Beat')")[0].parentElement.setAttribute("data-balloon", "Off the Beat is Penn's co-ed rock a cappella group. Now in its 29th year, OTB is one of the nation's top collegiate groups. Since its inception, Off the Beat has consistently remained one of the most acclaimed a cappella groups in the nation.");
+        $(".label:contains('Dischord')")[0].parentElement.setAttribute("data-balloon", "Dischord is a co-ed a cappella group from the University of Pennsylvania.");
+        $(".label:contains('Masala')")[0].parentElement.setAttribute("data-balloon", "The world’s first and premier South Asian a cappella group - is a group of students at the University of Pennsylvania who take a fresh look at a cappella by blending the best of South Asian sounds with the latest from the Western music scenes. ");
+        $(".label:contains('Disney ACapella')")[0].parentElement.setAttribute("data-balloon", "The Disney A Cappella Group is a new organization at the University of Pennsylvania that seeks to spread happiness via Disney songs and service to the community.");
+        $(".label:contains('OndaLatina')")[0].parentElement.setAttribute("data-balloon", "Onda Latina has become an immensely popular name on this campus and in the community, performing to sold-out crowds every semester. Over the years, the Onda Latina family has grown to over 40 members, which brings together many ethnic backgrounds, unique talents, and fresh ideas.");
+        $(".label:contains('PennyLoafers')")[0].parentElement.setAttribute("data-balloon", "The Penny Loafers were founded in 1986 as a co-ed a cappella group at the University of Pennsylvania focusing on music from the ’50s and ’60s.");
+        $(".label:contains('UA')")[0].parentElement.setAttribute("data-balloon", "The Undergraduate Assembly (the UA) is the elected, representative organization of undergraduates at Penn, charged with improving life for all students through funding, services, and advocacy.");
+        $(".label:contains('Vag MLS')")[0].parentElement.setAttribute("data-balloon", "The Vagelos Scholars Program in the Molecular Life Sciences is for students intending to become research scientists within the context of biochemistry, biophysical chemistry, biotechnology, computational biology, gene therapy, genetic engineering, genomics, molecular biology, molecular genetics, molecular medicine, neurobiology, nanotechnology, structural biology, or systems biology.");
+        $(".label:contains('ASAP')")[0].parentElement.setAttribute("data-balloon", "A group of undergraduate and graduate students dedicated to raising awareness about sexual violence on campus. ASAP hosts weekly discussions that include topics ranging from feminist and political theory to the media and US culture.");
+        $(".label:contains('MERT')")[0].parentElement.setAttribute("data-balloon", "The Penn Medical Emergency Response Team is the University of Pennsylvania's student-run volunteer emergency medical services organization, providing care to students, faculty, staff and community members.");
+        $(".label:contains('Kite & Key')")[0].parentElement.setAttribute("data-balloon", "As Penn's largest and oldest service organization, the mission of the Kite and Key Society is to present Penn as an institution devoted to academic excellence, to increase students' awareness of the opportunities at Penn so that they will consider applying, to encourage students who have applied and been accepted to matriculate to Penn by providing them with the information they need to help make their decision, and to help students get a feel for Penn and why it may be the right university for them.");
+        $(".label:contains('SAC')")[0].parentElement.setAttribute("data-balloon", "The Student Activities Council (SAC) is one of Penn’s six branches of undergraduate student government.");
+        $(".label:contains('ΑΦΩ')")[0].parentElement.setAttribute("data-balloon", "Alpha Phi Omega is a national, co-ed service fraternity that has set the standard for college campus-based volunteerism since 1925.");
+        $(".label:contains('ΘΤ')")[0].parentElement.setAttribute("data-balloon", "Theta Tau is currently the University of Pennsylvania's professional engineering fraternity.");
+        $(".label:contains('NEC')")[0].parentElement.setAttribute("data-balloon", "The Nominations & Elections Committee (NEC) is one of the six branches of undergraduate student government at the University of Pennsylvania. The membership of the NEC is composed of nearly 40 Penn undergraduates, with eight to ten students representing each class year.");
+        $(".label:contains('AIΓ')")[0].parentElement.setAttribute("data-balloon", "Alpha Iota Gamma (AIΓ) is the premier and only pre-professional healthcare fraternity in the U.S. The brothers of Alpha Iota Gamma uphold a commitment to discipline, compassion, and integrity - key ethical pillars in healthcare and life.");
+        $(".label:contains('AOE')")[0].parentElement.setAttribute("data-balloon", "AOE is Penn's professional and social sorority for women in engineering and technical sciences. Most nights, you can find us coding in Moore or building robots in the EQuad until past your bedtime. We make nights down Towne as fun as nights downtown.");
+        $(".label:contains('GPA')")[0].parentElement.setAttribute("data-balloon", "The Government and Politics Association is Penn’s largest political organization. Devoted to non-partisan and balanced dialogue, the organization does not adopt positions on political issues; we leave it to our participants to make up their own minds.");
+        $(".label:contains('SCUE')")[0].parentElement.setAttribute("data-balloon", "SCUE takes as its purview any issue which affects undergraduate education or the intellectual atmosphere at Penn.");
+        $(".label:contains('PClassic')")[0].parentElement.setAttribute("data-balloon", "The Philadelphia Classic (PClassic) is a semesterly programming competition for high school students hosted by the Dining Philosophers at the University of Pennsylvania.");
+        $(".label:contains('DSP')")[0].parentElement.setAttribute("data-balloon", "Delta Sigma Pi is a professional fraternity organized to foster the study of business in universities; to encourage scholarship, social activity and the association of students for their mutual advancement by research and practice; to promote closer affiliation between the commercial world and students of commerce, and to further a higher standard of commercial ethics and culture and the civic and commercial welfare of the community.");
+        
+        $(".label:contains('PennDems')")[0].parentElement.setAttribute("data-balloon", "The University of Pennsylvania Democrats is a student-run political organization open to all members of the Penn community – undergraduate and graduate alike.");
+        $(".label:contains('Penn in Wash.')")[0].parentElement.setAttribute("data-balloon", "Over the years, Penn in Washington has helped thousands of students find internships in Washington, engaged hundreds of alumni in mentoring and hiring interns from Penn, and organized dozens of events designed to give Penn students opportunities to explore some of the many fascinating topics addressed in the public policy arena and to meet some of the most interesting decisionmakers in Washington, many of whom are proud Penn alumni. Through the Penn in Washington Semester Program, students spend either the fall or spring semester taking classes and interning in Washington, D.C. - and, with the new Washington and the World Scholars Program, they have the option to spend the summer abroad.");
+        $(".label:contains('Wharton Latino')")[0].parentElement.setAttribute("data-balloon", "Wharton Latino is an undergraduate organization established with the purpose of promoting and bringing together the Latino community and those interested in Latin America within the University of Pennsylvania.");
+        $(".label:contains('Wharton Women')")[0].parentElement.setAttribute("data-balloon", "Wharton Women in Business (WWIB) is a professional organization that strives to expand career, leadership and networking opportunities for women at Wharton. We aim to engage and celebrate women as leaders in order to make a more meaningful Wharton experience for all of our members.");
+        $(".label:contains('Lambda Alliance')")[0].parentElement.setAttribute("data-balloon", "Lambda Alliance is the umbrella advocacy group for queer students at the University of Pennsylvania.");
+        $(".label:contains('Political Coalition')")[0].parentElement.setAttribute("data-balloon", "The Penn Political Coalition is the University of Pennsylvania’s umbrella organization for political student groups.");
+        $(".label:contains('PAGE')")[0].parentElement.setAttribute("data-balloon", "The Penn Association for Gender Equality (PAGE) is a student association at the University of Pennsylvania that aims to promote gender and social justice.");
+        $(".label:contains('Jewish Heratige')")[0].parentElement.setAttribute("data-balloon", "Jewish Heritage Programs connects students, young professionals, established business professionals, and others through face-to-face interactions, social action, and mentorships.");
+        $(".label:contains('SAS')")[0].parentElement.setAttribute("data-balloon", "The South Asia Society (SAS) is a student organization dedicated to promoting cultural unity and awareness among its members and the University of Pennsylvania community.");
+        $(".label:contains('Table Talk')")[0].parentElement.setAttribute("data-balloon", "TableTalk is a framework for conversation between people who would not interact under ordinary circumstances.");
+        $(".label:contains('Latin@ Coalition')")[0].parentElement.setAttribute("data-balloon", "In 1996, a group of conscientious Latin@ students realized that they should take decisive action.");
+        $(".label:contains('College Republicans')")[0].parentElement.setAttribute("data-balloon", "The Penn College Republicans strive to promote conservative values and ideals on campus by creating a strong sense of community among Penn’s conservative students.");
+        $(".label:contains('IAA')")[0].parentElement.setAttribute("data-balloon", "The International Affairs Association (IAA) at the University of Pennsylvania was founded in 1963 as a student organization to promote international affairs and diplomacy at Penn and beyond.");
+        $(".label:contains('Humans of UPenn')")[0].parentElement.setAttribute("data-balloon", "Inspired by Humans of New York. Spreading the love in Philly.");
+        $(".label:contains('Punch Bowl')")[0].parentElement.setAttribute("data-balloon", "The Punch Bowl was founded in 1899 by disenchanted rich Ivy Leaguers who established a tradition of excellence and scathing social satire we maintain to this day, though sadly the amount of yacht owners on staff has declined steadily since our founding.");
+        $(".label:contains('Taiwanese Society')")[0].parentElement.setAttribute("data-balloon", "Penn Taiwanese Society works to provide a network and community for Penn students who are interested in Taiwanese affairs. We regularly hold events to foster cultural enrichment for both PTS members and the greater Penn community.");
+        $(".label:contains('ΚΑΘ')")[0].parentElement.setAttribute("data-balloon", "Kappa Alpha Theta was originally chartered at Penn in 1919 and re-colonized in the spring of 1988, when the members of the Nu Delta Society were initiated into Kappa Alpha Theta.");
+        $(".label:contains('Sailing')")[0].parentElement.setAttribute("data-balloon", "The University of Pennsylvania Sailing Team has a long tradition of excellence in inter-collegiate sailing.");
+        $(".label:contains('ΑΣΦ')")[0].parentElement.setAttribute("data-balloon", "The brothers of the Omicron chapter at the University of Pennsylvania are arguably the most diverse group of men you will meet on campus.");
+        $(".label:contains('Quiddich')")[0].parentElement.setAttribute("data-balloon", "We're the Penn Pygmy Puffs, the official muggle quidditch team of the University of Pennsylvania!");
+        $(".label:contains('ΔΔΔ')")[0].parentElement.setAttribute("data-balloon", "TriDelta is the oldest sorority on Penn's campus.");
+        $(".label:contains('Club Tennis')")[0].parentElement.setAttribute("data-balloon", "The co-ed club tennis team at Penn is one of the many sports club teams run through Penn Recreation. While the club team is competitive, it is still a very relaxed group with a great bunch of players.");
+        $(".label:contains('AΦ')")[0].parentElement.setAttribute("data-balloon", "Alpha Phi is a close-knit sorority full of friends, sisters and fun!");
+        $(".label:contains('Penn Skiing')")[0].parentElement.setAttribute("data-balloon", "We are a club team of undergraduates at the University of Pennsylvania who love to ski, snowboard, and have a blast on the slopes!");
+        $(".label:contains('ΧΩ')")[0].parentElement.setAttribute("data-balloon", "The Beta Alpha Chapter of Chi Omega is looking forward to a fantastic year with our new members! We are proud to be a diverse sisterhood of women from all sectors of the Penn community.");
+        $(".label:contains('W Soccer')")[0].parentElement.setAttribute("data-balloon", "The Penn Women's Club Soccer team is dedicated to continuing to play soccer at a competitive level but with a manageable time-commitment.");
+        $(".label:contains('ΣΚ')")[0].parentElement.setAttribute("data-balloon", "Membership in Sigma Kappa is not just for four years, it's for life.");
+        $(".label:contains('Running')")[0].parentElement.setAttribute("data-balloon", "In 2013, the Penn Running Club won the Half Marathon in the NIRCA Track National Championships, earned 7 All-American Honors, and placed 6th and 13th in the Men's and Women's NIRCA XC National Championships.");
+        $(".label:contains('ΣΔΤ')")[0].parentElement.setAttribute("data-balloon", "The University of Pennsylvania welcomed the Beta chapter of Sigma Delta Tau to its campus on June 20, 1920.");
+        $(".label:contains('Club BB')")[0].parentElement.setAttribute("data-balloon", "We wish to secure for ourselves the pleasures and benefits of an association of persons interested in being engaged in competitive basketball.");
+        $(".label:contains('ΣΝ')")[0].parentElement.setAttribute("data-balloon", "Our brotherhood attracts campus leaders, men who not only embrace leadership roles in our fraternity, but who also command respect on Penn's campus because of their dedication to outside clubs.");
+        $(".label:contains('Ultimate')")[0].parentElement.setAttribute("data-balloon", "Welcome to Void Ultimate, the University of Pennsylvania Men's Ultimate Frisbee team. As a competetive regionals-level team, Void is gearing up for another great year, working on conditioning, strength, and disc skills throughout the summer and the school year.");
 
+        // $(".label:contains('Quaker Girls')")[0].setAttribute("class", "label hint--top");
+        // $(".label:contains('Quaker Girls')")[0].setAttribute("data-hint","MEOW");
+
+      });
+    
     </script>
 
     <style>  
@@ -217,20 +295,19 @@
       #bracket-container {
         padding: 15px;
         margin: 0;
-		overflow-y: hidden;
       }
       
       .left {
         float: left;
         overflow-x: hidden;
-        margin-left: -570px;
+        /*margin-left: -570px;*/
       }
       
       .right {
         float: right;
         overflow-x: hidden;
 		overflow-x: hidden;
-		width: 150px;     
+		/*width: 150px;     */
 		}
       
       .red {
@@ -248,10 +325,10 @@
       }
       /*CHANGE THESE PER ROUND*/
       
-      .round:not(:first-child),
+      /*.round:not(:first-child),
       .connector {
         display: none;
-      }
+      }*/
       
       div.jQBracket .match {
 /* 	  margin-bottom: 5px; /*MIGHT NEED TO REMOVE ME*/ */

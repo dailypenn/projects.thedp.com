@@ -28,6 +28,10 @@ iframe {
     top      : -70px;
     height   : 600px;
 }
+.bracket {
+  height: 1024px !important;
+  overflow-y: hidden;
+}
 div.jQBracket {
   font-family: "neuzeit-grotesk", sans-serif;
   font-size: 14px;
@@ -96,7 +100,6 @@ div.jQBracket {
     div.jQBracket .team div.score {
       float: right;
       padding: 3px;
-      border-left: 1px solid #fff;
       text-align: center;
       width: 20px; }
       div.jQBracket .team div.score[disabled] {
@@ -139,7 +142,7 @@ div.jQBracket {
     position: relative;
     float: left; }
   div.jQBracket .connector {
-    border: 2px solid #000;
+    border: 5px solid #000;
     border-left-style: none;
     position: absolute;
     z-index: 1; }
@@ -227,7 +230,7 @@ div.jQBracket.rl .teamContainer {
 div.jQBracket.rl .connector {
   border-left-style: solid;
   border-right-style: none;
-  border-width: 2px; }
+  border-width: 5px; }
   div.jQBracket.rl .connector.highlightWinner,
   div.jQBracket.rl .connector div.connector.highlightWinner {
     border-color: #DA0; }
