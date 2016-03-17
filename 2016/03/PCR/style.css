@@ -1,0 +1,202 @@
+/* Main Styling */
+body {
+    position: relative;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "neuzeit-grotesk", "montserrant", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+ul.side-nav {
+  font-family: "neuzeit-grotesk", "montserrant", sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+  width: 250px;
+  top: 100px;
+}
+
+li.active {
+  font-weight: 900;
+}
+
+#myScrollspy 
+
+section {
+  min-height: 100%;
+}
+
+p {
+  font-family: "lora", georgia, serif;
+}
+
+.content {
+  border-left: 7px solid #000;
+}
+
+/*div.col-sm-9 div {
+    height: 250px;
+    font-size: 28px;
+}*/
+
+@media screen and (max-width: 810px) {
+  #section1, #section2, #section3, #section41, #section42  {
+      margin-left: 150px;
+  }
+}
+
+
+/* HEADER STYLES */
+nav {
+  font-family: 'neuzeit-grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 120%;
+  user-select: none;
+  -webkit-user-select: none;
+}
+nav .glyphicon {
+  vertical-align: text-bottom;
+  top: -0.5px;
+}
+body {
+  padding-top: 70px;
+}
+
+.navbar-brand {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin: auto;
+}
+
+.search-field .fa {
+  margin-left: -10px;
+}
+.search-field:after {
+  content: "";
+  position: absolute;
+  left: 45px;
+  bottom: -105%;
+  height: 170%;
+  width: 1px;
+  border-right: 1px solid #777;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  max-height: 50px;
+  transition: all 250ms ease-in-out;
+}
+.menu-toggle::after {
+  transition: all 0.25s ease-in-out;
+  content: "";
+  margin-left: -10vw;
+  height: 0;
+  opacity: 0;
+}
+.menu-toggle:not(.closed) {
+  background-color: #000;
+}
+.menu-toggle:not(.closed) span {
+  color: #fff;
+}
+.menu-toggle:not(.closed)::after {
+  transition: all 0.25s ease-in-out;
+  content: "";
+  opacity: 1;
+  position: absolute;
+  width: 120vw;
+  margin-left: -10vw;
+  height: 7px;
+  background-color: black;
+}
+.menu-toggle .fa-bars {
+  padding-right: 5px;
+}
+
+.social-icons .fa {
+  padding-left: 5px;
+}
+
+.navbar-subscribe {
+  font-weight: 700;
+  font-size: 14px;
+  background: #aa1e22;
+  text-transform: uppercase;
+}
+.navbar-subscribe a {
+  color: #fff !important;
+}
+
+.header-logo {
+  text-align: center;
+}
+.header-logo img {
+  width: 700px;
+  display: initial;
+}
+
+.footer-logo {
+  text-align: center;
+  padding: 35px;
+}
+
+.header-section {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.section-dropdown {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  margin: 0;
+  margin-top: -10px;
+  margin-bottom: 25px;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+  max-height: 1000px;
+  overflow: hidden;
+}
+.section-dropdown.closed {
+  overflow: hidden;
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+.section-dropdown h4 {
+  font-weight: 700;
+}
+
+.affix:not(.side-nav) {
+  top: 0;
+  width: 100%;
+  z-index: 500;
+}
+
+.inline {
+  display: inline;
+  padding: 0;
+}
+
+.affix + .container-fluid {
+  padding-top: 70px;
+}
+
+.leaderboards {
+  padding-top: 70px;
+  margin: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
