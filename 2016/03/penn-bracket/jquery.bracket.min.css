@@ -98,6 +98,7 @@ div.jQBracket {
       div.jQBracket .team div.label[disabled] {
         cursor: default; }
     div.jQBracket .team div.score {
+      margin-right: 15px;
       float: right;
       padding: 3px;
       text-align: center;
@@ -142,7 +143,7 @@ div.jQBracket {
     position: relative;
     float: left; }
   div.jQBracket .connector {
-    border: 5px solid #000;
+    border: 2px solid #000;
     border-left-style: none;
     position: absolute;
     z-index: 1; }
@@ -159,7 +160,7 @@ div.jQBracket {
       border-color: #fff; }
     div.jQBracket .connector.highlight,
     div.jQBracket .connector div.connector.highlight {
-      border-color: #0C0; }
+      border-color: #aa1e22; }
   div.jQBracket .np .connector,
   div.jQBracket .np .connector div.connector {
     border-color: #222; }
@@ -239,7 +240,7 @@ div.jQBracket.rl .connector {
     border-color: #fff; }
   div.jQBracket.rl .connector.highlight,
   div.jQBracket.rl .connector div.connector.highlight {
-    border-color: #0C0; }
+    border-color: #aa1e22; }
 div.jQBracket.rl .bubble {
   left: -35px; }
   div.jQBracket.rl .bubble.third {
