@@ -9,7 +9,9 @@ body {
   font-family: "neuzeit-grotesk", sans-serif;
 	background: #f9f9f9;
 }
-
+p {
+  font-family: 'lora', georgia, serif;
+}
 a {
 	color: #888;
 	text-decoration: none;
@@ -17,7 +19,7 @@ a {
 
 a:hover,
 a:active {
-	color: #333;
+	color: #d3d3d3;
 }
 
 span {
@@ -46,41 +48,7 @@ header small {
   font-weight: 100;
 }
 
-/* To Navigation Style */
-.codrops-top {
-	background: #fff;
-	background: rgba(255, 255, 255, 0.6);
-	text-transform: uppercase;
-	width: 100%;
-	font-size: 0.69em;
-	line-height: 2.2;
-}
-
-.codrops-top a {
-	padding: 0 1em;
-	letter-spacing: 0.1em;
-	color: #888;
-	display: inline-block;
-}
-
-.codrops-top a:hover {
-	background: rgba(255,255,255,0.95);
-	color: #333;
-}
-
-.codrops-top span.right {
-	float: right;
-}
-
-.codrops-top span.right a {
-	float: left;
-	display: block;
-}
-
-@media screen and (max-width: 25em) {
-
-	.codrops-icon span {
-		display: none;
-	}
-
+.blurb {
+  max-width: 500px;
+  text-align: center;
 }

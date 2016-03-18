@@ -41,7 +41,7 @@
 	color: #aa1e22;
 }
 
-.grid figcaption a {
+.grid figcaption a, .vote-btn {
 	text-align: center;
 	padding: 5px 10px;
 	border-radius: 2px;
