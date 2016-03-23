@@ -225,7 +225,7 @@ div.jQBracket.rl .teamContainer {
 div.jQBracket.rl .connector {
   border-left-style: solid;
   border-right-style: none;
-  border-width: 5px; }
+  border-width: 2px; }
   div.jQBracket.rl .connector.highlightWinner,
   div.jQBracket.rl .connector div.connector.highlightWinner {
     border-color: #DA0; }
