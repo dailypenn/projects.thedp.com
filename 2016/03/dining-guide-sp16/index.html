@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>34th Street Dining Guide</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
+<style>
+  body {
+    color:#3096B0;
+    font:400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+    margin:0;
+    padding:0;
+    -webkit-font-smoothing:antialiased;
+  }
+  * {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+  }
+  h1 {
+    font-size:22px;
+    margin:0;
+    font-weight:400;
+  }
+  a {
+    color:#3096B0;
+    text-decoration:none;
+  }
+  a:hover { color:#1b5664; }
+
+  .sidebar {
+    position:absolute;
+    width:33.3333%;
+    height:100%;
+    top:0;left:0;
+    overflow:hidden;
+    border-right:1px solid rgba(0,0,0,0.25);
+  }
+  .pad2 {
+    padding:20px;
+  }
+  .quiet {
+    color:#ededed;
+  }
+  .map {
+    position:absolute;
+    left:33.3333%;
+    width:66.6666%;
+    top:0;bottom:0;
+  }
+  .heading {
+    background:#FFFFFF;
+    border-bottom:1px solid #ededed;
+    height:60px;
+    line-height:60px;
+    padding:0 10px;
+  }
+  .listings {
+    height:100%;
+    overflow:auto;
+    padding-bottom:60px;
+  }
+  .listings .item {
+    display:block;
+    border-bottom:1px solid #eee;
+    padding:10px;
+    text-decoration:none;
+  }
+  .listings .item:last-child { border-bottom:none; }
+  .listings .item .title {
+    display:block;
+    color:#3096B0;
+    font-weight:700;
+  }
+  .listings .item .title small { font-weight:400; }
+  .listings .item.active .title,
+  .listings .item .title:hover { color:#3096B0; }
+  .listings .item.active {
+    background-color:#f8f8f8;
+  }
+
+  ::-webkit-scrollbar {
+    width:3px;
+    height:3px;
+    border-left:0;
+    background:rgba(0,0,0,0.1);
+  }
+  ::-webkit-scrollbar-track {
+    background:none;
+  }
+  ::-webkit-scrollbar-thumb {
+    background:#00853e;
+    border-radius:0;
+  }
+
+  .clearfix { display:block; }
+  .clearfix:after {
+    content:'.';
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+  }
+
+  /* Marker tweaks */
+  .leaflet-popup-close-button {
+    display:none;
+  }
+  .leaflet-popup-content {
+    font:400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+    padding:0;
+    width:200px;
+  }
+  .leaflet-popup-content-wrapper {
+    padding:0;
+  }
+  .leaflet-popup-content h3 {
+    background:#3096B0;
+    color:#fff;
+    margin:0;
+    display:block;
+    padding:10px;
+    border-radius:3px 3px 0 0;
+    font-weight:700;
+    margin-top:-15px;
+  }
+  .leaflet-popup-content div {
+    padding:10px;
+  }
+  .leaflet-container .leaflet-marker-icon { cursor:pointer; }
+  </style>
+</head>
+<body> 
+  <div class='sidebar'>
+    <div class='heading'>
+      <h1>34th Street Dining Guide</h1>
+    </div>
+    <div id='listings' class='listings'></div>
+  </div> 
+<div id='map' class='map'> </div>
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiZHB3ZWJkZXYiLCJhIjoiY2lrYTdvZnU0MGpiOXYwa3BwbjA0bGJrciJ9.5wK50SNw_NQaODLWOHOboA';
+
+
+var geojson = [
+  {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.198008, 39.951096]
+        },
+        "properties": {
+          "title": "Restaurant1",
+          "description": "A description of restaurant 1",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "http://www.nytimes.com"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.204169, 39.954614]
+        },
+        "properties": {
+          "title": "Restaurant2",
+          "description": "A description of restaurant 2",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "http://www.34st.com/section/lowbrow"
+        }
+      }
+    ]
+  }
+];
+var map = L.mapbox.map('map', 'mapbox.light')
+  .setView([39.951612, -75.195022], 14);
+
+var listings = document.getElementById('listings');
+var locations = L.mapbox.featureLayer().addTo(map);
+locations.setGeoJSON(geojson);
+
+function setActive(el) {
+    var siblings = listings.getElementsByTagName('div');
+    for (var i = 0; i < siblings.length; i++) {
+      siblings[i].className = siblings[i].className
+      .replace(/active/, '').replace(/\s\s*$/, '');
+    }
+
+    el.className += ' active';
+  }
+
+  locations.eachLayer(function(locale) {
+
+    // Shorten locale.feature.properties to just `prop` so we're not
+    // writing this long form over and over again.
+    var prop = locale.feature.properties;
+
+    // Each marker on the map.
+    var popup = '<h3>' + prop.title + '</h3><div>' + prop.description + 
+                '<p><a href=\"' + prop.url +'\" target=\"_blank\"">' + 'Read the article'+ '</a></p>' ;
+
+    var listing = listings.appendChild(document.createElement('div'));
+    listing.className = 'item';
+
+    var link = listing.appendChild(document.createElement('a'));
+    link.href = '#';
+    link.className = 'title';
+
+    link.innerHTML = prop.title;
+
+    var details = listing.appendChild(document.createElement('div'));
+    details.innerHTML = prop.description;
+    if (prop.phone) {
+      details.innerHTML += ' &middot; ' + prop.phoneFormatted;
+    }
+
+    link.onclick = function() {
+      setActive(listing);
+
+      // When a menu item is clicked, animate the map to center
+      // its associated locale and open its popup.
+      map.setView(locale.getLatLng(), 16);
+      locale.openPopup();
+      return false;
+    };
+
+    // Marker interaction
+    locale.on('click', function(e) {
+      // 1. center the map on the selected marker.
+      map.panTo(locale.getLatLng());
+
+      // 2. Set active the markers associated listing.
+      setActive(listing);
+    });
+
+    popup += '</div>';
+    locale.bindPopup(popup);
+
+
+});
+
+</script>
+</body>
+</html>
