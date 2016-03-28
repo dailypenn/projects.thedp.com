@@ -1,3 +1,8 @@
+img {
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
 .grid {
 	padding: 20px 20px 100px 20px;
 	max-width: 1300px;
@@ -24,6 +29,7 @@
 	max-width: 100%;
 	display: block;
 	position: relative;
+  z-index: 5;
 }
 
 .grid figcaption {
@@ -64,6 +70,7 @@
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
 	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
 	transition: transform 0.3s, opacity 0.3s;
+  z-index: 10;
 }
 
 .no-touch .cs-style-1 figure:hover figcaption,
@@ -376,6 +383,12 @@
 	-moz-transition: opacity 0.3s 0.2s;
 	transition: opacity 0.3s 0.2s;
 	opacity: 1;
+}
+img:hover.statement {
+    width: initial;
+    height: initial;
+    z-index: 2000;
+    position: fixed;
 }
 
 @media screen and (max-width: 31.5em) {
