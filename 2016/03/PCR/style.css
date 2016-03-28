@@ -42,12 +42,29 @@ p {
     font-size: 28px;
 }*/
 
+
 @media screen and (max-width: 810px) {
   #section1, #section2, #section3, #section41, #section42  {
       margin-left: 150px;
   }
 }
 
+/* Section Thumbnails Styles */
+td {
+  font-size: 120%;
+  font-style: bold;
+}
+.tn {
+  height: 10em;
+  width: 10em;
+  background-color: grey;
+
+}
+
+.table {
+  width: 75%;
+  margin-left: 15%;
+}
 
 /* HEADER STYLES */
 nav {

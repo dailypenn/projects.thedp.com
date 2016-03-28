@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Penn Course Review Analysis</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="//d3js.org/d3.v3.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 
@@ -98,7 +99,7 @@
         <div class="col-sm-2">
           <h4>Brought to you by The Daily Pennsylvanian, Inc.</h4>
           <p>
-            Designed for the DP by <a href="http://www.andrewfis.ch">PEOPLE NAME HERE PLS</a>.
+            Designed for the DP by <a href="">Ming Zhang</a> and <a href=""> Mikael Mantis</a>.
           </p>
         </div>
       </div>  
@@ -110,7 +111,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-6 col-sm-push-3 text-center">
-        <h1>Penn Course Title</h1>
+        <h1>Penn Course Review Analysis</h1>
         <h3>Here is a smll thing explaining the thingHere is a smll thing explaining the thing Here is a smll</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
@@ -119,16 +120,33 @@
         <p>
           <b>Bias Link goes Here? </b>
         </p>
-      </div>
-    </div>
 
+      </div>
+        <div>
+        <table class="table">
+          <tr>
+            <td>School Comparison <a href="#section1"> <div class="tn">  </div> </a></td>
+            <td>Course Difficulty <a href="#section2"> <div class="tn"> </div> </a> </td>
+            <td>Comparing Departments <a href="#section3"> <div class="tn"> </div> </a> </td>
+            <td>Active Learning <a href="#section4"> <div class="tn"> </div> </a> </td>
+          </tr>
+          <tr>
+            <td>Sectors <a href="#section5"><div class="tn"> </div> </a> </td>
+            <td>Writing Seminar <a href="#section6"> <div class="tn"> </div> </a> </td>
+            <td>Professor Quality <a href="#section7"> <div class="tn"> </div> </a> </td>
+            <td>Data Overtime <a href="#section8"> <div class="tn"> </div> </a> </td>
+          </tr>
+        </table>
+        </div>
+    </div>
+   
   </div>
   <br>
-
+ 
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-2" id="myScrollspy">
-        <ul class="side-nav nav" data-spy="affix" data-offset-top="250">
+        <ul class="side-nav nav" data-spy="affix" data-offset-top="875">
           <li><a href="#section1">School Comparison</a></li>
           <li><a href="#section2">Course Difficulty</a></li>
           <li><a href="#section3">Comparing Departments</a></li>
@@ -148,10 +166,10 @@
           </p>
         </section>
         <section id="section2">
-          <h1>Course Difficulty Title Here</h1>
+          <h1 id="section2-chart">Course Difficulty Title Here</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>        
+          </p>
         </section>
         <section id="section3">
           <h1>Comparing Departments</h1>
@@ -210,6 +228,10 @@
     });
 
   </script>
+
+  <script src="script.js"></script>
+
+
 </body>
 
 </html>                                		
