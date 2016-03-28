@@ -44,8 +44,9 @@
         <a href="CB18.html">CB '18</a> 
         <a href="CB17.html" class="vote-btn">CB '17</a> 
       </center>
-			<ul class="grid cs-style-1">
-        <h2>President</h2>
+      <center><h2>President</h2></center>
+
+			<ul id="1" class="grid cs-style-1">
 				<li>
 					<figure>
 						<img src="https://s3.amazonaws.com/media.dpn/51279_nec_darren_tomasso_juliososaf.jpg">
@@ -61,9 +62,10 @@
             </p>
 					</figure>
 				</li>
+      </ul>
                 
-        <h2>Executive Vice President</h2>
-        
+        <center><h2>Executive Vice President</h2></center>
+        <ul id="2" class="grid cs-style-1">
 				<li>
 					<figure>
 						<img src="https://s3.amazonaws.com/media.dpn/51345_fillerimgf.jpg">
@@ -79,9 +81,10 @@
             </p>
 					</figure>
 				</li>
+      </ul>
+        <center><h2>Vice President External</h2></center>
         
-        <h2>Vice President External</h2>
-        
+        <ul id="3" class="grid cs-style-1">
 				<li>
 					<figure>
 						<img src="https://s3.amazonaws.com/media.dpn/51345_fillerimgf.jpg">
@@ -112,9 +115,11 @@
             </p>
 					</figure>
 				</li>
+      </ul>
+      
+        <center><h2>Vice President Internal</h2></center>
         
-        <h2>Vice President Internal</h2>
-        
+        <ul id="4" class="grid cs-style-1">
         <li>
 					<figure>
 						<img src="https://s3.amazonaws.com/media.dpn/51345_fillerimgf.jpg" alt="img06">
@@ -130,9 +135,11 @@
             </p>
 					</figure>
 				</li>
+      </ul>
+      
+        <center><h2>Vice President Finances</h2></center>
         
-        <h2>Vice President Finances</h2>
-        
+        <ul id="5" class="grid cs-style-1">
         <li>
 					<figure>
 						<img src="https://s3.amazonaws.com/media.dpn/51345_fillerimgf.jpg">
@@ -148,9 +155,11 @@
             </p>
 					</figure>
 				</li>
+      </ul>
         
-        <h2>SAS Representative</h2>
+        <center><h2>SAS Representative</h2></center>
         
+        <ul id="6" class="grid cs-style-1">
         <li>
 					<figure>
 						<img src="https://s3.amazonaws.com/media.dpn/51345_fillerimgf.jpg">
@@ -181,8 +190,9 @@
             </p>
 					</figure>
 				</li>
-        
-        <h2>SEAS Representative</h2>
+      </ul>
+      
+        <center><h2>SEAS Representative</h2></center>
         
         <li>
 					<figure>
@@ -200,7 +210,7 @@
 					</figure>
 				</li>
         
-        <h2>Wharton Representative</h2>
+        <center><h2>Wharton Representative</h2></center>
         
         <li>
 					<figure>
@@ -218,7 +228,7 @@
 					</figure>
 				</li>
         
-        <h2>Nursing Representative</h2>
+        <center><h2>Nursing Representative</h2></center>
         
         <li>
 					<figure>
@@ -239,5 +249,25 @@
 			</ul>
 		</div><!-- /container -->
 		<script src="js/toucheffects.js"></script>
+    <script type="text/javascript">
+    var ul1 = document.getElementById('1');
+    var ul2 = document.getElementById('2')
+    var ul3 = document.getElementById('3')
+    var ul4 = document.getElementById('4')
+    var ul5 = document.getElementById('5')
+    var ul6 = document.getElementById('6')
+    
+    var randomize = function(x) {
+      for (var i = x.children.length; i >= 0; i--) {
+        x.appendChild(x.children[Math.random() * i | 0]);
+      }
+    }
+    
+    randomize(ul1);
+    randomize(ul2);
+    randomize(ul3);
+    randomize(ul4);
+    randomize(ul5);
+    randomize(ul6);
 	</body>
 </html>
