@@ -26,6 +26,10 @@ iframe {
   height: 1024px !important;
   overflow-y: hidden;
 }
+.lr, .rl {
+  width: 100% !important;
+}
+
 div.jQBracket {
   font-family: "neuzeit-grotesk", sans-serif;
   font-size: 14px;
