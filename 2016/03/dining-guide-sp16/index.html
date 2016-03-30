@@ -6,6 +6,7 @@
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
+<link rel="stylesheet" href="stylesheet.css">
 <script src="https://use.typekit.net/psa2uuo.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 <script>
@@ -18,180 +19,14 @@ ga('create', 'UA-707447-4', 'auto');
 ga('create', 'UA-55281509-16', 'auto');
 ga('send', 'pageview');
 </script>
-<style>
-  body {
-    color:#3096B0;
-    font:400 15px/22px 'Lora', 'Helvetica Neue', Sans-serif;
-    margin:0;
-    padding:0;
-    -webkit-font-smoothing:antialiased;
-  }
-  * {
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-  }
-  h1 {
-    font-size:22px;
-    margin:0;
-    font-weight:400;
-  }
-  a {
-    color:#3096B0;
-    text-decoration:none;
-  }
-  a:hover { color:#1b5664; }
-
-  .sidebar {
-    position:absolute;
-    width:33.3333%;
-    height:100%;
-    top:0;left:0;
-    overflow:hidden;
-    border-right:1px solid rgba(0,0,0,0.25);
-  }
-  .pad2 {
-    padding:20px;
-  }
-  .quiet {
-    color:#ededed;
-  }
-  .tooltip-content {
-    font-family: "lora";
-  }
-  .map {
-    position:absolute;
-    left:33.3333%;
-    width:66.6666%;
-    top:0;bottom:0;
-  }
-  h1, h2, h3, h4, h5, h6, .title {
-    font-family: "Neuzeit-Grotesk", sans-serif;
-    font-weight: 700;
-  }
-  .heading {
-    background:#FFFFFF;
-    border-bottom:1px solid #ededed;
-    height:60px;
-    line-height:60px;
-    padding:0 10px;
-  }
-  .listings {
-    height:100%;
-    overflow:auto;
-    padding-bottom:60px;
-  }
-  .listings .item {
-    display:block;
-    border-bottom:1px solid #eee;
-    padding:10px;
-    text-decoration:none;
-  }
-  .listings .item:last-child { border-bottom:none; }
-  .listings .item .title {
-    display:block;
-    color:#3096B0;
-    font-weight:700;
-  }
-  .listings .item .title small { font-weight:400; }
-  .listings .item.active .title,
-  .listings .item .title:hover { color:#3096B0; }
-  .listings .item.active {
-    background-color:#f8f8f8;
-  }
-
-  ::-webkit-scrollbar {
-    width:3px;
-    height:3px;
-    border-left:0;
-    background:rgba(0,0,0,0.1);
-  }
-  ::-webkit-scrollbar-track {
-    background:none;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #3096B0;
-    border-radius:0;
-  }
-
-  .clearfix { display:block; }
-  .clearfix:after {
-    content:'.';
-    display:block;
-    height:0;
-    clear:both;
-    visibility:hidden;
-  }
-
-  /* Marker tweaks */
-  .leaflet-popup-close-button {
-    display:none;
-  }
-  .leaflet-popup-content {
-    font:400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
-    padding:0;
-    width:200px;
-  }
-  .leaflet-popup-content-wrapper {
-    padding:0;
-  }
-  .leaflet-popup-content h3 {
-    background:#3096B0;
-    color:#fff;
-    margin:0;
-    display:block;
-    padding:10px;
-    border-radius:3px 3px 0 0;
-    font-weight:700;
-    margin-top:-15px;
-  }
-  .leaflet-popup-content div {
-    padding:10px;
-  }
-  .leaflet-container .leaflet-marker-icon { cursor:pointer; }
-  
-  .sidebar {
-    margin: 15px;
-background: white;
-width: 450px;
-height: 600px;
-border: 1px solid #e2e2e2;
-    position: absolute;
-    z-index: 100;
-  }
-  
-  .map {
-    margin: 0;
-    padding: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-  }
-  
-  @media only screen and (max-width: 750px) {
-    #listings {
-      display: none;
-    }
-    .sidebar {
-      margin: 0;
-      padding: 0;
-      height: 45px;
-      width: 100%;
-    }
-    h1 {
-      margin-top: -10px;
-    }
-}
-  
-  </style>
 </head>
-<body> 
+<body>
   <div class='sidebar'>
     <div class='heading'>
       <h1>34th Street Dining Guide</h1>
     </div>
     <div id='listings' class='listings'></div>
-  </div> 
+  </div>
 <div id='map' class='map'> </div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiZGFpbHlwZW5uIiwiYSI6ImNpanFueGV4cTAyeWx0b201dXpzeGU3aDEifQ.6V-cf4TqyBJ9Yj9XXjQVJA';
@@ -210,6 +45,8 @@ var geojson = [
         "properties": {
           "title": "Copabanana",
           "description": "One of Penn's most recognized staples is only a few decades old.",
+          "address":"4000 Spruce Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -225,6 +62,8 @@ var geojson = [
         "properties": {
           "title": "Revolution Taco",
           "description": "Philly’s new one-stop-shop for tacos and guac.",
+          "address":"2015 Walnut Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -240,6 +79,8 @@ var geojson = [
         "properties": {
           "title": "Beefsteak",
           "description": "New veggie-centered restaurant to open in Houston",
+          "address":"Houston Market, 3417 Spruce Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -253,9 +94,11 @@ var geojson = [
           "coordinates": [-75.198241, 39.950947]
         },
         "properties": {
-          "title": "Kitchen Gia",
+          "title": "SPONSORED | Kitchen Gia",
           "description": "Your one stop shop on campus for salads, soup, sandwiches and coffee has added yet another reason for you to forget about your dining plan. Kitchen Gia’s new juices feature seasonal ingredients straight from the farm whenever possible, add-ins like avocado oil and whey protein to actually fill you up and absolutely no artificial sweeteners.",
-          "marker-color": "#ffad00",
+          "address":"3716 Spruce Street",
+          "raiting": "★★★★★",
+          "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "star",
           "url": "#"
@@ -270,6 +113,8 @@ var geojson = [
         "properties": {
           "title": "Sweet Freedom Bakery",
           "description": "Sweet Freedom is gluten free, vegan, soy–free, corn–free, peanut–free, refined sugar–free,and kosher so we’re honestly not 100% positive what’s actually in their sweets but we do know they’re pretty tasty.",
+          "address":"1424 South Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -285,6 +130,8 @@ var geojson = [
         "properties": {
           "title": "Bakeshop on 20th",
           "description": "With twists on classic treats and a friendly, hometown feel, Bakeshop on 20th is the bakery you absolutely need in your life.",
+          "address":"269 S 20th Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -300,6 +147,8 @@ var geojson = [
         "properties": {
           "title": "Miel Patisserie",
           "description": "If you’re having withdrawal from your semester abroad, get your Parisian flavor fix at Miel Patisserie.",
+          "address":"204 S 17th Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -315,6 +164,8 @@ var geojson = [
         "properties": {
           "title": "Kermit's Bake Shoppe",
           "description": "Kermit’s isn’t extraordinary but it’s a solid bakery where everyone is bound to find something they’ll enjoy.",
+          "address":"2204 Washington Ave",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -329,11 +180,13 @@ var geojson = [
         },
         "properties": {
           "title": "Snap Custom Pizza",
-          "description": "",
+          "description": "1504 Sansom Street",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
-          "url": "Upgrade your drunk eats with Snap Custom Pizza’s delicious, custom personal pizzas."
+          "url": "Upgrade your drunk eats with Snap Custom Pizza’s delicious, custom personal pizzas.",
+          "address":"",
+          "raiting": "★★★★★",
         }
       },
       {
@@ -345,6 +198,8 @@ var geojson = [
         "properties": {
           "title": "Tredici Enoteca",
           "description": "Tredici serves primarily small plates with an Italian/Mediterranean influence. Maybe you should go if you want to SABS/have a nice insta picture, but otherwise stick to Zavino.",
+          "address":"114 S 13th Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -360,6 +215,8 @@ var geojson = [
         "properties": {
           "title": "Double Knot",
           "description": "These creative Japanese dishes can add up pretty quickly, but you’ll love the ride.",
+          "address":"120 S 13th Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -375,6 +232,8 @@ var geojson = [
         "properties": {
           "title": "Sugar Philly",
           "description": "The menu is simple: French macarons, crème brûlée, tiramisu cake, and macaron ice cream sandwiches. They switch up the flavors all the time, so you always try something new.",
+          "address":"38th and Walnut",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "car",
@@ -390,6 +249,8 @@ var geojson = [
         "properties": {
           "title": "Weckerily's",
           "description": "Weird flavors, weird location—but in a good way.",
+          "address":"4239 Baltimore Ave",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -405,6 +266,8 @@ var geojson = [
         "properties": {
           "title": "Capogiro",
           "description": "The DIY ice cream sandwich was so delicious, but maybe next time I’ll BYO Pillsbury.",
+          "address":"3925 Walnut Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -420,6 +283,8 @@ var geojson = [
         "properties": {
           "title": "Fiume",
           "description": "Good luck finding Fiume the first time you go looking for it.",
+          "address":"229 S 45th Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -435,6 +300,8 @@ var geojson = [
         "properties": {
           "title": "Graffiti Bar",
           "description": "There’s a small alley in between Sampan and the Philadelphia Club that I probably would not walk down if there weren’t an oasis of alcohol on the other side of it. But trek down that dark tunnel and you end up at Graffiti Bar, a little outdoor nook that has a very charming atmosphere.",
+          "address":"124 S 13th Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -450,6 +317,8 @@ var geojson = [
         "properties": {
           "title": "Milk Boy",
           "description": "Milk Boy isn’t really a bar; it’s primarily a music venue. But given how cool their secondary business is, I wouldn’t wait to go see a show there.",
+          "address":"1100 Chestnut St",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -465,6 +334,8 @@ var geojson = [
         "properties": {
           "title": "Local 44",
           "description": "Its startling that not many people know about this terrific crafts and drafts bar at 44th and Spruce.",
+          "address":"124 S 13th Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -480,6 +351,8 @@ var geojson = [
         "properties": {
           "title": "The Pit",
           "description": "There are two types of dive bars: The hipstery ones that have a rundown aesthetic and dark mood lighting that have been open for, like, a year; and the ones that are literal holes in the face of the Earth. The Pit is the latter.",
+          "address":"3924 Chestnut Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -495,6 +368,8 @@ var geojson = [
         "properties": {
           "title": "Dirty Frank's Bar",
           "description": "This old Gayborhood haunt has the feel of a place that used to be a major part of the community but is now slowly being co–opted by yuppies.",
+          "address":"347 S 13th Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -510,6 +385,8 @@ var geojson = [
         "properties": {
           "title": "The Trestle Inn",
           "description": "The Trestle Inn is a whiskey and go–go bar in an old warehouse underneath the Reading Railroad viaduct—in other words, is the kind of dive bar that is assuredly not The Pit.",
+          "address":"339 N 11th Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -525,6 +402,8 @@ var geojson = [
         "properties": {
           "title": "Green Egg's Cafe",
           "description": "The red velvet pancakes are everything you never thought you’d need.",
+          "address":"212 S 13th Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -540,6 +419,8 @@ var geojson = [
         "properties": {
           "title": "The Farmacy",
           "description": "This place has more than just one picture perfect item on its menu.",
+          "address":"4443 Spruce Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -555,6 +436,8 @@ var geojson = [
         "properties": {
           "title": "Lil' Pop Shop",
           "description": "You couldn’t even try to find something bad to say about our favorite neighborhood popsicles.",
+          "address":"265 S 44th Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -570,6 +453,8 @@ var geojson = [
         "properties": {
           "title": "Bluestone Lane",
           "description": "We’ve all seen the pictures, heard about the hubbub, and collectively rolled our eyes. Another avocado toast, great. Then you try Bluestone Lane’s beautiful avocado smash.",
+          "address":"",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -585,6 +470,8 @@ var geojson = [
         "properties": {
           "title": "Barbuzzo",
           "description": "You may look at this as I did and think “Oh just another custard dessert. It’ll be good, but nothing crazy.” If you do, you will be sorely and happily wrong.",
+          "address":"1701 Locust Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -600,6 +487,8 @@ var geojson = [
         "properties": {
           "title": "La Colombe",
           "description": "The cappuccino at La Colombe will forever inspire the masses. Just look at it.",
+          "address":"110 S 13th Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -615,6 +504,8 @@ var geojson = [
         "properties": {
           "title": "Vientiane Cafe",
           "description": "Vientiane Café on 47th and Baltimore Avenue has been satisfying Penn students’ BYO and asian noodle needs for 13 years. But they’ve been serving a different kind of community long before that.",
+          "address":"130 S 19th Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -630,6 +521,8 @@ var geojson = [
         "properties": {
           "title": "Renata's Kitchen",
           "description": "A West Philly staple is back and better than ever.",
+          "address":"4728 Baltimore Ave",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -645,6 +538,8 @@ var geojson = [
         "properties": {
           "title": "Clarkville",
           "description": "There wasn’t any actual cheese on the pizza, which was heartbreaking for two cheese–lovers.",
+          "address":"4533 Baltimore",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -660,6 +555,8 @@ var geojson = [
         "properties": {
           "title": "Spread Bagelry",
           "description": "The “Montreal Style” bagels that Spread Bagelry is known for are thinner, smaller and have a sweet, smoky flavor that you won’t find in New York.",
+          "address":"4301 Baltimore Ave",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -675,6 +572,8 @@ var geojson = [
         "properties": {
           "title": "Philly-Style Bagels",
           "description": "Philly–Style Bagels has answered a question that everyone so far has been too shy to ask: why boil your bagels in water when you can boil them in beer?",
+          "address":"4301 Baltimore Ave",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -690,6 +589,8 @@ var geojson = [
         "properties": {
           "title": "Schmear It",
           "description": "The notorious fire-engine red truck often found under the Locust Walk bridge is moving to a restaurant inside an apartment building at 3601 Market Street this Spring.",
+          "address":"3601 Market Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -705,6 +606,8 @@ var geojson = [
         "properties": {
           "title": "Williams Café",
           "description": "Williams Café, or “WilCaf” to the cool people, is the only coffee shop on campus whose bagels are worth your time, and it is likely your closest option if you want to spike your insulin in-between classes.",
+          "address":"255 S 36th Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -720,6 +623,8 @@ var geojson = [
         "properties": {
           "title": "WahlWheels",
           "description": "Although the Wahlberg brothers (yes, that Wahlberg) haven't opened up a location yet in the Philadelphia area (but it's coming soon!), we can enjoy hamburger heaven thanks to the easily accessible food truck, WahlWheels.",
+          "address":"Truck",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "car",
@@ -735,6 +640,8 @@ var geojson = [
         "properties": {
           "title": "Tap House",
           "description": "Look, we all know Tap House at this point. If you choose to get food there, you’re in for a minimum $15 check. But, if you should so choose to splurge, the Ten Spice Wings ($13) merit your money.",
+          "address":"3925 Walnut Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -750,6 +657,8 @@ var geojson = [
         "properties": {
           "title": "Cavanaugh's",
           "description": "If you’re looking for a cheaper on–campus alternative to Tap, take a page out of your weird Drexel friend’s book and head over to Cav’s.",
+          "address":"119 S 39th Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -765,6 +674,8 @@ var geojson = [
         "properties": {
           "title": "Moriarty's",
           "description": "At Moriarty’s there isn’t a catch—no special sauces, no dry rubs, no special drink pairings. They keep the wings attached, so when you order 8 wings, you really get 8 flats and 8 drums, which makes these a pretty great deal.",
+          "address":"1116 Walnut Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -780,6 +691,8 @@ var geojson = [
         "properties": {
           "title": "Tria Taproom",
           "description": "I never thought a plate of chicken wings could look as sexy as they did here.",
+          "address":"2005 Walnut Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -795,6 +708,8 @@ var geojson = [
         "properties": {
           "title": "Magpie",
           "description": "Magpie is more of a cozy home than a bakery.",
+          "address":"1622 South Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -810,6 +725,8 @@ var geojson = [
         "properties": {
           "title": "Jones",
           "description": "Jones is famous for their comfort food—their décor is cozy and eclectic, and they serve a meatloaf so homey I could’ve sworn I lived in that very restaurant.",
+          "address":"700 Chestnut Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -825,6 +742,8 @@ var geojson = [
         "properties": {
           "title": "Yoku",
           "description": "General Tsao’s Cauliflower is now a thing.",
+          "address":"119 S 21st Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -840,6 +759,8 @@ var geojson = [
         "properties": {
           "title": "Suga",
           "description": "Um, it’s gourmet Chinese food less than two miles from your bed.",
+          "address":"1720 Sansom",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -855,6 +776,8 @@ var geojson = [
         "properties": {
           "title": "Zavino",
           "description": "Zavino is a perfect blend of casual and classy; nice enough for actual professional adults to go to for a business lunch, but still accessible to the humble college student that hasn't figured out what they want to do with his or her life.",
+          "address":"3200 Chestnut Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -870,6 +793,8 @@ var geojson = [
         "properties": {
           "title": "Indeblue",
           "description": "Indeblue’s take on the classic Italian staple is the pizza gem you didn’t expect to find.",
+          "address":"205 S 13th Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -885,6 +810,8 @@ var geojson = [
         "properties": {
           "title": "Bufad",
           "description": "A newer addition to the Spring Garden area is Bufad, a delightful intimate BYO pizza restaurant.",
+          "address":"1240 Spring Garden Street",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -900,6 +827,8 @@ var geojson = [
         "properties": {
           "title": "Pizza Brain",
           "description": "This place is a little bit of a trip, so we recommend making a day out of it.",
+          "address":"2313 Frankford Ave",
+          "raiting": "★★★★★",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
@@ -938,7 +867,7 @@ function setActive(el) {
     var prop = locale.feature.properties;
 
     // Each marker on the map.
-    var popup = '<h3>' + prop.title + '</h3><div class="tooltip-content">' + prop.description + 
+    var popup = '<h3>' + prop.title + '</h3> <div class="tooltip-content">' + prop.description +
                 '<p><a href=\"' + prop.url +'\" target=\"_blank\"">' + 'Read our review'+ '</a></p>' ;
 
     var listing = listings.appendChild(document.createElement('div'));
@@ -951,7 +880,7 @@ function setActive(el) {
     link.innerHTML = prop.title;
 
     var details = listing.appendChild(document.createElement('div'));
-    details.innerHTML = prop.description;
+    details.innerHTML = '<i>'+ prop.address +'</i> | <span class="raiting">' + prop.raiting + '</span><br> ' + prop.description;
     if (prop.phone) {
       details.innerHTML += ' &middot; ' + prop.phoneFormatted;
     }
