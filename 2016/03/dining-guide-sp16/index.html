@@ -909,7 +909,7 @@ var geojson = [
     ]
   }
 ];
-var map = L.mapbox.map('map')
+var map = L.mapbox.map('map', '', {attributionControl: false})
   .setView([39.951612, -75.195022], 14);
 
 var listings = document.getElementById('listings');
@@ -917,6 +917,9 @@ var locations = L.mapbox.featureLayer().addTo(map);
 locations.setGeoJSON(geojson);
 L.mapbox.styleLayer('mapbox://styles/dailypenn/cijqnygqv005y94kqwb3xs46l').addTo(map);
 map.zoomControl.removeFrom(map);
+
+var credits = L.control.attribution().addTo(map);
+credits.addAttribution('Site by Nolan Hill, Rani Ayer, & Andrew Fischer. ©2016 The Daily Pennsylvanian. Maps © Mapbox © OpenStreetMaps');
 
 function setActive(el) {
     var siblings = listings.getElementsByTagName('div');
