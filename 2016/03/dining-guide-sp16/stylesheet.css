@@ -55,6 +55,14 @@ h1, h2, h3, h4, h5, h6, .title {
   line-height:60px;
   padding:0 10px;
 }
+.heading img {
+  display: inline;
+  padding-top: 10px;
+  vertical-align: top;
+}
+.heading h1 {
+  display: inline;
+}
 .listings {
   height:100%;
   overflow:auto;
@@ -157,7 +165,7 @@ border: 1px solid #e2e2e2;
   .sidebar {
     margin: 0;
     padding: 0;
-    height: 45px;
+    height: 60px;
     width: 100%;
   }
   h1 {
