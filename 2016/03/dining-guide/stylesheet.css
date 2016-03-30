@@ -142,7 +142,6 @@ h1, h2, h3, h4, h5, h6, .title {
 .sidebar {
   margin: 15px;
 width: 450px;
-border: 1px solid #e2e2e2;
   position: absolute;
   z-index: 100;
 }

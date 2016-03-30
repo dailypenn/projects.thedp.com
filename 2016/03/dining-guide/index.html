@@ -884,7 +884,7 @@ function setActive(el) {
     link.innerHTML = prop.title;
 
     var details = listing.appendChild(document.createElement('div'));
-    details.innerHTML = '<i>'+ prop.address +'</i> | <span class="raiting">' + prop.raiting + '</span><br> ' + prop.description;
+    details.innerHTML = '<i>'+ prop.address +'</i><br> ' + prop.description;
     if (prop.phone) {
       details.innerHTML += ' &middot; ' + prop.phoneFormatted;
     }
