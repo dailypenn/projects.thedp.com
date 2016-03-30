@@ -56,6 +56,9 @@ ga('send', 'pageview');
   .quiet {
     color:#ededed;
   }
+  .tooltip-content {
+    font-family: "lora";
+  }
   .map {
     position:absolute;
     left:33.3333%;
@@ -146,6 +149,25 @@ ga('send', 'pageview');
     padding:10px;
   }
   .leaflet-container .leaflet-marker-icon { cursor:pointer; }
+  
+  .sidebar {
+    margin: 15px;
+background: white;
+width: 450px;
+height: 600px;
+border: 1px solid #e2e2e2;
+    position: absolute;
+    z-index: 100;
+  }
+  
+  .map {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  
   </style>
 </head>
 <body> 
@@ -879,6 +901,7 @@ var listings = document.getElementById('listings');
 var locations = L.mapbox.featureLayer().addTo(map);
 locations.setGeoJSON(geojson);
 L.mapbox.styleLayer('mapbox://styles/dailypenn/cijqnygqv005y94kqwb3xs46l').addTo(map);
+map.zoomControl.removeFrom(map);
 
 function setActive(el) {
     var siblings = listings.getElementsByTagName('div');
@@ -897,7 +920,7 @@ function setActive(el) {
     var prop = locale.feature.properties;
 
     // Each marker on the map.
-    var popup = '<h3>' + prop.title + '</h3><div>' + prop.description + 
+    var popup = '<h3>' + prop.title + '</h3><div class="tooltip-content">' + prop.description + 
                 '<p><a href=\"' + prop.url +'\" target=\"_blank\"">' + 'Read the article'+ '</a></p>' ;
 
     var listing = listings.appendChild(document.createElement('div'));
