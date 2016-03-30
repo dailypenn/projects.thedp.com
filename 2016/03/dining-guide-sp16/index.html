@@ -4,12 +4,24 @@
 <meta charset=utf-8 />
 <title>34th Street Dining Guide</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
+<script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
+<script src="https://use.typekit.net/psa2uuo.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-707447-4', 'auto');
+ga('create', 'UA-55281509-16', 'auto');
+ga('send', 'pageview');
+</script>
 <style>
   body {
     color:#3096B0;
-    font:400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+    font:400 15px/22px 'Lora', 'Helvetica Neue', Sans-serif;
     margin:0;
     padding:0;
     -webkit-font-smoothing:antialiased;
@@ -49,6 +61,10 @@
     left:33.3333%;
     width:66.6666%;
     top:0;bottom:0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Neuzeit-Grotesk", sans-serif;
+    font-weight: 700;
   }
   .heading {
     background:#FFFFFF;
@@ -141,7 +157,7 @@
   </div> 
 <div id='map' class='map'> </div>
 <script>
-L.mapbox.accessToken = 'pk.eyJ1IjoiZHB3ZWJkZXYiLCJhIjoiY2lrYTdvZnU0MGpiOXYwa3BwbjA0bGJrciJ9.5wK50SNw_NQaODLWOHOboA';
+L.mapbox.accessToken = 'pk.eyJ1IjoiZGFpbHlwZW5uIiwiYSI6ImNpanFueGV4cTAyeWx0b201dXpzeGU3aDEifQ.6V-cf4TqyBJ9Yj9XXjQVJA';
 
 
 var geojson = [
@@ -152,41 +168,717 @@ var geojson = [
         "type": "Feature",
         "geometry": {
           "type": "Point",
-          "coordinates": [-75.198008, 39.951096]
+          "coordinates": [-75.203199, 39.951589]
         },
         "properties": {
-          "title": "Restaurant1",
-          "description": "A description of restaurant 1",
+          "title": "Copabanana",
+          "description": "One of Penn's most recognized staples is only a few decades old.",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
-          "url": "http://www.nytimes.com"
+          "url": "#"
         }
       },
       {
         "type": "Feature",
         "geometry": {
           "type": "Point",
-          "coordinates": [-75.204169, 39.954614]
+          "coordinates": [-75.174343, 39.950617]
         },
         "properties": {
-          "title": "Restaurant2",
-          "description": "A description of restaurant 2",
+          "title": "Revolution Taco",
+          "description": "Philly’s new one-stop-shop for tacos and guac.",
           "marker-color": "#3096B0",
           "marker-size": "large",
           "marker-symbol": "restaurant",
-          "url": "http://www.34st.com/section/lowbrow"
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [ -75.193915, 39.950890]
+        },
+        "properties": {
+          "title": "Beefsteak",
+          "description": "New veggie-centered restaurant to open in Houston",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.198241, 39.950947]
+        },
+        "properties": {
+          "title": "Kitchen Gia",
+          "description": "Your one stop shop on campus for salads, soup, sandwiches and coffee has added yet another reason for you to forget about your dining plan. Kitchen Gia’s new juices feature seasonal ingredients straight from the farm whenever possible, add-ins like avocado oil and whey protein to actually fill you up and absolutely no artificial sweeteners.",
+          "marker-color": "#ffad00",
+          "marker-size": "large",
+          "marker-symbol": "star",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.166544, 39.943692]
+        },
+        "properties": {
+          "title": "Sweet Freedom Bakery",
+          "description": "Sweet Freedom is gluten free, vegan, soy–free, corn–free, peanut–free, refined sugar–free,and kosher so we’re honestly not 100% positive what’s actually in their sweets but we do know they’re pretty tasty.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.174133, 39.948383]
+        },
+        "properties": {
+          "title": "Bakeshop on 20th",
+          "description": "With twists on classic treats and a friendly, hometown feel, Bakeshop on 20th is the bakery you absolutely need in your life.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [ -75.169330, 39.949663]
+        },
+        "properties": {
+          "title": "Miel Patisserie",
+          "description": "If you’re having withdrawal from your semester abroad, get your Parisian flavor fix at Miel Patisserie.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [ -75.180227, 39.939142]
+        },
+        "properties": {
+          "title": "Kermit's Bake Shoppe",
+          "description": "Kermit’s isn’t extraordinary but it’s a solid bakery where everyone is bound to find something they’ll enjoy.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [ -75.290787, 40.008220]
+        },
+        "properties": {
+          "title": "Snap Custom Pizza",
+          "description": "",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "Upgrade your drunk eats with Snap Custom Pizza’s delicious, custom personal pizzas."
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.162047, 39.949796]
+        },
+        "properties": {
+          "title": "Tredici Enoteca",
+          "description": "Tredici serves primarily small plates with an Italian/Mediterranean influence. Maybe you should go if you want to SABS/have a nice insta picture, but otherwise stick to Zavino.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.162119, 39.949584]
+        },
+        "properties": {
+          "title": "Double Knot",
+          "description": "These creative Japanese dishes can add up pretty quickly, but you’ll love the ride.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.198783, 39.953798]
+        },
+        "properties": {
+          "title": "Sugar Philly",
+          "description": "The menu is simple: French macarons, crème brûlée, tiramisu cake, and macaron ice cream sandwiches. They switch up the flavors all the time, so you always try something new.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "car",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [ -75.209079, 39.949791]
+        },
+        "properties": {
+          "title": "Weckerily's",
+          "description": "Weird flavors, weird location—but in a good way.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.201329, 39.954121]
+        },
+        "properties": {
+          "title": "Capogiro",
+          "description": "The DIY ice cream sandwich was so delicious, but maybe next time I’ll BYO Pillsbury.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [  -75.211665, 39.954083]
+        },
+        "properties": {
+          "title": "Fiume",
+          "description": "Good luck finding Fiume the first time you go looking for it.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.162310, 39.949508]
+        },
+        "properties": {
+          "title": "Graffiti Bar",
+          "description": "There’s a small alley in between Sampan and the Philadelphia Club that I probably would not walk down if there weren’t an oasis of alcohol on the other side of it. But trek down that dark tunnel and you end up at Graffiti Bar, a little outdoor nook that has a very charming atmosphere.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.158874, 39.949962]
+        },
+        "properties": {
+          "title": "Milk Boy",
+          "description": "Milk Boy isn’t really a bar; it’s primarily a music venue. But given how cool their secondary business is, I wouldn’t wait to go see a show there.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.210259, 39.952714]
+        },
+        "properties": {
+          "title": "Local 44",
+          "description": "Its startling that not many people know about this terrific crafts and drafts bar at 44th and Spruce.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.201175, 39.955295]
+        },
+        "properties": {
+          "title": "The Pit",
+          "description": "There are two types of dive bars: The hipstery ones that have a rundown aesthetic and dark mood lighting that have been open for, like, a year; and the ones that are literal holes in the face of the Earth. The Pit is the latter.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [ -75.162789, 39.945392]
+        },
+        "properties": {
+          "title": "Dirty Frank's Bar",
+          "description": "This old Gayborhood haunt has the feel of a place that used to be a major part of the community but is now slowly being co–opted by yuppies.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [ -75.156589, 39.958820]
+        },
+        "properties": {
+          "title": "The Trestle Inn",
+          "description": "The Trestle Inn is a whiskey and go–go bar in an old warehouse underneath the Reading Railroad viaduct—in other words, is the kind of dive bar that is assuredly not The Pit.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.162469, 39.948234]
+        },
+        "properties": {
+          "title": "Green Egg's Cafe",
+          "description": "The red velvet pancakes are everything you never thought you’d need.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.211976, 39.952929]
+        },
+        "properties": {
+          "title": "The Farmacy",
+          "description": "This place has more than just one picture perfect item on its menu.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.210308, 39.953146]
+        },
+        "properties": {
+          "title": "Lil' Pop Shop",
+          "description": "You couldn’t even try to find something bad to say about our favorite neighborhood popsicles.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.169575, 39.948947]
+        },
+        "properties": {
+          "title": "Bluestone Lane",
+          "description": "We’ve all seen the pictures, heard about the hubbub, and collectively rolled our eyes. Another avocado toast, great. Then you try Bluestone Lane’s beautiful avocado smash.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.162075, 39.949969]
+        },
+        "properties": {
+          "title": "Barbuzzo",
+          "description": "You may look at this as I did and think “Oh just another custard dessert. It’ll be good, but nothing crazy.” If you do, you will be sorely and happily wrong.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.172271, 39.950737]
+        },
+        "properties": {
+          "title": "La Colombe",
+          "description": "The cappuccino at La Colombe will forever inspire the masses. Just look at it.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.217916, 39.948355]
+        },
+        "properties": {
+          "title": "Vientiane Cafe",
+          "description": "Vientiane Café on 47th and Baltimore Avenue has been satisfying Penn students’ BYO and asian noodle needs for 13 years. But they’ve been serving a different kind of community long before that.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.214458, 39.949041]
+        },
+        "properties": {
+          "title": "Renata's Kitchen",
+          "description": "A West Philly staple is back and better than ever.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.209358, 39.949710]
+        },
+        "properties": {
+          "title": "Clarkville",
+          "description": "There wasn’t any actual cheese on the pizza, which was heartbreaking for two cheese–lovers.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [ -75.174434, 39.948586]
+        },
+        "properties": {
+          "title": "Spread Bagelry",
+          "description": "The “Montreal Style” bagels that Spread Bagelry is known for are thinner, smaller and have a sweet, smoky flavor that you won’t find in New York.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.132736, 39.974404]
+        },
+        "properties": {
+          "title": "Philly-Style Bagels",
+          "description": "Philly–Style Bagels has answered a question that everyone so far has been too shy to ask: why boil your bagels in water when you can boil them in beer?",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.194296, 39.956310]
+        },
+        "properties": {
+          "title": "Schmear It",
+          "description": "The notorious fire-engine red truck often found under the Locust Walk bridge is moving to a restaurant inside an apartment building at 3601 Market Street this Spring.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.196486, 39.951096]
+        },
+        "properties": {
+          "title": "Williams Café",
+          "description": "Williams Café, or “WilCaf” to the cool people, is the only coffee shop on campus whose bagels are worth your time, and it is likely your closest option if you want to spike your insulin in-between classes.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.193428, 39.950570]
+        },
+        "properties": {
+          "title": "WahlWheels",
+          "description": "Although the Wahlberg brothers (yes, that Wahlberg) haven't opened up a location yet in the Philadelphia area (but it's coming soon!), we can enjoy hamburger heaven thanks to the easily accessible food truck, WahlWheels.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "car",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.201351, 39.954212]
+        },
+        "properties": {
+          "title": "Tap House",
+          "description": "Look, we all know Tap House at this point. If you choose to get food there, you’re in for a minimum $15 check. But, if you should so choose to splurge, the Ten Spice Wings ($13) merit your money.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.199893, 39.954402]
+        },
+        "properties": {
+          "title": "Cavanaugh's",
+          "description": "If you’re looking for a cheaper on–campus alternative to Tap, take a page out of your weird Drexel friend’s book and head over to Cav’s.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.159848, 39.948541]
+        },
+        "properties": {
+          "title": "Moriarty's",
+          "description": "At Moriarty’s there isn’t a catch—no special sauces, no dry rubs, no special drink pairings. They keep the wings attached, so when you order 8 wings, you really get 8 flats and 8 drums, which makes these a pretty great deal.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.173991, 39.950779]
+        },
+        "properties": {
+          "title": "Tria Taproom",
+          "description": "I never thought a plate of chicken wings could look as sexy as they did here.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.169580, 39.944035]
+        },
+        "properties": {
+          "title": "Magpie",
+          "description": "Magpie is more of a cozy home than a bakery.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.152472, 39.949258]
+        },
+        "properties": {
+          "title": "Jones",
+          "description": "Jones is famous for their comfort food—their décor is cozy and eclectic, and they serve a meatloaf so homey I could’ve sworn I lived in that very restaurant.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.175594, 39.950962]
+        },
+        "properties": {
+          "title": "Yoku",
+          "description": "General Tsao’s Cauliflower is now a thing.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.169674, 39.950580]
+        },
+        "properties": {
+          "title": "Suga",
+          "description": "Um, it’s gourmet Chinese food less than two miles from your bed.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.162015, 39.949930]
+        },
+        "properties": {
+          "title": "Zavino",
+          "description": "Zavino is a perfect blend of casual and classy; nice enough for actual professional adults to go to for a business lunch, but still accessible to the humble college student that hasn't figured out what they want to do with his or her life.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.162035, 39.948499]
+        },
+        "properties": {
+          "title": "Indeblue",
+          "description": "Indeblue’s take on the classic Italian staple is the pizza gem you didn’t expect to find.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.159208, 39.961771]
+        },
+        "properties": {
+          "title": "Bufad",
+          "description": "A newer addition to the Spring Garden area is Bufad, a delightful intimate BYO pizza restaurant.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-75.128170, 39.980705]
+        },
+        "properties": {
+          "title": "Pizza Brain",
+          "description": "This place is a little bit of a trip, so we recommend making a day out of it.",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": "#"
         }
       }
     ]
   }
 ];
-var map = L.mapbox.map('map', 'mapbox.light')
+var map = L.mapbox.map('map')
   .setView([39.951612, -75.195022], 14);
 
 var listings = document.getElementById('listings');
 var locations = L.mapbox.featureLayer().addTo(map);
 locations.setGeoJSON(geojson);
+L.mapbox.styleLayer('mapbox://styles/dailypenn/cijqnygqv005y94kqwb3xs46l').addTo(map);
 
 function setActive(el) {
     var siblings = listings.getElementsByTagName('div');
