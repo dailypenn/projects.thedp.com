@@ -65,7 +65,7 @@ ga('send', 'pageview');
     width:66.6666%;
     top:0;bottom:0;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6, .title {
     font-family: "Neuzeit-Grotesk", sans-serif;
     font-weight: 700;
   }
@@ -110,7 +110,7 @@ ga('send', 'pageview');
     background:none;
   }
   ::-webkit-scrollbar-thumb {
-    background:#00853e;
+    background: #3096B0;
     border-radius:0;
   }
 
@@ -167,6 +167,21 @@ border: 1px solid #e2e2e2;
     right: 0;
     width: 100%;
   }
+  
+  @media only screen and (max-width: 750px) {
+    #listings {
+      display: none;
+    }
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      height: 45px;
+      width: 100%;
+    }
+    h1 {
+      margin-top: -10px;
+    }
+}
   
   </style>
 </head>
@@ -921,7 +936,7 @@ function setActive(el) {
 
     // Each marker on the map.
     var popup = '<h3>' + prop.title + '</h3><div class="tooltip-content">' + prop.description + 
-                '<p><a href=\"' + prop.url +'\" target=\"_blank\"">' + 'Read the article'+ '</a></p>' ;
+                '<p><a href=\"' + prop.url +'\" target=\"_blank\"">' + 'Read our review'+ '</a></p>' ;
 
     var listing = listings.appendChild(document.createElement('div'));
     listing.className = 'item';
