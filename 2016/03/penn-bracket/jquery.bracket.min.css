@@ -117,7 +117,7 @@ div.jQBracket {
     div.jQBracket .team.win div.score {
       color: #fff; }
     div.jQBracket .team.lose div.score {
-      color: #fff; }
+      color: #666; }
     div.jQBracket .team.lose {
       background-color: #fff;
       color: #666; }
