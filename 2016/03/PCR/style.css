@@ -23,7 +23,7 @@ li.active {
   font-weight: 900;
 }
 
-#myScrollspy 
+#myScrollspy
 
 section {
   min-height: 100%;
@@ -216,4 +216,21 @@ body {
   margin: 0;
   padding-right: 0;
   padding-left: 0;
+}
+
+
+/*// CHART STYLES*/
+
+path {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
 }
