@@ -1,4 +1,13 @@
 /**
+ * THEME STUFF
+**/
+var RED    = "#da1924";
+var BLUE   = "#2ac1dd";
+var GREEN  = "#98A62F";
+var YELLOW = "#f3bb06";
+var ORANGE = "#F49F00";
+
+/**
  *
  * CODE FOR SCHOOL COMPARISON CHART
  *
@@ -91,8 +100,6 @@ var svg = d3.select("#dept-comp-chart")
     .attr("height", diameter)
     .attr("class", "bubble");
 
-
-
 d3.csv("data/Department_Difficulty.csv", function(error, data){
 
     //convert numerical values from strings to numbers
@@ -119,13 +126,13 @@ d3.csv("data/Department_Difficulty.csv", function(error, data){
         .attr("cy", function(d){ return d.y; })
         .style("fill", function(d) {
           if (d.School == "SAS") {
-            return "red";
+            return BLUE;
           } else if (d.school == "SEAS"){
-            return "green";
+            return GREEN;
           } else if (d.School == "Wharton") {
-            return "blue"
+            return ORANGE;
           } else {
-            return "pink"
+            return RED;
           }
         });
 
@@ -141,6 +148,61 @@ d3.csv("data/Department_Difficulty.csv", function(error, data){
             "font-size": "12px"
         });
 })
+
+
+function deptQuality() {
+
+  // Get the data again
+  d3.csv("data/Department_CourseQuality.csv", function(error, data){
+
+      //convert numerical values from strings to numbers
+      data = data.map(function(d){
+        d.value = +Math.pow(d["Course Quality"], 6); //Raise to power to scale as difference is really small
+        d.school = +d["School"];
+        console.log(d.value);
+        return d; });
+
+    var nodes = bubble.nodes({children:data}).filter(function(d) { return !d.children; });
+
+    //setup the chart
+    var bubbles = svg.append("g")
+        .attr("transform", "translate(0,0)")
+        .selectAll(".bubble")
+        .data(nodes)
+        .enter();
+
+    //create the bubbles and color them correctly
+    bubbles.append("circle")
+        .attr("r", function(d){ return d.r; })
+        .attr("cx", function(d){ return d.x; })
+        .attr("cy", function(d){ return d.y; })
+        .style("fill", function(d) {
+          if (d.School == "SAS") {
+            return BLUE;
+          } else if (d.school == "SEAS"){
+            return GREEN;
+          } else if (d.School == "Wharton") {
+            return ORANGE;
+          } else {
+            return RED;
+          }
+        });
+
+    //format the text for each bubble, give it description
+    bubbles.append("text")
+        .attr("x", function(d){ return d.x; })
+        .attr("y", function(d){ return d.y + 5; })
+        .attr("text-anchor", "middle")
+        .text(function(d){ return d["Department"]; })
+        .style({
+            "fill":"white",
+            "font-family":"neuzeit-grotesk, Helvetica, Arial, san-serif",
+            "font-size": "12px"
+          });
+  })
+};
+
+
 
 /**
  *
