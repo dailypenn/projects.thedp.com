@@ -163,6 +163,86 @@ var sectWork = function() {
 }
 /**
  *
+ * CODE FOR STEM COMPARISON CHARAT
+ *
+**/
+var stemQual = function() {
+  c3.generate({
+    bindto: '#stem-comp-chart',
+    data: {
+      url: 'data/stemComp/stem-quality.csv'
+    },
+    axis: {
+      x: {
+        label: 'Semester'
+      },
+      y: {
+        label: 'Score',
+        min: 0,
+        max: 4
+      }
+    }}
+  );
+}
+
+var stemDiff = function() {
+  c3.generate({
+    bindto: '#stem-comp-chart',
+    data: {
+      url: 'data/stemComp/stem-difficulty.csv'
+    },
+    axis: {
+      x: {
+        label: 'Semester'
+      },
+      y: {
+        label: 'Score',
+        min: 0,
+        max: 4
+      }
+    }}
+  );
+}
+
+var stemInst = function() {
+  c3.generate({
+    bindto: '#stem-comp-chart',
+    data: {
+      url: 'data/stemComp/stem-instructor.csv'
+    },
+    axis: {
+      x: {
+        label: 'Semester'
+      },
+      y: {
+        label: 'Score',
+        min: 0,
+        max: 4
+      }
+    }}
+  );
+}
+
+var stemWork = function() {
+  c3.generate({
+    bindto: '#stem-comp-chart',
+    data: {
+      url: 'data/stemComp/stem-work.csv'
+    },
+    axis: {
+      x: {
+        label: 'Semester'
+      },
+      y: {
+        label: 'Score',
+        min: 0,
+        max: 4
+      }
+    }}
+  );
+}
+/**
+ *
  * CODE FOR DEPARTMENT COMPARISON CHARAT
  *
 **/
@@ -186,7 +266,6 @@ d3.csv("data/Department_Difficulty.csv", function(error, data){
     data = data.map(function(d){
       d.value = +Math.pow(d["Difficulty"], 6); //Raise to power to scale as difference is really small
       d.school = +d["School"];
-      console.log(d.value);
       return d; });
 
     //bubbles needs very specific format, convert data to this.
@@ -292,4 +371,5 @@ function deptQuality() {
 $( document ).ready(function(){
   avgSAS();
   sectQual();
+  stemQual();
 })
