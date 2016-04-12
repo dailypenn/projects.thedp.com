@@ -100,7 +100,7 @@ var sectQual = function() {
   c3.generate({
     bindto: '#sector-comp-chart',
     data: {
-      url: 'data/sectors_course-quality.csv'
+      url: 'data/sectorComp/sectors_course-quality.csv'
     },
     axis: {
       x: {
@@ -121,7 +121,7 @@ var sectDiff = function() {
   c3.generate({
     bindto: '#sector-comp-chart',
     data: {
-      url: 'data/sectors_difficulty.csv'
+      url: 'data/sectorComp/sectors_difficulty.csv'
     },
     axis: {
       x: {
@@ -142,7 +142,7 @@ var sectInst = function() {
   c3.generate({
     bindto: '#sector-comp-chart',
     data: {
-      url: 'data/sectors_instructor-quality.csv'
+      url: 'data/ssectorComp/ectors_instructor-quality.csv'
     },
     axis: {
       x: {
@@ -163,7 +163,7 @@ var sectWork = function() {
   c3.generate({
     bindto: '#sector-comp-chart',
     data: {
-      url: 'data/sectors_work-required.csv'
+      url: 'data/sectorComp/sectors_work-required.csv'
     },
     axis: {
       x: {
