@@ -14,6 +14,7 @@ h1 {
 h1.title {
 }
 
+/*
 section:nth-child(4n+1) h1 {
   text-shadow: 4px 4px #2ac1dd;
 }
@@ -26,6 +27,7 @@ section:nth-child(4n+3) h1 {
 section:nth-child(4n+4) h1 {
   text-shadow: 4px 4px #F49F00;
 }
+*/
 
 ul.side-nav {
   font-family: "neuzeit-grotesk", "montserrant", sans-serif;

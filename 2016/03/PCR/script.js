@@ -1,6 +1,8 @@
 /**
  * THEME STUFF
 **/
+// Spring 2009 to Spring 2015
+
 var RED    = "#da1924";
 var BLUE   = "#2ac1dd";
 var GREEN  = "#98A62F";
@@ -20,12 +22,14 @@ var avgSAS  = function() {
       },
       axis: {
           x: {
-            label: 'Semester'
+            label: 'Semester',
+            type: 'category',
+categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
           },
           y: {
             label: 'Score',
-            min: 0,
-            max: 4
+            min: 2,
+            max: 3.5
           }
   }});
 }
@@ -37,12 +41,14 @@ var avgSEAS = function() {
       },
       axis: {
           x: {
-            label: 'Semester'
+            label: 'Semester',
+            type: 'category',
+            categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
           },
           y: {
             label: 'Score',
-            min: 0,
-            max: 4
+            min: 2,
+            max: 3.5
           }
   }});
 }
@@ -54,12 +60,14 @@ var avgWhar = function() {
       },
       axis: {
           x: {
-            label: 'Semester'
+            label: 'Semester',
+            type: 'category',
+            categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
           },
           y: {
             label: 'Score',
-            min: 0,
-            max: 4
+            min: 2,
+            max: 3.5
           }
   }});
 }
@@ -71,12 +79,14 @@ var avgNurs = function() {
       },
       axis: {
           x: {
-            label: 'Semester'
+            label: 'Semester',
+            type: 'category',
+            categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
           },
           y: {
             label: 'Score',
-            min: 0,
-            max: 4
+            min: 2,
+            max: 3.5
           }
   }});
 }
@@ -94,12 +104,14 @@ var sectQual = function() {
     },
     axis: {
       x: {
-        label: 'Semester'
+        label: 'Semester',
+        type: 'category',
+        categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
       },
       y: {
         label: 'Score',
-        min: 0,
-        max: 4
+        min: 2,
+        max: 3.5
       }
     }}
   );
@@ -113,12 +125,14 @@ var sectDiff = function() {
     },
     axis: {
       x: {
-        label: 'Semester'
+        label: 'Semester',
+        type: 'category',
+        categories:["Spring '09", 'Fall \'09', "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
       },
       y: {
         label: 'Score',
-        min: 0,
-        max: 4
+        min: 2,
+        max: 3.5
       }
     }}
   );
@@ -132,12 +146,14 @@ var sectInst = function() {
     },
     axis: {
       x: {
-        label: 'Semester'
+        label: 'Semester',
+        type: 'category',
+        categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
       },
       y: {
         label: 'Score',
-        min: 0,
-        max: 4
+        min: 2,
+        max: 3.5
       }
     }}
   );
@@ -151,12 +167,14 @@ var sectWork = function() {
     },
     axis: {
       x: {
-        label: 'Semester'
+        label: 'Semester',
+        type: 'category',
+        categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
       },
       y: {
         label: 'Score',
-        min: 0,
-        max: 4
+        min: 2,
+        max: 3.5
       }
     }}
   );
@@ -174,12 +192,14 @@ var stemQual = function() {
     },
     axis: {
       x: {
-        label: 'Semester'
+        label: 'Semester',
+        type: 'category',
+        categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
       },
       y: {
         label: 'Score',
-        min: 0,
-        max: 4
+        min: 1.5,
+        max: 3.5
       }
     }}
   );
@@ -193,12 +213,14 @@ var stemDiff = function() {
     },
     axis: {
       x: {
-        label: 'Semester'
+        label: 'Semester',
+        type: 'category',
+        categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
       },
       y: {
         label: 'Score',
-        min: 0,
-        max: 4
+        min: 1.5,
+        max: 3.5
       }
     }}
   );
@@ -212,12 +234,14 @@ var stemInst = function() {
     },
     axis: {
       x: {
-        label: 'Semester'
+        label: 'Semester',
+        type: 'category',
+        categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
       },
       y: {
         label: 'Score',
-        min: 0,
-        max: 4
+        min: 1.5,
+        max: 3.5
       }
     }}
   );
@@ -231,12 +255,14 @@ var stemWork = function() {
     },
     axis: {
       x: {
-        label: 'Semester'
+        label: 'Semester',
+        type: 'category',
+        categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
       },
       y: {
         label: 'Score',
-        min: 0,
-        max: 4
+        min: 1.5,
+        max: 3.5
       }
     }}
   );
@@ -361,6 +387,31 @@ function deptQuality() {
   })
 };
 
+
+/**
+ *
+ * LANGUAGE COMPARISON CHART
+ *
+**/
+
+c3.generate({
+  bindto: '#lang-comp-chart',
+    data: {
+        columns: [
+            ['Average Course Quality', 3.953, 3.816666667, 3.564379426, 3.47, 3.457692308, 3.434880508, 3.419102564, 3.413688504, 3.4016788, 3.395666667, 3.366282051, 3.328333333, 3.28125, 3.269122405, 3.25000891, 3.210933558, 3.207371795, 3.183807692, 3.18375, 3.164480456, 3.148846855, 3.116055509, 3.091730769, 3.075000364, 3.059285996, 2.987975323, 2.964070149, 2.833305371, 2.805909091, 2.62323814,4],
+            ['Average Instructor Quality', 3.257806803, 3.8675, 3.722307082, 3.44,3.506923077, 3.642147819, 3.586346154, 3.598342373, 3.536174915, 000,3.631538462, 3.556333333, 3.40375, 3.472466422, 3.50907218, 3.388827812, 3.299871795, 3.415785714, 3.3875, 3.3696656, 3.432141415, 3.393812137, 3.33724359, 3.407779419, 3.340734855, 3.196735098, 3.165453381, 3.079332997, 3.025, 2.891421124, 4]
+        ],
+        type: 'bar'
+    },
+    axis: {
+      x: {
+        label: 'Language',
+        type: 'category',
+        categories:['TURK', 	'YDSH', 	'PRTG', 	'SCND', 	'PERS', 	'CHIN', 	'GREK', 	'HEBR', 	'JPAN', 	'GUJR', 	'SKRT', 	'DTCH', 	'ANEL', 	'KORN', 	'GRMN', 	'RUSS', 	'URDU', 	'LATN', 	'ROML', 	'JWST', 	'ITAL', 	'FREN', 	'HIND', 	'SPAN', 	'ARAB', 	'SAST', 	'AFRC', 	'AFST', 	'SLAV', 	'EAS', 	'Average']
+      }
+    }
+
+});
 
 
 /**
