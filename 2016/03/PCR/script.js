@@ -24,7 +24,7 @@ var avgSAS  = function() {
           x: {
             label: 'Semester',
             type: 'category',
-categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
+categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
           },
           y: {
             label: 'Score',
@@ -43,7 +43,7 @@ var avgSEAS = function() {
           x: {
             label: 'Semester',
             type: 'category',
-            categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
+            categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
           },
           y: {
             label: 'Score',
@@ -62,7 +62,7 @@ var avgWhar = function() {
           x: {
             label: 'Semester',
             type: 'category',
-            categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
+            categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
           },
           y: {
             label: 'Score',
@@ -81,7 +81,7 @@ var avgNurs = function() {
           x: {
             label: 'Semester',
             type: 'category',
-            categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
+            categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
           },
           y: {
             label: 'Score',
@@ -106,7 +106,7 @@ var sectQual = function() {
       x: {
         label: 'Semester',
         type: 'category',
-        categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
+        categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
       },
       y: {
         label: 'Score',
@@ -127,7 +127,7 @@ var sectDiff = function() {
       x: {
         label: 'Semester',
         type: 'category',
-        categories:["Spring '09", 'Fall \'09', "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
+        categories:["S'09", 'Fall \'09', "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
       },
       y: {
         label: 'Score',
@@ -148,7 +148,7 @@ var sectInst = function() {
       x: {
         label: 'Semester',
         type: 'category',
-        categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
+        categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
       },
       y: {
         label: 'Score',
@@ -169,7 +169,7 @@ var sectWork = function() {
       x: {
         label: 'Semester',
         type: 'category',
-        categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
+        categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
       },
       y: {
         label: 'Score',
@@ -194,11 +194,11 @@ var stemQual = function() {
       x: {
         label: 'Semester',
         type: 'category',
-        categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
+        categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
       },
       y: {
         label: 'Score',
-        min: 1.5,
+        min: 2,
         max: 3.5
       }
     }}
@@ -215,11 +215,11 @@ var stemDiff = function() {
       x: {
         label: 'Semester',
         type: 'category',
-        categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
+        categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
       },
       y: {
         label: 'Score',
-        min: 1.5,
+        min: 2,
         max: 3.5
       }
     }}
@@ -236,11 +236,11 @@ var stemInst = function() {
       x: {
         label: 'Semester',
         type: 'category',
-        categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
+        categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
       },
       y: {
         label: 'Score',
-        min: 1.5,
+        min: 2,
         max: 3.5
       }
     }}
@@ -257,11 +257,11 @@ var stemWork = function() {
       x: {
         label: 'Semester',
         type: 'category',
-        categories:["Spring '09", "Fall '09", "Spring '10", "Fall '10", "Spring '11", "Fall '11", "Spring '12", "Fall '12", "Spring '13", "Fall '13", "Spring '14", "Fall '14", "Spring '15"]
+        categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
       },
       y: {
         label: 'Score',
-        min: 1.5,
+        min: 2,
         max: 3.5
       }
     }}
@@ -407,12 +407,45 @@ c3.generate({
       x: {
         label: 'Language',
         type: 'category',
-        categories:['TURK', 	'YDSH', 	'PRTG', 	'SCND', 	'PERS', 	'CHIN', 	'GREK', 	'HEBR', 	'JPAN', 	'GUJR', 	'SKRT', 	'DTCH', 	'ANEL', 	'KORN', 	'GRMN', 	'RUSS', 	'URDU', 	'LATN', 	'ROML', 	'JWST', 	'ITAL', 	'FREN', 	'HIND', 	'SPAN', 	'ARAB', 	'SAST', 	'AFRC', 	'AFST', 	'SLAV', 	'EAS', 	'Average']
+        categories:['TURK', 	'YDSH', 	'PRTG', 	'SCND', 	'PERS', 	'CHIN', 	'GREK', 	'HEBR', 	'JPAN', 	'GUJR', 	'SKRT', 	'DTCH', 	'ANEL', 	'KORN', 	'GRMN', 	'RUSS', 	'URDU', 	'LATN', 	'ROML', 	'JWST', 	'ITAL', 	'FREN', 	'HIND', 	'SPAN', 	'ARAB', 	'SAST', 	'AFRC', 	'AFST', 	'SLAV', 	'EAS', 	'Avg']
       }
+    },
+    legend: {
+        position: 'right'
     }
 
 });
 
+/**
+ *
+ * GREAT DEPRESSION CHART
+ *
+**/
+c3.generate({
+  bindto: '#drop-chart',
+  data: {
+    url: 'data/drop-data.csv'
+  },
+  axis: {
+    x: {
+      label: 'Semester',
+      type: 'category',
+      categories:["S09", "F09", "S10", "F10", "S11", "F11", "S12", "F12", "S13", "F13", "S14", "F14", "S15"]
+    },
+    y: {
+      label: 'Score',
+      min: 2.3,
+      max: 3.3
+    }
+  },
+  legend: {
+      position: 'right'
+  },
+  regions: [
+          {axis: 'x', start: 13, end: 14},
+      ]
+  }
+);
 
 /**
  *
