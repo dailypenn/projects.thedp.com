@@ -83,6 +83,86 @@ var avgNurs = function() {
 
 /**
  *
+ *CODE FOR SECTOR COMAPRISON
+ *
+**/
+var sectQual = function() {
+  c3.generate({
+    bindto: '#sector-comp-chart',
+    data: {
+      url: 'data/sectors_course-quality.csv'
+    },
+    axis: {
+      x: {
+        label: 'Semester'
+      },
+      y: {
+        label: 'Score',
+        min: 0,
+        max: 4
+      }
+    }}
+  );
+}
+
+var sectDiff = function() {
+  c3.generate({
+    bindto: '#sector-comp-chart',
+    data: {
+      url: 'data/sectors_difficulty.csv'
+    },
+    axis: {
+      x: {
+        label: 'Semester'
+      },
+      y: {
+        label: 'Score',
+        min: 0,
+        max: 4
+      }
+    }}
+  );
+}
+
+var sectInst = function() {
+  c3.generate({
+    bindto: '#sector-comp-chart',
+    data: {
+      url: 'data/sectors_instructor-quality.csv'
+    },
+    axis: {
+      x: {
+        label: 'Semester'
+      },
+      y: {
+        label: 'Score',
+        min: 0,
+        max: 4
+      }
+    }}
+  );
+}
+
+var sectWork = function() {
+  c3.generate({
+    bindto: '#sector-comp-chart',
+    data: {
+      url: 'data/sectors_work-required.csv'
+    },
+    axis: {
+      x: {
+        label: 'Semester'
+      },
+      y: {
+        label: 'Score',
+        min: 0,
+        max: 4
+      }
+    }}
+  );
+}
+/**
+ *
  * CODE FOR DEPARTMENT COMPARISON CHARAT
  *
 **/
@@ -211,4 +291,5 @@ function deptQuality() {
 **/
 $( document ).ready(function(){
   avgSAS();
+  sectQual();
 })
