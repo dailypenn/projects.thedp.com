@@ -14,11 +14,11 @@ var ORANGE = "#F49F00";
  * CODE FOR SCHOOL COMPARISON CHART
  *
 **/
-var avgSAS  = function() {
+var avgQual = function() {
   c3.generate({
       bindto: '#school-comp-chart',
       data: {
-        url: 'data/schoolComp/avg-rank-by-school-sas.csv'
+        url: 'data/schoolComp/school_course-qual.csv'
       },
     color: {
         pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
@@ -35,13 +35,17 @@ categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'1
             max: 3.5
           }
   }});
+  $( "[onclick='avgQual()']" ).addClass('active');
+  $( "[onclick='avgDiff()']" ).removeClass('active');
+  $( "[onclick='avgInst()']" ).removeClass('active');
+  $( "[onclick='avgWork()']" ).removeClass('active');
+}
 
-}
-var avgSEAS = function() {
+var avgDiff = function() {
   c3.generate({
       bindto: '#school-comp-chart',
       data: {
-        url: 'data/schoolComp/avg-rank-by-school-seas.csv'
+        url: 'data/schoolComp/school_diff.csv'
       },
     color: {
         pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
@@ -58,13 +62,16 @@ var avgSEAS = function() {
             max: 3.5
           }
   }});
-
+  $( "[onclick='avgQual()']" ).removeClass('active');
+  $( "[onclick='avgDiff()']" ).addClass('active');
+  $( "[onclick='avgInst()']" ).removeClass('active');
+  $( "[onclick='avgWork()']" ).removeClass('active');
 }
-var avgWhar = function() {
+var avgInst = function() {
   c3.generate({
       bindto: '#school-comp-chart',
       data: {
-        url: 'data/schoolComp/avg-rank-by-school-whar.csv'
+        url: 'data/schoolComp/school_inst-qual.csv'
       },
     color: {
         pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
@@ -81,12 +88,16 @@ var avgWhar = function() {
             max: 3.5
           }
   }});
+  $( "[onclick='avgQual()']" ).removeClass('active');
+  $( "[onclick='avgDiff()']" ).removeClass('active');
+  $( "[onclick='avgInst()']" ).addClass('active');
+  $( "[onclick='avgWork()']" ).removeClass('active');
 }
-var avgNurs = function() {
+var avgWork = function() {
   c3.generate({
       bindto: '#school-comp-chart',
       data: {
-        url: 'data/schoolComp/avg-rank-by-school-nurs.csv'
+        url: 'data/schoolComp/school_work.csv'
       },
     color: {
         pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
@@ -103,6 +114,10 @@ var avgNurs = function() {
             max: 3.5
           }
   }});
+  $( "[onclick='avgQual()']" ).removeClass('active');
+  $( "[onclick='avgDiff()']" ).removeClass('active');
+  $( "[onclick='avgInst()']" ).removeClass('active');
+  $( "[onclick='avgWork()']" ).addClass('active');
 }
 
 /**
@@ -529,7 +544,7 @@ color: {
  *
 **/
 $( document ).ready(function(){
-  avgSAS();
+  avgQual();
   sectQual();
   stemQual();
 })
