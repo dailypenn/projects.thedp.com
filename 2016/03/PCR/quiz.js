@@ -10,6 +10,7 @@ var formBuilder = function(index) {
   var select = d3.select("#classes")
     .append("div")
     .append("select")
+      .attr("class", "form-control")
 
   select.selectAll("option")
     .data(data)
@@ -18,7 +19,7 @@ var formBuilder = function(index) {
       .attr("id", index)
       .attr("value", function (d) { return d.Difficulty; })
       .text(function (d) { return toTitleCase(d.CourseName); });
-      
+
 })};
 
 
@@ -34,12 +35,32 @@ $('#coursenum').change(function(){
 })
 
 var classDifAvg = function() {
-  var name = 0;
+  var name = 0.00;
   var e = document.getElementsByTagName("select");
-  for (var i = 0; i < e.length; i++){
-    name += parseInt(e[i].value);
+  for (var i = 1; i < e.length; i++){
+    name += parseFloat(e[i].value);
   }
   name /= parseInt($('#coursenum').val());
+  console.log(name);
   return name;
 }
 
+var getResults = function() {
+  var res = classDifAvg();
+
+  if (res < 2.1) {
+    // SUPER EASY
+  } else if (res < 2.3) {
+    // easy
+  } else if (res < 2.5) {
+    // below average
+  } else if (res < 2.8) {
+    // above average
+  } else if (res < 3) {
+    // hard
+  } else if (res < 3.2) {
+    // really hard
+  } else {
+    // SUPER HARD
+  }
+}
