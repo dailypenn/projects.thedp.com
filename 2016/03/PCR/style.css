@@ -30,7 +30,7 @@ section:nth-child(4n+4) h1 {
 
 
 ul.side-nav {
-  font-family: "neuzeit-grotesk", "montserrant", sans-serif;
+  font-family: "neuzeit-grotesk", "montserrat", sans-serif;
   font-size: 17px;
   font-weight: 100;
   width: 100%;
@@ -55,7 +55,7 @@ section {
   /*min-height: 100%;*/
   padding-bottom: 75px;
   padding-top: 50px;
-  border-bottom: 7px solid black;
+  border-bottom: 1px solid #a2a2a2;
 }
 
 p {

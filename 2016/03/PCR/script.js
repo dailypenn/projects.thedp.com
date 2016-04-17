@@ -20,6 +20,9 @@ var avgSAS  = function() {
       data: {
         url: 'data/schoolComp/avg-rank-by-school-sas.csv'
       },
+    color: {
+        pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+    },
       axis: {
           x: {
             label: 'Semester',
@@ -39,6 +42,9 @@ var avgSEAS = function() {
       data: {
         url: 'data/schoolComp/avg-rank-by-school-seas.csv'
       },
+    color: {
+        pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+    },
       axis: {
           x: {
             label: 'Semester',
@@ -58,6 +64,9 @@ var avgWhar = function() {
       data: {
         url: 'data/schoolComp/avg-rank-by-school-whar.csv'
       },
+    color: {
+        pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+    },
       axis: {
           x: {
             label: 'Semester',
@@ -77,6 +86,9 @@ var avgNurs = function() {
       data: {
         url: 'data/schoolComp/avg-rank-by-school-nurs.csv'
       },
+    color: {
+        pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+    },
       axis: {
           x: {
             label: 'Semester',
@@ -102,6 +114,9 @@ var sectQual = function() {
     data: {
       url: 'data/sectorComp/sectors_course-quality.csv'
     },
+  color: {
+      pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+  },
     axis: {
       x: {
         label: 'Semester',
@@ -123,6 +138,9 @@ var sectDiff = function() {
     data: {
       url: 'data/sectorComp/sectors_difficulty.csv'
     },
+  color: {
+      pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+  },
     axis: {
       x: {
         label: 'Semester',
@@ -144,6 +162,9 @@ var sectInst = function() {
     data: {
       url: 'data/ssectorComp/ectors_instructor-quality.csv'
     },
+  color: {
+      pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+  },
     axis: {
       x: {
         label: 'Semester',
@@ -165,6 +186,9 @@ var sectWork = function() {
     data: {
       url: 'data/sectorComp/sectors_work-required.csv'
     },
+  color: {
+      pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+  },
     axis: {
       x: {
         label: 'Semester',
@@ -190,6 +214,9 @@ var stemQual = function() {
     data: {
       url: 'data/stemComp/stem-quality.csv'
     },
+  color: {
+      pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+  },
     axis: {
       x: {
         label: 'Semester',
@@ -211,6 +238,9 @@ var stemDiff = function() {
     data: {
       url: 'data/stemComp/stem-difficulty.csv'
     },
+  color: {
+      pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+  },
     axis: {
       x: {
         label: 'Semester',
@@ -232,6 +262,9 @@ var stemInst = function() {
     data: {
       url: 'data/stemComp/stem-instructor.csv'
     },
+  color: {
+      pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+  },
     axis: {
       x: {
         label: 'Semester',
@@ -253,6 +286,9 @@ var stemWork = function() {
     data: {
       url: 'data/stemComp/stem-work.csv'
     },
+  color: {
+      pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+  },
     axis: {
       x: {
         label: 'Semester',
@@ -403,6 +439,9 @@ c3.generate({
         ],
         type: 'bar'
     },
+  color: {
+      pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+  },
     axis: {
       x: {
         label: 'Language',
@@ -426,6 +465,9 @@ c3.generate({
   data: {
     url: 'data/drop-data.csv'
   },
+color: {
+    pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+},
   axis: {
     x: {
       label: 'Semester',
