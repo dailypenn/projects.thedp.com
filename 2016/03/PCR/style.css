@@ -253,6 +253,24 @@ ul.side-nav.nav.affix  {
   padding-left: 0;
 }
 
+.btn {
+  border-radius: 25px;
+  border-color: #2ac1dd;
+  color: #2ac1dd;
+  font-weight: 800;
+}
+
+.btn:hover, .btn:active {
+  background: rgba(20, 20, 20, .1);
+  border-color: #2ac1dd;
+  color: #2ac1dd;
+}
+
+.btn-default-outline.active {
+  color: #fff;
+  background: #2ac1dd;
+}
+
 
 /*// CHART STYLES*/
 

@@ -35,6 +35,7 @@ categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'1
             max: 3.5
           }
   }});
+
 }
 var avgSEAS = function() {
   c3.generate({
@@ -57,6 +58,7 @@ var avgSEAS = function() {
             max: 3.5
           }
   }});
+
 }
 var avgWhar = function() {
   c3.generate({
@@ -130,6 +132,10 @@ var sectQual = function() {
       }
     }}
   );
+  $( "[onclick='sectQual()']" ).addClass('active');
+  $( "[onclick='sectDiff()']" ).removeClass('active');
+  $( "[onclick='sectInst()']" ).removeClass('active');
+  $( "[onclick='sectWork()']" ).removeClass('active');
 }
 
 var sectDiff = function() {
@@ -154,6 +160,10 @@ var sectDiff = function() {
       }
     }}
   );
+  $( "[onclick='sectQual()']" ).removeClass('active');
+  $( "[onclick='sectDiff()']" ).addClass('active');
+  $( "[onclick='sectInst()']" ).removeClass('active');
+  $( "[onclick='sectWork()']" ).removeClass('active');
 }
 
 var sectInst = function() {
@@ -178,6 +188,10 @@ var sectInst = function() {
       }
     }}
   );
+  $( "[onclick='sectQual()']" ).removeClass('active');
+  $( "[onclick='sectDiff()']" ).removeClass('active');
+  $( "[onclick='sectInst()']" ).addClass('active');
+  $( "[onclick='sectWork()']" ).removeClass('active');
 }
 
 var sectWork = function() {
@@ -202,6 +216,10 @@ var sectWork = function() {
       }
     }}
   );
+  $( "[onclick='sectQual()']" ).removeClass('active');
+  $( "[onclick='sectDiff()']" ).removeClass('active');
+  $( "[onclick='sectInst()']" ).removeClass('active');
+  $( "[onclick='sectWork()']" ).addClass('active');
 }
 /**
  *
@@ -230,6 +248,10 @@ var stemQual = function() {
       }
     }}
   );
+  $( "[onclick='stemQual()']" ).addClass('active');
+  $( "[onclick='stemDiff()']" ).removeClass('active');
+  $( "[onclick='stemInst()']" ).removeClass('active');
+  $( "[onclick='stemWork()']" ).removeClass('active');
 }
 
 var stemDiff = function() {
@@ -254,6 +276,10 @@ var stemDiff = function() {
       }
     }}
   );
+  $( "[onclick='stemQual()']" ).removeClass('active');
+  $( "[onclick='stemDiff()']" ).addClass('active');
+  $( "[onclick='stemInst()']" ).removeClass('active');
+  $( "[onclick='stemWork()']" ).removeClass('active');
 }
 
 var stemInst = function() {
@@ -278,6 +304,11 @@ var stemInst = function() {
       }
     }}
   );
+  $( "[onclick='stemQual()']" ).removeClass('active');
+  $( "[onclick='stemDiff()']" ).removeClass('active');
+  $( "[onclick='stemInst()']" ).addClass('active');
+  $( "[onclick='stemWork()']" ).removeClass('active');
+
 }
 
 var stemWork = function() {
@@ -302,6 +333,10 @@ var stemWork = function() {
       }
     }}
   );
+  $( "[onclick='stemQual()']" ).removeClass('active');
+  $( "[onclick='stemDiff()']" ).removeClass('active');
+  $( "[onclick='stemInst()']" ).removeClass('active');
+  $( "[onclick='stemWork()']" ).addClass('active');
 }
 /**
  *
@@ -452,7 +487,6 @@ c3.generate({
     legend: {
         position: 'right'
     }
-
 });
 
 /**
