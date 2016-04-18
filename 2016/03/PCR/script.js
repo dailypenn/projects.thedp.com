@@ -14,12 +14,15 @@ var ORANGE = "#F49F00";
  * CODE FOR SCHOOL COMPARISON CHART
  *
 **/
-var avgSAS  = function() {
+var avgQual = function() {
   c3.generate({
       bindto: '#school-comp-chart',
       data: {
-        url: 'data/schoolComp/avg-rank-by-school-sas.csv'
+        url: 'data/schoolComp/school_course-qual.csv'
       },
+    color: {
+        pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+    },
       axis: {
           x: {
             label: 'Semester',
@@ -32,13 +35,21 @@ categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'1
             max: 3.5
           }
   }});
+  $( "[onclick='avgQual()']" ).addClass('active');
+  $( "[onclick='avgDiff()']" ).removeClass('active');
+  $( "[onclick='avgInst()']" ).removeClass('active');
+  $( "[onclick='avgWork()']" ).removeClass('active');
 }
-var avgSEAS = function() {
+
+var avgDiff = function() {
   c3.generate({
       bindto: '#school-comp-chart',
       data: {
-        url: 'data/schoolComp/avg-rank-by-school-seas.csv'
+        url: 'data/schoolComp/school_diff.csv'
       },
+    color: {
+        pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+    },
       axis: {
           x: {
             label: 'Semester',
@@ -51,13 +62,20 @@ var avgSEAS = function() {
             max: 3.5
           }
   }});
+  $( "[onclick='avgQual()']" ).removeClass('active');
+  $( "[onclick='avgDiff()']" ).addClass('active');
+  $( "[onclick='avgInst()']" ).removeClass('active');
+  $( "[onclick='avgWork()']" ).removeClass('active');
 }
-var avgWhar = function() {
+var avgInst = function() {
   c3.generate({
       bindto: '#school-comp-chart',
       data: {
-        url: 'data/schoolComp/avg-rank-by-school-whar.csv'
+        url: 'data/schoolComp/school_inst-qual.csv'
       },
+    color: {
+        pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+    },
       axis: {
           x: {
             label: 'Semester',
@@ -70,13 +88,20 @@ var avgWhar = function() {
             max: 3.5
           }
   }});
+  $( "[onclick='avgQual()']" ).removeClass('active');
+  $( "[onclick='avgDiff()']" ).removeClass('active');
+  $( "[onclick='avgInst()']" ).addClass('active');
+  $( "[onclick='avgWork()']" ).removeClass('active');
 }
-var avgNurs = function() {
+var avgWork = function() {
   c3.generate({
       bindto: '#school-comp-chart',
       data: {
-        url: 'data/schoolComp/avg-rank-by-school-nurs.csv'
+        url: 'data/schoolComp/school_work.csv'
       },
+    color: {
+        pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+    },
       axis: {
           x: {
             label: 'Semester',
@@ -89,6 +114,10 @@ var avgNurs = function() {
             max: 3.5
           }
   }});
+  $( "[onclick='avgQual()']" ).removeClass('active');
+  $( "[onclick='avgDiff()']" ).removeClass('active');
+  $( "[onclick='avgInst()']" ).removeClass('active');
+  $( "[onclick='avgWork()']" ).addClass('active');
 }
 
 /**
@@ -102,6 +131,9 @@ var sectQual = function() {
     data: {
       url: 'data/sectorComp/sectors_course-quality.csv'
     },
+  color: {
+      pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+  },
     axis: {
       x: {
         label: 'Semester',
@@ -115,6 +147,10 @@ var sectQual = function() {
       }
     }}
   );
+  $( "[onclick='sectQual()']" ).addClass('active');
+  $( "[onclick='sectDiff()']" ).removeClass('active');
+  $( "[onclick='sectInst()']" ).removeClass('active');
+  $( "[onclick='sectWork()']" ).removeClass('active');
 }
 
 var sectDiff = function() {
@@ -123,6 +159,9 @@ var sectDiff = function() {
     data: {
       url: 'data/sectorComp/sectors_difficulty.csv'
     },
+  color: {
+      pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+  },
     axis: {
       x: {
         label: 'Semester',
@@ -136,6 +175,10 @@ var sectDiff = function() {
       }
     }}
   );
+  $( "[onclick='sectQual()']" ).removeClass('active');
+  $( "[onclick='sectDiff()']" ).addClass('active');
+  $( "[onclick='sectInst()']" ).removeClass('active');
+  $( "[onclick='sectWork()']" ).removeClass('active');
 }
 
 var sectInst = function() {
@@ -144,6 +187,9 @@ var sectInst = function() {
     data: {
       url: 'data/ssectorComp/ectors_instructor-quality.csv'
     },
+  color: {
+      pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+  },
     axis: {
       x: {
         label: 'Semester',
@@ -157,6 +203,10 @@ var sectInst = function() {
       }
     }}
   );
+  $( "[onclick='sectQual()']" ).removeClass('active');
+  $( "[onclick='sectDiff()']" ).removeClass('active');
+  $( "[onclick='sectInst()']" ).addClass('active');
+  $( "[onclick='sectWork()']" ).removeClass('active');
 }
 
 var sectWork = function() {
@@ -165,6 +215,9 @@ var sectWork = function() {
     data: {
       url: 'data/sectorComp/sectors_work-required.csv'
     },
+  color: {
+      pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+  },
     axis: {
       x: {
         label: 'Semester',
@@ -178,6 +231,10 @@ var sectWork = function() {
       }
     }}
   );
+  $( "[onclick='sectQual()']" ).removeClass('active');
+  $( "[onclick='sectDiff()']" ).removeClass('active');
+  $( "[onclick='sectInst()']" ).removeClass('active');
+  $( "[onclick='sectWork()']" ).addClass('active');
 }
 /**
  *
@@ -190,6 +247,9 @@ var stemQual = function() {
     data: {
       url: 'data/stemComp/stem-quality.csv'
     },
+  color: {
+      pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+  },
     axis: {
       x: {
         label: 'Semester',
@@ -203,6 +263,10 @@ var stemQual = function() {
       }
     }}
   );
+  $( "[onclick='stemQual()']" ).addClass('active');
+  $( "[onclick='stemDiff()']" ).removeClass('active');
+  $( "[onclick='stemInst()']" ).removeClass('active');
+  $( "[onclick='stemWork()']" ).removeClass('active');
 }
 
 var stemDiff = function() {
@@ -211,6 +275,9 @@ var stemDiff = function() {
     data: {
       url: 'data/stemComp/stem-difficulty.csv'
     },
+  color: {
+      pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+  },
     axis: {
       x: {
         label: 'Semester',
@@ -224,6 +291,10 @@ var stemDiff = function() {
       }
     }}
   );
+  $( "[onclick='stemQual()']" ).removeClass('active');
+  $( "[onclick='stemDiff()']" ).addClass('active');
+  $( "[onclick='stemInst()']" ).removeClass('active');
+  $( "[onclick='stemWork()']" ).removeClass('active');
 }
 
 var stemInst = function() {
@@ -232,6 +303,9 @@ var stemInst = function() {
     data: {
       url: 'data/stemComp/stem-instructor.csv'
     },
+  color: {
+      pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+  },
     axis: {
       x: {
         label: 'Semester',
@@ -245,6 +319,11 @@ var stemInst = function() {
       }
     }}
   );
+  $( "[onclick='stemQual()']" ).removeClass('active');
+  $( "[onclick='stemDiff()']" ).removeClass('active');
+  $( "[onclick='stemInst()']" ).addClass('active');
+  $( "[onclick='stemWork()']" ).removeClass('active');
+
 }
 
 var stemWork = function() {
@@ -253,6 +332,9 @@ var stemWork = function() {
     data: {
       url: 'data/stemComp/stem-work.csv'
     },
+  color: {
+      pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+  },
     axis: {
       x: {
         label: 'Semester',
@@ -266,6 +348,10 @@ var stemWork = function() {
       }
     }}
   );
+  $( "[onclick='stemQual()']" ).removeClass('active');
+  $( "[onclick='stemDiff()']" ).removeClass('active');
+  $( "[onclick='stemInst()']" ).removeClass('active');
+  $( "[onclick='stemWork()']" ).addClass('active');
 }
 /**
  *
@@ -398,11 +484,14 @@ c3.generate({
   bindto: '#lang-comp-chart',
     data: {
         columns: [
-            ['Average Course Quality', 3.953, 3.816666667, 3.564379426, 3.47, 3.457692308, 3.434880508, 3.419102564, 3.413688504, 3.4016788, 3.395666667, 3.366282051, 3.328333333, 3.28125, 3.269122405, 3.25000891, 3.210933558, 3.207371795, 3.183807692, 3.18375, 3.164480456, 3.148846855, 3.116055509, 3.091730769, 3.075000364, 3.059285996, 2.987975323, 2.964070149, 2.833305371, 2.805909091, 2.62323814,4],
-            ['Average Instructor Quality', 3.257806803, 3.8675, 3.722307082, 3.44,3.506923077, 3.642147819, 3.586346154, 3.598342373, 3.536174915, 000,3.631538462, 3.556333333, 3.40375, 3.472466422, 3.50907218, 3.388827812, 3.299871795, 3.415785714, 3.3875, 3.3696656, 3.432141415, 3.393812137, 3.33724359, 3.407779419, 3.340734855, 3.196735098, 3.165453381, 3.079332997, 3.025, 2.891421124, 4]
+            ['Avg. Course Qual.', 3.953, 3.816666667, 3.564379426, 3.47, 3.457692308, 3.434880508, 3.419102564, 3.413688504, 3.4016788, 3.395666667, 3.366282051, 3.328333333, 3.28125, 3.269122405, 3.25000891, 3.210933558, 3.207371795, 3.183807692, 3.18375, 3.164480456, 3.148846855, 3.116055509, 3.091730769, 3.075000364, 3.059285996, 2.987975323, 2.964070149, 2.833305371, 2.805909091, 2.62323814,4],
+            ['Avg. Instructor Qual.', 3.257806803, 3.8675, 3.722307082, 3.44,3.506923077, 3.642147819, 3.586346154, 3.598342373, 3.536174915, 000,3.631538462, 3.556333333, 3.40375, 3.472466422, 3.50907218, 3.388827812, 3.299871795, 3.415785714, 3.3875, 3.3696656, 3.432141415, 3.393812137, 3.33724359, 3.407779419, 3.340734855, 3.196735098, 3.165453381, 3.079332997, 3.025, 2.891421124, 4]
         ],
         type: 'bar'
     },
+  color: {
+      pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+  },
     axis: {
       x: {
         label: 'Language',
@@ -413,7 +502,6 @@ c3.generate({
     legend: {
         position: 'right'
     }
-
 });
 
 /**
@@ -426,11 +514,14 @@ c3.generate({
   data: {
     url: 'data/drop-data.csv'
   },
+color: {
+    pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2', '#666']
+},
   axis: {
     x: {
       label: 'Semester',
       type: 'category',
-      categories:["S09", "F09", "S10", "F10", "S11", "F11", "S12", "F12", "S13", "F13", "S14", "F14", "S15"]
+      categories:["F'02", "S'02", "F'03", "S'03", "F'04", "S'04", "F'05", "S'05", "F'06", "S'06", "S'07", "F'07", "S'08", "F'08", "S09", "F09", "S10", "F10", "S11", "F11", "S12", "F12", "S13", "F13", "S14", "F14", "S15"]
     },
     y: {
       label: 'Score',
@@ -453,7 +544,7 @@ c3.generate({
  *
 **/
 $( document ).ready(function(){
-  avgSAS();
+  avgQual();
   sectQual();
   stemQual();
 })

@@ -30,10 +30,10 @@ section:nth-child(4n+4) h1 {
 
 
 ul.side-nav {
-  font-family: "neuzeit-grotesk", "montserrant", sans-serif;
+  font-family: "neuzeit-grotesk", "montserrat", sans-serif;
   font-size: 17px;
   font-weight: 100;
-  width: 15%;
+  width: 100%;
   top: 100px;
 }
 
@@ -41,25 +41,42 @@ li.active {
   font-weight: 900;
 }
 
-#myScrollspy
-
-section {
-  min-height: 100%;
+a {
+  color: #2ac1dd;
 }
 
-p {
+a:hover {
+  color: #2ac1dd;
+}
+
+#myScrollspy{}
+
+section {
+  /*min-height: 100%;*/
+  padding-bottom: 75px;
+  padding-top: 50px;
+  border-bottom: 1px solid #a2a2a2;
+}
+
+p, ol li, p li, p ul {
   font-family: "lora", georgia, serif;
+  font-size: 15px;
 }
 
 .content {
-  border-left: 7px solid #000;
 }
 
+.byline {
+  font-weight: 400;
+}
 /*div.col-sm-9 div {
     height: 250px;
     font-size: 28px;
 }*/
 
+.header-table {
+  padding: 25px;
+}
 
 @media screen and (max-width: 810px) {
   #section1, #section2, #section3, #section41, #section42  {
@@ -72,12 +89,7 @@ td {
   font-size: 120%;
   font-style: bold;
 }
-.tn {
-  height: 10em;
-  width: 10em;
-  background-color: grey;
 
-}
 
 .table {
   width: 75%;
@@ -214,6 +226,15 @@ body {
   font-weight: 700;
 }
 
+.side-nav:not(.affix) li {
+  border-right: solid 7px black;
+}
+
+ul.side-nav.nav.affix  {
+  width: 15%;
+  border-right: solid 7px black;
+}
+
 .affix:not(.side-nav) {
   top: 0;
   width: 100%;
@@ -234,6 +255,24 @@ body {
   margin: 0;
   padding-right: 0;
   padding-left: 0;
+}
+
+.btn {
+  border-radius: 25px;
+  border-color: #2ac1dd;
+  color: #2ac1dd;
+  font-weight: 800;
+}
+
+.btn:hover, .btn:active {
+  background: rgba(20, 20, 20, .1);
+  border-color: #2ac1dd;
+  color: #2ac1dd;
+}
+
+.btn-default-outline.active {
+  color: #fff;
+  background: #2ac1dd;
 }
 
 
