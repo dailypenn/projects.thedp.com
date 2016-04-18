@@ -58,13 +58,17 @@ section {
   border-bottom: 1px solid #a2a2a2;
 }
 
-p {
+p, ol li, p li, p ul {
   font-family: "lora", georgia, serif;
+  font-size: 15px;
 }
 
 .content {
 }
 
+.byline {
+  font-weight: 400;
+}
 /*div.col-sm-9 div {
     height: 250px;
     font-size: 28px;

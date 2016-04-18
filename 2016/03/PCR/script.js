@@ -515,7 +515,7 @@ c3.generate({
     url: 'data/drop-data.csv'
   },
 color: {
-    pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
+    pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2', '#666']
 },
   axis: {
     x: {
