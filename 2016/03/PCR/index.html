@@ -128,16 +128,16 @@
         <div>
         <table class="table text-center header-table">
           <tr>
-            <td><a href="#section1">School Comparison</a></td>
-            <td><a href="#section2">Course Difficulty</a> </td>
-            <td><a href="#section3">Comparing Departments</a> </td>
-            <td><a href="#section4">Active Learning</a> </td>
+            <td><a href="#section1">School <br />Comparison</a></td>
+            <td><a href="#section2">Course <br />Difficulty</a> </td>
+            <td><a href="#section3">Comparing <br />Departments</a> </td>
+            <td><a href="#section4">Active <br /> Learning</a> </td>
           </tr>
           <tr>
             <td><a href="#section5">Sectors</a> </td>
-            <td><a href="#section6">Writing Seminar</a></td>
-            <td><a href="#section7">Professor Quality</a></td>
-            <td><a href="#section8">Data Overtime</a></td>
+            <td><a href="#section6">Writing <br />Seminar</a></td>
+            <td><a href="#section7">Professor <br />Quality</a></td>
+            <td><a href="#section8">Data <br />Overtime</a></td>
           </tr>
         </table>
         </div>
@@ -146,10 +146,10 @@
   </div>
   <br>
 
-  <div class="container-fluid">
+  <div class="container-fluid" id="sections">
     <div class="row">
       <div class="col-sm-2 hidden-sm hidden-xs" id="myScrollspy">
-        <ul class="side-nav nav" data-spy="affix" data-offset-top="500">
+        <ul class="side-nav nav" data-spy="affix" data-offset-top="630">
           <li><a href="#section1">School Comparison</a></li>
           <li><a href="#section2">Course Difficulty</a></li>
           <li><a href="#section3">Comparing Departments</a></li>
@@ -163,10 +163,7 @@
       </div>
       <div class="col-md-10 content">
         <section id="section1">
-          <h1>School Comparison Title</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <h1 class="section-title">School Comparison Title</h1>
 
           <center>
             <span class="btn btn-default-outline active" onclick="avgQual()">Course Quality</span>
@@ -175,31 +172,41 @@
             <span class="btn btn-default-outline" onclick="avgWork()">Work Required</span>
             <div id="school-comp-chart"></div>
           </center>
-
-          <a href="#">Quiz: How hard are my classes? <i class="fa fa-chevron-right"></i></a><br>
-          <a href="/article/samba-easiest-class-at-penn.html">Sharing Samba <i class="fa fa-chevron-right"></i></a><br>
-          <a href="/article/thirty-easiest-hardest-classes.html">30 easiest and hardest classes at Penn <i class="fa fa-chevron-right"></i></a><br>
-          <a href="#">infographic words thing with easiest and hardest class<i class="fa fa-chevron-right"></i></a><br>
-          <a href="#">top 10 easiest and hardest humanities classes<i class="fa fa-chevron-right"></i></a><br>
-
-        </section>
-        <section id="section2">
-          <h1 id="section2-chart">Course Difficulty Title Here</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
 
-          <a href="#">article on language courses<i class="fa fa-chevron-right"></i></a><br>
-          <a href="/article/why-do-people-hate-stem-classes.html">Why do people hate STEM classes? <i class="fa fa-chevron-right"></i></a><br>
+          <div class="links">
+                <a href="#">Quiz: How hard are my classes? <i class="fa fa-chevron-right"></i></a><br>
+               <a href="/article/samba-easiest-class-at-penn.html">Sharing Samba <i class="fa fa-chevron-right"></i></a><br>
+               <a href="/article/thirty-easiest-hardest-classes.html">30 easiest and hardest classes at Penn <i class="fa fa-chevron-right"></i></a><br>
+               <a href="#">infographic words thing with easiest and hardest class<i class="fa fa-chevron-right"></i></a><br>
+               <a href="#">top 10 easiest and hardest humanities classes<i class="fa fa-chevron-right"></i></a><br>
+          </div>
+
+        </section>
+        <section id="section2">
+          <h1 class="section-title" id="section2-chart">Course Difficulty Title Here</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <div class="links">
+                <a href="#" style="color:#da1924">article on language courses<i class="fa fa-chevron-right"></i></a><br>
+                <a href="/article/why-do-people-hate-stem-classes.html" style="color:#da1924">Why do people hate STEM classes? <i class="fa fa-chevron-right"></i></a><br>
+          </div>
         </section>
 
 
         <section id="section3">
-          <h1>Comparing Departments</h1>
+          <h1 class="section-title">Comparing Departments</h1>
+          <span class="btn btn-default-outline dept-quality" onclick="deptQuality()">Quality</span>
+
+          <div id="dept-comp-chart"></div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <span class="btn btn-default-outline" onclick="deptQuality()">Quality</span>
+
 
           <div id="dept-comp-chart"></div>
 
@@ -215,16 +222,17 @@
 
         </section>
         <section id="section4">
-          <h1>Active Learning Title</h1>
+          <h1 class="section-title">Active Learning Title</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
-
-          <a href="/article/sail-classes.html">Students adjust as Penn embraces SAIL <i class="fa fa-chevron-right"></i></a><br>
+          <div class="links"
+                  <a href="/article/sail-classes.html" style="color:#F49F00">Students adjust as Penn embraces SAIL <i class="fa fa-chevron-right"></i></a><br>
+          </div>
 
         </section>
         <section id="section5">
-          <h1>Sectors</h1>
+          <h1 class="section-title">Sectors</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
@@ -236,40 +244,47 @@
             <span class="btn btn-default-outline" onclick="sectWork()">Work Required</span>
             <div id="sector-comp-chart"></div>
           </center>
-
-          <a href="#">article about sectors <i class="fa fa-chevron-right"></i></a><br>
-          <a href="#">best and worst courses <i class="fa fa-chevron-right"></i></a><br>
-          <a href="/article/how-to-be-smart-using-penn-course-review.html">How to be smart when using Penn Course Review  <i class="fa fa-chevron-right"></i></a>
+          <div class="links">
+                <a href="#">article about sectors <i class="fa fa-chevron-right"></i></a><br>
+                <a href="#">best and worst courses <i class="fa fa-chevron-right"></i></a><br>
+                <a href="/article/how-to-be-smart-using-penn-course-review.html">How to be smart when using Penn Course Review  <i class="fa fa-chevron-right"></i></a>
+          </div>
 
         </section>
         <section id="section6">
-          <h1>Writing Seminar</h1>
+          <h1 class="section-title">Writing Seminar</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <a href="/article/writing-seminar-is-bad.html">Re-writing the writing seminars <i class="fa fa-chevron-right"></i></a><br>
+          <div class="links">
+                  <a href="/article/writing-seminar-is-bad.html" style="color:#da1924">Re-writing the writing seminars <i class="fa fa-chevron-right"></i></a><br>
+          </div>
+
 
         </section>
         <section id="section7">
-          <h1>Professor Quality</h1>
+          <h1 class="section-title">Professor Quality</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
+          <div class="links">
+                <a href="/article/penns-top-professors-want-to-tell-you-about-teaching.html" style="color:#98A62F">What Penn's top professors want to tell you about teaching <i class="fa fa-chevron-right"></i></a><br>
+               <a href="#" style="color:#98A62F">list of high profile professors<i class="fa fa-chevron-right"></i></a><br>
+               <a href="/article/penns-top-professors-want-to-tell-you-about-teaching.html"  style="color:#98A62F">What Penn's top professors want to tell you about teaching<i class="fa fa-chevron-right"></i></a><br>
+          </div>
 
-          <a href="/article/penns-top-professors-want-to-tell-you-about-teaching.html">What Penn's top professors want to tell you about teaching <i class="fa fa-chevron-right"></i></a><br>
-          <a href="#">list of high profile professors<i class="fa fa-chevron-right"></i></a><br>
-          <a href="/article/penns-top-professors-want-to-tell-you-about-teaching.html">What Penn's top professors want to tell you about teaching<i class="fa fa-chevron-right"></i></a><br>
 
         </section>
         <section id="section8">
-          <h1>Data over Time</h1>
+          <h1 class="section-title">Data over Time</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <div id="drop-chart"></div>
-
-          <a href="#">article about history/future of PCR<i class="fa fa-chevron-right"></i></a><br>
-          <a href="/article/biases-in-pcr-data.html">Possibe Biases: Where course reviews go wrong <i class="fa fa-chevron-right"></i></a><br>
+          <div class="links">
+                <a href="#"style="color:#F49F00">article about history/future of PCR<i class="fa fa-chevron-right" ></i></a><br>
+                <a href="/article/biases-in-pcr-data.html" style="color:#F49F00">Possibe Biases: Where course reviews go wrong <i class="fa fa-chevron-right"></i></a><br>
+           </div>
 
         </section>
         <section id="section9">

@@ -39,7 +39,7 @@ categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'1
   $( "[onclick='avgDiff()']" ).removeClass('active');
   $( "[onclick='avgInst()']" ).removeClass('active');
   $( "[onclick='avgWork()']" ).removeClass('active');
-}
+};
 
 var avgDiff = function() {
   c3.generate({
@@ -66,7 +66,7 @@ var avgDiff = function() {
   $( "[onclick='avgDiff()']" ).addClass('active');
   $( "[onclick='avgInst()']" ).removeClass('active');
   $( "[onclick='avgWork()']" ).removeClass('active');
-}
+};
 var avgInst = function() {
   c3.generate({
       bindto: '#school-comp-chart',
@@ -92,7 +92,8 @@ var avgInst = function() {
   $( "[onclick='avgDiff()']" ).removeClass('active');
   $( "[onclick='avgInst()']" ).addClass('active');
   $( "[onclick='avgWork()']" ).removeClass('active');
-}
+};
+
 var avgWork = function() {
   c3.generate({
       bindto: '#school-comp-chart',
@@ -118,7 +119,7 @@ var avgWork = function() {
   $( "[onclick='avgDiff()']" ).removeClass('active');
   $( "[onclick='avgInst()']" ).removeClass('active');
   $( "[onclick='avgWork()']" ).addClass('active');
-}
+};
 
 /**
  *
@@ -376,8 +377,8 @@ d3.csv("data/Department_Difficulty.csv", function(error, data){
 
     //convert numerical values from strings to numbers
     data = data.map(function(d){
-      d.value = +Math.pow(d["Difficulty"], 6); //Raise to power to scale as difference is really small
-      d.school = +d["School"];
+      d.value = +Math.pow(d.Difficulty, 6); //Raise to power to scale as difference is really small
+      d.school = +d.School;
       return d; });
 
     //bubbles needs very specific format, convert data to this.
@@ -396,15 +397,18 @@ d3.csv("data/Department_Difficulty.csv", function(error, data){
         .attr("cx", function(d){ return d.x; })
         .attr("cy", function(d){ return d.y; })
         .style("fill", function(d) {
+
           if (d.School == "SAS") {
-            return BLUE;
-          } else if (d.school == "SEAS"){
-            return GREEN;
+            return RED;
+          } else if (d.School == "SEAS") {
+            return YELLOW;
           } else if (d.School == "Wharton") {
             return ORANGE;
-          } else {
-            return RED;
-          }
+      } else  if (d.School == "Nursing"){
+            return GREEN;
+      } else {
+            return BLUE;
+      }
         });
 
     //format the text for each bubble, give it description
