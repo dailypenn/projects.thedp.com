@@ -135,8 +135,8 @@
             normalScrollElementTouchThreshold: 5,
 
             //Accessibility
-            keyboardScrolling: true,
-            animateAnchor: true,
+            keyboardScrolling: false,
+            animateAnchor: false,
             recordHistory: true,
 
             //design
