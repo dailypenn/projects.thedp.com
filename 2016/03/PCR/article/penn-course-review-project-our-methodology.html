@@ -116,28 +116,14 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-10 col-sm-push-1">
-        <h1 class="title">Title</h1>
-        <h4 class="byline">By Person</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.
-        </p>
-        <p>
-          Lorem <i></i>psum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.
-        </p>
+        <h1 class="title">Our Methodology</h1>
+        <h4 class="byline">Harry Cooperman</h4>
+        <p>Our analyses of student evaluations are based on data that was obtained from Penn Course Review, a site that maintains official ratings data on Penn professors. It contains entries for each course taught between spring 2002 and spring 2015, with multiple variables measuring students’ perceptions of the course (i.e. course quality, instructor quality, difficulty, etc.) on a scale from 0 to 4. We manually added indicator variables for College sectors and active-learning courses based on our reporting, as well as information available online.</p>
+        <p>We restricted our analysis to courses taught during or after spring 2009 because when the University changed from paper evaluations to online evaluations in spring 2009, most of the variables measured by Penn experienced significant changes. Our analysis was also restricted to courses with at least three reviewers, to eliminate potential outliers. For comparison, Penn only administers course evaluation surveys if at least three students take the course. We further restricted our attention to undergraduate, non-LPS courses as part of this review.</p>
+        <p>Only departments with at least 10 courses since spring 2009 were considered. When examining overall course trends, each course was counted once. When examining departmental trends, cross-listed courses were counted toward each department under which it was cross-listed. In analyzing trends among professors, only instructors that taught more than four courses were included.</p>
+        <p>Penn Course Review numbers were rounded to the nearest hundredth decimal. In the lists produced for the project, courses and professors that have the same rating to the hundredth decimal place were ranked to the thousandth decimal place.</p>
+        <p>Finally, it is important to note the potential biases inherent in the Penn Course Review data that could have played a role in how different professors, courses and departments are evaluated. Researchers have routinely documented that external factors — such as course size and instructor gender — can impact student evaluations.</p>
+        <div class="fb-comments" data-href="http://projects.thedp.com/2016/03/PCR/article/penn-course-review-project-our-methodology.html" data-numposts="25"></div>
       </div>
     </div>
   </div>
@@ -152,6 +138,23 @@
     });
 
   </script>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1042075185814231',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+   </script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
 </body>
 
