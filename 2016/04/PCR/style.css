@@ -12,6 +12,26 @@ h1 {
 }
 
 h1.title {
+      font-family: "neuzeit-grotesk", "montserrant", sans-serif;
+}
+
+h3 {
+      margin-top: 20px;
+      font-weight: normal;
+      font-size: 24px;
+      margin-bottom:20px;
+
+}
+
+b {
+      font-family: "neuzeit-grotesk", "montserrant", sans-serif;
+      font-size: 20px;
+}
+h1.section-title {
+      text-align: center;
+      font-size: 60px;
+      padding-bottom: 30px;
+
 }
 
 
@@ -49,13 +69,23 @@ a:hover {
   color: #2ac1dd;
 }
 
-#myScrollspy{}
+#myScrollspy{
+
+}
 
 section {
   /*min-height: 100%;*/
   padding-bottom: 75px;
-  padding-top: 50px;
+  padding-left: 65px;
+  padding-right: 65px;;
+  /*padding-top: 25px;*/
   border-bottom: 1px solid #a2a2a2;
+}
+
+.links {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: "neuzeit-grotesk", "montserrant", sans-serif;
 }
 
 p, ol li, p li, p ul {
@@ -87,13 +117,15 @@ p, ol li, p li, p ul {
 /* Section Thumbnails Styles */
 td {
   font-size: 120%;
-  font-style: bold;
+  font-weight: bold;
+  border-top: none !important;
+  font-family: "neuzeit-grotesk", "montserrant", sans-serif;
+  height: 100px;
 }
 
-
 .table {
-  width: 75%;
-  margin-left: 15%;
+  width: 55%;
+  margin-left: 22.5%;
 }
 
 /* HEADER STYLES */
@@ -227,12 +259,11 @@ body {
 }
 
 .side-nav:not(.affix) li {
-  border-right: solid 7px black;
+
 }
 
 ul.side-nav.nav.affix  {
   width: 15%;
-  border-right: solid 7px black;
 }
 
 .affix:not(.side-nav) {
@@ -275,7 +306,18 @@ ul.side-nav.nav.affix  {
   background: #2ac1dd;
 }
 
+.btn:hover, .btn:active, .dept-quality {
+      color: #98A62F;
+      border-color:  #98A62F;
+}
 
+.content {
+      border-left: solid 7px black;
+}
+
+#sections {
+      border-top: solid 1px black;
+}
 /*// CHART STYLES*/
 
 path {

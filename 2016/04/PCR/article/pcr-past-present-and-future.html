@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Penn Course Review Analysis</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css">
+
+  <script src="https://use.typekit.net/psa2uuo.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-707447-4', 'auto');
+  ga('create', 'UA-55281509-16', 'auto');
+  ga('send', 'pageview');
+  </script>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy">
+  <header>
+    <nav class="navbar navbar-default affix" role="navigation" data-spy="affix">
+      <a class="navbar-brand" href="/">
+        <i class="fa fa-chevron-left"></i>
+        Penn Course Review Analysis
+      </a>
+
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li class="search-field">
+            <a href="http://www.thedp.com/" style="padding: 0">
+              <img class="img inline" style="margin-bottom: -25px" src="https://s3.amazonaws.com/media.dpn/50935_dp_flag_in_squaretransparentp.png" width="40" />
+            </a>
+          </li>
+          <li class="menu-toggle closed" id="section-dropdown-btn"><a>
+            <span class="fa fa-bars"></span>
+            <span class="menu-text">Sections</span></a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right social-icons">
+          <li><a href="http://www.facebook.com/dailypenn" class="fa fa-facebook"></a></li>
+          <li><a href="http://www.twitter.com/dailypenn" class="fa fa-twitter"></a></li>
+          <li><a href="http://www.instagram.com/dailypenn" class="fa fa-instagram"></a></li>
+        </ul>
+      </div>
+
+      <div class="row section-dropdown closed" id="section-dropdown">
+        <div class="col-sm-10">
+          <div class="section-list">
+            <div class="col-sm-3">
+              <h4>News</h4>
+              <a href="http://www.thedp.com/section/academics">Academics</a> <br>
+              <a href="http://www.thedp.com/section/administration">Administration</a> <br>
+              <a href="http://www.thedp.com/section/admissions">Admissions</a> <br>
+              <a href="http://www.thedp.com/section/crime">Crime</a> <br>
+              <a href="http://www.thedp.com/section/politics">Politics</a> <br>
+              <a href="http://www.thedp.com/section/philadelphia">Philadelphia</a> <br>
+              <a href="http://www.thedp.com/section/">Student Life</a> <br>
+            </div>
+            <div class="col-sm-3">
+              <h4>Sports</h4>
+              <a href="http://www.thedp.com/section/m_hoops">Men’s Basketball</a><br>
+              <a href="http://www.thedp.com/section/w-hoops">Wrestling</a><br>
+              <a href="http://www.thedp.com/section/wrestling">Men’s Squash</a><br>
+              <a href="http://www.thedp.com/section/m-squash">Women’s Squash</a><br>
+              <a href="http://www.thedp.com/section/womens_squash">Men’s Swimming</a><br>
+              <a href="http://www.thedp.com/section/track">Track</a>
+            </div>
+            <div class="col-sm-3">
+              <h4>Opinion</h4>
+              <a href="http://www.thedp.com/section/editorials">Staff Editorials</a><br>
+              <a href="http://www.thedp.com/section/columns">Opinion Columns</a><br>
+              <a href="http://www.thedp.com/section/letters">Letters to the Editor</a><br>
+              <a href="http://www.thedp.com/section/opinion-art">Opinion Art</a><br>
+              <a href="http://www.thedp.com/section/guest_columns">Guest Columns</a><br>
+              <a href="http://www.thedp.com/section/opinion-submissions">Submit a Column</a>
+            </div>
+            <div class="col-sm-3">
+              <h4>34<sup>th</sup>&nbsp;Street</h4>
+              <a href="http://www.34st.com/section/highbrow">Highbrow</a><br>
+              <a href="http://www.34st.com/section/ego">Ego</a><br>
+              <a href="http://www.34st.com/section/music">Music</a><br>
+              <a href="http://www.34st.com/section/film">Film</a><br>
+              <a href="http://www.34st.com/section/food">Food &amp; Drink</a><br>
+              <a href="http://www.34st.com/section/arts">Arts</a><br>
+              <a href="http://www.34st.com/section/lowbrow">Lowbrow</a><br>
+              <a href="http://www.34st.com/section/backpage">Backpage</a><br>
+              <a href="http://www.34st.com/section/letters">Letter</a><br>
+              <a href="http://www.34st.com/section/features">Features</a><br>
+              <a href="http://www.34st.com/section/wots">Word on the Street</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <h4>Brought to you by The Daily Pennsylvanian, Inc.</h4>
+          <p>
+            Designed for the DP by <a href="">Ming Zhang</a>, <a href=""> Mikael Mantis</a>, &amp; <a href="http://andrewfis.ch/">Andrew Fischer</a>.
+          </p>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-sm-push-1">
+        <h1 class="title">The past, present and future of Penn Course Review</h1>
+        <h4 class="byline">By Jessica McDowell</h4>
+        <p>In 1959, The Daily Pennsylvanian published the first undergraduate course review — a comprehensive guide that aggregated data and comments from student course evaluations to turn them into a complete book with information on all courses offered by Penn in a single year.</p>
+        <p>After many iterations and decades of evolution, Penn Course Review now stands as an independent website that allows students to compare courses and professors based on data from years of evaluations. Over the years, Penn Course Review has taken many forms, but its fundamental purpose has remained the same — to act as a guide and a tool for students in making their academic decisions. </p>
+        <p>The Undergraduate Course Guide is born</p>
+        <p>The idea of a course guide started as a student-run initiative. In 1941, students began the process of compiling data and comments from course evaluations into a book to sell to undergraduates.</p>
+        <p>In 1959, The Daily Pennsylvanian took over the publication of course reviews. At the time, the review was a 33-page pamphlet and cost students 25 cents.</p>
+        <p>The next year, the official Undergraduate Course Guide was born after student criticisms pushed for more comprehensive critiques of courses. By 1966, the Course Guide reached 96 pages and included data from more than 2,000 student surveys.</p>
+        <p>Over time, the popularity of the guide grew, and by 1971, more than 10,000 student surveys were filled out annually. That year, the Student Committee on Undergraduate Education took over publication from the DP, doubled the length of the book and added numerical ratings to the courses based on the reviews. </p>
+        <p>SCUE had just been formed in 1965, and the Undergraduate Course Guide was one of its major projects.</p>
+        <p>“The Course Review pre-dates SCUE, which, there aren’t many things that are student-driven that pre-date SCUE, but the Review is one of them,” Executive Director for Education and Academic Planning Rob Nelson said.</p>
+        <p>SCUE controlled publication of the guide until 1982, when the autonomous group Penn Course Review took over. Still for sale to students, the Undergraduate Assembly funded the publication of the book from 1986-1989.</p>
+        <p>Production of the Course Guide continued for more than a decade, with features like notable student quotes added as the survey got more and more responses. Starting in 1989, the Course Guide was first available for purchase in the Penn Bookstore for $5.50. In its last year of print production in 2002, the course guide was sold for $12.95.</p>
+        <p>Around the same time that the Course Guide moved to the Penn Bookstore, the survey itself underwent a facelift. A panel of students and faculty representatives from each school convened to redesign the course evaluation forms.</p>
+        <p>“They went through and decided that the blue form, which is everything other than a language course, had more questions to it. They wanted to sort of slim it down,” Director of Institutional Research for the College of Arts and Sciences Bill McManus said. From the beginning, language courses were evaluated using a separate form that more specifically addressed the nuances of a foreign language course.</p>
+        <p>The new form emerged with fewer overall questions and other questions reworked or added to better assess student perspective. “These are the questions students were interested in,” McManus said of the new questions present on the form.</p>
+        <h3>The move online</h3>
+        <p>In the fall of 2009, the course evaluations moved online, and student reviews took an unexpected nosedive toward the negative.</p>
+        <p>Since 2009, evaluations have been distributed to students via their Penn email addresses, and the data is compiled and accessible to students through a Penn Course Review website, free to students.</p>
+        <p>Along with that shift came a significant drop in data. Across all departments in all schools, courses and professors were consistently rated lower in quality.</p>
+        <p>“We could see [the drop]. We wanted to know why it happened,” McManus said.</p>
+        <p>The University then began an intense process of testing the data, trying to attribute the drop to a specific factor.</p>
+        <p>McManus, who was part of the team investigating the drop, said that they managed to ascertain that the drop was not due to an increased response rate or the extended time students had to complete evaluations.</p>
+        <p>Ultimately, according to Nelson and McManus, the University concluded that the drop was likely due to two factors. The first: Students were now completing evaluations alone, on their personal devices, and so were more willing to be critical than when they were filling out evaluations in class. The second: Students were completing all of their evaluations at once, and were critically comparing all of their courses, instead of evaluating each course individually over the last several weeks of classes. </p>
+        <p>But, according to McManus and Nelson, they have no way to prove this hypothesis.</p>
+        <p>“I don’t know how we would test that. There’s limited ability to — I mean we could do a focus group or something like that, but even then, you’re not really, you know, unless you’re in their head in the moment, how would you know?” Nelson said.</p>
+        <p>What they do know is that the skewed results were not a result of a different form — the questions students were asked remained exactly the same in the transition to online evaluations.</p>
+        <p>Before the shift to online, Nelson also said the data was skewed because some professors either didn’t hand out the course evaluations, didn’t make the evaluation mandatory for students or didn’t leave the room while students completed the evaluation. The shift online rectified some of those problems as well, creating data that Nelson classified as likely more representative of all undergraduate students and classes.</p>
+        <p>Student use of survey data causes concerns</p>
+        <p>From the beginning, the survey data was shared with students via the Penn Course Review website. Despite debates at other colleges about whether course evaluation data should be available to students, Nelson said the debate never caused issue at Penn.</p>
+        <p>“The reason is the historical framework through which this came into existence," Nelson said. "It was a collaboration."</p>
+        <p>Still, some faculty members have been frustrated by inaccuracies and error in the survey data, and think that the data can mislead students.</p>
+        <p>“The controversies I’ve been involved in were controversies where faculty members said, ‘This data is wrong, and we’re not happy about it. Fix it,’” Nelson said. </p>
+        <p>Most recent among the errors that caused faculty backlash, Nelson said, was an issue that arose with special topics courses — where several small seminars within a single department are listed under the same course code but focus on different topics.</p>
+        <p>“Because the numbers are the same, even though the courses are very different, [they] somehow got in the system as if they were the same course and that was yielding really bad data,” Nelson said.</p>
+        <p>Another problem in recent years concerns the written summaries of courses once synthesized by students: A mere two years after going online, in 2011, they stopped being produced.</p>
+        <p>“Gradually, over the years, [students'] involvement physically in the process lessened and lessened to the point where we ended up hiring temps to do the sorting and the packaging,” McManus said.</p>
+        <p>Nelson attributed the lack of editorial content on the Penn Course Review website to the decline of student participation in the project in recent years.</p>
+        <p>“We had this great system, I thought," Nelson said. "Then I noticed that the numbers were up there but the qualitative stuff wasn’t, and I asked, and the editor kept getting back to me but not really being responsive, and then he graduated and suddenly there was nobody home,” Nelson said. "As a tool for students to help make good academic decisions about which courses to take, that's essential."</p>
+        <p>You should put a quote in here about why the loss of editorial blurbs is a problem — I know Nelson spoke a lot about that and he's passionate. You need to make it clear why people should care about this. You can even replace it with this last quote. Ideal quote: something about how students can no longer fully understand a class through PCR because all they can see are numbers that don't explain the details of how the class operates</p>
+        <h3>Looking ahead</h3>
+        <p>Engineering junior David Lakata has been co-director of PennLabs, the organization in charge of Penn Course Review, since the fall.</p>
+        <p>Lakata said that the administrators PennLabs works with, and the ones who sit on their advisory board, have been instrumental in getting course evaluation data.</p>
+        <p>For now, Lakata said the Penn Course Review group is still in existence, and there are no immediate plans for the system to change.</p>
+        <p>“In the short term, nothing is really going to change in the next few years,” Lakata said.</p>
+        <p>But, Lakata did mention that a University-wide project, Next Generation Student Systems, would potentially replace the service in coming years.</p>
+        <p>On its website, NGSS is described as “a project [that] will replace three core systems built on inflexible Reagan-era technology: Student Accounts and Billing, Academic Records and Registration, and Financial Aid.”</p>
+        <p>PenninTouch, course registration tools, and Penn Course Review data will all potentially be included in the new system, Lakata said.</p>
+        <p>“It’s unclear how exhaustive the new product will be, but there will be some room for Penn Course Review to exist,” Lakata said.</p>
+        <p>Intertwined with this question of a new system is the question of the future of separate, student-run projects that work in tandem with Penn Course Review — things like Penn Course Plus, a Chrome extension that embeds Penn Course Review data for course quality and difficulty into PenninTouch course listings, and Penn Course Notify, an app that alerts students when a course they are trying to get into opens up.</p>
+        <p>Despite his concerns, Nelson said he is supportive of these student-run initiatives and projects.</p>
+        <p>“There’s a concern about taxing the system,” Nelson said. “When you’ve got lots of students who are querying the system, it’s a threat to system integrity."</p>
+        <p>For Nelson, the biggest question mark is whether the editorial, qualitative aspect of the course guide will ever return.</p>
+        <p>“That’s really the piece that’s sort of disappeared. Hopefully we’ll find a way to revive that idea of student involvement in some kind of qualitative evaluation of the courses,” Nelson said.</p>
+        <p>Nelson dreams of building a tool that allows students to share their own qualitative judgments about their courses, and he thinks the days of synthesized blurbs are over.</p>      
+        <div class="fb-comments" data-href="http://projects.thedp.com/2016/03/PCR/article/pcr-past-present-and-future.html" data-width="100%" data-numposts="25"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var secBtn = document.getElementById('section-dropdown-btn');
+    var dropdown = document.getElementById('section-dropdown');
+    secBtn.addEventListener("click", function() {
+      'use strict';
+      dropdown.classList.toggle('closed');
+      secBtn.classList.toggle('closed');
+    });
+
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1042075185814231',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+   </script>
+</body>
+
+</html>

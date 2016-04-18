@@ -11,7 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css">
 
   <script src="https://use.typekit.net/psa2uuo.js"></script>
@@ -26,10 +26,13 @@
   ga('send', 'pageview');
   </script>
 </head>
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+<body data-spy="scroll" data-target="#myScrollspy">
   <header>
     <nav class="navbar navbar-default affix" role="navigation" data-spy="affix">
-      <a class="navbar-brand" href="#"></a>
+      <a class="navbar-brand" href="/">
+        <i class="fa fa-chevron-left"></i>
+        Penn Course Review Analysis
+      </a>
 
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
@@ -101,7 +104,7 @@
         <div class="col-sm-2">
           <h4>Brought to you by The Daily Pennsylvanian, Inc.</h4>
           <p>
-            Designed for the DP by <a href="">Ming Zhang</a> and <a href=""> Mikael Mantis</a>.
+            Designed for the DP by <a href="">Ming Zhang</a>, <a href=""> Mikael Mantis</a>, &amp; <a href="http://andrewfis.ch/">Andrew Fischer</a>.
           </p>
         </div>
       </div>
@@ -109,32 +112,50 @@
 
   </header>
 
-<div class="container-fluid">
-    How many courses are you taking? <br>
-    <select name="courses" class="form-control" id="coursenum">
-      <option value="" disabled selected># of Courses</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-    </select>
 
-    <div id="classes"></div>
-
-    <a class="btn btn-default" onclick="getResults()" id="submit">How hard is you courses be?!</a>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-10 col-sm-push-1">
+        <h1 class="title">Our Methodology</h1>
+        <h4 class="byline">Harry Cooperman</h4>
+        <p>Our analyses of student evaluations are based on data that was obtained from Penn Course Review, a site that maintains official ratings data on Penn professors. It contains entries for each course taught between spring 2002 and spring 2015, with multiple variables measuring students’ perceptions of the course (i.e. course quality, instructor quality, difficulty, etc.) on a scale from 0 to 4. We manually added indicator variables for College sectors and active-learning courses based on our reporting, as well as information available online.</p>
+        <p>We restricted our analysis to courses taught during or after spring 2009 because when the University changed from paper evaluations to online evaluations in spring 2009, most of the variables measured by Penn experienced significant changes. Our analysis was also restricted to courses with at least three reviewers, to eliminate potential outliers. For comparison, Penn only administers course evaluation surveys if at least three students take the course. We further restricted our attention to undergraduate, non-LPS courses as part of this review.</p>
+        <p>Only departments with at least 10 courses since spring 2009 were considered. When examining overall course trends, each course was counted once. When examining departmental trends, cross-listed courses were counted toward each department under which it was cross-listed. In analyzing trends among professors, only instructors that taught more than four courses were included.</p>
+        <p>Penn Course Review numbers were rounded to the nearest hundredth decimal. In the lists produced for the project, courses and professors that have the same rating to the hundredth decimal place were ranked to the thousandth decimal place.</p>
+        <p>Finally, it is important to note the potential biases inherent in the Penn Course Review data that could have played a role in how different professors, courses and departments are evaluated. Researchers have routinely documented that external factors — such as course size and instructor gender — can impact student evaluations.</p>
+        <div class="fb-comments" data-href="http://projects.thedp.com/2016/03/PCR/article/penn-course-review-project-our-methodology.html" data-numposts="25"></div>
+      </div>
+    </div>
   </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="quiz.js" charset="utf-8"></script>
-  </body>
+  <script type="text/javascript">
+    var secBtn = document.getElementById('section-dropdown-btn');
+    var dropdown = document.getElementById('section-dropdown');
+    secBtn.addEventListener("click", function() {
+      'use strict';
+      dropdown.classList.toggle('closed');
+      secBtn.classList.toggle('closed');
+    });
+
+  </script>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1042075185814231',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+   </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
+</body>
+
 </html>
