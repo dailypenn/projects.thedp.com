@@ -11,7 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css">
 
   <script src="https://use.typekit.net/psa2uuo.js"></script>
@@ -26,10 +26,13 @@
   ga('send', 'pageview');
   </script>
 </head>
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+<body data-spy="scroll" data-target="#myScrollspy">
   <header>
     <nav class="navbar navbar-default affix" role="navigation" data-spy="affix">
-      <a class="navbar-brand" href="#"></a>
+      <a class="navbar-brand" href="/">
+        <i class="fa fa-chevron-left"></i>
+        Penn Course Review in Review
+      </a>
 
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
@@ -101,7 +104,7 @@
         <div class="col-sm-2">
           <h4>Brought to you by The Daily Pennsylvanian, Inc.</h4>
           <p>
-            Designed for the DP by <a href="">Ming Zhang</a> and <a href=""> Mikael Mantis</a>.
+            Designed for the DP by <a href="">Ming Zhang</a>, <a href=""> Mikael Mantis</a>, &amp; <a href="http://andrewfis.ch/">Andrew Fischer</a>.
           </p>
         </div>
       </div>
@@ -109,49 +112,70 @@
 
   </header>
 
-<div class="container-fluid">
-    How many courses are you taking? <br>
-    <select name="courses" class="form-control" id="coursenum">
-      <option value="" disabled selected># of Courses</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-    </select>
 
-    <div id="classes"></div>
-
-    <a class="btn btn-default" onclick="getResults()" id="submit">How hard is you courses be?!</a>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-10 col-sm-push-1">
+        <h1 class="title">The 20 departments holding the largest classes</h1>
+        <h4 class="byline">By Jill Castellano</h4>
+        <p>Penn's student-faculty ratio may be 6:1, but the University holds 57 classes with over 100 students in them, according to the most recent common data set released by the university. There are also 175 classes with 50 to 99 students. </p>
+        <p>Here are the top 20 departments holding the largest classes, as ranked by their Penn Course Review average class size information. Students who did not fill out Penn Course Review evaluations are not included in the counts, though more than 95 percent of students do fill out the evaluations.</p>
+        <p>Top 20 departments with largest classes:</p>
+        <ol>
+          <li>Cognitive Science</li>
+          <li>Biology</li>
+          <li>Chemistry</li>
+          <li>Psychology</li>
+          <li>Computer Science</li>
+          <li>Economics</li>
+          <li>Biological Basis of Behavior</li>
+          <li>Ancient History</li>
+          <li>Healthcare Management</li>
+          <li>Mathematics</li>
+          <li>Criminology</li>
+          <li>Geology</li>
+          <li>Philosophy, Politics and Economics</li>
+          <li>Operations, Information and Decisions</li>
+          <li>Statistics</li>
+          <li>Networked and Social Systems</li>
+          <li>Sociology</li>
+          <li>Finance</li>
+          <li>Astronomy</li>
+          <li>Mechanical Engineering and Applied Mechanics</li>
+        </ol>
+        <div class="fb-comments" data-href="http://projects.thedp.com/2016/04/PCR/article/departments-with-largest-classes.html" data-width="100%" data-numposts="25"></div>
+      </div>
+    </div>
   </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="quiz.js" charset="utf-8"></script>
-    <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '1042075185814231',
-        xfbml      : true,
-        version    : 'v2.6'
-      });
-    };
+  <script type="text/javascript">
+    var secBtn = document.getElementById('section-dropdown-btn');
+    var dropdown = document.getElementById('section-dropdown');
+    secBtn.addEventListener("click", function() {
+      'use strict';
+      dropdown.classList.toggle('closed');
+      secBtn.classList.toggle('closed');
+    });
 
-    (function(d, s, id){
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) {return;}
-       js = d.createElement(s); js.id = id;
-       js.src = "//connect.facebook.net/en_US/sdk.js";
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));
-     </script>
-  </body>
+  </script>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1042075185814231',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+   </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
+</body>
+
 </html>
