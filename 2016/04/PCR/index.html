@@ -111,9 +111,11 @@
 
 
   <div class="container-fluid">
+    <center>
+      <h1 class="title">Penn Course Review<br>in Review</h1>
+    </center>
     <div class="row">
-      <div class="col-sm-6 col-sm-push-3 text-center">
-        <h1 class="title">Penn Course Review in Review</h1>
+      <div class="col-sm-6 col-sm-push-3">
         <h3></h3>
         <p>
           Academics may not be the only reason students come to Penn, but it certainly plays a big role. The Daily Pennsylvanian was able to gain access to all available Penn Course Review data, which contains an enormous number of student evaluations of their classes going back over a decade. Through data analysis, we've been able to address some of the most simple and complex questions students might wonder about their academics: Are STEM classes really harder than humanities classes? Who are Penn's top teachers of all time? What are the biases in the evaluation data?
@@ -121,25 +123,26 @@
         <p>
           Through graphics, "top 30" lists and in-depth articles, here we present our answers to those questions and more.
         </p>
-        <p>
+        <hr>
+        <p class="links text-right">
           <a href="/2016/04/PCR/article/biases-in-pcr-data.html">Possibe Biases: Where course reviews go wrong <i class="fa fa-chevron-right"></i></a><br>
-          <a href="/2016/04/PCR//article/penn-course-review-project-our-methodology.html">Our Methodology <i class="fa fa-chevron-right"></i></a>
+          <a href="/2016/04/PCR/article/penn-course-review-project-our-methodology.html">Our Methodology <i class="fa fa-chevron-right"></i></a>
         </p>
-
+        <hr>
       </div>
         <div>
         <table class="table text-center header-table">
           <tr>
-            <td><a href="#section1">School <br />Comparison</a></td>
-            <td><a href="#section2">Course <br />Difficulty</a> </td>
-            <td><a href="#section3">Comparing <br />Departments</a> </td>
-            <td><a href="#section4">Active <br /> Learning</a> </td>
+            <td><a href="#section1">School<br>Comparison</a></td>
+            <td><a href="#section2">Course<br>Difficulty</a> </td>
+            <td><a href="#section3">Comparing<br>Departments</a> </td>
+            <td><a href="#section4">Active<br>Learning</a> </td>
           </tr>
           <tr>
-            <td><a href="#section5">Sectors</a> </td>
-            <td><a href="#section6">Writing <br />Seminar</a></td>
-            <td><a href="#section7">Professor <br />Quality</a></td>
-            <td><a href="#section8">Data <br />Overtime</a></td>
+            <td><a href="#section5">Sectors</a></td>
+            <td><a href="#section6">Writing<br>Seminar</a></td>
+            <td><a href="#section7">Professor<br>Quality</a></td>
+            <td><a href="#section8">Data<br>Overtime</a></td>
           </tr>
         </table>
         </div>
@@ -151,7 +154,7 @@
   <div class="container-fluid" id="sections">
     <div class="row">
       <div class="col-sm-2 hidden-sm hidden-xs" id="myScrollspy">
-        <ul class="side-nav nav" data-spy="affix" data-offset-top="630">
+        <ul class="side-nav nav" data-spy="affix" data-offset-top="760">
           <li><a href="#section1">Undergraduate Schools</a></li>
           <li><a href="#section2">Course Difficulty</a></li>
           <li><a href="#section3">Departments</a></li>
@@ -164,10 +167,9 @@
           <li><a href="#section10">Credits</a></li>
         </ul>
       </div>
-      <div class="col-md-10 content">
+      <div class="col-md-8 col-md-push-1 content">
         <section id="section1">
           <h1 class="section-title">Undergraduate Schools</h1>
-
           <center>
             <span class="btn btn-default-outline active" onclick="avgQual()">Course Quality</span>
             <span class="btn btn-default-outline" onclick="avgDiff()">Difficulty</span>
@@ -179,61 +181,71 @@
             How do Wharton, the College, Engineering and Nursing stack up? Students in each undergraduate school exchange some friendly fire over the difficulty and breadth of their course load. Students in Engineering and Nursing report that their classes require more work and are more difficult than Wharton and College classes. But College and Nursing students report high course quality and instructor quality scores — students taking Wharton and Engineering classes report that they have lower quality and poorer instructors, on average. 
           </p>
 
-          <div class="links">
-                <a href="#">Quiz: How hard are my classes? <i class="fa fa-chevron-right"></i></a><br>
-               <a href="/2016/04/PCR//article/samba-easiest-class-at-penn.html">Sharing Samba <i class="fa fa-chevron-right"></i></a><br>
-               <a href="/2016/04/PCR//article/thirty-easiest-hardest-classes.html">30 easiest and hardest classes at Penn <i class="fa fa-chevron-right"></i></a><br>
-               <a href="#">infographic words thing with easiest and hardest class<i class="fa fa-chevron-right"></i></a><br>
-               <a href="/2016/04/PCR/article/30-hardest-humanities-classes-at-penn.html">Top 30 hardest humanities classes at Penn<i class="fa fa-chevron-right"></i></a><br>
+          <div class="links text-right">
+            <a href="#">Quiz: How hard are my classes? <i class="fa fa-chevron-right"></i></a><br>
+            <a href="/2016/04/PCR//article/samba-easiest-class-at-penn.html">Sharing Samba <i class="fa fa-chevron-right"></i></a><br>
+            <a href="/2016/04/PCR//article/thirty-easiest-hardest-classes.html">30 easiest and hardest classes at Penn <i class="fa fa-chevron-right"></i></a><br>
+            <a href="#">infographic words thing with easiest and hardest class<i class="fa fa-chevron-right"></i></a><br>
+            <a href="/2016/04/PCR/article/30-hardest-humanities-classes-at-penn.html">Top 30 hardest humanities classes at Penn<i class="fa fa-chevron-right"></i></a><br>
           </div>
 
         </section>
+        
+        
         <section id="section2">
-          <h1 class="section-title" id="section2-chart">Course Difficulty</h1>
-          <p>
-            Yes, it's true — humanities classes heavily populate the list of Penn's easiest courses, and STEM classes (science, technology, engineering and mathematics) monopolize the list of hardest courses, based on course difficulty ratings. Half-credit music ensembles and film seminars are among the easiest classes Penn has to offer. Meanwhile, 23 of the top 30 most difficult classes Penn offers fall under the STEM umbrella. Design and architecture classes also frequent the list of Penn's difficult course offerings.
-          </p>
-
-          <div class="links">
-                <a href="/2016/04/PCR/article/why-do-students-love-language-classes.html" style="color:#da1924">Why do students love language classes? <i class="fa fa-chevron-right"></i></a><br>
-                <a href="/2016/04/PCR/article/why-do-people-hate-stem-classes.html" style="color:#da1924">Why do people hate STEM classes? <i class="fa fa-chevron-right"></i></a><br>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="http://www.placehold.it/500x500" class="img img-responsive" />
+            </div>
+            <div class="col-md-6">
+              <h1 class="section-title text-left" id="section2-chart">Course Difficulty</h1>
+              <p>
+                Yes, it's true — humanities classes heavily populate the list of Penn's easiest courses, and STEM classes (science, technology, engineering and mathematics) monopolize the list of hardest courses, based on course difficulty ratings. Half-credit music ensembles and film seminars are among the easiest classes Penn has to offer. Meanwhile, 23 of the top 30 most difficult classes Penn offers fall under the STEM umbrella. Design and architecture classes also frequent the list of Penn's difficult course offerings.
+              </p>
+              <div class="links text-right">
+                    <a href="/2016/04/PCR/article/why-do-students-love-language-classes.html" style="color:#da1924">Why do students love language classes? <i class="fa fa-chevron-right"></i></a><br>
+                    <a href="/2016/04/PCR/article/why-do-people-hate-stem-classes.html" style="color:#da1924">Why do people hate STEM classes? <i class="fa fa-chevron-right"></i></a><br>
+              </div>
+            </div>
           </div>
+          
         </section>
 
 
         <section id="section3">
-          <h1 class="section-title">Departments</h1>
-          <span class="btn btn-default-outline dept-quality" onclick="deptQuality()">Quality</span>
-
-          <div id="dept-comp-chart"></div>
-          <p>
-            Since Spring 2009, Penn has consistently taught courses in about 110 departments. Twenty-one of the top 25 departments ranked by instructor quality are language departments, including both popular language departments like Spanish and uncommon — sometimes unheard of — language departments like Sanskrit. Language classes also receive favorable ratings in reports of course quality and amount of work required. STEM, on the other hand, occupies the lowest rung of departments based on difficulty and instructor quality ratings, with students ranking chemistry as the single hardest department.
-          </p>
-
-
-          <div id="dept-comp-chart"></div>
-
-          <center>
-            <span class="btn btn-default-outline active" onclick="stemQual()">Course Quality</span>
-            <span class="btn btn-default-outline" onclick="stemDiff()">Difficulty</span>
-            <span class="btn btn-default-outline" onclick="stemInst()">Instructor Quality</span>
-            <span class="btn btn-default-outline" onclick="stemWork()">Work Required</span>
-            <div id="stem-comp-chart"></div>
-          </center>
-
-          <div id="lang-comp-chart"></div>
-
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="section-title">Departments</h1>
+              <p>
+                Since Spring 2009, Penn has consistently taught courses in about 110 departments. Twenty-one of the top 25 departments ranked by instructor quality are language departments, including both popular language departments like Spanish and uncommon — sometimes unheard of — language departments like Sanskrit. Language classes also receive favorable ratings in reports of course quality and amount of work required. STEM, on the other hand, occupies the lowest rung of departments based on difficulty and instructor quality ratings, with students ranking chemistry as the single hardest department.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div id="dept-comp-chart"></div>
+              <span class="btn btn-default-outline dept-quality" onclick="deptQuality()">Quality</span>
+            </div>
+          </div>
+          
+          
         </section>
         <section id="section4">
-          <h1 class="section-title">SAIL Courses</h1>
-          <img class="img img-responsive" src="img/sail.png" alt="SAIL active learning class data" />
-          <p>
-            Structured active in-class learning (or SAIL) courses are a new and growing phenomenon at Penn. The university does not label which classes qualify as SAIL, but by contacting departments and professors, the DP was able to identify at least 17 courses taught that fit the SAIL model. To the surprise of the bulk of Penn students who groan when they hear the words "active learning," students tend to rate SAIL courses more favorable than the average course in their departments. But when comparing classes before and after they transitioned to the SAIL model, the data indicates that at least for some courses, students still prefer traditional classroom learning methods. For "Constitutional Law" and "Oceanography," course quality and instructor quality dropped when instructors switched to SAIL.          </p>
-          <div class="links"
-                  <a href="/2016/04/PCR/article/sail-classes.html" style="color:#F49F00">Students adjust as Penn embraces SAIL <i class="fa fa-chevron-right"></i></a><br>
+          <div class="row">
+            <div class="col-md-7">
+              <img class="img img-responsive" src="img/sail.png" alt="SAIL active learning class data" />
+            </div>
+            <div class="col-md-5">
+              <h1 class="section-title">SAIL Courses</h1>
+              <p>
+                Structured active in-class learning (or SAIL) courses are a new and growing phenomenon at Penn. The university does not label which classes qualify as SAIL, but by contacting departments and professors, the DP was able to identify at least 17 courses taught that fit the SAIL model. To the surprise of the bulk of Penn students who groan when they hear the words "active learning," students tend to rate SAIL courses more favorable than the average course in their departments. But when comparing classes before and after they transitioned to the SAIL model, the data indicates that at least for some courses, students still prefer traditional classroom learning methods. For "Constitutional Law" and "Oceanography," course quality and instructor quality dropped when instructors switched to SAIL.          
+              </p>
+              <div class="links text-right">
+                <a href="/2016/04/PCR/article/sail-classes.html">Students adjust as Penn embraces SAIL <i class="fa fa-chevron-right"></i></a>
+                <br>
+              </div>
+            </div>
           </div>
-
         </section>
+        
         <section id="section5">
           <h1 class="section-title">Sectors</h1>
           <p>
@@ -247,7 +259,7 @@
             <span class="btn btn-default-outline" onclick="sectWork()">Work Required</span>
             <div id="sector-comp-chart"></div>
           </center>
-          <div class="links">
+          <div class="links text-right">
                 <a href="/2016/04/PCR/article/sector-requirement-raitings.html">Struggling through Sectors <i class="fa fa-chevron-right"></i></a><br>
                 <a href="/2016/04/PCR/article/thirty-easiest-hardest-classes.html">30 easiest and hardest Classes at Penn <i class="fa fa-chevron-right"></i></a><br>
                 <a href="/2016/04/PCR/article/how-to-be-smart-using-penn-course-review.html">How to be smart when using Penn Course Review  <i class="fa fa-chevron-right"></i></a>
@@ -259,7 +271,7 @@
           <p>
             Penn Course Review data supports the student anecdotes suggesting they don't like their writing seminars — the only course that all undergraduates must take. Though writing seminar faculty have consistently tried to improve the curriculum over the years, the evaluation data shows steady results each year: Writing seminars have an average course quality significantly lower than that of other Penn classes. Students also report that writing seminars require more work than other courses, but they rate the course difficulty and quality of their instructors similar to the average Penn class. Data is not yet available to examine whether the overhaul of the writing seminar curriculum that began last summer will change the sentiment on student evaluations.
           </p>
-          <div class="links">
+          <div class="links text-right">
                   <a href="/2016/04/PCR/article/writing-seminar-is-bad.html" style="color:#da1924">Re-writing the writing seminars <i class="fa fa-chevron-right"></i></a><br>
           </div>
 
@@ -270,7 +282,7 @@
           <p>
             Six of the top 30 professors ranked by instructor quality are not currently teaching: one is on sabbatical, one has joined the administration and the rest have left the university. Thirteen of those top 30 professors teach language classes. University Chaplain Chaz Howard and renowned author and Wharton professor Adam Grant make the list. Most of Penn's high profile professors — including Philadelphia Mayor Jim Kenney and writing program director Valerie Ross — fare well, scoring above the average professor quality score of 3.11.
           </p>
-          <div class="links">
+          <div class="links text-right">
                 <a href="/2016/04/PCR/article/penns-top-professors-want-to-tell-you-about-teaching.html" style="color:#98A62F">What Penn's top professors want to tell you about teaching <i class="fa fa-chevron-right"></i></a><br>
                <a href="/2016/04/PCR/article/how-well-do-penns-best-known-professors-stack-up.html" style="color:#98A62F">How well do Penn's best known professors stack up? <i class="fa fa-chevron-right"></i></a><br>
           </div>
@@ -281,8 +293,8 @@
           <h1 class="section-title">Class Size</h1>
           <p>
             Some introductory classes contain over 100 students, but small seminars can have as few as two. Penn's smallest classes have higher course quality ratings than medium-sized classes, which in turn are rated higher than large classes. The cognitive science department has the most students enrolled per class, followed by biology and then chemistry. The language classes Turkish, Sanskrit and Urdu have the smallest class sizes of any departments.
-          </p>          <div id="drop-chart"></div>
-          <div class="links">
+          </p>
+          <div class="links text-right">
                 <a href="#"style="color:#F49F00">article about history/future of PCR<i class="fa fa-chevron-right" ></i></a><br>
                 <a href="/2016/04/PCR/article/biases-in-pcr-data.html" style="color:#F49F00">Possibe Biases: Where course reviews go wrong <i class="fa fa-chevron-right"></i></a><br>
            </div>
@@ -290,6 +302,7 @@
         </section>
         <section id="section9">
           <h1 class="section-title">The Rate Depression</h1>
+          <div id="drop-chart"></div>
           <p>
             Everything faculty had come to expect in their Penn Course Review evaluations went out the window in Spring 2009, when the average scores on nearly every variable dropped significantly. This was the semester that the university switched from pencil and paper to online course evaluations, which somehow led to much lower average ratings of courses, professors and departments. Work required and course difficulty are the only variables that appeared to stay flat. In order to avoid skewing the results, we have restricted all of our other analyses to ratings from Spring 2009 onward.
           </p>

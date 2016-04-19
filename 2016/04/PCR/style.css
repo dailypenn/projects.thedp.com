@@ -109,9 +109,9 @@ p, ol li, p li, p ul, body{
 }
 
 @media screen and (max-width: 810px) {
-  #section1, #section2, #section3, #section41, #section42  {
+  /*#section1, #section2, #section3, #section41, #section42  {
       margin-left: 150px;
-  }
+  }*/
 }
 
 /* Section Thumbnails Styles */
@@ -317,12 +317,20 @@ ul.side-nav.nav.affix  {
 }
 
 .content {
-      border-left: solid 7px black;
 }
 
 #sections {
       border-top: solid 1px black;
 }
+
+ul.side-nav.nav.affix, ul.side-nav.nav.affix-top {
+  border-right: solid 7px black;
+  height: 200%;
+  top: -50px;
+  padding-top: 150px;
+  left: 10px;
+}
+
 /*// CHART STYLES*/
 
 path {
