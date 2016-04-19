@@ -373,12 +373,15 @@ var svg = d3.select("#dept-comp-chart")
     .attr("height", diameter)
     .attr("class", "bubble");
 
-d3.csv("data/Department_Difficulty.csv", function(error, data){
+d3.csv("data/DeptData.csv", function(error, data){
 
     //convert numerical values from strings to numbers
     data = data.map(function(d){
       d.value = +Math.pow(d.Difficulty, 6); //Raise to power to scale as difference is really small
-      d.school = +d.School;
+      d.School = +d.school;
+      d.CourseQuality = +Math.pow(d.CourseQuality, 3); //Raise to power to scale as difference is really small
+      d.AmmtLearned = +Math.pow(d.AmmtLearned, 3); //Raise to power to scale as difference is really small
+      d.InstQuality = +Math.pow(d.InstQuality, 3); //Raise to power to scale as difference is really small
       return d; });
 
     //bubbles needs very specific format, convert data to this.
@@ -398,13 +401,13 @@ d3.csv("data/Department_Difficulty.csv", function(error, data){
         .attr("cy", function(d){ return d.y; })
         .style("fill", function(d) {
 
-          if (d.School == "SAS") {
+          if (d.school == "SAS") {
             return RED;
-          } else if (d.School == "SEAS") {
+          } else if (d.school == "SEAS") {
             return YELLOW;
-          } else if (d.School == "Wharton") {
+          } else if (d.school == "Wharton") {
             return ORANGE;
-      } else  if (d.School == "Nursing"){
+      } else  if (d.school == "Nursing"){
             return GREEN;
       } else {
             return BLUE;
@@ -424,57 +427,32 @@ d3.csv("data/Department_Difficulty.csv", function(error, data){
         });
 })
 
+function deptDifficulty() {
+  svg.selectAll("circle")
+  .transition()
+  .duration(750)
+  .attr("r", function(d){ return d.r; })
+}
 
 function deptQuality() {
+  svg.selectAll("circle")
+  .transition()
+  .duration(750)
+  .attr("r", function(d){ return d.CourseQuality; })
+};
 
-  // Get the data again
-  d3.csv("data/Department_CourseQuality.csv", function(error, data){
+function deptLearn() {
+  svg.selectAll("circle")
+  .transition()
+  .duration(750)
+  .attr("r", function(d){ return d.AmmtLearned; })
+};
 
-      //convert numerical values from strings to numbers
-      data = data.map(function(d){
-        d.value = +Math.pow(d["Course Quality"], 6); //Raise to power to scale as difference is really small
-        d.school = +d["School"];
-        console.log(d.value);
-        return d; });
-
-    var nodes = bubble.nodes({children:data}).filter(function(d) { return !d.children; });
-
-    //setup the chart
-    var bubbles = svg.append("g")
-        .attr("transform", "translate(0,0)")
-        .selectAll(".bubble")
-        .data(nodes)
-        .enter();
-
-    //create the bubbles and color them correctly
-    bubbles.append("circle")
-        .attr("r", function(d){ return d.r; })
-        .attr("cx", function(d){ return d.x; })
-        .attr("cy", function(d){ return d.y; })
-        .style("fill", function(d) {
-          if (d.School == "SAS") {
-            return BLUE;
-          } else if (d.school == "SEAS"){
-            return GREEN;
-          } else if (d.School == "Wharton") {
-            return ORANGE;
-          } else {
-            return RED;
-          }
-        });
-
-    //format the text for each bubble, give it description
-    bubbles.append("text")
-        .attr("x", function(d){ return d.x; })
-        .attr("y", function(d){ return d.y + 5; })
-        .attr("text-anchor", "middle")
-        .text(function(d){ return d["Department"]; })
-        .style({
-            "fill":"white",
-            "font-family":"neuzeit-grotesk, Helvetica, Arial, san-serif",
-            "font-size": "12px"
-          });
-  })
+function deptInst() {
+  svg.selectAll("circle")
+  .transition()
+  .duration(750)
+  .attr("r", function(d){ return d.InstQuality; })
 };
 
 
