@@ -88,7 +88,7 @@ section {
       font-family: "neuzeit-grotesk", "montserrant", sans-serif;
 }
 
-p, ol li, p li, p ul {
+p, ol li, p li, p ul, body{
   font-family: "lora", georgia, serif;
   font-size: 15px;
 }
@@ -306,7 +306,12 @@ ul.side-nav.nav.affix  {
   background: #2ac1dd;
 }
 
-.btn:hover, .btn:active, .dept-quality {
+.btn:hover, .btn:active, {
+      color: #2ac1dd;
+      border-color:  #2ac1dd;
+}
+
+.btn:hover.dept-quality .btn:active.dept-quality {
       color: #98A62F;
       border-color:  #98A62F;
 }
