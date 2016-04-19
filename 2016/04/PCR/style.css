@@ -39,10 +39,10 @@ section:nth-child(4n+1) h1 {
   color: #2ac1dd;
 }
 section:nth-child(4n+2) h1 {
-  color: #da1924;
+  color: #98A62F;
 }
 section:nth-child(4n+3) h1 {
-  color: #98A62F;
+  color: #da1924;
 }
 section:nth-child(4n+4) h1 {
   color: #F49F00;
@@ -75,9 +75,8 @@ a:hover {
 
 section {
   /*min-height: 100%;*/
+  padding-top: 75px;
   padding-bottom: 75px;
-  padding-left: 65px;
-  padding-right: 65px;;
   /*padding-top: 25px;*/
   border-bottom: 1px solid #a2a2a2;
 }
@@ -115,12 +114,11 @@ p, ol li, p li, p ul, body{
 }
 
 /* Section Thumbnails Styles */
-td {
+td, th {
   font-size: 120%;
   font-weight: bold;
   border-top: none !important;
   font-family: "neuzeit-grotesk", "montserrant", sans-serif;
-  height: 100px;
 }
 
 .table {
