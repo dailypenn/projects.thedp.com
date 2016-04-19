@@ -11,7 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css">
 
   <script src="https://use.typekit.net/psa2uuo.js"></script>
@@ -26,10 +26,13 @@
   ga('send', 'pageview');
   </script>
 </head>
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+<body data-spy="scroll" data-target="#myScrollspy">
   <header>
     <nav class="navbar navbar-default affix" role="navigation" data-spy="affix">
-      <a class="navbar-brand" href="#"></a>
+      <a class="navbar-brand" href="/">
+        <i class="fa fa-chevron-left"></i>
+        Penn Course Review in Review
+      </a>
 
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
@@ -101,7 +104,7 @@
         <div class="col-sm-2">
           <h4>Brought to you by The Daily Pennsylvanian, Inc.</h4>
           <p>
-            Designed for the DP by <a href="">Ming Zhang</a> and <a href=""> Mikael Mantis</a>.
+            Designed for the DP by <a href="">Ming Zhang</a>, <a href=""> Mikael Mantis</a>, &amp; <a href="http://andrewfis.ch/">Andrew Fischer</a>.
           </p>
         </div>
       </div>
@@ -109,49 +112,80 @@
 
   </header>
 
-<div class="container-fluid">
-    How many courses are you taking? <br>
-    <select name="courses" class="form-control" id="coursenum">
-      <option value="" disabled selected># of Courses</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-    </select>
 
-    <div id="classes"></div>
-
-    <a class="btn btn-default" onclick="getResults()" id="submit">How hard is you courses be?!</a>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-10 col-sm-push-1">
+        <h1 class="title">Top 30 hardest humanities classes at Penn</h1>
+        <h4 class="byline">By Jill Castellano</h4>
+        <p>A whopping 23 of the top 30 most difficult classes Penn offers clearly fall under the STEM umbrella (that is: science, technology, engineering and mathematics.) Only seven fall under departments that are not considered STEM, and only one of those falls under the humanities umbrella.</p>
+        <p>For all the humanities students out there, here's a list of the top 30 hardest humanities classes Penn has to offer, as ranked by their Penn Course Review difficulty score out of 4.00 between 2009 and 2015. Beyond STEM, this list also excludes classes that fall under business, architecture and social sciences courses that apply the scientific method. Senior projects, theses, Benjamin Franklin seminars and classes that have not been taught since 2013 are also not included.</p>
+        <h3>Top 30 Hardest Humanities Classes:</h3>
+        <ol>
+          <li>PSCI-398: US Foreign Policy in the Middle East (3.57)</li>
+          <li>COMM-226: Introduction to Political Communication (3.52)</li>
+          <li>MUSC-171: Theory/Musicianship IV (3.51)</li>
+          <li>AAMW-425: Achaemenids And Hellenistic Aftermath (3.50)</li>
+          <li>AFRC-437: Race &amp; Criminal Justice (3.47)</li>
+          <li>WRIT-076: Writing Seminar: The Socratic Method &amp; Democracy (3.45)</li>
+          <li>PSCI-414: Comparative Politics: Welfare State (3.43)</li>
+          <li>PSCI-237: The American Presidency (3.40)</li>
+          <li>HIST-174: Reform &amp; Revolution in the Americas (3.34)</li>
+          <li>HIST-415: 17th Century Intellectual History (3.34)</li>
+          <li>COML-353: Arabic Literature &amp; Theory (3.28)</li>
+          <li>WRIT-013: Writing Seminar in Anthropology: The Meaning of Money (3.28)</li>
+          <li>AFRC-501: Curatorial Seminar on Afro-Brazilian Art (3.25)</li>
+          <li>SKRT-461: Sanskrit 1st Year Part II (3.25)</li>
+          <li>PHIL-472: Survey of Ethical Theory: Metaethics (3.24)</li>
+          <li>HIST-202: History, Historical Practice and Historiography  (3.23)</li>
+          <li>WRIT-030: Writing Seminar: Stewart-Colbert (3.23)</li>
+          <li>ARTH-216: Chinese Painting (3.21)</li>
+          <li>HIST-212: Classical Liberal Thought (3.19)</li>
+          <li>RELS-248: Introduction to Islamic Law (3.17)</li>
+          <li>WRIT-039: Writing Seminar in English: The Great Gatsby (3.13)</li>
+          <li>AFRC-010: Race, Crime & Punishment (3.04)</li>
+          <li>LING-300: Tutorial in Linguistics 3.02)</li>
+          <li>ARTH-101: Introduction To Western Art & Civilization: Prehistory To Renaissance (3.01)</li>
+          <li>CINE-289: Mixed Media Animation (3.01)</li>
+          <li>FNAR-126: Sequential Drawing (3.01)</li>
+          <li>WRIT-023: Investment Philosophies 3.00)</li>
+          <li>FNAR-353: Advanced Projects in Animation: Facial Animation (3.00)</li>
+          <li>URBS-259: Media City: New Lifestyles/New Forms (3.00)</li>
+          <li>HIST-343: 19th Century European Intellectual History (2.99)</li>
+        </ol>
+        <div class="fb-comments" data-href="http://projects.thedp.com/2016/04/PCR/article/30-hardest-humanities-classes-at-penn.html" data-width="100%" data-numposts="25"></div>
+      </div>
+    </div>
   </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="quiz.js" charset="utf-8"></script>
-    <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '1042075185814231',
-        xfbml      : true,
-        version    : 'v2.6'
-      });
-    };
+  <script type="text/javascript">
+    var secBtn = document.getElementById('section-dropdown-btn');
+    var dropdown = document.getElementById('section-dropdown');
+    secBtn.addEventListener("click", function() {
+      'use strict';
+      dropdown.classList.toggle('closed');
+      secBtn.classList.toggle('closed');
+    });
 
-    (function(d, s, id){
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) {return;}
-       js = d.createElement(s); js.id = id;
-       js.src = "//connect.facebook.net/en_US/sdk.js";
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));
-     </script>
-  </body>
+  </script>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1042075185814231',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+   </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
+</body>
+
 </html>
