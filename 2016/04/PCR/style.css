@@ -84,6 +84,7 @@ section {
 }
 
 .links {
+  padding-top: 10px;
       font-size: 20px;
       font-weight: bold;
       font-family: "neuzeit-grotesk", "montserrant", sans-serif;
@@ -129,7 +130,6 @@ td, th {
 
 .table {
   width: 55%;
-  margin-left: 22.5%;
 }
 
 /* HEADER STYLES */
@@ -364,4 +364,41 @@ path {
 
 .chart-container {
   padding-bottom: 15px;
+}
+
+#dept-comp-chart {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 970px) {
+  p, ol li, p li, p ul, body  {
+      font-size: 14px;
+  }
+
+  h1 {
+    font-size: 35px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  .header-table {
+    width: 10%;
+  }
+
+  td {
+    padding: 10px !important;
+  }
+
+  td a {
+    font-size: 10px !important;
+  }
 }
