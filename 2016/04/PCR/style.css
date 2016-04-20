@@ -97,6 +97,8 @@ p, ol li, p li, p ul, body{
 
 .byline {
   font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 /*div.col-sm-9 div {
     height: 250px;
