@@ -14,6 +14,7 @@
 
     /* Style for our header texts
     * --------------------------------------- */
+    html{height:100%,width:100%} 
     h1{
         font-size: 2em;
         font-family: Chunk;
@@ -53,15 +54,17 @@
         text-align: center;
     }
     .section-pic{
-        background-size: contain;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: center center;
         padding: 0;
         height: 400px;
-        width: 100%;
-        background-position: 50% 50%;
-        background-size: auto 100%;
+        -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+    }
+
+    p {
+      background: transparent;
     }
 
     img{
@@ -104,11 +107,14 @@
 
 <div id="fullpage">
     <div class="section0">
-        <h1 style = "font-size: 1em;">Best of Penn 2016</h1>
+<a href="http://www.thedp.com/"><img src="https://s3.amazonaws.com/media.dpn/52083_34th_street_logo07o.tif" style="width: 200px; display: inline; vertical-align: middle;" /></a>
+<a href="http://www.34st.com/"><img src="https://s3.amazonaws.com/media.dpn/52082_dp_flag_in_squaretransparentf.png" style="width: 200px; display: inline; vertical-align: middle; margin-top: -80px; margin-bottom: -80px;" /></a>
+        <h1 style = "font-size: 1em;line-height: .5">Best of Penn 2016</h1>
+        <h1 style="font-size: .5em; ">Presented by The Daily Pennsylvanian and 34th Street</h1>
     </div>
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51981__mg_0255p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51981__mg_0255f.jpg') no-repeat top center;"></div>
             <h1>Food Truck: Magic Carpet</h1>
             <center>
                 <table>
@@ -121,12 +127,12 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/52041__mg_0187p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52041__mg_0187f.jpg') no-repeat top center;"></div>
             <h1>Instagram Spot: Fisher Fine Arts</h1>
             <center>
                 <table>
                         <td>
-                            Fisher Fine Arts Library not only offers the peace and quiet necessary for that five-page essay, but also that great Instagram pic to show everyone back home how hard you've been studying—and how perfect the library looks while you do so. #nofilter necessary for this building's flaming red exterior or clerestoried halls. The older, more attractive sibling to Van Pelt, Fisher Fine Arts was the University's first library building and was designed by Frank Furness in the late nineteenth century. Its windows are adorned with mottos chosen by Frank Furness's brother, Horace Howard Furness, who was a Shakespearean scholar at Penn. Some of these offer sage insights ("Smooth runs the water where the brook is deep"); others, we'll just pretend to understand ("Many wearing rapiers are afraid of goose quills"). 
+                            Fisher Fine Arts Library not only offers the peace and quiet necessary for that five-page essay, but also that great Instagram pic to show everyone back home how hard you've been studying-and how perfect the library looks while you do so. #nofilter necessary for this building's flaming red exterior or clerestoried halls. The older, more attractive sibling to Van Pelt, Fisher Fine Arts was the University's first library building and was designed by Frank Furness in the late nineteenth century. Its windows are adorned with mottos chosen by Frank Furness's brother, Horace Howard Furness, who was a Shakespearean scholar at Penn. Some of these offer sage insights ("Smooth runs the water where the brook is deep"); others, we'll just pretend to understand ("Many wearing rapiers are afraid of goose quills"). 
                         </td>
                 </table>
             </center>
@@ -135,12 +141,12 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51930__mg_4616p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51930__mg_4616f.jpg') no-repeat top center;"></div>
             <h1>Brunch: Sabrina's</h1>
             <center>
                 <table>
                         <td>
-                            Though the walk is a bit lengthy, this cute restaurant perched in the middle of Drexel's campus is well worth the trek. Famous for its sweet and savory brunch options, Sabrina's also offers lunch and dinner and its menu abounds with comfort food of all kinds. Whether you're heading out for a sceney brunch with your lineage or taking your crush out for a first date, you'll feel sophisticated and chic in the restaurant's many small, decorated rooms. Sabrina's is known for its challah french toast, stuffed with sweet cream cheese and drenched in maple syrup—but no matter what you order, the instagram will be worth it. Pro tip: call ahead and get there early, the wait is long on weekends and this in-demand brunch locale doesn't take reservations.
+                            Though the walk is a bit lengthy, this cute restaurant perched in the middle of Drexel's campus is well worth the trek. Famous for its sweet and savory brunch options, Sabrina's also offers lunch and dinner and its menu abounds with comfort food of all kinds. Whether you're heading out for a sceney brunch with your lineage or taking your crush out for a first date, you'll feel sophisticated and chic in the restaurant's many small, decorated rooms. Sabrina's is known for its challah french toast, stuffed with sweet cream cheese and drenched in maple syrup-but no matter what you order, the instagram will be worth it. Pro tip: call ahead and get there early, the wait is long on weekends and this in-demand brunch locale doesn't take reservations.
                         </td>
                 </table>
             </center>
@@ -149,12 +155,12 @@
     </div>
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51934__mg_4650p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51934__mg_4650f.jpg') no-repeat top center;"></div>
             <h1>Rowdy BYO: Banana Leaf</h1>
             <center>
                 <table>
                         <td>
-                            Boat-races and slapping the bag are common sights at this consistently rowdy BYO spot in Chinatown. Banana Leaf is a hot-spot for cultural cuisine and bonding with your PennQuest group, but a terrible idea for parent's weekend. The restaurant is the first-stop freshman BYO spot—which accounts for much of its rowdiness. Whether you're having a hall, club or friend group BYO, Banana Leaf is probably the place you'll end up. The tables are long, accommodating, and will probably be completely covered in cups, plates, utensils and empty boxes of Sunset Blush by the time you're ready to go. It's great for a large party as the hot Malaysian cuisine comes out in minutes and no one is ever left waiting for their food for too long. Banana Leaf always comes through—even though the menu might take you an hour to decipher. Where else can you get fried rice served in a pineapple?
+                            Boat-races and slapping the bag are common sights at this consistently rowdy BYO spot in Chinatown. Banana Leaf is a hot-spot for cultural cuisine and bonding with your PennQuest group, but a terrible idea for parent's weekend. The restaurant is the first-stop freshman BYO spot-which accounts for much of its rowdiness. Whether you're having a hall, club or friend group BYO, Banana Leaf is probably the place you'll end up. The tables are long, accommodating, and will probably be completely covered in cups, plates, utensils and empty boxes of Sunset Blush by the time you're ready to go. It's great for a large party as the hot Malaysian cuisine comes out in minutes and no one is ever left waiting for their food for too long. Banana Leaf always comes through-even though the menu might take you an hour to decipher. Where else can you get fried rice served in a pineapple?
                         </td>
                 </table>
             </center>
@@ -162,12 +168,12 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51956__mg_4621p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51956__mg_4621f.jpg') no-repeat top center;"></div>
             <h1>Breakfast Sandwich: Metro</h1>
             <center>
                 <table>
                         <td>
-                            The breakfast sandwiches at Metropolitan Bakery are probably the only reason you get out of bed after that long night of ‘casual' drinking. Metro offers breakfast all day. The Lumberjack—with maple turkey sausage, eggs, chevre and mixed greens—is perfect for that hangover that you're trying to deny. If you are interested in something more low-key: Tom's Favorite with smoked salmon, cream cheese, capers, onion and tomato on a bagel is still amazing. If you are feeling wild, order any of the homemade pastries on the side. It probably won't help with the headache but they're so good you won't regret it. The housemade granola is also a great choice. If you love their artisanal bread, you can even bring some home by choosing from their long list. The seventy-five cent coffee refills are a major plus, seeing as how you will probably have at least three.
+                            The breakfast sandwiches at Metropolitan Bakery are probably the only reason you get out of bed after that long night of ‘casual' drinking. Metro offers breakfast all day. The Lumberjack-with maple turkey sausage, eggs, chevre and mixed greens-is perfect for that hangover that you're trying to deny. If you are interested in something more low-key: Tom's Favorite with smoked salmon, cream cheese, capers, onion and tomato on a bagel is still amazing. If you are feeling wild, order any of the homemade pastries on the side. It probably won't help with the headache but they're so good you won't regret it. The housemade granola is also a great choice. If you love their artisanal bread, you can even bring some home by choosing from their long list. The seventy-five cent coffee refills are a major plus, seeing as how you will probably have at least three.
                         </td>
                 </table>
             </center>
@@ -176,12 +182,12 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51933__mg_4636p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51933__mg_4636f.jpg') no-repeat top center;"></div>
             <h1>Happy Hour: Copa</h1>
             <center>
                 <table>
                         <td>
-                            It's 5:00 always at Copabanana, as University City's best margarita joint makes every hour "happy." The actual happy hour is even better with $3 cocktails and $6 nachos from 5-7 p.m. Monday through Thursday, and 4-7 p.m. on Friday. When you order the happy hour margaritas, Copa does not just give you a glass; they give you an entire shaker of their signature drink. Your wallet won't be wasting away again in Margaritaville, for Copa's affordability makes 40th and Spruce one of the best places to head on a Thursday night—grab a drink and one of its award-winning burgers and kick off your weekend. Pro tip: Copa's happy hour is rivaled only by its brunch specials, with $3 Bloody Marys and mimosas and an amazing menu for its hungover patrons. Even better pro tip: book the private room at Copa for club events. You'll be glad you did.
+                            It's 5:00 always at Copabanana, as University City's best margarita joint makes every hour "happy." The actual happy hour is even better with $3 cocktails and $6 nachos from 5-7 p.m. Monday through Thursday, and 4-7 p.m. on Friday. When you order the happy hour margaritas, Copa does not just give you a glass; they give you an entire shaker of their signature drink. Your wallet won't be wasting away again in Margaritaville, for Copa's affordability makes 40th and Spruce one of the best places to head on a Thursday night-grab a drink and one of its award-winning burgers and kick off your weekend. Pro tip: Copa's happy hour is rivaled only by its brunch specials, with $3 Bloody Marys and mimosas and an amazing menu for its hungover patrons. Even better pro tip: book the private room at Copa for club events. You'll be glad you did.
                         </td>
                 </table>
             </center>
@@ -189,12 +195,13 @@
     </div></div>
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51999__mg_4564p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51999__mg_4564f.jpg') no-repeat top center;"></div>
             <h1>Coffee House: Saxby's</h1>
             <center>
                 <table>
                         <td>
-                            Forget the Van Pelt third floor stacks—this newly-renovated, coffee shop is the best place to see-and-be-seen near campus while simultaneously doing work. The popular coffee shop on 40th and Locust streets received a Penn-inspired makeover this fall and now includes a new coffee bar, additional seating, extra outlets and even separate rooms for interviews. Saxby's has also partnered with Penn's Fine Arts department to feature rotating artwork by Penn students for a chill, upscale aesthetic. Its cold brew iced-coffee, steeped overnight, is the perfect pick-me-up for spring days and its bakery section provides mouth-watering treats for a post-class snack. With its spacious layout perfect for working, this is somewhere you'll want to stay and write that term-paper or read a book, not just grab coffee and go. Pro tip: plan on arriving early on weekends to snag a place to sit—this hangout has been in high demand since its grand re-opening.
+                          <i>Show this article at Saxby's for a free small coffee between April 20th and April 24th</i><br>
+                            Forget the Van Pelt third floor stacks-this newly-renovated, coffee shop is the best place to see-and-be-seen near campus while simultaneously doing work. The popular coffee shop on 40th and Locust streets received a Penn-inspired makeover this fall and now includes a new coffee bar, additional seating, extra outlets and even separate rooms for interviews. Saxby's has also partnered with Penn's Fine Arts department to feature rotating artwork by Penn students for a chill, upscale aesthetic. Its cold brew iced-coffee, steeped overnight, is the perfect pick-me-up for spring days and its bakery section provides mouth-watering treats for a post-class snack. With its spacious layout perfect for working, this is somewhere you'll want to stay and write that term-paper or read a book, not just grab coffee and go. Pro tip: plan on arriving early on weekends to snag a place to sit-this hangout has been in high demand since its grand re-opening.
                         </td>
                 </table>
             </center>
@@ -202,7 +209,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51957__mg_4645p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52076__mg_4578f.jpg') no-repeat top center;"></div>
             <h1>Off-Campus Housing: The Radian</h1>
             <center>
                 <table>
@@ -216,12 +223,12 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51966_uqgp.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51966_uqgf.jpg') no-repeat top center;"></div>
             <h1>On-Campus Housing: The Quad</h1>
             <center>
                 <table>
                         <td>
-                            This 121-year-old campus fixture isn't just the place your cool friends lived when they were freshmen. With its towering architecture, historic dorm names and sprawling lawn perfect for pickup Frisbee and the occasional snowball fight, there's no place more collegiate than the Quad. It's not all Spring Fling festivities within the Quad's legendary courtyards—in Riepe, there's Dean DeTurck's famous Wednesday night cookie extravaganzas, Ware's over-the-top NSO carnival and Fisher-Hassenfeld's (two!) residential programs on social change. The Quad harks back to a simpler time, when getting locked out of your room meant a frigid walk to Upper Quad gate in your bathrobe and everyone lived in the best hall, or so they said, whether it was the Mentors Hall in Riepe or the "Nipple" in Fisher (alright, the Nipple probably was the best). The Quad is the place where baby Quakers sprout into overachieving upperclassmen…and, if nothing else, it's pretty close to Wawa.
+                            This 121-year-old campus fixture isn't just the place your cool friends lived when they were freshmen. With its towering architecture, historic dorm names and sprawling lawn perfect for pickup Frisbee and the occasional snowball fight, there's no place more collegiate than the Quad. It's not all Spring Fling festivities within the Quad's legendary courtyards-in Riepe, there's Dean DeTurck's famous Wednesday night cookie extravaganzas, Ware's over-the-top NSO carnival and Fisher-Hassenfeld's (two!) residential programs on social change. The Quad harks back to a simpler time, when getting locked out of your room meant a frigid walk to Upper Quad gate in your bathrobe and everyone lived in the best hall, or so they said, whether it was the Mentors Hall in Riepe or the "Nipple" in Fisher (alright, the Nipple probably was the best). The Quad is the place where baby Quakers sprout into overachieving upperclassmen…and, if nothing else, it's pretty close to Wawa.
                         </td>
                 </table>
             </center>
@@ -229,12 +236,12 @@
     </div></div>
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51931__mg_4567p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51931__mg_4567f.jpg') no-repeat top center;"></div>
             <h1>Fro-Yo/Ice Cream: Ben & Jerry's</h1>
             <center>
                 <table>
                         <td>
-                            We all knew Ben & Jerry were trendy, but now we can officially say they are the hottest (and cold-est?) guys on campus. We only wish they'd be open later than 10 p.m. to help us satisfy our late-night cravings. Conveniently located just past the edge of Locust Walk on 40th street, the University City branch offers scoops, shakes, pints and ice cream cakes in just about every flavor imaginable. Need a chocolate fix? Go for a spoonful of Chocolate Therapy or Brownie Batter Core. Feeling political? Try Bernie's Yearning. Feeling devious? Try every flavor and peace the fudge out. There's even something for the lactose-intolerant among us, as the ice cream titans marched out four non-dairy flavors last month. All of Ben & Jerry's flavors of fro-yo and ice cream are made with fair-trade ingredients, so you won't have a guilty conscience eating this sweet treat—at least until you start counting the calories. Pro Tip: Count by the pint, because nobody in the history of ice cream has ever eaten just one serving.
+                            We all knew Ben & Jerry were trendy, but now we can officially say they are the hottest (and cold-est?) guys on campus. We only wish they'd be open later than 10 p.m. to help us satisfy our late-night cravings. Conveniently located just past the edge of Locust Walk on 40th street, the University City branch offers scoops, shakes, pints and ice cream cakes in just about every flavor imaginable. Need a chocolate fix? Go for a spoonful of Chocolate Therapy or Brownie Batter Core. Feeling political? Try Bernie's Yearning. Feeling devious? Try every flavor and peace the fudge out. There's even something for the lactose-intolerant among us, as the ice cream titans marched out four non-dairy flavors last month. All of Ben & Jerry's flavors of fro-yo and ice cream are made with fair-trade ingredients, so you won't have a guilty conscience eating this sweet treat-at least until you start counting the calories. Pro Tip: Count by the pint, because nobody in the history of ice cream has ever eaten just one serving.
                         </td>
                 </table>
             </center>
@@ -242,7 +249,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51990__mg_0234p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51990__mg_0234f.jpg') no-repeat top center;"></div>
             <h1>Place to Get Pampered: Adolf Biecker</h1>
             <center>
                 <table>
@@ -256,12 +263,12 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51953__mg_4591p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51953__mg_4591f.jpg') no-repeat top center;"></div>
             <h1>Bursar: Penn Bookstore</h1>
             <center>
                 <table>
                         <td>
-                            The Penn bookstore has won best bursar once again and it is easy to see why. The sheer variety of ways to spend your parents' money is unparalleled on this campus. Missed Black Friday? You can finish your Christmas shopping for your whole family in one fell swoop—of course your mother will wear that "Proud Penn Mom" v-neck in public—and who but your family will appreciate a Penn pen?  Besides, what better way to console yourself after replacing your third PennCard than by sipping a chai latte and perusing the back cover of the latest John Green novel, or perhaps your favorite professor's book, the product of decades of tenure track research? There is truly no end to the possibilities at the bookstore of your favorite prestigious university.
+                            The Penn bookstore has won best bursar once again and it is easy to see why. The sheer variety of ways to spend your parents' money is unparalleled on this campus. Missed Black Friday? You can finish your Christmas shopping for your whole family in one fell swoop-of course your mother will wear that "Proud Penn Mom" v-neck in public-and who but your family will appreciate a Penn pen?  Besides, what better way to console yourself after replacing your third PennCard than by sipping a chai latte and perusing the back cover of the latest John Green novel, or perhaps your favorite professor's book, the product of decades of tenure track research? There is truly no end to the possibilities at the bookstore of your favorite prestigious university.
                         </td>
                 </table>
             </center>
@@ -269,11 +276,12 @@
     </div></div>
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51957__mg_4645p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51957__mg_4645f.jpg') no-repeat top center;"></div>
             <h1>Bar: Smokey Joe's</h1>
             <center>
                 <table>
                         <td>
+                          <i>Show this article at Smoke's on April 21st after 10pm for free cover! Offer valid only for first 50 students to present the article</i><br>
                             Once again, Smokes' is hands down the best bar at campus. The Pennstitution's Sink or Swim on Wednesdays is still simultaneously your best and worst idea of the week. If you're looking to catch a glimpse of everyone from the basketball team to half of the Class of 2016, they'll all congregate at a single, sacred place: Smokes'. From Joe the Bartender's uncanny ability to recognize nearly every patron to that bouncer you go out of your way to get to know to avoid that $1 cover, there's nowhere else on campus that can offer half of the fun. And if you're looking for the right kind of music out of your bar, Smoke's has it all. From Billy Joel to T-Swift, it's about guaranteed you'll get to hear a little bit of everything. And for good measure, have some Enjay's while you're at it.
                         </td>
                 </table>
@@ -282,12 +290,12 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51932__mg_4635p.jpg');">
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51932__mg_4635f.jpg') no-repeat top center;"></div>
             <h1>Pizza: Zesto</h1>
             <center>
                 <table>
                         <td>
-                            The newer version of its 3 a.m. pizza competitor, Allegros, Zesto spoils its customers for choice with an array of options. These range from its classic hand tossed, stone fired pizzas to its signature gourmet pizzas. Located on 40th Street between Walnut and Sansom, Zesto's is known primarily for its pizzas, but has a fairly diverse menu to cater to the tastes of most famished college students. Some of the other offerings include calzones, pasta, cheesesteaks and buffalo wings. Couple these choices with the availability of delivery after midnight and see if you can find a single Penn student who can turn down a meal from there. So it is a pretty obvious choice then — Zesto is the only real place to go to after night out… at Van Pelt, of course. 
+                            The newer version of its 3 a.m. pizza competitor, Allegros, Zesto spoils its customers for choice with an array of options. These range from its classic hand tossed, stone fired pizzas to its signature gourmet pizzas. Located on 40th Street between Walnut and Sansom, Zesto's is known primarily for its pizzas, but has a fairly diverse menu to cater to the tastes of most famished college students. Some of the other offerings include calzones, pasta, cheesesteaks and buffalo wings. Couple these choices with the availability of delivery after midnight and see if you can find a single Penn student who can turn down a meal from there. So it is a pretty obvious choice then - Zesto is the only real place to go to after night out… at Van Pelt, of course. 
                         </td>
                 </table>
             </center>
@@ -296,7 +304,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51955__mg_4599p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51955__mg_4599f.jpg') no-repeat top center;"></div>
             <h1>Place to Get Your Parents to Buy You Dinner: White Dog</h1>
             <center>
                 <table>
@@ -312,7 +320,7 @@
     </div>
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51994_dsc_0098p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51994_dsc_0098f.jpg') no-repeat top center;"></div>
             <h1>Best place to take a moment for yourself: Green Line Cafe</h1>
             <center>
                 <table>
@@ -321,7 +329,7 @@
  
                             Upon walking through the park's gates, you'll notice a kiosk teaching you about what trees are giving you the shade you need to recover from your hangover. They even list the trees that are no longer with us. Take a moment to yourself to remember the fallen trees and to curse humanity. Wander a little farther into the park towards the playground. Since you've ventured into "real" West Philly, you definitely won't run into anyone when you decide to test whether swings are more fun than downtowns.
  
-                            Take another moment to grab a coffee at Green Line Cafe across the street and enjoy it on one of Clark Park's bright orange lawn chairs. There's no Wifi in Green Line—they're basically begging you to unplug and experience the great outdoors. 
+                            Take another moment to grab a coffee at Green Line Cafe across the street and enjoy it on one of Clark Park's bright orange lawn chairs. There's no Wifi in Green Line-they're basically begging you to unplug and experience the great outdoors. 
                         </td>
                 </table>
             </center>
@@ -329,7 +337,7 @@
     </div>
         <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51973_08292009_retail217p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51973_08292009_retail217f.jpg') no-repeat top center;"></div>
             <h1>Best Fro-yo/Ice Cream: Capogiro</h1>
             <center>
                 <table>
@@ -342,12 +350,12 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51999__mg_4564p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51999__mg_4564f.jpg') no-repeat top center;"></div>
             <h1>Best Place to Pretend to Accidentally Run Into Someone: Saxby's</h1>
             <center>
                 <table>
                         <td>
-                            Everyone knows that Saxby's is the best (only) place past 40th Street where studying (or at least pretending to) is possible. There are outlets all along the long tables and their coffee is readily available—but they don't make you buy it or care if you bring in outside food. The result of their laissez-faire attitude? Literally. Everyone. Goes there. Arrive at 9 a.m. to get that prime SABS spot at the head of the table and a breakfast sandwich (underrated). Keep getting coffee. Get a salad or a sandwich if the person whose eye you're trying to catch doesn't show up by lunchtime. And don't worry, if, by some weird twist of fate, you don't run into the person you're stalking, he/ she probably isn't cool enough for you anyway.     
+                            Everyone knows that Saxby's is the best (only) place past 40th Street where studying (or at least pretending to) is possible. There are outlets all along the long tables and their coffee is readily available-but they don't make you buy it or care if you bring in outside food. The result of their laissez-faire attitude? Literally. Everyone. Goes there. Arrive at 9 a.m. to get that prime SABS spot at the head of the table and a breakfast sandwich (underrated). Keep getting coffee. Get a salad or a sandwich if the person whose eye you're trying to catch doesn't show up by lunchtime. And don't worry, if, by some weird twist of fate, you don't run into the person you're stalking, he/ she probably isn't cool enough for you anyway.     
                         </td>
                 </table>
             </center>
@@ -355,12 +363,12 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/52015_img_0957p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52015_img_0957f.jpg') no-repeat top center;"></div>
             <h1>Best Date Night Venue: The Rotunda</h1>
             <center>
                 <table>
                         <td>
-                            Penn's hottest club is The Rotunda. Don't know what we're talking about? Congrats on being ignorant af. The Rotunda, located conveniently next to the Cinemark, offers countless amenities including: seemingly limitless space, on-campus access, proximity to the rhythm room, walls, a door, great drainage and an awkwardly circular layout—it's the the perfect venue for your next srat date night! Additionally, the Rotunda (or, "the Tund" as we are now calling it #spreadtheword) includes space for seating (the floor) and a catering option. The Tund doubles as a church/community center, giving it both divinity and humility. Call in advance because it usually books up with Wharton networking events and Chance the Rapper performances. DM Amy G. for details. Odds you do it. You won't. 
+                            Penn's hottest club is The Rotunda. Don't know what we're talking about? Congrats on being ignorant af. The Rotunda, located conveniently next to the Cinemark, offers countless amenities including: seemingly limitless space, on-campus access, proximity to the rhythm room, walls, a door, great drainage and an awkwardly circular layout-it's the the perfect venue for your next srat date night! Additionally, the Rotunda (or, "the Tund" as we are now calling it #spreadtheword) includes space for seating (the floor) and a catering option. The Tund doubles as a church/community center, giving it both divinity and humility. Call in advance because it usually books up with Wharton networking events and Chance the Rapper performances. DM Amy G. for details. Odds you do it. You won't. 
                         </td>
                 </table>
             </center>
@@ -369,7 +377,7 @@
     </div>
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51936_dsc_6658_2p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51936_dsc_6658_2f.jpg') no-repeat top center;"></div>
             <h1>Best Brunch: Farmacy</h1>
             <center>
                 <table>
@@ -382,7 +390,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51944_dsc_0707p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://dpn.getsnworks.com/media/00/00/05/20/52077_dsc_0707f.JPG;"></div>
             <h1>Best Place to Live On-Campus: New Hill</h1>
             <center>
                 <table>
@@ -395,7 +403,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51992_img_3367p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51992_img_3367f.jpg') no-repeat top center;"></div>
             <h1>Best place to get Pampered: Doggie Style</h1>
             <center>
                 <table>
@@ -409,12 +417,12 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('imgs/bg4.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52081_parcf.jpg') no-repeat top center;"></div>
             <h1>Best Place to Get Your Parents to Buy You Dinner: Parc</h1>
             <center>
                 <table>
                         <td>
-                            After spending a semester surviving on $3 Allegro Pizza slices at 2 a.m. and pre-packaged cereal cups from Wawa the following day, you're thrilled when your parents announce their upcoming visit. The minute they ask you to make a dinner reservation you're presented with a rare opportunity: Impress your ‘rents with how cultured you are, and eat a meal that amounts to your food budget for the whole week—completely free. Parc is easily the best restaurant for achieving both of these goals. Facing the twinkling lights of Rittenhouse Square, Parc wins for its atmosphere as much as it does for its food. The French restaurant is filled with decorations reminiscent of Paris, and is quiet enough to admit to your parents that you still don't have a boyfriend yet. The food itself is a showstopper. Treat yourself to the cheesiest French onion soup you could never eat in front of your betchy srat sisters and don't skip the profiteroles for dessert. You'll (shockingly) never want your parents to leave.
+                            After spending a semester surviving on $3 Allegro Pizza slices at 2 a.m. and pre-packaged cereal cups from Wawa the following day, you're thrilled when your parents announce their upcoming visit. The minute they ask you to make a dinner reservation you're presented with a rare opportunity: Impress your ‘rents with how cultured you are, and eat a meal that amounts to your food budget for the whole week-completely free. Parc is easily the best restaurant for achieving both of these goals. Facing the twinkling lights of Rittenhouse Square, Parc wins for its atmosphere as much as it does for its food. The French restaurant is filled with decorations reminiscent of Paris, and is quiet enough to admit to your parents that you still don't have a boyfriend yet. The food itself is a showstopper. Treat yourself to the cheesiest French onion soup you could never eat in front of your betchy srat sisters and don't skip the profiteroles for dessert. You'll (shockingly) never want your parents to leave.
                         </td>
                 </table>
             </center>
@@ -422,7 +430,7 @@
     </div></div>
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('imgs/bg4.jpg');"></div>
+            <div class="section-pic" style="background: url('imgs/bg4.jpg') no-repeat top center;"></div>
             <h1>Best Excuse Not to Go Out: Existential Dread</h1>
             <center>
                 <table>
@@ -436,7 +444,7 @@
     
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51941_img_7007p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51941_img_7007f.jpg') no-repeat top center;"></div>
             <h1>Best Happy Hour: DISTRITO</h1>
             <center>
                 <table>
@@ -453,7 +461,7 @@
     </div></div>
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('imgs/bg4.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51966_uqgf.jpg') no-repeat top center;"></div>
             <h1>Best Place To Pee In Public:</h1>
             <center>
                 <table>
@@ -483,7 +491,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51980_dsc_0692p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51980_dsc_0692f.jpg') no-repeat top center;"></div>
             <h1>Best Food Truck: Lyn's</h1>
             <center>
                 <table>
@@ -498,12 +506,12 @@
     
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('imgs/bg4.jpg');"></div>
+            <div class="section-pic" style="background: url('imgs/bg4.jpg') no-repeat top center;"></div>
             <h1>Best Place For A Clandestine Drug Deal - Oh, Wouldn't You Like To Know, You Fucking Narc? </h1>
             <center>
                 <table>
                         <td>
-                            What was that? You want "addy" for that test coming up? I'm gonna have to subtract-y myself from this conversation, bud. If you think I'm going to give you directions, I have a dry and sanitary bench by the Compass for you to sit on. Cocaine? That's an Eric Clapton song. Pot? Do I look like a fucking Bed Bath & Beyond? Molly? That's a country in northwestern Africa. Looks like one-way tickets are about $1109 on TripAdvisor. Take that shit and never come back again. Heroin? I'm all for female leads in superhero movies. We really seem to forget how heteronormative all the stories are—oh look at the muscled dude with super powers saving the helpless woman while all Wonder Woman gets is a fucking lasso like she's the Twinkies mascot. What's she gonna do, give the bad guys Type 2 diabetes? Speaking of, I totally forgot Hostess went bankrupt. That fucking blows. PacSun did too. Where am I going to get my fix of quirky  graphic T-shirts with animals in college human situations? You know, back in highschool I used to—okay, he's gone guys. Let's smoke this J in peace.
+                            What was that? You want "addy" for that test coming up? I'm gonna have to subtract-y myself from this conversation, bud. If you think I'm going to give you directions, I have a dry and sanitary bench by the Compass for you to sit on. Cocaine? That's an Eric Clapton song. Pot? Do I look like a fucking Bed Bath & Beyond? Molly? That's a country in northwestern Africa. Looks like one-way tickets are about $1109 on TripAdvisor. Take that shit and never come back again. Heroin? I'm all for female leads in superhero movies. We really seem to forget how heteronormative all the stories are-oh look at the muscled dude with super powers saving the helpless woman while all Wonder Woman gets is a fucking lasso like she's the Twinkies mascot. What's she gonna do, give the bad guys Type 2 diabetes? Speaking of, I totally forgot Hostess went bankrupt. That fucking blows. PacSun did too. Where am I going to get my fix of quirky  graphic T-shirts with animals in college human situations? You know, back in highschool I used to-okay, he's gone guys. Let's smoke this J in peace.
                         </td>
                 </table>
             </center>
@@ -511,12 +519,12 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51989__dsc0391p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51989__dsc0391f.jpg') no-repeat top center;"></div>
             <h1>Best Off-Campus Housing: Under the Pool Table in Domus</h1>
             <center>
                 <table>
                         <td>
-                            So. You're looking to upgrade that Quad double. You're not quite betchy enough to live in the Radian, but you want someplace more glamorous than the Highrises. And you sure as hell didn't get your shit together for a house. Look no farther than 34th and Chestnut Streets, which is pretty damn far in the first place. Domus has everything: a pool, a spinning studio, a movie theater, a pretentious Latin name... Oh, and an almost $4,000/month price tag—unless you snag the one spot in Domus that is completely free. Lay down and rest (don't try this sitting up) beneath the majestic pool table in the Domus lobby. Get an up-close look at the glinting wood-paneled floors. Stay up-to-date on the latest fashion trends by staring at the feet of everyone who walks by. Get a complimentary workout by running from security guards! Experience the height of luxury, while staying on the floor. Just don't get caught. Please.
+                            So. You're looking to upgrade that Quad double. You're not quite betchy enough to live in the Radian, but you want someplace more glamorous than the Highrises. And you sure as hell didn't get your shit together for a house. Look no farther than 34th and Chestnut Streets, which is pretty damn far in the first place. Domus has everything: a pool, a spinning studio, a movie theater, a pretentious Latin name... Oh, and an almost $4,000/month price tag-unless you snag the one spot in Domus that is completely free. Lay down and rest (don't try this sitting up) beneath the majestic pool table in the Domus lobby. Get an up-close look at the glinting wood-paneled floors. Stay up-to-date on the latest fashion trends by staring at the feet of everyone who walks by. Get a complimentary workout by running from security guards! Experience the height of luxury, while staying on the floor. Just don't get caught. Please.
                         </td>
                 </table>
             </center>
@@ -524,12 +532,12 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51939_bestofpenn6274p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51939_bestofpenn6274f.jpg') no-repeat top center;"></div>
             <h1>Best Pizza: Dock Street Brewery</h1>
             <center>
                 <table>
                         <td>
-                            If you haven't been to Dock Street Brewery yet, you're doing it wrong. We know late night Allegro Pizza or Zesto's might occupy a special place in your heart, but Dock Street is the true destination for great pizza. Their delicious variety of personal pizzas, with crust that's light, airy and crunchy at once, come with great toppings and even better prices. To top that off, you can enjoy your pizza with one, or—who are we kidding—a few, of their amazing craft beers. If you're still a skeptic and unsure about the inconvenient location, consider that the nice walk to and from campus is a relaxing, much-needed break from the Penn bubble.
+                            If you haven't been to Dock Street Brewery yet, you're doing it wrong. We know late night Allegro Pizza or Zesto's might occupy a special place in your heart, but Dock Street is the true destination for great pizza. Their delicious variety of personal pizzas, with crust that's light, airy and crunchy at once, come with great toppings and even better prices. To top that off, you can enjoy your pizza with one, or-who are we kidding-a few, of their amazing craft beers. If you're still a skeptic and unsure about the inconvenient location, consider that the nice walk to and from campus is a relaxing, much-needed break from the Penn bubble.
                         </td>
                 </table>
             </center>
@@ -537,20 +545,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51954_screen_shot_20160418_at_81714_pmo.png');"></div>
-            <h1>Best Face Swap: Smiley Face on a Nipple</h1>
-            <center>
-                <table>
-                        <td>
-                            I'm fucking tired of y'all thinking you're innovative for face-swapping with the Ben Franklin statue or someone's face on a flyer. You need to step your game up. Move outside of the box and make faces where there weren't any before. So there you have it, grab a magic marker, free the nipple and draw a smiley face on your housemate's titty. There's literally nothing funnier than having an areola in place of your nose, and most of you are boobs anyway. You'll be the talk of the Snapchat stories for literally at least four days.
-                        </td>
-                </table>
-            </center>
-        </div>
-    </div>
-    <div class="section">
-        <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51949_04152008_buis_food_cart001seqnp.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52079_04152008_buis_food_cart001seqnf.JPG') no-repeat top center;"></div>
             <h1>Best Breakfast Sandwich: Bui's</h1>
             <center>
                 <table>
@@ -567,7 +562,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51951_09032008_shs0014p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52080_09032008_shs0014f.JPG') no-repeat top center;"></div>
             <h1>Best Place to Bursar: SHS</h1>
             <center>
                 <table>
@@ -580,7 +575,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51935_bestofpenn6196p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51935_bestofpenn6196f.jpg') no-repeat top center;"></div>
             <h1>Best BYO: Dim Sum Garden</h1>
             <center>
                 <table>
@@ -593,7 +588,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/52032__dsc0403p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52032__dsc0403f.jpg') no-repeat top center;"></div>
             <h1>Best Place to Instagram: Basement VP Bathroom</h1>
             <center>
                 <table>
@@ -606,7 +601,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background-image: url('https://s3.amazonaws.com/media.dpn/51994_dsc_0098p.jpg');"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51994_dsc_0098f.jpg') no-repeat top center;"></div>
             <h1>Best Coffee House: Green Line</h1>
             <center>
                 <table>
