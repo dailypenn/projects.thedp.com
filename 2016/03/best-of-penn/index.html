@@ -44,10 +44,6 @@
     * --------------------------------------- */
     .section{
         padding: 0 0 0 0;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
     }
 
     /* Defining each section background and styles
@@ -57,13 +53,13 @@
         padding: 5% 0 0 0;
         text-align: center;
     }
-    div.section-pic{
-        /*padding: 0;*/
+    .section-pic{
+        padding: 0;
         height: 400px;
-        /*-webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;*/
+        -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
     }
 
@@ -93,21 +89,32 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.7/jquery.slimscroll.min.js"></script>
 
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.9/jquery.fullPage.min.js"></script> -->
     <script type="text/javascript" src="examples.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                menu: '#menu',
+                autoScrolling: false
+            });
+        });
+    </script>
+
 </head>
 <body>
 
 
 <div id="fullpage">
     <div class="section0">
-<a href="http://www.thedp.com/"><img src="https://s3.amazonaws.com/media.dpn/52083_34th_street_logo07o.tif" style="width: 10%; display: inline; vertical-align: middle;" /></a>
-<a href="http://www.34st.com/"><img src="https://s3.amazonaws.com/media.dpn/52082_dp_flag_in_squaretransparentf.png" style="width: 10%; display: inline; vertical-align: middle; margin-top: -80px; margin-bottom: -80px;" /></a>
+<a href="http://www.thedp.com/"><img src="https://s3.amazonaws.com/media.dpn/52083_34th_street_logo07o.tif" style="width: 200px; display: inline; vertical-align: middle;" /></a>
+<a href="http://www.34st.com/"><img src="https://s3.amazonaws.com/media.dpn/52082_dp_flag_in_squaretransparentf.png" style="width: 200px; display: inline; vertical-align: middle; margin-top: -80px; margin-bottom: -80px;" /></a>
         <h1 style = "font-size: 1em;line-height: .5">Best of Penn 2016</h1>
         <h1 style="font-size: .5em; ">Presented by The Daily Pennsylvanian and 34th Street</h1>
     </div>
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51981__mg_0255f.jpg') no-repeat top center; background-size: cover; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51981__mg_0255f.jpg') no-repeat top center;"></div>
             <h1>Food Truck: Magic Carpet</h1>
             <center>
                 <table>
@@ -120,7 +127,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52041__mg_0187f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52041__mg_0187f.jpg') no-repeat top center;"></div>
             <h1>Instagram Spot: Fisher Fine Arts</h1>
             <center>
                 <table>
@@ -134,7 +141,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51930__mg_4616f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51930__mg_4616f.jpg') no-repeat top center;"></div>
             <h1>Brunch: Sabrina's</h1>
             <center>
                 <table>
@@ -148,7 +155,7 @@
     </div>
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51934__mg_4650f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51934__mg_4650f.jpg') no-repeat top center;"></div>
             <h1>Rowdy BYO: Banana Leaf</h1>
             <center>
                 <table>
@@ -161,7 +168,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51956__mg_4621f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51956__mg_4621f.jpg') no-repeat top center;"></div>
             <h1>Breakfast Sandwich: Metro</h1>
             <center>
                 <table>
@@ -175,7 +182,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51933__mg_4636f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51933__mg_4636f.jpg') no-repeat top center;"></div>
             <h1>Happy Hour: Copa</h1>
             <center>
                 <table>
@@ -188,7 +195,7 @@
     </div></div>
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51999__mg_4564f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51999__mg_4564f.jpg') no-repeat top center;"></div>
             <h1>Coffee House: Saxby's</h1>
             <center>
                 <table>
@@ -202,7 +209,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52076__mg_4578f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52076__mg_4578f.jpg') no-repeat top center;"></div>
             <h1>Off-Campus Housing: The Radian</h1>
             <center>
                 <table>
@@ -216,7 +223,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51966_uqgf.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51966_uqgf.jpg') no-repeat top center;"></div>
             <h1>On-Campus Housing: The Quad</h1>
             <center>
                 <table>
@@ -229,7 +236,7 @@
     </div></div>
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51931__mg_4567f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51931__mg_4567f.jpg') no-repeat top center;"></div>
             <h1>Fro-Yo/Ice Cream: Ben & Jerry's</h1>
             <center>
                 <table>
@@ -242,7 +249,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51990__mg_0234f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51990__mg_0234f.jpg') no-repeat top center;"></div>
             <h1>Place to Get Pampered: Adolf Biecker</h1>
             <center>
                 <table>
@@ -256,7 +263,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51953__mg_4591f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51953__mg_4591f.jpg') no-repeat top center;"></div>
             <h1>Bursar: Penn Bookstore</h1>
             <center>
                 <table>
@@ -269,7 +276,7 @@
     </div></div>
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51957__mg_4645f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51957__mg_4645f.jpg') no-repeat top center;"></div>
             <h1>Bar: Smokey Joe's</h1>
             <center>
                 <table>
@@ -283,7 +290,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51932__mg_4635f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51932__mg_4635f.jpg') no-repeat top center;"></div>
             <h1>Pizza: Zesto</h1>
             <center>
                 <table>
@@ -297,7 +304,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51955__mg_4599f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51955__mg_4599f.jpg') no-repeat top center;"></div>
             <h1>Place to Get Your Parents to Buy You Dinner: White Dog</h1>
             <center>
                 <table>
@@ -313,7 +320,7 @@
     </div>
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51994_dsc_0098f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51994_dsc_0098f.jpg') no-repeat top center;"></div>
             <h1>Best place to take a moment for yourself: Green Line Cafe</h1>
             <center>
                 <table>
@@ -330,7 +337,7 @@
     </div>
         <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51973_08292009_retail217f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51973_08292009_retail217f.jpg') no-repeat top center;"></div>
             <h1>Best Fro-yo/Ice Cream: Capogiro</h1>
             <center>
                 <table>
@@ -343,7 +350,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51999__mg_4564f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51999__mg_4564f.jpg') no-repeat top center;"></div>
             <h1>Best Place to Pretend to Accidentally Run Into Someone: Saxby's</h1>
             <center>
                 <table>
@@ -356,7 +363,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52015_img_0957f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52015_img_0957f.jpg') no-repeat top center;"></div>
             <h1>Best Date Night Venue: The Rotunda</h1>
             <center>
                 <table>
@@ -370,7 +377,7 @@
     </div>
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51936_dsc_6658_2f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51936_dsc_6658_2f.jpg') no-repeat top center;"></div>
             <h1>Best Brunch: Farmacy</h1>
             <center>
                 <table>
@@ -383,7 +390,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52084_52077_dsc_0707f2f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52084_52077_dsc_0707f2f.jpg;"></div>
             <h1>Best Place to Live On-Campus: New Hill</h1>
             <center>
                 <table>
@@ -396,7 +403,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51992_img_3367f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51992_img_3367f.jpg') no-repeat top center;"></div>
             <h1>Best place to get Pampered: Doggie Style</h1>
             <center>
                 <table>
@@ -410,7 +417,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52081_parcf.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52081_parcf.jpg') no-repeat top center;"></div>
             <h1>Best Place to Get Your Parents to Buy You Dinner: Parc</h1>
             <center>
                 <table>
@@ -423,7 +430,7 @@
     </div></div>
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background: url('http://img.ifcdn.com/images/15b84b33b1f92491013372681594d9a5e439f1468224a0b3b43b4b7bd85d13e2_1.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('imgs/bg4.jpg') no-repeat top center;"></div>
             <h1>Best Excuse Not to Go Out: Existential Dread</h1>
             <center>
                 <table>
@@ -437,7 +444,7 @@
     
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51941_img_7007f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51941_img_7007f.jpg') no-repeat top center;"></div>
             <h1>Best Happy Hour: DISTRITO</h1>
             <center>
                 <table>
@@ -454,7 +461,7 @@
     </div></div>
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51966_uqgf.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51966_uqgf.jpg') no-repeat top center;"></div>
             <h1>Best Place To Pee In Public:</h1>
             <center>
                 <table>
@@ -484,7 +491,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51980_dsc_0692f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51980_dsc_0692f.jpg') no-repeat top center;"></div>
             <h1>Best Food Truck: Lyn's</h1>
             <center>
                 <table>
@@ -499,7 +506,7 @@
     
     <div class="section ">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/46205_ipad_cokef.JPG') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('imgs/bg4.jpg') no-repeat top center;"></div>
             <h1>Best Place For A Clandestine Drug Deal - Oh, Wouldn't You Like To Know, You Fucking Narc? </h1>
             <center>
                 <table>
@@ -512,7 +519,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51989__dsc0391f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51989__dsc0391f.jpg') no-repeat top center;"></div>
             <h1>Best Off-Campus Housing: Under the Pool Table in Domus</h1>
             <center>
                 <table>
@@ -525,7 +532,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51939_bestofpenn6274f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51939_bestofpenn6274f.jpg') no-repeat top center;"></div>
             <h1>Best Pizza: Dock Street Brewery</h1>
             <center>
                 <table>
@@ -538,7 +545,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52079_04152008_buis_food_cart001seqnf.JPG') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52079_04152008_buis_food_cart001seqnf.JPG') no-repeat top center;"></div>
             <h1>Best Breakfast Sandwich: Bui's</h1>
             <center>
                 <table>
@@ -555,7 +562,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52080_09032008_shs0014f.JPG') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52080_09032008_shs0014f.JPG') no-repeat top center;"></div>
             <h1>Best Place to Bursar: SHS</h1>
             <center>
                 <table>
@@ -568,7 +575,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51935_bestofpenn6196f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51935_bestofpenn6196f.jpg') no-repeat top center;"></div>
             <h1>Best BYO: Dim Sum Garden</h1>
             <center>
                 <table>
@@ -581,7 +588,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52032__dsc0403f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/52032__dsc0403f.jpg') no-repeat top center;"></div>
             <h1>Best Place to Instagram: Basement VP Bathroom</h1>
             <center>
                 <table>
@@ -594,7 +601,7 @@
     </div>
     <div class="section">
         <div class="intro">
-            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51994_dsc_0098f.jpg') no-repeat top center; background-size: cover;"></div>
+            <div class="section-pic" style="background: url('https://s3.amazonaws.com/media.dpn/51994_dsc_0098f.jpg') no-repeat top center;"></div>
             <h1>Best Coffee House: Green Line</h1>
             <center>
                 <table>
