@@ -30,7 +30,7 @@ var avgQual = function() {
 categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
           },
           y: {
-            label: 'Score',
+            label: 'Avg. Score',
             min: 2,
             max: 3.5
           }
@@ -57,7 +57,7 @@ var avgDiff = function() {
             categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
           },
           y: {
-            label: 'Score',
+            label: 'Avg. Score',
             min: 2,
             max: 3.5
           }
@@ -83,7 +83,7 @@ var avgInst = function() {
             categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
           },
           y: {
-            label: 'Score',
+            label: 'Avg. Score',
             min: 2,
             max: 3.5
           }
@@ -110,7 +110,7 @@ var avgWork = function() {
             categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
           },
           y: {
-            label: 'Score',
+            label: 'Avg. Score',
             min: 2,
             max: 3.5
           }
@@ -142,7 +142,7 @@ var sectQual = function() {
         categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
       },
       y: {
-        label: 'Score',
+        label: 'Avg. Score',
         min: 2,
         max: 3.5
       }
@@ -170,7 +170,7 @@ var sectDiff = function() {
         categories:["S'09", 'Fall \'09', "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
       },
       y: {
-        label: 'Score',
+        label: 'Avg. Score',
         min: 2,
         max: 3.5
       }
@@ -198,7 +198,7 @@ var sectInst = function() {
         categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
       },
       y: {
-        label: 'Score',
+        label: 'Avg. Score',
         min: 2,
         max: 3.5
       }
@@ -226,7 +226,7 @@ var sectWork = function() {
         categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
       },
       y: {
-        label: 'Score',
+        label: 'Avg. Score',
         min: 2,
         max: 3.5
       }
@@ -258,7 +258,7 @@ var stemQual = function() {
         categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
       },
       y: {
-        label: 'Score',
+        label: 'Avg. Score',
         min: 2,
         max: 3.5
       }
@@ -286,7 +286,7 @@ var stemDiff = function() {
         categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
       },
       y: {
-        label: 'Score',
+        label: 'Avg. Score',
         min: 2,
         max: 3.5
       }
@@ -314,7 +314,7 @@ var stemInst = function() {
         categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
       },
       y: {
-        label: 'Score',
+        label: 'Avg. Score',
         min: 2,
         max: 3.5
       }
@@ -343,7 +343,7 @@ var stemWork = function() {
         categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
       },
       y: {
-        label: 'Score',
+        label: 'Avg. Score',
         min: 2,
         max: 3.5
       }
@@ -507,7 +507,7 @@ color: {
       categories:["F'02", "S'02", "F'03", "S'03", "F'04", "S'04", "F'05", "S'05", "F'06", "S'06", "S'07", "F'07", "S'08", "F'08", "S09", "F09", "S10", "F10", "S11", "F11", "S12", "F12", "S13", "F13", "S14", "F14", "S15"]
     },
     y: {
-      label: 'Score',
+      label: 'Avg. Score',
       min: 2.3,
       max: 3.3
     }
