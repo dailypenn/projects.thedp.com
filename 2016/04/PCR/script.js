@@ -27,7 +27,11 @@ var avgQual = function() {
           x: {
             label: 'Semester',
             type: 'category',
-categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
+categories:["Spr. '09", "Fall '09", "Spr. '10", "Fall '10", "Spr. '11", "Fall '11", "Spr. '12", "Fall '12", "Spr. '13", "Fall '13", "Spr. '14", "Fall '14", "Spr. '15"],
+tick: {
+        rotate: 75,
+        multiline: false
+    }
           },
           y: {
             label: 'Avg. Score',
@@ -54,7 +58,11 @@ var avgDiff = function() {
           x: {
             label: 'Semester',
             type: 'category',
-            categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
+            categories:["Spr. '09", "Fall '09", "Spr. '10", "Fall '10", "Spr. '11", "Fall '11", "Spr. '12", "Fall '12", "Spr. '13", "Fall '13", "Spr. '14", "Fall '14", "Spr. '15"],
+            tick: {
+                    rotate: 75,
+                    multiline: false
+                }
           },
           y: {
             label: 'Avg. Score',
@@ -80,7 +88,11 @@ var avgInst = function() {
           x: {
             label: 'Semester',
             type: 'category',
-            categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
+            categories:["Spr. '09", "Fall '09", "Spr. '10", "Fall '10", "Spr. '11", "Fall '11", "Spr. '12", "Fall '12", "Spr. '13", "Fall '13", "Spr. '14", "Fall '14", "Spr. '15"],
+            tick: {
+                    rotate: 75,
+                    multiline: false
+                }
           },
           y: {
             label: 'Avg. Score',
@@ -107,7 +119,11 @@ var avgWork = function() {
           x: {
             label: 'Semester',
             type: 'category',
-            categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
+            categories:["Spr. '09", "Fall '09", "Spr. '10", "Fall '10", "Spr. '11", "Fall '11", "Spr. '12", "Fall '12", "Spr. '13", "Fall '13", "Spr. '14", "Fall '14", "Spr. '15"],
+            tick: {
+                    rotate: 75,
+                    multiline: false
+                }
           },
           y: {
             label: 'Avg. Score',
@@ -139,7 +155,11 @@ var sectQual = function() {
       x: {
         label: 'Semester',
         type: 'category',
-        categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
+        categories:["Spr. '09", "Fall '09", "Spr. '10", "Fall '10", "Spr. '11", "Fall '11", "Spr. '12", "Fall '12", "Spr. '13", "Fall '13", "Spr. '14", "Fall '14", "Spr. '15"],
+        tick: {
+                rotate: 75,
+                multiline: false
+            }
       },
       y: {
         label: 'Avg. Score',
@@ -167,7 +187,11 @@ var sectDiff = function() {
       x: {
         label: 'Semester',
         type: 'category',
-        categories:["S'09", 'Fall \'09', "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
+        categories:["Spr. '09", "Fall '09", "Spr. '10", "Fall '10", "Spr. '11", "Fall '11", "Spr. '12", "Fall '12", "Spr. '13", "Fall '13", "Spr. '14", "Fall '14", "Spr. '15"],
+        tick: {
+                rotate: 75,
+                multiline: false
+            }
       },
       y: {
         label: 'Avg. Score',
@@ -195,7 +219,11 @@ var sectInst = function() {
       x: {
         label: 'Semester',
         type: 'category',
-        categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
+        categories:["Spr. '09", "Fall '09", "Spr. '10", "Fall '10", "Spr. '11", "Fall '11", "Spr. '12", "Fall '12", "Spr. '13", "Fall '13", "Spr. '14", "Fall '14", "Spr. '15"],
+        tick: {
+                rotate: 75,
+                multiline: false
+            }
       },
       y: {
         label: 'Avg. Score',
@@ -223,7 +251,11 @@ var sectWork = function() {
       x: {
         label: 'Semester',
         type: 'category',
-        categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
+        categories:["Spr. '09", "Fall '09", "Spr. '10", "Fall '10", "Spr. '11", "Fall '11", "Spr. '12", "Fall '12", "Spr. '13", "Fall '13", "Spr. '14", "Fall '14", "Spr. '15"],
+        tick: {
+                rotate: 75,
+                multiline: false
+            }
       },
       y: {
         label: 'Avg. Score',
@@ -255,7 +287,11 @@ var stemQual = function() {
       x: {
         label: 'Semester',
         type: 'category',
-        categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
+        categories:["Spr. '09", "Fall '09", "Spr. '10", "Fall '10", "Spr. '11", "Fall '11", "Spr. '12", "Fall '12", "Spr. '13", "Fall '13", "Spr. '14", "Fall '14", "Spr. '15"],
+        tick: {
+                rotate: 75,
+                multiline: false
+            }
       },
       y: {
         label: 'Avg. Score',
@@ -283,7 +319,11 @@ var stemDiff = function() {
       x: {
         label: 'Semester',
         type: 'category',
-        categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
+        categories:["Spr. '09", "Fall '09", "Spr. '10", "Fall '10", "Spr. '11", "Fall '11", "Spr. '12", "Fall '12", "Spr. '13", "Fall '13", "Spr. '14", "Fall '14", "Spr. '15"],
+        tick: {
+                rotate: 75,
+                multiline: false
+            }
       },
       y: {
         label: 'Avg. Score',
@@ -311,7 +351,11 @@ var stemInst = function() {
       x: {
         label: 'Semester',
         type: 'category',
-        categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
+        categories:["Spr. '09", "Fall '09", "Spr. '10", "Fall '10", "Spr. '11", "Fall '11", "Spr. '12", "Fall '12", "Spr. '13", "Fall '13", "Spr. '14", "Fall '14", "Spr. '15"],
+        tick: {
+                rotate: 75,
+                multiline: false
+            },
       },
       y: {
         label: 'Avg. Score',
@@ -340,7 +384,11 @@ var stemWork = function() {
       x: {
         label: 'Semester',
         type: 'category',
-        categories:["S'09", "F'09", "S'10", "F'10", "S'11", "F'11", "S'12", "F'12", "S'13", "F'13", "S'14", "F'14", "S'15"]
+        categories:["Spr. '09", "Fall '09", "Spr. '10", "Fall '10", "Spr. '11", "Fall '11", "Spr. '12", "Fall '12", "Spr. '13", "Fall '13", "Spr. '14", "Fall '14", "Spr. '15"],
+        tick: {
+                rotate: 75,
+                multiline: false
+            }
       },
       y: {
         label: 'Avg. Score',
@@ -466,9 +514,9 @@ c3.generate({
   bindto: '#lang-comp-chart',
     data: {
         columns: [
-            ['Avg. Course Qual.', 3.953, 3.816666667, 3.564379426, 3.47, 3.457692308, 3.434880508, 3.419102564, 3.413688504, 3.4016788, 3.395666667, 3.366282051, 3.328333333, 3.28125, 3.269122405, 3.25000891, 3.210933558, 3.207371795, 3.183807692, 3.18375, 3.164480456, 3.148846855, 3.116055509, 3.091730769, 3.075000364, 3.059285996, 2.987975323, 2.964070149, 2.833305371, 2.805909091, 2.62323814,4],
-            ['Avg. Instructor Qual.', 3.257806803, 3.8675, 3.722307082, 3.44,3.506923077, 3.642147819, 3.586346154, 3.598342373, 3.536174915, 3.6835 ,3.631538462, 3.556333333, 3.40375, 3.472466422, 3.50907218, 3.388827812, 3.299871795, 3.415785714, 3.3875, 3.3696656, 3.432141415, 3.393812137, 3.33724359, 3.407779419, 3.340734855, 3.196735098, 3.165453381, 3.079332997, 3.025, 2.891421124, 4],
-            ['Avg. Difficulty', 2.3, 2.33, 2.039791667, 0, 0, 2.6115, 3.035416667, 1.921111111, 3.063333333, 2, 2.952777778, 2.366666667, 3.169, 2.481666667, 2.295905095, 2.220668219, 2.477666667, 2.722321429, 2.365, 2.252780117, 2.101209096, 2.293796588, 2.143214286, 2.37978565, 2.422666667, 2.118872351, 2.232588515, 2.074164296, 1.709545455, 2.033828771, 4]
+            ['Avg. Course Qual.', 3.953, 3.816666667, 3.564379426, 3.47, 3.457692308, 3.434880508, 3.419102564, 3.413688504, 3.4016788, 3.395666667, 3.366282051, 3.328333333, 3.28125, 3.269122405, 3.25000891, 3.210933558, 3.207371795, 3.183807692, 3.18375, 3.164480456, 3.148846855, 3.116055509, 3.091730769, 3.075000364, 3.059285996, 2.987975323, 2.964070149, 2.833305371, 2.805909091, 2.62323814],
+            ['Avg. Instructor Qual.', 3.257806803, 3.8675, 3.722307082, 3.44,3.506923077, 3.642147819, 3.586346154, 3.598342373, 3.536174915, 3.6835 ,3.631538462, 3.556333333, 3.40375, 3.472466422, 3.50907218, 3.388827812, 3.299871795, 3.415785714, 3.3875, 3.3696656, 3.432141415, 3.393812137, 3.33724359, 3.407779419, 3.340734855, 3.196735098, 3.165453381, 3.079332997, 3.025, 2.891421124],
+            ['Avg. Difficulty', 2.3, 2.33, 2.039791667, 0, 0, 2.6115, 3.035416667, 1.921111111, 3.063333333, 2, 2.952777778, 2.366666667, 3.169, 2.481666667, 2.295905095, 2.220668219, 2.477666667, 2.722321429, 2.365, 2.252780117, 2.101209096, 2.293796588, 2.143214286, 2.37978565, 2.422666667, 2.118872351, 2.232588515, 2.074164296, 1.709545455, 2.033828771]
         ],
         type: 'bar'
     },
@@ -479,11 +527,15 @@ c3.generate({
       x: {
         label: 'Language',
         type: 'category',
-        categories:['TURK', 	'YDSH', 	'PRTG', 	'SCND', 	'PERS', 	'CHIN', 	'GREK', 	'HEBR', 	'JPAN', 	'GUJR', 	'SKRT', 	'DTCH', 	'ANEL', 	'KORN', 	'GRMN', 	'RUSS', 	'URDU', 	'LATN', 	'ROML', 	'JWST', 	'ITAL', 	'FREN', 	'HIND', 	'SPAN', 	'ARAB', 	'SAST', 	'AFRC', 	'AFST', 	'SLAV', 	'EAS', 	'Avg']
+        categories:['TURK', 	'YDSH', 	'PRTG', 	'SCND', 	'PERS', 	'CHIN', 	'GREK', 	'HEBR', 	'JPAN', 	'GUJR', 	'SKRT', 	'DTCH', 	'ANEL', 	'KORN', 	'GRMN', 	'RUSS', 	'URDU', 	'LATN', 	'ROML', 	'JWST', 	'ITAL', 	'FREN', 	'HIND', 	'SPAN', 	'ARAB', 	'SAST', 	'AFRC', 	'AFST', 	'SLAV', 	'EAS' ],
+        tick: {
+                rotate: 75,
+                multiline: false
+            }
       }
     },
     legend: {
-        position: 'right'
+        position: 'bottom'
     }
 });
 
@@ -504,7 +556,11 @@ color: {
     x: {
       label: 'Semester',
       type: 'category',
-      categories:["F'02", "S'02", "F'03", "S'03", "F'04", "S'04", "F'05", "S'05", "F'06", "S'06", "S'07", "F'07", "S'08", "F'08", "S09", "F09", "S10", "F10", "S11", "F11", "S12", "F12", "S13", "F13", "S14", "F14", "S15"]
+      categories:["Fall '02", "Spr. '02", "Fall '03", "Spr. '03", "Fall '04", "Spr. '04", "Fall '05", "Spr. '05", "Fall '06", "Spr. '06", "Spr. '07", "Fall '07", "Spr. '08", "Fall '08", "Spr. '09", "Fall '09", "Spr. '10", "Fall '10", "Spr. '11", "Fall '11", "Spr. '12", "Fall '12", "Spr. '13", "Fall '13", "Spr. '14", "Fall '14", "Spr. '15"],
+      tick: {
+              rotate: 75,
+              multiline: false
+          }
     },
     y: {
       label: 'Avg. Score',

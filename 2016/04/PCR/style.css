@@ -344,7 +344,9 @@ ul.side-nav.nav.affix, ul.side-nav.nav.affix-top {
   padding-top: 150px;
   left: 10px;
 }
-
+text {
+  font-family: "Neuzeit-Grotesk";
+}
 /*// CHART STYLES*/
 
 path {
