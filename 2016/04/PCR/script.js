@@ -18,7 +18,7 @@ var avgQual = function() {
   c3.generate({
       bindto: '#school-comp-chart',
       data: {
-        url: 'data/schoolComp/school_course-qual.csv'
+        url: '/2016/04/PCR/data/schoolComp/school_course-qual.csv'
       },
     color: {
         pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
@@ -45,7 +45,7 @@ var avgDiff = function() {
   c3.generate({
       bindto: '#school-comp-chart',
       data: {
-        url: 'data/schoolComp/school_diff.csv'
+        url: '/2016/04/PCR/data/schoolComp/school_diff.csv'
       },
     color: {
         pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
@@ -71,7 +71,7 @@ var avgInst = function() {
   c3.generate({
       bindto: '#school-comp-chart',
       data: {
-        url: 'data/schoolComp/school_inst-qual.csv'
+        url: '/2016/04/PCR/data/schoolComp/school_inst-qual.csv'
       },
     color: {
         pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
@@ -98,7 +98,7 @@ var avgWork = function() {
   c3.generate({
       bindto: '#school-comp-chart',
       data: {
-        url: 'data/schoolComp/school_work.csv'
+        url: '/2016/04/PCR/data/schoolComp/school_work.csv'
       },
     color: {
         pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
@@ -130,7 +130,7 @@ var sectQual = function() {
   c3.generate({
     bindto: '#sector-comp-chart',
     data: {
-      url: 'data/sectorComp/sectors_course-quality.csv'
+      url: '/2016/04/PCR/data/sectorComp/sectors_course-quality.csv'
     },
   color: {
       pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
@@ -158,7 +158,7 @@ var sectDiff = function() {
   c3.generate({
     bindto: '#sector-comp-chart',
     data: {
-      url: 'data/sectorComp/sectors_difficulty.csv'
+      url: '/2016/04/PCR/data/sectorComp/sectors_difficulty.csv'
     },
   color: {
       pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
@@ -186,7 +186,7 @@ var sectInst = function() {
   c3.generate({
     bindto: '#sector-comp-chart',
     data: {
-      url: 'data/sectorComp/sectors_instructor-quality.csv'
+      url: '/2016/04/PCR/data/sectorComp/sectors_instructor-quality.csv'
     },
   color: {
       pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
@@ -214,7 +214,7 @@ var sectWork = function() {
   c3.generate({
     bindto: '#sector-comp-chart',
     data: {
-      url: 'data/sectorComp/sectors_work-required.csv'
+      url: '/2016/04/PCR/data/sectorComp/sectors_work-required.csv'
     },
   color: {
       pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
@@ -246,7 +246,7 @@ var stemQual = function() {
   c3.generate({
     bindto: '#stem-comp-chart',
     data: {
-      url: 'data/stemComp/stem-quality.csv'
+      url: '/2016/04/PCR/data/stemComp/stem-quality.csv'
     },
   color: {
       pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
@@ -274,7 +274,7 @@ var stemDiff = function() {
   c3.generate({
     bindto: '#stem-comp-chart',
     data: {
-      url: 'data/stemComp/stem-difficulty.csv'
+      url: '/2016/04/PCR/data/stemComp/stem-difficulty.csv'
     },
   color: {
       pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
@@ -302,7 +302,7 @@ var stemInst = function() {
   c3.generate({
     bindto: '#stem-comp-chart',
     data: {
-      url: 'data/stemComp/stem-instructor.csv'
+      url: '/2016/04/PCR/data/stemComp/stem-instructor.csv'
     },
   color: {
       pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
@@ -331,7 +331,7 @@ var stemWork = function() {
   c3.generate({
     bindto: '#stem-comp-chart',
     data: {
-      url: 'data/stemComp/stem-work.csv'
+      url: '/2016/04/PCR/data/stemComp/stem-work.csv'
     },
   color: {
       pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2']
@@ -495,7 +495,7 @@ c3.generate({
 c3.generate({
   bindto: '#drop-chart',
   data: {
-    url: 'data/drop-data.csv'
+    url: '/2016/04/PCR/data/drop-data.csv'
   },
 color: {
     pattern: [RED, YELLOW, ORANGE, GREEN, BLUE, '#F306BB', '#9633e2', '#666']

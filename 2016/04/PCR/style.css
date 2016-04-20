@@ -360,3 +360,7 @@ path {
     stroke-width: 1;
     shape-rendering: crispEdges;
 }
+
+.chart-container {
+  padding-bottom: 15px;
+}
