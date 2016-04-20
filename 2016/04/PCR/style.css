@@ -227,6 +227,10 @@ body {
   padding-right: 3%;
 }
 
+.header-table td {
+  line-height: 1.1 !important;
+}
+
 .section-dropdown {
   width: 100%;
   background-color: #f8f8f8;
