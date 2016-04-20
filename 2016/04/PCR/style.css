@@ -3,7 +3,7 @@ body {
     position: relative;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: "neuzeit-grotesk", "montserrant", sans-serif;
+  font-family: "neuzeit-grotesk", "montserrat", sans-serif;
   font-weight: 700;
 }
 
@@ -12,7 +12,7 @@ h1 {
 }
 
 h1.title {
-      font-family: "neuzeit-grotesk", "montserrant", sans-serif;
+      font-family: "neuzeit-grotesk", "montserrat", sans-serif;
 }
 
 h3 {
@@ -24,7 +24,7 @@ h3 {
 }
 
 b {
-      font-family: "neuzeit-grotesk", "montserrant", sans-serif;
+      font-family: "neuzeit-grotesk", "montserrat", sans-serif;
       font-size: 20px;
 }
 h1.section-title {
@@ -291,6 +291,7 @@ ul.side-nav.nav.affix  {
 }
 
 .btn {
+  font-family: "neuzeit-grotesk", "montserrat", sans-serif;
   border-radius: 25px;
   border-color: #2ac1dd;
   color: #2ac1dd;
@@ -313,9 +314,14 @@ ul.side-nav.nav.affix  {
       border-color:  #2ac1dd;
 }
 
+.btn.dept-quality {
+  color: #da1924;
+  border-color:  #da1924;
+}
+
 .btn:hover.dept-quality .btn:active.dept-quality {
-      color: #98A62F;
-      border-color:  #98A62F;
+      color: #da1924;
+      border-color:  #da1924;
 }
 
 .content {
