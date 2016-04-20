@@ -8,7 +8,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 60px;
+  text-align: center;
 }
 
 h1.title {
@@ -16,10 +17,11 @@ h1.title {
 }
 
 h3 {
-      margin-top: 20px;
+      margin-top: 25px;
+      font-weight: 600 !important;
       font-weight: normal;
       font-size: 24px;
-      margin-bottom:20px;
+      margin-bottom:10px;
 
 }
 
@@ -89,7 +91,9 @@ section {
 
 p, ol li, p li, p ul, body{
   font-family: "lora", georgia, serif;
-  font-size: 15px;
+  font-size: 20px;
+  line-height: 1.8;
+  padding-bottom: 15px;
 }
 
 .content {
