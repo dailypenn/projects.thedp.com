@@ -3,28 +3,30 @@ body {
     position: relative;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: "neuzeit-grotesk", "montserrant", sans-serif;
+  font-family: "neuzeit-grotesk", "montserrat", sans-serif;
   font-weight: 700;
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 60px;
+  text-align: center;
 }
 
 h1.title {
-      font-family: "neuzeit-grotesk", "montserrant", sans-serif;
+      font-family: "neuzeit-grotesk", "montserrat", sans-serif;
 }
 
 h3 {
-      margin-top: 20px;
+      margin-top: 25px;
+      font-weight: 600 !important;
       font-weight: normal;
-      font-size: 24px;
-      margin-bottom:20px;
-
+      font-size: 34px;
+      margin-bottom:10px;
+      line-height:1.4;
 }
 
 b {
-      font-family: "neuzeit-grotesk", "montserrant", sans-serif;
+      font-family: "neuzeit-grotesk", "montserrat", sans-serif;
       font-size: 20px;
 }
 h1.section-title {
@@ -39,10 +41,10 @@ section:nth-child(4n+1) h1 {
   color: #2ac1dd;
 }
 section:nth-child(4n+2) h1 {
-  color: #da1924;
+  color: #98A62F;
 }
 section:nth-child(4n+3) h1 {
-  color: #98A62F;
+  color: #da1924;
 }
 section:nth-child(4n+4) h1 {
   color: #F49F00;
@@ -75,14 +77,30 @@ a:hover {
 
 section {
   /*min-height: 100%;*/
+  padding-top: 75px;
   padding-bottom: 75px;
-  padding-left: 65px;
-  padding-right: 65px;;
   /*padding-top: 25px;*/
   border-bottom: 1px solid #a2a2a2;
 }
 
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .links {
+  padding-top: 10px;
       font-size: 20px;
       font-weight: bold;
       font-family: "neuzeit-grotesk", "montserrant", sans-serif;
@@ -90,7 +108,9 @@ section {
 
 p, ol li, p li, p ul, body{
   font-family: "lora", georgia, serif;
-  font-size: 15px;
+  font-size: 20px;
+  line-height: 1.8;
+  padding-bottom: 15px;
 }
 
 .content {
@@ -98,6 +118,8 @@ p, ol li, p li, p ul, body{
 
 .byline {
   font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 /*div.col-sm-9 div {
     height: 250px;
@@ -109,30 +131,27 @@ p, ol li, p li, p ul, body{
 }
 
 @media screen and (max-width: 810px) {
-  #section1, #section2, #section3, #section41, #section42  {
+  /*#section1, #section2, #section3, #section41, #section42  {
       margin-left: 150px;
-  }
+  }*/
 }
 
 /* Section Thumbnails Styles */
-td {
+td, th {
   font-size: 120%;
   font-weight: bold;
   border-top: none !important;
   font-family: "neuzeit-grotesk", "montserrant", sans-serif;
-  height: 100px;
 }
 
 .table {
   width: 55%;
-  margin-left: 22.5%;
 }
 
 /* HEADER STYLES */
 nav {
   font-family: 'neuzeit-grotesk', sans-serif;
   font-weight: 700;
-  font-size: 120%;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -229,6 +248,10 @@ body {
   padding-right: 3%;
 }
 
+.header-table td {
+  line-height: 1.1 !important;
+}
+
 .section-dropdown {
   width: 100%;
   background-color: #f8f8f8;
@@ -289,6 +312,7 @@ ul.side-nav.nav.affix  {
 }
 
 .btn {
+  font-family: "neuzeit-grotesk", "montserrat", sans-serif;
   border-radius: 25px;
   border-color: #2ac1dd;
   color: #2ac1dd;
@@ -311,17 +335,32 @@ ul.side-nav.nav.affix  {
       border-color:  #2ac1dd;
 }
 
+.btn.dept-quality {
+  color: #da1924;
+  border-color:  #da1924;
+}
+
 .btn:hover.dept-quality .btn:active.dept-quality {
-      color: #98A62F;
-      border-color:  #98A62F;
+      color: #da1924;
+      border-color:  #da1924;
 }
 
 .content {
-      border-left: solid 7px black;
 }
 
 #sections {
       border-top: solid 1px black;
+}
+
+ul.side-nav.nav.affix, ul.side-nav.nav.affix-top {
+  border-right: solid 7px black;
+  height: 200%;
+  top: -50px;
+  padding-top: 150px;
+  left: 10px;
+}
+text {
+  font-family: "Neuzeit-Grotesk";
 }
 /*// CHART STYLES*/
 
@@ -347,3 +386,43 @@ path {
       color: white;
 
 }
+
+.chart-container {
+  padding-bottom: 15px;
+}
+
+#dept-comp-chart {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 970px) {
+  p, ol li, p li, p ul, body  {
+      font-size: 14px;
+  }
+
+  h1 {
+    font-size: 35px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  .header-table {
+    width: 10%;
+  }
+
+  td {
+    padding: 10px !important;
+  }
+
+  td a {
+    font-size: 10px !important;
+  }
