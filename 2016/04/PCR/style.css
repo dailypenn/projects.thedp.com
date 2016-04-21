@@ -382,9 +382,13 @@ path {
     background-image: none
 }
 
-.glyphicon-chevron-left {
-      color: white;
+.glyphicon-chevron-left, .glyphicon-chevron-right {
+      color: black;
+}
 
+.carousel-control{
+      width: 0px;
+      margin: 0 auto;
 }
 
 .chart-container {
