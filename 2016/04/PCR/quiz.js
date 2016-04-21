@@ -41,26 +41,22 @@ var classDifAvg = function() {
     name += parseFloat(e[i].value);
   }
   name /= parseInt($('#coursenum').val());
-  console.log(name);
+  // console.log(name);
   return name;
 }
 
 var getResults = function() {
   var res = classDifAvg();
 
-  if (res < 1.9) {
-    // SUPER EASY
-  } else if (res < 2.3) {
-    // easy
-  } else if (res < 2.5) {
-    // below average
-  } else if (res < 2.8) {
-    // above average
+  if (res < 1.8) {
+    window.location = "/2016/04/PCR/quiz-results/bum.html";
+  } else if (res < 2.1) {
+    window.location = "/2016/04/PCR/quiz-results/slacker.html";
   } else if (res < 3) {
-    // hard
-  } else if (res < 3.2) {
-    // really hard
+    window.location = "/2016/04/PCR/quiz-results/average.html";
+  } else if (res < 3.3) {
+    window.location = "/2016/04/PCR/quiz-results/over.html";
   } else {
-    // SUPER HARD
+    window.location = "/2016/04/PCR/quiz-results/super.html";
   }
 }
