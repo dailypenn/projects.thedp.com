@@ -25,7 +25,30 @@
   ga('create', 'UA-55281509-16', 'auto');
   ga('send', 'pageview');
   </script>
-</head>
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+
+<script type='text/javascript'>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/12234093/DP.com-Leaderboard', [728, 90], 'div-gpt-ad-1461251334986-0').addService(googletag.pubads());
+    googletag.defineSlot('/12234093/DP.com-mobile-leaderboard', [320, 50], 'div-gpt-ad-1461251334986-1').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script></head>
 <body data-spy="scroll" data-target="#myScrollspy">
   <header>
     <nav class="navbar navbar-default affix" role="navigation" data-spy="affix">
@@ -123,7 +146,27 @@
         <p>Only departments with at least 10 courses since spring 2009 were considered. When examining overall course trends, each course was counted once. When examining departmental trends, cross-listed courses were counted toward each department under which it was cross-listed. In analyzing trends among professors, only instructors that taught more than four courses were included.</p>
         <p>Penn Course Review numbers were rounded to the nearest hundredth decimal. In the lists produced for the project, courses and professors that have the same rating to the hundredth decimal place were ranked to the thousandth decimal place.</p>
         <p>Finally, it is important to note the potential biases inherent in the Penn Course Review data that could have played a role in how different professors, courses and departments are evaluated. Researchers have routinely documented that external factors - such as course size and instructor gender - can impact student evaluations.</p>
-        <div class="fb-comments" data-href="http://projects.thedp.com/2016/04/PCR/article/penn-course-review-project-our-methodology.html" data-numposts="25" width="100%"></div>
+        <center>
+  <hr>
+  <div class="hidden-sm hidden-xs">
+    <!-- /12234093/DP.com-Leaderboard -->
+    <div id='div-gpt-ad-1461251334986-0' style='height:90px; width:728px;'>
+      <script type='text/javascript'>
+      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1461251334986-0'); });
+      </script>
+    </div>
+  </div>
+  <div class="hidden-md hidden-lg hidden-xl">
+    <!-- /12234093/DP.com-mobile-leaderboard -->
+    <div id='div-gpt-ad-1461251334986-1' style='height:50px; width:320px;'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1461251334986-1'); });
+    </script>
+    </div>
+  </div>
+  <hr>
+</center>
+<div class="fb-comments" data-href="http://projects.thedp.com/2016/04/PCR/article/penn-course-review-project-our-methodology.html" data-numposts="25" width="100%"></div>
       </div>
     </div>
   </div>

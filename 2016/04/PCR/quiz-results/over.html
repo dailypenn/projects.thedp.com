@@ -31,7 +31,30 @@
   ga('create', 'UA-55281509-16', 'auto');
   ga('send', 'pageview');
   </script>
-</head>
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+
+<script type='text/javascript'>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/12234093/DP.com-Leaderboard', [728, 90], 'div-gpt-ad-1461251334986-0').addService(googletag.pubads());
+    googletag.defineSlot('/12234093/DP.com-mobile-leaderboard', [320, 50], 'div-gpt-ad-1461251334986-1').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script></head>
 <body data-spy="scroll" data-target="#myScrollspy">
   <header>
     <nav class="navbar navbar-default affix" role="navigation" data-spy="affix">
