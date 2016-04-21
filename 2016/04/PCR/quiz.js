@@ -48,7 +48,7 @@ var classDifAvg = function() {
 var getResults = function() {
   var res = classDifAvg();
 
-  if (res < 2.1) {
+  if (res < 1.9) {
     // SUPER EASY
   } else if (res < 2.3) {
     // easy

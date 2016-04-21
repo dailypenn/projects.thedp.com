@@ -525,13 +525,22 @@ c3.generate({
   },
     axis: {
       x: {
-        label: 'Language',
+        label: {
+          text: "Language",
+          position: 'outer-right'
+        },
         type: 'category',
         categories:['TURK', 	'YDSH', 	'PRTG', 	'SCND', 	'PERS', 	'CHIN', 	'GREK', 	'HEBR', 	'JPAN', 	'GUJR', 	'SKRT', 	'DTCH', 	'ANEL', 	'KORN', 	'GRMN', 	'RUSS', 	'URDU', 	'LATN', 	'ROML', 	'JWST', 	'ITAL', 	'FREN', 	'HIND', 	'SPAN', 	'ARAB', 	'SAST', 	'AFRC', 	'AFST', 	'SLAV', 	'EAS' ],
         tick: {
-                rotate: 75,
+                rotate: 35,
                 multiline: false
             }
+      },
+      y: {
+        label: {
+          text: "Avg. Score",
+          position: 'outer-top'
+        }
       }
     },
     legend: {
@@ -563,7 +572,10 @@ color: {
           }
     },
     y: {
-      label: 'Avg. Score',
+      label: {
+        text: "Avg. Score",
+        position: 'outer-top'
+      },
       min: 2.3,
       max: 3.3
     }
