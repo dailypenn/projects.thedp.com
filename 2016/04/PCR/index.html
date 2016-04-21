@@ -110,7 +110,7 @@
   <div class="container-fluid">
     <center>
       <h1 class="title">Your courses, deconstructed</h1>
-      <h3 class="subtitle">An analysis of penn course review data</h3>
+      <h3 class="subtitle">An analysis of Penn Course Review data</h3>
     </center>
     <div class="row">
       <div class="col-sm-6 col-sm-push-3 text-center">
@@ -121,7 +121,7 @@
           Through graphics, "top 30" lists and in-depth articles, here we present our answers to those questions and more.
         </p>
         <p class="links">
-          <a href="/2016/04/PCR/article/biases-in-pcr-data.html">Possibe Biases: Where course reviews go wrong</a><br>
+          <a href="/2016/04/PCR/article/biases-in-pcr-data.html">Possible Biases: Where course reviews go wrong</a><br>
           <a href="/2016/04/PCR/article/penn-course-review-project-our-methodology.html">Our Methodology</a>
         </p>
 
@@ -132,16 +132,16 @@
   <table class="table text-center header-table">
     <tr>
       <td><a href="#section1">Undergraduate<br>Schools</a></td>
-      <td><a href="#section2">Course<br>Difficulty</a> </td>
-      <td><a href="#section3">Departments</a> </td>
-      <td><a href="#section4">SAIL<br>Courses</a> </td>
-      <td><a href="#section8">Class<br>Size</a></td>
+      <td><a href="#section2" style="color: #98A62F">Course<br>Difficulty</a> </td>
+      <td><a href="#section3" style="color: #da1924">Departments</a> </td>
+      <td><a href="#section4" style="color: #F49F00">SAIL<br>Courses</a> </td>
+      <td><a href="#section8">The Rate<br>Depression</a></td>
     </tr>
     <tr>
       <td><a href="#section5">Sectors</a></td>
-      <td><a href="#section6">Writing<br>Seminar</a></td>
-      <td><a href="#section7">Professor<br>Quality</a></td>
-      <td><a href="#section8">The Rate<br>Depression</a></td>
+      <td><a href="#section6" style="color: #98A62F">Writing<br>Seminar</a></td>
+      <td><a href="#section7" style="color: #da1924">Professor<br>Quality</a></td>
+      <td><a href="#section8" style="color: #F49F00">Class<br>Size</a></td>
       <td><a href="#section8">Credits</a></td>
     </tr>
   </table>
@@ -151,7 +151,7 @@
   <div class="container-fluid" id="sections">
     <div class="row">
       <div class="col-sm-2 hidden-sm hidden-xs" id="myScrollspy">
-        <ul class="side-nav nav" data-spy="affix" data-offset-top="760">
+        <ul class="side-nav nav" data-spy="affix" data-offset-top="800">
           <li><a href="#section1">Undergraduate Schools</a></li>
           <li><a href="#section2">Course Difficulty</a></li>
           <li><a href="#section3">Departments</a></li>
@@ -174,6 +174,7 @@
             <span class="btn btn-default-outline" onclick="avgWork()">Work Required</span>
             <div id="school-comp-chart"></div>
           </center>
+          <br>
           <p>
             How do Wharton, the College, Engineering and Nursing stack up? Students in each undergraduate school exchange some friendly fire over the difficulty and breadth of their course load. Students in Engineering and Nursing report that their classes require more work and are more difficult than Wharton and College classes. But College and Nursing students report high course quality and instructor quality scores — students taking Wharton and Engineering classes report that they have lower quality and poorer instructors, on average.
           </p>
@@ -191,13 +192,13 @@
           </p>
           <div class="row">
             <div class="col-md-6">
-              <img src="http://media.dpn.s3.amazonaws.com/52030_pcr_easycourseso.png" class="img img-responsive" />
+              <img src="img/PCR_easycourses.svg" class="img img-responsive" />
             </div>
             <div class="col-md-6">
-              <img src="https://s3.amazonaws.com/media.dpn/52031_pcr_hardcourseso.png" class="img img-responsive" />
+              <img src="img/PCR_hardcourses.svg" class="img img-responsive" />
             </div>
             <div class="links text-right">
-              <a href="#" style="color: #98A62F">Quiz: How hard are my classes? <i class="fa fa-chevron-right"></i></a><br>
+              <a href="/2016/04/PCR/quiz.html" style="color: #98A62F">Quiz: How hard are my classes? <i class="fa fa-chevron-right"></i></a><br>
               <a href="/2016/04/PCR/article/samba-easiest-class-at-penn.html" style="color:#98A62F">Sharing Samba <i class="fa fa-chevron-right"></i></a><br>
               <a href="/2016/04/PCR/article/thirty-easiest-hardest-classes.html" style="color:#98A62F">30 easiest and hardest classes at Penn <i class="fa fa-chevron-right"></i></a><br>
               <a href="/2016/04/PCR/article/30-hardest-humanities-classes-at-penn.html" style="color:#98A62F">Top 30 hardest humanities classes at Penn<i class="fa fa-chevron-right"></i></a><br>
@@ -215,7 +216,7 @@
               </p>
               <span class="btn btn-default-outline dept-quality" onclick="deptDifficulty()">Difficulty</span>
               <span class="btn btn-default-outline dept-quality" onclick="deptQuality()">Course Quality</span>
-              <span class="btn btn-default-outline dept-quality" onclick="deptLearn()">Ammount Learned</span>
+              <span class="btn btn-default-outline dept-quality" onclick="deptLearn()">amount Learned</span>
               <span class="btn btn-default-outline dept-quality" onclick="deptInst()">Instructor Quality</span>
 
               <div class="links">
@@ -233,7 +234,7 @@
         <section id="section4">
           <div class="row">
             <div class="col-md-7">
-              <img class="img img-responsive" src="https://s3.amazonaws.com/media.dpn/52038_sail_through_historyo.png" alt="SAIL active learning class data" />
+              <h2>LOL CLICKY THING HERE</h2>
             </div>
             <div class="col-md-5">
               <h1 class="section-title">SAIL Courses</h1>
@@ -250,9 +251,6 @@
 
         <section id="section5">
           <h1 class="section-title">Sectors</h1>
-          <p>
-            Though many classes qualify to meet the seven general education requirements known as "sectors," many more of them don't. The "Natural Sciences & Mathematics" and "Physical World" sectors — which have relatively few courses that fulfill them — are consistently ranked the lowest of the sectors based on course quality. They are also ranked well below the average non-sector course. These results corroborates other data showing that students rate STEM courses more poorly than other courses across all variables. The "Arts & Letters" and "Humanities" sectors are ranked the highest of the sectors, with ratings that match the average non-sector course.
-          </p>
 
           <center>
             <span class="btn btn-default-outline active" onclick="sectQual()">Course Quality</span>
@@ -261,18 +259,30 @@
             <span class="btn btn-default-outline" onclick="sectWork()">Work Required</span>
             <div id="sector-comp-chart"></div>
           </center>
+          <br>
+          <p>
+            Though many classes qualify to meet the seven general education requirements known as "sectors," many more of them don't. The "Natural Sciences & Mathematics" and "Physical World" sectors — which have relatively few courses that fulfill them — are consistently ranked the lowest of the sectors based on course quality. They are also ranked well below the average non-sector course. These results corroborates other data showing that students rate STEM courses more poorly than other courses across all variables. The "Arts & Letters" and "Humanities" sectors are ranked the highest of the sectors, with ratings that match the average non-sector course.
+          </p>
           <div class="links text-right">
                 <a href="/2016/04/PCR/article/sector-requirement-ratings.html">Struggling through Sectors <i class="fa fa-chevron-right"></i></a><br>
           </div>
 
         </section>
         <section id="section6">
-          <h1 class="section-title">Writing Seminar</h1>
-          <p>
-            Penn Course Review data supports the student anecdotes suggesting they don't like their writing seminars — the only course that all undergraduates must take. Though writing seminar faculty have consistently tried to improve the curriculum over the years, the evaluation data shows steady results each year: Writing seminars have an average course quality significantly lower than that of other Penn classes. Students also report that writing seminars require more work than other courses, but they rate the course difficulty and quality of their instructors similar to the average Penn class. Data is not yet available to examine whether the overhaul of the writing seminar curriculum that began last summer will change the sentiment on student evaluations.
-          </p>
-          <div class="links text-right">
-                  <a href="/2016/04/PCR/article/writing-seminar-is-bad.html" style="color:#98A62F">Re-writing the writing seminars <i class="fa fa-chevron-right"></i></a><br>
+          <div class="row">
+            <div class="col-sm-6">
+              <h1 class="section-title">Writing Seminar</h1>
+              <p>
+                Penn Course Review data supports the student anecdotes suggesting they don't like their writing seminars — the only course that all undergraduates must take. Though writing seminar faculty have consistently tried to improve the curriculum over the years, the evaluation data shows steady results each year: Writing seminars have an average course quality significantly lower than that of other Penn classes. Students also report that writing seminars require more work than other courses, but they rate the course difficulty and quality of their instructors similar to the average Penn class. Data is not yet available to examine whether the overhaul of the writing seminar curriculum that began last summer will change the sentiment on student evaluations.
+              </p>
+              <div class="links text-right">
+                      <a href="/2016/04/PCR/article/writing-seminar.html" style="color:#98A62F">Re-writing the writing seminars <i class="fa fa-chevron-right"></i></a><br>
+              </div>
+
+            </div>
+            <div class="col-md-6">
+              <h2>CLICKY THINGY HERE TOO</h2>
+            </div>
           </div>
 
 
@@ -288,6 +298,8 @@
                 <a href="/2016/04/PCR/article/penns-top-professors-want-to-tell-you-about-teaching.html" style="color:#da1924">What Penn's top professors want to tell you about teaching <i class="fa fa-chevron-right"></i></a><br>
                 <a href="/2016/04/PCR/article/how-well-do-penns-best-known-professors-stack-up.html" style="color:#da1924">How well do Penn's best known professors stack up? <i class="fa fa-chevron-right"></i></a><br>
                 <a href="/2016/04/PCR/article/penns-top-30-best-professors.html" style="color:#da1924">Penn's top 30 best professors <i class="fa fa-chevron-right"></i></a><br>
+                <a href="/2016/04/PCR/article/guest-column-by-melanie-peron-letter-to-the-teacher-i-was.html" style="color:#da1924">Guest column by Melanie Peron | ​Letter to the teacher I was <i class="fa fa-chevron-right"></i></a><br>
+
               </div>
             </div>
 
@@ -304,8 +316,9 @@
             Some introductory classes contain over 100 students, but small seminars can have as few as two. Penn's smallest classes have higher course quality ratings than medium-sized classes, which in turn are rated higher than large classes. The cognitive science department has the most students enrolled per class, followed by biology and then chemistry. The language classes Turkish, Sanskrit and Urdu have the smallest class sizes of any departments.
           </p>
           <div class="links text-right">
-                <a href="#" style="color:#F49F00">article about history/future of PCR<i class="fa fa-chevron-right" ></i></a><br>
                 <a href="/2016/04/PCR/article/biases-in-pcr-data.html" style="color:#F49F00">Possible biases: Where course reviews go wrong <i class="fa fa-chevron-right"></i></a><br>
+                <a href="/2016/04/PCR/article/departments-with-the-largest-classes.html" style="color:#F49F00">The 20 departments holding the largest classes <i class="fa fa-chevron-right"></i></a><br>
+
            </div>
 
         </section>
@@ -317,6 +330,8 @@
           </p>
           <div class="links text-right">
                 <a href="/2016/04/PCR/article/pcr-past-present-and-future.html">The past, present and future of Penn Course Review <i class="fa fa-chevron-right"></i></a><br>
+                <a href="/2016/04/PCR/article/guest-column-course-evaluations.html">Guest column by Rob Nelson | Course Evaluations <i class="fa fa-chevron-right"></i></a><br>
+
           </div>
         </section>
         <section id="section10">
@@ -336,7 +351,7 @@
           <div class="row">
             <div class="col-md-6">
               <h3>Project Manager</h3>
-              <p>Jill Casellano</p>
+              <p>Jill Castellano</p>
               <h3>Data Analysis</h3>
               <p>Harry Cooperman, Luke Chen</p>
               <h3>Web Engineering</h3>
@@ -345,6 +360,8 @@
               <p>Joyce Varma</p>
               <h3>Interactive Graphics</h3>
               <p>Andrew Fischer</p>
+              <h3>Video Producer</h3>
+              <p>Susanna Jaramillo</p>
             </div>
             <div class="col-md-6">
               <h3>Static Graphics</h3>
