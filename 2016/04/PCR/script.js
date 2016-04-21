@@ -552,4 +552,8 @@ $( document ).ready(function(){
   avgQual();
   sectQual();
   stemQual();
-})
+  $('.carousel').carousel({
+    pause: true,
+    interval: false
+      });
+});

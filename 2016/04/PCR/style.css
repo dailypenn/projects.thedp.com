@@ -338,3 +338,12 @@ path {
     stroke-width: 1;
     shape-rendering: crispEdges;
 }
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.glyphicon-chevron-left {
+      color: white;
+
+}
