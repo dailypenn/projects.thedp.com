@@ -600,9 +600,6 @@ color: {
       max: 3.3
     }
   },
-  legend: {
-      position: 'right'
-  },
   regions: [
           {axis: 'x', start: 13, end: 14},
       ]
