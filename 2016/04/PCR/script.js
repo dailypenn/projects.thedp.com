@@ -172,7 +172,7 @@ var sectQual = function() {
   $( "[onclick='sectDiff()']" ).removeClass('active');
   $( "[onclick='sectInst()']" ).removeClass('active');
   $( "[onclick='sectWork()']" ).removeClass('active');
-}
+};
 
 var sectDiff = function() {
   c3.generate({
@@ -204,7 +204,7 @@ var sectDiff = function() {
   $( "[onclick='sectDiff()']" ).addClass('active');
   $( "[onclick='sectInst()']" ).removeClass('active');
   $( "[onclick='sectWork()']" ).removeClass('active');
-}
+};
 
 var sectInst = function() {
   c3.generate({
@@ -236,7 +236,7 @@ var sectInst = function() {
   $( "[onclick='sectDiff()']" ).removeClass('active');
   $( "[onclick='sectInst()']" ).addClass('active');
   $( "[onclick='sectWork()']" ).removeClass('active');
-}
+};
 
 var sectWork = function() {
   c3.generate({
@@ -268,7 +268,7 @@ var sectWork = function() {
   $( "[onclick='sectDiff()']" ).removeClass('active');
   $( "[onclick='sectInst()']" ).removeClass('active');
   $( "[onclick='sectWork()']" ).addClass('active');
-}
+};
 /**
  *
  * CODE FOR STEM COMPARISON CHARAT
@@ -304,7 +304,7 @@ var stemQual = function() {
   $( "[onclick='stemDiff()']" ).removeClass('active');
   $( "[onclick='stemInst()']" ).removeClass('active');
   $( "[onclick='stemWork()']" ).removeClass('active');
-}
+};
 
 var stemDiff = function() {
   c3.generate({
@@ -336,7 +336,7 @@ var stemDiff = function() {
   $( "[onclick='stemDiff()']" ).addClass('active');
   $( "[onclick='stemInst()']" ).removeClass('active');
   $( "[onclick='stemWork()']" ).removeClass('active');
-}
+};
 
 var stemInst = function() {
   c3.generate({
@@ -369,7 +369,7 @@ var stemInst = function() {
   $( "[onclick='stemInst()']" ).addClass('active');
   $( "[onclick='stemWork()']" ).removeClass('active');
 
-}
+};
 
 var stemWork = function() {
   c3.generate({
@@ -401,7 +401,7 @@ var stemWork = function() {
   $( "[onclick='stemDiff()']" ).removeClass('active');
   $( "[onclick='stemInst()']" ).removeClass('active');
   $( "[onclick='stemWork()']" ).addClass('active');
-}
+};
 /**
  *
  * CODE FOR DEPARTMENT COMPARISON CHARAT
@@ -425,7 +425,7 @@ d3.csv("data/DeptData.csv", function(error, data){
 
     //convert numerical values from strings to numbers
     data = data.map(function(d){
-      d.value = +Math.pow(d.Difficulty, 6); //Raise to power to scale as difference is really small
+      d.value = +Math.pow(d.Difficulty, 4); //Raise to power to scale as difference is really small
       d.School = +d.school;
       d.CourseQuality = +Math.pow(d.CourseQuality, 3); //Raise to power to scale as difference is really small
       d.AmmtLearned = +Math.pow(d.AmmtLearned, 3); //Raise to power to scale as difference is really small
@@ -471,37 +471,57 @@ d3.csv("data/DeptData.csv", function(error, data){
         .style({
             "fill":"white",
             "font-family":"neuzeit-grotesk, Helvetica, Arial, san-serif",
-            "font-size": "12px"
-        });
-})
+      })
+      .style("font-size", function(d) { return (2 * d.r - 10) / this.getComputedTextLength() * 15 + "px"; });
+});
 
 function deptDifficulty() {
   svg.selectAll("circle")
   .transition()
   .duration(750)
-  .attr("r", function(d){ return d.r; })
+  .attr("cx", function(d){ return d.x; })
+  .attr("cy", function(d){ return d.y; })
+  .attr("r", function(d){ return d.r; });
+
+  svg.selectAll("text")
+  .style("font-size", function(d) { return (2 * d.r - 10) / this.getComputedTextLength() * 15 + "px"; } );
 }
 
 function deptQuality() {
   svg.selectAll("circle")
   .transition()
   .duration(750)
-  .attr("r", function(d){ return d.CourseQuality; })
-};
+  .attr("cx", function(d){ return d.x; })
+  .attr("cy", function(d){ return d.y; })
+  .attr("r", function(d){ return d.CourseQuality; });
+
+  svg.selectAll("text")
+  .style("font-size", function(d) { return (2 * d.r - 10) / this.getComputedTextLength() * 15 + "px"; } );
+}
 
 function deptLearn() {
   svg.selectAll("circle")
   .transition()
   .duration(750)
-  .attr("r", function(d){ return d.AmmtLearned; })
-};
+  .attr("cx", function(d){ return d.x; })
+  .attr("cy", function(d){ return d.y; })
+  .attr("r", function(d){ return d.AmmtLearned; });
+
+  svg.selectAll("text")
+  .style("font-size", function(d) { return (2 * d.r - 10) / this.getComputedTextLength() * 15 + "px"; } );
+}
 
 function deptInst() {
   svg.selectAll("circle")
   .transition()
   .duration(750)
-  .attr("r", function(d){ return d.InstQuality; })
-};
+  .attr("cx", function(d){ return d.x; })
+  .attr("cy", function(d){ return d.y; })
+  .attr("r", function(d){ return d.InstQuality; });
+
+  svg.selectAll("text")
+  .style("font-size", function(d) { return (2 * d.r - 10) / this.getComputedTextLength() * 15 + "px"; } );
+}
 
 
 /**
