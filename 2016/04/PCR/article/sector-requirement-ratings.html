@@ -117,9 +117,10 @@
     <div class="row">
       <div class="col-sm-10 col-sm-push-1">
         <h1 class="title">Struggling through sectors</h1>
-        <h3>Penn Course Review data suggests negative experience of College sector requirements</h3>
+        <h3 style="font-weight: 300 !important">Penn Course Review data suggests negative experience of College sector requirements</h3>
         <h4 class="byline">By Jessica McDowell</h4>
-        <img src="https://s3.amazonaws.com/media.dpn/52113_sectorsf.jpg" class="img img-responsive" />
+        <img src="https://s3.amazonaws.com/media.dpn/52113_sectorsf.jpg" class="img img-responsive"/>
+        <br>
         <p>College and Wharton senior Michael Sklar has forced the College of Arts and Sciences into a game of chicken.</p>
         <p>Sklar, who will graduate in May, is currently enrolled in BIBB-585, Theoretical and Computational Neuroscience, and hopes to use the class to satisfy the Living World sector for his College degree. Without it, he will technically only graduate from Wharton.</p>
         <p>“It remains to be seen whether they will approve that,” he said. “I’m going to put the decision to them as to whether or not they will choose to deny me my College degree over this.”</p>
@@ -137,6 +138,16 @@
         <p>The sector system, which started in 1987, requires students to take courses in a variety of departments to satisfy requirements across the humanities, social sciences and natural sciences. </p>
         <p>In its original incarnation, the system divided every course offered by the college into one of the three categories and simply required students to take two classes in each category.</p>
         <p>The system gave students an “overwhelming array of choices,” according to Peterman. Instead of finding good and interesting ways of filling these courses, students created a “de facto core."</p>
+        
+        <center>
+          <h3>Comparing the Sectors</h3>
+          <span class="btn btn-default-outline active" onclick="sectQual()">Course Quality</span>
+          <span class="btn btn-default-outline" onclick="sectDiff()">Difficulty</span>
+          <span class="btn btn-default-outline" onclick="sectInst()">Instructor Quality</span>
+          <span class="btn btn-default-outline" onclick="sectWork()">Work Required</span>
+          <div id="sector-comp-chart"></div>
+        </center>
+        <br>
         <p>“They couldn’t make those decisions, so they said to their friends, ‘well, what did you take?’ And it had the effect of kind of clustering attention on a small number of courses,” Peterman said. “You would think that freedom would mean more freedom and more diversity and more independence, but it had just the opposite effect.”</p>
         <p>Peterman also believes the system “rewarded professors for teaching courses that were not especially challenging.” At the time, Peterman said that the College had a greater problem of courses not being challenging enough to fit the “growing profile of the University” and challenging the more talented students Penn was admitting.</p>
         <p>Sklar, however, did not see Peterman’s assessment of the old system as an issue. </p>
@@ -163,6 +174,10 @@
     });
 
   </script>
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
+  <script src="/2016/04/PCR/script.js"></script>
+
   <script>
   window.fbAsyncInit = function() {
     FB.init({
