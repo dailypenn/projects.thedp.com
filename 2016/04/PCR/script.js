@@ -407,121 +407,311 @@ var stemWork = function() {
  * CODE FOR DEPARTMENT COMPARISON CHARAT
  *
 **/
-var diameter = 500, //max size of the bubbles
-    color    = d3.scale.category20b(); //color category
+// var diameter = 500, //max size of the bubbles
+//     color    = d3.scale.category20b(); //color category
+// 
+// var bubble = d3.layout.pack()
+//     .sort(null)
+//     .size([diameter, diameter])
+//     .padding(1.5);
+// 
+// var svg = d3.select("#dept-comp-chart")
+//     .append("svg")
+//     .attr("width", diameter)
+//     .attr("height", diameter)
+//     .attr("class", "bubble");
+// 
+// d3.csv("data/DeptData.csv", function(error, data){
+// 
+//     //convert numerical values from strings to numbers
+//     data = data.map(function(d){
+//       d.value = +Math.pow(d.Difficulty, 4); //Raise to power to scale as difference is really small
+//       d.School = +d.school;
+//       d.CourseQuality = +Math.pow(d.CourseQuality, 3); //Raise to power to scale as difference is really small
+//       d.AmmtLearned = +Math.pow(d.AmmtLearned, 3); //Raise to power to scale as difference is really small
+//       d.InstQuality = +Math.pow(d.InstQuality, 3); //Raise to power to scale as difference is really small
+//       return d; });
+// 
+//     //bubbles needs very specific format, convert data to this.
+//     var nodes = bubble.nodes({children:data}).filter(function(d) { return !d.children; });
+// 
+//     //setup the chart
+//     var bubbles = svg.append("g")
+//         .attr("transform", "translate(0,0)")
+//         .selectAll(".bubble")
+//         .data(nodes)
+//         .enter();
+// 
+//     //create the bubbles and color them correctly
+//     bubbles.append("circle")
+//         .attr("r", function(d){ return d.r; })
+//         .attr("cx", function(d){ return d.x; })
+//         .attr("cy", function(d){ return d.y; })
+//         .style("fill", function(d) {
+// 
+//           if (d.school == "SAS") {
+//             return RED;
+//           } else if (d.school == "SEAS") {
+//             return YELLOW;
+//           } else if (d.school == "Wharton") {
+//             return ORANGE;
+//       } else  if (d.school == "Nursing"){
+//             return GREEN;
+//       } else {
+//             return BLUE;
+//       }
+//         });
+// 
+//     //format the text for each bubble, give it description
+//     bubbles.append("text")
+//         .attr("x", function(d){ return d.x; })
+//         .attr("y", function(d){ return d.y + 5; })
+//         .attr("text-anchor", "middle")
+//         .text(function(d){ return d["Department"]; })
+//         .style({
+//             "fill":"white",
+//             "font-family":"neuzeit-grotesk, Helvetica, Arial, san-serif",
+//       })
+//       .style("font-size", function(d) { return 20 / this.getComputedTextLength() * 15 + "px"; });
+// });
+// 
+// function deptDifficulty() {
+//   svg.selectAll("circle")
+//   .transition()
+//   .duration(750)
+//   .attr("cx", function(d){ return d.x; })
+//   .attr("cy", function(d){ return d.y; })
+//   .attr("r", function(d){ return d.r; });
+// 
+//   svg.selectAll("text")
+//   // .style("font-size", function(d) { return (2 * d.r - 10) / this.getComputedTextLength() * 15 + "px"; } );
+// }
+// 
+// function deptQuality() {
+//   svg.selectAll("circle")
+//   .transition()
+//   .duration(750)
+//   .attr("cx", function(d){ return Math.pow(d.x, 1.05)})
+//   .attr("cy", function(d){ return Math.pow(d.y, 1.05 )})
+//   .attr("r", function(d){ return d.CourseQuality; });
+// 
+//   svg.selectAll("text")
+//   // .style("font-size", function(d) { return (2 * d.r - 10) / this.getComputedTextLength() * 15 + "px"; } );
+// }
+// 
+// function deptLearn() {
+//   svg.selectAll("circle")
+//   .transition()
+//   .duration(750)
+//   .attr("cx", function(d){ return d.x; })
+//   .attr("cy", function(d){ return d.y; })
+//   .attr("r", function(d){ return d.AmmtLearned; });
+// 
+//   svg.selectAll("text")
+//   .style("font-size", function(d) { return (2 * d.r - 10) / this.getComputedTextLength() * 15 + "px"; } );
+// }
+// 
+// function deptInst() {
+//   svg.selectAll("circle")
+//   .transition()
+//   .duration(750)
+//   .attr("cx", function(d){ return d.x; })
+//   .attr("cy", function(d){ return d.y; })
+//   .attr("r", function(d){ return d.InstQuality; });
+// 
+//   svg.selectAll("text")
+//   .style("font-size", function(d) { return (2 * d.r - 10) / this.getComputedTextLength() * 15 + "px"; } );
+// }
 
-var bubble = d3.layout.pack()
-    .sort(null)
-    .size([diameter, diameter])
-    .padding(1.5);
+var metric = "Diff";
 
-var svg = d3.select("#dept-comp-chart")
-    .append("svg")
-    .attr("width", diameter)
-    .attr("height", diameter)
-    .attr("class", "bubble");
+      d3.csv('data/DeptData.csv', function (error, data) {
 
-d3.csv("data/DeptData.csv", function(error, data){
+        var width = 400, height = 400;
+        var fill = d3.scale.ordinal().range([RED,BLUE,YELLOW,GREEN,'#2a3285','#383435'])
+        var svg = d3.select("#dept-comp-chart").append("svg")
+            .attr("width", width)
+            .attr("height", height);
 
-    //convert numerical values from strings to numbers
-    data = data.map(function(d){
-      d.value = +Math.pow(d.Difficulty, 4); //Raise to power to scale as difference is really small
-      d.School = +d.school;
-      d.CourseQuality = +Math.pow(d.CourseQuality, 3); //Raise to power to scale as difference is really small
-      d.AmmtLearned = +Math.pow(d.AmmtLearned, 3); //Raise to power to scale as difference is really small
-      d.InstQuality = +Math.pow(d.InstQuality, 3); //Raise to power to scale as difference is really small
-      return d; });
+        for (var j = 0; j < data.length; j++) {
+          data[j].radius = +Math.pow(data[j].Difficulty, 2);
+          data[j].x = Math.random() * width;
+          data[j].y = Math.random() * height;
+        }
 
-    //bubbles needs very specific format, convert data to this.
-    var nodes = bubble.nodes({children:data}).filter(function(d) { return !d.children; });
+        var padding = 15;
+        var maxRadius = d3.max(_.pluck(data, 'radius'));
 
-    //setup the chart
-    var bubbles = svg.append("g")
-        .attr("transform", "translate(0,0)")
-        .selectAll(".bubble")
-        .data(nodes)
-        .enter();
+        var getCenters = function (vname, size) {
+          var centers, map;
+          centers = _.uniq(_.pluck(data, vname)).map(function (d) {
+            return {name: d, value: 1};
+          });
 
-    //create the bubbles and color them correctly
-    bubbles.append("circle")
-        .attr("r", function(d){ return d.r; })
-        .attr("cx", function(d){ return d.x; })
-        .attr("cy", function(d){ return d.y; })
-        .style("fill", function(d) {
+          map = d3.layout.treemap().size(size).ratio(1/1);
+          map.nodes({children: centers});
 
-          if (d.school == "SAS") {
-            return RED;
-          } else if (d.school == "SEAS") {
-            return YELLOW;
-          } else if (d.school == "Wharton") {
-            return ORANGE;
-      } else  if (d.school == "Nursing"){
-            return GREEN;
-      } else {
-            return BLUE;
-      }
+          return centers;
+        };
+
+        var nodes = svg.selectAll("circle")
+          .data(data);
+
+        nodes.enter().append("circle")
+          .attr("class", "node")
+          .attr("cx", function (d) { return d.x; })
+          .attr("cy", function (d) { return d.y; })
+          .attr("r", function (d) { return d.radius; })
+          .style("fill", function (d) { return fill(d.school); })
+          .attr("stroke-width", 2)
+          .attr("stroke", "#666")
+          .on("mouseover", function (d) { showPopover.call(this, d); })
+          .on("mouseout", function (d) { removePopovers(); })
+
+        var force = d3.layout.force()
+          .gravity(0)
+          .charge(0)
+          .on("tick", tick)
+          .start();
+
+
+
+        draw('school');
+
+        $("#dept-diff").click(function() {
+          metric = "Diff";
+          draw('school');
+          $("#dept-diff").addClass('active');
+          $("#dept-course").removeClass('active');
+          $("#dept-ammt").removeClass('active');
+          $("#dept-inst").removeClass('active');
+        });
+        $("#dept-course").click(function() {
+          metric = "Course";
+          draw('school');
+          $("#dept-diff").removeClass('active');
+          $("#dept-course").addClass('active');
+          $("#dept-ammt").removeClass('active');
+          $("#dept-inst").removeClass('active');
+        });
+        $("#dept-ammt").click(function() {
+          metric = "Ammt";
+          draw('school');
+          $("#dept-diff").removeClass('active');
+          $("#dept-course").removeClass('active');
+          $("#dept-ammt").addClass('active');
+          $("#dept-inst").removeClass('active');
+        });
+        $("#dept-inst").click(function() {
+          metric = "Inst";
+          draw('school');
+          $("#dept-diff").removeClass('active');
+          $("#dept-course").removeClass('active');
+          $("#dept-ammt").removeClass('active');
+          $("#dept-inst").addClass('active');
         });
 
-    //format the text for each bubble, give it description
-    bubbles.append("text")
-        .attr("x", function(d){ return d.x; })
-        .attr("y", function(d){ return d.y + 5; })
-        .attr("text-anchor", "middle")
-        .text(function(d){ return d["Department"]; })
-        .style({
-            "fill":"white",
-            "font-family":"neuzeit-grotesk, Helvetica, Arial, san-serif",
-      })
-      .style("font-size", function(d) { return 20 / this.getComputedTextLength() * 15 + "px"; });
-});
+        function draw (varname) {
+          var centers = getCenters(varname, [400, 400]);
+          force.on("tick", tick(centers, varname));
+          // labels(centers)
+          force.start();
+        }
 
-function deptDifficulty() {
-  svg.selectAll("circle")
-  .transition()
-  .duration(750)
-  .attr("cx", function(d){ return d.x; })
-  .attr("cy", function(d){ return d.y; })
-  .attr("r", function(d){ return d.r; });
+        function tick (centers, varname) {
+          var foci = {};
+          for (var i = 0; i < centers.length; i++) {
+            foci[centers[i].name] = centers[i];
+          }
+          return function (e) {
+            for (var i = 0; i < data.length; i++) {
+              var o = data[i];
+              var f = foci[o[varname]];
+              o.y += ((f.y + (f.dy / 2)) - o.y) * e.alpha;
+              o.x += ((f.x + (f.dx / 2)) - o.x) * e.alpha;
+            }
+            nodes.each(collide(.1))
+              .transition()
+              .duration(100)
+              .attr('r', function (d) {
+                if (metric == "Diff") {
+                  return Math.pow(d.Difficulty, 2.5);
+                } else if (metric == "Course") {
+                  return Math.pow(d.CourseQuality, 2.5);
+                } else if (metric == "Ammt") {
+                  return Math.pow(d.AmmtLearned, 2.5);
+                } else if (metric == "Inst") {
+                  return Math.pow(d.InstQuality, 2.5);
+                }
+              })
+              .attr("cx", function (d) { return d.x; })
+              .attr("cy", function (d) { return d.y; });
+          }
+        }
 
-  svg.selectAll("text")
-  // .style("font-size", function(d) { return (2 * d.r - 10) / this.getComputedTextLength() * 15 + "px"; } );
-}
+        // function labels (centers) {
+        //   svg.selectAll(".label").remove();
+        // 
+        //   svg.selectAll(".label")
+        //   .data(centers).enter().append("text")
+        //   .attr("class", "label")
+        //   .text(function (d) { return d.name })
+        //   .attr("transform", function (d) {
+        //     return "translate(" + (d.x + (d.dx / 2)) + ", " + (d.y + 20) + ")";
+        //   });
+        // }
 
-function deptQuality() {
-  svg.selectAll("circle")
-  .transition()
-  .duration(750)
-  .attr("cx", function(d){ return Math.pow(d.x, 1.05)})
-  .attr("cy", function(d){ return Math.pow(d.y, 1.05 )})
-  .attr("r", function(d){ return d.CourseQuality; });
+        function removePopovers () {
+          $('.popover').each(function() {
+            $(this).remove();
+          }); 
+        }
 
-  svg.selectAll("text")
-  // .style("font-size", function(d) { return (2 * d.r - 10) / this.getComputedTextLength() * 15 + "px"; } );
-}
+        function showPopover (d) {
+          $(this).popover({
+            placement: 'auto top',
+            container: 'body',
+            trigger: 'manual',
+            html : true,
+            content: function() { 
+              return "School: " + d.school + "<br/>Department: " + d.Department + 
+                     "<br/>Course Quality: " + d.CourseQuality + "<br/>Difficulty: " + d.Difficulty
+                     + "<br/>Amount Learned: " + d.AmmtLearned + "<br/>Instructor Quality: " + d.InstQuality; 
+            }
+          });
+          $(this).popover('show')
+        }
 
-function deptLearn() {
-  svg.selectAll("circle")
-  .transition()
-  .duration(750)
-  .attr("cx", function(d){ return d.x; })
-  .attr("cy", function(d){ return d.y; })
-  .attr("r", function(d){ return d.AmmtLearned; });
-
-  svg.selectAll("text")
-  .style("font-size", function(d) { return (2 * d.r - 10) / this.getComputedTextLength() * 15 + "px"; } );
-}
-
-function deptInst() {
-  svg.selectAll("circle")
-  .transition()
-  .duration(750)
-  .attr("cx", function(d){ return d.x; })
-  .attr("cy", function(d){ return d.y; })
-  .attr("r", function(d){ return d.InstQuality; });
-
-  svg.selectAll("text")
-  .style("font-size", function(d) { return (2 * d.r - 10) / this.getComputedTextLength() * 15 + "px"; } );
-}
+        function collide(alpha) {
+          var quadtree = d3.geom.quadtree(data);
+          return function (d) {
+            var r = d.radius + maxRadius + padding,
+                nx1 = d.x - r,
+                nx2 = d.x + r,
+                ny1 = d.y - r,
+                ny2 = d.y + r;
+            quadtree.visit(function(quad, x1, y1, x2, y2) {
+              if (quad.point && (quad.point !== d)) {
+                var x = d.x - quad.point.x,
+                    y = d.y - quad.point.y,
+                    l = Math.sqrt(x * x + y * y),
+                    r = d.radius + quad.point.radius + padding;
+                if (l < r) {
+                  l = (l - r) / l * alpha;
+                  d.x -= x *= l;
+                  d.y -= y *= l;
+                  quad.point.x += x;
+                  quad.point.y += y;
+                }
+              }
+              return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+            });
+          };
+        }
+        
+        
+      });
+    
 
 
 /**

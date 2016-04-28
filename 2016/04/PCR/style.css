@@ -397,12 +397,12 @@ path {
   padding-bottom: 15px;
 }
 
-#dept-comp-chart {
+/*#dept-comp-chart {
   max-width: 100%;
   /*margin-top: 300px;*/
-  margin: 100px 0px 0px 0px;
+  /*margin: 100px 0px 0px 0px;
   overflow: hidden;
-}
+}*/
 
 /*MEDIA QUERIES*/
 
