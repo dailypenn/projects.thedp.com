@@ -472,7 +472,7 @@ d3.csv("data/DeptData.csv", function(error, data){
             "fill":"white",
             "font-family":"neuzeit-grotesk, Helvetica, Arial, san-serif",
       })
-      .style("font-size", function(d) { return (2 * d.r - 10) / this.getComputedTextLength() * 15 + "px"; });
+      .style("font-size", function(d) { return 20 / this.getComputedTextLength() * 15 + "px"; });
 });
 
 function deptDifficulty() {
@@ -484,19 +484,19 @@ function deptDifficulty() {
   .attr("r", function(d){ return d.r; });
 
   svg.selectAll("text")
-  .style("font-size", function(d) { return (2 * d.r - 10) / this.getComputedTextLength() * 15 + "px"; } );
+  // .style("font-size", function(d) { return (2 * d.r - 10) / this.getComputedTextLength() * 15 + "px"; } );
 }
 
 function deptQuality() {
   svg.selectAll("circle")
   .transition()
   .duration(750)
-  .attr("cx", function(d){ return d.x; })
-  .attr("cy", function(d){ return d.y; })
+  .attr("cx", function(d){ return Math.pow(d.x, 1.05)})
+  .attr("cy", function(d){ return Math.pow(d.y, 1.05 )})
   .attr("r", function(d){ return d.CourseQuality; });
 
   svg.selectAll("text")
-  .style("font-size", function(d) { return (2 * d.r - 10) / this.getComputedTextLength() * 15 + "px"; } );
+  // .style("font-size", function(d) { return (2 * d.r - 10) / this.getComputedTextLength() * 15 + "px"; } );
 }
 
 function deptLearn() {
