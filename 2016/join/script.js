@@ -3,7 +3,7 @@ $(document).ready(function(){
 	  window.location.href = $(this).find("option:selected").attr("id") + '.html';
 	});
   $('#fullpage').fullpage({
-    anchors: ['intro', 'edz', 'news', 'copy', 'sports', 'social', 'photo', 'design', 'video', 'web', 'biz', 'advertising', 'marketing', 'dpict', 'circulation', 'biz-analytics', 'ed-analytics', 'sponsored', '34st','utb', 'join'],
+    anchors: ['intro', 'edz', 'news', 'copy', 'sports', 'social', 'photo', 'design', 'video', 'web', 'ed-analytics', 'biz', 'advertising', 'marketing', 'dpict', 'circulation', 'biz-analytics', 'sponsored', '34st','utb', 'join'],
     css3: true,
     scrollingSpeed: 500,
     scrollBar: true,

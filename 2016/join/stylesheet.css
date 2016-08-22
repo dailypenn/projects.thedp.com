@@ -15,7 +15,7 @@ h1 {
 	margin-top: 0 !important;
 }
 
-a:active, a:hover, a:visited {
+a, a:active, a:hover, a:visited {
 	color: #AA1E23 !important;
 }
 
@@ -98,6 +98,10 @@ p{
 
 #section9 {
 	background-image: url(https://s3.amazonaws.com/media.dpn/49333_webf.jpg);
+}
+
+#section9-2 {
+  background-image: url(https://s3.amazonaws.com/media.dpn/52802_sponsored_contentf.png);
 }
 
 #section11 {
