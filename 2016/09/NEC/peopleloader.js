@@ -28,7 +28,7 @@ var people = {
       {
         "name" : "Jack Talley",
         "email" : "jtalley@seas.upenn.edu",
-        "photo" : "https://s3.amazonaws.com/media.dpn/51345_fillerimgf.jpg",
+        "photo" : "https://s3.amazonaws.com/media.dpn/53538_talley_jackp.jpg",
         "stmt" : "https://s3.amazonaws.com/media.dpn/53450_talley_jackf.png"
       },
       {
@@ -199,7 +199,7 @@ var people = {
       {
         "name" : "Jordan Andrews",
         "email" : "andjor@sas.upenn.edu",
-        "photo" : "https://s3.amazonaws.com/media.dpn/51345_fillerimgf.jpg",
+        "photo" : "https://s3.amazonaws.com/media.dpn/53537_andrews_jordanp.jpg",
         "stmt" : "https://s3.amazonaws.com/media.dpn/53415_andrews_jordan_revisedf.jpg"
       },
       {
