@@ -8,7 +8,7 @@ var people = {
         "stmt" : "https://s3.amazonaws.com/media.dpn/53420_chopra_rahulf.jpg"
       },
       {
-        "name" : "Karim El Swedy",
+        "name" : "Karim El Sewedy",
         "email" : "karimels@wharton.upenn.edu",
         "photo" : "https://s3.amazonaws.com/media.dpn/53506_el_sewedy_karimp.JPG",
         "stmt" : "https://s3.amazonaws.com/media.dpn/53426_el_sewedy_karimf.jpg"
@@ -32,7 +32,7 @@ var people = {
         "stmt" : "https://s3.amazonaws.com/media.dpn/53450_talley_jackf.png"
       },
       {
-        "name" : "Conor Wright",
+        "name" : "Connor Wright",
         "email" : "wrightco@sas.upenn.edu",
         "photo" : "https://s3.amazonaws.com/media.dpn/53533_wright_connorp.jpg",
         "stmt" : "https://s3.amazonaws.com/media.dpn/53455_wright_connorf.jpg"
@@ -84,7 +84,7 @@ var people = {
         "stmt" : "https://s3.amazonaws.com/media.dpn/53425_goldstein_shanef.png"
       },
       {
-        "name" : "Vanessa Wanyandesh",
+        "name" : "Vanessa Wanyandeh",
         "email" : "vwany@sas.upenn.edu",
         "photo" : "https://s3.amazonaws.com/media.dpn/53531_wanyandeh_vanessap.jpg",
         "stmt" : "https://s3.amazonaws.com/media.dpn/53452_wanyandeh_vanessaf.jpg"
@@ -106,7 +106,7 @@ var people = {
     ],
     "Wharton_Chair" : [
       {
-        "name" : "Phillip Chen",
+        "name" : "Philip Chen",
         "email" : "philchen@wharton.upenn.edu",
         "photo" : "https://s3.amazonaws.com/media.dpn/53536_chen_phillipp.jpg",
         "stmt" : "https://s3.amazonaws.com/media.dpn/53418_chen_philipf.jpeg"
