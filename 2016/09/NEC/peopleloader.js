@@ -17,7 +17,7 @@ var people = {
         "name" : "Matthew Schnitzer",
         "email" : "mschnit@sas.upenn.edu",
         "photo" : "https://s3.amazonaws.com/media.dpn/53524_schnitzer_matthewp.JPG",
-        "stmt" : ""
+        "stmt" : "https://s3.amazonaws.com/media.dpn/53540_schnitzer_final2f.jpg"
       },
       {
         "name" : "Bradley Smith",
@@ -209,7 +209,7 @@ var people = {
         "stmt" : "https://s3.amazonaws.com/media.dpn/53417_blanco_jessef.jpg"
       },
       {
-        "name" : "Phillip Chen",
+        "name" : "Philip Chen",
         "email" : "philchen@wharton.upenn.edu",
         "photo" : "https://s3.amazonaws.com/media.dpn/53536_chen_phillipp.jpg",
         "stmt" : "https://s3.amazonaws.com/media.dpn/53418_chen_philipf.jpeg"
@@ -217,14 +217,14 @@ var people = {
       {
         "name" : "Maria Curry",
         "email" : "mariacu@wharton.upenn.edu",
-        "photo" : "https://s3.amazonaws.com/media.dpn/53503_curry_mariap.JPG",
+        "photo" : "https://s3.amazonaws.com/media.dpn/51345_fillerimgf.jpg",
         "stmt" : "https://s3.amazonaws.com/media.dpn/53422_curry_mariaf.jpg"
       },
       {
         "name" : "Brian Goldstein",
         "email" : "brgold@sas.upenn.edu",
         "photo" : "https://s3.amazonaws.com/media.dpn/53507_goldstein_brianp.jpg",
-        "stmt" : ""
+        "stmt" : "https://s3.amazonaws.com/media.dpn/53539_brian_goldstein_ua_posterf.jpg"
       },
       {
         "name" : "Max Grove",
