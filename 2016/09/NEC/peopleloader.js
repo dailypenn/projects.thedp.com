@@ -318,7 +318,7 @@ $(document).ready(function() {
       );
     }
   }
-  
+    
   loadList(cb["President"], "ua-list");
   loadList(cb["Executive_Vice_President"], "ua-vp-list");
   loadList(cb["College_Chair"], "ua-sas-rep");
@@ -329,4 +329,17 @@ $(document).ready(function() {
   loadList(cb["Vice_president_of_Finances"], "ua-vp-fin");
   loadList(cb["Vice_president_of_Internal_Affairs"], "ua-vp-int");
   loadList(ua["New_Student_representative"], "ua-nsrs");
+  
+  var lists = $('.cs-style-1');
+
+  var randomize = function(x) {
+    for (var i = x.children.length; i >= 0; i--) {
+      x.appendChild(x.children[Math.random() * i | 0]);
+    }
+  }
+  
+  for (var list in lists) {
+      randomize(lists[list]);
+  }
+
 });
