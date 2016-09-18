@@ -197,6 +197,12 @@ var people = {
   "ua" : {
     "New_Student_representative" : [
       {
+        "name" : "Hong Nguyen",
+        "email" : "hongnguy@wharton.upenn.edu",
+        "photo" : "https://s3.amazonaws.com/media.dpn/53522_nguyen_hongp.JPG",
+        "stmt" : "https://s3.amazonaws.com/media.dpn/53446_nguyen_hongf.jpg"
+      },
+      {
         "name" : "Jordan Andrews",
         "email" : "andjor@sas.upenn.edu",
         "photo" : "https://s3.amazonaws.com/media.dpn/53537_andrews_jordanp.jpg",
