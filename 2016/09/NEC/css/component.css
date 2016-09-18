@@ -8,8 +8,8 @@
 
 .grid li {
 	display: inline-block;
-	width: 440px;
-	margin: 0;
+  width: 310px;
+  margin: 0;
 	padding: 20px;
 	text-align: left;
 	position: relative;
@@ -31,7 +31,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 20px;
+	padding: 5px;
 	background: #2c2c2c;
 	color: #fff;
 }
@@ -78,7 +78,7 @@
 }
 
 .cs-style-1 figcaption h3 {
-	margin-top: 70px;
+	margin-top: 20px;
 }
 
 .cs-style-1 figcaption span {
@@ -86,7 +86,8 @@
 }
 
 .cs-style-1 figcaption a {
-	margin-top: 30px;
+	margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Caption Style 2 */

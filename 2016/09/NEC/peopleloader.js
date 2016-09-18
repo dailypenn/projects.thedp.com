@@ -263,7 +263,7 @@ var people = {
         "stmt" : "https://s3.amazonaws.com/media.dpn/53437_kwok_williamf.jpg"
       },
       {
-        "name" : "Natasha Menton",
+        "name" : "Natasha Menon",
         "email" : "namenon@sas.upenn.edu",
         "photo" : "https://s3.amazonaws.com/media.dpn/53519_menon_natashap.jpg",
         "stmt" : "https://s3.amazonaws.com/media.dpn/53441_menon_natashaf.jpg"
@@ -307,9 +307,11 @@ $(document).ready(function() {
           "<figure>" + 
               "<img src='" + people[person].photo + "'>" +
               "<figcaption>" + 
-                "<h3>" + people[person].name + "</h3>" + 
+                "<h3>" + people[person].name + "</h3>" +
+                "<a href='http://www.pennstudgov.com'>Vote Here</a>&nbsp;" + 
+                "<a href='" + people[person].stmt + "'>Download Statement</a>" + 
                 "<center><img class='statement' src='" + people[person].stmt + "' height='120' /></center>" + 
-                "<a href='http://www.pennstudgov.com'>Vote Here</a>" + 
+                 
               "</figcaption>" + 
               "<h3>" + people[person].name + "</h3>" + 
           "</figure></li>"
