@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
     font-family: 'Lora', georgia, serif;
 }
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'roadway', arial, sans-serif;
     text-transform: uppercase;
@@ -39,7 +40,7 @@ a:hover {
     -webkit-overflow-scrolling: touch;
     height: 100vh;
     width: 100vw;
-    background: url('http://media.dpn.s3.amazonaws.com/53734_cloudso.png');
+    background: url('../img/clouds.png');
     position: fixed;
     left: 0;
     top: 0;
@@ -208,14 +209,25 @@ a:hover {
   position: relative;
   top: -35px;
   z-index: 501;
+  max-width: 70%;
 }
 
 .ad {
   position: relative;
-  left: 313px;
-  bottom: 53px;
+  left: 314px;
+  bottom: 49px;
 }
 
 .plane img {
-  width: 547px;
+  width: 555px;
+}
+
+@media screen and (max-height: 650px) {
+  .front, .middle, .horizon {
+    zoom: .75;
+  }
+  
+  .credits {
+    height: 140vh;
+  }
 }
