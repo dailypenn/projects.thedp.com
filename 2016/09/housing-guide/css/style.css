@@ -39,7 +39,7 @@ a:hover {
     -webkit-overflow-scrolling: touch;
     height: 100vh;
     width: 100vw;
-    background: url('../img/clouds.png');
+    background: url('http://media.dpn.s3.amazonaws.com/53734_cloudso.png');
     position: fixed;
     left: 0;
     top: 0;
@@ -135,7 +135,7 @@ a:hover {
     top: -500px;
 }
 .front .description:nth-child(4) {
-    left: 2200px;
+    left: 2295px;
     top: -250px;
 }
 .front .description:nth-child(5) {
@@ -202,4 +202,20 @@ a:hover {
   height: 68px;
   background: #fff;
   border: 10px solid #fff;
+}
+
+.plane {
+  position: relative;
+  top: -35px;
+  z-index: 501;
+}
+
+.ad {
+  position: relative;
+  left: 313px;
+  bottom: 53px;
+}
+
+.plane img {
+  width: 547px;
 }
