@@ -8,11 +8,18 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="./js/jInvertScroll.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <meta name="viewport" content="initial-scale=.6">
+    
+    <title>Housing Guide 2016 | The Daily Pennsylvanian</title>
+    
     <style media="screen">
       
       body {
         overflow-x: hidden;
+      }
+      img {
+        pointer-events: none;
       }
       
       .clouds {
@@ -39,7 +46,6 @@
       }
       
       h1 {
-        font-size: 20px;
         font-weight: normal;
         color: #2e6e80;
       }
@@ -62,18 +68,91 @@
       
       .front {
         z-index: 1000;
-        width: 6000px;
+        width: 6230px;
       }
 
       .description {
         height: auto;
-        width: 500px;
+        display: inline-block;
+        width: 400px;
         background-color: #fff;
-        border: 2px solid #3bb87c;
+        border: 5px solid #3bb87c;
         position: relative;
-        left: 600px;
-        bottom: 550px;
         padding: 20px;
+      }
+      
+      .horizon .description {
+        z-index: 2;
+      }
+      
+      .middle .description {
+        z-index: 501;
+      }
+      
+      .front .description {
+        z-index: 1001;
+      }
+      
+      .horizon .description:nth-child(1) {
+        left: 600px;
+        top: -500px;
+      }
+      
+      .horizon .description:nth-child(2) {
+        left: 1400px;
+        top: -550px;      
+      }
+      
+      .horizon .description:nth-child(3) {
+        left: 1400px;
+        top: -500px;      
+      }
+      
+      .middle .description:nth-child(1) {
+        left: 20px;
+        top: -500px;
+      }
+      
+      .middle .description:nth-child(2) {
+        left: 1150px;
+        top: -250px;
+      }
+      
+      .middle .description:nth-child(3) {
+        left: 1200px;
+        /*top: -550px;*/
+      }
+      
+      
+      .front .description:nth-child(1) {
+        left: 750px;
+        top: -100px;
+      }
+      
+      .front .description:nth-child(2) {
+        left: 1200px;
+        top: -150px;
+      }
+      
+      .front .description:nth-child(3) {
+        left: 1300px;
+        top: -550px;
+      }
+      
+      .front .description:nth-child(4) {
+        left: 2200px;
+        top: -250px;
+      }
+      
+      .credits {
+        height: 102vh;
+        padding: 15px;
+        z-index: 0;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        width: 300px;
+        left: 5900px;
       }
     </style>
   </head>
@@ -84,23 +163,99 @@
       <h1 class="Heading">The DP Housing Guide</h1>
       <div class="middle scroll"> <img src="./img/middle.png" alt="" /> </div>
       <div class="front scroll"> <img src="./img/front.png" alt="" /> </div>
+      
       <div class="front scroll text"> 
         <div class="description">
-          <h2>Article goes here</h2>
+          <h2><a href="#">10 easy foods to make in your dorm room &#10093;</a></h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Anything dipped in Nutella: Is an explanation needed?
+          </p>
+          <h2><a href="#">9 easy, cost-effective ways to decorate your dorm room &#10093;</a></h2>
+          <p>
+            A college dorm room isn’t exactly the coziest place.
+           </p>
+        </div>
+        <div class="description">
+          <h2><a href="#">10 things to do if you get sexiled &#10093;</a></h2>
+          <p>
+            See it as a challenge to get some action yourself. Just, elsewhere.
+           </p>
+        </div>
+        <div class="description">
+          <h2><a href="#">When you win the roommate lottery &#10093;</a></h2>
+          <p>
+            Everyone has heard plenty of roommate horror stories. But just as there are horror stories, there are also the occasional success stories.
+          </p>
+          <h2><a href="#">What to do if you land a bad roommate &#10093;</a></h2>
+          <p>
+            Sharing your personal space with other people can be difficult, especially while dealing with the stress of school.
+           </p>
+        </div>
+        <div class="description">
+          <h2><a href="#">ra/ga headline goes here goes here &#10093;</a></h2>
+          <p>
+            Living in a dorm automatically entails close corridors, shared facilities, and of course, an RA or GA.
           </p>
         </div>
+        <div class="credits">
+          <br><br>
+          <h2>Credits</h2>
+          <p>
+            Web development by Andrew Fischer.
+          </p>
+          <p>
+            Design and Art Direction by Alex Graves &amp; Ilana Wurman.
+          </p>
+          <p>
+            Creative Direction by Joyce Varma
+          </p>
+          <p>
+            Articles by various members of <i>The Daily Pennsylvanian Staff</i>
+          </p>
+          <p>
+            As always, this project is open source and availible on Github.
+          </p>
+        </div>
+      </div>
+      
+      <div class="middle scroll text">
+        <div class="description">
+          <h2><a href="#">All the important dates you need to know for next year's housing &#10093;</a></h2>
+          <p>
+            Housing can be a confusing checklist item to navigate at Penn.
+           </p>
+        </div>
       </div>  
+      
+      <div class="horizon scroll text">
+        <div class="description">
+          <h2><a href="#">The tightest freshman halls in the Quad &#10093;</a></h2>
+          <p>
+            Don't tell the freshmen in the New College House, Kings Court English 
+            College House or Stouffer College House, but every year the freshman 
+            halls of the Quad are the loudest in bragging about their closeness.
+             Here are this year's five (self-proclaimed) contenders for the closest hall.
+           </p>
+        </div>
+        <div class="description">
+          <h2><a href="#">Five alternative diets once you get off the dining plan &#10093;</a></h2>
+          <p>
+            Penn, like many colleges, requires freshmen to purchase a dining plan.
+            Although they may fondly remember the “sense of community among the 
+            Penn students, faculty and staff” that compelled them to choose a 
+            meal plan provided by a corporation that profits off of the prison-
+            industrial complex, many upperclassmen look elsewhere for food.
+           </p>
+        </div>
+        <div class="description">
+          <h2><a href="#">Should you stay on campus or move off campus? &#10093;</a></h2>
+          <p>
+            A comprehensive list of pros and cons for staying on-campus and off-campus. 
+          </p>
+        </div>
+      </div>
     </div>
   </body>
-
-
- <!-- Credits: -->
- <!-- Web Development by Andrew Fischer -->
- <!-- Design and Art Direction by Alex Graves and Ilana Wurman. -->
- <!-- Creative Direction by Joyce Varma -->
- <!-- As always, this project is open source and availible on github. -->
 
   <script type="text/javascript">
     (function($) {
@@ -108,7 +263,6 @@
       {
         height: 6000,   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
         onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
-          console.log(percent);
         }
       });
     }(jQuery));

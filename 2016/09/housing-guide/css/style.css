@@ -1,12 +1,33 @@
-/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
-body
-{
-    overflow-x: hidden;
+@font-face {
+  font-family: 'roadway';
+  src: url('../font/roadway_.woff2') format('woff2'),
+       url('../font/roadway_.woff') format('woff'),
+       url('../font/roadway_.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
-/**
-  * important: keep position fixed, you can however use top:0 instead of bottom:0
-  * if you want to make it stick to the top of the browser
-  */
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lora', georgia,serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'roadway', arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #2e6e80;
+}
+
+a {
+  color: #2e6e80;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #57c3dc;
+  text-decoration: none;
+}
 .scroll
 {
     position: fixed;
