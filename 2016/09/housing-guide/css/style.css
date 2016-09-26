@@ -1,37 +1,148 @@
 @font-face {
-  font-family: 'roadway';
-  src: url('../font/roadway_.woff2') format('woff2'),
-       url('../font/roadway_.woff') format('woff'),
-       url('../font/roadway_.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'roadway';
+    src: url('../font/roadway_.woff2') format('woff2'), url('../font/roadway_.woff') format('woff'), url('../font/roadway_.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-
 body {
     overflow-x: hidden;
-    font-family: 'Lora', georgia,serif;
+    font-family: 'Lora', georgia, serif;
 }
-
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'roadway', arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #2e6e80;
+    font-family: 'roadway', arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #2e6e80;
 }
-
+img {
+    pointer-events: none;
+}
 a {
-  color: #2e6e80;
-  text-decoration: none;
+    color: #2e6e80;
+    text-decoration: none;
 }
-
 a:hover {
-  color: #57c3dc;
-  text-decoration: none;
+    color: #57c3dc;
+    text-decoration: none;
 }
-.scroll
-{
+.scroll {
     position: fixed;
     bottom: 0;
     left: 0;
 }
-
+.clouds {
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    height: 100vh;
+    width: 100vw;
+    background: url('../img/clouds.png');
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-attachment: fixed;
+    -webkit-animation: backgroundScroll 50s linear infinite;
+    animation: backgroundScroll 50s linear infinite;
+}
+@-webkit-keyframes backgroundScroll {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -500px 0;
+    }
+}
+@keyframes backgroundScroll {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -500px 0;
+    }
+}
+.scroll {
+    position: fixed;
+    bottom: -5px;
+    left: 0;
+}
+.horizon {
+    z-index: 1;
+    width: 3000px;
+}
+.middle {
+    z-index: 500;
+    width: 4000px;
+}
+.front {
+    z-index: 1000;
+    width: 6230px;
+}
+.description {
+    height: auto;
+    display: inline-block;
+    width: 400px;
+    background-color: #fff;
+    border: 5px solid #3bb87c;
+    position: relative;
+    padding: 20px;
+}
+.horizon .description {
+    z-index: 2;
+}
+.middle .description {
+    z-index: 501;
+}
+.front .description {
+    z-index: 1001;
+}
+.horizon .description:nth-child(1) {
+    left: 600px;
+    top: -500px;
+}
+.horizon .description:nth-child(2) {
+    left: 1400px;
+    top: -550px;
+}
+.horizon .description:nth-child(3) {
+    left: 1400px;
+    top: -500px;
+}
+.middle .description:nth-child(1) {
+    left: 20px;
+    top: -500px;
+}
+.middle .description:nth-child(2) {
+    left: 1150px;
+    top: -250px;
+}
+.middle .description:nth-child(3) {
+    left: 1200px;
+    /*top: -550px;*/
+}
+.front .description:nth-child(1) {
+    left: 750px;
+    top: -100px;
+}
+.front .description:nth-child(2) {
+    left: 1200px;
+    top: -150px;
+}
+.front .description:nth-child(3) {
+    left: 1300px;
+    top: -550px;
+}
+.front .description:nth-child(4) {
+    left: 2200px;
+    top: -250px;
+}
+.credits {
+    height: 102vh;
+    padding: 15px;
+    z-index: 0;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    left: 5900px;
+    box-shadow: 0px 0px 25px #222;
+    -webkit-box-shadow: 0px 0px 25px #222;
+}
