@@ -209,7 +209,7 @@ a:hover {
   position: relative;
   top: -35px;
   z-index: 501;
-  max-width: 70%;
+  /*max-width: 60%;*/
 }
 
 .ad {
@@ -229,5 +229,22 @@ a:hover {
   
   .credits {
     height: 140vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .plane img {
+    display: none;
+  }
+  
+  .ad {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .heading {
+    display: none;
   }
 }
