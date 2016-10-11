@@ -14,10 +14,23 @@
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
 ga('create', 'UA-707447-4', 'auto');
 ga('create', 'UA-55281509-16', 'auto');
 ga('send', 'pageview');
+</script>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/12234093/DP.com-Top-Rectangle', [300, 250], 'div-gpt-ad-1476229155955-0').addService(googletag.pubads());
+    googletag.defineSlot('/12234093/DP.com-mobile-leaderboard', [320, 50], 'div-gpt-ad-1476229155955-1').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
 </script>
 </head>
 <body>
@@ -29,8 +42,22 @@ ga('send', 'pageview');
       <h1>Dining Guide <small>Fall 2016</small></h1>
     </div>
     <div id='listings' class='listings'></div>
-    <div id="google_image_div" style="overflow:hidden; position:absolute"><a id="aw0" target="_blank" href="https://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=Beh-Wvzn7VpL5Ks2Y3AG355agBfX3vvoHAAAAEAEg7ZieCzgAWM3C1-TjAmDJ9qaM0KTkD7IBDXd3dy50aGVkcC5jb226AQozMDB4MjUwX2FzyAEC2gEVaHR0cDovL3d3dy50aGVkcC5jb20vmAKQTsACAuACAOoCHi8xMjIzNDA5My9EUC5jb20tVG9wLVJlY3RhbmdsZfgC99EekAPgA5gD4AOoAwHIA5kE4AQB0gUFELXju0eQBgGgBhTYBwHgBws&amp;num=0&amp;cid=5GgJYLRiJxm-3-2ZxQAY7AP0&amp;sig=AOD64_3OmwCksIlWuvz5jDtv76GGxLiyzA&amp;client=ca-pub-1146947442890318&amp;adurl=https://www.wireless.att.com/IRULoginDispatch.dyn%3Fuid%3D342029e00581dd625a0ae553664de389%26source%3DEBINpN0000000000O&amp;nm=8&amp;nx=115&amp;ny=-128&amp;mb=33" onfocus="ss('aw0')" onmousedown="st('aw0')" onmouseover="ss('aw0')" onclick="ha('aw0')"><img src="https://tpc.googlesyndication.com/simgad/5560446467290099023" border="0" width="300" height="250" alt="" class="img_ad"></a></div>
+    <div id="google-ad">
+      <div id='div-gpt-ad-1476229155955-0' style='height:250px; width:300px;'>
+        <script>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1476229155955-0'); });
+        </script>
+      </div>
+    </div>
   </div>
+  <div id="google-ad-mobile">
+    <div id='div-gpt-ad-1476229155955-1' style='height:50px; width:320px;'>
+      <script>
+      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1476229155955-1'); });
+      </script>
+    </div>
+  </div>
+
 <div id='map' class='map'> </div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiZGFpbHlwZW5uIiwiYSI6ImNpanFueGV4cTAyeWx0b201dXpzeGU3aDEifQ.6V-cf4TqyBJ9Yj9XXjQVJA';
@@ -461,6 +488,38 @@ var geojson = [
         "type": "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [ -75.158792, 39.950106]
+        },
+        "properties": {
+          "title": "MilkBoy",
+          "description": "",
+          "address":"1100 Chestnut St",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": ""
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [ -75.199279, 39.951516]
+        },
+        "properties": {
+          "title": "Bui's Food Truck",
+          "description": "",
+          "address":"Outside 298 S University Ave",
+          "marker-color": "#3096B0",
+          "marker-size": "large",
+          "marker-symbol": "restaurant",
+          "url": ""
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [ -75.144372, 39.951965]
         },
         "properties": {
@@ -486,7 +545,7 @@ L.mapbox.styleLayer('mapbox://styles/dailypenn/cijqnygqv005y94kqwb3xs46l').addTo
 map.zoomControl.removeFrom(map);
 
 var credits = L.control.attribution().addTo(map);
-credits.addAttribution('Site by Nolan Hill, Rani Ayer, & Andrew Fischer. ©2016 The Daily Pennsylvanian. Maps © Mapbox © OpenStreetMaps');
+credits.addAttribution('©2016 The Daily Pennsylvanian. Maps © Mapbox © OpenStreetMaps');
 
 function setActive(el) {
     var siblings = listings.getElementsByTagName('div');
@@ -506,7 +565,7 @@ function setActive(el) {
 
     // Each marker on the map.
     var popup = '<h3>' + prop.title + '</h3> <div class="tooltip-content">' + prop.description +
-                '<p><a href=\"' + prop.url +'\" target=\"_blank\"">' + 'Read our review'+ '</a></p>' ;
+                '<p><a href=\"' + prop.url +'\" target=\"_blank\"">' + 'Read more on 34st.com'+ '</a></p>' ;
 
     var listing = listings.appendChild(document.createElement('div'));
     listing.className = 'item';

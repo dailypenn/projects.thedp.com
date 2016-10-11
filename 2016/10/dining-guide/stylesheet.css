@@ -158,13 +158,22 @@ width: 450px;
 }
 
 .listings {
-      height: 50%;
-      background: #fff;
+  height: 50%;
+  background: #fff;
 }
 
-#google_image_div {
-  bottom: 30px;
-left: 70px;
+#google-ad {
+  position: relative;
+  bottom: -50px;
+  left: 70px;
+}
+
+#google-ad-mobile {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 750px) {
@@ -180,13 +189,19 @@ left: 70px;
   h1 {
     margin-top: -10px;
   }
-  #google_image_div {
+  #google-ad {
     display: none;
+  }
+  #google-ad-mobile {
+    display: block;
   }
 }
 
 @media only screen and (max-height: 750px) {
-  #google_image_div {
+  #google-ad {
     display: none;
+  }
+  #google-ad-mobile {
+    display: block;
   }
 }
