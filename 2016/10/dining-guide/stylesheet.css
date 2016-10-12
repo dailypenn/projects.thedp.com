@@ -1,0 +1,207 @@
+body {
+  color:#3096B0;
+  font:400 15px/22px 'Lora', 'Helvetica Neue', Sans-serif;
+  margin:0;
+  padding:0;
+  -webkit-font-smoothing:antialiased;
+}
+* {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+h1 {
+  font-size:22px;
+  margin:0;
+  font-weight:400;
+}
+h1 small {
+  color: #b8b8b8;
+}
+a {
+  color:#3096B0;
+  text-decoration:none;
+}
+a:hover { color:#1b5664; }
+
+.sidebar {
+  position:absolute;
+  width:33.3333%;
+  height: 97.5%;
+  top:0;left:0;
+  overflow:hidden;
+}
+.pad2 {
+  padding:20px;
+}
+.quiet {
+  color:#ededed;
+}
+.tooltip-content {
+  font-family: "lora";
+}
+.map {
+  position:absolute;
+  left:33.3333%;
+  width:66.6666%;
+  top:0;bottom:0;
+}
+h1, h2, h3, h4, h5, h6, .title {
+  font-family: "Neuzeit-Grotesk", sans-serif;
+  font-weight: 700;
+}
+.heading {
+  background:#FFFFFF;
+  height:60px;
+  line-height:60px;
+  padding:0 10px;
+}
+.heading img {
+  display: inline;
+  padding-top: 10px;
+  vertical-align: top;
+}
+.heading h1 {
+  display: inline;
+}
+.listings {
+  height:100%;
+  overflow:auto;
+  padding-bottom:60px;
+}
+.listings .item {
+  display:block;
+  border-bottom:1px solid #eee;
+  padding:10px;
+  text-decoration:none;
+      color: #4c4c4c;
+}
+.listings .item:last-child { border-bottom:none; }
+.listings .item .title {
+  display:block;
+  color:#3096B0;
+  font-weight:700;
+  font-size: 120%;
+}
+.listings .item .title small { font-weight:400; }
+.listings .item.active .title,
+.listings .item .title:hover { color:#3096B0; }
+.listings .item.active {
+  background-color:#f8f8f8;
+}
+.raiting {
+  color: #ffad00;
+}
+::-webkit-scrollbar {
+  width:3px;
+  height:3px;
+  border-left:0;
+  background:rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-track {
+  background:none;
+}
+::-webkit-scrollbar-thumb {
+  background: #3096B0;
+  border-radius:0;
+}
+
+.clearfix { display:block; }
+.clearfix:after {
+  content:'.';
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+
+/* Marker tweaks */
+.leaflet-popup-close-button {
+  display:none;
+}
+.leaflet-popup-content {
+  font:400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+  padding:0;
+  width:200px;
+}
+.leaflet-popup-content-wrapper {
+  padding:0;
+}
+.leaflet-popup-content h3 {
+  background:#3096B0;
+  color:#fff;
+  margin:0;
+  display:block;
+  padding:10px;
+  border-radius:3px 3px 0 0;
+  font-weight:700;
+  margin-top:-15px;
+}
+.leaflet-popup-content div {
+  padding:10px;
+}
+.leaflet-container .leaflet-marker-icon { cursor:pointer; }
+
+.sidebar {
+  margin: 15px;
+width: 450px;
+  position: absolute;
+  z-index: 100;
+}
+
+.map {
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.listings {
+  height: 50%;
+  background: #fff;
+}
+
+#google-ad {
+  position: relative;
+  bottom: -50px;
+  left: 70px;
+}
+
+#google-ad-mobile {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 750px) {
+  #listings {
+    display: none;
+  }
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    width: 100%;
+  }
+  h1 {
+    margin-top: -10px;
+  }
+  #google-ad {
+    display: none;
+  }
+  #google-ad-mobile {
+    display: block;
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  #google-ad {
+    display: none;
+  }
+  #google-ad-mobile {
+    display: block;
+  }
+}
