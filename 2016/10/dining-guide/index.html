@@ -584,7 +584,6 @@ function setActive(el) {
 
     link.onclick = function() {
       setActive(listing);
-
       // When a menu item is clicked, animate the map to center
       // its associated locale and open its popup.
       map.setView(locale.getLatLng(), 16);
@@ -594,10 +593,7 @@ function setActive(el) {
 
     // Marker interaction
     locale.on('click', function(e) {
-      // 1. center the map on the selected marker.
-      map.panTo(locale.getLatLng());
-
-      // 2. Set active the markers associated listing.
+      // Set active the markers associated listing.
       setActive(listing);
     });
 
