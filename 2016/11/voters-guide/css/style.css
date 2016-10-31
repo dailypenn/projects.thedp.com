@@ -15,6 +15,11 @@ nav h4 {
   font-weight: 700;
 }
 
+#map {
+  height: 400px;
+  width: 100%;
+}
+
 .row:first-of-type {
   padding-top: 70px;
 }
@@ -119,6 +124,13 @@ nav h4 {
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
 }
+
+.leaflet-find-poll {
+  position: absolute !important;
+  left: 60px;
+  top: 10px;
+}
+
 /*/ Header Styles*/
 body {
   font-family: 'neuzeit-grotesk', sans-serif;

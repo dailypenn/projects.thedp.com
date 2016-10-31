@@ -40,6 +40,10 @@
     node.parentNode.insertBefore(gads, node);
   })();
 </script>
+
+<script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+
 </head>
 
 <body>
@@ -128,10 +132,13 @@
         <h4>Presented by The Daily Pennsylvanian</h4>
       </center>
       <div class="col-sm-6">
-        <img src="https://api.mapbox.com/styles/v1/dpwebdev/cika7saow003j9sly4rm9c58q/static/-75.194346,39.945606,11.75,0.00,0.00/600x400?access_token=pk.eyJ1IjoiZHB3ZWJkZXYiLCJhIjoiY2lrYTdvZnU0MGpiOXYwa3BwbjA0bGJrciJ9.5wK50SNw_NQaODLWOHOboA" width="600"height="400"alt="DP Map" class="img img-responsive"/>
+        <button id="pollLoc" class="leaflet-bar leaflet-control leaflet-find-poll">
+          Find my Polling Location
+        </button>
+        <div id='map'></div>
       </div>
       <div class="col-sm-6">
-        
+
         <div class="col-xs-6">
           <img src="http://placehold.it/350x250?text=Penn%20Issues" class="img img-responsive" />
         </div>
@@ -147,7 +154,7 @@
         </div>
       </div>
     </div>
-        
+
     <div class="row">
       <h2>Get Voting: Logistics</h2>
       <div class="col-sm-4">
@@ -162,10 +169,10 @@
         </a>
       </div>
       <div class="col-sm-8">
-        
+
       </div>
     </div>
-    
+
     <div class="row">
       <h2>You as a Voterz</h2>
       <div class="col-sm-4">
@@ -180,10 +187,10 @@
         </a>
       </div>
       <div class="col-sm-8">
-        
+
       </div>
     </div>
-    
+
     <div class="row">
       <h2>On the Issues: Get a Tissue</h2>
       <div class="col-sm-4">
@@ -198,10 +205,10 @@
         </a>
       </div>
       <div class="col-sm-8">
-        
+
       </div>
     </div>
-    
+
     <div class="row">
       <h2>The Candidates</h2>
       <div class="col-sm-4">
@@ -216,10 +223,10 @@
         </a>
       </div>
       <div class="col-sm-8">
-        
+
       </div>
     </div>
-    
+
     <div class="row">
       <h2>The Road to ThE ElecCTion</h2>
       <div class="col-sm-4">
@@ -234,15 +241,17 @@
         </a>
       </div>
       <div class="col-sm-8">
-        
+
       </div>
     </div>
-    
-    
+
+
   </div>
 
+
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
   <script type="text/javascript">
   var secBtn = document.getElementById('section-dropdown-btn');
   var dropdown = document.getElementById('section-dropdown');
