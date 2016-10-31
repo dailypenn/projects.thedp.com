@@ -7,16 +7,21 @@ $("#pollLoc").on("click", function(e) {
 })
 
 function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        alert("Geolocation is not supported by this browser.");
-    }
+  var htmlAddr = $("#address").val().replace(" ", "+");
+  $.getJSON("http://maps.googleapis.com/maps/api/geocode/json?address="+htmlAddr, function(data) {
+    var lat = data.results[0].geometry.location.lat;
+    var lon = data.results[0].geometry.location.lng;
+    showPosition(lat, lon);
+  })
+//
+    // if (navigator.geolocation) {
+    //     navigator.geolocation.getCurrentPosition(showPosition);
+    // } else {
+    //     alert("Geolocation is not supported by this browser.");
+    // }
 }
 
-function showPosition(position) {
-  var lat = position.coords.latitude;
-  var lon = position.coords.longitude;
+function showPosition(lat, lon) {
   L.marker([lat, lon], {
     icon: L.mapbox.marker.icon({
       'marker-size': 'medium',
@@ -29,10 +34,7 @@ function showPosition(position) {
     var DIVISION_NUM = data.features[0].attributes.DIVISION_NUM;
     var ward = DIVISION_NUM.substring(0,2);
     var division = DIVISION_NUM.substring(2,4);
-    console.log(ward);
-    console.log(division);
     $.getJSON("http://api.phila.gov/polling-places/v1/?ward=" + ward + "&division=" + division, function( data ) {
-      console.log(data);
       var pollData = data.features[0].attributes
       var pollingLat = pollData.lat;
       var pollingLon = pollData.lng;
@@ -43,10 +45,6 @@ function showPosition(position) {
           'marker-color': '#aa1e22'
         })
       }).addTo(map);
-
     });
-});
-
-
+  });
 }
-// polling-place
