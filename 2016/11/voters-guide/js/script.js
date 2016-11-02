@@ -35,6 +35,7 @@ function showPosition(lat, lon) {
     var ward = DIVISION_NUM.substring(0,2);
     var division = DIVISION_NUM.substring(2,4);
     $.getJSON("http://api.phila.gov/polling-places/v1/?ward=" + ward + "&division=" + division, function( data ) {
+      console.log(data);
       var pollData = data.features[0].attributes
       var pollingLat = pollData.lat;
       var pollingLon = pollData.lng;
@@ -45,6 +46,7 @@ function showPosition(lat, lon) {
           'marker-color': '#aa1e22'
         })
       }).addTo(map);
+      map.flyTo({center: pollingLat, pollingLon});
     });
   });
 }
