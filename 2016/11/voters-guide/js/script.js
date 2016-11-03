@@ -6,47 +6,53 @@ $("#pollLoc").on("click", function(e) {
   getLocation();
 })
 
+String.prototype.titleCase = function () {
+    return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+};
+
+$("#address").keydown(function(event) {
+  if (event.keyCode == 13) {
+    getLocation();
+  }
+});
+
 function getLocation() {
-  var htmlAddr = $("#address").val().replace(" ", "+");
-  $.getJSON("http://maps.googleapis.com/maps/api/geocode/json?address="+htmlAddr, function(data) {
-    var lat = data.results[0].geometry.location.lat;
-    var lon = data.results[0].geometry.location.lng;
-    showPosition(lat, lon);
-  })
-//
-    // if (navigator.geolocation) {
-    //     navigator.geolocation.getCurrentPosition(showPosition);
-    // } else {
-    //     alert("Geolocation is not supported by this browser.");
-    // }
-}
+  var htmlAddr = $("#address").val().split(' ').join('+');
+  // First put their address on the map
+  $.getJSON("http://maps.googleapis.com/maps/api/geocode/json?address="+htmlAddr.split(' ').join('+'), function(data) {
+    var homeLat = data.results[0].geometry.location.lat;
+    var homeLon = data.results[0].geometry.location.lng;
+    L.marker([homeLat, homeLon], {
+      icon: L.mapbox.marker.icon({
+        'marker-size': 'small',
+        'marker-symbol': 'lodging',
+        'marker-color': '#aa1e22'
+      })
+    }).bindPopup('Your Home')
+      .addTo(map);
+  });
 
-function showPosition(lat, lon) {
-  L.marker([lat, lon], {
-    icon: L.mapbox.marker.icon({
-      'marker-size': 'medium',
-      'marker-symbol': 'lodging',
-      'marker-color': '#aa1e22'
-    })
-  }).addTo(map);
+  // then get their pollign place
+  $.getJSON("https://www.googleapis.com/civicinfo/v2/voterinfo?address=" + htmlAddr + "&electionId=5000&fields=normalizedInput%2CpollingLocations&key=AIzaSyAgx76dxL-fDfCK8IMw5qv8-_9wbfYvf1o", function( data ) {
 
-  $.getJSON("http://gis.phila.gov/ArcGIS/rest/services/PhilaGov/ServiceAreas/MapServer/22/query?geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelWithin&returnCountOnly=false&returnIdsOnly=false&returnGeometry=false&outFields=DIVISION_NUM&f=pjson&geometry=%7B%22x%22%3A" + lon + "%2C%22y%22%3A" + lat + "%7D", function( data ) {
-    var DIVISION_NUM = data.features[0].attributes.DIVISION_NUM;
-    var ward = DIVISION_NUM.substring(0,2);
-    var division = DIVISION_NUM.substring(2,4);
-    $.getJSON("http://api.phila.gov/polling-places/v1/?ward=" + ward + "&division=" + division, function( data ) {
-      console.log(data);
-      var pollData = data.features[0].attributes
-      var pollingLat = pollData.lat;
-      var pollingLon = pollData.lng;
-      L.marker([pollingLat, pollingLon], {
+    var pollingPlace = data.pollingLocations[0].address;
+    var pollAddr = pollingPlace.line1 + pollingPlace.city + ", " + pollingPlace.state;
+    pollAddr = pollAddr.replace("&", "AND");
+
+    // geocode polling place location and place on map
+    $.getJSON("http://maps.googleapis.com/maps/api/geocode/json?address="+pollAddr.split(' ').join('+'), function(data) {
+      var lat = data.results[0].geometry.location.lat;
+      var lon = data.results[0].geometry.location.lng;
+      L.marker([lat, lon], {
         icon: L.mapbox.marker.icon({
           'marker-size': 'large',
           'marker-symbol': 'polling-place',
-          'marker-color': '#aa1e22'
+          'marker-color': '#3ebeb1'
         })
-      }).addTo(map);
-      map.flyTo({center: pollingLat, pollingLon});
-    });
+      }).bindPopup('<b>'+  pollingPlace.locationName.titleCase() +'</b><br>' + pollingPlace.line1.titleCase() + "<br>")
+        .addTo(map);
+      map.setView([lat, lon], 15);
+    })
   });
+
 }
