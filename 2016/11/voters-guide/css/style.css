@@ -152,3 +152,65 @@ h1, h2, h3, h4, h5 {
 a {
   color: #aa1e22
 }
+
+.ribbon:after, .ribbon:before {
+    margin-top:0.5em;
+    content: "";
+    float:left;
+    border:1.5em solid #eeeeee;
+}
+
+.ribbon:after {
+    border-right-color:transparent;
+}
+
+.ribbon:before {
+    /*border-left-color:transparent;*/
+}
+
+.ribbon a:link, .ribbon a:visited {
+    color:#333333;
+    text-decoration:none;
+    float:left;
+    height:3.5em;
+    overflow:hidden;
+}
+
+
+.ribbon span {
+    background:#eeeeee;
+    display:inline-block;
+    line-height:3em;
+    padding:0 1em;
+    margin-top:0.5em;
+    position:relative;
+
+    -webkit-transition: background-color 0.2s, margin-top 0.2s;
+    -moz-transition: background-color 0.2s, margin-top 0.2s;
+    -ms-transition: background-color 0.2s, margin-top 0.2s;
+    -o-transition: background-color 0.2s, margin-top 0.2s;
+    transition: background-color 0.2s, margin-top 0.2s;
+}
+
+.ribbon a:hover span {
+    background:#3ebeb1;
+    margin-top:0;
+}
+
+.ribbon span:before {
+    content: "";
+    position:absolute;
+    top:3em;
+    left:0;
+    border-right:0.5em solid #51909B;
+    border-bottom:0.5em solid #eeeeee;
+}
+
+.ribbon span:after {
+    content: "";
+    position:absolute;
+    top:3em;
+    right:0;
+    border-left:0.5em solid #51909B;
+    border-bottom:0.5em solid #eeeeee;
+}
