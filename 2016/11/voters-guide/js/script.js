@@ -38,6 +38,8 @@ function getLocation() {
       })
     }).bindPopup('Your Home')
       .addTo(map);
+  }).error(function(){
+    alert("Uh oh, we couldn't find your home. Try being more specific.")
   });
 
   // then get their pollign place
@@ -61,6 +63,8 @@ function getLocation() {
         .addTo(map);
       map.setView([lat, lon], 15);
     })
+  }).error(function(){
+    alert("We can't find your polling place! Try again, or visit your local board's website for more information.")
   });
 
 }

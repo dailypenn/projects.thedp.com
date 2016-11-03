@@ -153,6 +153,10 @@ a {
   color: #aa1e22
 }
 
+a:hover {
+  color: #990e00
+}
+
 footer {
   padding-bottom: 15px;
 }
