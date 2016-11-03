@@ -153,6 +153,10 @@ a {
   color: #aa1e22
 }
 
+footer {
+  padding-bottom: 15px;
+}
+
 .ribbon:after, .ribbon:before {
     margin-top:0.5em;
     content: "";
