@@ -9,7 +9,7 @@ $('a').click(function(){
 L.mapbox.accessToken = 'pk.eyJ1IjoiZHB3ZWJkZXYiLCJhIjoiY2lrYTdvZnU0MGpiOXYwa3BwbjA0bGJrciJ9.5wK50SNw_NQaODLWOHOboA';
 var map = L.mapbox.map('map', 'mapbox.light', {attributionControl: false, infoControl: true}).setView([39.951, -75.192], 14);
 var styleLayer = L.mapbox.styleLayer('mapbox://styles/dpwebdev/ciuxcndkc00fl2js5nxo7jzt2').addTo(map);
-
+var pinLayer = L.mapbox.featureLayer().addTo(map);
 $("#pollLoc").on("click", function(e) {
   getLocation();
 })
@@ -25,6 +25,7 @@ $("#address").keydown(function(event) {
 });
 
 function getLocation() {
+  pinLayer.clearLayers();
   var htmlAddr = $("#address").val().split(' ').join('+');
   // First put their address on the map
   $.getJSON("http://maps.googleapis.com/maps/api/geocode/json?address="+htmlAddr.split(' ').join('+'), function(data) {
@@ -37,7 +38,7 @@ function getLocation() {
         'marker-color': '#aa1e22'
       })
     }).bindPopup('Your Home')
-      .addTo(map);
+      .addTo(pinLayer);
   }).error(function(){
     alert("Uh oh, we couldn't find your home. Try being more specific.")
   });
@@ -57,10 +58,10 @@ function getLocation() {
         icon: L.mapbox.marker.icon({
           'marker-size': 'large',
           'marker-symbol': 'polling-place',
-          'marker-color': '#8fd7f2;'
+          'marker-color': '#8fd7f2'
         })
       }).bindPopup('<b>'+  pollingPlace.locationName.titleCase() +'</b><br>' + pollingPlace.line1.titleCase() + "<br>")
-        .addTo(map);
+        .addTo(pinLayer);
       map.setView([lat, lon], 15);
     })
   }).error(function(){
