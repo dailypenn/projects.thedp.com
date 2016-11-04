@@ -7,7 +7,7 @@ $('a').click(function(){
 });
 
 L.mapbox.accessToken = 'pk.eyJ1IjoiZHB3ZWJkZXYiLCJhIjoiY2lrYTdvZnU0MGpiOXYwa3BwbjA0bGJrciJ9.5wK50SNw_NQaODLWOHOboA';
-var map = L.mapbox.map('map', 'mapbox.light').setView([39.951, -75.192], 14);
+var map = L.mapbox.map('map', 'mapbox.light', {attributionControl: false, infoControl: true}).setView([39.951, -75.192], 14);
 var styleLayer = L.mapbox.styleLayer('mapbox://styles/dpwebdev/ciuxcndkc00fl2js5nxo7jzt2').addTo(map);
 
 $("#pollLoc").on("click", function(e) {
