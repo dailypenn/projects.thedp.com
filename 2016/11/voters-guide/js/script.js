@@ -57,7 +57,7 @@ function getLocation() {
         icon: L.mapbox.marker.icon({
           'marker-size': 'large',
           'marker-symbol': 'polling-place',
-          'marker-color': '#3ebeb1'
+          'marker-color': '#8fd7f2;'
         })
       }).bindPopup('<b>'+  pollingPlace.locationName.titleCase() +'</b><br>' + pollingPlace.line1.titleCase() + "<br>")
         .addTo(map);

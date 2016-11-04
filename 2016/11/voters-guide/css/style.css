@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 /* HEADER STYLES */
 nav {
   font-family: 'neuzeit-grotesk', sans-serif;
@@ -145,16 +147,18 @@ body {
   font-family: 'neuzeit-grotesk', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h5 {
   font-weight: 700;
 }
 
 a {
-  color: #aa1e22
+  color: #aa1e22;
+  font-weight: 100;
 }
 
 a:hover {
-  color: #990e00
+  color: #990e00;
+  font-weight: 100;
 }
 
 footer {
@@ -173,7 +177,7 @@ footer {
 }
 
 .ribbon:before {
-    /*border-left-color:transparent;*/
+    border-left-color:transparent;
 }
 
 .ribbon a:link, .ribbon a:visited {
@@ -201,7 +205,7 @@ footer {
 }
 
 .ribbon a:hover span {
-    background:#3ebeb1;
+    background: #8fd7f2;
     margin-top:0;
 }
 
@@ -221,4 +225,8 @@ footer {
     right:0;
     border-left:0.5em solid #51909B;
     border-bottom:0.5em solid #eeeeee;
+}
+
+p {
+  font-family: open-sans, helvetica, ariel, sans-serif;
 }
