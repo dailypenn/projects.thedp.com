@@ -165,6 +165,10 @@ footer {
   padding-bottom: 15px;
 }
 
+.ribbon {
+  display: inline-block;
+}
+
 .ribbon:after, .ribbon:before {
     margin-top:0.5em;
     content: "";
