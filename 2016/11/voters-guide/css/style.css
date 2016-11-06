@@ -165,10 +165,6 @@ footer {
   padding-bottom: 15px;
 }
 
-.ribbon {
-  display: inline-block;
-}
-
 .ribbon:after, .ribbon:before {
     margin-top:0.5em;
     content: "";
@@ -181,7 +177,7 @@ footer {
 }
 
 .ribbon:before {
-    border-left-color:transparent;
+    /*border-left-color:transparent;*/
 }
 
 .ribbon a:link, .ribbon a:visited {
