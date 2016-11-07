@@ -15,6 +15,11 @@ nav h4 {
   font-weight: 700;
 }
 
+footer {
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+
 #map {
   height: 400px;
   width: 100%;
@@ -146,28 +151,28 @@ nav h4 {
 @font-face {
     font-family: 'ministry';
     src: url('../font/ministry_w00_bold_italic.woff2') format('woff2'), url('../font/ministry_w00_bold_italic.woff') format('woff'), url('../font/ministry_w00_bold_italic.ttf') format('truetype');
-    font-weight: 900;
+    font-weight: 800;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'ministry';
     src: url('../font/ministry_w00_bold.woff2') format('woff2'), url('../font/ministry_w00_bold.woff') format('woff'), url('../font/ministry_w00_bold.ttf') format('truetype');
-    font-weight: 900;
+    font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ministry';
     src: url('../font/ministry_w00_extra_bold.woff2') format('woff2'), url('../font/ministry_w00_extra_bold.woff') format('woff'), url('../font/ministry_w00_extra_bold.ttf') format('truetype');
-    font-weight: 1200;
+    font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ministry';
     src: url('../font/ministry_w00_extra_light.woff2') format('woff2'), url('../font/ministry_w00_extra_light.woff') format('woff'), url('../font/ministry_w00_extra_light.ttf') format('truetype');
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -202,14 +207,14 @@ nav h4 {
 @font-face {
     font-family: 'ministry';
     src: url('../font/ministry_w00_thin_italic.woff2') format('woff2'), url('../font/ministry_w00_thin_italic.woff') format('woff'), url('../font/ministry_w00_thin_italic.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: 100;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'ministry';
     src: url('../font/ministry_w00_thin.woff2') format('woff2'), url('../font/ministry_w00_thin.woff') format('woff'), url('../font/ministry_w00_thin.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: 100;
     font-style: normal;
 }
 /*END FONTS*/
@@ -219,5 +224,5 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 900;
+  font-weight: 800;
 }
