@@ -17,8 +17,10 @@ nav h4 {
 
 footer {
   font-weight: 200;
+  font-size: 12px;
   padding-bottom: 10px;
 }
+
 
 #map {
   height: 400px;
