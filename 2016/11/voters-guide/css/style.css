@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 
 /* HEADER STYLES */
 nav {
@@ -165,6 +165,10 @@ footer {
   padding-bottom: 15px;
 }
 
+.ribbon {
+  display: inline-block;
+}
+
 .ribbon:after, .ribbon:before {
     margin-top:0.5em;
     content: "";
@@ -177,7 +181,7 @@ footer {
 }
 
 .ribbon:before {
-    /*border-left-color:transparent;*/
+    border-left-color:transparent;
 }
 
 .ribbon a:link, .ribbon a:visited {
@@ -229,4 +233,9 @@ footer {
 
 p {
   font-family: open-sans, helvetica, ariel, sans-serif;
+}
+
+.black {
+  color: #000;
+  text-decoration: none;
 }
