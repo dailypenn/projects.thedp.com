@@ -1,0 +1,253 @@
+html {
+
+}
+/* HEADER STYLES */
+nav {
+  font-family: 'neuzeit-grotesk', sans-serif;
+  font-weight: 700;
+  user-select: none;
+  -webkit-user-select: none;
+  width: 100%;
+  z-index: 1000000;
+}
+nav .glyphicon {
+  vertical-align: text-bottom;
+  top: -0.5px;
+}
+nav h4 {
+  font-weight: 700;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.row:first-of-type {
+  padding-top: 70px;
+}
+
+.navbar-brand {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin: auto;
+}
+
+.search-field .fa {
+  margin-left: -10px;
+}
+.search-field:after {
+  content: "";
+  position: absolute;
+  left: 45px;
+  bottom: -105%;
+  height: 170%;
+  width: 1px;
+  border-right: 1px solid #777;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  max-height: 50px;
+  transition: all 250ms ease-in-out;
+}
+.menu-toggle::after {
+  transition: all 0.25s ease-in-out;
+  content: "";
+  margin-left: -10vw;
+  height: 0;
+  opacity: 0;
+}
+.menu-toggle:not(.closed) {
+  background-color: #000;
+}
+.menu-toggle:not(.closed) span {
+  color: #fff;
+}
+.menu-toggle:not(.closed)::after {
+  transition: all 0.25s ease-in-out;
+  content: "";
+  opacity: 1;
+  position: absolute;
+  width: 120vw;
+  margin-left: -10vw;
+  height: 7px;
+  background-color: black;
+}
+.menu-toggle .fa-bars {
+  padding-right: 5px;
+}
+
+.social-icons .fa {
+  padding-left: 5px;
+}
+.nav > li > a > img {
+  max-width: 40px;
+}
+.navbar-subscribe {
+  font-weight: 700;
+  font-size: 14px;
+  background: #aa1e22;
+  text-transform: uppercase;
+}
+
+.header-section {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.header-table td {
+  line-height: 1.1 !important;
+}
+
+.section-dropdown {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  margin: 0;
+  margin-top: -10px;
+  margin-bottom: 25px;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+  max-height: 1000px;
+  overflow: hidden;
+}
+.section-dropdown.closed {
+  overflow: hidden;
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+
+.leaflet-find-poll {
+  position: absolute !important;
+  left: 227px;
+  top: 10px;
+}
+
+#address {
+  max-width: 160px;
+  max-height: 27px;
+  position: absolute;
+  z-index: 10;
+  left: 60px;
+  top: 10px;
+}
+
+/*/ Header Styles*/
+
+/*FONTS*/
+@font-face {
+    font-family: 'ministry';
+    src: url('../font/ministry_w00_bold_italic.woff2') format('woff2'), url('../font/ministry_w00_bold_italic.woff') format('woff'), url('../font/ministry_w00_bold_italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ministry';
+    src: url('../font/ministry_w00_bold.woff2') format('woff2'), url('../font/ministry_w00_bold.woff') format('woff'), url('../font/ministry_w00_bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ministry';
+    src: url('../font/ministry_w00_extra_bold.woff2') format('woff2'), url('../font/ministry_w00_extra_bold.woff') format('woff'), url('../font/ministry_w00_extra_bold.ttf') format('truetype');
+    font-weight: 1200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ministry';
+    src: url('../font/ministry_w00_extra_light.woff2') format('woff2'), url('../font/ministry_w00_extra_light.woff') format('woff'), url('../font/ministry_w00_extra_light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ministry';
+    src: url('../font/ministry_w00_heavy.woff2') format('woff2'), url('../font/ministry_w00_heavy.woff') format('woff'), url('../font/ministry_w00_heavy.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ministry';
+    src: url('../font/ministry_w00_light_italic.woff2') format('woff2'), url('../font/ministry_w00_light_italic.woff') format('woff'), url('../font/ministry_w00_light_italic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ministry';
+    src: url('../font/ministry_w00_light.woff2') format('woff2'), url('../font/ministry_w00_light.woff') format('woff'), url('../font/ministry_w00_light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ministry';
+    src: url('../font/ministry_w00_medium.woff2') format('woff2'), url('../font/ministry_w00_medium.woff') format('woff'), url('../font/ministry_w00_medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ministry';
+    src: url('../font/ministry_w00_thin_italic.woff2') format('woff2'), url('../font/ministry_w00_thin_italic.woff') format('woff'), url('../font/ministry_w00_thin_italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ministry';
+    src: url('../font/ministry_w00_thin.woff2') format('woff2'), url('../font/ministry_w00_thin.woff') format('woff'), url('../font/ministry_w00_thin.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+/*END FONTS*/
+
+body {
+  font-family: "ministry";
+  background-color: #e5e5e4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+}
+
+img {
+      max-width: 100%
+}
+
+.darkblue {
+      color: #181a27;
+}
+
+.star-container {
+      padding-top: 30px;
+       width:100%;
+}
+
+.starcontainer .starheader {
+       cursor: pointer;
+}
+
+.starcontainer .starcontent {
+      display: none;
+      padding : 25px;
+      text-align: left;
+      border-style: solid;
+      border-width: 0em 0.25em 0.25em 0em;
+      border-color: #e83c25;
+}
