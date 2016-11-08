@@ -228,3 +228,56 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
 }
+
+nav {
+  opacity: .75;
+}
+
+.toc {
+  /*background: url('https://s3.amazonaws.com/media.dpn/54823_palestrao.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-*/
+  background-color: #ccc;
+}
+
+.table-contents {
+  font-size: 22px;
+  color: #fff;
+}
+
+h1 {
+  font-size: 50px;
+  color: #97cb95;
+}
+
+.table-contents a, .table-contents a:active {
+  letter-spacing: -.6px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #033450;
+}
+
+.table-contents a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.table-contents em {
+  color: #fde8a2;
+  font-weight: 200;
+}
+
+.table-contents .slashes {
+  font-weight: 300;
+  letter-spacing: -3px;
+  color: #fde8a2;
+}
+
+.toggles a {
+  color: #e73c25 !important;
+}

@@ -1,0 +1,101 @@
+.sophomore {
+    margin: 0 auto;
+    max-width: 250px;
+}
+
+.stats {
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 40px;
+  color: #97cb95;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.stats .stat-name {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+}
+
+.sophomore em {
+  color: #97cb95;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.sophomore-card:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.sophomore-card {
+    position: relative;
+    height: 370px;
+}
+
+.sophomore-card.hover-in {
+    transition: .3s ease-out;
+}
+
+.sophomore [class*="layer"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+.sophomore .layer-1 {
+  position: relative;
+  top: 12%;
+  left: 70%;
+  font-size: 34px;
+  line-height: 1.1em;
+  text-transform: uppercase;
+  pointer-events: none;
+    /*border-radius: 50%;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 100%;
+    background-color: #e83c25;*/
+}
+
+.layer-1 small {
+  font-size: 55%;
+}
+
+.sophomore .layer-2 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transform: translateZ(30px);
+    transform: translateZ(30px);
+}
+
+.sophomore .layer-3 {
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
+    left: 50%;
+    top: 70%;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    pointer-events: none; /* Prevents jumpy behavior */
+}
+
+.rothchild {
+  background-image: url(http://media.dpn.s3.amazonaws.com/54789_rothchild04o.png);
+}
+
+.donahue {
+  background-image: url(https://s3.amazonaws.com/media.dpn/54800_donahueo.png);
+  width: 84%;
+}
+
+.silpe {
+  background-image: url(https://s3.amazonaws.com/media.dpn/54802_realsilpe07o.png);
+}
