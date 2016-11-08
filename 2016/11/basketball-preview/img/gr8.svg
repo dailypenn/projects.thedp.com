@@ -3,9 +3,9 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 711.2 275.6" style="enable-background:new 0 0 711.2 275.6;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.3;fill:#014764;}
-	.st1{opacity:0.4;fill:#014764;}
-	.st2{opacity:0.6;fill:#014764;}
+	.st0{opacity:0.3;fill:#014764;enable-background:new    ;}
+	.st1{opacity:0.4;fill:#014764;enable-background:new    ;}
+	.st2{opacity:0.6;fill:#014764;enable-background:new    ;}
 	.st3{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
 	.st4{opacity:0.8;}
 	.st5{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;stroke-dasharray:2.9894,2.9894;}
@@ -31,7 +31,7 @@
 </style>
 <rect class="st0" width="109.4" height="275.6"/>
 <rect x="109.4" class="st1" width="273.5" height="275.6"/>
-<rect x="383" y="0" class="st2" width="328.3" height="275.6"/>
+<rect x="383" class="st2" width="328.3" height="275.6"/>
 <line class="st3" x1="36.4" y1="246.7" x2="665.1" y2="246.7"/>
 <g class="st4">
 	<g>
@@ -105,45 +105,52 @@
 		</g>
 	</g>
 </g>
-<path class="st7" d="M85.3,246.7v-10.2c5.6,0,10.2,4.6,10.2,10.2c0,5.6-4.6,10.2-10.2,10.2c-5.6,0-10.2-4.6-10.2-10.2
+<path class="st7" d="M85.3,246.7v-10.2c5.6,0,10.2,4.6,10.2,10.2c0,5.6-4.6,10.2-10.2,10.2s-10.2-4.6-10.2-10.2
 	c0-5.6,4.6-10.2,10.2-10.2l0,0V246.7z"/>
 <path class="st7" d="M134.1,246.7v-14.4c8,0,14.4,6.5,14.4,14.4c0,8-6.5,14.4-14.4,14.4c-8,0-14.4-6.5-14.4-14.4
 	c0-8,6.5-14.4,14.4-14.4l0,0V246.7z"/>
-<path class="st7" d="M427.3,246.7v-10.2c5.6,0,10.2,4.6,10.2,10.2c0,5.6-4.6,10.2-10.2,10.2c-5.6,0-10.2-4.6-10.2-10.2
+<path class="st7" d="M427.3,246.7v-10.2c5.6,0,10.2,4.6,10.2,10.2c0,5.6-4.6,10.2-10.2,10.2s-10.2-4.6-10.2-10.2
 	c0-5.6,4.6-10.2,10.2-10.2l0,0V246.7z"/>
 <path class="st7" d="M525,246.7v-10.2c5.6,0,10.2,4.6,10.2,10.2c0,5.6-4.6,10.2-10.2,10.2s-10.2-4.6-10.2-10.2
 	c0-5.6,4.6-10.2,10.2-10.2l0,0V246.7z"/>
 <path class="st7" d="M573.6,246.7v-14.4c8,0,14.4,6.5,14.4,14.4c0,8-6.5,14.4-14.4,14.4c-8,0-14.4-6.5-14.4-14.4
 	c0-8,6.5-14.4,14.4-14.4l0,0V246.7z"/>
-<path class="st7" d="M622.6,246.7V229c9.8,0,17.7,7.9,17.7,17.7c0,9.8-7.9,17.7-17.7,17.7c-9.8,0-17.7-7.9-17.7-17.7
-	c0-9.8,7.9-17.7,17.7-17.7l0,0V246.7z"/>
+<path class="st7" d="M622.6,246.7V229c9.8,0,17.7,7.9,17.7,17.7s-7.9,17.7-17.7,17.7s-17.7-7.9-17.7-17.7s7.9-17.7,17.7-17.7l0,0
+	V246.7z"/>
 <path class="st7" d="M671.5,246.7v-14.4c8,0,14.4,6.5,14.4,14.4c0,8-6.5,14.4-14.4,14.4c-8,0-14.4-6.5-14.4-14.4
 	c0-8,6.5-14.4,14.4-14.4l0,0V246.7z"/>
 <ellipse class="st8" cx="86.3" cy="57.1" rx="4.1" ry="4.4"/>
 <rect x="110.7" y="65.6" class="st9" width="69.9" height="28.1"/>
-<text transform="matrix(0.9395 0 0 1 128.6431 71.144)"><tspan x="0" y="0" class="st10 st11">Penn wins </tspan><tspan x="-18.7" y="7" class="st10 st11">second-ever Ivy title</tspan></text>
+<text transform="matrix(0.9395 0 0 1 128.6431 71.144)" class="st10 st11">Penn wins </text>
+<text transform="matrix(0.9395 0 0 1 111.0742 78.144)" class="st10 st11">second-ever Ivy title</text>
 <g>
 	<rect x="540.9" y="36.1" class="st9" width="65.4" height="13.6"/>
-	<text transform="matrix(0.9395 0 0 1 547.3711 41.335)"><tspan x="0" y="0" class="st10 st12">Mike McLaughlin </tspan><tspan x="-6.5" y="6.6" class="st10 st12">wins his first Ivy title</tspan></text>
+	<text transform="matrix(0.9395 0 0 1 547.3711 41.335)" class="st10 st12">Mike McLaughlin </text>
+	<text transform="matrix(0.9395 0 0 1 541.2637 47.9351)" class="st10 st12">wins his first Ivy title</text>
 </g>
 <g>
 	<rect x="589" y="99.8" class="st9" width="69.9" height="14.4"/>
-	<text transform="matrix(0.9395 0 0 1 590.1904 105.3662)"><tspan x="0" y="0" class="st10 st11">Penn wins first-ever </tspan><tspan x="18.7" y="7" class="st10 st11">Big 5 title</tspan></text>
+	<text transform="matrix(0.9395 0 0 1 590.1904 105.3662)" class="st10 st11">Penn wins first-ever </text>
+	<text transform="matrix(0.9395 0 0 1 607.7588 112.3662)" class="st10 st11">Big 5 title</text>
 </g>
 <text transform="matrix(1 0 0 1 105.5215 24.5933)" class="st13 st14 st15">The Making of Penn Women’s Basketball</text>
 <g>
 	<rect x="344.5" y="150.3" class="st9" width="69.9" height="36.4"/>
-	<text transform="matrix(0.9395 0 0 1 348.6621 155.8477)"><tspan x="0" y="0" class="st10 st11">Mike McLaughlin’s </tspan><tspan x="1.6" y="7" class="st10 st11">first year as head </tspan><tspan x="-3.6" y="14" class="st10 st11">coach, team finishes </tspan><tspan x="8.7" y="21" class="st10 st11">last in the Ivy </tspan><tspan x="19.8" y="28" class="st10 st11">League</tspan></text>
+	<text transform="matrix(0.9395 0 0 1 348.6621 155.8477)" class="st10 st11">Mike McLaughlin’s </text>
+	<text transform="matrix(0.9395 0 0 1 350.165 162.8477)" class="st10 st11">first year as head </text>
+	<text transform="matrix(0.9395 0 0 1 345.2793 169.8477)" class="st10 st11">coach, team finishes </text>
+	<text transform="matrix(0.9395 0 0 1 356.8359 176.8477)" class="st10 st11">last in the Ivy </text>
+	<text transform="matrix(0.9395 0 0 1 367.2637 183.8477)" class="st10 st11">League</text>
 </g>
 <text transform="matrix(0.9395 0 0 1 119.8325 62.1724)" class="st13 st14 st16">2003-2004</text>
-<text transform="matrix(0.9395 0 0 1 351.8179 145.1582)" class="st13 st14 st16">2009-2010</text>
+<text transform="matrix(0.9395 0 0 1 351.8174 145.1582)" class="st13 st14 st16">2009-2010</text>
 <text transform="matrix(0.9395 0 0 1 550.6963 33.2012)" class="st13 st14 st17">2013-2014</text>
 <text transform="matrix(0.9395 0 0 1 601.9199 96.3091)" class="st13 st14 st16">2014-2015</text>
 <text transform="matrix(0.9395 0 0 1 120.0381 217.3721)" class="st13 st14 st18">2004-5</text>
 <text transform="matrix(0.9395 0 0 1 72.9409 217.3721)" class="st13 st14 st18">2003-4</text>
 <text transform="matrix(0.9395 0 0 1 169.3379 217.3721)" class="st13 st14 st18">2005-6</text>
-<text transform="matrix(0.9395 0 0 1 217.5854 217.3721)" class="st13 st14 st18">2006-7</text>
-<text transform="matrix(0.9395 0 0 1 267.0522 217.3721)" class="st13 st14 st18">2007-8</text>
+<text transform="matrix(0.9395 0 0 1 217.585 217.3721)" class="st13 st14 st18">2006-7</text>
+<text transform="matrix(0.9395 0 0 1 267.0518 217.3721)" class="st13 st14 st18">2007-8</text>
 <text transform="matrix(0.9395 0 0 1 315.7852 217.3721)" class="st13 st14 st18">2008-9</text>
 <text transform="matrix(0.9395 0 0 1 414.7959 217.3721)" class="st13 st14 st18">2010-11</text>
 <line class="st3" x1="36.4" y1="209.6" x2="671.8" y2="209.6"/>
@@ -207,9 +214,9 @@
 <text transform="matrix(0.9395 0 0 1 82.7188 252.9258)" class="st13 st14 st22">1</text>
 <text transform="matrix(0.9395 0 0 1 128.1992 253.9258)" class="st13 st14 st21">2</text>
 <g>
-	<text transform="matrix(0 -0.9395 1 0 706.9131 270.7261)" class="st23 st10 st11">Lucy Ferry &amp; Ilana Wurman</text>
+	<text transform="matrix(0 -0.9395 1 0 706.9131 270.7266)" class="st23 st10 st11">Lucy Ferry &amp; Ilana Wurman</text>
 </g>
 <text transform="matrix(0.9395 0 0 1 3.144 272.71)" class="st1 st14 st24">COACH: KELLY GREENBERG</text>
-<text transform="matrix(0.9395 0 0 1 191.4448 272.71)" class="st1 st14 st24">COACH: PATRICK KNOPP</text>
+<text transform="matrix(0.9395 0 0 1 191.4448 272.71)" class="st1 st14 st24">COACH: PATRICK KNAPP</text>
 <text transform="matrix(0.9395 0 0 1 509.7949 272.71)" class="st23 st14 st24">COACH: MIKE MCLAUGHLIN</text>
 </svg>
