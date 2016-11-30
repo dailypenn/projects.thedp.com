@@ -269,7 +269,8 @@
             },
             "properties": {
               "title": "Metropolitan Bakery",
-              "description":"4013 Walnut St",
+              "address":"4013 Walnut St",
+              "description":"Short blurb about the coffee shop here",
               "id":"metro",
               "icon": {
                 "iconUrl": 'img/bean.svg',
@@ -291,7 +292,8 @@
             },
             "properties": {
               "title": "United By Blue",
-              "description":"3421 Walnut St",
+              "address":"3421 Walnut St",
+              "description":"Short blurb about the coffee shop here",
               "id":"ubb",
               "icon": {
                 "iconUrl": 'img/bean.svg',
@@ -313,7 +315,8 @@
             },
             "properties": {
               "title": "Saxbys",
-              "description":"4000 Locust st",
+              "address":"4000 Locust st",
+              "description":"Short blurb about the coffee shop here",
               "id":"saxbys",
               "icon": {
                 "iconUrl": 'img/bean.svg',
@@ -335,7 +338,8 @@
             },
             "properties": {
               "title": "Green Line Cafe",
-              "description":"28 S 40th Street",
+              "address":"28 S 40th Street",
+              "description":"Short blurb about the coffee shop here",
               "id":"gl",
               "icon": {
                 "iconUrl": 'img/bean.svg',
@@ -357,7 +361,8 @@
             },
             "properties": {
               "title": "Capogiro",
-              "description":"3925 Walnut St",
+              "address":"3925 Walnut St",
+              "description":"Short blurb about the coffee shop here",
               "id":"capo",
               "icon": {
                 "iconUrl": 'img/bean.svg',
@@ -379,7 +384,8 @@
             },
             "properties": {
               "title": "HubBub",
-              "description":"3736 Spruce St",
+              "address":"3736 Spruce St",
+              "description":"Short blurb about the coffee shop here",
               "id":"hubbub",
               "icon": {
                 "iconUrl": 'img/bean.svg',
@@ -401,7 +407,8 @@
             },
             "properties": {
               "title": "Starbucks",
-              "description":"3901 Walnut St",
+              "address":"3901 Walnut St",
+              "description":"Short blurb about the coffee shop here",
               "id":"starbucks",
               "icon": {
                 "iconUrl": 'img/bean.svg',
@@ -423,7 +430,8 @@
             },
             "properties": {
               "title": "Williams Cafe",
-              "description":"255 S 36th St",
+              "address":"255 S 36th St",
+              "description":"Short blurb about the coffee shop here",
               "id":"wilcaf",
               "icon": {
                 "iconUrl": 'img/bean.svg',
@@ -487,7 +495,7 @@
         var link = document.getElementById(prop.id);
 
         // Each marker on the map.
-        var popup = '<h3 class="tooltip-title">' + prop.title + '</h3> <div class="tooltip-content">' + prop.description;
+        var popup = '<h3 class="tooltip-title">' + prop.title + '</h3> <div class="tooltip-content"><div class="addr">' + prop.address + "</div>" + prop.description;
 
         link.onclick = function() {
           setActive(listing);

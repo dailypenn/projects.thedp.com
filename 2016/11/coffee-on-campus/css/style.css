@@ -16,6 +16,7 @@ nav h4 {
 }
 
 #map {
+  font-family: 'neuzeit-grotesk', sans-serif !important;
   height: 400px;
   width: 100%;
 }
@@ -197,6 +198,8 @@ h5 {
 
 .tooltip-title {
   color: #8e4521;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 #sponsor {
@@ -287,4 +290,43 @@ p {
 .black {
   color: #000;
   text-decoration: none;
+}
+
+.leaflet-popup-content-wrapper {
+  border: 8px solid #633213;
+  border-radius: 0;
+  width: 250px;
+  height: 90px;
+}
+
+.leaflet-popup-close-button {
+  right: 9px;
+  top: 9px;
+}
+
+.leaflet-container h3 {
+  position: relative;
+  top: -10px;
+  font-size: 20px;
+  margin-bottom: -20px;
+}
+
+.leaflet-marker-pane {
+  z-index: 1000;
+}
+
+.leaflet-popup-tip {
+  width: 5px;
+  height: 15px;
+  background-color: #fcb514;
+  margin: 0;
+  border: 0;
+  margin-left: 5px;
+  box-shadow: none;
+}
+
+.addr {
+  text-align: center;
+  font-size: 16px;
+  color: #bc7937;
 }
