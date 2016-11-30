@@ -172,7 +172,7 @@ h3 {
 }
 
 h4 {
-  height: 30px;
+  height: 70px;
   color: white;
 }
 
@@ -205,13 +205,13 @@ h4 {
 
 #vendors {
   padding-top: 30px;
-  margin-left: 20px;
+  margin-bottom: 30px;
 }
 
 .vendor {
   margin-left: 5px;
   margin-right: 5px;
-  height: 300px;
+  height: 400px;
 }
 
 #hubbub {

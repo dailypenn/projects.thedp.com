@@ -147,39 +147,127 @@
             "type": "Feature",
             "geometry": {
               "type": "Point",
-              "coordinates": [-75.201351, 39.954212]
+              "coordinates": [-75.20337430000001, 39.9544892]
             },
             "properties": {
-              "title": "Tap House",
+              "title": "Metropolitan Bakery",
               "description": "",
-              "address":"3925 Walnut Street",
-              "marker-color": "#3096B0",
+              "address":"4013 Walnut St",
+              "marker-color": "#8e4521",
               "marker-size": "large",
-              "marker-symbol": "restaurant",
-              "url": "http://www.34st.com/article/2016/10/not-all-burgers-are-created-equal"
+              "marker-symbol": "cafe"
             }
           },
           {
             "type": "Feature",
             "geometry": {
               "type": "Point",
-              "coordinates": [-75.196174, 39.953923]
+              "coordinates": [-75.19318650000002, 39.9530897]
             },
             "properties": {
-              "title": "Pod",
+              "title": "United By Blue",
               "description": "",
-              "address":"3636 Sansom St",
-              "marker-color": "#3096B0",
+              "address":"3421 Walnut St",
+              "marker-color": "#8e4521",
               "marker-size": "large",
-              "marker-symbol": "restaurant",
-              "url": "http://www.34st.com/article/2016/10/not-all-burgers-are-created-equal"
+              "marker-symbol": "cafe"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-75.2035922, 39.9521895]
+            },
+            "properties": {
+              "title": "Saxbys",
+              "description": "",
+              "address":"4000 Locust st",
+              "marker-color": "#8e4521",
+              "marker-size": "large",
+              "marker-symbol": "cafe"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-75.20227239999997, 39.95631170000001]
+            },
+            "properties": {
+              "title": "Green Line Cafe",
+              "description": "",
+              "address":"28 S 40th Street",
+              "marker-color": "#8e4521",
+              "marker-size": "large",
+              "marker-symbol": "cafe"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-75.20127489999999, 39.9543594]
+            },
+            "properties": {
+              "title": "Capogiro",
+              "description": "",
+              "address":"3925 Walnut St",
+              "marker-color": "#8e4521",
+              "marker-size": "large",
+              "marker-symbol": "cafe"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-75.19873960000001, 39.9509565]
+            },
+            "properties": {
+              "title": "Hub Bub",
+              "description": "",
+              "address":"3736 Spruce St",
+              "marker-color": "#8e4521",
+              "marker-size": "large",
+              "marker-symbol": "cafe"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-75.20037000000002, 39.954081]
+            },
+            "properties": {
+              "title": "Starbucks",
+              "description": "",
+              "address":"3901 Walnut St",
+              "marker-color": "#8e4521",
+              "marker-size": "large",
+              "marker-symbol": "cafe"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-75.195022, 39.9508653]
+            },
+            "properties": {
+              "title": "Williams Cafe",
+              "description": "",
+              "address":"255 S 36th St",
+              "marker-color": "#8e4521",
+              "marker-size": "large",
+              "marker-symbol": "cafe"
             }
           }
         ]
       }
     ];
     var map = L.mapbox.map('map', '', {attributionControl: false, zoomControl: false})
-      .setView([39.951612, -75.195022], 16);
+      .setView([39.9538660000001, -75.19730770000001], 16);
     var listings = document.getElementById('listings');
     var locations = L.mapbox.featureLayer().addTo(map);
     locations.setGeoJSON(geojson);
