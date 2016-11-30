@@ -125,11 +125,11 @@
     <div class="row">
       <center>
         <img src="img/title.png" style="width:750px"> 
-        <h2>a look at coffee prices around campus</h2>
+        <h2>a guide to coffee shops around campus</h2>
       </center>
-      <div id="sponsor">
-        <span style="" >BROUGHT TO YOU BY</span>
-        <img src="img/HubBubLogo-01.svg" style="width:50px;vertical-align:middle;">
+      <div id="sponsor" class="text-center">
+        <div>BROUGHT TO YOU BY</div>
+        <img src="img/hubbub.svg" style="width:190px;vertical-align:bottom;">
       </div>
     </div>
 
@@ -257,7 +257,7 @@
   <script>
     L.mapbox.accessToken = 'pk.eyJ1IjoiZGFpbHlwZW5uIiwiYSI6ImNpanFueGV4cTAyeWx0b201dXpzeGU3aDEifQ.6V-cf4TqyBJ9Yj9XXjQVJA';
 
-    var geojson = [
+    var geojson = 
       {
         "type": "FeatureCollection",
         "features": [
@@ -439,9 +439,13 @@
           }
         ]
       }
-    ];
-    var map = L.mapbox.map('map', '', {attributionControl: false, zoomControl: false})
-      .setView([39.9538660000001, -75.19730770000001], 16);
+    ;
+    var map = L.mapbox.map('map', '', {
+      attributionControl: false, 
+      zoomControl: false,
+      minZoom: 16,
+      maxZoom: 16
+    }).setView([39.9538660000001, -75.19730770000001], 16);
     var listings = document.getElementById('listings');
     var locations = L.mapbox.featureLayer().addTo(map);
     locations.on('layeradd', function(e) {
@@ -452,6 +456,7 @@
     locations.setGeoJSON(geojson);
 
     L.mapbox.styleLayer('mapbox://styles/dailypenn/cijqnygqv005y94kqwb3xs46l').addTo(map);
+    
     
     // disable drag and zoom
     map.dragging.disable();
@@ -486,9 +491,6 @@
 
         link.onclick = function() {
           setActive(listing);
-          // When a menu item is clicked, animate the map to center
-          // its associated locale and open its popup.
-          map.setView(locale.getLatLng(), 16);
           locale.openPopup();
           return false;
         };
