@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>Coffee on Campus</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <meta charset="utf-8" />
+  <script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
+  <link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://use.typekit.net/psa2uuo.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-707447-4', 'auto');
+  ga('create', 'UA-55281509-16', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+  <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+  </script>
+
+  <script>
+    googletag.cmd.push(function() {
+      googletag.defineSlot('/12234093/DP.com-Top-Rectangle', [300, 250], 'div-gpt-ad-1476229155955-0').addService(googletag.pubads());
+      googletag.defineSlot('/12234093/DP.com-mobile-leaderboard', [320, 50], 'div-gpt-ad-1476229155955-1').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default affix" role="navigation" data-spy="affix">
+      <a class="navbar-brand" href="#"></a>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li class="search-field">
+            <a href="http://www.thedp.com/" style="padding: 0">
+              <img class="img inline" style="margin-bottom: -25px" src="https://s3.amazonaws.com/media.dpn/50935_dp_flag_in_squaretransparentp.png" width="40" />
+            </a>
+          </li>
+          <li class="menu-toggle closed" id="section-dropdown-btn"><a>
+            <span class="fa fa-bars"></span>
+            <span class="menu-text">Sections</span></a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right social-icons">
+          <li><a href="http://www.facebook.com/dailypenn" class="fa fa-facebook"></a></li>
+          <li><a href="http://www.twitter.com/dailypenn" class="fa fa-twitter"></a></li>
+          <li><a href="http://www.instagram.com/dailypenn" class="fa fa-instagram"></a></li>
+        </ul>
+      </div>
+      <div class="row section-dropdown closed" id="section-dropdown">
+        <div class="col-sm-10">
+          <div class="section-list">
+            <div class="col-sm-3">
+              <h4>News</h4>
+              <a href="http://www.thedp.com/section/academics">Academics</a> <br>
+              <a href="http://www.thedp.com/section/administration">Administration</a> <br>
+              <a href="http://www.thedp.com/section/admissions">Admissions</a> <br>
+              <a href="http://www.thedp.com/section/crime">Crime</a> <br>
+              <a href="http://www.thedp.com/section/politics">Politics</a> <br>
+              <a href="http://www.thedp.com/section/philadelphia">Philadelphia</a> <br>
+              <a href="http://www.thedp.com/section/">Student Life</a> <br>
+            </div>
+            <div class="col-sm-3">
+              <h4>Sports</h4>
+              <a href="http://www.thedp.com/section/m_hoops">Men's Basketball</a><br>
+              <a href="http://www.thedp.com/section/w-hoops">Wrestling</a><br>
+              <a href="http://www.thedp.com/section/wrestling">Men's Squash</a><br>
+              <a href="http://www.thedp.com/section/m-squash">Women's Squash</a><br>
+              <a href="http://www.thedp.com/section/womens_squash">Men's Swimming</a><br>
+              <a href="http://www.thedp.com/section/track">Track</a>
+            </div>
+            <div class="col-sm-3">
+              <h4>Opinion</h4>
+              <a href="http://www.thedp.com/section/editorials">Staff Editorials</a><br>
+              <a href="http://www.thedp.com/section/columns">Opinion Columns</a><br>
+              <a href="http://www.thedp.com/section/letters">Letters to the Editor</a><br>
+              <a href="http://www.thedp.com/section/opinion-art">Opinion Art</a><br>
+              <a href="http://www.thedp.com/section/guest_columns">Guest Columns</a><br>
+              <a href="http://www.thedp.com/section/opinion-submissions">Submit a Column</a>
+            </div>
+            <div class="col-sm-3">
+              <h4>34<sup>th</sup> Street</h4>
+              <a href="http://www.34st.com/section/highbrow">Highbrow</a><br>
+              <a href="http://www.34st.com/section/ego">Ego</a><br>
+              <a href="http://www.34st.com/section/music">Music</a><br>
+              <a href="http://www.34st.com/section/film">Film</a><br>
+              <a href="http://www.34st.com/section/food">Food &amp; Drink</a><br>
+              <a href="http://www.34st.com/section/arts">Arts</a><br>
+              <a href="http://www.34st.com/section/lowbrow">Lowbrow</a><br>
+              <a href="http://www.34st.com/section/backpage">Backpage</a><br>
+              <a href="http://www.34st.com/section/letters">Letter</a><br>
+              <a href="http://www.34st.com/section/features">Features</a><br>
+              <a href="http://www.34st.com/section/wots">Word on the Street</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <h4>Brought to you by The Daily Pennsylvanian, Inc.</h4>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid" id="coffee">
+    <div class="row">
+      <center>
+        <img src="img/title.png" style="width:750px"> 
+        <h2>a look at coffee prices around campus</h2>
+      </center>
+      <div id="sponsor">
+        <span style="" >BROUGHT TO YOU BY</span>
+        <img src="img/HubBubLogo-01.svg" style="width:50px;vertical-align:middle;">
+      </div>
+    </div>
+
+    <div class="row">
+      <div id='map' class='map'> </div>
+    </div>  
+    <script>
+    L.mapbox.accessToken = 'pk.eyJ1IjoiZGFpbHlwZW5uIiwiYSI6ImNpanFueGV4cTAyeWx0b201dXpzeGU3aDEifQ.6V-cf4TqyBJ9Yj9XXjQVJA';
+
+    var geojson = [
+      {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-75.201351, 39.954212]
+            },
+            "properties": {
+              "title": "Tap House",
+              "description": "",
+              "address":"3925 Walnut Street",
+              "marker-color": "#3096B0",
+              "marker-size": "large",
+              "marker-symbol": "restaurant",
+              "url": "http://www.34st.com/article/2016/10/not-all-burgers-are-created-equal"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [-75.196174, 39.953923]
+            },
+            "properties": {
+              "title": "Pod",
+              "description": "",
+              "address":"3636 Sansom St",
+              "marker-color": "#3096B0",
+              "marker-size": "large",
+              "marker-symbol": "restaurant",
+              "url": "http://www.34st.com/article/2016/10/not-all-burgers-are-created-equal"
+            }
+          }
+        ]
+      }
+    ];
+    var map = L.mapbox.map('map', '', {attributionControl: false, zoomControl: false})
+      .setView([39.951612, -75.195022], 16);
+    var listings = document.getElementById('listings');
+    var locations = L.mapbox.featureLayer().addTo(map);
+    locations.setGeoJSON(geojson);
+    L.mapbox.styleLayer('mapbox://styles/dailypenn/cijqnygqv005y94kqwb3xs46l').addTo(map);
+    
+    // disable drag and zoom
+    map.dragging.disable();
+    map.touchZoom.disable();
+    map.doubleClickZoom.disable();
+    map.scrollWheelZoom.disable();
+
+    var credits = L.control.attribution().addTo(map);
+    credits.addAttribution('©2016 The Daily Pennsylvanian. Maps © Mapbox © OpenStreetMaps');
+
+    function setActive(el) {
+        var siblings = listings.getElementsByTagName('div');
+        for (var i = 0; i < siblings.length; i++) {
+          siblings[i].className = siblings[i].className
+          .replace(/active/, '').replace(/\s\s*$/, '');
+        }
+
+        el.className += ' active';
+      }
+
+      locations.eachLayer(function(locale) {
+
+        // Shorten locale.feature.properties to just `prop` so we're not
+        // writing this long form over and over again.
+        var prop = locale.feature.properties;
+
+        // Each marker on the map.
+        var popup = '<h3>' + prop.title + '</h3> <div class="tooltip-content">' + prop.description +
+                    '<p><a href=\"' + prop.url +'\" target=\"_blank\"">' + 'Read more on 34st.com'+ '</a></p>' ;
+
+        var listing = listings.appendChild(document.createElement('div'));
+        listing.className = 'item';
+
+        var link = listing.appendChild(document.createElement('a'));
+        link.href = '#';
+        link.className = 'title';
+
+        link.innerHTML = prop.title;
+
+        var details = listing.appendChild(document.createElement('div'));
+        details.innerHTML = '<i>'+ prop.address +'</i><br> ' + prop.description;
+        if (prop.phone) {
+          details.innerHTML += ' &middot; ' + prop.phoneFormatted;
+        }
+
+        link.onclick = function() {
+          setActive(listing);
+          // When a menu item is clicked, animate the map to center
+          // its associated locale and open its popup.
+          map.setView(locale.getLatLng(), 16);
+          locale.openPopup();
+          return false;
+        };
+
+        // Marker interaction
+        locale.on('click', function(e) {
+          // Set active the markers associated listing.
+          setActive(listing);
+        });
+
+        popup += '</div>';
+        locale.bindPopup(popup);
+    });
+
+    </script>
+
+    <div class="container-fluid" id="vendors">
+      <div class="col-sm-6">
+        <div class="col-sm-6">
+          <div class="col-sm-6">
+            <div class="dark vendor" id="hubbub">
+              <center>
+                <img class="logo" src="img/icedcoffee.svg">
+                <h3>Hubbub</h3>
+                <h4>2.5</h4>
+                <h4>2.25</h4>
+                <h4>2.7</h4>
+              </center>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="medium vendor">
+              <center>
+                <img class="logo" src="img/mug.svg">
+                <h3>Metropolitan Bakery</h3>
+                <h4>2.25</h4>
+                <h4>2.5</h4>
+                <h4>3.5</h4>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="col-sm-6">
+            <div class="dark vendor">
+              <center>
+                <img class="logo" src="img/pitcher.svg">
+                <h3>Green Line Cafe</h3>
+                <h4>2.1</h4>
+                <h4>2</h4>
+                <h4>3.5</h4>
+              </center>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="medium vendor">
+              <center>
+                <img class="logo" src="img/mug.svg">
+                <h3>Saxbys</h3>
+                <h4>2.05</h4>
+                <h4>2.25</h4>
+                <h4>3.2</h4>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="col-sm-6">
+        <div class="col-sm-6">
+          <div class="col-sm-6">
+            <div class="dark vendor">
+              <center>
+                <img class="logo" src="img/coldbrew.svg">
+                <h3>United By Blue</h3>
+                <h4>2.75</h4>
+                <h4>3</h4>
+                <h4>3.5</h4>
+              </center>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="medium vendor">
+              <center>
+                <img class="logo" src="img/latte.svg">
+                <h3>Capogiro</h3>
+                <h4>2.5</h4>
+                <h4>2.25</h4>
+                <h4>3.4</h4>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="col-sm-6">
+            <div class="dark vendor">
+              <center>
+                <img class="logo" src="img/papercup.svg">
+                <h3>William's Cafe</h3>
+                <h4>1.6</h4>
+                <h4>1.85</h4>
+                <h4>2.7</h4>
+              </center>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="medium vendor">
+              <center>
+                <img class="logo" src="img/mug.svg">
+                <h3>Starbucks</h3>
+                <h4>2.25</h4>
+                <h4>2.45</h4>
+                <h4>3.25</h4>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <footer class="row">
+    <div class="col-xs-12 text-center">
+      <hr>
+      &copy; 2016 The Daily Pennsylvanian, all rights reserved. Made with ☕ &nbsp;by the Web Development Team.
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
+  <script src="js/script.js"></script>
+  <script type="text/javascript">
+  var secBtn = document.getElementById('section-dropdown-btn');
+  var dropdown = document.getElementById('section-dropdown');
+  secBtn.addEventListener("click", function() {
+    'use strict';
+    dropdown.classList.toggle('closed');
+    secBtn.classList.toggle('closed');
+  });
+  </script>
+
+</body>
+</html>
