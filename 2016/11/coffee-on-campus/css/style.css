@@ -212,6 +212,7 @@ h4 {
   margin-left: 5px;
   margin-right: 5px;
   height: 400px;
+  cursor: pointer;
 }
 
 .vendor.active {
