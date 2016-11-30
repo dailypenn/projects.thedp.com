@@ -144,7 +144,7 @@
             <div class="dark vendor" id="hubbub">
               <center>
                 <img class="logo" src="img/icedcoffee.svg">
-                <a id="hubbublink"><h3>Hubbub</h3></a>
+                <h3>Hubbub</h3>
                 <h4>2.5</h4>
                 <h4>2.25</h4>
                 <h4>2.7</h4>
@@ -168,7 +168,7 @@
             <div class="dark vendor" id="gl">
               <center>
                 <img class="logo" src="img/pitcher.svg">
-                <a id="gllink"><h3>Green Line Cafe</h3></a>
+                <h3>Green Line Cafe</h3>
                 <h4>2.1</h4>
                 <h4>2</h4>
                 <h4>3.5</h4>
@@ -179,7 +179,7 @@
             <div class="medium vendor" id="saxbys">
               <center>
                 <img class="logo" src="img/mug.svg">
-                <a id="saxbyslink"><h3>Saxbys</h3></a>
+                <h3>Saxbys</h3>
                 <h4>2.05</h4>
                 <h4>2.25</h4>
                 <h4>3.2</h4>
@@ -194,7 +194,7 @@
             <div class="dark vendor" id="ubb">
               <center>
                 <img class="logo" src="img/coldbrew.svg">
-                <a id="ubblink"><h3>United By Blue</h3></a>
+                <h3>United By Blue</h3>
                 <h4>2.75</h4>
                 <h4>3</h4>
                 <h4>3.5</h4>
@@ -205,7 +205,7 @@
             <div class="medium vendor" id="capo">
               <center>
                 <img class="logo" src="img/latte.svg">
-                <a id="capolink"><h3>Capogiro</h3></a>
+                <h3>Capogiro</h3>
                 <h4>2.5</h4>
                 <h4>2.25</h4>
                 <h4>3.4</h4>
@@ -218,7 +218,7 @@
             <div class="dark vendor" id="wilcaf">
               <center>
                 <img class="logo" src="img/papercup.svg">
-                <a id="wilcaflink"><h3>William's Cafe</h3></a>
+                <h3>William's Cafe</h3>
                 <h4>1.6</h4>
                 <h4>1.85</h4>
                 <h4>2.7</h4>
@@ -229,7 +229,7 @@
             <div class="medium vendor" id="starbucks">
               <center>
                 <img class="logo" src="img/mug.svg">
-                <a id="starbuckslink"><h3>Starbucks</h3></a>
+                <h3>Starbucks</h3>
                 <h4>2.25</h4>
                 <h4>2.45</h4>
                 <h4>3.25</h4>
@@ -336,7 +336,7 @@
               "coordinates": [-75.19873960000001, 39.9509565]
             },
             "properties": {
-              "title": "Hub Bub",
+              "title": "HubBub",
               "description":"3736 Spruce St",
               "id":"hubbub",
               "marker-color": "#8e4521",
@@ -413,7 +413,7 @@
         var link = document.getElementById(prop.id);
 
         // Each marker on the map.
-        var popup = '<h3>' + prop.title + '</h3> <div class="tooltip-content">' + prop.description;
+        var popup = '<h3 class="tooltip-title">' + prop.title + '</h3> <div class="tooltip-content">' + prop.description;
 
         console.log("hi");
 
