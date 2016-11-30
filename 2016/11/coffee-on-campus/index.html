@@ -136,7 +136,118 @@
     <div class="row">
       <div id='map' class='map'> </div>
     </div>  
-    <script>
+
+    <div class="container-fluid" id="vendors">
+      <div class="col-sm-6">
+        <div class="col-sm-6">
+          <div class="col-sm-6">
+            <div class="dark vendor" id="hubbub">
+              <center>
+                <img class="logo" src="img/icedcoffee.svg">
+                <a id="hubbublink"><h3>Hubbub</h3></a>
+                <h4>2.5</h4>
+                <h4>2.25</h4>
+                <h4>2.7</h4>
+              </center>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="medium vendor" id="metro">
+              <center>
+                <img class="logo" src="img/mug.svg">
+                <h3>Metropolitan Bakery</h3>
+                <h4>2.25</h4>
+                <h4>2.5</h4>
+                <h4>3.5</h4>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="col-sm-6">
+            <div class="dark vendor" id="gl">
+              <center>
+                <img class="logo" src="img/pitcher.svg">
+                <a id="gllink"><h3>Green Line Cafe</h3></a>
+                <h4>2.1</h4>
+                <h4>2</h4>
+                <h4>3.5</h4>
+              </center>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="medium vendor" id="saxbys">
+              <center>
+                <img class="logo" src="img/mug.svg">
+                <a id="saxbyslink"><h3>Saxbys</h3></a>
+                <h4>2.05</h4>
+                <h4>2.25</h4>
+                <h4>3.2</h4>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="col-sm-6">
+        <div class="col-sm-6">
+          <div class="col-sm-6">
+            <div class="dark vendor" id="ubb">
+              <center>
+                <img class="logo" src="img/coldbrew.svg">
+                <a id="ubblink"><h3>United By Blue</h3></a>
+                <h4>2.75</h4>
+                <h4>3</h4>
+                <h4>3.5</h4>
+              </center>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="medium vendor" id="capo">
+              <center>
+                <img class="logo" src="img/latte.svg">
+                <a id="capolink"><h3>Capogiro</h3></a>
+                <h4>2.5</h4>
+                <h4>2.25</h4>
+                <h4>3.4</h4>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="col-sm-6">
+            <div class="dark vendor" id="wilcaf">
+              <center>
+                <img class="logo" src="img/papercup.svg">
+                <a id="wilcaflink"><h3>William's Cafe</h3></a>
+                <h4>1.6</h4>
+                <h4>1.85</h4>
+                <h4>2.7</h4>
+              </center>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="medium vendor" id="starbucks">
+              <center>
+                <img class="logo" src="img/mug.svg">
+                <a id="starbuckslink"><h3>Starbucks</h3></a>
+                <h4>2.25</h4>
+                <h4>2.45</h4>
+                <h4>3.25</h4>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <footer class="row">
+    <div class="col-xs-12 text-center">
+      <hr>
+      &copy; 2016 The Daily Pennsylvanian, all rights reserved. Made with ☕ &nbsp;by the Web Development Team.
+    </div>
+  </footer>
+
+  <script>
     L.mapbox.accessToken = 'pk.eyJ1IjoiZGFpbHlwZW5uIiwiYSI6ImNpanFueGV4cTAyeWx0b201dXpzeGU3aDEifQ.6V-cf4TqyBJ9Yj9XXjQVJA';
 
     var geojson = [
@@ -151,8 +262,8 @@
             },
             "properties": {
               "title": "Metropolitan Bakery",
-              "description": "",
-              "address":"4013 Walnut St",
+              "description":"4013 Walnut St",
+              "id":"metro",
               "marker-color": "#8e4521",
               "marker-size": "large",
               "marker-symbol": "cafe"
@@ -166,8 +277,8 @@
             },
             "properties": {
               "title": "United By Blue",
-              "description": "",
-              "address":"3421 Walnut St",
+              "description":"3421 Walnut St",
+              "id":"ubb",
               "marker-color": "#8e4521",
               "marker-size": "large",
               "marker-symbol": "cafe"
@@ -181,8 +292,8 @@
             },
             "properties": {
               "title": "Saxbys",
-              "description": "",
-              "address":"4000 Locust st",
+              "description":"4000 Locust st",
+              "id":"saxbys",
               "marker-color": "#8e4521",
               "marker-size": "large",
               "marker-symbol": "cafe"
@@ -196,8 +307,8 @@
             },
             "properties": {
               "title": "Green Line Cafe",
-              "description": "",
-              "address":"28 S 40th Street",
+              "description":"28 S 40th Street",
+              "id":"gl",
               "marker-color": "#8e4521",
               "marker-size": "large",
               "marker-symbol": "cafe"
@@ -211,8 +322,8 @@
             },
             "properties": {
               "title": "Capogiro",
-              "description": "",
-              "address":"3925 Walnut St",
+              "description":"3925 Walnut St",
+              "id":"capo",
               "marker-color": "#8e4521",
               "marker-size": "large",
               "marker-symbol": "cafe"
@@ -226,8 +337,8 @@
             },
             "properties": {
               "title": "Hub Bub",
-              "description": "",
-              "address":"3736 Spruce St",
+              "description":"3736 Spruce St",
+              "id":"hubbub",
               "marker-color": "#8e4521",
               "marker-size": "large",
               "marker-symbol": "cafe"
@@ -241,8 +352,8 @@
             },
             "properties": {
               "title": "Starbucks",
-              "description": "",
-              "address":"3901 Walnut St",
+              "description":"3901 Walnut St",
+              "id":"starbucks",
               "marker-color": "#8e4521",
               "marker-size": "large",
               "marker-symbol": "cafe"
@@ -256,8 +367,8 @@
             },
             "properties": {
               "title": "Williams Cafe",
-              "description": "",
-              "address":"255 S 36th St",
+              "description":"255 S 36th St",
+              "id":"wilcaf",
               "marker-color": "#8e4521",
               "marker-size": "large",
               "marker-symbol": "cafe"
@@ -283,7 +394,7 @@
     credits.addAttribution('©2016 The Daily Pennsylvanian. Maps © Mapbox © OpenStreetMaps');
 
     function setActive(el) {
-        var siblings = listings.getElementsByTagName('div');
+        var siblings = document.getElementsByClassName('vendor');
         for (var i = 0; i < siblings.length; i++) {
           siblings[i].className = siblings[i].className
           .replace(/active/, '').replace(/\s\s*$/, '');
@@ -298,24 +409,13 @@
         // writing this long form over and over again.
         var prop = locale.feature.properties;
 
+        var listing = document.getElementById(prop.id);
+        var link = document.getElementById(prop.id);
+
         // Each marker on the map.
-        var popup = '<h3>' + prop.title + '</h3> <div class="tooltip-content">' + prop.description +
-                    '<p><a href=\"' + prop.url +'\" target=\"_blank\"">' + 'Read more on 34st.com'+ '</a></p>' ;
+        var popup = '<h3>' + prop.title + '</h3> <div class="tooltip-content">' + prop.description;
 
-        var listing = listings.appendChild(document.createElement('div'));
-        listing.className = 'item';
-
-        var link = listing.appendChild(document.createElement('a'));
-        link.href = '#';
-        link.className = 'title';
-
-        link.innerHTML = prop.title;
-
-        var details = listing.appendChild(document.createElement('div'));
-        details.innerHTML = '<i>'+ prop.address +'</i><br> ' + prop.description;
-        if (prop.phone) {
-          details.innerHTML += ' &middot; ' + prop.phoneFormatted;
-        }
+        console.log("hi");
 
         link.onclick = function() {
           setActive(listing);
@@ -335,118 +435,7 @@
         popup += '</div>';
         locale.bindPopup(popup);
     });
-
-    </script>
-
-    <div class="container-fluid" id="vendors">
-      <div class="col-sm-6">
-        <div class="col-sm-6">
-          <div class="col-sm-6">
-            <div class="dark vendor" id="hubbub">
-              <center>
-                <img class="logo" src="img/icedcoffee.svg">
-                <h3>Hubbub</h3>
-                <h4>2.5</h4>
-                <h4>2.25</h4>
-                <h4>2.7</h4>
-              </center>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="medium vendor">
-              <center>
-                <img class="logo" src="img/mug.svg">
-                <h3>Metropolitan Bakery</h3>
-                <h4>2.25</h4>
-                <h4>2.5</h4>
-                <h4>3.5</h4>
-              </center>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="col-sm-6">
-            <div class="dark vendor">
-              <center>
-                <img class="logo" src="img/pitcher.svg">
-                <h3>Green Line Cafe</h3>
-                <h4>2.1</h4>
-                <h4>2</h4>
-                <h4>3.5</h4>
-              </center>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="medium vendor">
-              <center>
-                <img class="logo" src="img/mug.svg">
-                <h3>Saxbys</h3>
-                <h4>2.05</h4>
-                <h4>2.25</h4>
-                <h4>3.2</h4>
-              </center>
-            </div>
-          </div>
-        </div>
-      </div>  
-      <div class="col-sm-6">
-        <div class="col-sm-6">
-          <div class="col-sm-6">
-            <div class="dark vendor">
-              <center>
-                <img class="logo" src="img/coldbrew.svg">
-                <h3>United By Blue</h3>
-                <h4>2.75</h4>
-                <h4>3</h4>
-                <h4>3.5</h4>
-              </center>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="medium vendor">
-              <center>
-                <img class="logo" src="img/latte.svg">
-                <h3>Capogiro</h3>
-                <h4>2.5</h4>
-                <h4>2.25</h4>
-                <h4>3.4</h4>
-              </center>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="col-sm-6">
-            <div class="dark vendor">
-              <center>
-                <img class="logo" src="img/papercup.svg">
-                <h3>William's Cafe</h3>
-                <h4>1.6</h4>
-                <h4>1.85</h4>
-                <h4>2.7</h4>
-              </center>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="medium vendor">
-              <center>
-                <img class="logo" src="img/mug.svg">
-                <h3>Starbucks</h3>
-                <h4>2.25</h4>
-                <h4>2.45</h4>
-                <h4>3.25</h4>
-              </center>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>  
-  </div>
-  <footer class="row">
-    <div class="col-xs-12 text-center">
-      <hr>
-      &copy; 2016 The Daily Pennsylvanian, all rights reserved. Made with ☕ &nbsp;by the Web Development Team.
-    </div>
-  </footer>
+  </script>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
   <script src="js/script.js"></script>
