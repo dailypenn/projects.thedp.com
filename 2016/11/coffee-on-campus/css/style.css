@@ -176,6 +176,13 @@ h4 {
   color: white;
 }
 
+h5 {
+  height: 70px;
+  font-size: 9pt;
+  font-weight: 300;
+  color: white;
+}
+
 .dark {
   background-color: #502a0f;
 }
@@ -232,6 +239,31 @@ h4 {
 .col-sm-6 {
   padding-left: 0;
   padding-right: 0;
+}
+
+.col-labels {
+  padding-top: 140px;
+  width:100px;
+  position:absolute;
+  height:100%;
+}
+
+.col-sm-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.col-offset-15 {
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+.rotate {
+  position: absolute;
+  color: white;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
 }
 
 a {
