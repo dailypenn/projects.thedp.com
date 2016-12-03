@@ -15,6 +15,10 @@ nav h4 {
   font-weight: 700;
 }
 
+footer {
+  color: #fff;
+}
+
 #map {
   font-family: 'neuzeit-grotesk', sans-serif !important;
   height: 400px;
@@ -169,9 +173,13 @@ h2 {
 h3 {
   color: #fcb514;
   font-size: 12pt;
+}
+.vendor h5 {
+  color: #fcb514;
+  font-weight: 400;
+  font-size: 16px;
   height: 30px;
 }
-
 h4 {
   height: 70px;
   color: white;
@@ -245,7 +253,7 @@ h5 {
 }
 
 .col-labels {
-  padding-top: 140px;
+  padding-top: 165px;
   width:100px;
   position:absolute;
   height:100%;
@@ -263,6 +271,8 @@ h5 {
 
 .rotate {
   position: absolute;
+  font-weight: 400;
+  font-size: 13px;
   color: white;
   -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
@@ -296,7 +306,7 @@ p {
   border: 8px solid #633213;
   border-radius: 0;
   width: 250px;
-  height: 90px;
+  height: auto;
 }
 
 .leaflet-popup-close-button {
@@ -308,10 +318,11 @@ p {
   position: relative;
   top: -10px;
   font-size: 20px;
-  margin-bottom: -20px;
+  margin-bottom: -10px;
 }
 
 .leaflet-marker-pane {
+  position: relative;
   z-index: 1000;
 }
 
@@ -324,7 +335,9 @@ p {
   margin-left: 5px;
   box-shadow: none;
 }
-
+.leaflet-popup-pane {
+    z-index: 1000;
+}
 .addr {
   text-align: center;
   font-size: 16px;
