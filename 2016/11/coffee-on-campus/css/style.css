@@ -212,7 +212,6 @@ h5 {
 
 #sponsor {
   color: white;
-  margin-left: 50px;
   font-size: 15pt;
   font-family: 'neuzeit-grotesk', sans-serif;
   font-style: normal;
@@ -247,9 +246,23 @@ h5 {
   padding-right: 5px;
 }
 
-.col-sm-6 {
+.col-sm-6, .col-xs-6 {
   padding-left: 0;
   padding-right: 0;
+}
+
+.coffee-container, .coffee-container .row {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+}
+
+.coffee-container {
+  padding: 5px;
+}
+
+.coffee-container .col-labels {
+       left: -5px; 
 }
 
 .col-labels {
