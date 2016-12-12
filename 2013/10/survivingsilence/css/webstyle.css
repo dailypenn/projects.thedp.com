@@ -1,0 +1,200 @@
+@import url(http://fonts.googleapis.com/css?family=Average);
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+body {
+  color: #000000;
+  font-family: 'Average', serif;
+  font-size: 22px;
+}
+
+h1 {
+  font-weight: inherit;
+  text-transform: uppercase;
+  font-size: 200%;
+  margin: 0;
+}
+
+a {
+  color: #A0A0A0;
+}
+
+
+p {
+  max-width: 100%;
+}
+
+p.small,
+pre {
+  font-size: 70%;
+}
+
+section {
+  color: #000000;
+  padding-top: 70px;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: auto;
+  height: auto;
+}
+
+.text-left {
+  padding-top: 100px;
+  padding-left: 15%;
+  padding-right: 15%;
+  width: 100%;
+}
+
+.text-left p {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.text-left h5{
+  text-align: center;
+}
+
+.text-left ul{
+  padding-left: 8%;
+}
+
+
+.navbar,
+.navbar-default,
+.navbar-fixed-top{
+  color: #FFFFFF;
+  font-size: 14pt;
+  margin: 0px;
+}
+
+
+.navbar a{
+  color: #FFFFFF;
+  font-size: 14pt;
+  padding: 10px;
+}
+
+.navbar .dropdown-menu a,
+.navbar .dropdown-menu li{
+  font-size: 10pt;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.navbar #indent{
+  padding-left: 25px;
+  padding-right: 5px;
+}
+
+img {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.carousel-indicators{
+  visibility: hidden;
+}
+
+#footer {
+  margin: 0px;
+  padding: 5px;
+  padding-bottom: 10px;
+  background-color: #505050;
+}
+
+#footer img{
+  padding-bottom: 5px;
+  max-width: 90%;
+}
+
+#footer a{
+  color: #A0A0A0;
+}
+
+#footer .footer-text,
+#footer p {
+  margin: 3px;
+  padding: 0px;
+  font-size: 10pt;
+  color: #FFFFFF;
+}
+
+#abt h2{
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+
+#abt .panel,
+#abt .panel-default{
+  color: #FFFFFF;
+  border: none;
+  background: rgba(0, 0, 0, .4);
+  padding: 5px;
+}
+
+#abt .panel p {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#abt .panel a {
+  color: #B0B0B0;
+}
+
+#abt .panel a:hover{
+  color: #909090;
+}
+
+#intr h1{
+  font-family: 'Average', serif;
+}
+
+#intr hr{
+  margin: 5px;
+}
+
+#intr{
+  color: #FFFFFF;
+  min-height: 100%;
+}
+
+#intr .text-center{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#intr .text-center p{
+  padding: 0px;
+  margin: 0px;
+}
+
+#intr small{
+  font-size: 12pt;
+}
+
+.resources .text-left p{
+  margin:0px;
+  padding:0px;
+}
+
+iframe {
+  border: none;
+}
+
+#map {
+  width: 800px;
+  height: 500px;
+  max-width: 100%;
+  max-height: 100%;
+}
