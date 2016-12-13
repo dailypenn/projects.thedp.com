@@ -219,7 +219,7 @@ header img {
 #timeline .fa {
   font-size: 26px;
   color: #fff;
-  position: relative !important;
+  position: relative;
   top: 12px;
   left: 14px;
 }
@@ -322,7 +322,7 @@ header img {
 #timeline .date .fa {
   font-size: inherit;
   display: inline;
-  position: initial;
+  position: initial !important;
   color: inherit;
 }
 @media screen and (max-width: 768px) {
