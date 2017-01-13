@@ -22,15 +22,24 @@ a, a:active, a:hover, a:visited {
 iframe {
 	border-radius: 10px;
 }
-h1{
-	font-size: 6em;
-}
 p {
 	font-size: 1.2em;
   text-align: justify;
 	hyphens: auto;
 	word-wrap: break-word;
 	word-break: normal;
+}
+.btn {
+  font-family: 'Montserrat', sans-serif !important
+}
+a.btn-danger:active, a.btn-danger:hover, a.btn-danger {
+  color: #fff !important;
+  background-color: #aa1e22;
+  margin-left: 15px;
+}
+
+a.btn-danger:hover {
+  background-color: rgba(170, 30, 34, .9);
 }
 .sidebar {
 	position: fixed;
@@ -124,7 +133,7 @@ p {
 		), url(https://s3.amazonaws.com/media.dpn/55919_analyticsmanf.JPG);
 }
 
-#adver {
+#advert {
 	background-image:	linear-gradient(
 		rgba(0, 0, 0, 0.6),
 		rgba(0, 0, 0, 0.6)
@@ -176,7 +185,7 @@ p {
 
 .text-content {
 	color: #eee;
-	padding: 25%;
+	padding: 20%;
 	padding-bottom: 150px;
 }
 
@@ -206,15 +215,6 @@ p {
   text-align:center;
 }
 
-
-
-@media screen and (max-width: 767px) {
-	.section .row, .section {
-		width: 100% !important;
-		margin: 0 !important;
-	}
-}
-
 .section .row {
 	margin: 20px 20px 20px 350px;
 	width: calc(100% - 370px);
@@ -225,4 +225,17 @@ p {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+	.section .row, .section {
+		width: 100% !important;
+		margin: 0 !important;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+  .text-content {
+  	padding: 5%;
+  }
 }
