@@ -1,0 +1,228 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Lora);
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: 'Lora', arial,helvetica !important;
+	color: #383838;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+h1 {
+	margin-top: 0 !important;
+}
+
+a, a:active, a:hover, a:visited {
+	color: #AA1E23 !important;
+}
+
+iframe {
+	border-radius: 10px;
+}
+h1{
+	font-size: 6em;
+}
+p {
+	font-size: 1.2em;
+  text-align: justify;
+	hyphens: auto;
+	word-wrap: break-word;
+	word-break: normal;
+}
+.sidebar {
+	position: fixed;
+	z-index: 100;
+	padding: 15px
+}
+.logos {
+	padding-left: 45px;
+	padding-top: 55px;
+	padding-bottom: 55px;
+}
+.nav-list {
+	margin-left: 15px;
+}
+.section{
+	text-align:center;
+}
+.hero-logo img{
+  color: #383838;
+}
+
+#intro {
+	background-image:
+	linear-gradient(
+	rgba(0, 0, 0, 0.6),
+	rgba(0, 0, 0, 0.6)
+	),url(https://s3.amazonaws.com/media.dpn/49340_dsc_3082f.jpg);
+}
+
+#news {
+	background-image:
+	linear-gradient(
+	rgba(0, 0, 0, 0.6),
+	rgba(0, 0, 0, 0.6)
+	),url(https://s3.amazonaws.com/media.dpn/49321_screen_shot_20160112_at_123844_pmo.png);
+}
+
+#copy {
+	background-image:	linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)
+		), url(https://s3.amazonaws.com/media.dpn/49337_copyeditingf.jpg);
+}
+
+#sports{
+  background-image:	linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)
+		), url(https://s3.amazonaws.com/media.dpn/49331_sportsreportingf.jpg);
+}
+
+#social {
+	background-image:	linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)
+		), url(https://s3.amazonaws.com/media.dpn/49330_socialmediaf.jpg);
+}
+
+#photo {
+	background-image:	linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)
+		), url(https://s3.amazonaws.com/media.dpn/49329_photodepo.jpg);
+}
+
+#design {
+	background-image:	linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)
+		), url(https://s3.amazonaws.com/media.dpn/49334_designf.jpg);
+}
+
+#video {
+	background-image:	linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)
+		), url(https://s3.amazonaws.com/media.dpn/49325_videof.jpg);
+}
+
+#web {
+	background-image:	linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)
+		), url(https://s3.amazonaws.com/media.dpn/55918_codemanf.JPG);
+}
+
+#edAnal {
+  background-image:	linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)
+		), url(https://s3.amazonaws.com/media.dpn/55919_analyticsmanf.JPG);
+}
+
+#adver {
+	background-image:	linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)
+		), url(https://s3.amazonaws.com/media.dpn/49338_advertisingf.jpg);
+}
+
+#marketing {
+	background-image:	linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)
+		), url(https://s3.amazonaws.com/media.dpn/49339_analyticsf.jpg);
+}
+
+
+#circulation {
+	background-image:	linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)
+		), url(https://s3.amazonaws.com/media.dpn/49324_dsc_5140f.jpg);
+}
+
+#bizAnal {
+  background-image:	linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)
+		), url(https://s3.amazonaws.com/media.dpn/55919_analyticsmanf.JPG);
+}
+
+#sponcon {
+  background-image:	linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)
+		), url(https://s3.amazonaws.com/media.dpn/52801_ed_analyticf.jpg);
+}
+
+#street {
+	background-image:	linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)
+		), url(https://s3.amazonaws.com/media.dpn/49326_street_copyo.jpg);
+}
+
+#utb{
+  background-image:	linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)
+		), url(http://media.dpn.s3.amazonaws.com/49323_buttondarko.jpg);
+}
+
+.text-content {
+	color: #eee;
+	padding: 25%;
+	padding-bottom: 150px;
+}
+
+.text-content p,
+.col-sm-6 p, {
+	padding: 15px;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+.dept-list {
+  font-size: 1.4em;
+}
+
+.dept-list a {
+  font-size: 1.4em;
+}
+
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+	/*position: absolute;*/
+	overflow: hidden;
+	top: 0px;
+	left: 0px;
+  text-align:center;
+}
+
+
+
+@media screen and (max-width: 767px) {
+	.section .row, .section {
+		width: 100% !important;
+		margin: 0 !important;
+	}
+}
+
+.section .row {
+	margin: 20px 20px 20px 350px;
+	width: calc(100% - 370px);
+	height: calc(100% - 40px);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
