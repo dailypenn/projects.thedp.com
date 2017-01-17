@@ -1,40 +1,40 @@
 var aidAppsChart = c3.generate({
     bindto: '#aidApps',
     data: {
-            x: 'x',
             columns: [
-                ['x', '2010-01-01', '2011-01-01', '2012-01-01', '2013-01-01', '2014-01-01', '2015-01-01'],
-                ['percent applied', 30, 200, 100, 400, 150, 250]
+                ['Percent recieving Grant', 88.5, 86.1, 87.2, 90.4, 90.5, 91.1, 91.6, 91.4, 92.3, 91.9],
             ]
         },
         axis : {
             x : {
-                type : 'timeseries',
-                tick: {
-                    format: function (x) { return x.getFullYear(); }
-                  //format: '%Y' // format string is also available for timeseries data
-                }
+              label: 'Percent recieving Grant',
+              type: 'category',
+              categories: ['2007-08', '2008-09', '2009-10', '2010-11', '2011-12', '2012-13', '2013-14', '2014-15', '2015-16', '2016-17']
+            },
+            y: {
+              label: 'Percentage of Applicants'
             }
         }
+
 });
 
 
 var aidRecieptsChart = c3.generate({
     bindto: '#aidReciepts',
     data: {
-            x: 'x',
             columns: [
-                ['x', '2010-01-01', '2011-01-01', '2012-01-01', '2013-01-01', '2014-01-01', '2015-01-01'],
-                ['percent given aid', 30, 200, 100, 400, 150, 250]
+                ['Aid Applicant Total', 4473, 4727, 5029, 5060, 5217, 5346, 5383, 5396, 5368, 5165],
+                ['Aid Recipient Total', 3959, 4071, 4385, 4576, 4719, 4870, 4933, 4933, 4954, 4749]
             ]
         },
         axis : {
             x : {
-                type : 'timeseries',
-                tick: {
-                    format: function (x) { return x.getFullYear(); }
-                  //format: '%Y' // format string is also available for timeseries data
-                }
+              label: 'Years',
+              type: 'category',
+              categories: ['2007-08', '2008-09', '2009-10', '2010-11', '2011-12', '2012-13', '2013-14', '2014-15', '2015-16', '2016-17']
+            },
+            y: {
+              label: 'Students'
             }
         }
 });
@@ -54,11 +54,17 @@ var gradAid = c3.generate({
     },
     axis: {
       x: {
+        label: 'School',
         type: 'category',
-        categories: ['Grad. Arts & Sci.', 'Grad. Ed.', 'Design', 'Wharton Grad.', 'Social Policy', 'Nursing Grad.', 'WEMBA', 'Social Policy-Doc.', 'Exec. Engineering', 'Education PhD', 'Design PhD', 'Wharton PhD', 'Annenberg PhD', 'Engineering PhD', 'Dental', 'Medical', 'Law', 'Veterinary', 'Nursing PhD', 'Bio-Med']
+        categories: ['Grad. Arts & Sci.', 'Grad. Ed.', 'Design', 'Wharton Grad.', 'Social Policy', 'Nursing Grad.', 'WEMBA', 'Social Policy-Doc.', 'Exec. Engineering', 'Education PhD', 'Design PhD', 'Wharton PhD', 'Annenberg PhD', 'Engineering PhD', 'Dental', 'Medical', 'Law', 'Veterinary', 'Nursing PhD', 'Bio-Med'],
+        tick: {
+          rotate: 75,
+          multiline: false
+        },
+        height: 100
       },
       y: {
-        
+        label: 'Aid Recieved'
       }
     }
 });

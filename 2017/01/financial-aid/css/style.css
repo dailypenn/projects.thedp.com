@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'brandon-grotesque';
+    src: url('../font/brandon_bld.woff2') format('woff2'),
+         url('../font/brandon_bld.woff') format('woff'),
+         url('../font/brandon_bld.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'brandon-grotesque';
+    src: url('../font/brandon_light.woff2') format('woff2'),
+         url('../font/brandon_light.woff') format('woff'),
+         url('../font/brandon_light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'brandon-grotesque';
+    src: url('../font/brandon_reg.woff2') format('woff2'),
+         url('../font/brandon_reg.woff') format('woff'),
+         url('../font/brandon_reg.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'brandon-grotesque';
+    src: url('../font/brandon_thin.woff2') format('woff2'),
+         url('../font/brandon_thin.woff') format('woff'),
+         url('../font/brandon_thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+h2 {
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
+  color: #5d9e7e;
+  letter-spacing: 8px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
+  color: #5d9e7e;
+  letter-spacing: 4px;
+  padding: 15px;
+}
+
+body {
+  font-family: 'brandon-grotesque', helvetica, sans-serif;
+}
+tbody>tr>th {
+  color: #b8b7b7;
+  font-weight: 200;
+  border-top: none !important;
+}
+th {
+  text-align: center;
+}
+
+td {
+  border: 10px solid transparent;
+  padding: 25px;
+  text-align: center;
+  color: #888888;
+}
+td {
+  position: relative;
+  font-size: 22px;
+  top: 20px;
+}
+td small {
+  position: relative;
+  top: -15px;
+  font-size: 14px;
+}
+
+p {
+  font-size: 16px;
+}
+
+em {
+  font-weight: 400
+}
+
+large {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+large {
+  color: #5d9e7e;
+}
+
+large:.light {
+  color: #9dbda9;
+}
+
+.brown-bg {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),  url(https://s3.amazonaws.com/media.dpn/55994_across_ivy_109t.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cornell-bg {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),  url(https://s3.amazonaws.com/media.dpn/55992_across_ivy_102t.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.columbia-bg {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),  url(https://s3.amazonaws.com/media.dpn/55993_across_ivy_103t.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dartmouth-bg {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),  url(https://s3.amazonaws.com/media.dpn/55997_across_ivy_104t.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.harvard-bg {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),  url(https://s3.amazonaws.com/media.dpn/55991_across_ivy_105t.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.penn-bg {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),  url(https://s3.amazonaws.com/media.dpn/55998_across_ivy_106t.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.princeton-bg {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),  url(https://s3.amazonaws.com/media.dpn/55995_across_ivy_107t.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.yale-bg {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),  url(https://s3.amazonaws.com/media.dpn/55996_across_ivy_108t.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
