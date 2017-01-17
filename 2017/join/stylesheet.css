@@ -48,8 +48,11 @@ a.btn-danger:hover {
 }
 .logos {
 	padding-left: 45px;
-	padding-top: 55px;
-	padding-bottom: 55px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.logos > img {
+  padding: 8px;
 }
 .nav-list {
 	margin-left: 15px;
