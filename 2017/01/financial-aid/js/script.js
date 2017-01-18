@@ -16,8 +16,8 @@ var aidAppsChart = c3.generate({
       ['Percent receiving Grant', 88.5, 86.1, 87.2, 90.4, 90.5, 91.1, 91.6, 91.4, 92.3, 91.9],
     ],
     colors: {
-            'Percent receiving Grant': '#5d9f7f'
-        },
+      'Percent receiving Grant': '#5d9f7f'
+    },
   },
   axis: {
     x: {
@@ -50,9 +50,9 @@ var aidreceiptsChart = c3.generate({
       ['Aid Recipient Total', 3959, 4071, 4385, 4576, 4719, 4870, 4933, 4933, 4954, 4749]
     ],
     colors: {
-            'Aid Applicant Total': '#5d9f7f',
-            'Aid Recipient Total': '#9ebdaa'
-        },
+      'Aid Applicant Total': '#5d9f7f',
+      'Aid Recipient Total': '#9ebdaa'
+    },
   },
   axis: {
     x: {
@@ -87,10 +87,10 @@ var gradAid = c3.generate({
     ],
     type: 'bar',
     colors: {
-            Grant: '#5d9f7f',
-            Loan: '#9ebdaa',
-            Job: '#eedfa2'
-        },
+      Grant: '#5d9f7f',
+      Loan: '#9ebdaa',
+      Job: '#eedfa2'
+    },
     groups: [
       ['Job', 'Loan', 'Grant']
     ]
