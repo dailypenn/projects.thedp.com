@@ -8,6 +8,11 @@ $(document).ready(function(){
     scrollingSpeed: 500,
     scrollBar: true,
 		autoScrolling: false//,
+    // onLeave: function(index, nextIndex, direction){
+    //   var lis = document.getElementById("nav-list").getElementsByTagName("li");
+    // 
+    // }
+//,
 //		fitToSection: false
   });
 });
