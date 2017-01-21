@@ -322,7 +322,7 @@ large.light {
   #g-SRFS-Packet-Artboard_1 [class*="g-aiPstyle"] {
     font-size: 70%;
   }
-  .col-sm-4.text-right {
-    text-align: left;
+  .col-sm-4.text-right, .col-sm-4.text-left {
+    text-align: center;
   }
 }
