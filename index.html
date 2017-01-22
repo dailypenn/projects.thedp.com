@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Daily Pennsylvanian | Projects</title>
+    <title>Projects | The Daily Pennsylvanian</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="http://d1q35ni5859stt.cloudfront.net/20161213m1eLHQrMRG/dist/css/master.min.css" />
 
@@ -16,13 +16,31 @@
       a {
         color: #000;
       }
+      h1, h2, h3 {
+        margin-top: 0 !important;
+      }
+      nav img {
+        padding-top: 15px;
+      }
+      #featured-secondary {
+        padding-left: 25px;
+        margin-left: 15px;
+        margin-right: -15px;
+        border-left: 1px solid #eee;
+      }
       .row {
         margin-bottom: 15px;
       }
+      .proj-desc, .pull-left, .pull-right {
+        color: #777;
+      }
       .proj-section {
-        font-size: 14px;
+        font-size: 16px;
         color: #777;
         text-transform: uppercase;
+        padding-top: 5px;
+        padding-bottom: 0;
+        font-weight: 200;
       }
       .img-full {
         width: 100%;
@@ -34,6 +52,14 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <center>
+        <a href="http://www.thedp.com">
+          <img src="https://s3.amazonaws.com/media.dpn/56240_dpwordmark750o.png" alt="The Daily Pennsylvainian" width="250">
+        </a>
+      </center>
+    </nav>
 
     <div class="container">
 
@@ -47,6 +73,8 @@
         <div class="col-sm-8" id="featured-main"></div>
         <div class="col-sm-4" id="featured-secondary"></div>
       </div>
+
+      <hr>
 
       <div class="row" id="articles">
       </div>
