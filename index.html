@@ -8,6 +8,22 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="http://d1q35ni5859stt.cloudfront.net/20161213m1eLHQrMRG/dist/css/master.min.css" />
 
+    <!-- DFP Ads -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+      var googletag = googletag || {};
+      googletag.cmd = googletag.cmd || [];
+    </script>
+
+    <script>
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/12234093/DP.com-mobile-leaderboard', [320, 50], 'div-gpt-ad-1485118541142-0').addService(googletag.pubads());
+        googletag.defineSlot('/12234093/DP.com-Leaderboard', [728, 90], 'div-gpt-ad-1485118541142-1').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+      });
+    </script>
+
     <!-- CSS -->
     <style media="screen">
       body {
@@ -66,6 +82,25 @@
       <div class="row">
         <div class="col-xs-12">
           <h1>DP Projects &amp; Guides</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="hidden-xs hidden-sm">
+          <!-- /12234093/DP.com-Leaderboard -->
+          <div id='div-gpt-ad-1485118541142-1' style='height:90px; width:728px;'>
+            <script>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1485118541142-1'); });
+            </script>
+          </div>
+        </div>
+        <div class="hidden-md hidden-lg">
+          <!-- /12234093/DP.com-mobile-leaderboard -->
+          <div id='div-gpt-ad-1485118541142-0' style='height:50px; width:320px;'>
+            <script>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1485118541142-0'); });
+            </script>
+          </div>
         </div>
       </div>
 
