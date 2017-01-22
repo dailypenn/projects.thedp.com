@@ -102,12 +102,12 @@ var gradAid = c3.generate({
         position: 'outer-center'
       },
       type: 'category',
-      categories: ['Grad. Arts & Sci.', 'Grad. Ed.', 'Design', 'Wharton Grad.', 'Social Policy', 'Nursing Grad.', 'Wharton Exec. MBA', 'Social Policy Doc.', 'Exec. Engineering', 'Education Ph. D.', 'Design Ph. D.', 'Wharton Ph. D.', 'Annenberg Ph. D.', 'Engineering Ph. D.', 'Dental', 'Medical', 'Law', 'Veterinary', 'Nursing Ph. D.', 'Bio-Med Eng.'],
+      categories: ['Grad. Arts & Sci.', 'Grad. Ed.', 'Design', 'Wharton Grad.', 'Social Policy', 'Nursing Grad.', 'Wharton Exec. MBA', 'Social Policy Doc.', 'Exec. Engineering', 'Education Ph.D.', 'Design Ph.D.', 'Wharton Ph.D.', 'Annenberg Ph.D.', 'Engineering Ph.D.', 'Dental', 'Medical', 'Law', 'Veterinary', 'Nursing Ph.D.', 'Bio-Med Eng.'],
       tick: {
-        rotate: 75,
+        rotate: 90,
         multiline: false
       },
-      height: 110
+      height: 120
     },
     y: {
       label: {
