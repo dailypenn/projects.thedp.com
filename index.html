@@ -5,38 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Daily Pennsylvanian | Projects</title>
-
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://d1q35ni5859stt.cloudfront.net/20161213m1eLHQrMRG/dist/css/master.min.css" />
 
+    <!-- CSS -->
+    <style media="screen">
+      body {
+        font-family: neuzeit-grotesk, Helvetica, Arial, sans-serif;
+      }
+      a {
+        color: #000;
+      }
+      .row {
+        margin-bottom: 15px;
+      }
+      .proj-section {
+        font-size: 14px;
+        color: #777;
+        text-transform: uppercase;
+      }
+      .img-full {
+        width: 100%;
+      }
+    </style>
+
+    <!-- Typekit -->
+    <script src="https://use.typekit.net/psa2uuo.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
 
     <div class="container">
-      <center>
-        <h3>Web Development Team</h3>
-      </center>
-      <div class="col-sm-6">
-        <h4>Director of Online Projects</h4>
-        Andrew Fischer
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>DP Projects &amp; Guides</h1>
+        </div>
       </div>
 
-      <div class="col-sm-6">
-        <h4>Development Team</h4>
-        <ul>
-          <li>Nolan Hill</li>
-          <li>Ming Zhang</li>
-          <li>Mikael Mantis</li>
-          <li>Aspyn Palatnick</li>
-          <li>Alex Graves</li>
-        </ul>
+      <div class="row" id="featured">
+        <div class="col-sm-8" id="featured-main"></div>
+        <div class="col-sm-4" id="featured-secondary"></div>
       </div>
+
+      <div class="row" id="articles">
+      </div>
+
     </div>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
+
+  <script type="text/javascript">
+  $.getJSON( "./projects.json", function(data) {
+    // console.log(data);
+
+    $.each(data.featured, function(artIndex) {
+      var article = data.featured[artIndex];
+      console.log(article);
+      var htmlStr = '';
+      if (artIndex === 0) {
+        htmlStr =
+          '<div><img src="' + article.image + '" class="img img-responsive img-full"></div>'+
+          '<div>' +
+            '<div class="proj-section">' + article.section + '</div>' +
+            '<a href="' + article.link + '">' + '<h1>' + article.title + '</h1></a>' +
+            '<div class="proj-desc">' + article.description + '</div><br>' +
+            '<span class="date pull-left">' + article.date + '</span>' +
+            '<span class="author pull-right">' + (article.sponsored ? 'Sponsored by ' + article.author : article.author) + '</span>' +
+          '</div>'
+        $('#featured-main').append(htmlStr);
+      } else {
+        htmlStr =
+          '<div><img src="' + article.image + '" class="img img-responsive img-full"></div>'+
+          '<div>' +
+            '<div class="proj-section">' + article.section + '</div>' +
+            '<a href="' + article.link + '">' + '<h3>' + article.title + '</h3></a>' +
+            '<div class="proj-desc">' + article.description + '</div><br>' +
+            '<span class="date pull-left">' + article.date + '</span>' +
+            '<span class="author pull-right">' + (article.sponsored ? 'Sponsored by ' + article.author : article.author) + '</span>' +
+          '</div>'
+        $('#featured-secondary').append(htmlStr);
+      }
+    })
+
+
+    $.each(data.articles, function(artIndex) {
+      var article = data.articles[artIndex];
+      console.log(article);
+      var htmlStr =
+        '<div class="row">' +
+          '<div class="col-sm-4"><img src="' + article.image + '" class="img img-responsive"></div>'+
+          '<div class="col-sm-8">' +
+            '<div class="proj-section">' + article.section + '</div>' +
+            '<a href="' + article.link + '">' + '<h2>' + article.title + '</h2></a>' +
+            '<div class="proj-desc">' + article.description + '</div><br>' +
+            '<span class="date pull-left">' + article.date + '</span>' +
+            '<span class="author pull-right">' + (article.sponsored ? 'Sponsored by ' + article.author : article.author) + '</span>' +
+          '</div>' +
+        '</div>'
+      console.log(htmlStr);
+      $('#articles').append(htmlStr);
+    })
+
+    // var featured = [];
+    // $.each( data, function( key, val ) {
+    //   items.push( "<li id='" + key + "'>" + val + "</li>" );
+    // });
+    //
+    // $( "<ul/>", {
+    //   "class": "my-new-list",
+    //   html: items.join( "" )
+    // }).appendTo( "body" );
+  });
+  </script>
 </html>

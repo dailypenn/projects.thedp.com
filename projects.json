@@ -1,0 +1,52 @@
+{
+  "featured": [
+    {
+      "title": "Coffee on Campus",
+      "author": "HubBub Coffee; Design: A. Graves, I. Wurman",
+      "section": "Arts & Culture",
+      "date": "December 2016",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sponsored": true,
+      "link": "http://projects.thedp.com/2016/11/coffee-on-campus/",
+      "image": "https://s3.amazonaws.com/media.dpn/56237_coffeeoncampusimgo.png"
+    }, {
+      "title": "Street Dining Guide",
+      "author": "Web Dev: Nolan Hill",
+      "section": "Guides",
+      "date": "Fall 2016",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2016/10/dining-guide/",
+      "image": "https://s3.amazonaws.com/media.dpn/56238_diningguideimgo.png"
+    }, {
+      "title": "Basketball Supplement",
+      "author": "J. Schorr, M. Mantis, A. Fischer",
+      "section": "Sports",
+      "date": "November 2016",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2016/11/basketball-preview/",
+      "image": "http://media.dpn.s3.amazonaws.com/54828_ogimgbballsuppo.jpg"
+    }
+  ],
+  "articles": [
+    {"title": "Coffee on Campus",
+      "author": "HubBub Coffee",
+      "section": "Arts & Culture",
+      "date": "November 2016",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sponsored": true,
+      "link": "projects.thedp.com/2016/blahblah",
+      "image": "s3.aws.com/blahblahblah"
+    }, {
+      "title": "15 Places to Go in Philadelphia",
+      "author": "Analyn Delos Santos",
+      "section": "Arts & Culture",
+      "date": "November 2016",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2015/05/fifteen-places/",
+      "image": "https://s3.amazonaws.com/media.dpn/56236_fifteenplacesheaderimgf.png"
+    }
+  ]
+}
