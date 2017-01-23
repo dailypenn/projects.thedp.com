@@ -91,7 +91,7 @@ var aidAppsChart = c3.generate({
   axis: {
     x: {
       label: {
-        text: 'Percent receiving grant',
+        text: 'Years',
         position: 'inner-right'
       },
       type: 'category',
@@ -139,7 +139,7 @@ var aidreceiptsChart = c3.generate({
     },
     y: {
       label: {
-        text: 'Students',
+        text: 'Number of students',
         position: 'inner-top'
       }
     }
