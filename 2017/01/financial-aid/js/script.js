@@ -1,13 +1,82 @@
-// var numPerStudent = c3.generate({
-//     bindto: '#numPerStudent',
-//     data: {
-//       columns: [
-//         ['data1', 30, 200, 100, 400, 150, 250],
-//         ['data2', 130, 100, 140, 200, 150, 50]
-//       ],
-//       type: 'bar'
-//     },
-//   });
+var dollarsPerStudent = c3.generate({
+  bindto: '#dollarsPerStudent',
+  data: {
+    columns: [
+      ['Average financial aid package', 46000, 38758, 47490, 46315, 49935, 48605, 48000, 43989],
+      ['Cost of attendance', 68106, 67613, 71585, 69474, 66900, 69340, 66645, 68230]
+    ],
+    type: 'bar',
+    colors: {
+      'Average financial aid package': '#9ebdaa',
+      'Cost of attendance': '#5d9f7f'
+    }
+  },
+  bar: {
+    width: {
+      ratio: 0.5
+    }
+  },
+  axis: {
+    x: {
+      label: {
+        text: 'School',
+        position: 'outer-center'
+      },
+      type: 'category',
+      categories: ['Brown', 'Cornell', 'Columbia', 'Dartmouth', 'Harvard', 'Penn', 'Princeton', 'Yale'],
+      tick: {
+        rotate: 75,
+        multiline: false
+      },
+      height: 90
+    },
+    y: {
+      label: {
+        text: 'Dollars',
+        position: 'outer-middle'
+      }
+    }
+  }
+});
+
+var percentReceive = c3.generate({
+  bindto: '#percentReceive',
+  data: {
+    columns: [
+      ['Percent receiving financial aid', 42, 46.6, 50, 51, 56, 47, 60, 63]
+    ],
+    type: 'bar',
+    colors: {
+      'Percent receiving financial aid': '#5d9f7f',
+    }
+  },
+  bar: {
+    width: {
+      ratio: 0.5
+    }
+  },
+  axis: {
+    x: {
+      label: {
+        text: 'School',
+        position: 'outer-center'
+      },
+      type: 'category',
+      categories: ['Brown', 'Cornell', 'Columbia', 'Dartmouth', 'Harvard', 'Penn', 'Princeton', 'Yale'],
+      tick: {
+        rotate: 75,
+        multiline: false
+      },
+      height: 90
+    },
+    y: {
+      label: {
+        text: 'Percentage',
+        position: 'outer-middle'
+      }
+    }
+  }
+});
 
 var aidAppsChart = c3.generate({
   bindto: '#aidApps',
