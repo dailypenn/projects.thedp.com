@@ -28,6 +28,8 @@
     <style media="screen">
       body {
         font-family: neuzeit-grotesk, Helvetica, Arial, sans-serif;
+        padding-left: 15px;
+        padding-right: 15px;
       }
       a {
         color: #000;
@@ -61,6 +63,12 @@
       .img-full {
         width: 100%;
       }
+      .secondary-feature:first-of-type {
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eee;
+      }
+
     </style>
 
     <!-- Typekit -->
@@ -123,11 +131,9 @@
 
   <script type="text/javascript">
   $.getJSON( "./projects.json", function(data) {
-    // console.log(data);
 
     $.each(data.featured, function(artIndex) {
       var article = data.featured[artIndex];
-      console.log(article);
       var htmlStr = '';
       if (artIndex === 0) {
         htmlStr =
@@ -142,22 +148,20 @@
         $('#featured-main').append(htmlStr);
       } else {
         htmlStr =
-          '<div><img src="' + article.image + '" class="img img-responsive img-full"></div>'+
+          '<div class="secondary-feature"><div><img src="' + article.image + '" class="img img-responsive img-full"></div>'+
           '<div>' +
             '<div class="proj-section">' + article.section + '</div>' +
             '<a href="' + article.link + '">' + '<h3>' + article.title + '</h3></a>' +
             '<div class="proj-desc">' + article.description + '</div><br>' +
             '<span class="date pull-left">' + article.date + '</span>' +
             '<span class="author pull-right">' + (article.sponsored ? 'Sponsored by ' + article.author : article.author) + '</span>' +
-          '</div>'
+          '</div></div>'
         $('#featured-secondary').append(htmlStr);
       }
     })
 
-
     $.each(data.articles, function(artIndex) {
       var article = data.articles[artIndex];
-      console.log(article);
       var htmlStr =
         '<div class="row">' +
           '<div class="col-sm-4"><img src="' + article.image + '" class="img img-responsive"></div>'+
@@ -169,7 +173,6 @@
             '<span class="author pull-right">' + (article.sponsored ? 'Sponsored by ' + article.author : article.author) + '</span>' +
           '</div>' +
         '</div>'
-      console.log(htmlStr);
       $('#articles').append(htmlStr);
     })
 
