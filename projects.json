@@ -1,52 +1,86 @@
 {
   "featured": [
     {
-      "title": "Coffee on Campus",
-      "author": "HubBub Coffee; Design: A. Graves, I. Wurman",
+      "title": "Financially Speaking: A guide to financial aid at Penn",
+      "author": "Online Graphics Department; Web Dev: A. Fischer",
+      "section": "Guides",
+      "date": "January 2017",
+      "description": "With data provided by Penn Student Registration & Financial Services (SRFS) and other resources, The Daily Pennsylvanian Online Graphics Department took a deeper look into financial aid at Penn. These comparisons, infographics and interactive maps provide a transparent look at how Penn’s policies compare with those of other Ivy League schools, how aid packages differ for students from across the country and around the world and how work study functions, to name a few.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2017/01/financial-aid/",
+      "image": "https://s3.amazonaws.com/media.dpn/56319_financialaidogf.png"
+    },
+    {
+      "title": "2016 in Review",
+      "author": "Web Dev: A. Fischer",
+      "section": "Year in Review",
+      "date": "December 2016",
+      "description": "Catch up on the events at Penn and in Philly that shaped 2016 in the DP's annual Year in Review.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2016/12/year-in-review/",
+      "image": "https://s3.amazonaws.com/media.dpn/55750_2016yir01p.png"
+    },
+    {
+      "title": "Coffee Break: A guide to coffee shops around campus",
+      "author": "HubBub Coffee; Design: A. Graves, I. Wurman; Web Dev: N. Hill, A. Fischer",
       "section": "Sponsored Interactives",
-      "date": "Dec. '16",
+      "date": "December 2016",
       "description": "Use an interactive map to view and compare prices and locations of coffee shops on campus.",
       "sponsored": true,
       "link": "http://projects.thedp.com/2016/11/coffee-on-campus/",
-      "image": "https://s3.amazonaws.com/media.dpn/56237_coffeeoncampusimgo.png"
-    }, {
-      "title": "Street Dining Guide",
-      "author": "Web Dev: Nolan Hill",
-      "section": "Guides",
-      "date": "Fall '16",
-      "description": "Explore Street's favorite places to eat on this interactive map.",
-      "sponsored": false,
-      "link": "http://projects.thedp.com/2016/10/dining-guide/",
-      "image": "https://s3.amazonaws.com/media.dpn/56238_diningguideimgo.png"
-    }, {
-      "title": "Basketball Supplement",
-      "author": "J. Schorr, M. Mantis, A. Fischer",
-      "section": "Sports",
-      "date": "Nov. '16'",
-      "description": "A preview of the 2016 basketball season.",
-      "sponsored": false,
-      "link": "http://projects.thedp.com/2016/11/basketball-preview/",
-      "image": "http://media.dpn.s3.amazonaws.com/54828_ogimgbballsuppo.jpg"
+      "image": "https://s3.amazonaws.com/media.dpn/56237_coffeeoncampusimgp.png"
     }
   ],
   "articles": [
-    {"title": "Your Courses, Deconstructed",
-      "author": "Jill Castilano",
-      "section": "DataViz",
+    {
+      "title": "Basketball Supplement",
+      "author": "Design: J. Schorr; Web Dev: M. Mantis, A. Fischer",
+      "section": "Sports",
       "date": "November 2016",
+      "description": "A preview of the 2016 basketball season.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2016/11/basketball-preview/",
+      "image": "http://media.dpn.s3.amazonaws.com/54828_ogimgbballsuppp.jpg"
+    },
+    {
+      "title": "Voter's Guide",
+      "author": "Web Dev: A. Fischer",
+      "section": "Guides",
+      "date": "November 2016'",
+      "description": "Your guide to the candidates, policies and logistics for Election Day on November 8.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2016/11/voters-guide/",
+      "image": "https://s3.amazonaws.com/media.dpn/54667_50916_supertuesdayfp.jpg"
+    },
+    {
+      "title": "Street Dining Guide",
+      "author": "Web Dev: N. Hill",
+      "section": "Guides",
+      "date": "October 2016",
+      "description": "Explore Street's favorite places to eat on this interactive map.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2016/10/dining-guide/",
+      "image": "https://s3.amazonaws.com/media.dpn/56238_diningguideimgp.png"
+    },
+    {
+      "title": "Housing Guide 2016",
+      "author": "Design: A. Graves, I. Wurman; Web Dev: A. Fischer",
+      "section": "Guides",
+      "date": "September 2016",
+      "description": "Explore Street's favorite places to eat on this interactive map.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2016/09/housing-guide/",
+      "image": "https://s3.amazonaws.com/media.dpn/53728_housingguidefbp.png"
+    },
+    {
+      "title": "Your courses, deconstructed",
+      "author": "Web Dev: A. Fischer, M. Mantis",
+      "section": "Data Viz",
+      "date": "April 2016",
       "description": "The Daily Pennsylvanian was able to gain access to all available Penn Course Review data, which contains an enormous number of student evaluations of their classes going back over a decade. Through data analysis, we've been able to address some of the most simple and complex questions students might wonder about their academics.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2016/04/PCR/",
-      "image": "https://s3.amazonaws.com/media.dpn/56239_screen_shot_20170122_at_33810_pmo.png"
-    }, {
-      "title": "15 Places to Go in Philadelphia",
-      "author": "Analyn Delos Santos",
-      "section": "Arts & Culture",
-      "date": "May 2015",
-      "description": "The DP has compiled fifteen places you need to visit during your time in Philadelphia.",
-      "sponsored": false,
-      "link": "http://projects.thedp.com/2015/05/fifteen-places/",
-      "image": "https://s3.amazonaws.com/media.dpn/56236_fifteenplacesheaderimgf.png"
+      "image": "https://s3.amazonaws.com/media.dpn/56239_screen_shot_20170122_at_33810_pmp.png"
     }
   ]
 }

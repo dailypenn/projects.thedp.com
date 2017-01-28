@@ -306,6 +306,10 @@ large.light {
 }
 .g-aiPtransformed p { white-space: nowrap; }
 
+.stats .col-sm-6 {
+  padding-top: 15px;
+}
+
 @media screen and (max-width: 767px) {
   td:not(.name):not(.value) {
     /*border: 2px solid transparent;*/
