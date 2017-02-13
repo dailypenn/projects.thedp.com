@@ -70,6 +70,36 @@
     h1, h2, h3, h4 {
       color: #8E778B;
     }
+    a {
+      float: right;
+      position: absolute;
+      bottom: 3px;
+      right: 7px;
+    }
+    .stylish-input-group .input-group-addon{
+    background: white !important;
+  }
+  .stylish-input-group .form-control{
+    border-right:0;
+    box-shadow:0 0 0;
+    border-color:#ccc;
+  }
+  .stylish-input-group .fa {
+    border:0;
+    background:transparent;
+  }
+  @media screen and (max-width: 720px) {
+      body {
+        padding: 15px;
+      }
+      .square {
+        width: 100%;
+        font-size: 80%;
+      }
+      .container {
+        padding-left: 0;
+      }
+    }
     </style>
 
     <script src="https://use.typekit.net/psa2uuo.js"></script>
@@ -91,33 +121,62 @@
   <body>
     <div class="container">
       <h1>LO\/3/\/0t3z</h1>
+      <div class="row">
+        <div class="col-sm-4 col-sm-push-4">
+          <div class="input-group stylish-input-group">
+            <input type="text" class="form-control" placeholder="Search" id="search">
+            <span class="input-group-addon">
+              <span class="fa fa-search"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
       <div class="row" id="lovenotes"></div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
     <script type="text/javascript">
-      var csv = $.get('./notes.csv', function( data ) {
-        // console.log(data);
-        var notes = $.csv.toArrays(data);
-        console.log(notes)
-        notesList = $('#lovenotes')
-        for (var note in notes) {
-          var curNote = notes[note];
-          notesList.append(
+      var NOTES;
 
+      var renderNotes = function() {
+        notesList = $('#lovenotes')
+        for (var note in NOTES) {
+          var curNote = NOTES[note];
+          notesList.append(
             '<div class="square">' +
               '<div class="content">' +
                 '<div class="table">' +
                   '<div class="table-cell">' +
                       curNote[1] + '<br>' +
-                      '<a href="http://www.facebook.com/share.php?u=lovenotes.edu&title=' + curNote[1] + '"><i class="fa fa-facebook"></i> Share </i><small><i class="fa fa-share fa-sm"></i></small></a>' +
+                      '<a href="http://www.facebook.com/share.php?u=lovenotes.edu&title=DP+Lovenotes%3A ' + curNote[1] + '"><i class="fa fa-facebook"></i> Share </i><small><i class="fa fa-share fa-sm"></i></small></a>' +
                   '</ul>' +
                 '</div>' +
               '</div>' +
             '</div>'
           );
         }
+      }
+
+      $(document).ready(function() {
+        var csv = $.get('./notes.csv', function( data ) {
+          NOTES = $.csv.toArrays(data);
+          renderNotes();
+
+          $("#search").on('change keydown paste input', function(){
+            var searchText = $("#search").val()
+            $('.square').each(function(index, el) {
+              if (el.innerHTML.toLowerCase().indexOf(searchText.toLowerCase()) == -1) {
+                $(el).hide();
+              } else {
+                $(el).show();
+              }
+            });
+          });
+        });
+
       });
     </script>
   </body>
