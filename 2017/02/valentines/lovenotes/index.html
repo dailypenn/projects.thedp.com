@@ -165,7 +165,7 @@
           <div class="input-group stylish-input-group">
             <input type="text" class="form-control" placeholder="Search" id="search">
             <span class="input-group-addon">
-              <span class="fa fa-search"></span>
+              <span id="srch" class="fa fa-search"></span>
             </span>
           </div>
         </div>
@@ -176,12 +176,14 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/async/2.1.4/async.min.js" charset="utf-8"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script> -->
     <script type="text/javascript">
       var NOTES;
 
       var renderNotes = function() {
         notesList = $('#lovenotes')
+
         for (var note in NOTES) {
           var curNote = NOTES[note];
           notesList.append(
@@ -205,19 +207,19 @@
           renderNotes();
 
           $("#search").on('change keydown paste input', function(evt){
-            var searchText = $("#search").val()
-
+            var searchText = $("#search").val().toLowerCase();
             if (searchText.length == 0) {
               $('.square').each(function(index, el) { $(el).show(); });
             }
+
             if (evt.which == 13 || evt.keyCode == 13) {
-              //code to execute here
-              $('.square').each(function(index, el) {
-                if (el.innerHTML.toLowerCase().indexOf(searchText.toLowerCase()) == -1) {
-                  $(el).hide();
-                } else {
-                  $(el).show();
-                }
+              async.each($('.square'), function(note, err) {
+                var text = $(note).find('.table-cell')[0];
+                  if (text.innerHTML.toLowerCase().indexOf(searchText) == -1) {
+                    $(note).hide();
+                  } else {
+                    $(note).show();
+                  }
               });
             }
           });
