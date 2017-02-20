@@ -1,6 +1,16 @@
 {
   "featured": [
     {
+      "title": "Valentine's Day 2017",
+      "author": "Design: C. Rapay, J. Schorr; Web Dev: A. Fischer",
+      "section": "Guides",
+      "date": "February 2017",
+      "description": "A roundup of some of our best Valentine's Day content of 2017. Whether you're looking for a date-night show, some funny cards or just want to read the love notes, we've got you covered.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2017/02/valentines/",
+      "image": "https://s3.amazonaws.com/media.dpn/57158_lovenotesf.jpg"
+    },
+    {
       "title": "Financially Speaking: A guide to financial aid at Penn",
       "author": "Online Graphics Department; Web Dev: A. Fischer",
       "section": "Guides",
@@ -19,7 +29,9 @@
       "sponsored": false,
       "link": "http://projects.thedp.com/2016/12/year-in-review/",
       "image": "https://s3.amazonaws.com/media.dpn/55750_2016yir01p.png"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "Coffee Break: A guide to coffee shops around campus",
       "author": "HubBub Coffee; Design: A. Graves, I. Wurman; Web Dev: N. Hill, A. Fischer",
@@ -29,9 +41,7 @@
       "sponsored": true,
       "link": "http://projects.thedp.com/2016/11/coffee-on-campus/",
       "image": "https://s3.amazonaws.com/media.dpn/56237_coffeeoncampusimgp.png"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "Basketball Supplement",
       "author": "Design: J. Schorr; Web Dev: M. Mantis, A. Fischer",
@@ -46,7 +56,7 @@
       "title": "Voter's Guide",
       "author": "Web Dev: A. Fischer",
       "section": "Guides",
-      "date": "November 2016'",
+      "date": "November 2016",
       "description": "Your guide to the candidates, policies and logistics for Election Day on November 8.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2016/11/voters-guide/",
