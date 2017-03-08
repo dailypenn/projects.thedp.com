@@ -150,6 +150,12 @@ body {
   margin: 5px;
 }
 
+footer {
+  text-align: center;
+  border-top: 2px solid #fff;
+  padding: 15px;
+}
+
 @media screen and (max-width: 1400px) {
   .brackets {
     transform-origin: top left;
