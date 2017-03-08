@@ -70,11 +70,23 @@ div.jQBracket .team div.label {
   white-space: initial;
   overflow: visible;
 }
-
-.brackets {
+.bracket-container {
+  width: 100%;
   overflow: scroll;
 }
+.brackets {
+  overflow: scroll;
+  display: inline-block;
+  white-space: nowrap;
+  width: 1600px
+}
 
+.left-bracket {
+  float: left;
+}
+.right-bracket {
+  float: right;
+}
 .left-bracket, .right-bracket {
   display: inline-block;
 }
@@ -136,4 +148,20 @@ body {
   border: 2px solid #FFD6A1;
   display: inline-block;
   margin: 5px;
+}
+
+@media screen and (max-width: 1400px) {
+  .brackets {
+    transform-origin: top left;
+    transform: scale(.8);
+    margin-right: -300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .brackets {
+    transform-origin: top left;
+    transform: scale(.7);
+    margin-right: -500px;
+  }
 }
