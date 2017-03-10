@@ -170,3 +170,13 @@ footer {
     margin-right: -500px;
   }
 }
+
+.vote-container {
+  max-width: 1400px;
+  margin: auto;
+  font-family: 'gobold', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: #58595B;
+}
