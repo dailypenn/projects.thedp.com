@@ -1,11 +1,11 @@
 var ltbracketData = {
   teams: [
     // SOCIAL
-    ["M. Club BBall", "ΣN"],
+    ["Mens Club Basketball", "ΣN"],
     ["XΩ", "Club Swimming"],
 
     ["ZTA", "ΑΣΦ"],
-    ["ΚΣ", "W. Club BBall"],
+    ["ΚΣ", "Womens Club Basketball"],
 
     ["∆∆∆", "ΔΣΠ"],
     ["ΚΑΘ", "AIΓ"],
@@ -42,7 +42,7 @@ var rtbracketData = {
     ["The Pennsylvania Punch Bowl", "Shabbatones"],
 
     ["Asian Pacific Student Coalition", "Penn International Impact Consulting"],
-    ["Penn Appetit", "Vietnamese Students Association"],
+    ["Penn Appetit", "PVietnamese Students Assoc."],
 
     // PERFORMANCE
     ["Mask and Wig", "Dischord A Cappella"],

@@ -16,9 +16,9 @@ h1, h2, h3, h4 {
   color: #58595B;
 }
 
-table {
-  font-family: "neuzeit-grotesk", sans-serif;
-}
+/*table {
+  font-family: "gobold", sans-serif;
+}*/
 td, th {
     padding: 4px 15px;
     text-align: left;
@@ -36,7 +36,7 @@ td, th {
 }
 
 div.jQBracket {
-  font-family: "neuzeit-grotesk", sans-serif;
+  font-family: "arial", sans-serif;
   font-size: 14px;
   position: relative; }
   div.jQBracket .tools {
