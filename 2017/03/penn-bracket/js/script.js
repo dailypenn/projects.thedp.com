@@ -42,7 +42,7 @@ var rtbracketData = {
     ["The Pennsylvania Punch Bowl", "Shabbatones"],
 
     ["Asian Pacific Student Coalition", "Penn International Impact Consulting"],
-    ["Penn Appétit", "Vietnamese Students Association"],
+    ["Penn Appétit", "Vietnamese Students Assoc."],
 
     // PERFORMANCE
     ["Mask and Wig", "Dischord A Cappella"],
