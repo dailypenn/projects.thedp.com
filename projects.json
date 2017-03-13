@@ -1,6 +1,16 @@
 {
   "featured": [
     {
+      "title": "Penn Bracket 2017",
+      "author": "Design: R. Xiang, J. Schorr; Web Dev: A. Fischer",
+      "section": "Penn Bracket",
+      "date": "March 2017",
+      "description": "Students can vote on their favorite Penn student groups in the DP's take on March Madness.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2017/03/penn-bracket/",
+      "image": "https://s3.amazonaws.com/media.dpn/57761_pennbracketogjpgo.jpeg"
+    },
+    {
       "title": "Valentine's Day 2017",
       "author": "Design: C. Rapay, J. Schorr; Web Dev: A. Fischer",
       "section": "Guides",
@@ -9,7 +19,9 @@
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/02/valentines/",
       "image": "https://s3.amazonaws.com/media.dpn/57158_lovenotesf.jpg"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "Financially Speaking: A guide to financial aid at Penn",
       "author": "Online Graphics Department; Web Dev: A. Fischer",
@@ -29,9 +41,7 @@
       "sponsored": false,
       "link": "http://projects.thedp.com/2016/12/year-in-review/",
       "image": "https://s3.amazonaws.com/media.dpn/55750_2016yir01p.png"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "Coffee Break: A guide to coffee shops around campus",
       "author": "HubBub Coffee; Design: A. Graves, I. Wurman; Web Dev: N. Hill, A. Fischer",
@@ -85,7 +95,7 @@
     {
       "title": "Your courses, deconstructed",
       "author": "Web Dev: A. Fischer, M. Mantis",
-      "section": "Data Viz",
+      "section": "Data Visualization",
       "date": "April 2016",
       "description": "The Daily Pennsylvanian was able to gain access to all available Penn Course Review data, which contains an enormous number of student evaluations of their classes going back over a decade. Through data analysis, we've been able to address some of the most simple and complex questions students might wonder about their academics.",
       "sponsored": false,

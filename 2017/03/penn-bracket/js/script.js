@@ -23,7 +23,7 @@ var ltbracketData = {
     ["Mock Trial", "MUSE"],
     ["Active Minds", "Preceptorials Committee"],
 
-    ["Society of Women Engineers", "WUDAC"],
+    ["Society of Women Engineers", "Wharton Undergrad Data Analytics Club"],
     ["Parliamentary Debate", "Penn For Youth Debate"]
   ],
   results: []
