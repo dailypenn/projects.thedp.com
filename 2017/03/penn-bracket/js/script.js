@@ -5,7 +5,7 @@ var ltbracketData = {
     ["Chi-O", "Club Swimming"],
 
     ["ZTA", "Alpha Sigma Phi"],
-    ["Kappa Sigma", "Women's Club Basketball"],
+    ["Sigma Kappa", "Women's Club Basketball"],
 
     ["Tri-Delt", "Delta Sigma Pi"],
     ["Kappa Alpha Theta", "Alpha Iota Gamma (AIR)"],
