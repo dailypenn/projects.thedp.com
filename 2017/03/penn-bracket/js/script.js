@@ -1,20 +1,20 @@
 var ltbracketData = {
   teams: [
     // SOCIAL
-    ["Mens Club Basketball", "ΣN"],
-    ["XΩ", "Club Swimming"],
+    ["Men's Club Basketball", "Sigma Nu"],
+    ["Chi-O", "Club Swimming"],
 
-    ["ZTA", "ΑΣΦ"],
-    ["ΚΣ", "Womens Club Basketball"],
+    ["ZTA", "Alpha Sigma Phi"],
+    ["Kappa Sigma", "Women's Club Basketball"],
 
-    ["∆∆∆", "ΔΣΠ"],
-    ["ΚΑΘ", "AIΓ"],
+    ["Tri-Delt", "Delta Sigma Pi"],
+    ["Kappa Alpha Theta", "Alpha Iota Gamma (AIR)"],
 
-    ["ΑΚΨ", "ΑΦΩ"],
-    ["ΣΔΤ (SDT)", "Synch. Swimming"],
+    ["Alpha Kappa Psi", "Alpha Phi Omega"],
+    ["SDT", "Synchronized Swimming"],
 
     // EDUCATIONAL
-    ["MERT 🏆", "PPISG"],
+    ["MERT 🏆", "PPI Student Group"],
     ["Kite and Key", "Wharton Healthcare Club"],
 
     ["The Undergraduate Assembly", "City Step"],
@@ -42,7 +42,7 @@ var rtbracketData = {
     ["The Pennsylvania Punch Bowl", "Shabbatones"],
 
     ["Asian Pacific Student Coalition", "Penn International Impact Consulting"],
-    ["Penn Appetit", "PVietnamese Students Assoc."],
+    ["Penn Appétit", "Vietnamese Students Association"],
 
     // PERFORMANCE
     ["Mask and Wig", "Dischord A Cappella"],
