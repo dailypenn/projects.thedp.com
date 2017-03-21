@@ -137,7 +137,7 @@ div.jQBracket {
       background-color: #000;
       color: #fff;}
     div.jQBracket .team.highlight {
-      background-color: #aa1e22;
+      background-color: #58595B;
       color: #fff; }
     div.jQBracket .team.lose.highlight .score {
       color: #fff; }
@@ -163,7 +163,7 @@ div.jQBracket {
       border-color: #000; }
     div.jQBracket .connector.highlight,
     div.jQBracket .connector div.connector.highlight {
-      border-color: #aa1e22; }
+      border-color: #58595B; }
   div.jQBracket .np .connector,
   div.jQBracket .np .connector div.connector {
     border-color: #222; }
@@ -238,7 +238,7 @@ div.jQBracket.rl .connector {
     border-color: #000; }
   div.jQBracket.rl .connector.highlight,
   div.jQBracket.rl .connector div.connector.highlight {
-    border-color: #aa1e22; }
+    border-color: #58595B; }
 div.jQBracket.rl .bubble {
   left: -35px; }
   div.jQBracket.rl .bubble.third {
