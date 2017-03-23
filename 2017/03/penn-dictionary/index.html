@@ -38,9 +38,14 @@
     font-weight: 900;
   }
 
-  .row:first-of-type {
+  #image {
     padding-top:70px;
   }
+
+  #entries {
+    padding-top:30px;
+  }
+
   @media screen and (max-width: 720px){
     .container {
       width: 80%;
@@ -51,10 +56,10 @@
 </head>
 <body>
   <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-md-4 col-md-push-3">
-        <img class="img img-responsive" src="./UrbanDictLogo-02.svg" alt="Penn Dictionary" width="150%" height="150%">
-      </div>
+    <div class="row">
+      <center>
+        <img class="img-fluid" id="image" src="./UrbanDictLogo-02.svg" alt="Penn Dictionary">
+      </center>
     </div>
   </div>
 
