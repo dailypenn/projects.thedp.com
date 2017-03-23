@@ -11,18 +11,40 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+
   <style media="screen">
   .rectangle {
     width: 100%;
     background-color: white;
   }
 
+  .content {
+    height: 100%;
+    width: 100%;
+    padding:2.5%;
+  }
+
   body {
-    background:#002037;
+    background: #002037;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 145%;
+  }
+
+  h1 {
+    color: #0078c1;
+    font-family: 'Lora', serif;
+    font-weight: 900;
   }
 
   .row:first-of-type {
     padding-top:70px;
+  }
+  @media screen and (max-width: 720px){
+    .container {
+      width: 80%;
+    }
   }
   </style>
 
@@ -30,11 +52,48 @@
 <body>
   <div class="container">
     <div class="row justify-content-start">
-      <div class="col-md-4 col-md-push-4">
-        <img src="./UrbanDictLogo-02.svg" alt="Penn Urban Dictionary">
+      <div class="col-md-4 col-md-push-3">
+        <img class="img img-responsive" src="./UrbanDictLogo-02.svg" alt="Penn Dictionary" width="150%" height="150%">
       </div>
     </div>
   </div>
 
+  <div class="container">
+    <div class="row" id="entries"></div>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+  
+  <script type="text/javascript"> 
+  var CSV_ENTRIES;
+
+  var renderEntries = function() {
+    entries = $('#entries');
+
+    for (var entry in CSV_ENTRIES) {
+      var curEntry = CSV_ENTRIES[entry];
+      if(curEntry[0] != ""){
+        entries.append(
+        '<div class="rectangle">' + 
+          '<div class="content">' + 
+            '<h1>' + curEntry[0] + '</h1>' + 
+            curEntry[1] +
+          '</div>' + 
+        '</div>'+ 
+        '<br>'
+        );
+      }
+    }
+
+  }
+
+  $(document).ready(function(){
+    var csv = $.get('./penndictentries.csv', function( data ){
+      CSV_ENTRIES = $.csv.toArrays(data);
+      renderEntries();
+    })
+  })
+  </script>
 </body>
 </html>
