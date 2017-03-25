@@ -1,517 +1,467 @@
 var people = {
-  "cb18" : {
-    "President" : [
-      {
+  "cb18": {
+    "President": [{
       'name': 'Makayla Reynolds',
-      'email':'makaylar@sas.upenn.edu',
+      'email': 'makaylar@sas.upenn.edu',
       'photo': 'https://s3.amazonaws.com/media.dpn/58100_reynolds_makt.jpg',
       'stmt': ''
-      }
-    ],
-    "Executive_Vice_President" : [
-      {
-      'name': 'Jeremy Falk',
-      'email':'faje@wharton.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58123_falk_jeremyo.jpg'
-    },
-      {
-      'name': 'Sola Park',
-      'email':'solap@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58096_park_solat.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58153_park_sola_class_boardo.pdf'
-      }
-    ],
-    "Vice_president_of_External_Affairs" : [
-      {
-      'name': 'Noah Falk',
-      'email':'nfalk@wharton.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
-      'stmt': ''
-    },
-      {
-      'name': 'Kyle O’Neil',
-      'email':'oneilk@seas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58099_oneil_kylet.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58144_oneil_kyle_class_boardo.jpg'
-      }
-
-    ],
-    "Vice_president_of_Finances" : [
-      {
-      'name': 'Jacob Stern',
-      'email':'jastern@wharton.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58106_stern_jacobt.jpg',
-      'stmt': ''
-      }
-    ],
-    "Vice_president_of_Internal_Affairs" : [
-      {
-      'name': 'Alexander Lee',
-      'email':'amlee@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58089_lee_alexandert.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58138_lee_alexandero.jpg'
-      }
-
-    ],
-    "College_Chair" : [
-      {
-      'name': 'Medha Sharma',
-      'email':'mesharma@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58102_sharma_medhat.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58148_sharma_medhao.jpg'
-    },
-    {
-    'name': 'Andre Na',
-    'email':'andren@sas.upenn.edu',
-    'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
-    'stmt': ''
-    }
-    ],
-    "Engineering_Chair" : [
-      {
-      'name': 'Kanishka Rao',
-      'email':'raok@seas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
-      'stmt': ''
-      }
-    ],
-    "Wharton_Chair" : [
-      {
-      'name': 'Rehan Ayrton',
-      'email':'rayrton@wharton.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58074_ayrton_rehant.jpg',
-      'stmt': ''
-      }
-    ],
-    "Nursing_chair" : [
-      {
-      'name': 'Sophia Busacca',
-      'email':'sbusacca@nursing.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
-      'stmt': ''
-      }
-    ]
-  },
-  "cb19" : {
-    "President" : [
-      {
-      'name': 'Aren Raisinghani',
-      'email':'arenr@seas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58097_raisinghani_arent.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58150_raisinghani_areno.jpg'
-      }
-    ],
-    "Executive_Vice_President" : [
-      {
-      'name': 'Montell D. Brown',
-      'email':'monbrown@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58072_brown_montellt.jpg',
-      'stmt': ''
-      }
-    ],
-    "Vice_president_of_External_Affairs" : [
-      {
-      'name': 'Santosh Nori',
-      'email':'snori@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58098_nori_santosht.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58145_nori_santosho.png'
-    },
-      {
-      'name': 'Candy Alfaro',
-      'email':'alfaroc@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
-      'stmt': ''
-      }
-    ],
-    "Vice_president_of_Finances" : [
-      {
-      'name': 'Luc Silver',
-      'email':'lucsilv@wharton.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
-      'stmt': ''
-      }
-    ],
-    "Vice_president_of_Internal_Affairs" : [
-      {
-      'name': 'Jessica Lim',
-      'email':'limje@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
-      'stmt': ''
-      }
-    ],
-    "College_Chair" : [
-      {
-      'name': 'Trinh Nguyen',
-      'email':'nguyend@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
-      'stmt': ''
-    },
-      {
-      'name': 'April Chen',
-      'email':'chenap@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
-      'stmt': ''
-      }
-
-    ],
-    "Engineering_Chair" : [
-      {
-      'name': 'Elena Wu-Yan',
-      'email':'elenaw@seas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58114_wuyan_elenat.jpg',
-      'stmt': ''
-      }
-    ],
-    "Wharton_Chair" : [
-      {
-      'name': 'Allysha Davis',
-      'email':'allyshad@wharton.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58075_davis_allyshat.jpg',
-      'stmt': ''
-      }
-    ],
-    "Nursing_chair" : [
-      {
-      'name': 'Breanne Mastromarino',
-      'email':'bmastr@nursing.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58090_mastromarino_breannet.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58139_mastromarino_breannao.jpg'
-      }
-    ]
-  },
-  "cb20" : {
-    "President" : [
-      {
-      'name': 'Ethan Chen',
-      'email':'etc@wharton.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58124_chen_ethano.jpg'
-    },
-      {
-      'name': 'Karim El Sewedy',
-      'email':'karimels@wharton.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58079_el_sewedy_karimt.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58120_el_sewedy_karimo.jpeg'
-    },
-      {
-      'name': 'Jack Talley',
-      'email':'jtalley@seas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58111_talley_jackt.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58159_talley_jacko.png'
-    },
-      {
-      'name': 'Connor Wright',
-      'email':'wrightco@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58117_wright_connort.jpg',
-      'stmt': ''
-      }
-    ],
-    "Executive_Vice_President" : [
-      {
-      'name': 'Jason Kim',
-      'email':'jasonks@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58087_kim_jasont.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58133_kim_jasono.jpg'
-    },
-      {
-      'name': 'Rahul Chopra',
-      'email':'choprar@wharton.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58070_chopra_rahult.jpg'
-      }
-    ],
-    "Vice_president_of_External_Affairs" : [
-      {
-      'name': 'Lucy Ma',
-      'email':'lucywma@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58092_ma_lucyt.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58135_ma_lucyo.jpeg'
-      }
-    ],
-    "Vice_president_of_Finances" : [
-      {
-      'name': 'Jack Stinger',
-      'email':'stinger@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58107_stinger_jackt.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58154_stinger_jacko.jpg'
-      }
-    ],
-    "Vice_president_of_Internal_Affairs" : [
-      {
-      'name': 'Michelle (Chae Ryun) Kim',
-      'email':'chaeryun@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58088_kim_michellet.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58134_kim_michelleo.jpg'
-      }
-    ],
-    "College_Chair" : [
-      {
-      'name': 'Noel Zheng',
-      'email':'noelz@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58116_zheng_noelt.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58162_zheng_noelo.jpg'
-    },
-      {
-      'name': 'Vanessa Wanyandeh',
-      'email':'vwanyandeh@gmail.com',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58112_wanyandeh_vanessat.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58157_wanyandeh_vanessao.jpg'
-    },
-      {
-      'name': 'Shane Goldstein',
-      'email':'shaneg@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58078_goldstein_shanet.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58131_goldstein_shaneo.jpg'
-    },
-      {
-      'name': 'Daniella Wirtschafter',
-      'email':'dwirt@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58113_wirtschafter_daniellat.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58158_wirtschafter_daniellao.jpg'
-      }
-    ],
-    "Engineering_Chair" : [
-      {
-      'name': 'Sophia Moses',
-      'email':'sophiamo@seas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58093_moses_sophiat.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58141_moses_sophiao.jpg'
-      }
-    ],
-    "Wharton_Chair" : [
-      {
-      'name': 'Andy Shao',
-      'email':'andyshao@wharton.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58101_shao_andyt.jpg',
-      'stmt': ''
-      }
-    ],
-    "Nursing_chair" : [
-      {
-      'name': 'Anita Itaman',
-      'email':'sitaman@nursing.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58085_itaman_anitat.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58132_itaman_anitao.png'
-    },
-      {
-      'name': 'Davis Tse',
-      'email':'davistse@nursing.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58110_tse_davist.jpg',
-      'stmt': ''
-      }
-
-    ]
-  },
-  "ua" : {
-    "UA_President" : [
-      {
-      'name': 'Justin Hopkins',
-      'email':'justh@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58083_hopkins_justint.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58137_hopkins_justino.png'
+    }],
+    "Executive_Vice_President": [{
+        'name': 'Jeremy Falk',
+        'email': 'faje@wharton.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58123_falk_jeremyo.jpg'
       },
       {
-      'name': 'Michelle Xu',
-      'email':'michx@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58118_xu_michellet.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58160_xu_michelleo.jpg'
+        'name': 'Sola Park',
+        'email': 'solap@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58096_park_solat.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58153_park_sola_class_boardo.pdf'
       }
     ],
-    "UA_Vice_President" : [
+    "Vice_president_of_External_Affairs": [{
+        'name': 'Noah Falk',
+        'email': 'nfalk@wharton.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
+        'stmt': ''
+      },
       {
-      'name': 'Calvary Rogers',
-      'email':'calvary@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58103_rogers_calvaryt.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58146_rogers_calvaryo.png'
-    },
+        'name': 'Kyle O’Neil',
+        'email': 'oneilk@seas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58099_oneil_kylet.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58144_oneil_kyle_class_boardo.jpg'
+      }
+
+    ],
+    "Vice_president_of_Finances": [{
+      'name': 'Jacob Stern',
+      'email': 'jastern@wharton.upenn.edu',
+      'photo': 'https://s3.amazonaws.com/media.dpn/58106_stern_jacobt.jpg',
+      'stmt': ''
+    }],
+    "Vice_president_of_Internal_Affairs": [{
+        'name': 'Alexander Lee',
+        'email': 'amlee@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58089_lee_alexandert.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58138_lee_alexandero.jpg'
+      }
+
+    ],
+    "College_Chair": [{
+        'name': 'Medha Sharma',
+        'email': 'mesharma@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58102_sharma_medhat.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58148_sharma_medhao.jpg'
+      },
       {
-      'name': 'Jay Shah',
-      'email':'shahjay@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58105_shah_jayt.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58156_shah_jayo.jpg'
+        'name': 'Andre Na',
+        'email': 'andren@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
+        'stmt': ''
       }
     ],
-    "SAS_Representative" : [
-      {
-      'name': 'Jordan Andrews',
-      'email':'andjor@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58071_andrews_jordant.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58129_andrews_jordano.jpg'
-    },
-      {
-      'name': 'Neel Daugherty-Shrivastava',
-      'email':'ndaug@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58076_daugherty_neelt.jpg',
-      'stmt': ''
-    },
-      {
-      'name': 'Brian Goldstein',
-      'email':'brgold@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58077_goldstein_briant.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58125_goldstein_briano.jpg'
-    },
-      {
-      'name': 'Max Grove',
-      'email':'maxgrove@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58081_grove_maxt.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58127_grove_maxo.jpg'
-    },
-      {
-      'name': 'Elena Hoffman',
-      'email':'elenaho@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58082_hoffman_elenat.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58128_hoffman_elenao.jpg'
-    },
-      {
-      'name': 'Justin Hopkins',
-      'email':'justh@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58083_hopkins_justint.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58137_hopkins_justino.png'
-    },
-      {
-      'name': 'Noah Kest',
-      'email':'noahkest@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58084_kest_noaht.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58130_kest_noaho.jpeg'
-    },
-      {
-      'name': 'Jason Kim',
-      'email':'jasonks@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58087_kim_jasont.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58133_kim_jasono.jpg'
-    },
-      {
-      'name': 'Michael Krone',
-      'email':'mkrone@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58086_krone_michaelt.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58136_krone_michaelo.png'
-    },
-      {
-      'name': 'Natasha Menon',
-      'email':'namenon@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58091_menon_natashat.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58143_menon_natashao.jpg'
-    },
-      {
-      'name': 'Simon Miller',
-      'email':'similler@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58094_miller_simont.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58140_miller_simono.jpg'
-    },
-      {
-      'name': 'Kevin Myers',
-      'email':'kevmyers@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58095_myers_kevint.jpg',
-      'stmt': ''
-    },
-      {
-      'name': 'Santosh Nori',
-      'email':'snori@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58098_nori_santosht.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58145_nori_santosho.png'
-    },
-      {
-      'name': 'Sola Park',
-      'email':'solap@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58096_park_solat.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58152_park_sola_uao.pdf'
-    },
-      {
-      'name': 'Calvary Rogers',
-      'email':'calvary@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58103_rogers_calvaryt.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58146_rogers_calvaryo.png'
-    },
-      {
-      'name': 'Jay Shah',
-      'email':'shahjay@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58105_shah_jayt.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58156_shah_jayo.jpg'
-    },
-      {
-      'name': 'Ariela Stein',
-      'email':'arielas@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58109_stein_arielat.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58151_stein_arielao.jpg'
-    },
-      {
-      'name': 'Arjun Swaminathan',
-      'email':'aswam@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58108_swaminathan_arjunt.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58155_swaminathan_arjuno.jpeg'
-    },
-      {
-      'name': 'Anthony Williams',
-      'email':'anthow@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
-      'stmt': ''
-    },
-      {
-      'name': 'Samara Wyant',
-      'email':'wyantsam@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58115_wyant_samarat.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58161_wyant_samarao.jpg'
-    },
-      {
-      'name': 'Michelle Xu',
-      'email':'michx@sas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58118_xu_michellet.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58160_xu_michelleo.jpg'
-      }
-    ],
-    "SEAS_Representative": [
-      {
-      'name': 'Kyle O’Neil',
-      'email':'oneilk@seas.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58099_oneil_kylet.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58147_oneil_kyle_uao.jpg'
-    },
-      {
+    "Engineering_Chair": [{
       'name': 'Kanishka Rao',
-      'email':'raok@seas.upenn.edu',
+      'email': 'raok@seas.upenn.edu',
       'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
       'stmt': ''
-    },
-      {
+    }],
+    "Wharton_Chair": [{
+      'name': 'Rehan Ayrton',
+      'email': 'rayrton@wharton.upenn.edu',
+      'photo': 'https://s3.amazonaws.com/media.dpn/58074_ayrton_rehant.jpg',
+      'stmt': ''
+    }],
+    "Nursing_chair": [{
+      'name': 'Sophia Busacca',
+      'email': 'sbusacca@nursing.upenn.edu',
+      'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
+      'stmt': ''
+    }]
+  },
+  "cb19": {
+    "President": [{
       'name': 'Aren Raisinghani',
-      'email':'arenr@seas.upenn.edu',
+      'email': 'arenr@seas.upenn.edu',
       'photo': 'https://s3.amazonaws.com/media.dpn/58097_raisinghani_arent.jpg',
       'stmt': 'https://s3.amazonaws.com/media.dpn/58150_raisinghani_areno.jpg'
-      }
-    ],
-    "Wharton_Representative": [
-      {
-      'name': 'Maria Curry',
-      'email':'mariacu@wharton.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58073_curry_mariat.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58121_curry_mariao.jpg'
-    },
-      {
-      'name': 'Julianne Goodman',
-      'email':'jugo@wharton.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58080_goodman_juliannet.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58126_goodman_julianneo.jpg'
-    },
-      {
-      'name': 'Samantha Shea',
-      'email':'sshea@wharton.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58104_shea_samanthat.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58149_shea_samanthao.jpg'
-      }
-    ],
-    "Nursing_Representative": [
-      {
-      'name': 'Anita Itaman',
-      'email':'sitaman@nursing.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58085_itaman_anitat.jpg',
-      'stmt': 'https://s3.amazonaws.com/media.dpn/58132_itaman_anitao.png'
-    },
-      {
-      'name': 'George Yang',
-      'email':'ygeorge@wharton.upenn.edu',
-      'photo': 'https://s3.amazonaws.com/media.dpn/58119_yang_georget.jpg',
+    }],
+    "Executive_Vice_President": [{
+      'name': 'Montell D. Brown',
+      'email': 'monbrown@sas.upenn.edu',
+      'photo': 'https://s3.amazonaws.com/media.dpn/58072_brown_montellt.jpg',
       'stmt': ''
+    }],
+    "Vice_president_of_External_Affairs": [{
+        'name': 'Santosh Nori',
+        'email': 'snori@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58098_nori_santosht.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58145_nori_santosho.png'
+      },
+      {
+        'name': 'Candy Alfaro',
+        'email': 'alfaroc@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
+        'stmt': ''
+      }
+    ],
+    "Vice_president_of_Finances": [{
+      'name': 'Luc Silver',
+      'email': 'lucsilv@wharton.upenn.edu',
+      'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
+      'stmt': ''
+    }],
+    "Vice_president_of_Internal_Affairs": [{
+      'name': 'Jessica Lim',
+      'email': 'limje@sas.upenn.edu',
+      'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
+      'stmt': ''
+    }],
+    "College_Chair": [{
+        'name': 'Trinh Nguyen',
+        'email': 'nguyend@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
+        'stmt': ''
+      },
+      {
+        'name': 'April Chen',
+        'email': 'chenap@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
+        'stmt': ''
+      }
+
+    ],
+    "Engineering_Chair": [{
+      'name': 'Elena Wu-Yan',
+      'email': 'elenaw@seas.upenn.edu',
+      'photo': 'https://s3.amazonaws.com/media.dpn/58114_wuyan_elenat.jpg',
+      'stmt': ''
+    }],
+    "Wharton_Chair": [{
+      'name': 'Allysha Davis',
+      'email': 'allyshad@wharton.upenn.edu',
+      'photo': 'https://s3.amazonaws.com/media.dpn/58075_davis_allyshat.jpg',
+      'stmt': ''
+    }],
+    "Nursing_chair": [{
+      'name': 'Breanne Mastromarino',
+      'email': 'bmastr@nursing.upenn.edu',
+      'photo': 'https://s3.amazonaws.com/media.dpn/58090_mastromarino_breannet.jpg',
+      'stmt': 'https://s3.amazonaws.com/media.dpn/58139_mastromarino_breannao.jpg'
+    }]
+  },
+  "cb20": {
+    "President": [{
+        'name': 'Ethan Chen',
+        'email': 'etc@wharton.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58124_chen_ethano.jpg'
+      },
+      {
+        'name': 'Karim El Sewedy',
+        'email': 'karimels@wharton.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58079_el_sewedy_karimt.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58120_el_sewedy_karimo.jpeg'
+      },
+      {
+        'name': 'Jack Talley',
+        'email': 'jtalley@seas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58111_talley_jackt.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58159_talley_jacko.png'
+      },
+      {
+        'name': 'Connor Wright',
+        'email': 'wrightco@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58117_wright_connort.jpg',
+        'stmt': ''
+      }
+    ],
+    "Executive_Vice_President": [{
+        'name': 'Jason Kim',
+        'email': 'jasonks@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58087_kim_jasont.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58133_kim_jasono.jpg'
+      },
+      {
+        'name': 'Rahul Chopra',
+        'email': 'choprar@wharton.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58070_chopra_rahult.jpg'
+      }
+    ],
+    "Vice_president_of_External_Affairs": [{
+      'name': 'Lucy Ma',
+      'email': 'lucywma@sas.upenn.edu',
+      'photo': 'https://s3.amazonaws.com/media.dpn/58092_ma_lucyt.jpg',
+      'stmt': 'https://s3.amazonaws.com/media.dpn/58135_ma_lucyo.jpeg'
+    }],
+    "Vice_president_of_Finances": [{
+      'name': 'Jack Stinger',
+      'email': 'stinger@sas.upenn.edu',
+      'photo': 'https://s3.amazonaws.com/media.dpn/58107_stinger_jackt.jpg',
+      'stmt': 'https://s3.amazonaws.com/media.dpn/58154_stinger_jacko.jpg'
+    }],
+    "Vice_president_of_Internal_Affairs": [{
+      'name': 'Michelle (Chae Ryun) Kim',
+      'email': 'chaeryun@sas.upenn.edu',
+      'photo': 'https://s3.amazonaws.com/media.dpn/58088_kim_michellet.jpg',
+      'stmt': 'https://s3.amazonaws.com/media.dpn/58134_kim_michelleo.jpg'
+    }],
+    "College_Chair": [{
+        'name': 'Noel Zheng',
+        'email': 'noelz@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58116_zheng_noelt.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58162_zheng_noelo.jpg'
+      },
+      {
+        'name': 'Vanessa Wanyandeh',
+        'email': 'vwanyandeh@gmail.com',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58112_wanyandeh_vanessat.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58157_wanyandeh_vanessao.jpg'
+      },
+      {
+        'name': 'Shane Goldstein',
+        'email': 'shaneg@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58078_goldstein_shanet.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58131_goldstein_shaneo.jpg'
+      },
+      {
+        'name': 'Daniella Wirtschafter',
+        'email': 'dwirt@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58113_wirtschafter_daniellat.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58158_wirtschafter_daniellao.jpg'
+      }
+    ],
+    "Engineering_Chair": [{
+      'name': 'Sophia Moses',
+      'email': 'sophiamo@seas.upenn.edu',
+      'photo': 'https://s3.amazonaws.com/media.dpn/58093_moses_sophiat.jpg',
+      'stmt': 'https://s3.amazonaws.com/media.dpn/58141_moses_sophiao.jpg'
+    }],
+    "Wharton_Chair": [{
+      'name': 'Andy Shao',
+      'email': 'andyshao@wharton.upenn.edu',
+      'photo': 'https://s3.amazonaws.com/media.dpn/58101_shao_andyt.jpg',
+      'stmt': ''
+    }],
+    "Nursing_chair": [{
+        'name': 'Anita Itaman',
+        'email': 'sitaman@nursing.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58085_itaman_anitat.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58132_itaman_anitao.png'
+      },
+      {
+        'name': 'Davis Tse',
+        'email': 'davistse@nursing.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58110_tse_davist.jpg',
+        'stmt': ''
+      }
+
+    ]
+  },
+  "ua": {
+    "UA_President": [{
+        'name': 'Justin Hopkins',
+        'email': 'justh@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58083_hopkins_justint.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58137_hopkins_justino.png'
+      },
+      {
+        'name': 'Michelle Xu',
+        'email': 'michx@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58118_xu_michellet.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58160_xu_michelleo.jpg'
+      }
+    ],
+    "UA_Vice_President": [{
+        'name': 'Calvary Rogers',
+        'email': 'calvary@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58103_rogers_calvaryt.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58146_rogers_calvaryo.png'
+      },
+      {
+        'name': 'Jay Shah',
+        'email': 'shahjay@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58105_shah_jayt.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58156_shah_jayo.jpg'
+      }
+    ],
+    "SAS_Representative": [{
+        'name': 'Jordan Andrews',
+        'email': 'andjor@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58071_andrews_jordant.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58129_andrews_jordano.jpg'
+      },
+      {
+        'name': 'Neel Daugherty-Shrivastava',
+        'email': 'ndaug@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58076_daugherty_neelt.jpg',
+        'stmt': ''
+      },
+      {
+        'name': 'Brian Goldstein',
+        'email': 'brgold@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58077_goldstein_briant.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58125_goldstein_briano.jpg'
+      },
+      {
+        'name': 'Max Grove',
+        'email': 'maxgrove@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58081_grove_maxt.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58127_grove_maxo.jpg'
+      },
+      {
+        'name': 'Elena Hoffman',
+        'email': 'elenaho@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58082_hoffman_elenat.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58128_hoffman_elenao.jpg'
+      },
+      {
+        'name': 'Justin Hopkins',
+        'email': 'justh@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58083_hopkins_justint.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58137_hopkins_justino.png'
+      },
+      {
+        'name': 'Noah Kest',
+        'email': 'noahkest@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58084_kest_noaht.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58130_kest_noaho.jpeg'
+      },
+      {
+        'name': 'Jason Kim',
+        'email': 'jasonks@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58087_kim_jasont.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58133_kim_jasono.jpg'
+      },
+      {
+        'name': 'Michael Krone',
+        'email': 'mkrone@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58086_krone_michaelt.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58136_krone_michaelo.png'
+      },
+      {
+        'name': 'Natasha Menon',
+        'email': 'namenon@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58091_menon_natashat.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58143_menon_natashao.jpg'
+      },
+      {
+        'name': 'Simon Miller',
+        'email': 'similler@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58094_miller_simont.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58140_miller_simono.jpg'
+      },
+      {
+        'name': 'Kevin Myers',
+        'email': 'kevmyers@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58095_myers_kevint.jpg',
+        'stmt': ''
+      },
+      {
+        'name': 'Santosh Nori',
+        'email': 'snori@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58098_nori_santosht.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58145_nori_santosho.png'
+      },
+      {
+        'name': 'Sola Park',
+        'email': 'solap@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58096_park_solat.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58152_park_sola_uao.pdf'
+      },
+      {
+        'name': 'Calvary Rogers',
+        'email': 'calvary@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58103_rogers_calvaryt.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58146_rogers_calvaryo.png'
+      },
+      {
+        'name': 'Jay Shah',
+        'email': 'shahjay@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58105_shah_jayt.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58156_shah_jayo.jpg'
+      },
+      {
+        'name': 'Ariela Stein',
+        'email': 'arielas@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58109_stein_arielat.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58151_stein_arielao.jpg'
+      },
+      {
+        'name': 'Arjun Swaminathan',
+        'email': 'aswam@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58108_swaminathan_arjunt.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58155_swaminathan_arjuno.jpeg'
+      },
+      {
+        'name': 'Anthony Williams',
+        'email': 'anthow@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
+        'stmt': ''
+      },
+      {
+        'name': 'Samara Wyant',
+        'email': 'wyantsam@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58115_wyant_samarat.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58161_wyant_samarao.jpg'
+      },
+      {
+        'name': 'Michelle Xu',
+        'email': 'michx@sas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58118_xu_michellet.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58160_xu_michelleo.jpg'
+      }
+    ],
+    "SEAS_Representative": [{
+        'name': 'Kyle O’Neil',
+        'email': 'oneilk@seas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58099_oneil_kylet.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58147_oneil_kyle_uao.jpg'
+      },
+      {
+        'name': 'Kanishka Rao',
+        'email': 'raok@seas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
+        'stmt': ''
+      },
+      {
+        'name': 'Aren Raisinghani',
+        'email': 'arenr@seas.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58097_raisinghani_arent.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58150_raisinghani_areno.jpg'
+      }
+    ],
+    "Wharton_Representative": [{
+        'name': 'Maria Curry',
+        'email': 'mariacu@wharton.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58073_curry_mariat.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58121_curry_mariao.jpg'
+      },
+      {
+        'name': 'Julianne Goodman',
+        'email': 'jugo@wharton.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58080_goodman_juliannet.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58126_goodman_julianneo.jpg'
+      },
+      {
+        'name': 'Samantha Shea',
+        'email': 'sshea@wharton.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58104_shea_samanthat.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58149_shea_samanthao.jpg'
+      }
+    ],
+    "Nursing_Representative": [{
+        'name': 'Anita Itaman',
+        'email': 'sitaman@nursing.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58085_itaman_anitat.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58132_itaman_anitao.png'
+      },
+      {
+        'name': 'George Yang',
+        'email': 'ygeorge@wharton.upenn.edu',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58119_yang_georget.jpg',
+        'stmt': ''
       }
     ],
   }
@@ -526,18 +476,18 @@ $(document).ready(function() {
 
   var loadList = function(people, listID) {
     for (var person in people) {
-      $('#'+listID).append("<li>" +
-          "<figure>" +
-              "<img src='" + people[person].photo + "'>" +
-              "<figcaption>" +
-                "<h3><center>" + people[person].name + "</center></h3>" +
-                "<a href='http://www.pennstudgov.com'>Vote Here</a>&nbsp;" +
-                "<a href='" + people[person].stmt + "'>Download Statement</a>" +
-                "<center><img class='statement' src='" + people[person].stmt + "' height='120' /></center>" +
+      $('#' + listID).append("<li>" +
+        "<figure>" +
+        "<img src='" + people[person].photo + "'>" +
+        "<figcaption>" +
+        "<h3><center>" + people[person].name + "</center></h3>" +
+        "<a href='http://www.pennstudgov.com'>Vote Here</a>&nbsp;" +
+        "<a href='" + people[person].stmt + "'>Download Statement</a>" +
+        "<center><img class='statement' src='" + people[person].stmt + "' height='120' /></center>" +
 
-              "</figcaption>" +
-              "<h3>" + people[person].name + "</h3>" +
-          "</figure></li>"
+        "</figcaption>" +
+        "<h3>" + people[person].name + "</h3>" +
+        "</figure></li>"
       );
     }
   }
@@ -572,7 +522,6 @@ $(document).ready(function() {
   loadList(cb20["Vice_president_of_Finances"], "ua-20-vp-fin");
   loadList(cb20["Vice_president_of_Internal_Affairs"], "ua-20-vp-int");
 
-
   loadList(ua["UA_President"], "ua-pres");
   loadList(ua["UA_Vice_President"], "ua-vp");
   loadList(ua["SAS_Representative"], "ua-sas-rep");
@@ -589,7 +538,7 @@ $(document).ready(function() {
   }
 
   for (var list in lists) {
-      randomize(lists[list]);
+    randomize(lists[list]);
   }
 
 });
