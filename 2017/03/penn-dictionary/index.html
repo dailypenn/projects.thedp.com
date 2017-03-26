@@ -13,7 +13,23 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+  <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+  <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+  </script>
 
+  <script>
+    googletag.cmd.push(function() {
+      googletag.defineSlot('/12234093/DP.com-Bottom-Rectangle', [300, 250], 'div-gpt-ad-1490568038751-0').addService(googletag.pubads());
+      googletag.defineSlot('/12234093/DP.com-Half-Page', [300, 600], 'div-gpt-ad-1490568038751-1').addService(googletag.pubads());
+      googletag.defineSlot('/12234093/DP.com-Leaderboard', [728, 90], 'div-gpt-ad-1490568038751-2').addService(googletag.pubads());
+      googletag.defineSlot('/12234093/DP.com-mobile-leaderboard', [320, 50], 'div-gpt-ad-1490568038751-3').addService(googletag.pubads());
+      googletag.defineSlot('/12234093/DP.com-Top-Rectangle', [300, 250], 'div-gpt-ad-1490568038751-4').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    });
+  </script>
   <style media="screen">
   .rectangle {
     width: 100%;
@@ -61,31 +77,59 @@
         <img class="img-fluid" id="image" src="./UrbanDictLogo-02.svg" alt="Penn Dictionary">
       </center>
     </div>
+    <center class="row">
+      <div class="col-xs-12 hidden-md-down">
+        <!-- /12234093/DP.com-Leaderboard -->
+        <div id='div-gpt-ad-1490568038751-2' style='height:90px; width:728px;'>
+        <script>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1490568038751-2'); });
+        </script>
+        </div>
+      </div>
+      <div class="col-xs-12 hidden-lg-up">
+        <!-- /12234093/DP.com-mobile-leaderboard -->
+        <div id='div-gpt-ad-1490568038751-3' style='height:50px; width:320px;'>
+        <script>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1490568038751-3'); });
+        </script>
+        </div>
+      </div>
+    </center>
   </div>
 
   <div class="container">
     <div class="row" id="entries"></div>
   </div>
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
-  
-  <script type="text/javascript"> 
+
+  <script type="text/javascript">
   var CSV_ENTRIES;
 
   var renderEntries = function() {
     entries = $('#entries');
 
     for (var entry in CSV_ENTRIES) {
+      if (entry == 5) {
+        entries.append(
+          '<div class="row"><center class="col-sm-6">' +
+          "<div id='div-gpt-ad-1490568038751-4' style='height:250px; width:300px;'>" +
+          "</div>" +
+          '</center><center class="col-sm-6">' +
+          "<div id='div-gpt-ad-1490568038751-0' style='height:250px; width:300px;'></div>" +
+          '</center></div><br>'
+        );
+      };
       var curEntry = CSV_ENTRIES[entry];
       if(curEntry[0] != ""){
         entries.append(
-        '<div class="rectangle">' + 
-          '<div class="content">' + 
-            '<h1>' + curEntry[0] + '</h1>' + 
+        '<div class="rectangle">' +
+          '<div class="content">' +
+            '<h1>' + curEntry[0] + '</h1>' +
             curEntry[1] +
-          '</div>' + 
-        '</div>'+ 
+          '</div>' +
+        '</div>'+
         '<br>'
         );
       }
