@@ -185,7 +185,7 @@ var people = {
       {
         'name': 'Rahul Chopra',
         'email': 'choprar@wharton.upenn.edu',
-        'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58070_chopra_rahult.jpg',
         'stmt': 'https://s3.amazonaws.com/media.dpn/58070_chopra_rahult.jpg'
       }
     ],
@@ -356,7 +356,7 @@ var people = {
         'name': 'Kevin Myers',
         'email': 'kevmyers@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58095_myers_kevint.jpg',
-        'stmt': ''
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58142_myers_kevino.png'
       },
       {
         'name': 'Santosh Nori',
@@ -397,7 +397,7 @@ var people = {
       {
         'name': 'Anthony Williams',
         'email': 'anthow@sas.upenn.edu',
-        'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58194_img_1185jpgt.jpeg',
         'stmt': ''
       },
       {
