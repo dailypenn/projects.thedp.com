@@ -186,7 +186,7 @@ var people = {
         'name': 'Rahul Chopra',
         'email': 'choprar@wharton.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58070_chopra_rahult.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58070_chopra_rahult.jpg'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58243_copy_of_campaign_flyerso.jpg'
       }
     ],
     "Vice_president_of_External_Affairs": [{
