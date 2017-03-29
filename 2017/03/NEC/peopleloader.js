@@ -72,7 +72,7 @@ var people = {
       'photo': 'https://s3.amazonaws.com/media.dpn/58074_ayrton_rehant.jpg',
       'stmt': ''
     }],
-    "Nursing_chair": [{
+    "Nursing_Chair": [{
       'name': 'Sophia Busacca',
       'email': 'sbusacca@nursing.upenn.edu',
       'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
@@ -143,7 +143,7 @@ var people = {
       'photo': 'https://s3.amazonaws.com/media.dpn/58075_davis_allyshat.jpg',
       'stmt': ''
     }],
-    "Nursing_chair": [{
+    "Nursing_Chair": [{
       'name': 'Breanne Mastromarino',
       'email': 'bmastr@nursing.upenn.edu',
       'photo': 'https://s3.amazonaws.com/media.dpn/58090_mastromarino_breannet.jpg',
@@ -185,8 +185,8 @@ var people = {
       {
         'name': 'Rahul Chopra',
         'email': 'choprar@wharton.upenn.edu',
-        'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58070_chopra_rahult.jpg'
+        'photo': 'https://s3.amazonaws.com/media.dpn/58070_chopra_rahult.jpg',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58243_copy_of_campaign_flyerso.jpg'
       }
     ],
     "Vice_president_of_External_Affairs": [{
@@ -244,7 +244,7 @@ var people = {
       'photo': 'https://s3.amazonaws.com/media.dpn/58101_shao_andyt.jpg',
       'stmt': ''
     }],
-    "Nursing_chair": [{
+    "Nursing_Chair": [{
         'name': 'Anita Itaman',
         'email': 'sitaman@nursing.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58085_itaman_anitat.jpg',
@@ -356,7 +356,7 @@ var people = {
         'name': 'Kevin Myers',
         'email': 'kevmyers@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58095_myers_kevint.jpg',
-        'stmt': ''
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58142_myers_kevino.png'
       },
       {
         'name': 'Santosh Nori',
@@ -397,7 +397,7 @@ var people = {
       {
         'name': 'Anthony Williams',
         'email': 'anthow@sas.upenn.edu',
-        'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
+        'photo': 'https://s3.amazonaws.com/media.dpn/58194_img_1185jpgt.jpeg',
         'stmt': ''
       },
       {
@@ -481,8 +481,8 @@ $(document).ready(function() {
         "<img src='" + people[person].photo + "'>" +
         "<figcaption>" +
         "<h3><center>" + people[person].name + "</center></h3>" +
-        "<a href='http://www.pennstudgov.com'>Vote Here</a>&nbsp;" +
-        "<a href='" + people[person].stmt + "'>Download Statement</a>" +
+        "<a href='http://www.pennstudgov.com' target='_blank'>Vote Here</a>&nbsp;" +
+        "<a href='" + people[person].stmt + "' target='_blank'>Download Statement</a>" +
         "<center><img class='statement' src='" + people[person].stmt + "' height='120' /></center>" +
 
         "</figcaption>" +
