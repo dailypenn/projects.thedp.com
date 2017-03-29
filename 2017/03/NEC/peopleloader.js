@@ -4,19 +4,22 @@ var people = {
       'name': 'Makayla Reynolds',
       'email': 'makaylar@sas.upenn.edu',
       'photo': 'https://s3.amazonaws.com/media.dpn/58100_reynolds_makt.jpg',
-      'stmt': ''
+      'stmt': '',
+      'endorsements': 'Lambda Phi Epsilon'
     }],
     "Executive_Vice_President": [{
         'name': 'Jeremy Falk',
         'email': 'faje@wharton.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58123_falk_jeremyo.jpg'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58123_falk_jeremyo.jpg',
+        'endorsements': 'Interfraternity Council'
       },
       {
         'name': 'Sola Park',
         'email': 'solap@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58096_park_solat.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58153_park_sola_class_boardo.pdf'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58153_park_sola_class_boardo.pdf',
+        'endorsements': 'Lambda Phi Epsilon, Assembly of International Students'
       }
     ],
     "Vice_president_of_External_Affairs": [{
@@ -115,7 +118,8 @@ var people = {
       'name': 'Jessica Lim',
       'email': 'limje@sas.upenn.edu',
       'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
-      'stmt': ''
+      'stmt': '',
+      'endorsements': 'Fossil Free Penn'
     }],
     "College_Chair": [{
         'name': 'Trinh Nguyen',
@@ -127,7 +131,8 @@ var people = {
         'name': 'April Chen',
         'email': 'chenap@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58163_persont.jpg',
-        'stmt': ''
+        'stmt': '',
+        'endorsements': 'Fossil Free Penn'
       }
 
     ],
@@ -180,7 +185,8 @@ var people = {
         'name': 'Jason Kim',
         'email': 'jasonks@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58087_kim_jasont.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58133_kim_jasono.jpg'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58133_kim_jasono.jpg',
+        'endorsements': 'Lambda alliance'
       },
       {
         'name': 'Rahul Chopra',
@@ -211,7 +217,8 @@ var people = {
         'name': 'Noel Zheng',
         'email': 'noelz@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58116_zheng_noelt.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58162_zheng_noelo.jpg'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58162_zheng_noelo.jpg',
+        'endorsements': 'Assembly of International Students, The WALK Magazine'
       },
       {
         'name': 'Vanessa Wanyandeh',
@@ -264,33 +271,38 @@ var people = {
         'name': 'Justin Hopkins',
         'email': 'justh@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58083_hopkins_justint.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58137_hopkins_justino.png'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58137_hopkins_justino.png',
+        'endorsements': 'Interfraternity Council'
       },
       {
         'name': 'Michelle Xu',
         'email': 'michx@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58118_xu_michellet.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58160_xu_michelleo.jpg'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58160_xu_michelleo.jpg',
+        'endorsements': 'Lambda Phi Epsilon, Assembly of International Students, The Kite and Key Society Executive Board, Asian Pacific Student Coalition, Fossil Free Penn, Penn Democrats, UPenn South Asia Society, Penn Association for Gender Equity'
       }
     ],
     "UA_Vice_President": [{
         'name': 'Calvary Rogers',
         'email': 'calvary@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58103_rogers_calvaryt.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58146_rogers_calvaryo.png'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58146_rogers_calvaryo.png',
+        'endorsements': 'Interfraternity Council, Lambda alliance'
       },
       {
         'name': 'Jay Shah',
         'email': 'shahjay@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58105_shah_jayt.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58156_shah_jayo.jpg'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58156_shah_jayo.jpg',
+        'endorsements': 'Lambda Phi Epsilon, Assembly of International Students, The Kite and Key Society Executive Board, Asian Pacific Student Coalition, Fossil Free Penn, Penn Democrats, UPenn South Asia Society, Penn Association for Gender Equity'
       }
     ],
     "SAS_Representative": [{
         'name': 'Jordan Andrews',
         'email': 'andjor@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58071_andrews_jordant.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58129_andrews_jordano.jpg'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58129_andrews_jordano.jpg',
+        'endorsements': 'Penn Democrats, Penn Association for Gender Equity'
       },
       {
         'name': 'Neel Daugherty-Shrivastava',
@@ -308,55 +320,64 @@ var people = {
         'name': 'Max Grove',
         'email': 'maxgrove@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58081_grove_maxt.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58127_grove_maxo.jpg'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58127_grove_maxo.jpg',
+        'endorsements': 'Penn Democrats, Lambda alliance, Penn Association for Gender Equity'
       },
       {
         'name': 'Elena Hoffman',
         'email': 'elenaho@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58082_hoffman_elenat.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58128_hoffman_elenao.jpg'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58128_hoffman_elenao.jpg',
+        'endorsements': 'Penn Democrats'
       },
       {
         'name': 'Justin Hopkins',
         'email': 'justh@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58083_hopkins_justint.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58137_hopkins_justino.png'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58137_hopkins_justino.png',
+        'endorsements': 'Interfraternity Council, Penn Democrats'
       },
       {
         'name': 'Noah Kest',
         'email': 'noahkest@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58084_kest_noaht.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58130_kest_noaho.jpeg'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58130_kest_noaho.jpeg',
+        'endorsements': 'Fossil Free Penn, TableTalk, Active Minds Penn'
       },
       {
         'name': 'Jason Kim',
         'email': 'jasonks@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58087_kim_jasont.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58133_kim_jasono.jpg'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58133_kim_jasono.jpg',
+        'endorsements': 'Lambda alliance'
       },
       {
         'name': 'Michael Krone',
         'email': 'mkrone@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58086_krone_michaelt.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58136_krone_michaelo.png'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58136_krone_michaelo.png',
+        'endorsements': 'Penn Democrats'
       },
       {
         'name': 'Natasha Menon',
         'email': 'namenon@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58091_menon_natashat.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58143_menon_natashao.jpg'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58143_menon_natashao.jpg',
+        'endorsements': 'Penn Democrats, Penn Association for Gender Equity'
       },
       {
         'name': 'Simon Miller',
         'email': 'similler@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58094_miller_simont.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58140_miller_simono.jpg'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58140_miller_simono.jpg',
+        'endorsements': 'Penn Democrats'
       },
       {
         'name': 'Kevin Myers',
         'email': 'kevmyers@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58095_myers_kevint.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58142_myers_kevino.png'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58142_myers_kevino.png',
+        'endorsements': 'Penn Democrats'
       },
       {
         'name': 'Santosh Nori',
@@ -368,25 +389,29 @@ var people = {
         'name': 'Sola Park',
         'email': 'solap@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58096_park_solat.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58152_park_sola_uao.pdf'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58152_park_sola_uao.pdf',
+        'endorsements': 'Lambda Phi Epsilon, Assembly of International Students, Penn Democrats'
       },
       {
         'name': 'Calvary Rogers',
         'email': 'calvary@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58103_rogers_calvaryt.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58146_rogers_calvaryo.png'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58146_rogers_calvaryo.png',
+        'endorsements': 'Interfraternity Council, Penn Democrats, Lambda alliance, Penn Association for Gender Equity'
       },
       {
         'name': 'Jay Shah',
         'email': 'shahjay@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58105_shah_jayt.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58156_shah_jayo.jpg'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58156_shah_jayo.jpg',
+        'endorsements': 'Lambda Phi Epsilon, Assembly of International Students, Fossil Free Penn, Penn Democrats'
       },
       {
         'name': 'Ariela Stein',
         'email': 'arielas@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58109_stein_arielat.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58151_stein_arielao.jpg'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58151_stein_arielao.jpg',
+        'endorsements': 'Women\'s Political League, Sigma Delta Tau, Active Minds Penn'
       },
       {
         'name': 'Arjun Swaminathan',
@@ -404,13 +429,15 @@ var people = {
         'name': 'Samara Wyant',
         'email': 'wyantsam@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58115_wyant_samarat.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58161_wyant_samarao.jpg'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58161_wyant_samarao.jpg',
+        'endorsements': 'Interfraternity Council, Sigma Delta Tau, Penn Democrats'
       },
       {
         'name': 'Michelle Xu',
         'email': 'michx@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58118_xu_michellet.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58160_xu_michelleo.jpg'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58160_xu_michelleo.jpg',
+        'endorsements': 'Lambda Phi Epsilon, Assembly of International Students, Penn Democrats'
       }
     ],
     "SEAS_Representative": [{
@@ -436,7 +463,8 @@ var people = {
         'name': 'Maria Curry',
         'email': 'mariacu@wharton.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58073_curry_mariat.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58121_curry_mariao.jpg'
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58121_curry_mariao.jpg',
+        'endorsements': 'Penn Democrats'
       },
       {
         'name': 'Julianne Goodman',
@@ -487,6 +515,7 @@ $(document).ready(function() {
 
         "</figcaption>" +
         "<h3>" + people[person].name + "</h3>" +
+        "<p>" + (people[person].endorsements === undefined ? "" : "<i>Endorsements: </i>" + people[person].endorsements) + "</p>" +
         "</figure></li>"
       );
     }
