@@ -376,7 +376,7 @@ var people = {
         'name': 'Kevin Myers',
         'email': 'kevmyers@sas.upenn.edu',
         'photo': 'https://s3.amazonaws.com/media.dpn/58095_myers_kevint.jpg',
-        'stmt': 'https://s3.amazonaws.com/media.dpn/58142_myers_kevino.png',
+        'stmt': 'https://s3.amazonaws.com/media.dpn/58276_17571672_10208872544438499_609453523_oo.png',
         'endorsements': 'Penn Democrats'
       },
       {
