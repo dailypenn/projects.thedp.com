@@ -90,6 +90,14 @@ div.jQBracket .team div.label {
   display: inline-block;
 }
 
+.final-bracket {
+  display: inline-block;
+  position: relative;
+  float: left;
+  height: 0;
+  right: 5%;
+  bottom: 75px;
+}
 
 /*OTHER STYLES*/
 

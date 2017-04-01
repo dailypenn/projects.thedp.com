@@ -62,7 +62,7 @@ var ltbracketData = {
       [360, 304],
       [297, 333]
     ], [
-      []
+      // [368, 231]
     ]
   ]
 };
@@ -131,10 +131,20 @@ var rtbracketData = {
       [257, 337],
       [307, 293]
     ], [
-      []
+      // [251, 258]
     ]
   ]
 };
+
+var finalbracketData = {
+  teams: [
+    // ["Sigma Kappa", "Bloomers"]
+  ],
+  results: [
+      [, ]
+    ]
+};
+
 
 $(function() {
   $('#ltbracket').bracket({
@@ -145,6 +155,10 @@ $(function() {
     init: rtbracketData,
     skipConsolationRound: true,
     dir: 'rl'
+  })
+  $('#finalbracket').bracket({
+    init: finalbracketData,
+    skipConsolationRound: true,
   })
 });
 
