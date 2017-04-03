@@ -62,7 +62,7 @@ var ltbracketData = {
       [360, 304],
       [297, 333]
     ], [
-      // [368, 231]
+      [368, 231]
     ]
   ]
 };
@@ -131,14 +131,14 @@ var rtbracketData = {
       [257, 337],
       [307, 293]
     ], [
-      // [251, 258]
+      [251, 258]
     ]
   ]
 };
 
 var finalbracketData = {
   teams: [
-    // ["Sigma Kappa", "Bloomers"]
+    ["Sigma Kappa", "Bloomers"]
   ],
   results: [
       [, ]
