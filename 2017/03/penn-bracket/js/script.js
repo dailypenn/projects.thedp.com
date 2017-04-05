@@ -14,7 +14,7 @@ var ltbracketData = {
     ["SDT", "Synchronized Swimming"],
 
     // EDUCATIONAL
-    ["MERT 🏆", "PPI Student Group"],
+    ["MERT", "PPI Student Group"],
     ["Kite and Key", "Wharton Healthcare Club"],
 
     ["The Undergraduate Assembly", "City Step"],
@@ -141,7 +141,7 @@ var finalbracketData = {
     ["Sigma Kappa", "Bloomers"]
   ],
   results: [
-      [, ]
+      [681, 417]
     ]
 };
 
