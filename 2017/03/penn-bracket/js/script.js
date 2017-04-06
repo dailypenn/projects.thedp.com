@@ -14,7 +14,7 @@ var ltbracketData = {
     ["SDT", "Synchronized Swimming"],
 
     // EDUCATIONAL
-    ["MERT 🏆", "PPI Student Group"],
+    ["MERT", "PPI Student Group"],
     ["Kite and Key", "Wharton Healthcare Club"],
 
     ["The Undergraduate Assembly", "City Step"],
@@ -62,7 +62,7 @@ var ltbracketData = {
       [360, 304],
       [297, 333]
     ], [
-      // [368, 231]
+      [368, 231]
     ]
   ]
 };
@@ -131,17 +131,17 @@ var rtbracketData = {
       [257, 337],
       [307, 293]
     ], [
-      // [251, 258]
+      [251, 258]
     ]
   ]
 };
 
 var finalbracketData = {
   teams: [
-    // ["Sigma Kappa", "Bloomers"]
+    ["Sigma Kappa", "Bloomers"]
   ],
   results: [
-      [, ]
+      [681, 417]
     ]
 };
 

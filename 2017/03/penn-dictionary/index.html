@@ -4,12 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Penn Dictionary | The DP</title>
-  <meta property="og:image" content="" />
+  <title>Penn Dictionary | Under the Button</title>
+  <meta property="og:image" content="https://s3.amazonaws.com/media.dpn/58550_pdf.png" />
+  <meta property="og:description" content="We're confused, too." />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
@@ -64,27 +63,53 @@
   }
 
   #image {
-    padding-top:70px;
+    padding-top:100px;
   }
 
   #entries {
     padding-top:30px;
   }
 
+  .sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+  }
+
+  .content-container {
+    padding-top: 70px;
+  }
+
   @media screen and (max-width: 720px){
     .container {
       width: 80%;
+    }
+    .content-container {
+      padding-top: 25px;
     }
   }
   </style>
 
 </head>
 <body>
-  <div class="container">
-    <div class="row">
+  <header>
+    <nav class="navbar navbar-light bg-faded sticky-top sticky">
       <center>
+        <a class="navbar-center" href="http://www.underthebutton.com/">
+          <img height="35" alt="Under The Button" src="http://d1q35ni5859stt.cloudfront.net/20170328Qylq4L1TLm/dist/img/utb.svg">
+        </a>
+      </center>
+    </nav>
+  </header>
+
+  <div class="container content-container">
+    <div class="row">
+      <center class="col-sm-6">
         <img class="img-fluid" id="image" src="./UrbanDictLogo-02.svg" alt="Penn Dictionary">
       </center>
+      <div class="col-sm-6">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeUfrBVbljX0T4B2ZVhkaX7QuuMRwiV6kBLASXcK4jLoYVhPA/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      </div>
     </div>
     <center class="row">
       <div class="col-xs-12 hidden-md-down">
