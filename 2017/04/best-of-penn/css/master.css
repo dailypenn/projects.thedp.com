@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../font/gilroy-bold-webfont.woff2') format('woff2'), url('../font/gilroy-bold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../font/gilroy-heavy-webfont.woff2') format('woff2'), url('../font/gilroy-heavy-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../font/gilroy-medium-webfont.woff2') format('woff2'), url('../font/gilroy-medium-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../font/gilroy-light-webfont.woff2') format('woff2'), url('../font/gilroy-light-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../font/gilroy-thin-webfont.woff2') format('woff2'), url('../font/gilroy-thin-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Gilroy';
+}
+
+h2 {
+  font-weight: 600;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+h2 span {
+  font-weight: 200;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.row:not(:last-child) {
+  padding-bottom: 25px;
+  border-bottom: 10px solid blue;
+}
