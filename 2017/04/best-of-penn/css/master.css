@@ -102,11 +102,6 @@ figcaption {
   font-size: 12px;
 }
 
-p:not(:first-of-type) {
-  font-size: 80%;
-}
-
-
 .img-fluid {
   width: 100%;
 }
