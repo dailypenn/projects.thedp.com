@@ -65,7 +65,7 @@ hr:after {
     top: -0.9em;
     font-size: .9em;
     padding: 0 0.25em;
-    background: white;
+    background: #fff;
 }
 
 h2 {
@@ -88,6 +88,18 @@ h2 span {
   text-transform: uppercase;
   font-size: 14px;
   color: #5C91CA;
+}
+
+figcaption {
+  color: #7c7c7c;
+  font-family: 'PT Serif', serif;
+  font-style: italic;
+  height: 0;
+	transform: rotate(-90deg);
+	transform-origin: left 100%;
+  float: left;
+  margin-left: -18px;
+  font-size: 12px;
 }
 
 p:not(:first-of-type) {
