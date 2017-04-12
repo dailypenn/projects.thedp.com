@@ -102,6 +102,12 @@ figcaption {
   font-size: 12px;
 }
 
+nav {
+  position: fixed;
+  /*text-align: center;*/
+  /*margin: auto;*/
+}
+
 .img-fluid {
   width: 100%;
 }
