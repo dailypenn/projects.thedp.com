@@ -1,6 +1,16 @@
 {
   "featured": [
     {
+      "title": "34th Street Magazine Presents: Penn10 2017",
+      "author": "Web Dev: Andrew Fischer",
+      "section": "34th Street Guides",
+      "date": "April 2017",
+      "description": "Read about ten of Penn's extraordinary seniors, brought to you by 34th Street and made possible by Penn Alumni.",
+      "sponsored": false,
+      "link": "http://projects.34st.com/2017/04/penn10/",
+      "image": "https://s3.amazonaws.com/media.dpn/58800_15618_penn10oo.png"
+    },
+    {
       "title": "Best of Penn 2017",
       "author": "Design: Julia Schorr; Web Dev: Maki Chung, Andrew Fischer",
       "section": "Guides",
@@ -8,7 +18,7 @@
       "description": "Yes, it's that time of year again: when the people of Penn dutifully cast their votes for the best eateries, shops and (yes) book stores on and around campus. See what you all voted to win our 20 Best of Penn categories.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/04/best-of-penn/",
-      "image": "https://s3.amazonaws.com/media.dpn/58764_bestofpennogjpgo.jpeg"
+      "image": "https://s3.amazonaws.com/media.dpn/58764_bestofpennogjpgf.jpeg"
     },
     {
       "title": "Penn Dictionary",
@@ -19,7 +29,9 @@
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/03/penn-dictionary/",
       "image": "https://s3.amazonaws.com/media.dpn/58550_pdf.png"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "Penn Bracket 2017",
       "author": "Design: Rong Xiang, Julia Schorr; Web Dev: Andrew Fischer",
@@ -29,13 +41,11 @@
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/03/penn-bracket/",
       "image": "https://s3.amazonaws.com/media.dpn/57761_pennbracketogjpgf.jpeg"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "34th Street Dining Guide Spring 2017",
       "author": "Web Dev: Nolan Hill, Andrew Fischer",
-      "section": "Guides",
+      "section": "34th Street Guides",
       "date": "March 2017",
       "description": "Explore Street's favorite places to eat on this interactive map.",
       "sponsored": false,
