@@ -50,7 +50,7 @@ footer > hr {
     padding-bottom: 0px;
   }
 
-  .col-sm-8:last-of-type {
+  .col-sm-8:last-of-type, .col-sm-6:first-of-type {
     border-bottom: none;
   }
 }
