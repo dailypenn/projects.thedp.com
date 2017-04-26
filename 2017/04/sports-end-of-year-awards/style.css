@@ -74,7 +74,7 @@ h2 {
 }
 
 header {
-  background: #2b2e48;
+  background: #314368;
   padding: 5px;
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
@@ -102,7 +102,7 @@ header img {
   content: "";
   width: 3px;
   height: 100%;
-  background: #f0611f;
+  background: #AA1E22;
   left: 50%;
   top: 0;
   position: absolute;
@@ -117,7 +117,7 @@ header img {
   position: relative;
 }
 #timeline .timeline-item .timeline-icon {
-  background: #f0611f;
+  background: #AA1E22;
   width: 50px;
   height: 50px;
   position: absolute;
