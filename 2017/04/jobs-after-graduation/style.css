@@ -34,11 +34,25 @@ footer > hr {
   padding: 5px;
 }
 
+hr {
+  padding-bottom: 20px;
+}
+
 .col-sm-6, .col-sm-12 {
   padding-bottom: 20px;
 }
 
+.ad {
+  padding-bottom: 30px;
+}
+
 @media screen and (max-width: 768px) {
+  hr {
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+  }
+
   .col-sm-6, .col-sm-8 {
     border-bottom: 1px solid #EEE;
     padding-bottom: 20px;
@@ -50,7 +64,9 @@ footer > hr {
     padding-bottom: 0px;
   }
 
-  .col-sm-8:last-of-type, .col-sm-6:first-of-type {
+  .no-border {
     border-bottom: none;
+    padding-bottom: 0px;
+    padding-top: 0px;
   }
 }
