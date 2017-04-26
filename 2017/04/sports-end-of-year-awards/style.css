@@ -239,6 +239,13 @@ header img {
   position: initial !important;
   color: inherit;
 }
+.credit {
+  margin-top: 0px;
+  padding-top: 0px;
+  font-size: 11px;
+  text-align: right;
+}
+
 @media screen and (max-width: 768px) {
   #timeline {
     margin: 30px;
