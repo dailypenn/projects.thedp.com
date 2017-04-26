@@ -1,0 +1,31 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h6 {
+  font-size: 24px;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 70px;
+}
+
+a {
+  transition: all 200ms ease-in-out;
+  color: rgb(235, 78, 27);
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(59, 157, 161)
+}
