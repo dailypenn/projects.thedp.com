@@ -25,7 +25,15 @@ a {
   color: rgb(235, 78, 27);
 }
 
-a:hover {
+a:hover, a:active, a:focus {
   text-decoration: none;
   color: rgb(59, 157, 161)
+}
+
+hr {
+  padding: 20px;
+}
+
+footer > hr {
+  padding: 5px;
 }
