@@ -21,9 +21,11 @@ a, a:active, a:hover, a:visited {
 
 iframe {
 	border-radius: 10px;
+	width: 100%;
+	height: 100%;
 }
 p {
-	font-size: 1.2em;
+	font-size: 1.6em;
   text-align: justify;
 	hyphens: auto;
 	word-wrap: break-word;
@@ -140,7 +142,7 @@ a.btn-danger:hover {
 	background-image:	linear-gradient(
 		rgba(0, 0, 0, 0.6),
 		rgba(0, 0, 0, 0.6)
-		), url(https://s3.amazonaws.com/media.dpn/49338_advertisingf.jpg);
+		), url(https://s3.amazonaws.com/media.dpn/59303_pexelsphoto251287f.jpg);
 }
 
 #marketing {
@@ -176,14 +178,21 @@ a.btn-danger:hover {
 	background-image:	linear-gradient(
 		rgba(0, 0, 0, 0.6),
 		rgba(0, 0, 0, 0.6)
-		), url(https://s3.amazonaws.com/media.dpn/49326_street_copyo.jpg);
+		), url(https://s3.amazonaws.com/media.dpn/49326_street_copyf.jpg);
 }
 
 #utb{
   background-image:	linear-gradient(
 		rgba(0, 0, 0, 0.6),
 		rgba(0, 0, 0, 0.6)
-		), url(http://media.dpn.s3.amazonaws.com/49323_buttondarko.jpg);
+		), url(http://media.dpn.s3.amazonaws.com/49323_buttondarkf.jpg);
+}
+
+#podcasts {
+	background-image:	linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)
+		), url(https://s3.amazonaws.com/media.dpn/59302_pexelsphoto227661f.jpeg);
 }
 
 .text-content {
@@ -228,10 +237,12 @@ a.btn-danger:hover {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
 	.section .row, .section {
+		font-size: .8em;
 		width: 100% !important;
 		margin: 0 !important;
 	}
