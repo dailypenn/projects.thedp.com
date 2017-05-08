@@ -5,7 +5,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 92px;
 }
 
 h2 {
@@ -25,7 +25,48 @@ a {
   color: rgb(235, 78, 27);
 }
 
-a:hover {
+a:hover, a:active, a:focus {
   text-decoration: none;
   color: rgb(59, 157, 161)
+}
+
+footer > hr {
+  padding: 5px;
+}
+
+hr {
+  padding-bottom: 20px;
+}
+
+.col-sm-6, .col-sm-12 {
+  padding-bottom: 20px;
+}
+
+.ad {
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  hr {
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .col-sm-6, .col-sm-8 {
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .col-sm-12 {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  .no-border {
+    border-bottom: none;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
 }

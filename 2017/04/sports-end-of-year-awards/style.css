@@ -3,7 +3,7 @@ header {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 100
+  z-index: 100;
 }
 header:after, #timeline .timeline-item:after, header:before, #timeline .timeline-item:before {
   content: '';
@@ -28,7 +28,7 @@ body {
   background-size: cover;
   margin: 0u;
   padding: 0;
-  font-family: "Azo Sans", helvetica, arial, tahoma, verdana;
+  font-family: "Lora", serif;
   font-weight: 400;
   line-height: 20px;
   font-size: 14px;
@@ -37,6 +37,7 @@ body {
 
 img {
   max-width: 100%;
+  padding-top: 15px;
 }
 
 a {
@@ -56,6 +57,12 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 50px;
   line-height: 110%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  line-height: 120%;
 }
 
 .project-name {
@@ -67,8 +74,8 @@ h1 {
 }
 
 header {
-  background: #2b2e48;
-  padding: 10px;
+  background: #314368;
+  padding: 5px;
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
   -ms-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
@@ -78,7 +85,7 @@ header .social {
   float: right;
 }
 header img {
-  margin-top: 5px;
+  margin-top: -5px;
 }
 
 #timeline {
@@ -95,7 +102,7 @@ header img {
   content: "";
   width: 3px;
   height: 100%;
-  background: #f0611f;
+  background: #AA1E22;
   left: 50%;
   top: 0;
   position: absolute;
@@ -110,7 +117,7 @@ header img {
   position: relative;
 }
 #timeline .timeline-item .timeline-icon {
-  background: #f0611f;
+  background: #AA1E22;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -232,6 +239,13 @@ header img {
   position: initial !important;
   color: inherit;
 }
+.credit {
+  margin-top: 0px;
+  padding-top: 0px;
+  font-size: 11px;
+  text-align: right;
+}
+
 @media screen and (max-width: 768px) {
   #timeline {
     margin: 30px;

@@ -1,7 +1,27 @@
 {
   "featured": [
     {
-      "title": "34th Street Magazine Presents: Penn10 2017",
+      "title": "The Job Search",
+      "author": "Web Dev: Andrew Fischer",
+      "section": "Guides",
+      "date": "April 2017",
+      "description": "With students running around in suits to Huntsman Hall, coffee chats across campus and Career Service emails populated with prestigious company names, hunting for a job is a daily part of life at Penn. Over the course of a few months, the Enterprise team at The Daily Pennsylvanian has looked into the many aspects of the job search on campus. From students working in lucrative industries to those who return to Locust Walk to continue their work at Penn, here are their stories.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2017/04/jobs-after-graduation/",
+      "image": "https://s3.amazonaws.com/media.dpn/59135_thejobsearcho.png"
+    },
+    {
+      "title": "Penn Athletics End of Year Awards",
+      "author": "Web Dev: Andrew Fischer, Alex Graves",
+      "section": "Sports",
+      "date": "April 2017",
+      "description": "The year has seen some incredible moments for the University — but which ones were best? Here are our year-end awards for the best athletes, coaches, upsets and more.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2017/04/sports-end-of-year-awards/",
+      "image": "https://s3.amazonaws.com/media.dpn/59124_sportsawardsf.jpg"
+    },
+    {
+      "title": "Penn10 2017",
       "author": "Web Dev: Andrew Fischer",
       "section": "34th Street Guides",
       "date": "April 2017",
@@ -9,7 +29,9 @@
       "sponsored": false,
       "link": "http://projects.34st.com/2017/04/penn10/",
       "image": "https://s3.amazonaws.com/media.dpn/58893_penn10o.png"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "Best of Penn 2017",
       "author": "Design: Julia Schorr; Web Dev: Maki Chung, Andrew Fischer",
@@ -29,9 +51,7 @@
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/03/penn-dictionary/",
       "image": "https://s3.amazonaws.com/media.dpn/58550_pdf.png"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "Penn Bracket 2017",
       "author": "Design: Rong Xiang, Julia Schorr; Web Dev: Andrew Fischer",
