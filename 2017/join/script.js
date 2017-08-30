@@ -3,14 +3,14 @@ $(document).ready(function(){
 	  window.location.href = $(this).find("option:selected").attr("id") + '.html';
 	});
   $('#fullpage').fullpage({
-    anchors: ['join-intro', 'join-news', 'join-copy', 'join-sports', 'join-social', 'join-photo', 'join-design', 'join-video', 'join-web', /*'join-podcasts',*/ 'join-ed-analytics', 'join-advertising', 'join-marketing', 'join-circulation', 'join-biz-analytics', 'join-34st', 'join-utb', 'join-join'],
+    anchors: ['join-intro', 'join-news', 'join-copy', 'join-sports', 'join-social', 'join-photo', 'join-design', 'join-video', 'join-web', 'join-podcasts', 'join-analytics', 'join-advertising', 'join-marketing', 'join-circulation', 'join-34st', 'join-utb', 'join-form'],
     css3: true,
     scrollingSpeed: 500,
     scrollBar: true,
 		autoScrolling: false//,
     // onLeave: function(index, nextIndex, direction){
     //   var lis = document.getElementById("nav-list").getElementsByTagName("li");
-    // 
+    //
     // }
 //,
 //		fitToSection: false

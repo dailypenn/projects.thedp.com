@@ -15,8 +15,14 @@ h1 {
 	margin-top: 0 !important;
 }
 
-a, a:active, a:hover, a:visited {
+a, a:visited {
 	color: #AA1E23 !important;
+	text-decoration: none !important;
+}
+
+a:active, a:hover {
+	color: #999 !important;
+	text-decoration: none;
 }
 
 iframe {
@@ -131,7 +137,7 @@ a.btn-danger:hover {
 		), url(https://s3.amazonaws.com/media.dpn/55918_codemanf.JPG);
 }
 
-#edAnal {
+#analytics {
   background-image:	linear-gradient(
 		rgba(0, 0, 0, 0.6),
 		rgba(0, 0, 0, 0.6)
@@ -158,13 +164,6 @@ a.btn-danger:hover {
 		rgba(0, 0, 0, 0.6),
 		rgba(0, 0, 0, 0.6)
 		), url(https://s3.amazonaws.com/media.dpn/49324_dsc_5140f.jpg);
-}
-
-#bizAnal {
-  background-image:	linear-gradient(
-		rgba(0, 0, 0, 0.6),
-		rgba(0, 0, 0, 0.6)
-		), url(https://s3.amazonaws.com/media.dpn/55919_analyticsmanf.JPG);
 }
 
 #sponcon {
