@@ -1,0 +1,43 @@
+body {
+  font-family: 'Quattrocento';
+  background-color: #F7F9FC;
+}
+
+footer {
+  margin-top: 20px;
+  border-top: 1px solid #DDD;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+.navbar {
+  background-color: #EEE;
+  border-color: #DDD;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  margin-top: 50px;
+}
+
+.intro {
+  margin-bottom: 30px;
+}
+
+.panel {
+  background-color: #EEE;
+  border-radius: 2px;
+}
+
+.panel-heading {
+  padding: 0;
+}
+
+.resources {
+  margin-top: 0;
+}
