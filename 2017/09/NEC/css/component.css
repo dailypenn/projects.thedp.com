@@ -31,9 +31,14 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 5px;
+	padding: 12px;
 	background: #2c2c2c;
 	color: #fff;
+	overflow: scroll;
+}
+
+.grid figcaption p {
+	text-align: left;
 }
 
 .grid figcaption h3 {
