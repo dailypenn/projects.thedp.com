@@ -1,0 +1,72 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 92px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h6 {
+  font-size: 24px;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 70px;
+}
+
+a {
+  transition: all 200ms ease-in-out;
+  color: rgb(235, 78, 27);
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: rgb(59, 157, 161)
+}
+
+footer > hr {
+  padding: 5px;
+}
+
+hr {
+  padding-bottom: 20px;
+}
+
+.col-sm-6, .col-sm-12 {
+  padding-bottom: 20px;
+}
+
+.ad {
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  hr {
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .col-sm-6, .col-sm-8 {
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .col-sm-12 {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  .no-border {
+    border-bottom: none;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+}
