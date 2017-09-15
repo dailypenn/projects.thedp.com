@@ -1,0 +1,300 @@
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono";
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400";
+/*100px equal 1 hour*/
+/*clock*/
+/*clock hands*/
+/*colors*/
+/*display scheduele*/
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font: 12px/1.5;
+  font-family: 'Roboto Mono', "Lucida Console", monospace;
+  letter-spacing: .05em;
+  background-color: #8d9eaf;
+  height: 1200px;
+}
+
+
+/*clock*/
+#clock {
+  width: 66px;
+  height: 66px;
+  position: fixed;
+  right: 2%;
+  border: 4px solid #19305b;
+  background-color: #8d9eaf;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform ease-out .2s;
+  transition: -webkit-transform ease-out .2s;
+  transition: transform ease-out .2s;
+  transition: transform ease-out .2s, -webkit-transform ease-out .2s;
+  /*shadow*/
+  box-shadow: 0 4px 10px rgba(34, 34, 34, 0.2), inset 0 1px 2px rgba(34, 34, 34, 0.08);
+  z-index: 9;
+}
+
+#clock .hour-hand {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -32%;
+  margin-right: -3px;
+  margin-bottom: 0;
+  margin-left: -3px;
+  padding-top: 32%;
+  padding-right: 3px;
+  padding-bottom: 0;
+  padding-left: 3px;
+  background: #921924;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  border-radius: 8px 8px 0 0;
+  z-index: 9;
+  -webkit-transition: -webkit-transform ease-out .2s;
+  transition: -webkit-transform ease-out .2s;
+  transition: transform ease-out .2s;
+  transition: transform ease-out .2s, -webkit-transform ease-out .2s;
+}
+
+#clock .minute-hand {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -42%;
+  margin-right: -3px;
+  margin-bottom: 0;
+  margin-left: -3px;
+  padding-top: 42%;
+  padding-right: 3px;
+  padding-bottom: 0;
+  padding-left: 3px;
+  background: #921924;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  border-radius: 8px 8px 0 0;
+  -webkit-transition: -webkit-transform ease-out .2s;
+  transition: -webkit-transform ease-out .2s;
+  transition: transform ease-out .2s;
+  transition: transform ease-out .2s, -webkit-transform ease-out .2s;
+  z-index: 9;
+}
+
+.clock-face:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  background: #19305b;
+  border-radius: 50%;
+  content: "";
+  /*shadow*/
+  box-shadow: 0 2px 4px rgba(34, 34, 34, 0.15), 0 0px 2px rgba(34, 34, 34, 0.15);
+  z-index: 9;
+}
+
+/*digital time*/
+#clock .digital-time {
+  margin-top: 78px;
+  text-align: center;
+  color: #921924;
+}
+
+@media (min-width: 600px) {
+  #clock {
+    width: 76px;
+    height: 76px;
+    right: 1%;
+  }
+
+  #clock .digital-time {
+    margin-top: 88px;
+  }
+}
+/*scheduele*/
+.schedule {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  top: 0px;
+  max-width: 640px;
+  width: 100%;
+  padding: 0 2%;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+
+.schedule-item {
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  width: 100%;
+  line-height: 60px;
+  box-shadow: 0 1px 0px 0px rgba(255, 255, 255, 0.25);
+}
+
+.schedule-content {
+  position: absolute;
+  display: block;
+  width: calc(90% - 125px);
+  max-width: 565px;
+  margin: 1px 0px 0px 100px;
+  padding: 0px 0px 0px 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.content-title {
+  padding-top: 7px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.content-duration {
+  font-weight: 300;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*schedule content*/
+/*11-1*/
+.schedule-content:nth-of-type(2) {
+  background-color: #19305b;
+  height: 199px;
+  /*margin-top: 28px;*/
+}
+
+.schedule-content:nth-of-type(2) .content-title {
+  margin-top: -5px;
+}
+
+.schedule-content:nth-of-type(2) .content-title::after {
+  content: "Registration & Optional Programming";
+}
+
+.schedule-content:nth-of-type(2) .content-duration::after {
+  content: "Annenberg, Main Lobby";
+}
+
+/*----*/
+.schedule-content:nth-of-type(6) {
+  background-color: #19305b;
+  height: 99px;
+}
+.schedule-content:nth-of-type(6) .content-title::after {
+  content: "Class of 2021 Welcome & Penn Traditions Showcase";
+}
+
+.schedule-content:nth-of-type(6) .content-duration::after {
+  content: "Annenberg, Zellerbach Auditorium";
+}
+
+.schedule-content:nth-of-type(6) {
+  background-color: #19305b;
+  height: 99px;
+}
+
+/*----*/
+.schedule-content:nth-of-type(8) {
+  background-color: #19305b;
+  height: 99px;
+}
+.schedule-content:nth-of-type(8) .content-title::after {
+  content: "Proud Penn Parents Panel";
+}
+
+.schedule-content:nth-of-type(8) .content-duration::after {
+  content: "[Parents/Guests Only]";
+}
+
+.schedule-content:nth-of-type(8) {
+  background-color: #19305b;
+  height: 99px;
+}
+
+/*----*/
+.schedule-content:nth-of-type(10) {
+  background-color: #19305b;
+  height: 99px;
+}
+.schedule-content:nth-of-type(10) .content-title::after {
+  content: "Thrive at Penn";
+}
+
+.schedule-content:nth-of-type(10) .content-duration::after {
+  content: "[Parents/Guests Recommended]";
+}
+
+.schedule-content:nth-of-type(10) {
+  background-color: #19305b;
+  height: 99px;
+}
+
+/*--4 to 5--*/
+.schedule-content:nth-of-type(12) {
+  background-color: #19305b;
+  height: 99px;
+}
+.schedule-content:nth-of-type(12) .content-title::after {
+  content: "Eat, Sleep, Penn";
+}
+
+.schedule-content:nth-of-type(12) .content-duration::after {
+  content: "[Parents/Guests Recommended]";
+}
+
+.schedule-content:nth-of-type(12) {
+  background-color: #19305b;
+  height: 99px;
+}
+
+/*--5 to 6:30--*/
+.schedule-content:nth-of-type(14) {
+  background-color: #19305b;
+  height: 149px;
+}
+.schedule-content:nth-of-type(14) .content-title::after {
+  content: "The Last Hurrah - Class of 2021 Dinner";
+}
+
+.schedule-content:nth-of-type(14) .content-duration::after {
+  content: "[Students Only]";
+}
+
+.schedule-content:nth-of-type(14) {
+  background-color: #19305b;
+  height: 149px;
+}
+
+/*--5 to 6:30--*/
+.schedule-content:nth-of-type(18) {
+  background-color: #19305b;
+  height: 199px;
+}
+.schedule-content:nth-of-type(18) .content-title::after {
+  content: "Men's Basketball: Columbia @ Penn";
+}
+
+.schedule-content:nth-of-type(18) .content-duration::after {
+  content: "The Palestra";
+}
+
+.schedule-content:nth-of-type(18) {
+  background-color: #19305b;
+  height: 199px;
+}
