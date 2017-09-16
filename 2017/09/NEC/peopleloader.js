@@ -11,7 +11,7 @@ var people = {
        "stmt": "GID will Get It Done. My fellow classmates, congratulations on making it to Furda’s A-List. The class of 2021 is an incredible group, bearing the best athletes, activists, musicians, and scholars from around the world. This is our time, and I want to lead you to make sure your journey at Penn starts out strong. With such a diverse and talented student body, I want to unite the class of ’21 to thrive collectively. I have many ideas for events to bring us all together and build connections, including an outing to a 76ers game (#TrustTheProcess) and a snowball fight in the Quad this winter. In addition, I want to share my passion for community service, and encourage the class to volunteer with organizations across Philadelphia. It would be an honor to serve as your President and bring our class to new heights. Remember, Get It Done with Gid. "
      }, {
        "name": "Jude Dartey",
-       "photo": "https://s3.amazonaws.com/media.dpn/51345_fillerimgf.jpg",
+       "photo": "https://snworksceo.imgix.net/dpn/ba70b35c-bcbf-4fd9-8e5e-e0bb97ae60fb.sized-1000x1000.JPG?",
        "stmt": ""
      }, {
        "name": "Saachi Datta",
