@@ -10,8 +10,22 @@ footer {
   padding-bottom: 10px;
 }
 
+a.article {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover.article h4, a:active.article h4 {
+  text-decoration: none;
+  color: #888;
+}
+
 h1 {
   font-size: 70px;
+}
+
+h4 {
+  margin: 0;
 }
 
 .navbar {
@@ -29,9 +43,23 @@ h1 {
   margin-bottom: 30px;
 }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article {
+  width: 33%;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
 .panel {
   background-color: #EEE;
   border-radius: 2px;
+  height: 100%;
 }
 
 .panel-heading {
@@ -40,4 +68,12 @@ h1 {
 
 .resources {
   margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .article {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
