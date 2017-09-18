@@ -1,6 +1,16 @@
 {
   "featured": [
     {
+      "title": "When a Penn student dies: Stories surrounding mental health on campus",
+      "author": "Web Dev: Alex Graves",
+      "section": "Guides",
+      "date": "September 2017",
+      "description": "Over the course of three weeks, The Daily Pennsylvanian analyzed various aspects of mental health across the University: from the resources offered at Counseling and Psychological Services to the way administrators choose to communicate these student deaths.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2017/09/mental-health/",
+      "image": "https://snworksceo.imgix.net/dpn/cd64b61d-fe37-4b90-9b05-2428ca9dd004.sized-1000x1000.jpg"
+    },
+    {
       "title": "The Job Search",
       "author": "Web Dev: Andrew Fischer",
       "section": "Guides",
@@ -8,7 +18,7 @@
       "description": "With students running around in suits to Huntsman Hall, coffee chats across campus and Career Service emails populated with prestigious company names, hunting for a job is a daily part of life at Penn. Over the course of a few months, the Enterprise team at The Daily Pennsylvanian has looked into the many aspects of the job search on campus. From students working in lucrative industries to those who return to Locust Walk to continue their work at Penn, here are their stories.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/04/jobs-after-graduation/",
-      "image": "https://s3.amazonaws.com/media.dpn/59135_thejobsearcho.png"
+      "image": "https://s3.amazonaws.com/media.dpn/59135_thejobsearchf.png"
     },
     {
       "title": "Penn Athletics End of Year Awards",
@@ -19,7 +29,9 @@
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/04/sports-end-of-year-awards/",
       "image": "https://s3.amazonaws.com/media.dpn/59124_sportsawardsf.jpg"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "Penn10 2017",
       "author": "Web Dev: Andrew Fischer",
@@ -29,9 +41,7 @@
       "sponsored": false,
       "link": "http://projects.34st.com/2017/04/penn10/",
       "image": "https://s3.amazonaws.com/media.dpn/58893_penn10o.png"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "Best of Penn 2017",
       "author": "Design: Julia Schorr; Web Dev: Maki Chung, Andrew Fischer",
