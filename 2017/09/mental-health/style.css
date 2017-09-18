@@ -1,11 +1,11 @@
 body {
   font-family: 'Quattrocento';
-  background-color: #F7F9FC;
+  background-color: #DDD;
 }
 
 footer {
   margin-top: 20px;
-  border-top: 1px solid #DDD;
+  border-top: 1px solid #AAA;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -35,8 +35,8 @@ a:hover.article h3, a:active.article h3 {
   color: #888;
 }
 
-h1 {
-  font-size: 70px;
+h1:last-of-type {
+  margin-top: 0;
 }
 
 h2, h3, h4 {
@@ -53,9 +53,18 @@ p {
   font-size: 16px;
 }
 
+.intro p {
+  font-size: 14px;
+  text-indent: 40px;
+}
+
+.intro p:first-of-type {
+  margin-top: 0;
+}
+
 .navbar {
-  background-color: #EEE;
-  border-color: #DDD;
+  background-color: #FFF;
+  border-color: #AAA;
   display: flex;
   justify-content: center;
 }
@@ -93,13 +102,15 @@ p {
 }
 
 .panel {
-  background-color: #EEE;
+  background-color: #FFF;
+  border-color: #AAA;
   border-radius: 2px;
   height: 100%;
 }
 
-.panel-heading {
+.panel-default>.panel-heading {
   padding: 0;
+  border: none;
 }
 
 @media only screen and (max-width: 768px) {
