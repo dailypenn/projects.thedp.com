@@ -35,16 +35,18 @@ a:hover.article h3, a:active.article h3 {
   color: #888;
 }
 
-h1:last-of-type {
-  margin-top: 0;
-}
-
 h2, h3, h4 {
   margin-top: 0;
 }
 
-h3 {
+h1, h3 {
   font-weight: 700;
+}
+
+h1.subhead {
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 28px;
 }
 
 p {
