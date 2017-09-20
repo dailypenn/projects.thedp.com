@@ -63,7 +63,7 @@ var people = {
       {
         "name": "Charles Curtis-Thomas",
         "photo": "https://snworksceo.imgix.net/dpn/497768f8-4f4d-4c9f-8ecd-e9e29c19685d.sized-1000x1000.JPG?",
-        "stmt": ""
+        "stmt": "Hey everyone! My name is Charles Curtis-Thomas and I’m running for UA and College Class Chair. I’ve gotten to meet many of you over the past few weeks and share my ideas with you, and I know I made the right choice coming to Penn. 10, 20, even 30 years from now, I want to look back on the Class of 2021 as the greatest class in Penn’s history. I want our class to produce future economists, future nurses, future impactors, and future world changers. On the College side, I have noticed that there are many intra-school activities that involve the other three schools, but not many specifically for the College, which has the largest collection of students. I intend to change this, and create fun activities for College students. Finally, I plan to fix problems around our campus, such as implementing central cleaning stations to deal with bugs, implementing more water filling stations, finally putting accessible trash cans around the Quad and other college houses, and more. I’m excited to work with you to help improve our already impressive community. If you want Penn to be the best it can be, express your right and vote for CCT."
       },{
         "name": "Chioma Duru",
         "photo": "https://snworksceo.imgix.net/dpn/1dd064a3-fb01-4a79-9300-be252a6ac724.sized-1000x1000.JPG?",
@@ -245,7 +245,7 @@ var people = {
       },{
         "name": "Charles Curtis-Thomas",
         "photo": "https://snworksceo.imgix.net/dpn/497768f8-4f4d-4c9f-8ecd-e9e29c19685d.sized-1000x1000.JPG?",
-        "stmt": ""
+        "stmt": "Hey everyone! My name is Charles Curtis-Thomas and I’m running for UA and College Class Chair. I’ve gotten to meet many of you over the past few weeks and share my ideas with you, and I know I made the right choice coming to Penn. 10, 20, even 30 years from now, I want to look back on the Class of 2021 as the greatest class in Penn’s history. I want our class to produce future economists, future nurses, future impactors, and future world changers. On the College side, I have noticed that there are many intra-school activities that involve the other three schools, but not many specifically for the College, which has the largest collection of students. I intend to change this, and create fun activities for College students. Finally, I plan to fix problems around our campus, such as implementing central cleaning stations to deal with bugs, implementing more water filling stations, finally putting accessible trash cans around the Quad and other college houses, and more. I’m excited to work with you to help improve our already impressive community. If you want Penn to be the best it can be, express your right and vote for CCT."
       },{
         "name": "Jude Dartey",
         "photo": "https://snworksceo.imgix.net/dpn/ba70b35c-bcbf-4fd9-8e5e-e0bb97ae60fb.sized-1000x1000.JPG?",
