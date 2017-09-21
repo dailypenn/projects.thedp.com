@@ -103,6 +103,16 @@ p {
   flex: 2 0 66%;
 }
 
+.resources-left {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.resources-right {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .panel {
   background-color: #FFF;
   border-color: #AAA;
