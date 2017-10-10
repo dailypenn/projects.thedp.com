@@ -19,8 +19,8 @@ section {
   -webkit-flex-wrap: wrap;
   flex-wrap:         wrap;
   display: flex;
-  height: 100vh;
-  min-height: 600px;
+  min-height: 700px;
+  height: auto;
   vertical-align: middle;
 
 
@@ -76,7 +76,6 @@ section {
 }
 
 #photo-tile-on {
-	
 	background: url(https://bdsglobaldigest.files.wordpress.com/2012/01/upenn3.jpg) no-repeat center bottom ; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
