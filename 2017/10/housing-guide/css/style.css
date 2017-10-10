@@ -19,8 +19,8 @@ section {
   -webkit-flex-wrap: wrap;
   flex-wrap:         wrap;
   display: flex;
-  min-height: 700px;
   height: auto;
+  min-height: 600px;
   vertical-align: middle;
 
 
@@ -47,15 +47,18 @@ section {
 
 
 .icon {
-	width: 20%;
+	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	margin-top: 0;
 	padding: 0;
+	line-height: 0;
 }
 
 .flex-tile {
-	height: 100%;
+	height: auto;
+	min-height: 700px;
     width: 50%;
     overflow: hidden;
     -webkit-order: 0; /* Safari */
@@ -63,9 +66,36 @@ section {
     vertical-align: middle;
 }
 
+.article-tile {
+	height: auto;
+	color: #1a68ae;
+	background-color: #fff;
+	min-height: 700px;
+    width: 33.33%;
+    overflow: hidden;
+    -webkit-order: 0; /* Safari */
+    order:         0;
+    vertical-align: middle;
+    -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.article-tile:hover {
+	-webkit-transform:scale(1.025); /* Safari and Chrome */
+    -moz-transform:scale(1.025); /* Firefox */
+    -ms-transform:scale(1.025); /* IE 9 */
+    -o-transform:scale(1.025); /* Opera */
+     transform:scale(1.025);
+     
+     box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.3);
+}
+
+
+
 #text-tile {
 	text-align: center;
-	padding-top: 10%;
+	padding-top: 7%;
 	margin-bottom: -10%;
 	padding-bottom: 0;
 	vertical-align: middle;
@@ -109,6 +139,12 @@ h1 {
 	text-align: center;
 	font: 60px 'Prata';
 	color: #1a68ae;
+}
+
+h2 {
+	color: #1a68ae;
+	text-align: center;
+	font: 40px 'Prata';
 }
 
 p {
