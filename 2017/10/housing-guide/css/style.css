@@ -118,7 +118,8 @@ section {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	width: 50%;
+	width: 200px;
+	height: 200px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -135,7 +136,8 @@ section {
 	background-size: 70% 70%;
 	background-repeat: no-repeat;
 	background-attachment: center bottom;
-	width: 50%;
+	width: 200px;
+	height: 200px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -146,19 +148,37 @@ section {
 
 .beercan img {
 	animation: 10s rotate10 infinite linear;
-	width: 100%;
+	width: 200px;
 }
 
 .luxury-housing {
 	background: url(../img/LuxuryHousing.svg) no-repeat center center;
-	-webkit-background-size: 70% 70%;
-	-moz-background-size: 70% 70%;
-	-o-background-size: 70% 70%;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: center bottom;
-	width: 50%;
-	height: 40%;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.highrise {
+	background: url(../img/historyofhighrises.svg) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -169,14 +189,14 @@ section {
 
 .leasing {
 	background: url(../img/leasing.svg) no-repeat center center;
-	-webkit-background-size: 70% 70%;
-	-moz-background-size: 70% 70%;
-	-o-background-size: 70% 70%;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: center bottom;
-	width: 50%;
-	height: 40%;
+	width: 200px;
+	height: 200px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -187,14 +207,50 @@ section {
 
 .famous-alums {
 	background: url(../img/FamousAlums.svg) no-repeat center center;
-	-webkit-background-size: 70% 70%;
-	-moz-background-size: 70% 70%;
-	-o-background-size: 70% 70%;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: center bottom;
-	width: 50%;
-	height: 40%;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.energy-efficent {
+	background: url(../img/ENERGYEFFICIENT.svg) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.cost-of-hill {
+	background: url(../img/costofhill.svg) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -218,11 +274,34 @@ section {
   flex-wrap:         wrap;
   display: flex;
   height: auto;
-  min-height: 500px;
+  min-height: 400px;
   vertical-align: middle;
   width: 90%;
 
 
+}
+.ad-tile {
+	height: auto;
+	color: #1a68ae;
+	background-color: #F7F9FD;
+    width: 33.33%;
+    overflow: hidden;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0%;
+	padding-bottom: 1%;
+	vertical-align: middle;
+}
+
+.centering-div {
+	width: 100%;
+	text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+.ad-tile:hover {
 }
 
 .article-tile {
@@ -672,4 +751,36 @@ svg {
     	margin-bottom: 0px;
     	padding: 0px;
     }
+    .luxury-housing, .leasing, .famous-alums, {
+		height: 1000px;
+		width: 1000px;
+	}
+	.beercan {
+		width: 200px;
+		-webkit-background-size: 70% 70%;
+		-moz-background-size: 70% 70%;
+		-o-background-size: 70% 70%;
+		background-size: 70% 70%;
+
+	}
+	.beercan img {
+		animation: 10s rotate10 infinite linear;
+		width: 200px;
+		
+	}
+	.ad-tile {
+		text-align: center;
+		overflow: visible;
+		margin-left: auto;
+		margin-right: 0;
+		padding: 0;
+		width: 100%;
+	}
+	.centering-div {
+		text-align: center;
+		padding: 0;
+		width: auto;
+	}
+
+
 }
