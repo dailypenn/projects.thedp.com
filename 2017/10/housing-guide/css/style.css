@@ -207,7 +207,7 @@ section {
 	-o-background-size: cover;
 	background-size: cover;
 	height: 100vh;
-	min-height: 700px;
+	min-height: 650px;
 }
 
 #year {
