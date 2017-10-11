@@ -201,12 +201,12 @@ section {
 }
 
 #hero {
-	background: url(../img/town.png) no-repeat center bottom fixed; 
+	background: url(../img/bg.svg) no-repeat center bottom fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 100%;
+	height: 100vh;
 	min-height: 700px;
 }
 
