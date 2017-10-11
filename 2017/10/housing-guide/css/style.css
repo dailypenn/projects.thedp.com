@@ -1,10 +1,11 @@
 HTML {
   height: 100%;
+  overflow-x: hidden;
   
 }
 
 body {
-  background: #fff;
+  background: #F7F9FD;
   font: 12em/1 'Open Sans';
   color: #313132;
   width: 100%;
@@ -14,7 +15,7 @@ section {
 	min-height: 600px;
 	height: auto;
 	padding: 0px 0px 0px 0px;
-	background: #fff;
+	background: #F7F9FD;
 
 }
 
@@ -30,7 +31,7 @@ section {
     
  position: relative;
  background: #1a68ae;
- color: #fff;
+ color: #F7F9FD;
  text-align: center;
  padding: .6em .8em; /* Adjust to suit */
  margin: 0px auto 32px auto; 
@@ -86,7 +87,7 @@ section {
   font-family: 'Prata';
   -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0px 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
-  color: #FFF;
+  color: #F7F9FD;
   background-color: #1a68ae;
 }
 
@@ -141,7 +142,7 @@ section {
 .article-tile {
 	height: auto;
 	color: #1a68ae;
-	background-color: #fff;
+	background-color: #F7F9FD;
     width: 33.33%;
     overflow: hidden;
     -webkit-order: 0; /* Safari */
@@ -201,13 +202,33 @@ section {
 }
 
 #hero {
-	background: url(../img/bg.svg) no-repeat center bottom fixed; 
+	background-color: #F7F9FD; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 100vh;
-	min-height: 650px;
+	height: auto;
+	min-height: 750px;
+	overflow: hidden;
+	margin-bottom: 100px;
+	
+}
+.hero-bg {
+	padding-bottom: 100px;
+	animation: scroller 10000000s linear infinite ;
+	-webkit-transform: translate3d(0,0,0);
+    width: 100000000px;
+    overflow: hidden;
+    background-repeat: repeat-x;
+    background-position: center bottom;
+	height: auto;
+	min-height: 750px;
+	position: absolute;
+	background-size: contain;
+	background: url(../img/bg.svg); 
+	z-index: 1;
+
+	
 }
 
 #year {
@@ -236,7 +257,7 @@ footer {
 }
 
 .footer-flex-item {
-	color: #fff;
+	color: #F7F9FD;
     width: 33.33%;
     height: auto;
     padding: 10px;
@@ -246,7 +267,7 @@ footer {
 }
 
 .footer-flex-item p{
-	color: #fff;
+	color: #F7F9FD;
 }
 
 .footer-spacer {
@@ -291,6 +312,7 @@ svg {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: 2;
 }
 
 .text-copy {
@@ -322,6 +344,154 @@ svg {
   stroke-dashoffset: 35%;
 }
 
+
+.cloud{
+	height: 100px;
+	width: 150px;
+	top: 15%;
+	left: 0px;
+	position: absolute;
+	background-image: url(../img/cloud.svg);
+	background-size:  contain;
+	
+	-webkit-animation: moveclouds 105s linear infinite;
+	-moz-animation: moveclouds 105s linear infinite;
+	-o-animation: moveclouds 105s linear infinite; 
+	z-index: 1;
+}
+
+.cloud1{
+	height: 66.66px;
+	width: 100px;
+	top: 10%;
+	left: 200px;
+	
+	position: absolute;
+	background-image: url(../img/cloud.svg);
+	background-size:  contain;
+	
+	-webkit-animation: moveclouds 105s linear infinite;
+	-moz-animation: moveclouds 105s linear infinite;
+	-o-animation: moveclouds 105s linear infinite; 
+	z-index: 1;
+}
+
+.cloud2{
+	height: 200px;
+	width: 300px;
+	top: 35%;
+	left: 550px;
+
+	position: absolute;
+	background-image: url(../img/cloud.svg);
+	background-size:  contain;
+	
+	-webkit-animation: moveclouds 75s linear infinite;
+	-moz-animation: moveclouds 75s linear infinite;
+	-o-animation: moveclouds 75s linear infinite; 
+	z-index: 1;
+}
+
+.cloud3{
+	height: 100px;
+	width: 150px;
+	top: 55%;
+	left: 200px;
+	
+	position: absolute;
+	background-image: url(../img/cloud.svg);
+	background-size:  contain;
+	
+	-webkit-animation: moveclouds 45s linear infinite;
+	-moz-animation: moveclouds 45s linear infinite;
+	-o-animation: moveclouds 45s linear infinite; 
+	z-index: 1;
+}
+
+.cloud4{
+	height: 100px;
+	width: 150px;
+	top: 20%;
+	left: 650px;
+	
+	position: absolute;
+	background-image: url(../img/cloud.svg);
+	background-size:  contain;
+	
+	-webkit-animation: moveclouds 85s linear infinite;
+	-moz-animation: moveclouds 85s linear infinite;
+	-o-animation: moveclouds 85s linear infinite; 
+	z-index: 1;
+}
+
+.cloud5{
+	height: 100px;
+	width: 150px;
+	top: 17%;
+	left: 50px;
+	
+	position: absolute;
+	background-image: url(../img/cloud.svg);
+	background-size:  contain;
+	
+	-webkit-animation: moveclouds 85s linear infinite;
+	-moz-animation: moveclouds 85s linear infinite;
+	-o-animation: moveclouds 85s linear infinite; 
+	z-index: 1;
+}
+
+.cloud6{
+	height: 100px;
+	width: 150px;
+	top: 35%;
+	left: 700px;
+	
+	position: absolute;
+	background-image: url(../img/cloud.svg);
+	background-size:  contain;
+	
+	-webkit-animation: moveclouds 85s linear infinite;
+	-moz-animation: moveclouds 85s linear infinite;
+	-o-animation: moveclouds 85s linear infinite; 
+	z-index: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes scroller {
+	from {
+        transform: translate(0vw, 0);
+    }
+	to {
+        transform: translate(-100%, 0);
+    }
+}
+
+
+@-webkit-keyframes moveclouds {
+	0% { opacity: 0; margin-left: 0vw;}
+	20% {opacity: 1; }
+	80% { opacity: 1; }
+	100% { opacity: 0; margin-left: 100vw;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+
 @-webkit-keyframes stroke-offset {
   0% {
     stroke-dashoffset: 35%;
@@ -334,4 +504,13 @@ svg {
     stroke-dashoffset: 35%;
     stroke-dasharray: 0 87.5%;
   }
+}
+
+@media only screen and (max-width: 750px) {
+	.flex-container {
+		display: block;
+	}
+	.flex-tile {
+		width: 100%;
+		}
 }

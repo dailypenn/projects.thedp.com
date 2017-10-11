@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Desktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop">
+            <g id="Group" transform="translate(170.000000, 373.000000)">
+                <rect id="Rectangle-path" fill="#FFFFFF" fill-rule="nonzero" x="10" y="124" width="39" height="101"></rect>
+                <polygon id="Shape" fill="#8DC3EA" fill-rule="nonzero" points="255.528218 280 268 280 268 40.7865731 189.201924 35.9118236 189.201924 14 173 22.2075818 175.641401 37.742485 253.571538 59.0569472"></polygon>
+                <polygon id="Shape" stroke="#1867B2" stroke-width="4" fill="#FFFFFF" fill-rule="nonzero" points="189 36.7382564 189 13 652.385907 51.9551772 652.388252 90.3041073 589.746791 90.3052754 589.746791 131.38991 686 131.38991 686 170.042548 674.694444 170.042548 674.694444 279 267.683858 279 267.683858 41.6092597"></polygon>
+                <polygon id="Shape" stroke="#1867B2" stroke-width="4" fill="#FFFFFF" fill-rule="nonzero" points="316 7.65329445 316 23 258 18.0217249 258 12.1494554 267.503361 3"></polygon>
+                <polygon id="Shape" stroke="#1867B2" stroke-width="4" fill="#FFFFFF" fill-rule="nonzero" points="27 0 254 57.6289403 254 279 27 278.695723 27 213.13802 46.2990858 214.967194 46.2990858 135.38465 27 133.553135 27 56.2561818 46.2990858 60.8308732 46.2990858 38.8772698 27 35.2177508"></polygon>
+                <polygon id="Shape" stroke="#1867B2" stroke-width="4" fill="#FFFFFF" fill-rule="nonzero" points="0 279 0 37.5466299 27 0 27 35.2562012 13.5 49.4510017 13.5 68.2231451 27 56.3176018 27 132.783947 14.4302541 142.400233 14.4302541 221.154665 27 214.285721 27 279"></polygon>
+                <polygon id="Shape" fill="#C1E3F8" fill-rule="nonzero" points="39 19 240 70.0194274 240 266 39 265.731728 39 222.856094 56.0886275 224.473888 56.0886275 127.192772 39 125.571478 39 68.8040404 56.0886275 72.8537752 56.0886275 34.9085062 39 31.4093114"></polygon>
+                <polygon id="Shape" fill="#C1E3F8" fill-rule="nonzero" points="197 29.4429607 197 22 644.865888 59.6704469 644.901163 83.0703261 582.189873 83.0703261 582.189873 139.449168 679 139.449168 679 162.140921 666.457507 163.620588 665.673234 267 280.415163 267 280.591536 34.4339015"></polygon>
+                <polygon id="Shape" fill="#EC512C" fill-rule="nonzero" points="65 213.590218 86 216 86 171.712739 65 169"></polygon>
+                <polygon id="Shape" fill="#8DC3EA" fill-rule="nonzero" points="189 134.84669 208 137 208 97.4216028 189 95"></polygon>
+                <polyline id="Shape" stroke="#1867B2" stroke-width="4" points="189 13 173 23.0860936 173 38"></polyline>
+                <polygon id="Shape" fill="#EC512C" fill-rule="nonzero" points="368 52 388 54.1175473 388 91 368 89.7909675"></polygon>
+                <polygon id="Shape" fill="#8DC3EA" fill-rule="nonzero" points="288 193 308 193.301329 308 230 288 229.698671"></polygon>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="468" y="120" width="17" height="36"></rect>
+            </g>
+            <circle id="Oval" stroke="#8DC3EA" stroke-width="17" cx="512.5" cy="512.5" r="440"></circle>
+        </g>
+    </g>
+</svg>
