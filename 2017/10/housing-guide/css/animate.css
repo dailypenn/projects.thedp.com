@@ -1263,8 +1263,6 @@
   animation-name: rollIn;
 }
 
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
-
 @keyframes rollOut {
   from {
     opacity: 1;

@@ -1,29 +1,74 @@
-HTML, BODY {
+HTML {
   height: 100%;
+  
 }
 
-BODY {
+body {
   background: #fff;
-  background-size: .12em 100%;
   font: 12em/1 'Open Sans';
   color: #313132;
+  width: 100%;
 }
 
 section {
 	min-height: 600px;
 	height: auto;
-	padding: 0;
+	padding: 0px 0px 0px 0px;
+	background: #fff;
+
 }
 
-.flex-container {
-  -webkit-flex-wrap: wrap;
-  flex-wrap:         wrap;
-  display: flex;
-  height: auto;
-  min-height: 600px;
-  vertical-align: middle;
+#off-campus-stories, #on-campus-stories, #heat-map {
+	padding-top: 20px;
+} 
 
+.ribbon {
+ font-size: 40px !important;
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
 
+ width: 75%;
+    
+ position: relative;
+ background: #1a68ae;
+ color: #fff;
+ text-align: center;
+ padding: .6em .8em; /* Adjust to suit */
+ margin: 0px auto 32px auto; 
+ 
+ }
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -.6em;
+ border: 1em solid #165082;
+ z-index: 0 ;
+}
+.ribbon:before {
+ left: -2.5em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2.5em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #0e2b44 transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
 }
 
 .button {
@@ -43,6 +88,19 @@ section {
   box-shadow: 0 0px 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
   color: #FFF;
   background-color: #1a68ae;
+}
+
+
+
+.flex-container {
+  -webkit-flex-wrap: wrap;
+  flex-wrap:         wrap;
+  display: flex;
+  height: auto;
+  min-height: 600px;
+  vertical-align: middle;
+
+
 }
 
 
@@ -66,19 +124,40 @@ section {
     vertical-align: middle;
 }
 
+.article-container {
+	margin-left: auto;
+	margin-right: auto;
+  -webkit-flex-wrap: wrap;
+  flex-wrap:         wrap;
+  display: flex;
+  height: auto;
+  min-height: 500px;
+  vertical-align: middle;
+  width: 90%;
+
+
+}
+
 .article-tile {
 	height: auto;
 	color: #1a68ae;
 	background-color: #fff;
-	min-height: 700px;
     width: 33.33%;
     overflow: hidden;
     -webkit-order: 0; /* Safari */
-    order:         0;
-    vertical-align: middle;
+    order:         0;	
+	text-align: center;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	vertical-align: middle;
     -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.article-tile p {
+		text-align: left;
+
 }
 
 .article-tile:hover {
@@ -135,6 +214,48 @@ section {
 	font-family: 'Prata';
 }
 
+footer {
+	width: 100%;
+    height: 200px;
+	position: fixed;
+	bottom: 0px;
+	z-index: -1;
+    background-color: #1a68ae;
+
+}
+.footer-flex-container {
+	text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: #1a68ae;
+    
+}
+
+.footer-flex-item {
+	color: #fff;
+    width: 33.33%;
+    height: auto;
+    padding: 10px;
+    font-size: medium;
+    color: black;
+    text-decoration: none;
+}
+
+.footer-flex-item p{
+	color: #fff;
+}
+
+.footer-spacer {
+    height: 200px;
+    background-color: transparent;
+      box-shadow: inset 0px 10px 19px 1px rgba(0, 0, 0, 0.2);
+
+}
+
 h1 {
 	text-align: center;
 	font: 60px 'Prata';
@@ -177,8 +298,8 @@ svg {
   stroke: white;
   stroke-dasharray: 7% 28%;
   stroke-width: 3px;
-  -webkit-animation: stroke-offset 2s linear;
-          animation: stroke-offset 2s linear;
+  -webkit-animation: stroke-offset 1.5s linear;
+          animation: stroke-offset 1.5s linear;
 }
 .text-copy:nth-child(1) {
   stroke: #1a68ae;
