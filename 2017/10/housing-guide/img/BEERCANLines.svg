@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Desktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop">
+            <g id="BEERCANLines" transform="translate(512.355870, 511.938417) rotate(40.000000) translate(-512.355870, -511.938417) translate(65.355870, 76.438417)">
+                <path d="M524.830782,110.108917 L539.276635,2.63939394" id="Shape" stroke="#C2E3F5" stroke-width="19.8" stroke-linecap="round"></path>
+                <path d="M608.718332,140.999723 L657.096598,43.9525076" id="Shape" stroke="#C2E3F5" stroke-width="19.8" stroke-linecap="round"></path>
+                <path d="M762.007993,279.515117 L844.895978,209.610769" id="Shape" stroke="#C2E3F5" stroke-width="19.8" stroke-linecap="round"></path>
+                <path d="M786.990509,355.189841 L893.838354,336.753674" id="Shape" stroke="#C2E3F5" stroke-width="19.8" stroke-linecap="round"></path>
+                <path d="M691.939506,202.187473 L764.323815,109.567841" id="Shape" stroke="#C2E3F5" stroke-width="19.8" stroke-linecap="round"></path>
+                <path d="M110.994554,455.341644 L2.5863321,453.672227" id="Shape" fill="#EA5334" fill-rule="nonzero"></path>
+                <path d="M110.994554,455.341644 L2.5863321,453.672227" id="Shape" stroke="#C2E3F5" stroke-width="19.8" stroke-linecap="round"></path>
+                <path d="M128.815173,542.791364 L25.6719852,576.225886" id="Shape" fill="#EA5334" fill-rule="nonzero"></path>
+                <path d="M128.815173,542.791364 L25.6719852,576.225886" id="Shape" stroke="#C2E3F5" stroke-width="19.8" stroke-linecap="round"></path>
+                <path d="M229.60955,715.170182 L148.179675,786.77364" id="Shape" stroke="#C2E3F5" stroke-width="19.8" stroke-linecap="round"></path>
+                <path d="M305.460996,767.126652 L271.366937,870.063015" id="Shape" stroke="#C2E3F5" stroke-width="19.8" stroke-linecap="round"></path>
+                <path d="M167.174701,632.708917 L64.8463395,690.554534" id="Shape" fill="#EA5334" fill-rule="nonzero"></path>
+                <path d="M167.174701,632.708917 L64.8463395,690.554534" id="Shape" stroke="#C2E3F5" stroke-width="19.8" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

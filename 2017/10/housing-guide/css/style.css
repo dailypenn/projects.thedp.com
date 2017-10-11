@@ -12,7 +12,7 @@ body {
 }
 
 section {
-	min-height: 600px;
+	min-height: 500px;
 	height: auto;
 	padding: 0px 0px 0px 0px;
 	background: #F7F9FD;
@@ -22,6 +22,7 @@ section {
 #off-campus-stories, #on-campus-stories, #heat-map {
 	padding-top: 20px;
 } 
+
 
 .ribbon {
  font-size: 40px !important;
@@ -91,6 +92,12 @@ section {
   background-color: #1a68ae;
 }
 
+.button a {
+	  text-decoration: none;
+	  color: #fff;
+
+}
+
 
 
 .flex-container {
@@ -98,7 +105,7 @@ section {
   flex-wrap:         wrap;
   display: flex;
   height: auto;
-  min-height: 600px;
+  min-height: 500px;
   vertical-align: middle;
 
 
@@ -106,7 +113,88 @@ section {
 
 
 .icon {
+	background-image: url(../img/BEERCANLines.svg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.beercan {
+	background: url(../img/BEERCAN.svg) no-repeat center center;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.beercan img {
+	animation: 10s rotate10 infinite linear;
+	width: 100%;
+}
+
+.luxury-housing {
+	background: url(../img/LuxuryHousing.svg) no-repeat center center;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 50%;
+	height: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.leasing {
+	background: url(../img/leasing.svg) no-repeat center center;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 50%;
+	height: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.famous-alums {
+	background: url(../img/FamousAlums.svg) no-repeat center center;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 50%;
+	height: 40%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -117,11 +205,9 @@ section {
 
 .flex-tile {
 	height: auto;
-	min-height: 700px;
+	min-height: 500px;
     width: 50%;
     overflow: hidden;
-    -webkit-order: 0; /* Safari */
-    order:         0;
     vertical-align: middle;
 }
 
@@ -145,11 +231,9 @@ section {
 	background-color: #F7F9FD;
     width: 33.33%;
     overflow: hidden;
-    -webkit-order: 0; /* Safari */
-    order:         0;	
 	text-align: center;
-	padding-top: 3%;
-	padding-bottom: 3%;
+	padding-top: 0%;
+	padding-bottom: 1%;
 	vertical-align: middle;
     -moz-transition: all 0.3s;
 	-webkit-transition: all 0.3s;
@@ -182,11 +266,11 @@ section {
 }
 
 #text-tile p{
-	text-align: left;
+	margin-bottom: -75px;
 }
 
 #photo-tile-on {
-	background: url(https://bdsglobaldigest.files.wordpress.com/2012/01/upenn3.jpg) no-repeat center bottom ; 
+	background: url(../img/quad.jpg) no-repeat center bottom ; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -194,7 +278,7 @@ section {
 }
 
 #photo-tile-off {
-	background: url(http://www.sas.upenn.edu/summer/sites/neutron_sas.summer/files/Gallery_SummerLife_Penn_Campus-2.jpg) no-repeat center bottom ; 
+	background: url(../img/highrise.jpg) no-repeat center bottom ; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -268,6 +352,7 @@ footer {
 
 .footer-flex-item p{
 	color: #F7F9FD;
+    margin-top: 50px;
 }
 
 .footer-spacer {
@@ -284,9 +369,10 @@ h1 {
 }
 
 h2 {
+	padding: 0px 15px;
 	color: #1a68ae;
 	text-align: center;
-	font: 40px 'Prata';
+	font: 20px 'Prata';
 }
 
 p {
@@ -313,6 +399,8 @@ svg {
   width: 100%;
   height: 100%;
   z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .text-copy {
@@ -506,11 +594,82 @@ svg {
   }
 }
 
+@keyframes rotate10 {
+	
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(10deg);}
+	50% {transform: rotate(0deg);}
+	75% {transform: rotate(-10deg);}
+	100% {transform: rotate(0deg);}
+
+}
+
+@media only screen and (max-width: 950px) {
+
+	svg {
+	  font-size: 40%;
+	}
+	#year {
+		font-size: 140px;
+	}
+	.text-copy {
+	  stroke-width: 2px;
+	}
+}
+
 @media only screen and (max-width: 750px) {
 	.flex-container {
 		display: block;
 	}
 	.flex-tile {
 		width: 100%;
-		}
+	}
+	.article-container {
+		display: block;
+	}
+	.article-tile {
+		width: 100%;
+		padding-top: 5%;
+		padding-bottom: 10%;
+	}
+	
+	#photo-tile-off, #photo-tile-on {
+		display: none;
+
+	}
+	
+	#photo-tile-off{
+		display: none;
+
+	}
+	#on-campus #text-tile {
+	background: url(../img/quad-fade.jpg) no-repeat center bottom ; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+	
+	#off-campus #text-tile {
+	background: url(../img/highrise-fade.jpg) no-repeat center bottom ; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+	.ribbon {
+		font-size: 30px !important;
+	}
+	.footer-flex-container {
+		display: block;
+	}
+	.footer-flex-item {
+    	width: 100%;
+    	padding: 0;
+    }
+    .footer-flex-item p {
+    	margin-top: 30px;
+    	margin-bottom: 0px;
+    	padding: 0px;
+    }
 }

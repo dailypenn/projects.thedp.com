@@ -16,7 +16,7 @@
 <body>
 	<section id="hero">
 		<div class="hero-bg"></div>
-		<svg viewBox="0 0 100% 600">
+		<svg>
 			<symbol id="s-text">
 			    <text text-anchor="middle" x="50%" y="200px" class="text--line">
 			      Penn Housing Guide
@@ -48,26 +48,27 @@
 		<div class="cloud6"></div>
 	</section>
 
-	<section id="onCampus">
+	<section id="on-campus">
 		<div class="flex-container">
 			<div id="text-tile" class="flex-tile">
 				<h1>On Campus</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla felis quam, feugiat ac diam vitae, fringilla semper ligula. Donec sed elementum ante. Nunc tristique libero luctus quam pellentesque, quis aliquet nibh vulputate. Suspendisse quis nunc nisi. Vivamus sollicitudin, odio eu tempus facilisis, ex purus lacinia risus, at tincidunt felis sem nec augue. Mauris et faucibus ipsum. Aliquam tortor lectus, efficitur nec vulputate sit amet, tincidunt ut nisl. Pellentesque ullamcorper vitae metus a scelerisque. Aenean pulvinar diam id nibh euismod, eu pellentesque tortor efficitur.</p>
-				  <button class="button">Explore</button>
+				<p>The legacy of the Quad, transfer student housing, dorm burglary, and much more in much more in the on campus housing guide</p>
+			 <button onclick="document.getElementById('on-campus-stories').scrollIntoView();" class="button">Explore</button>
+
 			</div>
 			<div id="photo-tile-on" class="flex-tile">
 			</div>
 		</div>
 	</section>
 
-	<section id="offCampus">
+	<section id="off-campus">
 		<div class="flex-container">
 			<div id="photo-tile-off" class="flex-tile">
 			</div>
 			<div id="text-tile" class="flex-tile">
 				<h1>Off Campus</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla felis quam, feugiat ac diam vitae, fringilla semper ligula. Donec sed elementum ante. Nunc tristique libero luctus quam pellentesque, quis aliquet nibh vulputate. Suspendisse quis nunc nisi. Vivamus sollicitudin, odio eu tempus facilisis, ex purus lacinia risus, at tincidunt felis sem nec augue. Mauris et faucibus ipsum. Aliquam tortor lectus, efficitur nec vulputate sit amet, tincidunt ut nisl. Pellentesque ullamcorper vitae metus a scelerisque. Aenean pulvinar diam id nibh euismod, eu pellentesque tortor efficitur.</p>
-				  <button class="button">Explore</button>
+				<p>A guide to leasing companies as well as where famous alumni lived during their time at Penn </p>
+			 <button onclick="document.getElementById('off-campus-stories').scrollIntoView();" class="button">Explore</button>
 
 			</div>
 		</div>
@@ -76,10 +77,11 @@
 	<section id="on-campus-stories">
 		<h1 class="ribbon">On Campus Stories</h1>
 			<div class="article-container">
-				<div class="article-tile">
-					<img class="icon" src="img/1.svg">
-					<h2>Article Title</h2>
-					<p>The rise of luxury housing (Radian, Domus, the Left Bank). When did these start appearing and has it contributed to more of a socioeconomic divide at penn?</p>
+				<div onclick="window.open('http://www.thedp.com/article/2017/10/a-decade-after-the-opening-of-domus-and-the-radian-how-has-luxury-housing-changed-penn', '_blank');" class="article-tile">
+					<div class="luxury-housing">
+					</div>
+					<h2>A decade after the opening of Domus and the Radian, how has luxury housing changed Penn?</h2>
+					<p>Some students say they have exacerbated socioeconomic divisions</p>
 				</div>
 				<div class="article-tile">
 					<img class="icon" src="img/3.svg">
@@ -98,15 +100,15 @@
 					<h2>Article Title</h2>
 					<p>Penn housekeepers and staff warned that the heating and water systems in the high rises were poor but the same system was implemented in New College House. What went into the decision to implement this new system?</p>
 				</div>
-				<div class="article-tile">
+				<div onclick="window.open('http://www.thedp.com/article/2017/10/transfer-and-exchange-students-have-to-live-on-campus-for-their-first-year-but-many-dont-mind', '_blank');" class="article-tile">
 					<img class="icon" src="img/1.svg">
-					<h2>Article Title</h2>
+					<h2>Transfer and exchange students have to live on campus for their first year — but many don’t mind</h2>
 					<p>A lot of transfer/international exchange students live in the high-rises. Is that by choice or is that enforced by the university. What do these students think of the policy if it is one or why did they choose on-campus living if it isn’t a policy?</p>
 				</div>
-				<div class="article-tile">
+				<div onclick="window.open('http://www.thedp.com/article/2017/10/freshman-housing-housing-guide-2017', '_blank');" class="article-tile">
 					<img class="icon" src="img/3.svg">
-					<h2>Article Title</h2>
-					<p>It seems like it may no longer be the case that the Quad is by far the best option. What do current freshmen think of their college houses — did they make the right choices when they ranked housing preferences last spring? Do people really like Hill now?</p>
+					<h2>The 'legacy' experience of the Quad versus the new amenities of NCH and Hill: Freshmen weigh in</h2>
+					<p>With flashy new study rooms and state-of-the-art dining halls, newly renovated Hill College House and recently opened New College House have changed the freshman dorm experience. </p>
 				</div>
 			</div>
 			<div class="article-container">
@@ -116,7 +118,9 @@
 					<p>History of the High Rises</p>
 				</div>
 				<div class="article-tile">
-					<img class="icon" src="img/3.svg">
+					<div class="beercan">
+						<img src="img/BEERCANLines.svg">
+					</div>
 					<h2>Article Title</h2>
 					<p>Rules of drinking in dorms and what the varying consequences are -- they are often left up to the discretion of whoever's in charge in each dorm but also sometimes the consequences from the admin perspective vary based on a subjective meeting</p>
 				</div>
@@ -132,12 +136,14 @@
 		<h1 class="ribbon">Off Campus Stories</h1>
 			<div class="article-container">
 				<div class="article-tile">
-					<img class="icon" src="img/2.svg">
+					<div class="leasing">
+					</div>
 					<h2>Article Title</h2>
 					<p>Guide to leasing companies - Relevant prices and application deadlines.</p>
 				</div>
 				<div class="article-tile">
-					<img class="icon" src="img/4.svg">
+					<div class="famous-alums">
+					</div>
 					<h2>Article Title</h2>
 					<p>Where did famous alumni live when they were at Penn? Includes people like Ivanka Trump, Elon Musk, Rod Rosenstein, etc.</p>
 				</div>
@@ -165,14 +171,15 @@
   <footer>
 			<div class="footer-flex-container">
 				<div id="itemOne" class="footer-flex-item">
-					<p>Copyright © 2017 Daily Pennsylvanian</p>
+					<p>Back To Top</p>
 				</div>
 				<div id="itemOne" class="footer-flex-item">
-					<p>Back To Top</p>
+					<p>Copyright © 2017 Daily Pennsylvanian</p>
 				</div>
 				<div id="itemOne" class="footer-flex-item">
 					<p>All Rights Reserved</p>
 				</div>
   			</div>
 		</footer>
+		
 </html>
