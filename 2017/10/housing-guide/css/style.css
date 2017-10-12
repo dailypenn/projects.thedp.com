@@ -662,7 +662,7 @@ footer {
 
 .footer-flex-item {
 	color: #F7F9FD;
-    width: 50%;
+    width: 25%;
     height: auto;
     padding: 10px;
     font-size: medium;
@@ -676,7 +676,6 @@ footer {
 }
 .footer-flex-item a {
 	color: #F7F9FD;
-    line-height: 200px;
 }
 
 .footer-spacer {
@@ -1003,8 +1002,10 @@ svg {
 	.ribbon {
 		font-size: 30px !important;
 	}
+
 	.footer-flex-container {
 		display: block;
+		height: 400px;
 	}
 	.footer-flex-item {
     	width: 100%;
