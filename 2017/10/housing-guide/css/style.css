@@ -1,7 +1,6 @@
 HTML {
   height: 100%;
-  overflow-x: hidden;
-  
+  overflow-x: hidden;  
 }
 
 body {
@@ -15,7 +14,7 @@ section {
 	min-height: 500px;
 	height: auto;
 	padding: 0px 0px 0px 0px;
-	background: #F7F9FD;
+	background-color: #F7F9FD;
 
 }
 
@@ -151,6 +150,56 @@ section {
 	width: 200px;
 }
 
+.red-ribbon {
+ font-size: 20px !important;
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+ width: 70%;
+    
+ position: relative;
+ background: #e75234;
+ color: #F7F9FD;
+ text-align: center;
+ padding: .6em .8em; /* Adjust to suit */
+ margin: 10px auto 0px auto; 
+ z-index: 1;
+ 
+ }
+.red-ribbon:before, .red-ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -.6em;
+ border: 1em solid #c94327;
+ z-index: 0 ;
+}
+.red-ribbon:before {
+ left: -1.5em;
+ border-right-width: 0.5em;
+ border-left-color: transparent;
+}
+.red-ribbon:after {
+ right: -1.5em;
+ border-left-width: 0.5em;
+ border-right-color: transparent;
+}
+.red-ribbon .red-ribbon-content:before, .red-ribbon .red-ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #0e2b44 transparent transparent transparent;
+ bottom: -1em;
+}
+.red-ribbon .red-ribbon-content:before {
+ left: 0;
+ border-width: 0.5em 0 0 1em;
+}
+.red-ribbon .red-ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
 .luxury-housing {
 	background: url(../img/LuxuryHousing.svg) no-repeat center center;
 	-webkit-background-size: 100% 100%;
@@ -241,8 +290,134 @@ section {
 	line-height: 0;
 }
 
+.burglariesharnwell {
+	background: url(../img/burglariesharnwell.svg) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.globe {
+	background: url(../img/globe.svg) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 80%; /** This icon is larger than the others no clue why**/
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.globe {
+	background: url(../img/globe.svg) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 80%; /** This icon is larger than the others no clue why**/
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.RA-housing {
+	background: url(../img/RAinSummer.svg) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.double {
+	background: url(../img/double.svg) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.catvideo {
+	background: url(../img/catvideo.svg) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
 .cost-of-hill {
 	background: url(../img/costofhill.svg) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.dorm {
+	background: url(../img/dorm.svg) no-repeat center center;
 	-webkit-background-size: 100% 100%;
 	-moz-background-size: 100% 100%;
 	-o-background-size: 100% 100%;
@@ -277,6 +452,8 @@ section {
   min-height: 400px;
   vertical-align: middle;
   width: 90%;
+padding-bottom: 20px;
+
 
 
 }
@@ -331,7 +508,8 @@ section {
     -o-transform:scale(1.025); /* Opera */
      transform:scale(1.025);
      
-     box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.3);
+     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
+     background-color: #f9fbff;
 }
 
 
@@ -373,12 +551,12 @@ section {
 	height: auto;
 	min-height: 750px;
 	overflow: hidden;
-	margin-bottom: 100px;
+	padding-bottom: 100px;
 	
 }
 .hero-bg {
 	padding-bottom: 100px;
-	animation: scroller 10000000s linear infinite ;
+	animation: scroller 1000000s linear infinite ;
 	-webkit-transform: translate3d(0,0,0);
     width: 100000000px;
     overflow: hidden;
@@ -705,6 +883,7 @@ svg {
 	}
 	.article-container {
 		display: block;
+		padding-bottom: 0;
 	}
 	.article-tile {
 		width: 100%;
