@@ -102,6 +102,7 @@ section {
   box-shadow: 0 0px 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
   color: #F7F9FD;
   background-color: #1a68ae;
+  cursor: pointer
 }
 
 .button a {
@@ -510,6 +511,7 @@ padding-bottom: 20px;
 	}
 
 .ad-tile:hover {
+	cursor: pointer;
 }
 
 .article-tile {
@@ -539,6 +541,8 @@ padding-bottom: 20px;
     -o-transform:scale(1.025); /* Opera */
      transform:scale(1.025);
      
+     cursor: pointer;
+     
      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
      background-color: #f9fbff;
 }
@@ -558,7 +562,7 @@ padding-bottom: 20px;
 }
 
 #photo-tile-on {
-	background: url(../img/NCH.jpg) no-repeat center bottom ; 
+	background: url(https://snworksceo.imgix.net/dpn/007446b2-a535-4686-9dac-c088182f6e2e.sized-1000x1000.jpg) no-repeat center bottom ; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -566,7 +570,7 @@ padding-bottom: 20px;
 }
 
 #photo-tile-off {
-	background: url(../img/Radian.jpg) no-repeat center bottom ; 
+	background: url(https://snworksceo.imgix.net/dpn/b2dd1193-64de-4e61-974c-d3558cf28166.sized-1000x1000.jpg) no-repeat center bottom ; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -669,6 +673,7 @@ p {
 	font-size: medium;
 	padding: 40px 40px 0px 40px;
 	line-height: 20px;
+	color: #313132;
 }
 
 hr {
