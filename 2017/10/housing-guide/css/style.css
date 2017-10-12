@@ -22,6 +22,17 @@ section {
 	padding-top: 20px;
 } 
 
+#heat-map  {
+	text-align: center;
+}
+
+#heat-map iframe {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 600px;
+	height: auto;
+}
 
 .ribbon {
  font-size: 40px !important;
@@ -202,6 +213,24 @@ section {
 
 .luxury-housing {
 	background: url(../img/LuxuryHousing.svg) no-repeat center center;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.hillvsquad {
+	background: url(../img/hill.svg) no-repeat center center;
 	-webkit-background-size: 100% 100%;
 	-moz-background-size: 100% 100%;
 	-o-background-size: 100% 100%;
@@ -527,7 +556,7 @@ padding-bottom: 20px;
 }
 
 #photo-tile-on {
-	background: url(../img/quad.jpg) no-repeat center bottom ; 
+	background: url(../img/NCH.jpg) no-repeat center bottom ; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -535,7 +564,7 @@ padding-bottom: 20px;
 }
 
 #photo-tile-off {
-	background: url(../img/highrise.jpg) no-repeat center bottom ; 
+	background: url(../img/Radian.jpg) no-repeat center bottom ; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -556,7 +585,7 @@ padding-bottom: 20px;
 }
 .hero-bg {
 	padding-bottom: 100px;
-	animation: scroller 1000000s linear infinite ;
+	animation: scroller 10000000s linear infinite ;
 	-webkit-transform: translate3d(0,0,0);
     width: 100000000px;
     overflow: hidden;
