@@ -1,6 +1,16 @@
 {
   "featured": [
     {
+      "title": "Housing Guide 2017",
+      "author": "Web Dev: Brady Africk; Design: Julia Schorr and Camille Rapay",
+      "section": "Guides",
+      "date": "October 2017",
+      "description": "The Daily Pennsylvanian brings you everything you need to know about housing at Penn, from how luxury housing has changed to the $200 million project to renovate Hill and build NCH.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2017/10/housing-guide/",
+      "image": "https://snworksceo.imgix.net/dpn/38881fe2-a22d-45d3-ae06-471456df1996.sized-1000x1000.png"
+    },
+    {
       "title": "When a Penn student dies: Stories surrounding mental health on campus",
       "author": "Web Dev: Alex Graves",
       "section": "Guides",
@@ -9,7 +19,9 @@
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/09/mental-health/",
       "image": "https://snworksceo.imgix.net/dpn/cd64b61d-fe37-4b90-9b05-2428ca9dd004.sized-1000x1000.jpg"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "The Job Search",
       "author": "Web Dev: Andrew Fischer",
@@ -29,9 +41,7 @@
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/04/sports-end-of-year-awards/",
       "image": "https://s3.amazonaws.com/media.dpn/59124_sportsawardsf.jpg"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "Penn10 2017",
       "author": "Web Dev: Andrew Fischer",
@@ -157,7 +167,7 @@
       "author": "Design: Alex Graves, Ilana Wurman; Web Dev: Andrew Fischer",
       "section": "Guides",
       "date": "September 2016",
-      "description": "Explore Street's favorite places to eat on this interactive map.",
+      "description": "Learn all about housing at Penn in the DP's 2016 Housing Guide!",
       "sponsored": false,
       "link": "http://projects.thedp.com/2016/09/housing-guide/",
       "image": "https://s3.amazonaws.com/media.dpn/53728_housingguidefbf.png"

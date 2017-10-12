@@ -59,6 +59,15 @@
       .row {
         margin-bottom: 15px;
       }
+      .row:first-child {
+        padding-top: 0;
+      }
+      .row.ad {
+        padding-top: 65px;
+      }
+      #articles.row {
+        margin-bottom: 0;
+      }
       .proj-desc, .pull-left, .pull-right {
         color: #777;
       }
@@ -76,7 +85,21 @@
       .secondary-feature:first-of-type {
         padding-bottom: 40px;
         margin-bottom: 20px;
-        /*border-bottom: 1px solid #eee;*/
+      }
+      .credit {
+        text-align: center;
+      }
+
+      @media screen and (max-width: 768px) {
+        #featured-secondary {
+          border-left: none;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        .mobile-only {
+          display: none;
+        }
       }
 
     </style>
@@ -97,14 +120,8 @@
 
     <div class="container">
 
-      <div class="row">
-        <div class="col-xs-12">
-          <h1>DP Projects &amp; Guides</h1>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="hidden-xs hidden-sm">
+      <div class="row ad">
+        <div class="col-xs-12 hidden-xs hidden-sm">
           <!-- /12234093/DP.com-Leaderboard -->
           <div id='div-gpt-ad-1485118541142-1' style='height:90px; width:728px;'>
             <script>
@@ -112,7 +129,7 @@
             </script>
           </div>
         </div>
-        <div class="hidden-md hidden-lg">
+        <div class="col-xs-12 hidden-md hidden-lg">
           <!-- /12234093/DP.com-mobile-leaderboard -->
           <div id='div-gpt-ad-1485118541142-0' style='height:50px; width:320px;'>
             <script>
@@ -122,14 +139,21 @@
         </div>
       </div>
 
+      <h1>DP Projects &amp; Guides</h1>
+
       <div class="row" id="featured">
         <div class="col-sm-8" id="featured-main"></div>
+        <div class="col-xs-12 mobile-only"><hr class="mobile-only"></div>
         <div class="col-sm-4" id="featured-secondary"></div>
       </div>
 
       <hr>
 
       <div class="row" id="articles">
+      </div>
+
+      <div class="credit">
+        <p>Copyright © 2017 The Daily Pennsylvanian. All Rights Reserved.</p>
       </div>
 
     </div>
@@ -181,7 +205,7 @@
             '<div class="proj-desc">' + article.description + '</div><br>' +
             '<span class="date pull-left">' + article.date + '</span>' +
             '<span class="author pull-right">' + (article.sponsored ? 'Sponsored by ' + article.author : article.author) + '</span>' +
-          '</div>' +
+          '</div>' + '<div class="col-xs-12"><hr></div>' +
         '</div>'
       $('#articles').append(htmlStr);
     })
