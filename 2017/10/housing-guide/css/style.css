@@ -1043,6 +1043,7 @@ svg {
 		margin-left: auto;
 		margin-right: 0;
 		padding: 0;
+		padding-top: 20px;
 		width: 100%;
 	}
 	.centering-div {
