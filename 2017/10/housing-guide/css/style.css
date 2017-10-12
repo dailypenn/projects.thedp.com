@@ -27,6 +27,9 @@ section {
 #off-campus-stories, #on-campus-stories, #heat-map {
 	padding-top: 20px;
 }
+#off-campus-stories{
+	padding-bottom: 100px;
+}
 
 #heat-map iframe {
 	width: 80%;
@@ -673,6 +676,7 @@ footer {
 .footer-flex-item p{
 	color: #F7F9FD;
     margin-top: 50px;
+	font-size: small;
 }
 .footer-flex-item a {
 	color: #F7F9FD;
