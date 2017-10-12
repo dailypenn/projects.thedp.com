@@ -1,16 +1,15 @@
 HTML {
   height: 100%;
-  max-width: 100vw;
-  overflow-x: hidden;
-  -webkit-overflow-x:  hidden;
+  max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
   background: #F7F9FD;
   font: 12em/1 'Open Sans';
   color: #313132;
-  width: 100%;
-   overflow-x: hidden;
+  max-width: 100%;
+    overflow-x: hidden;
 }
 
 section {
