@@ -1006,10 +1006,16 @@ svg {
 	.ribbon {
 		font-size: 30px !important;
 	}
-
+	.footer-spacer {
+    	height: 300px;
+    	background-color: transparent;
+        box-shadow: inset 0px 10px 19px 1px rgba(0, 0, 0, 0.2);
+	}
+	footer {
+		height: 300px;
+	}
 	.footer-flex-container {
 		display: block;
-		height: 500px;
 	}
 	.footer-flex-item {
     	width: 100%;
