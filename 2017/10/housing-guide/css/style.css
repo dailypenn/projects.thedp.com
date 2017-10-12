@@ -168,6 +168,7 @@ section {
 	width: 200px;
 }
 
+
 .red-ribbon {
  font-size: 20px !important;
  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
@@ -231,10 +232,10 @@ section {
 
 .luxury-housing {
 	background: url(../img/LuxuryHousing.svg) no-repeat center center;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: cover;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
 	background-repeat: no-repeat;
 	background-attachment: center bottom;
 	width: 200px;
@@ -249,10 +250,10 @@ section {
 
 .hillvsquad {
 	background: url(../img/hill.svg) no-repeat center center;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: cover;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
 	background-repeat: no-repeat;
 	background-attachment: center bottom;
 	width: 200px;
@@ -267,10 +268,10 @@ section {
 
 .highrise {
 	background: url(../img/historyofhighrises.svg) no-repeat center center;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: cover;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
 	background-repeat: no-repeat;
 	background-attachment: center bottom;
 	width: 200px;
@@ -285,10 +286,10 @@ section {
 
 .leasing {
 	background: url(../img/leasing.svg) no-repeat center center;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: cover;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
 	background-repeat: no-repeat;
 	background-attachment: center bottom;
 	width: 200px;
@@ -303,10 +304,10 @@ section {
 
 .famous-alums {
 	background: url(../img/FamousAlums.svg) no-repeat center center;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: cover;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
 	background-repeat: no-repeat;
 	background-attachment: center bottom;
 	width: 200px;
@@ -321,10 +322,10 @@ section {
 
 .energy-efficent {
 	background: url(../img/ENERGYEFFICIENT.svg) no-repeat center center;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: cover;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
 	background-repeat: no-repeat;
 	background-attachment: center bottom;
 	width: 200px;
@@ -339,10 +340,10 @@ section {
 
 .burglariesharnwell {
 	background: url(../img/burglariesharnwell.svg) no-repeat center center;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: cover;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
 	background-repeat: no-repeat;
 	background-attachment: center bottom;
 	width: 200px;
@@ -357,28 +358,10 @@ section {
 
 .globe {
 	background: url(../img/globe.svg) no-repeat center center;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: 80%; /** This icon is larger than the others no clue why**/
-	background-repeat: no-repeat;
-	background-attachment: center bottom;
-	width: 200px;
-	height: 200px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	margin-top: 0;
-	padding: 0;
-	line-height: 0;
-}
-
-.globe {
-	background: url(../img/globe.svg) no-repeat center center;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: 80%; /** This icon is larger than the others no clue why**/
+	-webkit-background-size: 55% 55%;
+	-moz-background-size: 55% 55%;
+	-o-background-size: 55% 55%;
+	background-size: 55% 55%; /** This icon is larger than the others no clue why**/
 	background-repeat: no-repeat;
 	background-attachment: center bottom;
 	width: 200px;
@@ -393,10 +376,10 @@ section {
 
 .RA-housing {
 	background: url(../img/RAinSummer.svg) no-repeat center center;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: cover;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
 	background-repeat: no-repeat;
 	background-attachment: center bottom;
 	width: 200px;
@@ -409,12 +392,12 @@ section {
 	line-height: 0;
 }
 
-.double {
+.double .RA-housing .globe.burglariesharnwell .energy-efficent.famous-alums .leasing .highrisehillvsquadluxury-housing {
 	background: url(../img/double.svg) no-repeat center center;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: cover;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
 	background-repeat: no-repeat;
 	background-attachment: center bottom;
 	width: 200px;
@@ -429,10 +412,10 @@ section {
 
 .catvideo {
 	background: url(../img/catvideo.svg) no-repeat center center;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: cover;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
 	background-repeat: no-repeat;
 	background-attachment: center bottom;
 	width: 200px;
@@ -447,10 +430,10 @@ section {
 
 .cost-of-hill {
 	background: url(../img/costofhill.svg) no-repeat center center;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: cover;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
 	background-repeat: no-repeat;
 	background-attachment: center bottom;
 	width: 200px;
@@ -465,10 +448,10 @@ section {
 
 .dorm {
 	background: url(../img/dorm.svg) no-repeat center center;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: cover;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
 	background-repeat: no-repeat;
 	background-attachment: center bottom;
 	width: 200px;
@@ -481,6 +464,15 @@ section {
 	line-height: 0;
 }
 
+.dorm, .cost-of-hill, .catvideo, .double, .RA-housing, .globe, .burglariesharnwell, .energy-efficent, .famous-alums, .leasing, .highrise, .hillvsquad, .luxury-housing, img {
+	width: 200px;
+}
+
+.dorm img:hover .cost-of-hill img:hover, .catvideo img:hover, .double img:hover, .RA-housing img:hover, .globe img:hover, .burglariesharnwell img:hover, .energy-efficent img:hover, .famous-alums img:hover, .leasing img:hover, .highrise img:hover, .hillvsquad img:hover, .luxury-housing img:hover{
+	animation: 10s rotate10 infinite linear;
+	width: 200px;
+	z-index: 10;
+}
 .flex-tile {
 	height: auto;
 	min-height: 500px;
