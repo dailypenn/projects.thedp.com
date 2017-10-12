@@ -464,6 +464,24 @@ section {
 	line-height: 0;
 }
 
+.double {
+  background: url(../img/double.svg) no-repeat center center;
+  -webkit-background-size: 70% 70%;
+  -moz-background-size: 70% 70%;
+  -o-background-size: 70% 70%;
+  background-size: 70% 70%;
+  background-repeat: no-repeat;
+  background-attachment: center bottom;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 0;
+  padding: 0;
+  line-height: 0;
+}
+
 .dorm, .cost-of-hill, .catvideo, .double, .RA-housing, .globe, .burglariesharnwell, .energy-efficent, .famous-alums, .leasing, .highrise, .hillvsquad, .luxury-housing, img {
 	width: 200px;
 }
