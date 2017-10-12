@@ -26,7 +26,7 @@ section {
 }
 #off-campus-stories, #on-campus-stories, #heat-map {
 	padding-top: 20px;
-} 
+}
 
 #heat-map iframe {
 	width: 80%;
@@ -36,17 +36,23 @@ section {
 	height: auto;
 }
 
+#heat-map p {
+  max-width: 400px;
+  padding: 15px;
+  margin: auto;
+}
+
 .ribbon {
  font-size: 30px !important;
  width: 75%;
-    
+
  position: relative;
  background: #1a68ae;
  color: #F7F9FD;
  text-align: center;
  padding: .6em .8em; /* Adjust to suit */
- margin: 0px auto 32px auto; 
- 
+ margin: 0px auto 32px auto;
+
  }
 .ribbon:before, .ribbon:after {
  content: "";
@@ -167,15 +173,15 @@ section {
  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
 
  width: 70%;
-    
+
  position: relative;
  background: #e75234;
  color: #F7F9FD;
  text-align: center;
  padding: .6em .8em; /* Adjust to suit */
- margin: 10px auto 0px auto; 
+ margin: 10px auto 0px auto;
  z-index: 1;
- 
+
  }
 .red-ribbon:before, .red-ribbon:after {
  content: "";
@@ -219,7 +225,7 @@ section {
 
 #heat-map h2 {
 		font-size: 20px !important;
-		padding-top: 15px; 
+		padding-top: 15px;
 		text-align: center;
 }
 
@@ -549,9 +555,9 @@ padding-bottom: 20px;
     -ms-transform:scale(1.025); /* IE 9 */
     -o-transform:scale(1.025); /* Opera */
      transform:scale(1.025);
-     
+
      cursor: pointer;
-     
+
      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
      background-color: #f9fbff;
 }
@@ -571,7 +577,7 @@ padding-bottom: 20px;
 }
 
 #photo-tile-on {
-	background: url(https://snworksceo.imgix.net/dpn/007446b2-a535-4686-9dac-c088182f6e2e.sized-1000x1000.jpg) no-repeat center bottom ; 
+	background: url(https://snworksceo.imgix.net/dpn/007446b2-a535-4686-9dac-c088182f6e2e.sized-1000x1000.jpg) no-repeat center bottom ;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -579,7 +585,7 @@ padding-bottom: 20px;
 }
 
 #photo-tile-off {
-	background: url(https://snworksceo.imgix.net/dpn/b2dd1193-64de-4e61-974c-d3558cf28166.sized-1000x1000.jpg) no-repeat center bottom ; 
+	background: url(https://snworksceo.imgix.net/dpn/b2dd1193-64de-4e61-974c-d3558cf28166.sized-1000x1000.jpg) no-repeat center bottom ;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -587,7 +593,7 @@ padding-bottom: 20px;
 }
 
 #hero {
-	background: url(../img/landingpage.svg) no-repeat center bottom; 
+	background: url(../img/landingpage.svg) no-repeat center bottom;
 	background-color: #F7F9FD;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -598,7 +604,7 @@ padding-bottom: 20px;
 	overflow: hidden;
 	padding-bottom: 50px;
 	 overflow-x: hidden;
-	
+
 }
 
 #year {
@@ -623,7 +629,7 @@ footer {
     padding: 0;
     margin: 0;
     background-color: #1a68ae;
-    
+
 }
 
 .footer-flex-item {
@@ -663,6 +669,10 @@ h2 {
 	color: #1a68ae;
 	text-align: center;
 	font: 20px 'Prata';
+}
+
+a {
+  text-decoration: none;
 }
 
 p {
@@ -734,10 +744,10 @@ svg {
 	position: absolute;
 	background-image: url(../img/cloud.svg);
 	background-size:  contain;
-	
+
 	-webkit-animation: moveclouds 105s linear infinite;
 	-moz-animation: moveclouds 105s linear infinite;
-	-o-animation: moveclouds 105s linear infinite; 
+	-o-animation: moveclouds 105s linear infinite;
 	z-index: 1;
 }
 
@@ -746,14 +756,14 @@ svg {
 	width: 100px;
 	top: 10%;
 	left: 200px;
-	
+
 	position: absolute;
 	background-image: url(../img/cloud.svg);
 	background-size:  contain;
-	
+
 	-webkit-animation: moveclouds 105s linear infinite;
 	-moz-animation: moveclouds 105s linear infinite;
-	-o-animation: moveclouds 105s linear infinite; 
+	-o-animation: moveclouds 105s linear infinite;
 	z-index: 1;
 }
 
@@ -766,10 +776,10 @@ svg {
 	position: absolute;
 	background-image: url(../img/cloud.svg);
 	background-size:  contain;
-	
+
 	-webkit-animation: moveclouds 75s linear infinite;
 	-moz-animation: moveclouds 75s linear infinite;
-	-o-animation: moveclouds 75s linear infinite; 
+	-o-animation: moveclouds 75s linear infinite;
 	z-index: 1;
 }
 
@@ -778,14 +788,14 @@ svg {
 	width: 150px;
 	top: 55%;
 	left: 200px;
-	
+
 	position: absolute;
 	background-image: url(../img/cloud.svg);
 	background-size:  contain;
-	
+
 	-webkit-animation: moveclouds 45s linear infinite;
 	-moz-animation: moveclouds 45s linear infinite;
-	-o-animation: moveclouds 45s linear infinite; 
+	-o-animation: moveclouds 45s linear infinite;
 	z-index: 1;
 }
 
@@ -794,14 +804,14 @@ svg {
 	width: 150px;
 	top: 20%;
 	left: 650px;
-	
+
 	position: absolute;
 	background-image: url(../img/cloud.svg);
 	background-size:  contain;
-	
+
 	-webkit-animation: moveclouds 85s linear infinite;
 	-moz-animation: moveclouds 85s linear infinite;
-	-o-animation: moveclouds 85s linear infinite; 
+	-o-animation: moveclouds 85s linear infinite;
 	z-index: 1;
 }
 
@@ -810,14 +820,14 @@ svg {
 	width: 150px;
 	top: 17%;
 	left: 50px;
-	
+
 	position: absolute;
 	background-image: url(../img/cloud.svg);
 	background-size:  contain;
-	
+
 	-webkit-animation: moveclouds 85s linear infinite;
 	-moz-animation: moveclouds 85s linear infinite;
-	-o-animation: moveclouds 85s linear infinite; 
+	-o-animation: moveclouds 85s linear infinite;
 	z-index: 1;
 }
 
@@ -826,14 +836,14 @@ svg {
 	width: 150px;
 	top: 35%;
 	left: 700px;
-	
+
 	position: absolute;
 	background-image: url(../img/cloud.svg);
 	background-size:  contain;
-	
+
 	-webkit-animation: moveclouds 85s linear infinite;
 	-moz-animation: moveclouds 85s linear infinite;
-	-o-animation: moveclouds 85s linear infinite; 
+	-o-animation: moveclouds 85s linear infinite;
 	z-index: 1;
 }
 
@@ -888,7 +898,7 @@ svg {
 }
 
 @keyframes rotate10 {
-	
+
 	0% {transform: rotate(0deg);}
 	25% {transform: rotate(10deg);}
 	50% {transform: rotate(0deg);}
@@ -937,26 +947,26 @@ svg {
 		padding-top: 5%;
 		padding-bottom: 10%;
 	}
-	
+
 	#photo-tile-off, #photo-tile-on {
 		display: none;
 
 	}
-	
+
 	#photo-tile-off{
 		display: none;
 
 	}
 	#on-campus #text-tile {
-	background: url(../img/quad-fade.jpg) no-repeat center bottom ; 
+	background: url(../img/quad-fade.jpg) no-repeat center bottom ;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	}
-	
+
 	#off-campus #text-tile {
-	background: url(../img/highrise-fade.jpg) no-repeat center bottom ; 
+	background: url(../img/highrise-fade.jpg) no-repeat center bottom ;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -992,7 +1002,7 @@ svg {
 	.beercan img {
 		animation: 10s rotate10 infinite linear;
 		width: 200px;
-		
+
 	}
 	.ad-tile {
 		text-align: center;
