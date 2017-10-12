@@ -734,7 +734,7 @@ svg {
 	width: 150px;
 	top: 15%;
 	left: 0px;
-	position: absolute;
+	position: relative;
 	background-image: url(../img/cloud.svg);
 	background-size:  contain;
 
@@ -750,7 +750,7 @@ svg {
 	top: 10%;
 	left: 200px;
 
-	position: absolute;
+	position: relative;
 	background-image: url(../img/cloud.svg);
 	background-size:  contain;
 
@@ -766,7 +766,7 @@ svg {
 	top: 35%;
 	left: 550px;
 
-	position: absolute;
+	position: relative;
 	background-image: url(../img/cloud.svg);
 	background-size:  contain;
 
@@ -782,7 +782,7 @@ svg {
 	top: 55%;
 	left: 200px;
 
-	position: absolute;
+	position: relative;
 	background-image: url(../img/cloud.svg);
 	background-size:  contain;
 
@@ -798,7 +798,7 @@ svg {
 	top: 20%;
 	left: 650px;
 
-	position: absolute;
+	position: relative;
 	background-image: url(../img/cloud.svg);
 	background-size:  contain;
 
@@ -814,7 +814,7 @@ svg {
 	top: 17%;
 	left: 50px;
 
-	position: absolute;
+	position: relative;
 	background-image: url(../img/cloud.svg);
 	background-size:  contain;
 
@@ -830,7 +830,7 @@ svg {
 	top: 35%;
 	left: 700px;
 
-	position: absolute;
+	position: relative;
 	background-image: url(../img/cloud.svg);
 	background-size:  contain;
 
@@ -839,6 +839,7 @@ svg {
 	-o-animation: moveclouds 85s linear infinite;
 	z-index: 1;
 }
+
 
 @keyframes fadeIn {
   from {
@@ -914,6 +915,9 @@ svg {
 }
 
 @media only screen and (max-width: 850px) {
+	.cloud6, .cloud5, .cloud4, .cloud3, .cloud2, .cloud1, .cloud {
+		left: 0;
+	}
 	#mobile-leaderboard {
 		height: 200px;
 		display: block;
