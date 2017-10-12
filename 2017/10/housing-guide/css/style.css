@@ -578,34 +578,17 @@ padding-bottom: 20px;
 }
 
 #hero {
-	background-color: #F7F9FD; 
+	background: url(../img/landingpage.svg) no-repeat center bottom; 
+	background-color: #F7F9FD;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	height: auto;
-	min-height: 750px;
+	min-height: 650px;
 	overflow: hidden;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 	 overflow-x: hidden;
-	
-}
-.hero-bg {
-	 overflow-x: hidden;
-	padding-bottom: 100px;
-	animation: scroller 10000000s linear infinite ;
-	-webkit-transform: translate3d(0,0,0);
-    width: 100000000px;
-    overflow: hidden;
-    background-repeat: repeat-x;
-    background-position: center bottom;
-	height: auto;
-	min-height: 750px;
-	position: absolute;
-	background-size: contain;
-	background: url(../img/bg.svg); 
-	z-index: 1;
-
 	
 }
 
