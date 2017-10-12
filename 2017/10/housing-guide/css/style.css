@@ -482,11 +482,29 @@ section {
   line-height: 0;
 }
 
-.dorm, .cost-of-hill, .catvideo, .double, .RA-housing, .globe, .burglariesharnwell, .energy-efficent, .famous-alums, .leasing, .highrise, .hillvsquad, .luxury-housing, img {
+.home {
+  background: url(../img/Opinionhouseamychan.svg) no-repeat center center;
+  -webkit-background-size: 70% 70%;
+  -moz-background-size: 70% 70%;
+  -o-background-size: 70% 70%;
+  background-size: 70% 70%;
+  background-repeat: no-repeat;
+  background-attachment: center bottom;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.dorm, .cost-of-hill, .catvideo, .double, .RA-housing, .globe, .burglariesharnwell, .energy-efficent, .famous-alums, .leasing, .highrise, .hillvsquad, .luxury-housing, .home, img {
 	width: 200px;
 }
 
-.dorm img:hover .cost-of-hill img:hover, .catvideo img:hover, .double img:hover, .RA-housing img:hover, .globe img:hover, .burglariesharnwell img:hover, .energy-efficent img:hover, .famous-alums img:hover, .leasing img:hover, .highrise img:hover, .hillvsquad img:hover, .luxury-housing img:hover{
+.dorm img:hover .cost-of-hill img:hover, .catvideo img:hover, .double img:hover, .RA-housing img:hover, .globe img:hover, .burglariesharnwell img:hover, .energy-efficent img:hover, .famous-alums img:hover, .leasing img:hover, .highrise img:hover, .hillvsquad img:hover, .luxury-housing img:hover, .home img:hover  img:hover{
 	animation: 10s rotate10 infinite linear;
 	width: 200px;
 	z-index: 10;
