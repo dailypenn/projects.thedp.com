@@ -619,7 +619,7 @@ footer {
 
 .footer-flex-item {
 	color: #F7F9FD;
-    width: 33.33%;
+    width: 50%;
     height: auto;
     padding: 10px;
     font-size: medium;
@@ -630,6 +630,10 @@ footer {
 .footer-flex-item p{
 	color: #F7F9FD;
     margin-top: 50px;
+}
+.footer-flex-item a {
+	color: #F7F9FD;
+    line-height: 200px;
 }
 
 .footer-spacer {
