@@ -1,3 +1,5 @@
+/** If you are trying to read this CSS... my condolences **/
+
 HTML {
   height: 100%;
   max-width: 100%;
@@ -19,14 +21,12 @@ section {
 	background-color: #F7F9FD;
 
 }
-
+#mobile-leaderboard {
+	display: none;
+}
 #off-campus-stories, #on-campus-stories, #heat-map {
 	padding-top: 20px;
 } 
-
-#heat-map  {
-	text-align: center;
-}
 
 #heat-map iframe {
 	width: 80%;
@@ -37,9 +37,7 @@ section {
 }
 
 .ribbon {
- font-size: 40px !important;
- /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-
+ font-size: 30px !important;
  width: 75%;
     
  position: relative;
@@ -212,6 +210,17 @@ section {
 .red-ribbon .red-ribbon-content:after {
  right: 0;
  border-width: 1em 1em 0 0;
+}
+#heat-map {
+		font-size: 20px !important;
+		text-align: center;
+		padding-bottom: 100px;
+}
+
+#heat-map h2 {
+		font-size: 20px !important;
+		padding-top: 15px; 
+		text-align: center;
 }
 
 .luxury-housing {
@@ -664,12 +673,14 @@ p {
 }
 
 hr {
-	width: 80%;
+	width: 90%;
 	padding: 0;
 	margin: 0;
 	margin-left: auto;
 	margin-right: auto;
 	border: 1px solid #313132;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .text--line {
@@ -900,6 +911,17 @@ svg {
 }
 
 @media only screen and (max-width: 750px) {
+	#mobile-leaderboard {
+		height: 200px;
+		display: block;
+	}
+	#mobile-leaderboard div{
+		margin: 0;
+		height: 0;
+	}
+	#desktop-leaderboard {
+		display: none;
+	}
 	.flex-container {
 		display: block;
 	}
