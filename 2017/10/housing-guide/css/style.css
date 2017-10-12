@@ -469,10 +469,10 @@ section {
 
 .double {
   background: url(../img/double.svg) no-repeat center center;
-  -webkit-background-size: 70% 70%;
-  -moz-background-size: 70% 70%;
-  -o-background-size: 70% 70%;
-  background-size: 70% 70%;
+  -webkit-background-size: 60% 60%;
+	-moz-background-size: 60% 60%;
+	-o-background-size: 60% 60%;
+	background-size: 60% 60%;
   background-repeat: no-repeat;
   background-attachment: center bottom;
   width: 200px;
@@ -631,7 +631,7 @@ padding-bottom: 20px;
 	-o-background-size: cover;
 	background-size: cover;
 	height: auto;
-	min-height: 650px;
+	min-height: 750px;
 	overflow: hidden;
 	padding-bottom: 50px;
 	 overflow-x: hidden;
