@@ -12,6 +12,7 @@ body {
   color: #313132;
   max-width: 100%;
     overflow-x: hidden;
+    position: relative;
 }
 
 section {
