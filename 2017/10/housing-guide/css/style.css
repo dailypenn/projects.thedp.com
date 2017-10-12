@@ -910,7 +910,7 @@ svg {
 	}
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 850px) {
 	#mobile-leaderboard {
 		height: 200px;
 		display: block;
