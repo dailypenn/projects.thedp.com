@@ -1,6 +1,8 @@
 HTML {
   height: 100%;
-  overflow-x: hidden;  
+  max-width: 100vw;
+  overflow-x: hidden;
+  -webkit-overflow-x:  hidden;
 }
 
 body {
@@ -8,6 +10,7 @@ body {
   font: 12em/1 'Open Sans';
   color: #313132;
   width: 100%;
+   overflow-x: hidden;
 }
 
 section {
@@ -581,9 +584,11 @@ padding-bottom: 20px;
 	min-height: 750px;
 	overflow: hidden;
 	padding-bottom: 100px;
+	 overflow-x: hidden;
 	
 }
 .hero-bg {
+	 overflow-x: hidden;
 	padding-bottom: 100px;
 	animation: scroller 10000000s linear infinite ;
 	-webkit-transform: translate3d(0,0,0);
