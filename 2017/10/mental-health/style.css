@@ -1,0 +1,48 @@
+.section-header .row {
+  height: 50vh;
+}
+
+.section-header .col-sm-6 {
+  height: 100%;
+}
+
+.col-sm-6 h2 {
+  position: relative;
+}
+
+.section-header p {
+  padding-top: 40%;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.section-header section:nth-child(1) {
+  background-color: pink;
+}
+
+.section-header section:nth-child(2) h2 {
+  width: 100%;
+  text-align: right;
+}
+
+.section-header section:nth-child(2) {
+  background-color: blue;
+}
+
+.section-header section:nth-child(3) {
+  background-color: red;
+}
+
+.section-header section:nth-child(3) h2 {
+  top: calc(100% - 50px);
+}
+
+.section-header section:nth-child(4) {
+  background-color: teal;
+}
+
+.section-header section:nth-child(4) h2 {
+  width: 100%;
+  text-align: right;
+  top: calc(100% - 50px);
+}
