@@ -99,8 +99,22 @@ p {
   margin-right: 4px;
 }
 
+.article-date {
+  color: #888;
+}
+
 .resources {
   flex: 2 0 66%;
+}
+
+.resources-left {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.resources-right {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .panel {

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Desktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop">
+            <g id="Group" transform="translate(354.000000, 256.000000)">
+                <polygon id="Shape" fill="#FFFFFF" fill-rule="nonzero" points="218.797775 98 218.797775 171.720901 99.8541108 171.720901 99.8541108 98 0 98 0 171.720901 0 491 317 491 317 171.720901 317 98"></polygon>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="101" y="196" width="20" height="32"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="105" y="305" width="12" height="21"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="105" y="331" width="12" height="21"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="105" y="278" width="12" height="21"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="198" y="305" width="12" height="21"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="198" y="331" width="12" height="21"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="198" y="278" width="12" height="21"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="125" y="196" width="20" height="32"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="150" y="196" width="20" height="32"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="172" y="196" width="20" height="32"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="197" y="196" width="20" height="32"></rect>
+                <path d="M98,245 L218,245" id="Shape" stroke="#1867B2" stroke-width="4"></path>
+                <path d="M98,393 L218,393" id="Shape" stroke="#1867B2" stroke-width="4"></path>
+                <rect id="Rectangle-path" fill="#EC512C" fill-rule="nonzero" x="0" y="384" width="98" height="13"></rect>
+                <rect id="Rectangle-path" fill="#EC512C" fill-rule="nonzero" x="0" y="238" width="98" height="13"></rect>
+                <rect id="Rectangle-path" fill="#EC512C" fill-rule="nonzero" x="218" y="238" width="98" height="13"></rect>
+                <rect id="Rectangle-path" fill="#EC512C" fill-rule="nonzero" x="218" y="384" width="98" height="13"></rect>
+                <rect id="Rectangle-path" stroke="#1867B2" stroke-width="4" x="0" y="98" width="98" height="414"></rect>
+                <rect id="Rectangle-path" stroke="#1867B2" stroke-width="4" x="218" y="98" width="98" height="414"></rect>
+                <path d="M98,183 L98,513 L124.870464,513 L124.870464,450.698561 C124.870464,417.602219 157.50195,418.575525 157.50195,418.575525 C157.50195,418.575525 190.129536,417.602219 190.129536,450.698561 L190.129536,513 L217,513 L217,183 L98,183 Z" id="Shape" stroke="#1867B2" stroke-width="4"></path>
+                <path d="M158.000986,219.003007 C158.000986,219.003007 125,218.024834 125,251.35442 L125,306.905058 L125,314.094925 L125,369.647555 C125,402.97714 158.000986,401.996975 158.000986,401.996975 C158.000986,401.996975 191,402.97714 191,369.647555 L191,314.094925 L191,306.905058 L191,251.35442 C191,218.024834 158.000986,219.003007 158.000986,219.003007 Z" id="Shape" stroke="#1867B2" stroke-width="4" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <path d="M268.027651,0 C268.027651,0 271.102741,32.3419718 276.611044,42.3687324 C317.108624,63.0690141 316.999998,98 316.999998,98 L219.000003,98 C219.000003,98 218.891378,63.0690141 259.383032,42.3687324 C264.895285,32.3419718 268.027651,0 268.027651,0" id="Shape" stroke="#1867B2" stroke-width="4" fill="#8DC3EA" fill-rule="nonzero" stroke-linecap="round"></path>
+                <path d="M49.026664,0 C49.026664,0 52.1018165,32.3419718 57.6122054,42.3687324 C98.1086262,63.0690141 97.9999984,98 97.9999984,98 L3.26432443e-06,98 C3.26432443e-06,98 -0.110599524,63.0690141 40.3858212,42.3687324 C45.8942351,32.3419718 49.026664,0 49.026664,0" id="Shape" stroke="#1867B2" stroke-width="4" fill="#8DC3EA" fill-rule="nonzero" stroke-linecap="round"></path>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="24" y="265" width="49" height="40"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="35" y="190" width="26" height="32"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="255" y="190" width="26" height="32"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="244" y="265" width="49" height="40"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="244" y="329" width="49" height="40"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="248" y="460" width="40" height="32"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="28" y="460" width="40" height="32"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="28" y="402" width="40" height="32"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="248" y="402" width="40" height="32"></rect>
+                <rect id="Rectangle-path" fill="#8DC3EA" fill-rule="nonzero" x="24" y="329" width="49" height="40"></rect>
+                <path d="M125,463 L191,463" id="Shape" stroke="#1867B2" stroke-width="4"></path>
+                <path d="M191,299 C191,299 183.234482,289.302975 158.000986,289.302975 C132.767491,289.302975 125,299 125,299 L125,265.700967 C125,265.700967 132.765518,256 158.000986,256 C183.236454,256 191,265.700967 191,265.700967 L191,299 Z" id="Shape" stroke="#1867B2" stroke-width="4" fill="#8DC3EA" fill-rule="nonzero"></path>
+                <path d="M191,359 C191,359 183.234482,349.299033 158.000986,349.299033 C132.767491,349.299033 125,359 125,359 L125,325.698996 C125,325.698996 132.765518,316 158.000986,316 C183.236454,316 191,325.698996 191,325.698996 L191,359 Z" id="Shape" stroke="#1867B2" stroke-width="4" fill="#8DC3EA" fill-rule="nonzero"></path>
+                <path d="M0,165 L98,165" id="Shape" stroke="#1867B2" stroke-width="4"></path>
+                <path d="M0,109 L98,109" id="Shape" stroke="#1867B2" stroke-width="4"></path>
+                <path d="M218,109 L316,109" id="Shape" stroke="#1867B2" stroke-width="4"></path>
+                <path d="M100,172 L219,172" id="Shape" stroke="#1867B2" stroke-width="4"></path>
+                <path d="M219,165 L317,165" id="Shape" stroke="#1867B2" stroke-width="4"></path>
+            </g>
+            <circle id="Oval" stroke="#8DC3EA" stroke-width="17" cx="512.5" cy="512.5" r="440"></circle>
+        </g>
+    </g>
+</svg>

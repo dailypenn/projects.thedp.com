@@ -1,0 +1,1062 @@
+/** If you are trying to read this CSS... my condolences **/
+
+HTML {
+  height: 100%;
+  max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+  background: #F7F9FD;
+  font: 12em/1 'Open Sans';
+  color: #313132;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+section {
+	min-height: 500px;
+	height: auto;
+	padding: 0px 0px 0px 0px;
+	background-color: #F7F9FD;
+
+}
+#mobile-leaderboard {
+	display: none;
+}
+#off-campus-stories, #on-campus-stories, #heat-map {
+	padding-top: 20px;
+}
+#off-campus-stories{
+	padding-bottom: 100px;
+}
+
+#heat-map iframe {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 600px;
+	height: auto;
+}
+
+#heat-map p {
+  max-width: 400px;
+  padding: 15px;
+  margin: auto;
+}
+
+.ribbon {
+ font-size: 30px !important;
+ width: 75%;
+
+ position: relative;
+ background: #1a68ae;
+ color: #F7F9FD;
+ text-align: center;
+ padding: .6em .8em; /* Adjust to suit */
+ margin: 0px auto 32px auto;
+
+ }
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -.6em;
+ border: 1em solid #165082;
+ z-index: 0 ;
+}
+.ribbon:before {
+ left: -2.5em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2.5em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #0e2b44 transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+.button {
+  font-weight: 400;
+  font-size: 20px;
+  min-width: 50%;
+  text-transform: uppercase;
+  height: auto;
+  padding: 15px;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Prata';
+  -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+  color: #F7F9FD;
+  background-color: #1a68ae;
+  cursor: pointer
+}
+
+.button a {
+	  text-decoration: none;
+	  color: #fff;
+
+}
+
+
+
+.flex-container {
+  -webkit-flex-wrap: wrap;
+  flex-wrap:         wrap;
+  display: flex;
+  height: auto;
+  min-height: 500px;
+  vertical-align: middle;
+
+
+}
+
+
+.icon {
+	background-image: url(../img/BEERCANLines.svg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.beercan {
+	background: url(../img/BEERCAN.svg) no-repeat center center;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.beercan img {
+	animation: 10s rotate10 infinite linear;
+	width: 200px;
+}
+
+
+.red-ribbon {
+ font-size: 20px !important;
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+ width: 70%;
+
+ position: relative;
+ background: #e75234;
+ color: #F7F9FD;
+ text-align: center;
+ padding: .6em .8em; /* Adjust to suit */
+ margin: 10px auto 0px auto;
+ z-index: 1;
+
+ }
+.red-ribbon:before, .red-ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -.6em;
+ border: 1em solid #c94327;
+ z-index: 0 ;
+}
+.red-ribbon:before {
+ left: -1.5em;
+ border-right-width: 0.5em;
+ border-left-color: transparent;
+}
+.red-ribbon:after {
+ right: -1.5em;
+ border-left-width: 0.5em;
+ border-right-color: transparent;
+}
+.red-ribbon .red-ribbon-content:before, .red-ribbon .red-ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #0e2b44 transparent transparent transparent;
+ bottom: -1em;
+}
+.red-ribbon .red-ribbon-content:before {
+ left: 0;
+ border-width: 0.5em 0 0 1em;
+}
+.red-ribbon .red-ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+#heat-map {
+		font-size: 20px !important;
+		text-align: center;
+		padding-bottom: 100px;
+}
+
+#heat-map h2 {
+		font-size: 20px !important;
+		padding-top: 15px;
+		text-align: center;
+}
+
+.luxury-housing {
+	background: url(../img/LuxuryHousing.svg) no-repeat center center;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.hillvsquad {
+	background: url(../img/hill.svg) no-repeat center center;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.highrise {
+	background: url(../img/historyofhighrises.svg) no-repeat center center;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.leasing {
+	background: url(../img/leasing.svg) no-repeat center center;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.famous-alums {
+	background: url(../img/FamousAlums.svg) no-repeat center center;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.energy-efficent {
+	background: url(../img/ENERGYEFFICIENT.svg) no-repeat center center;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.burglariesharnwell {
+	background: url(../img/burglariesharnwell.svg) no-repeat center center;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.globe {
+	background: url(../img/globe.svg) no-repeat center center;
+	-webkit-background-size: 55% 55%;
+	-moz-background-size: 55% 55%;
+	-o-background-size: 55% 55%;
+	background-size: 55% 55%; /** This icon is larger than the others no clue why**/
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.RA-housing {
+	background: url(../img/RAinSummer.svg) no-repeat center center;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.double .RA-housing .globe.burglariesharnwell .energy-efficent.famous-alums .leasing .highrisehillvsquadluxury-housing {
+	background: url(../img/double.svg) no-repeat center center;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.catvideo {
+	background: url(../img/catvideo.svg) no-repeat center center;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.cost-of-hill {
+	background: url(../img/costofhill.svg) no-repeat center center;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.dorm {
+	background: url(../img/dorm.svg) no-repeat center center;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70% 70%;
+	-o-background-size: 70% 70%;
+	background-size: 70% 70%;
+	background-repeat: no-repeat;
+	background-attachment: center bottom;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.double {
+  background: url(../img/double.svg) no-repeat center center;
+  -webkit-background-size: 60% 60%;
+	-moz-background-size: 60% 60%;
+	-o-background-size: 60% 60%;
+	background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-attachment: center bottom;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.home {
+  background: url(../img/Opinionhouseamychan.svg) no-repeat center center;
+  -webkit-background-size: 70% 70%;
+  -moz-background-size: 70% 70%;
+  -o-background-size: 70% 70%;
+  background-size: 70% 70%;
+  background-repeat: no-repeat;
+  background-attachment: center bottom;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.dorm, .cost-of-hill, .catvideo, .double, .RA-housing, .globe, .burglariesharnwell, .energy-efficent, .famous-alums, .leasing, .highrise, .hillvsquad, .luxury-housing, .home, img {
+	width: 200px;
+}
+
+.dorm img:hover .cost-of-hill img:hover, .catvideo img:hover, .double img:hover, .RA-housing img:hover, .globe img:hover, .burglariesharnwell img:hover, .energy-efficent img:hover, .famous-alums img:hover, .leasing img:hover, .highrise img:hover, .hillvsquad img:hover, .luxury-housing img:hover, .home img:hover  img:hover{
+	animation: 10s rotate10 infinite linear;
+	width: 200px;
+	z-index: 10;
+}
+.flex-tile {
+	height: auto;
+	min-height: 500px;
+    width: 50%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.article-container {
+	margin-left: auto;
+	margin-right: auto;
+  -webkit-flex-wrap: wrap;
+  flex-wrap:         wrap;
+  display: flex;
+  height: auto;
+  min-height: 400px;
+  vertical-align: middle;
+  width: 90%;
+padding-bottom: 20px;
+
+
+
+}
+.ad-tile {
+	height: auto;
+	color: #1a68ae;
+	background-color: #F7F9FD;
+    width: 33.33%;
+    overflow: hidden;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0%;
+	padding-bottom: 1%;
+	vertical-align: middle;
+}
+
+.centering-div {
+	width: 100%;
+	text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+.ad-tile:hover {
+	cursor: pointer;
+}
+
+.article-tile {
+	height: auto;
+	color: #1a68ae;
+	background-color: #F7F9FD;
+    width: 33.33%;
+    overflow: hidden;
+	text-align: center;
+	padding-top: 0%;
+	padding-bottom: 1%;
+	vertical-align: middle;
+    -moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.article-tile p {
+		text-align: left;
+
+}
+
+.article-tile:hover {
+	-webkit-transform:scale(1.025); /* Safari and Chrome */
+    -moz-transform:scale(1.025); /* Firefox */
+    -ms-transform:scale(1.025); /* IE 9 */
+    -o-transform:scale(1.025); /* Opera */
+     transform:scale(1.025);
+
+     cursor: pointer;
+
+     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
+     background-color: #f9fbff;
+}
+
+
+
+#text-tile {
+	text-align: center;
+	padding-top: 7%;
+	margin-bottom: -10%;
+	padding-bottom: 0;
+	vertical-align: middle;
+}
+
+#text-tile p{
+	margin-bottom: -75px;
+}
+
+#photo-tile-on {
+	background: url(https://snworksceo.imgix.net/dpn/007446b2-a535-4686-9dac-c088182f6e2e.sized-1000x1000.jpg) no-repeat center bottom ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#photo-tile-off {
+	background: url(https://snworksceo.imgix.net/dpn/b2dd1193-64de-4e61-974c-d3558cf28166.sized-1000x1000.jpg) no-repeat center bottom ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#hero {
+	background: url(../img/landingpage.svg) no-repeat center bottom;
+	background-color: #F7F9FD;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: auto;
+	min-height: 750px;
+	overflow: hidden;
+	padding-bottom: 50px;
+	 overflow-x: hidden;
+
+}
+
+#year {
+	font-family: 'Prata';
+}
+
+footer {
+	width: 100%;
+    height: 200px;
+	position: fixed;
+	bottom: 0px;
+	z-index: -1;
+    background-color: #1a68ae;
+
+}
+.footer-flex-container {
+	text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: #1a68ae;
+
+}
+
+.footer-flex-item {
+	color: #F7F9FD;
+    width: 25%;
+    height: auto;
+    padding: 10px;
+    font-size: medium;
+    color: black;
+    text-decoration: none;
+}
+
+.footer-flex-item p{
+	color: #F7F9FD;
+    margin-top: 50px;
+	font-size: small;
+}
+.footer-flex-item a {
+	color: #F7F9FD;
+}
+
+.footer-spacer {
+    height: 200px;
+    background-color: transparent;
+      box-shadow: inset 0px 10px 19px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+h1 {
+	text-align: center;
+	font: 60px 'Prata';
+	color: #1a68ae;
+}
+
+h2 {
+	padding: 0px 15px;
+	color: #1a68ae;
+	text-align: center;
+	font: 20px 'Prata';
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+	font-size: medium;
+	padding: 40px 40px 0px 40px;
+	line-height: 20px;
+	color: #313132;
+}
+
+hr {
+	width: 90%;
+	padding: 0;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #313132;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.text--line {
+  font-size: .5em;
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 7% 28%;
+  stroke-width: 3px;
+  -webkit-animation: stroke-offset 1.5s linear;
+          animation: stroke-offset 1.5s linear;
+}
+.text-copy:nth-child(1) {
+  stroke: #1a68ae;
+  stroke-dashoffset: 7%;
+}
+.text-copy:nth-child(2) {
+  stroke: #e75234;
+  stroke-dashoffset: 14%;
+}
+.text-copy:nth-child(3) {
+  stroke: #e75234;
+  stroke-dashoffset: 21%;
+}
+.text-copy:nth-child(4) {
+  stroke: #313132;
+  stroke-dashoffset: 28%;
+}
+.text-copy:nth-child(5) {
+  stroke: #1a68ae;
+  stroke-dashoffset: 35%;
+}
+
+
+.cloud{
+	height: 100px;
+	width: 150px;
+	top: 15%;
+	left: 0px;
+	position: absolute;
+	background-image: url(../img/cloud.svg);
+	background-size:  contain;
+
+	-webkit-animation: moveclouds 105s linear infinite;
+	-moz-animation: moveclouds 105s linear infinite;
+	-o-animation: moveclouds 105s linear infinite;
+	z-index: 1;
+}
+
+.cloud1{
+	height: 66.66px;
+	width: 100px;
+	top: 10%;
+	left: 200px;
+
+	position: absolute;
+	background-image: url(../img/cloud.svg);
+	background-size:  contain;
+
+	-webkit-animation: moveclouds 105s linear infinite;
+	-moz-animation: moveclouds 105s linear infinite;
+	-o-animation: moveclouds 105s linear infinite;
+	z-index: 1;
+}
+
+.cloud2{
+	height: 200px;
+	width: 300px;
+	top: 35%;
+	left: 550px;
+
+	position: absolute;
+	background-image: url(../img/cloud.svg);
+	background-size:  contain;
+
+	-webkit-animation: moveclouds 75s linear infinite;
+	-moz-animation: moveclouds 75s linear infinite;
+	-o-animation: moveclouds 75s linear infinite;
+	z-index: 1;
+}
+
+.cloud3{
+	height: 100px;
+	width: 150px;
+	top: 55%;
+	left: 200px;
+
+	position: absolute;
+	background-image: url(../img/cloud.svg);
+	background-size:  contain;
+
+	-webkit-animation: moveclouds 45s linear infinite;
+	-moz-animation: moveclouds 45s linear infinite;
+	-o-animation: moveclouds 45s linear infinite;
+	z-index: 1;
+}
+
+.cloud4{
+	height: 100px;
+	width: 150px;
+	top: 20%;
+	left: 650px;
+
+	position: absolute;
+	background-image: url(../img/cloud.svg);
+	background-size:  contain;
+
+	-webkit-animation: moveclouds 85s linear infinite;
+	-moz-animation: moveclouds 85s linear infinite;
+	-o-animation: moveclouds 85s linear infinite;
+	z-index: 1;
+}
+
+.cloud5{
+	height: 100px;
+	width: 150px;
+	top: 17%;
+	left: 50px;
+
+	position: absolute;
+	background-image: url(../img/cloud.svg);
+	background-size:  contain;
+
+	-webkit-animation: moveclouds 85s linear infinite;
+	-moz-animation: moveclouds 85s linear infinite;
+	-o-animation: moveclouds 85s linear infinite;
+	z-index: 1;
+}
+
+.cloud6{
+	height: 100px;
+	width: 150px;
+	top: 35%;
+	left: 700px;
+
+	position: absolute;
+	background-image: url(../img/cloud.svg);
+	background-size:  contain;
+
+	-webkit-animation: moveclouds 85s linear infinite;
+	-moz-animation: moveclouds 85s linear infinite;
+	-o-animation: moveclouds 85s linear infinite;
+	z-index: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes scroller {
+	from {
+        transform: translate(0vw, 0);
+    }
+	to {
+        transform: translate(-100%, 0);
+    }
+}
+
+
+@-webkit-keyframes moveclouds {
+	0% { opacity: 0; margin-left: 0vw;}
+	20% {opacity: 1; }
+	80% { opacity: 1; }
+	100% { opacity: 0; margin-left: 100vw;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+
+@-webkit-keyframes stroke-offset {
+  0% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%;
+  }
+}
+
+@keyframes stroke-offset {
+  0% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%;
+  }
+}
+
+@keyframes rotate10 {
+
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(10deg);}
+	50% {transform: rotate(0deg);}
+	75% {transform: rotate(-10deg);}
+	100% {transform: rotate(0deg);}
+
+}
+
+@media only screen and (max-width: 950px) {
+
+	svg {
+	  font-size: 40%;
+	}
+	#year {
+		font-size: 140px;
+	}
+	.text-copy {
+	  stroke-width: 2px;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	#mobile-leaderboard {
+		height: 200px;
+		display: block;
+	}
+	#mobile-leaderboard div{
+		margin: 0;
+		height: 0;
+	}
+	#desktop-leaderboard {
+		display: none;
+	}
+	.flex-container {
+		display: block;
+	}
+	.flex-tile {
+		width: 100%;
+	}
+	.article-container {
+		display: block;
+		padding-bottom: 0;
+	}
+	.article-tile {
+		width: 100%;
+		padding-top: 5%;
+		padding-bottom: 10%;
+	}
+
+	#photo-tile-off, #photo-tile-on {
+		display: none;
+
+	}
+
+	#photo-tile-off{
+		display: none;
+
+	}
+	#on-campus #text-tile {
+	background: url(../img/quad-fade.jpg) no-repeat center bottom ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+
+	#off-campus #text-tile {
+	background: url(../img/highrise-fade.jpg) no-repeat center bottom ;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+	.ribbon {
+		font-size: 30px !important;
+	}
+	.footer-spacer {
+    	height: 300px;
+    	background-color: transparent;
+        box-shadow: inset 0px 10px 19px 1px rgba(0, 0, 0, 0.2);
+	}
+	footer {
+		height: 300px;
+	}
+	.footer-flex-container {
+		display: block;
+	}
+	.footer-flex-item {
+    	width: 100%;
+    	padding: 0;
+    }
+    .footer-flex-item p {
+    	margin-top: 30px;
+    	margin-bottom: 0px;
+    	padding: 0px;
+    }
+    .luxury-housing, .leasing, .famous-alums, {
+		height: 1000px;
+		width: 1000px;
+	}
+	.beercan {
+		width: 200px;
+		-webkit-background-size: 70% 70%;
+		-moz-background-size: 70% 70%;
+		-o-background-size: 70% 70%;
+		background-size: 70% 70%;
+
+	}
+	.beercan img {
+		animation: 10s rotate10 infinite linear;
+		width: 200px;
+
+	}
+	.ad-tile {
+		text-align: center;
+		overflow: visible;
+		margin-left: auto;
+		margin-right: 0;
+		padding: 0;
+		padding-top: 20px;
+		width: 100%;
+	}
+	.centering-div {
+		text-align: center;
+		padding: 0;
+		width: auto;
+	}
+
+
+}
