@@ -1,3 +1,49 @@
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+section {
+	min-height: 500px;
+}
+
+#title {
+	height: 100vh;
+	width: 100%;
+	color: white;
+	background-color: black;
+}
+
+#title h1 {
+	text-align: center;
+	width: 100%;
+	text-transform: uppercase;
+	margin-top: 1em;
+	font-size: 4em;
+} 
+
+#title p {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+} 
+
+.header-bar {
+	width: 100%;
+	background-color: black;
+	height: auto;
+}
+
+.header-bar .row{
+	text-align: center;
+}
+
 .section-header .row {
   height: 50vh;
 }
@@ -45,4 +91,39 @@
   width: 100%;
   text-align: right;
   top: calc(100% - 50px);
+}
+
+#narratives .row, #the-administration .row, #resources .row, #wellness .row{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#narratives .col-sm-6, #the-administration .col-sm-6, #resources .col-sm-6, #wellness .col-sm-6{
+	height: auto;
+	text-align: center;
+	color: white;
+}
+
+#narratives {
+	background-color: pink;
+}
+
+#the-administration {
+	background-color: blue;
+}
+
+#resources {
+	background-color: red;
+}
+
+#wellness {
+	background-color: teal;
+}
+
+.section-title {
+	font-size: xx-large;
+}
+
+.section-articles {
+	text-align: left !important;
 }
