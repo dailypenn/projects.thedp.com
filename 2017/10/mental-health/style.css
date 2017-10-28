@@ -3,7 +3,7 @@ a {
 	color: inherit;
 }
 
-a:hover {
+a:hover, a:active {
 	text-decoration: none;
 	color: inherit;
 }
@@ -16,7 +16,7 @@ section {
 	height: 100vh;
 	width: 100%;
 	color: white;
-	background-color: black;
+	background-color: #36454f;
 }
 
 #title h1 {
@@ -25,18 +25,19 @@ section {
 	text-transform: uppercase;
 	margin-top: 1em;
 	font-size: 4em;
-} 
+}
 
 #title p {
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 1em;
-} 
+}
 
 .header-bar {
 	width: 100%;
-	background-color: black;
+	background-color: #36454f;
+  border-bottom: 1px solid #fff;
 	height: auto;
 }
 
@@ -56,6 +57,10 @@ section {
   position: relative;
 }
 
+.section-header section {
+  color: #fff;
+}
+
 .section-header p {
   padding-top: 40%;
   text-align: justify;
@@ -63,7 +68,7 @@ section {
 }
 
 .section-header section:nth-child(1) {
-  background-color: pink;
+  background-color: #36454f;
 }
 
 .section-header section:nth-child(2) h2 {
@@ -72,25 +77,29 @@ section {
 }
 
 .section-header section:nth-child(2) {
-  background-color: blue;
+  background-color: #6e7f80;
 }
 
 .section-header section:nth-child(3) {
-  background-color: red;
+  background-color: #708090;
 }
 
-.section-header section:nth-child(3) h2 {
-  top: calc(100% - 50px);
+.section-header section:nth-child(3) h2,
+.section-header section:nth-child(4) h2 {
+  top: calc(100% - 80px);
+  width: 100%;
 }
 
 .section-header section:nth-child(4) {
-  background-color: teal;
+  background-color: #536878;
 }
 
 .section-header section:nth-child(4) h2 {
-  width: 100%;
   text-align: right;
-  top: calc(100% - 50px);
+}
+
+.nav-arrow {
+  font-size: 60px;
 }
 
 #narratives .row, #the-administration .row, #resources .row, #wellness .row{
