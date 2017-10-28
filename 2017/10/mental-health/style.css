@@ -1,10 +1,14 @@
 body {
-  height: 100vh;
-  width: 100vw;
   overflow-x: hidden;
   background-color: #36454f;
   color: white;
 }
+
+main {
+  width: 100vw;
+  position: relative;
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -16,31 +20,21 @@ a:hover, a:active {
   cursor: pointer;
 }
 
-section {
-	min-height: 500px;
-}
 
 #title {
 	min-height: 100vh;
 	width: 100%;
 }
 
-#title h1 {
-	text-align: center;
-	width: 100%;
-	text-transform: uppercase;
-	margin-top: 1em;
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+	margin: .5em;
 	font-size: 4em;
 }
 
-#title p {
-	width: 60%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 1em;
-}
 
-.header-bar {
+header {
 	width: 100%;
 	background-color: #36454f;
   border-bottom: 1px solid #fff;
