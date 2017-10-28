@@ -2,6 +2,8 @@ body {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+  background-color: #36454f;
+  color: white;
 }
 a {
 	text-decoration: none;
@@ -19,10 +21,8 @@ section {
 }
 
 #title {
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
-	color: white;
-	background-color: #36454f;
 }
 
 #title h1 {
@@ -104,7 +104,8 @@ section {
   text-align: right;
 }
 
-.nav-arrow {
+.nav-arrow,
+.home-arrow {
   font-size: 60px;
 }
 
@@ -151,9 +152,8 @@ section {
 
 .pages {
 	position: relative;
-	overflow: hidden;
 	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
 	z-index: 0;
 }
 
@@ -344,4 +344,13 @@ section {
 		-webkit-transform: translate3d(0, -200%, 0);
 		transform: translate3d(0, -200%, 0);
 	}
+}
+
+@media screen and (max-width: 800px) {
+  .section-header .row {
+    height: 100vh;
+  }
+  /*.section-header section {
+    min-height: 100vh;
+  }*/
 }
