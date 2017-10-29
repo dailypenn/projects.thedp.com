@@ -239,7 +239,7 @@ $(document).ready(function() {
     // the layers are the elements that move from the sides
     nmbLayers : 3,
     // bg color of each layer
-    bgcolor : ['#36454f', '#708090', '#36454f'],
+    bgcolor : ['#99B6A0', '#2A7595', '#0D3D49'],
     // effect classname
     effect : 'anim--effect-3',
     onStart : function(direction) {
