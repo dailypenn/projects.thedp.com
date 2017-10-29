@@ -402,8 +402,26 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-  .section-header .row {
-    height: 100vh;
+  .section-header .col-sm-6 {
+    height: auto;
+  }
+
+  .section-header img {
+    position: relative;
+    width: 40%;
+  }
+
+  .section-header p {
+    padding-top: 15px;
+  }
+
+  .page {
+    height: auto;
+    padding-left: 15px;
+  }
+
+  .container {
+    height: auto;
   }
   /*.section-header section {
     min-height: 100vh;
