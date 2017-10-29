@@ -44,7 +44,7 @@
 	}
 
 	// some vars
-	var bodyEl = document.body,
+	var bodyEl = document.querySelector('main'),
 		// window sizes
 		winsize = { width : window.innerWidth, height : window.innerHeight },
 		// support for animations
@@ -307,4 +307,11 @@ $(document).ready(function() {
   document.querySelector('a.home-arrow.bottom-left').addEventListener('click', function() { reveal('cornerbottomleft'); });
   document.querySelector('a.nav-arrow.bottom-right').addEventListener('click', function() { reveal('cornerbottomright'); });
   document.querySelector('a.home-arrow.bottom-right').addEventListener('click', function() { reveal('cornerbottomright'); });
+
+	$(function() {
+		$.scrollify({
+			section : ".fullpage",
+			setHeights: false
+		});
+	});
 });

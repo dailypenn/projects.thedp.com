@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.17/jquery.scrollify.min.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <header>
-      <div class="row">
-        <div class="col-sm-6">
-  	      <img class="logo" src="img/dp-wordmark.svg">
-        </div>
-        <div class="col-sm-6">
-	        <img class="logo" src="img/34st-logotype.svg">
-        </div>
-      </div>
-    </header>
     <main>
-	  <section id="title">
+	  <section id="title" class="fullpage">
+      <header>
+        <div class="row">
+          <div class="col-sm-6">
+            <img class="logo" src="img/dp-wordmark.svg">
+          </div>
+          <div class="col-sm-6">
+            <img class="logo" src="img/34st-logotype.svg">
+          </div>
+        </div>
+      </header>
+
 		  <h1>A Good Title</h1>
 		  <div class="col-md-8 col-md-push-2 letter">
 			  <p>
@@ -58,7 +61,7 @@
         </p>
 		  </div>
 	  </section>
-    <section class="pages">
+    <section class="pages fullpage">
       <div class="page page--current container-fluid section-header">
         <div class="row">
           <section class="shadow-hover col-sm-6">
@@ -90,7 +93,8 @@
                   ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
                 </p>
               </div>
-            </div>          </section>
+            </div>
+          </section>
           <section class="shadow-hover col-sm-6">
             <h2>
               <a class="nav-arrow bottom-left">&#x2B0B;</a>
@@ -300,7 +304,7 @@
 
 
     </main>
-    <footer>
+    <footer class="interstitialSection">
       <div class="row">
         <div class="col-sm-6">
           Copyright DP 2017. All Rights Reserved
@@ -310,7 +314,7 @@
         </div>
       </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
     <script src="./script.js" charset="utf-8"></script>
   </body>
