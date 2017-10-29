@@ -1,7 +1,21 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('fonts/BebasNeue.eot');
+    src: url('fonts/BebasNeue.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue.woff2') format('woff2'),
+         url('fonts/BebasNeue.woff') format('woff'),
+         url('fonts/BebasNeue.ttf') format('truetype'),
+         url('fonts/BebasNeue.svg#BebasNeue') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
 body {
   overflow-x: hidden;
   background-color: #36454f;
   color: white;
+  font-family: 'BebasNeue', Fallback, sans-serif;
 }
 
 main {
@@ -142,19 +156,19 @@ footer {
 }
 
 #narratives {
-	background-color: pink;
+	background-color: #36454f;
 }
 
 #the-administration {
-	background-color: blue;
+	background-color: #6e7f80;
 }
 
 #resources {
-	background-color: red;
+	background-color: #708090;
 }
 
 #wellness {
-	background-color: teal;
+	background-color: #536878;
 }
 
 .section-title {
