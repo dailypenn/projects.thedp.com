@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i');
 @font-face {
     font-family: 'BebasNeue';
     src: url('fonts/BebasNeue.eot');
@@ -15,8 +16,13 @@ body {
   overflow-x: hidden;
   background-color: #AFCFCE;
   color: white;
-  font-family: 'BebasNeue', Fallback, sans-serif;
+  font-family: 'Lora', serif;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'BebasNeue', sans-serif;
+}
+
 img {
   max-width: 100%;
 }
@@ -71,6 +77,7 @@ header {
 }
 
 footer {
+  color: #3C3C3C;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	width: 100%;
@@ -134,6 +141,7 @@ footer {
 .section-header section:nth-child(4) h2 {
   top: calc(100% - 80px);
   width: 100%;
+  z-index: 100;
 }
 
 .section-header section:nth-child(4) {
