@@ -17,6 +17,7 @@ body {
   background-color: #AFCFCE;
   color: white;
   font-family: 'Lora', serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -94,16 +95,18 @@ footer {
 
 .shadow-hover {
   transition: all 0.3s ease-in-out;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
 .shadow-hover:hover {
   box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.25);
   z-index: 99;
-  -webkit-transform:scale(1.005); /* Safari and Chrome */
-    -moz-transform:scale(1.005); /* Firefox */
-    -ms-transform:scale(1.005); /* IE 9 */
-    -o-transform:scale(1.005); /* Opera */
-     transform:scale(1.005);
+  -webkit-transform:scale(1.005) perspective(1px); /* Safari and Chrome */
+     -moz-transform:scale(1.005) perspective(1px); /* Firefox */
+      -ms-transform:scale(1.005) perspective(1px); /* IE 9 */
+       -o-transform:scale(1.005) perspective(1px); /* Opera */
+          transform:scale(1.005) perspective(1px);
 }
 
 .col-sm-6 h2 {
