@@ -39,9 +39,15 @@ header {
 	background-color: #36454f;
   border-bottom: 1px solid #fff;
 	height: auto;
+	text-align: center;
 }
 
 .header-bar .row{
+	text-align: center;
+}
+
+footer {
+	width: 100%;
 	text-align: center;
 }
 
@@ -115,9 +121,13 @@ header {
 .nav-arrow,
 .home-arrow {
   font-size: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+}
+
+.home-arrow {
+	border: 1px solid white;
+  border-radius: 4px;
+  width: 50px;
+  padding: 0px 20px 10px 20px;
 }
 
 #narratives .row, #the-administration .row, #resources .row, #wellness .row{
