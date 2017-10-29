@@ -56,6 +56,13 @@ header {
 	text-align: center;
 }
 
+.logo {
+	height: 30px;
+	width: auto;
+	padding: 5px;
+}
+
+
 .header-bar .row{
 	text-align: center;
 }
