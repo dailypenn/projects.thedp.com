@@ -84,6 +84,7 @@ footer {
 	margin-bottom: 50px;
 	width: 100%;
 	text-align: center;
+  z-index: 1;
 }
 
 .section-header .row {
@@ -91,7 +92,7 @@ footer {
 }
 
 .section-header img {
-  /*width: 70%; */
+  max-width: 400px;
 }
 
 .section-header .col-sm-6 {
@@ -237,6 +238,10 @@ img.br {
 
 .section-articles {
 	text-align: left !important;
+}
+
+.section-articles a:hover {
+  color: #AFCFCE;
 }
 
 .container {
@@ -448,7 +453,7 @@ img.br {
 
   .section-header img {
     position: relative;
-    width: 40%;
+    width: 75%;
   }
 
   .section-header p {
@@ -462,6 +467,15 @@ img.br {
 
   .container {
     height: auto;
+  }
+  .section-header h2 {
+    padding-top: 15px;
+  }
+
+  .nav-arrow img {
+    width: auto;
+    margin-top: 5px;
+    margin: 5px;
   }
   /*.section-header section {
     min-height: 100vh;
