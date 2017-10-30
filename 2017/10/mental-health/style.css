@@ -241,8 +241,25 @@ img.br {
 	text-align: left !important;
 }
 
-.section-articles a:hover {
+.section-articles a:focus,
+.section-articles a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.section-articles a:hover,
+.section-articles a:active {
   color: #AFCFCE;
+  text-decoration: none;
+}
+
+.section-articles a h3 {
+  margin-top: 30px;
+}
+
+.section-articles a p {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #FFFFFF;
 }
 
 .container {
