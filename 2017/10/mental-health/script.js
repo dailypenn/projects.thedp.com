@@ -237,9 +237,9 @@ $(document).ready(function() {
   var currentPage = 0
   var revealerOpts = {
     // the layers are the elements that move from the sides
-    nmbLayers : 3,
+    nmbLayers : 2,
     // bg color of each layer
-    bgcolor : ['#99B6A0', '#2A7595', '#0D3D49'],
+    bgcolor : ['#AFCFCE', '#368879', '#0D3D49'],
     // effect classname
     effect : 'anim--effect-3',
     onStart : function(direction) {
@@ -274,7 +274,7 @@ $(document).ready(function() {
 
   // reveal function
   function reveal(direction) {
-    var callbackTime = 750,
+    var callbackTime = 400,
       callbackFn = function() {
         classie.remove(pages[currentPage], 'page--current');
         switch (direction) {
