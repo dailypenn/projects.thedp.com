@@ -132,8 +132,18 @@ footer {
   background-color: #368879;
 }
 
+.section-header section:nth-child(1) h2,
 .section-header section:nth-child(2) h2 {
   width: 100%;
+  padding-top: 10px;
+}
+
+.section-header section:nth-child(1) .icon,
+.section-header section:nth-child(2) .icon {
+  margin-top: 30px;
+}
+
+.section-header section:nth-child(2) h2 {
   text-align: right;
 }
 
@@ -190,6 +200,14 @@ img.br {
   padding: 0px 20px 0px 20px;
 }
 
+.section-title {
+  font-size: 60px;
+}
+
+.section-title img {
+  padding: 30px;
+}
+
 #narratives .row, #the-administration .row, #resources .row, #wellness .row{
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -215,10 +233,6 @@ img.br {
 
 #wellness {
 	background-color: #2A7595;
-}
-
-.section-title {
-	font-size: xx-large;
 }
 
 .section-articles {
