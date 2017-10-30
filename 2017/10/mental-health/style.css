@@ -495,6 +495,9 @@ img.br {
     margin-top: 5px;
     margin: 5px;
   }
+  .section-header .row {
+    height: auto;
+  }
   /*.section-header section {
     min-height: 100vh;
   }*/
