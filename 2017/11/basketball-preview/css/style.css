@@ -231,6 +231,7 @@ header a {
 
 .school img {
   max-width: 100%;
+  max-height: 180px;
   align-self: center;
   margin: auto;
 }
