@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'Fester';
+  src: url('./../font/Fester-Semi-condensedBold.eot');
+  src: url('./../font/Fester-Semi-condensedBold.eot?#iefix') format('embedded-opentype'),
+       url('./../font/Fester-Semi-condensedBold.woff')       format('woff'),
+       url('./../font/Fester-Semi-condensedBold.ttf')        format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fester';
+  src: url('./../font/Fester-Semi-condensedBook.eot');
+  src: url('./../font/Fester-Semi-condensedBook.eot?#iefix') format('embedded-opentype'),
+       url('./../font/Fester-Semi-condensedBook.woff')       format('woff'),
+       url('./../font/Fester-Semi-condensedBook.ttf')        format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fester';
+  src: url('./../font/Fester-Semi-condensedMedium.eot');
+  src: url('./../font/Fester-Semi-condensedMedium.eot?#iefix') format('embedded-opentype'),
+       url('./../font/Fester-Semi-condensedMedium.woff')       format('woff'),
+       url('./../font/Fester-Semi-condensedMedium.ttf')        format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Fester';
+  background-color: #E5E5E4;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #0D3876;
+  font-weight: 300;
+  font-size: 2.5rem;
+  letter-spacing: 10px;
+}
+
+h2 span {
+  font-weight: 400;
+}
+
+h5 {
+  text-transform: uppercase;
+  color: #DF1E35;
+  font-weight: 300;
+  font-size: 1.5rem;
+  letter-spacing: 8px;
+}
+
+hr {
+  background: linear-gradient(to right, #df1e35 65%,#c7c6c5 65%);
+  height: 5px;
+
+  padding-left: 0;
+}
+
+img {
+  position: absolute;
+  z-index: 50;
+}
+
+.position {
+  transform: rotate(-90deg);
+  transform-origin: 100% 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 300;
+  font-size: 2.15rem;
+  letter-spacing: 15px;
+  z-index: 100;
+}
+
+.photocred {
+  color: #c7c6c5;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+.statbox {
+  background-color: #5a628c;
+  max-width: 325px;
+  color: #fff;
+  height: 85px;
+  margin-bottom: 25px;
+  padding: 25px;
+  line-height: 1;
+  overflow: hidden;
+}
+
+.statbox.big {
+  background-color: #0D3876;
+  max-width: 850px;
+  height: 90px;
+}
+
+.statbox .num {
+  font-size: 45px;
+}
+
+.statbox.big .num {
+  font-size: 55px;
+  padding-left: 45px;
+}
+
+.statbox .desc {
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 8px;
+}
+
+.statbox.big .desc {
+  margin-top: -5px;
+  font-size: 30px;
+  color: #DF1E35;
+}
+
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.spinner {
+    position: absolute;
+    top: 100px;
+    left: 25px;
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(to top right, #df1e35 50%,#c7c6c5 50%);
+    border-radius: 50%;
+    animation: spin 90s infinite linear;
+    z-index: 10;
+}
+
+.spinner::after {
+  content: '';
+  position: absolute;
+  background-color: #E5E5E4;
+  width: 350px;
+  height: 350px;
+  margin: 25px;
+  border-radius: 50%;
+}
+
+.poll {
+  font-size: 2.25rem;
+}
+
+.poll .row {
+  padding-bottom: 15px;
+}
+
+.poll .row::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  width: 0;
+  border-top: 45px solid #df1e35;
+  border-right: 35px solid transparent;
+  padding: 25px;
+}
+
+.poll .num {
+  color: #fff;
+}
+
+.poll .score {
+  font-weight: 300;
+}
+
+.poll h2 {
+  letter-spacing: 2px;
+}
+
+.poll h2 span {
+  color: #df1e35;
+}
