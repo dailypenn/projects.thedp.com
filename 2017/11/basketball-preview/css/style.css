@@ -417,7 +417,26 @@ span.teams {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 900px) {
+  h1 {
+    display: block;
+  }
+
+  img.dp-logo {
+    float: none;
+  }
+}
+
 @media screen and (max-width: 500px) {
+  h1 {
+    display: inline;
+  }
+
+  img.dp-logo {
+    float: right;
+    display: inline-block;
+  }
+
   .logo, .position {
     display: none;
   }
