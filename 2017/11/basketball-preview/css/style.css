@@ -45,6 +45,12 @@ h2 span {
   font-weight: 400;
 }
 
+h4 {
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
 h5 {
   text-transform: uppercase;
   color: #DF1E35;
@@ -63,6 +69,10 @@ hr {
 img {
   position: inherit;
   z-index: 50;
+}
+
+.key-games {
+  background-color: #121A33;
 }
 
 .position {
@@ -164,6 +174,37 @@ img {
   left: -200px;
 }
 
+.games {
+  margin-top: 20px;
+}
+
+.game {
+  text-align: center;
+  color: #c7c6c5;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+.school {
+  margin-bottom: 10px;
+  max-width: 200px;
+}
+
+h2.key-title {
+  color: white;
+  font-weight: 600;
+}
+
+h3.years {
+  color: #c7c6c5;
+  font-weight: 300;
+  letter-spacing: 6px
+}
+
+span.teams {
+  color: #df1e35;
+}
+
 .nwo-img {
   left: -35px;
 }
@@ -256,6 +297,11 @@ img {
   color: #df1e35;
 }
 
+<<<<<<< HEAD
 .logo img {
   margin: auto;``
+=======
+.col-lg-6 {
+  padding: 20px;
+>>>>>>> d7f2791198a016003edee25b186b4bdf93b1b8c4
 }
