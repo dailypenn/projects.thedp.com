@@ -33,6 +33,24 @@ body {
   background-color: #E5E5E4;
 }
 
+header {
+  background-color: #0D3876;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+section{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #E5E5E4;
+  display: inline;
+}
+
 h2 {
   text-transform: uppercase;
   color: #0D3876;
@@ -69,6 +87,12 @@ hr {
 img {
   position: inherit;
   z-index: 50;
+}
+
+img.logo {
+  float: right;
+  display: inline;
+  width: 54px;
 }
 
 .key-games {
