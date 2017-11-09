@@ -456,6 +456,27 @@ span.teams {
     font-size: 2.4rem;
     position: relative;
     right: -75px;
-    top: -55px;
+    left: 0;
+    /*top: -55px;*/
+    padding: 15px
+  }
+
+  .statbox.tall::after {
+    top: -105px;
+  }
+  
+  .statbox .num {
+    font-size: 35px;
+  }
+
+  .statbox .desc {
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .statbox.tall .col-xs-6.num {
+    right: -65px;
+    top: -25px;
   }
 }
