@@ -163,7 +163,7 @@ img {
 }
 
 .statbox.small {
-  max-width: 350px;
+  max-width: 410px;
 }
 
 .ross-img, .nwo-img {
@@ -231,7 +231,7 @@ span.teams {
     z-index: 10;
 }
 
-#ilana-credit {
+.photocred {
   position: absolute;
   z-index: 20;
   transform: rotate(-90deg);
@@ -263,6 +263,10 @@ span.teams {
   animation: spin-left 60s linear infinite;
 }
 
+.goodman.basketball::before {
+  top: 170px;
+}
+
 .poll {
   font-size: 2.25rem;
 }
@@ -287,6 +291,7 @@ span.teams {
 
 .poll .score {
   font-weight: 300;
+  text-align: right;
 }
 
 .poll h2 {
@@ -297,11 +302,39 @@ span.teams {
   color: #df1e35;
 }
 
-<<<<<<< HEAD
 .logo img {
-  margin: auto;``
-=======
+  margin: auto;
+}
+
 .col-lg-6 {
   padding: 20px;
->>>>>>> d7f2791198a016003edee25b186b4bdf93b1b8c4
+}
+
+.statline {
+  color: #939391;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 4px;
+}
+
+.statline span {
+  color: #0D3876;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.statline .col-xs-6 {
+  font-size: 14px;
+}
+
+.statline .col-xs-6 span {
+  font-size: 2.8rem;
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    display: none;
+  }
 }
