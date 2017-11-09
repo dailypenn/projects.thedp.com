@@ -1,6 +1,16 @@
 {
   "featured": [
     {
+      "title": "Our Campus. Our Mental Health.",
+      "author": "Web Dev: Andrew Fischer, Brady Africk; Design: Julia Schorr and Camille Rapay",
+      "section": "Projects",
+      "date": "October 2017",
+      "description": "Mental health is an intensely personal topic, shaped inexorably by the circumstances, preferences and lifestyle of an individual person. A conversation about mental health can take a variety of forms. What it cannot tolerate is silence.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2017/10/mental-health/",
+      "image": "https://snworksceo.imgix.net/dpn/0c1ec93d-5b23-4573-b9d7-7e1691a3b8fe.sized-1000x1000.png"
+    },
+    {
       "title": "Housing Guide 2017",
       "author": "Web Dev: Brady Africk; Design: Julia Schorr and Camille Rapay",
       "section": "Guides",
@@ -9,19 +19,19 @@
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/10/housing-guide/",
       "image": "https://snworksceo.imgix.net/dpn/38881fe2-a22d-45d3-ae06-471456df1996.sized-1000x1000.png"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "When a Penn student dies: Stories surrounding mental health on campus",
       "author": "Web Dev: Alex Graves",
-      "section": "Guides",
+      "section": "Projects",
       "date": "September 2017",
       "description": "Over the course of three weeks, The Daily Pennsylvanian analyzed various aspects of mental health across the University: from the resources offered at Counseling and Psychological Services to the way administrators choose to communicate these student deaths.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/09/mental-health/",
       "image": "https://snworksceo.imgix.net/dpn/cd64b61d-fe37-4b90-9b05-2428ca9dd004.sized-1000x1000.jpg"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "The Job Search",
       "author": "Web Dev: Andrew Fischer",

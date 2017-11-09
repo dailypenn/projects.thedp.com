@@ -276,7 +276,7 @@ span.teams {
 
 .basketball::before {
   position: absolute;
-  z-index: 100;
+  z-index: 30;
   content: '';
   height: 150px;
   width: 150px;
@@ -289,6 +289,11 @@ span.teams {
 
 .goodman.basketball::before {
   top: 170px;
+}
+
+.brodeur.basketball::before {
+  top: -20px;
+  left: 95px;
 }
 
 .poll {
@@ -357,8 +362,32 @@ span.teams {
   font-size: 2.8rem;
 }
 
+.links {
+  margin-left: 30px;
+  margin-right: 15px;
+}
+
+.links a {
+  display: inline-block;
+  font-size: 22px;
+  color: #0D3876;
+}
+
+.links a::before {
+  content: '◆';
+  color: #df1e35;
+  font-size: 40px;
+  top: 3px;
+  position: relative;
+}
+
+.links a:hover, a:active, a:focus {
+  text-decoration: none;
+  display: block;
+}
+
 @media screen and (max-width: 500px) {
-  .logo {
+  .logo, .school {
     display: none;
   }
 }
