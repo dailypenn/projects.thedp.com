@@ -31,6 +31,8 @@
 body {
   font-family: 'Fester';
   background-color: #E5E5E4;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 header {
@@ -409,7 +411,23 @@ span.teams {
 }
 
 @media screen and (max-width: 500px) {
-  .logo, .school {
+  .logo, .school, .position {
     display: none;
+  }
+
+  .ross-img {
+    left: 0;
+  }
+
+  .statbox.tall::after {
+    top: -345%;
+    right: -40%;
+  }
+
+  .statbox.tall {
+    font-size: 2.4rem;
+    position: relative;
+    right: -75px;
+    top: -55px;
   }
 }
