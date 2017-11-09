@@ -133,18 +133,19 @@ img {
 }
 
 .games {
-  margin-top: 25px;
-  margin-bottom: 15px;
+  margin-top: 20px;
 }
 
 .game {
   text-align: center;
   color: #c7c6c5;
   letter-spacing: 5px;
+  margin-bottom: 20px;
 }
 
 .school {
   margin-bottom: 10px;
+  max-width: 200px;
 }
 
 h2.key-title {
