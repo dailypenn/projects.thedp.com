@@ -55,7 +55,7 @@ h1 {
   margin: 0;
   font-size: 3rem;
   color: #E5E5E4;
-  display: inline;
+  display: inline-block;
 }
 
 h2 {
@@ -87,7 +87,6 @@ h5 {
 hr {
   background: linear-gradient(to right, #df1e35 65%,#c7c6c5 65%);
   height: 5px;
-
   padding-left: 0;
 }
 
@@ -100,9 +99,12 @@ img {
   z-index: 50;
 }
 
-img.dp-logo {
+header a {
   float: right;
-  display: inline;
+  display: inline-block;
+}
+
+.dp-logo {
   width: 54px;
 }
 
@@ -422,7 +424,7 @@ span.teams {
     display: block;
   }
 
-  img.dp-logo {
+  header a {
     float: none;
   }
 }
@@ -432,7 +434,7 @@ span.teams {
     display: inline;
   }
 
-  img.dp-logo {
+  header a {
     float: right;
     display: inline-block;
   }

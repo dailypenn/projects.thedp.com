@@ -1,6 +1,16 @@
 {
   "featured": [
     {
+      "title": "Penn Basketball Season Preview 2017",
+      "author": "Web Dev: Andrew Fischer, Alex Graves; Design: Julia Schorr, Camille Rapay, Lucy Ferry and Chris Muracca",
+      "section": "Sports",
+      "date": "November 2017",
+      "description": "Enjoy an in-depth analysis of the biggest games, stars, and questions heading into Penn basketball's 2017-18 season with the Daily Pennsylvanian's Basketball Preview!",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2017/11/basketball-preview/",
+      "image": "https://snworksceo.imgix.net/dpn/2dcde16f-3ab1-4491-a1da-0e89d9d1b23e.sized-1000x1000.jpg"
+    },
+    {
       "title": "Our Campus. Our Mental Health.",
       "author": "Web Dev: Andrew Fischer, Brady Africk; Design: Julia Schorr and Camille Rapay",
       "section": "Projects",
