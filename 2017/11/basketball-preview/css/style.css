@@ -183,7 +183,7 @@ header a {
   width: 0;
   top: -175%;
   right: -50%;
-  border-top: 100px solid #0D3876;
+  border-top: 125px solid #0D3876;
   border-left: 75px solid transparent;
   padding: 22%;
   z-index: 10;
@@ -193,14 +193,11 @@ header a {
   padding-top: 10px;
 }
 
-.statbox.tall .col-xs-6 {
+.statbox.tall .col-xs-5.num {
+  font-size: 2.4rem;
   z-index: 50;
   text-align: right;
   color: #DF1E35;
-}
-
-.statbox.tall .col-xs-6.num {
-  font-size: 2.4rem;
 }
 
 .statbox.small {
@@ -457,14 +454,13 @@ span.teams {
     position: relative;
     right: -75px;
     left: 0;
-    /*top: -55px;*/
     padding: 15px
   }
 
   .statbox.tall::after {
-    top: -105px;
+    top: -120px;
   }
-  
+
   .statbox .num {
     font-size: 35px;
   }
@@ -475,8 +471,22 @@ span.teams {
     letter-spacing: 2px;
   }
 
-  .statbox.tall .col-xs-6.num {
+  .statbox.tall .col-xs-5.num {
     right: -65px;
     top: -25px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  .dp-logo {
+    width: 40px;
+  }
+
+  .poll {
+    font-size: 1.9rem;
   }
 }
