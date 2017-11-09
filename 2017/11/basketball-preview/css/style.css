@@ -34,12 +34,12 @@ body {
 }
 
 header {
-  background-color: #0D3876;
+  background-color: #121A33;
   padding: 20px;
   padding-bottom: 10px;
 }
 
-section{
+section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -84,6 +84,10 @@ hr {
   padding-left: 0;
 }
 
+hr.thicc {
+  height: 10px;
+}
+
 img {
   position: inherit;
   z-index: 50;
@@ -93,6 +97,10 @@ img.dp-logo {
   float: right;
   display: inline;
   width: 54px;
+}
+
+.blue {
+  background-color:  #0D3876;
 }
 
 .key-games {
@@ -211,7 +219,13 @@ img.dp-logo {
 
 .school {
   margin-bottom: 10px;
-  max-width: 200px;
+  height: 180px;
+  display: flex;
+}
+
+.school img {
+  max-width: 100%;
+  align-self: center;
 }
 
 h2.key-title {
@@ -373,6 +387,10 @@ span.teams {
   color: #0D3876;
 }
 
+.blue .links a {
+  color:  #E5E5E4;
+}
+
 .links a::before {
   content: '◆';
   color: #df1e35;
@@ -384,6 +402,10 @@ span.teams {
 .links a:hover, a:active, a:focus {
   text-decoration: none;
   display: block;
+}
+
+.graphic {
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 500px) {
