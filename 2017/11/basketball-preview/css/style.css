@@ -45,6 +45,12 @@ h2 span {
   font-weight: 400;
 }
 
+h4 {
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
 h5 {
   text-transform: uppercase;
   color: #DF1E35;
@@ -63,6 +69,10 @@ hr {
 img {
   position: inherit;
   z-index: 50;
+}
+
+.key-games {
+  background-color: #121A33;
 }
 
 .position {
@@ -122,6 +132,35 @@ img {
   color: #DF1E35;
 }
 
+.games {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.game {
+  text-align: center;
+  color: #c7c6c5;
+  letter-spacing: 5px;
+}
+
+.school {
+  margin-bottom: 10px;
+}
+
+h2.key-title {
+  color: white;
+  font-weight: 600;
+}
+
+h3.years {
+  color: #c7c6c5;
+  font-weight: 300;
+  letter-spacing: 6px
+}
+
+span.teams {
+  color: #df1e35;
+}
 
 @keyframes spin {
     from { transform: rotate(0deg); }
@@ -201,4 +240,8 @@ img {
 
 .poll h2 span {
   color: #df1e35;
+}
+
+.col-lg-6 {
+  padding: 20px;
 }
