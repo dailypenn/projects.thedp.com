@@ -61,7 +61,7 @@ hr {
 }
 
 img {
-  position: absolute;
+  position: inherit;
   z-index: 50;
 }
 
@@ -128,6 +128,11 @@ img {
     to { transform: rotate(360deg); }
 }
 
+@keyframes spin-left {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+}
+
 .spinner {
     position: absolute;
     top: 100px;
@@ -149,6 +154,19 @@ img {
   height: 350px;
   margin: 25px;
   border-radius: 50%;
+}
+
+.basketball::before {
+  position: absolute;
+  z-index: 100;
+  content: '';
+  height: 150px;
+  width: 150px;
+  border: 6px dashed #0D3876;
+  top: 128px;
+  left: -14px;
+  border-radius: 50%;
+  animation: spin-left 60s linear infinite;
 }
 
 .poll {
