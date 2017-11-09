@@ -276,7 +276,7 @@ span.teams {
 
 .basketball::before {
   position: absolute;
-  z-index: 100;
+  z-index: 30;
   content: '';
   height: 150px;
   width: 150px;
@@ -289,6 +289,11 @@ span.teams {
 
 .goodman.basketball::before {
   top: 170px;
+}
+
+.brodeur.basketball::before {
+  top: -20px;
+  left: 95px;
 }
 
 .poll {
