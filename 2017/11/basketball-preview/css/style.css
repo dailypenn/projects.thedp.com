@@ -152,6 +152,10 @@ img {
   font-size: 2.4rem;
 }
 
+.statbox.small {
+  max-width: 350px;
+}
+
 .ross-img, .nwo-img {
   position: relative;
 }
@@ -250,4 +254,8 @@ img {
 
 .poll h2 span {
   color: #df1e35;
+}
+
+.logo img {
+  margin: auto;``
 }
