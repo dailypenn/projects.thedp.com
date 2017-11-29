@@ -1,0 +1,45 @@
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.person {
+  flex: 1 0 calc(20% - 30px);
+  margin: 15px;
+}
+
+/* clearfix */
+.person::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.face {
+  border-radius: 50%;
+  background-color: #c2c2c2;
+  overflow: hidden;
+}
+
+.face img {
+  width: 100%;
+  position: relative;
+  bottom: -5px;
+}
+
+.details {
+  position: relative;
+  padding: 15px;
+  top: calc(-50% + 8px);
+  left: calc(100% - 15px);
+  background-color: #c2c2c2;
+  z-index: 100;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: all 100ms ease-in-out;
+}
