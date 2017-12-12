@@ -25,5 +25,160 @@
     <section class="articles">
       <em>articles will go here</em>
     </section>
+
+    <hr>
+
+    <div class="grid">
+
+      <div class="item">
+        <div class="item-content">
+          <!-- Safe zone, enter your custom markup -->
+          This can be anything.
+          <!-- Safe zone ends -->
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-content">
+          <!-- Safe zone, enter your custom markup -->
+          This can be anything.
+          <!-- Safe zone ends -->
+        </div>
+      </div>
+
+      <div class="item content-v">
+        <div class="item-content">
+          <img src="https://www.placecage.com/400/200" alt="Nick Cage">
+          <h3>A Longer Article Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-content">
+          <!-- Safe zone, enter your custom markup -->
+          This can be anything.
+          <!-- Safe zone ends -->
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-content">
+          <!-- Safe zone, enter your custom markup -->
+          This can be anything.
+          <!-- Safe zone ends -->
+        </div>
+      </div>
+
+      <div class="item content-h">
+        <div class="item-content">
+          <img src="https://www.placecage.com/400/400" alt="Nick Cage">
+          <h3>Article Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-content">
+          <!-- Safe zone, enter your custom markup -->
+          <div class="my-custom-content">
+            Yippee!
+          </div>
+          <!-- Safe zone ends -->
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-content">
+          <!-- Safe zone, enter your custom markup -->
+          <div class="my-custom-content">
+            Yippee!
+          </div>
+          <!-- Safe zone ends -->
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/muuri/0.5.3/muuri.min.js"></script>
+    <script type="text/javascript">
+      var grid = new Muuri('.grid', {
+
+        // Item elements
+        items: '*',
+
+        // Default show animation
+        showDuration: 300,
+        showEasing: 'ease',
+
+        // Default hide animation
+        hideDuration: 300,
+        hideEasing: 'ease',
+
+        // Item's visible/hidden state styles
+        visibleStyles: {
+          opacity: '1',
+          transform: 'scale(1)'
+        },
+        hiddenStyles: {
+          opacity: '0',
+          transform: 'scale(0.5)'
+        },
+
+        // Layout
+        layout: {
+          fillGaps: false,
+          horizontal: false,
+          alignRight: false,
+          alignBottom: false,
+          rounding: true
+        },
+        layoutOnResize: 100,
+        layoutOnInit: true,
+        layoutDuration: 300,
+        layoutEasing: 'ease',
+
+        // Sorting
+        sortData: null,
+
+        // Drag & Drop
+        dragEnabled: false,
+        dragContainer: null,
+        dragStartPredicate: {
+          distance: 0,
+          delay: 0,
+          handle: false
+        },
+        dragAxis: null,
+        dragSort: true,
+        dragSortInterval: 100,
+        dragSortPredicate: {
+          threshold: 50,
+          action: 'move'
+        },
+        dragReleaseDuration: 300,
+        dragReleaseEasing: 'ease',
+        dragHammerSettings: {
+          touchAction: 'none'
+        },
+
+        // Classnames
+        containerClass: 'muuri',
+        itemClass: 'muuri-item',
+        itemVisibleClass: 'muuri-item-shown',
+        itemHiddenClass: 'muuri-item-hidden',
+        itemPositioningClass: 'muuri-item-positioning',
+        itemDraggingClass: 'muuri-item-dragging',
+        itemReleasingClass: 'muuri-item-releasing'
+
+      });
+    </script>
   </body>
 </html>

@@ -7,6 +7,14 @@ body {
   margin: auto;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
 h1 {
   font-weight: 300;
   font-size: 4em;
@@ -14,6 +22,7 @@ h1 {
   text-align: center;
   margin: 0;
 }
+
 
 section {
   margin-top: 50px;
@@ -35,6 +44,79 @@ section {
   align-items: center;
 }
 
+.grid {
+  position: relative;
+  margin: auto;
+}
+
+
+.item {
+  display: block;
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  margin: 5px;
+  z-index: 1;
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.item.content-h {
+  width: 435px;
+  height: 210px;
+}
+
+.item.content-v {
+  width: 435px;
+  height: 432px;
+}
+
+.item.muuri-item-dragging {
+  z-index: 3;
+}
+
+.item.muuri-item-releasing {
+  z-index: 2;
+}
+
+.item.muuri-item-hidden {
+  z-index: 0;
+}
+
+.item-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.item.content-h img {
+  height: 100%;
+  margin-right: 15px;
+  width: auto;
+  float: left;
+  display: inline-block;
+}
+.item.content-v img {
+  width: 100%;
+  margin-bottom: 15px;
+  float: left;
+  display: inline-block;
+}
+
+.item h3 {
+  padding-top: 8px;
+}
+
+.item.content-v h3, .item.content-v p {
+  padding: 0 8px;
+}
+
+
+[style~="translateY(0px)"] {
+
+}
+
 @media screen and (max-width: 450px) {
   body {
     padding-left: 15px;
@@ -51,6 +133,10 @@ section {
   }
 
   .intro p {
+    width: 100%;
+  }
+
+  .item.content-h {
     width: 100%;
   }
 }
