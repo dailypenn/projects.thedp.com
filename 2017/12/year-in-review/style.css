@@ -1,0 +1,56 @@
+@import url("https://use.typekit.net/wkt1nhz.css");
+
+body {
+  font-family: 'futura-pt', sans-serif;
+  font-size: 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 4em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.intro {
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro p {
+  width: 70%;
+}
+
+.articles {
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+}
