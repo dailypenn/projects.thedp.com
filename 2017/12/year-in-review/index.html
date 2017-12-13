@@ -11,12 +11,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-
   </head>
   <body>
     <section class="intro">
-      <h1>The story of 2017</h1>
-      <em>(this will be a lit af animated svg)</em>
+      <h1>The story of</h1>
+      <img src="2017.gif" alt="2017">
 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed urna nec quam ultrices tempor sit amet at nulla. Curabitur non sapien venenatis, egestas lectus quis, ultricies eros. Proin ultricies, justo a venenatis imperdiet, dolor nulla condimentum leo, sed bibendum elit velit at neque. Nulla fringilla volutpat accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam vitae mauris viverra, hendrerit quam bibendum, vestibulum augue. Proin a aliquet tortor.</p>
 
@@ -25,7 +24,7 @@
 
     <hr>
 
-    <select class="moist" name="section-select" id="sectionSelect" onchange="sortSection()">
+    <select class="sections" name="section-select" id="sectionSelect" onchange="sortSection()">
       <option value=>All</option>
       <option value="news">News</option>
       <option value="opinion">Opinion</option>
@@ -35,24 +34,15 @@
 
     <div class="grid">
       <a class="item" target="_blank" data-section="news">
-        <div class="item-content">
-          <!-- Safe zone, enter your custom markup -->
-          This can be anything.
-          <!-- Safe zone ends -->
+        <div class="image">
+          <img src="http://snworksceo.imgix.net/dpn/92e4e9fb-c59e-450c-8d04-4268106e40d1.sized-1000x1000.png?w=475&h=475" alt="mental health">
         </div>
       </a>
 
-
-      <a class="item" target="_blank" data-section="news">
-        <div class="item-content">
-          <!-- Safe zone, enter your custom markup -->
-          This can be anything.
-          <!-- Safe zone ends -->
+      <a class="item content-v" data-section="news" href="http://www.thedp.com/article/2017/12/year-2017-mental-health-university-upenn-philadelphia-student-deaths-gutmann" target="_blank">
+        <div class="image">
+          <img src="http://snworksceo.imgix.net/dpn/92e4e9fb-c59e-450c-8d04-4268106e40d1.sized-1000x1000.png?w=475&h=475" alt="mental health">
         </div>
-      </a>
-
-      <a class="item content-v" data-section="sports" href="http://www.thedp.com/article/2017/12/year-2017-mental-health-university-upenn-philadelphia-student-deaths-gutmann" target="_blank">
-        <img src="http://snworksceo.imgix.net/dpn/92e4e9fb-c59e-450c-8d04-4268106e40d1.sized-1000x1000.png?w=475&h=475" alt="mental health">
         <div class="item-content">
           <h3>Why 2017 was a landmark year for talking about mental health at Penn</h3>
           <p>
@@ -61,19 +51,15 @@
         </div>
       </a>
 
-      <a class="item" target="_blank" data-section="sports">
-        <div class="item-content">
-          <!-- Safe zone, enter your custom markup -->
-          This can be anything.
-          <!-- Safe zone ends -->
+      <a class="item content-v" data-section="news" href="http://www.thedp.com/article/2017/12/year-2017-mental-health-university-upenn-philadelphia-student-deaths-gutmann" target="_blank">
+        <div class="image">
+          <img src="http://snworksceo.imgix.net/dpn/92e4e9fb-c59e-450c-8d04-4268106e40d1.sized-1000x1000.png?w=475&h=475" alt="mental health">
         </div>
-      </a>
-
-      <a class="item" target="_blank" data-section="opinion">
         <div class="item-content">
-          <!-- Safe zone, enter your custom markup -->
-          This can be anything.
-          <!-- Safe zone ends -->
+          <h3>Why 2017 was a landmark year for talking about mental health at Penn</h3>
+          <p>
+            For students, alumni and campus officials, 2017 was a watershed year for dialogue and activism around mental health.
+          </p>
         </div>
       </a>
 
@@ -89,32 +75,16 @@
         </div>
       </a>
 
-      <a class="item" target="_blank" data-section="sports">
-        <div class="item-content">
-          <!-- Safe zone, enter your custom markup -->
-          <div class="my-custom-content">
-            Yippee!
-          </div>
-          <!-- Safe zone ends -->
-        </div>
-      </a>
-
-      <a class="item" target="_blank" data-section="sports">
-        <div class="item-content">
-          <!-- Safe zone, enter your custom markup -->
-          <div class="my-custom-content">
-            Yippee!
-          </div>
-          <!-- Safe zone ends -->
+      <a class="item" target="_blank" data-section="news">
+        <div class="image">
+          <img src="http://snworksceo.imgix.net/dpn/5a20dd5e-e57b-4a3b-9d3f-6e39600be734.sized-1000x1000.jpg?w=475&h=475" alt="championships">
         </div>
       </a>
     </div>
 
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/muuri/0.5.3/muuri.min.js"></script>
     <script type="text/javascript">
       var grid = new Muuri('.grid', {
-
         // Item elements
         items: '*',
 
@@ -138,7 +108,7 @@
 
         // Layout
         layout: {
-          fillGaps: false,
+          fillGaps: true,
           horizontal: false,
           alignRight: false,
           alignBottom: false,
@@ -178,7 +148,6 @@
         itemPositioningClass: 'muuri-item-positioning',
         itemDraggingClass: 'muuri-item-dragging',
         itemReleasingClass: 'muuri-item-releasing'
-
       });
 
       sortSection = function() {

@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-weight: 300;
-  font-size: 4em;
+  font-size: 5em;
   text-transform: uppercase;
   text-align: center;
 }
@@ -42,13 +42,18 @@ section {
   align-items: center;
 }
 
+.intro img {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
 .intro p {
   width: 70%;
 }
 
 .grid {
   position: relative;
-  margin: auto;
+  margin: 50px auto;
 }
 
 .item {
@@ -94,11 +99,28 @@ section {
   padding: 10px;
 }
 
+.item .image {
+  height: 100%;
+}
+
+.item img {
+  height: 100%;
+}
+
+.item.content-v .image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-right: 10px;
+  float: left;
+  display: inline-block;
+}
+
 .item.content-h .image {
   height: 100%;
   width: 50%;
   overflow: hidden;
-  margin-right: 15px;
+  margin-right: 10px;
   float: left;
   display: inline-block;
 }
@@ -109,7 +131,7 @@ section {
 
 .item.content-v img {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   float: left;
   display: inline-block;
 }
