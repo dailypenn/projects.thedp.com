@@ -11,18 +11,25 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-p {
-  margin-top: 0;
-}
-
 h1 {
   font-weight: 300;
   font-size: 4em;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
 }
 
+h3 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 section {
   margin-top: 50px;
@@ -48,7 +55,6 @@ section {
   position: relative;
   margin: auto;
 }
-
 
 .item {
   display: block;
@@ -86,32 +92,28 @@ section {
 
 .item-content {
   position: relative;
-  width: 100%;
+  padding: 15px;
+}
+
+.item.content-h .image {
   height: 100%;
+  width: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+  float: left;
+  display: inline-block;
 }
 
 .item.content-h img {
   height: 100%;
-  margin-right: 15px;
-  width: auto;
-  float: left;
-  display: inline-block;
 }
+
 .item.content-v img {
   width: 100%;
   margin-bottom: 15px;
   float: left;
   display: inline-block;
 }
-
-.item h3 {
-  padding-top: 8px;
-}
-
-.item.content-v h3, .item.content-v p {
-  padding: 0 8px;
-}
-
 
 [style~="translateY(0px)"] {
 
