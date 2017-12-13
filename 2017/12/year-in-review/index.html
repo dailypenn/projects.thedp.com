@@ -11,6 +11,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+
   </head>
   <body>
     <section class="intro">
@@ -24,8 +25,16 @@
 
     <hr>
 
+    <select class="moist" name="section-select" id="sectionSelect" onchange="sortSection()">
+      <option value=>All</option>
+      <option value="news">News</option>
+      <option value="opinion">Opinion</option>
+      <option value="sports">Sports</option>
+      <option value="media">Photo &amp; Video</option>
+    </select>
+
     <div class="grid">
-      <a class="item" target="_blank">
+      <a class="item" target="_blank" data-section="news">
         <div class="item-content">
           <!-- Safe zone, enter your custom markup -->
           This can be anything.
@@ -33,7 +42,8 @@
         </div>
       </a>
 
-      <a class="item" target="_blank">
+
+      <a class="item" target="_blank" data-section="news">
         <div class="item-content">
           <!-- Safe zone, enter your custom markup -->
           This can be anything.
@@ -41,7 +51,7 @@
         </div>
       </a>
 
-      <a class="item content-v" href="http://www.thedp.com/article/2017/12/year-2017-mental-health-university-upenn-philadelphia-student-deaths-gutmann" target="_blank">
+      <a class="item content-v" data-section="sports" href="http://www.thedp.com/article/2017/12/year-2017-mental-health-university-upenn-philadelphia-student-deaths-gutmann" target="_blank">
         <img src="http://snworksceo.imgix.net/dpn/92e4e9fb-c59e-450c-8d04-4268106e40d1.sized-1000x1000.png?w=475&h=475" alt="mental health">
         <div class="item-content">
           <h3>Why 2017 was a landmark year for talking about mental health at Penn</h3>
@@ -51,7 +61,7 @@
         </div>
       </a>
 
-      <a class="item" target="_blank">
+      <a class="item" target="_blank" data-section="sports">
         <div class="item-content">
           <!-- Safe zone, enter your custom markup -->
           This can be anything.
@@ -59,7 +69,7 @@
         </div>
       </a>
 
-      <a class="item" target="_blank">
+      <a class="item" target="_blank" data-section="opinion">
         <div class="item-content">
           <!-- Safe zone, enter your custom markup -->
           This can be anything.
@@ -67,7 +77,7 @@
         </div>
       </a>
 
-      <a class="item content-h" href="http://www.thedp.com/article/2017/12/penn-athletics-year-in-review-near-championships-sprint-football-womens-tennis-squash-baseball" target="_blank">
+      <a class="item content-h" data-section="sports" href="http://www.thedp.com/article/2017/12/penn-athletics-year-in-review-near-championships-sprint-football-womens-tennis-squash-baseball" target="_blank">
         <div class="image">
           <img src="http://snworksceo.imgix.net/dpn/5a20dd5e-e57b-4a3b-9d3f-6e39600be734.sized-1000x1000.jpg?w=475&h=475" alt="championships">
         </div>
@@ -79,7 +89,7 @@
         </div>
       </a>
 
-      <a class="item" target="_blank">
+      <a class="item" target="_blank" data-section="sports">
         <div class="item-content">
           <!-- Safe zone, enter your custom markup -->
           <div class="my-custom-content">
@@ -89,7 +99,7 @@
         </div>
       </a>
 
-      <a class="item" target="_blank">
+      <a class="item" target="_blank" data-section="sports">
         <div class="item-content">
           <!-- Safe zone, enter your custom markup -->
           <div class="my-custom-content">
@@ -99,6 +109,7 @@
         </div>
       </a>
     </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/muuri/0.5.3/muuri.min.js"></script>
     <script type="text/javascript">
@@ -138,9 +149,6 @@
         layoutDuration: 300,
         layoutEasing: 'ease',
 
-        // Sorting
-        sortData: null,
-
         // Drag & Drop
         dragEnabled: false,
         dragContainer: null,
@@ -172,6 +180,16 @@
         itemReleasingClass: 'muuri-item-releasing'
 
       });
+
+      sortSection = function() {
+        grid.filter(function (item) {
+          if (document.getElementById('sectionSelect').value == '') {
+            return true;
+          }
+          return item.getElement().getAttribute('data-section') == document.getElementById('sectionSelect').value;
+        });
+      }
+
     </script>
   </body>
 </html>
