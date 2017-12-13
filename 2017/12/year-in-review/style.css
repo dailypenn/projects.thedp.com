@@ -54,6 +54,8 @@ section {
 .grid {
   position: relative;
   margin: 50px auto;
+  margin-left: -5px;
+  margin-right: 5px;
 }
 
 .item {
@@ -103,8 +105,10 @@ section {
   height: 100%;
 }
 
-.item img {
+.item img:not(.content-v.img) {
   height: 100%;
+  position: relative;
+  left: -45%;
 }
 
 .item.content-v .image {
@@ -159,7 +163,20 @@ section {
     width: 100%;
   }
 
-  .item.content-h {
+  .item {
+    width: 46%;
+    height: 42vw;
+  }
+
+  .item.content-h, .item.content-v {
     width: 100%;
+  }
+
+  .item.content-h {
+    height: 270px;
+  }
+
+  .item.content-v {
+    height: auto;
   }
 }
