@@ -33,7 +33,7 @@ a {
 
 section {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   display: flex;
 }
 
@@ -108,7 +108,6 @@ section {
 img:not(.content-v.img) {
   height: 100%;
   position: relative;
-  left: -45%;
 }
 
 .item.content-v .image {
