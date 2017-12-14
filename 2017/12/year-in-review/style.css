@@ -105,11 +105,6 @@ section {
   height: 100%;
 }
 
-img:not(.content-v.img) {
-  height: 100%;
-  position: relative;
-}
-
 .item.content-v .image {
   width: 100%;
   height: auto;
@@ -126,6 +121,10 @@ img:not(.content-v.img) {
   margin-right: 10px;
   float: left;
   display: inline-block;
+}
+
+.image img {
+  height: 100%;
 }
 
 .item.content-h img {
