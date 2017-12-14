@@ -105,7 +105,7 @@ section {
   height: 100%;
 }
 
-.item img:not(.content-v.img) {
+img:not(.content-v.img) {
   height: 100%;
   position: relative;
   left: -45%;
