@@ -1,6 +1,16 @@
 {
   "featured": [
     {
+      "title": "The Story of 2017",
+      "author": "Web Dev: Alex Graves, Andrew Fischer; Design: Julia Schorr and Camille Rapay",
+      "section": "Year in Review",
+      "date": "December 2017",
+      "description": "The Daily Pennsylvanian's review of the most important stories of 2017.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2017/12/year-in-review/",
+      "image": "https://snworksceo.imgix.net/dpn/2f6feaa5-2769-4617-8891-6ab35e732a02.sized-1000x1000.jpg"
+    },
+    {
       "title": "Penn Basketball Season Preview 2017",
       "author": "Web Dev: Andrew Fischer, Alex Graves; Design: Julia Schorr, Camille Rapay, Lucy Ferry and Chris Muracca",
       "section": "Sports",
@@ -9,7 +19,9 @@
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/11/basketball-preview/",
       "image": "https://snworksceo.imgix.net/dpn/2dcde16f-3ab1-4491-a1da-0e89d9d1b23e.sized-1000x1000.jpg"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "Our Campus. Our Mental Health.",
       "author": "Web Dev: Andrew Fischer, Brady Africk; Design: Julia Schorr and Camille Rapay",
@@ -29,18 +41,6 @@
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/10/housing-guide/",
       "image": "https://snworksceo.imgix.net/dpn/38881fe2-a22d-45d3-ae06-471456df1996.sized-1000x1000.png"
-    }
-  ],
-  "articles": [
-    {
-      "title": "The Story of 2017",
-      "author": "Web Dev: Alex Graves",
-      "section": "Year in Review",
-      "date": "December 2017",
-      "description": "The Daily Pennsylvanian's review of the most important stories of 2017.",
-      "sponsored": false,
-      "link": "http://projects.thedp.com/2017/12/year-in-review/",
-      "image": "https://snworksceo.imgix.net/dpn/2f6feaa5-2769-4617-8891-6ab35e732a02.sized-1000x1000.jpg"
     },
     {
       "title": "When a Penn student dies: Stories surrounding mental health on campus",
