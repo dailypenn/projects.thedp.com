@@ -9,15 +9,15 @@ This must all be done before your page can be considered complete! Check with th
 
 ### Metadata
   1. Viewport: make sure all pages contain this so they will scale on mobile
-  ```
+  ```HTML
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   ```
   2. Title: the page title should almost always indicate that this is a DP page
-  ```
+  ```HTML
   <title>Page Title | The Daily Pennsylvanian</title>
   ```
   3. Facebook Open Graph information: make sure this is all included, and [test it](https://developers.facebook.com/tools/debug/) to be sure that it looks like you expect!
-  ```
+  ```HTML
   <meta property="og:title" content="[same as page title]">
   <meta property="og:image" content="[this should generally be a link from our CMS]">
   <meta property="og:description" content="[description]">
@@ -25,7 +25,7 @@ This must all be done before your page can be considered complete! Check with th
   <meta property="og:url" content="https://projects.thedp.com/[year]/[month]/[project-name]">
   ```
   4. Twitter card information: make sure this is all included, and [test it](https://cards-dev.twitter.com/validator) to be sure that it looks like you expect!
-  ```
+  ```HTML
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="[same as page title]">
   <meta name="twitter:image" content="[this should generally be a link from our CMS]">
