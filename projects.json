@@ -8,7 +8,8 @@
       "description": "The Daily Pennsylvanian's review of the most important stories of 2017.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/12/year-in-review/",
-      "image": "https://snworksceo.imgix.net/dpn/2f6feaa5-2769-4617-8891-6ab35e732a02.sized-1000x1000.jpg"
+      "image": "https://snworksceo.imgix.net/dpn/2f6feaa5-2769-4617-8891-6ab35e732a02.sized-1000x1000.jpg",
+      "alt": "story of 2017"
     },
     {
       "title": "Penn Basketball Season Preview 2017",
@@ -18,7 +19,8 @@
       "description": "Enjoy an in-depth analysis of the biggest games, stars, and questions heading into Penn basketball's 2017-18 season with the Daily Pennsylvanian's Basketball Preview!",
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/11/basketball-preview/",
-      "image": "https://snworksceo.imgix.net/dpn/2dcde16f-3ab1-4491-a1da-0e89d9d1b23e.sized-1000x1000.jpg"
+      "image": "https://snworksceo.imgix.net/dpn/2dcde16f-3ab1-4491-a1da-0e89d9d1b23e.sized-1000x1000.jpg",
+      "alt": "basketball"
     }
   ],
   "articles": [
@@ -30,7 +32,8 @@
       "description": "Mental health is an intensely personal topic, shaped inexorably by the circumstances, preferences and lifestyle of an individual person. A conversation about mental health can take a variety of forms. What it cannot tolerate is silence.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/10/mental-health/",
-      "image": "https://snworksceo.imgix.net/dpn/0c1ec93d-5b23-4573-b9d7-7e1691a3b8fe.sized-1000x1000.png"
+      "image": "https://snworksceo.imgix.net/dpn/0c1ec93d-5b23-4573-b9d7-7e1691a3b8fe.sized-1000x1000.png",
+      "alt": "mental health"
     },
     {
       "title": "Housing Guide 2017",
@@ -40,7 +43,8 @@
       "description": "The Daily Pennsylvanian brings you everything you need to know about housing at Penn, from how luxury housing has changed to the $200 million project to renovate Hill and build NCH.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/10/housing-guide/",
-      "image": "https://snworksceo.imgix.net/dpn/38881fe2-a22d-45d3-ae06-471456df1996.sized-1000x1000.png"
+      "image": "https://snworksceo.imgix.net/dpn/38881fe2-a22d-45d3-ae06-471456df1996.sized-1000x1000.png",
+      "alt": "housing guide 2017"
     },
     {
       "title": "When a Penn student dies: Stories surrounding mental health on campus",
@@ -50,17 +54,19 @@
       "description": "Over the course of three weeks, The Daily Pennsylvanian analyzed various aspects of mental health across the University: from the resources offered at Counseling and Psychological Services to the way administrators choose to communicate these student deaths.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/09/mental-health/",
-      "image": "https://snworksceo.imgix.net/dpn/cd64b61d-fe37-4b90-9b05-2428ca9dd004.sized-1000x1000.jpg"
+      "image": "https://snworksceo.imgix.net/dpn/cd64b61d-fe37-4b90-9b05-2428ca9dd004.sized-1000x1000.jpg",
+      "alt": "student death"
     },
     {
       "title": "The Job Search",
       "author": "Web Dev: Andrew Fischer",
-      "section": "Guides",
+      "section": "Projects",
       "date": "April 2017",
       "description": "With students running around in suits to Huntsman Hall, coffee chats across campus and Career Service emails populated with prestigious company names, hunting for a job is a daily part of life at Penn. Over the course of a few months, the Enterprise team at The Daily Pennsylvanian has looked into the many aspects of the job search on campus. From students working in lucrative industries to those who return to Locust Walk to continue their work at Penn, here are their stories.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/04/jobs-after-graduation/",
-      "image": "https://s3.amazonaws.com/media.dpn/59135_thejobsearchf.png"
+      "image": "https://s3.amazonaws.com/media.dpn/59135_thejobsearchf.png",
+      "alt": "the job search"
     },
     {
       "title": "Penn Athletics End of Year Awards",
@@ -70,17 +76,8 @@
       "description": "The year has seen some incredible moments for the University — but which ones were best? Here are our year-end awards for the best athletes, coaches, upsets and more.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/04/sports-end-of-year-awards/",
-      "image": "https://s3.amazonaws.com/media.dpn/59124_sportsawardsf.jpg"
-    },
-    {
-      "title": "Penn10 2017",
-      "author": "Web Dev: Andrew Fischer",
-      "section": "34th Street Guides",
-      "date": "April 2017",
-      "description": "Read about ten of Penn's extraordinary seniors, brought to you by 34th Street and made possible by Penn Alumni.",
-      "sponsored": false,
-      "link": "http://projects.34st.com/2017/04/penn10/",
-      "image": "https://s3.amazonaws.com/media.dpn/58893_penn10o.png"
+      "image": "https://s3.amazonaws.com/media.dpn/59124_sportsawardsf.jpg",
+      "alt": "penn athletics awards 2017"
     },
     {
       "title": "Best of Penn 2017",
@@ -90,7 +87,8 @@
       "description": "Yes, it's that time of year again: when the people of Penn dutifully cast their votes for the best eateries, shops and (yes) book stores on and around campus. See what you all voted to win our 20 Best of Penn categories.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/04/best-of-penn/",
-      "image": "https://s3.amazonaws.com/media.dpn/58764_bestofpennogjpgf.jpeg"
+      "image": "https://s3.amazonaws.com/media.dpn/58764_bestofpennogjpgf.jpeg",
+      "alt": "best of penn 2017"
     },
     {
       "title": "Penn Dictionary",
@@ -100,7 +98,8 @@
       "description": "Presented by Under the Button, Penn Dictionary is your guide to Penn slang. Feel free to submit your own definition!",
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/03/penn-dictionary/",
-      "image": "https://s3.amazonaws.com/media.dpn/58550_pdf.png"
+      "image": "https://s3.amazonaws.com/media.dpn/58550_pdf.png",
+      "alt": "penn dictionary"
     },
     {
       "title": "Penn Bracket 2017",
@@ -110,17 +109,8 @@
       "description": "Students can vote on their favorite Penn student groups in the DP's take on March Madness.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/03/penn-bracket/",
-      "image": "https://s3.amazonaws.com/media.dpn/57761_pennbracketogjpgf.jpeg"
-    },
-    {
-      "title": "34th Street Dining Guide Spring 2017",
-      "author": "Web Dev: Nolan Hill, Andrew Fischer",
-      "section": "34th Street Guides",
-      "date": "March 2017",
-      "description": "Explore Street's favorite places to eat on this interactive map.",
-      "sponsored": false,
-      "link": "http://projects.thedp.com/2017/03/dining-guide/",
-      "image": "https://s3.amazonaws.com/media.dpn/58557_dg2017f.png"
+      "image": "https://s3.amazonaws.com/media.dpn/57761_pennbracketogjpgf.jpeg",
+      "alt": "penn bracket 2017"
     },
     {
       "title": "Valentine's Day 2017",
@@ -130,7 +120,8 @@
       "description": "A roundup of some of our best Valentine's Day content of 2017. Whether you're looking for a date-night show, some funny cards or just want to read the love notes, we've got you covered.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/02/valentines/",
-      "image": "https://s3.amazonaws.com/media.dpn/57158_lovenotesf.jpg"
+      "image": "https://s3.amazonaws.com/media.dpn/57158_lovenotesf.jpg",
+      "alt": "valentine's day 2017"
     },
     {
       "title": "Financially Speaking: A guide to financial aid at Penn",
@@ -140,7 +131,8 @@
       "description": "With data provided by Penn Student Registration & Financial Services (SRFS) and other resources, The Daily Pennsylvanian Online Graphics Department took a deeper look into financial aid at Penn. These comparisons, infographics and interactive maps provide a transparent look at how Penn’s policies compare with those of other Ivy League schools, how aid packages differ for students from across the country and around the world and how work study functions, to name a few.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/01/financial-aid/",
-      "image": "https://s3.amazonaws.com/media.dpn/56319_financialaidogf.png"
+      "image": "https://s3.amazonaws.com/media.dpn/56319_financialaidogf.png",
+      "alt": "financial aid"
     },
     {
       "title": "2016 in Review",
@@ -150,7 +142,8 @@
       "description": "Catch up on the events at Penn and in Philly that shaped 2016 in the DP's annual Year in Review.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2016/12/year-in-review/",
-      "image": "https://s3.amazonaws.com/media.dpn/55750_2016yir01f.png"
+      "image": "https://s3.amazonaws.com/media.dpn/55750_2016yir01f.png",
+      "alt": "2016 in review"
     },
     {
       "title": "Coffee Break: A guide to coffee shops around campus",
@@ -160,7 +153,8 @@
       "description": "Use an interactive map to view and compare prices and locations of coffee shops on campus.",
       "sponsored": true,
       "link": "http://projects.thedp.com/2016/11/coffee-on-campus/",
-      "image": "https://s3.amazonaws.com/media.dpn/56237_coffeeoncampusimgf.png"
+      "image": "https://s3.amazonaws.com/media.dpn/56237_coffeeoncampusimgf.png",
+      "alt": "coffee break"
     },
     {
       "title": "Basketball Supplement",
@@ -170,7 +164,8 @@
       "description": "A preview of the 2016 basketball season.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2016/11/basketball-preview/",
-      "image": "http://media.dpn.s3.amazonaws.com/54828_ogimgbballsuppf.jpg"
+      "image": "http://media.dpn.s3.amazonaws.com/54828_ogimgbballsuppf.jpg",
+      "alt": "basketball 2016"
     },
     {
       "title": "Voter's Guide",
@@ -180,17 +175,8 @@
       "description": "Your guide to the candidates, policies and logistics for Election Day on November 8.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2016/11/voters-guide/",
-      "image": "https://s3.amazonaws.com/media.dpn/54667_50916_supertuesdayff.jpg"
-    },
-    {
-      "title": "34th Street Dining Guide Fall 2016",
-      "author": "Web Dev: Nolan Hill",
-      "section": "Guides",
-      "date": "October 2016",
-      "description": "Explore Street's favorite places to eat on this interactive map.",
-      "sponsored": false,
-      "link": "http://projects.thedp.com/2016/10/dining-guide/",
-      "image": "https://s3.amazonaws.com/media.dpn/56238_diningguideimgf.png"
+      "image": "https://s3.amazonaws.com/media.dpn/54667_50916_supertuesdayff.jpg",
+      "alt": "voting guide"
     },
     {
       "title": "Housing Guide 2016",
@@ -200,17 +186,19 @@
       "description": "Learn all about housing at Penn in the DP's 2016 Housing Guide!",
       "sponsored": false,
       "link": "http://projects.thedp.com/2016/09/housing-guide/",
-      "image": "https://s3.amazonaws.com/media.dpn/53728_housingguidefbf.png"
+      "image": "https://s3.amazonaws.com/media.dpn/53728_housingguidefbf.png",
+      "alt": "housing guide 2016"
     },
     {
       "title": "Your courses, deconstructed",
       "author": "Web Dev: Andrew Fischer, Mikael Mantis",
-      "section": "Data Visualization",
+      "section": "Projects",
       "date": "April 2016",
       "description": "The Daily Pennsylvanian was able to gain access to all available Penn Course Review data, which contains an enormous number of student evaluations of their classes going back over a decade. Through data analysis, we've been able to address some of the most simple and complex questions students might wonder about their academics.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2016/04/PCR/",
-      "image": "https://s3.amazonaws.com/media.dpn/56239_screen_shot_20170122_at_33810_pmf.png"
+      "image": "https://s3.amazonaws.com/media.dpn/56239_screen_shot_20170122_at_33810_pmf.png",
+      "alt": "penn course review"
     }
   ]
 }
