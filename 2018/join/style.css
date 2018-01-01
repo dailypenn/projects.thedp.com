@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400');
+
+body {
+  font-size: 1em;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 3rem;
+}
+
+h2 {
+  margin-top: 50px;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #000;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  height: 100vh;
+}
+
+section.intro {
+  background: linear-gradient(transparent, transparent, #000), url('./img/skyline.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh - 50px);
+}
+
+section.editorial {
+  background-color: #AA1E22;
+}
+
+section.business {
+  background-color: #EEE;
+}
+
+section.street {
+  background-color: #44BFBF;
+}
+
+section.utb {
+  background-color: #446CB3;
+}
+
+section.why {
+  height: 100vh;
+  background-color: #EEE;
+}
+
+.logo {
+  margin-top: 5px;
+}
+
+.intro-text {
+  color: #FFF;
+  text-align: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    margin-top: 30px;
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .intro-text {
+    margin-bottom: 30px;
+  }
+}
