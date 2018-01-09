@@ -54,6 +54,10 @@ h2 {
   position: relative;
 }
 
+.dark {
+  color: rgb(24, 14, 59);
+}
+
 h2 {
   position: relative;
   margin-top: -50px;
@@ -62,12 +66,36 @@ h2 {
   transition: all 600ms ease-in-out;
 }
 
-.title-block:hover h2 {
+.title-block:hover h2,
+.title-block:focus h2 {
   font-size: 6rem;
   margin-top: -120px;
 }
 
-.title-block:hover .content {
+.title-block:hover .content,
+.title-block:focus .content {
   opacity: 1;
   visibility: visible;
+}
+
+@media (max-width: 769px) {
+  h2 {
+    font-size: 6rem;
+  }
+
+  .date {
+    font-size: 140px;
+  }
+
+  .calendar-item {
+    height: 500px;
+  }
+
+  [class*="col"] {
+    height: 230px;
+  }
+
+  .inner-content {
+    margin-top: -20px;
+  }
 }
