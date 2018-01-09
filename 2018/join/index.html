@@ -52,14 +52,14 @@
         Whether it's diving deep into an investigative story or capturing snapshots of people at the front lines of Penn's history, the DP editorial side never stops making a difference.
       </p>
       <div class="departments">
-        <h4 id="news">News</h4>
-        <h4 id="sports">Sports</h4>
-        <h4 id="opinion">Opinion</h4>
-        <h4 id="design">Design</h4>
-        <h4 id="photo">Photo</h4>
-        <h4 id="video">Video</h4>
-        <h4 id="podcasts">Podcasts</h4>
-        <h4 id="copy">Copy</h4>
+        <span><h4 class="ed-tab active" id="news">News</h4></span>
+        <span><h4 class="ed-tab" id="sports">Sports</h4></span>
+        <span><h4 class="ed-tab" id="opinion">Opinion</h4></span>
+        <span><h4 class="ed-tab" id="design">Design</h4></span>
+        <span><h4 class="ed-tab" id="photo">Photo</h4></span>
+        <span><h4 class="ed-tab" id="video">Video</h4></span>
+        <span><h4 class="ed-tab" id="podcasts">Podcasts</h4></span>
+        <span><h4 class="ed-tab" id="copy">Copy</h4></span>
       </div>
     </section>
 
@@ -78,5 +78,25 @@
     <section class="why">
       <h2>Why the DP?</h2>
     </section>
+
+    <script type="text/javascript">
+      var inactiveEd = function() {
+        var tabs = document.getElementsByClassName('ed-tab');
+        for (var i = 0; i < tabs.length; i++) {
+          var classes = tabs[i].classList;
+          if (classes.contains('active')) {
+            classes.remove('active');
+          }
+        }
+      }
+
+      var edTabs = document.getElementsByClassName('ed-tab');
+      for (var i = 0; i < edTabs.length; i++) {
+        edTabs[i].addEventListener('click', function() {
+          inactiveEd();
+          this.classList.add('active');
+        });
+      }
+    </script>
   </body>
 </html>

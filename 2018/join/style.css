@@ -28,8 +28,15 @@ h3 {
 }
 
 h4 {
-  flex-grow: 1;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
   text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+p {
+  font-weight: 300;
 }
 
 a {
@@ -61,6 +68,7 @@ section.intro {
 
 section.editorial {
   background-color: #AA1E22;
+  color: #FFFFFF;
 }
 
 section.business {
@@ -103,6 +111,21 @@ p.overall {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.departments span {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.ed-tab {
+  cursor: pointer;
+}
+
+.active {
+  font-weight: 700;
+  border-bottom: 3px solid #FFFFFF;
 }
 
 @media screen and (max-width: 450px) {
