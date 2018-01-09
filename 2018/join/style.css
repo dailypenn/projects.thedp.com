@@ -18,12 +18,18 @@ h1 {
 }
 
 h2 {
-  margin-top: 50px;
+  margin-bottom: 10px;
   font-size: 2.5rem;
+  text-align: center;
 }
 
 h3 {
   font-size: 2rem;
+}
+
+h4 {
+  flex-grow: 1;
+  text-align: center;
 }
 
 a {
@@ -39,20 +45,18 @@ header {
 }
 
 section {
-  display: flex;
-  justify-content: center;
-}
-
-section {
-  height: 100vh;
+  height: calc(100vh - 100px);
+  padding: 50px;
 }
 
 section.intro {
+  display: flex;
+  justify-content: center;
   background: linear-gradient(transparent, transparent, #000), url('./img/skyline.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 150px);
 }
 
 section.editorial {
@@ -72,8 +76,12 @@ section.utb {
 }
 
 section.why {
-  height: 100vh;
   background-color: #EEE;
+}
+
+p.overall {
+  width: 50%;
+  margin: 20px auto;
 }
 
 .logo {
@@ -87,6 +95,14 @@ section.why {
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
+}
+
+.departments {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @media screen and (max-width: 450px) {
