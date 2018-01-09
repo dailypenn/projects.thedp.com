@@ -9,10 +9,17 @@ h2 {
 }
 
 .calendar-item {
-  background-color: #aa1e22;
   color: #fff;
   margin-bottom: 15px;
 }
+
+.calendar-item:nth-child(1) { background-color: rgb(179, 106, 148); }
+.calendar-item:nth-child(2) { background-color: rgb(239, 200, 198); }
+.calendar-item:nth-child(3) { background-color: rgb(237, 229, 233); }
+.calendar-item:nth-child(4) { background-color: rgb(237, 229, 233); }
+.calendar-item:nth-child(5) { background-color: rgb(168, 208, 237); }
+.calendar-item:nth-child(6) { background-color: rgb(216, 236, 249); }
+.calendar-item:nth-child(7) { background-color: rgb(124, 97, 157); }
 
 [class*="col"] {
   height: 300px;
