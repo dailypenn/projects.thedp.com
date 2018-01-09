@@ -11,6 +11,7 @@ h2 {
 .calendar-item {
   color: #fff;
   margin-bottom: 15px;
+  overflow-y: hidden;
 }
 
 .calendar-item:nth-child(1) { background-color: rgb(179, 106, 148); }
