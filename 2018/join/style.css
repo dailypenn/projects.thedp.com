@@ -4,6 +4,7 @@ body {
   font-size: 1em;
   margin: 0;
   font-family: 'Lato', sans-serif;
+  color: #000;
 }
 
 h1, h2, h3, h4 {
@@ -52,7 +53,8 @@ header {
 }
 
 section {
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
+  height: auto;
   padding: 50px;
 }
 
@@ -68,7 +70,7 @@ section.intro {
 
 section.editorial {
   background-color: #AA1E22;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 section.business {
@@ -88,7 +90,6 @@ section.why {
 }
 
 p.overall {
-  width: 50%;
   margin: 20px auto;
 }
 
@@ -102,11 +103,14 @@ p.overall {
   align-self: flex-end;
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+}
+
+.ed-body, .biz-body {
+  width: 50%;
+  margin: auto;
 }
 
 .departments {
-  width: 50%;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -117,15 +121,66 @@ p.overall {
   flex-grow: 1;
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
-.ed-tab {
+.ed-tab, .biz-tab {
   cursor: pointer;
 }
 
-.active {
+.ed-text, .biz-text {
+  visibility: hidden;
+  margin: 0;
+  height: 0;
+  width: 50%;
+}
+
+.ed-text p, .biz-text p {
+  margin: 0;
+  height: 0;
+}
+
+.ed-text.active, .biz-text.active {
+  visibility: visible;
+}
+
+.ed-text.active p, .biz-text.active p {
+  margin: 1em 0;
+  height: auto;
+}
+
+.ed-tab.active {
   font-weight: 700;
-  border-bottom: 3px solid #FFFFFF;
+  border-bottom: 3px solid #FFF;
+}
+
+.biz-tab.active {
+  font-weight: 700;
+  border-bottom: 3px solid #000;
+}
+
+@media screen and (max-width: 1250px) {
+  .departments {
+    flex-wrap: wrap;
+  }
+
+  .departments span {
+    width: 25%;
+  }
+
+  .biz-body .departments span {
+    width: 33%;
+  }
+
+  .ed-text, .biz-text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ed-body, .biz-body {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -134,7 +189,6 @@ p.overall {
   }
 
   h2 {
-    margin-top: 30px;
     font-size: 1.8rem;
   }
 
@@ -143,11 +197,13 @@ p.overall {
   }
 
   section {
-    padding-left: 15px;
-    padding-right: 15px;
+    width: calc(100vw - 30px);
+    padding: 20px 15px;
   }
+}
 
-  .intro-text {
-    margin-bottom: 30px;
+@media screen and (max-wdith: 350px) {
+  .biz-body .departments span {
+    width: 50%;
   }
 }

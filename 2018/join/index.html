@@ -47,24 +47,91 @@
 
     <section class="editorial">
       <h2>Editorial</h2>
-      <p class="overall">
-        The Daily Pennsylvanian editorial departments work together to find and tell the most important stories on campus.
-        Whether it's diving deep into an investigative story or capturing snapshots of people at the front lines of Penn's history, the DP editorial side never stops making a difference.
-      </p>
-      <div class="departments">
-        <span><h4 class="ed-tab active" id="news">News</h4></span>
-        <span><h4 class="ed-tab" id="sports">Sports</h4></span>
-        <span><h4 class="ed-tab" id="opinion">Opinion</h4></span>
-        <span><h4 class="ed-tab" id="design">Design</h4></span>
-        <span><h4 class="ed-tab" id="photo">Photo</h4></span>
-        <span><h4 class="ed-tab" id="video">Video</h4></span>
-        <span><h4 class="ed-tab" id="podcasts">Podcasts</h4></span>
-        <span><h4 class="ed-tab" id="copy">Copy</h4></span>
+      <div class="ed-body">
+        <p class="overall">
+          The Daily Pennsylvanian editorial departments work together to find and tell the most important stories on campus.
+          Whether it's diving deep into an investigative story or capturing snapshots of people at the front lines of Penn's history, the DP editorial side never stops making a difference.
+        </p>
+        <div class="departments">
+          <span><h4 class="ed-tab active" id="news">News</h4></span>
+          <span><h4 class="ed-tab" id="sports">Sports</h4></span>
+          <span><h4 class="ed-tab" id="opinion">Opinion</h4></span>
+          <span><h4 class="ed-tab" id="design">Design</h4></span>
+          <span><h4 class="ed-tab" id="photo">Photo</h4></span>
+          <span><h4 class="ed-tab" id="video">Video</h4></span>
+          <span><h4 class="ed-tab" id="podcasts">Podcasts</h4></span>
+          <span><h4 class="ed-tab" id="copy">Copy</h4></span>
+        </div>
+        <div class="ed-text active" id="news-text"></div>
+        <div class="ed-text" id="sports-text">
+          <p>
+            DP Sports is a place where you can grow not only as a writer and a reporter, but also as a person.
+            We spend really valuable time with each and every person on our team to ensure that they can develop good writing, critical thinking, and research/investigative skills that will help them no matter where they end up.
+            We’re a family, above all else, and we have an amazing time going on field trips and throwing watch parties and really engaging with different parts of the Penn community.
+          </p>
+          <p>
+            So if you like watching sports, if you like talking to interesting people, if you like to travel, or if you like to spend all your spare time on the intramural circuit, DP Sports is totally the place for you.
+            No experience required, just an interest in sports and desire to learn.
+            Student-athletes are welcome to apply!
+          </p>
+        </div>
+        <div class="ed-text" id="opinion-text">
+          <p>
+            The Daily Pennsylvanian is looking for creative, engaging and dedicated writers to pen weekly or biweekly columns for Penn's independent student newspaper.
+            The best columnists do more than tell stories or argue their opinions &mdash; they identify topics relevant to the Penn community.
+            Your writing and reporting skills will improve tremendously, and you will have the rare opportunity to reach thousands of people with every column you write.
+          </p>
+        </div>
+        <div class="ed-text" id="design-text"></div>
+        <div class="ed-text" id="photo-text">
+          <p>
+            Our photographers use the latest DSLR cameras and lenses to cover major events on campus and across the country.
+            Our staff have shot famous figures among the likes of Joe Biden and Usain Bolt, stood front row at Made in America, and traveled for special events including presidential campaigns and NCAA tournaments.
+            Being a photojournalist for the DP also gives you the opportunity to create and expand your portfolio, with the chance to practice with photo-editing software including Adobe Photoshop and Lightroom.
+          </p>
+          <p>
+            No experience or equipment is required, just a desire to learn photography.
+            Join and become a photographer &mdash; there’s no better way to learn and practice photojournalism while at Penn.
+          </p>
+        </div>
+        <div class="ed-text" id="video-text"></div>
+        <div class="ed-text" id="podcasts-text"></div>
+        <div class="ed-text" id="copy-text">
+          <p>
+            The Daily Pennsylvanian's copy department is now editing Under The Button content and sports articles!
+            Join our super fun team in reviewing and fact checking everything from breaking news to satirical videos.
+            Come help us keep our content concise, consistent, and considerate.
+          </p>
+          <p>From the people who brought the DP the Oxford comma.</p>
+        </div>
       </div>
     </section>
 
     <section class="business">
       <h2>Business</h2>
+      <div class="biz-body">
+        <p class="overall"></p>
+        <div class="departments">
+          <span><h4 class="biz-tab active" id="marketing">Marketing</h4></span>
+          <span><h4 class="biz-tab" id="ad">Advertising</h4></span>
+          <span><h4 class="biz-tab" id="web">Web Dev</h4></span>
+          <span><h4 class="biz-tab" id="analytics">Analytics</h4></span>
+          <span><h4 class="biz-tab" id="innovation">Innovation</h4></span>
+          <span><h4 class="biz-tab" id="circulation">Circulation</h4></span>
+        </div>
+        <div class="biz-text active" id="marketing-text"></div>
+        <div class="biz-text" id="ad-text"></div>
+        <div class="biz-text" id="web-text"></div>
+        <div class="biz-text" id="analytics-text">
+          <p>
+            DP Analytics is a department undergoing a lot of transformation, and we're ready to make big moves to help propel the DP into the digital-first age.
+            Using statistical software and coding languages like R and Python, the Analytics Department works on both the editorial and business sides of the operation to use stores of data in order to track our readership numbers, understand our audience, predict advertising trends, and pursue new content opportunities.
+            We are a financially independent organization; there's no better place on campus where your work can directly affect a real business.
+          </p>
+        </div>
+        <div class="biz-text" id="innovation-text"></div>
+        <div class="biz-text" id="circulation-text"></div>
+      </div>
     </section>
 
     <section class="street">
@@ -79,24 +146,6 @@
       <h2>Why the DP?</h2>
     </section>
 
-    <script type="text/javascript">
-      var inactiveEd = function() {
-        var tabs = document.getElementsByClassName('ed-tab');
-        for (var i = 0; i < tabs.length; i++) {
-          var classes = tabs[i].classList;
-          if (classes.contains('active')) {
-            classes.remove('active');
-          }
-        }
-      }
-
-      var edTabs = document.getElementsByClassName('ed-tab');
-      for (var i = 0; i < edTabs.length; i++) {
-        edTabs[i].addEventListener('click', function() {
-          inactiveEd();
-          this.classList.add('active');
-        });
-      }
-    </script>
+    <script src="script.js" charset="utf-8"></script>
   </body>
 </html>
