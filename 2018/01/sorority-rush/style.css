@@ -66,14 +66,14 @@ h2 {
   transition: all 600ms ease-in-out;
 }
 
-.title-block:active h2,
-.title-block:hover h2 {
+.title-block:hover h2,
+.title-block:active h2 {
   font-size: 6rem;
   margin-top: -120px;
 }
 
-.title-block:active .content,
-.title-block:hover .content {
+.title-block:hover .content,
+.title-block:active .content {
   opacity: 1;
   visibility: visible;
 }
