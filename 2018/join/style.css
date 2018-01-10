@@ -70,6 +70,14 @@ header {
   background-color: #000;
 }
 
+iframe {
+  width: 100%;
+}
+
+iframe.join-form {
+  height: calc(100% - 59px);
+}
+
 section {
   min-height: calc(100vh - 100px);
   height: auto;
@@ -129,11 +137,11 @@ section.street {
 }
 
 section.street a {
-  color: #444;
+  color: #C9D4E5;
 }
 
 section.street a:hover {
-  color: #000;
+  color: #AFBCCE;
 }
 
 section.utb {
@@ -153,8 +161,9 @@ section.utb a:hover {
   color: #999;
 }
 
-section.why {
+section.join {
   background-color: #EEE;
+  height: calc(100vh - 100px);
 }
 
 p.overall {
@@ -176,6 +185,10 @@ p.overall {
 .section {
   width: 65%;
   margin: auto;
+}
+
+.section.form {
+  height: calc(100% - 63px);
 }
 
 .departments {
@@ -274,6 +287,14 @@ p.overall {
 
   section.intro {
     min-height: calc(100vh - 90px);
+  }
+
+  section.join {
+    height: calc(100vh - 40px);
+  }
+
+  .section.form {
+    height: calc(100% - 48px);
   }
 }
 
