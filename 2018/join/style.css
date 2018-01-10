@@ -79,7 +79,7 @@ section {
 section.intro {
   display: flex;
   justify-content: center;
-  background: linear-gradient(transparent, transparent, #000), url('img/skyline.jpg');
+  background: linear-gradient(transparent, transparent, #000), url('img/main.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -101,7 +101,7 @@ section.business {
 
 section.street {
   background-color: #44BFBF;
-  background: linear-gradient(rgba(68, 191, 191, 0.8), rgba(68, 191, 191, 0.8)), url('img/street.jpg');
+  background: linear-gradient(rgba(68, 191, 191, 0.9), rgba(68, 191, 191, 0.9)), url('img/street.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -136,8 +136,8 @@ p.overall {
   flex-direction: column;
 }
 
-.ed-body, .biz-body, .utb-body {
-  width: 50%;
+.section {
+  width: 65%;
   margin: auto;
 }
 
@@ -191,16 +191,12 @@ p.overall {
   border-bottom: 3px solid #000;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1200px) {
   .departments {
     flex-wrap: wrap;
   }
 
   .departments span {
-    width: 25%;
-  }
-
-  .biz-body .departments span {
     width: 33%;
   }
 
@@ -210,7 +206,7 @@ p.overall {
 }
 
 @media screen and (max-width: 800px) {
-  .ed-body, .biz-body, .utb-body {
+  .section {
     width: 100%;
   }
 }

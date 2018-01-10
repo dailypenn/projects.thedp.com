@@ -47,6 +47,14 @@ for (var i = 0; i < edTabs.length; i++) {
         document.querySelector('section.editorial').style.background =
           "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('img/video.gif')";
         break;
+      case 'social':
+        document.querySelector('section.editorial').style.background =
+          "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('img/social.jpg')";
+        break;
+      case 'podcasts':
+        document.querySelector('section.editorial').style.background =
+          "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('img/podcasts.jpg')";
+        break;
       case 'copy':
         document.querySelector('section.editorial').style.background =
           "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('img/copy.jpg')";
@@ -89,7 +97,11 @@ for (var i = 0; i < edTabs.length; i++) {
     switch (this.id) {
       case 'web':
         document.querySelector('section.business').style.background =
-          "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('img/web.jpg')";
+          "linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0.9)), url('img/web.jpg')";
+        break;
+      case 'analytics':
+        document.querySelector('section.business').style.background =
+          "linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0.9)), url('img/analytics.jpg')";
         break;
       default:
         document.querySelector('section.business').style.background = '#EEE';
