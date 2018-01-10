@@ -101,7 +101,11 @@ for (var i = 0; i < edTabs.length; i++) {
         break;
       case 'analytics':
         document.querySelector('section.business').style.background =
-          "linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0.9)), url('img/analytics.jpg')";
+          "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('img/analytics.jpg')";
+        break;
+      case 'circulation':
+        document.querySelector('section.business').style.background =
+          "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('img/circulation.jpg')";
         break;
       default:
         document.querySelector('section.business').style.background = '#EEE';
