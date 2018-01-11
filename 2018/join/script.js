@@ -99,10 +99,10 @@ for (var i = 0; i < edTabs.length; i++) {
         document.querySelector('section.business').style.background =
           "linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0.9)), url('img/marketing.jpg')";
         break;
-      // case 'ad':
-      //   document.querySelector('section.business').style.background =
-      //     "linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0.9)), url('img/ad.jpg')";
-      //   break;
+      case 'ad':
+        document.querySelector('section.business').style.background =
+          "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('img/ad.jpg')";
+        break;
       case 'web':
         document.querySelector('section.business').style.background =
           "linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0.9)), url('img/web.jpg')";
