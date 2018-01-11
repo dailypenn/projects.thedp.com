@@ -243,6 +243,7 @@ p.overall {
 
 .inline-link {
   display: inline-block;
+  margin: 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -294,7 +295,7 @@ p.overall {
   }
 
   .section.form {
-    height: calc(100% - 48px);
+    height: calc(100% - 86px);
   }
 }
 
