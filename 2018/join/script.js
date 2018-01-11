@@ -95,6 +95,14 @@ for (var i = 0; i < edTabs.length; i++) {
 
     // change department images
     switch (this.id) {
+      case 'marketing':
+        document.querySelector('section.business').style.background =
+          "linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0.9)), url('img/marketing.jpg')";
+        break;
+      // case 'ad':
+      //   document.querySelector('section.business').style.background =
+      //     "linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0.9)), url('img/ad.jpg')";
+      //   break;
       case 'web':
         document.querySelector('section.business').style.background =
           "linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0.9)), url('img/web.jpg')";
@@ -102,6 +110,10 @@ for (var i = 0; i < edTabs.length; i++) {
       case 'analytics':
         document.querySelector('section.business').style.background =
           "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('img/analytics.jpg')";
+        break;
+      case 'innovation':
+        document.querySelector('section.business').style.background =
+          "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('img/innovation.jpg')";
         break;
       case 'circulation':
         document.querySelector('section.business').style.background =

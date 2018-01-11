@@ -113,7 +113,7 @@ section.editorial a:hover {
 
 section.business {
   background-color: #EEE;
-  /* background: linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('img/marketing.jpg'); */
+  background: linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('img/marketing.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
