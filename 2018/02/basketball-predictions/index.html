@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ivy League Tournament Predictions | The Daily Pennsylvanian</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <table class="table table-hover" id="mens-table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>School</th>
+      <th>Win</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Brown</td>
+      <td><input type="checkbox" name="win" value="brown"><td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Columbia</td>
+      <td><input type="checkbox" name="win" value="columbia"><td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Cornell</td>
+      <td><input type="checkbox" name="win" value="cornell"><td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Dartmouth</td>
+      <td><input type="checkbox" name="win" value="dartmouth"><td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Harvard</td>
+      <td><input type="checkbox" name="win" value="harvard"><td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Penn</td>
+      <td><input type="checkbox" name="win" value="penn"><td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Princeton</td>
+      <td><input type="checkbox" name="win" value="princeton"><td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Yale</td>
+      <td><input type="checkbox" name="win" value="yale"><td>
+    </tr>
+  </tbody>
+</table>
+<input id="btnSubmit" type="button" value="Submit" />
+
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    var mensTable  = $("#mens-table");
+    $(document).ready(function () {
+      $('input[name="win"]').on('change', function() {
+       $('input[name="win"]').not(this).prop('checked', false);
+       alert("You selected " + this.value)
+      });
+    });
+  </script>
+</body>
