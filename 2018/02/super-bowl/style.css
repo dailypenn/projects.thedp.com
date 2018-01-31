@@ -1,15 +1,22 @@
-a {
+a.article-link {
     color: black;
-    text-decoration: none;  
-    
     
 }
 
-a : hover {
-    color: "#014A53";
+a:hover {
+    color: #014A53; 
+    text-decoration: none;
 }
 
 hr {
     border-width: 3px;
     border-color: black;
+}
+
+p {
+    color: grey;
+}
+
+h1 {
+    font-weight: bold;
 }
