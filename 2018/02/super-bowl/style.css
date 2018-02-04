@@ -9,7 +9,7 @@ a:hover {
 
 hr {
   border-width: 3px;
-  border-color: #000;
+  border-color: #014A53;;
 }
 
 p {
@@ -17,7 +17,13 @@ p {
 }
 
 h1 {
-  font-weight: 700;
+  font-size: 280%;
+  margin-top: 20px;
+  color: #014A53;
+}
+
+h2 {
+  font-size: 200%;
   color: #014A53;
 }
 
@@ -25,12 +31,19 @@ img.img-fluid {
   margin-bottom: 10px;
 }
 
-.header {
-  text-align: center;
-  padding: 5px;
+img.header {
+  margin: 5px;
+}
+
+.header-link {
+  margin: auto;
 }
 
 .footer {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.navbar {
+  background-color: #014A53;
 }
