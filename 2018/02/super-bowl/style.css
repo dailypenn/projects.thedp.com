@@ -1,27 +1,36 @@
 a.article-link {
-    color: black;
-    
+  color: #000;
 }
 
 a:hover {
-    color: #014A53; 
-    text-decoration: none;
+  color: #014A53;
+  text-decoration: none;
 }
 
 hr {
-    border-width: 3px;
-    border-color: black;
+  border-width: 3px;
+  border-color: #000;
 }
 
 p {
-    color: grey;
+  color: #777;
 }
 
 h1 {
-    font-weight: bold;
-    color: #014A53;
+  font-weight: 700;
+  color: #014A53;
+}
+
+img.img-fluid {
+  margin-bottom: 10px;
 }
 
 .header {
-    text-align: center;
+  text-align: center;
+  padding: 5px;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 20px;
 }
