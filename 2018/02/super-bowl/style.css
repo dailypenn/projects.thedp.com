@@ -19,4 +19,9 @@ p {
 
 h1 {
     font-weight: bold;
+    color: #014A53;
+}
+
+.header {
+    text-align: center;
 }
