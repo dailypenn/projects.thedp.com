@@ -115,96 +115,133 @@
   </script>
 </head>
 <body>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '1042075185814231',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.12'
+    });
+  };
+
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="container">
+  <h1>Love Notes</h1>
   <div class="container">
-    <h1>Love Notes</h1>
-    <div class="container">
-      <div class="hidden-sm-down">
-        <div id='div-gpt-ad-1487027697233-1'>
-        </div>
-      </div>
-      <div class="hidden-md-up">
-        <div id='div-gpt-ad-1487027697233-2'>
-        </div>
+    <div class="hidden-sm-down">
+      <div id='div-gpt-ad-1487027697233-1'>
       </div>
     </div>
-    <br>
-    <div class="row">
-      <div class="col-sm-4 col-sm-push-4">
-        <div class="input-group stylish-input-group">
-          <input type="text" class="form-control" placeholder="Search" id="search">
-          <span class="input-group-addon">
-            <span id="srch" class="fa fa-search"></span>
-          </span>
-        </div>
+    <div class="hidden-md-up">
+      <div id='div-gpt-ad-1487027697233-2'>
       </div>
     </div>
-
   </div>
-  <div class="container">
-    <div class="row" id="lovenotes">
+  <br>
+  <div class="row">
+    <div class="col-sm-4 col-sm-push-4">
+      <div class="input-group stylish-input-group">
+        <input type="text" class="form-control" placeholder="Search" id="search">
+        <span class="input-group-addon">
+          <span id="srch" class="fa fa-search"></span>
+        </span>
+      </div>
     </div>
-
-
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/async/2.1.4/async.min.js" charset="utf-8"></script>
-  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script> -->
-  <script type="text/javascript">
-  var NOTES;
 
-  var renderNotes = function() {
-    notesList = $('#lovenotes')
+</div>
+<div class="container">
+  <div class="row" id="lovenotes">
+  </div>
 
-    for (var note in NOTES) {
-      var curNote = NOTES[note];
-      notesList.append(
-        '<div class="square">' +
-        '<div class="content">' +
-        '<div class="table">' +
-        '<div class="table-cell">' +
-        curNote[0] + '<br>' +
-        '<a class="fb-share" href="https://www.facebook.com/dialog/share?app_id=145634995501895&display=page&href=thedp.com/valentines2017&title=DP+Lovenotes%3A&redirect_uri=https://thedp.com/valentines2017&title=DP+Lovenotes%3A&quote=' + curNote[0] + '"><i class="fa fa-facebook"></i> Share </i><small><i class="fa fa-share fa-sm"></i></small></a>' +
-        '</ul>' +
-        '</div>' +
-        '</div>' +
-        '</div>'
-      );
-    }
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/async/2.1.4/async.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+var NOTES;
+
+var renderNotes = function() {
+  notesList = $('#lovenotes')
+
+  for (var note in NOTES) {
+    var curNote = NOTES[note];
+    notesList.append(
+      '<div class="square">' +
+      '<div class="content">' +
+      '<div class="table">' +
+      '<div class="table-cell">' +
+      curNote[0] + '<br>' +
+      `<a onclick="shareFb('${curNote[0]}')"><i class="fa fa-facebook"></i> Share </i><small><i class="fa fa-share fa-sm"></i></small></a>` +
+      '</ul>' +
+      '</div>' +
+      '</div>' +
+      '</div>'
+    );
   }
+}
 
-  $(document).ready(function() {
-    var csv = $.get('./notes.csv', function( data ) {
-      NOTES = $.csv.toArrays(data);
-      renderNotes();
+$(document).ready(function() {
+  var csv = $.get('./notes.csv', function( data ) {
+    NOTES = $.csv.toArrays(data);
+    renderNotes();
 
-      $("#search").on('change keydown paste input', function(evt){
-        var searchText = $("#search").val().toLowerCase();
-        if (searchText.length == 0) {
-          $('.square').each(function(index, el) { $(el).show(); });
-        }
+    $("#search").on('change keydown paste input', function(evt){
+      var searchText = $("#search").val().toLowerCase();
+      if (searchText.length == 0) {
+        $('.square').each(function(index, el) { $(el).show(); });
+      }
 
-        if (evt.which == 13 || evt.keyCode == 13) {
-          async.each($('.square'), function(note, err) {
-            var text = $(note).find('.table-cell')[0];
-            if (text.innerHTML.toLowerCase().indexOf(searchText) == -1) {
-              $(note).hide();
-            } else {
-              $(note).show();
-            }
-          });
-        }
-      });
+      if (evt.which == 13 || evt.keyCode == 13) {
+        async.each($('.square'), function(note, err) {
+          var text = $(note).find('.table-cell')[0];
+          if (text.innerHTML.toLowerCase().indexOf(searchText) == -1) {
+            $(note).hide();
+          } else {
+            $(note).show();
+          }
+        });
+      }
     });
   });
+});
 
-  $(document).ready(function() {
-    $('.fb-share').click(function(e) {
-      e.preventDefault();
-      window.open($(this).attr('href'), 'fbShareWindow', 'height=450, width=550, top=' + ($(window).height() / 2 - 275) + ', left=' + ($(window).width() / 2 - 225) + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
-      return false;
-    });
-  });
-  </script>
+function shareFb(msg) {
+  console.log(msg);
+  FB.ui({
+    method: 'share',
+    display: 'popup',
+    href: 'thedp.com',
+    quote: msg,
+  }, function(response){});
+};
+
+// $(document).ready(function() {
+//   console.log("ready");
+//   $('.fb-share').on('click', function(e) {
+//     // $('.fb-share').click(function(e) {
+//     e.preventDefault();
+//     console.log("click");
+//     FB.ui({
+//       method: 'share',
+//       display: 'popup',
+//       href: 'thedp.com/valentines2017',
+//       quote: 'The love note content could go here!'
+//     }, function(response){});
+//     // e.preventDefault();
+//     // window.open($(this).attr('href'), 'fbShareWindow', 'height=450, width=550, top=' + ($(window).height() / 2 - 275) + ', left=' + ($(window).width() / 2 - 225) + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+//     // return false;
+//   });
+// });
+</script>
 </body>
 </html>
