@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Love Notes 2018 | The DP</title>
+  <meta property="og:image" content="https://s3.amazonaws.com/media.dpn/57107_lovenotesnewf.jpg" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+  <style media="screen">
+  .square {
+    float:left;
+    position: relative;
+    width: 30%;
+    padding-bottom : 30%;
+    margin:1.66%;
+    background-color:#F8B4BB;
+    overflow:hidden;
+  }
+
+  .square:nth-child(4n+1) {
+    background-color: #8E778B;
+  }
+  .square:nth-child(4n+2) {
+    background-color: #EA7F97;
+  }
+  .square:nth-child(4n+3) {
+    background-color: #CCCCE0;
+  }
+
+  .content {
+    position:absolute;
+    height:100%;
+    width:100%;
+    padding: 5%;
+
+  }
+  .table{
+    display:table;
+    width:100%;
+    height:100%;
+  }
+  .table-cell{
+    display:table-cell;
+    vertical-align:middle;
+  }
+
+  body {
+    font-size:20px;
+    font-family: 'neuzeit-grotesk',verdana, sans-serif;
+    color: #fff;
+    text-align:center;
+    background:#F1E0E2;
+  }
+
+  a {
+    color: #F1E0E2;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  small {
+    font-size: 75%;
+  }
+
+  h1, h2, h3, h4 {
+    color: #8E778B;
+  }
+  a {
+    float: right;
+    position: absolute;
+    bottom: 3px;
+    right: 7px;
+  }
+  .stylish-input-group .input-group-addon{
+    background: white !important;
+  }
+  .stylish-input-group .form-control{
+    border-right:0;
+    box-shadow:0 0 0;
+    border-color:#ccc;
+  }
+  .stylish-input-group .fa {
+    border:0;
+    background:transparent;
+  }
+  @media screen and (max-width: 720px) {
+    body {
+      padding: 15px;
+    }
+    .row {
+      margin: 0;
+    }
+    .square {
+      width: 100%;
+      font-size: 80%;
+      padding-bottom: 47%;
+      margin-bottom: 10px;
+      }      }
+      .container {
+        padding-left: 0;
+      }
+    }
+    </style>
+
+    <script src="https://use.typekit.net/psa2uuo.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/kazzkiq/balloon.css/master/balloon.css" charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </script>
+</head>
+<body>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '1042075185814231',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.12'
+    });
+  };
+
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="container">
+  <h1>Love Notes</h1>
+  <div class="container">
+    <div class="hidden-sm-down">
+      <div id='div-gpt-ad-1487027697233-1'>
+      </div>
+    </div>
+    <div class="hidden-md-up">
+      <div id='div-gpt-ad-1487027697233-2'>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-4 col-sm-push-4">
+      <div class="input-group stylish-input-group">
+        <input type="text" class="form-control" placeholder="Search" id="search">
+        <span class="input-group-addon">
+          <span id="srch" class="fa fa-search"></span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="container">
+  <div class="row" id="lovenotes">
+  </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/async/2.1.4/async.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+var NOTES;
+
+var renderNotes = function() {
+  notesList = $('#lovenotes')
+
+  for (var note in NOTES) {
+    var curNote = NOTES[note];
+    notesList.append(
+      '<div class="square">' +
+      '<div class="content">' +
+      '<div class="table">' +
+      '<div class="table-cell">' +
+      curNote[0] + '<br>' +
+      `<a onclick="shareFb('${curNote[0]}')"><i class="fa fa-facebook"></i> Share </i><small><i class="fa fa-share fa-sm"></i></small></a>` +
+      '</ul>' +
+      '</div>' +
+      '</div>' +
+      '</div>'
+    );
+  }
+}
+
+$(document).ready(function() {
+  var csv = $.get('./notes.csv', function( data ) {
+    NOTES = $.csv.toArrays(data);
+    renderNotes();
+
+    $("#search").on('change keydown paste input', function(evt){
+      var searchText = $("#search").val().toLowerCase();
+      if (searchText.length == 0) {
+        $('.square').each(function(index, el) { $(el).show(); });
+      }
+
+      if (evt.which == 13 || evt.keyCode == 13) {
+        async.each($('.square'), function(note, err) {
+          var text = $(note).find('.table-cell')[0];
+          if (text.innerHTML.toLowerCase().indexOf(searchText) == -1) {
+            $(note).hide();
+          } else {
+            $(note).show();
+          }
+        });
+      }
+    });
+  });
+});
+
+function shareFb(msg) {
+  console.log(msg);
+  FB.ui({
+    method: 'share',
+    display: 'popup',
+    href: 'thedp.com',
+    quote: msg,
+  }, function(response){});
+};
+
+// $(document).ready(function() {
+//   console.log("ready");
+//   $('.fb-share').on('click', function(e) {
+//     // $('.fb-share').click(function(e) {
+//     e.preventDefault();
+//     console.log("click");
+//     FB.ui({
+//       method: 'share',
+//       display: 'popup',
+//       href: 'thedp.com/valentines2017',
+//       quote: 'The love note content could go here!'
+//     }, function(response){});
+//     // e.preventDefault();
+//     // window.open($(this).attr('href'), 'fbShareWindow', 'height=450, width=550, top=' + ($(window).height() / 2 - 275) + ', left=' + ($(window).width() / 2 - 225) + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+//     // return false;
+//   });
+// });
+</script>
+</body>
+</html>
