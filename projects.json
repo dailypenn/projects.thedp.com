@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Super Bowl LII",
+      "author": "Web Dev: Ishaan Rao",
+      "section": "Sports",
+      "date": "February 2018",
+      "description": "Complete coverage of how the Eagles vs. Patriots at Super Bowl LII affects Penn from The Daily Pennsylvanian, 34th Street Magazine, and Under the Button.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2018/02/super-bowl/",
+      "image": "https://snworksceo.imgix.net/dpn/48b36eb9-af7f-4925-b7ef-242e6e9afb9f.sized-1000x1000.png",
+      "alt": "super bowl lii"
+    },
+    {
       "title": "The Story of 2017",
       "author": "Web Dev: Alex Graves, Andrew Fischer; Design: Julia Schorr and Camille Rapay",
       "section": "Year in Review",
@@ -10,7 +21,9 @@
       "link": "http://projects.thedp.com/2017/12/year-in-review/",
       "image": "https://snworksceo.imgix.net/dpn/2f6feaa5-2769-4617-8891-6ab35e732a02.sized-1000x1000.jpg",
       "alt": "story of 2017"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "Penn Basketball Season Preview 2017",
       "author": "Web Dev: Andrew Fischer, Alex Graves; Design: Julia Schorr, Camille Rapay, Lucy Ferry and Chris Muracca",
@@ -21,9 +34,7 @@
       "link": "http://projects.thedp.com/2017/11/basketball-preview/",
       "image": "https://snworksceo.imgix.net/dpn/2dcde16f-3ab1-4491-a1da-0e89d9d1b23e.sized-1000x1000.jpg",
       "alt": "basketball"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "Our Campus. Our Mental Health.",
       "author": "Web Dev: Andrew Fischer, Brady Africk; Design: Julia Schorr and Camille Rapay",

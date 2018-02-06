@@ -1,0 +1,49 @@
+a.article-link {
+  color: #000;
+}
+
+a:hover {
+  color: #014A53;
+  text-decoration: none;
+}
+
+hr {
+  border-width: 3px;
+  border-color: #014A53;;
+}
+
+p {
+  color: #777;
+}
+
+h1 {
+  font-size: 280%;
+  margin-top: 20px;
+  color: #014A53;
+}
+
+h2 {
+  font-size: 200%;
+  color: #014A53;
+}
+
+img.img-fluid {
+  margin-bottom: 10px;
+}
+
+img.header {
+  margin: 5px;
+}
+
+.header-link {
+  margin: auto;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  background-color: #014A53;
+}
