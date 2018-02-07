@@ -4,7 +4,7 @@
   width: 30%;
   padding-bottom : 30%;
   margin:1.66%;
-  background-color:#F8B4BB;
+  background-color:#e53737;
   overflow:hidden;
 }
 
@@ -12,10 +12,10 @@
   background-color: #eb6590;
 }
 .square:nth-child(4n+2) {
-  background-color: #e53737;
+  background-color: #604856;
 }
 .square:nth-child(4n+3) {
-  background-color: #604856;
+  background-color: #eb6590;
 }
 
 .content {
@@ -40,7 +40,7 @@ body {
   font-family: 'neuzeit-grotesk',verdana, sans-serif;
   color: #fff;
   text-align:center;
-  background:#F1E0E2;
+  background:#e0dcd6;
 }
 
 a {
@@ -49,7 +49,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #fff;
+  color: #e0dcd6;
   cursor: pointer;
 }
 
@@ -83,6 +83,7 @@ a {
   border:0;
   background:transparent;
 }
+
 @media screen and (max-width: 720px) {
   body {
     padding: 15px;
