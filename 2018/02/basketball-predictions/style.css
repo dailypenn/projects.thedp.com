@@ -1,0 +1,19 @@
+.table-style{
+  width: 75%;
+}
+
+.td-right{
+  border-right: 1px solid black;
+}
+
+.tr-top{
+  background-color: #f23412;
+}
+
+tr:hover{
+  background-color: #ddd;
+}
+
+td{
+  border-right: 1px solid black
+}

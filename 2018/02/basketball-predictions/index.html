@@ -5,68 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ivy League Tournament Predictions | The Daily Pennsylvanian</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel = "stylesheet" href="style.css">
 </head>
 
 <body>
-  <table class="table table-hover" id="mens-table">
+  <table class="table table-style" id="mens-table">
   <thead>
-    <tr>
+    <tr class="tr-top">
       <th>#</th>
       <th>School</th>
-      <th>Win</th>
+      <th class="td-right">Win</th>
+      <td>Probability</td>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th scope="row">1</th>
       <td>Brown</td>
-      <td><input type="checkbox" name="win" value="brown"><td>
+      <td class="td-right"><input type="checkbox" name="win" value="brown"></td>
+      <td id="brown-odds"></td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Columbia</td>
-      <td><input type="checkbox" name="win" value="columbia"><td>
+      <td class="td-right"><input type="checkbox" name="win" value="columbia"></td>
+      <td id="columbia-odds"></td>
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>Cornell</td>
-      <td><input type="checkbox" name="win" value="cornell"><td>
+      <td class="td-right"><input type="checkbox" name="win" value="cornell"></td>
+      <td id="cornell-odds"></td>
     </tr>
     <tr>
       <th scope="row">4</th>
       <td>Dartmouth</td>
-      <td><input type="checkbox" name="win" value="dartmouth"><td>
+      <td class="td-right"><input type="checkbox" name="win" value="dartmouth"></td>
+      <td id="dartmouth-odds"></td>
     </tr>
     <tr>
       <th scope="row">5</th>
       <td>Harvard</td>
-      <td><input type="checkbox" name="win" value="harvard"><td>
+      <td class="td-right"><input type="checkbox" name="win" value="harvard"></td>
+      <td id="harvard-odds"></td>
     </tr>
     <tr>
       <th scope="row">6</th>
       <td>Penn</td>
-      <td><input type="checkbox" name="win" value="penn"><td>
+      <td class="td-right"><input type="checkbox" name="win" value="penn"><td>
+      <td id="penn-odds"></td>
     </tr>
     <tr>
       <th scope="row">7</th>
       <td>Princeton</td>
-      <td><input type="checkbox" name="win" value="princeton"><td>
+      <td class="td-right"><input type="checkbox" name="win" value="princeton"><td>
+      <td id="princeton-odds"></td>
     </tr>
     <tr>
       <th scope="row">8</th>
       <td>Yale</td>
-      <td><input type="checkbox" name="win" value="yale"><td>
+      <td class="td-right"><input type="checkbox" name="win" value="yale"><td>
+      <td id="yale-odds"></td>
     </tr>
   </tbody>
 </table>
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="script.js"></script>
+  <!-- <script src="script.js"></script> -->
   <script>
     var mensTable  = $("#mens-table");
     $(document).ready(function () {
       $('input[name="win"]').on('change', function() {
        $('input[name="win"]').not(this).prop('checked', false);
-       alert("You selected " + this.value)
+       var school = this.value;
+       console.log(school+'-odds');
+         $('#'+this.value +'-odds').empty().append('selected');
       });
     });
   </script>
