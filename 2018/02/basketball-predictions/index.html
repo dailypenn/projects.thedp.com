@@ -10,76 +10,84 @@
 
 <body>
   <table class="table table-style" id="mens-table">
-  <thead>
-    <tr class="tr-top">
-      <th>#</th>
-      <th>School</th>
-      <th class="td-right">Win</th>
-      <td>Probability</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Brown</td>
-      <td class="td-right"><input type="checkbox" name="win" value="brown"></td>
-      <td id="brown-odds"></td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Columbia</td>
-      <td class="td-right"><input type="checkbox" name="win" value="columbia"></td>
-      <td id="columbia-odds"></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Cornell</td>
-      <td class="td-right"><input type="checkbox" name="win" value="cornell"></td>
-      <td id="cornell-odds"></td>
-    </tr>
-    <tr>
-      <th scope="row">4</th>
-      <td>Dartmouth</td>
-      <td class="td-right"><input type="checkbox" name="win" value="dartmouth"></td>
-      <td id="dartmouth-odds"></td>
-    </tr>
-    <tr>
-      <th scope="row">5</th>
-      <td>Harvard</td>
-      <td class="td-right"><input type="checkbox" name="win" value="harvard"></td>
-      <td id="harvard-odds"></td>
-    </tr>
-    <tr>
-      <th scope="row">6</th>
-      <td>Penn</td>
-      <td class="td-right"><input type="checkbox" name="win" value="penn"><td>
-      <td id="penn-odds"></td>
-    </tr>
-    <tr>
-      <th scope="row">7</th>
-      <td>Princeton</td>
-      <td class="td-right"><input type="checkbox" name="win" value="princeton"><td>
-      <td id="princeton-odds"></td>
-    </tr>
-    <tr>
-      <th scope="row">8</th>
-      <td>Yale</td>
-      <td class="td-right"><input type="checkbox" name="win" value="yale"><td>
-      <td id="yale-odds"></td>
-    </tr>
-  </tbody>
-</table>
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <!-- <script src="script.js"></script> -->
-  <script>
-    var mensTable  = $("#mens-table");
-    $(document).ready(function () {
-      $('input[name="win"]').on('change', function() {
-       $('input[name="win"]').not(this).prop('checked', false);
-       var school = this.value;
-       console.log(school+'-odds');
-         $('#'+this.value +'-odds').empty().append('selected');
-      });
-    });
-  </script>
-</body>
+    <thead>
+      <tr class="tr-top">
+        <th>#</th>
+        <th>School</th>
+        <th>Record</th>
+        <th class="td-right">Win</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td id="mens-brown-name">Brown</td>
+        <td class="td-right"><input type="checkbox" name="win" value="brown"></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td id="mens-columbia-name">Columbia</td>
+        <td class="td-right"><input type="checkbox" name="win" value="columbia"></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td id="mens-cornell-name">Cornell</td>
+        <td class="td-right"><input type="checkbox" name="win" value="cornell"></td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td id="mens-dartmouth-name">Dartmouth</td>
+        <td class="td-right"><input type="checkbox" name="win" value="dartmouth"></td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td id="mens-harvard-name">Harvard</td>
+        <td class="td-right"><input type="checkbox" name="win" value="harvard"></td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td id="mens-penn-name">Penn</td>
+        <td class="td-right"><input type="checkbox" name="win" value="penn"><td>
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td id="mens-princeton-name">Princeton</td>
+        <td class="td-right"><input type="checkbox" name="win" value="princeton"><td>
+      </tr>
+      <tr>
+        <th scope="row">8</th>
+        <td id="mens-yale-name">Yale</td>
+        <td class="td-right"><input type="checkbox" name="win" value="yale"><td>
+      </tr>
+    </tbody>
+  </table>
+      <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- <script src="script.js"></script> -->
+        <script src="basketball.js"></script>
+      <script>
+        var mensTable  = $("#mens-table");
+        $(document).ready(function () {
+          $('input[name="win"]').on('change', function() {
+            $('input[name="win"]').not(this).prop('checked', false);
+            var school = this.value;
+            console.log(school+'-odds');
+            $('#'+this.value +'-odds').empty().append('selected');
+          });
+
+          // adding records to rows
+          $("#mens-brown-name").after("<td>(" + mensRecords.brown.wins + " - " + mensRecords.brown.losses + ")</td>");
+          $("#mens-columbia-name").after("<td>(" + mensRecords.columbia.wins + " - " + mensRecords.columbia.losses + ")</td>");
+          $("#mens-cornell-name").after("<td>(" + mensRecords.cornell.wins + " - " + mensRecords.cornell.losses + ")</td>");
+          $("#mens-dartmouth-name").after("<td>(" + mensRecords.dartmouth.wins + " - " + mensRecords.dartmouth.losses + ")</td>");
+          $("#mens-harvard-name").after("<td>(" + mensRecords.harvard.wins + " - " + mensRecords.harvard.losses + ")</td>");
+          $("#mens-penn-name").after("<td>(" + mensRecords.penn.wins + " - " + mensRecords.penn.losses + ")</td>");
+          $("#mens-princeton-name").after("<td>(" + mensRecords.princeton.wins + " - " + mensRecords.princeton.losses + ")</td>");
+          $("#mens-yale-name").after("<td>(" + mensRecords.yale.wins + " - " + mensRecords.yale.losses + ")</td>");
+
+          // TODO sort table by wins
+
+        });
+
+      </script>
+  </body>
+</html>
