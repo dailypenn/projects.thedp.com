@@ -17,3 +17,7 @@ tr:hover{
 td{
   border-right: 1px solid black
 }
+
+th {
+  text-align: center;
+}
