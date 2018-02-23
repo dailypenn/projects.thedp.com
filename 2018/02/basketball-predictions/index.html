@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ivy League Basketball Predictions | The Daily Pennsylvanian</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <meta property="og:title" content="Ivy League Basketball Predictions | The Daily Pennsylvanian">
+  <meta property="og:image" content="[this should generally be a link from our CMS]">
+  <meta property="og:description" content="There are just four days left in the Ivy League basketball season. Can you predict the games' outcomes?">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://projects.thedp.com/2018/02/basketball-predictions">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ivy League Basketball Predictions | The Daily Pennsylvanian">
+  <meta name="twitter:image" content="[this should generally be a link from our CMS]">
+  <meta name="twitter:description" content="There are just four days left in the Ivy League basketball season. Can you predict the games' outcomes?">
+  <meta name="twitter:url" content="http://projects.thedp.com/2018/02/basketball-predictions">
+  <meta name="twitter:site" content="@dailypenn">
+</head>
+
+<body>
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-707447-4', 'projects.thedp.com');
+    ga('send', 'pageview');
+  </script>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <a href="http://www.thedp.com" class="header-link" target="_blank">
+      <img class="header" src="https://s3.amazonaws.com/media.dpn/56240_dpwordmark750o.png" alt="The Daily Pennsylvainian" width="250">
+    </a>
+  </nav>
+
+  <h1>Men's Basketball</h1>
+  <table class="table table-style" id="mens-table">
+    <thead>
+      <tr class="tr-top">
+        <th>#</th>
+        <th>School</th>
+        <th>Record</th>
+        <th colspan="4">Win?</th>
+      </tr>
+      <tr class="tr-top">
+        <th></th>
+        <th></th>
+        <th></th>
+        <th>February 23</th>
+        <th>February 24</th>
+        <th>March 2</th>
+        <th>March 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="m-brown">
+        <th class="num" scope="row"></th>
+        <td id="mens-brown-name">Brown</td>
+        <td id="mens-brown-score"></td>
+        <td class="td-right"><input id="mbrownfeb23" type="checkbox" value="brown"></td>
+        <td class="td-right"><input id="mbrownfeb24" type="checkbox" value="brown"></td>
+        <td class="td-right"><input id="mbrownmar02" type="checkbox" value="brown"></td>
+        <td class="td-right"><input id="mbrownmar03" type="checkbox" value="brown"></td>
+      </tr>
+      <tr id="m-columbia">
+        <th class="num" scope="row"></th>
+        <td id="mens-columbia-name">Columbia</td>
+        <td id="mens-columbia-score"></td>
+        <td class="td-right"><input id="mcolumbiafeb23" type="checkbox" value="columbia"></td>
+        <td class="td-right"><input id="mcolumbiafeb24" type="checkbox" value="columbia"></td>
+        <td class="td-right"><input id="mcolumbiamar02" type="checkbox" value="columbia"></td>
+        <td class="td-right"><input id="mcolumbiamar03" type="checkbox" value="columbia"></td>
+      </tr>
+      <tr id="m-cornell">
+        <th class="num" scope="row"></th>
+        <td id="mens-cornell-name">Cornell</td>
+        <td id="mens-cornell-score"></td>
+        <td class="td-right"><input id="mcornellfeb23" type="checkbox" value="cornell"></td>
+        <td class="td-right"><input id="mcornellfeb24" type="checkbox" value="cornell"></td>
+        <td class="td-right"><input id="mcornellmar02" type="checkbox" value="cornell"></td>
+        <td class="td-right"><input id="mcornellmar03" type="checkbox" value="cornell"></td>
+      </tr>
+      <tr id="m-dartmouth">
+        <th class="num" scope="row"></th>
+        <td id="mens-dartmouth-name">Dartmouth</td>
+        <td id="mens-dartmouth-score"></td>
+        <td class="td-right"><input id="mdartmouthfeb23" type="checkbox" value="dartmouth"></td>
+        <td class="td-right"><input id="mdartmouthfeb24" type="checkbox" value="dartmouth"></td>
+        <td class="td-right"><input id="mdartmouthmar02" type="checkbox" value="dartmouth"></td>
+        <td class="td-right"><input id="mdartmouthmar03" type="checkbox" value="dartmouth"></td>
+      </tr>
+      <tr id="m-harvard">
+        <th class="num" scope="row"></th>
+        <td id="mens-harvard-name">Harvard</td>
+        <td id="mens-harvard-score"></td>
+        <td class="td-right"><input id="mharvardfeb23" type="checkbox" value="harvard"></td>
+        <td class="td-right"><input id="mharvardfeb24" type="checkbox" value="harvard"></td>
+        <td class="td-right"><input id="mharvardmar02" type="checkbox" value="harvard"></td>
+        <td lass="td-right"><input id="mharvardmar03" type="checkbox" value="harvard"></td>
+      </tr>
+      <tr id="m-penn">
+        <th class="num" scope="row"></th>
+        <td id="mens-penn-name">Penn</td>
+        <td id="mens-penn-score"></td>
+        <td class="td-right"><input id="mpennfeb23" type="checkbox" value="penn"></td>
+        <td class="td-right"><input id="mpennfeb24" type="checkbox" value="penn"></td>
+        <td class="td-right"><input id="mpennmar02" type="checkbox" value="penn"></td>
+        <td class="td-right"><input id="mpennmar03" type="checkbox" value="penn"></td>
+      </tr>
+      <tr id="m-princeton">
+        <th class="num" scope="row"></th>
+        <td id="mens-princeton-name">Princeton</td>
+        <td id="mens-princeton-score"></td>
+        <td class="td-right"><input id="mprincetonfeb23" type="checkbox" value="princeton"></td>
+        <td class="td-right"><input id="mprincetonfeb24" type="checkbox" value="princeton"></td>
+        <td class="td-right"><input id="mprincetonmar02" type="checkbox" value="princeton"></td>
+        <td class="td-right"><input id="mprincetonmar03" type="checkbox" value="princeton"></td>
+      </tr>
+      <tr id="m-yale">
+        <th class="num" scope="row"></th>
+        <td id="mens-yale-name">Yale</td>
+        <td id="mens-yale-score"></td>
+        <td class="td-right"><input id="myalefeb23" type="checkbox" value="yale"></td>
+        <td class="td-right"><input id="myalefeb24" type="checkbox" value="yale"></td>
+        <td class="td-right"><input id="myalemar02" type="checkbox" value="yale"></td>
+        <td class="td-right"><input id="myalemar03" type="checkbox" value="yale"></td>
+      </tr>
+    </tbody>
+
+  </table>
+
+  <h1>Women's Basketball</h1>
+  <table class="table table-style" id="womens-table">
+    <thead>
+      <tr class="tr-top">
+        <th>#</th>
+        <th>School</th>
+        <th>Record</th>
+        <th colspan="4">Win?</th>
+      </tr>
+      <tr class="tr-top">
+        <th></th>
+        <th></th>
+        <th></th>
+        <th>February 23</th>
+        <th>February 24</th>
+        <th>March 2</th>
+        <th>March 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="w-brown">
+        <th class="num" scope="row"></th>
+        <td id="womens-brown-name">Brown</td>
+        <td id="womens-brown-score"></td>
+        <td class="td-right"><input id="wbrownfeb23" type="checkbox" value="brown"></td>
+        <td class="td-right"><input id="wbrownfeb24" type="checkbox" value="brown"></td>
+        <td class="td-right"><input id="wbrownmar02" type="checkbox" value="brown"></td>
+        <td class="td-right"><input id="wbrownmar03" type="checkbox" value="brown"></td>
+      </tr>
+      <tr id="w-columbia">
+        <th class="num" scope="row"></th>
+        <td id="womens-columbia-name">Columbia</td>
+        <td id="womens-columbia-score"></td>
+        <td class="td-right"><input id="wcolumbiafeb23" type="checkbox" value="columbia"></td>
+        <td class="td-right"><input id="wcolumbiafeb24" type="checkbox" value="columbia"></td>
+        <td class="td-right"><input id="wcolumbiamar02" type="checkbox" value="columbia"></td>
+        <td class="td-right"><input id="wcolumbiamar03" type="checkbox" value="columbia"></td>
+      </tr>
+      <tr id="w-cornell">
+        <th class="num" scope="row"></th>
+        <td id="womens-cornell-name">Cornell</td>
+        <td id="womens-cornell-score"></td>
+        <td class="td-right"><input id="wcornellfeb23" type="checkbox" value="cornell"></td>
+        <td class="td-right"><input id="wcornellfeb24" type="checkbox" value="cornell"></td>
+        <td class="td-right"><input id="wcornellmar02" type="checkbox" value="cornell"></td>
+        <td class="td-right"><input id="wcornellmar03" type="checkbox" value="cornell"></td>
+      </tr>
+      <tr id="w-dartmouth">
+        <th class="num" scope="row"></th>
+        <td id="womens-dartmouth-name">Dartmouth</td>
+        <td id="womens-dartmouth-score"></td>
+        <td class="td-right"><input id="wdartmouthfeb23" type="checkbox" value="dartmouth"></td>
+        <td class="td-right"><input id="wdartmouthfeb24" type="checkbox" value="dartmouth"></td>
+        <td class="td-right"><input id="wdartmouthmar02" type="checkbox" value="dartmouth"></td>
+        <td class="td-right"><input id="wdartmouthmar03" type="checkbox" value="dartmouth"></td>
+      </tr>
+      <tr id="w-harvard">
+        <th class="num" scope="row"></th>
+        <td id="womens-harvard-name">Harvard</td>
+        <td id="womens-harvard-score"></td>
+        <td class="td-right"><input id="wharvardfeb23" type="checkbox" value="harvard"></td>
+        <td class="td-right"><input id="wharvardfeb24" type="checkbox" value="harvard"></td>
+        <td class="td-right"><input id="wharvardmar02" type="checkbox" value="harvard"></td>
+        <td class="td-right"><input id="wharvardmar03" type="checkbox" value="harvard"></td>
+      </tr>
+      <tr id="w-penn">
+        <th class="num" scope="row"></th>
+        <td id="womens-penn-name">Penn</td>
+        <td id="womens-penn-score"></td>
+        <td class="td-right"><input id="wpennfeb23" type="checkbox" value="penn"></td>
+        <td class="td-right"><input id="wpennfeb24" type="checkbox" value="penn"></td>
+        <td class="td-right"><input id="wpennmar02" type="checkbox" value="penn"></td>
+        <td class="td-right"><input id="wpennmar03" type="checkbox" value="penn"></td>
+      </tr>
+      <tr id="w-princeton">
+        <th class="num" scope="row"></th>
+        <td id="womens-princeton-name">Princeton</td>
+        <td id="womens-princeton-score"></td>
+        <td class="td-right"><input id="wprincetonfeb23" type="checkbox" value="princeton"></td>
+        <td class="td-right"><input id="wprincetonfeb24" type="checkbox" value="princeton"></td>
+        <td class="td-right"><input id="wprincetonmar02" type="checkbox" value="princeton"></td>
+        <td class="td-right"><input id="wprincetonmar03" type="checkbox" value="princeton"></td>
+      </tr>
+      <tr id="w-yale">
+        <th class="num" scope="row"></th>
+        <td id="womens-yale-name">Yale</td>
+        <td id="womens-yale-score"></td>
+        <td class="td-right"><input id="wyalefeb23" type="checkbox" value="yale"></td>
+        <td class="td-right"><input id="wyalefeb24" type="checkbox" value="yale"></td>
+        <td class="td-right"><input id="wyalemar02" type="checkbox" value="yale"></td>
+        <td class="td-right"><input id="wyalemar03" type="checkbox" value="yale"></td>
+      </tr>
+    </tbody>
+
+  </table>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
