@@ -12,7 +12,7 @@ tr:hover {
 }
 
 td {
-  border-right: 1px solid #777
+  border-left: 1px solid #777
 }
 
 input {
@@ -34,14 +34,6 @@ a.header-link {
 
 .navbar {
   background-color: #011F5B;
-}
-
-.table-style {
-  width: 75%;
-}
-
-.td-right {
-  border-right: 1px solid #777;
 }
 
 .tr-top {
