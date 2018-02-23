@@ -6,16 +6,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 
-  <meta property="og:title" content="Ivy League Basketball Predictions | The Daily Pennsylvanian">
+  <meta property="og:title" content="Can you predict who will go to the Ivy League tournament? | The Daily Pennsylvanian">
   <meta property="og:image" content="[this should generally be a link from our CMS]">
-  <meta property="og:description" content="There are just four days left in the Ivy League basketball season. Can you predict the games' outcomes?">
+  <meta property="og:description" content="There are just four games left in the Ivy League basketball season. Use our interactive feature to see if you can predict the outcomes and see who will go to the tournament!">
   <meta property="og:type" content="article">
   <meta property="og:url" content="http://projects.thedp.com/2018/02/basketball-predictions">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ivy League Basketball Predictions | The Daily Pennsylvanian">
+  <meta name="twitter:title" content="Can you predict who will go to the Ivy League tournament? | The Daily Pennsylvanian">
   <meta name="twitter:image" content="[this should generally be a link from our CMS]">
-  <meta name="twitter:description" content="There are just four days left in the Ivy League basketball season. Can you predict the games' outcomes?">
+  <meta name="twitter:description" content="There are just four games left in the Ivy League basketball season. Use our interactive feature to see if you can predict the outcomes and see who will go to the tournament!">
   <meta name="twitter:url" content="http://projects.thedp.com/2018/02/basketball-predictions">
   <meta name="twitter:site" content="@dailypenn">
 </head>
@@ -38,14 +38,19 @@
   </nav>
 
   <div class="container">
-    <h1>Ivy League Basketball Predictions</h1>
-    <p>
-      With just two weekends left in the Ivy League basketball season, seeding for the Ivy Tournament is still up for grabs.
-      Each game carries importance in deciding which teams will lock up a spot.
-      Predict which team will win each game and this tool will tell you what four teams will be playing for an NCAA Tournament berth.
-    </p>
+    <h1>Ivy League Basketball Standings Scenarios</h1>
+    <div class="intro">
+      <p>
+        With just two weekends left in the Ivy League basketball season, seeding for the Ivy Tournament is still up for grabs.
+        Each game carries importance in deciding which teams will lock up a spot.
+        Predict which team will win each game and this tool will tell you what four teams will be playing for an NCAA Tournament berth.
+      </p>
+    </div>
 
-    <h2>Men's Basketball</h2>
+    <div class="select-gender">
+      <span id="mens" class="team-gender active">Men's</span><span id="womens" class="team-gender">Women's</span>
+    </div>
+
     <table class="table" id="mens-table">
       <thead>
         <tr class="tr-top">
@@ -140,7 +145,6 @@
       </tbody>
     </table>
 
-    <h2>Women's Basketball</h2>
     <table class="table" id="womens-table">
       <thead>
         <tr class="tr-top">

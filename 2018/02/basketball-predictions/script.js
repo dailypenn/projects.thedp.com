@@ -134,7 +134,25 @@ function updateBackgrounds(gender, team1, team2) {
 }
 
 $(document).ready(function () {
-	function setMenScore(){
+	// only show men's table at the beginning
+	$('#womens-table').hide();
+
+	// allow users to toggle tables
+	$('#mens').on('click', function() {
+		$('#mens').addClass('active');
+		$('#womens').removeClass('active');
+		$('#womens-table').hide();
+		$('#mens-table').show();
+	});
+
+	$('#womens').on('click', function() {
+		$('#womens').addClass('active');
+		$('#mens').removeClass('active');
+		$('#mens-table').hide();
+		$('#womens-table').show();
+	});
+
+	function setMenScore() {
 		$("#mens-brown-score").empty().append("(" + mensRecords.brown.wins + " - " + mensRecords.brown.losses + ")");
 		$("#mens-columbia-score").empty().append("(" + mensRecords.columbia.wins + " - " + mensRecords.columbia.losses + ")");
 		$("#mens-cornell-score").empty().append("(" + mensRecords.cornell.wins + " - " + mensRecords.cornell.losses + ")");
@@ -147,7 +165,7 @@ $(document).ready(function () {
 		// sort table by wins for mens
 		sortTable("M");
 	};
-	function setWomenScore(){
+	function setWomenScore() {
 		// adding records to rows for womens
 		$("#womens-brown-score").empty().append("(" + womensRecords.brown.wins + " - " + womensRecords.brown.losses + ")");
 		$("#womens-columbia-score").empty().append("(" + womensRecords.columbia.wins + " - " + womensRecords.columbia.losses + ")");
