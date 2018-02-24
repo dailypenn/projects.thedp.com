@@ -1,47 +1,113 @@
 // records
 var mensRecords = {
-	penn: { "wins": 9, "losses": 1 },
-	harvard: { "wins": 9, "losses": 1 },
-	yale: { "wins": 5, "losses": 5 },
-	brown: { "wins": 4, "losses": 6 },
-	cornell: { "wins": 4, "losses": 6 },
-	columbia: { "wins": 4, "losses": 6 },
-	princeton: { "wins": 3, "losses": 7 },
-	dartmouth: { "wins": 2, "losses": 8 }
+	penn: { wins: 9, losses: 1 },
+	harvard: { wins: 9, losses: 1 },
+	yale: { wins: 5, losses: 5 },
+	brown: { wins: 4, losses: 6 },
+	cornell: { wins: 4, losses: 6 },
+	columbia: { wins: 4, losses: 6 },
+	princeton: { wins: 3, losses: 7 },
+	dartmouth: { wins: 2, losses: 8 }
 }
 
 var womensRecords = {
-	penn: { "wins": 8, "losses": 2 },
-	harvard: { "wins": 6, "losses": 4 },
-	yale: { "wins": 6, "losses": 4 },
-	brown: { "wins": 2, "losses": 8 },
-	cornell: { "wins": 2, "losses": 8 },
-	columbia: { "wins": 1, "losses": 9 },
-	princeton: { "wins": 9, "losses": 1 },
-	dartmouth: { "wins": 6, "losses": 4 }
+	penn: { wins: 8, losses: 2 },
+	harvard: { wins: 6, losses: 4 },
+	yale: { wins: 6, losses: 4 },
+	brown: { wins: 2, losses: 8 },
+	cornell: { wins: 2, losses: 8 },
+	columbia: { wins: 1, losses: 9 },
+	princeton: { wins: 9, losses: 1 },
+	dartmouth: { wins: 6, losses: 4 }
+}
+
+// head-to-head records
+var mensHTH = {
+	harvard : 	{ penn: { wins: 1, losses: 0 }, yale: { wins: 2, losses: 0 }, columbia: { wins: 0, losses: 1 }, brown: { wins: 2, losses: 0 },
+ 								cornell: { wins: 1, losses: 0 }, princeton: { wins: 2, losses: 0 }, dartmouth: { wins: 2, losses: 0 } },
+	penn : 			{ harvard: { wins: 0, losses: 1 }, yale: { wins: 1, losses: 0 }, columbia: { wins: 2, losses: 0 }, brown: { wins: 1, losses: 0 },
+ 								cornell: { wins: 2, losses: 0 }, princeton: { wins: 2, losses: 0 }, dartmouth: { wins: 2, losses: 0 } },
+	yale : 			{ harvard: { wins: 0, losses: 2 }, penn: { wins: 0, losses: 1 }, columbia: { wins: 1, losses: 0 }, brown: { wins: 1, losses: 1 },
+ 								cornell: { wins: 2, losses: 0 }, princeton: { wins: 0, losses: 1 }, dartmouth: { wins: 2, losses: 0 } },
+	columbia : 	{ harvard: { wins: 1, losses: 0 }, penn: { wins: 0, losses: 2 }, yale: { wins: 0, losses: 1 }, brown: { wins: 1, losses: 1 },
+ 								cornell: { wins: 1, losses: 1 }, princeton: { wins: 1, losses: 1 }, dartmouth: { wins: 1, losses: 0 } },
+	brown : 		{ harvard: { wins: 0, losses: 2 }, penn: { wins: 0, losses: 1 }, yale: { wins: 1, losses: 1 }, columbia: { wins: 1, losses: 1 },
+ 								cornell: { wins: 0, losses: 1 }, princeton: { wins: 1, losses: 0 }, dartmouth: { wins: 1, losses: 1 } },
+	cornell : 	{ harvard: { wins: 0, losses: 2 }, penn: { wins: 0, losses: 2 }, yale: { wins: 0, losses: 2 }, columbia: { wins: 1, losses: 1 },
+ 								brown: { wins: 1, losses: 0 }, princeton: { wins: 1, losses: 1 }, dartmouth: { wins: 1, losses: 0 } },
+	princeton : { harvard: { wins: 0, losses: 2 }, penn: { wins: 0, losses: 2 }, yale: { wins: 1, losses: 0 }, columbia: { wins: 1, losses: 1 },
+ 								brown: { wins: 0, losses: 1 }, cornell: { wins: 1, losses: 1 }, dartmouth: { wins: 0, losses: 1 } },
+	dartmouth : { harvard: { wins: 0, losses: 2 }, penn: { wins: 0, losses: 2 }, yale: { wins: 0, losses: 2 }, columbia: { wins: 0, losses: 1 },
+ 								brown: { wins: 1, losses: 1 }, cornell: { wins: 0, losses: 1 }, princeton: { wins: 1, losses: 0 } }
+}
+
+var womensHTH = {
+	princeton : { penn: { wins: 2, losses: 0 }, harvard: { wins: 1, losses: 0 }, yale: { wins: 0, losses: 1 }, dartmouth: { wins: 2, losses: 0 },
+ 								brown: { wins: 1, losses: 0 }, columbia: { wins: 2, losses: 0 }, cornell: { wins: 2, losses: 0 } },
+	penn : 			{ princeton: { wins: 0, losses: 2 }, harvard: { wins: 1, losses: 1 }, yale: { wins: 1, losses: 0 }, dartmouth: { wins: 1, losses: 0 },
+ 								brown: { wins: 1, losses: 0 }, columbia: { wins: 2, losses: 0 }, cornell: { wins: 2, losses: 0 } },
+	harvard : 	{ princeton: { wins: 0, losses: 1 }, penn: { wins: 1, losses: 1 }, yale: { wins: 1, losses: 1 }, dartmouth: { wins: 1, losses: 1 },
+ 								brown: { wins: 2, losses: 0 }, columbia: { wins: 1, losses: 0 }, cornell: { wins: 1, losses: 0 } },
+	yale : 			{ princeton: { wins: 1, losses: 0 }, penn: { wins: 0, losses: 1 }, harvard: { wins: 1, losses: 1 }, dartmouth: { wins: 1, losses: 1 },
+ 								brown: { wins: 1, losses: 1 }, columbia: { wins: 1, losses: 0 }, cornell: { wins: 2, losses: 0 } },
+	dartmouth : { princeton: { wins: 0, losses: 2 }, penn: { wins: 0, losses: 1 }, harvard: { wins: 1, losses: 1 }, yale: { wins: 1, losses: 1 },
+ 								brown: { wins: 2, losses: 0 }, columbia: { wins: 1, losses: 0 }, cornell: { wins: 1, losses: 0 } },
+	columbia : 	{ harvard: { wins: 0, losses: 0 }, penn: { wins: 0, losses: 0 }, yale: { wins: 0, losses: 0 }, brown: { wins: 0, losses: 0 },
+ 								cornell: { wins: 0, losses: 0 }, princeton: { wins: 0, losses: 0 }, dartmouth: { wins: 0, losses: 0 } },
+	brown : 		{ harvard: { wins: 0, losses: 0 }, penn: { wins: 0, losses: 0 }, yale: { wins: 0, losses: 0 }, columbia: { wins: 0, losses: 0 },
+ 								cornell: { wins: 0, losses: 0 }, princeton: { wins: 0, losses: 0 }, dartmouth: { wins: 0, losses: 0 } },
+	cornell : 	{ harvard: { wins: 0, losses: 0 }, penn: { wins: 0, losses: 0 }, yale: { wins: 0, losses: 0 }, columbia: { wins: 0, losses: 0 },
+ 								brown: { wins: 0, losses: 0 }, princeton: { wins: 0, losses: 0 }, dartmouth: { wins: 0, losses: 0 } }
 }
 
 // schedules
 var mensSchedule = {
-	penn: { "feb23": "dartmouth", "feb24": "harvard", "mar02": "yale", "mar03": "brown" },
-	princeton: { "feb23": "harvard", "feb24": "dartmouth", "mar02": "brown", "mar03": "yale" },
-	yale: { "feb23": "cornell", "feb24": "columbia", "mar02": "penn", "mar03": "princeton" },
-	brown: { "feb23": "columbia", "feb24": "cornell", "mar02": "princeton", "mar03": "penn" },
-	columbia: { "feb23": "brown", "feb24": "yale", "mar02": "dartmouth", "mar03": "harvard" },
-	cornell: { "feb23": "yale", "feb24": "brown", "mar02": "harvard", "mar03": "dartmouth" },
-	harvard: { "feb23": "princeton", "feb24": "penn", "mar02": "cornell", "mar03": "columbia" },
-	dartmouth: { "feb23": "penn", "feb24": "princeton", "mar02": "columbia", "mar03": "cornell" }
+	penn: { feb23: "dartmouth", feb24: "harvard", mar02: "yale", mar03: "brown" },
+	princeton: { feb23: "harvard", feb24: "dartmouth", mar02: "brown", mar03: "yale" },
+	yale: { feb23: "cornell", feb24: "columbia", mar02: "penn", mar03: "princeton" },
+	brown: { feb23: "columbia", feb24: "cornell", mar02: "princeton", mar03: "penn" },
+	columbia: { feb23: "brown", feb24: "yale", mar02: "dartmouth", mar03: "harvard" },
+	cornell: { feb23: "yale", feb24: "brown", mar02: "harvard", mar03: "dartmouth" },
+	harvard: { feb23: "princeton", feb24: "penn", mar02: "cornell", mar03: "columbia" },
+	dartmouth: { feb23: "penn", feb24: "princeton", mar02: "columbia", mar03: "cornell" }
 }
 
 var womensSchedule = {
-	penn: { "feb23": "harvard", "feb24": "dartmouth", "mar02": "yale", "mar03": "brown" },
-	princeton: { "feb23": "dartmouth", "feb24": "harvard", "mar02": "brown", "mar03": "yale" },
-	yale: { "feb23": "cornell", "feb24": "columbia", "mar02": "penn", "mar03": "princeton" },
-	brown: { "feb23": "columbia", "feb24": "cornell", "mar02": "princeton", "mar03": "penn" },
-	columbia: { "feb23": "brown", "feb24": "yale", "mar02": "dartmouth", "mar03": "harvard" },
-	cornell: { "feb23": "yale", "feb24": "brown", "mar02": "harvard", "mar03": "dartmouth" },
-	harvard: { "feb23": "penn", "feb24": "princeton", "mar02": "cornell", "mar03": "columbia" },
-	dartmouth: { "feb23": "princeton", "feb24": "penn", "mar02": "columbia", "mar03": "cornell" }
+	penn: { feb23: "harvard", feb24: "dartmouth", mar02: "yale", mar03: "brown" },
+	princeton: { feb23: "dartmouth", feb24: "harvard", mar02: "brown", mar03: "yale" },
+	yale: { feb23: "cornell", feb24: "columbia", mar02: "penn", mar03: "princeton" },
+	brown: { feb23: "columbia", feb24: "cornell", mar02: "princeton", mar03: "penn" },
+	columbia: { feb23: "brown", feb24: "yale", mar02: "dartmouth", mar03: "harvard" },
+	cornell: { feb23: "yale", feb24: "brown", mar02: "harvard", mar03: "dartmouth" },
+	harvard: { feb23: "penn", feb24: "princeton", mar02: "cornell", mar03: "columbia" },
+	dartmouth: { feb23: "princeton", feb24: "penn", mar02: "columbia", mar03: "cornell" }
+}
+
+function sortedTeams(gender) {
+	var record = gender === 'm' ? mensRecords : womensRecords;
+	record.sort(function(a, b) {
+		var W1 = record[a.id].wins;
+		var W2 = record[b.id].wins;
+		var L1 = record[a.id].losses;
+		var L2 = record[b.id].losses;
+		return W1 > W2 ? -1 : W1 < W2 ? 1 : L1 < L2 ? -1 : L1 > L2 ? 1 : 0;
+	});
+	return record;
+}
+
+// first tiebreaker scenario
+function headToHead(team1, team2, gender) {
+	var record = gender === 'm' ? mensHTH : womensHTH;
+	var team1Wins = record[team1][team2].wins;
+	var team2Wins = record[team2][team1].wins;
+	return team1Wins > team2Wins ? -1 :
+				 team1Wins < team2Wins ?  1 : 0;
+				 // compareToTopSeed(team1, team2, gender);
+}
+
+function compareToTopSeed(team1, team2, gender) {
+	var record = gender === 'm' ? mensHTH : womensHTH;
+	var standings = sortedTeams(gender);
 }
 
 // takes in "M" or "W" to determine which table to use
@@ -71,7 +137,7 @@ function sortTable(option) {
 			} else if (L1 > L2) {
 				return 1;
 			} else {
-				return 0;
+				return headToHead(team1, team2, option);
 			}
 		}
 	}).appendTo(tbody);
