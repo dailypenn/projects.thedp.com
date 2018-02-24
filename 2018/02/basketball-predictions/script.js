@@ -50,7 +50,7 @@ function sortTable(option) {
 	var record = option === 'm' ? mensRecords : womensRecords;
 	var tbody = $(table).find('tbody');
 
-	//sorts by number of wins
+	// sorts by number of wins
 	tbody.find('tr').sort(function(a, b) {
 		var team1 = $(a).children('td').eq(0).text().toLowerCase();
 		var team2 = $(b).children('td').eq(0).text().toLowerCase();
@@ -62,7 +62,7 @@ function sortTable(option) {
 		// compare wins
 		if (W1 > W2) {
 			return -1;
-		} else if (W2 < W1) {
+		} else if (W1 < W2) {
 			return 1;
 		} else {
 			// sort by losses if wins are tied
@@ -71,7 +71,7 @@ function sortTable(option) {
 			} else if (L1 > L2) {
 				return 1;
 			} else {
-				return 1;
+				return 0;
 			}
 		}
 	}).appendTo(tbody);
