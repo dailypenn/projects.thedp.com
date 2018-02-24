@@ -114,6 +114,16 @@ function updateRecord(team1, team2, gender, num){
 }
 
 $(document).ready(function () {
+	// update all of the new records programmatically to preserve the original records
+	womensRecords.harvard.wins += 1;
+	womensRecords.penn.losses += 1;
+	womensRecords.yale.wins += 1;
+	womensRecords.cornell.losses += 1;
+	womensRecords.columbia.wins += 1;
+	womensRecords.brown.losses += 1;
+	womensRecords.princeton.wins += 1;
+	womensRecords.dartmouth.losses += 1;
+
 	// only show men's table at the beginning
 	$('#womens-table').hide();
 
