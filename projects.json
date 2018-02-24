@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Can you predict who will go to the Ivy League tournament?",
+      "author": "Web Dev: Daniel Salib, Jamie Tomlinson, Alex Graves",
+      "section": "Sports",
+      "date": "February 2018",
+      "description": "With just two weekends left in the Ivy League basketball season, seeding for the Ivy Tournament is still up for grabs. Each game carries importance in deciding which teams will lock up a spot. Predict which team will win each game and this tool will tell you what four teams will be playing for an NCAA Tournament berth.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2018/02/basketball-predictions/",
+      "image": "https://snworksceo.imgix.net/dpn/e16545d9-3c0b-41ed-b8e9-69bedbf609cd.sized-1000x1000.png",
+      "alt": "basketball predictions"
+    },
+    {
       "title": "Super Bowl LII",
       "author": "Web Dev: Ishaan Rao",
       "section": "Sports",
