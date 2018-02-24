@@ -52,12 +52,12 @@ var womensHTH = {
  								brown: { wins: 1, losses: 1 }, columbia: { wins: 1, losses: 0 }, cornell: { wins: 2, losses: 0 } },
 	dartmouth : { princeton: { wins: 0, losses: 2 }, penn: { wins: 0, losses: 1 }, harvard: { wins: 1, losses: 1 }, yale: { wins: 1, losses: 1 },
  								brown: { wins: 2, losses: 0 }, columbia: { wins: 1, losses: 0 }, cornell: { wins: 1, losses: 0 } },
-	columbia : 	{ harvard: { wins: 0, losses: 0 }, penn: { wins: 0, losses: 0 }, yale: { wins: 0, losses: 0 }, brown: { wins: 0, losses: 0 },
- 								cornell: { wins: 0, losses: 0 }, princeton: { wins: 0, losses: 0 }, dartmouth: { wins: 0, losses: 0 } },
-	brown : 		{ harvard: { wins: 0, losses: 0 }, penn: { wins: 0, losses: 0 }, yale: { wins: 0, losses: 0 }, columbia: { wins: 0, losses: 0 },
- 								cornell: { wins: 0, losses: 0 }, princeton: { wins: 0, losses: 0 }, dartmouth: { wins: 0, losses: 0 } },
-	cornell : 	{ harvard: { wins: 0, losses: 0 }, penn: { wins: 0, losses: 0 }, yale: { wins: 0, losses: 0 }, columbia: { wins: 0, losses: 0 },
- 								brown: { wins: 0, losses: 0 }, princeton: { wins: 0, losses: 0 }, dartmouth: { wins: 0, losses: 0 } }
+	columbia : 	{ harvard: { wins: 0, losses: 1 }, penn: { wins: 0, losses: 2 }, yale: { wins: 0, losses: 1 }, brown: { wins: 1, losses: 1 },
+ 								cornell: { wins: 1, losses: 1 }, princeton: { wins: 0, losses: 2 }, dartmouth: { wins: 0, losses: 1 } },
+	brown : 		{ harvard: { wins: 0, losses: 2 }, penn: { wins: 0, losses: 1 }, yale: { wins: 1, losses: 1 }, columbia: { wins: 1, losses: 1 },
+ 								cornell: { wins: 0, losses: 1 }, princeton: { wins: 0, losses: 1 }, dartmouth: { wins: 0, losses: 2 } },
+	cornell : 	{ harvard: { wins: 0, losses: 1 }, penn: { wins: 0, losses: 2 }, yale: { wins: 0, losses: 2 }, columbia: { wins: 1, losses: 1 },
+ 								brown: { wins: 1, losses: 0 }, princeton: { wins: 0, losses: 2 }, dartmouth: { wins: 0, losses: 1 } }
 }
 
 // schedules
@@ -85,14 +85,14 @@ var womensSchedule = {
 
 function sortedTeams(gender) {
 	var record = gender === 'm' ? mensRecords : womensRecords;
-	record.sort(function(a, b) {
-		var W1 = record[a.id].wins;
-		var W2 = record[b.id].wins;
-		var L1 = record[a.id].losses;
-		var L2 = record[b.id].losses;
+	var standings = Object.keys(record).sort(function(a, b) {
+		var W1 = record[a].wins;
+		var W2 = record[b].wins;
+		var L1 = record[a].losses;
+		var L2 = record[b].losses;
 		return W1 > W2 ? -1 : W1 < W2 ? 1 : L1 < L2 ? -1 : L1 > L2 ? 1 : 0;
 	});
-	return record;
+	return standings;
 }
 
 // first tiebreaker scenario
@@ -101,13 +101,29 @@ function headToHead(team1, team2, gender) {
 	var team1Wins = record[team1][team2].wins;
 	var team2Wins = record[team2][team1].wins;
 	return team1Wins > team2Wins ? -1 :
-				 team1Wins < team2Wins ?  1 : 0;
-				 // compareToTopSeed(team1, team2, gender);
+				 team1Wins < team2Wins ?  1 : compareToTopSeed(team1, team2, gender);
 }
 
 function compareToTopSeed(team1, team2, gender) {
 	var record = gender === 'm' ? mensHTH : womensHTH;
 	var standings = sortedTeams(gender);
+	for (var i in standings) {
+		var team = standings[i];
+		// console.log(team, team1, team2, gender);
+		if (team === team1 || team === team2) continue;
+		var team1Wins = record[team1][team].wins;
+		var team2Wins = record[team2][team].wins;
+
+		// check if one team has done better against others
+		if (team1Wins > team2Wins) {
+			return -1;
+		} else if (team1Wins < team2Wins) {
+			return 1;
+		}
+	}
+
+	// if we compare all teams and they're still the same, go to the third tiebreaker
+	return 0;
 }
 
 // takes in "M" or "W" to determine which table to use
