@@ -26,10 +26,28 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+hr.footer-hr {
+  width: 90%;
+  margin: 20px auto;
+}
+
 h1, h2 {
   font-weight: 300;
   margin-top: 20px;
   text-align: center;
+}
+
+table.table {
+  margin-bottom: 40px;
 }
 
 th {
@@ -39,10 +57,6 @@ th {
 
 th.num {
   color: #000;
-}
-
-tr:hover {
-  background-color: #ddd;
 }
 
 td {
@@ -60,6 +74,15 @@ p.versus {
 
 img.header {
   margin: 5px;
+}
+
+a {
+  color: #AA1E22;
+}
+
+a:hover, a:focus {
+  color: #777;
+  text-decoration: none;
 }
 
 a.header-link {
@@ -80,27 +103,30 @@ a.header-link {
   background-color: #AA1E22;
 }
 
-.tr-top:hover {
-  background-color: #AA1E22;
-}
-
 .select-gender {
   text-align: center;
   margin-bottom: 10px;
 }
 
 .team-gender {
-  padding: 5px;
-  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #777;
 }
 
 .team-gender.active {
-  border: 1px solid #011F5B;
+  background-color: #011F5B;
+  border-radius: 3px;
+  color: #FFF;
 }
 
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 2.1rem;
+  }
+
+  hr.footer-hr {
+    width: auto;
   }
 
   .intro {

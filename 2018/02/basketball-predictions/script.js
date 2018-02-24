@@ -46,49 +46,44 @@ var womensSchedule = {
 
 // takes in "M" or "W" to determine which table to use
 function sortTable(option) {
-	var table;
-	var rows;
-	var record;
-	if (option === "M") {
-		table = "#mens-table";
-		rows = $('#mens-table tbody tr').get();
-		record = mensRecords;
-	} else if (option === "W") {
-		table = "#womens-table";
-		rows = $('#womens-table tbody tr').get();
-		record = womensRecords;
-	}
+	var table = option === 'm' ? '#mens-table' : '#womens-table';
+	var record = option === 'm' ? mensRecords : womensRecords;
+	var tbody = $(table).find('tbody');
 
 	//sorts by number of wins
-	rows.sort(function(a, b) {
+	tbody.find('tr').sort(function(a, b) {
 		var team1 = $(a).children('td').eq(0).text().toLowerCase();
 		var team2 = $(b).children('td').eq(0).text().toLowerCase();
-
 		var W1 = record[team1].wins;
 		var W2 = record[team2].wins;
 		var L1 = record[team1].losses;
 		var L2 = record[team2].losses;
-		//compare wins
-		if (W1 < W2) {
-			return 1;
-		} else if (W2 > W1) {
+
+		// compare wins
+		if (W1 > W2) {
 			return -1;
+		} else if (W2 < W1) {
+			return 1;
 		} else {
 			// sort by losses if wins are tied
-			if (L1 > L2){
-				return 1;
-			} else if(L1 < L2) {
+			if (L1 < L2){
 				return -1;
+			} else if (L1 > L2) {
+				return 1;
 			} else {
-				return 0
+				return 1;
 			}
 		}
-	});
+	}).appendTo(tbody);
 
-	var currIndex = 0;
-	$.each(rows, function(index, row) {
+	// update standings number
+	$.each(tbody.find('tr'), function(index, row) {
 		row.cells[0].textContent = index + 1;
-		$(table).children('tbody').append(row);
+		if (index < 4) {
+			row.style.backgroundColor = '#DDD';
+		} else {
+			row.style.backgroundColor = '#FFF';
+		}
 	});
 }
 
@@ -116,21 +111,6 @@ function updateRecord(team1, team2, gender, num){
 	var record = gender == 'm' ? mensRecords : womensRecords;
 	record[team1].wins += num;
 	record[team2].losses += num;
-}
-
-function updateBackgrounds(gender, team1, team2) {
-	// clear all background colors
-	var table = gender == 'm' ? '#mens-table' : '#womens-table';
-	var rows = $(table + ' tbody tr').get();
-	$.each(rows, function(index, row) {
-		row.style.backgroundColor = '#FFF';
-	});
-
-	// set these team's background colors to indicate that their scores updated
-	var teamRow = $('#' + gender + '-' + team1);
-	var oppTeamRow = $('#' + gender + '-' + team2);
-	teamRow.get(0).style.backgroundColor = '#EEE';
-	oppTeamRow.get(0).style.backgroundColor = '#EEE';
 }
 
 $(document).ready(function () {
@@ -163,7 +143,7 @@ $(document).ready(function () {
 		$("#mens-yale-score").empty().append("(" + mensRecords.yale.wins + " - " + mensRecords.yale.losses + ")");
 
 		// sort table by wins for mens
-		sortTable("M");
+		sortTable('m');
 	};
 	function setWomenScore() {
 		// adding records to rows for womens
@@ -177,7 +157,7 @@ $(document).ready(function () {
 		$("#womens-yale-score").empty().append("(" + womensRecords.yale.wins + " - " + womensRecords.yale.losses + ")");
 
 		// sort table by wins for womens
-		sortTable("W");
+		sortTable('w');
 	};
 
 	setMenScore();
@@ -198,7 +178,6 @@ $(document).ready(function () {
 			updateRecord(oppTeam, team, gender, -1);
 		}
 		updateRecord(team, oppTeam, gender, this.checked ? 1 : -1);
-		updateBackgrounds(gender, team, oppTeam);
 
 		// set scores
 		if (gender == 'm') {
