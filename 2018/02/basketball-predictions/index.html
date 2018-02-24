@@ -46,8 +46,8 @@
         Predict which team will win each game and this tool will tell you what four teams will be playing for an NCAA Tournament berth.
       </p>
       <p>
-        Teams with a gray background will go to the tournament, pending tiebreaker scenarios.
-        See <a href="#tiebreakers">below</a> for what happens when there's a tie.
+        Teams with a gray background will go to the tournament.
+        This tool takes into account all possible tiebreaker scenarios, and you can read <a href="#tiebreakers">below</a> what happens when there's a tie.
       </p>
     </div>
 
@@ -250,17 +250,15 @@
       <p>This is how ties are resolved, <a href="http://www.ivymadness.com/information/Tiebreakers" target="_blank">according to Ivy Madness</a>.</p>
       <p>If there's a two-way tie, the following steps are taken to resolve the tie:</p>
       <ol>
-        <li>Head-to-head competition. The higher seed will go to the team that has won the most League contests played against the other team involved in the tie.</li>
-        <li>If a tie still exists, the tie will be broken by comparing each team's record against the highest seed outside of the tie and continuing through the full league standings (if there is a group of tied teams, use each team's record against the group rather than the individual teams) if necessary.</li>
-        <li>If a tie still exists, an average of the most recent ratings indices identified in advance by the coaches (Men: Sagarin, Ken Pom, BPI and NCAA RPI; Women: Sagarin/RPIratings.com and NCAA RPI) will be utilized to determine the higher seed.</li>
-        <li>If a tie still persists, a draw will be conducted by the Executive Director.</li>
+        <li>Head-to-head competition, in which the higher seed goes to the team that has won the most games against the other team in the tie.</li>
+        <li>If a tie still exists, it will be broken by comparing each team's record against the highest seed outside of the tie and continuing through the full league standings if needed. If there's a group of tied teams, the combined records are used.</li>
+        <li>Next, an average of the most recent ratings indices (Sagarin, Ken Pom, BPI, and NCAA RPI for the men; Sagarin/RPIratings.com and NCAA RPI for the women) will be used to determine the higher seed.</li>
+        <li>If a tie still persists, a draw will be conducted by the Executive Director. (Our tool simulates a coin flip for this case.)</li>
       </ol>
-      <p>If there's a multiple-team tie (more than two teams), the following steps are taken:</p>
+      <p>If there's a tie between more than two teams, the following steps are taken:</p>
       <ol>
-        <li>Records between the tied teams. The higher seed will go to the team that has won the most League contests against the other teams tied at that spot.</li>
-        <li>If a tie still exists, the tie will be broken by comparing each team's record against the highest seed outside of the tie and continuing through the full league standings (if there is a group of tied teams, use each team's record against the group rather than the individual teams), if necessary.</li>
-        <li>If a tie still exists, an average of the most recent ratings indices identified in advance by the coaches (Men: Sagarin, Ken Pom, BPI and NCAA RPI; Women: Sagarin/RPIratings.com and NCAA RPI) will be utilized to determine the higher seed.</li>
-        <li>If a tie still persists, a draw will be conducted by the Executive Director.</li>
+        <li>Records between the tied teams, where the higher seed goes to the team that has won the most games against the other teams tied at that spot.</li>
+        <li>Follow the same steps as for a two-team tie.</li>
       </ol>
     </div>
   </div>
