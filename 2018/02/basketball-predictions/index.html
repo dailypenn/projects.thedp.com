@@ -8,19 +8,18 @@
   <link rel="stylesheet" href="style.css">
 
   <meta property="og:title" content="Can you predict who will go to the Ivy League tournament?">
-  <meta property="og:image" content="https://snworksceo.imgix.net/dpn/e16545d9-3c0b-41ed-b8e9-69bedbf609cd.sized-1000x1000.png">
+  <meta property="og:image" content="https://snworksceo.imgix.net/dpn/f4e671b4-ab4f-45d0-969d-d4affe571049.sized-1000x1000.png">
   <meta property="og:description" content="Use this interactive feature to predict the outcomes of the remaining Ivy League basketball games and see who will go to the tournament!">
   <meta property="og:type" content="article">
   <meta property="og:url" content="http://projects.thedp.com/2018/02/basketball-predictions">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Can you predict who will go to the Ivy League tournament?">
-  <meta name="twitter:image" content="https://snworksceo.imgix.net/dpn/e16545d9-3c0b-41ed-b8e9-69bedbf609cd.sized-1000x1000.png">
+  <meta name="twitter:image" content="https://snworksceo.imgix.net/dpn/f4e671b4-ab4f-45d0-969d-d4affe571049.sized-1000x1000.png">
   <meta name="twitter:description" content="Use this interactive feature to predict the outcomes of the remaining Ivy League basketball games and see who will go to the tournament!">
   <meta name="twitter:url" content="http://projects.thedp.com/2018/02/basketball-predictions">
   <meta name="twitter:site" content="@dailypenn">
 </head>
-
 <body>
   <!-- Google Analytics -->
   <script>
@@ -79,7 +78,7 @@
           <th class="num" scope="row"></th>
           <td id="mens-brown-name">Brown</td>
           <td id="mens-brown-score"></td>
-          <td><input id="mbrownfeb23" type="checkbox" value="brown"></td>
+          <td><input id="mbrownfeb23" type="checkbox" value="brown" disabled></td>
           <td><input id="mbrownfeb24" type="checkbox" value="brown"></td>
           <td><input id="mbrownmar02" type="checkbox" value="brown"></td>
           <td><input id="mbrownmar03" type="checkbox" value="brown"></td>
@@ -88,7 +87,7 @@
           <th class="num" scope="row"></th>
           <td id="mens-columbia-name">Columbia</td>
           <td id="mens-columbia-score"></td>
-          <td><input id="mcolumbiafeb23" type="checkbox" value="columbia"></td>
+          <td><input id="mcolumbiafeb23" type="checkbox" value="columbia" checked disabled></td>
           <td><input id="mcolumbiafeb24" type="checkbox" value="columbia"></td>
           <td><input id="mcolumbiamar02" type="checkbox" value="columbia"></td>
           <td><input id="mcolumbiamar03" type="checkbox" value="columbia"></td>
@@ -97,7 +96,7 @@
           <th class="num" scope="row"></th>
           <td id="mens-cornell-name">Cornell</td>
           <td id="mens-cornell-score"></td>
-          <td><input id="mcornellfeb23" type="checkbox" value="cornell"></td>
+          <td><input id="mcornellfeb23" type="checkbox" value="cornell" disabled></td>
           <td><input id="mcornellfeb24" type="checkbox" value="cornell"></td>
           <td><input id="mcornellmar02" type="checkbox" value="cornell"></td>
           <td><input id="mcornellmar03" type="checkbox" value="cornell"></td>
@@ -106,7 +105,7 @@
           <th class="num" scope="row"></th>
           <td id="mens-dartmouth-name">Dartmouth</td>
           <td id="mens-dartmouth-score"></td>
-          <td><input id="mdartmouthfeb23" type="checkbox" value="dartmouth"></td>
+          <td><input id="mdartmouthfeb23" type="checkbox" value="dartmouth" disabled></td>
           <td><input id="mdartmouthfeb24" type="checkbox" value="dartmouth"></td>
           <td><input id="mdartmouthmar02" type="checkbox" value="dartmouth"></td>
           <td><input id="mdartmouthmar03" type="checkbox" value="dartmouth"></td>
@@ -115,16 +114,16 @@
           <th class="num" scope="row"></th>
           <td id="mens-harvard-name">Harvard</td>
           <td id="mens-harvard-score"></td>
-          <td><input id="mharvardfeb23" type="checkbox" value="harvard"></td>
+          <td><input id="mharvardfeb23" type="checkbox" value="harvard" checked disabled></td>
           <td><input id="mharvardfeb24" type="checkbox" value="harvard"></td>
           <td><input id="mharvardmar02" type="checkbox" value="harvard"></td>
-          <td lass="td-right"><input id="mharvardmar03" type="checkbox" value="harvard"></td>
+          <td><input id="mharvardmar03" type="checkbox" value="harvard"></td>
         </tr>
         <tr id="m-penn">
           <th class="num" scope="row"></th>
           <td id="mens-penn-name">Penn</td>
           <td id="mens-penn-score"></td>
-          <td><input id="mpennfeb23" type="checkbox" value="penn"></td>
+          <td><input id="mpennfeb23" type="checkbox" value="penn" checked disabled></td>
           <td><input id="mpennfeb24" type="checkbox" value="penn"></td>
           <td><input id="mpennmar02" type="checkbox" value="penn"></td>
           <td><input id="mpennmar03" type="checkbox" value="penn"></td>
@@ -133,7 +132,7 @@
           <th class="num" scope="row"></th>
           <td id="mens-princeton-name">Princeton</td>
           <td id="mens-princeton-score"></td>
-          <td><input id="mprincetonfeb23" type="checkbox" value="princeton"></td>
+          <td><input id="mprincetonfeb23" type="checkbox" value="princeton" disabled></td>
           <td><input id="mprincetonfeb24" type="checkbox" value="princeton"></td>
           <td><input id="mprincetonmar02" type="checkbox" value="princeton"></td>
           <td><input id="mprincetonmar03" type="checkbox" value="princeton"></td>
@@ -142,7 +141,7 @@
           <th class="num" scope="row"></th>
           <td id="mens-yale-name">Yale</td>
           <td id="mens-yale-score"></td>
-          <td><input id="myalefeb23" type="checkbox" value="yale"></td>
+          <td><input id="myalefeb23" type="checkbox" value="yale" checked disabled></td>
           <td><input id="myalefeb24" type="checkbox" value="yale"></td>
           <td><input id="myalemar02" type="checkbox" value="yale"></td>
           <td><input id="myalemar03" type="checkbox" value="yale"></td>

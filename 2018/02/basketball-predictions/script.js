@@ -113,8 +113,8 @@ function updateRecord(team1, team2, gender, num){
 	record[team2].losses += num;
 }
 
-$(document).ready(function () {
-	// update all of the new records programmatically to preserve the original records
+function february23Games() {
+	// womens
 	womensRecords.harvard.wins += 1;
 	womensRecords.penn.losses += 1;
 	womensRecords.yale.wins += 1;
@@ -123,6 +123,21 @@ $(document).ready(function () {
 	womensRecords.brown.losses += 1;
 	womensRecords.princeton.wins += 1;
 	womensRecords.dartmouth.losses += 1;
+
+	// mens
+	mensRecords.harvard.wins += 1;
+	mensRecords.princeton.losses += 1;
+	mensRecords.yale.wins += 1;
+	mensRecords.cornell.losses += 1;
+	mensRecords.columbia.wins += 1;
+	mensRecords.brown.losses += 1;
+	mensRecords.penn.wins += 1;
+	mensRecords.dartmouth.losses += 1;
+}
+
+$(document).ready(function () {
+	// update all of the new records programmatically to preserve the original records
+	february23Games();
 
 	// only show men's table at the beginning
 	$('#womens-table').hide();
