@@ -275,10 +275,25 @@ function february24Games() {
 	updateRecord('princeton', 'dartmouth', 'm', 1);
 }
 
+function march2Games() {
+	// womens
+	updateRecord('penn', 'yale', 'w', 1);
+	updateRecord('princeton', 'brown', 'w', 1);
+	// updateRecord('harvard', 'cornell', 'w', 1);
+	// updateRecord('columbia', 'dartmouth', 'w', 1);
+
+	// mens
+	updateRecord('yale', 'penn', 'm', 1);
+	updateRecord('dartmouth', 'columbia', 'm', 1);
+	updateRecord('harvard', 'cornell', 'm', 1);
+	updateRecord('princeton', 'brown', 'm', 1);
+}
+
 $(document).ready(function () {
 	// update all of the new records programmatically to preserve the original records
 	february23Games();
 	february24Games();
+	march2Games();
 
 	// only show men's table at the beginning
 	$('#womens-table').hide();
