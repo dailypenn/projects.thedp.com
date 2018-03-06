@@ -293,8 +293,8 @@ function march3Games() {
 	// womens
 	updateRecord('penn', 'brown', 'w', 1);
 	updateRecord('princeton', 'yale', 'w', 1);
-	// updateRecord('harvard', 'columbia', 'w', 1);
-	// updateRecord('dartmouth', 'cornell', 'w', 1);
+	updateRecord('harvard', 'columbia', 'w', 1);
+	updateRecord('cornell', 'dartmouth', 'w', 1);
 
 	// mens
 	updateRecord('penn', 'brown', 'm', 1);
