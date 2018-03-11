@@ -11,14 +11,14 @@ h1 {
   font-size: 60px;
 }
 h1, h2, h3, h4 {
-  font-family: "gobold", sans-serif;
+  font-family: 'Archivo Narrow', sans-serif;
   font-weight: 600;
-  color: #58595B;
+  color: #151C30;
 }
 td, th {
     padding: 4px 15px;
     text-align: left;
-    border-bottom: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e1e4ed;
 }
 .bracket {
   height: 1024px !important;
@@ -32,7 +32,7 @@ td, th {
 }
 
 div.jQBracket {
-  font-family: "arial", sans-serif;
+  font-family: 'Archivo Narrow', sans-serif;
   font-size: 14px;
   position: relative; }
   div.jQBracket .tools {

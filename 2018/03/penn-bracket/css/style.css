@@ -1,4 +1,43 @@
-/*BRACKETR STYLING*/
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo Narrow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Archivo Narrow Regular'), local('ArchivoNarrow-Regular'), url(https://fonts.gstatic.com/s/archivonarrow/v8/tss0ApVBdCYD5Q7hcxTE1ArZ0bb-iXxw2d8oBxk.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo Narrow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Archivo Narrow Regular'), local('ArchivoNarrow-Regular'), url(https://fonts.gstatic.com/s/archivonarrow/v8/tss0ApVBdCYD5Q7hcxTE1ArZ0bbwiXxw2d8o.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo Narrow';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Archivo Narrow SemiBold'), local('ArchivoNarrow-SemiBold'), url(https://fonts.gstatic.com/s/archivonarrow/v8/tss3ApVBdCYD5Q7hcxTE1ArZ0b4vrWlT-9ICPRBv3BM.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo Narrow';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Archivo Narrow SemiBold'), local('ArchivoNarrow-SemiBold'), url(https://fonts.gstatic.com/s/archivonarrow/v8/tss3ApVBdCYD5Q7hcxTE1ArZ0b4vrWld-9ICPRBv.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  font-family: 'Archivo Narrow', sans-serif;
+  margin-top: 70px;
+  background-color: #e1e4ed;
+}
+
+/*BRACKET STYLING*/
 
 div.jQBracket .round {
   width: 150px;
@@ -10,36 +49,36 @@ div.jQBracket .team {
 }
 
 div.jQBracket .team {
-  color: #58595B !important;
+  color: #151C30 !important;
 }
 
 div.score {
   width: 35px !important;
-  color: #58595B !important;
+  color: #FFF !important;
 }
 
 .team.win .label {
-  background-color: #FAA320;
+  background-color: #BC9296;
 }
 
 .team.na .label, .np .team .label {
-  background-color: #FFD6A1;
+  background-color: #DAC4C3;
 }
 
 .team.win .score {
-  background-color: #248DC2;
+  background-color: #151C30;
 }
 
 .team .score {
-  background-color: #A7DFF2
+  background-color: #525D7E
 }
 
 div.jQBracket .connector, div.jQBracket .connector div.connector, div.jQBracket .np .connector, div.jQBracket .np .connector div.connector {
-  border-color: #A7DFF2;
+  border-color: #B45826;
 }
 
 div.jQBracket .team.highlight:not(.na) .label {
-  background-color: #58595B !important;
+  background-color: #151C30 !important;
   color: #fff !important;
 }
 
@@ -90,6 +129,13 @@ div.jQBracket .team div.label {
 
 /*OTHER STYLES*/
 
+footer {
+  text-align: center;
+  border-top: 2px solid #B45826;
+  margin-top: 20px;
+  padding: 20px 0;
+}
+
 .navbar {
   position: fixed;
   left: 0;
@@ -97,8 +143,8 @@ div.jQBracket .team div.label {
   width: 100%;
   height: 25px;
   padding: 10px;
-  background-color: #e7e7e7;
-  border-bottom: 1px solid #c3c3c3;
+  background-color: #a6b3db;
+  border-bottom: 1px solid #525D7E;
   z-index: 200;
 }
 
@@ -126,17 +172,11 @@ div.jQBracket .team div.label {
   line-height: .9;
 }
 
-body {
-  margin-top: 70px;
-  background-color: #eee;
-}
-
 .lead-text, .sponsors {
-  font-family: 'gobold', sans-serif;
+  font-family: 'Archivo Narrow', sans-serif;
   font-weight: 600;
   text-align: center;
-  text-transform: uppercase;
-  color: #58595B;
+  color: #151C30;
 }
 
 .sponsors {
@@ -151,15 +191,19 @@ body {
 .advert {
   width: 300px;
   height: 250px;
-  border: 4px solid #FFD6A1;
+  border: 4px solid #a6b3db;
   display: inline-block;
   margin: 5px;
 }
 
-footer {
+.vote-container {
+  max-width: 1400px;
+  margin: auto;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-weight: 600;
   text-align: center;
-  border-top: 2px solid #fff;
-  padding: 5px;
+  text-transform: uppercase;
+  color: #151C30;
 }
 
 @media screen and (max-width: 1400px) {
@@ -176,14 +220,4 @@ footer {
     transform: scale(.7);
     margin-right: -500px;
   }
-}
-
-.vote-container {
-  max-width: 1400px;
-  margin: auto;
-  font-family: 'gobold', sans-serif;
-  font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
-  color: #58595B;
 }
