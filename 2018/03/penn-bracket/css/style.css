@@ -34,7 +34,7 @@
 body {
   font-family: 'Archivo Narrow', sans-serif;
   margin-top: 70px;
-  background-color: #e1e4ed;
+  background-color: #eeeded;
 }
 
 /*BRACKET STYLING*/
@@ -49,7 +49,7 @@ div.jQBracket .team {
 }
 
 div.jQBracket .team {
-  color: #151C30 !important;
+  color: #201c1c !important;
 }
 
 div.score {
@@ -58,27 +58,27 @@ div.score {
 }
 
 .team.win .label {
-  background-color: #BC9296;
+  background-color: #e73c40;
 }
 
 .team.na .label, .np .team .label {
-  background-color: #DAC4C3;
+  background-color: #e58586;
 }
 
 .team.win .score {
-  background-color: #151C30;
+  background-color: #201c1c;
 }
 
 .team .score {
-  background-color: #525D7E
+  background-color: #495cd3;
 }
 
 div.jQBracket .connector, div.jQBracket .connector div.connector, div.jQBracket .np .connector, div.jQBracket .np .connector div.connector {
-  border-color: #B45826;
+  border-color: #df802e;
 }
 
 div.jQBracket .team.highlight:not(.na) .label {
-  background-color: #151C30 !important;
+  background-color: #201c1c !important;
   color: #fff !important;
 }
 
@@ -131,7 +131,7 @@ div.jQBracket .team div.label {
 
 footer {
   text-align: center;
-  border-top: 2px solid #B45826;
+  border-top: 2px solid #df802e;
   margin-top: 20px;
   padding: 20px 0;
 }
@@ -143,8 +143,8 @@ footer {
   width: 100%;
   height: 25px;
   padding: 10px;
-  background-color: #a6b3db;
-  border-bottom: 1px solid #525D7E;
+  background-color: #8a96e2;
+  border-bottom: 1px solid #495cd3;
   z-index: 200;
 }
 
@@ -176,7 +176,7 @@ footer {
   font-family: 'Archivo Narrow', sans-serif;
   font-weight: 600;
   text-align: center;
-  color: #151C30;
+  color: #201c1c;
 }
 
 .sponsors {
@@ -191,7 +191,7 @@ footer {
 .advert {
   width: 300px;
   height: 250px;
-  border: 4px solid #a6b3db;
+  border: 4px solid #495cd3;
   display: inline-block;
   margin: 5px;
 }
@@ -203,7 +203,7 @@ footer {
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
-  color: #151C30;
+  color: #201c1c;
 }
 
 @media screen and (max-width: 1400px) {

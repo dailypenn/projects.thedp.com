@@ -13,12 +13,12 @@ h1 {
 h1, h2, h3, h4 {
   font-family: 'Archivo Narrow', sans-serif;
   font-weight: 600;
-  color: #151C30;
+  color: #201c1c;
 }
 td, th {
     padding: 4px 15px;
     text-align: left;
-    border-bottom: 1px solid #e1e4ed;
+    border-bottom: 1px solid #eeeded;
 }
 .bracket {
   height: 1024px !important;
