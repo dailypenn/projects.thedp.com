@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Penn Bracket 2018",
+      "author": "Web Dev: Andrew Fischer, Alex Graves",
+      "section": "Penn Bracket",
+      "date": "March 2018",
+      "description": "Students can vote on their favorite Penn student groups in the DP's take on March Madness.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2018/03/penn-bracket/",
+      "image": "https://snworksceo.imgix.net/dpn/1d409ca6-7157-406c-ad9a-8e5708ced700.sized-1000x1000.png",
+      "alt": "penn bracket 2018"
+    },
+    {
       "title": "Can you predict who will go to the Ivy League tournament?",
       "author": "Web Dev: Daniel Salib, Jamie Tomlinson, Alex Graves",
       "section": "Sports",
@@ -10,7 +21,9 @@
       "link": "http://projects.thedp.com/2018/02/basketball-predictions/",
       "image": "https://snworksceo.imgix.net/dpn/e16545d9-3c0b-41ed-b8e9-69bedbf609cd.sized-1000x1000.png",
       "alt": "basketball predictions"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "Super Bowl LII",
       "author": "Web Dev: Ishaan Rao",
@@ -32,9 +45,7 @@
       "link": "http://projects.thedp.com/2017/12/year-in-review/",
       "image": "https://snworksceo.imgix.net/dpn/2f6feaa5-2769-4617-8891-6ab35e732a02.sized-1000x1000.jpg",
       "alt": "story of 2017"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "Penn Basketball Season Preview 2017",
       "author": "Web Dev: Andrew Fischer, Alex Graves; Design: Julia Schorr, Camille Rapay, Lucy Ferry and Chris Muracca",
