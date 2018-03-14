@@ -189,7 +189,11 @@ hr {
 
   .live-updates {
     position: initial;
-    height: calc(100vh - 40px);
+    height: auto;
     padding: 20px;
+  }
+
+  .no-mobile {
+    display: none;
   }
 }
