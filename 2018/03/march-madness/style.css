@@ -154,7 +154,17 @@ hr {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 992px) {
+  .article-box {
+    flex-direction: column;
+  }
+
+  .image, .info {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 40px;
   }
@@ -172,16 +182,8 @@ hr {
     width: calc(100% - 40px);
   }
 
-  .image, .info {
-    width: 100%;
-  }
-
   .info {
     margin-top: 10px;
-  }
-
-  .article-box {
-    flex-direction: column;
   }
 
   .live-updates {
