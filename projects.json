@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Penn men's basketball returns to March Madness",
+      "author": "Web Dev: Jamie Tomlinson, Alex Graves",
+      "section": "Sports",
+      "date": "March 2018",
+      "description": "Penn men's basketball is competing in the NCAA Tournament for the first time in 11 years. Follow along with our coverage of the team's journey to Wichita.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2018/03/march-madness/",
+      "image": "https://snworksceo.imgix.net/dpn/f3888a25-bcb4-4679-9b17-037b7984053c.sized-1000x1000.png",
+      "alt": "march madness 2018"
+    },
+    {
       "title": "Penn Bracket 2018",
       "author": "Web Dev: Andrew Fischer, Alex Graves",
       "section": "Penn Bracket",
