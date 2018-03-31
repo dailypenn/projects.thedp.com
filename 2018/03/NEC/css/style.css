@@ -15,7 +15,7 @@ body {
 	background: #F9F9F9;
 }
 
-h1, h2 {
+h1, h2, h3 {
   text-align: center;
 }
 
@@ -106,6 +106,10 @@ footer {
 
 .candidate {
   width: 33%;
+}
+
+.candidate img {
+  width: 100%;
 }
 
 .vote-btn {
