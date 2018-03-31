@@ -35,7 +35,18 @@ This must all be done before your page can be considered complete! Check with th
   ```
 
 ### HTML
-  1. Make sure the Google Analytics script is at the very top of the `<body>`. You can ask the Director of Web Development for this code.
+  1. Make sure the Google Analytics script is at the very top of the `<body>`.
+  ```HTML
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-707447-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-707447-4');
+  </script>
+  ```
   2. Check with the Director of Web Development if this page should have ads. In most cases, the answer is yes. You will need their help to get the ad code to embed from Google Tag Manager.
   3. Make sure all links are set to `target="_blank"`.
 

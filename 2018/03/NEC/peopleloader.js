@@ -496,7 +496,6 @@ var people = {
 };
 
 $(document).ready(function() {
-  console.log(people);
   var ua = people.ua;
   var cb18 = people.cb18;
   var cb19 = people.cb19;
@@ -504,11 +503,11 @@ $(document).ready(function() {
 
   var loadList = function(people, listID) {
     for (var person in people) {
-      $('#' + listID).append("<li>" +
+      $('#' + listID).append("<div class='candidate'>" +
         "<figure>" +
         "<img src='" + people[person].photo + "'>" +
         "<figcaption>" +
-        "<h3><center>" + people[person].name + "</center></h3>" +
+        "<h3>" + people[person].name + "</h3>" +
         "<a href='http://www.pennstudgov.com' target='_blank'>Vote Here</a>&nbsp;" +
         "<a href='" + people[person].stmt + "' target='_blank'>Download Statement</a>" +
         "<center><img class='statement' src='" + people[person].stmt + "' height='120' /></center>" +
@@ -516,7 +515,7 @@ $(document).ready(function() {
         "</figcaption>" +
         "<h3>" + people[person].name + "</h3>" +
         "<p>" + (people[person].endorsements === undefined ? "" : "<i>Endorsements: </i>" + people[person].endorsements) + "</p>" +
-        "</figure></li>"
+        "</figure></div>"
       );
     }
   }
@@ -569,5 +568,4 @@ $(document).ready(function() {
   for (var list in lists) {
     randomize(lists[list]);
   }
-
 });
