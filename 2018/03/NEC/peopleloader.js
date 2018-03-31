@@ -205,13 +205,13 @@ var people = {
     "President": [{
         'name': 'Aren Raisinghani',
         'photo': 'https://snworksceo.imgix.net/dpn/e9a89c3c-c253-48bb-960c-649f6c8147e6.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "Junior Family,<br><br>My love for the people in this class has continually grown. I hope to serve you as Class President for our final year.<br><br>EXPERIENCE (11 years):<br><br>Class President; President, VP - Engineering Council; SEAS Representative, New Student Representative - Undergraduate Assembly, SEAS Representative - University Council; Student Body, Class President - High School, Co-President - Teen Advisory Board.<br><br>PLATFORM:<br><br>Unity - frequent bonding/social events: class dinners, drink-specials at Smokes/local bars, tailgates, a bomb senior formal, and a great month of Feb Club.<br><br>Advocacy - support/collaborate with groups dedicated to mental health, sexual assault prevention, cultural representation, civic engagement, and underrepresented-students.<br><br>Collaboration - work with varied organizations to reach a wider audience; create non-exclusive Senior Planning Committee to ensure transparency, solicit frequent input and feedback to ensure you are represented.<br><br>PRIOR INITIATIVES:<br><br>Increased class budget by $63,000+ (most financially stable junior class in recent history); revolutionized financial aid to ensure 100% of students can participate - everyone deserves a fantastic Penn experience; pioneered two Penn traditions (Sophomore Quarter-Zips, Thanksgiving dinner); combated sexual assault; spearheaded first-ever Class Board Steering committee to ensure transparency/diversity; collaborated with cultural groups; worked to support mental health/self-care initiatives; created civic engagement database with PennLabs (<a target='_blank' href='http://pennvolvement.com'>www.pennvolvement.com</a>).<br><br>With immense love for our class,<br><br>Aren Raisinghani<br>#ARENforPENN",
       	'endorsements': ''
       },
       {
         'name': 'Jessica Lim',
         'photo': 'https://snworksceo.imgix.net/dpn/8491a45e-c485-420d-af50-fb861c44bae6.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "Being on Class Board 2019 has been an incredible honor and one of the most defining parts of my Penn career. I've loved putting together and leading events &mdash; including planning and managing the logistics of Reu-Night at Smokes and Holi this semester. Class Board is already thinking about the events, giveaways, collaborations and partnerships that will come to define our Senior year. I am running for President because I want to do MORE for our class. I can't wait to give my all to make sure that our final events together (#FebClub19) will be the best they can be &mdash; in promoting class unity through inclusivity and accessibility as well as in celebrating Penn Pride.",
       	'endorsements': ''
       }
     ],
@@ -267,7 +267,7 @@ var people = {
     "Nursing_Chair": [{
         'name': 'Breanne Mastromarino',
         'photo': 'https://snworksceo.imgix.net/dpn/d4553812-9469-4f06-8b15-7074ceef53a7.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "Fellow Penn Nursing Class of 2019, my name is Breanne Mastromarino and it would be my privilege to serve as your Nursing Chair for the fourth consecutive year. This is our final chance to immerse ourselves into the class-wide traditions of our undergraduate experience. I would only love to continue to represent our class in planning, coordinating, and executing these memorable events. Our shared common values rooted in care, compassion, commitment and competence are paramount in our involvement in these activities. I best represent the Nursing Class of 2019 because of my consistent embodiment of these values throughout my time at Penn. Throughout my time at Penn, I have gained unparalleled leadership experience participating in a multitude of activities and events while taking risks and surpassing my comfort zone. My individual interests and opinions may have changed over the past few years, but my fervor to lead our class has endured. I have my finger on the pulse of the Class of 2019 and I FEEL like our final year is going to be one that cannot be BEAT!!!",
       	'endorsements': ''
       }
     ]
@@ -277,47 +277,47 @@ var people = {
     "President": [{
         'name': 'Jonathan Kohan',
         'photo': 'https://snworksceo.imgix.net/dpn/b4e04043-5097-44c4-877d-29ad5cbde82a.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "My name is Jonathan Kohan and I am running for Junior Class President. Last year I transferred to Penn from NYU and I’ve loved all my time here so far. This has inspired me to do everything I can to give back. One way I want to do this is by planning awesome events and giveaways for our class. This past year I have seen very few events for the class of 2020; this needs to change. If I am elected, I will do everything in my power to organize fun and exciting events that will have universal appeal. Last year I was the Freshman Class President at NYU, which gave me the necessary experience for a similar role at Penn. I promise I won’t transfer this time! I also am an EMT, which has given me the tools to deal with difficult problems that unexpectedly arise. I love to work out and play Fortnite (still haven’t gotten that win). If I’m elected I won’t disappoint. Please reach out to me with any questions!",
       	'endorsements': ''
       },
       {
         'name': 'Karim El Sewedy',
         'photo': 'https://snworksceo.imgix.net/dpn/2e37b67d-36b0-414a-9c51-3d0202a45e9b.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "Class of 2020!<br><br>Thank you so much for allowing me the honor of serving as your Class President these past two years!<br><br>This year, I went through what many on this campus call 'sophomore slump.' Friend groups got smaller, responsibilities got bigger, life got a little tougher. I know many of you went through similar experiences – that’s why this year, I set out to bring everyone together in unique, intimate settings. Whether it was getting to know new people through Friendsgiving, exploring Philadelphia through #BurstTheBubble, or showing Penn pride through Class Quarter Zips, I sincerely hope you were touched by our events in one way or another.<br><br>Next year, I want to continue building on our accomplishments and ensuring your Junior year at Penn is bigger and better. Next year, I plan on bringing you P Sweaters, Hey Day, Smoke’s Nights, Talent Shows, Class Scarves, Tailgates, but more than that, events that are financially accessible to every student in our class.<br><br>I look forward to seeing many of you over the next couple of days at Holi, Penn Restaurant Week, or one of the other events we have planned for the rest of the year!<br><br><a target='_blank' href='https://www.facebook.com/Karim2020President'>#DoItForTheChildren and Vote Karim!</a>",
       	'endorsements': ''
       }
     ],
     "Executive_Vice_President": [{
         'name': 'Jason Kim',
         'photo': 'https://snworksceo.imgix.net/dpn/83326eb7-a1fb-415d-be23-5c9f2c6e034f.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "Hi! My name is Jason Kim, and I'm running for re-election as the Class Board 2020 Executive Vice President and Undergraduate Assembly College Representative. On Class Board, I have been prioritizing the diversity and affordability of events so that the entire class could participate. On the Undergraduate Assembly, I've been working with CAPS and other Penn administration to increase access to mental health resources for the student body. It's been a great experience the past two years, and I'm hoping to be able to do it again for a third!",
         'endorsements': ''
       }
     ],
     "Vice_president_of_Internal_Affairs": [{
         'name': 'Michelle Kim',
         'photo': 'https://snworksceo.imgix.net/dpn/757829e7-d677-40eb-87f8-fae4cfe93237.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "I have served as the Vice President of Internal Affairs on Class Board 2020 for two years and I am re-running in the hopes to continue serving for our class.<br><br>The main responsibility that VP of Internal Affairs is entitled to is being the liaison between the Class of 2020 and our board, as well as between our board and the faculties. Class Board hosts many events, and these require vast amount of logistical planning and contacting people inside and outside of school. I have been able to contribute to our board by organizing the minutes every meeting and overseeing everyone’s to-dos on the calendar. Moving forward, not only do I wish to continue my duties, but also use the leadership opportunity to take charge of events as I have in the past. Class Board is more about the teamwork rather than the individual duties associated with the title of the position, and I would like to take lead of the first major event for our junior year, which will be an outdoor movie screening and barbecue. I am honored to have been part of Class Board, and I hope to have the honor once again for our junior year.",
       	'endorsements': ''
       }
     ],
     "Vice_president_of_External_Affairs": [{
         'name': 'Lucy Ma',
         'photo': 'https://snworksceo.imgix.net/dpn/6159c2b5-11c0-4dab-80e4-63804c74b0ae.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "Hello Penn 2020! I am Lucy Ma, your incumbent VP of External Affairs. I am a table tennis athlete in the College of Arts and Sciences, hailing from the beautiful state of Washington. My interests range far and wide, but my main commitment is to YOU.<br><br>I am running again to be your Vice President of External Affairs for the Class Board 2020. My platform rests on the key theme of improving student access to resources.<br>1) Establish basic measures to promote health and comfort for all students, such as an integrated system between SHS and resource entities like Penn Transit.<br>2) Host fun Penn Traditions and class events and continue bringing together the Penn 2020 community. More free food, free Penn swag, and fun interaction with our classmates!<br><br>We all come from different environments, backgrounds, and experiences, and our diversity is truly our strength. Seeing our class come together for giveaways, Friendsgiving, Restaurant Week, and our online Sophomore Spotlights campaign, I am constantly amazed by the incredible individuals in our class. While you all strive for your best, I am here to try and help make YOUR life easier, so please: vote Lucy Ma for VP of External Affairs!",
       	'endorsements': ''
       }
     ],
     "Vice_president_of_Finance": [{
         'name': 'Jack Stinger',
         'photo': 'https://snworksceo.imgix.net/dpn/e9faad27-ac00-4fca-8064-14bcf93e10a4.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "Hey Class of 2020! I'm Jack Stinger and I am running to serve you as your Vice President of Finance for the 2018-2019 school year. Being a member of the Board as VP Finance since freshman year has been an amazing and fulfilling experience, so I look forward to the opportunity to continue my role in the future! Thank you for your support!",
       	'endorsements': ''
       },
       {
         'name': 'Vanessa Wanyandeh',
         'photo': 'https://snworksceo.imgix.net/dpn/49822401-6d8b-4207-b5ac-e44139460c70.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "Being a part of Class Board for the past two years as College Chair and Publicity Commissioner has given me hands-on experience on the importance a balanced budget. From organizing Restaurant Week to last years 12 Days of Giveaways, I know how much money plays into a successful Class Board. As VP of Finance, I promise to make sure that all of our BEST events will always have enough funds to make our Junior year dreams a reality! #VOTEFORV",
       	'endorsements': ''
       }
     ],
@@ -330,19 +330,19 @@ var people = {
       {
         'name': 'Arjun Swaminathan',
         'photo': 'https://snworksceo.imgix.net/dpn/dc4c590d-09c2-426d-a094-cc188ca05413.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "Hi everyone! I’m Arjun Swaminathan and I’m running to be reelected to UA as an SAS representative and elected to Class Board 2020 as College Chair. As a member of the UA this year, I have been responsible for a number of dining, sustainability, and facilities projects that have promoted a healthy and wholesome lifestyle on campus, ranging from renovation of water dispensers in various buildings to advertising dining hall hours during finals. Additionally, I served on the UA’s Budget Committee and have supported a number of UA mental wellness initiatives. In running for reelection, I would like to continue working on similar projects and contribute to making Penn’s community a better place, and I believe that I have proven myself capable of doing that this past year. As for my candidacy for College Chair, I believe that I can bring a creative attitude to Class Board 2020 in using the budget efficiently to plan events that the class can enjoy. Additionally, being a member of both Class Board and UA would allow me to ensure that there exists dialogue between the two branches regarding budget use and allocation. Thanks for reading and vote for Arjun!",
       	'endorsements': ''
       },
       {
         'name': 'Daniella Wirtschafter',
         'photo': 'https://snworksceo.imgix.net/dpn/377e7060-c7fd-4508-a1d1-a09df9359ed4.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "I have absolutely loved being a part of Class Board this year! Class Board represents such a tight-knit, creative, and hardworking community. I cannot wait for next semester and truly hope to continue my role as College Class Chair. I know I can help make next year our best year yet. From dog-filled, free food study breaks to late night movie screenings to restaurant week extravaganzas, I promise to give you all the fun and relaxing activities you deserve! As College Class Chair, I am also dedicated to creating a greater sense of unity and interconnectedness amongst all of us 2020 members. I truly hope to be a voice for each and every one of you and give it my all to create an amazing semester. Vote for me for College Class Chair &mdash; you won’t regret it!",
       	'endorsements': ''
       },
       {
         'name': 'Noel Zheng',
         'photo': 'https://snworksceo.imgix.net/dpn/5bfde745-373d-4495-8dd0-8340b1925c2f.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "After given the opportunity to be a Class of 2020 College Chair this year, I have realised that small things tend to be the things that become the most meaningful: the conversations people strike up tend to be more than just small talk. I wouldn’t go as far to say you meet your alter-ego, but there is a sense of community in our class. And that’s something I am so honoured to be apart of, let alone be able to represent. Throughout this year, I have helped implement events (such as Friendsgiving, Class Board Restaurant Week, Quarter Zip Dinner, Black Panther Viewing) in partnership with many campus organizations (such as Penn Traditions and TableTalk) that strive to do just that.<br><br>Looking forward, I am excited to create social programs, both new and traditional, that continue to foster this sense of unity and pride.",
       	'endorsements': ''
       }
     ],
@@ -356,7 +356,7 @@ var people = {
     "Wharton_Chair": [{
         'name': 'Andy Shao',
         'photo': 'https://snworksceo.imgix.net/dpn/08144d45-e274-47aa-ad5c-fc2ee81d265f.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "What up council, my name is Andy Shao. I’m an activist and frat party enthusiast. Over the past year I have been in a state of deep despair upon hearing the news that the Task Force is trying to outlaw house parties in the West Philadelphia. I am here, determined, to stop this future atroxity.",
       	'endorsements': ''
       }
     ],
@@ -373,65 +373,65 @@ var people = {
     "President": [{
         'name': 'Carmen Duran',
         'photo': 'https://snworksceo.imgix.net/dpn/536b8d2d-5ad9-46ef-9a69-17284b9f7309.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "As Penn students, it’s easy to build ourselves up as invincible and make it seem like we have it all together, but this is far from reality. I’m here to show the power in being open about our struggles. It doesn’t matter who you are, where you’re from, or what you’ve been through. There’s always a reason to keep fighting.<br><br>I’m a Mexican American FGLI student from rural North Carolina. My parents are divorced, and my father has been incarcerated since I was in the 5th grade. My transition to Penn was not an easy one, but I strive to show my peers that my identities are not weaknesses. They are my strengths.<br><br>My intent is to create an atmosphere that welcomes our imperfections, and hopefully inspire you along the way. I’m here to stand up for the ones who are overlooked. I’m here to speak up for the ones who feel like they don’t have a voice. I’m here to shape Penn for the better. I share my story because I’m not here to hide behind a fa<br><br>ade of perfection. It’s time we said #ScrewPennFace<br><br>Carmen Duran | Together We Can",
       	'endorsements': ''
       },
       {
         'name': 'Lizzie Youshaei',
         'photo': 'https://snworksceo.imgix.net/dpn/b25fa745-8efc-4038-85fd-d29d0604c39c.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "Life is 10% what happens to us and 90% how we react to it. As many of you know, I lost the election for class president last fall. I’m not afraid to say it’s one of many failures, embarrassing moments, and mishaps I’ve had in my life.<br><br>It made me realize that failure teaches us more than success. I gained a better understanding of what’s important, and it has inspired me to run again. I want to show that it’s okay to fail and get back up &mdash; even if that failure is front of thousands of classmates you love and admire.<br><br>I hope to run a different campaign this time. I want to make it more about people than platforms. I want to revive old traditions by bringing hot air balloons back to Skimmer, and starting our own tradition of 'Blind Brunches,' an initiative that will match students up for meals &mdash; all paid for by class board, and food truck festivals during finals to keep stress at bay.<br><br>If my campaign inspires one person and makes someone who is struggling feel a little better, then it’s all worth it. I can’t wait to see you on the campaign trail.",
       	'endorsements': ''
       },
       {
         'name': 'Moksh Jawa',
         'photo': 'https://snworksceo.imgix.net/dpn/0b7df890-31f4-4a2e-9b9d-f0a7dedce08a.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "Class of 2021!<br><br>Thank you for the honor of serving as your Class President this year. The experience was more amazing that I could have imagined &mdash; all thanks to you. We’re easily the most exciting and spirited class to hit this campus. My primary goal has been to unify our class as one and I’ve been fortunate enough to work with an incredible board along the way. We’ve done traditions like Econ Scream, Cram n’ Jam, and Harry Potter t-shirts in record-breaking fashion and we started new ones including Merch Madness and Thankful Banners.<br><br>I want to continue building on what Class Board has accomplished this year and I want to use my experience serving to make your Penn experience one you’ll never forget. More than anything, I don’t want the magic of being a freshman to fade away. My platform for the upcoming year is do even more giveaways, continue making events accessible through financial aid, bringing you beautiful class apparel, throwing lit events (heavily-subsidized tickets to sports games, water balloon fights, Thanksgiving feasts, and more), and hearing your voice and pushing your ideas forward.<br><br>I’d love to lead the best class ever to the best year ever. <3",
       	'endorsements': ''
       }
     ],
     "Executive_Vice_President": [{
         'name': 'Jelani Hutchins-Belgrave',
         'photo': 'https://snworksceo.imgix.net/dpn/29eba7f9-53f0-41f9-92ba-f9b8154e4d87.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "I’m Jelani Hutchins-Belgrave, also known as JHB, Lani, and yep, you guessed it, Lani Lani. I am more excited than ever to announce that I’m currently running for Executive Vice President! My Penn experience has been defined not only by Econ 001, Hill Late nights, and lost Penn Cards but also by the amazing people around me. It was through these encounters that I began to hear the stories of the next entrepreneurs, poets, activists, and all of the positions yet to be created. At the same time, I learned of the problems facing our class today.<br><br>Let’s cut to the chase. My vision is to BE the difference for the Class of 2021. Whether it be online and/or offline, I’m going to BE a liaison between our class and the Class Board. When your voice is not being heard, I’m going to BE the microphone that amplifies your sound. When change is needed, I will help BE the change you seek. It is thus in OUR hands to BE the difference for our class.<br><br>Hopefully, you see me as the right candidate for the position so make sure to Vote JHB for Exec VP.",
         'endorsements': ''
       },
       {
         'name': 'Maher Abdel Samad',
         'photo': 'https://snworksceo.imgix.net/dpn/f1ae1c28-d1dc-4e2b-882b-502dc60e48cf.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "After a year of serving as your Executive VP, I can say I’ve learned a lot. I’ve noticed that those who know me always describe me using three words: Passionate, Energetic, and Resourceful. In addition to my experience, this is what I bring to the table:<br><br>I truly believe that being a Quaker should mean something to all of us! This is how we can actually thrive at Penn. I strive to do this by making people happy by connecting them to the underlying traditions that define Penn. My platform is simple: it consists of the three interconnected ideas of Inclusion, Expansion, and Collaboration. By Inclusion I mean catering to the hundreds of ethnicities and nationalities at Penn as many students feel left out at times during Penn traditions and events. How will we remedy this? Expansion: creating new and innovative events that expand on current Penn traditions to make them bigger, better, and more inclusive. Another part of Inclusion is Socio-Economic Inclusion. For example, last year we covered 100% of requested financial aid for Harry Potter shirts. How? Via Collaboration with different organizations on campus such as Penn Alumni, Penn Traditions, Student Financial Services, the UA and more.",
       	'endorsements': ''
       }
     ],
     "Vice_president_of_Internal_Affairs": [{
         'name': 'Danny Wittmer',
         'photo': 'https://snworksceo.imgix.net/dpn/08156705-cf3d-4dc9-a8a9-28b829a4796c.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "Class of 2021, Penn students, faculty, lend me your ears. I promise I won’t take too much of your time. I’m Danny Wittmer, and I’m running to be your UA College Representative and Internal Affairs VP.<br><br>The Undergraduate Assembly strives to allocate funds for all of the organizations on Penn’s campus. From the fight against Penn face, to money allocation that allows every student allowances for printing, I and the board will continually strive to fund our students and their initiatives. But wait, what if you feel your voice isn’t being heard? The solution is bi-weekly panels where we have representatives from the College talk about the most pressing and important issues collected through various outlets. Government is not here to be oppressive or make students voiceless, and that is my platform. Power to the ones who can’t speak, and humbling of the ones who have had voices for a long time.<br><br>As Internal Affairs VP, the tradition and foundation of comradery formed by this current class board must be carried on. My shoulders are prepared to carry more and more boxes of giveaways, and I want to build friendships higher than ever before. Hurrah my friends, Hurrah.",
       	'endorsements': ''
       },
       {
         'name': 'Sophia Kim',
         'photo': 'https://snworksceo.imgix.net/dpn/a472eaf6-2c18-40ff-b9e7-80f1b847ad6d.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "Hi! My name is Sophia Kim. Most people call me SKIM. But you can call- and vote for- me tonight (yes, I am MILKing this pick-up line).<br><br>I am so excited to be RE-RUNNING as Class Board 2021’s Vice President of Internal Affairs! From Econ Scream’s unifying catharsis to Merch Madness’ crazy giveaways, creating memories with you all has made my first year at Penn truly unforgettable.<br><br>As the past VP of Internal Affairs, I have learned a lot about collaboration, but I am also ready to continue developing my skills to better organize events. Within board, I organized information and efficiently directed tasks so that Class Board was on top of responsibilities. Outside, I managed effectively communication to the rest of the class through social media, although this system is an aspect that I would like to further develop to better listen to all of your ideas.<br><br>I’ve quickly associated Penn with my home, and I can’t wait for the Class of 2021 to become closer family. Feel free to reach out to me and follow my FB/Instagram campaign page (@sophiaforvpia2021) for specific details on my platform.<br><br>I’m excited to be back in the game. #SKIMbutwholesome...round 2%.",
       	'endorsements': ''
       }
     ],
     "Vice_president_of_External_Affairs": [{
         'name': 'Julie Chen',
         'photo': 'https://snworksceo.imgix.net/dpn/0b43e393-44ce-433e-91cc-f69fa45b4812.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "Like everyone, my first year at Penn was full of ups and downs. However, the one thing that stayed constant &mdash; and kept me sane &mdash; was the amazing people around me. That's what I remember most from the past year: the people that sat with me for entire nights in the ER, checked in on my mental health during tough weeks, and laughed with me until the crack of dawn. And in my past year on Class Board as the VP of External Affairs, that's the attitude I've adopted. I want our events to bring people together, existing or new friends! That's why the events I pushed for most this year were Cram n Jam and Econ Scream, where hundreds of our class came together to have fun and spend genuine time together. I want our events to be memorable and mementos of our time here, like Harry Potter shirts or our 6 different merch giveaways. Most importantly, I want our events to make our class feel at home and welcomed at this crazy school. Everyone should feel included at Class Board events, meaning giving full financial aid, ensuring we are celebrating all backgrounds, and highlighting our class's successes.",
       	'endorsements': ''
       }
     ],
     "Vice_president_of_Finance": [{
         'name': 'Jai Ashar',
         'photo': 'https://snworksceo.imgix.net/dpn/97bc5c5e-db50-4a22-b335-ae32aa3a1263.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "Penn is much more than an Ivy League institution. What makes Penn unique are the traditions and events created by student government. I strongly believe that improving them and starting more will encourage pride, unity, and spirit among Penn students.<br><br>As VP of Finance I aim to focus school expenditures on transforming Penn’s campus to a place students can truly consider their home. I am confident I am the right candidate for this job; I will always give my best to make a difference for the causes I feel passionate about. For me, student government is the most crucial part of Penn, as it is the driving force behind the Penn family.",
       	'endorsements': ''
       },
       {
         'name': 'Joey Abdo',
         'photo': 'https://snworksceo.imgix.net/dpn/29324f56-a6da-44ae-9929-9435e5ce4f33.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "My name is Joey Abdo and I’m happy to announce I’ll be running to be your VP of Finance. As a first generation, low income student, I’ve found it hard at times to find my way in the world: My platform is to make events accessible to every single student in our class.<br><br>What’s the biggest challenge to this dream? Money. I’m running for VP of finance to bring a new unique perspective to a job. Accessibility, that is what my platform stands for.<br><br>With me as VP, everyone will be on the same financial playing ground when it comes to Penn and class events. Not only do I represent FGLI students but also all of you international mates out there. As a holder of a dual citizenship between the United States and Lebanon you can trust that I have a variety of perspectives.<br><br>Trust me, you want a guy like me to manage our class’s expenses. I have a few ideas brewing to create a stronger Penn community. Give me the opportunity to put them into action.<br><br>#J4VPF #J4VPF #J4VPF",
       	'endorsements': ''
       },
       {
