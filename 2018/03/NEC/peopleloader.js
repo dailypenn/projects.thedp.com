@@ -222,7 +222,6 @@ var people = {
       	'endorsements': ''
       }
     ],
-    "Vice_president_of_Internal_Affairs": [],
     "Vice_president_of_External_Affairs": [{
         'name': 'Candy Alfaro',
         'photo': 'https://snworksceo.imgix.net/dpn/31b5d173-195b-489a-9417-785fb82ccbdd.sized-1000x1000.JPG?h=400',
@@ -503,14 +502,6 @@ window.onload = function() {
   var cb21 = people.cb21;
 
   var loadList = function(people, listID) {
-    // if this category has no candidates, show that
-    if (people.length === 0) {
-      var div = document.createElement('div');
-      div.classList.add('candidate');
-      div.innerHTML = "<h3>No candidates</h3>";
-      document.getElementById(listID).append(div);
-    }
-
     // add all candidates
     for (var i in people) {
       var candidate = document.createElement('div');
@@ -538,7 +529,6 @@ window.onload = function() {
     loadList(cb19["Nursing_Chair"], "ua-19-nurs-rep");
     loadList(cb19["Vice_president_of_External_Affairs"], "ua-19-vp-ext");
     loadList(cb19["Vice_president_of_Finance"], "ua-19-vp-fin");
-    loadList(cb19["Vice_president_of_Internal_Affairs"], "ua-19-vp-int");
   } else if (window.location.pathname.includes('cb20')) {
     // CLASS BOARD 2020 CANDIDATES
     loadList(cb20["President"], "ua-20-list");
@@ -547,9 +537,9 @@ window.onload = function() {
     loadList(cb20["Engineering_Chair"], "ua-20-seas-rep");
     loadList(cb20["Wharton_Chair"], "ua-20-wharton-rep");
     loadList(cb20["Nursing_Chair"], "ua-20-nurs-rep");
+    loadList(cb20["Vice_president_of_Internal_Affairs"], "ua-20-vp-int");
     loadList(cb20["Vice_president_of_External_Affairs"], "ua-20-vp-ext");
     loadList(cb20["Vice_president_of_Finance"], "ua-20-vp-fin");
-    loadList(cb20["Vice_president_of_Internal_Affairs"], "ua-20-vp-int");
   } else if (window.location.pathname.includes('cb21')) {
     // CLASS BOARD 2021 CANDIDATES
     loadList(cb21["President"], "ua-21-list");
@@ -558,9 +548,9 @@ window.onload = function() {
     loadList(cb21["Engineering_Chair"], "ua-21-seas-rep");
     loadList(cb21["Wharton_Chair"], "ua-21-wharton-rep");
     loadList(cb21["Nursing_Chair"], "ua-21-nurs-rep");
+    loadList(cb21["Vice_president_of_Internal_Affairs"], "ua-21-vp-int");
     loadList(cb21["Vice_president_of_External_Affairs"], "ua-21-vp-ext");
     loadList(cb21["Vice_president_of_Finance"], "ua-21-vp-fin");
-    loadList(cb21["Vice_president_of_Internal_Affairs"], "ua-21-vp-int");
   } else {
     // UA CANDIDATES
     loadList(ua["UA_President"], "ua-pres");
