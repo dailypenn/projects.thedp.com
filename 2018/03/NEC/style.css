@@ -113,26 +113,27 @@ footer {
   margin: auto;
 }
 
-.container .intro {
+.intro {
   max-width: 900px;
 	margin: 60px auto;
-	padding: 2em;
 	text-align: center;
 }
 
-.container .intro h1 {
-	font-size: 2.625em;
-	line-height: 1.3;
-	margin: 0;
+.intro h1 {
+	font-size: 2.5em;
+	margin: 10px 0;
 	font-weight: 700;
   color: #aa1e22;
 }
 
-.container .intro h3 {
-	line-height: 1.3;
+.intro h3 {
 	margin: 0;
 	font-weight: 400;
   color: #aa1e22;
+}
+
+.intro p:last-of-type {
+  margin-bottom: 40px;
 }
 
 .branches {
@@ -168,7 +169,16 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  footer {
+    margin: 20px 15px;
+  }
+
+  .container {
+    margin: 15px;
+  }
+
   .candidate {
     width: 100%;
+    padding: 0;
   }
 }
