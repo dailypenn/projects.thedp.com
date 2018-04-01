@@ -138,7 +138,7 @@ var people = {
       {
         'name': 'Simon Miller',
         'photo': 'https://snworksceo.imgix.net/dpn/a6d40d24-c257-42dc-82f8-6676ada09e2a.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "<i>No provided statement.</i>",
       	'endorsements': ''
       }
     ],
@@ -157,7 +157,7 @@ var people = {
       {
         'name': 'Nicholas Parkes',
         'photo': 'https://snworksceo.imgix.net/dpn/04b88d63-ea1d-45e9-b072-0b66b14c3493.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "<i>No provided statement.</i>",
       	'endorsements': ''
       },
       {
@@ -218,7 +218,7 @@ var people = {
     "Executive_Vice_President": [{
         'name': 'Dayz Terry',
         'photo': 'https://snworksceo.imgix.net/dpn/a613a9e2-0a67-464c-b7b3-6b4af626ad01.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "<i>No provided statement.</i>",
       	'endorsements': ''
       }
     ],
@@ -226,41 +226,41 @@ var people = {
     "Vice_president_of_External_Affairs": [{
         'name': 'Candy Alfaro',
         'photo': 'https://snworksceo.imgix.net/dpn/31b5d173-195b-489a-9417-785fb82ccbdd.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "<i>No provided statement.</i>",
         'endorsements': ''
       }
     ],
     "Vice_president_of_Finance": [{
         'name': 'Luc Silver',
         'photo': 'https://snworksceo.imgix.net/dpn/bb65e2fa-0d30-42e4-88fc-14a457e5d9d5.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "<i>No provided statement.</i>",
       	'endorsements': ''
       }
     ],
     "College_Chair": [{
         'name': 'April Chen',
         'photo': 'https://snworksceo.imgix.net/dpn/98bc38ad-a71a-4f50-8e41-c856ea09c796.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "<i>No provided statement.</i>",
       	'endorsements': ''
       },
       {
         'name': 'Trinh Nguyen',
         'photo': 'https://s3.amazonaws.com/media.dpn/58163_personf.jpg',
-        'statement': "",
+        'statement': "<i>No provided statement.</i>",
         'endorsements': ''
       }
     ],
     "Engineering_Chair": [{
         'name': 'Joe Zhou',
         'photo': 'https://snworksceo.imgix.net/dpn/8fd224da-38d8-4330-abcb-e1fe7e4bf65a.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "<i>No provided statement.</i>",
       	'endorsements': ''
       }
     ],
     "Wharton_Chair": [{
         'name': 'Allysha Davis',
         'photo': 'https://snworksceo.imgix.net/dpn/5659e8f0-6fd7-496a-a349-132f09793bc8.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "<i>No provided statement.</i>",
       	'endorsements': ''
       }
     ],
@@ -324,7 +324,7 @@ var people = {
     "College_Chair": [{
         'name': 'Ammar Bawa',
         'photo': 'https://snworksceo.imgix.net/dpn/0a554d45-bb6b-4cf7-808b-324164a43f24.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "<i>No provided statement.</i>",
         'endorsements': ''
       },
       {
@@ -349,7 +349,7 @@ var people = {
     "Engineering_Chair": [{
         'name': 'James Feng',
         'photo': 'https://snworksceo.imgix.net/dpn/e768a075-6f0c-4e4b-9d69-e5b003769b18.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "<i>No provided statement.</i>",
       	'endorsements': ''
       }
     ],
@@ -363,7 +363,7 @@ var people = {
     "Nursing_Chair": [{
         'name': 'Anita Itaman',
         'photo': 'https://snworksceo.imgix.net/dpn/f4a238dd-cb36-41ec-b22d-70c30a0d2926.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "<i>No provided statement.</i>",
       	'endorsements': ''
       }
     ]
@@ -437,66 +437,65 @@ var people = {
       {
         'name': 'Zach Melchione',
         'photo': 'https://snworksceo.imgix.net/dpn/4d4ae1e6-c767-41d7-bbd7-cb9eed1480b1.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "As an active member of Penn’s Class of 2021 and a part of the FGLI community, I would love nothing more than to see our graduating class grow closer to one another through free events, massive festivities, and traditions that we will share with every Penn alum. In order to execute such a goal, however, proper financial measures must be taken.<br><br>If elected as Vice President of Finances, I will strive to implement a series of fundraising initiatives that will reestablish the Class Board’s monetary supply; through Class Board-run competitions, event sponsorships, profit shares, and more, we can host subsidized events and foster our sense of class pride.<br><br>Furthermore, I plan on increasing financial transparency in order to provide accountability, boost efficiency and clarify where our money is being allocated. In doing so, the Class Board as a whole will be able to improve the way our funds go from point A to point B.<br><br>Overall, I firmly believe that my delegation and organization skills that I have developed from managing club funds and arranging student events in the past can complement my ideas for the future. Therefore, I encourage you to vote for Zach to get back on track.",
       	'endorsements': ''
       }
     ],
     "College_Chair": [{
         'name': 'Charles Curtis-Thomas',
         'photo': 'https://snworksceo.imgix.net/dpn/29e269c0-35ae-4534-b2c1-733b9a6cb10f.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "My name is Charles Curtis-Thomas, and I am running for College Chair on Class Board. For the past few months, a fire has been burning inside of me to make our class a force to be recognized on campus. 10, 20, even 30 years from now, I want people to look back on the Class of 2021 as the greatest class in Penn’s history.<br><br>Recently, I have noticed that there are many intra-school activities in the other three schools, but none for The College, which has the largest collection of students. I intend to change this, and create fun activities for College students. I want our class to become closer than ever, and bridge the gap between Class Board and the students. I want to implement Class Board 'Office Hours' where we can all relax, hang out, and discuss the problems on campus, and how to solve them. It’s time for The College to be united together. It’s time for a new voice, a new vision, and a new start. I hope you will all join me on this journey. Remember if you want Penn to be the best it can be, make sure you vote for C-C-T.",
         'endorsements': ''
       },
       {
         'name': 'Chioma Duru',
         'photo': 'https://snworksceo.imgix.net/dpn/76d21fce-6810-4380-acfd-7920cda53705.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "Hey! My name is Chioma Duru. For those of you who don’t know me, I'm excited to get to know you hopefully over the course of these next few years. I’ve had an incredible experience being your College Chair this year, utilizing mistakes and lessons from past events, and, ultimately, learning from them. I thank everyone who believed in me, and I hope that you still do believe in me enough to re-elect me once again. My campaign has always centered around bringing different groups of people together and making those around me feel welcomed. This year is no different. I have and will always be a part of marginalized communities. My position on Class Board will allow me to voice concerns and perspectives that respect and represent these different backgrounds while having the fun. I'm honored to have worked with such an incredible board and to have met such accomplished individuals. With your help, I hope to continue to grow and learn as a representative and, of course, build upon the greatness that is the Class of 2021.",
       	'endorsements': ''
       },
       {
         'name': 'Daniel Gordon',
         'photo': 'https://snworksceo.imgix.net/dpn/591020e2-5692-4d43-8266-a89ab71fe4cd.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "My name is Daniel Gordon and I am running for College Chair for the Class of 2021! It has been my absolute pleasure to be your College Chair this year and I am excited to continue to organize events for the Class of 2021. This year I have pioneered new events such as the Thankful Banner and Merch Madness (excited for our CAS Gryffindor shirts), while organizing Freshman traditions like Econ Scream! For our Sophomore year, I plan to create a Declared Majors Day where students can meet their peers with similar academic interests and learn about opportunities in their program! Through a partnership with the College and Provost’s Offices, students will receive shirts, banners, and flags! Also, after a summer away from Penn, come back to Penn with Sophomore Scoops, a prime way to catch up with your classmates! Class Board will provide the ice cream and everyone can kick off the school year with a bonding event to get even closer to your peers! If you have any suggestions/ideas, I would love to hear from you on Facebook, or at <a href='mailto:dagord@sas.upenn.edu'>dagord@sas.upenn.edu</a>. I’m excited to share another wonderful year with you all!",
       	'endorsements': ''
       },
       {
         'name': 'Paulina Pedas',
         'photo': 'https://snworksceo.imgix.net/dpn/db1b6c3e-bb6e-4f07-b471-47a1f44e4474.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "As College Chair, I will make it my priority to shed light on the diverse academic endeavors of our class. To do so, I will create a Humans of New York–like page, where students will have the chance to share how they chose their area of study. Through this initiative, we can start to delegitimize certain stigmas associated with pre-professional studies and the liberal arts.<br><br>Another initiative I would particularly be interested in spearheading relates to study spaces. As College students, we are limited with our after-hour study spaces &mdash; to the crowded basement of VP or common spaces in Huntsman. As College Chair, I will make it my mission to sustain more late-night study spaces for College students &mdash; whether that means having a College building open 24/7 or giving College students access to booking Huntsman GSRs during after-hours. All in all, as College Chair, I will dedicate myself to hearing the concerns of us all and will work tirelessly to follow through on our College-specific initiatives.<br><br>Vote Paulina for College Chair!<br><br>#PENNforPAULINA #PAULINAforPENN",
       	'endorsements': ''
       }
     ],
     "Engineering_Chair": [{
         'name': 'Alexa Spagnola',
         'photo': 'https://snworksceo.imgix.net/dpn/9f2ada94-2bb2-4509-acea-aa8514df6116.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "I’m thrilled to be up for re-election as your Engineering Chair. Throughout the year, serving on Class Board has contributed immensely to my Penn experience. I’m sure that our events and traditions have #elextrified you as well, whether Cram ‘n’ Jam gave you the necessary sustenance (and puppy love) to make it to your Physics 150 final, March/Merch Madness managed to (briefly) take your mind off of the gloom of CIS 160, or you look forward to repping Ravenclaw Harry Potter shirts around the E-quad (and everywhere).<br><br>In an environment where it’s easy to feel as if you should always know where you’re heading (yet statistically, 35 percent of us will change our major), it’s important to be reminded that the path isn’t always a straight line. Next year, I plan to collaborate with the Penn Engineering Mentoring Program to develop a database highlighting the 4-year curriculum of alumni. While PennCourseReview is awesome for choosing specific courses and professors, this would help all of us students in planning holistic, non-bland goals beyond the one “Sample Curriculum” on seas.upenn.edu.<br><br>As always, I look forward to hearing your suggestions and working together to optimize your experience in engineering and here at Penn.",
       	'endorsements': ''
       },
       {
         'name': 'Steven Shapiro',
         'photo': 'https://snworksceo.imgix.net/dpn/3739917c-a40d-48b0-a108-558e4f77ae3c.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "As a Comp Sci major and passionate member of Penn Electric Racing's Software team, I know how it feels to be completely CLUELESS when it comes to class selection, internships, and life at Penn in general. This is why I am focusing my campaign on accessibility and integration, both within the School of Engineering and throughout the Penn community as a whole. School is already hard enough, why stress over all of the extra stuff when you could have someone helping you along the way instead?<br><br>If I have the honor of being elected, I plan to immediately establish a unanimous, online way for all freshman Engineers to directly and privately address me with suggestions, concerns, or questions about anything Penn related (or not).  I’m here to listen, and I’m here to make change.<br><br>For all of you amazing people that I've already talked to, and for the many more that I look forward to meeting, I can't wait to make your voices heard and make the School of Engineering and Applied Science exactly the place you want it to be!<br><br>Vote Steven Shapiro for SEAS Class Chair!",
       	'endorsements': ''
       }
     ],
     "Wharton_Chair": [{
         'name': 'Jay Mudholkar',
         'photo': 'https://snworksceo.imgix.net/dpn/511276d5-2838-47f9-afc8-e825541f2fca.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "Hello fellow Wharton freshman! My name is Jay Mudholkar, and I’m running for re-election as Wharton Chair on Class Board for the Class of 2021. After having been elected as Wharton Chair back in the fall thanks to you all, I have proudly represented the Wharton Undergraduate freshman class on Class Board and have worked with a group of extremely dedicated people to plan some incredible events. From Econ Scream to our Thankful Banner to our Merch Madness giveaways to our Harry Potter School shirts, it's been so fun to see how we have had an impact on Penn freshman, and I am so glad that I was able to play a direct role in all of that. To me though, Class Board has also given me the chance to meet some of my closest friends, and I have had a dope time through it all: I am excited to be running again. Re-elect Jay for Wharton Chair 2021!",
       	'endorsements': ''
       }
     ],
     "Nursing_Chair": [{
         'name': 'Tommy Seaman',
         'photo': 'https://snworksceo.imgix.net/dpn/53adeb23-b3e2-4352-b17f-d387191f8eef.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "Hey everyone! My name is Tommy Seaman and I have had the pleasure as serving as the Nursing Chair for Class Board 2021 this year. Throughout the year, I have worked with Class Board 2021, other class boards, and numerous student groups to plans events for the Class of 2021 and specifically the nursing class. Events such as econ scream, cram and jam, and merch madness have brought the nursing class closer to the other schools on campus and I hope to continue this for years to come. As the Nursing Chair for the Class of 2021, I will continue to make sure that the small yet mighty nursing class has a voice on campus. I will assist the nursing class in establishing an influential presence on campus and within the student body. I plan to serve Penn in the best way possible and I hope to have your vote!",
       	'endorsements': ''
       }
     ]
   }
 };
 
-// $(document).ready(function() {
 window.onload = function() {
   var ua = people.ua;
   var cb19 = people.cb19;
@@ -504,58 +503,73 @@ window.onload = function() {
   var cb21 = people.cb21;
 
   var loadList = function(people, listID) {
+    // if this category has no candidates, show that
+    if (people.length === 0) {
+      var div = document.createElement('div');
+      div.classList.add('candidate');
+      div.innerHTML = "<h3>No candidates</h3>";
+      document.getElementById(listID).append(div);
+    }
+
+    // add all candidates
     for (var i in people) {
-      // document.getElementById(listID)
-      $('#' + listID).append("<div class='candidate'>" +
-        "<figure>" +
-        "<img src='" + people[i].photo + "'>" +
+      var candidate = document.createElement('div');
+      candidate.classList.add('candidate');
+      candidate.innerHTML = "<img src='" + people[i].photo + "'>" +
         "<h3>" + people[i].name + "</h3>" +
         "<div class='read-statement'>" +
         "<h4>Read Statement <span class='down'>↓</span><span class='up hidden'>↑</span></h4>" +
         "<p class='statement hidden'>" + people[i].statement + "</p>" +
         "</div>" +
-        "<p>" + (people[i].endorsements === '' ? "" : "<i>Endorsements: </i>" + people[i].endorsements) + "</p>" +
-        "</figure></div>"
-      );
+        "<p>" +
+        (people[i].endorsements === '' ? "" : "<i>Endorsements: </i>" + people[i].endorsements)
+        + "</p>";
+      document.getElementById(listID).append(candidate);
     }
   }
 
-  loadList(ua["UA_President"], "ua-pres");
-  loadList(ua["UA_Vice_President"], "ua-vp");
-  loadList(ua["SAS_Representative"], "ua-sas-rep");
-  loadList(ua["SEAS_Representative"], "ua-seas-rep");
-  loadList(ua["Wharton_Representative"], "ua-whar-rep");
-  loadList(ua["Nursing_Representative"], "ua-nurs-rep");
-
-  loadList(cb19["President"], "ua-19-list");
-  loadList(cb19["Executive_Vice_President"], "ua-19-vp-list");
-  loadList(cb19["College_Chair"], "ua-19-sas-rep");
-  loadList(cb19["Engineering_Chair"], "ua-19-seas-rep");
-  loadList(cb19["Wharton_Chair"], "ua-19-wharton-rep");
-  loadList(cb19["Nursing_Chair"], "ua-19-nurs-rep");
-  loadList(cb19["Vice_president_of_External_Affairs"], "ua-19-vp-ext");
-  loadList(cb19["Vice_president_of_Finance"], "ua-19-vp-fin");
-  loadList(cb19["Vice_president_of_Internal_Affairs"], "ua-19-vp-int");
-
-  loadList(cb20["President"], "ua-20-list");
-  loadList(cb20["Executive_Vice_President"], "ua-20-vp-list");
-  loadList(cb20["College_Chair"], "ua-20-sas-rep");
-  loadList(cb20["Engineering_Chair"], "ua-20-seas-rep");
-  loadList(cb20["Wharton_Chair"], "ua-20-wharton-rep");
-  loadList(cb20["Nursing_Chair"], "ua-20-nurs-rep");
-  loadList(cb20["Vice_president_of_External_Affairs"], "ua-20-vp-ext");
-  loadList(cb20["Vice_president_of_Finance"], "ua-20-vp-fin");
-  loadList(cb20["Vice_president_of_Internal_Affairs"], "ua-20-vp-int");
-
-  loadList(cb21["President"], "ua-21-list");
-  loadList(cb21["Executive_Vice_President"], "ua-21-vp-list");
-  loadList(cb21["College_Chair"], "ua-21-sas-rep");
-  loadList(cb21["Engineering_Chair"], "ua-21-seas-rep");
-  loadList(cb21["Wharton_Chair"], "ua-21-wharton-rep");
-  loadList(cb21["Nursing_Chair"], "ua-21-nurs-rep");
-  loadList(cb21["Vice_president_of_External_Affairs"], "ua-21-vp-ext");
-  loadList(cb21["Vice_president_of_Finance"], "ua-21-vp-fin");
-  loadList(cb21["Vice_president_of_Internal_Affairs"], "ua-21-vp-int");
+  if (window.location.pathname.includes('cb19')) {
+    // CLASS BOARD 2019 CANDIDATES
+    loadList(cb19["President"], "ua-19-list");
+    loadList(cb19["Executive_Vice_President"], "ua-19-vp-list");
+    loadList(cb19["College_Chair"], "ua-19-sas-rep");
+    loadList(cb19["Engineering_Chair"], "ua-19-seas-rep");
+    loadList(cb19["Wharton_Chair"], "ua-19-wharton-rep");
+    loadList(cb19["Nursing_Chair"], "ua-19-nurs-rep");
+    loadList(cb19["Vice_president_of_External_Affairs"], "ua-19-vp-ext");
+    loadList(cb19["Vice_president_of_Finance"], "ua-19-vp-fin");
+    loadList(cb19["Vice_president_of_Internal_Affairs"], "ua-19-vp-int");
+  } else if (window.location.pathname.includes('cb20')) {
+    // CLASS BOARD 2020 CANDIDATES
+    loadList(cb20["President"], "ua-20-list");
+    loadList(cb20["Executive_Vice_President"], "ua-20-vp-list");
+    loadList(cb20["College_Chair"], "ua-20-sas-rep");
+    loadList(cb20["Engineering_Chair"], "ua-20-seas-rep");
+    loadList(cb20["Wharton_Chair"], "ua-20-wharton-rep");
+    loadList(cb20["Nursing_Chair"], "ua-20-nurs-rep");
+    loadList(cb20["Vice_president_of_External_Affairs"], "ua-20-vp-ext");
+    loadList(cb20["Vice_president_of_Finance"], "ua-20-vp-fin");
+    loadList(cb20["Vice_president_of_Internal_Affairs"], "ua-20-vp-int");
+  } else if (window.location.pathname.includes('cb21')) {
+    // CLASS BOARD 2021 CANDIDATES
+    loadList(cb21["President"], "ua-21-list");
+    loadList(cb21["Executive_Vice_President"], "ua-21-vp-list");
+    loadList(cb21["College_Chair"], "ua-21-sas-rep");
+    loadList(cb21["Engineering_Chair"], "ua-21-seas-rep");
+    loadList(cb21["Wharton_Chair"], "ua-21-wharton-rep");
+    loadList(cb21["Nursing_Chair"], "ua-21-nurs-rep");
+    loadList(cb21["Vice_president_of_External_Affairs"], "ua-21-vp-ext");
+    loadList(cb21["Vice_president_of_Finance"], "ua-21-vp-fin");
+    loadList(cb21["Vice_president_of_Internal_Affairs"], "ua-21-vp-int");
+  } else {
+    // UA CANDIDATES
+    loadList(ua["UA_President"], "ua-pres");
+    loadList(ua["UA_Vice_President"], "ua-vp");
+    loadList(ua["SAS_Representative"], "ua-sas-rep");
+    loadList(ua["SEAS_Representative"], "ua-seas-rep");
+    loadList(ua["Wharton_Representative"], "ua-whar-rep");
+    loadList(ua["Nursing_Representative"], "ua-nurs-rep");
+  }
 
   // add toggling for candidate statements
   var statements = document.getElementsByTagName('h4');
@@ -567,4 +581,3 @@ window.onload = function() {
     });
   }
 }
-// );
