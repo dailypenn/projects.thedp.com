@@ -11,7 +11,7 @@ var people = {
         'name': 'Michael Krone',
         'photo': 'https://snworksceo.imgix.net/dpn/7e73c084-0669-4896-92ed-5ef91f9bad34.sized-1000x1000.JPG?h=400',
         'statement': "Hi, my name is Michael Krone, and I am running for President of the Undergraduate Assembly. If elected, my priorities for the upcoming year would be mental wellness, transparency, inclusivity, accessibility, and community engagement. As President, I would advocate the advancement of these five ideas, which you can learn more about at <a target='_blank' href='http://kroneandrews.com'>kroneandrews.com</a>. As the candidate with the most experience, relationships, and know-how on how to get things done, I will work tirelessly over the next year to ensure that projects that fall under these goals are achieved. I will dedicate myself to leading the best Undergraduate Assembly possible and mobilizing its members for a better Penn.",
-        'endorsements': ''
+        'endorsements': 'Latinx Coalition, Penn Arab Student Society'
       },
       {
         'name': 'Samara Wyant',
@@ -24,7 +24,7 @@ var people = {
         'name': 'Jordan Andrews',
         'photo': 'https://snworksceo.imgix.net/dpn/4a1a5719-d528-4eb4-a1cb-114ee30244f5.sized-1000x1000.JPG?h=400',
         'statement': "Hi, my name is Jordan Andrews, and I am running for Vice President of the Undergraduate Assembly. If elected, my priorities for the upcoming year would be mental wellness, transparency, inclusivity, accessibility, and community engagement. As Vice President, I would promote projects within the UA to foster progress on these five fronts as well as encourage collaboration among UA Steering groups toward our common goals. Having served on the UA for two years, I have gotten the chance to work closely with many groups on campus and find mentors in two Vice Presidents before me. I will dedicate myself to leading the best Undergraduate Assembly and mobilizing its members for a better Penn.",
-        'endorsements': ''
+        'endorsements': 'Latinx Coalition, Penn Arab Student Society'
       },
       {
         'name': 'Max Grove',
@@ -49,11 +49,11 @@ var people = {
         'name': 'Ben May',
         'photo': 'https://snworksceo.imgix.net/dpn/47f72b49-7989-44d9-bbec-f7a254a82285.sized-1000x1000.JPG?h=400',
         'statement': "Hello, I’m Ben May. I aim to engage and excite the student body to bring about positive change. My experience in policymaking includes presenting to the United Nations, meeting with the White House, spearheading local movements to bring about political reform for the environment, and being one of the New Student Representatives of the UA. Over the past year, I increased transparency for the Undergraduate Assembly by facilitating the creation of summaries for each UA GBM along with publicizing a google form to provide problems you want solved directly to the UA. I worked towards making it easier to audit courses and preventing classes from becoming overbooked (let’s agree, the floor does not count as a desk). I lobbied for increased access to water fountains while working to strengthen composting on campus. I pressed for increased sustainability on campus by facilitating discussion on environmental topics, elevating the level of communication between the UA and the environmental community, and meetings with Penn administrators. Next year, I hope to build upon my previous efforts, make GBM summaries a precedent for future years, and work to increase funding for Penn mental health facilities. Vote Ben May for UA!",
-      	'endorsements': ''
+      	'endorsements': 'Epsilon Eta'
       },
       {
         'name': 'Brian Goldstein',
-        'photo': 'https://snworksceo.imgix.net/dpn/1e21d828-c8ed-4de1-a4b1-ce98a7b1483e.sized-1000x1000.JPG?h=400',
+        'photo': 'https://snworksceo.imgix.net/dpn/ecc9f0d6-2a8b-49d2-b2b2-90fe709e0ef1.sized-1000x1000.JPG?h=400',
         'statement': "'You cannot change the cards you are dealt, just how you play the hand.' &ndash;Randy Pausch. I am willing to devote my next year to understanding the various cards, Penn students are dealt, and how to use the most effectively. I look forward to meeting everyone and learning about the current issues facing the student body.",
         'endorsements': ''
       },
@@ -73,7 +73,7 @@ var people = {
         'name': 'Elena Hoffman',
         'photo': 'https://snworksceo.imgix.net/dpn/6db47626-8b3c-4083-9259-17badc16c3ee.sized-1000x1000.JPG?h=400',
         'statement': "Most of those close to me know that I’m a relatively open book. I’ll admit when I’m struggling, discuss issues I’ve identified within the community, and won’t try to fake a Penn Face. While it’s extremely important to acknowledge and normalize both the existence and prevalence of mental health issues on campus, it’s equally as important to find practical ways to combat their underlying causes. In the academic department, for example, some projects I plan to continue or propose are: mandating professors return at least one graded assignment prior to the drop deadline (for classes in which this is possible), increasing study resources for College students such as all-school printing in Huntsman, implementing a technology equipment borrowing system such as Weiss Media Lab in other on-campus study spaces, and more. In the student life department, I wish to advocate for an increase in reading days similar to our peer Ivy League institutions, and longer breaks from school. Moreover, I wish to serve as a voice for all underrepresented minority students on campus, and advocate for issues pertaining to both their communities, and those of all other marginalized groups, including first-generation and low-income.",
-        'endorsements': ''
+        'endorsements': 'Penn Arab Student Society'
       },
       {
         'name': 'Jason Kim',
@@ -91,7 +91,7 @@ var people = {
         'name': 'Jordan Andrews',
         'photo': 'https://snworksceo.imgix.net/dpn/4a1a5719-d528-4eb4-a1cb-114ee30244f5.sized-1000x1000.JPG?h=400',
         'statement': "Hi, my name is Jordan Andrews, and I am running for Vice President of the Undergraduate Assembly. If elected, my priorities for the upcoming year would be mental wellness, transparency, inclusivity, accessibility, and community engagement. As Vice President, I would promote projects within the UA to foster progress on these five fronts as well as encourage collaboration among UA Steering groups toward our common goals. Having served on the UA for two years, I have gotten the chance to work closely with many groups on campus and find mentors in two Vice Presidents before me. I will dedicate myself to leading the best Undergraduate Assembly and mobilizing its members for a better Penn.",
-        'endorsements': ''
+        'endorsements': 'Penn Arab Student Society'
       },
       {
         'name': 'Jude Dartey',
@@ -115,7 +115,7 @@ var people = {
         'name': 'Michael Krone',
         'photo': 'https://snworksceo.imgix.net/dpn/7e73c084-0669-4896-92ed-5ef91f9bad34.sized-1000x1000.JPG?h=400',
         'statement': "Hi, my name is Michael Krone, and I am running for President of the Undergraduate Assembly. If elected, my priorities for the upcoming year would be mental wellness, transparency, inclusivity, accessibility, and community engagement. As President, I would advocate the advancement of these five ideas, which you can learn more about at <a target='_blank' href='http://kroneandrews.com'>kroneandrews.com</a>. As the candidate with the most experience, relationships, and know-how on how to get things done, I will work tirelessly over the next year to ensure that projects that fall under these goals are achieved. I will dedicate myself to leading the best Undergraduate Assembly possible and mobilizing its members for a better Penn.",
-        'endorsements': ''
+        'endorsements': 'Penn Arab Student Society'
       },
       {
         'name': 'Natasha Menon',
@@ -152,7 +152,7 @@ var people = {
         'name': 'Maher Abdel Samad',
         'photo': 'https://snworksceo.imgix.net/dpn/f1ae1c28-d1dc-4e2b-882b-502dc60e48cf.sized-1000x1000.JPG?h=400',
         'statement': "After a year of serving as your Executive VP, I can say I’ve learned a lot. I’ve noticed that those who know me always describe me using three words: Passionate, Energetic, and Resourceful. In addition to my experience, this is what I bring to the table:<br><br>I truly believe that being a Quaker should mean something to all of us! This is how we can actually thrive at Penn. I strive to do this by making people happy by connecting them to the underlying traditions that define Penn. My platform is simple: it consists of the three interconnected ideas of Inclusion, Expansion, and Collaboration. By Inclusion I mean catering to the hundreds of ethnicities and nationalities at Penn as many students feel left out at times during Penn traditions and events. How will we remedy this? Expansion: creating new and innovative events that expand on current Penn traditions to make them bigger, better, and more inclusive. Another part of Inclusion is Socio-Economic Inclusion. For example, last year we covered 100% of requested financial aid for Harry Potter shirts. How? Via Collaboration with different organizations on campus such as Penn Alumni, Penn Traditions, Student Financial Services, the UA and more.",
-      	'endorsements': ''
+      	'endorsements': 'Penn Arab Student Society'
       },
       {
         'name': 'Nicholas Parkes',
@@ -283,7 +283,7 @@ var people = {
         'name': 'Karim El Sewedy',
         'photo': 'https://snworksceo.imgix.net/dpn/2e37b67d-36b0-414a-9c51-3d0202a45e9b.sized-1000x1000.JPG?h=400',
         'statement': "Class of 2020!<br><br>Thank you so much for allowing me the honor of serving as your Class President these past two years!<br><br>This year, I went through what many on this campus call 'sophomore slump.' Friend groups got smaller, responsibilities got bigger, life got a little tougher. I know many of you went through similar experiences – that’s why this year, I set out to bring everyone together in unique, intimate settings. Whether it was getting to know new people through Friendsgiving, exploring Philadelphia through #BurstTheBubble, or showing Penn pride through Class Quarter Zips, I sincerely hope you were touched by our events in one way or another.<br><br>Next year, I want to continue building on our accomplishments and ensuring your Junior year at Penn is bigger and better. Next year, I plan on bringing you P Sweaters, Hey Day, Smoke’s Nights, Talent Shows, Class Scarves, Tailgates, but more than that, events that are financially accessible to every student in our class.<br><br>I look forward to seeing many of you over the next couple of days at Holi, Penn Restaurant Week, or one of the other events we have planned for the rest of the year!<br><br><a target='_blank' href='https://www.facebook.com/Karim2020President'>#DoItForTheChildren and Vote Karim!</a>",
-      	'endorsements': ''
+      	'endorsements': 'Penn Arab Student Society'
       }
     ],
     "Executive_Vice_President": [{
@@ -385,7 +385,7 @@ var people = {
         'name': 'Moksh Jawa',
         'photo': 'https://snworksceo.imgix.net/dpn/0b7df890-31f4-4a2e-9b9d-f0a7dedce08a.sized-1000x1000.JPG?h=400',
         'statement': "Class of 2021!<br><br>Thank you for the honor of serving as your Class President this year. The experience was more amazing that I could have imagined &mdash; all thanks to you. We’re easily the most exciting and spirited class to hit this campus. My primary goal has been to unify our class as one and I’ve been fortunate enough to work with an incredible board along the way. We’ve done traditions like Econ Scream, Cram n’ Jam, and Harry Potter t-shirts in record-breaking fashion and we started new ones including Merch Madness and Thankful Banners.<br><br>I want to continue building on what Class Board has accomplished this year and I want to use my experience serving to make your Penn experience one you’ll never forget. More than anything, I don’t want the magic of being a freshman to fade away. My platform for the upcoming year is do even more giveaways, continue making events accessible through financial aid, bringing you beautiful class apparel, throwing lit events (heavily-subsidized tickets to sports games, water balloon fights, Thanksgiving feasts, and more), and hearing your voice and pushing your ideas forward.<br><br>I’d love to lead the best class ever to the best year ever. <3",
-      	'endorsements': ''
+      	'endorsements': 'Penn Arab Student Society'
       }
     ],
     "Executive_Vice_President": [{
@@ -398,7 +398,7 @@ var people = {
         'name': 'Maher Abdel Samad',
         'photo': 'https://snworksceo.imgix.net/dpn/f1ae1c28-d1dc-4e2b-882b-502dc60e48cf.sized-1000x1000.JPG?h=400',
         'statement': "After a year of serving as your Executive VP, I can say I’ve learned a lot. I’ve noticed that those who know me always describe me using three words: Passionate, Energetic, and Resourceful. In addition to my experience, this is what I bring to the table:<br><br>I truly believe that being a Quaker should mean something to all of us! This is how we can actually thrive at Penn. I strive to do this by making people happy by connecting them to the underlying traditions that define Penn. My platform is simple: it consists of the three interconnected ideas of Inclusion, Expansion, and Collaboration. By Inclusion I mean catering to the hundreds of ethnicities and nationalities at Penn as many students feel left out at times during Penn traditions and events. How will we remedy this? Expansion: creating new and innovative events that expand on current Penn traditions to make them bigger, better, and more inclusive. Another part of Inclusion is Socio-Economic Inclusion. For example, last year we covered 100% of requested financial aid for Harry Potter shirts. How? Via Collaboration with different organizations on campus such as Penn Alumni, Penn Traditions, Student Financial Services, the UA and more.",
-      	'endorsements': ''
+      	'endorsements': 'Penn Arab Student Society'
       }
     ],
     "Vice_president_of_Internal_Affairs": [{
@@ -431,7 +431,7 @@ var people = {
         'name': 'Joey Abdo',
         'photo': 'https://snworksceo.imgix.net/dpn/29324f56-a6da-44ae-9929-9435e5ce4f33.sized-1000x1000.JPG?h=400',
         'statement': "My name is Joey Abdo and I’m happy to announce I’ll be running to be your VP of Finance. As a first generation, low income student, I’ve found it hard at times to find my way in the world: My platform is to make events accessible to every single student in our class.<br><br>What’s the biggest challenge to this dream? Money. I’m running for VP of finance to bring a new unique perspective to a job. Accessibility, that is what my platform stands for.<br><br>With me as VP, everyone will be on the same financial playing ground when it comes to Penn and class events. Not only do I represent FGLI students but also all of you international mates out there. As a holder of a dual citizenship between the United States and Lebanon you can trust that I have a variety of perspectives.<br><br>Trust me, you want a guy like me to manage our class’s expenses. I have a few ideas brewing to create a stronger Penn community. Give me the opportunity to put them into action.<br><br>#J4VPF #J4VPF #J4VPF",
-      	'endorsements': ''
+      	'endorsements': 'Penn Arab Student Society'
       },
       {
         'name': 'Zach Melchione',
@@ -501,7 +501,16 @@ window.onload = function() {
   var cb20 = people.cb20;
   var cb21 = people.cb21;
 
-  var loadList = function(people, listID) {
+  function shuffle(list) {
+    for (let i = list.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [list[i], list[j]] = [list[j], list[i]];
+    }
+    return list;
+  }
+
+  function loadList(people, listID) {
+    shuffle(people);
     // add all candidates
     for (var i in people) {
       var candidate = document.createElement('div');
@@ -527,6 +536,8 @@ window.onload = function() {
     loadList(cb19["Engineering_Chair"], "ua-19-seas-rep");
     loadList(cb19["Wharton_Chair"], "ua-19-wharton-rep");
     loadList(cb19["Nursing_Chair"], "ua-19-nurs-rep");
+    // loadList(cb19["Vice_president_of_Internal_Affairs"], "ua-19-vp-int");
+    // (no VP Internal candidates this year)
     loadList(cb19["Vice_president_of_External_Affairs"], "ua-19-vp-ext");
     loadList(cb19["Vice_president_of_Finance"], "ua-19-vp-fin");
   } else if (window.location.pathname.includes('cb20')) {
@@ -563,7 +574,7 @@ window.onload = function() {
 
   // add toggling for candidate statements
   var statements = document.getElementsByTagName('h4');
-  for (var i = 0; i < statements.length; i++) {
+  for (let i = 0; i < statements.length; i++) {
     statements[i].addEventListener('click', function() {
       this.getElementsByClassName('down')[0].classList.toggle('hidden');
       this.getElementsByClassName('up')[0].classList.toggle('hidden');
