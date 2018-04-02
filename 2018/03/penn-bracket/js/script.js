@@ -62,7 +62,7 @@ var ltbracketData = {
       [397, 215],
       [296, 257]
     ], [
-      []
+      [386, 275]
     ]
   ]
 };
@@ -131,19 +131,19 @@ var rtbracketData = {
       [331, 217],
       [270, 283]
     ], [
-      []
+      [380, 297]
     ]
   ]
 };
 
-// var finalbracketData = {
-//   teams: [
-//     []
-//   ],
-//   results: [
-//       []
-//     ]
-// };
+var finalbracketData = {
+  teams: [
+    ['Zeta Tau Alpha', 'Onda Latina']
+  ],
+  results: [
+      []
+    ]
+};
 
 $(function() {
   $('#ltbracket').bracket({
@@ -155,10 +155,10 @@ $(function() {
     skipConsolationRound: true,
     dir: 'rl'
   });
-  // $('#finalbracket').bracket({
-  //   init: finalbracketData,
-  //   skipConsolationRound: true,
-  // });
+  $('#finalbracket').bracket({
+    init: finalbracketData,
+    skipConsolationRound: true,
+  });
 });
 
 $(document).ready(function() {
