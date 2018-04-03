@@ -17,7 +17,7 @@ var people = {
         'name': 'Samara Wyant',
         'photo': 'https://snworksceo.imgix.net/dpn/a41be9c8-746e-4b54-aed5-bbad996d69cd.sized-1000x1000.JPG?h=400',
         'statement': "I am running for Undergraduate Assembly President because I want to work to improve several aspects of student life. Most notably, I want to focus on mental health, cost, campus, and community. I am passionate about making the university a better place for students of different backgrounds. As a College Representative on the UA for the past two years, I have worked on several projects to improve quality of life to students by increasing access, equity, and inclusion across campus. Making Penn a happier, healthier, more affordable, and overall better place for students is my objective, and I hope you will join me in that journey. My full platform and past experience can be found at: <a target='_blank' href='http://bit.ly/samaraandmaxforua'>bit.ly/samaraandmaxforua</a>.",
-        'endorsements': ''
+        'endorsements': 'Sigma Delta Tau'
       }
     ],
     "UA_Vice_President": [{
@@ -30,7 +30,7 @@ var people = {
         'name': 'Max Grove',
         'photo': 'https://snworksceo.imgix.net/dpn/ce293f2b-76df-42e4-949e-f8e25a8f7f24.sized-1000x1000.JPG?h=400',
         'statement': "For a large part of my life, I have been holding back from doing things from fear of striking out. Fear of coming out, fear of running for student government, fear of confronting my mental health, and fear of being myself.<br><br>I am proud to announce I am being myself in the best way possible &mdash; I am running for UA Vice President. I am SO afraid &mdash; but I am way more passionate. And I want others to feel the passion I have for bettering student life on campus. As UA VP, I’m focusing on bettering mental health through several channels: campus, community, and cost. I’m excited to better financial aid policy, bring prayer and performance spaces to campus, encourage community collaboration, and revamp Study Abroad resources. As UA VP, I will also be leading UA Steering and be sitting on University Council, both of which I have experience with after two years of being on the UA and holding key leadership positions.<br><br>UA Vice President is certainly a lofty goal &mdash; but an attainable goal nonetheless. Drop me a text or email (‪717-405-1294‬ & <a href='mailto:maxgrove@wharton.upenn.edu'>maxgrove@wharton.upenn.edu</a>) if you have any thoughts or want to talk.",
-        'endorsements': 'ACTION'
+        'endorsements': 'ACTION, Sigma Delta Tau'
       }
     ],
     "SAS_Representative": [{
@@ -133,7 +133,7 @@ var people = {
         'name': 'Samara Wyant',
         'photo': 'https://snworksceo.imgix.net/dpn/a41be9c8-746e-4b54-aed5-bbad996d69cd.sized-1000x1000.JPG?h=400',
         'statement': "I am running for Undergraduate Assembly President because I want to work to improve several aspects of student life. Most notably, I want to focus on mental health, cost, campus, and community. I am passionate about making the university a better place for students of different backgrounds. As a College Representative on the UA for the past two years, I have worked on several projects to improve quality of life to students by increasing access, equity, and inclusion across campus. Making Penn a happier, healthier, more affordable, and overall better place for students is my objective, and I hope you will join me in that journey. My full platform and past experience can be found at: <a target='_blank' href='http://bit.ly/samaraandmaxforua'>bit.ly/samaraandmaxforua</a>.",
-        'endorsements': 'Penn Democrats'
+        'endorsements': 'Penn Democrats, Sigma Delta Tau'
       },
       {
         'name': 'Simon Miller',
@@ -177,7 +177,7 @@ var people = {
         'name': 'Max Grove',
         'photo': 'https://snworksceo.imgix.net/dpn/ce293f2b-76df-42e4-949e-f8e25a8f7f24.sized-1000x1000.JPG?h=400',
         'statement': "For a large part of my life, I have been holding back from doing things from fear of striking out. Fear of coming out, fear of running for student government, fear of confronting my mental health, and fear of being myself.<br><br>I am proud to announce I am being myself in the best way possible &mdash; I am running for UA Vice President. I am SO afraid &mdash; but I am way more passionate. And I want others to feel the passion I have for bettering student life on campus. As UA VP, I’m focusing on bettering mental health through several channels: campus, community, and cost. I’m excited to better financial aid policy, bring prayer and performance spaces to campus, encourage community collaboration, and revamp Study Abroad resources. As UA VP, I will also be leading UA Steering and be sitting on University Council, both of which I have experience with after two years of being on the UA and holding key leadership positions.<br><br>UA Vice President is certainly a lofty goal &mdash; but an attainable goal nonetheless. Drop me a text or email (‪717-405-1294‬ & <a href='mailto:maxgrove@wharton.upenn.edu'>maxgrove@wharton.upenn.edu</a>) if you have any thoughts or want to talk.",
-      	'endorsements': ''
+      	'endorsements': 'Sigma Delta Tau'
       },
       {
         'name': 'Sahitya "Sith" Mandalapu',
@@ -212,7 +212,7 @@ var people = {
         'name': 'Aren Raisinghani',
         'photo': 'https://snworksceo.imgix.net/dpn/e9a89c3c-c253-48bb-960c-649f6c8147e6.sized-1000x1000.JPG?h=400',
         'statement': "Junior Family,<br><br>My love for the people in this class has continually grown. I hope to serve you as Class President for our final year.<br><br>EXPERIENCE (11 years):<br><br>Class President; President, VP - Engineering Council; SEAS Representative, New Student Representative - Undergraduate Assembly, SEAS Representative - University Council; Student Body, Class President - High School, Co-President - Teen Advisory Board.<br><br>PLATFORM:<br><br>Unity - frequent bonding/social events: class dinners, drink-specials at Smokes/local bars, tailgates, a bomb senior formal, and a great month of Feb Club.<br><br>Advocacy - support/collaborate with groups dedicated to mental health, sexual assault prevention, cultural representation, civic engagement, and underrepresented-students.<br><br>Collaboration - work with varied organizations to reach a wider audience; create non-exclusive Senior Planning Committee to ensure transparency, solicit frequent input and feedback to ensure you are represented.<br><br>PRIOR INITIATIVES:<br><br>Increased class budget by $63,000+ (most financially stable junior class in recent history); revolutionized financial aid to ensure 100% of students can participate - everyone deserves a fantastic Penn experience; pioneered two Penn traditions (Sophomore Quarter-Zips, Thanksgiving dinner); combated sexual assault; spearheaded first-ever Class Board Steering committee to ensure transparency/diversity; collaborated with cultural groups; worked to support mental health/self-care initiatives; created civic engagement database with PennLabs (<a target='_blank' href='http://pennvolvement.com'>www.pennvolvement.com</a>).<br><br>With immense love for our class,<br><br>Aren Raisinghani<br>#ARENforPENN",
-      	'endorsements': 'Transfer Student Organization'
+      	'endorsements': 'Transfer Student Organization, Penn Engineering Council'
       },
       {
         'name': 'Jessica Lim',
