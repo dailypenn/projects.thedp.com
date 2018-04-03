@@ -5,13 +5,13 @@ var people = {
         'name': 'Robert J Klopf III',
         'photo': 'https://snworksceo.imgix.net/dpn/d271dc69-ef92-4391-a4de-0eb2b59ad526.sized-1000x1000.JPG?h=400',
         'statement': "'Life is a dance, not a race.'<br><br>That is what one of my best friends texted me when trying to convince me to get pizza late on a Tuesday night. He is absolutely correct.<br><br>I crave competition, pressure, high stakes. As a member of the varsity track and field team I live for the constant high-level of training and then the need to call upon an extra gear in big races. Academically, I stride towards my limit as I study mathematics and economics.<br><br>But, when competition overflows into our community, it detriments culture. I want to support organizations that build camaraderie. Before anything else, I am a twenty year old from North Jersey. I am a fraternal twin brother. I enjoy playing bridge, snowboarding, and watching the Yankees.<br><br>I am the dark horse in this race. I have never run for UA before. I have chosen not to run with a specific VP.  I was a bandwagon Eagle-underdog fan. Be a bandwagon Robert John Klopf III fan. Dare to challenge the status quo with me. Have the courage to want a fresh outlook. And believe in a president that listens. Penn, have faith in me. I have faith in you.",
-        'endorsements': ''
+        'endorsements': 'Netter Center Student Board, Thompson Student Fellows, Civic Action Fellows'
       },
       {
         'name': 'Michael Krone',
         'photo': 'https://snworksceo.imgix.net/dpn/7e73c084-0669-4896-92ed-5ef91f9bad34.sized-1000x1000.JPG?h=400',
         'statement': "Hi, my name is Michael Krone, and I am running for President of the Undergraduate Assembly. If elected, my priorities for the upcoming year would be mental wellness, transparency, inclusivity, accessibility, and community engagement. As President, I would advocate the advancement of these five ideas, which you can learn more about at <a target='_blank' href='http://kroneandrews.com'>kroneandrews.com</a>. As the candidate with the most experience, relationships, and know-how on how to get things done, I will work tirelessly over the next year to ensure that projects that fall under these goals are achieved. I will dedicate myself to leading the best Undergraduate Assembly possible and mobilizing its members for a better Penn.",
-        'endorsements': 'Latinx Coalition, Penn Arab Student Society, Fossil Free Penn, Penn Democrats, Transfer Student Organization, Penn Association for Gender Equity'
+        'endorsements': 'Latinx Coalition, Penn Arab Student Society, Fossil Free Penn, Penn Democrats, Transfer Student Organization, Penn Association for Gender Equity, United Minorities Council'
       },
       {
         'name': 'Samara Wyant',
@@ -24,7 +24,7 @@ var people = {
         'name': 'Jordan Andrews',
         'photo': 'https://snworksceo.imgix.net/dpn/4a1a5719-d528-4eb4-a1cb-114ee30244f5.sized-1000x1000.JPG?h=400',
         'statement': "Hi, my name is Jordan Andrews, and I am running for Vice President of the Undergraduate Assembly. If elected, my priorities for the upcoming year would be mental wellness, transparency, inclusivity, accessibility, and community engagement. As Vice President, I would promote projects within the UA to foster progress on these five fronts as well as encourage collaboration among UA Steering groups toward our common goals. Having served on the UA for two years, I have gotten the chance to work closely with many groups on campus and find mentors in two Vice Presidents before me. I will dedicate myself to leading the best Undergraduate Assembly and mobilizing its members for a better Penn.",
-        'endorsements': 'Latinx Coalition, Penn Arab Student Society, Fossil Free Penn, Penn Democrats, Transfer Student Organization, Penn Association for Gender Equity'
+        'endorsements': 'Latinx Coalition, Penn Arab Student Society, Fossil Free Penn, Penn Democrats, Transfer Student Organization, Penn Association for Gender Equity, United Minorities Council'
       },
       {
         'name': 'Max Grove',
