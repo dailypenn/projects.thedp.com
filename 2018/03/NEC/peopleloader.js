@@ -11,26 +11,26 @@ var people = {
         'name': 'Michael Krone',
         'photo': 'https://snworksceo.imgix.net/dpn/7e73c084-0669-4896-92ed-5ef91f9bad34.sized-1000x1000.JPG?h=400',
         'statement': "Hi, my name is Michael Krone, and I am running for President of the Undergraduate Assembly. If elected, my priorities for the upcoming year would be mental wellness, transparency, inclusivity, accessibility, and community engagement. As President, I would advocate the advancement of these five ideas, which you can learn more about at <a target='_blank' href='http://kroneandrews.com'>kroneandrews.com</a>. As the candidate with the most experience, relationships, and know-how on how to get things done, I will work tirelessly over the next year to ensure that projects that fall under these goals are achieved. I will dedicate myself to leading the best Undergraduate Assembly possible and mobilizing its members for a better Penn.",
-        'endorsements': 'Latinx Coalition, Penn Arab Student Society, Fossil Free Penn, Penn Democrats, Transfer Student Organization, Penn Association for Gender Equity, United Minorities Council'
+        'endorsements': 'Latinx Coalition, Penn Arab Student Society, Fossil Free Penn, Penn Democrats, Transfer Student Organization, Penn Association for Gender Equity, United Minorities Council, Kite and Key Society, Lambda Alliance, Asian Pacific Student Coalition'
       },
       {
         'name': 'Samara Wyant',
         'photo': 'https://snworksceo.imgix.net/dpn/a41be9c8-746e-4b54-aed5-bbad996d69cd.sized-1000x1000.JPG?h=400',
         'statement': "I am running for Undergraduate Assembly President because I want to work to improve several aspects of student life. Most notably, I want to focus on mental health, cost, campus, and community. I am passionate about making the university a better place for students of different backgrounds. As a College Representative on the UA for the past two years, I have worked on several projects to improve quality of life to students by increasing access, equity, and inclusion across campus. Making Penn a happier, healthier, more affordable, and overall better place for students is my objective, and I hope you will join me in that journey. My full platform and past experience can be found at: <a target='_blank' href='http://bit.ly/samaraandmaxforua'>bit.ly/samaraandmaxforua</a>.",
-        'endorsements': 'Sigma Delta Tau'
+        'endorsements': 'Sigma Delta Tau, ACTION, Alpha Kappa Psi, Penn Sustainability Review'
       }
     ],
     "UA_Vice_President": [{
         'name': 'Jordan Andrews',
         'photo': 'https://snworksceo.imgix.net/dpn/4a1a5719-d528-4eb4-a1cb-114ee30244f5.sized-1000x1000.JPG?h=400',
         'statement': "Hi, my name is Jordan Andrews, and I am running for Vice President of the Undergraduate Assembly. If elected, my priorities for the upcoming year would be mental wellness, transparency, inclusivity, accessibility, and community engagement. As Vice President, I would promote projects within the UA to foster progress on these five fronts as well as encourage collaboration among UA Steering groups toward our common goals. Having served on the UA for two years, I have gotten the chance to work closely with many groups on campus and find mentors in two Vice Presidents before me. I will dedicate myself to leading the best Undergraduate Assembly and mobilizing its members for a better Penn.",
-        'endorsements': 'Latinx Coalition, Penn Arab Student Society, Fossil Free Penn, Penn Democrats, Transfer Student Organization, Penn Association for Gender Equity, United Minorities Council'
+        'endorsements': 'Latinx Coalition, Penn Arab Student Society, Fossil Free Penn, Penn Democrats, Transfer Student Organization, Penn Association for Gender Equity, United Minorities Council, UMOJA, Lambda Alliance, Asian Pacific Student Coalition'
       },
       {
         'name': 'Max Grove',
         'photo': 'https://snworksceo.imgix.net/dpn/ce293f2b-76df-42e4-949e-f8e25a8f7f24.sized-1000x1000.JPG?h=400',
         'statement': "For a large part of my life, I have been holding back from doing things from fear of striking out. Fear of coming out, fear of running for student government, fear of confronting my mental health, and fear of being myself.<br><br>I am proud to announce I am being myself in the best way possible &mdash; I am running for UA Vice President. I am SO afraid &mdash; but I am way more passionate. And I want others to feel the passion I have for bettering student life on campus. As UA VP, I’m focusing on bettering mental health through several channels: campus, community, and cost. I’m excited to better financial aid policy, bring prayer and performance spaces to campus, encourage community collaboration, and revamp Study Abroad resources. As UA VP, I will also be leading UA Steering and be sitting on University Council, both of which I have experience with after two years of being on the UA and holding key leadership positions.<br><br>UA Vice President is certainly a lofty goal &mdash; but an attainable goal nonetheless. Drop me a text or email (‪717-405-1294‬ & <a href='mailto:maxgrove@wharton.upenn.edu'>maxgrove@wharton.upenn.edu</a>) if you have any thoughts or want to talk.",
-        'endorsements': 'ACTION, Sigma Delta Tau'
+        'endorsements': 'ACTION, Sigma Delta Tau, Alpha Kappa Psi, Penn Sustainability Review'
       }
     ],
     "SAS_Representative": [{
@@ -121,7 +121,7 @@ var people = {
         'name': 'Natasha Menon',
         'photo': 'https://snworksceo.imgix.net/dpn/570caf84-cb96-4afe-aab2-cfb12b3b8854.sized-1000x1000.JPG?h=400',
         'statement': "As your Undergraduate Assembly College Representative, I will advocate for the policies that will make Penn a better school not just for our class, but for generations to come. I will serve in the name of diversity, inclusivity, and social justice. Too often, there are communities on this campus that are silenced. I hope to work with these communities to address their needs on campus and assure that they feel safe and at home here at Penn. Additionally, I will fight for greater funding for support services like cultural houses and spaces that house intersectional identities and work with the administration to make sure these resources are prioritized. One ongoing project that I would like to continue next session is the creation of a video series in which high-level administrators and professors speak about their experiences with rejection and how they have learned and grown from these instances. Such exposure can help to humanize professors and administrators, as well as provide students with comfort in knowing that they are not along in what they are experiencing. With your help in electing me as one of your seven College Representatives, I hope to accomplish all of this and more!",
-        'endorsements': 'Transfer Student Organization, Penn Democrats'
+        'endorsements': 'Transfer Student Organization, Penn Democrats, South Asia Society'
       },
       {
         'name': 'Noah Kest',
@@ -133,7 +133,7 @@ var people = {
         'name': 'Samara Wyant',
         'photo': 'https://snworksceo.imgix.net/dpn/a41be9c8-746e-4b54-aed5-bbad996d69cd.sized-1000x1000.JPG?h=400',
         'statement': "I am running for Undergraduate Assembly President because I want to work to improve several aspects of student life. Most notably, I want to focus on mental health, cost, campus, and community. I am passionate about making the university a better place for students of different backgrounds. As a College Representative on the UA for the past two years, I have worked on several projects to improve quality of life to students by increasing access, equity, and inclusion across campus. Making Penn a happier, healthier, more affordable, and overall better place for students is my objective, and I hope you will join me in that journey. My full platform and past experience can be found at: <a target='_blank' href='http://bit.ly/samaraandmaxforua'>bit.ly/samaraandmaxforua</a>.",
-        'endorsements': 'Penn Democrats, Sigma Delta Tau'
+        'endorsements': 'Penn Democrats, Sigma Delta Tau, ACTION'
       },
       {
         'name': 'Simon Miller',
@@ -177,7 +177,7 @@ var people = {
         'name': 'Max Grove',
         'photo': 'https://snworksceo.imgix.net/dpn/ce293f2b-76df-42e4-949e-f8e25a8f7f24.sized-1000x1000.JPG?h=400',
         'statement': "For a large part of my life, I have been holding back from doing things from fear of striking out. Fear of coming out, fear of running for student government, fear of confronting my mental health, and fear of being myself.<br><br>I am proud to announce I am being myself in the best way possible &mdash; I am running for UA Vice President. I am SO afraid &mdash; but I am way more passionate. And I want others to feel the passion I have for bettering student life on campus. As UA VP, I’m focusing on bettering mental health through several channels: campus, community, and cost. I’m excited to better financial aid policy, bring prayer and performance spaces to campus, encourage community collaboration, and revamp Study Abroad resources. As UA VP, I will also be leading UA Steering and be sitting on University Council, both of which I have experience with after two years of being on the UA and holding key leadership positions.<br><br>UA Vice President is certainly a lofty goal &mdash; but an attainable goal nonetheless. Drop me a text or email (‪717-405-1294‬ & <a href='mailto:maxgrove@wharton.upenn.edu'>maxgrove@wharton.upenn.edu</a>) if you have any thoughts or want to talk.",
-      	'endorsements': 'Sigma Delta Tau'
+      	'endorsements': 'Sigma Delta Tau, Alpha Kappa Psi, ACTION'
       },
       {
         'name': 'Sahitya "Sith" Mandalapu',
@@ -189,7 +189,7 @@ var people = {
         'name': 'Sravya Alla',
         'photo': 'https://snworksceo.imgix.net/dpn/73f2cae9-6220-496f-b646-bad4b864c5e1.sized-1000x1000.JPG?h=400',
         'statement': "HALLA! My name is Sravya Alla, and I am running to be a representative on the Undergraduate Assembly again &mdash; this time as one of the 4 Wharton Chairs! This past year, I was one of the new Student Representatives, and I did a lot of work on the Academic Initiatives Committee. I’ve been working on creating a Wharton Guide for Wharton Students, revamping the Wharton website to include a centralized section for non-Wharton students, forming a CIS Advisory Board, including advisors into the Take Your Professors out to Lunch Program, and double-counting language requirements. One of the biggest things that I’ve learned from being on the UA is how decentralized Penn is. And there’s so many problems associated with this: the biggest one for students being accessibility to resources. The thing is, more likely than not, Penn has the resource/opportunity, the problem is finding it. If elected, I hope to work on a lot of projects that focus on access to information because that’s what benefits students the most. If you believe in my mission, Support Sravya for UA and HALLA FOR ALLA!",
-      	'endorsements': ''
+      	'endorsements': 'South Asia Society'
       },
       {
         'name': 'Nile Nwogu',
@@ -212,7 +212,7 @@ var people = {
         'name': 'Aren Raisinghani',
         'photo': 'https://snworksceo.imgix.net/dpn/e9a89c3c-c253-48bb-960c-649f6c8147e6.sized-1000x1000.JPG?h=400',
         'statement': "Junior Family,<br><br>My love for the people in this class has continually grown. I hope to serve you as Class President for our final year.<br><br>EXPERIENCE (11 years):<br><br>Class President; President, VP - Engineering Council; SEAS Representative, New Student Representative - Undergraduate Assembly, SEAS Representative - University Council; Student Body, Class President - High School, Co-President - Teen Advisory Board.<br><br>PLATFORM:<br><br>Unity - frequent bonding/social events: class dinners, drink-specials at Smokes/local bars, tailgates, a bomb senior formal, and a great month of Feb Club.<br><br>Advocacy - support/collaborate with groups dedicated to mental health, sexual assault prevention, cultural representation, civic engagement, and underrepresented-students.<br><br>Collaboration - work with varied organizations to reach a wider audience; create non-exclusive Senior Planning Committee to ensure transparency, solicit frequent input and feedback to ensure you are represented.<br><br>PRIOR INITIATIVES:<br><br>Increased class budget by $63,000+ (most financially stable junior class in recent history); revolutionized financial aid to ensure 100% of students can participate - everyone deserves a fantastic Penn experience; pioneered two Penn traditions (Sophomore Quarter-Zips, Thanksgiving dinner); combated sexual assault; spearheaded first-ever Class Board Steering committee to ensure transparency/diversity; collaborated with cultural groups; worked to support mental health/self-care initiatives; created civic engagement database with PennLabs (<a target='_blank' href='http://pennvolvement.com'>www.pennvolvement.com</a>).<br><br>With immense love for our class,<br><br>Aren Raisinghani<br>#ARENforPENN",
-      	'endorsements': 'Transfer Student Organization, Penn Engineering Council'
+      	'endorsements': 'Transfer Student Organization, Penn Engineering Council, UMOJA, South Asia Society'
       },
       {
         'name': 'Jessica Lim',
@@ -431,7 +431,7 @@ var people = {
         'name': 'Jai Ashar',
         'photo': 'https://snworksceo.imgix.net/dpn/97bc5c5e-db50-4a22-b335-ae32aa3a1263.sized-1000x1000.JPG?h=400',
         'statement': "Penn is much more than an Ivy League institution. What makes Penn unique are the traditions and events created by student government. I strongly believe that improving them and starting more will encourage pride, unity, and spirit among Penn students.<br><br>As VP of Finance I aim to focus school expenditures on transforming Penn’s campus to a place students can truly consider their home. I am confident I am the right candidate for this job; I will always give my best to make a difference for the causes I feel passionate about. For me, student government is the most crucial part of Penn, as it is the driving force behind the Penn family.",
-      	'endorsements': ''
+      	'endorsements': 'South Asia Society'
       },
       {
         'name': 'Joey Abdo',
