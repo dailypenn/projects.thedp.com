@@ -1,0 +1,36 @@
+.featured-img {
+    max-height: 200px;
+    max-width: 200px;
+    padding-top: 15%;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.featured-bubble {
+    border-radius: 50%;
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center
+}
+
+.curr-profile {
+  display: flex;
+}
+.cand-info {
+  display: flex;
+  align-items: center;
+}
+
+.feat-name, .feat-office {
+  font-size: 30px;
+}
+
+.basic-info {
+  margin: 15px;
+}
