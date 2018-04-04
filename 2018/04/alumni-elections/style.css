@@ -1,7 +1,6 @@
 .featured-img {
     max-height: 200px;
     max-width: 200px;
-    padding-top: 15%;
     width: auto;
     position: absolute;
     bottom: 0;
@@ -19,6 +18,26 @@
     justify-content: center
 }
 
+.bubble-img {
+  max-height: 100px;
+  max-width: 100px;
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.bubble {
+  border-radius: 50%;
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center
+}
+
 .curr-profile {
   display: flex;
 }
@@ -33,4 +52,8 @@
 
 .basic-info {
   margin: 15px;
+}
+
+.all-candidates {
+  display: flex;
 }

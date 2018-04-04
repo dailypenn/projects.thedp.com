@@ -205,13 +205,18 @@ function shuffle(a) {
 function resetPa() {
   $("#pa-div").empty();
   $("#pa-div").append(`
-    <div id="all-candidates">
+    <div class="curr-profile" id="curr-profile">
+    </div>
+    <div class="all-candidates" id="all-candidates">
     </div>
   `)
 }
 
 
 $(document).ready(function() {
+
+  // problems with Daley's photo
+
   // empties out div to repopulate
   resetPa();
 
@@ -223,10 +228,9 @@ $(document).ready(function() {
   shuffledPa.forEach(function(cand, index) {
     if (index === 0) {
       // featured profile
-      $("#pa-div").append(`
-        <div class="curr-profile">
+      $("#curr-profile").append(`
           <div class="featured-bubble">
-            <img src="" class="featured-img">
+            <img src="${cand.img}" class="featured-img">
           </div>
           <div class="cand-info">
             <div class="basic-info">
@@ -237,13 +241,14 @@ $(document).ready(function() {
               <p class="feat-office">U.S. House, ${cand.district} district</p>
             </div>
           </div>
-        </div>
       `)
     } else {
       // append the smaller images bubbles
-      // $("#all-candidates").append(`
-      //
-      // `)
+      $("#all-candidates").append(`
+        <div class="bubble">
+          <img src="${cand.img}" class="bubble-img">
+        </div>
+      `)
     }
   })
 
