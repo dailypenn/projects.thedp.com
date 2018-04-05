@@ -141,7 +141,7 @@ var finalbracketData = {
     ['Zeta Tau Alpha', 'Onda Latina']
   ],
   results: [
-      []
+      [636, 589]
     ]
 };
 
