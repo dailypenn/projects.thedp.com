@@ -10,12 +10,12 @@
 
 .featured-bubble {
     border-radius: 50%;
-    background-color: blue;
     height: 200px;
     width: 200px;
     position: relative;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    flex-shrink: 0;
 }
 
 .bubble-img {
@@ -30,12 +30,12 @@
 
 .bubble {
   border-radius: 50%;
-  background-color: blue;
   height: 100px;
   width: 100px;
   position: relative;
   display: flex;
-  justify-content: center
+  justify-content: center;
+  margin: auto;
 }
 
 .curr-profile {
@@ -54,6 +54,44 @@
   margin: 15px;
 }
 
-.all-candidates {
-  display: flex;
+.slick-track {
+  height: 104px;
 }
+
+.slick-prev:before {
+  color: black !important;
+}
+.slick-next:before {
+  color: black !important;
+}
+
+
+.featured-slide {
+  height: 300px !important;
+  display: flex !important;
+}
+
+.all-candidates .slick-current .bubble {
+  border: 2px solid yellow;
+}
+
+.all-candidates {
+  width: calc(100% - 50px);
+  margin: auto;
+}
+
+.democrat {
+  background-color: blue;
+}
+
+.republican {
+  background-color: red;
+}
+
+.uup {
+  background-color: purple;
+}
+
+/* .all-candidates {
+  display: flex;
+} */

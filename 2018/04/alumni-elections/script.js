@@ -191,65 +191,136 @@ var otherCandidates = [
 
 // shuffles arrays
 function shuffle(a) {
-    var j, x, i;
-    for (i = a.length - 1; i > 0; i--) {
-        j = Math.floor(Math.random() * (i + 1));
-        x = a[i];
-        a[i] = a[j];
-        a[j] = x;
-    }
-    return a;
+  var j, x, i;
+  for (i = a.length - 1; i > 0; i--) {
+    j = Math.floor(Math.random() * (i + 1));
+    x = a[i];
+    a[i] = a[j];
+    a[j] = x;
+  }
+  return a;
 }
 
 // reset PA div
 function resetPa() {
   $("#pa-div").empty();
   $("#pa-div").append(`
-    <div class="curr-profile" id="curr-profile">
+    <div class="curr-profile" id="pa-curr-profile">
     </div>
-    <div class="all-candidates" id="all-candidates">
+    <div class="all-candidates" id="pa-all-candidates">
     </div>
-  `)
-}
+    `)
+  }
 
+  function resetOther() {
+    $("#other-div").empty();
+    $("#other-div").append(`
+      <div class="curr-profile" id="curr-profile">
+      </div>
+      <div class="all-candidates" id="all-candidates">
+      </div>
+    `)
+  }
 
-$(document).ready(function() {
+  $(document).ready(function() {
 
-  // problems with Daley's photo
+    // empties out div to repopulate
+    resetPa();
 
-  // empties out div to repopulate
-  resetPa();
+    // shuffles arrays so candidates are displayed in random order
+    var shuffledPa = shuffle(paCandidates);
+    var shuffledOther = shuffle(otherCandidates);
 
-  // shuffles arrays so candidates are displayed in random order
-  var shuffledPa = shuffle(paCandidates);
-  var shuffledOther = shuffle(otherCandidates);
-
-  // fills div with candidate info
-  shuffledPa.forEach(function(cand, index) {
-    if (index === 0) {
-      // featured profile
-      $("#curr-profile").append(`
-          <div class="featured-bubble">
+    // fills div with candidate info
+    shuffledPa.forEach(function(cand, index) {
+        // featured profile
+        $("#pa-curr-profile").append(`
+          <div class="featured-slide">
+          <div class="featured-bubble ${(cand.party === "Republican" ? "republican" : (cand.party === "Democrat" ? "democrat" : "uup"))}">
             <img src="${cand.img}" class="featured-img">
-          </div>
-          <div class="cand-info">
-            <div class="basic-info">
-              <p class="feat-name">${cand.name}</p>
-              <p>${cand.school}</p>
             </div>
-            <div class="office-state-info">
-              <p class="feat-office">U.S. House, ${cand.district} district</p>
+            <div class="cand-info">
+              <div class="basic-info">
+                <p class="feat-name">${cand.name}</p>
+                <p>${cand.school}</p>
+              </div>
+              <div class="office-state-info">
+                <p class="feat-office">U.S. House, ${cand.district} district</p>
+              </div>
             </div>
-          </div>
-      `)
-    } else {
-      // append the smaller images bubbles
-      $("#all-candidates").append(`
-        <div class="bubble">
-          <img src="${cand.img}" class="bubble-img">
-        </div>
-      `)
-    }
-  })
+            </div>
+            `)
+            // append the smaller images bubbles
+            $("#pa-all-candidates").append(`
+              <div class="slide">
+              <div class="bubble ${(cand.party === "Republican" ? "republican" : (cand.party === "Democrat" ? "democrat" : "uup"))}">
+                <img src="${cand.img}" class="bubble-img">
+              </div>
+              </div>
+                `)
+            });
 
-})
+            shuffledOther.forEach(function(cand, index) {
+                // featured profile
+                $("#curr-profile").append(`
+                  <div class="featured-slide">
+                  <div class="featured-bubble ${(cand.party === "Republican" ? "republican" : (cand.party === "Democrat" ? "democrat" : "uup"))}">
+                    <img src="${cand.img}" class="featured-img">
+                    </div>
+                    <div class="cand-info">
+                      <div class="basic-info">
+                        <p class="feat-name">${cand.name}</p>
+                        <p>${cand.school}</p>
+                      </div>
+                      <div class="office-state-info">
+                        <p class="feat-office">${cand.office}, ${cand.district} district</p>
+                        <p> ${cand.state} </p>
+                      </div>
+                    </div>
+                    </div>
+                    `)
+                    // append the smaller images bubbles
+                    $("#all-candidates").append(`
+                      <div class="slide">
+                      <div class="bubble ${(cand.party === "Republican" ? "republican" : (cand.party === "Democrat" ? "democrat" : "uup"))}">
+                        <img src="${cand.img}" class="bubble-img">
+                      </div>
+                      </div>
+                        `)
+                    });
+
+            $('#pa-curr-profile').slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              fade: true,
+              asNavFor: '#pa-all-candidates'
+            });
+
+            $("#pa-all-candidates").slick({
+              slidesToShow: 6,
+              slidesToScroll: 1,
+              asNavFor: '#pa-curr-profile',
+              dots: true,
+              centerMode: true,
+              focusOnSelect: true
+            });
+
+            $('#curr-profile').slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              fade: true,
+              asNavFor: '#all-candidates'
+            });
+
+            $("#all-candidates").slick({
+              slidesToShow: 6,
+              slidesToScroll: 1,
+              asNavFor: '#curr-profile',
+              dots: true,
+              centerMode: true,
+              focusOnSelect: true
+            });
+
+          });
