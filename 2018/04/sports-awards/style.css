@@ -1,0 +1,49 @@
+img.img-fluid {
+  margin-bottom: 10px;
+}
+
+img.header {
+  margin: 5px;
+}
+
+.header-link {
+  margin: auto;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  background-color: #000000;
+}
+
+#container {
+  margin
+}
+
+#title {
+  text-align: center;
+}
+
+#pic1 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://s3.amazonaws.com/snwceomedia/dpn/7431a030-bbfd-417d-b1cf-3e1cd35de49b.original.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#tabs {
+  text-align: center;
+}
+
+.subheading {
+  text-align: center;
+}
+
+.awardname {
+  text-align: center;
+}
