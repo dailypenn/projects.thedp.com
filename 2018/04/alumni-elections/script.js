@@ -12,14 +12,14 @@ var paCandidates = [
     district: "18th",
     party: "Democrat",
     incumbent: "2018",
-    school: "College 2006 (BA), Law 2009 (JD)",
+    school: "College 2006 (BA), <br> Law 2009 (JD)",
     img: "https://snworksceo.imgix.net/dpn/475f2eb2-1149-4874-bcad-fe386723eb19.sized-1000x1000.png?h=400"
   },
   {
     name: "Mary Jo Daley",
     district: "4th",
     party: "Democrat",
-    school: "Wharton 1987 (BBA), SAS 2001 (Master of Government Administration)",
+    school: "Wharton 1987 (BBA), <br> SAS 2001 (Master of Government Administration)",
     img: "https://snworksceo.imgix.net/dpn/d745331e-048a-47b2-9bb0-fb21663641e3.sized-1000x1000.png?h=400"
   },
   {
@@ -103,7 +103,7 @@ var otherCandidates = [
     office: "House",
     district: "1st",
     party: "Democrat",
-    school: "LPS 2011 (Master of Liberal Arts)",
+    school: "LPS 2011 <br> (Master of Liberal Arts)",
     img: "https://snworksceo.imgix.net/dpn/fc8686c3-87bd-4a2d-a805-7ce149ff003f.sized-1000x1000.png?h=400"
   },
   {
@@ -121,7 +121,7 @@ var otherCandidates = [
     office: "Senate",
     district: "5th",
     party: "Republican",
-    school: "College, Wharton 1988 (BA, BS)",
+    school: "College, Wharton, <br> 1988 (BA, BS)",
     img: "https://snworksceo.imgix.net/dpn/7063d327-45df-4301-ae38-b9c95672e870.sized-1000x1000.png?h=400"
   },
   {
@@ -130,7 +130,7 @@ var otherCandidates = [
     office: "House",
     district: "5th",
     party: "Republican",
-    school: "SAS 1995 (Master of Government Administration)",
+    school: "SAS 1995 <br> (Master of Government Administration)",
     img: "https://snworksceo.imgix.net/dpn/ac0dfc08-b121-4f15-9f3e-fa0747816953.sized-1000x1000.png?h=400"
   },
   {
@@ -157,7 +157,7 @@ var otherCandidates = [
     office: "Senate",
     district: "45th",
     party: "Democrat",
-    school: "College, Wharton, 1999 (BA, BS)",
+    school: "College, Wharton, <br> 1999 (BA, BS)",
     img: "https://snworksceo.imgix.net/dpn/082320ef-3727-41bb-8465-073ec475ba06.sized-1000x1000.png?h=400"
   },
   {
@@ -201,126 +201,123 @@ function shuffle(a) {
   return a;
 }
 
-// reset PA div
-function resetPa() {
-  $("#pa-div").empty();
-  $("#pa-div").append(`
-    <div class="curr-profile" id="pa-curr-profile">
-    </div>
-    <div class="all-candidates" id="pa-all-candidates">
-    </div>
-    `)
-  }
+// initializes slick carousel
+function slickItems() {
+  // slick PA items
+  $('#pa-curr-profile').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '#pa-all-candidates'
+  });
 
-  function resetOther() {
-    $("#other-div").empty();
-    $("#other-div").append(`
-      <div class="curr-profile" id="curr-profile">
+  $("#pa-all-candidates").slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    asNavFor: '#pa-curr-profile',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
+
+  // slick other items
+  $('#curr-profile').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '#all-candidates'
+  });
+
+  $("#all-candidates").slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    asNavFor: '#curr-profile',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
+}
+
+$(document).ready(function() {
+  //TODO: John McCann, Mary Jo Daley, 
+  // shuffles arrays so candidates are displayed in random order
+  var shuffledPa = shuffle(paCandidates);
+  var shuffledOther = shuffle(otherCandidates);
+
+  // fills div with candidate info
+  shuffledPa.forEach(function(cand, index) {
+    // featured profile
+    $("#pa-curr-profile").append(`
+      <div class="featured-slide">
+        <div class="featured-bubble ${(cand.party === "Republican" ? "republican" : (cand.party === "Democrat" ? "democrat" : "uup"))}">
+          <img src="${cand.img}" class="featured-img"></img>
+        </div>
+        <div class="cand-info">
+          <div class="name">
+            <div class="label">Name</div>
+            <div class="text">${cand.name}</div>
+          </div>
+          <div class="v-line"></div>
+          <div class="aff">
+            <div class="label">Penn Affiliation</div>
+            <div class="text">${cand.school}</div>
+          </div>
+          <div class="v-line"></div>
+          <div class="office">
+            <div class="label">Office</div>
+            <div class="text">U.S. House, Pa. <br> ${cand.district} District</div>
+          </div>
+        </div>
       </div>
-      <div class="all-candidates" id="all-candidates">
-      </div>
-    `)
-  }
+      `);
+      // append the smaller images bubbles
+      $("#pa-all-candidates").append(`
+        <div class="slide">
+          <div class="bubble ${(cand.party === "Republican" ? "republican" : (cand.party === "Democrat" ? "democrat" : "uup"))}">
+            <img src="${cand.img}" class="bubble-img"></img>
+          </div>
+        </div>
+        `);
+      });
 
-  $(document).ready(function() {
-
-    // empties out div to repopulate
-    resetPa();
-
-    // shuffles arrays so candidates are displayed in random order
-    var shuffledPa = shuffle(paCandidates);
-    var shuffledOther = shuffle(otherCandidates);
-
-    // fills div with candidate info
-    shuffledPa.forEach(function(cand, index) {
+      shuffledOther.forEach(function(cand, index) {
         // featured profile
-        $("#pa-curr-profile").append(`
+        $("#curr-profile").append(`
           <div class="featured-slide">
-          <div class="featured-bubble ${(cand.party === "Republican" ? "republican" : (cand.party === "Democrat" ? "democrat" : "uup"))}">
-            <img src="${cand.img}" class="featured-img">
+            <div class="featured-bubble ${(cand.party === "Republican" ? "republican" : (cand.party === "Democrat" ? "democrat" : "uup"))}">
+              <img src="${cand.img}" class="featured-img"></img>
             </div>
             <div class="cand-info">
-              <div class="basic-info">
-                <p class="feat-name">${cand.name}</p>
-                <p>${cand.school}</p>
+              <div class="name">
+                <div class="label">Name</div>
+                <div class="text">${cand.name}</div>
               </div>
-              <div class="office-state-info">
-                <p class="feat-office">U.S. House, ${cand.district} district</p>
+              <div class="v-line"></div>
+              <div class="aff">
+                <div class="label">Penn Affiliation</div>
+                <div class="text">${cand.school}</div>
+              </div>
+              <div class="v-line"></div>
+              <div class="office">
+                <div class="label">Office</div>
+                <div class="text">U.S. ${cand.office}, ${cand.state} <br> ${cand.district} District</div>
               </div>
             </div>
-            </div>
-            `)
-            // append the smaller images bubbles
-            $("#pa-all-candidates").append(`
-              <div class="slide">
+          </div>
+          `);
+          // append the smaller images bubbles
+          $("#all-candidates").append(`
+            <div class="slide">
               <div class="bubble ${(cand.party === "Republican" ? "republican" : (cand.party === "Democrat" ? "democrat" : "uup"))}">
-                <img src="${cand.img}" class="bubble-img">
+                <img src="${cand.img}" class="bubble-img"></img>
               </div>
-              </div>
-                `)
-            });
-
-            shuffledOther.forEach(function(cand, index) {
-                // featured profile
-                $("#curr-profile").append(`
-                  <div class="featured-slide">
-                  <div class="featured-bubble ${(cand.party === "Republican" ? "republican" : (cand.party === "Democrat" ? "democrat" : "uup"))}">
-                    <img src="${cand.img}" class="featured-img">
-                    </div>
-                    <div class="cand-info">
-                      <div class="basic-info">
-                        <p class="feat-name">${cand.name}</p>
-                        <p>${cand.school}</p>
-                      </div>
-                      <div class="office-state-info">
-                        <p class="feat-office">${cand.office}, ${cand.district} district</p>
-                        <p> ${cand.state} </p>
-                      </div>
-                    </div>
-                    </div>
-                    `)
-                    // append the smaller images bubbles
-                    $("#all-candidates").append(`
-                      <div class="slide">
-                      <div class="bubble ${(cand.party === "Republican" ? "republican" : (cand.party === "Democrat" ? "democrat" : "uup"))}">
-                        <img src="${cand.img}" class="bubble-img">
-                      </div>
-                      </div>
-                        `)
-                    });
-
-            $('#pa-curr-profile').slick({
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              arrows: false,
-              fade: true,
-              asNavFor: '#pa-all-candidates'
-            });
-
-            $("#pa-all-candidates").slick({
-              slidesToShow: 6,
-              slidesToScroll: 1,
-              asNavFor: '#pa-curr-profile',
-              dots: true,
-              centerMode: true,
-              focusOnSelect: true
-            });
-
-            $('#curr-profile').slick({
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              arrows: false,
-              fade: true,
-              asNavFor: '#all-candidates'
-            });
-
-            $("#all-candidates").slick({
-              slidesToShow: 6,
-              slidesToScroll: 1,
-              asNavFor: '#curr-profile',
-              dots: true,
-              centerMode: true,
-              focusOnSelect: true
-            });
-
+            </div>
+            `);
           });
+
+          slickItems();
+
+
+        });
