@@ -1,49 +1,345 @@
-img.img-fluid {
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400,400i');
+@import url("https://use.typekit.net/kua0mek.css");
+
+body {
+  font-size: 1em;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'rama-gothic-m';
+  font-weight: 400;
+  margin: 0;
+}
+
+p {
+  font-family: 'minion-pro';
+  font-weight: 400;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 3rem;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-style: italic;
   margin-bottom: 10px;
 }
 
-img.header {
-  margin: 5px;
+p {
+  font-weight: 300;
 }
 
-.header-link {
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+a:hover {
+  color: #AAA;
+}
+
+a:last-of-type {
+  margin-bottom: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #000;
+}
+
+iframe {
+  width: 100%;
+}
+
+iframe.join-form {
+  height: calc(100% - 59px);
+}
+
+section {
+  min-height: calc(100vh - 100px);
+  height: auto;
+  padding: 50px;
+}
+
+section.intro {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(transparent, transparent, #000), url('https://snworksceo.imgix.net/dpn/0f26a007-001d-4745-8088-7db4e3297602.sized-1000x1000.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 150px);
+}
+
+section.team {
+  background-color: #AA1E22;
+  background: linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/917417c6-2a39-487a-bd75-8913f3427445.sized-1000x1000.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+}
+
+section.team a {
+  color: #DDD;
+}
+
+section.team a:hover {
+  color: #AAA;
+}
+
+section.individual {
+  background-color: #EEE;
+  background: linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/5803b1e8-72a6-4810-9770-60123f4a066d.sized-1000x1000.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section.individual a {
+  color: #AA1E22;
+}
+
+section.individual a:hover {
+  color: #777;
+}
+
+section.moment {
+  background-color: #44BFBF;
+  background: linear-gradient(rgba(68, 191, 191, 0.9), rgba(68, 191, 191, 0.9)), url('https://snworksceo.imgix.net/dpn/a7c7d5b9-59ac-420c-bd26-cfd44d0e52d2.sized-1000x1000.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+}
+
+section.moment a {
+  color: #C9D4E5;
+}
+
+section.moment a:hover {
+  color: #AFBCCE;
+}
+
+p.overall {
+  margin: 20px auto;
+}
+
+.logo {
+  margin-top: 5px;
+}
+
+.intro-text {
+  color: #FFF;
+  text-align: center;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.section.form {
+  height: calc(100% - 63px);
+}
+
+.departments {
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.departments span {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.awardtypes {
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.awardtypes span {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .footer {
-  text-align: center;
-  margin-bottom: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.navbar {
-  background-color: #000000;
+.footer span {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
-#container {
-  margin
+.team-tab, .ind-tab, .mom-tab {
+  cursor: pointer;
 }
 
-#title {
-  text-align: center;
+.team-text, .ind-text, .mom-text {
+  visibility: hidden;
+  margin: auto;
+  height: 0;
+  width: 90%;
 }
 
-#pic1 {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("https://s3.amazonaws.com/snwceomedia/dpn/7431a030-bbfd-417d-b1cf-3e1cd35de49b.original.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.team-text p, .ind-text p, .mom-text ps {
+  margin: 0;
+  height: 0;
 }
 
-#tabs {
-  text-align: center;
+.team-text.active, .ind-text.active, .mom-text.active {
+  visibility: visible;
+  height: auto;
 }
 
-.subheading {
-  text-align: center;
+.team-text.active p, .ind-text.active p, .mom-text.active p {
+  margin: 1em 0;
+  height: auto;
 }
 
-.awardname {
-  text-align: center;
+.team-tab.active {
+  font-weight: 700;
+  border-bottom: 3px solid #FFF;
+}
+
+.ind-tab.active {
+  font-weight: 700;
+  border-bottom: 3px solid #000;
+}
+
+.mom-tab.active {
+  font-weight: 700;
+  border-bottom: 3px solid #FFF;
+}
+
+.inline-link {
+  display: inline-block;
+  margin: 0;
+}
+
+.award-title {
+    text-align: center;
+}
+
+.award-image {
+    display: inline-block;
+    width: 45%;
+    margin-right: 2%;
+}
+
+.award-image img {
+    width: 100%;
+}
+
+.award-desc {
+    margin-left: 2%;
+    display: inline-block;
+    width: 45%;
+}
+
+@media screen and (max-width: 1200px) {
+  .departments {
+    flex-wrap: wrap;
+  }
+
+  .departments span {
+    width: 33%;
+  }
+
+  .ed-text, .biz-text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .section {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  section {
+    min-height: calc(100vh - 40px);
+    height: auto;
+    width: calc(100vw - 30px);
+    padding: 20px 15px;
+  }
+
+  section.intro {
+    min-height: calc(100vh - 90px);
+  }
+
+  section.join {
+    height: calc(100vh - 40px);
+  }
+
+  .section.form {
+    height: calc(100% - 86px);
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .biz-body .departments span {
+    width: 50%;
+  }
 }
