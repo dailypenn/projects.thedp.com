@@ -103,7 +103,7 @@ section.intro {
 
 section.team {
   background-color: #AA1E22;
-  background: url('https://snworksceo.imgix.net/dpn/917417c6-2a39-487a-bd75-8913f3427445.sized-1000x1000.jpg');
+  background: url('https://s3.amazonaws.com/snwceomedia/dpn/f5360b8d-c2c2-4310-9d7c-46913b65ac2d.sized-1000x1000.jpg');
   background-color: #990000;
   background-blend-mode: soft-light;
   background-position: center;
@@ -123,13 +123,14 @@ section.team a:hover {
 
 section.individual {
   background-color: #EEE;
-  background-image: url('https://snworksceo.imgix.net/dpn/5803b1e8-72a6-4810-9770-60123f4a066d.sized-1000x1000.jpg');
+  background-image: url('https://s3.amazonaws.com/snwceomedia/dpn/3211d02f-bad8-499c-a3f3-d499c2f44732.sized-1000x1000.jpg');
   background-color: #011F5B;
   background-blend-mode: soft-light;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0;
+  color: #FFF;
 }
 
 section.individual a {
@@ -142,7 +143,7 @@ section.individual a:hover {
 
 section.moment {
   background-color: #44BFBF;
-  background: url('https://snworksceo.imgix.net/dpn/a7c7d5b9-59ac-420c-bd26-cfd44d0e52d2.sized-1000x1000.jpg');
+  background: url('https://s3.amazonaws.com/snwceomedia/dpn/aa67d926-729c-46f0-9667-859e11ca195e.sized-1000x1000.jpg');
   background-color: #990000;
   background-blend-mode: soft-light;
   background-position: center;
@@ -170,7 +171,7 @@ p.overall {
 }
 
 .intro-text {
-  color: #000;
+  color: #FFF;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -276,7 +277,7 @@ p.overall {
 
 .ind-tab.active {
   font-weight: 700;
-  border-bottom: 3px solid #000;
+  border-bottom: 3px solid #FFF;
 }
 
 .mom-tab.active {
