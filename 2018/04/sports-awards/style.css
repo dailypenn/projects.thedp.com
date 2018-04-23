@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400,400i');
 @import url("https://use.typekit.net/kua0mek.css");
 
 body {
@@ -14,7 +13,7 @@ h1, h2, h3, h4, h5 {
 
 p {
   font-family: 'minion-pro';
-  font-weight: 600;
+  font-weight: 400;
 }
 
 h1 {
@@ -24,38 +23,16 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 10px;
   font-size: 2.5rem;
-  text-align: center;
-}
-
-h3 {
-  font-size: 2rem;
-}
-
-h4 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
   text-align: center;
   text-transform: uppercase;
   display: inline-block;
-}
-
-h5 {
-  font-size: 1.5rem;
-  font-style: italic;
-  margin-bottom: 10px;
-}
-
-p {
-  font-weight: 300;
 }
 
 a {
   text-decoration: none;
   color: inherit;
   display: block;
-  font-weight: 300;
   margin-bottom: 10px;
 }
 
@@ -75,16 +52,8 @@ header {
   background-color: #000;
 }
 
-iframe {
-  width: 100%;
-}
-
-iframe.join-form {
-  height: calc(100% - 59px);
-}
-
 section {
-  min-height: calc(100vh - 100px);
+  min-height: 100vh;
   height: auto;
   padding: 50px;
 }
@@ -102,9 +71,8 @@ section.intro {
 }
 
 section.team {
-  background-color: #AA1E22;
   background: url('https://s3.amazonaws.com/snwceomedia/dpn/f5360b8d-c2c2-4310-9d7c-46913b65ac2d.sized-1000x1000.jpg');
-  background-color: #990000;
+  background-color: #700000;
   background-blend-mode: soft-light;
   background-position: center;
   background-size: cover;
@@ -122,9 +90,8 @@ section.team a:hover {
 }
 
 section.individual {
-  background-color: #EEE;
   background-image: url('https://s3.amazonaws.com/snwceomedia/dpn/3211d02f-bad8-499c-a3f3-d499c2f44732.sized-1000x1000.jpg');
-  background-color: #011F5B;
+  background-color: #001849;
   background-blend-mode: soft-light;
   background-position: center;
   background-size: cover;
@@ -142,16 +109,14 @@ section.individual a:hover {
 }
 
 section.moment {
-  background-color: #44BFBF;
   background: url('https://s3.amazonaws.com/snwceomedia/dpn/aa67d926-729c-46f0-9667-859e11ca195e.sized-1000x1000.jpg');
-  background-color: #990000;
+  background-color: #700000;
   background-blend-mode: soft-light;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFF;
   padding: 0;
-    
 }
 
 section.moment a {
@@ -160,10 +125,6 @@ section.moment a {
 
 section.moment a:hover {
   color: #AFBCCE;
-}
-
-p.overall {
-  margin: 20px auto;
 }
 
 .logo {
@@ -177,55 +138,50 @@ p.overall {
   flex-direction: column;
 }
 
-#eotya {
-    margin-top: 40px;
-    font-size: 80px;   
+.eotya {
+  margin-top: 40px;
+  font-size: 80px;
 }
 
-#introduction {
-    width: 50%;
-    margin:auto;
-}
 .section {
   width: 100%;
   margin-left: 0;
   margin-right: 0;
 }
 
-.section.form {
-  height: calc(100% - 63px);
-}
-
-.departments {
+.awards {
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.departments span {
+.awards span {
   flex-grow: 1;
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
 
-.departments span h4 {
-    font-weight: 600;
+section.individual .awards {
+  flex-wrap: wrap;
 }
 
-.awardtypes {
+section.individual .awards span {
+  width: 33%;
+}
+
+.award-types {
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.awardtypes span {
+.award-types h2 {
   flex-grow: 1;
-  display: flex;
-  justify-content: center;
   margin-bottom: 10px;
 }
 
@@ -244,29 +200,31 @@ p.overall {
   margin-bottom: 30px;
 }
 
-.team-tab, .ind-tab, .mom-tab {
+.team-tab, .ind-tab, .moment-tab {
   cursor: pointer;
 }
 
-.team-text, .ind-text, .mom-text {
-  visibility: hidden;
+.team-text, .ind-text, .moment-text {
+  display: none;
   margin: auto;
   height: 0;
   width: 90%;
 }
 
-.team-text p, .ind-text p, .mom-text ps {
-  margin: 0;
-  height: 0;
+.intro p {
+  font-size: 150%;
+  width: 50%;
+  margin: auto;
 }
 
-.team-text.active, .ind-text.active, .mom-text.active {
-  visibility: visible;
+.team-text.active, .ind-text.active, .moment-text.active {
+  display: block;
   height: auto;
 }
 
-.team-text.active p, .ind-text.active p, .mom-text.active p {
-  margin: 1em 0;
+.team-text.active p, .ind-text.active p, .moment-text.active p {
+  margin: 0;
+  margin-bottom: 1em;
   height: auto;
 }
 
@@ -280,74 +238,68 @@ p.overall {
   border-bottom: 3px solid #FFF;
 }
 
-.mom-tab.active {
+.moment-tab.active {
   font-weight: 700;
   border-bottom: 3px solid #FFF;
 }
 
-.inline-link {
-  display: inline-block;
-  margin: 0;
-}
-
 .award-title {
-    text-align: center;
-    font-weight: 600;
-    font-size: 65px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 65px;
 }
 
 .award-image {
-    display: inline-block;
-    width: 45%;
-    margin-right: 2%;
+  width: 50%;
 }
 
 .award-image img {
-    width: 100%;
+  width: 100%;
 }
 
 .award-desc {
-    margin-left: 2%;
-    display: inline-block;
-    width: 45%;
+  width: 50%;
+  margin-left: 30px;
 }
 
 .award-flex {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
 }
 
 .type {
-    background-color: #FFF;
-    color: #000;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-weight: 600;
-    font-size: 80px;
-    margin-bottom: 50px;
+  background-color: #FFF;
+  color: #000;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 600;
+  font-size: 80px;
+  margin-bottom: 50px;
 }
 
-@media screen and (max-width: 1200px) {
-  .departments {
-    flex-wrap: wrap;
-  }
-
-  .departments span {
-    width: 33%;
-  }
-
-  .ed-text, .biz-text {
+@media screen and (max-width: 992px) {
+  .intro p {
     width: 100%;
+    font-size: 110%;
   }
-}
 
-@media screen and (max-width: 800px) {
-  .section {
+  .award-flex {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .award-image, .award-desc {
     width: 100%;
+    margin-left: 0;
+  }
+
+  section.individual .awards span {
+    width: 50%;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   h1 {
     font-size: 2rem;
   }
@@ -356,32 +308,40 @@ p.overall {
     font-size: 1.8rem;
   }
 
-  h3 {
-    font-size: 1.2rem;
-  }
-
   section {
     min-height: calc(100vh - 40px);
     height: auto;
-    width: calc(100vw - 30px);
-    padding: 20px 15px;
   }
 
   section.intro {
     min-height: calc(100vh - 90px);
   }
 
-  section.join {
-    height: calc(100vh - 40px);
+  .intro p {
+    margin: 40px auto;
   }
 
-  .section.form {
-    height: calc(100% - 86px);
+  .intro {
+    padding: 20px;
   }
-}
 
-@media screen and (max-width: 350px) {
-  .biz-body .departments span {
-    width: 50%;
+  .award-types, .awards {
+    flex-direction: column;
+  }
+
+  .awards span {
+    width: 100%;
+  }
+
+  section.individual .awards span {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer span:first-of-type {
+    margin-bottom: 0;
   }
 }
