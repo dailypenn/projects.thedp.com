@@ -85,7 +85,7 @@ for (var i = 0; i < indTabs.length; i++) {
         break;
       case 'malerook':
         document.querySelector('section.individual').style.backgroundImage =
-          "url('https://snworksceo.imgix.net/dpn/7f265244-68c1-4483-b138-8fc49c343444.sized-1000x1000.jpg')";
+          "url('https://s3.amazonaws.com/snwceomedia/dpn/50c9843e-61d0-4487-b1fb-0b8df77530ec.sized-1000x1000.jpg')";
         document.querySelector('section.individual').style.backgroundColor = "#001849";
         document.querySelector('section.individual').style.backgroundBlendMode = "soft-light";
         break;
@@ -96,12 +96,12 @@ for (var i = 0; i < indTabs.length; i++) {
         document.querySelector('section.individual').style.backgroundBlendMode = "soft-light";
         break;
       case 'femath':
-        document.querySelector('section.invidiual').style.backgroundImage =
-          "url('https://snworksceo.imgix.net/dpn/68726eb4-7df0-4e26-9d83-3ad542d33846.sized-1000x1000.jpg')";
+        document.querySelector('section.individual').style.backgroundImage =
+          "url('https://s3.amazonaws.com/snwceomedia/dpn/1ab6bade-479d-49d2-aa2e-055fd61f4476.sized-1000x1000.jpg')";
         document.querySelector('section.individual').style.backgroundColor = "#001849";
         document.querySelector('section.individual').style.backgroundBlendMode = "soft-light";
         break;
-        case 'fbreak':
+      case 'fbreak':
         document.querySelector('section.individual').style.backgroundImage =
           "url('https://s3.amazonaws.com/snwceomedia/dpn/b4c3f932-9d69-41a1-b693-9a2b66846b1f.sized-1000x1000.jpg')";
         document.querySelector('section.individual').style.backgroundColor = "#001849";
@@ -115,19 +115,19 @@ for (var i = 0; i < indTabs.length; i++) {
         break;
       case 'mbreak':
         document.querySelector('section.individual').style.backgroundImage =
-          "url('https://s3.amazonaws.com/snwceomedia/dpn/c442c5db-3a57-4da0-9d08-4a3903d12f38.sized-1000x1000.jpg')";
-        document.querySelector('section.team').style.backgroundColor = "#001849";
+          "url('https://s3.amazonaws.com/snwceomedia/dpn/a834e4a5-e420-44fb-95c2-af0895e28607.sized-1000x1000.jpg')";
+        document.querySelector('section.individual').style.backgroundColor = "#001849";
         document.querySelector('section.individual').style.backgroundBlendMode = "soft-light";
         break;
       case 'indchamp':
-        document.querySelector('section.invidiual').style.backgroundImage =
+        document.querySelector('section.individual').style.backgroundImage =
           "url('https://s3.amazonaws.com/snwceomedia/dpn/533c5f22-0469-42f5-bb7a-7989f291faa6.sized-1000x1000.jpg')";
-        document.querySelector('section.team').style.backgroundColor = "#001849";
+        document.querySelector('section.individual').style.backgroundColor = "#001849";
         document.querySelector('section.individual').style.backgroundBlendMode = "soft-light";
         break;
-        case 'recbreak':
-        document.querySelector('section.invidiual').style.backgroundImage =
-          "url('https://snworksceo.imgix.net/dpn/68726eb4-7df0-4e26-9d83-3ad542d33846.sized-1000x1000.jpg')";
+      case 'recbreak':
+        document.querySelector('section.individual').style.backgroundImage =
+          "url('https://s3.amazonaws.com/snwceomedia/dpn/4f452dac-1e4a-418b-b7aa-dd8a316b996c.sized-1000x1000.jpg')";
         document.querySelector('section.individual').style.backgroundColor = "#001849";
         document.querySelector('section.individual').style.backgroundBlendMode = "soft-light";
         break;
@@ -169,7 +169,7 @@ for (var i = 0; i < momTabs.length; i++) {
     switch (this.id) {
       case 'game':
         document.querySelector('section.moment').style.backgroundImage =
-          "url('https://s3.amazonaws.com/snwceomedia/dpn/aa67d926-729c-46f0-9667-859e11ca195e.sized-1000x1000.jpg')";
+          "url('https://s3.amazonaws.com/snwceomedia/dpn/deb29bf1-afe8-4bff-ba4d-d23f7fa9aa88.sized-1000x1000.jpg')";
         document.querySelector('section.moment').style.backgroundColor = "#700000";
         document.querySelector('section.moment').style.backgroundBlendMode = "soft-light";
         break;
