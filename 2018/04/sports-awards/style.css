@@ -36,6 +36,10 @@ a {
   margin-bottom: 10px;
 }
 
+a.inline {
+  display: inline-block;
+}
+
 a:hover {
   color: #AAA;
 }
@@ -81,12 +85,12 @@ section.team {
   padding: 0;
 }
 
-section.team a {
-  color: #DDD;
+section.team a, section.moment a {
+  color: #AAA;
 }
 
-section.team a:hover {
-  color: #AAA;
+section.team a:hover, section.moment a:hover {
+  color: #888;
 }
 
 section.individual {
@@ -117,14 +121,6 @@ section.moment {
   background-repeat: no-repeat;
   color: #FFF;
   padding: 0;
-}
-
-section.moment a {
-  color: #C9D4E5;
-}
-
-section.moment a:hover {
-  color: #AFBCCE;
 }
 
 .logo {
