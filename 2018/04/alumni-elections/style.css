@@ -280,6 +280,27 @@ hr {
 
 }
 
+@media screen and (max-width: 320px) {
+  .bubble-img {
+    max-width: 60px;
+    border-radius: 50%;
+  }
+
+  .bubble {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    opacity: 0.5;
+  }
+
+  .slick-current .outer-bubble {
+    border-radius: 50%;
+    width: 60px;
+    border-style: solid;
+    padding: 7px;
+  }
+}
+
 /* slick responsive */
 /* width 100% for everything in curr profile */
 }

@@ -232,7 +232,7 @@ function slickItems() {
           slidesToShow: 2,
           dots: false
         }
-      },
+      }
     ]
   });
 }
