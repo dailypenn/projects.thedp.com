@@ -157,6 +157,10 @@ hr {
   height: 125px;
 }
 
+.slick-slide {
+  outline: none !important;
+}
+
 
 /* legend / party info */
 .box {
