@@ -190,11 +190,12 @@ function slickItems() {
   // PA carousel
   $("#pa-all-candidates").slick({
     slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     asNavFor: '#pa-curr-profile',
     dots: true,
     centerMode: true,
     focusOnSelect: true,
+    swipeToSlide: true,
     responsive: [
       {
         breakpoint: 480,
@@ -218,11 +219,12 @@ function slickItems() {
   // carousel
   $("#all-candidates").slick({
     slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     asNavFor: '#curr-profile',
     dots: true,
     centerMode: true,
     focusOnSelect: true,
+    swipeToSlide: true,
     responsive: [
       {
         breakpoint: 480,
@@ -230,7 +232,7 @@ function slickItems() {
           slidesToShow: 2,
           dots: false
         }
-      }
+      },
     ]
   });
 }
