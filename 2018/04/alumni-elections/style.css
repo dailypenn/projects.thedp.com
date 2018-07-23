@@ -1,7 +1,7 @@
 body {
-    font-family: 'Avenir Next';
-    text-align: center;
-    color: #333333;
+  font-family: 'Avenir Next';
+  text-align: center;
+  color: #333333;
 }
 
 h1 {
@@ -13,62 +13,103 @@ h2 {
   font-weight: 500;
   font-size: 30px;
 }
+
+hr {
+  width: 80%;
+  margin-top: 80px;
+}
+
+.intro {
+  padding-bottom: 20px;
+}
+
+#pa-div, #other-div {
+  margin-top: 60px;
+}
+
+
+/* featured candidate box */
+.featured-slide {
+  height: 250px !important;
+  display: flex !important;
+}
+
 .featured-img {
-    max-height: 150px;
-    max-width: 150px;
-    width: auto;
-    position: absolute;
-    bottom: 0;
-    margin: auto;
-    border-radius: 50%;
+  max-height: 150px;
+  max-width: 150px;
+  border-radius: 50%;
 }
 
 .featured-bubble {
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-shrink: 0;
-    margin-left: 50px;
-}
-
-.bubble-img {
-  max-height: 100px;
-  max-width: 100px;
-  width: auto;
-  position: absolute;
-  bottom: 0;
-  margin: auto;
   border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin-left: 50px;
 }
 
-.bubble {
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-
-.pa-curr-profile {
-
-}
 .cand-info {
-  display: flex;
-  justify-content: space-evenly;
   width: inherit;
-  margin-top: 50px;
-  height: 80px;
+  margin-top: 30px;
+  margin-left: 20px
 }
 
 .feat-name, .feat-office {
   font-size: 30px;
 }
 
+.name, .aff, .office {
+  text-align: left;
+}
+
+.name {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.aff-off {
+  width: 100%;
+  display: flex;
+}
+
+.office {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.aff {
+  border-right: 1px solid #9B9B9B;
+  width: 50%;
+}
+
+.name .text {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.text {
+  font-size: 22px;
+}
+
+.label {
+  font-size: 18px;
+  color: #9B9B9B;
+}
+
+
+/* candidate carousel */
+.bubble-img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+}
+
+.bubble {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  opacity: 0.5;
+}
 
 .slick-track {
   height: 104px;
@@ -77,18 +118,13 @@ h2 {
 .slick-prev:before {
   color: black !important;
 }
+
 .slick-next:before {
   color: black !important;
 }
 
-
-.featured-slide {
-  height: 200px !important;
-  display: flex !important;
-}
-
 .all-candidates .slick-current .bubble, .pa-all-candidates .slick-current .bubble {
-  border: 2px solid yellow;
+  opacity: 1;
 }
 
 .all-candidates, .pa-all-candidates {
@@ -96,10 +132,43 @@ h2 {
   margin: auto;
 }
 
-.intro {
-  padding-bottom: 20px;
+.slick-slide .dem-border, .slick-slide .rep-border, .slick-slide .uup-border  {
+  width: 100px;
+  height: 100px;
+  padding: 8px;
+  border: none;
 }
 
+.slick-current .outer-bubble {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  padding: 7px;
+}
+
+.slick-current .dem-border {
+  border-color: #00B6BD;
+}
+
+.slick-current .rep-border {
+  border-color: #EE645B;
+}
+
+.slick-current .uup-border {
+  border-color: #81629C;
+}
+
+.slick-track  {
+  height: 125px;
+}
+
+.slick-slide {
+  outline: none !important;
+}
+
+
+/* legend / party info */
 .box {
   width: 40px;
   height: 40px;
@@ -115,18 +184,34 @@ h2 {
 .party-text {
   display: flex;
   align-items: center;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .party-section  {
   display: flex;
 }
 
-.dem-border, .rep-border, .uup-border {
+.dem-box, .rep-box, .uup-box {
   border-style: solid;
   border-width: 3px;
 }
 
+.dem-box {
+  border-color: #00B6BD;
+  background-color: #77CDD5;
+}
+
+.rep-box {
+  border-color: #EE645B;
+  background-color: #F69687;
+}
+
+.uup-box {
+  border-color: #81629C;
+  background-color: #AF86D3;
+}
+
+/* party colors */
 .democrat {
   background-color: #00B6BD;
 }
@@ -139,51 +224,89 @@ h2 {
   background-color: #81629C;
 }
 
-.dem-border {
-  border-color: #00B6BD;
-  background-color: #77CDD5;
+
+/* break point for mobile */
+@media screen and (max-width: 480px) {
+  .legend {
+    flex-direction: column;
+    padding: 0 50px 0 50px;
+  }
+
+  .featured-slide {
+    flex-direction: column;
+    align-items: center;
+    height: 420px !important;
+  }
+
+  .featured-bubble {
+    margin-left: 0;
+  }
+
+  .text, .label {
+    text-align: center;
+  }
+
+  .aff, .office {
+    border: none;
+    margin: 5px;
+    width: 100%;
+  }
+
+  .aff-off {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .office {
+    margin-left: 0;
+  }
+
+  .name {
+    margin-bottom: 5px;
+  }
+
+  .bubble-img {
+    max-width: 80px;
+    border-radius: 50%;
+  }
+
+  .bubble {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    opacity: 0.5;
+  }
+
+  .slick-current .outer-bubble {
+    border-radius: 50%;
+    width: 80px;
+    border-style: solid;
+    padding: 7px;
+  }
+
 }
 
-.rep-border {
-  border-color: #EE645B;
-  background-color: #F69687;
+@media screen and (max-width: 320px) {
+  .bubble-img {
+    max-width: 60px;
+    border-radius: 50%;
+  }
+
+  .bubble {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    opacity: 0.5;
+  }
+
+  .slick-current .outer-bubble {
+    border-radius: 50%;
+    width: 60px;
+    border-style: solid;
+    padding: 7px;
+  }
 }
 
-.uup-border {
-  border-color: #81629C;
-  background-color: #AF86D3;
+/* slick responsive */
+/* width 100% for everything in curr profile */
 }
-
-#pa-div, #other-div {
-  margin-top: 60px;
-}
-
-.name, .aff, .office {
-  text-align: left;
-}
-
-.v-line {
-  border-left: 1px solid #9B9B9B;
-}
-
-.label {
-  font-size: 20px;
-  color: #9B9B9B;
-}
-
-.text {
-  font-size: 25px;
-}
-
-hr {
-  width: 80%;
-  margin-top: 80px;
-}
-
-.name .text {
-  font-weight: 500;
-}
-
-/* .all-candidates {
-  display: flex;
-} */
