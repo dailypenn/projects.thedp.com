@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,300);
-@import url(http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css);
-
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css);
 
 body {
     padding-top: 40px;
@@ -39,7 +38,7 @@ nav {
 }
 
 input {
-    display: none !important; 
+    display: none !important;
 }
 
 label {

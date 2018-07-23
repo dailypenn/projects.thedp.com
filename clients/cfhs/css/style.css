@@ -22,7 +22,7 @@ body a:hover{
 }
 /*-- Header Part Starts here --*/
 .header{
-	background:url(http://s3.amazonaws.com/media.dpn/47054_furniture_campus_home_storef.jpg)no-repeat;
+	background:url(https://s3.amazonaws.com/media.dpn/47054_furniture_campus_home_storef.jpg)no-repeat;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-o-background-size:cover;
@@ -625,7 +625,7 @@ a.callbacks_nav.callbacks1_nav.next:hover {
 	-moz-background-size:cover;
 	-ms-background-size:cover;
 	padding:4em 0;
-	
+
 }
 .buy-g-top h3{
 	font-size:1.5em;
@@ -680,16 +680,16 @@ ul.callbacks_tabs.callbacks3_tabs {
 	margin:5% 5% 0;
 }
 .flat{
-	position: relative;	
+	position: relative;
 	cursor: pointer;
 	font-weight:600;
 	background:#FFF;
 	border:0px solid #c8ccd3;
 	color:#898989;
-	border-radius:6px;	
-	-webkit-border-radius:6px;	
-	-moz-border-radius:6px;	
-	-o-border-radius:6px;	
+	border-radius:6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	-o-border-radius:6px;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	user-select: none;
@@ -726,7 +726,7 @@ ul.callbacks_tabs.callbacks3_tabs {
 	height: 100%;
 	opacity: 0;
 }
-/* SELECTED FEEDBACK ITEM */ 
+/* SELECTED FEEDBACK ITEM */
 .flat .selected {
     color:#898989;
 }
@@ -832,19 +832,19 @@ ul.callbacks_tabs.callbacks3_tabs {
 	display: inline-block;
 	position: absolute;
 	margin:16px 0 0 -6px;
-	
+
 }
 .form-head div{
 	position: relative;
 	background: #FFF;
 	margin: 0.2em 0 1em;
 	padding:0;
-	border-radius:6px;	
-	-webkit-border-radius:6px;	
-	-moz-border-radius:6px;	
+	border-radius:6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
 	-o-border-radius:6px;
 	border:1px solid #fff;
-	
+
 }
 .form-head div input[type="text"]{
 	margin-left: 6%;
@@ -868,8 +868,8 @@ ul.callbacks_tabs.callbacks3_tabs {
 	font-size: 1em;
 	font-weight: 600;
 	border-radius: 8px;
-	-webkit-border-radius:8px;	
-	-moz-border-radius:8px;	
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
 	-o-border-radius:8px;
 	outline:none;
 }
@@ -947,7 +947,7 @@ a.callbacks_nav.callbacks3_nav {
 	-o-border-radius:6px;
 	-moz-border-radius:6px;
 	-ms-border-radius:6px;
-	
+
 }
 .resp-tabs-container {
 	padding: 0px;
@@ -1542,7 +1542,7 @@ p.copyright a:hover{
 		margin: 1em 0 0;
 		text-align: center;
 	}
-	
+
 }
 @media(max-width:640px){
 	.banner h1 {
@@ -1760,7 +1760,7 @@ p.copyright a:hover{
 		padding: 0 0;
 		margin: 5% 0 0 0;
 	}
-	
+
 }
 @media(max-width:320px){
 	.banner p {
@@ -1794,7 +1794,7 @@ p.copyright a:hover{
 		-moz-border-radius: 28px;
 		-o-border-radius: 28px;
 		-ms-border-radius: 28px;
-		
+
 	}
 	.y-sale span {
 		font-size: 0.8em;
@@ -1864,7 +1864,7 @@ p.copyright a:hover{
 		width: 100%;
 		margin-right:0;
 	}
-	
+
 }
 
 /*-- Media Queries Ends Here ---*/
