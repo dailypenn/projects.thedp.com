@@ -339,7 +339,7 @@ $(document).ready(function() {
               "<figcaption>" +
                 "<h3>" + people[person].name + "</h3>" +
                 "<p>" + people[person].stmt + "'</p>" +
-                "<a href='http://www.pennstudgov.com'>Vote Here</a>&nbsp;" +
+                "<a href='https://www.pennstudgov.com'>Vote Here</a>&nbsp;" +
               "</figcaption>" +
               "<h3>" + people[person].name + "</h3>" +
           "</figure></li>"

@@ -509,7 +509,7 @@ $(document).ready(function() {
         "<img src='" + people[person].photo + "'>" +
         "<figcaption>" +
         "<h3><center>" + people[person].name + "</center></h3>" +
-        "<a href='http://www.pennstudgov.com' target='_blank'>Vote Here</a>&nbsp;" +
+        "<a href='https://www.pennstudgov.com' target='_blank'>Vote Here</a>&nbsp;" +
         "<a href='" + people[person].stmt + "' target='_blank'>Download Statement</a>" +
         "<center><img class='statement' src='" + people[person].stmt + "' height='120' /></center>" +
 
