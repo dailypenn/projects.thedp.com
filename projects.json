@@ -245,6 +245,17 @@
       "alt": "housing guide 2016"
     },
     {
+      "title": "Penn Relays 2016",
+      "author": "Web Dev: Andrew Fischer",
+      "section": "Sports",
+      "date": "April 2016",
+      "description": "The Daily Pennsylvanian presents this year's coverage of the Penn Relays.",
+      "sponsored": false,
+      "link": "https://projects.thedp.com/2016/04/Penn-Relays/",
+      "image": "https://s3.amazonaws.com/media.dpn/52361_relayshorizontalf.jpg",
+      "alt": "penn relays 2016"
+    },
+    {
       "title": "Your courses, deconstructed",
       "author": "Web Dev: Andrew Fischer, Mikael Mantis",
       "section": "Projects",

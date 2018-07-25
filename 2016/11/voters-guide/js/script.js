@@ -28,7 +28,7 @@ function getLocation() {
   pinLayer.clearLayers();
   var htmlAddr = $("#address").val().split(' ').join('+');
   // First put their address on the map
-  $.getJSON("http://maps.googleapis.com/maps/api/geocode/json?address="+htmlAddr.split(' ').join('+'), function(data) {
+  $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?address="+htmlAddr.split(' ').join('+'), function(data) {
     var homeLat = data.results[0].geometry.location.lat;
     var homeLon = data.results[0].geometry.location.lng;
     L.marker([homeLat, homeLon], {
@@ -51,7 +51,7 @@ function getLocation() {
     pollAddr = pollAddr.replace("&", "AND");
 
     // geocode polling place location and place on map
-    $.getJSON("http://maps.googleapis.com/maps/api/geocode/json?address="+pollAddr.split(' ').join('+'), function(data) {
+    $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?address="+pollAddr.split(' ').join('+'), function(data) {
       var lat = data.results[0].geometry.location.lat;
       var lon = data.results[0].geometry.location.lng;
       L.marker([lat, lon], {
