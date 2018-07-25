@@ -63,7 +63,7 @@ blockquote {
   font-family: 'Maven Pro', sans-serif;
   font-weight: bold;
   min-width: 450px;
-  
+
   width: 700px;
 }
 #container.div {
@@ -102,7 +102,6 @@ footer {
   width: 100wv;
   margin-top: 50px;
   padding-top: 100px;
-  background: url("../assets/flower.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: 50%;
