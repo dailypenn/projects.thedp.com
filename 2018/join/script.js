@@ -43,13 +43,17 @@ for (var i = 0; i < edTabs.length; i++) {
         document.querySelector('section.editorial').style.background =
           "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/36723a03-7de6-446a-8289-34dbc15221e7.sized-1000x1000.jpg')";
         break;
-      case 'video':
+      case 'multimedia':
         document.querySelector('section.editorial').style.background =
           "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://s3.amazonaws.com/snwceomedia/dpn/3f80932a-ffd6-4d0f-9b95-7713a67251ca.original.gif')";
         break;
       case 'social':
         document.querySelector('section.editorial').style.background =
           "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/4c31d16d-8363-41df-80a0-a5564b011215.sized-1000x1000.jpg')";
+        break;
+      case 'web':
+        document.querySelector('section.editorial').style.background =
+          "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/85611786-a619-4496-9c5c-59ece6432fa5.sized-1000x1000.jpg')";
         break;
       case 'podcasts':
         document.querySelector('section.editorial').style.background =
@@ -102,10 +106,6 @@ for (var i = 0; i < edTabs.length; i++) {
       case 'ad':
         document.querySelector('section.business').style.background =
           "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/7f265244-68c1-4483-b138-8fc49c343444.sized-1000x1000.jpg')";
-        break;
-      case 'web':
-        document.querySelector('section.business').style.background =
-          "linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0.9)), url('https://snworksceo.imgix.net/dpn/85611786-a619-4496-9c5c-59ece6432fa5.sized-1000x1000.jpg')";
         break;
       case 'analytics':
         document.querySelector('section.business').style.background =
