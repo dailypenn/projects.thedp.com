@@ -138,11 +138,11 @@ section.street {
 }
 
 section.street a {
-  color: #1b7777;
+  color: #044747;
 }
 
 section.street a:hover {
-  color: #044747;
+  color: #1b7777;
 }
 
 section.utb {
