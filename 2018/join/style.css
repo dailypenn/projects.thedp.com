@@ -5,6 +5,7 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
   color: #000;
+  background-color: #EEE;
 }
 
 h1, h2, h3, h4, h5 {
@@ -129,7 +130,7 @@ section.business a:hover {
 
 section.street {
   background-color: #44BFBF;
-  background: linear-gradient(rgba(68, 191, 191, 0.9), rgba(68, 191, 191, 0.9)), url('https://snworksceo.imgix.net/dpn/a7c7d5b9-59ac-420c-bd26-cfd44d0e52d2.sized-1000x1000.jpg');
+  background: linear-gradient(rgba(68, 191, 191, 0.8), rgba(68, 191, 191, 0.8)), url('https://snworksceo.imgix.net/dpn/a7c7d5b9-59ac-420c-bd26-cfd44d0e52d2.sized-1000x1000.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -137,11 +138,11 @@ section.street {
 }
 
 section.street a {
-  color: #C9D4E5;
+  color: #1b7777;
 }
 
 section.street a:hover {
-  color: #AFBCCE;
+  color: #044747;
 }
 
 section.utb {
