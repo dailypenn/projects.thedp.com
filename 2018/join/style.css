@@ -171,6 +171,22 @@ p.overall {
   margin: 20px auto;
 }
 
+.join-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border: 1px solid #AA1E22;
+  border-radius: 2px;
+  background-color: #AA1E22;
+  color: #FFF;
+}
+
+.join-button:hover {
+  color: #FFF;
+  border: 1px solid #FFF;
+}
+
 .logo {
   margin-top: 5px;
 }
