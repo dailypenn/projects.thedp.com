@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Teko');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+.navbar {
+	display: flex;
+	justify-content: center !important;
+	align-items: center;
+	background-color: black;
+}
+
+.header-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	font-family: 'Teko', sans-serif;
+	background-color: #2c2c82;
+}
+
+.article-header {
+	height: 60px;
+	display: flex;
+	align-items: center;
+	background-color: black;
+	color: white;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-left: 15px;
+	font-size: 36px;
+}
+
+.shortcuts {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #f9f9f9;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.highlighted-text {
+	background-color: #2c2c82;
+	padding: 5px 5px 5px 5px;
+	color: white !important;
+}
+
+.article-title {
+	margin-bottom: 10px;
+	margin-left: 10px;
+	padding: 10px 10px 10px 5px;
+	color: white;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.schedule {
+	background-color: #121245;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: white;
+}
+
+.game-img {
+	max-height: 300px;
+}
+
+.game {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 15px;
+}
+
+.link {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.article {
+	display: flex;
+	align-items: flex-end;
+	position: relative;
+	background-image: url('https://cdn-s3.si.com/s3fs-public/styles/marquee_large_2x/public/2017/10/22/college-football-rankings-top-10-alabama-penn-state-miami.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+}
