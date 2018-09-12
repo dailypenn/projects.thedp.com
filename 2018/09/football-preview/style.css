@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Teko');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Teko:300,400,600');
 
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -11,13 +11,73 @@ body {
 }
 
 .header-section {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	height: calc(100vh - 43px);
 	width: 100vw;
 	font-family: 'Teko', sans-serif;
-	background-color: #2c2c82;
+	background-image: url("img/football-cover.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.head-subhead{
+  color: white;
+  font-size: 150px;
+  font-weight: 300;
+}
+
+.head-header{
+  color: white;
+  font-size: 190px;
+  font-weight: 600;
+  line-height: 75px;
+}
+
+.header-text{
+  margin-top: 90px;
+  margin-left: 70px;
+}
+
+.cutout-1{
+  position: absolute;
+  bottom: -129px;
+  width: 600px;
+  right:0px;
+}
+
+.cutout-2{
+  position: absolute;
+  bottom: -145px;
+  width: 600px;
+  left:0px;
+}
+
+.cutout-3{
+  position: absolute;
+  top: -69px;
+  left: -200px;
+  width: 750px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .cutout-1, .cutout-2, .cutout-3{
+    display: none
+  }
+
+  .head-subhead{
+    font-size: 100px;
+  }
+
+  .head-header{
+    font-size: 150px;
+  }
+
+  .header-text{
+    margin-top: 50px;
+    margin-left: 0px;
+  }
 }
 
 .article-header {
@@ -41,6 +101,51 @@ body {
 	background-color: #f9f9f9;
 	padding-top: 30px;
 	padding-bottom: 30px;
+}
+
+.standings{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.standings-header{
+  display: inline;
+  float: left;
+  font-weight: bolder;
+  color: #2b2c82;
+  font-size: 72px;
+}
+
+.standings-subhead{
+  display: inline;
+  margin-left: 20px;
+  margin-bottom: 18px;
+  color: #4053a4;
+}
+
+.standings-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.standings-table{
+  width: 100%;
+  font-size: 24px;
+  color: black;
+  font-weight: 500;
+}
+
+.standings-table .right{
+  float: right;
+}
+
+.standings-line{
+  height: 10px;
+  background-color: #b8bcda;
+  margin-top: -10px;
 }
 
 .highlighted-text {
@@ -92,4 +197,49 @@ body {
 	background-position: center;
 	background-size: cover;
 	height: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+  .head-subhead{
+    font-size: 90px;
+  }
+
+  .head-header{
+    font-size: 100px;
+  }
+
+  .header-text{
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .head-subhead{
+    font-size: 60px;
+  }
+
+  .head-header{
+    font-size: 80px;
+  }
+
+  .header-text{
+    margin-top: 50px;
+  }
+
+  .standings-top{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .standings-subhead{
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
+  .standings-header{
+    margin-bottom: -10px;
+  }
+
+  .standings-table{
+    font-size: 20px;
+  }
 }
