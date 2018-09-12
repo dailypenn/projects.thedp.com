@@ -1,0 +1,12 @@
+.bubble {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  border: solid 1px black;
+}
+
+.bubble-image{
+  max-width: 75px;
+  max-height: 75px;
+  border-radius: 50%;
+}
