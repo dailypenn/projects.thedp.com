@@ -18,7 +18,7 @@ body {
 	height: calc(100vh - 43px);
 	width: 100vw;
 	font-family: 'Teko', sans-serif;
-	background-image: url("img/football-cover.png");
+	background-image: url("https://s3.amazonaws.com/snwceomedia/dpn/72b040b3-d1e1-4ab3-8038-c2d63639eb3e.original.png");
   background-size: cover;
   background-position: center center;
 }
@@ -102,7 +102,7 @@ body {
   display: inline;
   float: left;
   font-weight: bolder;
-  color: #990000;
+  color: white;
   font-size: 72px;
 }
 
@@ -111,14 +111,14 @@ body {
   display: inline;
   margin-left: 20px;
   margin-bottom: 18px;
-  color: #990000;
+  color: #2b2c82;
 }
 
 .games-subhead{
   display: inline;
   margin-left: 20px;
   margin-bottom: 18px;
-  color: #990000;
+  color: white;
 }
 
 .standings-top, .games-top{
@@ -175,8 +175,7 @@ body {
 }
 
 .game-img {
-	max-height: 300px;
-  margin: 20px, 20px, 20px, 20px;
+  margin-bottom: 20px;
 }
 
 .game {
@@ -187,11 +186,19 @@ body {
 	padding-bottom: 15px;
 }
 
-.oppTeam, .date{
-  font-size: 16px;
+.oppTeam{
+  text-align: center;
+  font-size: 18px;
 }
 
 .score{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.date{
+  text-align: center;
   font-size: 16px;
 }
 
@@ -252,6 +259,22 @@ body {
     margin-top: 50px;
     margin-left: 0px;
   }
+  .standings-top, .games-top{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .standings-subhead, .games-subhead{
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
+  .standings-header, .games-header{
+    margin-bottom: -10px;
+  }
+
+  .standings-table{
+    font-size: 20px;
+  }
 }
 
 
@@ -280,22 +303,5 @@ body {
 
   .header-text{
     margin-top: 50px;
-  }
-
-  .standings-top, .games-top{
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .standings-subhead, .games-subhead{
-    margin-left: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 10px;
-  }
-  .standings-header, .games-header{
-    margin-bottom: -10px;
-  }
-
-  .standings-table{
-    font-size: 20px;
   }
 }
