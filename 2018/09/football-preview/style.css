@@ -85,9 +85,14 @@ body {
 	padding-bottom: 30px;
 }
 
+.mobile-container {
+	margin: 0 15px;
+}
+
 .standings{
   padding-top: 20px;
   padding-bottom: 20px;
+	background-color: #DDD;
 }
 
 .standings-header{
@@ -105,7 +110,6 @@ body {
   color: white;
   font-size: 72px;
 }
-
 
 .standings-subhead{
   display: inline;
@@ -172,6 +176,10 @@ body {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	color: white;
+}
+
+.schedule-2018 .oppTeam {
+	margin-bottom: 36px;
 }
 
 .game-img {
@@ -267,8 +275,6 @@ body {
   background-image: url("https://snworksceo.imgix.net/dpn/3dc75a74-ab97-4362-966e-1a360c190422.sized-1000x1000.jpg?w=1000");
 }
 
-
-
 @media only screen and (max-width: 1000px) {
   .cutout-1, .cutout-2, .cutout-3{
     display: none
@@ -304,7 +310,6 @@ body {
   }
 }
 
-
 @media only screen and (max-width: 768px) {
   .head-subhead{
     font-size: 90px;
@@ -317,6 +322,20 @@ body {
   .header-text{
     margin-top: 50px;
   }
+
+	.schedule-2018 .oppTeam {
+		margin-bottom: 0.5rem;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.mobile-container {
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
 
 @media only screen and (max-width: 480px) {
