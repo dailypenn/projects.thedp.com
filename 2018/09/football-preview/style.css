@@ -110,7 +110,7 @@ footer {
 	justify-content: center;
 }
 
-.standings {
+.standings, .video {
 	display: flex;
 	background-color: #DDD;
 }
@@ -259,6 +259,22 @@ footer {
 	height: 500px;
 }
 
+.youtube-embed {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+.youtube-embed iframe, .youtube-embed embed, .youtube-embed object {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 .a1{
   background-image: url("https://snworksceo.imgix.net/dpn/008f729a-115d-4816-b823-af05529b6013.sized-1000x1000.jpg?w=1000");
 }
@@ -398,4 +414,8 @@ footer {
   .header-text{
     margin-top: 50px;
   }
+
+	.article-header {
+		font-size: 30px;
+	}
 }
