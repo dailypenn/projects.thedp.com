@@ -23,6 +23,10 @@ nav img {
   border-left: 1px solid #eee;
 }
 
+.wrapper {
+  margin-top: 100px;
+}
+
 .row {
   margin-bottom: 15px;
 }
@@ -31,8 +35,15 @@ nav img {
   padding-top: 0;
 }
 
-.row.ad {
-  padding-top: 65px;
+.ad {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.welcome {
+  width: 50%;
 }
 
 #articles.row {
@@ -68,6 +79,10 @@ nav img {
 @media screen and (max-width: 768px) {
   #featured-secondary {
     border-left: none;
+  }
+
+  .welcome {
+    width: 100%;
   }
 }
 
