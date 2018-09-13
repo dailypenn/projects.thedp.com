@@ -2,6 +2,7 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
+  background-color: #f9f9f9;
 }
 .navbar {
 	display: flex;
@@ -61,30 +62,11 @@ body {
   width: 750px;
 }
 
-@media only screen and (max-width: 1000px) {
-  .cutout-1, .cutout-2, .cutout-3{
-    display: none
-  }
-
-  .head-subhead{
-    font-size: 100px;
-  }
-
-  .head-header{
-    font-size: 150px;
-  }
-
-  .header-text{
-    margin-top: 50px;
-    margin-left: 0px;
-  }
-}
-
 .article-header {
 	height: 60px;
 	display: flex;
 	align-items: center;
-	background-color: black;
+	background-color: #121245;
 	color: white;
 	width: 100%;
 	margin-top: 10px;
@@ -106,7 +88,6 @@ body {
 .standings{
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #f9f9f9;
 }
 
 .standings-header{
@@ -117,14 +98,30 @@ body {
   font-size: 72px;
 }
 
+.games-header{
+  display: inline;
+  float: left;
+  font-weight: bolder;
+  color: #990000;
+  font-size: 72px;
+}
+
+
 .standings-subhead{
   display: inline;
   margin-left: 20px;
   margin-bottom: 18px;
-  color: #4053a4;
+  color: #990000;
 }
 
-.standings-top{
+.games-subhead{
+  display: inline;
+  margin-left: 20px;
+  margin-bottom: 18px;
+  color: #990000;
+}
+
+.standings-top, .games-top{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -148,6 +145,12 @@ body {
   margin-top: -10px;
 }
 
+.games-line{
+  height: 10px;
+  background-color: #f9f9f9;
+  margin-top: -10px;
+}
+
 .highlighted-text {
 	background-color: #2c2c82;
 	padding: 5px 5px 5px 5px;
@@ -157,6 +160,7 @@ body {
 .article-title {
 	margin-bottom: 10px;
 	margin-left: 10px;
+  margin-right: 10px;
 	padding: 10px 10px 10px 5px;
 	color: white;
 	font-weight: bold;
@@ -172,6 +176,7 @@ body {
 
 .game-img {
 	max-height: 300px;
+  margin: 20px, 20px, 20px, 20px;
 }
 
 .game {
@@ -180,6 +185,14 @@ body {
 	align-items: center;
 	flex-direction: column;
 	padding-bottom: 15px;
+}
+
+.oppTeam, .date{
+  font-size: 16px;
+}
+
+.score{
+  font-size: 16px;
 }
 
 .link {
@@ -193,11 +206,54 @@ body {
 	display: flex;
 	align-items: flex-end;
 	position: relative;
-	background-image: url('https://cdn-s3.si.com/s3fs-public/styles/marquee_large_2x/public/2017/10/22/college-football-rankings-top-10-alabama-penn-state-miami.jpg');
 	background-position: center;
 	background-size: cover;
+  margin-bottom: 20px;
 	height: 500px;
 }
+.a1{
+  background-image: url("https://snworksceo.imgix.net/dpn/bc1775ce-1b72-4815-8f7a-a07dea57aab3.sized-1000x1000.jpg?w=1000");
+}
+
+.a2{
+  background-image: url("https://snworksceo.imgix.net/dpn/8e90dfd8-9203-404f-974c-99e7841aca95.sized-1000x1000.jpg?w=1000");
+}
+
+.a3{
+  background-image: url("https://snworksceo.imgix.net/dpn/6f8c0175-f210-4b91-939e-9eb370884050.sized-1000x1000.jpg?w=1000");
+}
+
+.a4{
+  background-image: url("https://snworksceo.imgix.net/dpn/3dc75a74-ab97-4362-966e-1a360c190422.sized-1000x1000.jpg?w=1000");
+}
+
+.a5{
+  background-image: url("https://snworksceo.imgix.net/dpn/6021853d-2e42-4dde-9938-1d26162baf43.sized-1000x1000.jpg?w=1000");
+}
+
+.a6{
+  background-image: url("https://snworksceo.imgix.net/dpn/f3a10a6a-3181-428b-baf4-ccc3a56a15da.sized-1000x1000.jpg?w=1000");
+}
+
+@media only screen and (max-width: 1000px) {
+  .cutout-1, .cutout-2, .cutout-3{
+    display: none
+  }
+
+  .head-subhead{
+    font-size: 100px;
+  }
+
+  .head-header{
+    font-size: 150px;
+  }
+
+  .header-text{
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+}
+
 
 @media only screen and (max-width: 768px) {
   .head-subhead{
@@ -226,16 +282,16 @@ body {
     margin-top: 50px;
   }
 
-  .standings-top{
+  .standings-top, .games-top{
     flex-direction: column;
     align-items: flex-start;
   }
-  .standings-subhead{
+  .standings-subhead, .games-subhead{
     margin-left: 0px;
     margin-bottom: 0px;
     padding-bottom: 10px;
   }
-  .standings-header{
+  .standings-header, .games-header{
     margin-bottom: -10px;
   }
 
