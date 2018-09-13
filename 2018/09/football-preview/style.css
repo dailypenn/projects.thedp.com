@@ -218,8 +218,9 @@ body {
   margin-bottom: 20px;
 	height: 500px;
 }
+
 .a1{
-  background-image: url("https://snworksceo.imgix.net/dpn/bc1775ce-1b72-4815-8f7a-a07dea57aab3.sized-1000x1000.jpg?w=1000");
+  background-image: url("https://snworksceo.imgix.net/dpn/008f729a-115d-4816-b823-af05529b6013.sized-1000x1000.jpg?w=1000");
 }
 
 .a2{
@@ -235,12 +236,38 @@ body {
 }
 
 .a5{
-  background-image: url("https://snworksceo.imgix.net/dpn/6021853d-2e42-4dde-9938-1d26162baf43.sized-1000x1000.jpg?w=1000");
+  background-image: url("https://snworksceo.imgix.net/dpn/cd2013e0-57d4-41be-9021-0196ec74241e.sized-1000x1000.jpg?w=1000");
 }
 
 .a6{
   background-image: url("https://snworksceo.imgix.net/dpn/f3a10a6a-3181-428b-baf4-ccc3a56a15da.sized-1000x1000.jpg?w=1000");
 }
+
+.a7{
+  background-image: url("https://snworksceo.imgix.net/dpn/e66f2516-d4ba-4294-8876-885a51cb8cab.sized-1000x1000.jpg?w=1000");
+}
+
+.a8{
+  background-image: url("https://snworksceo.imgix.net/dpn/25af1881-6de5-4e5b-9f17-5e6875eaf983.sized-1000x1000.jpg?w=1000");
+}
+
+.a9{
+  background-image: url("https://snworksceo.imgix.net/dpn/ca2c6b80-5465-467c-8119-8a352acc4c67.sized-1000x1000.jpg?w=1000");
+}
+
+.a10{
+  background-image: url("https://snworksceo.imgix.net/dpn/bc1775ce-1b72-4815-8f7a-a07dea57aab3.sized-1000x1000.jpg?w=1000");
+}
+
+.a11{
+  background-image: url("https://snworksceo.imgix.net/dpn/6021853d-2e42-4dde-9938-1d26162baf43.sized-1000x1000.jpg?w=1000");
+}
+
+.a12{
+  background-image: url("https://snworksceo.imgix.net/dpn/3dc75a74-ab97-4362-966e-1a360c190422.sized-1000x1000.jpg?w=1000");
+}
+
+
 
 @media only screen and (max-width: 1000px) {
   .cutout-1, .cutout-2, .cutout-3{
