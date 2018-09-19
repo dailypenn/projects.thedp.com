@@ -1,12 +1,57 @@
-.bubble {
-  border-radius: 50%;
-  width: 75px;
-  height: 75px;
-  border: solid 1px black;
+h1 {
+  text-align: center;
 }
 
-.bubble-image{
-  max-width: 75px;
-  max-height: 75px;
+.divider {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 15px;
+  background-color: #aba9a9;
+  color: white;
+  border-radius: 20px;
+  width: fit-content;
+  padding-left: 5px;
+  padding-right: 5px;
+  white-space: nowrap;
+  margin-right: 3px;
+}
+
+.position-row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.hline {
+  background-color: #aba9a9;
+  height: 1px;
+  width: -webkit-fill-available;
+}
+
+.inner-bubble {
   border-radius: 50%;
+  width: 59px;
+  height: 59px;
+  border: solid 2px white;
+}
+
+.outer-bubble {
+  border-radius: 50%;
+  width: 63px;
+  height: 63px;
+  border: solid 2px black;
+  margin-right: 10px;
+}
+
+.bubble-image {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.identifier {
+  display: flex;
+  align-items: center;
 }
