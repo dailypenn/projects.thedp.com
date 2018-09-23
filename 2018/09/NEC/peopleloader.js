@@ -156,12 +156,7 @@ var people = {
   },
   // CLASS BOARD CANDIDATES
   "cb": {
-    "President": [{
-        'name': 'Akash Jain',
-        'photo': 'https://s3.amazonaws.com/media.dpn/58163_personf.jpg',
-        'statement': "I’m Akash Jain, a freshman looking to run for president. Chances are, you have absolutely no idea who I am! (Freshman elections are kind of funny that way; how the heck do you know who you should vote for??) But hey, here’s my chance. From my experiences in high school both leading an education nonprofit and serving as business chair for our FRC robotics team, I’ve come to realize the importance of fund allocation in making any large operation work. I’m A-kash-money kinda guy, yafeel? And at Penn, the job of our president is not only to serve as a figurehead for our class, but to allocate funds in a way to meaningfully and tangibly improve the lives of our freshman class. I’ve only been here for a month, but in that time I’ve come up with a few tangible propositions that I think I could work toward with our administration. Allocating funding for water coolers to lounges, securing free printing for the entirety of the university, and creating bonding events with free food for our class are just some of the things I’ll work towards as your president. Consider this A-krash course on why you should vote for Akash.",
-      	'endorsements': ''
-      },
+    "President": [
       {
         'name': 'Jonathan Scotto',
         'photo': 'https://snworksceo.imgix.net/dpn/1acc8957-1ccf-4efd-85a9-0c4b9ee7dfe1.sized-1000x1000.JPG?w=400',
@@ -192,6 +187,18 @@ var people = {
         'photo': 'https://snworksceo.imgix.net/dpn/ae486dda-a872-430d-ab96-2e6148e44303.sized-1000x1000.JPG?w=400',
         'statement': "What’s spreading faster than the freshman plague? No, it’s not stress… it’s PSG-mania! My name is Sophie Lovering and I’m a VERY undecided freshman in the College from Howard County, Maryland. I’ve been involved in county-level student council for five years, and I hope to continue here at Penn by serving as the Executive Vice President of the Class Board of 2022. In addition to my experience serving as Vice President for my county’s student council I was the President of my high school’s Class Board of 2018. My responsibilities in this position included working with peers, educators, and local businesses to plan student events such as “Senior Crab Feast” (it’s a Maryland thing) and prom. Here at Penn, the Executive Vice President is responsible for participating in Class Boards’ mission to instill a sense of class and school unity and pride through Penn traditions such as Econ Scream and Hey Day; I hope to bring my previous experience planning spirit events not only to fulfill this mission, but also to work with the Class of 2022 to start some of our own traditions. I look forward to planning food-based events and other events (featuring food) this year. Vote Lovering!",
       	'endorsements': ''
+      },
+      {
+        'name': 'Jenn Ahn',
+        'photo': 'https://snworksceo.imgix.net/dpn/0db6f2bc-07f1-493e-a84a-7fa85e21585a.sized-1000x1000.JPG?w=400',
+        'statement': "Class of 2022!<br><br>I’m Jenn Ahn, and I’m so excited to be running to be your Executive Vice President.<br><br>From the moment we stepped onto Penn’s campus, our lives have been a whirlwind of unpredictable weather, roommates and way too predictable dining hall food, of new traditions (including MERT interactions), and of one too many names to remember. Among this craze, we’re still trying to get the hang of this thing called college.<br><br>As VP, I want to create more opportunities for us to come together as a class. For many of us, coming from a high school class of a couple hundred, we can often feel left out from the campus events. I hope that through more study breaks during midterms and finals like Econ Scream, free food, class merch, and tons of traditions we’ll build together, everyone in our class, of all ethnicities, nationalities, socio-economic backgrounds, will make new friends and lasting memories they’ll share throughout their years at Penn. In the end, I hope we’ll truly feel at home at Penn.<br><br>I can’t wait to meet many more of you wonderful people and celebrate our successes together as the Class of 2022!<br><br>#JENNforPENN",
+        'endorsements': ''
+      },
+      {
+        'name': 'Janice Owusu',
+        'photo': 'https://snworksceo.imgix.net/dpn/07ce7beb-dd2a-4a6f-bd05-a7447cc81f42.sized-1000x1000.JPG?w=400',
+        'statement': "Hey, Class of 2022, my name is Janice Owusu and I am running for UA New Student Representative position as well as the Executive Vice President on Class Board. Serving as a class board member and Undergraduate Assemblymember my aim is to understand the position and experiences of every student here at Penn. My mission is to make sure every one of you has an unforgettable experience here at Penn. This goal means enacting change to make sure that this goal is possible. Some of my goals are to change how dining plans here work at Penn, to ensure that every student has the proper energy and set-up for success. As well, as changing the accessibility of Student Health services so, we as students can truly put our wellness first. I find that we have the resources for success but, they can use some improvement so we as students can reach our goals. I will aim to allocate and refine our resources on campus. Thank you for taking the time to read my candidate statement, I hope you have a wonderful day!",
+        'endorsements': ''
       }
     ],
     "Vice_president_of_Internal_Affairs": [{
@@ -216,6 +223,12 @@ var people = {
         'name': 'Nafisa Saha',
         'photo': 'https://snworksceo.imgix.net/dpn/72379233-0f3e-4c88-88da-68636d196f28.sized-1000x1000.JPG?w=400',
         'statement': "HEYYYYYYY!!! I’m Nafisa Saha, and I’m running for VP of Internal Affairs! Here are some fun facts about me:<br>-I’m a PPE major (I think?)<br>-I’m from New Jersey (wow, shocker)<br>-My spirit animal: Orangutan<br>-What I’m passionate about: school spirit<br><br>School spirit is so important to me. It gives us the memories, the fun events, and crazy times that make up our college experience. It gives us a community that we can always count on. And it gives us the opportunity to come together, to get involved, and have our voices heard.<br><br>We are the Freshman class of 2022, a group of leaders, creators, and advocators, whose voices all deserve to be heard. So, I challenge you to this: use your voice to suggest memorable events, and I will make them happen. Use your voice and scream your utter despair at midnight for Econ Scream, an event that I plan to make unforgettable. And use your voice to make a difference this year, a mission I will achieve as VP of internal affairs. #twentytwo-gether",
+        'endorsements': ''
+      },
+      {
+        'name': 'Heewon Kim',
+        'photo': 'https://snworksceo.imgix.net/dpn/28fa9d5b-01ae-4091-93d4-bd451f5c7df2.sized-1000x1000.JPG?w=400',
+        'statement': "Attention, Class of 2022! My name is Heewon Kim, and I’m running to be YOUR Class Board’s Vice President of Internal Affairs and UA College Representative.<br><br>Here at Penn, we sing for the red and blue and for all the wonderful adventures that await! After all, it’s our freshman year, a magical period of time where we begin with this romanticized imagery of what college is like, and I want to work for all of you to meet those expectations. I want to make this year the most unforgettable one yet by organizing highly anticipated events and Penn Traditions (such as the Econ Scream) to more serious concerns such as issues with how the money/funding could be used more effectively to improve service and the quality of life around here.<br><br>I want to be able to have the voice and the power to represent each and one of you. Through this position, I want to show that every opinion matters and that I am and always will be here to listen. Penn and its close-knit community has been so good to me so far, and I think it’s necessary to show my appreciation by serving a wonderful student body (all of you!)<br><br>If you want a WINNING freshman year, vote for Heewon Kim for VP of Internal Affairs and UA College Representative. Cheers!",
         'endorsements': ''
       }
     ],
