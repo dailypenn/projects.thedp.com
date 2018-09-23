@@ -264,7 +264,7 @@ var people = {
       	'endorsements': ''
       },
       {
-        'name': 'Samuel Strickberger',
+        'name': 'Sam Strickberger',
         'photo': 'https://snworksceo.imgix.net/dpn/83b7b0a0-306d-4887-aa34-0f45b18d46b9.sized-1000x1000.JPG?w=400',
         'statement': "As co-chair of the College, I want to create initiatives that foster more opportunities to build friendships and community within our class. Attending Penn with my twin brother, Max, has been a great decision and by running for co-chairs, we want to bring family to the College.<br><br>I have three ideas for how to achieve this. First, in collaboration with student clubs and cultural centers, I will organize meaningful events for our whole grade. Second, I will establish “College Cohorts.” Similar to Wharton, these groups will unite students through dinners and competitions. These events will facilitate opportunities for students to get to know one another better and increase a sense of community. Third, create a student committee, which will include more people in the planning and decision-making process and enhance the reach and excitement for our events. #2Twins2Votes",
       	'endorsements': ''
