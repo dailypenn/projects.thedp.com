@@ -142,7 +142,7 @@ var people = {
     ],
     "SAS_Representative": [{
         'name': 'Chase Serota',
-        'photo': 'https://snworksceo.imgix.net/dpn/778497bc-6756-4613-b71d-bc607fb3ac16.sized-1000x1000.JPG?w=400',
+        'photo': 'https://snworksceo.imgix.net/dpn/543f668b-0c34-4178-926a-e9d78af0a7dd.sized-1000x1000.JPG?w=400',
         'statement': "Wharton Dean Geoffrey Garrett’s decision to close Huntsman reflects an administration that is out of touch with the average student. Restricting access to a vital study space will not benefit our mental health. Instead of creating counterintuitive policies like this one, we must foster more robust relationships with administrators throughout the University to ensure that the student voice remains at the forefront of the conversation. As a UA College Representative, I would work directly with Dr.Dubé, our new Chief Wellness Officer, to ensure that students are well represented at all levels regarding decisions impacting our mental health. Together, we can work towards achieving shorter wait times and increased accessibility of CAPS, finding innovative ways to combat “Penn face”, and collaborate to help decrease the competitiveness of the club recruitment process. I can’t promise to have all the answers, but I can promise that I will be your advocate fighting for you at every step of the way to make Penn a more inclusive and supportive community for all. Please feel free to reach out and share your opinions and concerns with me at any time at <a href='mailto:cserota4@sas.upenn.edu'>cserota4@sas.upenn.edu</a>.<br><br>Vote Chase Serota<br><br>“Chasing Results- For You.”",
         'endorsements': ''
       },
@@ -259,13 +259,13 @@ var people = {
     ],
     "College_Chair": [{
         'name': 'Max Strickberger',
-        'photo': 'https://snworksceo.imgix.net/dpn/c93ebbb4-d59f-430b-80b0-4749d944e9a4.sized-1000x1000.JPG?w=400',
+        'photo': 'https://snworksceo.imgix.net/dpn/83b7b0a0-306d-4887-aa34-0f45b18d46b9.sized-1000x1000.JPG?w=400',
         'statement': "As co-chair of the College, I want to create initiatives that foster more opportunities to build friendships and community within our class. Attending Penn with my twin brother, Sam, has been a great decision and by running for co-chairs, we want to bring family to the College.<br><br>I have three ideas for how to achieve this. First, in collaboration with student clubs and cultural centers, I will organize meaningful events for our whole grade. Second, I will establish “College Cohorts.” Similar to Wharton, these groups will unite students through dinners and competitions. These events will facilitate opportunities for students to get to know one another better and increase a sense of community. Third, create a student committee, which will include more people in the planning and decision-making process and enhance the reach and excitement for our events. #2Twins2Votes",
       	'endorsements': ''
       },
       {
         'name': 'Sam Strickberger',
-        'photo': 'https://snworksceo.imgix.net/dpn/83b7b0a0-306d-4887-aa34-0f45b18d46b9.sized-1000x1000.JPG?w=400',
+        'photo': 'https://snworksceo.imgix.net/dpn/c93ebbb4-d59f-430b-80b0-4749d944e9a4.sized-1000x1000.JPG?w=400',
         'statement': "As co-chair of the College, I want to create initiatives that foster more opportunities to build friendships and community within our class. Attending Penn with my twin brother, Max, has been a great decision and by running for co-chairs, we want to bring family to the College.<br><br>I have three ideas for how to achieve this. First, in collaboration with student clubs and cultural centers, I will organize meaningful events for our whole grade. Second, I will establish “College Cohorts.” Similar to Wharton, these groups will unite students through dinners and competitions. These events will facilitate opportunities for students to get to know one another better and increase a sense of community. Third, create a student committee, which will include more people in the planning and decision-making process and enhance the reach and excitement for our events. #2Twins2Votes",
       	'endorsements': ''
       },
