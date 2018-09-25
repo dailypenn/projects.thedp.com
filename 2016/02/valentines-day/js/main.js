@@ -76,40 +76,40 @@
 		initEvents();
 
     document.getElementById("wots").addEventListener('click', function() {
-      window.location = "http://www.34st.com/article/2016/02/wots-love-week-coming-out-swinging";
+      window.location = "https://www.34st.com/article/2016/02/wots-love-week-coming-out-swinging";
     });
     document.getElementById("sex-playlist").addEventListener('click', function() {
-      window.location = "http://www.34st.com/article/2016/02/sex-playlist";
+      window.location = "https://www.34st.com/article/2016/02/sex-playlist";
     });
     document.getElementById("nvnp").addEventListener('click', function() {
-      window.location = "http://www.34st.com/article/2016/02/sgt-peppers-lonely-hearts-club-band";
+      window.location = "https://www.34st.com/article/2016/02/sgt-peppers-lonely-hearts-club-band";
     });
     document.getElementById("sex-tips").addEventListener('click', function() {
-      window.location = "http://www.34st.com/article/2016/02/sexy-time-suggestions";
+      window.location = "https://www.34st.com/article/2016/02/sexy-time-suggestions";
     });
     document.getElementById("bikini-wax").addEventListener('click', function() {
-      window.location = "http://www.34st.com/article/2016/02/dispatch-bikini-wax";
+      window.location = "https://www.34st.com/article/2016/02/dispatch-bikini-wax";
     });
     document.getElementById("sexy-mac").addEventListener('click', function() {
-      window.location = "http://www.34st.com/article/2016/02/were-bringing-sexy-mac";
+      window.location = "https://www.34st.com/article/2016/02/were-bringing-sexy-mac";
     });
     document.getElementById("blind-date").addEventListener('click', function() {
-      window.location = "http://www.34st.com/article/2016/02/blind-dates-2016";
+      window.location = "https://www.34st.com/article/2016/02/blind-dates-2016";
     });
     document.getElementById("app").addEventListener('click', function() {
-      window.location = "http://www.thedp.com/article/2016/02/otter-dating-app-to-set-up-your-friends";
+      window.location = "https://www.thedp.com/article/2016/02/otter-dating-app-to-set-up-your-friends";
     });
     document.getElementById("alum-love").addEventListener('click', function() {
-      window.location = "http://www.thedp.com/article/2016/02/penn-alums-share-stories-50s-80s";
+      window.location = "https://www.thedp.com/article/2016/02/penn-alums-share-stories-50s-80s";
     });
     document.getElementById("love-open").addEventListener('click', function() {
-      window.location = "http://www.34st.com/article/2016/02/openn-relationships";
+      window.location = "https://www.34st.com/article/2016/02/openn-relationships";
     });
 		document.getElementById("utb-guide").addEventListener('click', function() {
-			window.location = "http://www.thedp.com/blog/under-the-button/2016/02/utbs-guide-to-galentines-day-aka-the-best-of-yelp-reviews-of-phillys-only-male-strip-club";
+			window.location = "https://www.thedp.com/blog/under-the-button/2016/02/utbs-guide-to-galentines-day-aka-the-best-of-yelp-reviews-of-phillys-only-male-strip-club";
 		});
 		document.getElementById("utb-expectations").addEventListener('click', function() {
-			window.location = "http://www.thedp.com/blog/under-the-button/2016/02/valentines-day-expectations-versus-reality";
+			window.location = "https://www.thedp.com/blog/under-the-button/2016/02/valentines-day-expectations-versus-reality";
 		});
 		document.getElementById("old-couples").addEventListener('click', function() {
 			window.location = "#old-couples";
