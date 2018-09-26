@@ -1,5 +1,38 @@
+body {
+  font-family: 'Avenir Next'
+}
+
+.container {
+  margin-top: 20px;
+}
+
 h1 {
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.legend {
+  background-color: #aba9a9;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 3px;
+  margin-bottom: 10px;
+}
+
+.legend-bubble {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  border-width: 1.5px;
+  border-style: solid;
+  margin-right: 8px;
+}
+
+.legend-pair {
+  display: flex;
+  justify-content: space-between;
 }
 
 .divider {
@@ -54,4 +87,20 @@ h1 {
 .identifier {
   display: flex;
   align-items: center;
+}
+
+.ret-color {
+  border-color: purple;
+}
+
+.new-role-color {
+  border-color: orange;
+}
+
+.stepped-down-color {
+  border-color: green;
+}
+
+.interim-color {
+  border-color: blue;
 }
