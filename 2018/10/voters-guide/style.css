@@ -1,0 +1,28 @@
+
+#map {
+  height: 100vh;
+  width: 100%;
+}
+
+.leaflet-find-poll {
+  position: absolute !important;
+  left: 227px;
+  top: 10px;
+  z-index: 10;
+}
+
+#address {
+  max-width: 160px;
+  max-height: 27px;
+  position: absolute;
+  z-index: 10;
+  left: 60px;
+  top: 10px;
+}
+
+.marker {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
