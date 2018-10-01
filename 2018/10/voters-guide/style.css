@@ -1,28 +1,56 @@
+body {
+  margin: 0;
+}
 
-#map {
-  height: 100vh;
+h4 {
+  margin: 0
+}
+
+.map-container {
   width: 100%;
+  height: 100vh;
 }
 
-.leaflet-find-poll {
-  position: absolute !important;
-  left: 227px;
-  top: 10px;
-  z-index: 10;
-}
-
-#address {
-  max-width: 160px;
-  max-height: 27px;
+.inputs {
   position: absolute;
-  z-index: 10;
-  left: 60px;
-  top: 10px;
+  top: 0;
+  padding: 20px;
+}
+
+.address-field {
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #555;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+}
+
+.poll-button {
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #AA1E22;
+  background-color: #FFF;
+  border: 1px solid #999;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mapboxgl-popup-content {
+  padding: 10px;
 }
 
 .marker {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: red;
+  background-color: #AA1E22;
+  /* background-image: url(); TODO: get sprites for these */
+  background-size: cover;
+  cursor: pointer;
+}
+
+.poll {
+  background-color: #8FD7F2;
+  /* background-image: url(); TODO: get sprites for these */
 }

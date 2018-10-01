@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Voter Map</title>
-<meta charset="utf-8" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<link rel="stylesheet" href="style.css">
-<script src="https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js"></script>
-<link href="https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" viewport-fit="cover">
+  <title>Voter Map</title>
+
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js"></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <input type="text" class="form-control" id="address" placeholder="Your Home Address">
-  <button id="pollLoc" class="leaflet-bar leaflet-control leaflet-find-poll">
-    Get Polling Location
-  </button>
-  <div id='map'></div>
-<script src="script.js"></script>
+  <div id="map" class="map-container"></div>
+  <form id="search" class="inputs">
+    <input type="text" id="address" class="address-field" placeholder="Your Home Address">
+    <button type="submit" id="location" class="poll-button">Get Polling Location</button>
+  </form>
+
+  <script src="script.js"></script>
 </body>

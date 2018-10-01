@@ -1,106 +1,99 @@
-// Smooth anchor scrolling
-// $('a').click(function(){
-//     $('html, body').animate({
-//         scrollTop: $( $(this).attr('href') ).offset().top
-//     }, 500);
-//     return false;
-// });
-
+// create map
 mapboxgl.accessToken = 'pk.eyJ1IjoiZHB3ZWJkZXYiLCJhIjoiY2pmYmN2dDB4MWNoYjRlcTdjM2Y3bGpzZyJ9.1m44PhD4VmqEhKhI4FhPKA';
 const map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/dpwebdev/cjfbcjxzi69w52rk936tb9lyu',
+  style: 'mapbox://styles/dpwebdev/ciuxcndkc00fl2js5nxo7jzt2',
   center: [-75.192, 39.951],
-  zoom: 13,
+  zoom: 14,
   scrollZoom: false
 });
 
 map.addControl(new mapboxgl.NavigationControl());
 
-$("#pollLoc").on("click", function(e) {
-  getLocation();
-})
+const markers = [];
+const popups = [];
+const API_KEY = 'AIzaSyDEnLZ0Zlt1qpAmlgXwYezsgGkUWSK57Yo';
 
-$("#address").keydown(function(event) {
-  if (event.keyCode == 13) {
-    getLocation();
-  }
-});
-
-function getLocation() {
-  var appended = 0;
-  var htmlAddr = $("#address").val().split(' ').join('+');
-  if (htmlAddr.length < 22) {
-    htmlAddr = htmlAddr + ",+Philadelphia,+PA+19104"
-    appended = 1;
-  }
-  // First put their address on the map
-  $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?address=" + htmlAddr.split(' ').join('+') + "&key=AIzaSyDEnLZ0Zlt1qpAmlgXwYezsgGkUWSK57Yo", function(data) {
-    if (typeof data.results[0] == 'undefined') {
-      alert("Uh oh, we couldn't find your home. Try being more specific.")
-      return
+// getJSON function so we don't have to import jQuery
+const getJSON = (url, callback) => {
+  const xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = () => {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+      const data = JSON.parse(xmlhttp.responseText);
+      callback(data);
     }
-    var homeLat = data.results[0].geometry.location.lat;
-    var homeLon = data.results[0].geometry.location.lng;
+  };
 
-    var popup = new mapboxgl.Popup().setLngLat([homeLat, homeLon]).setHTML("Your Home").addTo(map)
-
-    // create a HTML element for each feature
-  var el = document.createElement('div');
-  el.className = 'marker';
-
-  // make a marker for each feature and add to the map
-  new mapboxgl.Marker(el)
-  .setLngLat([homeLat, homeLon])
-  .setPopup(popup)
-  .addTo(map);
-    // map.setCenter([homeLat, homeLon], 15);
-
-  }).error(function(){
-
-    alert("Uh oh, we couldn't find your home. Try being more specific.")
-    return
-  });
-
-  // then get their polling place
-  // *** remember to update the test electionId (2000) to the real ID! (should be 6000 for the midterm elections) ***
-  // $.getJSON("https://www.googleapis.com/civicinfo/v2/voterinfo?address=" + htmlAddr + "&electionId=2000&key=AIzaSyDEnLZ0Zlt1qpAmlgXwYezsgGkUWSK57Yo", function( data ) {
-  //   if (typeof data.pollingLocations == 'undefined') {
-  //     if (appended) {
-  //       alert("Uh oh, we couldn't find your home. Try being more specific.")
-  //     } else {
-  //       alert("We can't find your polling place. Try again, or visit your local board's website for more information.")
-  //     }
-  //     return
-  //   }
-  //   var pollingPlace = data.pollingLocations[0];
-  //   var pollAddr = pollingPlace.address.line1 + pollingPlace.address.city + ", " + pollingPlace.address.state;
-  //   pollAddr = pollAddr.replace("&", "AND");
-  //
-  //   // geocode polling place location and place on map
-  //   $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?address="+pollAddr.split(' ').join('+') + "&key=AIzaSyDEnLZ0Zlt1qpAmlgXwYezsgGkUWSK57Yo", function(data) {
-  //     var lat = data.results[0].geometry.location.lat;
-  //     var lon = data.results[0].geometry.location.lng;
-  //
-  //     var popup = new mapboxgl.Popup().setLngLat([lat, lon]).setHTML('<b>'+ data.results[0].formatted_address +'</b>').addTo(map)
-  //
-  //     // create a HTML element for each feature
-  //   var el = document.createElement('div');
-  //   el.className = 'marker';
-  //
-  //   // make a marker for each feature and add to the map
-  //   new mapboxgl.Marker(el)
-  //   .setLngLat([lat, lon])
-  //   .setPopup(popup)
-  //   .addTo(map);
-    // map.setCenter([lat, lon], 15);
-
-  //   })
-  // }).error(function(){
-  //   alert("We can't find your polling place! Try again, or visit your local board's website for more information.")
-  //   return
-  // });
-
+  xmlhttp.open('GET', url, true);
+  xmlhttp.send();
 }
 
-// map.addControl(new mapboxgl.NavigationControl());
+const getLocation = () => {
+  // remove all markers and popups before displaying the new one
+  markers.forEach(el => {
+    el.remove();
+  });
+  popups.forEach(el => {
+    el.remove();
+  });
+
+  // add their home address to the map
+  const address = document.getElementById('address').value;
+  getJSON(`https://maps.googleapis.com/maps/api/geocode/json?address=${address.split(' ').join('+')}&key=${API_KEY}`, data => {
+    // FIXME: alerts are bad
+    if (!data.results[0]) {
+      alert("Uh oh, we couldn't find your home. Try being more specific.");
+      return;
+    }
+
+    const location = data.results[0].geometry.location;
+    const coordinates = [location.lng, location.lat];
+    const div = document.createElement('div');
+    div.className = 'marker';
+    const marker = new mapboxgl.Marker(div)
+      .setLngLat(coordinates)
+      .addTo(map);
+    markers.push(marker);
+
+    // then get their polling place
+    // *** remember to update the test electionId (2000) to the real ID! (should be 6000 for the midterm elections) ***
+    getJSON(`https://www.googleapis.com/civicinfo/v2/voterinfo?address=${address.split(' ').join('+')}&electionId=2000&key=${API_KEY}`, data => {
+      // FIXME: alerts are bad
+      if (!data.pollingLocations) {
+        alert("We can't find your polling place. Try again, or visit your local board's website for more information.");
+        return;
+      }
+
+      const pollingPlace = data.pollingLocations[0];
+      const pollAddress = pollingPlace.address.line1 + pollingPlace.address.city + ", " + pollingPlace.address.state.replace("&", "AND");
+
+      // geocode polling place location and place on map
+      getJSON(`https://maps.googleapis.com/maps/api/geocode/json?address=${pollAddress.split(' ').join('+')}&key=${API_KEY}`, data => {
+        const location = data.results[0].geometry.location;
+        const coordinates = [location.lng, location.lat];
+        const div = document.createElement('div');
+        div.className = 'marker poll';
+        const marker = new mapboxgl.Marker(div)
+          .setLngLat(coordinates)
+          .addTo(map);
+        const popup = new mapboxgl.Popup({ offset: 10, closeOnClick: false, closeButton: false })
+          .setLngLat(coordinates)
+          .setHTML(`<h4>Your Polling Location:</h4>${data.results[0].formatted_address}`)
+          .addTo(map);
+
+        markers.push(marker);
+        popups.push(popup);
+
+        map.setCenter(coordinates);
+        map.setZoom(15);
+      });
+    });
+  });
+}
+
+// handle searching
+document.getElementById('search').addEventListener('submit', e => {
+  // prevent the form from reloading the page
+  e.preventDefault();
+  getLocation();
+});
