@@ -28,7 +28,8 @@ function getLocation() {
   pinLayer.clearLayers();
   var htmlAddr = $("#address").val().split(' ').join('+');
   // First put their address on the map
-  $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?address="+htmlAddr.split(' ').join('+'), function(data) {
+  $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?address="+htmlAddr.split(' ').join('+') + "&key=AIzaSyDEnLZ0Zlt1qpAmlgXwYezsgGkUWSK57Yo", function(data) {
+    //console.log(data)
     var homeLat = data.results[0].geometry.location.lat;
     var homeLon = data.results[0].geometry.location.lng;
     L.marker([homeLat, homeLon], {
@@ -43,15 +44,22 @@ function getLocation() {
     alert("Uh oh, we couldn't find your home. Try being more specific.")
   });
 
-  // then get their pollign place
-  $.getJSON("https://www.googleapis.com/civicinfo/v2/voterinfo?address=" + htmlAddr + "&electionId=5000&fields=normalizedInput%2CpollingLocations&key=AIzaSyAgx76dxL-fDfCK8IMw5qv8-_9wbfYvf1o", function( data ) {
-
-    var pollingPlace = data.pollingLocations[0].address;
-    var pollAddr = pollingPlace.line1 + pollingPlace.city + ", " + pollingPlace.state;
+  // then get their polling place
+  // remember to update the test electionID (2000) to the real ID! (should be 6000 for the midterm elections)
+  $.getJSON("https://www.googleapis.com/civicinfo/v2/voterinfo?address=" + htmlAddr + "&electionId=2000&key=AIzaSyDEnLZ0Zlt1qpAmlgXwYezsgGkUWSK57Yo", function( data ) {
+    //console.log(data)
+    //console.log(htmlAddr)
+    if (typeof data.pollingLocations == 'undefined') {
+      alert("We can't find your polling place! Try again, or visit your local board's website for more information.")
+      return
+    }
+    var pollingPlace = data.pollingLocations[0];
+    var pollAddr = pollingPlace.address.line1 + pollingPlace.address.city + ", " + pollingPlace.address.state;
     pollAddr = pollAddr.replace("&", "AND");
-
+    
     // geocode polling place location and place on map
-    $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?address="+pollAddr.split(' ').join('+'), function(data) {
+    $.getJSON("https://maps.googleapis.com/maps/api/geocode/json?address="+pollAddr.split(' ').join('+') + "&key=AIzaSyDEnLZ0Zlt1qpAmlgXwYezsgGkUWSK57Yo", function(data) {
+      //console.log(data)
       var lat = data.results[0].geometry.location.lat;
       var lon = data.results[0].geometry.location.lng;
       L.marker([lat, lon], {
@@ -60,7 +68,7 @@ function getLocation() {
           'marker-symbol': 'polling-place',
           'marker-color': '#8fd7f2'
         })
-      }).bindPopup('<b>'+  pollingPlace.locationName.titleCase() +'</b><br>' + pollingPlace.line1.titleCase() + "<br>")
+      }).bindPopup('<b>'+ data.results[0].formatted_address +'</b>')
         .addTo(pinLayer);
       map.setView([lat, lon], 15);
     })

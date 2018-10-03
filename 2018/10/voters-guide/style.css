@@ -15,6 +15,8 @@ h4 {
   position: absolute;
   top: 0;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .address-field {
@@ -24,6 +26,7 @@ h4 {
   background-color: #FFF;
   border: 1px solid #CCC;
   border-radius: 4px;
+  margin-bottom: 5px;
 }
 
 .poll-button {
@@ -34,6 +37,7 @@ h4 {
   border: 1px solid #999;
   border-radius: 4px;
   cursor: pointer;
+  text-align: left;
 }
 
 .mapboxgl-popup-content {
