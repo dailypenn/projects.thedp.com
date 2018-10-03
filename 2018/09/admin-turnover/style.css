@@ -12,7 +12,7 @@ h1 {
 }
 
 .legend {
-  background-color: #aba9a9;
+  background-color: #aba9a9ad;
   height: 30px;
   display: flex;
   justify-content: space-evenly;
@@ -86,7 +86,7 @@ h1 {
 
 .identifier {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .ret-color {
@@ -103,4 +103,19 @@ h1 {
 
 .interim-color {
   border-color: blue;
+}
+
+.new-pos-color{
+  border-color: red;
+}
+
+.info-icon{
+  width: 18px;
+  height: 18px;
+  background-color: #aba9a9;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-left: 5px;
 }

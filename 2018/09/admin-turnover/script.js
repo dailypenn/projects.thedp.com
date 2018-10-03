@@ -135,42 +135,19 @@ var colorKeyClass = {
   "Retirement": "ret-color",
   "New Role": "new-role-color",
   "Stepped Down": "stepped-down-color",
+  "New Position": "new-pos-color",
   interim: "interim-color"
 }
 
 $(document).ready(function () {
-//   // VPUL new roles
-//   $(".container").append(`
-//   <div class="vpul-new-roles">
-//     <div class="divider">
-//       <div class="title">VPUL New Roles</div>
-//       <div class="hline"></div>
-//     </div>
-//   </div>
-// `);
-//   vpulNewRoles.forEach(function (item) {
-//     $(".vpul-new-roles").append(`
-//       <div class="position-row row">
-//         <div class="col" id="${item.position}">${item.position}</div>
-//       </div>
-//     `)
-//     item.people.forEach(function (person) {
-//       console.log("#"+item.position);
-//       $("[id='"+item.position+"']").after(`
-//         <div class="col identifier">
-//           <div class="outer-bubble">
-//             <div class="inner-bubble">
-//               <img src="${person.img}" class="bubble-image">
-//             </div>
-//           </div>
-//           <p>${person.name}</p>
-//         </div>
-//       `)
-//     })
-//   })
-
-  // // VPUL Transitions
+ // VPUL Transitions
   $(".container").append(`
+  <div class="vpul-new-pos">
+      <div class="divider">
+        <div class="title">VPUL New Positions</div>
+        <div class="hline"></div>
+      </div>
+    </div>
     <div class="vpul-transitions">
       <div class="divider">
         <div class="title">VPUL Transitions</div>
@@ -191,6 +168,29 @@ $(document).ready(function () {
     </div>
   `);
 
+  // VPUL new roles
+  vpulNewRoles.forEach(function (item) {
+    $(".vpul-new-pos").append(`
+      <div class="position-row row">
+        <div class="col">${item.position}</div>
+        <div class="col"></div>
+        <div class="col" id="${item.position}"></div>
+      </div>
+    `)
+    item.people.forEach(function (person) {
+      $("[id='"+item.position+"']").append(`
+        <div class="identifier">
+          <div class="outer-bubble ${colorKeyClass["New Position"]}">
+            <div class="inner-bubble">
+              <img src="${person.img}" class="bubble-image">
+            </div>
+          </div>
+          <p>${person.name}</p>
+        </div>
+      `)
+    })
+  })
+
   vpulTransitions.forEach(function (item) {
     $(".vpul-transitions").append(`
     <div class="position-row row">
@@ -201,7 +201,7 @@ $(document).ready(function () {
             <img src="${item.outImg ? item.outImg : tmpImg}" class="bubble-image">
           </div>
         </div>
-        <p>${item.outgoing}</p>
+        <p>${item.outgoing} ${item.newRole ? `<div class="info-icon" data-toggle="tooltip" data-placement="right" title="New Role: ${item.newRole}"><p>i</p></div>` : ""}</p>
       </div>
       <div class="col identifier">
         <div class="outer-bubble ${item.interim ? colorKeyClass["interim"] : ''}">
@@ -261,6 +261,11 @@ $(document).ready(function () {
       </div>
     </div>
   `)
+  })
+
+  $(function () {
+    console.log("tooltip");
+    $('[data-toggle="tooltip"]').tooltip()
   })
 
 
