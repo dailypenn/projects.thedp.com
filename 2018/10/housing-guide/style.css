@@ -1,31 +1,40 @@
-.navbar {
-  position: relative;
-	display: flex;
-  flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-  flex-align: center;
-	background-color: black;
-  flex-pack: justify;
-  padding: .5rem 1rem;
-
+body {
+  margin: 0;
 }
-
-.navbar {
-
-
-    -ms-
-
-    -ms-
-
-}
-
-
 
 h1 {
   font-size: 70px;
 }
 
-.description {
+.navbar {
+	display: flex;
+	justify-content: center;
+	background-color: #000;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
 
+.title {
+  display: flex;
+  justify-content: left;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.description {
+  display: flex;
+  justify-content: left;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.btn {
+  border-color: #000;
+  text-align: left;
+  color: #000;
 }
