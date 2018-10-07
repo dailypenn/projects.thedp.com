@@ -1,9 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=KoHo:400,600|Lato:300');
+
 body {
   margin: 0;
+  font-family: 'Lato', sans-serif;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'KoHo', sans-serif;
+}
+
+h1{
   font-size: 70px;
+}
+
+.title-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://snworksceo.imgix.net/dpn/854b0599-a28f-42be-bbea-64149c69c585.sized-1000x1000.jpg?w=1000');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.articles-section{
+  padding-top: 40px;
 }
 
 .navbar {
@@ -19,8 +40,7 @@ h1 {
   display: flex;
   justify-content: left;
   padding-top: 10px;
-  padding-bottom: 5px;
-  padding-left: 10px;
+  padding-bottom: 10px;
   font-weight: bold;
   text-align: left;
 }
@@ -29,8 +49,7 @@ h1 {
   display: flex;
   justify-content: left;
   padding-top: 10px;
-  padding-bottom: 5px;
-  padding-left: 10px;
+  padding-bottom: 15px;
   text-align: left;
 }
 
