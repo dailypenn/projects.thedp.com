@@ -9,78 +9,94 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'KoHo', sans-serif;
 }
 
-h1{
+h1 {
   font-size: 70px;
-}
-
-.title-section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('https://snworksceo.imgix.net/dpn/854b0599-a28f-42be-bbea-64149c69c585.sized-1000x1000.jpg?w=1000');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.articles-section{
-  padding-top: 40px;
+  color: #FFF;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
+  padding: 10px 0 5px;
   background-color: #000;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  align-items: center;
 }
 
-.title {
+.title-section {
+  height: 100vh;
   display: flex;
-  justify-content: left;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-weight: bold;
-  text-align: left;
+  align-items: center;
+  text-align: center;
+  background-image: url('https://snworksceo.imgix.net/dpn/854b0599-a28f-42be-bbea-64149c69c585.sized-1000x1000.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .description {
-  display: flex;
-  justify-content: left;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  text-align: left;
-  flex-grow: 1;
+  margin: 10px 0 15px;
 }
 
 .btn {
-  border-color: #000;
-  text-align: left;
   color: #000;
+  border: 1px solid #000;
 }
 
-.featured-elt {
-  position: relative;
-  margin: 30px 0px 30px 0px;
+.articles {
+  margin-bottom: 20px;
+}
+
+.articles .title {
+  display: none;
+}
+
+.horizontal-titles {
   display: flex;
+  align-items: flex-start;
+}
+
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.featured-container {
+  min-height: 100vh;
   height: 100vh;
+}
+
+.featured {
+  height: 100%;
+  display: flex;
+  align-items: center;
   background-image: url('https://snworksceo.imgix.net/dpn/d5f0df72-89cf-419f-8e7a-3d82e4ec2f3a.sized-1000x1000.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 150px 20px;
+  background-position: 150px 0;
   background-origin: content-box;
-  align-items: center;
+}
+
+.featured-image {
+  display: none;
 }
 
 .featured-text {
-  background-color: rgb(248, 248, 248);
   width: 40%;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
 }
 
-.featured-button {
-  width: fit-content;
+.full-description {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.full-button {
+  align-self: flex-start;
+}
+
+.video-title {
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .embed-container {
@@ -91,7 +107,7 @@ h1{
   max-width: 100%;
 }
 
-.embed-container iframe, .embed-container object, .embed-container embed {
+.embed-container iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -99,94 +115,49 @@ h1{
   height: 100%;
 }
 
-.video {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
+.mint {
+  background-color: rgb(191, 206, 182);
 }
 
-.container2 {
+.chartreuse {
   background-color: rgb(223,221,80);
-  display: flex;
-  align-items: center;
-  padding: 80px 20px 80px 20px;
 }
 
-.col-left {
-  min-width: 60%;
-  height: auto;
-  padding-right: 20px;
+.sand {
+  background-color: rgb(228, 222, 213);
 }
 
-.col-left img {
-  width: 100%;
-}
-
-.article-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 2;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.col-sm-4 .title{
-  display: none;
-}
-
-.horizontal-titles {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-.horizontal-titles .title {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-@media only screen and (max-width : 900px) {
-  .featured-elt {
-    width: 100%;
-    background-position: 0px 20px;
+@media only screen and (max-width: 768px) {
+  .articles {
+    margin-bottom: 50px;
   }
 
-  .featured-text {
-    width: 60%;
-    font-size: 14px;
-  }
-
-  .container2 {
-    min-height: auto;
-    flex-direction: column;
-    padding-right: 0px;
-  }
-
-  .col-left {
-    padding-bottom: 20px;
-  }
-
-  .col-sm-4 .title {
-    display: contents;
-    padding-top: 20px;
+  .articles .title {
+    display: block;
   }
 
   .horizontal-titles {
     display: none;
   }
-}
 
-@media only screen and (max-width : 700px) {
-  .featured-elt {
-    background-position: 0px 20px;
-    align-items: flex-end;
+  .featured-container {
+    height: auto;
+  }
+
+  .featured {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .featured-image {
+    display: block;
   }
 
   .featured-text {
     width: 100%;
+  }
+
+  .full-image {
+    margin-bottom: 20px;
   }
 }
