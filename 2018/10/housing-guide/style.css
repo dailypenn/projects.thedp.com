@@ -51,6 +51,7 @@ h1{
   padding-top: 10px;
   padding-bottom: 15px;
   text-align: left;
+  flex-grow: 1;
 }
 
 .btn {
@@ -62,7 +63,6 @@ h1{
 .featured-elt {
   position: relative;
   margin: 30px 0px 30px 0px;
-  padding-bottom: 100px;
   display: flex;
   height: 100vh;
   background-image: url('https://snworksceo.imgix.net/dpn/d5f0df72-89cf-419f-8e7a-3d82e4ec2f3a.sized-1000x1000.jpg');
@@ -70,15 +70,13 @@ h1{
   background-repeat: no-repeat;
   background-position: 150px 20px;
   background-origin: content-box;
+  align-items: center;
 }
 
 .featured-text {
   background-color: rgb(248, 248, 248);
   width: 40%;
-  position: absolute;
-  top: 40%;
   padding: 20px 20px 20px 20px;
-  margin-left: -40px;
 }
 
 .featured-button {
@@ -107,6 +105,50 @@ h1{
   text-align: center;
 }
 
+.container2 {
+  background-color: rgb(223,221,80);
+  display: flex;
+  align-items: center;
+  padding: 80px 20px 80px 20px;
+}
+
+.col-left {
+  min-width: 60%;
+  height: auto;
+  padding-right: 20px;
+}
+
+.col-left img {
+  width: 100%;
+}
+
+.article-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-sm-4 .title{
+  display: none;
+}
+
+.horizontal-titles {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.horizontal-titles .title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
 @media only screen and (max-width : 900px) {
   .featured-elt {
     width: 100%;
@@ -117,15 +159,34 @@ h1{
     width: 60%;
     font-size: 14px;
   }
+
+  .container2 {
+    min-height: auto;
+    flex-direction: column;
+    padding-right: 0px;
+  }
+
+  .col-left {
+    padding-bottom: 20px;
+  }
+
+  .col-sm-4 .title {
+    display: contents;
+    padding-top: 20px;
+  }
+
+  .horizontal-titles {
+    display: none;
+  }
 }
 
 @media only screen and (max-width : 700px) {
   .featured-elt {
-    width: 100%;
     background-position: 0px 20px;
-    flex-direction: row;
+    align-items: flex-end;
   }
 
   .featured-text {
+    width: 100%;
   }
 }
