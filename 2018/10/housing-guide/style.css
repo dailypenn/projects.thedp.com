@@ -49,9 +49,17 @@ h1 {
   display: none;
 }
 
+.articles .title2 {
+  display: none;
+}
+
 .horizontal-titles {
   display: flex;
   align-items: flex-start;
+}
+
+.half {
+  display: none;
 }
 
 .container {
@@ -119,12 +127,27 @@ h1 {
   background-color: rgb(191, 206, 182);
 }
 
+.no-bottom-padding {
+  padding-bottom: 0px;
+}
+
 .chartreuse {
   background-color: rgb(223,221,80);
 }
 
 .sand {
   background-color: rgb(228, 222, 213);
+}
+
+@media only screen and (max-width: 992px) {
+  .half {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .horizontal-titles2 {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -137,6 +160,10 @@ h1 {
   }
 
   .horizontal-titles {
+    display: none;
+  }
+
+  .half {
     display: none;
   }
 
