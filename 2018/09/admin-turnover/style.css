@@ -13,11 +13,12 @@ h1 {
 
 .legend {
   background-color: #aba9a9ad;
-  height: 30px;
+  height: 38px;
   display: flex;
   justify-content: space-evenly;
   padding-top: 3px;
   margin-bottom: 10px;
+  align-items: center;
 }
 
 .legend-bubble {
@@ -33,6 +34,7 @@ h1 {
 .legend-pair {
   display: flex;
   justify-content: space-between;
+  align-items: center; 
 }
 
 .divider {
@@ -46,8 +48,8 @@ h1 {
   color: white;
   border-radius: 20px;
   width: fit-content;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   white-space: nowrap;
   margin-right: 3px;
 }
