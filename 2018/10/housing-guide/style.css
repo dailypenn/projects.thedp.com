@@ -45,6 +45,11 @@ h2 {
   border: 1px solid #000;
 }
 
+.btn:hover {
+  color: #777;
+  border: 1px solid #777;
+}
+
 .articles {
   margin-bottom: 20px;
 }
@@ -53,13 +58,10 @@ h2 {
   display: none;
 }
 
-.articles .title2 {
-  display: none;
-}
-
 .horizontal-titles {
   display: flex;
   align-items: flex-start;
+  margin-bottom: 10px;
 }
 
 .half {
@@ -127,20 +129,64 @@ h2 {
   height: 100%;
 }
 
-.mint {
-  background-color: rgb(191, 206, 182);
+.slick-arrow {
+  width: 40px;
+  height: 40px;
 }
 
-.no-bottom-padding {
-  padding-bottom: 0px;
+.slick-arrow::before {
+  font-size: 40px;
+}
+
+.slick-prev {
+  left: -45px;
+}
+
+.slick-next {
+  right: -45px;
+}
+
+.thistle {
+  background-color: rgb(196,164,190);
+}
+
+.olive {
+  background-color: rgb(132,129,65);
+}
+
+.sand {
+  background-color: rgb(228,222,213);
 }
 
 .chartreuse {
   background-color: rgb(223,221,80);
 }
 
-.sand {
-  background-color: rgb(228, 222, 213);
+.cactus {
+  background-color: rgb(69,89,50);
+}
+
+.mint {
+  background-color: rgb(191,206,182);
+}
+
+@media only screen and (max-width: 1032px) {
+  .slick-arrow {
+    width: 28px;
+    height: 28px;
+  }
+
+  .slick-arrow::before {
+    font-size: 28px;
+  }
+
+  .slick-prev {
+    left: -33px;
+  }
+
+  .slick-next {
+    right: -33px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -149,7 +195,7 @@ h2 {
     align-items: flex-start;
   }
 
-  .horizontal-titles2 {
+  .horizontal-titles.four {
     display: none;
   }
 }
@@ -190,5 +236,27 @@ h2 {
 
   .full-image {
     margin-bottom: 20px;
+  }
+
+  .video-gallery {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .slick-arrow {
+    width: 20px;
+    height: 20px;
+  }
+
+  .slick-arrow::before {
+    font-size: 20px;
+  }
+
+  .slick-prev {
+    left: -25px;
+  }
+
+  .slick-next {
+    right: -25px;
   }
 }
