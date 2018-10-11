@@ -29,7 +29,7 @@ var duboisPie = c3.generate({
   },
   size: {
     width: 150,
-    height: 150
+    height: 200
   }
 });
 
@@ -57,7 +57,7 @@ var kcechPie = c3.generate({
   },
   size: {
     width: 150,
-    height: 150
+    height: 200
   }
 });
 
@@ -86,7 +86,7 @@ var gregoryPie = c3.generate({
   },
   size: {
     width: 150,
-    height: 150
+    height: 200
   }
 });
 
@@ -115,7 +115,7 @@ var stoufferPie = c3.generate({
   },
   size: {
     width: 150,
-    height: 150
+    height: 200
   }
 });
 
@@ -144,7 +144,7 @@ var nchPie = c3.generate({
   },
   size: {
     width: 150,
-    height: 150
+    height: 200
   }
 });
 
@@ -172,7 +172,7 @@ var harnwellPie = c3.generate({
   },
   size: {
     width: 150,
-    height: 150
+    height: 200
   }
 });
 
@@ -200,7 +200,7 @@ var harrisonPie = c3.generate({
   },
   size: {
     width: 150,
-    height: 150
+    height: 200
   }
 });
 
@@ -228,7 +228,7 @@ var rodinPie = c3.generate({
   },
   size: {
     width: 150,
-    height: 150
+    height: 200
   }
 });
 
@@ -267,7 +267,7 @@ var duboisBar = c3.generate({
   },
   size: {
     width: 155,
-    height: 150
+    height: 200
   }
 })
 
@@ -306,7 +306,7 @@ var kcechBar = c3.generate({
   },
   size: {
     width: 155,
-    height: 150
+    height: 200
   }
 })
 
@@ -345,7 +345,7 @@ var gregoryBar = c3.generate({
   },
   size: {
     width: 155,
-    height: 150
+    height: 200
   }
 })
 
@@ -384,7 +384,7 @@ var stoufferBar = c3.generate({
   },
   size: {
     width: 155,
-    height: 150
+    height: 200
   }
 })
 
@@ -423,7 +423,7 @@ var nchBar = c3.generate({
   },
   size: {
     width: 155,
-    height: 150
+    height: 200
   }
 })
 
@@ -462,7 +462,7 @@ var harnwellBar = c3.generate({
   },
   size: {
     width: 155,
-    height: 150
+    height: 200
   }
 })
 
@@ -501,7 +501,7 @@ var harrisonBar = c3.generate({
   },
   size: {
     width: 155,
-    height: 150
+    height: 200
   }
 })
 
@@ -540,6 +540,6 @@ var rodinBar = c3.generate({
   },
   size: {
     width: 155,
-    height: 150
+    height: 200
   }
 })
