@@ -1,43 +1,134 @@
-.thistle{
-  background-color: rgb(196,164,190);
+@import url('https://fonts.googleapis.com/css?family=KoHo:400,600|Lato:300');
+
+body {
+  font-family: 'Lato', sans-serif;
 }
 
-.olive{
-  background-color:rgb(132,129,65)
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'KoHo', sans-serif;
+  font-weight: 600;
 }
 
-.sand{
-  background-color:rgb(228,222,213)
+section {
+  margin: 100px auto;
 }
 
-.chart{
-  background-color:rgb(223,221,80)
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 5px;
+  background-color: #000;
 }
 
-.cactus{
-  background-color:rgb(69,89,50)
+.intro {
+  width: 50%;
+  text-align: center;
 }
 
-.mint{
-  background-color:rgb(191,206,182)
+.row {
+  margin: 0;
 }
 
-.info-row{
-  height: 350px;
+.info-row {
+  height: 600px;
 }
 
-.info-text{
+.info-text {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 15px;
 }
 
-.num-students{
+.pic {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.top {
+  background-position: center top;
+}
+
+.house-image {
+  display: none;
+}
+
+.num-students {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
+.thistle {
+  background-color: rgb(196,164,190);
+}
 
+.olive {
+  background-color: rgb(132,129,65)
+}
 
+.sand {
+  background-color: rgb(228,222,213)
+}
 
+.chartreuse {
+  background-color: rgb(223,221,80)
+}
 
+.cactus {
+  background-color: rgb(69,89,50)
+}
+
+.mint {
+  background-color: rgb(191,206,182)
+}
+
+.dubois {
+  background-image: url('https://snworksceo.imgix.net/dpn/5763e2ff-a15c-4407-bb8d-d986316b8628.sized-1000x1000.jpg');
+}
+
+.kcech {
+  background-image: url('https://snworksceo.imgix.net/dpn/f8fb8100-cf40-4009-9a99-f9e3023cae44.sized-1000x1000.jpg');
+}
+
+.gregory {
+  background-image: url('https://snworksceo.imgix.net/dpn/3fa8fc55-dc98-4b72-85d3-6daad677a45b.sized-1000x1000.jpg');
+}
+
+.stouffer {
+  background-image: url('https://snworksceo.imgix.net/dpn/e50e0a60-157d-4283-9092-38399c424942.sized-1000x1000.jpg');
+}
+
+.nch {
+  background-image: url('https://snworksceo.imgix.net/dpn/332b7726-ea7b-4626-bdd2-809ad9b1f1c8.sized-1000x1000.jpg');
+}
+
+.harnwell {
+  background-image: url('https://snworksceo.imgix.net/dpn/a09910cd-3f79-4898-afa7-7868b5edaf36.sized-1000x1000.jpg');
+}
+
+.harrison {
+  background-image: url('https://snworksceo.imgix.net/dpn/d1a63f38-9622-4e51-ac38-9b093df80418.sized-1000x1000.jpg');
+}
+
+.rodin {
+  background-image: url('https://snworksceo.imgix.net/dpn/e9ea4319-2c2f-45e0-9b86-8154de97e967.sized-1000x1000.jpg');
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    padding: 0 15px;
+  }
+
+  .intro {
+    width: 100%;
+  }
+
+  .info-row {
+    height: auto;
+  }
+
+  .house-image {
+    display: block;
+  }
+}
