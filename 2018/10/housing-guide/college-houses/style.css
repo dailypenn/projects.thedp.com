@@ -9,6 +9,20 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+h3 {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.col-sm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 section {
   margin: 100px auto;
 }
@@ -40,6 +54,16 @@ section {
   padding: 15px;
 }
 
+.info-text h1{
+  padding-bottom: 55px;
+  font-size: 45px;
+  text-align: center;
+}
+
+.info-text h3, .info-text h2, .info-text p{
+  text-align: center
+}
+
 .pic {
   background-size: cover;
   background-repeat: no-repeat;
@@ -54,9 +78,16 @@ section {
   display: none;
 }
 
-.num-students {
+/* .num-students {
   font-size: 20px;
   font-weight: 600;
+} */
+
+.divider {
+  width: -webkit-fill-available;
+  height: 1px;
+  background: black;
+  margin: 10px;
 }
 
 .thistle {
@@ -68,7 +99,7 @@ section {
 }
 
 .sand {
-  background-color: rgb(228,222,213)
+  /* background-color: rgb(228,222,213) */
 }
 
 .chartreuse {

@@ -1,168 +1,12 @@
-var lowerCollegeHouses = [
-  {
-    name: "W.E.B. Du Bois College House",
-    students: 155,
-    breakdown: {
-      fresh: 30,
-      soph: 28,
-      junior:22 ,
-      senior: 20
-    },
-    rooms: {
-      singles: 7,
-      doubles: 24,
-      triples: 108,
-      quads: 20
-    },
-    built: [1971],
-    renovations: [
-      "2009"
-    ]
-  },
-  {
-    name: "Kings Court College House",
-    students: 317,
-    breakdown: {
-      fresh: 87,
-      soph: 9,
-      junior: 2,
-      senior: 2
-    },
-    rooms: {
-      singles: 24,
-      doubles: 310,
-    },
-    built: [1915],
-    renovations: [
-      "2011 ($10 million)"
-    ]
-  },
-  {
-    name: "Gregory College House",
-    students: 233,
-    breakdown: {
-      fresh: 57,
-      soph: 20,
-      junior: 18,
-      senior: 5
-    },
-    rooms: {
-      singles: 11,
-      doubles: 30,
-      quads: 200
-    },
-    built: [1971],
-    renovations: [
-      "2013 (Class of 1925)", 
-      "2014 (Van Pelt)"
-    ]
-  },
-  {
-    name: "Stouffer College House",
-    students: 271,
-    breakdown: {
-      fresh: 25,
-      soph: 37,
-      junior: 18,
-      senior: 20
-    },
-    rooms: {
-      singles: 119,
-      doubles: 162,
-    },
-    built: [
-      "1972 (Stouffer)",
-      "1964 (Mayer Residence Hall)"
-    ],
-    renovations: [
-      "2012"
-    ]
-  },
-  {
-    name: "New College House",
-    students: 339,
-    breakdown: {
-      fresh: 32,
-      soph: 41,
-      junior: 22,
-      senior: 5
-    },
-    rooms: {
-      doubles: 24,
-      triples: 108,
-      quads: 20,
-      fivePerson: 50,
-      sixPerson: 78
-    },
-    built: [
-      "2016 ($125 million)"
-    ]
-  },
-]
-var upperCollegeHouses = [
-  {
-    name:"Harnwell College House",
-    students: 752,
-    breakdown: {
-      soph: 48,
-      junior: 28,
-      senior: 24
-    },
-    rooms: {
-      singles: 40,
-      doubles: 142,
-      triples: 132,
-      quads: 456
-    },
-    built: [1970],
-    renovations: [
-      "2002-2009 ($180 million)"
-    ]
-  },
-  {
-    name: "Harrison College House",
-    students: 745,
-    breakdown: {
-      soph: 51,
-      junior: 24,
-      senior: 25
-    },
-    rooms: {
-      singles: 76,
-      doubles: 204,
-      triples: 99,
-      quads: 404
-    },
-    built: [1970],
-    renovations: [
-      "2002-2009 ($180 million)"
-    ]
-  },
-  {
-    name: "Rodin College House",
-    students: 685,
-    breakdown: {
-      soph: 41,
-      junior: 27,
-      senior: 32
-    },
-    rooms: {
-      singles: 38,
-      doubles: 158,
-      triples: 114,
-      quads: 440
-    },
-    built: [1970],
-    renovations: [
-      "2002-2009 ($180 million)"
-    ]
-  },
-]
+var chartreuse = "#dfdd50";
+var cactus = "#455932"
+var mint = "#bfceb6";
+var olive = "#848141";
+var thistle = "#c4a4be";
 
 
-
-var dubois = c3.generate({
-  bindto: '#dubois',
+var duboisPie = c3.generate({
+  bindto: '#duboisPie',
   data: {
     columns: [
       ['Freshman', 0.3],
@@ -170,19 +14,27 @@ var dubois = c3.generate({
       ['Junior', 0.22],
       ['Senior', 0.2]
     ],
+    colors: {
+      Freshman: cactus,
+      Sophomore: chartreuse,
+      Junior: mint,
+      Senior: olive
+    },
     type: 'pie',
   },
-  title: {
-    text: 'Resident Breakdown'
+  pie: {
+    label: {
+      show: false
+    }
   },
   size: {
-    width: 250,
-    height: 250
+    width: 150,
+    height: 150
   }
 });
 
-var kcech = c3.generate({
-  bindto: '#kcech',
+var kcechPie = c3.generate({
+  bindto: '#kcechPie',
   data: {
     columns: [
       ['Freshman', 0.87],
@@ -191,18 +43,26 @@ var kcech = c3.generate({
       ['Senior', 0.02]
     ],
     type: 'pie',
+    colors: {
+      Freshman: cactus,
+      Sophomore: chartreuse,
+      Junior: mint,
+      Senior: olive
+    },
   },
-  title: {
-    text: 'Resident Breakdown'
+  pie: {
+    label: {
+      show: false
+    }
   },
   size: {
-    width: 250,
-    height: 250
+    width: 150,
+    height: 150
   }
 });
 
-var gregory = c3.generate({
-  bindto: '#gregory',
+var gregoryPie = c3.generate({
+  bindto: '#gregoryPie',
   data: {
     columns: [
       ['Freshman', 0.57],
@@ -211,18 +71,27 @@ var gregory = c3.generate({
       ['Senior', 0.05]
     ],
     type: 'pie',
+    colors: {
+      Freshman: cactus,
+      Sophomore: chartreuse,
+      Junior: mint,
+      Senior: olive
+    },
+    type: 'pie',
   },
-  title: {
-    text: 'Resident Breakdown'
+  pie: {
+    label: {
+      show: false
+    }
   },
   size: {
-    width: 250,
-    height: 250
+    width: 150,
+    height: 150
   }
 });
 
-var stouffer = c3.generate({
-  bindto: '#stouffer',
+var stoufferPie = c3.generate({
+  bindto: '#stoufferPie',
   data: {
     columns: [
       ['Freshman', 0.25],
@@ -231,18 +100,27 @@ var stouffer = c3.generate({
       ['Senior', 0.2]
     ],
     type: 'pie',
+    colors: {
+      Freshman: cactus,
+      Sophomore: chartreuse,
+      Junior: mint,
+      Senior: olive
+    },
+    type: 'pie',
   },
-  title: {
-    text: 'Resident Breakdown'
+  pie: {
+    label: {
+      show: false
+    }
   },
   size: {
-    width: 250,
-    height: 250
+    width: 150,
+    height: 150
   }
 });
 
-var nch = c3.generate({
-  bindto: '#nch',
+var nchPie = c3.generate({
+  bindto: '#nchPie',
   data: {
     columns: [
       ['Freshman', 0.32],
@@ -251,18 +129,27 @@ var nch = c3.generate({
       ['Senior', 0.05]
     ],
     type: 'pie',
+    colors: {
+      Freshman: cactus,
+      Sophomore: chartreuse,
+      Junior: mint,
+      Senior: olive
+    },
+    type: 'pie',
   },
-  title: {
-    text: 'Resident Breakdown'
+  pie: {
+    label: {
+      show: false
+    }
   },
   size: {
-    width: 250,
-    height: 250
+    width: 150,
+    height: 150
   }
 });
 
-var harnwell = c3.generate({
-  bindto: '#harnwell',
+var harnwellPie = c3.generate({
+  bindto: '#harnwellPie',
   data: {
     columns: [
       ['Sophomore', 0.48],
@@ -270,18 +157,27 @@ var harnwell = c3.generate({
       ['Senior', 0.24]
     ],
     type: 'pie',
+    colors: {
+      Freshman: cactus,
+      Sophomore: chartreuse,
+      Junior: mint,
+      Senior: olive
+    },
+    type: 'pie',
   },
-  title: {
-    text: 'Resident Breakdown'
+  pie: {
+    label: {
+      show: false
+    }
   },
   size: {
-    width: 250,
-    height: 250
+    width: 150,
+    height: 150
   }
 });
 
-var harrison = c3.generate({
-  bindto: '#harrison',
+var harrisonPie = c3.generate({
+  bindto: '#harrisonPie',
   data: {
     columns: [
       ['Sophomore', 0.51],
@@ -289,18 +185,27 @@ var harrison = c3.generate({
       ['Senior', 0.25]
     ],
     type: 'pie',
+    colors: {
+      Freshman: cactus,
+      Sophomore: chartreuse,
+      Junior: mint,
+      Senior: olive
+    },
+    type: 'pie',
   },
-  title: {
-    text: 'Resident Breakdown'
+  pie: {
+    label: {
+      show: false
+    }
   },
   size: {
-    width: 250,
-    height: 250
+    width: 150,
+    height: 150
   }
 });
 
-var rodin = c3.generate({
-  bindto: '#rodin',
+var rodinPie = c3.generate({
+  bindto: '#rodinPie',
   data: {
     columns: [
       ['Sophomore', 0.41],
@@ -308,12 +213,333 @@ var rodin = c3.generate({
       ['Senior', 0.32]
     ],
     type: 'pie',
+    colors: {
+      Freshman: cactus,
+      Sophomore: chartreuse,
+      Junior: mint,
+      Senior: olive
+    },
+    type: 'pie',
   },
-  title: {
-    text: 'Resident Breakdown'
+  pie: {
+    label: {
+      show: false
+    }
   },
   size: {
-    width: 250,
-    height: 250
+    width: 150,
+    height: 150
   }
 });
+
+var duboisBar = c3.generate({
+  bindto: "#duboisBar",
+  data: {
+    columns: [
+      ['Number of Rooms', 7, 24, 108, 20],
+    ],
+    colors: {
+      'Number of Rooms': '#000000'
+    },
+    color: function (c, data) {
+      var colors = [mint, olive, chartreuse, cactus];
+      if (data.index !== undefined) return colors[data.index];
+      return c;
+    },
+    type: 'bar'
+  },
+  axis: {
+    x: {
+      type: 'category',
+      categories: ['Single', 'Double', 'Triple', 'Quad'],
+      tick: {
+        rotate: 50,
+        multiline: false
+      }
+    }
+  },
+  padding: {
+    left: 28,
+    right: 7
+  },
+  legend: {
+    show: false
+  },
+  size: {
+    width: 155,
+    height: 150
+  }
+})
+
+var kcechBar = c3.generate({
+  bindto: "#kcechBar",
+  data: {
+    columns: [
+      ['Number of Rooms', 24, 310],
+    ],
+    colors: {
+      'Number of Rooms': '#000000'
+    },
+    color: function (c, data) {
+      var colors = [mint, olive, chartreuse, cactus];
+      if (data.index !== undefined) return colors[data.index];
+      return c;
+    },
+    type: 'bar'
+  },
+  axis: {
+    x: {
+      type: 'category',
+      categories: ['Single', 'Double'],
+      tick: {
+        rotate: 50,
+        multiline: false
+      }
+    }
+  },
+  padding: {
+    left: 28,
+    right: 7
+  },
+  legend: {
+    show: false
+  },
+  size: {
+    width: 155,
+    height: 150
+  }
+})
+
+var gregoryBar = c3.generate({
+  bindto: "#gregoryBar",
+  data: {
+    columns: [
+      ['Number of Rooms', 11, 30, 200],
+    ],
+    colors: {
+      'Number of Rooms': '#000000'
+    },
+    color: function (c, data) {
+      var colors = [mint, olive, chartreuse, cactus];
+      if (data.index !== undefined) return colors[data.index];
+      return c;
+    },
+    type: 'bar'
+  },
+  axis: {
+    x: {
+      type: 'category',
+      categories: ['Single', 'Double', 'Quad'],
+      tick: {
+        rotate: 50,
+        multiline: false
+      }
+    }
+  },
+  padding: {
+    left: 28,
+    right: 7
+  },
+  legend: {
+    show: false
+  },
+  size: {
+    width: 155,
+    height: 150
+  }
+})
+
+var stoufferBar = c3.generate({
+  bindto: "#stoufferBar",
+  data: {
+    columns: [
+      ['Number of Rooms', 119, 162],
+    ],
+    colors: {
+      'Number of Rooms': '#000000'
+    },
+    color: function (c, data) {
+      var colors = [mint, olive, chartreuse, cactus];
+      if (data.index !== undefined) return colors[data.index];
+      return c;
+    },
+    type: 'bar'
+  },
+  axis: {
+    x: {
+      type: 'category',
+      categories: ['Single', 'Double'],
+      tick: {
+        rotate: 50,
+        multiline: false
+      }
+    }
+  },
+  padding: {
+    left: 28,
+    right: 7
+  },
+  legend: {
+    show: false
+  },
+  size: {
+    width: 155,
+    height: 150
+  }
+})
+
+var nchBar = c3.generate({
+  bindto: "#nchBar",
+  data: {
+    columns: [
+      ['Number of Rooms', 8, 54, 164, 50, 78],
+    ],
+    colors: {
+      'Number of Rooms': '#000000'
+    },
+    color: function (c, data) {
+      var colors = [olive, chartreuse, cactus, mint, thistle];
+      if (data.index !== undefined) return colors[data.index];
+      return c;
+    },
+    type: 'bar'
+  },
+  axis: {
+    x: {
+      type: 'category',
+      categories: ['Double', 'Triple', 'Quad', '5 Person', '6 Person'],
+      tick: {
+        rotate: 50,
+        multiline: false
+      }
+    }
+  },
+  padding: {
+    left: 28,
+    right: 15
+  },
+  legend: {
+    show: false
+  },
+  size: {
+    width: 155,
+    height: 150
+  }
+})
+
+var harnwellBar = c3.generate({
+  bindto: "#harnwellBar",
+  data: {
+    columns: [
+      ['Number of Rooms', 40, 142, 132, 456],
+    ],
+    colors: {
+      'Number of Rooms': '#000000'
+    },
+    color: function (c, data) {
+      var colors = [mint, olive, chartreuse, cactus];
+      if (data.index !== undefined) return colors[data.index];
+      return c;
+    },
+    type: 'bar'
+  },
+  axis: {
+    x: {
+      type: 'category',
+      categories: ['Single', 'Double', 'Triple', 'Quad'],
+      tick: {
+        rotate: 50,
+        multiline: false
+      }
+    }
+  },
+  padding: {
+    left: 28,
+    right: 7
+  },
+  legend: {
+    show: false
+  },
+  size: {
+    width: 155,
+    height: 150
+  }
+})
+
+var harrisonBar = c3.generate({
+  bindto: "#harrisonBar",
+  data: {
+    columns: [
+      ['Number of Rooms', 76, 204, 99, 404],
+    ],
+    colors: {
+      'Number of Rooms': '#000000'
+    },
+    color: function (c, data) {
+      var colors = [mint, olive, chartreuse, cactus];
+      if (data.index !== undefined) return colors[data.index];
+      return c;
+    },
+    type: 'bar'
+  },
+  axis: {
+    x: {
+      type: 'category',
+      categories: ['Single', 'Double', 'Triple', 'Quad'],
+      tick: {
+        rotate: 50,
+        multiline: false
+      }
+    }
+  },
+  padding: {
+    left: 28,
+    right: 7
+  },
+  legend: {
+    show: false
+  },
+  size: {
+    width: 155,
+    height: 150
+  }
+})
+
+var rodinBar = c3.generate({
+  bindto: "#rodinBar",
+  data: {
+    columns: [
+      ['Number of Rooms', 38, 158, 114, 440],
+    ],
+    colors: {
+      'Number of Rooms': '#000000'
+    },
+    color: function (c, data) {
+      var colors = [mint, olive, chartreuse, cactus];
+      if (data.index !== undefined) return colors[data.index];
+      return c;
+    },
+    type: 'bar'
+  },
+  axis: {
+    x: {
+      type: 'category',
+      categories: ['Single', 'Double', 'Triple', 'Quad'],
+      tick: {
+        rotate: 50,
+        multiline: false
+      }
+    }
+  },
+  padding: {
+    left: 28,
+    right: 7
+  },
+  legend: {
+    show: false
+  },
+  size: {
+    width: 155,
+    height: 150
+  }
+})
