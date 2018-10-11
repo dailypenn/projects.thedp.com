@@ -31,6 +31,10 @@ hr {
   border-top: 2px solid rgb(69,89,50);
 }
 
+footer {
+  text-align: center;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
