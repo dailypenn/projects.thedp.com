@@ -42,6 +42,27 @@ footer {
   background-color: #000;
 }
 
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.ad-container hr {
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.ad-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.ad {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0;
+}
+
 .title-section {
   height: 100vh;
   display: flex;
@@ -112,11 +133,6 @@ footer {
 
 .half {
   display: none;
-}
-
-.container {
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .featured-container {
