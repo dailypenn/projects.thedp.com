@@ -3,20 +3,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" viewport-fit="cover">
-  <title>Voter Map</title>
-
-  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js"></script>
-  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css" rel="stylesheet">
+  <title>Voters Guide, 2018 | The Daily Pennsylvanian</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div id="map" class="map-container"></div>
-  <form id="search" class="inputs">
-    <input type="text" id="address" class="address-field" placeholder="Address" required>
-    <input type="text" id="city" class="address-field" placeholder="City (optional)">
-    <button type="submit" id="location" class="poll-button">Get Polling Location</button>
-  </form>
+  <div class="container">
+    <h2>Profiles</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <a target="_blank" href="https://www.thedp.com/article/2018/09/mary-gay-scanlon-penn-law-congress-pennsylvania-5th-district-upenn-philadelphia">
+          <img src="https://snworksceo.imgix.net/dpn/e6af637a-77db-4183-aa80-a171dbb42477.sized-1000x1000.png?w=1000" class="img-fluid" alt="Portrait of Mary Gay Scanlon">
+          <h4 class="title">Penn fostered her love for public service. Now, 1984 Law grad Mary Gay Scanlon is running for Congress.</h4>
+        </a>
+        <div class="description">Penn Law graduate Mary Gay Scanlon won the Democratic primary election this May for Pennsylvania's 5th Congressional District.</div>
+      </div>
+      <div class="col-md-6">
+        <a target="_blank" href="https://www.thedp.com/article/2018/09/penn-democrats-canvas-politics-pennsylvania-congress-susan-wild-midterms-lehigh-valley-upenn-philadelphia">
+          <img src="https://snworksceo.imgix.net/dpn/921fe4e2-ddcd-44e0-ac06-21ac7a887afb.sized-1000x1000.jpeg?w=1000" class="img-fluid" alt="Portrait of Susan Wild">
+          <h4 class="title">Penn Dems gets behind Susan Wild, who is looking to break Pa.'s all-male congressional delegation</h4>
+        </a>
+        <div class="description">Penn Democrats are kicking off midterm season by traveling an hour out of Philadelphia to Allentown, Pa. They hope to help elect Democrat Susan Wild to replace former republican representative Patrick Meehan.</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <a target="_blank" href="https://www.34st.com/article/2018/09/penn-alum-lauren-lareau-bucks-county-state-representative-election">
+          <img src="https://s3.amazonaws.com/snwceomedia/dpn-34s/a82668f0-0848-4254-abca-888f8e9bde77.original.jpg" class="img-fluid" alt="Portrait of Lauren Lareau">
+          <h4 class="title">Lauren Lareau: the single mom and Penn grad taking on a Republican incumbent</h4>
+        </a>
+        <div class="description">The Penn alum and single mother challenges a Republican incumbent in Buck's County.</div>
+      </div>
+      <div class="col-md-6">
+        <a target="_blank" href="https://www.thedp.com/article/2018/10/josh-gottheimer-congressman-new-jersey-bipartisanship-upenn-penn-politics-philadelphia">
+          <img src="https://snworksceo.imgix.net/dpn/1433797e-c4ac-412e-837b-77568ff142db.sized-1000x1000.jpg?w=1000" class="img-fluid" alt="Portrait of Josh Gottheimer">
+          <h4 class="title">At Penn, he was IFC President and a scholar. Now, Josh Gottheimer seeks a second term in Congress.</h4>
+        </a>
+        <div class="description">1997 College alumnus Josh Gottheimer is running for Congressional re-election in New Jersey's 5th District on Nov. 6.</div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
