@@ -88,3 +88,24 @@ img {
 .row {
   margin-top: 10px;
 }
+
+.table-contents {
+  text-align: center;
+  /* this style is for the table of contents */
+}
+
+.table-contents:not(:last-of-type) {
+  border-right: 1px solid grey;
+}
+
+.full-description {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .table-contents:not(:last-of-type) {
+    border-right: none;
+  }
+}
