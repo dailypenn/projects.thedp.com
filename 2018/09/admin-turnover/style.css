@@ -13,10 +13,10 @@ h1 {
 
 .legend {
   background-color: #aba9a9ad;
-  height: 38px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-top: 3px;
+  padding: 5px;
   margin-bottom: 10px;
   align-items: center;
 }
@@ -111,13 +111,33 @@ h1 {
   border-color: red;
 }
 
-.info-icon{
-  width: 18px;
-  height: 18px;
-  background-color: #aba9a9;
-  border-radius: 50%;
-  color: white;
+.mobile-header {
+  display: none;
+}
+
+.name {
   display: flex;
-  justify-content: center;
-  margin-left: 5px;
+  flex-direction: column;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+
+@media only screen and (max-width: 576px) {
+  .header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: inline;
+    font-style: italic;
+    color: #aba9a9;
+  }
+
+  .identifier {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
 }

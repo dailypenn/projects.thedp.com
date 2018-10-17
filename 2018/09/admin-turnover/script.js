@@ -3,7 +3,8 @@ var vpulTransitions = [
     position: "Executive Director of Counseling & Psychological Services",
     outgoing: "Bill Alexander",
     outReason: "Retirement",
-    outImg: "https://snworksceo.imgix.net/dpn/8c2488dd-635d-46de-9e7f-11f5d0ea267b.sized-1000x1000.png?h=400"
+    outImg: "https://snworksceo.imgix.net/dpn/8c2488dd-635d-46de-9e7f-11f5d0ea267b.sized-1000x1000.png?h=400",
+    outArt: "https://www.thedp.com/article/2018/03/guest-column-bill-alexander-caps-upenn-mental-health-philadelphia"
   },
   {
     position: "Director of Penn Women's Center",
@@ -140,6 +141,10 @@ var colorKeyClass = {
 }
 
 $(document).ready(function () {
+
+  function myFunction() {
+    console.log("this " + this);
+  }
  // VPUL Transitions
   $(".container").append(`
   <div class="vpul-new-pos">
@@ -172,9 +177,9 @@ $(document).ready(function () {
   vpulNewRoles.forEach(function (item) {
     $(".vpul-new-pos").append(`
       <div class="position-row row">
-        <div class="col">${item.position}</div>
-        <div class="col"></div>
-        <div class="col" id="${item.position}"></div>
+        <div class="col-sm">${item.position}</div>
+        <div class="col-sm"></div>
+        <div class="col-sm" id="${item.position}"></div>
       </div>
     `)
     item.people.forEach(function (person) {
@@ -185,7 +190,10 @@ $(document).ready(function () {
               <img src="${person.img}" class="bubble-image">
             </div>
           </div>
-          <p>${person.name}</p>
+          <div class="name">
+            <span>${person.name}</span>
+            <span class="mobile-header">(Incoming)</span>
+          </div>
         </div>
       `)
     })
@@ -194,22 +202,32 @@ $(document).ready(function () {
   vpulTransitions.forEach(function (item) {
     $(".vpul-transitions").append(`
     <div class="position-row row">
-      <div class="col">${item.position}</div>
-      <div class="col identifier">
+      <div class="col-sm">${item.position}</div>
+      <div class="col-sm identifier">
+        ${item.outArt ? `<a href="${item.outArt}" target="_blank">` : ''}
         <div class="outer-bubble ${item.outReason ? colorKeyClass[item.outReason] : ''}">
           <div class="inner-bubble">
             <img src="${item.outImg ? item.outImg : tmpImg}" class="bubble-image">
           </div>
         </div>
-        <p>${item.outgoing} ${item.newRole ? `<div class="info-icon" data-toggle="tooltip" data-placement="right" title="New Role: ${item.newRole}"><p>i</p></div>` : ""}</p>
+        ${item.outArt ? `</a>` : ''}
+        ${item.outArt ? `<a href="${item.outArt}" target="_blank">` : ''}
+        <div class="name">
+          <span>${item.outgoing}</span>
+          <span class="mobile-header">(Outgoing)</span>
+        </div>
+        ${item.outArt ? `</a>` : ''}
       </div>
-      <div class="col identifier">
+      <div class="col-sm identifier">
         <div class="outer-bubble ${item.interim ? colorKeyClass["interim"] : ''}">
           <div class="inner-bubble">
             <img src="${item.incImg ? item.incImg : tmpImg}" class="bubble-image">
           </div>
         </div>
-        <p>${item.incoming ? item.incoming : '?'}</p>
+        <div class="name">
+          <span>${item.incoming ? item.incoming : '?'}</span>
+          ${item.incoming ? `<span class="mobile-header">(Incoming)</span>` : ''}
+        </div>
       </div>
     </div>
   `)
@@ -218,22 +236,28 @@ $(document).ready(function () {
   schoolDeanTransitions.forEach(function (item) {
     $(".school-dean-transitions").append(`
     <div class="position-row row">
-      <div class="col">${item.position}</div>
-      <div class="col identifier">
+      <div class="col-sm">${item.position}</div>
+      <div class="col-sm identifier">
         <div class="outer-bubble ${item.outReason ? colorKeyClass[item.outReason] : ''}">
           <div class="inner-bubble">
             <img src="${item.outImg ? item.outImg : tmpImg}" class="bubble-image">
           </div>
         </div>
-        <p>${item.outgoing}</p>
+        <div class="name">
+          <span>${item.outgoing}</span>
+          <span class="mobile-header">(Outgoing)</span>
+        </div>
       </div>
-      <div class="col identifier">
+      <div class="col-sm identifier">
         <div class="outer-bubble ${item.interim ? colorKeyClass["interim"] : ''}">
           <div class="inner-bubble">
             <img src="${item.incImg ? item.incImg : tmpImg}" class="bubble-image">
           </div>
         </div>
-        <p>${item.incoming ? item.incoming : '?'}</p>
+        <div class="name">
+          <span>${item.incoming ? item.incoming : '?'}</span>
+          ${item.incoming ? `<span class="mobile-header">(Incoming)</span>` : ''}
+        </div>
       </div>
     </div>
   `)
@@ -242,31 +266,31 @@ $(document).ready(function () {
   other.forEach(function (item) {
     $(".other").append(`
     <div class="position-row row">
-      <div class="col">${item.position}</div>
-      <div class="col identifier">
+      <div class="col-sm">${item.position}</div>
+      <div class="col-sm identifier">
         <div class="outer-bubble ${item.outReason ? colorKeyClass[item.outReason] : ''}">
           <div class="inner-bubble">
             <img src="${item.outImg ? item.outImg : tmpImg}" class="bubble-image">
           </div>
         </div>
-        <p>${item.outgoing}</p>
+        <div class="name">
+          <span>${item.outgoing}</span>
+          <span class="mobile-header">(Outgoing)</span>
+        </div>
       </div>
-      <div class="col identifier">
+      <div class="col-sm identifier">
         <div class="outer-bubble ${item.interim ? colorKeyClass["interim"] : ''}">
           <div class="inner-bubble">
             <img src="${item.incImg ? item.incImg : tmpImg}" class="bubble-image">
           </div>
         </div>
-        <p>${item.incoming ? item.incoming : '?'}</p>
+        <div class="name">
+          <span>${item.incoming ? item.incoming : '?'}</span>
+          ${item.incoming ? `<span class="mobile-header">(Incoming)</span>` : ''}
+        </div>
       </div>
     </div>
   `)
   })
-
-  $(function () {
-    console.log("tooltip");
-    $('[data-toggle="tooltip"]').tooltip()
-  })
-
 
 })
