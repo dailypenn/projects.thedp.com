@@ -2,8 +2,34 @@ body {
   margin: 0;
 }
 
+h2 {
+    margin-bottom: 20px;
+}
+
 h4 {
-  margin: 0
+  margin-bottom: 8px:
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+img {
+  margin-bottom: 8px;
+}
+
+.col-md-6 {
+  margin-bottom: 20px;
+}
+
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .map-container {
@@ -57,4 +83,8 @@ h4 {
 .poll {
   background-color: #8FD7F2;
   /* background-image: url(); TODO: get sprites for these */
+}
+
+.row {
+  margin-top: 10px;
 }

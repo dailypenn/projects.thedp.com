@@ -56,8 +56,8 @@ section {
   padding: 15px;
 }
 
-.info-text h1{
-  padding-bottom: 55px;
+.info-text h1 {
+  margin-bottom: 20px;
   font-size: 45px;
   text-align: center;
 }
@@ -79,7 +79,6 @@ section {
 .house-image {
   display: none;
 }
-
 
 .divider {
   width: -webkit-fill-available;
@@ -148,9 +147,15 @@ section {
   background-image: url('https://snworksceo.imgix.net/dpn/e9ea4319-2c2f-45e0-9b86-8154de97e967.sized-1000x1000.jpg');
 }
 
+@media screen and (max-width: 1248px) {
+  .info-row {
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 767px) {
   section {
-    padding: 0 15px;
+    padding: 40px 15px;
   }
 
   .intro {
@@ -161,13 +166,17 @@ section {
     height: auto;
   }
 
+  .pic {
+    padding: 0;
+  }
+
   .house-image {
     display: block;
   }
 }
+
 @media only screen and (max-width: 576px) {
   .hide-lg {
     display: inline;
   }
 }
-

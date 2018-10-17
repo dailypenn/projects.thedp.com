@@ -29,10 +29,25 @@
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-707447-4"></script>
   <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'UA-707447-4');
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-707447-4');
+  </script>
+
+  <!-- DFP Ads -->
+  <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+  <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+  </script>
+  <script>
+    googletag.cmd.push(function() {
+      googletag.defineSlot('/12234093/DP.com-mobile-leaderboard', [320, 50], 'div-gpt-ad-1485118541142-0').addService(googletag.pubads());
+      googletag.defineSlot('/12234093/DP.com-Leaderboard', [728, 90], 'div-gpt-ad-1485118541142-1').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    });
   </script>
 
   <nav class="navbar">
@@ -129,6 +144,29 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="container ad-container">
+    <hr>
+    <div class="ad">
+      <div class="d-none d-md-block">
+        <!-- /12234093/DP.com-Leaderboard -->
+        <div id='div-gpt-ad-1485118541142-1' style='height:90px; width:728px;'>
+          <script>
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1485118541142-1'); });
+          </script>
+        </div>
+      </div>
+      <div class="d-block d-md-none">
+        <!-- /12234093/DP.com-mobile-leaderboard -->
+        <div id='div-gpt-ad-1485118541142-0' style='height:50px; width:320px;'>
+          <script>
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1485118541142-0'); });
+          </script>
+        </div>
+      </div>
+    </div>
+    <hr>
   </div>
 
   <div class="thistle">
@@ -291,7 +329,7 @@
         <h4 class="title">Hack Your Housing</h4>
       </div>
       <div class="col-md">
-        <h4 class="title">Roommates: A Blessing, Or A Curse?</h4>
+        <h4 class="title">Upgrade Your Dorm with These Eight Art Outlets</h4>
       </div>
     </div>
 
@@ -304,10 +342,10 @@
       </div>
 
       <div class="col-md articles">
-        <h4 class="title">Roommates: A Blessing, Or A Curse?</h4>
-        <div class="street-photo street-roommates"></div>
-        <div class="description">Exploring two opposite sides of the roommate experience at Penn.</div>
-        <a href="https://www.34st.com/article/2018/02/roommates-at-penn-random-rooming-upenn-housing" target="_blank" class="btn btn-default btn-md" role="button">Read More</a>
+        <h4 class="title">Upgrade Your Dorm with These Eight Art Outlets</h4>
+        <div class="street-photo street-art"></div>
+        <div class="description">Get some unique artwork that'll last well after your college years.</div>
+        <a href="https://www.34st.com/article/2018/10/art-artwork-dorm-room-shopping-how-to-guide" target="_blank" class="btn btn-default btn-md" role="button">Read More</a>
       </div>
     </div>
   </div>

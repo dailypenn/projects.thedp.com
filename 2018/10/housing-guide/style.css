@@ -42,6 +42,27 @@ footer {
   background-color: #000;
 }
 
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.ad-container hr {
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.ad-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.ad {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0;
+}
+
 .title-section {
   height: 100vh;
   display: flex;
@@ -114,11 +135,6 @@ footer {
   display: none;
 }
 
-.container {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 .featured-container {
   min-height: 100vh;
   height: 100vh;
@@ -168,8 +184,8 @@ footer {
   background-image: url('https://snworksceo.imgix.net/dpn-34s/dd1dfb6c-0a52-4a0a-9fc7-bb0e34ff01e2.sized-1000x1000.JPG');
 }
 
-.street-roommates {
-  background-image: url('https://snworksceo.imgix.net/dpn-34s/fc85ebe2-8824-447b-9863-c32eede7e060.sized-1000x1000.jpg');
+.street-art {
+  background-image: url('https://snworksceo.imgix.net/dpn-34s/cf3afd90-fdb0-49a4-bdb7-7f5c9636f488.sized-1000x1000.PNG');
 }
 
 .video-title {

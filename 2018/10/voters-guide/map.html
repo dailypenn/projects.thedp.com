@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" viewport-fit="cover">
+  <title>Voter Map</title>
+
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js"></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="map" class="map-container"></div>
+  <form id="search" class="inputs">
+    <input type="text" id="address" class="address-field" placeholder="Address" required>
+    <input type="text" id="city" class="address-field" placeholder="City (optional)">
+    <button type="submit" id="location" class="poll-button">Get Polling Location</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
