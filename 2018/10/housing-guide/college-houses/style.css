@@ -56,8 +56,8 @@ section {
   padding: 15px;
 }
 
-.info-text h1{
-  padding-bottom: 55px;
+.info-text h1 {
+  margin-bottom: 20px;
   font-size: 45px;
   text-align: center;
 }
@@ -145,6 +145,12 @@ section {
 
 .rodin {
   background-image: url('https://snworksceo.imgix.net/dpn/e9ea4319-2c2f-45e0-9b86-8154de97e967.sized-1000x1000.jpg');
+}
+
+@media screen and (max-width: 1248px) {
+  .info-row {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 767px) {
