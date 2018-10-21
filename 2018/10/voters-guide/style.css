@@ -41,13 +41,13 @@ img {
   background-color: #f6835a;
 }
 
-.btn-read-more {
+.btn-orange {
   color: #f61001;
   background-color: #FFF;
   border-color: #f61001;
 }
 
-.btn-read-more:hover {
+.btn-orange:hover {
   background-color: #f61001;
   color: #FFF;
   transition: .3s;
