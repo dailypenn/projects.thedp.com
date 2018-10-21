@@ -1,17 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo|Josefin+Sans:300');
+
 body {
   margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1, h3, h4, a {
+  font-family: 'Cardo', serif;
+  color: #335f85;
 }
 
 h2 {
+    font-family: 'Cardo', serif;
     margin-bottom: 20px;
+    color: #35355a;
 }
 
 h4 {
-  margin-bottom: 8px:
-}
-
-a {
-  color: black;
+  margin-bottom: 8px;
 }
 
 a:hover {
@@ -23,13 +29,41 @@ img {
   margin-bottom: 8px;
 }
 
+.blue {
+  background-color: #a5c9d6;
+}
+
+.white {
+  background-color: #FFF;
+}
+
+.orange {
+  background-color: #f6835a;
+}
+
+.btn-read-more {
+  color: #f61001;
+  background-color: #FFF;
+  border-color: #f61001;
+}
+
+.btn-read-more:hover {
+  background-color: #f61001;
+  color: #FFF;
+  transition: .3s;
+}
+
+.img-item {
+  padding-right: 0;
+}
+
 .col-md-6 {
   margin-bottom: 20px;
 }
 
 .container {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .row {
