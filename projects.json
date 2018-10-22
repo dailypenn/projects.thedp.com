@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Midterm Elections Guide 2018",
+      "author": "Web Dev: Jamie Tomlinson, Daniel Salib, Liam Morrissy, Ian Ong",
+      "section": "Guides",
+      "date": "November 2018",
+      "description": "",
+      "sponsored": false,
+      "link": "https://projects.thedp.com/2018/10/voters-guide/",
+      "image": "https://snworksceo.imgix.net/dpn/1faeaaa3-fa0e-479c-af08-5abaaf46a735.sized-1000x1000.jpg",
+      "alt": "midterm elections guide 2018"
+    },
+    {
       "title": "Housing Guide 2018",
       "author": "Web Dev: Jamie Tomlinson, Alex Graves, Daniel Salib, Ian Ong",
       "section": "Guides",
