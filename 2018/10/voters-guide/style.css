@@ -6,15 +6,15 @@ body {
   font-weight: 300;
 }
 
-h1, h3, h4 {
-  font-family: 'Cardo', serif;
-  color: #335f85;
-}
-
-h2 {
+h1, h2 {
   font-family: 'Cardo', serif;
   margin-bottom: 20px;
   color: #35355a;
+}
+
+h3, h4 {
+  font-family: 'Cardo', serif;
+  color: #335f85;
 }
 
 h4 {
@@ -123,6 +123,12 @@ a:hover, a:hover h4 {
   font-weight: 700;
 }
 
+.whats-at-stake {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 3em;
+}
+
 .table-contents {
   text-align: center;
 }
@@ -175,5 +181,9 @@ a:hover, a:hover h4 {
 
   .table-contents:not(:last-of-type) {
     border-right: none;
+  }
+
+  .whats-at-stake {
+    margin-bottom: 0;
   }
 }
