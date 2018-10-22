@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cardo|Josefin+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Cardo:400,700|Josefin+Sans');
 
 body {
   margin: 0;
@@ -37,8 +37,12 @@ img {
   background-color: #FFF;
 }
 
+.white-text {
+  color: #FFF;
+}
+
 .orange {
-  background-color: #f6835a;
+  background-color: #c93836;
 }
 
 .btn-orange {
@@ -73,6 +77,11 @@ img {
 .title-section {
   display: flex;
   justify-content: center;
+}
+
+.section-header {
+  padding-bottom: 10px;
+  font-weight: bold;
 }
 
 .table-contents {
