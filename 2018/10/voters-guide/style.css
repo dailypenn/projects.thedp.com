@@ -46,13 +46,13 @@ img {
 }
 
 .btn-orange {
-  color: #f61001;
+  color: #c93836;
   background-color: #FFF;
-  border-color: #f61001;
+  border-color: #c93836;
 }
 
 .btn-orange:hover {
-  background-color: #f61001;
+  background-color: #FF3836;
   color: #FFF;
   transition: .3s;
 }
@@ -96,6 +96,19 @@ img {
   display: flex;
   flex-direction: column;
   margin: auto;
+}
+
+.date {
+  font-size: 12px;
+  margin-top: -5px;
+}
+
+.top-perspectives {
+  margin-bottom: 30px;
+}
+
+.description {
+  line-height: 16px;
 }
 
 @media only screen and (max-width: 768px) {
