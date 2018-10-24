@@ -9,8 +9,8 @@ header {
 }
 
 .container {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .col-lg-6 {
@@ -23,6 +23,12 @@ header {
   margin: auto;
 }
 
+.col-md-4 img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .col-sm-4 h3 {
   text-align: center;
 }
@@ -30,6 +36,42 @@ header {
 .col-sm-4 h4 {
   text-align: center;
   font-size: 16px;
+}
+
+.section-divider {
+  background-color: grey;
+  margin: auto;
+  max-width: 40%;
+  padding: 30px;
+}
+
+.section-divider h1 {
+  color: white;
+  text-align: center;
+}
+
+.standings-img {
+  background-color: #c9ddff;
+}
+
+.standings {
+  margin-top: 60px;
+}
+
+.standings p {
+  font-size: 22px;
+}
+
+.accent {
+  background-color: #e5e5e5;
+}
+
+.right {
+  text-align: right;
+}
+
+.col-md-6 {
+ padding-top: 10px;
 }
 
 @media screen and (max-width: 576px) {
