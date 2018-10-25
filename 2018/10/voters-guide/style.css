@@ -105,7 +105,7 @@ a:hover, a:hover h4 {
   color: #FFF;
 }
 
-.red a:hover, .red a:hover .title, .red h4:hover {
+.red a:hover, .red a:hover .title {
   color: #DDD;
 }
 
