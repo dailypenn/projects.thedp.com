@@ -18,6 +18,8 @@
   <meta name="twitter:url" content="https://projects.thedp.com/2018/10/voters-guide/">
   <meta name="twitter:site" content="@dailypenn">
 
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js"></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -78,6 +80,12 @@
     </div>
   </div>
 
+  <div class="gray">
+    <div class="container polling-link">
+      <a href="#map" class="header-link"><h4>Find Your Polling Place</h4></a>
+    </div>
+  </div>
+
   <div class="blue">
     <div class="container">
       <h1 class="section-header whats-at-stake">What's At Stake</h1>
@@ -116,6 +124,15 @@
       </div>
     </div>
     <hr>
+  </div>
+
+  <div class="map">
+    <div id="map" class="map-container"></div>
+    <form id="search" class="inputs">
+      <input type="text" id="address" class="address-field" placeholder="Address" required>
+      <input type="text" id="city" class="address-field" placeholder="City (default: Philadelphia)">
+      <button type="submit" id="location" class="poll-button">Get Polling Location</button>
+    </form>
   </div>
 
   <div class="red">
@@ -277,44 +294,32 @@
           </a>
           <div class="description">Spencer's Space | Making sure you maximize your impact on the 2018 midterm elections</div>
         </div>
-        <!-- <div class="col-md">
-          <a target="_blank" href="TKTKTK">
-            <img src="TK" class="img-fluid" alt="TK">
-            <h4 class="title">[PLACEHOLDER]</h4>
-          </a>
-          <div class="description">tktktk</div>
-        </div> -->
       </div>
-      <!-- <div class="row">
+      <!--
+      <div class="col-md">
+        <a target="_blank" href="https://www.thedp.com/article/2018/10/midterm-elections-2018-money-trump-upenn-washington-lucy-hu">
+          <img src="https://snworksceo.imgix.net/dpn/458f75f6-4a95-479b-9242-900561c18310.sized-1000x1000.jpg?w=1000" class="img-fluid" alt="TK">
+          <h4 class="title">Lucy | How to save our democracy in November</h4>
+        </a>
+        <div class="description">Fresh Take | Campaign spending ruins free elections</div>
+      </div>
+      -->
+      <div class="row">
         <div class="col-md">
-          <a target="_blank" href="TKTKTK">
-            <img src="TK" class="img-fluid" alt="TK">
-            <h4 class="title">[PLACEHOLDER]</h4>
+          <a target="_blank" href="https://www.thedp.com/article/2018/10/midterm-elections-2018-money-trump-upenn-washington-lucy-hu">
+            <img src="https://snworksceo.imgix.net/dpn/458f75f6-4a95-479b-9242-900561c18310.sized-1000x1000.jpg?w=1000" class="img-fluid" alt="TK">
+            <h4 class="title">Lucy Hu | How to save our democracy in November</h4>
           </a>
-          <div class="description">tktktk</div>
+          <div class="description">Fresh Take | Campaign spending ruins free elections</div>
         </div>
         <div class="col-md">
-          <a target="_blank" href="TKTKTK">
-            <img src="TK" class="img-fluid" alt="TK">
-            <h4 class="title">[PLACEHOLDER]</h4>
+          <a target="_blank" href="https://www.thedp.com/article/2018/10/midterm-election-2018-asian-american-voting-benjamin-oh">
+            <img src="https://snworksceo.imgix.net/dpn/641bacf8-6e5e-4ba6-a73b-4b6f32ed78d0.sized-1000x1000.jpg" class="img-fluid" alt="TK">
+            <h4 class="title">Guest Column by Benjamin Oh | Asian American voter turnout has been low. That needs to change.</h4>
           </a>
-          <div class="description">tktktk</div>
+          <div class="description"></div>
         </div>
-        <div class="col-md">
-          <a target="_blank" href="TKTKTK">
-            <img src="TK" class="img-fluid" alt="TK">
-            <h4 class="title">[PLACEHOLDER]</h4>
-          </a>
-          <div class="description">tktktk</div>
-        </div>
-        <div class="col-md">
-          <a target="_blank" href="TKTKTK">
-            <img src="TK" class="img-fluid" alt="TK">
-            <h4 class="title">[PLACEHOLDER]</h4>
-          </a>
-          <div class="description">tktktk</div>
-        </div>
-      </div> -->
+      </div>
     </div>
   </div>
 
@@ -361,4 +366,5 @@
       Made with 🗳 by The Daily Pennsylvanian © 2018. All rights reserved.
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>

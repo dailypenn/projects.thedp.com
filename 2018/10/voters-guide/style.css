@@ -101,6 +101,29 @@ a:hover, a:hover h4 {
   background-color: #c93836;
 }
 
+.gray {
+  background-color: #DCDCDC;
+  text-align: center;
+  color: #35355a;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container.polling-link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.gray h4 {
+  margin-bottom: 0px;
+}
+
+.no-margins {
+  margin-bottom: 0;
+}
+
 .red a, .red a .title, .red h4 {
   color: #FFF;
 }
@@ -177,6 +200,63 @@ a:hover, a:hover h4 {
 
 .red .description {
   color: #FFF;
+}
+
+.map-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.inputs {
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.address-field {
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #555;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.poll-button {
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #AA1E22;
+  background-color: #FFF;
+  border: 1px solid #999;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.mapboxgl-popup-content {
+  padding: 10px;
+}
+
+.map {
+  position: relative;
+}
+
+.marker {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #AA1E22;
+  /* background-image: url(); TODO: get sprites for these */
+  background-size: cover;
+  cursor: pointer;
+}
+
+.poll {
+  background-color: #8FD7F2;
+  /* background-image: url(); TODO: get sprites for these */
 }
 
 @media only screen and (min-width: 992px) {
