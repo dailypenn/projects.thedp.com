@@ -74,6 +74,45 @@ header {
  padding-top: 10px;
 }
 
+.article-title {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px 15px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.article {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+  height: 300px;
+}
+
+.a1 {
+  background-image: url("https://snworksceo.imgix.net/dpn/87279ee1-9b48-405e-b869-52fb020e9fef.sized-1000x1000.jpg?w=1000");
+}
+.a2 {
+  background-image: url("https://snworksceo.imgix.net/dpn/eea1175c-326f-4867-8a07-c251092ed055.sized-1000x1000.jpg?w=1000");
+}
+.a3 {
+  background-image: url("https://snworksceo.imgix.net/dpn/360d5cb5-a3be-4841-8a5a-2a12c775f2a8.sized-1000x1000.jpg?w=1000");
+}
+.a4 {
+  background-image: url("https://snworksceo.imgix.net/dpn/87279ee1-9b48-405e-b869-52fb020e9fef.sized-1000x1000.jpg?w=1000");
+}
+.a5 {
+  background-image: url("https://snworksceo.imgix.net/dpn/eea1175c-326f-4867-8a07-c251092ed055.sized-1000x1000.jpg?w=1000");
+}
+.a6 {
+  background-image: url("https://snworksceo.imgix.net/dpn/360d5cb5-a3be-4841-8a5a-2a12c775f2a8.sized-1000x1000.jpg?w=1000");
+}
+
 @media screen and (max-width: 576px) {
   .school img {
     max-width: 50%;
