@@ -8,6 +8,14 @@ header {
   background-color: orange;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+a:hover h5 {
+  color: rgb(88, 174, 229);
+}
+
 .container {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -33,20 +41,12 @@ header {
   text-align: center;
 }
 
-.col-sm-4 h4 {
+.col-sm-4 p {
   text-align: center;
   font-size: 16px;
 }
 
-.section-divider {
-  background-color: grey;
-  margin: auto;
-  max-width: 40%;
-  padding: 30px;
-}
-
 .section-divider h1 {
-  color: white;
   text-align: center;
 }
 
@@ -75,12 +75,9 @@ header {
 }
 
 .article-title {
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
   padding: 10px 15px;
-  color: white;
-  font-weight: bold;
+  color: #FFF;
+  font-weight: 600;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -90,31 +87,39 @@ header {
   position: relative;
   background-position: center;
   background-size: cover;
-  margin-bottom: 20px;
   height: 300px;
 }
 
+.featured {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .a1 {
-  background-image: url("https://snworksceo.imgix.net/dpn/87279ee1-9b48-405e-b869-52fb020e9fef.sized-1000x1000.jpg?w=1000");
+  background-image: url("https://snworksceo.imgix.net/dpn/87279ee1-9b48-405e-b869-52fb020e9fef.sized-1000x1000.jpg");
 }
 .a2 {
-  background-image: url("https://snworksceo.imgix.net/dpn/eea1175c-326f-4867-8a07-c251092ed055.sized-1000x1000.jpg?w=1000");
+  background-image: url("https://snworksceo.imgix.net/dpn/eea1175c-326f-4867-8a07-c251092ed055.sized-1000x1000.jpg");
 }
 .a3 {
-  background-image: url("https://snworksceo.imgix.net/dpn/360d5cb5-a3be-4841-8a5a-2a12c775f2a8.sized-1000x1000.jpg?w=1000");
+  background-image: url("https://snworksceo.imgix.net/dpn/360d5cb5-a3be-4841-8a5a-2a12c775f2a8.sized-1000x1000.jpg");
 }
 .a4 {
-  background-image: url("https://snworksceo.imgix.net/dpn/87279ee1-9b48-405e-b869-52fb020e9fef.sized-1000x1000.jpg?w=1000");
+  background-image: url("https://snworksceo.imgix.net/dpn/87279ee1-9b48-405e-b869-52fb020e9fef.sized-1000x1000.jpg");
 }
 .a5 {
-  background-image: url("https://snworksceo.imgix.net/dpn/eea1175c-326f-4867-8a07-c251092ed055.sized-1000x1000.jpg?w=1000");
+  background-image: url("https://snworksceo.imgix.net/dpn/eea1175c-326f-4867-8a07-c251092ed055.sized-1000x1000.jpg");
 }
 .a6 {
-  background-image: url("https://snworksceo.imgix.net/dpn/360d5cb5-a3be-4841-8a5a-2a12c775f2a8.sized-1000x1000.jpg?w=1000");
+  background-image: url("https://snworksceo.imgix.net/dpn/360d5cb5-a3be-4841-8a5a-2a12c775f2a8.sized-1000x1000.jpg");
 }
 
 @media screen and (max-width: 576px) {
   .school img {
     max-width: 50%;
+  }
+
+  .article {
+    margin-bottom: 20px;
   }
 }
