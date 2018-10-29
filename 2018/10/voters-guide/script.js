@@ -42,7 +42,6 @@ const getLocation = () => {
   const address = `${document.getElementById('address').value} ${city || 'Philadelphia'}`;
 
   getJSON(`https://maps.googleapis.com/maps/api/geocode/json?address=${address.split(' ').join('+')}&key=${API_KEY}`, data => {
-    // FIXME: alerts are bad
     if (!data.results[0]) {
       alert("Uh oh, we couldn't find your home. Try being more specific.");
       return;
@@ -59,9 +58,7 @@ const getLocation = () => {
     markers.push(marker);
 
     // then get their polling place
-    // *** remember to update the test electionId (2000) to the real ID! (should be 6000 for the midterm elections) ***
     getJSON(`https://www.googleapis.com/civicinfo/v2/voterinfo?address=${formatted_address.split(' ').join('+')}&electionId=6000&key=${API_KEY}`, data => {
-      // FIXME: alerts are bad
       if (!data.pollingLocations) {
         alert("We can't find your polling place. Try again, or visit your local board's website for more information.");
         return;
