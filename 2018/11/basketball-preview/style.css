@@ -114,6 +114,30 @@ a:hover h5 {
   background-image: url("https://snworksceo.imgix.net/dpn/360d5cb5-a3be-4841-8a5a-2a12c775f2a8.sized-1000x1000.jpg");
 }
 
+.table-of-contents {
+  background-color: rgb(228,243,249);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  position: fixed;
+}
+
+.toc-item h4 {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 5px;
+}
+
+.circle {
+  background-color: blue;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  padding-top: 5px;
+}
+
 @media screen and (max-width: 576px) {
   .school img {
     max-width: 50%;
