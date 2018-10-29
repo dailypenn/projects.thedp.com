@@ -42,6 +42,10 @@ a:hover, a:hover h4 {
   color: #35355a;
 }
 
+.polling-link h4 {
+  color: #c93836;
+}
+
 .container:not(.header) {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -112,8 +116,8 @@ a:hover, a:hover h4 {
 }
 
 .container.polling-link {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .gray h4 {
