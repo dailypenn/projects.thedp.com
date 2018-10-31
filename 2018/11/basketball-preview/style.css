@@ -142,10 +142,10 @@ h1, .icon, h3 {
 }
 
 .a1 {
-  background-image: url("https://snworksceo.imgix.net/dpn/87279ee1-9b48-405e-b869-52fb020e9fef.sized-1000x1000.jpg");
+  background-image: url("https://snworksceo.imgix.net/dpn/5df06523-d5fa-4d5b-b8e1-caae00478159.sized-1000x1000.jpg?w=1000");
 }
 .a2 {
-  background-image: url("https://snworksceo.imgix.net/dpn/eea1175c-326f-4867-8a07-c251092ed055.sized-1000x1000.jpg");
+  background-image: url("https://snworksceo.imgix.net/dpn/11af8dd2-4216-4fe6-9013-4633a55e68fe.sized-1000x1000.jpg?w=1000");
 }
 .a3 {
   background-image: url("https://snworksceo.imgix.net/dpn/360d5cb5-a3be-4841-8a5a-2a12c775f2a8.sized-1000x1000.jpg");
@@ -166,6 +166,7 @@ h1, .icon, h3 {
   justify-content: space-around;
   height: 100vh;
   position: fixed;
+  top: 40px;
 }
 
 .sky-blue {
@@ -187,13 +188,47 @@ h1, .icon, h3 {
   padding-top: 5px;
 }
 
+.mobile-only {
+  display: none;
+}
+
+.offset {
+  position: relative;
+  top: 55px;
+}
+
+.feature-container {
+  position: relative;
+  height: 650px;
+  width: auto;
+}
+
+.feature-image {
+  width: 80%;
+  height: auto;
+}
+
+.headline {
+  position: absolute;
+  background-color: rgb(228,243,249);
+  padding: 30px;
+  right: 0;
+  bottom: 170px;
+}
+
 @media screen and (max-width: 768px) {
+
+.mobile-only {
+  display: contents;
+}
+
     .table-of-contents {
       display: none;
     }
 }
 
 @media screen and (max-width: 576px) {
+
   .school img {
     max-width: 50%;
   }
