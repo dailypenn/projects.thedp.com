@@ -28,6 +28,48 @@ a:hover h5 {
   padding-bottom: 20px;
 }
 
+.regular-div {
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.standings .col-md-5 {
+  background-color: rgb(225, 230, 233);
+  margin: 5px;
+}
+
+.ps-header-div {
+  display: flex;
+  flex-direction: column;
+  font-size: xx-large;
+  margin-bottom: 10px
+}
+
+.ps-top-header-m, .ps-top-header-w {
+  align-self: flex-start;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+}
+
+.ps-bottom-header-m, .ps-bottom-header-w {
+  align-self: flex-end;
+  font-style: italic;
+  font-weight: 700;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+}
+
+.ps-top-header-m, .ps-bottom-header-m {
+  background-image: linear-gradient(transparent 50%, rgb(244, 14, 57) 50%);
+}
+
+.ps-top-header-w, .ps-bottom-header-w {
+  background-image: linear-gradient(transparent 50%, rgb(35, 203, 246) 50%);
+}
+
+
 .school img {
   display: block;
   margin: auto;
@@ -96,11 +138,54 @@ h1, .icon, h3 {
 
 .standings {
   margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.standings p {
-  font-size: 22px;
+.standings-row {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgb(244, 248, 251) 50%, transparent 50%);
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
+
+.standings-rank-m, .standings-rank-w {
+  font-size: 26px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.standings-rank-m {
+  background-image: linear-gradient(transparent 50%, rgb(244, 14, 57) 50%);
+}
+
+.standings-rank-w {
+  background-image: linear-gradient(transparent 50%, rgb(35, 203, 246) 50%);
+}
+
+.standings-text {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.left-row {
+  display: flex;
+  align-items: baseline;
+}
+
+.standings-num {
+  font-style: italic;
+  font-size: 20px;
+  margin-right: 1px;
+}
+
+.standings-note {
+  text-transform: none;
+  color: rgb(106, 112, 116);
+  font-style: italic;
+}
+
 
 .accent {
   background-color: #e5e5e5;
@@ -115,8 +200,6 @@ h1, .icon, h3 {
 }
 
 .media-poll {
-  background-color: rgb(88, 176, 230);
-  color: white;
   padding: 15px;
 }
 
