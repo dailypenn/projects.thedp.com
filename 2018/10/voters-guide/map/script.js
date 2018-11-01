@@ -68,7 +68,7 @@ const getLocation = () => {
       }
 
       const pollingPlace = data.pollingLocations[0];
-      const pollAddress = pollingPlace.address.line1 + pollingPlace.address.city + ", " + pollingPlace.address.state.replace("&", "AND");
+      const pollAddress = `${pollingPlace.address.line1} ${pollingPlace.address.city}, ${pollingPlace.address.state}`.replace('&', 'AND');
 
       // geocode polling place location and place on map
       getJSON(`https://maps.googleapis.com/maps/api/geocode/json?address=${pollAddress.split(' ').join('+')}&key=${API_KEY}`, data => {
