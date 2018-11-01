@@ -6,8 +6,12 @@ header h1 {
   padding-bottom: 20px;
 }
 
-header {
-  background-color: orange;
+footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
 }
 
 h1, h2, h3, h4, .icon {
@@ -28,24 +32,33 @@ a:hover h5 {
   color: rgb(88, 176, 230);
 }
 
-.container {
-  margin-top: 60px;
-  margin-bottom: 60px;
+.content {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.col-lg-6 {
-  display: block;
-  padding-bottom: 20px;
+.section {
+  padding-bottom: 100px;
 }
 
-.regular-div {
-  text-transform: uppercase;
-  font-style: normal;
+.title {
+  margin-top: 50px;
 }
 
 .polls .col-md-5 {
   background-color: rgb(225, 230, 233);
   margin: 5px;
+}
+
+.intro {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.poll-wrapper {
+  text-transform: uppercase;
+  font-style: normal;
 }
 
 .ps-header-div {
@@ -79,7 +92,6 @@ a:hover h5 {
   background-image: linear-gradient(transparent 50%, rgb(35, 203, 246) 50%);
 }
 
-
 .school img {
   display: block;
   margin: auto;
@@ -105,7 +117,7 @@ a:hover h5 {
 }
 
 .section-divider {
-  margin-top: 50px;
+  padding-top: 100px;
 }
 
 .icon {
@@ -185,15 +197,17 @@ a:hover h5 {
 .polls-num {
   font-style: italic;
   font-size: 20px;
-  margin-right: 1px;
+  margin-right: 0;
 }
 
 .polls-note {
   text-transform: none;
+  margin-right: -15px;
   color: rgb(106, 112, 116);
+  text-transform: none;
+  text-align: right;
   font-style: italic;
 }
-
 
 .accent {
   background-color: #e5e5e5;
@@ -268,11 +282,7 @@ a:hover h5 {
   display: inline-block;
   border-radius: 50%;
   padding-top: 5px;
-}
-
-.offset {
-  position: relative;
-  top: 55px;
+  margin-right: 10px;
 }
 
 .feature-container {
@@ -309,6 +319,10 @@ a:hover h5 {
   background-color: rgb(48, 100, 125);
 }
 
+.medium-grey {
+  background-color: rgb(225, 230, 233);
+}
+
 .a1 {
   background-image: url("https://snworksceo.imgix.net/dpn/5df06523-d5fa-4d5b-b8e1-caae00478159.sized-1000x1000.jpg?w=1000");
 }
@@ -328,6 +342,13 @@ a:hover h5 {
   background-image: url("https://snworksceo.imgix.net/dpn/360d5cb5-a3be-4841-8a5a-2a12c775f2a8.sized-1000x1000.jpg");
 }
 
+@media screen and (min-width: 768px) {
+  .poll-offset {
+    margin-left: 5.55555556%;
+    margin-right: 5.55555556%;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .mobile-only {
     display: block;
@@ -340,9 +361,17 @@ a:hover h5 {
   .table-of-contents {
     display: none;
   }
+
+  .ps-header-div {
+    font-size: x-large;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .intro {
+    width: 100%;
+  }
+
   .feature-container {
     margin-bottom: 0;
   }
@@ -355,6 +384,10 @@ a:hover h5 {
     position: static;
     max-width: 100%;
     width: 100%;
+  }
+
+  .poll-offset {
+    margin-bottom: 20px;
   }
 
   .article {
