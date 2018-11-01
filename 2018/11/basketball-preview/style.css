@@ -43,7 +43,7 @@ a:hover h5 {
   font-style: normal;
 }
 
-.standings .col-md-5 {
+.polls .col-md-5 {
   background-color: rgb(225, 230, 233);
   margin: 5px;
 }
@@ -144,13 +144,13 @@ a:hover h5 {
   background-color: #c9ddff;
 }
 
-.standings {
+.polls {
   margin-top: 60px;
   display: flex;
   justify-content: space-evenly;
 }
 
-.standings-row {
+.polls-row {
   display: flex;
   align-items: center;
   background-image: linear-gradient(rgb(244, 248, 251) 50%, transparent 50%);
@@ -158,21 +158,21 @@ a:hover h5 {
   margin-bottom: 10px;
 }
 
-.standings-rank-m, .standings-rank-w {
+.polls-rank-m, .polls-rank-w {
   font-size: 26px;
   font-weight: 700;
   margin-right: 10px;
 }
 
-.standings-rank-m {
+.polls-rank-m {
   background-image: linear-gradient(transparent 50%, rgb(244, 14, 57) 50%);
 }
 
-.standings-rank-w {
+.polls-rank-w {
   background-image: linear-gradient(transparent 50%, rgb(35, 203, 246) 50%);
 }
 
-.standings-text {
+.polls-text {
   font-size: 22px;
   font-weight: 600;
 }
@@ -182,13 +182,13 @@ a:hover h5 {
   align-items: baseline;
 }
 
-.standings-num {
+.polls-num {
   font-style: italic;
   font-size: 20px;
   margin-right: 1px;
 }
 
-.standings-note {
+.polls-note {
   text-transform: none;
   color: rgb(106, 112, 116);
   font-style: italic;
@@ -203,7 +203,7 @@ a:hover h5 {
   text-align: right;
 }
 
-.standings .col-6 {
+.polls .col-6 {
  padding-top: 10px;
 }
 
