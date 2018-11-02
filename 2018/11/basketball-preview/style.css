@@ -68,14 +68,14 @@ a:hover h5 {
   margin-bottom: 10px
 }
 
-.ps-top-header-m, .ps-top-header-w, .standings-top-header-m {
+.ps-top-header-m, .ps-top-header-w, .standings-top-header-m, .standings-top-header-w {
   align-self: flex-start;
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 3px;
 }
 
-.ps-bottom-header-m, .ps-bottom-header-w, .standings-bottom-header-m {
+.ps-bottom-header-m, .ps-bottom-header-w, .standings-bottom-header-m, .standings-bottom-header-w {
   align-self: flex-end;
   font-style: italic;
   padding-left: 5px;
@@ -86,12 +86,6 @@ a:hover h5 {
 .ps-bottom-header-m, .ps-bottom-header-w, .standings-top-header-m, .standings-top-header-w {
   font-weight: 700;
 }
-
-.standings-bottom-header-m {
-  font-weight: lighter;
-  font-size: 24px;
-}
-
 
 .ps-top-header-m, .ps-bottom-header-m, .standings-top-header-m, .standings-bottom-header-m {
   background-image: linear-gradient(transparent 50%, rgb(244, 14, 57) 50%);
@@ -218,10 +212,80 @@ a:hover h5 {
   font-style: italic;
 }
 
-.accent {
+.accent, .accent-w {
   color: white;
   background-color: rgb(198, 202, 203);
   text-transform: uppercase;
+  /* padding-left: 50px;
+  padding-right: 50px; */
+}
+
+.accent-w {
+  color: rgb(87, 88, 90);
+}
+
+.standings-bottom-header-m, .standings-bottom-header-w {
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+.standings-top-header-w {
+  font-weight: 700;
+}
+
+.standings-top-header-w, .standings-bottom-header-w {
+  background-image: linear-gradient(transparent 50%, rgb(226, 244, 250) 50%);
+}
+
+.standings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.standings-rank-m, .standings-rank-w {
+  font-size: 28px;
+  font-weight: 900;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-style: italic;
+}
+
+.standings-rank-m {
+  color: rgb(244, 14, 57);
+}
+
+.standings-rank-w {
+  color: rgb(226, 244, 250);
+}
+
+.standings-text {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.standings-num-m, .standings-num-w {
+  font-size: 16px;
+  margin-right: 0;
+  font-weight: 800;
+  transform: skewX(-45deg);
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.standings-num-m {
+  background-color: white;
+  color: rgb(244, 14, 57);
+}
+
+.standings-num-w {
+  background-color: rgb(87, 88, 90);
+  color: rgb(198, 202, 203);
+}
+
+.standings-num-m-text, .standings-num-w-text{
+  transform: skewX(45deg);
 }
 
 .right {
