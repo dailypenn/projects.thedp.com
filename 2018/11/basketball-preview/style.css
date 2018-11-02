@@ -14,7 +14,7 @@ footer {
   text-align: center;
 }
 
-h1, h2, h3, h4, .icon {
+h1, h2, h3, h4, h6, .icon {
   font-family: ff-good-web-pro, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -32,9 +32,22 @@ a:hover h5 {
   color: rgb(88, 176, 230);
 }
 
+.custom-col-1, .custom-col-9 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .content {
   padding-left: 0;
   padding-right: 0;
+}
+
+.toc-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .section {
@@ -197,10 +210,14 @@ a:hover h5 {
   align-items: baseline;
 }
 
+.media-poll .left-row {
+  margin-left: -15px;
+}
+
 .polls-num {
   font-style: italic;
   font-size: 20px;
-  margin-right: 0;
+  margin-right: -15px;;
 }
 
 .polls-note {
@@ -216,8 +233,7 @@ a:hover h5 {
   color: white;
   background-color: rgb(198, 202, 203);
   text-transform: uppercase;
-  /* padding-left: 50px;
-  padding-right: 50px; */
+  padding: 15px;
 }
 
 .accent-w {
@@ -225,7 +241,6 @@ a:hover h5 {
 }
 
 .standings-bottom-header-m, .standings-bottom-header-w {
-  font-weight: lighter;
   font-size: 24px;
 }
 
@@ -238,15 +253,12 @@ a:hover h5 {
 }
 
 .standings-row {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .standings-rank-m, .standings-rank-w {
   font-size: 28px;
   font-weight: 900;
-  margin-left: 10px;
   margin-right: 10px;
   font-style: italic;
 }
@@ -259,17 +271,25 @@ a:hover h5 {
   color: rgb(226, 244, 250);
 }
 
+.margin-r-13 {
+  margin-right: 13px;
+}
+
+.margin-r-15 {
+  margin-right: 15px;
+}
+
 .standings-text {
   font-size: 24px;
   font-weight: 600;
 }
 
 .standings-num-m, .standings-num-w {
+  height: 24px;
   font-size: 16px;
-  margin-right: 0;
+  line-height: 1.5;
   font-weight: 800;
   transform: skewX(-45deg);
-  margin-right: 20px;
   display: flex;
   justify-content: center;
 }
@@ -284,7 +304,7 @@ a:hover h5 {
   color: rgb(198, 202, 203);
 }
 
-.standings-num-m-text, .standings-num-w-text{
+.standings-num-m-text, .standings-num-w-text {
   transform: skewX(45deg);
 }
 
@@ -334,30 +354,31 @@ a:hover h5 {
 
 .spacer {
   flex: 1;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 18px;
+  margin: 15px auto;
   border-left: 2px solid rgb(48, 100, 125);
 }
 
 .toc-item {
+  height: 64px;
   flex: 0;
+  text-align: center;
 }
 
 .toc-item h6 {
   display: inline-block;
   vertical-align: top;
   padding-top: 10px;
+  text-transform: uppercase;
 }
 
 .circle {
   background-color: rgb(48, 100, 125);
   width: 40px;
   height: 40px;
-  display: inline-block;
+  margin: auto;
+  padding-top: 8px;
+  padding-left: 1px;
   border-radius: 50%;
-  padding-top: 5px;
-  margin-right: 10px;
 }
 
 .feature-container {
@@ -417,6 +438,18 @@ a:hover h5 {
   background-image: url("https://snworksceo.imgix.net/dpn/360d5cb5-a3be-4841-8a5a-2a12c775f2a8.sized-1000x1000.jpg");
 }
 
+@media screen and (min-width: 992px) {
+  .custom-col-1 {
+    flex: 0 0 10%;
+    max-width: 10%;
+  }
+
+  .custom-col-9 {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .poll-offset {
     margin-left: 5.55555556%;
@@ -437,8 +470,17 @@ a:hover h5 {
     display: none;
   }
 
-  .ps-header-div {
+  .ps-header-div, .standings-header-div {
     font-size: x-large;
+  }
+
+  .standings-bottom-header-m, .standings-bottom-header-w, .standings-text {
+    font-size: 18px;
+  }
+
+  .standings-num-m, .standings-num-w {
+    font-size: 13px;
+    height: 19.5px;
   }
 }
 
@@ -467,6 +509,11 @@ a:hover h5 {
 
   .article {
     margin-bottom: 20px;
+  }
+
+  .standings .col-md-6 {
+    margin: 5px;
+    padding: 0;
   }
 }
 
