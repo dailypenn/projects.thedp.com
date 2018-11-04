@@ -308,6 +308,128 @@ a:hover h5 {
   transform: skewX(45deg);
 }
 
+.games {
+  background-color: rgb(48, 53, 56);
+  text-transform: uppercase;
+}
+
+.games-top-header-m, .games-top-header-w {
+  font-size: 30px;
+  color: white;
+}
+
+.games-bottom-header-m, .games-bottom-header-w {
+  font-size: 30px;
+  color: white;
+  font-style: italic;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.games-bottom-header-m div {
+  background-image: linear-gradient(transparent 50%, rgb(230, 62, 62) 50%);
+  padding-left: 5px;
+  padding-right: 2px;
+}
+
+.games-bottom-header-w div {
+  background-image: linear-gradient(transparent 50%, rgb(49, 188, 235) 50%);
+  padding-left: 5px;
+  padding-right: 2px;
+}
+
+.m-header, .w-header {
+  margin-right: 5px;
+  padding-right: 5px;
+  padding-left: 2px;
+}
+.m-header {
+  background-image: linear-gradient(transparent 50%, rgb(230, 64, 63) 50%);
+}
+
+.w-header {
+  background-image: linear-gradient(transparent 50%, rgb(49, 188, 235) 50%);
+}
+
+.logo {
+  width: 30%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.logo-right {
+  position: absolute;
+  right: 0;
+}
+
+.game-row {
+  position: relative;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.game-info, .game-info-left {
+  display: flex;
+  background-color: white;
+  border: 2px solid black;
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.game-info {
+  position: absolute;
+}
+
+.game-info-left {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  position: static;
+  z-index: 10;
+}
+
+.info-right {
+  right: 0;
+}
+
+.game-icon {
+  color: rgb(244, 14, 57);
+}
+
+.game-icon-w {
+  color: rgb(49, 188, 235);
+}
+
+.info-group {
+  display: flex;
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-right: 10px; 
+}
+
+.date {
+  font-size: 16px;
+}
+
+.game-info-left .date {
+  margin-left: 10px;
+}
+
+.game-info .date {
+  margin-right: 10px;
+}
+
+.game-icon, .game-icon-w, .name {
+  margin: 2px;
+}
+
 .right {
   text-align: right;
 }
