@@ -54,6 +54,30 @@ a:hover h5 {
   padding-bottom: 100px;
 }
 
+.header {
+  width: 50%;
+  margin: auto;
+}
+
+.header-title {
+  font-size: 100px;
+  color: black;
+  background-image: linear-gradient(transparent 70%, rgb(244, 14, 57) 70%);
+  background-position: bottom 40px right 0px;
+}
+
+/*.header-line {
+  height: 40px;
+  width: 100%;
+  background-color: rgb(244, 14, 57);
+}*/
+
+.header-sub-title {
+  margin-top: -45px;
+  font-size: 87px;
+  color: black;
+}
+
 .title {
   margin-top: 50px;
 }
@@ -67,6 +91,10 @@ a:hover h5 {
   width: 50%;
   margin: auto;
   text-align: center;
+}
+
+.polls-container {
+  padding-bottom: 100px;
 }
 
 .poll-wrapper {
@@ -148,11 +176,12 @@ a:hover h5 {
 }
 
 .mens {
-  background-color: blue;
+  background-color: rgb(244, 14, 57);
 }
 
 .womens {
-  background-color: red;
+  background-color: rgb(35, 203, 246);
+  
 }
 
 .overlapped {
