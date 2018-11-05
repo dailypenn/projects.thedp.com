@@ -1,4 +1,9 @@
-@import url("https://use.typekit.net/fil7gyr.css");
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:500,900');
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 500;
+}
 
 footer {
   margin-top: 50px;
@@ -8,9 +13,8 @@ footer {
   text-align: center;
 }
 
-h1, h2, h3, h4, h6 {
-  font-family: ff-good-web-pro, sans-serif;
-  font-weight: 700;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -18,10 +22,13 @@ h2 {
   margin-bottom: 50px;
   font-size: 2.5rem;
   text-align: center;
+  text-transform: uppercase;
 }
 
 h6 {
   color: rgb(48, 100, 125);
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 a:hover {
@@ -29,7 +36,7 @@ a:hover {
 }
 
 a:hover h5 {
-  color: rgb(88, 176, 230);
+  color: rgb(228,243,249);
 }
 
 .custom-col-1, .custom-col-9 {
@@ -72,13 +79,13 @@ a:hover h5 {
   display: inline-block;
   background-image: linear-gradient(transparent 70%, rgb(244, 14, 57) 70%);
   background-position: bottom 40px right 0px;
-  font-size: 100px;
+  font-size: 87px;
   color: #000;
 }
 
 .header-sub-title {
-  margin-top: -40px;
-  font-size: 87px;
+  margin-top: -35px;
+  font-size: 80px;
   color: #000;
 }
 
@@ -122,7 +129,7 @@ a:hover h5 {
 .ps-header-div, .standings-header-div {
   display: flex;
   flex-direction: column;
-  font-size: xx-large;
+  font-size: 26px;
   margin-bottom: 10px
 }
 
@@ -173,10 +180,6 @@ a:hover h5 {
   font-size: 16px;
 }
 
-.standings-img {
-  background-color: #c9ddff;
-}
-
 .polls {
   display: flex;
   justify-content: space-evenly;
@@ -221,7 +224,7 @@ a:hover h5 {
 .polls-num {
   font-style: italic;
   font-size: 20px;
-  margin-right: -15px;;
+  margin-right: -15px;
 }
 
 .polls-note {
@@ -240,7 +243,7 @@ a:hover h5 {
 }
 
 .accent-w {
-  color: rgb(87, 88, 90);
+  color: #000;
 }
 
 .standings-bottom-header-m, .standings-bottom-header-w {
@@ -252,7 +255,7 @@ a:hover h5 {
 }
 
 .standings-top-header-w, .standings-bottom-header-w {
-  background-image: linear-gradient(transparent 50%, rgb(226, 244, 250) 50%);
+  background-image: linear-gradient(transparent 50%, rgb(35, 203, 246) 50%);
 }
 
 .standings-row {
@@ -271,7 +274,7 @@ a:hover h5 {
 }
 
 .standings-rank-w {
-  color: rgb(226, 244, 250);
+  color: rgb(35, 203, 246);
 }
 
 .margin-r-13 {
@@ -303,7 +306,7 @@ a:hover h5 {
 }
 
 .standings-num-w {
-  background-color: rgb(87, 88, 90);
+  background-color: #000;
   color: rgb(198, 202, 203);
 }
 
@@ -529,16 +532,8 @@ a:hover h5 {
   padding: 30px;
 }
 
-.mobile-only {
-  display: none;
-}
-
 .light-blue {
   background-color: rgb(228,243,249);
-}
-
-.sky-blue {
-  background-color: rgb(88, 176, 230);
 }
 
 .dusky-blue {
@@ -558,22 +553,34 @@ a:hover h5 {
 }
 
 .a1 {
-  background-image: url("https://snworksceo.imgix.net/dpn/5df06523-d5fa-4d5b-b8e1-caae00478159.sized-1000x1000.jpg?w=1000");
+  background-image: url("https://snworksceo.imgix.net/dpn/313f6fd0-ab0a-462b-be16-2968e1d3fdd3.sized-1000x1000.jpg");
 }
 .a2 {
-  background-image: url("https://snworksceo.imgix.net/dpn/11af8dd2-4216-4fe6-9013-4633a55e68fe.sized-1000x1000.jpg?w=1000");
+  background-image: url("https://snworksceo.imgix.net/dpn/2fb1b6c6-8d15-45d0-8249-5d6aae35f240.sized-1000x1000.jpg");
 }
 .a3 {
-  background-image: url("https://snworksceo.imgix.net/dpn/360d5cb5-a3be-4841-8a5a-2a12c775f2a8.sized-1000x1000.jpg");
+  background-image: url("https://snworksceo.imgix.net/dpn/0b1abf87-538f-4d14-951f-8c1a5e2ff257.sized-1000x1000.jpg");
 }
 .a4 {
-  background-image: url("https://snworksceo.imgix.net/dpn/87279ee1-9b48-405e-b869-52fb020e9fef.sized-1000x1000.jpg");
+  background-image: url("https://snworksceo.imgix.net/dpn/8c3adc27-2c54-46a6-9aef-bc4aef9e2bbe.sized-1000x1000.jpg");
 }
 .a5 {
-  background-image: url("https://snworksceo.imgix.net/dpn/eea1175c-326f-4867-8a07-c251092ed055.sized-1000x1000.jpg");
+  background-image: url("https://snworksceo.imgix.net/dpn/1d99dbc5-0ebb-4c3b-8a24-4ab5562ce398.sized-1000x1000.jpg");
 }
 .a6 {
-  background-image: url("https://snworksceo.imgix.net/dpn/360d5cb5-a3be-4841-8a5a-2a12c775f2a8.sized-1000x1000.jpg");
+  background-image: url("https://snworksceo.imgix.net/dpn/11e07ccf-3c95-4882-8c06-c6cbed88380d.sized-1000x1000.jpg");
+}
+.a7 {
+  background-image: url("https://snworksceo.imgix.net/dpn/d4ac0182-bdd9-401a-85c3-f4de96b7ee46.sized-1000x1000.jpg");
+}
+.a8 {
+  background-image: url("https://snworksceo.imgix.net/dpn/6abf5d6d-6a4a-417c-8278-d693e5a6883a.sized-1000x1000.jpg");
+}
+.a9 {
+  background-image: url("https://snworksceo.imgix.net/dpn/662ea76c-9fe4-48b1-8c12-71bdbee50cbb.sized-1000x1000.jpg");
+}
+.a10 {
+  background-image: url("https://snworksceo.imgix.net/dpn/d9ba91e0-8739-4e14-ad1f-f01c3060b231.sized-1000x1000.jpg");
 }
 
 @media screen and (min-width: 992px) {
@@ -586,6 +593,10 @@ a:hover h5 {
     flex: 0 0 90%;
     max-width: 90%;
   }
+
+  .mobile-only {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -596,24 +607,14 @@ a:hover h5 {
 }
 
 @media screen and (max-width: 992px) {
-  .mobile-only {
-    display: block;
-  }
-
-  .toc-wrapper {
-    display: none;
-  }
-
-  .table-of-contents {
-    display: none;
+  .header-title {
+    font-size: 70px;
+    background-position: bottom 32px right 0;
   }
 
   .header-sub-title {
-    font-size: 80px;
-  }
-
-  .ps-header-div, .standings-header-div {
-    font-size: x-large;
+    margin-top: -30px;
+    font-size: 64px;
   }
 
   .standings-bottom-header-m, .standings-bottom-header-w, .standings-text {
@@ -623,6 +624,14 @@ a:hover h5 {
   .standings-num-m, .standings-num-w {
     font-size: 13px;
     height: 19.5px;
+  }
+
+  .ps-header-div, .standings-header-div, .polls-text {
+    font-size: 20px;
+  }
+
+  .polls-num {
+    margin-right: 10px;
   }
 }
 
@@ -637,7 +646,7 @@ a:hover h5 {
   }
 
   .header-title {
-    font-size: 90px;
+    font-size: 70px;
   }
 
   .feature-container {
@@ -658,6 +667,10 @@ a:hover h5 {
     margin-bottom: 20px;
   }
 
+  .polls-num {
+    margin-right: -15px;
+  }
+
   .article {
     margin-bottom: 20px;
   }
@@ -670,16 +683,16 @@ a:hover h5 {
 
 @media screen and (max-width: 576px) {
   .header-title {
-    font-size: 52px;
-    background-position: bottom 24px right 0;
+    font-size: 40px;
+    background-position: bottom 18px right 0;
   }
 
   .header-sub-title {
-    margin-top: -25px;
-    font-size: 45px;
+    margin-top: -20px;
+    font-size: 37px;
   }
 
-  .school img {
-    max-width: 50%;
+  .polls-num {
+    margin-right: 10px;
   }
 }
