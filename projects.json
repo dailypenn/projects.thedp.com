@@ -1,17 +1,6 @@
 {
   "featured": [
     {
-      "title": "Basketball Preview 2018",
-      "author": "Web Dev: Jamie Tomlinson, Daniel Salib, Eric Zhang, Liam Morrissy",
-      "section": "Sports",
-      "date": "November 2018",
-      "description": "With schedule highlights, projected starters, player features, and coach profiles, the basketball supplement has everything fans need to know about Penn men’s and women’s basketball for the upcoming 2018-2019 season.",
-      "sponsored": false,
-      "link": "https://projects.thedp.com/2018/11/basketball-preview/",
-      "image": "https://snworksceo.imgix.net/dpn/db3bbb49-9e59-4a7b-a85d-41aaacbf0b96.sized-1000x1000.png",
-      "alt": "basketball preview 2018"
-    },
-    {
       "title": "Midterm Elections Guide 2018",
       "author": "Web Dev: Jamie Tomlinson, Daniel Salib, Liam Morrissy, Ian Ong",
       "section": "Guides",
@@ -21,9 +10,7 @@
       "link": "https://projects.thedp.com/2018/10/voters-guide/",
       "image": "https://snworksceo.imgix.net/dpn/1faeaaa3-fa0e-479c-af08-5abaaf46a735.sized-1000x1000.jpg",
       "alt": "midterm elections guide 2018"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "Housing Guide 2018",
       "author": "Web Dev: Jamie Tomlinson, Alex Graves, Daniel Salib, Ian Ong",
@@ -34,7 +21,9 @@
       "link": "https://projects.thedp.com/2018/10/housing-guide/",
       "image": "https://snworksceo.imgix.net/dpn/2dc2809e-a35d-4d75-9855-89f4ad076d62.sized-1000x1000.png",
       "alt": "housing guide 2018"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "Football Preview 2018",
       "author": "Web Dev: Daniel Salib",
