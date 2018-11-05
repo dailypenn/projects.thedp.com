@@ -474,6 +474,10 @@ a:hover h5 {
   margin-bottom: 40px;
 }
 
+.featured-top {
+  margin-bottom: 40px;
+}
+
 .table-of-contents {
   display: flex;
   flex-direction: column;
@@ -530,6 +534,22 @@ a:hover h5 {
   right: 15px;
   bottom: -50px;
   padding: 30px;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .light-blue {
