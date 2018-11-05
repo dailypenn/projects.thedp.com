@@ -1,11 +1,5 @@
 @import url("https://use.typekit.net/fil7gyr.css");
 
-header h1 {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 footer {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -14,10 +8,16 @@ footer {
   text-align: center;
 }
 
-h1, h2, h3, h4, h6, .icon {
+h1, h2, h3, h4, h6 {
   font-family: ff-good-web-pro, sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+
+h2 {
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 h6 {
@@ -50,32 +50,36 @@ a:hover h5 {
   justify-content: center;
 }
 
+.section-divider {
+  padding-top: 100px;
+}
+
 .section {
   padding-bottom: 100px;
 }
 
 .header {
-  width: 50%;
+  width: 75%;
   margin: auto;
+  text-align: center;
+}
+
+.header-img {
+  margin-top: 55px;
 }
 
 .header-title {
-  font-size: 100px;
-  color: black;
+  display: inline-block;
   background-image: linear-gradient(transparent 70%, rgb(244, 14, 57) 70%);
   background-position: bottom 40px right 0px;
+  font-size: 100px;
+  color: #000;
 }
 
-/*.header-line {
-  height: 40px;
-  width: 100%;
-  background-color: rgb(244, 14, 57);
-}*/
-
 .header-sub-title {
-  margin-top: -45px;
+  margin-top: -40px;
   font-size: 87px;
-  color: black;
+  color: #000;
 }
 
 .title {
@@ -90,6 +94,7 @@ a:hover h5 {
 .intro {
   width: 50%;
   margin: auto;
+  padding-top: 20px;
   text-align: center;
 }
 
@@ -156,53 +161,11 @@ a:hover h5 {
   font-size: 16px;
 }
 
-.section-divider h1 {
-  text-align: center;
-}
-
-.section-divider {
-  padding-top: 100px;
-}
-
-.icon {
-  color: white;
-  height: 50px;
-  width: 50px;
-  font-size: 28px;
-  margin: auto;
-  text-align: center;
-  padding-top: 5px;
-  margin-bottom: 40px;
-}
-
-.mens {
-  background-color: rgb(244, 14, 57);
-}
-
-.womens {
-  background-color: rgb(35, 203, 246);
-  
-}
-
-.overlapped {
-  position: absolute;
-  top: -25px;
-}
-
-.mens.overlapped {
-  left: 10px;
-}
-
-.womens.overlapped {
-  right: 10px;
-}
-
 .standings-img {
   background-color: #c9ddff;
 }
 
 .polls {
-  margin-top: 60px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -259,8 +222,7 @@ a:hover h5 {
 }
 
 .accent, .accent-w {
-  color: white;
-  background-color: rgb(198, 202, 203);
+  color: #FFF;
   text-transform: uppercase;
   padding: 15px;
 }
@@ -324,7 +286,7 @@ a:hover h5 {
 }
 
 .standings-num-m {
-  background-color: white;
+  background-color: #FFF;
   color: rgb(244, 14, 57);
 }
 
@@ -337,19 +299,23 @@ a:hover h5 {
   transform: skewX(45deg);
 }
 
+.key-games {
+  color: #FFF;
+}
+
 .games {
   background-color: rgb(48, 53, 56);
   text-transform: uppercase;
 }
 
 .games-top-header-m, .games-top-header-w {
-  font-size: 30px;
-  color: white;
+  font-size: 26px;
+  color: #FFF;
 }
 
 .games-bottom-header-m, .games-bottom-header-w {
-  font-size: 30px;
-  color: white;
+  font-size: 26px;
+  color: #FFF;
   font-style: italic;
   font-weight: 700;
   display: flex;
@@ -374,6 +340,7 @@ a:hover h5 {
   padding-right: 5px;
   padding-left: 2px;
 }
+
 .m-header {
   background-image: linear-gradient(transparent 50%, rgb(230, 64, 63) 50%);
 }
@@ -404,8 +371,8 @@ a:hover h5 {
 
 .game-info, .game-info-left {
   display: flex;
-  background-color: white;
-  border: 2px solid black;
+  background-color: #FFF;
+  border: 2px solid #000;
   align-self: center;
   align-items: center;
   justify-content: space-between;
@@ -437,10 +404,10 @@ a:hover h5 {
 
 .info-group {
   display: flex;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   margin-left: 10px;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .date {
@@ -566,8 +533,16 @@ a:hover h5 {
   background-color: rgb(48, 100, 125);
 }
 
-.medium-grey {
+.light-grey {
   background-color: rgb(225, 230, 233);
+}
+
+.medium-grey {
+  background-color: rgb(198, 202, 203);
+}
+
+.dark-grey {
+  background-color: rgb(48, 53, 56);
 }
 
 .a1 {
@@ -621,6 +596,10 @@ a:hover h5 {
     display: none;
   }
 
+  .header-sub-title {
+    font-size: 80px;
+  }
+
   .ps-header-div, .standings-header-div {
     font-size: x-large;
   }
@@ -636,8 +615,17 @@ a:hover h5 {
 }
 
 @media screen and (max-width: 768px) {
-  .intro {
+  .header-container {
+    margin-top: 55px;
+  }
+
+  .intro, .header {
     width: 100%;
+    padding-top: 20px;
+  }
+
+  .header-title {
+    font-size: 90px;
   }
 
   .feature-container {
@@ -669,6 +657,16 @@ a:hover h5 {
 }
 
 @media screen and (max-width: 576px) {
+  .header-title {
+    font-size: 52px;
+    background-position: bottom 24px right 0;
+  }
+
+  .header-sub-title {
+    margin-top: -25px;
+    font-size: 45px;
+  }
+
   .school img {
     max-width: 50%;
   }
