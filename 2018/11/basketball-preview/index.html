@@ -20,12 +20,35 @@
   <meta name="twitter:url" content="https://projects.thedp.com/2018/11/basketball-preview/">
   <meta name="twitter:site" content="@dailypenn">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-707447-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-707447-4');
+  </script>
+
+  <!-- DFP Ads -->
+  <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+  <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+  </script>
+  <script>
+    googletag.cmd.push(function() {
+      googletag.defineSlot('/12234093/DP.com-mobile-leaderboard', [320, 50], 'div-gpt-ad-1485118541142-0').addService(googletag.pubads());
+      googletag.defineSlot('/12234093/DP.com-Leaderboard', [728, 90], 'div-gpt-ad-1485118541142-1').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    });
+  </script>
+
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
     <a class="navbar-brand" href="https://www.thedp.com/">
       <img src="https://s3.amazonaws.com/media.dpn/56240_dpwordmark750o.png" width="200" alt="The Daily Pennsylvanian">
@@ -117,7 +140,7 @@
                       </div>
                       <div class="row game-row">
                         <div class="logo">
-                          <img src="image/mason-m.svg">
+                          <img src="img/mason-m.svg">
                         </div>
                         <div class="game-info info-right">
                           <div class="info-group">
@@ -136,12 +159,12 @@
                           </div>
                         </div>
                         <div class="logo logo-right">
-                          <img src="image/rice-m.svg">
+                          <img src="img/rice-m.svg">
                         </div>
                       </div>
                       <div class="row game-row">
                         <div class="logo">
-                          <img src="image/miami-m.svg">
+                          <img src="img/miami-m.svg">
                         </div>
                         <div class="game-info info-right">
                           <div class="info-group">
@@ -160,12 +183,12 @@
                           </div>
                         </div>
                         <div class="logo logo-right">
-                          <img src="image/villanova-m.svg">
+                          <img src="img/villanova-m.svg">
                         </div>
                       </div>
                       <div class="row game-row">
                         <div class="logo">
-                          <img src="image/new mexico-m.svg">
+                          <img src="img/new-mexico-m.svg">
                         </div>
                         <div class="game-info info-right">
                           <div class="info-group">
@@ -184,12 +207,12 @@
                           </div>
                         </div>
                         <div class="logo logo-right">
-                          <img src="image/princeton-m.svg">
+                          <img src="img/princeton-m.svg">
                         </div>
                       </div>
                       <div class="row game-row">
                         <div class="logo">
-                          <img src="image/temple-m.svg">
+                          <img src="img/temple-m.svg">
                         </div>
                         <div class="game-info info-right">
                           <div class="info-group">
@@ -208,12 +231,12 @@
                           </div>
                         </div>
                         <div class="logo logo-right">
-                          <img src="image/harvard-m.svg">
+                          <img src="img/harvard-m.svg">
                         </div>
                       </div>
                       <div class="row game-row">
                         <div class="logo">
-                          <img src="image/yale-m.svg">
+                          <img src="img/yale-m.svg">
                         </div>
                         <div class="game-info info-right">
                           <div class="info-group">
@@ -238,7 +261,7 @@
                       </div>
                       <div class="row game-row">
                         <div class="logo">
-                          <img src="image/yale-w.svg">
+                          <img src="img/notre-dame-w.svg">
                         </div>
                         <div class="game-info info-right">
                           <div class="info-group">
@@ -257,12 +280,12 @@
                           </div>
                         </div>
                         <div class="logo logo-right">
-                          <img src="image/SJU-w.svg">
+                          <img src="img/sju-w.svg">
                         </div>
                       </div>
                       <div class="row game-row">
                         <div class="logo">
-                          <img src="image/Drexel-w.svg">
+                          <img src="img/drexel-w.svg">
                         </div>
                         <div class="game-info info-right">
                           <div class="info-group">
@@ -281,12 +304,12 @@
                           </div>
                         </div>
                         <div class="logo logo-right">
-                          <img src="image/princeton-w.svg">
+                          <img src="img/princeton-w.svg">
                         </div>
                       </div>
                       <div class="row game-row">
                         <div class="logo">
-                          <img src="image/villanova-w.svg">
+                          <img src="img/villanova-w.svg">
                         </div>
                         <div class="game-info info-right">
                           <div class="info-group">
@@ -305,12 +328,12 @@
                           </div>
                         </div>
                         <div class="logo logo-right">
-                          <img src="image/temple-w.svg">
+                          <img src="img/temple-w.svg">
                         </div>
                       </div>
                       <div class="row game-row">
                         <div class="logo">
-                          <img src="image/yale-w.svg">
+                          <img src="img/yale-w.svg">
                         </div>
                         <div class="game-info info-right">
                           <div class="info-group">
@@ -329,12 +352,12 @@
                           </div>
                         </div>
                         <div class="logo logo-right">
-                          <img src="image/princeton-w.svg">
+                          <img src="img/princeton-w.svg">
                         </div>
                       </div>
                       <div class="row game-row">
                         <div class="logo">
-                          <img src="image/harvard-w.svg">
+                          <img src="img/harvard-w.svg">
                         </div>
                         <div class="game-info info-right">
                           <div class="info-group">
@@ -350,6 +373,29 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="container ad-container">
+          <hr>
+          <div class="ad">
+            <div class="d-none d-md-block">
+              <!-- /12234093/DP.com-Leaderboard -->
+              <div id='div-gpt-ad-1485118541142-1' style='height:90px; width:728px;'>
+                <script>
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1485118541142-1'); });
+                </script>
+              </div>
+            </div>
+            <div class="d-md-none">
+              <!-- /12234093/DP.com-mobile-leaderboard -->
+              <div id='div-gpt-ad-1485118541142-0' style='height:50px; width:320px;'>
+                <script>
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1485118541142-0'); });
+                </script>
+              </div>
+            </div>
+          </div>
+          <hr>
         </div>
 
         <div class="light-grey">
