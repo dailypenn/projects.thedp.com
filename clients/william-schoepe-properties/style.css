@@ -1,0 +1,77 @@
+
+
+body {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+p {
+  font-size: 30px;
+}
+
+h1,p {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  background-image: url('https://snworksceo.imgix.net/dpn/6afab2c0-de8d-4f05-a57f-db81c384e0c3.sized-1000x1000.png');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-container {
+  padding-top: 60vh;
+}
+
+.title-box {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 71%;
+  margin-left: 50px;
+  padding: 40px;
+  opacity: 50%;
+}
+
+.information {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 40%;
+  margin-top: 20px;
+  margin-left: 50px;
+  padding: 10px;
+  opacity: 50%;
+}
+
+.mobile-information {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    height: 50vh;
+  }
+
+  .mobile-information {
+    display: block;
+    padding-top: 10px;
+    padding-left: 12px;
+    background-image: linear-gradient(rgb(232, 232, 232), white);
+  }
+
+  .inner-container {
+    display: none;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding-bottom: 12px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
