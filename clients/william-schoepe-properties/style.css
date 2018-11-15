@@ -19,7 +19,7 @@ h3:first-of-type {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-image: url('https://snworksceo.imgix.net/dpn/6afab2c0-de8d-4f05-a57f-db81c384e0c3.sized-1000x1000.png');
+  background-image: url('https://snworksceo.imgix.net/dpn/120078a5-e00e-45a1-92f4-56743ad95825.sized-1000x1000.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,17 +33,23 @@ h3:first-of-type {
 
 .title-box {
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .information {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   margin-top: 20px;
   padding: 20px;
 }
 
 .mobile-information {
   display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    background-image: url('https://s3.amazonaws.com/snwceomedia/dpn/120078a5-e00e-45a1-92f4-56743ad95825.original.jpg');
+  }
 }
 
 @media screen and (max-width: 768px) {
