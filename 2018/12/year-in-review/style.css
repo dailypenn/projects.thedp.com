@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:200,700');
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 200;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+a {
+  color: black;
+}
+
+h3 {
+  margin-bottom: 50px;
+}
+
+img {
+  margin-bottom: 10px;
+}
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 0;
+  background-color: #000;
+  margin-bottom: 20px;
+}
+
+.header-image {
+  width: 600px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+
+
+
+
+.banner {
+  background-color: grey;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.quick-links {
+  background-color: grey;
+  padding: 20px;
+  height: 100%;
+}
+
+.links {
+  margin-top: 30px;
+  color: black;
+}
+
+
+
+.blurb {
+  background-color: grey;
+  padding: 10px;
+
+}
+
+{}
