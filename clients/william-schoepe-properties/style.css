@@ -1,77 +1,78 @@
-
-
 body {
-  margin: 0px;
-}
-
-h1 {
-  font-size: 80px;
-}
-
-p {
-  font-size: 30px;
-}
-
-h1,p {
   margin: 0;
   font-family: Helvetica, sans-serif;
 }
 
+h1, h3, p {
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h3:first-of-type {
+  margin-top: 20px;
+}
+
 .container {
-  background-image: url('https://snworksceo.imgix.net/dpn/6afab2c0-de8d-4f05-a57f-db81c384e0c3.sized-1000x1000.png');
+  width: 100vw;
   height: 100vh;
+  position: relative;
+  background-image: url('https://snworksceo.imgix.net/dpn/120078a5-e00e-45a1-92f4-56743ad95825.sized-1000x1000.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .inner-container {
-  padding-top: 60vh;
+  position: absolute;
+  bottom: 0;
+  padding: 50px;
 }
 
 .title-box {
-  background-color: rgba(255, 255, 255, 0.5);
-  width: 71%;
-  margin-left: 50px;
-  padding: 40px;
-  opacity: 50%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .information {
-  background-color: rgba(255, 255, 255, 0.5);
-  width: 40%;
+  background-color: rgba(255, 255, 255, 0.8);
   margin-top: 20px;
-  margin-left: 50px;
-  padding: 10px;
-  opacity: 50%;
+  padding: 20px;
 }
 
 .mobile-information {
   display: none;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 1000px) {
   .container {
-    height: 50vh;
+    background-image: url('https://s3.amazonaws.com/snwceomedia/dpn/120078a5-e00e-45a1-92f4-56743ad95825.original.jpg');
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1, h3, p {
+    text-align: center;
   }
 
-  .mobile-information {
-    display: block;
-    padding-top: 10px;
-    padding-left: 12px;
-    background-image: linear-gradient(rgb(232, 232, 232), white);
+  h1 {
+    padding-top: 50px;
+  }
+
+  .container {
+    height: 50vh;
   }
 
   .inner-container {
     display: none;
   }
 
-  h1 {
-    font-size: 40px;
-    padding-bottom: 12px;
-  }
-
-  p {
-    font-size: 18px;
+  .mobile-information {
+    height: 50vh;
+    display: block;
+    padding: 0 20px;
+    background-color: rgb(232, 232, 232);
   }
 }
