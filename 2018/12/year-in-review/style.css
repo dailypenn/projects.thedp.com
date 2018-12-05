@@ -9,12 +9,12 @@ h1, h2, h3, h4 {
   font-weight: 700;
 }
 
-a {
-  color: black;
+h3 {
+  margin-bottom: 50px;
 }
 
-a, h3 {
-  margin-bottom: 50px;
+a {
+  color: #000;
 }
 
 img {
@@ -37,24 +37,24 @@ img {
 }
 
 .banner {
-  background-color: grey;
+  background-color: #CCC;
   padding: 10px;
   margin-bottom: 15px;
 }
 
 .quick-links {
-  background-color: grey;
+  background-color: #CCC;
   padding: 20px;
   height: 100%;
 }
 
 .links {
   margin-top: 30px;
-  color: black;
+  color: #000;
 }
 
 .blurb {
-  background-color: grey;
+  background-color: #CCC;
   padding: 10px;
 }
 
@@ -74,20 +74,8 @@ img {
   height: 100%;
 }
 
-#eagles {
-  background-color: grey;
-  padding: 20px;
-  margin-top: 25px;
-}
-
 .article-block {
-  background-color: white;
   padding: 10px;
-}
-
-.video {
-  background-color: black;
-  height: 100%;
 }
 
 .section-title {
@@ -103,32 +91,14 @@ img {
   margin-top: 10px;
 }
 
-#multimedia {
-  background-color: grey;
-  padding: 25px;
-  margin-top: 25px;
-}
-
-.small-images {
-  width: 100%;
-  height: 150px;
-  background-color: black;
-  margin-bottom: 10px;
-}
-
-.large-image {
-  width: 100%;
-  height: 180px;
-}
-
 .photo-blurb {
   text-align: center;
 }
 
 .big-visual {
-  background-color: black;
+  background-color: #000;
   width: 100%;
-  height: 470px;
+  height: 500px;
 }
 
 .video-text {
