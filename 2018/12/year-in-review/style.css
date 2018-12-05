@@ -5,6 +5,27 @@ body {
 	font-weight: 300;
 }
 
+.teal {
+	background-color: #056571;
+	color: white;
+}
+
+.teal a {
+	color: white;
+}
+
+.fresh {
+	background-color: #CCDFC8;
+}
+
+.matte {
+	background-color: #414141;
+}
+
+.watermelon {
+	background-color: #FF6A5C;
+}
+
 h1,
 h2,
 h3,
@@ -22,6 +43,11 @@ a {
 
 img {
 	margin-bottom: 10px;
+}
+
+.container {
+	padding-top: 100px;
+	padding-bottom: 100px; 
 }
 
 .header {
