@@ -45,9 +45,17 @@ img {
 	margin-bottom: 10px;
 }
 
+.teal hr {
+	border-color: #FFFFFF;
+}
+
+.fresh hr {
+	border-color: #000000;
+}
+
 .container {
 	padding-top: 100px;
-	padding-bottom: 100px; 
+	padding-bottom: 100px;
 }
 
 .header {
@@ -136,4 +144,14 @@ img {
 
 .margin-top {
 	margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+	h3 {
+		margin-bottom: 15px;
+	}
+	
+	.big-visual {
+		height: 240px;
+	}
 }
