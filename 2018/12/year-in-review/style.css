@@ -16,12 +16,8 @@ h1, h2, h3, h4 {
 	font-weight: 700;
 }
 
-h3 {
-	margin-bottom: 50px;
-}
-
-img {
-	margin-bottom: 10px;
+h2, h3 {
+	margin-bottom: 20px;
 }
 
 a {
@@ -60,11 +56,11 @@ a:hover {
 	color: #d1d1d1;
 }
 
-.teal hr {
+.teal hr, .matte hr {
 	border-color: #FFF;
 }
 
-.fresh hr {
+.fresh hr, .watermelon hr {
 	border-color: #000;
 }
 
@@ -108,21 +104,8 @@ a:hover {
 	height: 100%;
 }
 
-.article-block {
-	padding: 10px;
-}
-
 .section-title {
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-.upper-section {
-	margin-bottom: 20px;
-}
-
-.blurb {
-	margin-top: 10px;
+	text-transform: uppercase;
 }
 
 .photo-blurb {
@@ -143,6 +126,18 @@ a:hover {
 
 .margin-top {
 	margin-top: 40px;
+}
+
+.street-box {
+	display: block;
+	margin-top: 20px;
+	padding: 20px;
+	background-color: rgb(242, 222, 221);
+	text-align: center;
+}
+
+.street-box h4, .street-box p {
+	margin: 0;
 }
 
 @media screen and (max-width: 768px) {
