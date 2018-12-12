@@ -3,37 +3,16 @@
 body {
 	font-family: 'proxima-nova', sans-serif;
 	font-weight: 300;
+	color: #000;
 }
 
-.teal {
-	background-color: #056571;
-	color: white;
+footer {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
-.teal a {
-	color: white;
-}
-
-.teal a:hover {
-	color: #d1d1d1;
-}
-
-.fresh {
-	background-color: #CCDFC8;
-}
-
-.matte {
-	background-color: #414141;
-}
-
-.watermelon {
-	background-color: #FF6A5C;
-}
-
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
 	font-weight: 700;
 }
 
@@ -41,8 +20,13 @@ h3 {
 	margin-bottom: 50px;
 }
 
+img {
+	margin-bottom: 10px;
+}
+
 a {
 	color: #000;
+	text-decoration: none;
 }
 
 a:hover {
@@ -50,16 +34,38 @@ a:hover {
 	text-decoration: none;
 }
 
-img {
-	margin-bottom: 10px;
+.fresh {
+	background-color: #CCDFC8;
+}
+
+.watermelon {
+	background-color: #FF6A5C;
+}
+
+.matte {
+	background-color: #414141;
+	color: #FFF;
+}
+
+.teal {
+	background-color: #056571;
+	color: #FFF;
+}
+
+.matte a, .teal a {
+	color: #FFF;
+}
+
+.matte a:hover, .teal a:hover {
+	color: #d1d1d1;
 }
 
 .teal hr {
-	border-color: #FFFFFF;
+	border-color: #FFF;
 }
 
 .fresh hr {
-	border-color: #000000;
+	border-color: #000;
 }
 
 .container {
@@ -72,7 +78,6 @@ img {
 	justify-content: center;
 	padding: 10px 0 0;
 	background-color: #000;
-	margin-bottom: 20px;
 }
 
 .header-image {
@@ -82,26 +87,9 @@ img {
 	margin: auto;
 }
 
-.banner {
-	background-color: #ccc;
-	padding: 10px;
-	margin-bottom: 15px;
-}
-
-.quick-links {
-	background-color: #ccc;
-	padding: 20px;
-	height: 100%;
-}
-
 .links {
 	margin-top: 30px;
 	color: #000;
-}
-
-.blurb {
-	background-color: #ccc;
-	padding: 10px;
 }
 
 .embed-container {
@@ -139,16 +127,18 @@ img {
 
 .photo-blurb {
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .big-visual {
-	background-color: #000;
+	background-image: url('https://s3.amazonaws.com/snwceomedia/dpn/a8d0c3e4-b971-4fbb-8b54-aa1410d6d9ad.sized-1000x1000.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	width: 100%;
 	height: 500px;
-}
-
-.video-text {
-	margin-top: 10px;
 }
 
 .margin-top {
