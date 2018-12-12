@@ -46,6 +46,15 @@ nav img {
   width: 50%;
 }
 
+.welcome p {
+  margin-top: 0;
+  padding: 0;
+}
+
+.welcome a {
+  color: #AA1E22;
+}
+
 #articles.row {
   margin-bottom: 0;
 }
