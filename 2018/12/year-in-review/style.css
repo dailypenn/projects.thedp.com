@@ -3,7 +3,7 @@
 body {
 	font-family: 'proxima-nova', sans-serif;
 	font-weight: 300;
-	color: #000;
+	color: #050505;
 }
 
 footer {
@@ -21,7 +21,7 @@ h2, h3 {
 }
 
 a {
-	color: #000;
+	color: #050505;
 	text-decoration: none;
 }
 
@@ -31,20 +31,15 @@ a:hover {
 }
 
 .fresh {
-	background-color: #CCDFC8;
+	background-color: #fade53;
 }
 
-.watermelon {
-	background-color: #FF6A5C;
-}
-
-.matte {
-	background-color: #414141;
-	color: #FFF;
+.light {
+	background-color: #f7f8da;
 }
 
 .teal {
-	background-color: #056571;
+	background-color: #45aaa9;
 	color: #FFF;
 }
 
@@ -56,12 +51,12 @@ a:hover {
 	color: #d1d1d1;
 }
 
-.teal hr, .matte hr {
-	border-color: #FFF;
+hr {
+	border-color: #050505;
 }
 
-.fresh hr, .watermelon hr {
-	border-color: #000;
+.teal hr, .matte hr {
+	border-color: #FFF;
 }
 
 .container {
@@ -70,6 +65,7 @@ a:hover {
 }
 
 .header {
+	height: 45px;
 	display: flex;
 	justify-content: center;
 	padding: 10px 0 0;
