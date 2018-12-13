@@ -13,11 +13,16 @@ footer {
 }
 
 h1, h2, h3, h4 {
+	margin: 0;
 	font-weight: 700;
 }
 
-h2, h3 {
+h2, h3:not(:last-of-type) {
 	margin-bottom: 20px;
+}
+
+h3 {
+	font-weight: 500;
 }
 
 a {
@@ -64,6 +69,13 @@ hr {
 	padding-bottom: 100px;
 }
 
+.ad {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0;
+}
+
 .header {
 	height: 45px;
 	display: flex;
@@ -79,9 +91,8 @@ hr {
 	margin: auto;
 }
 
-.links {
-	margin-top: 30px;
-	color: #000;
+.quick-links {
+	padding: 20px;
 }
 
 .embed-container {
