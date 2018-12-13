@@ -6,12 +6,6 @@ body {
 	color: #050505;
 }
 
-footer {
-	text-align: center;
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
 h1, h2, h3, h4 {
 	margin: 0;
 	font-weight: 700;
@@ -67,6 +61,12 @@ hr {
 .container {
 	padding-top: 100px;
 	padding-bottom: 100px;
+}
+
+.footer {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .ad {
