@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "2018: The Year in Review",
+      "author": "Web Dev: Daniel Salib, Emily Saperstein, Ian Ong, Alex Graves",
+      "section": "Year in Review",
+      "date": "December 2018",
+      "description": "2018 at Penn was a year to remember. It was the year of shocking upsets, of significant change to our campus infrastructure and plenty of political excitement. From the Eagles Superbowl win to the vandalization of Wynn Commons and the dramatic announcements on Huntsman Hall and sophomore housing, take a look back on the year's most memorable moments with The Daily Pennsylvanian's Year in Review.",
+      "sponsored": false,
+      "link": "https://projects.thedp.com/2018/12/year-in-review/",
+      "image": "https://snworksceo.imgix.net/dpn/2a396a4a-c282-4fda-a940-bf98afa70c5e.sized-1000x1000.png",
+      "alt": "year in review 2018"
+    },
+    {
       "title": "Basketball Preview 2018",
       "author": "Web Dev: Jamie Tomlinson, Daniel Salib, Eric Zhang, Liam Morrissy",
       "section": "Sports",
@@ -16,7 +27,7 @@
       "author": "Web Dev: Jamie Tomlinson, Daniel Salib, Liam Morrissy, Ian Ong",
       "section": "Guides",
       "date": "November 2018",
-      "description": "The 2016 presidential election ushered in a contentious period in U.S. politics that placed a Penn alumnus in the White House and that has divided our campus and our country. Two years later, much is at stake as the Penn community prepares to vote in what many experts call the most important midterm elections in our lifetimes. Here's what you need to know.",
+      "description": "Two years after the election that placed a Penn alumnus in the White House, much is at stake as the Penn community prepares to vote in what many experts call the most important midterm elections in our lifetimes. Here's what you need to know.",
       "sponsored": false,
       "link": "https://projects.thedp.com/2018/10/voters-guide/",
       "image": "https://snworksceo.imgix.net/dpn/1faeaaa3-fa0e-479c-af08-5abaaf46a735.sized-1000x1000.jpg",

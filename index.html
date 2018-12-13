@@ -113,10 +113,12 @@
         htmlStr =
           '<div><img src="' + article.image + '" class="img img-responsive img-full" alt="' + article.alt + '"></div>'+
           '<div>' +
-            '<div class="proj-section">' + article.section + '</div>' +
+            '<div class="proj-section row">' +
+              '<div class="col-xs-6">' + article.section + '</div>' +
+              '<div class="col-xs-6 text-right">' + article.date + '</div>' +
+            '</div>' +
             '<a href="' + article.link + '" target="_blank">' + '<h1>' + article.title + '</h1></a>' +
             '<div class="proj-desc">' + article.description + '</div><br>' +
-            '<span class="date pull-left">' + article.date + '</span>' +
             '<span class="author pull-right">' + (article.sponsored ? 'Sponsored by ' + article.author : article.author) + '</span>' +
           '</div>'
         $('#featured-main').append(htmlStr);
@@ -125,10 +127,12 @@
           '<div class="secondary-feature">' +
             '<div><img src="' + article.image + '" class="img img-responsive img-full" alt="' + article.alt + '"></div>'+
           '<div>' +
-            '<div class="proj-section">' + article.section + '</div>' +
+          '<div class="proj-section row">' +
+            '<div class="col-xs-5">' + article.section + '</div>' +
+            '<div class="col-xs-7 text-right">' + article.date + '</div>' +
+          '</div>' +
             '<a href="' + article.link + '" target="_blank">' + '<h3>' + article.title + '</h3></a>' +
             '<div class="proj-desc">' + article.description + '</div><br>' +
-            '<span class="date pull-left">' + article.date + '</span>' +
             '<span class="author pull-right">' + (article.sponsored ? 'Sponsored by ' + article.author : article.author) + '</span>' +
           '</div></div>'
         $('#featured-secondary').append(htmlStr);
@@ -143,10 +147,12 @@
             '<img src="' + article.image + '" class="img img-responsive" alt="' + article.alt + '">' +
           '</div>'+
           '<div class="col-sm-8">' +
-            '<div class="proj-section">' + article.section + '</div>' +
+            '<div class="proj-section row">' +
+              '<div class="col-xs-6">' + article.section + '</div>' +
+              '<div class="col-xs-6 text-right">' + article.date + '</div>' +
+            '</div>' +
             '<a href="' + article.link + '" target="_blank">' + '<h2>' + article.title + '</h2></a>' +
             '<div class="proj-desc">' + article.description + '</div><br>' +
-            '<span class="date pull-left">' + article.date + '</span>' +
             '<span class="author pull-right">' + (article.sponsored ? 'Sponsored by ' + article.author : article.author) + '</span>' +
           '</div>' + '<div class="col-xs-12"><hr></div>' +
         '</div>'
