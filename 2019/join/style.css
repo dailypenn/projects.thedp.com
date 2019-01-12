@@ -316,8 +316,23 @@ p.overall {
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 425px) {
   .biz-body .departments span {
     width: 50%;
+  }
+
+  .join-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .intro-text {
+    margin-bottom: 60px;
   }
 }

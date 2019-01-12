@@ -111,7 +111,7 @@ for (var i = 0; i < edTabs.length; i++) {
         document.querySelector('section.business').style.background =
           "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/68726eb4-7df0-4e26-9d83-3ad542d33846.sized-1000x1000.jpg')";
         break;
-      case 'innovation':
+      case 'product-lab':
         document.querySelector('section.business').style.background =
           "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/af307706-8ed7-4389-bb37-283cdb2af2d0.sized-1000x1000.jpg')";
         break;
