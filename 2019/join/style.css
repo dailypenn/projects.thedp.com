@@ -180,6 +180,7 @@ p.overall {
   border-radius: 2px;
   background-color: #AA1E22;
   color: #FFF;
+  cursor:pointer;
 }
 
 .join-button:hover {
