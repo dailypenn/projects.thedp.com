@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Rokkitt|Work+Sans:400,600,800');
+p {
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.section-title {
+  text-align: center;
+}
+
+h2.section-title {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  font-size: 48px;
+}
+
+h3.section-title {
+  margin-bottom: 16px;
+}
+
+.match-container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 992px) {
+  .match-day:first-child {
+      border-right: 1px solid #e0e0e0;
+  }
+}
+
+.match {
+  margin-bottom: 30px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td p {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.logo {
+  display: table-cell;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  background-color: #f9f9f9;
+  border-collapse: collapse;
+  border: 1px solid #e0e0e0;
+}
+
+td {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+td:first-child {
+  width: 25px;
+}
+
+button {
+  font-family: 'Work Sans', sans-serif;
+  float: right;
+  background: rgb(250,84,23);
+  background: linear-gradient(25deg, rgba(250,84,23,1) 0%, rgba(255,161,127,1) 100%);
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  margin: 5px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(25deg, rgba(250,84,23,1) 0%, rgba(250,84,23,1) 100%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px;
+    background-color: #000;
+}
+
+.record {
+  font-size: 20px;
+  padding-left: 10px;
+  color: #b2b2b2;
+  font-style: oblique;
+  font-family: 'Rokkitt', serif;
+}
+
+footer {
+  margin-top: 50px;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
