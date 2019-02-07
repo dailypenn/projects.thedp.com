@@ -23,12 +23,6 @@ h3.section-title {
   margin-bottom: 16px;
 }
 
-.match-container {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 @media only screen and (min-width: 992px) {
   .match-day:first-child {
       border-right: 1px solid #e0e0e0;
@@ -37,9 +31,29 @@ h3.section-title {
 
 .match {
   margin-bottom: 30px;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #f9f9f9;
+  border-collapse: collapse;
+  border: 1px solid #e0e0e0;
+}
+
+.home-indc {
+  margin-bottom: 0px;
+  margin-left: 5px;
+  color: #c3c3c3;
+}
+
+.match-section {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 0px;
+}
+
+.team-name {
+  margin-bottom: 0px;
 }
 
 td p {
@@ -52,16 +66,12 @@ td p {
 .logo {
   display: table-cell;
   vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
   width: 25px;
-  height: 25px;
-  margin: 20px;
 }
 
 table {
-  width: 100%;
-  background-color: #f9f9f9;
-  border-collapse: collapse;
-  border: 1px solid #e0e0e0;
 }
 
 td {
@@ -73,30 +83,30 @@ td:first-child {
   width: 25px;
 }
 
-button {
+.win-btn {
   font-family: 'Work Sans', sans-serif;
-  float: right;
   background: rgb(250,84,23);
   background: linear-gradient(25deg, rgba(250,84,23,1) 0%, rgba(255,161,127,1) 100%);
   border: none;
   color: white;
   padding: 15px 25px;
-  margin: 5px;
+  margin-left: auto;
+  margin-right: 10px;
   text-align: center;
   font-size: 14px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-button:hover {
+.win-btn:hover {
   background: linear-gradient(25deg, rgba(250,84,23,1) 0%, rgba(250,84,23,1) 100%);
 }
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0 10px;
-    background-color: #000;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px;
+  background-color: #000;
 }
 
 .record {
@@ -108,13 +118,13 @@ button:hover {
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 20px;
+  padding-top: 20px;
+  height: 100px;
   background-color: #f9f9f9;
   width: 100%;
+  text-align: center;
 }
 
 footer p {
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
