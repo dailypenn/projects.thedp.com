@@ -1,11 +1,85 @@
-@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Rokkitt|Work+Sans:400,600,800');
-p {
-  font-family: 'Work Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:300,400');
+body {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1, h2, h3 {
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
+
+.top-section {
+  height: 75vh;
+  width: 100%;
+  background-color: #667D9D;
+}
+
+.standings {
+  height: 500px;
+  width: 100%;
+  background-color: white;
+  margin-top: -200px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.standings-header {
+  color: white;
+  background-color: #667D9D;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-top: 15px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+}
+
+.flex-table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-row {
+  background-color: #95A5BC;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 5px 15px;
+  color: white;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.standings-table .school-cell {
+  text-align: left;
+}
+
+.rank-cell {
+  width: 15%;
+}
+
+.school-cell {
+  width: 40%;
+}
+
+.change-cell {
+  width: 20%;
+}
+
+.record-cell {
+  width: 25%;
+}
+
+.logo-img {
+  width: 30px;
+  margin: 0px 20px;
+}
+
 
 .section-title {
   text-align: center;
@@ -71,8 +145,6 @@ td p {
   width: 25px;
 }
 
-table {
-}
 
 td {
   border-top: 1px solid #e0e0e0;
