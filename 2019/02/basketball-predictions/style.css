@@ -15,7 +15,7 @@ h1, h2, h3 {
 }
 
 .standings {
-  height: 500px;
+  height: auto;
   width: 100%;
   background-color: white;
   margin-top: -200px;
@@ -51,8 +51,10 @@ h1, h2, h3 {
   box-sizing: border-box;
   flex-grow: 1;
   text-align: center;
+  vertical-align: middle;
   width: 100%;
   overflow: hidden;
+  padding-top: 8px;
 }
 
 .standings-table .school-cell {
@@ -69,10 +71,42 @@ h1, h2, h3 {
 
 .change-cell {
   width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .record-cell {
   width: 25%;
+}
+
+hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+#hidden-hr {
+  visibility: hidden;
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  border-color: #009900;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  border-color: #990000;
+  margin-bottom: 10px;
 }
 
 .logo-img {
