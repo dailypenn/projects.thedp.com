@@ -1,5 +1,5 @@
 // records
-var mensRecords = {
+const mensRecords = {
 	penn: { wins: 9, losses: 1 },
 	harvard: { wins: 9, losses: 1 },
 	yale: { wins: 5, losses: 5 },
@@ -10,7 +10,7 @@ var mensRecords = {
 	dartmouth: { wins: 2, losses: 8 }
 }
 
-var womensRecords = {
+const womensRecords = {
 	penn: { wins: 8, losses: 2 },
 	harvard: { wins: 6, losses: 4 },
 	yale: { wins: 6, losses: 4 },
@@ -22,7 +22,7 @@ var womensRecords = {
 }
 
 // head-to-head records
-var mensHTH = {
+const mensHTH = {
 	harvard : 	{ penn: { wins: 1, losses: 0 }, yale: { wins: 2, losses: 0 }, columbia: { wins: 0, losses: 1 }, brown: { wins: 2, losses: 0 },
  								cornell: { wins: 1, losses: 0 }, princeton: { wins: 1, losses: 0 }, dartmouth: { wins: 2, losses: 0 } },
 	penn : 			{ harvard: { wins: 0, losses: 1 }, yale: { wins: 1, losses: 0 }, columbia: { wins: 2, losses: 0 }, brown: { wins: 1, losses: 0 },
@@ -41,7 +41,7 @@ var mensHTH = {
  								brown: { wins: 1, losses: 1 }, cornell: { wins: 0, losses: 1 }, princeton: { wins: 1, losses: 0 } }
 }
 
-var womensHTH = {
+const womensHTH = {
 	princeton : { penn: { wins: 2, losses: 0 }, harvard: { wins: 1, losses: 0 }, yale: { wins: 0, losses: 1 }, dartmouth: { wins: 1, losses: 0 },
  								brown: { wins: 1, losses: 0 }, columbia: { wins: 2, losses: 0 }, cornell: { wins: 2, losses: 0 } },
 	penn : 			{ princeton: { wins: 0, losses: 2 }, harvard: { wins: 1, losses: 0 }, yale: { wins: 1, losses: 0 }, dartmouth: { wins: 1, losses: 0 },
@@ -61,7 +61,7 @@ var womensHTH = {
 }
 
 // averaged ratings
-var mensRatings = {
+const mensRatings = {
 	penn: 		 124.5,
 	harvard: 	 144.25,
 	yale: 		 187,
@@ -72,7 +72,7 @@ var mensRatings = {
 	dartmouth: 291.25
 }
 
-var womensRatings = {
+const womensRatings = {
 	princeton: 39,
 	penn: 		 73.5,
 	harvard:	 102,
@@ -84,7 +84,7 @@ var womensRatings = {
 }
 
 // schedules
-var mensSchedule = {
+const mensSchedule = {
 	penn: { feb23: "dartmouth", feb24: "harvard", mar02: "yale", mar03: "brown" },
 	princeton: { feb23: "harvard", feb24: "dartmouth", mar02: "brown", mar03: "yale" },
 	yale: { feb23: "cornell", feb24: "columbia", mar02: "penn", mar03: "princeton" },
@@ -95,7 +95,7 @@ var mensSchedule = {
 	dartmouth: { feb23: "penn", feb24: "princeton", mar02: "columbia", mar03: "cornell" }
 }
 
-var womensSchedule = {
+const womensSchedule = {
 	penn: { feb23: "harvard", feb24: "dartmouth", mar02: "yale", mar03: "brown" },
 	princeton: { feb23: "dartmouth", feb24: "harvard", mar02: "brown", mar03: "yale" },
 	yale: { feb23: "cornell", feb24: "columbia", mar02: "penn", mar03: "princeton" },
@@ -107,12 +107,12 @@ var womensSchedule = {
 }
 
 function sortedTeams(gender) {
-	var record = gender === 'm' ? mensRecords : womensRecords;
-	var standings = Object.keys(record).sort(function(a, b) {
-		var W1 = record[a].wins;
-		var W2 = record[b].wins;
-		var L1 = record[a].losses;
-		var L2 = record[b].losses;
+	const record = gender === 'm' ? mensRecords : womensRecords;
+	const standings = Object.keys(record).sort(function(a, b) {
+		const W1 = record[a].wins;
+		const W2 = record[b].wins;
+		const L1 = record[a].losses;
+		const L2 = record[b].losses;
 		return W1 > W2 ? -1 : W1 < W2 ? 1 : L1 < L2 ? -1 : L1 > L2 ? 1 : 0;
 	});
 	return standings;
@@ -120,30 +120,30 @@ function sortedTeams(gender) {
 
 // first tiebreaker scenario
 function headToHead(team1, team2, gender) {
-	var record = gender === 'm' ? mensHTH : womensHTH;
-	var team1Wins = record[team1][team2].wins;
-	var team2Wins = record[team2][team1].wins;
+	const record = gender === 'm' ? mensHTH : womensHTH;
+	const team1Wins = record[team1][team2].wins;
+	const team2Wins = record[team2][team1].wins;
 	return team1Wins > team2Wins ? -1 :
 				 team1Wins < team2Wins ?  1 : compareToTopSeed(team1, team2, gender);
 }
 
 // second tiebreaker scenario
 function compareToTopSeed(team1, team2, gender) {
-	var hth = gender === 'm' ? mensHTH : womensHTH;
-	var record = gender === 'm' ? mensRecords : womensRecords;
-	var standings = sortedTeams(gender);
+	const hth = gender === 'm' ? mensHTH : womensHTH;
+	const record = gender === 'm' ? mensRecords : womensRecords;
+	const standings = sortedTeams(gender);
 	for (var i in standings) {
-		var team = standings[i];
+		const team = standings[i];
 		if (team === team1 || team === team2) continue;
 
 		var team1Wins = hth[team1][team].wins;
 		var team2Wins = hth[team2][team].wins;
 
 		// check if this team has the same record as any other teams
-		var teamWins = record[team].wins;
-		var teamLosses = record[team].losses;
+		const teamWins = record[team].wins;
+		const teamLosses = record[team].losses;
 		for (var j in standings) {
-			var compTeam = standings[j];
+			const compTeam = standings[j];
 			if (compTeam === team || compTeam === team1 || compTeam === team2) continue;
 
 			// if so, we need to compare against the combined records
@@ -168,7 +168,7 @@ function compareToTopSeed(team1, team2, gender) {
 
 // third tiebreaker scenario
 function compareRatings(team1, team2, gender) {
-	var ratings = gender === 'm' ? mensRatings : womensRatings;
+	const ratings = gender === 'm' ? mensRatings : womensRatings;
 	return ratings[team1] < ratings[team2] ? -1 :
 				 ratings[team1] > ratings[team2] ?  1 :
 				 // if they're somehow still tied, do a coin flip
@@ -177,18 +177,18 @@ function compareRatings(team1, team2, gender) {
 
 // takes in 'm' or 'w' to determine which table to use
 function sortTable(gender) {
-	var table = gender === 'm' ? '#mens-table' : '#womens-table';
-	var record = gender === 'm' ? mensRecords : womensRecords;
-	var tbody = $(table).find('tbody');
+	const table = gender === 'm' ? '#mens-table' : '#womens-table';
+	const record = gender === 'm' ? mensRecords : womensRecords;
+	const tbody = $(table).find('tbody');
 
 	// sorts by number of wins
 	tbody.find('tr').sort(function(a, b) {
-		var team1 = $(a).children('td').eq(0).text().toLowerCase();
-		var team2 = $(b).children('td').eq(0).text().toLowerCase();
-		var W1 = record[team1].wins;
-		var W2 = record[team2].wins;
-		var L1 = record[team1].losses;
-		var L2 = record[team2].losses;
+		const team1 = $(a).children('td').eq(0).text().toLowerCase();
+		const team2 = $(b).children('td').eq(0).text().toLowerCase();
+		const W1 = record[team1].wins;
+		const W2 = record[team2].wins;
+		const L1 = record[team1].losses;
+		const L2 = record[team2].losses;
 
 		// compare wins
 		if (W1 > W2) {
@@ -239,8 +239,8 @@ function populateCheckboxes() {
 }
 
 function updateRecord(team1, team2, gender, num){
-	var record = gender == 'm' ? mensRecords : womensRecords;
-	var hth = gender == 'm' ? mensHTH : womensHTH;
+	const record = gender == 'm' ? mensRecords : womensRecords;
+	const hth = gender == 'm' ? mensHTH : womensHTH;
 	record[team1].wins += num;
 	record[team2].losses += num;
 	hth[team1][team2].wins += num;
@@ -361,12 +361,12 @@ $(document).ready(function () {
 	populateCheckboxes();
 
 	$('input[type = checkbox]').on('change', function() {
-		var gender = this.id.substring(0,1);
-		var id = this.id.slice(1);
-		var team = id.substring(0, id.length - 5);
-		var date = id.substring(id.length - 5);
-		var oppTeam = gender == 'm' ? mensSchedule[team][date] : womensSchedule[team][date];
-		var opp = $('#' + gender + oppTeam + date);
+		const gender = this.id.substring(0,1);
+		const id = this.id.slice(1);
+		const team = id.substring(0, id.length - 5);
+		const date = id.substring(id.length - 5);
+		const oppTeam = gender == 'm' ? mensSchedule[team][date] : womensSchedule[team][date];
+		const opp = $('#' + gender + oppTeam + date);
 
 		// if the opposite team was marked to win, reduce its wins
 		if (opp.get(0).checked) {
