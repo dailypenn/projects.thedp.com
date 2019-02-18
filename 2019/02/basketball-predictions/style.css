@@ -11,14 +11,23 @@ h1, h2, h3 {
 .top-section {
   height: 75vh;
   width: 100%;
-  background-color: #667D9D;
+  background-image: url(https://s3.amazonaws.com/snwceomedia/dpn/ba1889b7-ba2d-4a86-86c9-ef45f18e2bfb.original.png);
+  background-color: #6D7EA2;
+  background-position: center 30px;
+  background-repeat: no-repeat;
+  background-size: 50%;
+
+}
+
+.women {
+  background-color: #c64b4b;
 }
 
 .standings {
   height: auto;
   width: 100%;
+  margin-top: -150px;
   background-color: white;
-  margin-top: -200px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
@@ -30,6 +39,13 @@ h1, h2, h3 {
   padding-top: 15px;
   padding-bottom: 7px;
   padding-left: 20px;
+  display: flex;
+  justify-content: space-between;;
+  align-items: center;
+}
+
+#toggle {
+  margin: 10px;
 }
 
 .flex-table {
