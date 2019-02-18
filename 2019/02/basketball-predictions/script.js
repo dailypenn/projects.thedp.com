@@ -1,11 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById('toggle');
-	const topSection = document.getElementsByClassName('top-section')[0];
 	toggle.addEventListener('click', () => {
-		console.log('button clicked');
-		topSection.classList.toggle('women');
+		toggleWomen();
 	})
 });
+
+const toggleWomen = () => {
+  const topSection = document.getElementsByClassName('top-section')[0];
+  const overlap = document.getElementsByClassName('top-section-overlap')[0];
+  const standingheader = document.getElementsByClassName('standings-header')[0];
+  topSection.classList.toggle('women');
+  overlap.classList.toggle('women');
+  standingheader.classList.toggle('women');
+}
 
 //records
 

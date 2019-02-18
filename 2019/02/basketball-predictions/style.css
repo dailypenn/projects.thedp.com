@@ -9,18 +9,27 @@ h1, h2, h3 {
 }
 
 .top-section {
-  height: 75vh;
+  height: 50vh;
   width: 100%;
   background-image: url(https://s3.amazonaws.com/snwceomedia/dpn/ba1889b7-ba2d-4a86-86c9-ef45f18e2bfb.original.png);
-  background-color: #6D7EA2;
-  background-position: center 30px;
+  background-color: #607EA0;
+  background-position: 70px center;
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 70%;
+}
 
+.top-section-overlap {
+  height: 150px;
+  background-color: #607EA0;
 }
 
 .women {
-  background-color: #c64b4b;
+  background-color: #c64b4b !important;
+  background-image: url(https://s3.amazonaws.com/snwceomedia/dpn/f133d949-18a3-4869-94c7-b12893393caa.original.png);
+}
+
+.women-accent {
+  background-color: #c64b4bc7;
 }
 
 .standings {
@@ -33,9 +42,7 @@ h1, h2, h3 {
 
 .standings-header {
   color: white;
-  background-color: #667D9D;
-  margin-left: -15px;
-  margin-right: -15px;
+  background-color: #507199;
   padding-top: 15px;
   padding-bottom: 7px;
   padding-left: 20px;
@@ -51,13 +58,20 @@ h1, h2, h3 {
 .flex-table {
   display: flex;
   flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.standings-table:hover {
+  background-color: #f9f9f9;
 }
 
 .top-row {
-  background-color: #95A5BC;
-  margin-left: -15px;
-  margin-right: -15px;
-  padding: 5px 15px;
+  background-color: #607EA0;
+  padding: 5px 0px;
   color: white;
   font-weight: lighter;
   font-size: 20px;
@@ -70,7 +84,6 @@ h1, h2, h3 {
   vertical-align: middle;
   width: 100%;
   overflow: hidden;
-  padding-top: 8px;
 }
 
 .standings-table .school-cell {
@@ -97,8 +110,8 @@ h1, h2, h3 {
 }
 
 hr {
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 #hidden-hr {
@@ -249,5 +262,18 @@ footer {
   text-align: center;
 }
 
-footer p {
+@media only screen and (max-width: 992px) {
+  .top-section {
+    height: 33vh;
+    background-position: center center;
+    background-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .top-section {
+    height: 25vh;
+    background-position: center center;
+    background-size: 90%;
+  }
 }
