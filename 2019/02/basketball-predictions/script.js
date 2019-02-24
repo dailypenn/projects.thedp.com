@@ -16,6 +16,7 @@ function toggleTeam(team) {
   document.getElementById('top-section').classList.toggle('women');
   document.getElementById('top-section-overlap').classList.toggle('women');
   document.getElementById('standings-header').classList.toggle('women');
+  document.getElementById('top-row').classList.toggle('women-accent');
 }
 
 /* Load in match data by date */
@@ -35,9 +36,11 @@ function loadMatches(date, dateName, team) {
     const away = match.getElementsByClassName('away')[0];
     away.getElementsByClassName('team-name')[0].innerHTML = game.away;
     away.getElementsByClassName('record')[0].innerHTML = getRecord(game.away.toLowerCase(), team);
+    away.getElementsByClassName('logo')[0].src = `assets/${game.away.toLowerCase()}.svg`;
     const home = match.getElementsByClassName('home')[0];
     home.getElementsByClassName('team-name')[0].innerHTML = game.home;
     home.getElementsByClassName('record')[0].innerHTML = getRecord(game.home.toLowerCase(), team);
+    home.getElementsByClassName('logo')[0].src = `assets/${game.home.toLowerCase()}.svg`;
   });
 }
 
