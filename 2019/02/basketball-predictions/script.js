@@ -1,6 +1,8 @@
+var isMen = true;
+
 document.addEventListener("DOMContentLoaded", () => {
   // initially load men's data
-  loadData('m');
+  loadData();
 
   // create listeners for win buttons
   createWinListeners();
@@ -8,14 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // add listener to toggle team data based on user selection
   const toggle = document.getElementById('toggle');
 	toggle.addEventListener('change', (e) => {
-    const team = toggle.selectedIndex === 0 ? 'm' : 'w';
-		toggleTeam(team);
+		toggleTeam();
 	});
 });
 
 /* Load in data based on given team and toggle banner colors */
-function toggleTeam(team) {
-  loadData(team);
+function toggleTeam() {
+  isMen = !isMen;
+  loadData();
   document.getElementById('top-section').classList.toggle('women');
   document.getElementById('top-section-overlap').classList.toggle('women');
   document.getElementById('standings-header').classList.toggle('women');
@@ -23,27 +25,27 @@ function toggleTeam(team) {
 }
 
 /* Load in match data by date */
-function loadData(team) {
+function loadData() {
   const matches = Array.from(document.getElementsByClassName('match'));
-  loadMatches(matches.slice(0, 4), 'mar01', team);
-  loadMatches(matches.slice(4, 8), 'mar02', team);
-  loadMatches(matches.slice(8, 12), 'mar08', team);
-  loadMatches(matches.slice(12), 'mar09', team);
+  loadMatches(matches.slice(0, 4), 'mar01');
+  loadMatches(matches.slice(4, 8), 'mar02');
+  loadMatches(matches.slice(8, 12), 'mar08');
+  loadMatches(matches.slice(12), 'mar09');
 }
 
 /* Populate match tables with home and away schools and their records */
-function loadMatches(date, dateName, team) {
-  const schedule = team === 'm' ? scheduleM : scheduleW;
+function loadMatches(date, dateName) {
+  const schedule = isMen ? scheduleM : scheduleW;
   date.forEach((match, i) => {
     const game = schedule[dateName][i];
     const away = match.getElementsByClassName('away')[0];
     away.getElementsByClassName('team-name')[0].innerHTML = game.away;
-    away.getElementsByClassName('record')[0].innerHTML = getRecord(game.away.toLowerCase(), team);
+    away.getElementsByClassName('record')[0].innerHTML = getRecord(game.away.toLowerCase());
     away.getElementsByClassName('logo')[0].src = `assets/${game.away.toLowerCase()}.svg`;
     away.getElementsByClassName('win-btn')[0].setAttribute('data-team', game.away.toLowerCase());
     const home = match.getElementsByClassName('home')[0];
     home.getElementsByClassName('team-name')[0].innerHTML = game.home;
-    home.getElementsByClassName('record')[0].innerHTML = getRecord(game.home.toLowerCase(), team);
+    home.getElementsByClassName('record')[0].innerHTML = getRecord(game.home.toLowerCase());
     home.getElementsByClassName('logo')[0].src = `assets/${game.home.toLowerCase()}.svg`;
     home.getElementsByClassName('win-btn')[0].setAttribute('data-team', game.home.toLowerCase());
   });
@@ -51,8 +53,8 @@ function loadMatches(date, dateName, team) {
 
 /* Get a given school's record */
 // TODO: what is the decimal value that is on the page initially?
-function getRecord(school, team) {
-  const records = team === 'm' ? mensRecords : womensRecords;
+function getRecord(school) {
+  const records = isMen ? mensRecords : womensRecords;
   return `(${records[school].wins}-${records[school].losses})`;
 }
 
@@ -65,12 +67,37 @@ function createWinListeners() {
       const home = e.target.parentElement.classList.contains('home');
       const other = match.getElementsByClassName(home ? 'away' : 'home')[0];
       const losing = other.getElementsByClassName('win-btn')[0];
+      const initialClick = !e.target.classList.contains('winning') && !losing.classList.contains('winning');
+      const winner = e.target.parentElement.getElementsByClassName('team-name')[0].innerHTML.toLowerCase()
+      const loser = other.getElementsByClassName('team-name')[0].innerHTML.toLowerCase();
+      console.log(loser);
+      console.log(winner);
       losing.innerHTML = 'LOSE';
       losing.classList.remove('winning');
       e.target.innerHTML = 'WIN';
       e.target.classList.toggle('winning');
+      updateScore(winner, loser, initialClick);
     });
   })
+}
+
+function updateScore(winner, loser, initialClick) {
+  winner = winner.toLowerCase();
+  loser = loser.toLowerCase();
+  const record = isMen ? mensRecords : womensRecords;
+  console.log(initialClick);
+
+  if (initialClick) {
+    record[winner].wins+=1;
+    record[loser].losses+=1;
+  } else {
+    record[winner].wins+=1;
+    record[winner].losses-=1;
+    record[loser].wins-=1
+    record[loser].losses+=1;
+  }
+
+  console.log(mensRecords);
 }
 
 // records
