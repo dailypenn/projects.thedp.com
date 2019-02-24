@@ -36,25 +36,27 @@ function loadData() {
 }
 
 /* Populate match tables with home and away schools and their records */
-function loadMatches(date, dateName) {
+function loadMatches(matches, dateName) {
   const schedule = isMen ? scheduleM : scheduleW;
-  date.forEach((match, i) => {
+  matches.forEach((match, i) => {
     const game = schedule[dateName][i];
     const away = match.getElementsByClassName('away')[0];
     away.getElementsByClassName('team-name')[0].innerHTML = game.away;
-    away.getElementsByClassName('record')[0].innerHTML = getRecord(game.away.toLowerCase());
+    away.getElementsByClassName('record')[0].innerHTML = `(${getRecord(game.home.toLowerCase())})`;
     away.getElementsByClassName('logo')[0].src = `assets/${game.away.toLowerCase()}.svg`;
     away.getElementsByClassName('win-btn')[0].setAttribute('data-team', game.away.toLowerCase());
     const home = match.getElementsByClassName('home')[0];
     home.getElementsByClassName('team-name')[0].innerHTML = game.home;
-    home.getElementsByClassName('record')[0].innerHTML = getRecord(game.home.toLowerCase());
+    home.getElementsByClassName('record')[0].innerHTML = `(${getRecord(game.home.toLowerCase())})`;
     home.getElementsByClassName('logo')[0].src = `assets/${game.home.toLowerCase()}.svg`;
     home.getElementsByClassName('win-btn')[0].setAttribute('data-team', game.home.toLowerCase());
   });
 }
 
+
 function loadStandings() {
   const standings = isMen ? mensStandings : womensStandings;
+<<<<<<< Updated upstream
   const records = isMen ? mensRecords : womensRecords;
   standings.forEach(i => {
     const ranking = document.getElementsByClassName('standings-table')[standings.indexOf(i)];
@@ -63,6 +65,16 @@ function loadStandings() {
     ranking.getElementsByClassName('school-cell')[0].innerHTML = span+i;
     const wl = records[i.toLowerCase()];
     ranking.getElementsByClassName('record-cell')[0].innerHTML = `${wl.wins}-${wl.losses}`;
+=======
+  const rows = document.getElementsByClassName('standings-table');
+  standings.forEach((standing, i) => {
+    rows[i].getElementsByClassName('rank-cell')[0].innerHTML = i+1;
+    const span = `<span><img class="img-fluid logo-img" src="assets/${standing.school.toLowerCase()}.svg"></span>`;
+    rows[i].getElementsByClassName('school-cell')[0].innerHTML = span+standing.school;
+    rows[i].getElementsByClassName('record-cell')[0].innerHTML = getRecord(standing.school.toLowerCase());
+    rows[i].getElementsByClassName('arrow')[0].classList.remove('up');
+    rows[i].getElementsByClassName('arrow')[0].classList.remove('down');
+>>>>>>> Stashed changes
   });
 }
 
@@ -70,7 +82,7 @@ function loadStandings() {
 // TODO: what is the decimal value that is on the page initially?
 function getRecord(school) {
   const records = isMen ? mensRecords : womensRecords;
-  return `(${records[school].wins}-${records[school].losses})`;
+  return `${records[school].wins}-${records[school].losses}`;
 }
 
 /* Sets up event listeners on all of the win buttons */
@@ -85,8 +97,6 @@ function createWinListeners() {
       const initialClick = !e.target.classList.contains('winning') && !losing.classList.contains('winning');
       const winner = e.target.parentElement.getElementsByClassName('team-name')[0].innerHTML.toLowerCase()
       const loser = other.getElementsByClassName('team-name')[0].innerHTML.toLowerCase();
-      console.log(loser);
-      console.log(winner);
       losing.innerHTML = 'LOSE';
       losing.classList.remove('winning');
       e.target.innerHTML = 'WIN';
@@ -100,26 +110,76 @@ function updateScore(winner, loser, initialClick) {
   winner = winner.toLowerCase();
   loser = loser.toLowerCase();
   const record = isMen ? mensRecords : womensRecords;
-  console.log(initialClick);
 
   if (initialClick) {
-    record[winner].wins+=1;
-    record[loser].losses+=1;
+    record[winner].wins += 1;
+    record[loser].losses += 1;
   } else {
-    record[winner].wins+=1;
-    record[winner].losses-=1;
-    record[loser].wins-=1
-    record[loser].losses+=1;
+    record[winner].wins += 1;
+    record[winner].losses -= 1;
+    record[loser].wins -= 1
+    record[loser].losses += 1;
   }
 
-  console.log(mensRecords);
+  updateStanding()
 }
 
+function updateStanding() {
+  const standings = isMen ? mensStandings : womensStandings;
+  const record = isMen ? mensRecords : womensRecords;
+
+  standings.sort((team1, team2) => {
+		const W1 = record[team1.school.toLowerCase()].wins;
+		const W2 = record[team2.school.toLowerCase()].wins;
+		const L1 = record[team1.school.toLowerCase()].losses;
+		const L2 = record[team2.school.toLowerCase()].losses;
+
+		// compare wins
+		if (W1 > W2) {
+			return -1;
+		} else if (W1 < W2) {
+      team1.change -= 1;
+      team2.change += 1;
+			return 1;
+		} else {
+			// sort by losses if wins are tied
+			if (L1 < L2){
+				return -1;
+			} else if (L1 > L2) {
+        team1.change -= 1;
+        team2.change += 1;
+				return 1;
+			} else {
+        console.log('tie');
+				return 1;
+			}
+		}
+	});
+  loadStandings();
+}
 // records
 
-const mensStandings = ['Penn','Yale','Dartmouth','Brown','Princeton','Harvard','Cornell','Columbia'];
+const mensStandings = [
+  {school: 'Penn',change: 0},
+  {school: 'Yale', change: 0},
+  {school: 'Dartmouth', change: 0},
+  {school:'Brown', change: 0},
+  {school: 'Princeton', change:0},
+  {school: 'Harvard', change:0},
+  {school: 'Cornell', change: 0},
+  {school:'Columbia', change: 0}
+];
 
-const womensStandings = ['Brown','Dartmouth','Penn','Yale','Columbia','Harvard','Cornell','Princeton'];
+const womensStandings = [
+  {school: 'Penn',change: 0},
+  {school: 'Yale', change: 0},
+  {school: 'Dartmouth', change: 0},
+  {school:'Brown', change: 0},
+  {school: 'Princeton', change:0},
+  {school: 'Harvard', change:0},
+  {school: 'Cornell', change: 0},
+  {school:'Columbia', change: 0}
+];
 
 const mensRecords = {
 	penn: { wins: 3, losses: 4},
