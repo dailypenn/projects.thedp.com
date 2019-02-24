@@ -1,20 +1,54 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // initially load men's data
+  loadData('m');
+
+  // add listener to toggle team data based on user selection
   const toggle = document.getElementById('toggle');
-	toggle.addEventListener('click', () => {
-		toggleWomen();
-	})
+	toggle.addEventListener('change', (e) => {
+    const team = toggle.selectedIndex === 0 ? 'm' : 'w';
+		toggleTeam(team);
+	});
 });
 
-const toggleWomen = () => {
-  const topSection = document.getElementsByClassName('top-section')[0];
-  const overlap = document.getElementsByClassName('top-section-overlap')[0];
-  const standingheader = document.getElementsByClassName('standings-header')[0];
-  topSection.classList.toggle('women');
-  overlap.classList.toggle('women');
-  standingheader.classList.toggle('women');
+/* Load in data based on given team and toggle banner colors */
+function toggleTeam(team) {
+  loadData(team);
+  document.getElementById('top-section').classList.toggle('women');
+  document.getElementById('top-section-overlap').classList.toggle('women');
+  document.getElementById('standings-header').classList.toggle('women');
 }
 
-//records
+/* Load in match data by date */
+function loadData(team) {
+  const matches = Array.from(document.getElementsByClassName('match'));
+  loadMatches(matches.slice(0, 4), 'mar01', team);
+  loadMatches(matches.slice(4, 8), 'mar02', team);
+  loadMatches(matches.slice(8, 12), 'mar08', team);
+  loadMatches(matches.slice(12), 'mar09', team);
+}
+
+/* Populate match tables with home and away schools and their records */
+function loadMatches(date, dateName, team) {
+  const schedule = team === 'm' ? scheduleM : scheduleW;
+  date.forEach((match, i) => {
+    const game = schedule[dateName][i];
+    const away = match.getElementsByClassName('away')[0];
+    away.getElementsByClassName('team-name')[0].innerHTML = game.away;
+    away.getElementsByClassName('record')[0].innerHTML = getRecord(game.away.toLowerCase(), team);
+    const home = match.getElementsByClassName('home')[0];
+    home.getElementsByClassName('team-name')[0].innerHTML = game.home;
+    home.getElementsByClassName('record')[0].innerHTML = getRecord(game.home.toLowerCase(), team);
+  });
+}
+
+/* Get a given school's record */
+// TODO: what is the decimal value that is on the page initially?
+function getRecord(school, team) {
+  const records = team === 'm' ? mensRecords : womensRecords;
+  return `(${records[school].wins}-${records[school].losses})`;
+}
+
+// records
 
 const mensRecords = {
 	penn: { wins: 3, losses: 4},
@@ -23,7 +57,7 @@ const mensRecords = {
 	princeton: { wins: 5, losses: 3},
 	cornell: { wins: 5, losses: 3},
 	brown: { wins: 3, losses: 5},
-	darmouth: { wins: 2, losses: 6},
+	dartmouth: { wins: 2, losses: 6},
 	columbia: { wins: 1, losses: 7},
 }
 
@@ -34,7 +68,7 @@ const womensRecords = {
 	princeton: { wins: 5, losses: 2},
 	cornell: { wins: 3, losses: 5},
 	brown: { wins: 1, losses: 7},
-	darmouth: { wins: 3, losses: 4},
+	dartmouth: { wins: 3, losses: 4},
 	columbia: { wins: 3, losses: 5}
 }
 
@@ -59,7 +93,7 @@ const mensSchedule = {
 	princeton: { mar01: "dartmouth", mar02: "harvard", mar08: "brown", mar09: "yale"},
 	cornell: { mar01: "yale", mar02: "brown", mar08: "harvard", mar09: "dartmouth"},
 	brown: { mar01: "columbia", mar02: "cornell", mar08: "princeton", mar09: "penn"},
-	darmouth: { mar01: "princeton", mar02: "penn", mar08: "columbia", mar09: "cornell"},
+	dartmouth: { mar01: "princeton", mar02: "penn", mar08: "columbia", mar09: "cornell"},
 	columbia: { mar01: "brown", mar02: "yale", mar08: "dartmouth", mar09: "harvard"},
 }
 
@@ -70,6 +104,61 @@ const womensSchedule = {
 	princeton: { mar01: "dartmouth", mar02: "harvard", mar08: "brown", mar09: "yale"},
 	cornell: { mar01: "yale", mar02: "brown", mar08: "harvard", mar09: "dartmouth"},
 	brown: { mar01: "columbia", mar02: "cornell", mar08: "princeton", mar09: "penn"},
-	darmouth: { mar01: "princeton", mar02: "penn", mar08: "columbia", mar09: "cornell"},
+	dartmouth: { mar01: "princeton", mar02: "penn", mar08: "columbia", mar09: "cornell"},
 	columbia: { mar01: "yale", mar02: "brown", mar08: "harvard", mar09: "dartmouth"},
+}
+
+const scheduleM = {
+  mar01: [
+    { home: 'Brown', away: 'Columbia'},
+    { home: 'Yale', away: 'Cornell'},
+    { home: 'Dartmouth', away: 'Princeton'},
+    { home: 'Harvard', away: 'Penn'}
+  ],
+  mar02: [
+    { home: 'Brown', away: 'Cornell'},
+    { home: 'Yale', away: 'Columbia'},
+    { home: 'Dartmouth', away: 'Penn'},
+    { home: 'Harvard', away: 'Princeton'}
+  ],
+  mar08: [
+    { home: 'Princeton', away: 'Brown'},
+    { home: 'Columbia', away: 'Dartmouth'},
+    { home: 'Cornell', away: 'Harvard'},
+    { home: 'Penn', away: 'Yale'}
+  ],
+  mar09: [
+    { home: 'Penn', away: 'Brown'},
+    { home: 'Princeton', away: 'Yale'},
+    { home: 'Columbia', away: 'Harvard'},
+    { home: 'Cornell', away: 'Dartmouth'}
+  ]
+}
+
+// TODO: I can't find games listed for March 2 or 9 for women??
+const scheduleW = {
+  mar01: [
+    { home: 'Cornell', away: 'Yale'},
+    { home: 'Princeton', away: 'Dartmouth'},
+    { home: 'Columbia', away: 'Brown'},
+    { home: 'Penn', away: 'Harvard'}
+  ],
+  mar02: [
+    { home: 'Brown', away: 'Cornell'},
+    { home: 'Yale', away: 'Columbia'},
+    { home: 'Dartmouth', away: 'Penn'},
+    { home: 'Harvard', away: 'Princeton'}
+  ],
+  mar08: [
+    { home: 'Yale', away: 'Penn'},
+    { home: 'Brown', away: 'Princeton'},
+    { home: 'Dartmouth', away: 'Columbia'},
+    { home: 'Harvard', away: 'Cornell'}
+  ],
+  mar09: [
+    { home: 'Penn', away: 'Brown'},
+    { home: 'Princeton', away: 'Yale'},
+    { home: 'Columbia', away: 'Harvard'},
+    { home: 'Cornell', away: 'Dartmouth'}
+  ]
 }

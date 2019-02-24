@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ivy League Basketball Standings Scenarios | The Daily Pennsylvanian</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
- <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -13,13 +13,16 @@
       <img class="header" src="https://s3.amazonaws.com/media.dpn/56240_dpwordmark750o.png" alt="The Daily Pennsylvanian" width="250">
     </a>
   </nav>
-  <div class="top-section"></div>
-  <div class="top-section-overlap"></div>
+  <div class="top-section" id="top-section"></div>
+  <div class="top-section-overlap" id="top-section-overlap"></div>
   <div class="container">
     <div class="standings">
-    <div class="standings-header">
+    <div class="standings-header" id="standings-header">
       <h1>CURRENT STANDINGS</h1>
-      <button id="toggle">toggle</button>
+      <select id="toggle" name="team">
+        <option value="men">Men</option>
+        <option value="women">Women</option>
+      </select>
     </div>
     <div class="flex-table top-row">
       <div class="cell rank-cell">#</div>
@@ -89,15 +92,15 @@
   <div class="container">
     <div class="row">
         <div class="col-md-6 match-day first-weekend">
-          <h3 class="section-title">March 2nd and 3rd</h3>
+          <h3 class="section-title">March 1st and 2nd</h3>
           <div class="match">
-            <div class="match-section">
+            <div class="match-section away">
               <p class="home-indc">A</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
               <button class="win-btn">WIN</button>
             </div>
-            <div class="match-section">
+            <div class="match-section home">
               <p class="home-indc">H</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
@@ -105,13 +108,13 @@
             </div>
           </div>
           <div class="match">
-            <div class="match-section">
+            <div class="match-section away">
               <p class="home-indc">A</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
               <button class="win-btn">WIN</button>
             </div>
-            <div class="match-section">
+            <div class="match-section home">
               <p class="home-indc">H</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
@@ -119,13 +122,13 @@
             </div>
           </div>
           <div class="match">
-            <div class="match-section">
+            <div class="match-section away">
               <p class="home-indc">A</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
               <button class="win-btn">WIN</button>
             </div>
-            <div class="match-section">
+            <div class="match-section home">
               <p class="home-indc">H</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
@@ -133,13 +136,13 @@
             </div>
           </div>
           <div class="match">
-            <div class="match-section">
+            <div class="match-section away">
               <p class="home-indc">A</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
               <button class="win-btn">WIN</button>
             </div>
-            <div class="match-section">
+            <div class="match-section home">
               <p class="home-indc">H</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
@@ -147,13 +150,13 @@
             </div>
           </div>
           <div class="match">
-            <div class="match-section">
+            <div class="match-section away">
               <p class="home-indc">A</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
               <button class="win-btn">WIN</button>
             </div>
-            <div class="match-section">
+            <div class="match-section home">
               <p class="home-indc">H</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
@@ -161,13 +164,13 @@
             </div>
           </div>
           <div class="match">
-            <div class="match-section">
+            <div class="match-section away">
               <p class="home-indc">A</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
               <button class="win-btn">WIN</button>
             </div>
-            <div class="match-section">
+            <div class="match-section home">
               <p class="home-indc">H</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
@@ -175,13 +178,13 @@
             </div>
           </div>
           <div class="match">
-            <div class="match-section">
+            <div class="match-section away">
               <p class="home-indc">A</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
               <button class="win-btn">WIN</button>
             </div>
-            <div class="match-section">
+            <div class="match-section home">
               <p class="home-indc">H</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
@@ -189,13 +192,13 @@
             </div>
           </div>
           <div class="match">
-            <div class="match-section">
+            <div class="match-section away">
               <p class="home-indc">A</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
               <button class="win-btn">WIN</button>
             </div>
-            <div class="match-section">
+            <div class="match-section home">
               <p class="home-indc">H</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
@@ -204,15 +207,15 @@
           </div>
         </div>
         <div class="col-md-6 match-day">
-          <h3 class="section-title">March 9th and 10th</h3>
+          <h3 class="section-title">March 8th and 9th</h3>
           <div class="match">
-            <div class="match-section">
+            <div class="match-section away">
               <p class="home-indc">A</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
               <button class="win-btn">WIN</button>
             </div>
-            <div class="match-section">
+            <div class="match-section home">
               <p class="home-indc">H</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
@@ -220,13 +223,13 @@
             </div>
           </div>
           <div class="match">
-            <div class="match-section">
+            <div class="match-section away">
               <p class="home-indc">A</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
               <button class="win-btn">WIN</button>
             </div>
-            <div class="match-section">
+            <div class="match-section home">
               <p class="home-indc">H</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
@@ -234,13 +237,13 @@
             </div>
           </div>
           <div class="match">
-            <div class="match-section">
+            <div class="match-section away">
               <p class="home-indc">A</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
               <button class="win-btn">WIN</button>
             </div>
-            <div class="match-section">
+            <div class="match-section home">
               <p class="home-indc">H</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
@@ -248,13 +251,13 @@
             </div>
           </div>
           <div class="match">
-            <div class="match-section">
+            <div class="match-section away">
               <p class="home-indc">A</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
               <button class="win-btn">WIN</button>
             </div>
-            <div class="match-section">
+            <div class="match-section home">
               <p class="home-indc">H</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
@@ -262,13 +265,13 @@
             </div>
           </div>
           <div class="match">
-            <div class="match-section">
+            <div class="match-section away">
               <p class="home-indc">A</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
               <button class="win-btn">WIN</button>
             </div>
-            <div class="match-section">
+            <div class="match-section home">
               <p class="home-indc">H</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
@@ -276,13 +279,13 @@
             </div>
           </div>
           <div class="match">
-            <div class="match-section">
+            <div class="match-section away">
               <p class="home-indc">A</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
               <button class="win-btn">WIN</button>
             </div>
-            <div class="match-section">
+            <div class="match-section home">
               <p class="home-indc">H</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
@@ -290,13 +293,13 @@
             </div>
           </div>
           <div class="match">
-            <div class="match-section">
+            <div class="match-section away">
               <p class="home-indc">A</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
               <button class="win-btn">WIN</button>
             </div>
-            <div class="match-section">
+            <div class="match-section home">
               <p class="home-indc">H</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
@@ -304,13 +307,13 @@
             </div>
           </div>
           <div class="match">
-            <div class="match-section">
+            <div class="match-section away">
               <p class="home-indc">A</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(3-4, .629)</span>
               <button class="win-btn">WIN</button>
             </div>
-            <div class="match-section">
+            <div class="match-section home">
               <p class="home-indc">H</p>
               <img class="img-fluid logo" src="https://seeklogo.com/images/P/penn-medicine-logo-FE45E08D0D-seeklogo.com.png" alt="Penn Logo">
               <p class="team-name">Penn</p> <span class="record">(1-2, .629)</span>
