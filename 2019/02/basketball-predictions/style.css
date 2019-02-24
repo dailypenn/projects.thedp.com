@@ -223,8 +223,20 @@ td:first-child {
   transition: 0.3s;
 }
 
+.win-btn.winning {
+  background: #6A7D99;
+}
+
 .win-btn:hover {
   background: #6A7D99;
+}
+
+.win-btn:disabled {
+  cursor: not-allowed;
+}
+
+.win-btn:hover:disabled {
+  background: #A3AFC1;
 }
 
 .navbar {

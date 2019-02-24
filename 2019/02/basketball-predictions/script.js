@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // initially load men's data
   loadData('m');
 
+  // create listeners for win buttons
+  createWinListeners();
+
   // add listener to toggle team data based on user selection
   const toggle = document.getElementById('toggle');
 	toggle.addEventListener('change', (e) => {
@@ -37,10 +40,12 @@ function loadMatches(date, dateName, team) {
     away.getElementsByClassName('team-name')[0].innerHTML = game.away;
     away.getElementsByClassName('record')[0].innerHTML = getRecord(game.away.toLowerCase(), team);
     away.getElementsByClassName('logo')[0].src = `assets/${game.away.toLowerCase()}.svg`;
+    away.getElementsByClassName('win-btn')[0].setAttribute('data-team', game.away.toLowerCase());
     const home = match.getElementsByClassName('home')[0];
     home.getElementsByClassName('team-name')[0].innerHTML = game.home;
     home.getElementsByClassName('record')[0].innerHTML = getRecord(game.home.toLowerCase(), team);
     home.getElementsByClassName('logo')[0].src = `assets/${game.home.toLowerCase()}.svg`;
+    home.getElementsByClassName('win-btn')[0].setAttribute('data-team', game.home.toLowerCase());
   });
 }
 
@@ -49,6 +54,23 @@ function loadMatches(date, dateName, team) {
 function getRecord(school, team) {
   const records = team === 'm' ? mensRecords : womensRecords;
   return `(${records[school].wins}-${records[school].losses})`;
+}
+
+/* Sets up event listeners on all of the win buttons */
+function createWinListeners() {
+  const btns = Array.from(document.getElementsByClassName('win-btn'));
+  btns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const match = e.target.parentElement.parentElement;
+      const home = e.target.parentElement.classList.contains('home');
+      const other = match.getElementsByClassName(home ? 'away' : 'home')[0];
+      const losing = other.getElementsByClassName('win-btn')[0];
+      losing.innerHTML = 'LOSE';
+      losing.classList.remove('winning');
+      e.target.innerHTML = 'WIN';
+      e.target.classList.toggle('winning');
+    });
+  })
 }
 
 // records
