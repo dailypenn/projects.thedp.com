@@ -3,6 +3,7 @@ var isMen = true;
 document.addEventListener("DOMContentLoaded", () => {
   // initially load men's data
   loadData();
+  loadStandings();
 
   // create listeners for win buttons
   createWinListeners();
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function toggleTeam() {
   isMen = !isMen;
   loadData();
+  loadStandings();
   document.getElementById('top-section').classList.toggle('women');
   document.getElementById('top-section-overlap').classList.toggle('women');
   document.getElementById('standings-header').classList.toggle('women');
@@ -48,6 +50,16 @@ function loadMatches(date, dateName) {
     home.getElementsByClassName('record')[0].innerHTML = getRecord(game.home.toLowerCase());
     home.getElementsByClassName('logo')[0].src = `assets/${game.home.toLowerCase()}.svg`;
     home.getElementsByClassName('win-btn')[0].setAttribute('data-team', game.home.toLowerCase());
+  });
+}
+
+function loadStandings() {
+  const standings = isMen ? mensStandings : womensStandings;
+  standings.forEach(i => {
+    const ranking = document.getElementsByClassName('standings-table')[standings.indexOf(i)];
+    ranking.getElementsByClassName('rank-cell')[0].innerHTML = standings.indexOf(i)+1;
+    const span = `<span><img class="img-fluid logo-img" src="assets/${i.toLowerCase()}.svg"></span>`;
+    ranking.getElementsByClassName('school-cell')[0].innerHTML = span+i;
   });
 }
 
@@ -101,6 +113,10 @@ function updateScore(winner, loser, initialClick) {
 }
 
 // records
+
+const mensStandings = ['Penn','Yale','Dartmouth','Brown','Princeton','Harvard','Cornell','Columbia'];
+
+const womensStandings = ['Brown','Dartmouth','Penn','Yale','Columbia','Harvard','Cornell','Princeton'];
 
 const mensRecords = {
 	penn: { wins: 3, losses: 4},
