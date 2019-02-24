@@ -130,6 +130,13 @@ i {
   margin-bottom: 10px;
 }
 
+.neutral {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  border-width: 2px 2px 2px 2px;
+  border-color: #c4c16e;
+}
+
 .logo-img {
   width: 30px;
   margin: 0px 20px;

@@ -55,11 +55,14 @@ function loadMatches(date, dateName) {
 
 function loadStandings() {
   const standings = isMen ? mensStandings : womensStandings;
+  const records = isMen ? mensRecords : womensRecords;
   standings.forEach(i => {
     const ranking = document.getElementsByClassName('standings-table')[standings.indexOf(i)];
     ranking.getElementsByClassName('rank-cell')[0].innerHTML = standings.indexOf(i)+1;
     const span = `<span><img class="img-fluid logo-img" src="assets/${i.toLowerCase()}.svg"></span>`;
     ranking.getElementsByClassName('school-cell')[0].innerHTML = span+i;
+    const wl = records[i.toLowerCase()];
+    ranking.getElementsByClassName('record-cell')[0].innerHTML = `${wl.wins}-${wl.losses}`;
   });
 }
 
