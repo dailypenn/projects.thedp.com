@@ -1,12 +1,12 @@
 var isMen = true;
-var mensOriginalStandings = [];
-var womensOriginalStandings = [];
-
+const mensOriginalStandings = []
+const womensOriginalStandings = []
 document.addEventListener("DOMContentLoaded", () => {
   // initially load men's data
   loadData();
   updateStanding(false)
-  mensOriginalStandings = mensStandings;
+  setOriginalStandings();
+
   loadStandings();
 
   // create listeners for win buttons
@@ -37,6 +37,15 @@ function loadData() {
   loadMatches(matches.slice(4, 8), 'mar02');
   loadMatches(matches.slice(8, 12), 'mar08');
   loadMatches(matches.slice(12), 'mar09');
+}
+
+function setOriginalStandings() {
+  const original = isMen ? mensOriginalStandings : womensOriginalStandings;
+  const standings = isMen ? mensStandings : womensStandings;
+
+  standings.forEach(team => {
+    original.push(team);
+  })
 }
 
 /* Populate match tables with home and away schools and their records */
@@ -166,16 +175,18 @@ function calcChanges() {
   // implement change between positions
   const standings = isMen ? mensStandings : womensStandings;
   const original = isMen ? mensOriginalStandings : womensOriginalStandings;
+  console.log('STANDINGS!!!!');
+  console.log(standings);
+  console.log('ORIGINAL!!!!');
+  console.log(original);
 
   for (var i = 0; i < standings.length; i++) {
     for (var j = 0; j < original.length; j++) {
       if (standings[i].school === original[j].school) {
-        standings[i].change = i - j;
+        standings[i].change = j - i;
       }
     }
   }
-
-  console.log(standings);
 }
 
 // first tiebreaker scenario
