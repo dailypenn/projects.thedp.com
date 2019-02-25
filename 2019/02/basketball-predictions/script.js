@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // create listeners for win buttons
   createWinListeners();
+  tiebreakerCardSetup();
 
   // add listener to toggle team data based on user selection
   const toggle = document.getElementById('toggle');
@@ -122,6 +123,19 @@ function createWinListeners() {
       e.target.classList.toggle('winning');
       updateScore(winner, loser, initialClick);
     });
+  })
+}
+
+function tiebreakerCardSetup() {
+  const card = document.getElementById('tiebreaker-card');
+  const btn = document.getElementById('tiebreaker-btn');
+  const text = ['Text 2', 'Text 3', 'Text 4'];
+  var i = 0;
+  btn.addEventListener('click', () => {
+    if (i < text.length) {
+      card.innerHTML=text[i];
+      i++;
+    }
   })
 }
 
