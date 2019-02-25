@@ -152,7 +152,7 @@ function updateStanding(updateChange) {
     if (L1 > L2) {
 			return 1;
 		}
-    return tiebraker
+    return 1 // add tiebreaker here
   });
 
   if (updateChange) {
@@ -393,7 +393,7 @@ const womensHTH = {
   },
 	columbia : {
     harvard: { wins: 0, losses: 1 },
-    penn: { wins: 0, losses: 2 }, \
+    penn: { wins: 0, losses: 2 },
     yale: { wins: 0, losses: 1 },
     brown: { wins: 0, losses: 1 },
     cornell: { wins: 1, losses: 1 },
@@ -418,6 +418,7 @@ const womensHTH = {
     princeton: { wins: 0, losses: 2 },
     dartmouth: { wins: 0, losses: 1 }
   }
+}
 	//data from https://ivyleague.com/standings.aspx?standings=1151
 
 //schedules
