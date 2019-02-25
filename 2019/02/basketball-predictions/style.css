@@ -12,7 +12,7 @@ h1, h2, h3 {
 .top-section {
   height: 50vh;
   width: 100%;
-  background-image: url(https://s3.amazonaws.com/snwceomedia/dpn/ba1889b7-ba2d-4a86-86c9-ef45f18e2bfb.original.png);
+  background-image: url('./assets/bballm.svg');
   background-color: #607EA0;
   background-position: 70px center;
   background-repeat: no-repeat;
@@ -83,11 +83,11 @@ h1, h2, h3 {
 }
 
 .rank-cell {
-  width: 15%;
+  width: 10%;
 }
 
 .school-cell {
-  width: 40%;
+  width: 45%;
 }
 
 .change-cell {
@@ -251,6 +251,18 @@ td:first-child {
   background: #A3AFC1;
 }
 
+.women-btn {
+  background-color: #c64b4bc7;
+}
+
+.women-btn:hover {
+  background-color: #c64b4b;
+}
+
+.women-btn.winning {
+  background-color: #c64b4b;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -276,7 +288,11 @@ footer {
 
 .women {
   background-color: #c64b4b;
-  background-image: url(https://s3.amazonaws.com/snwceomedia/dpn/f133d949-18a3-4869-94c7-b12893393caa.original.png);
+}
+
+.women-header {
+  background-color: #c64b4b;
+  background-image: url('./assets/bballw.svg');
 }
 
 .women-accent {
