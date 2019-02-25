@@ -164,6 +164,18 @@ function updateStanding(updateChange) {
 
 function calcChanges() {
   // implement change between positions
+  const standings = isMen ? mensStandings : womensStandings;
+  const original = isMen ? mensOriginalStandings : womensOriginalStandings;
+
+  for (var i = 0; i < standings.length; i++) {
+    for (var j = 0; j < original.length; j++) {
+      if (standings[i].school === original[j].school) {
+        standings[i].change = i - j;
+      }
+    }
+  }
+
+  console.log(standings);
 }
 
 // first tiebreaker scenario
