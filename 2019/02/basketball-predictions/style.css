@@ -154,6 +154,11 @@ h2.section-title {
   font-size: 48px;
 }
 
+.tb_title {
+  color: rgb(240, 117, 53);
+  text-align: left;
+}
+
 h3.section-title {
   margin-bottom: 16px;
   margin-top: 15px;
@@ -276,6 +281,57 @@ footer {
 
 .women-accent {
   background-color: #c64b4bc7;
+}
+
+.tiebreakers_left {
+  text-align: left;
+  margin-left: 60px;
+}
+
+.tiebreakers_right {
+  border-top: solid;
+  border-width: thick;
+  border-color: rgb(97, 127, 161);
+  margin-top: 65px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  height: 75%;
+  width: 70%;
+  margin-left: 100px;
+}
+
+.tb_description_above {
+  margin-bottom: 5px;
+  margin-top: -5px;
+}
+
+.tb_description_below {
+  margin-bottom: 0px;
+}
+
+.with_sideline {
+  padding-left: 32px;
+  border-left: solid;
+  border-left-color: rgb(251, 227, 215);
+  margin-left: 15px;
+}
+
+.number {
+  margin-top: 50px;
+  margin-left: 20px;
+  background-color: rgb(247, 192, 165);
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.4;
+  color: white;
+  font-weight: bold;
+}
+
+.card_step {
+  margin-top: 50px;
+  margin-left: 80px;
 }
 
 @media only screen and (max-width: 992px) {
