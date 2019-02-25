@@ -55,7 +55,7 @@ function loadMatches(matches, dateName) {
     const game = schedule[dateName][i];
     const away = match.getElementsByClassName('away')[0];
     away.getElementsByClassName('team-name')[0].innerHTML = game.away;
-    away.getElementsByClassName('record')[0].innerHTML = `(${getRecord(game.home.toLowerCase())})`;
+    away.getElementsByClassName('record')[0].innerHTML = `(${getRecord(game.away.toLowerCase())})`;
     away.getElementsByClassName('logo')[0].src = `assets/${game.away.toLowerCase()}.svg`;
     away.getElementsByClassName('win-btn')[0].setAttribute('data-team', game.away.toLowerCase());
     const home = match.getElementsByClassName('home')[0];
@@ -123,15 +123,22 @@ function updateScore(winner, loser, initialClick) {
   winner = winner.toLowerCase();
   loser = loser.toLowerCase();
   const record = isMen ? mensRecords : womensRecords;
+  const hth = isMen ? mensHTH : womensHTH;
 
   if (initialClick) {
     record[winner].wins += 1;
     record[loser].losses += 1;
+    hth[winner][loser].wins += 1;
+    hth[loser][winner].losses += 1;
   } else {
     record[winner].wins += 1;
     record[winner].losses -= 1;
     record[loser].wins -= 1
     record[loser].losses += 1;
+    hth[winner][loser].wins += 1;
+    hth[winner][loser].losses -= 1;
+    hth[loser][winner].losses += 1;
+    hth[loser][winner].wins -= 1;
   }
 
   updateStanding(true)
@@ -140,13 +147,14 @@ function updateScore(winner, loser, initialClick) {
 function updateStanding(updateChange) {
   const standings = isMen ? mensStandings : womensStandings;
   const record = isMen ? mensRecords : womensRecords;
+  const previousStandings = standings.slice(0);
 
   standings.sort((team1, team2) => {
 		const W1 = record[team1.school.toLowerCase()].wins;
 		const W2 = record[team2.school.toLowerCase()].wins;
 		const L1 = record[team1.school.toLowerCase()].losses;
 		const L2 = record[team2.school.toLowerCase()].losses;
-
+    console.log();
 		// compare wins
 		if (W1 > W2) {
 			return -1;
@@ -161,7 +169,7 @@ function updateStanding(updateChange) {
     if (L1 > L2) {
 			return 1;
 		}
-    return 1 // add tiebreaker here
+    return headToHead(team1.school.toLowerCase(), team2.school.toLowerCase(), previousStandings);
   });
 
   if (updateChange) {
@@ -175,10 +183,6 @@ function calcChanges() {
   // implement change between positions
   const standings = isMen ? mensStandings : womensStandings;
   const original = isMen ? mensOriginalStandings : womensOriginalStandings;
-  console.log('STANDINGS!!!!');
-  console.log(standings);
-  console.log('ORIGINAL!!!!');
-  console.log(original);
 
   for (var i = 0; i < standings.length; i++) {
     for (var j = 0; j < original.length; j++) {
@@ -190,55 +194,54 @@ function calcChanges() {
 }
 
 // first tiebreaker scenario
-function headToHead(team1, team2) {
+function headToHead(team1, team2, previousStandings) {
 	const record = isMen ? mensHTH : womensHTH;
 	const team1Wins = record[team1][team2].wins;
+  // console.log(record);
 	const team2Wins = record[team2][team1].wins;
 	return team1Wins > team2Wins ? -1 :
-				 team1Wins < team2Wins ?  1 : compareToTopSeed(team1, team2, gender);
+				 team1Wins < team2Wins ?  1 : compareToTopSeed(team1, team2, previousStandings);
 }
 
 // second tiebreaker scenario
-function compareToTopSeed(team1, team2) {
+function compareToTopSeed(team1, team2, previousStandings) {
 	const hth = isMen ? mensHTH : womensHTH;
 	const record = isMen ? mensRecords : womensRecords;
-	const standings = sortedTeams(gender);
-	for (var i in standings) {
-		const team = standings[i];
-		if (team === team1 || team === team2) continue;
 
-		var team1Wins = hth[team1][team].wins;
-		var team2Wins = hth[team2][team].wins;
+  previousStandings.forEach((team, i) => {
+    if (team === team1 || team === team2) continue;
 
-		// check if this team has the same record as any other teams
-		const teamWins = record[team].wins;
-		const teamLosses = record[team].losses;
-		for (var j in standings) {
-			const compTeam = standings[j];
-			if (compTeam === team || compTeam === team1 || compTeam === team2) continue;
+    var team1Wins = hth[team1][team].wins;
+    var team2Wins = hth[team2][team].wins;
 
-			// if so, we need to compare against the combined records
-			if (teamWins == record[compTeam].wins && teamLosses == record[compTeam].losses) {
-				team1Wins += hth[team1][compTeam].wins;
-				team2Wins += hth[team2][compTeam].wins;
-			}
-		}
+    // check if this team has the same record as any other teams
+    const teamWins = record[team].wins;
+    const teamLosses = record[team].losses;
+    for (var j in previousStandings) {
+      const compTeam = previousStandings[j];
+      if (compTeam === team || compTeam === team1 || compTeam === team2) continue;
+
+      // if so, we need to compare against the combined records
+      if (teamWins == record[compTeam].wins && teamLosses == record[compTeam].losses) {
+        team1Wins += hth[team1][compTeam].wins;
+        team2Wins += hth[team2][compTeam].wins;
+      }
+    }
 
 
-		// check if one team has done better against others
-		if (team1Wins > team2Wins) {
-			return -1;
-		} else if (team1Wins < team2Wins) {
-			return 1;
-		}
-	}
-
+    // check if one team has done better against others
+    if (team1Wins > team2Wins) {
+      return -1;
+    } else if (team1Wins < team2Wins) {
+      return 1;
+    }
+  })
 	// if we compare all teams and they're still the same, go to the third tiebreaker
-	return compareRatings(team1, team2, gender);
+	return compareRatings(team1, team2);
 }
 
 // third tiebreaker scenario
-function compareRatings(team1, team2, gender) {
+function compareRatings(team1, team2) {
 	const ratings = isMen ? mensRatings : womensRatings;
 	return ratings[team1] < ratings[team2] ? -1 :
 				 ratings[team1] > ratings[team2] ?  1 :
@@ -328,7 +331,7 @@ const mensHTH = {
     brown: { wins: 0, losses: 1 },
     cornell: { wins: 1, losses: 1 },
     princeton: { wins: 0, losses: 2 },
-    dartmouth: { wins: 1, losses: 0 }
+    dartmouth: { wins: 0, losses: 1 }
   },
 	brown : {
     harvard: { wins: 1, losses: 1 },
@@ -337,40 +340,40 @@ const mensHTH = {
     columbia: { wins: 1, losses: 0 },
     cornell: { wins: 0, losses: 1 },
     princeton: { wins: 1, losses: 0 },
-    dartmouth: { wins: 1, losses: 1 }
+    dartmouth: { wins: 2, losses: 0 }
   },
 	cornell : {
-    harvard: { wins: 0, losses: 2 },
-    penn: { wins: 0, losses: 2 },
+    harvard: { wins: 1, losses: 0 },
+    penn: { wins: 1, losses: 1 },
     yale: { wins: 0, losses: 1 },
     columbia: { wins: 1, losses: 1 },
     brown: { wins: 1, losses: 0 },
-    princeton: { wins: 1, losses: 1 },
+    princeton: { wins: 0, losses: 2 },
     dartmouth: { wins: 1, losses: 0 }
   },
 	princeton : {
     harvard: { wins: 0, losses: 1 },
-    penn: { wins: 0, losses: 2 },
+    penn: { wins: 2, losses: 0 },
     yale: { wins: 1, losses: 0 },
-    columbia: { wins: 1, losses: 1 },
+    columbia: { wins: 2, losses: 0 },
     brown: { wins: 0, losses: 1 },
-    cornell: { wins: 1, losses: 1 },
-    dartmouth: { wins: 0, losses: 1 }
+    cornell: { wins: 2, losses: 0 },
+    dartmouth: { wins: 1, losses: 0 }
   },
 	dartmouth : {
-    harvard: { wins: 0, losses: 2 },
+    harvard: { wins: 1, losses: 1 },
     penn: { wins: 0, losses: 1 },
     yale: { wins: 0, losses: 2 },
-    columbia: { wins: 0, losses: 1 },
-    brown: { wins: 1, losses: 1 },
+    columbia: { wins: 1, losses: 0 },
+    brown: { wins: 0, losses: 2 },
     cornell: { wins: 0, losses: 1 },
-    princeton: { wins: 1, losses: 0 }
+    princeton: { wins: 0, losses: 1 }
   }
 }
 
 const womensHTH = {
 	princeton : {
-    penn: { wins: 2, losses: 0 },
+    penn: { wins: 0, losses: 1 },
     harvard: { wins: 1, losses: 0 },
     yale: { wins: 0, losses: 1 },
     dartmouth: { wins: 1, losses: 0 },
@@ -379,8 +382,8 @@ const womensHTH = {
     cornell: { wins: 2, losses: 0 }
   },
 	penn : {
-    princeton: { wins: 0, losses: 2 },
-    harvard: { wins: 1, losses: 0 },
+    princeton: { wins: 1, losses: 2 },
+    harvard: { wins: 0, losses: 1},
     yale: { wins: 1, losses: 0 },
     dartmouth: { wins: 1, losses: 0 },
     brown: { wins: 1, losses: 0 },
@@ -388,37 +391,37 @@ const womensHTH = {
     cornell: { wins: 2, losses: 0 }
   },
 	harvard : {
-    princeton: { wins: 0, losses: 1 },
-    penn: { wins: 0, losses: 1 },
+    princeton: { wins: 1, losses: 0},
+    penn: { wins: 1, losses: 0},
     yale: { wins: 1, losses: 1 },
-    dartmouth: { wins: 1, losses: 1 },
+    dartmouth: { wins: 2, losses: 0 },
     brown: { wins: 2, losses: 0 },
-    columbia: { wins: 1, losses: 0 },
+    columbia: { wins: 0, losses: 1 },
     cornell: { wins: 1, losses: 0 }
   },
 	yale : 	{
     princeton: { wins: 1, losses: 0 },
-    penn: { wins: 0, losses: 1 },
+    penn: { wins: 0, losses: 1},
     harvard: { wins: 1, losses: 1 },
     dartmouth: { wins: 1, losses: 1 },
     brown: { wins: 1, losses: 1 },
     columbia: { wins: 1, losses: 0 },
-    cornell: { wins: 1, losses: 0 }
+    cornell: { wins: 0, losses: 1 }
   },
 	dartmouth : {
     princeton: { wins: 0, losses: 1 },
     penn: { wins: 0, losses: 1 },
-    harvard: { wins: 1, losses: 1 },
+    harvard: { wins: 0, losses: 2 },
     yale: { wins: 1, losses: 1 },
     brown: { wins: 2, losses: 0 },
     columbia: { wins: 1, losses: 0 },
     cornell: { wins: 1, losses: 0 }
   },
 	columbia : {
-    harvard: { wins: 0, losses: 1 },
+    harvard: { wins: 1, losses: 0 },
     penn: { wins: 0, losses: 2 },
     yale: { wins: 0, losses: 1 },
-    brown: { wins: 0, losses: 1 },
+    brown: { wins: 1, losses: 0 },
     cornell: { wins: 1, losses: 1 },
     princeton: { wins: 0, losses: 2 },
     dartmouth: { wins: 0, losses: 1 }
@@ -427,7 +430,7 @@ const womensHTH = {
     harvard: { wins: 0, losses: 2 },
     penn: { wins: 0, losses: 1 },
     yale: { wins: 1, losses: 1 },
-    columbia: { wins: 1, losses: 0 },
+    columbia: { wins: 0, losses: 1 },
     cornell: { wins: 0, losses: 1 },
     princeton: { wins: 0, losses: 1 },
     dartmouth: { wins: 0, losses: 2 }
@@ -435,7 +438,7 @@ const womensHTH = {
 	cornell : {
     harvard: { wins: 0, losses: 1 },
     penn: { wins: 0, losses: 2 },
-    yale: { wins: 0, losses: 1 },
+    yale: { wins: 1, losses: 0 },
     columbia: { wins: 1, losses: 1 },
     brown: { wins: 1, losses: 0 },
     princeton: { wins: 0, losses: 2 },
