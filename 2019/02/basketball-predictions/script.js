@@ -24,7 +24,12 @@ function toggleTeam() {
   isMen = !isMen;
   loadData();
   loadStandings();
-  document.getElementById('top-section').classList.toggle('women');
+  const btns = Array.from(document.getElementsByClassName('win-btn'));
+  btns.forEach(btn => {
+    btn.classList.reomve('winning');
+    btn.classList.toggle('women-btn');
+  })
+  document.getElementById('top-section').classList.toggle('women-header');
   document.getElementById('top-section-overlap').classList.toggle('women');
   document.getElementById('standings-header').classList.toggle('women');
   document.getElementById('top-row').classList.toggle('women-accent');
@@ -40,11 +45,12 @@ function loadData() {
 }
 
 function setOriginalStandings() {
-  const original = isMen ? mensOriginalStandings : womensOriginalStandings;
-  const standings = isMen ? mensStandings : womensStandings;
+  mensStandings.forEach(team => {
+    mensOriginalStandings.push(team);
+  })
 
-  standings.forEach(team => {
-    original.push(team);
+  womensStandings.forEach(team => {
+    womensOriginalStandings.push(team);
   })
 }
 
