@@ -131,10 +131,10 @@ i {
 }
 
 .neutral {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  border-width: 2px 2px 2px 2px;
-  border-color: #c4c16e;
+  border-width: 2px 0px 0px 0px;
+  padding: 1px 5px;
+  background-color: #adafb2;
+  border-color: #adafb2;
 }
 
 .logo-img {
@@ -205,7 +205,7 @@ td p {
   vertical-align: middle;
   margin-left: 10px;
   margin-right: 10px;
-  width: 25px;
+  width: 40px;
 }
 
 
