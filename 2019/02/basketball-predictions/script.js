@@ -5,8 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // initially load men's data
   loadData();
   updateStanding(false)
-  setOriginalStandings();
-
+  setMenOriginalStandings();
   loadStandings();
 
   // create listeners for win buttons
@@ -22,12 +21,17 @@ document.addEventListener("DOMContentLoaded", () => {
 /* Load in data based on given team and toggle banner colors */
 function toggleTeam() {
   isMen = !isMen;
+  updateStanding(false)
+  if (!isMen) {
+    setWomensOriginalStandings();
+  }
   loadData();
   loadStandings();
   const btns = Array.from(document.getElementsByClassName('win-btn'));
   btns.forEach(btn => {
-    btn.classList.reomve('winning');
+    btn.classList.remove('winning');
     btn.classList.toggle('women-btn');
+    btn.innerHTML = 'WIN?'
   })
   document.getElementById('top-section').classList.toggle('women-header');
   document.getElementById('top-section-overlap').classList.toggle('women');
@@ -44,13 +48,15 @@ function loadData() {
   loadMatches(matches.slice(12), 'mar09');
 }
 
-function setOriginalStandings() {
+function setMenOriginalStandings() {
   mensStandings.forEach(team => {
-    mensOriginalStandings.push(team);
+    mensOriginalStandings.push(team.school);
   })
+}
 
+function setWomensOriginalStandings() {
   womensStandings.forEach(team => {
-    womensOriginalStandings.push(team);
+    womensOriginalStandings.push(team.school);
   })
 }
 
@@ -153,7 +159,8 @@ function updateScore(winner, loser, initialClick) {
 function updateStanding(updateChange) {
   const standings = isMen ? mensStandings : womensStandings;
   const record = isMen ? mensRecords : womensRecords;
-  const previousStandings = standings.slice(0);
+  const original = isMen ? mensOriginalStandings : womensOriginalStandings;
+  const previousStandings = original.slice(0);
 
   standings.sort((team1, team2) => {
 		const W1 = record[team1.school.toLowerCase()].wins;
@@ -175,12 +182,14 @@ function updateStanding(updateChange) {
     if (L1 > L2) {
 			return 1;
 		}
-    return headToHead(team1.school.toLowerCase(), team2.school.toLowerCase(), previousStandings);
+    return headToHead(team1, team2, previousStandings);
   });
 
   if (updateChange) {
     calcChanges();
   }
+  console.log('original');
+  console.log(mensOriginalStandings);
 
   loadStandings();
 }
@@ -192,7 +201,7 @@ function calcChanges() {
 
   for (var i = 0; i < standings.length; i++) {
     for (var j = 0; j < original.length; j++) {
-      if (standings[i].school === original[j].school) {
+      if (standings[i].school === original[j]) {
         standings[i].change = j - i;
       }
     }
@@ -201,6 +210,8 @@ function calcChanges() {
 
 // first tiebreaker scenario
 function headToHead(team1, team2, previousStandings) {
+  team1 = team1.school.toLowerCase();
+  team2 = team2.school.toLowerCase();
 	const record = isMen ? mensHTH : womensHTH;
 	const team1Wins = record[team1][team2].wins;
   // console.log(record);
@@ -214,26 +225,28 @@ function compareToTopSeed(team1, team2, previousStandings) {
 	const hth = isMen ? mensHTH : womensHTH;
 	const record = isMen ? mensRecords : womensRecords;
 
+  console.log(hth);
   previousStandings.forEach((team, i) => {
-    if (team === team1 || team === team2) continue;
-
+    team = team.toLowerCase();
+    if (team === team1 || team === team2) return;
+    console.log(team);
     var team1Wins = hth[team1][team].wins;
     var team2Wins = hth[team2][team].wins;
 
     // check if this team has the same record as any other teams
     const teamWins = record[team].wins;
     const teamLosses = record[team].losses;
-    for (var j in previousStandings) {
-      const compTeam = previousStandings[j];
-      if (compTeam === team || compTeam === team1 || compTeam === team2) continue;
+
+    previousStandings.forEach(compTeam => {
+      compTeam = compTeam.toLowerCase();
+      if (compTeam === team || compTeam === team1 || compTeam === team2) return;
 
       // if so, we need to compare against the combined records
       if (teamWins == record[compTeam].wins && teamLosses == record[compTeam].losses) {
         team1Wins += hth[team1][compTeam].wins;
         team2Wins += hth[team2][compTeam].wins;
       }
-    }
-
+    })
 
     // check if one team has done better against others
     if (team1Wins > team2Wins) {
@@ -508,4 +521,27 @@ const scheduleW = {
     { home: 'Columbia', away: 'Harvard'},
     { home: 'Cornell', away: 'Dartmouth'}
   ]
+}
+
+// averaged ratings
+const mensRatings = {
+	penn: 		 124.5,
+	harvard: 	 144.25,
+	yale: 		 187,
+	princeton: 194.75,
+	columbia:  230,
+	brown: 		 254.75,
+	cornell: 	 256,
+	dartmouth: 291.25
+}
+
+const womensRatings = {
+	princeton: 39,
+	penn: 		 73.5,
+	harvard:	 102,
+	dartmouth: 121.5,
+	yale: 		 128,
+	brown: 		 179.5,
+	columbia:  209,
+	cornell: 	 265
 }
