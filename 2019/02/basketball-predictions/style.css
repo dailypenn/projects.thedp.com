@@ -48,6 +48,7 @@ li {
 }
 
 .toggle-select {
+  flex-direction: column;
   margin-right: 10px;
 }
 
@@ -423,6 +424,7 @@ footer {
 
   .standings-header {
     align-items: flex-start;
+    flex-direction: column;
   }
 
   .toggle-select {

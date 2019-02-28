@@ -435,7 +435,7 @@ var mensHTH = {
 	princeton : {
     harvard: { wins: 0, losses: 1 },
     penn: { wins: 2, losses: 0 },
-    yale: { wins: 1, losses: 0 },
+    yale: { wins: 0, losses: 1 },
     columbia: { wins: 2, losses: 0 },
     brown: { wins: 0, losses: 1 },
     cornell: { wins: 2, losses: 0 },
@@ -510,7 +510,7 @@ const mensOriginalHTH = {
 	princeton : {
     harvard: { wins: 0, losses: 1 },
     penn: { wins: 2, losses: 0 },
-    yale: { wins: 1, losses: 0 },
+    yale: { wins: 0, losses: 1 },
     columbia: { wins: 2, losses: 0 },
     brown: { wins: 0, losses: 1 },
     cornell: { wins: 2, losses: 0 },
@@ -529,7 +529,7 @@ const mensOriginalHTH = {
 
 var womensHTH = {
 	princeton : {
-    penn: { wins: 0, losses: 1 },
+    penn: { wins: 1, losses: 1 },
     harvard: { wins: 1, losses: 0 },
     yale: { wins: 0, losses: 1 },
     dartmouth: { wins: 1, losses: 0 },
@@ -538,7 +538,7 @@ var womensHTH = {
     cornell: { wins: 2, losses: 0 }
   },
 	penn : {
-    princeton: { wins: 1, losses: 2 },
+    princeton: { wins: 1, losses: 1 },
     harvard: { wins: 0, losses: 1},
     yale: { wins: 1, losses: 0 },
     dartmouth: { wins: 1, losses: 0 },
@@ -547,7 +547,7 @@ var womensHTH = {
     cornell: { wins: 2, losses: 0 }
   },
 	harvard : {
-    princeton: { wins: 1, losses: 0},
+    princeton: { wins: 0, losses: 1},
     penn: { wins: 1, losses: 0},
     yale: { wins: 1, losses: 1 },
     dartmouth: { wins: 2, losses: 0 },
@@ -604,7 +604,7 @@ var womensHTH = {
 
 const womensOriginalHTH = {
 	princeton : {
-    penn: { wins: 0, losses: 1 },
+    penn: { wins: 1, losses: 1 },
     harvard: { wins: 1, losses: 0 },
     yale: { wins: 0, losses: 1 },
     dartmouth: { wins: 1, losses: 0 },
@@ -613,7 +613,7 @@ const womensOriginalHTH = {
     cornell: { wins: 2, losses: 0 }
   },
 	penn : {
-    princeton: { wins: 1, losses: 2 },
+    princeton: { wins: 1, losses: 1 },
     harvard: { wins: 0, losses: 1},
     yale: { wins: 1, losses: 0 },
     dartmouth: { wins: 1, losses: 0 },
@@ -622,7 +622,7 @@ const womensOriginalHTH = {
     cornell: { wins: 2, losses: 0 }
   },
 	harvard : {
-    princeton: { wins: 1, losses: 0},
+    princeton: { wins: 0, losses: 1},
     penn: { wins: 1, losses: 0},
     yale: { wins: 1, losses: 1 },
     dartmouth: { wins: 2, losses: 0 },
