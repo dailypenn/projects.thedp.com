@@ -9,6 +9,10 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
+li {
+  padding-top: 10px;
+}
+
 .top-section {
   height: 50vh;
   width: 100%;
@@ -150,8 +154,13 @@ h2.section-title {
   /* border-bottom: 1px solid #e0e0e0; */
   padding-bottom: 0px;
   margin-bottom: 15px;
-  margin-top: 60px;
   font-size: 48px;
+}
+
+.tb-title {
+  color: rgb(240, 117, 53);
+  text-align: left;
+  padding-right: 100px;
 }
 
 h3.section-title {
@@ -294,6 +303,76 @@ footer {
   background-color: #c64b4bc7;
 }
 
+.tiebreakers-left {
+  text-align: left;
+  margin-left: 60px;
+}
+
+.tiebreakers-card {
+  border-top: solid;
+  border-width: thick;
+  border-color: rgb(97, 127, 161);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  width: 90%;
+  margin-left: 80px;
+  text-align: right;
+}
+
+.tiebreaker-row {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.tiebreaker-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px 20px 10px;
+  text-align: left;
+}
+
+#tiebreaker-btn {
+  margin: 10px;
+  background: white;
+  border: none;
+  color: rgb(240, 117, 53);
+  padding: 10px 25px;
+  margin-left: auto;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tb-description-above {
+  margin-bottom: 5px;
+  margin-top: -5px;
+}
+
+.tb-description-below {
+  margin-bottom: 0px;
+}
+
+.with-sideline {
+  padding-left: 32px;
+  border-left: solid;
+  border-left-color: rgb(240, 117, 53);
+  margin-left: 15px;
+}
+
+.number {
+  background-color: rgb(240, 117, 53);
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.4;
+  color: white;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 992px) {
   .top-section {
     height: 33vh;
@@ -309,12 +388,26 @@ footer {
     background-size: 90%;
   }
 
+  .tiebreakers-left {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .tiebreakers-card {
+    margin: 40px auto;
+    width: 90%;
+  }
+
+  h2.section-title {
+    font-size: 40px;
+  }
+
   .standings-header {
-    flex-direction: column;
     align-items: flex-start;
   }
 
   .toggle-select {
     margin-bottom: 10px;
+    background-color: white;
   }
 }
