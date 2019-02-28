@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+        "title": "Who will make it to the Ivy League Basketball Tournaments?",
+        "author": "Web Dev: Alex Graves, Emily Saperstein, Ian Ong, Liam Morrissy Design: Jess Tan, Gillian Diebold, Ian Ong, Allison Kim",
+        "section": "Sports",
+        "date": "February 2019",
+        "description": "With just two weekends left in the Ivy League basketball seasons, seeding for the Ivy Tournaments are still up for grabs. Each game carries importance in deciding which teams will lock up a trip to Yale. Predict which team will win each game and this tool will tell you what four teams will be playing for NCAA Tournament berths.",
+        "sponsored": false,
+        "link": "https://projects.thedp.com/2019/02/basketball-predictions/",
+        "image": "https://snworksceo.imgix.net/dpn/5a552a54-5fca-4d67-9a30-2e918d47c023.sized-1000x1000.png",
+        "alt": "Who will make it to the Ivy League Basketball Tournaments?"
+      },
+    {
       "title": "2018: The Year in Review",
       "author": "Web Dev: Daniel Salib, Emily Saperstein, Ian Ong, Alex Graves",
       "section": "Year in Review",
@@ -21,17 +32,6 @@
       "link": "https://projects.thedp.com/2018/11/basketball-preview/",
       "image": "https://snworksceo.imgix.net/dpn/db3bbb49-9e59-4a7b-a85d-41aaacbf0b96.sized-1000x1000.png",
       "alt": "basketball preview 2018"
-    },
-    {
-      "title": "Midterm Elections Guide 2018",
-      "author": "Web Dev: Jamie Tomlinson, Daniel Salib, Liam Morrissy, Ian Ong",
-      "section": "Guides",
-      "date": "November 2018",
-      "description": "Two years after the election that placed a Penn alumnus in the White House, much is at stake as the Penn community prepares to vote in what many experts call the most important midterm elections in our lifetimes. Here's what you need to know.",
-      "sponsored": false,
-      "link": "https://projects.thedp.com/2018/10/voters-guide/",
-      "image": "https://snworksceo.imgix.net/dpn/1faeaaa3-fa0e-479c-af08-5abaaf46a735.sized-1000x1000.jpg",
-      "alt": "midterm elections guide 2018"
     }
   ],
   "articles": [
