@@ -38,6 +38,7 @@ function toggleTeam() {
   document.getElementById('top-section-overlap').classList.toggle('women');
   document.getElementById('standings-header').classList.toggle('women');
   document.getElementById('top-row').classList.toggle('women-accent');
+  document.getElementsByClassName('tiebreakers-card')[0].classList.toggle('women-border');
 }
 
 /* Load in match data by date */

@@ -20,7 +20,7 @@ li {
   background-color: #607EA0;
   background-position: 70px center;
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 60%;
 }
 
 .top-section-overlap {
@@ -303,6 +303,10 @@ footer {
   background-color: #c64b4bc7;
 }
 
+.women-border {
+  border-color: rgb(198, 75, 75) !important;
+}
+
 .tiebreakers-left {
   text-align: left;
   margin-left: 60px;
@@ -312,9 +316,10 @@ footer {
   border-top: solid;
   border-width: thick;
   border-color: rgb(97, 127, 161);
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   width: 90%;
-  margin-left: 80px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: right;
 }
 
