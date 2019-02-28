@@ -32,7 +32,7 @@ function toggleTeam() {
   btns.forEach(btn => {
     btn.classList.remove('winning');
     btn.classList.toggle('women-btn');
-    btn.innerHTML = 'WIN?'
+    btn.innerHTML = 'WIN?';
   })
   document.getElementById('top-section').classList.toggle('women-header');
   document.getElementById('top-section-overlap').classList.toggle('women');
@@ -80,7 +80,6 @@ function loadMatches(matches, dateName) {
   });
 }
 
-
 function loadStandings() {
   const standings = isMen ? mensStandings : womensStandings;
   const rows = document.getElementsByClassName('standings-table');
@@ -102,7 +101,6 @@ function loadStandings() {
 }
 
 /* Get a given school's record */
-// TODO: what is the decimal value that is on the page initially?
 function getRecord(school) {
   const records = isMen ? mensRecords : womensRecords;
   return `${records[school].wins}-${records[school].losses}`;
@@ -113,9 +111,7 @@ function createWinListeners() {
   const btns = Array.from(document.getElementsByClassName('win-btn'));
   btns.forEach(btn => {
     btn.addEventListener('click', (e) => {
-      if (e.target.classList.contains('winning')) {
-        return;
-      }
+      if (e.target.classList.contains('winning')) { return; }
 
       const match = e.target.parentElement.parentElement;
       const home = e.target.parentElement.classList.contains('home');
@@ -182,7 +178,8 @@ function updateScore(winner, loser, initialClick) {
     hth[loser][winner].wins -= 1;
   }
 
-  updateStanding(true)
+  updateStanding(true);
+  loadData();
 }
 
 function updateStanding(updateChange) {
@@ -196,7 +193,6 @@ function updateStanding(updateChange) {
 		const W2 = record[team2.school.toLowerCase()].wins;
 		const L1 = record[team1.school.toLowerCase()].losses;
 		const L2 = record[team2.school.toLowerCase()].losses;
-    console.log();
 		// compare wins
 		if (W1 > W2) {
 			return -1;
@@ -217,8 +213,6 @@ function updateStanding(updateChange) {
   if (updateChange) {
     calcChanges();
   }
-  console.log('original');
-  console.log(mensOriginalStandings);
 
   loadStandings();
 }
@@ -243,7 +237,6 @@ function headToHead(team1, team2, previousStandings) {
   team2 = team2.school.toLowerCase();
 	const record = isMen ? mensHTH : womensHTH;
 	const team1Wins = record[team1][team2].wins;
-  // console.log(record);
 	const team2Wins = record[team2][team1].wins;
 	return team1Wins > team2Wins ? -1 :
 				 team1Wins < team2Wins ?  1 : compareToTopSeed(team1, team2, previousStandings);
@@ -254,11 +247,10 @@ function compareToTopSeed(team1, team2, previousStandings) {
 	const hth = isMen ? mensHTH : womensHTH;
 	const record = isMen ? mensRecords : womensRecords;
 
-  console.log(hth);
   previousStandings.forEach((team, i) => {
     team = team.toLowerCase();
     if (team === team1 || team === team2) return;
-    console.log(team);
+
     var team1Wins = hth[team1][team].wins;
     var team2Wins = hth[team2][team].wins;
 
@@ -342,7 +334,6 @@ const womensRecords = {
 	columbia: { wins: 3, losses: 7}
 }
 
-// head-to-head records
 // head-to-head records
 const mensHTH = {
 	harvard : {
