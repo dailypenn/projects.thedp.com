@@ -30,6 +30,22 @@
 
     gtag('config', 'UA-707447-4');
   </script>
+
+  <!-- DFP Ads -->
+  <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+  <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+  </script>
+  <script>
+    googletag.cmd.push(function() {
+      googletag.defineSlot('/12234093/DP.com-mobile-leaderboard', [320, 50], 'div-gpt-ad-1485118541142-0').addService(googletag.pubads());
+      googletag.defineSlot('/12234093/DP.com-Leaderboard', [728, 90], 'div-gpt-ad-1485118541142-1').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    });
+  </script>
+
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <a href="https://www.thedp.com" class="header-link" target="_blank">
       <img class="header" src="https://s3.amazonaws.com/snwceomedia/dpn/aa058626-f082-47a5-9191-86c645d2986b.original.png" alt="The Daily Pennsylvanian" width="250">
@@ -114,6 +130,26 @@
   </div>
 
   <div class="container">
+    <hr class="margin-top">
+    <div class="ad">
+      <div class="d-none d-md-block">
+        <!-- /12234093/DP.com-Leaderboard -->
+        <div id='div-gpt-ad-1485118541142-1' style='height:90px; width:728px;'>
+          <script>
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1485118541142-1'); });
+          </script>
+        </div>
+      </div>
+      <div class="d-md-none">
+        <!-- /12234093/DP.com-mobile-leaderboard -->
+        <div id='div-gpt-ad-1485118541142-0' style='height:50px; width:320px;'>
+          <script>
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1485118541142-0'); });
+          </script>
+        </div>
+      </div>
+    </div>
+    <hr>
     <div class="row tiebreaker-row">
       <div class=col-md-7>
         <h2 class="section-title tb-title">RESOLVING TIEBREAKERS</h2>
