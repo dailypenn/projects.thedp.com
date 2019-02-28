@@ -1,11 +1,12 @@
 var isMen = true;
-const mensOriginalStandings = []
-const womensOriginalStandings = []
+var mensOriginalStandings = []
+var womensOriginalStandings = []
 document.addEventListener("DOMContentLoaded", () => {
   // initially load men's data
   loadData();
   updateStanding(false)
   setMenOriginalStandings();
+  console.log(mensOriginalStandings);
   loadStandings();
 
   // create listeners for win buttons
@@ -26,6 +27,7 @@ function toggleTeam() {
   if (!isMen) {
     setWomensOriginalStandings();
   }
+  resetStats();
   loadData();
   loadStandings();
   const btns = Array.from(document.getElementsByClassName('win-btn'));
@@ -52,13 +54,13 @@ function loadData() {
 
 function setMenOriginalStandings() {
   mensStandings.forEach(team => {
-    mensOriginalStandings.push(team.school);
+    mensOriginalStandings.push({school: team.school, change: 0});
   })
 }
 
 function setWomensOriginalStandings() {
   womensStandings.forEach(team => {
-    womensOriginalStandings.push(team.school);
+    womensOriginalStandings.push({school: team.school, change: 0});
   })
 }
 
@@ -106,6 +108,23 @@ function loadStandings() {
 function getRecord(school) {
   const records = isMen ? mensRecords : womensRecords;
   return `${records[school].wins}-${records[school].losses}`;
+}
+
+function resetStats() {
+  mensStandings = []
+  womensStandings = []
+  mensOriginalStandings.forEach(team => {
+    mensStandings.push({school: team.school, change: 0});
+  })
+
+  womensOriginalStandings.forEach(team => {
+    womensStandings.push({school: team.school, change: 0});
+  })
+
+  mensRecords = Object.assign(mensOriginalRecords);
+  womensRecords = Object.assign(womensOriginalRecords);
+  mensHTH = Object.assign(mensOriginalHTH);
+  womensHTH = Object.assign(womensOriginalHTH);
 }
 
 /* Sets up event listeners on all of the win buttons */
@@ -223,10 +242,9 @@ function calcChanges() {
   // implement change between positions
   const standings = isMen ? mensStandings : womensStandings;
   const original = isMen ? mensOriginalStandings : womensOriginalStandings;
-
   for (var i = 0; i < standings.length; i++) {
     for (var j = 0; j < original.length; j++) {
-      if (standings[i].school === original[j]) {
+      if (standings[i].school === original[j].school) {
         standings[i].change = j - i;
       }
     }
@@ -250,7 +268,7 @@ function compareToTopSeed(team1, team2, previousStandings) {
 	const record = isMen ? mensRecords : womensRecords;
 
   previousStandings.forEach((team, i) => {
-    team = team.toLowerCase();
+    team = team.school.toLowerCase();
     if (team === team1 || team === team2) return;
 
     var team1Wins = hth[team1][team].wins;
@@ -261,7 +279,7 @@ function compareToTopSeed(team1, team2, previousStandings) {
     const teamLosses = record[team].losses;
 
     previousStandings.forEach(compTeam => {
-      compTeam = compTeam.toLowerCase();
+      compTeam = compTeam.school.toLowerCase();
       if (compTeam === team || compTeam === team1 || compTeam === team2) return;
 
       // if so, we need to compare against the combined records
@@ -292,7 +310,7 @@ function compareRatings(team1, team2) {
 }
 
 // records
-const mensStandings = [
+var mensStandings = [
   {school: 'Penn',change: 0},
   {school: 'Yale', change: 0},
   {school: 'Dartmouth', change: 0},
@@ -303,7 +321,7 @@ const mensStandings = [
   {school:'Columbia', change: 0}
 ];
 
-const womensStandings = [
+var womensStandings = [
   {school: 'Penn',change: 0},
   {school: 'Yale', change: 0},
   {school: 'Dartmouth', change: 0},
@@ -314,7 +332,7 @@ const womensStandings = [
   {school:'Columbia', change: 0}
 ];
 
-const mensRecords = {
+var mensRecords = {
 	penn: { wins: 4, losses: 6},
 	yale: { wins: 8, losses: 2},
 	harvard: { wins: 7, losses: 3},
@@ -322,14 +340,36 @@ const mensRecords = {
 	cornell: { wins: 5, losses: 5},
 	brown: { wins: 5, losses: 5},
 	dartmouth: { wins: 2, losses: 8},
-	columbia: { wins: 2, losses: 8},
+	columbia: { wins: 2, losses: 8}
 }
 
-const womensRecords = {
-	penn: { wins: 8, losses: 1},
+const mensOriginalRecords = {
+  penn: { wins: 4, losses: 6},
+	yale: { wins: 8, losses: 2},
+	harvard: { wins: 7, losses: 3},
+	princeton: { wins: 7, losses: 3},
+	cornell: { wins: 5, losses: 5},
+	brown: { wins: 5, losses: 5},
+	dartmouth: { wins: 2, losses: 8},
+	columbia: { wins: 2, losses: 8}
+}
+
+var womensRecords = {
+  penn: { wins: 8, losses: 2},
 	yale: { wins: 5, losses: 5},
 	harvard: { wins: 7, losses: 3},
-	princeton: { wins: 7, losses: 1},
+	princeton: { wins: 8, losses: 2},
+	cornell: { wins: 3, losses: 7},
+	brown: { wins: 1, losses: 9},
+	dartmouth: { wins: 5, losses: 5},
+	columbia: { wins: 3, losses: 7}
+}
+
+const womensOriginalRecords = {
+	penn: { wins: 8, losses: 2},
+	yale: { wins: 5, losses: 5},
+	harvard: { wins: 7, losses: 3},
+	princeton: { wins: 8, losses: 2},
 	cornell: { wins: 3, losses: 7},
 	brown: { wins: 1, losses: 9},
 	dartmouth: { wins: 5, losses: 5},
@@ -337,7 +377,7 @@ const womensRecords = {
 }
 
 // head-to-head records
-const mensHTH = {
+var mensHTH = {
 	harvard : {
     penn: { wins: 1, losses: 0 },
     yale: { wins: 2, losses: 0 },
@@ -412,7 +452,157 @@ const mensHTH = {
   }
 }
 
-const womensHTH = {
+const mensOriginalHTH = {
+	harvard : {
+    penn: { wins: 1, losses: 0 },
+    yale: { wins: 2, losses: 0 },
+    columbia: { wins: 1, losses: 0 },
+    brown: { wins: 1, losses: 1 },
+    cornell: { wins: 0, losses: 1 },
+    princeton: { wins: 1, losses: 0 },
+    dartmouth: { wins: 1, losses: 1 }
+  },
+	penn : {
+    harvard: { wins: 0, losses: 1 },
+    yale: { wins: 0, losses: 1 },
+    columbia: { wins: 1, losses: 1 },
+    brown: { wins: 1, losses: 0 },
+    cornell: { wins: 1, losses: 1 },
+    princeton: { wins: 0, losses: 2 },
+    dartmouth: { wins: 1, losses: 0 }
+  },
+	yale : {
+    harvard: { wins: 0, losses: 2 },
+    penn: { wins: 1, losses: 0 },
+    columbia: { wins: 1, losses: 0 },
+    brown: { wins: 2, losses: 0 },
+    cornell: { wins: 1, losses: 0 },
+    princeton: { wins: 1, losses: 0 },
+    dartmouth: { wins: 2, losses: 0 }
+  },
+	columbia : {
+    harvard: { wins: 0, losses: 1 },
+    penn: { wins: 1, losses: 1 },
+    yale: { wins: 0, losses: 1 },
+    brown: { wins: 0, losses: 1 },
+    cornell: { wins: 1, losses: 1 },
+    princeton: { wins: 0, losses: 2 },
+    dartmouth: { wins: 0, losses: 1 }
+  },
+	brown : {
+    harvard: { wins: 1, losses: 1 },
+    penn: { wins: 0, losses: 1 },
+    yale: { wins: 0, losses: 2 },
+    columbia: { wins: 1, losses: 0 },
+    cornell: { wins: 0, losses: 1 },
+    princeton: { wins: 1, losses: 0 },
+    dartmouth: { wins: 2, losses: 0 }
+  },
+	cornell : {
+    harvard: { wins: 1, losses: 0 },
+    penn: { wins: 1, losses: 1 },
+    yale: { wins: 0, losses: 1 },
+    columbia: { wins: 1, losses: 1 },
+    brown: { wins: 1, losses: 0 },
+    princeton: { wins: 0, losses: 2 },
+    dartmouth: { wins: 1, losses: 0 }
+  },
+	princeton : {
+    harvard: { wins: 0, losses: 1 },
+    penn: { wins: 2, losses: 0 },
+    yale: { wins: 1, losses: 0 },
+    columbia: { wins: 2, losses: 0 },
+    brown: { wins: 0, losses: 1 },
+    cornell: { wins: 2, losses: 0 },
+    dartmouth: { wins: 1, losses: 0 }
+  },
+	dartmouth : {
+    harvard: { wins: 1, losses: 1 },
+    penn: { wins: 0, losses: 1 },
+    yale: { wins: 0, losses: 2 },
+    columbia: { wins: 1, losses: 0 },
+    brown: { wins: 0, losses: 2 },
+    cornell: { wins: 0, losses: 1 },
+    princeton: { wins: 0, losses: 1 }
+  }
+}
+
+var womensHTH = {
+	princeton : {
+    penn: { wins: 0, losses: 1 },
+    harvard: { wins: 1, losses: 0 },
+    yale: { wins: 0, losses: 1 },
+    dartmouth: { wins: 1, losses: 0 },
+    brown: { wins: 1, losses: 0 },
+    columbia: { wins: 2, losses: 0 },
+    cornell: { wins: 2, losses: 0 }
+  },
+	penn : {
+    princeton: { wins: 1, losses: 2 },
+    harvard: { wins: 0, losses: 1},
+    yale: { wins: 1, losses: 0 },
+    dartmouth: { wins: 1, losses: 0 },
+    brown: { wins: 1, losses: 0 },
+    columbia: { wins: 2, losses: 0 },
+    cornell: { wins: 2, losses: 0 }
+  },
+	harvard : {
+    princeton: { wins: 1, losses: 0},
+    penn: { wins: 1, losses: 0},
+    yale: { wins: 1, losses: 1 },
+    dartmouth: { wins: 2, losses: 0 },
+    brown: { wins: 2, losses: 0 },
+    columbia: { wins: 0, losses: 1 },
+    cornell: { wins: 1, losses: 0 }
+  },
+	yale : 	{
+    princeton: { wins: 1, losses: 0 },
+    penn: { wins: 0, losses: 1},
+    harvard: { wins: 1, losses: 1 },
+    dartmouth: { wins: 1, losses: 1 },
+    brown: { wins: 1, losses: 1 },
+    columbia: { wins: 1, losses: 0 },
+    cornell: { wins: 0, losses: 1 }
+  },
+	dartmouth : {
+    princeton: { wins: 0, losses: 1 },
+    penn: { wins: 0, losses: 1 },
+    harvard: { wins: 0, losses: 2 },
+    yale: { wins: 1, losses: 1 },
+    brown: { wins: 2, losses: 0 },
+    columbia: { wins: 1, losses: 0 },
+    cornell: { wins: 1, losses: 0 }
+  },
+	columbia : {
+    harvard: { wins: 1, losses: 0 },
+    penn: { wins: 0, losses: 2 },
+    yale: { wins: 0, losses: 1 },
+    brown: { wins: 1, losses: 0 },
+    cornell: { wins: 1, losses: 1 },
+    princeton: { wins: 0, losses: 2 },
+    dartmouth: { wins: 0, losses: 1 }
+  },
+	brown : {
+    harvard: { wins: 0, losses: 2 },
+    penn: { wins: 0, losses: 1 },
+    yale: { wins: 1, losses: 1 },
+    columbia: { wins: 0, losses: 1 },
+    cornell: { wins: 0, losses: 1 },
+    princeton: { wins: 0, losses: 1 },
+    dartmouth: { wins: 0, losses: 2 }
+  },
+	cornell : {
+    harvard: { wins: 0, losses: 1 },
+    penn: { wins: 0, losses: 2 },
+    yale: { wins: 1, losses: 0 },
+    columbia: { wins: 1, losses: 1 },
+    brown: { wins: 1, losses: 0 },
+    princeton: { wins: 0, losses: 2 },
+    dartmouth: { wins: 0, losses: 1 }
+  }
+}
+
+const womensOriginalHTH = {
 	princeton : {
     penn: { wins: 0, losses: 1 },
     harvard: { wins: 1, losses: 0 },
