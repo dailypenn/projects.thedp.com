@@ -321,25 +321,25 @@ const womensStandings = [
 ];
 
 const mensRecords = {
-	penn: { wins: 3, losses: 4},
-	yale: { wins: 7, losses: 1},
-	harvard: { wins: 5, losses: 2},
-	princeton: { wins: 5, losses: 3},
-	cornell: { wins: 5, losses: 3},
-	brown: { wins: 3, losses: 5},
-	dartmouth: { wins: 2, losses: 6},
-	columbia: { wins: 1, losses: 7},
+	penn: { wins: 4, losses: 6},
+	yale: { wins: 8, losses: 2},
+	harvard: { wins: 7, losses: 3},
+	princeton: { wins: 7, losses: 3},
+	cornell: { wins: 5, losses: 5},
+	brown: { wins: 5, losses: 5},
+	dartmouth: { wins: 2, losses: 8},
+	columbia: { wins: 2, losses: 8},
 }
 
 const womensRecords = {
-	penn: { wins: 6, losses: 1},
-	yale: { wins: 5, losses: 3},
-	harvard: { wins: 5, losses: 3},
-	princeton: { wins: 5, losses: 2},
-	cornell: { wins: 3, losses: 5},
-	brown: { wins: 1, losses: 7},
-	dartmouth: { wins: 3, losses: 4},
-	columbia: { wins: 3, losses: 5}
+	penn: { wins: 8, losses: 1},
+	yale: { wins: 5, losses: 5},
+	harvard: { wins: 7, losses: 3},
+	princeton: { wins: 7, losses: 1},
+	cornell: { wins: 3, losses: 7},
+	brown: { wins: 1, losses: 9},
+	dartmouth: { wins: 5, losses: 5},
+	columbia: { wins: 3, losses: 7}
 }
 
 // head-to-head records
@@ -552,25 +552,25 @@ const scheduleW = {
   ]
 }
 
-// averaged ratings
+// averaged ratings - relative values
 const mensRatings = {
-	penn: 		 124.5,
-	harvard: 	 144.25,
-	yale: 		 187,
-	princeton: 194.75,
-	columbia:  230,
-	brown: 		 254.75,
-	cornell: 	 256,
-	dartmouth: 291.25
+	penn: 		 100,
+	harvard: 	 120,
+	yale: 		 140,
+	princeton: 60,
+	columbia:  0,
+	brown: 		 80,
+	cornell: 	 20,
+	dartmouth: 40
 }
 
 const womensRatings = {
-	princeton: 39,
-	penn: 		 73.5,
-	harvard:	 102,
-	dartmouth: 121.5,
-	yale: 		 128,
-	brown: 		 179.5,
-	columbia:  209,
-	cornell: 	 265
+	princeton: 120,
+	penn: 		 140,
+	harvard:	 100,
+	dartmouth: 60,
+	yale: 		 80,
+	brown: 		 0,
+	columbia:  20,
+	cornell: 	 40
 }

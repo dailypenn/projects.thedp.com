@@ -118,6 +118,7 @@ i {
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
+  margin: 2px 0;
   padding: 3px;
 }
 
