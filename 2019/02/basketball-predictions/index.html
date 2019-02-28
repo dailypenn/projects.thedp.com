@@ -90,23 +90,29 @@
   </div>
 
   <div class="container">
-    <div class="row">
+    <div class="row tiebreaker-row">
+      <div class=col-md-7>
+        <h2 class="section-title tb-title">RESOLVING TIEBREAKERS</h2>
+      </div>
       <div class="col-md-6">
-        <div class="tiebreakers_left">
-          <h2 class="section-title tb_title">RESOLVING TIEBREAKERS</h2>
-          <div class="with_sideline">
-            <p class="tb_description_above">In the case of a tie, the following steps are taken to resolve the tie.</p>
-            <p class="tb_description_below">(if there are more than two schools tied, records between the tied teams,
-                                where the higher seed goes to the team that has won the most games
-                                against the other teams tied at that spot.)</p>
+        <div class="tiebreakers-left">
+          <div class="with-sideline">
+            <p class="tb-description-above">In the case of a tie, the following steps are taken to resolve the tie.</p>
+            <p class="tb-description-below">If there's a tie between more than two teams, the following steps are taken:</p>
+            <ol>
+              <li>Records between the tied teams, where the higher seed goes to the team that has won the most games against the other teams tied at that spot.</li>
+              <li>Follow the same steps as for a two-team tie.</li>
+            </ol>
           </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="tiebreakers_right">
-          <div class="number">1</div>
-          <p id="tiebreaker-card" class="card_step">Head-to-head competion...</p>
-          <button id="tiebreaker-btn">WIN?</button>
+      <div class="col-md-6 card-col">
+        <div class="tiebreakers-card">
+          <div class="tiebreaker-content">
+            <div class="number">1</div>
+            <p id="tiebreaker-card" class="card-text">Head-to-head competition, in which the higher seed goes to the team that has won the most games against the other team in the tie.</p>
+          </div>
+          <button id="tiebreaker-btn">NEXT</button>
         </div>
       </div>
     </div>

@@ -129,7 +129,9 @@ function createWinListeners() {
 function tiebreakerCardSetup() {
   const card = document.getElementById('tiebreaker-card');
   const btn = document.getElementById('tiebreaker-btn');
-  const text = ['Text 2', 'Text 3', 'Text 4'];
+  const text = ["If a tie still exists, it will be broken by comparing each team's record against the highest seed outside of the tie and continuing through the full league standings if needed. If there's a group of tied teams, the combined records are used.",
+                "Next, an average of the most recent ratings indices (Sagarin, Ken Pom, BPI, and NCAA RPI for the men; Sagarin/RPIratings.com and NCAA RPI for the women) will be used to determine the higher seed.",
+                "If a tie still persists, a draw will be conducted by the Executive Director. (Our tool simulates a coin flip for this case.)"];
   var i = 0;
   btn.addEventListener('click', () => {
     if (i < text.length) {
