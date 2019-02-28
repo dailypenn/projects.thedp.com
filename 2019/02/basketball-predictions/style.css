@@ -16,7 +16,7 @@ li {
 .top-section {
   height: 50vh;
   width: 100%;
-  background-image: url('./assets/bballm.svg');
+  background-image: url('./assets/bballm.png');
   background-color: #607EA0;
   background-position: 70px center;
   background-repeat: no-repeat;
@@ -295,9 +295,13 @@ footer {
   background-color: #c64b4b;
 }
 
+.header {
+  color: white;
+}
+
 .women-header {
   background-color: #c64b4b;
-  background-image: url('./assets/bballw.svg');
+  background-image: url('./assets/bballw.png');
 }
 
 .women-accent {
