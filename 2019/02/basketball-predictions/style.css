@@ -330,17 +330,15 @@ footer {
   text-align: left;
 }
 
-#tiebreaker-btn {
+.tiebreaker-btn {
   margin: 10px;
   background: white;
   border: none;
   color: rgb(240, 117, 53);
-  padding: 10px 25px;
+  padding: 10px 15px;
   margin-left: auto;
   margin-right: 10px;
   text-align: center;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
 .tb-description-above {
