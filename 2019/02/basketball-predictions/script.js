@@ -71,11 +71,13 @@ function loadMatches(matches, dateName) {
     away.getElementsByClassName('team-name')[0].innerHTML = game.away;
     away.getElementsByClassName('record')[0].innerHTML = `(${getRecord(game.away.toLowerCase())})`;
     away.getElementsByClassName('logo')[0].src = `assets/${game.away.toLowerCase()}${isMen ? '' : '-w'}.svg`;
+    away.getElementsByClassName('logo')[0].alt = game.away;
     away.getElementsByClassName('win-btn')[0].setAttribute('data-team', game.away.toLowerCase());
     const home = match.getElementsByClassName('home')[0];
     home.getElementsByClassName('team-name')[0].innerHTML = game.home;
     home.getElementsByClassName('record')[0].innerHTML = `(${getRecord(game.home.toLowerCase())})`;
     home.getElementsByClassName('logo')[0].src = `assets/${game.home.toLowerCase()}${isMen ? '' : '-w'}.svg`;
+    home.getElementsByClassName('logo')[0].alt = game.home;
     home.getElementsByClassName('win-btn')[0].setAttribute('data-team', game.home.toLowerCase());
   });
 }
@@ -85,7 +87,7 @@ function loadStandings() {
   const rows = document.getElementsByClassName('standings-table');
   standings.forEach((standing, i) => {
     rows[i].getElementsByClassName('rank-cell')[0].innerHTML = i+1;
-    const span = `<span><img class="img-fluid logo-img" src="assets/${standing.school.toLowerCase()}${isMen ? '' : '-w'}.svg"></span>`;
+    const span = `<span><img class="img-fluid logo-img" alt="${standing.school}" src="assets/${standing.school.toLowerCase()}${isMen ? '' : '-w'}.svg"></span>`;
     rows[i].getElementsByClassName('school-cell')[0].innerHTML = span+standing.school;
     rows[i].getElementsByClassName('record-cell')[0].innerHTML = getRecord(standing.school.toLowerCase());
     rows[i].getElementsByClassName('arrow')[0].classList.remove('up');
