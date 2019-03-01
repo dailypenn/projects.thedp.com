@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   loadData();
   updateStanding(false)
   setMenOriginalStandings();
-  console.log(mensOriginalStandings);
   loadStandings();
 
   // create listeners for win buttons
@@ -28,8 +27,8 @@ function toggleTeam() {
     setWomensOriginalStandings();
   }
   resetStats();
-  loadData();
   loadStandings();
+  loadData();
   const btns = Array.from(document.getElementsByClassName('win-btn'));
   btns.forEach(btn => {
     btn.classList.remove('winning');
@@ -59,6 +58,7 @@ function setMenOriginalStandings() {
 }
 
 function setWomensOriginalStandings() {
+  womensOriginalStandings = []
   womensStandings.forEach(team => {
     womensOriginalStandings.push({school: team.school, change: 0});
   })
@@ -201,6 +201,7 @@ function updateScore(winner, loser, initialClick) {
 
   updateStanding(true);
   loadData();
+  loadStandings();
 }
 
 function updateStanding(updateChange) {
@@ -214,6 +215,7 @@ function updateStanding(updateChange) {
 		const W2 = record[team2.school.toLowerCase()].wins;
 		const L1 = record[team1.school.toLowerCase()].losses;
 		const L2 = record[team2.school.toLowerCase()].losses;
+
 		// compare wins
 		if (W1 > W2) {
 			return -1;
@@ -234,8 +236,6 @@ function updateStanding(updateChange) {
   if (updateChange) {
     calcChanges();
   }
-
-  loadStandings();
 }
 
 function calcChanges() {
