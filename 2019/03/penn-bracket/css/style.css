@@ -58,19 +58,19 @@ div.score {
 }
 
 .team.win .label {
-  background-color: #e73c40;
+  background-color: #6495ED;
 }
 
 .team.na .label, .np .team .label {
-  background-color: #e58586;
+  background-color: #FFFFFF;
 }
 
 .team.win .score {
-  background-color: #201c1c;
+  background-color: #696969;
 }
 
 .team .score {
-  background-color: #495cd3;
+  background-color: #C0C0C0;
 }
 
 div.jQBracket .connector, div.jQBracket .connector div.connector, div.jQBracket .np .connector, div.jQBracket .np .connector div.connector {
@@ -96,6 +96,8 @@ div.jQBracket .team div.label {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom-style: solid;
+  border-width: thin;
 }
 .bracket-container {
   width: 100%;
@@ -110,9 +112,6 @@ div.jQBracket .team div.label {
 
 .left-bracket {
   float: left;
-}
-.right-bracket {
-  float: right;
 }
 .left-bracket, .right-bracket {
   display: inline-block;
@@ -143,8 +142,7 @@ footer {
   width: 100%;
   height: 25px;
   padding: 10px;
-  background-color: #8a96e2;
-  border-bottom: 1px solid #495cd3;
+  background-color: #000000;
   z-index: 200;
 }
 
@@ -221,3 +219,5 @@ footer {
     margin-right: -500px;
   }
 }
+
+
