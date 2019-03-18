@@ -92,7 +92,7 @@ var rtbracketData = {
     ['Shabbatones', 'Soundsworks'],
     ['Penn Sirens', 'Simply Chaos'],
 
-    ['West Philly Singers', 'Counterparts'],
+    ['West Philly Swingers', 'Counterparts'],
     ['TAC-e', 'Without a Net']
   ],
   results: [
