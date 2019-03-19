@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+          "title": "Penn Bracket 2019",
+          "author": "Web Dev: Leah Wang, Daniel Salib",
+          "section": "Penn Bracket",
+          "date": "March 2019",
+          "description": "Vote for your favorite student groups in the 2019 Penn Bracket!",
+          "sponsored": false,
+          "link": "https://projects.thedp.com/2019/03/penn-bracket",
+          "image": "https://s3.amazonaws.com/snwceomedia/dpn/96a87558-f06f-439e-befd-9e7c086a9e3b.sized-1000x1000.png",
+          "alt": "Penn Bracket 2019"
+        }
+    ,{
         "title": "Who will make it to the Ivy League Basketball Tournaments?",
         "author": "Web Dev: Alex Graves, Emily Saperstein, Ian Ong, Liam Morrissy, Daniel Salib; Design: Jess Tan, Gillian Diebold, Ian Ong, Allison Kim",
         "section": "Sports",
@@ -21,20 +32,20 @@
       "link": "https://projects.thedp.com/2018/12/year-in-review/",
       "image": "https://snworksceo.imgix.net/dpn/2a396a4a-c282-4fda-a940-bf98afa70c5e.sized-1000x1000.png",
       "alt": "year in review 2018"
-    },
-    {
-      "title": "Basketball Preview 2018",
-      "author": "Web Dev: Jamie Tomlinson, Daniel Salib, Eric Zhang, Liam Morrissy",
-      "section": "Sports",
-      "date": "November 2018",
-      "description": "With schedule highlights, projected starters, player features, and coach profiles, the basketball supplement has everything fans need to know about Penn men’s and women’s basketball for the upcoming 2018-2019 season.",
-      "sponsored": false,
-      "link": "https://projects.thedp.com/2018/11/basketball-preview/",
-      "image": "https://snworksceo.imgix.net/dpn/db3bbb49-9e59-4a7b-a85d-41aaacbf0b96.sized-1000x1000.png",
-      "alt": "basketball preview 2018"
     }
   ],
   "articles": [
+    {
+        "title": "Basketball Preview 2018",
+        "author": "Web Dev: Jamie Tomlinson, Daniel Salib, Eric Zhang, Liam Morrissy",
+        "section": "Sports",
+        "date": "November 2018",
+        "description": "With schedule highlights, projected starters, player features, and coach profiles, the basketball supplement has everything fans need to know about Penn men’s and women’s basketball for the upcoming 2018-2019 season.",
+        "sponsored": false,
+        "link": "https://projects.thedp.com/2018/11/basketball-preview/",
+        "image": "https://snworksceo.imgix.net/dpn/db3bbb49-9e59-4a7b-a85d-41aaacbf0b96.sized-1000x1000.png",
+        "alt": "basketball preview 2018"
+      },
     {
       "title": "Housing Guide 2018",
       "author": "Web Dev: Jamie Tomlinson, Alex Graves, Daniel Salib, Ian Ong",
