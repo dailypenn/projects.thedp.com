@@ -141,7 +141,7 @@ var finalbracketData = {
     [' ', ' ']
   ],
   results: [
-      [ ,  ]
+      [,  ]
     ]
 };
 
