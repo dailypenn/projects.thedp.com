@@ -1,0 +1,159 @@
+/* neuzeit-grotesk */
+@import url("https://use.typekit.net/psa2uuo.css");
+/* Lora */
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'neuzeit-grotesk', sans-serif;
+	background: #F9F9F9;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+h4 {
+  color: #888;
+  font-weight: 400;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+p {
+  font-family: 'Lora', georgia, serif;
+}
+
+a {
+	color: #888;
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	color: #d3d3d3;
+}
+
+hr {
+  margin: 20px auto;
+}
+
+footer {
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #FFF;
+  border-bottom: 1px solid #777;
+  z-index: 200;
+}
+
+.navbar-center {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-center img {
+  height: 25px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.intro {
+  max-width: 900px;
+	margin: 60px auto;
+	text-align: center;
+}
+
+.intro h1 {
+	font-size: 2.5em;
+	margin: 10px 0;
+	font-weight: 700;
+  color: #aa1e22;
+}
+
+.intro h3 {
+	margin: 0;
+	font-weight: 400;
+  color: #aa1e22;
+}
+
+.intro p:last-of-type {
+  margin-bottom: 40px;
+}
+
+.branches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.branch-link {
+  padding: 5px 10px;
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.candidate {
+  width: 33%;
+  padding: 10px;
+}
+
+.candidate img {
+  width: 100%;
+}
+
+.vote-btn {
+	padding: 5px 10px;
+	border-radius: 2px;
+	background: #AA1E22;
+	color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    margin: 20px 15px;
+  }
+
+  .container {
+    margin: 15px;
+  }
+
+  .candidate {
+    width: 100%;
+    padding: 0;
+  }
+}
