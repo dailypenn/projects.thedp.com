@@ -132,8 +132,20 @@ footer {
   padding: 10px;
 }
 
-.candidate img {
+/* .candidate img {
   width: 100%;
+} */
+
+.candidate .image {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.candidate .image::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
 
 .vote-btn {
