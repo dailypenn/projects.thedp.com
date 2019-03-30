@@ -40,12 +40,6 @@ var people = {
       	'endorsements': ''
       },
       {
-        'name': 'Leo Chen',
-        'photo': '',
-        'statement': 'My name is Leo Chen and I’m thrilled to be running as your UA SAS Representative! If elected, I hope to revitalize the word “representative”. <br>As you can see from my fellow candidates’ statements, there’s no shortage of challenges facing our school nor a lack of ideas to solve them. But from our limited perspectives, we can’t hope to capture the entire picture. In fact, the UA was founded to solve that problem of ignorance: “representatives” amplify the interests and concerns of constituencies on an administrative level so that all voices can be heard.<br><br>I believe we’ve strayed those roots. Many undergraduates don’t exactly know what the Undergraduate Assembly is, why it exists, and how it can serve them. For many of you, this election may be the most direct interaction you have with student government here at Penn.<br><br>I want to change that. As an SAS Representative, I plan to promote the creation of accessible incentive structures which encourage students to engage with the UA so that it can better help you. Whether that means paid surveys or public events, I’m all for maximizing representation so that the UA can more effectively tackle the issues that matter to you!',
-        'endorsements': ''
-      },
-      {
         'name': 'Arjun Swaminathan',
         'photo': 'https://snworksceo.imgix.net/dpn/358c08ab-16f3-4a76-86a7-49c892772b5c.sized-1000x1000.JPG?h=400',
         'statement': "Hi everyone! I’m Arjun Swaminathan and I’m running to be re–elected to UA as one of your College representatives. As a member of the UA these past two years, I have been responsible for a number of dining, housing, and transit projects that have provided benefits to students on campus, ranging from the development and rollout of the new ride–sharing application for students (Penn Rides on Request), to creating a proper recreation space in Houston Hall, to advertising dining options for students with dietary restrictions, to advocating for mental health awareness on campus. Additionally, I have served as a member of the UA’s Budget Committee as well as its Speaker Pro Tempore, wherein I have contributed to a fair budgeting process for student government and served as the deputy to the UA’s internal chair, respectively. In running for reelection, I would like to continue working on similar projects and contribute to making Penn’s community a better place, and I believe that I have proven myself capable of doing that these past two years. Thanks for reading and vote for Arjun!",
@@ -78,13 +72,13 @@ var people = {
       {
         'name': 'Elena Hoffman',
         'photo': 'https://snworksceo.imgix.net/dpn/25dfb27b-f175-4078-8075-e6fcbe76c207.sized-1000x1000.JPG?h=400',
-        'statement': "",
+        'statement': "<i>No provided statement.</i>",
         'endorsements': ''
       },
       {
         'name': 'Jennifer Richards',
-        'photo': 'https://snworksceo.imgix.net/dpn/83326eb7-a1fb-415d-be23-5c9f2c6e034f.sized-1000x1000.JPG?h=400',
-        'statement': "<i>No provided statement.</i>",
+        'photo': 'https://snworksceo.imgix.net/dpn/fdf5bc26-8ab9-4f3c-9ce7-2fdae5bb5306.sized-1000x1000.JPG?h=400',
+        'statement': "Hi everyone! I’m Jennifer Richards and I am running for re-election for UA College Representative! Having served the last two years on the Academic Initiatives committee, I hope to continue creating tangible change and facilitating transparency with the student body.<br><br>The past two years I’ve been a champion for mental health within the UA and the Penn community. For example, I recently secured funding from alumni to hire a CAPS clinician in the athletic fields. This is the first of many embedded CAPS clinicians I hope to install during my time at Penn.<br><br>My platform consists of eight key issues:<br>1. Destigmatizing mental health<br>2. Improving access to mental health resources<br>3. Reforming course absence policies<br>4. Supporting academic needs<br>5. Promoting mental wellness in Greek life and the rush process<br>6. Revamping advising programs<br>7. Enhancing the club recruitment process<br>8. Advocating for the needs of student-athletes<br><br>But more than anything, I want to advocate for YOUR needs and listen to YOUR voice. Please feel free to reach out to me at rjenny@sas.upenn.edu. Serving on the UA has been one of the most rewarding experiences and I would really love your vote. #JENNforPENN",
         'endorsements': ''
       },
       {
@@ -426,6 +420,19 @@ var people = {
       	'endorsements': ''
       }
     ],
+    "Executive_Vice_President": [{
+      'name': 'Emily Liao',
+      'photo': 'https://snworksceo.imgix.net/dpn/7ee8c1c1-3427-4ad8-b1b3-ff8959d04345.sized-1000x1000.JPG?h=400',
+      'statement': "Hi everyone! My name is Emily Liao, and I’m running to be your Executive Vice President for the Class Board. Over the past year, I have had the honor of working with the rest of the Class Board to create events that would bring our class together. Whether it was smaller events like hot cocoa and pictures during Freshgiving or traditions like Econ Scream, each was focused on creating a sense of community throughout our class. Moving forward, I hope to work to implement biweekly email newsletters that would update the class on what Class Board does and spotlight some of the impressive people in our class. I would also love to hear more feedback from the class in general, so there will be a suggestion section in the newsletter as well. From a food truck festival to large scale bubble soccer, there are so many more ideas we have yet to get to, and I would love the opportunity to be the Executive Vice President of Class Board ‘22 and make it happen!",
+      'endorsements': ''
+    },
+    {
+      'name': 'Peyton Skill',
+      'photo': 'https://snworksceo.imgix.net/dpn/e7ffceb3-6fc8-42d3-9c7a-a2a080087461.sized-1000x1000.JPG?h=400',
+      'statement': "This is the year for change and the year for you. My name is Peyton Skill and I'm running to be your Executive Vice President. The year will be big. The events will be sick. Voices will be heard. Nobody will be forgotten.<br><br>The Vice President has an important role. Second only to the President. This is my promise to dedicate myself to making your year the best it can be.<br><br>Follow @KitandPeytonforPrezzies on instagram for introductions, ideas, and overall great content.",
+      'endorsements': ''
+    }
+  ],
     "Vice_president_of_External_Affairs": [{
         'name': 'Jordyn Kaplan',
         'photo': 'https://snworksceo.imgix.net/dpn/a6d36504-d839-4242-813a-a2ecd18ff039.sized-1000x1000.JPG?h=400',
@@ -581,7 +588,7 @@ window.onload = function() {
   } else if (window.location.pathname.includes('cb22')) {
     // CLASS BOARD 2022 CANDIDATES
     loadList(cb22["President"], "ua-22-list");
-    // loadList(cb22["Executive_Vice_President"], "ua-22-vp-list");
+    loadList(cb22["Executive_Vice_President"], "ua-22-vp-list");
     loadList(cb22["College_Chair"], "ua-22-sas-rep");
     loadList(cb22["Engineering_Chair"], "ua-22-seas-rep");
     loadList(cb22["Wharton_Chair"], "ua-22-wharton-rep");
