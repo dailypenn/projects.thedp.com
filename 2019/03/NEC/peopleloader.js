@@ -35,7 +35,7 @@ var people = {
       },
       {
         'name': 'Daniel Ruiz de la Concha',
-        'photo': '',
+        'photo': 'https://snworksceo.imgix.net/dpn/d1ddd1bf-cac9-4bd5-97c6-1d18bf991626.sized-1000x1000.JPG?h=400',
         'statement': "Hello everyone! My name is Daniel Ruiz de la Concha, and I am running for Class Board 2022 President and Representative of the College of Arts and Sciences for the Undergraduate Assembly. I have always been passionate about helping others and organizing events, which is something I look to be able to pursue during my time in Penn. If elected I would love to host multiple events to integrate the Penn community further and make sure that everyone makes the most of their time here! I know that moving into the next year can be an exciting yet frightening experience for everyone. Therefore, I want to make sure that you have access to as most opportunities as you can while getting to meet new people that you will remember for life! I wish you the best in the year to come!",
       	'endorsements': ''
       },
@@ -270,7 +270,7 @@ var people = {
       },
       {
         'name': 'Noel Zheng',
-        'photo': '',
+        'photo': 'https://snworksceo.imgix.net/dpn/8976ac7a-eeb7-48cc-bb37-b88a4e4791e4.sized-1000x1000.JPG?h=400',
         'statement': "After being elected to be the Class of 2020 College Chair–alongside my partner-in-crime Daniella Wirtschafter and this amazingly talented team this year–I have continued to realize the strong sense of community in our class. And that’s something I am honoured to be apart of, let alone be able to represent.<br>Throughout this past year, I have helped implement events in partnership with many campus organizations that strive to make these years so memorable.<br>Looking forward, I am excited to create social programs, both new and traditional, that continue to foster this sense of unity.<br>(And feb club, team get ready for feb club.)",
         'endorsements': ''
       }
