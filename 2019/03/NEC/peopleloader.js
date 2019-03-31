@@ -378,6 +378,12 @@ var people = {
       	'endorsements': ''
       },
       {
+        'name': 'Daniel Ruiz de la Concha',
+        'photo': 'https://snworksceo.imgix.net/dpn/d1ddd1bf-cac9-4bd5-97c6-1d18bf991626.sized-1000x1000.JPG?h=400',
+        'statement': "Hello everyone! My name is Daniel Ruiz de la Concha, and I am running for Class Board 2022 President and Representative of the College of Arts and Sciences for the Undergraduate Assembly. I have always been passionate about helping others and organizing events, which is something I look to be able to pursue during my time in Penn. If elected I would love to host multiple events to integrate the Penn community further and make sure that everyone makes the most of their time here! I know that moving into the next year can be an exciting yet frightening experience for everyone. Therefore, I want to make sure that you have access to as most opportunities as you can while getting to meet new people that you will remember for life! I wish you the best in the year to come!",
+        'endorsements': ''
+      },
+      {
         'name': 'Bo Ku',
         'photo': 'https://snworksceo.imgix.net/dpn/86ace3d6-82c2-4be3-ae80-73b57d45f6d8.sized-1000x1000.JPG?h=400',
         'statement': "I don't like people sometimes. I hesitate regularly prior to most decisions. I often prioritize the wrong things. However, I possess greater qualities that better evaluate my caliber and potential to make the change that our campus needs as an institution built by the diligence of students.<br><br>1. I'm a try-hard -- a little too hard<br><br>Currently, I slave hours away at my work-study job not only because I committed to this position  but also because I genuinely find it rewarding to contribute to an institution that I value.<br><br>2. I put the needs of others first and foremost.<br>Ultimately, I am not in charge; the student body are. I will unify our class of varying schools and backgrounds by giving substance to everyone's input.<br><br>3. Let's get a little heavy: I'm a minority.<br>I know what it's like to be underrepresented. I'm a first-generation, low-income immigrant with English not being my first language. I'll be THE advocate for my classmates, no matter their disadvantages.<br><br>As unconventional this candidacy statement is, I will bring revolutionary elements of surprise into the new elected Class Board of 2022. Let us wield our diversity to improve our reality.",
@@ -528,10 +534,10 @@ window.onload = function() {
   const cb22 = people.cb22;
 
   function shuffle(list) {
-    // for (let i = list.length - 1; i > 0; i--) {
-    //   const j = Math.floor(Math.random() * (i + 1));
-    //   [list[i], list[j]] = [list[j], list[i]];
-    // }
+    for (let i = list.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [list[i], list[j]] = [list[j], list[i]];
+    }
     return list;
   }
 
