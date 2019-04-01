@@ -5,26 +5,26 @@ var people = {
         'name': 'Maria Curry',
         'photo': 'https://snworksceo.imgix.net/dpn/b333194a-0a94-44c5-a053-b9604200d027.sized-1000x1000.JPG?h=400',
         'statement': "Real change isn't achieved overnight, but there are concrete steps to get there. Throughout my past 3 years on the UA, I have shown that this tangible change is possible not just with passion, but with the correct ambition and determination to see it through. As UA President, I want to continue to challenge the status quo and challenge our members to support you, the student body, at a new level.<br><br>My joint-platform is based on 5 Pillars: Transparency, Equity & Representation, Sustainability, Wellness, and Modern Infrastructure. An overarching theme is student engagement, and as President I want to continue to build on forums like UA Steering, town halls and focus groups, to enhance collaboration among student leaders, and move from discussions to tangible actions items with administration.<br><br>Our record shows this works. From directly working with administrators on the creation of the new PennTransit-App that allows students to request transportation on and off-campus for free, to personally creating 360°-Views of Campus Dorms for Campus-Express, to implementing new signage in all Dining Halls on sustainable food disposal, and developing mindfulness-spaces in centralized locations like Houston Hall, I will continue to lead the UA to tangible change for you as UA President.",
-        'endorsements': ''
+        'endorsements': 'Black Student League, Penn Model Congress, Fossil Free Penn'
       },
       {
         'name': 'Natasha Menon',
         'photo': 'https://snworksceo.imgix.net/dpn/52b9157a-94a2-4c16-b1ba-6ff8ce4f8063.sized-1000x1000.JPG?h=400',
         'statement': "Hi, my name is Natasha Menon, and I am running for President of the Undergraduate Assembly. If elected, my priorities next year would be transparency, inclusivity, accessibility, wellness, and academics. These platform ideas, as well as other information about my campaign can be found at <a href='https://www.menongoldstein.com' target='_blank'>menongoldstein.com!</a> As the candidate with the most UA experience, I have been able to foster the relationships with administrators and student groups necessary to ensure the execution of my platform. With your help in electing me as UA President, I will use this knowledge to advocate for the policies that will make Penn a better school not just for our class, but for generations to come!",
-        'endorsements': ''
+        'endorsements': 'Penn Undergraduate Health Council, United Minorities Council, South Asia Society, Asian Pacific Student Coalition, Penn Association for Gender Equity, SAS'
       }
     ],
     "UA_Vice_President": [{
         'name': 'Chase Serota',
         'photo': 'https://snworksceo.imgix.net/dpn/fd0c448b-104e-4948-ad6f-163357b61b6d.sized-1000x1000.JPG?h=400',
         'statement': "My name is Chase Serota and I’m running for Vice President of the Undergraduate Assembly to create tangible change on campus and put student opinion at the forefront of administrator decisions. My joint-platform is based on 5 Pillars: Transparency, Equity & Representation, Sustainability, Wellness & Student Life, and Modern Infrastructure. Just within the past year, my record of both experience and impact proves how I will continue to follow through on projects that directly benefit students.<br><br>For example, beginning in January of this year, I personally directed the renovation of the basement of Van Pelt that will take place this summer in coordination with Penn Facilities and other UA members. Additionally, I’ve worked directly with CAPS, the Provost’s Office, and Penn’s Chief Wellness Officer to develop plans for a pilot program for a CAPS satellite office within Van Pelt Library that’s accessible to all students, regardless of school. Moreover, I have enjoyed promoting student focus groups with high-level administrators like those regarding the new Sophomore Experience or the replacement of Frontera to ensure that the student opinion is always represented. This is how we make the UA work for you—join us and vote Curry and Serota for UA President and VP.",
-        'endorsements': ''
+        'endorsements': 'Penn Model Congress, Fossil Free Penn'
       },
       {
         'name': 'Brian Goldstein',
         'photo': 'https://snworksceo.imgix.net/dpn/42d48ef3-8d1f-4200-b6a3-9b9675fb088a.sized-1000x1000.JPG?h=400',
         'statement': "Hi, my name is Brian Goldstein, and I am running for Vice President of the Undergraduate Assembly. If elected, my priorities next year would be transparency, inclusivity, accessibility, wellness, and academics. As Vice President I would look forward to collaborating with UA Steering groups to promote our common goals and initiatives. As the candidate with the most UA experience I look forward to utilizing the relationships that I have developed with administrators to affect tangible change. I will dedicate myself to both the Undergraduate Assembly and the student body in order to ensure that your priorities and concerns are heard.",
-        'endorsements': ''
+        'endorsements': 'Penn Undergraduate Health Council, South Asia Society, Asian Pacific Student Coalition, SAS'
       }
     ],
     "SAS_Representative": [{
@@ -79,49 +79,49 @@ var people = {
         'name': 'Joseph Squillaro',
         'photo': 'https://snworksceo.imgix.net/dpn/6278e9d9-5ebc-4f9d-bef2-ec4c2aede397.sized-1000x1000.JPG?h=400',
         'statement': "An advocate for change, I want to be one of your College representatives in the Penn Undergraduate Assembly to make YOUR voice loud and clear. Through experience and determination, I will listen and fight for what matters to you. The University of Pennsylvania is an amazing place, but it can be better and I want to help us get it there.<br><br>Here are just a few of the many things I hope to fix:<br><br>1. Increase per capita spending on each student in the College to make us on par with those students in Wharton and Engineering.<br><br>2. Allot funding for mental health services and create new wellness initiatives at Penn because something like “Penn Face” should be a thing of the past.<br><br>3. Fight hard for the creation of more College-based career services to link the humanities and the natural sciences to the outside world.<br><br>Among many, many other initiatives that I can’t fit in 200 words! If you agree with this platform and want to see more, be sure to vote Joseph Squillaro in this upcoming election and feel free to reach out to me at jsqu@sas.upenn.edu for any questions!",
-        'endorsements': ''
+        'endorsements': 'Penn Undergraduate Law Journal'
       },
       {
         'name': 'Jude Dartey',
         'photo': 'https://snworksceo.imgix.net/dpn/cf99d436-cf3e-405d-b483-cc047c09a8ac.sized-1000x1000.JPG?h=400',
         'statement': "My platform is very simple. I want to serve as the bridge between minority/underprivileged students and administrators on campus. This year I was very privileged to serve as the Director for the Committee on Equity and Inclusion where I led 11 other members of the UA to work on initiatives that improves the experience of underrepresented students. I am not perfect and in no way make empty promises to change the entire culture at Penn, but a vote for Jude Dartey is a step closer to Penn where everyone feels like Penn is home.",
-        'endorsements': ''
+        'endorsements': 'Black Student League'
       },
       {
         'name': 'Kristen Ukeomah',
         'photo': 'https://snworksceo.imgix.net/dpn/314306de-7fb6-489e-93bf-dc5912fa100f.sized-1000x1000.JPG?h=400',
         'statement': "I have served on the Undergraduate Assembly for the past two years. On it, I have served on the Social Justice (SJ) and Equity and Inclusion (EI) committees, working on projects that advocate for students of color, low-income students, and students with disabilities across campus. As I run this third time, I plan on continuing this work. However, it has come to my attention that the majority of the student body does not actually know what the UA does and what we work on. The UA is seen as an organization that is more concerned about airport shuttle sales than the advocacy of the student body. I want to ensure that the student body knows that is false with periodical publications of the UA's projects roughly 4 times a school year and by widely disseminating a UA feedback form, so students know that the UA actually works for them. Moreover, I would like to advocate for all students to have equal access at Penn, which is not the case. Wharton students have more University privileges that College students and that is not equitable. I plan to advocate for equality across schools.",
-        'endorsements': ''
+        'endorsements': 'Black Student League'
       },
       {
         'name': 'Mary Sadallah',
         'photo': 'https://snworksceo.imgix.net/dpn/4583c766-449c-4f7b-8392-3573ad5bdb3b.sized-1000x1000.JPG?h=400',
         'statement': "Hi! My name is Mary Sadallah and I’m an Economics major from South Jersey. For the past year, I’ve been fortunate enough to serve as an Associate Member on the Undergraduate Assembly. My chief focus has been to integrate wellness into university life (mainly through the expansion of the Embedded CAPS Model that has been implemented in Wharton) because at Penn, we tend to see ourselves as students first and people second. To combat this culture, I believe that wellness must be tailored to us and made equally accessible. The UA has also afforded me the opportunity to advocate for members of underrepresented groups on campus. I’ve worked alongside the Cultural Resource Centers to plan programming that celebrates student diversity and engineered solutions to challenges faced by the FGLI community. Most importantly, I’ve worked to realize that my voice, as that of a minority and FGLI student, demands to be heard. A vote for Mary is a vote that carries the weight of making all-inclusive change. I sincerely hope that I can continue to offer my unique perspective and experience to the Undergraduate Assembly as a Representative of the School of Arts & Sciences. Vote Mary Sadallah for UA SAS Rep!",
-      	'endorsements': ''
+      	'endorsements': 'Penn Undergraduate Law Journal'
       },
       {
         'name': 'Mikayla Golub',
         'photo': 'https://snworksceo.imgix.net/dpn/0c8895a0-2eb8-451c-8a49-a5e6e6cdb8e1.sized-1000x1000.JPG?h=400',
         'statement': "Hey, there! My name is Mikayla Golub, and I’m running for College Representative on the Undergraduate Assembly. This past term, I served on the Sustainability and Community Impact committee. This upcoming year, I hope to continue my work on rethinking sustainability in dining facilities, expanding composting programs, increasing student art around campus, and improving advising for students in specific programs. These projects, though touch on various sectors of student life on campus, all identify critical areas of growth for Penn. This past term, I have learned the importance of collaborating with students and administrators to work on effective, comprehensive change; I plan on doing the same this upcoming term. In addition to serving on the Undergraduate Assembly, I’m involved in Bloomers (Penn’s all-female comedy troupe), Mock Trial, and Sigma Kappa. Please reach out if you have any questions about the projects mentioned above as well as any ideas on how to make our campus better! I’m on Facebook like most youths, so feel free to message me there.",
-        'endorsements': ''
+        'endorsements': 'Fossil Free Penn, Penn Mock Trial'
       },
       {
         'name': 'Natasha Menon',
         'photo': 'https://snworksceo.imgix.net/dpn/52b9157a-94a2-4c16-b1ba-6ff8ce4f8063.sized-1000x1000.JPG?h=400',
         'statement': "Hi, my name is Natasha Menon, and I am running for President of the Undergraduate Assembly. If elected, my priorities next year would be transparency, inclusivity, accessibility, wellness, and academics. These platform ideas, as well as other information about my campaign can be found at <a href='https://www.menongoldstein.com' target='_blank'>menongoldstein.com!</a> As the candidate with the most UA experience, I have been able to foster the relationships with administrators and student groups necessary to ensure the execution of my platform. With your help in electing me as UA President, I will use this knowledge to advocate for the policies that will make Penn a better school not just for our class, but for generations to come!",
-        'endorsements': ''
+        'endorsements': 'South Asia Society, Asian Pacific Student Coalition'
       },
       {
         'name': 'Ozi Amuzie',
         'photo': 'https://snworksceo.imgix.net/dpn/5c296827-b17a-4e5f-8aa4-44a7d45629e0.sized-1000x1000.JPG?h=400',
         'statement': "At Penn, we are champions of diversity. We’re the sort of school where you can come in wanting to do anything under the sun, and graduate one of the best in your field. No matter what you’re studying, we all have unique and infinitely valuable experiences to bring to the table. I want to ensure that our experience at Penn makes all our hard work worth it. Whether we have moved across state lines, across the country, or across the world, it should be worth it. All the nights of sleep we missed getting ourselves here, all the nights of sleep we’ll miss keeping ourselves here– it should all be worth it. I believe after working so hard to get here, we need policies that make our academic and campus life a positive experience. As your College representative, I will do everything in my power to ensure we have access to resources that relieve some of the pressure of being a student at this university. Whether that’s through increasing access to academic services or advocating for mental health initiatives, I’ll dedicate myself to making everyone’s experience at Penn one marked by equality, access, fairness, and success.<br><br>Because we’re worth it.",
-        'endorsements': ''
+        'endorsements': 'Black Student League'
       },
       {
         'name': 'Quinn Lawery',
         'photo': 'https://snworksceo.imgix.net/dpn/2893a22a-e3a9-404a-9b75-70a0aa5c2f5d.sized-1000x1000.JPG?h=400',
         'statement': "I, Quinn Lawery Jr, want to be YOUR next College of Arts of Sciences Representative for the Undergraduate Assembly. Why me? Ever since I can remember, I have had the ability to be versatile in tough situations and represent and support others. To hold a leadership role in the world you must be able to be a hard worker that is versatile and patient.<br><br>Being a part of the UA is as an excellent way to be a part of a cooperative team that is involved not only in the current student’s lives, but also the bigger picture of providing a better place for future students.<br><br>I can’t help but desire to tack onto my armor a new badge; game changer. It is my goal to motivate our generation to take risks and be BOLD.<br><br>As a member of the UA<br>- I will lobby for YOUR needs and not stop until I see a change.<br>- I will focus on YOUR issues on campus and find a feasible way to solve them.<br>-I will represent YOU because we are the new minds of the future.<br><br>Don’t forget IF YOU WANT TO WIN VOTE FOR QUINN!",
-        'endorsements': ''
+        'endorsements': 'Black Student League'
       },
       {
         'name': 'Regan Mizrahi',
@@ -145,13 +145,13 @@ var people = {
         'name': 'Tori Borlase',
         'photo': 'https://snworksceo.imgix.net/dpn/e99bbce0-6813-4b2d-82ad-deca934b4c63.sized-1000x1000.JPG?h=400',
         'statement': "Hi Y’all!<br><br>My name is Tori Borlase, and I’m a freshman in the College studying PPE.  In running for UA I hope to invest in Penn so that, in turn, Penn can more effectively invest in its students. In order to provide a break from the intense nature of the campaign trail, I have articulated my platform in the form of an acrostic poem.  Please feel free to check out my extended candidacy statement at http://bit.ly/toriforua or reach out to me at tborlase@sas.upenn.edu if you have any questions!<br><br>T-Transforming Pre-professionalism - Increasing accessibility to career-building opportunities, specifically for low-income and underrepresented students, while fostering healthy conversations about navigating Penn’s competitive culture.<br><br>O-Offering Better Mental Health Services – “Destigmatizing” mental health issues isn’t enough; I will push for more care and better access by trying to increase staff and improve online accessibility.<br><br>R-Redesigning the Academic Perspective – Implementing new ways of helping select classes, such as being able to access past syllabi online, and also expanding options for College requirements.<br><br>I-Investing in Our Future – Sustainability is critically important, especially for a large institution like Penn.  Implementing policies helping students understand their carbon footprint as well as becoming a more eco-cognizant establishment are critical.",
-        'endorsements': ''
+        'endorsements': 'Penn Debate Society'
       },
       {
         'name': 'Edward Yisheng Jiang',
         'photo': 'https://snworksceo.imgix.net/dpn/01a751bd-41d9-4e72-8906-5ccc0b62dfe3.sized-1000x1000.JPG?h=400',
         'statement': "G’day! I’m Edward from Sydney, Australia and I’m here to help.<br><br>My policy platform is simple. It stems from a couple of things I’ve learned from my time as an international student and a Peer Advisor.<br><br>(1) Funding for internships and programs abroad are crucial in supporting qualified students pursue opportunities that otherwise lie beyond reach. It’s counterintuitive for these opportunities to be limited by school.<br><br>(2) Resources for exchange and transfer students should be expanded because these students play such an important role in cultivating Penn’s diversity and rich sense of community even if they can’t vote.<br><br>(3) Getting a good sense of University requirements helps folks - particularly international students - make important decisions on their academic path. More needs to be done to build transparency.<br><br>If you’d like to reach me, I’m all ears and never too far away from my University email at yishengj@sas.upenn. Cheers and best of luck to all the others running.",
-        'endorsements': ''
+        'endorsements': 'Phi Chi Theta, Penn Undergraduate Law Journal, Australians and New Zealanders at Penn, Public Policy Initiative Student Group, Alpha Phi Omega, Jesse, SAS'
       }
     ],
     "SEAS_Representative": [
@@ -160,7 +160,7 @@ var people = {
         'name': 'Anannya Shandilya',
         'photo': 'https://snworksceo.imgix.net/dpn/cef8d606-3a3f-4614-80aa-763590986b38.sized-1000x1000.JPG?h=400',
         'statement': `It is often claimed that as one of the top-ranked institutions, Wharton is already offering all a student needs, but only those who experience know how so many aspects need to be changed. As an International First-Generation-Low-Income Woman, I understand some of the challenges that Wharton still needs to overcome and I believe that as students, YOU are the experts who know the flaws and can help Wharton improve. Hence, my goal is to incorporate each and every voice in Wharton to make Wharton a better place. By implementing the much-needed changes like including students into the decision-making process, promoting cross-cultural communications, and developing a stress-free environment where we don't just walk on a set path but experiment, I hope to assist in creating a Happy Wharton Family where we place US above you and I. "Be the change you wish to see in the world" - these words of Mahatma Gandhi are the driving force behind my decision to run for the Wharton Representative position in the UA, and IF YOU REALLY WANT TO SEE THE CHANGE AND BE THE CHANGE, VOTE FOR ANANNYA.`,
-        'endorsements': ''
+        'endorsements': 'Penn Thillana, Penn Wharton China Summit'
       },
       {
         'name': 'Daniel Wittmer',
@@ -172,50 +172,50 @@ var people = {
         'name': 'Danny Dontoh',
         'photo': 'https://snworksceo.imgix.net/dpn/0669eb89-fc8e-4c16-b959-8d724cb5dbf0.sized-1000x1000.JPG?h=400',
         'statement': "During my time on the UA, I have had the opportunity to collaborate with administrators, faculty, and student leaders to create tangible change! As a member of the Equity and Inclusion committee, I have been working on creating concentration informational sessions to increase educational equity across all Wharton departments,  developing a Wharton Diversity Advisory board to represent the needs of Wharton students from all backgrounds, and facilitating access to transportation services for Fall and Spring breaks. As a Wharton Representative, I hope to not only further these initiatives, but also work alongside the bright-minds our student body to connect them with the resources to thrive at Penn!",
-      	'endorsements': ''
+      	'endorsements': 'Black Student League, SAS'
       },
       {
         'name': 'Dante Diggs',
         'photo': 'https://snworksceo.imgix.net/dpn/f2d3ad57-ef56-4248-991e-6f189bb2bcf8.sized-1000x1000.JPG?h=400',
         'statement': "Dear Wharton Family,<br><br>When you envision Penn’s future, what are some of the things you dream of? Is it a facilitator that provides you with more opportunities to engage with your fellow students and the local Philadelphia community? Or an institution with more opportunities to learn how to protect yourself and your classmates?<br><br>My name is Dante Diggs, and in order for us to ensure that the University reaches these goals and more, you need someone will ask pressing questions while also fostering a sense of community. As a previous New Student Representative, I will continue to work actively with partners such as the Netter Center and the Division of Public Safety to learn more about how we as students can learn more from each other and from the city. I will also ensure that our Wharton buildings continue to be lively and supportive hubs for students. Most importantly, I hope to explore ways that we as leaders can continue to create spaces and moments of inclusivity and growth.<br><br>Through leadership and advocacy, Penn will be the University of our dreams.<br><br>P.S.: Don’t be afraid to stop me on Locust! I love meeting new people.",
-      	'endorsements': ''
+      	'endorsements': 'Black Student League, Penn Debate Society'
       },
       {
         'name': 'Janice Owusu',
         'photo': 'https://snworksceo.imgix.net/dpn/59cd4ef2-4177-4f27-9f5f-1216825466e5.sized-1000x1000.JPG?h=400',
         'statement': "Hi, my name is Janice Owusu, I am a Wharton freshman. As a New Student Representative for the past two semesters, I am made the UA my top priority. In my role, I set out to accomplish a lot when looking at my expectations I am glad to say that I met some but, I want to take them to the next level. With little time I have had on the UA, I began working with campus administrators such as Sal Cuputo and other UA members to pilot a project for improvement in Van Pelt. Specifically looking at student complaints about the ground floor's bathrooms and conditions. Another project I hope to continue is the creation of a subsidy program for FGLI Students. Meeting with the Deputy Executive Director of CAPS, Dr.Meeta Kumar, to learn about the CAPS model and partnering up to look for solutions for FGLI students.  The UA has been an integral part of my experience here at Penn, especially listening to students concerns about Penn and I would love to continue this conversation. The work I have begun in the UA is not yet finished. I would love another opportunity to continue lobbying for the students of Penn. Thanks so much for the continuing support.<br><br>Sincerely, Janice",
-      	'endorsements': ''
+      	'endorsements': 'Black Student League'
       },
       {
         'name': 'John Casey',
         'photo': 'https://snworksceo.imgix.net/dpn/20c6154c-2d74-4989-bad0-248cbc0311ec.sized-1000x1000.JPG?h=400',
         'statement': "We all know the issues facing Wharton students. From accelerating OCR schedules to the lack of CIS seats, there are problems that need to be fixed. Making things even more frustrating, it can seem that progress is slow at best and non-existent at worst.<br><br>To be honest, I sometimes get frustrated by how slowly student government operates. I was angry when the Trustees voted to increase tuition by 4% without ever consulting the student body. I was exasperated when Huntsman Hall decided to close at 2am, denying reliable study spaces to those who most need them. And I get tired of hearing from peers about how they want to take CIS classes, but simply can’t get enrolled.<br><br>I’m running because I have the energy and know-how to tackle big issues. Now, the UA and I are close to building a comprehensive web resource that includes information about all student groups on campus, and I’m proud to have voted for a UA resolution that condemned the accelerating OCR calendar. I want to be a part of solving the problems Wharton students face… elect me to another term so I can get to work!",
-        'endorsements': ''
+        'endorsements': 'Penn Undergraduate Law Journal'
       },
       {
         'name': 'Maria Curry',
         'photo': 'https://snworksceo.imgix.net/dpn/b333194a-0a94-44c5-a053-b9604200d027.sized-1000x1000.JPG?h=400',
         'statement': "Real change isn't achieved overnight, but there are concrete steps to get there. Throughout my past 3 years on the UA, I have shown that this tangible change is possible not just with passion, but with the correct ambition and determination to see it through. As UA President, I want to continue to challenge the status quo and challenge our members to support you, the student body, at a new level.<br><br>My joint-platform is based on 5 Pillars: Transparency, Equity & Representation, Sustainability, Wellness, and Modern Infrastructure. An overarching theme is student engagement, and as President I want to continue to build on forums like UA Steering, town halls and focus groups, to enhance collaboration among student leaders, and move from discussions to tangible actions items with administration.<br><br>Our record shows this works. From directly working with administrators on the creation of the new PennTransit-App that allows students to request transportation on and off-campus for free, to personally creating 360°-Views of Campus Dorms for Campus-Express, to implementing new signage in all Dining Halls on sustainable food disposal, and developing mindfulness-spaces in centralized locations like Houston Hall, I will continue to lead the UA to tangible change for you as UA President.",
-        'endorsements': ''
+        'endorsements': 'Black Student League, Penn Model Congress, Fossil Free Penn'
         },
         {
           'name': 'Nikhil Gupta',
           'photo': 'https://snworksceo.imgix.net/dpn/686dd9a6-8eab-4e62-be88-d96d7ef73884.sized-1000x1000.JPG?h=400',
           'statement': "As a New Student Representative and Communications Representative this past year, I have prioritized the UA as my main campus commitment. I have led an initiative to increase access to free menstrual products in Penn’s restrooms and have made progress by having numerous meetings with administrators, speaking at University Council, collecting over 800 signatures for a petition I co-authored with GAPSA, conducting a survey of around 80 campus locations, and garnering support from the Vice Provost, President Gutmann, The Daily Pennsylvanian, and student groups. I have also worked with fellow UA members for my other projects; I advised the Division of Public Safety on their active shooter guide and advocated for improved triaging systems to reduce wait times with the Student Health Service. I have attended every weekly GBM and committee meeting, in which I contributed my insights on issues faced by the University community and advised my fellow UA members on their projects. Through my Communications role, I have managed social media, designed graphics, and created videos for transparency with the student body. If re-elected as Wharton Representative, I would also like to work on revamping exam policies and other academic initiatives in addition to continuing to advance equity.",
-          'endorsements': ''
+          'endorsements': 'Penn Wharton China Summit, South Asia Society, SAS'
         },
         {
           'name': 'Samidha Sane',
           'photo': 'https://snworksceo.imgix.net/dpn/acd0db9b-308e-4ded-a2fe-fb26f54a2ef4.sized-1000x1000.JPG?h=400',
           'statement': "Hello, I am Samidha Sane! If elected as UA Wharton Representative, I will integrate my past experiences of advocating for women’s health, menstrual equity, and nutrition with my vision for an inclusive, healthy, and academically enriching future for all at Penn:<br><br>My campaign platform consists of three key areas:<br><br>1. Diversity/Inclusion: I aim to implement diversity trainings for faculty and student leaders to mitigate microaggressions concerning gender, race, and socioeconomic status in the classroom. I will also push to create more sustainable, affordable summer storage options for students.<br><br>2. Health and Safety: I will promote sexual violence prevention initiatives and Title IX rights/procedures on campus by working alongside organizations like Penn Violence Prevention and Office of the Sexual Violence Investigative to review and publicize an annual report on how cases are handled at Penn to assure that victims are offered extensive, timely support.<br><br>3. Academic Life: I would like to offer students greater accessibility to costly course materials, improve first-year Wharton advising, and table in Huntsman Hall to solicit suggestions from Wharton students so the UA can further support students’ academic endeavors.<br><br>If elected to the UA, I will advocate for safety and equity to ultimately prioritize student wellbeing at Penn.",
-          'endorsements': ''
+          'endorsements': 'South Asia Society'
         },
     ],
     "Nursing_Representative": [{
         'name': 'Tess Doran',
         'photo': 'https://snworksceo.imgix.net/dpn/a5097b75-97c4-4b4c-a0e8-27d2e884e69e.sized-1000x1000.JPG?h=400',
         'statement': "Hi friends! I am so excited to announce my candidacy for Nursing Representative on the Undergraduate Assembly! For the past year, I have had the pleasure of serving as an Associate Member on the UA working on numerous projects to benefit student’s academic and social lives, as well as striving to improve mental health on campus through collaborations with the Tutoring Center, Weingarten Learning Center, and School of Nursing.<br><br>If I were to be elected as your Nursing Representative, I would continue to fight for change and students’ rights on campus with projects such as lobbying for standardized clinical costs, more transparent financial aid statements, and healthcare-specific mental health resources on campus. Penn Nursing prides itself on being the best, but there is so much more that needs to be done. Though we may be the smallest school on campus, there is no reason why we should not be equally represented, and I know I can be the liaison between the UA and School of Nursing needed to make your voices heard.<br><br>The Penn Nursing name might speak for itself, but don’t let anyone speak for you. I hope I can count on your support.",
-      	'endorsements': ''
+      	'endorsements': 'Penn Improv Society, SAS'
       }
     ],
   },
@@ -225,7 +225,7 @@ var people = {
         'name': 'Karim El Sewedy',
         'photo': 'https://snworksceo.imgix.net/dpn/88913d2c-bf6b-487b-a8a1-3f9cd9f086ee.sized-1000x1000.JPG?h=400',
         'statement': `Nobody:<br><br>My eyebrows: vote 4 me<br><br>In all seriousness, if you want to learn more about my platform and the work I've done as your Class Board 2020 President over the past 3 years, check out my Facebook Page: <a href="https://www.facebook.com/Karim2020President/" target="_blank">https://www.facebook.com/Karim2020President</a>`,
-      	'endorsements': ''
+      	'endorsements': 'Penn Undergraduate Law Journal'
       }
     ],
     "Executive_Vice_President": [{
@@ -266,7 +266,7 @@ var people = {
         'name': 'Noel Zheng',
         'photo': 'https://snworksceo.imgix.net/dpn/8976ac7a-eeb7-48cc-bb37-b88a4e4791e4.sized-1000x1000.JPG?h=400',
         'statement': "After being elected to be the Class of 2020 College Chair–alongside my partner-in-crime Daniella Wirtschafter and this amazingly talented team this year–I have continued to realize the strong sense of community in our class. And that’s something I am honoured to be apart of, let alone be able to represent.<br>Throughout this past year, I have helped implement events in partnership with many campus organizations that strive to make these years so memorable.<br>Looking forward, I am excited to create social programs, both new and traditional, that continue to foster this sense of unity.<br>(And feb club, team get ready for feb club.)",
-        'endorsements': ''
+        'endorsements': 'Australians and New Zealanders at Penn'
       }
     ],
     "Engineering_Chair": [{
@@ -304,13 +304,13 @@ var people = {
         'name': 'Anthony Scarpone-Lambert',
         'photo': 'https://snworksceo.imgix.net/dpn/2a0701f1-3eb4-4b8b-b846-d62da8e3726e.sized-1000x1000.JPG?h=400',
         'statement': "It is pretty crazy that we are about to be Upperclassmen. I literally feel like NSO just ended… and now we are about to be Juniors.<br><br>With this major milestone on the horizon, I’m super excited to be running for Class Board 2021 Executive Vice President. This campaign has been inspired by the incredible community and family that Penn has provided me throughout the past two years. My goal for the Class of 2021 is to enter Junior year with the most pride and spirit possible!! I plan to do this in three steps:<br><br>1st: Energy - I want to be a fresh source of energy that pushes us to become the most extra and spirited class possible!!<br><br>2nd: Voice - I want to be the strong voice that represents the diverse student body that makes up our class.<br><br>3rd: Plan - I want Class Board to plan tangible events and programing to inspire us to be a tight-knit, energized community.<br><br>With that being said, I promise to be there for the Class of 2021. I promise to be the energized, enthusiastic, and compassionate leader that I aspire to everyday. Thank you!<br><br>-Anthony S-L N’21<br>antsl@nursing.upenn.edu",
-        'endorsements': ''
+        'endorsements': 'Student Nurses at Penn (SNAP)'
       },
       {
         'name': 'Maher Abdel Samad',
         'photo': 'https://snworksceo.imgix.net/dpn/6638d6b5-0285-4f18-9bf7-de51ada04260.sized-1000x1000.JPG?h=400',
         'statement': "For the last two years, I’ve put my heart, soul and bones into making the 2021 experience the best it can be through Class Board. People who know me describe me as immensely passionate and hard working. You can see from my track record that I am committed to implementing my platform and making sure everyone has access to a great Penn experience regardless of who they are or where they come from.<br><br>For the last two years, I’ve been pushing the boundaries of what Class Board can do for all of us students, and what’s coming is even greater.<br><br>My platform is simple: it consists of the three interconnected ideas of Inclusion, Expansion, and Collaboration. I’ve delivered on that platform in every way I could: I’ve pushed to subsidize 100% of Quarter zips and costs for Class Board events for all students requesting financial aid. Moreover, I’ve been an integral part of planning the Sophomore experience, from Sophomore week, to larger events like Holi.<br><br> Finally, I’ve worked to increase Class Board’s collaboration with different business in Philly to provide us with amazing events: United by Blue, Federal Donuts, Hummus Grill, Zahav and many more for our restaurant Crawls, Blind Brunches, and Coffee House events.",
-        'endorsements': ''
+        'endorsements': 'Penn Arab Student Society, Penn Undergraduate Law Journal, Assembly of International Students, South Asia Society'
       }
     ],
     "Vice_president_of_Internal_Affairs": [{
@@ -344,7 +344,7 @@ var people = {
         'name': 'Daniel Gordon',
         'photo': 'https://snworksceo.imgix.net/dpn/bd2488dc-409f-4e64-82e9-c6d26ab1c7f6.sized-1000x1000.JPG?h=400',
         'statement': "Hello Class of 2021! It has been my absolute pleasure to be your College Chair for the past two years. On Class Board, I have pioneered new events such as Sophomore Week and our upcoming special tradition on April 30th (hype!). For our Junior year, I plan to expand the existing traditions and continue our successful apparel distributions. In addition, I hope to continue to grow partnerships with the administration to create new large-scale events for the Class of 2021. If you have any suggestions/ideas, I would love to hear from you at dagord@sas.upenn.edu. I’m excited to share another wonderful year with you all!",
-      	'endorsements': ''
+      	'endorsements': 'Phi Chi Theta'
       }
     ],
     "Engineering_Chair": [{
@@ -399,7 +399,7 @@ var people = {
         'name': 'Jessica Ramses',
         'photo': 'https://snworksceo.imgix.net/dpn/992c98b7-c033-4713-b55e-8ddcffcce764.sized-1000x1000.JPG?h=400',
         'statement': "Hello!<br><br>My name is Jessica Ramses and I’m running for Class Board 2022 President! I am an international student, coming from Cairo Egypt, currently studying Mechanical Engineering. Running for Class President has always been a dream.<br><br>I strongly believe I have the necessary leadership qualities for President. In school, I ran my charity and was the CEO of a student-run start-up company. Currently, I am the Social Chair of the Penn Arabs Society where I organize events for the Arab community. I absolutely adored planning these events, which made me realize how much I desire the opportunity to expand my efforts to the Penn Community!<br><br>I have a plethora of ideas I would love to implement, which go under three main categories: social wellness, mental health and community service. To name a few, I want to open a large farmer’s market down locust walk, to salvage the excess food from dining halls and distribute meals to the homeless and to promote love around campus by making students send thank you notes and flowers to friends.<br><br>As President, I promise to always hear your ideas and act towards improving our community and making Penn your home away from home!<br><br>Jessica Ramses",
-        'endorsements': ''
+        'endorsements': 'Penn Arab Student Society'
       },
       {
         'name': 'Matteo Brunel',
@@ -443,14 +443,14 @@ var people = {
         'name': 'Shriya Beesam',
         'photo': 'https://snworksceo.imgix.net/dpn/cf4adcc3-35d1-4380-a710-565ba4c3928f.sized-1000x1000.JPG?h=400',
         'statement': "I believe that the biggest role of Class Board is ensuring that the Class of 2022 feels like a family for every student that is a part of it. It’s a long term effort, and it’s definitely something that doesn’t form after one event. It takes years of memories and interactions that’ll continue to shape our college experience, and that’s part of what makes being a first-year so exciting. As VP External, I will do everything in my power to foster a sense of community among our class, so that we all leave from Penn with joined experiences and memories guaranteed to last a lifetime. My role would mainly be to work with the outward collaborations that Class Board may have in order to create the programming we all can participate in. I want to plan the events you would like to see, and if I had the opportunity to be in this role I would love to hear your feedback and suggestions to incorporate it into as many of the activities I plan as possible. I want to help you get the most of your Penn experience, and I will do whatever I can to make that happen!",
-      	'endorsements': ''
+      	'endorsements': 'South Asia Society, WeissLabs'
       }
     ],
     "Vice_president_of_Internal_Affairs": [{
         'name': 'Jerry Xiang',
         'photo': 'https://snworksceo.imgix.net/dpn/94040bef-5584-42e1-bf9e-641aa32f1bee.sized-1000x1000.JPG?h=400',
         'statement': "Hi all! My name is Jerry Xiang and I’m from the snowy depths of Canada! I am extremely excited to announce my candidacy for Vice President of Internal Affairs, and cannot wait to bring our class, the class of Twenty-Two-Together—or should I say class Kiki (actually plz don’t ever bring that back)—closer together.<br><br>As your VP of Internal Affairs, what I am most passionate about are the many class specific traditions at Penn: Senior Feb club, Junior Hey Day, Freshman NSO, and...wait, hold up: NO TRADITION for Sophomores??<br><br>Personally, I find it crazy that we have no sophomore tradition to mark as a rite of passage. Some ideas that I currently have are a 5-man pentathlon with a twist, a one-month inter-school competition with LEGENJERRY prizes (omg I can’t believe I actually said that), and Sophomore Sundays with a different sponsored event every week. But this isn’t my decision alone. I want to hear YOUR input. Because these events are for all of you, my fellow (future) sophomores of the Class of 2022.<br><br>Now that you’ve heard what I have to offer, I just have one question for you: how about it Eh?",
-      	'endorsements': ''
+      	'endorsements': 'SAS'
       },
       {
         'name': 'Joey Lohmann',
@@ -462,7 +462,7 @@ var people = {
         'name': 'John Ta',
         'photo': 'https://snworksceo.imgix.net/dpn/3ce39d63-9c2b-4fda-b62c-8a454f34cce6.sized-1000x1000.JPG?h=400',
         'statement': "Hey everyone! My name is John Ta, and I am running to be your Vice President of Internal Affairs for our upcoming sophomore year. As Vice President Internal, I would work to serve not only you, but the entirety of the class of 2022. I plan to (I) design an event that commemorates when we declare our majors and, thus, begin to truly follow our passions for the rest of our undergraduate years, (II) incorporate one-on-one coffee chats with class board members to facilitate transparency, communication, and our relationships with you, and (III) help organize class-wide events, such as free brunch and dinners that help us all grow together as a whole.<br><br>As a previous class president, and an extremely motivated and outspoken student, I am not one to back down from a challenge; rather, I am able to look to the future and make the necessary changes. We all hold the power to decide the future. Let’s #maketarightchoice and work together to make our sophomore year ta-rrific!",
-        'endorsements': ''
+        'endorsements': 'SAS'
       },
       {
         'name': 'JJ Kampf',
@@ -501,7 +501,7 @@ var people = {
         'name': 'Izzy Kim',
         'photo': 'https://snworksceo.imgix.net/dpn/433f6a10-bd43-4819-9c5d-cb8858cef740.sized-1000x1000.JPG?h=400',
         'statement': "Hello, PENNgineers! I was incredibly honored to serve as your Engineering Class Chair, and I would like to continue serving you to make sure that your Penn experience is amazing. This year, I worked with other members of the board to bring Econ Scream, Freshgiving, Cram n Jam, and more to you. This first year was crucial for building class-wide unity. I would like to continue bringing the class together, but I would also like to work towards bringing more events that are of interest to you, an engineer! I am currently in conversation with ESAC and EDAB and am in the process of bringing engineering-specific events! I need your vote to continue working towards this goal and serving your interests, so please make sure to go cast a vote for me! You know it was an #IZZYchoice to elect me as your Engineering Class Chair first semester...Now it is an #IZZYerchoice! :)",
-      	'endorsements': ''
+      	'endorsements': 'SAS'
       }
     ],
     "Wharton_Chair": [{
