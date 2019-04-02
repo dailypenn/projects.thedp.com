@@ -11,7 +11,7 @@ var people = {
         'name': 'Natasha Menon',
         'photo': 'https://snworksceo.imgix.net/dpn/52b9157a-94a2-4c16-b1ba-6ff8ce4f8063.sized-1000x1000.JPG?h=400',
         'statement': "Hi, my name is Natasha Menon, and I am running for President of the Undergraduate Assembly. If elected, my priorities next year would be transparency, inclusivity, accessibility, wellness, and academics. These platform ideas, as well as other information about my campaign can be found at <a href='https://www.menongoldstein.com' target='_blank'>menongoldstein.com!</a> As the candidate with the most UA experience, I have been able to foster the relationships with administrators and student groups necessary to ensure the execution of my platform. With your help in electing me as UA President, I will use this knowledge to advocate for the policies that will make Penn a better school not just for our class, but for generations to come!",
-        'endorsements': 'Penn Undergraduate Health Council, United Minorities Council, South Asia Society, Asian Pacific Student Coalition, Penn Association for Gender Equity, SAS, Student Athlete Advisory Committee, Radical South Asian Collective'
+        'endorsements': 'Penn Undergraduate Health Council, United Minorities Council, South Asia Society, Asian Pacific Student Coalition, Penn Association for Gender Equity, Student Athlete Advisory Committee, Radical South Asian Collective'
       }
     ],
     "UA_Vice_President": [{
@@ -24,7 +24,7 @@ var people = {
         'name': 'Brian Goldstein',
         'photo': 'https://snworksceo.imgix.net/dpn/42d48ef3-8d1f-4200-b6a3-9b9675fb088a.sized-1000x1000.JPG?h=400',
         'statement': "Hi, my name is Brian Goldstein, and I am running for Vice President of the Undergraduate Assembly. If elected, my priorities next year would be transparency, inclusivity, accessibility, wellness, and academics. As Vice President I would look forward to collaborating with UA Steering groups to promote our common goals and initiatives. As the candidate with the most UA experience I look forward to utilizing the relationships that I have developed with administrators to affect tangible change. I will dedicate myself to both the Undergraduate Assembly and the student body in order to ensure that your priorities and concerns are heard.",
-        'endorsements': 'Penn Undergraduate Health Council, South Asia Society, Asian Pacific Student Coalition, SAS, Student Athlete Advisory Committee'
+        'endorsements': 'Penn Undergraduate Health Council, South Asia Society, Asian Pacific Student Coalition, Student Athlete Advisory Committee'
       }
     ],
     "SAS_Representative": [{
@@ -151,7 +151,7 @@ var people = {
         'name': 'Edward Yisheng Jiang',
         'photo': 'https://snworksceo.imgix.net/dpn/01a751bd-41d9-4e72-8906-5ccc0b62dfe3.sized-1000x1000.JPG?h=400',
         'statement': "G’day! I’m Edward from Sydney, Australia and I’m here to help.<br><br>My policy platform is simple. It stems from a couple of things I’ve learned from my time as an international student and a Peer Advisor.<br><br>(1) Funding for internships and programs abroad are crucial in supporting qualified students pursue opportunities that otherwise lie beyond reach. It’s counterintuitive for these opportunities to be limited by school.<br><br>(2) Resources for exchange and transfer students should be expanded because these students play such an important role in cultivating Penn’s diversity and rich sense of community even if they can’t vote.<br><br>(3) Getting a good sense of University requirements helps folks - particularly international students - make important decisions on their academic path. More needs to be done to build transparency.<br><br>If you’d like to reach me, I’m all ears and never too far away from my University email at yishengj@sas.upenn. Cheers and best of luck to all the others running.",
-        'endorsements': 'Phi Chi Theta, Penn Undergraduate Law Journal, Australians and New Zealanders at Penn, Public Policy Initiative Student Group, Alpha Phi Omega, SAS, SFCU'
+        'endorsements': 'Phi Chi Theta, Penn Undergraduate Law Journal, Australians and New Zealanders at Penn, Public Policy Initiative Student Group, Alpha Phi Omega, South Asia Society, SFCU'
       }
     ],
     "SEAS_Representative": [
@@ -172,7 +172,7 @@ var people = {
         'name': 'Danny Dontoh',
         'photo': 'https://snworksceo.imgix.net/dpn/0669eb89-fc8e-4c16-b959-8d724cb5dbf0.sized-1000x1000.JPG?h=400',
         'statement': "During my time on the UA, I have had the opportunity to collaborate with administrators, faculty, and student leaders to create tangible change! As a member of the Equity and Inclusion committee, I have been working on creating concentration informational sessions to increase educational equity across all Wharton departments,  developing a Wharton Diversity Advisory board to represent the needs of Wharton students from all backgrounds, and facilitating access to transportation services for Fall and Spring breaks. As a Wharton Representative, I hope to not only further these initiatives, but also work alongside the bright-minds our student body to connect them with the resources to thrive at Penn!",
-      	'endorsements': 'Black Student League, SAS, Alpha Kappa Psi'
+      	'endorsements': 'Black Student League, South Asia Society, Alpha Kappa Psi'
       },
       {
         'name': 'Dante Diggs',
@@ -202,7 +202,7 @@ var people = {
           'name': 'Nikhil Gupta',
           'photo': 'https://snworksceo.imgix.net/dpn/686dd9a6-8eab-4e62-be88-d96d7ef73884.sized-1000x1000.JPG?h=400',
           'statement': "As a New Student Representative and Communications Representative this past year, I have prioritized the UA as my main campus commitment. I have led an initiative to increase access to free menstrual products in Penn’s restrooms and have made progress by having numerous meetings with administrators, speaking at University Council, collecting over 800 signatures for a petition I co-authored with GAPSA, conducting a survey of around 80 campus locations, and garnering support from the Vice Provost, President Gutmann, The Daily Pennsylvanian, and student groups. I have also worked with fellow UA members for my other projects; I advised the Division of Public Safety on their active shooter guide and advocated for improved triaging systems to reduce wait times with the Student Health Service. I have attended every weekly GBM and committee meeting, in which I contributed my insights on issues faced by the University community and advised my fellow UA members on their projects. Through my Communications role, I have managed social media, designed graphics, and created videos for transparency with the student body. If re-elected as Wharton Representative, I would also like to work on revamping exam policies and other academic initiatives in addition to continuing to advance equity.",
-          'endorsements': 'Penn Wharton China Summit, South Asia Society, SAS'
+          'endorsements': 'Penn Wharton China Summit, South Asia Society, South Asia Society'
         },
         {
           'name': 'Samidha Sane',
@@ -215,7 +215,7 @@ var people = {
         'name': 'Tess Doran',
         'photo': 'https://snworksceo.imgix.net/dpn/a5097b75-97c4-4b4c-a0e8-27d2e884e69e.sized-1000x1000.JPG?h=400',
         'statement': "Hi friends! I am so excited to announce my candidacy for Nursing Representative on the Undergraduate Assembly! For the past year, I have had the pleasure of serving as an Associate Member on the UA working on numerous projects to benefit student’s academic and social lives, as well as striving to improve mental health on campus through collaborations with the Tutoring Center, Weingarten Learning Center, and School of Nursing.<br><br>If I were to be elected as your Nursing Representative, I would continue to fight for change and students’ rights on campus with projects such as lobbying for standardized clinical costs, more transparent financial aid statements, and healthcare-specific mental health resources on campus. Penn Nursing prides itself on being the best, but there is so much more that needs to be done. Though we may be the smallest school on campus, there is no reason why we should not be equally represented, and I know I can be the liaison between the UA and School of Nursing needed to make your voices heard.<br><br>The Penn Nursing name might speak for itself, but don’t let anyone speak for you. I hope I can count on your support.",
-      	'endorsements': 'Penn Improv Society, SAS'
+      	'endorsements': 'Penn Improv Society, South Asia Society'
       }
     ],
   },
@@ -450,7 +450,7 @@ var people = {
         'name': 'Jerry Xiang',
         'photo': 'https://snworksceo.imgix.net/dpn/94040bef-5584-42e1-bf9e-641aa32f1bee.sized-1000x1000.JPG?h=400',
         'statement': "Hi all! My name is Jerry Xiang and I’m from the snowy depths of Canada! I am extremely excited to announce my candidacy for Vice President of Internal Affairs, and cannot wait to bring our class, the class of Twenty-Two-Together—or should I say class Kiki (actually plz don’t ever bring that back)—closer together.<br><br>As your VP of Internal Affairs, what I am most passionate about are the many class specific traditions at Penn: Senior Feb club, Junior Hey Day, Freshman NSO, and...wait, hold up: NO TRADITION for Sophomores??<br><br>Personally, I find it crazy that we have no sophomore tradition to mark as a rite of passage. Some ideas that I currently have are a 5-man pentathlon with a twist, a one-month inter-school competition with LEGENJERRY prizes (omg I can’t believe I actually said that), and Sophomore Sundays with a different sponsored event every week. But this isn’t my decision alone. I want to hear YOUR input. Because these events are for all of you, my fellow (future) sophomores of the Class of 2022.<br><br>Now that you’ve heard what I have to offer, I just have one question for you: how about it Eh?",
-      	'endorsements': 'SAS'
+      	'endorsements': 'South Asia Society'
       },
       {
         'name': 'Joey Lohmann',
@@ -462,7 +462,7 @@ var people = {
         'name': 'John Ta',
         'photo': 'https://snworksceo.imgix.net/dpn/3ce39d63-9c2b-4fda-b62c-8a454f34cce6.sized-1000x1000.JPG?h=400',
         'statement': "Hey everyone! My name is John Ta, and I am running to be your Vice President of Internal Affairs for our upcoming sophomore year. As Vice President Internal, I would work to serve not only you, but the entirety of the class of 2022. I plan to (I) design an event that commemorates when we declare our majors and, thus, begin to truly follow our passions for the rest of our undergraduate years, (II) incorporate one-on-one coffee chats with class board members to facilitate transparency, communication, and our relationships with you, and (III) help organize class-wide events, such as free brunch and dinners that help us all grow together as a whole.<br><br>As a previous class president, and an extremely motivated and outspoken student, I am not one to back down from a challenge; rather, I am able to look to the future and make the necessary changes. We all hold the power to decide the future. Let’s #maketarightchoice and work together to make our sophomore year ta-rrific!",
-        'endorsements': 'SAS'
+        'endorsements': 'South Asia Society'
       },
       {
         'name': 'JJ Kampf',
@@ -501,7 +501,7 @@ var people = {
         'name': 'Izzy Kim',
         'photo': 'https://snworksceo.imgix.net/dpn/433f6a10-bd43-4819-9c5d-cb8858cef740.sized-1000x1000.JPG?h=400',
         'statement': "Hello, PENNgineers! I was incredibly honored to serve as your Engineering Class Chair, and I would like to continue serving you to make sure that your Penn experience is amazing. This year, I worked with other members of the board to bring Econ Scream, Freshgiving, Cram n Jam, and more to you. This first year was crucial for building class-wide unity. I would like to continue bringing the class together, but I would also like to work towards bringing more events that are of interest to you, an engineer! I am currently in conversation with ESAC and EDAB and am in the process of bringing engineering-specific events! I need your vote to continue working towards this goal and serving your interests, so please make sure to go cast a vote for me! You know it was an #IZZYchoice to elect me as your Engineering Class Chair first semester...Now it is an #IZZYerchoice! :)",
-      	'endorsements': 'SAS, Penn k-Beats'
+      	'endorsements': 'South Asia Society, Penn k-Beats'
       }
     ],
     "Wharton_Chair": [{
