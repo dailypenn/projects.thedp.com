@@ -151,7 +151,7 @@ var people = {
         'name': 'Edward Yisheng Jiang',
         'photo': 'https://snworksceo.imgix.net/dpn/01a751bd-41d9-4e72-8906-5ccc0b62dfe3.sized-1000x1000.JPG?h=400',
         'statement': "G’day! I’m Edward from Sydney, Australia and I’m here to help.<br><br>My policy platform is simple. It stems from a couple of things I’ve learned from my time as an international student and a Peer Advisor.<br><br>(1) Funding for internships and programs abroad are crucial in supporting qualified students pursue opportunities that otherwise lie beyond reach. It’s counterintuitive for these opportunities to be limited by school.<br><br>(2) Resources for exchange and transfer students should be expanded because these students play such an important role in cultivating Penn’s diversity and rich sense of community even if they can’t vote.<br><br>(3) Getting a good sense of University requirements helps folks - particularly international students - make important decisions on their academic path. More needs to be done to build transparency.<br><br>If you’d like to reach me, I’m all ears and never too far away from my University email at yishengj@sas.upenn. Cheers and best of luck to all the others running.",
-        'endorsements': 'Phi Chi Theta, Penn Undergraduate Law Journal, Australians and New Zealanders at Penn, Public Policy Initiative Student Group, Alpha Phi Omega, Jesse, SAS'
+        'endorsements': 'Phi Chi Theta, Penn Undergraduate Law Journal, Australians and New Zealanders at Penn, Public Policy Initiative Student Group, Alpha Phi Omega, SAS'
       }
     ],
     "SEAS_Representative": [
