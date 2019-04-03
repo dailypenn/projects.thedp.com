@@ -11,7 +11,7 @@ var people = {
         'name': 'Natasha Menon',
         'photo': 'https://snworksceo.imgix.net/dpn/52b9157a-94a2-4c16-b1ba-6ff8ce4f8063.sized-1000x1000.JPG?h=400',
         'statement': "Hi, my name is Natasha Menon, and I am running for President of the Undergraduate Assembly. If elected, my priorities next year would be transparency, inclusivity, accessibility, wellness, and academics. These platform ideas, as well as other information about my campaign can be found at <a href='https://www.menongoldstein.com' target='_blank'>menongoldstein.com!</a> As the candidate with the most UA experience, I have been able to foster the relationships with administrators and student groups necessary to ensure the execution of my platform. With your help in electing me as UA President, I will use this knowledge to advocate for the policies that will make Penn a better school not just for our class, but for generations to come!",
-        'endorsements': 'Penn Undergraduate Health Council, United Minorities Council, South Asia Society, Asian Pacific Student Coalition, Penn Association for Gender Equity, Student Athlete Advisory Committee, Radical South Asian Collective'
+        'endorsements': 'Penn Undergraduate Health Council, United Minorities Council, South Asia Society, Asian Pacific Student Coalition, Penn Association for Gender Equity, Student Athlete Advisory Committee, Radical South Asian Collective, Assembly of International Students'
       }
     ],
     "UA_Vice_President": [{
@@ -24,14 +24,14 @@ var people = {
         'name': 'Brian Goldstein',
         'photo': 'https://snworksceo.imgix.net/dpn/42d48ef3-8d1f-4200-b6a3-9b9675fb088a.sized-1000x1000.JPG?h=400',
         'statement': "Hi, my name is Brian Goldstein, and I am running for Vice President of the Undergraduate Assembly. If elected, my priorities next year would be transparency, inclusivity, accessibility, wellness, and academics. As Vice President I would look forward to collaborating with UA Steering groups to promote our common goals and initiatives. As the candidate with the most UA experience I look forward to utilizing the relationships that I have developed with administrators to affect tangible change. I will dedicate myself to both the Undergraduate Assembly and the student body in order to ensure that your priorities and concerns are heard.",
-        'endorsements': 'Penn Undergraduate Health Council, South Asia Society, Asian Pacific Student Coalition, Student Athlete Advisory Committee'
+        'endorsements': 'Penn Undergraduate Health Council, South Asia Society, Asian Pacific Student Coalition, Student Athlete Advisory Committee, Assembly of International Students'
       }
     ],
     "SAS_Representative": [{
         'name': 'Chase Serota',
         'photo': 'https://snworksceo.imgix.net/dpn/fd0c448b-104e-4948-ad6f-163357b61b6d.sized-1000x1000.JPG?h=400',
         'statement': "My name is Chase Serota and I’m running for Vice President of the Undergraduate Assembly to create tangible change on campus and put student opinion at the forefront of administrator decisions. My joint-platform is based on 5 Pillars: Transparency, Equity & Representation, Sustainability, Wellness & Student Life, and Modern Infrastructure. Just within the past year, my record of both experience and impact proves how I will continue to follow through on projects that directly benefit students.<br><br>For example, beginning in January of this year, I personally directed the renovation of the basement of Van Pelt that will take place this summer in coordination with Penn Facilities and other UA members. Additionally, I’ve worked directly with CAPS, the Provost’s Office, and Penn’s Chief Wellness Officer to develop plans for a pilot program for a CAPS satellite office within Van Pelt Library that’s accessible to all students, regardless of school. Moreover, I have enjoyed promoting student focus groups with high-level administrators like those regarding the new Sophomore Experience or the replacement of Frontera to ensure that the student opinion is always represented. This is how we make the UA work for you—join us and vote Curry and Serota for UA President and VP.",
-        'endorsements': ''
+        'endorsements': 'Penn Model Congress, Fossil Free Penn, Penn Democrats, Student Sustainability Association at Penn, Penn Vegan Society, University of Pennsylvania Beekeeping Club, Climate Reality Project at Penn, Penn Eco-Reps, Penn Sustainability Undergraduate Advisory Board, Penn Environmental Group (PEG), Penn Vegan Society (PVS), Earth and Environmental Science Undergraduate Advisory Board '
       },
       {
         'name': 'Daniel Ruiz de la Concha',
@@ -43,7 +43,7 @@ var people = {
         'name': 'Arjun Swaminathan',
         'photo': 'https://snworksceo.imgix.net/dpn/358c08ab-16f3-4a76-86a7-49c892772b5c.sized-1000x1000.JPG?h=400',
         'statement': "Hi everyone! I’m Arjun Swaminathan and I’m running to be re–elected to UA as one of your College representatives. As a member of the UA these past two years, I have been responsible for a number of dining, housing, and transit projects that have provided benefits to students on campus, ranging from the development and rollout of the new ride–sharing application for students (Penn Rides on Request), to creating a proper recreation space in Houston Hall, to advertising dining options for students with dietary restrictions, to advocating for mental health awareness on campus. Additionally, I have served as a member of the UA’s Budget Committee as well as its Speaker Pro Tempore, wherein I have contributed to a fair budgeting process for student government and served as the deputy to the UA’s internal chair, respectively. In running for reelection, I would like to continue working on similar projects and contribute to making Penn’s community a better place, and I believe that I have proven myself capable of doing that these past two years. Thanks for reading and vote for Arjun!",
-      	'endorsements': ''
+      	'endorsements': 'UMOJA'
       },
       {
         'name': 'Kevin Zhou',
@@ -73,7 +73,7 @@ var people = {
         'name': 'Jennifer Richards',
         'photo': 'https://snworksceo.imgix.net/dpn/fdf5bc26-8ab9-4f3c-9ce7-2fdae5bb5306.sized-1000x1000.JPG?h=400',
         'statement': "Hi everyone! I’m Jennifer Richards and I am running for re-election for UA College Representative! Having served the last two years on the Academic Initiatives committee, I hope to continue creating tangible change and facilitating transparency with the student body.<br><br>The past two years I’ve been a champion for mental health within the UA and the Penn community. For example, I recently secured funding from alumni to hire a CAPS clinician in the athletic fields. This is the first of many embedded CAPS clinicians I hope to install during my time at Penn.<br><br>My platform consists of eight key issues:<br>1. Destigmatizing mental health<br>2. Improving access to mental health resources<br>3. Reforming course absence policies<br>4. Supporting academic needs<br>5. Promoting mental wellness in Greek life and the rush process<br>6. Revamping advising programs<br>7. Enhancing the club recruitment process<br>8. Advocating for the needs of student-athletes<br><br>But more than anything, I want to advocate for YOUR needs and listen to YOUR voice. Please feel free to reach out to me at rjenny@sas.upenn.edu. Serving on the UA has been one of the most rewarding experiences and I would really love your vote. #JENNforPENN",
-        'endorsements': ''
+        'endorsements': 'UMOJA'
       },
       {
         'name': 'Joseph Squillaro',
@@ -91,13 +91,13 @@ var people = {
         'name': 'Kristen Ukeomah',
         'photo': 'https://snworksceo.imgix.net/dpn/314306de-7fb6-489e-93bf-dc5912fa100f.sized-1000x1000.JPG?h=400',
         'statement': "I have served on the Undergraduate Assembly for the past two years. On it, I have served on the Social Justice (SJ) and Equity and Inclusion (EI) committees, working on projects that advocate for students of color, low-income students, and students with disabilities across campus. As I run this third time, I plan on continuing this work. However, it has come to my attention that the majority of the student body does not actually know what the UA does and what we work on. The UA is seen as an organization that is more concerned about airport shuttle sales than the advocacy of the student body. I want to ensure that the student body knows that is false with periodical publications of the UA's projects roughly 4 times a school year and by widely disseminating a UA feedback form, so students know that the UA actually works for them. Moreover, I would like to advocate for all students to have equal access at Penn, which is not the case. Wharton students have more University privileges that College students and that is not equitable. I plan to advocate for equality across schools.",
-        'endorsements': 'Black Student League'
+        'endorsements': 'Black Student League, UMOJA'
       },
       {
         'name': 'Mary Sadallah',
         'photo': 'https://snworksceo.imgix.net/dpn/4583c766-449c-4f7b-8392-3573ad5bdb3b.sized-1000x1000.JPG?h=400',
         'statement': "Hi! My name is Mary Sadallah and I’m an Economics major from South Jersey. For the past year, I’ve been fortunate enough to serve as an Associate Member on the Undergraduate Assembly. My chief focus has been to integrate wellness into university life (mainly through the expansion of the Embedded CAPS Model that has been implemented in Wharton) because at Penn, we tend to see ourselves as students first and people second. To combat this culture, I believe that wellness must be tailored to us and made equally accessible. The UA has also afforded me the opportunity to advocate for members of underrepresented groups on campus. I’ve worked alongside the Cultural Resource Centers to plan programming that celebrates student diversity and engineered solutions to challenges faced by the FGLI community. Most importantly, I’ve worked to realize that my voice, as that of a minority and FGLI student, demands to be heard. A vote for Mary is a vote that carries the weight of making all-inclusive change. I sincerely hope that I can continue to offer my unique perspective and experience to the Undergraduate Assembly as a Representative of the School of Arts & Sciences. Vote Mary Sadallah for UA SAS Rep!",
-      	'endorsements': 'Penn Undergraduate Law Journal'
+      	'endorsements': 'Penn Undergraduate Law Journal, UMOJA'
       },
       {
         'name': 'Mikayla Golub',
@@ -109,7 +109,7 @@ var people = {
         'name': 'Natasha Menon',
         'photo': 'https://snworksceo.imgix.net/dpn/52b9157a-94a2-4c16-b1ba-6ff8ce4f8063.sized-1000x1000.JPG?h=400',
         'statement': "Hi, my name is Natasha Menon, and I am running for President of the Undergraduate Assembly. If elected, my priorities next year would be transparency, inclusivity, accessibility, wellness, and academics. These platform ideas, as well as other information about my campaign can be found at <a href='https://www.menongoldstein.com' target='_blank'>menongoldstein.com!</a> As the candidate with the most UA experience, I have been able to foster the relationships with administrators and student groups necessary to ensure the execution of my platform. With your help in electing me as UA President, I will use this knowledge to advocate for the policies that will make Penn a better school not just for our class, but for generations to come!",
-        'endorsements': 'South Asia Society, Asian Pacific Student Coalition'
+        'endorsements': 'Penn Undergraduate Health Council, United Minorities Council, South Asia Society, Asian Pacific Student Coalition, Penn Association for Gender Equity, Student Athlete Advisory Committee, Radical South Asian Collective, Assembly of International Students'
       },
       {
         'name': 'Ozi Amuzie',
@@ -139,7 +139,7 @@ var people = {
         'name': 'Simon Miller',
         'photo': 'https://snworksceo.imgix.net/dpn/248f2e97-41c5-4a3e-a4d6-a6c8f58f783f.sized-1000x1000.JPG?h=400',
         'statement': "For the last 3 years, I have been a member of the Undergraduate Assembly, a group that I've come to love and constantly can't stop talking about. Because of my position on student government, I've made a tangible change and been able to improve student life to the best of my abilities. I want to thank everyone for the experiences that have been granted to me, but I've come one last time for your help. Once again, it is election season, and I want your help in re-electing me once again to the Penn Undergraduate Assembly as a School of Arts and Science Representative.<br><br>Since I’ve joined the UA, I’ve worked on projects such as Fall and Spring Wellness Week, creating a UA/CAPS Advisory Board Liaison, passing Wellness Resources on Syllabi to the Faculty Senate, creating and updating the Penn Resource Wellness Guide, and working on the Penn Big Idea Project to promote wellness throughout the Penn Community. I want to continue working on these types of projects, and do what I can to improve all types of wellness at Penn, not just mental or physical. In the next year, I plan to work with other student organizations such as Penn Wellness to truly create a more cohesive alliance that focuses on tackling the problem of Wellness at Penn.<br><br>I love this community, and can't wait to serve it again. Vote Simon Miller for UA SAS Representative!",
-        'endorsements': ''
+        'endorsements': 'UMOJA'
       },
       {
         'name': 'Tori Borlase',
@@ -178,7 +178,7 @@ var people = {
         'name': 'Dante Diggs',
         'photo': 'https://snworksceo.imgix.net/dpn/f2d3ad57-ef56-4248-991e-6f189bb2bcf8.sized-1000x1000.JPG?h=400',
         'statement': "Dear Wharton Family,<br><br>When you envision Penn’s future, what are some of the things you dream of? Is it a facilitator that provides you with more opportunities to engage with your fellow students and the local Philadelphia community? Or an institution with more opportunities to learn how to protect yourself and your classmates?<br><br>My name is Dante Diggs, and in order for us to ensure that the University reaches these goals and more, you need someone will ask pressing questions while also fostering a sense of community. As a previous New Student Representative, I will continue to work actively with partners such as the Netter Center and the Division of Public Safety to learn more about how we as students can learn more from each other and from the city. I will also ensure that our Wharton buildings continue to be lively and supportive hubs for students. Most importantly, I hope to explore ways that we as leaders can continue to create spaces and moments of inclusivity and growth.<br><br>Through leadership and advocacy, Penn will be the University of our dreams.<br><br>P.S.: Don’t be afraid to stop me on Locust! I love meeting new people.",
-      	'endorsements': 'Black Student League, Penn Debate Society'
+      	'endorsements': 'Black Student League, Penn Debate Society, UMOJA'
       },
       {
         'name': 'Janice Owusu',
@@ -196,13 +196,13 @@ var people = {
         'name': 'Maria Curry',
         'photo': 'https://snworksceo.imgix.net/dpn/b333194a-0a94-44c5-a053-b9604200d027.sized-1000x1000.JPG?h=400',
         'statement': "Real change isn't achieved overnight, but there are concrete steps to get there. Throughout my past 3 years on the UA, I have shown that this tangible change is possible not just with passion, but with the correct ambition and determination to see it through. As UA President, I want to continue to challenge the status quo and challenge our members to support you, the student body, at a new level.<br><br>My joint-platform is based on 5 Pillars: Transparency, Equity & Representation, Sustainability, Wellness, and Modern Infrastructure. An overarching theme is student engagement, and as President I want to continue to build on forums like UA Steering, town halls and focus groups, to enhance collaboration among student leaders, and move from discussions to tangible actions items with administration.<br><br>Our record shows this works. From directly working with administrators on the creation of the new PennTransit-App that allows students to request transportation on and off-campus for free, to personally creating 360°-Views of Campus Dorms for Campus-Express, to implementing new signage in all Dining Halls on sustainable food disposal, and developing mindfulness-spaces in centralized locations like Houston Hall, I will continue to lead the UA to tangible change for you as UA President.",
-        'endorsements': 'Black Student League, Penn Model Congress, Fossil Free Penn'
+        'endorsements': 'Black Student League, Penn Model Congress, Fossil Free Penn, Penn Democrats, Student Sustainability Association at Penn, Penn Vegan Society, University of Pennsylvania Beekeeping Club, Climate Reality Project at Penn, Penn Eco-Reps, Penn Sustainability Undergraduate Advisory Board, Penn Environmental Group (PEG), Penn Vegan Society (PVS), Black Wharton Undergraduate Association, Earth and Environmental Science Undergraduate Advisory Board'
         },
         {
           'name': 'Nikhil Gupta',
           'photo': 'https://snworksceo.imgix.net/dpn/686dd9a6-8eab-4e62-be88-d96d7ef73884.sized-1000x1000.JPG?h=400',
           'statement': "As a New Student Representative and Communications Representative this past year, I have prioritized the UA as my main campus commitment. I have led an initiative to increase access to free menstrual products in Penn’s restrooms and have made progress by having numerous meetings with administrators, speaking at University Council, collecting over 800 signatures for a petition I co-authored with GAPSA, conducting a survey of around 80 campus locations, and garnering support from the Vice Provost, President Gutmann, The Daily Pennsylvanian, and student groups. I have also worked with fellow UA members for my other projects; I advised the Division of Public Safety on their active shooter guide and advocated for improved triaging systems to reduce wait times with the Student Health Service. I have attended every weekly GBM and committee meeting, in which I contributed my insights on issues faced by the University community and advised my fellow UA members on their projects. Through my Communications role, I have managed social media, designed graphics, and created videos for transparency with the student body. If re-elected as Wharton Representative, I would also like to work on revamping exam policies and other academic initiatives in addition to continuing to advance equity.",
-          'endorsements': 'Penn Wharton China Summit, South Asia Society, South Asia Society'
+          'endorsements': 'Penn Wharton China Summit, South Asia Society, South Asia Society, Wharton Asia Exchange'
         },
         {
           'name': 'Samidha Sane',
