@@ -62,7 +62,7 @@ var ltbracketData = {
       [325, 193],
       [226, 204]
     ], [
-      [, ]
+      [447, 329 ]
     ]
   ]
 };
@@ -131,14 +131,14 @@ var rtbracketData = {
       [199, 198],
       [217, 179]
     ], [
-      [, ]
+      [295,297]
     ]
   ]
 };
 
 var finalbracketData = {
   teams: [
-    [' ', ' ']
+    ['OAX', 'Bloomers']
   ],
   results: [
       [,  ]
