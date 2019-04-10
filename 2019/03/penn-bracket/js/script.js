@@ -141,7 +141,7 @@ var finalbracketData = {
     ['OAX', 'Bloomers']
   ],
   results: [
-      [,  ]
+      [1408, 619]
     ]
 };
 
