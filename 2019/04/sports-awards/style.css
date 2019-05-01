@@ -282,6 +282,8 @@ section.individual .awards span {
 
   .boxed {
     width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .award-flex {
@@ -306,10 +308,6 @@ section.individual .awards span {
 
   h2 {
     font-size: 1.8rem;
-  }
-
-  .intro {
-    height: 100vh;
   }
 
   .intro {
