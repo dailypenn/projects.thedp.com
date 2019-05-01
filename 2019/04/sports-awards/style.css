@@ -53,35 +53,33 @@ header {
   align-items: center;
   justify-content: center;
   height: 50px;
-  background-color: #000;
+  background-color: #872F2F;
 }
 
 section {
-  min-height: 100vh;
-  height: auto;
-  padding: 50px;
+  min-height: 100vh
 }
 
 section.intro {
   display: flex;
   justify-content: center;
+  align-content: center;
   background-image: url('https://snworksceo.imgix.net/dpn/cc3e689c-1fdc-4032-993c-d29ec8cf1e89.sized-1000x1000.jpg');
-  background-color: #011F5B;
+  background-color: rgba(0,0,0,.7);
   background-blend-mode: soft-light;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: calc(100vh - 150px);
 }
 
 section.team {
-  background: url('https://s3.amazonaws.com/snwceomedia/dpn/f5360b8d-c2c2-4310-9d7c-46913b65ac2d.sized-1000x1000.jpg');
-  background-color: #700000;
-  background-blend-mode: soft-light;
+  /* background: url('https://s3.amazonaws.com/snwceomedia/dpn/f5360b8d-c2c2-4310-9d7c-46913b65ac2d.sized-1000x1000.jpg'); */
+  background-color: white;
+  /* background-blend-mode: soft-light;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  color: #FFF;
+  background-repeat: no-repeat; */
+  /* color: #FFF; */
   padding: 0;
 }
 
@@ -94,14 +92,8 @@ section.team a:hover, section.moment a:hover {
 }
 
 section.individual {
-  background-image: url('https://s3.amazonaws.com/snwceomedia/dpn/3211d02f-bad8-499c-a3f3-d499c2f44732.sized-1000x1000.jpg');
-  background-color: #001849;
-  background-blend-mode: soft-light;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: white;
   padding: 0;
-  color: #FFF;
 }
 
 section.individual a {
@@ -113,13 +105,7 @@ section.individual a:hover {
 }
 
 section.moment {
-  background: url('https://s3.amazonaws.com/snwceomedia/dpn/aa67d926-729c-46f0-9667-859e11ca195e.sized-1000x1000.jpg');
-  background-color: #700000;
-  background-blend-mode: soft-light;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #FFF;
+  background-color: white;
   padding: 0;
 }
 
@@ -132,18 +118,19 @@ section.moment {
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .boxed {
   text-align: center;
   display: flex;
   flex-direction: column;
-  border: 7px solid #700000;
-  background-color: rgba(0, 24, 73, .7);
-  font-size: 150%;
+  border: 7px solid #872F2F;
+  background-color: rgba(0, 0, 0, .7);
+  /* font-size: 150%; */
   width: 50%;
-  margin: auto;
-  margin-top: 30px;
+  margin: 60px auto;
 }
 
 .award-box {
@@ -157,7 +144,7 @@ section.moment {
 .eotya {
   margin-top: 20px;
   font-size: 60px;
-  color: #700000;
+  color: #872F2F;
 }
 
 .section {
@@ -171,6 +158,8 @@ section.moment {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  border-bottom: 2px solid #872F2F;
+  color: #872F2F;
 }
 
 .awards span {
@@ -203,10 +192,8 @@ section.individual .awards span {
 }
 
 .footer {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  margin: 20px auto;
+  color: #872F2F;
 }
 
 .footer span {
@@ -219,6 +206,12 @@ section.individual .awards span {
 
 .team-tab, .ind-tab, .moment-tab {
   cursor: pointer;
+  font-size: 1.5em;
+}
+
+.team-tab.active, .ind-tab.active, .moment-tab.active{
+  font-weight: 700;
+  border-bottom: 3px solid #872F2F;
 }
 
 .team-text, .ind-text, .moment-text {
@@ -246,25 +239,14 @@ section.individual .awards span {
   height: auto;
 }
 
-.team-tab.active {
-  font-weight: 700;
-  border-bottom: 3px solid #FFF;
-}
-
-.ind-tab.active {
-  font-weight: 700;
-  border-bottom: 3px solid #FFF;
-}
-
-.moment-tab.active {
-  font-weight: 700;
-  border-bottom: 3px solid #FFF;
-}
-
 .award-title {
-  text-align: center;
   font-weight: 600;
-  font-size: 65px;
+  font-size: 40px;
+  margin: 15px auto;
+  width: fit-content;
+  background-color: black;
+  padding: 3px 5px;
+  color: white;
 }
 
 .award-image {
@@ -287,19 +269,22 @@ section.individual .awards span {
 }
 
 .type {
-  background-color: #FFF;
-  color: #000;
+  background-color: black;
+  color: white;
   padding-top: 15px;
   padding-bottom: 15px;
   font-weight: 600;
-  font-size: 80px;
-  margin-bottom: 50px;
+  font-size: 60px;
 }
 
 @media screen and (max-width: 992px) {
   .intro p {
     width: 100%;
     font-size: 110%;
+  }
+
+  .boxed {
+    width: auto;
   }
 
   .award-flex {
@@ -326,17 +311,8 @@ section.individual .awards span {
     font-size: 1.8rem;
   }
 
-  section {
-    min-height: calc(100vh - 40px);
-    height: auto;
-  }
-
-  section.intro {
-    min-height: calc(100vh - 90px);
-  }
-
-  .intro p {
-    margin: 40px auto;
+  .intro {
+    height: 100vh;
   }
 
   .intro {
@@ -361,5 +337,13 @@ section.individual .awards span {
 
   .footer span:first-of-type {
     margin-bottom: 0;
+  }
+
+  .boxed {
+      margin: 30px auto;
+  }
+
+  .award-tab {
+    margin-bottom: 10px;
   }
 }
