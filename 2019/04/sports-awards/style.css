@@ -56,10 +56,6 @@ header {
   background-color: #872F2F;
 }
 
-section {
-  min-height: 100vh
-}
-
 section.intro {
   display: flex;
   justify-content: center;
@@ -70,6 +66,7 @@ section.intro {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 section.team {
