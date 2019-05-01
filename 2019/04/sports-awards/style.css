@@ -41,7 +41,7 @@ a.inline {
 }
 
 a:hover {
-  color: #AAA;
+  color: #872F2F;
 }
 
 a:last-of-type {
@@ -60,8 +60,8 @@ section.intro {
   display: flex;
   justify-content: center;
   align-content: center;
-  background-image: url('https://snworksceo.imgix.net/dpn/cc3e689c-1fdc-4032-993c-d29ec8cf1e89.sized-1000x1000.jpg');
-  background-color: rgba(0,0,0,.7);
+  background-image: url('https://snworksceo.imgix.net/dpn/77a0c8eb-0d05-461d-8e97-5db5bf0fbd72.sized-1000x1000.jpg?');
+  background-color: rgba(0,0,0,.3);
   background-blend-mode: soft-light;
   background-position: center;
   background-size: cover;
@@ -157,6 +157,8 @@ section.moment {
   justify-content: center;
   border-bottom: 2px solid #872F2F;
   color: #872F2F;
+  padding-top: 16px;
+  padding-bottom: 8px;
 }
 
 .awards span {
@@ -242,7 +244,7 @@ section.individual .awards span {
   margin: 15px auto;
   width: fit-content;
   background-color: black;
-  padding: 3px 5px;
+  padding: 10px 10px;
   color: white;
 }
 
