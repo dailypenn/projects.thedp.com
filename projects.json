@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+          "title": "End of the Year Awards | DP Sports",
+          "author": "Web Dev: Danny Leiser, Daniel Salib",
+          "section": "DP Sports",
+          "date": "May 2019",
+          "description": "2018-19 has been yet another strong year for Penn Athletics. Four teams won conference championships — with even more possible before the end of the spring. Individuals from track, lacrosse, squash, and more dominated on the national stage. Decades-long title droughts have been broken; equally lengthy individual records have fallen. Here’s DP Sports’ breakdown of the best of the best in all aspects of Penn sports.",
+          "sponsored": false,
+          "link": "https://projects.thedp.com/2019/04/sports-awards",
+          "image": "https://snworksceo.imgix.net/dpn/a329e177-2fdb-44af-a8fc-3d1a42de9526.sized-1000x1000.png",
+          "alt": "End of the Year Awards | DP Sports"
+        }
+    ,{
           "title": "Penn Bracket 2019",
           "author": "Web Dev: Leah Wang, Daniel Salib",
           "section": "Penn Bracket",
