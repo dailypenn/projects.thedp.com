@@ -31,9 +31,8 @@ h2 {
 
 a {
   text-decoration: none;
-  color: inherit;
-  display: block;
   margin-bottom: 10px;
+  color: white;
 }
 
 a.inline {
@@ -41,7 +40,7 @@ a.inline {
 }
 
 a:hover {
-  color: #872F2F;
+  color: #872F2F !important;
 }
 
 a:last-of-type {
