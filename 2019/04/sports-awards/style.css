@@ -31,9 +31,8 @@ h2 {
 
 a {
   text-decoration: none;
-  color: inherit;
-  display: block;
   margin-bottom: 10px;
+  color: white;
 }
 
 a.inline {
@@ -41,7 +40,7 @@ a.inline {
 }
 
 a:hover {
-  color: #AAA;
+  color: #872F2F !important;
 }
 
 a:last-of-type {
@@ -56,20 +55,17 @@ header {
   background-color: #872F2F;
 }
 
-section {
-  min-height: 100vh
-}
-
 section.intro {
   display: flex;
   justify-content: center;
   align-content: center;
-  background-image: url('https://snworksceo.imgix.net/dpn/cc3e689c-1fdc-4032-993c-d29ec8cf1e89.sized-1000x1000.jpg');
-  background-color: rgba(0,0,0,.7);
+  background-image: url('https://snworksceo.imgix.net/dpn/77a0c8eb-0d05-461d-8e97-5db5bf0fbd72.sized-1000x1000.jpg?');
+  background-color: rgba(0,0,0,.3);
   background-blend-mode: soft-light;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 section.team {
@@ -160,6 +156,8 @@ section.moment {
   justify-content: center;
   border-bottom: 2px solid #872F2F;
   color: #872F2F;
+  padding-top: 16px;
+  padding-bottom: 8px;
 }
 
 .awards span {
@@ -245,7 +243,7 @@ section.individual .awards span {
   margin: 15px auto;
   width: fit-content;
   background-color: black;
-  padding: 3px 5px;
+  padding: 10px 10px;
   color: white;
 }
 
@@ -285,6 +283,8 @@ section.individual .awards span {
 
   .boxed {
     width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .award-flex {
@@ -309,10 +309,6 @@ section.individual .awards span {
 
   h2 {
     font-size: 1.8rem;
-  }
-
-  .intro {
-    height: 100vh;
   }
 
   .intro {
