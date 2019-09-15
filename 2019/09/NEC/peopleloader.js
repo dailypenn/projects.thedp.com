@@ -964,7 +964,7 @@ window.onload = function () {
   }
 
   function loadList(people, listID) {
-    // shuffle(people);
+    shuffle(people);
     // add all candidates
     for (var i in people) {
       var candidate = document.createElement('div');
