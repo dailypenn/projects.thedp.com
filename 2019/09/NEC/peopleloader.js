@@ -32,7 +32,7 @@ const people = {
     },
     {
       'name': 'Alfredo Wolfermann',
-      'photo': 'https://snworksceo.imgix.net/dpn/4a949461-1a32-42d3-9f2d-c74c8bffa4e3.sized-1000x1000.JPG?',
+      'photo': 'https://snworksceo.imgix.net/dpn/66527506-94cb-47b9-bc78-d5b0a7af54bc.sized-1000x1000.jpg?',
       'statement': "My name is Alfredo Wolfermann and I am currently a freshman in the college. I was born in Caracas, Venezuela and moved to Miami, Florida when I was 10 years old.  I absolutely love Penn and want to contribute to our student body’s well-being by becoming a part of the Undergraduate Assembly. My platform points revolve around advocating for better financial aid for low-income students, extra reading days to reduce student anxiety, and supporting the Latino community at Penn through inclusive policy. Vote for Alfredo Wolfermann from Sep. 16th to 18th!",
       'endorsements': '',
       'platform': {
@@ -271,15 +271,15 @@ const people = {
     {
       'name': 'Reed Mroue',
       'photo': 'https://snworksceo.imgix.net/dpn/3907cce5-8d5b-46f3-ab6c-d757f3799d20.sized-1000x1000.JPG?',
-      'statement': "Hi everyone! My name is Reed Mroue, and I am running to be your Executive Vice President for the 2023 Class Board. Coming to Penn has been one of the greatest experiences of my life, and the incredible community present is the reason for that. I am running for Class Board to make an impact on the school I love and help make our freshman year the best year of our lives! The people who know me would describe me as the most determined person, but more importantly they know me as the guy who never stops smiling :) Vote Reed!!!",
+      'statement': "Hi everyone! My name is Reed Mroue, and I am running to be a New Student Representative for the UA. Coming to Penn has been one of the greatest experiences of my life, and the incredible community present is the reason for that. I am running for UA to make an impact on the school I love and help make our goals and initiatives a reality!  The people who know me would describe me as the most determined person, but more importantly they know me as the guy who never stops smiling :) Vote Reed!!!",
       'endorsements': '',
       'platform': {
-        'one': "Freshman day in the spring where the whole class gets together and meets new people through fun activities.",
-        'two': "More inter-house events (games, gatherings, etc.) between different houses (e.g. Stouffer and Riepe) to meet new people you wouldn't have met otherwise.",
-        'three': "Events for international students, and those interested in learning about different cultures through sharing food, music, dance, etc.",
-        'four': "Talent shows and karaoke nights for the entire class to get together and have fun.",
-        'five': "Brand new Class of 2023 apparel based on the votes of the whole class!",
-        'six': "YOUR IDEAS! A website where anyone can send ideas and comments, which will directly be looked at by the Class Board."
+        'one': "Extend the hours for all the dining halls, so you can eat at whatever time you want.",
+        'two': "MindWise screening kiosks placed around campus (asks a couple simple questions) to assess your mental health and help predict and prevent any tragedies.",
+        'three': "Bug repellent and sunscreen dispensers placed around campus.",
+        'four': "Open GSR’s in Huntsman to all students!",
+        'five': "YOUR IDEAS! A website where anyone can send ideas and comments, which will directly be looked at by the UA.",
+        'six': ""
       }
     },
     {
@@ -379,7 +379,7 @@ const people = {
       },
       {
         'name': 'Kai Song',
-        'photo': '',
+        'photo': 'https://snworksceo.imgix.net/dpn/4d621ea2-1ce1-4564-80f2-ce6020cdea01.sized-1000x1000.jpg?',
         'statement': "My name is Kai Song, and I’m running in the hopes to represent you as your Transfer Student Representative. As a nonbinary Asian American, I want to bring my experiences in community organizing and intersectionality to serve you—the diverse transfer student community. As your representative and fellow transfer, I want to directly amplify our voices and ensure action is taken to meet our wide range of needs. I want to be that seat at the table that can serve as a platform solely reserved for your voice and your concerns.",
         'endorsements': '',
         'platform': {
@@ -394,7 +394,7 @@ const people = {
       {
         'name': 'Lawrence Phillips',
         'photo': 'https://snworksceo.imgix.net/dpn/23d36546-45af-484a-a157-30d66260c56f.sized-1000x1000.JPG?',
-        'statement': "",
+        'statement': "Candidate did not submit statement to DP",
         'endorsements': '',
         'platform': {
           'one': "",
@@ -435,6 +435,34 @@ const people = {
         'four': "Creating a network for the freshman class showcasing individual skills and supporting others.",
         'five': "Providing fun and de-stressing initiatives to increase wellness among the rigorous academics.",
         'six': "Providing various forums for those to speak out about what is important to them and working together to solve such issues."
+      }
+    },
+    {
+      'name': 'David Garnick',
+      'photo': 'https://snworksceo.imgix.net/dpn/9301ede6-fdef-4ad4-b4ef-9ca1f9ab6bef.sized-1000x1000.JPG?',
+      'statement': "Class of 2023: this is the year for us! My name is David Garnick, and I won’t give you my whole resume right now, but I will tell you this: I am pumped up to start this campaign to be your Class President and UA Rep. I want to help each member of our class truly thrive at Penn. This year should and can be filled with positive vibes, fun, and excitement. And I want to help us get there. With good leadership, we can continue the energy and spirit of NSO and create even more awesome events and free food, creating an overall epic time. So, let’s do this thing. ",
+      'endorsements': '',
+      'platform': {
+        'one': "Help arrange for outdoor tables and seating in the Quad for great fall and spring study spots. ",
+        'two': "Work with Penn Dining in an effort to collaborate with food trucks and local restaurants to accept dining dollars.",
+        'three': "Create more innovative and fun events for all freshmen, including a Penn sponsored food truck event.",
+        'four': "Support CAPS and other health & wellness initiatives in every possible way Penn Student Government can, including by ensuring that our freshmen voices are heard and considered in future programming.",
+        'five': "Design (with your input) more Penn Class of ‘23 branded merchandise. ",
+        'six': "Collaborate with Penn Resources & Facilities to more seriously investigate the possibility of putting air conditioning in the Gregory dorms.  "
+      }
+    },
+    {
+      'name': 'Jacques Thompson',
+      'photo': 'https://snworksceo.imgix.net/dpn/533a14d1-8908-4359-a8d8-06db8ef9ec0d.sized-1000x1000.JPG?',
+      'statement': "What do you want from your UPenn experience? My name is Jacques Thompson and I am running for Class Board President and UA representative. I have experience speaking for those who cannot and aim to understand the problems that affect the class of 2023. For years, I committed myself to improving the conditions of the underrepresented, fighting for issues such as environmental sustainability and education. Now, at Penn, my focus is aimed squarely on making the class of 2023 the best in Penn history, filled to the brim with exciting events and memorable moments. ",
+      'endorsements': '',
+      'platform': {
+        'one': "Celebration of the wide variety of cultures through improved partnership with cultural centers on and off campus",
+        'two': "Class wide events geared towards fun and bringing students together (i.e. The Red/Blue party)",
+        'three': "More expansive dining dollar usage around campus",
+        'four': "Increased fruit and vegetable options in dining halls",
+        'five': "Academic pop-ups to help students find their interests for majors and minors",
+        'six': "Inter-House Competitions (Semester Long)"
       }
     },
     {
@@ -718,6 +746,20 @@ const people = {
       }
     },
     {
+      'name': 'Carson Sheumaker',
+      'photo': 'https://snworksceo.imgix.net/dpn/ca63a6f7-b6da-4dd3-a560-a1a668fc1743.sized-1000x1000.JPG?',
+      'statement': "Hey guys! I’m Carson Sheumaker and I’m running for UA and Wharton Chair! I was born and raised in Nashville, Tennessee and am super excited about being here at Penn! I’m super passionate about Penn and would love to represent you in UA and Class Board! Along with being an active member in both UA and Class Board, I have a lot of great ideas that I would love to put into action for you! ",
+      'endorsements': '',
+      'platform': {
+        'one': "Change the mailed acceptance packet to include a t-shirt and accessories to excite new freshman about coming to Penn",
+        'two': "Create a class bus trip (like they did in the past) to see the premier of a new movie or go to a cool activity.",
+        'three': "Change Penn’s Instagram biography to match the biographies of other prestigious institutions.",
+        'four': "Push back club application dates to help freshmen better acclimate into Penn without the stress of joining clubs.",
+        'five': "Promote biweekly social events so students from different dorms can get to know each other better!",
+        'six': "Advocate for partnerships with off campus restaurants to use meal swipes and dining dollars as they do at other major universities."
+      }
+    },
+    {
       'name': 'Harris Gevinson',
       'photo': 'https://snworksceo.imgix.net/dpn/29e85c9f-9239-4c6b-8e35-66ae858b0e4e.sized-1000x1000.JPG?',
       'statement': "My fellow Wharton students, I, Harris Gevinson, am running for Wharton Class Chair to help Wharton achieve new heights.  Wharton is the greatest school in the world. The students are the brightest, the teachers are the most talented, and the resources are the most vast.  But what doesn’t Wharton have?  Free coffee stations in Huntsman, Uber Eats and Postmates allowed into Huntsman and the Quad, Wharton study rooms in the Quad, dining dollars at Honeygrow and Franklin’s Table, and Starbucks delivery to group study rooms.  If you elect me, these will all happen.  So vote Harris for Wharton Class Chair.",
@@ -877,20 +919,6 @@ const people = {
     }  
     ],
     "Vice_president_of_Finance": [{
-      'name': 'Oliver Stern',
-      'photo': 'https://snworksceo.imgix.net/dpn/50c36d6f-aad5-4329-aebf-caabc8389abf.sized-1000x1000.JPG?',
-      'statement': "I’m running for Undergraduate Assembly AND Vice President of Finance so that I can represent YOU! It is so incredible to be here at Penn, but I know that there are ways that we can make our freshman experience and even better one. I am running so that YOUR voices and opinions are heard and are taken seriously not only by the freshman leaders, but also the entire student body. Let’s make this year an unforgettable one!",
-      'endorsements': '',
-      'platform': {
-        'one': "More pop-up events where we can enjoy ourselves and some free goodies",
-        'two': "Soliciting outside sponsorships that enables class board to put on more events",
-        'three': "Weekly inter-class where class representatives can hear the problems and concerns of our peers",
-        'four': "Make this year and unforgettable one!",
-        'five': "",
-        'six': ""
-      }
-    },
-    {
       'name': 'Anuva Shandilya',
       'photo': 'https://snworksceo.imgix.net/dpn/03f9ce11-1b2a-41dc-8de7-2fdff18d0805.sized-1000x1000.JPG?',
       'statement': "Hi everyone! I’m Anuva Shandilya, and I’m a Wharton snake, so you know I can manage finances :). But what else makes me qualified for VP of Finances? To sum it up: I may be 5’1’’ but my work ethic is 6’2’’. This work ethic allowed me to run my own international nonprofit, Chance for Sports, and also serve as Lieutenant Governor for Illinois (represent!) through Youth and Government in high school. Now, my work ethic and I are ready to plan some cool events and make this the funnest year ever for the Class of ‘23. ",
