@@ -255,20 +255,6 @@ const people = {
       }
     },
     {
-      'name': 'Oliver Stern',
-      'photo': 'https://snworksceo.imgix.net/dpn/50c36d6f-aad5-4329-aebf-caabc8389abf.sized-1000x1000.JPG?',
-      'statement': "I’m running for Undergraduate Assembly AND Vice President of Finance so that I can represent YOU! It is so incredible to be here at Penn, but I know that there are ways that we can make our freshman experience and even better one. I am running so that YOUR voices and opinions are heard and are taken seriously not only by the freshman leaders, but also the entire student body. Let’s make this year an unforgettable one!",
-      'endorsements': '',
-      'platform': {
-        'one': "More pop-up events where we can enjoy ourselves and some free goodies",
-        'two': "Soliciting outside sponsorships that enables class board to put on more events",
-        'three': "Weekly inter-class where class representatives can hear the problems and concerns of our peers",
-        'four': "Make this year and unforgettable one!",
-        'five': "",
-        'six': ""
-      }
-    },
-    {
       'name': 'Reed Mroue',
       'photo': 'https://snworksceo.imgix.net/dpn/3907cce5-8d5b-46f3-ab6c-d757f3799d20.sized-1000x1000.JPG?',
       'statement': "Hi everyone! My name is Reed Mroue, and I am running to be a New Student Representative for the UA. Coming to Penn has been one of the greatest experiences of my life, and the incredible community present is the reason for that. I am running for UA to make an impact on the school I love and help make our goals and initiatives a reality!  The people who know me would describe me as the most determined person, but more importantly they know me as the guy who never stops smiling :) Vote Reed!!!",
