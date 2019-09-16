@@ -468,13 +468,13 @@ const people = {
     {
       'name': 'Derek Nhieu',
       'photo': 'https://snworksceo.imgix.net/dpn/a8ed650a-b6f7-4b83-8849-571e72db075e.sized-1000x1000.JPG?',
-      'statement': "I'm from Pocahontas, Arkansas and I'm a student in SAS double majoring in biology and psychology. I'm running because coming from a small town I understand what its like to have a strong sense of community. As class president I want to connect the freshman class and create a stronger sense of community than has ever occurred before.",
+      'statement': "Hey everyone! My name is Derek Nhieu, and I am running to serve as your 2023 Class Board President. I am genuinely in love with Penn and all of the people here, and I want to share that love with all of you and make sure we are all having the greatest time of our lives. Under my effective leadership and focus on Community, Culture, and Care, our first year will be one of excitement and exploration. I look forward to working with all of you to make this the most fantastic year it can be. Go Quakers!",
       'endorsements': '',
       'platform': {
-        'one': "Hey everyone! My name is Derek Nhieu, and I am running to serve as your 2023 Class Board President. I am genuinely in love with Penn and all of the people here, and I want to share that love with all of you and make sure we are all having the greatest time of our lives. Under my effective leadership and focus on Community, Culture, and Care, our first year will be one of excitement and exploration. I look forward to working with all of you to make this the most fantastic year it can be. Go Quakers!",
-        'two': "Community: Cultivating a more interconnected Community through large-scale, fun events that bring people together (Dance Marathon, Longest Table, Quaking in Quiet, etc.)",
-        'three': "Culture: Fostering a healthier and happier Penn Culture by focusing on stress relief and wellness initiatives. Mental and physical health will be at the forefront of my term.",
-        'four': "Care: Representing the Class of 2023 with Care through civic discussion, awareness of events, advocating for what's passionate to our class, and empowering marginalized and underrepresented students at Penn.",
+        'one': "Community: Cultivating a more interconnected Community through large-scale, fun events that bring people together (Dance Marathon, Longest Table, Quaking in Quiet, etc.)",
+        'two': "Culture: Fostering a healthier and happier Penn Culture by focusing on stress relief and wellness initiatives. Mental and physical health will be at the forefront of my term.",
+        'three': "Care: Representing the Class of 2023 with Care through civic discussion, awareness of events, advocating for what's passionate to our class, and empowering marginalized and underrepresented students at Penn.",
+        'four': "",
         'five': "",
         'six': ""
       }
