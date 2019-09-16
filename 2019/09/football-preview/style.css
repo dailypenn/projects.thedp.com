@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Teko:300,400,600');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans|Teko:300,400,600'); */
 @import url('https://fonts.googleapis.com/css?family=Lekton:400,700&display=swap');
 
 body {
@@ -18,8 +18,8 @@ footer {
 }
 
 .container {
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .header-section {
@@ -28,7 +28,6 @@ footer {
   justify-content: center;
 	height: calc(100vh - 43px);
 	width: 100vw;
-	font-family: 'Teko', sans-serif;
 	background-image: url("https://s3.amazonaws.com/snwceomedia/dpn/72b040b3-d1e1-4ab3-8038-c2d63639eb3e.original.png");
   background-size: cover;
   background-position: center center;
@@ -121,8 +120,7 @@ footer {
   display: inline;
   float: left;
   font-weight: bolder;
-  color: #2b2c82;
-  font-size: 72px;
+  color: #63C083;
 }
 
 .games-header{
@@ -135,15 +133,15 @@ footer {
 
 .standings-subhead{
   display: inline;
-  margin-left: 20px;
-  margin-bottom: 18px;
-  color: #2b2c82;
+  margin-left: 10px;
+  margin-bottom: 13px;
+  color: #fff;
 }
 
 .games-subhead{
   display: inline;
   margin-left: 20px;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
   color: white;
 }
 
@@ -165,10 +163,19 @@ footer {
   float: right;
 }
 
+.lines {
+  width: 25%;
+}
+
+.short {
+  margin-right: 40px;
+}
+
 .standings-line{
-  height: 10px;
-  background-color: #abb5dc;
+  height: 1px;
+  background-color: #F6C415;
   margin-top: -10px;
+  text-align: left;
 }
 
 .games-line{
@@ -257,7 +264,7 @@ footer {
 .schedule {
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background-color: #121245;
+	background-color: #E2E8E6;
 	color: white;
 }
 
