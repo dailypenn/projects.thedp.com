@@ -18,19 +18,19 @@ footer {
 }
 
 .container {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .header-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-	height: calc(100vh - 43px);
-	width: 100vw;
-	background-image: url("https://s3.amazonaws.com/snwceomedia/dpn/72b040b3-d1e1-4ab3-8038-c2d63639eb3e.original.png");
-  background-size: cover;
-  background-position: center center;
+  height: calc(100vh - 50px);
+  max-width: 100%;
+  width: 100%;
+  background-image: url(https://s3.amazonaws.com/snwceomedia/dpn/0c512dc3-b63f-4936-b5d8-d111dec61f22.original.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #e3e9e9;
 }
 
 .head-subhead{
@@ -161,7 +161,7 @@ footer {
 
 .standings-table .right{
   float: right;
-  padding-top: 2px;
+  padding-top: 3px;
   border: 1px solid #63C083;
   text-align: center;
   width: 70%;
@@ -297,6 +297,7 @@ footer {
 
 .game-img {
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .game {
@@ -305,6 +306,10 @@ footer {
 	align-items: center;
 	flex-direction: column;
 	padding-bottom: 15px;
+}
+
+.features {
+  background-color: #425666;
 }
 
 .oppTeam{
