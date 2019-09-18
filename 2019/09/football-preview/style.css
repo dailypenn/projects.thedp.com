@@ -51,6 +51,52 @@ footer {
   margin-left: 70px;
 }
 
+.boxes {
+  display: flex;
+}
+
+.boxes h3 {
+  margin-left: 20px;
+  padding-top: 5px;
+  color: #E2E8E6;
+}
+
+.boxes:hover .front-box{
+  background-color: #F6C415;
+}
+
+.boxes:hover .back-box {
+  border-color: #F6C415;
+}
+
+.boxes:hover h3 {
+  color: #F6C415;
+}
+
+.boxes:hover a {
+  text-decoration: none;
+}
+
+.front-box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 30px;
+  background-color: #63C083;
+  z-index: 100;
+}
+
+.back-box {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  width: 40px;
+  height: 30px;
+  border: 2px solid #63C083;
+}
+
 .cutout-1{
   position: absolute;
   bottom: -129px;
@@ -102,10 +148,6 @@ footer {
 	margin-bottom: 0;
 }
 
-.shortcuts .row {
-	margin-bottom: 20px;
-}
-
 .mobile-container {
 	margin: 0 15px;
 }
@@ -122,6 +164,14 @@ footer {
 .video {
 	display: flex;
 	background-color: #E2E8E6;
+}
+
+.video .container {
+  padding-bottom: 30px;
+}
+
+.video-two .container {
+  padding-bottom: 30px;
 }
 
 .standings, .video-two {
@@ -145,7 +195,7 @@ footer {
   float: left;
   font-weight: bolder;
   color: #63C083;
-  font-size: 72px;
+  font-size: 40px;
 }
 
 .standings-subhead{
@@ -157,8 +207,8 @@ footer {
 
 .games-subhead{
   display: inline;
-  margin-left: 20px;
-  margin-bottom: 22px;
+  margin-left: 10px;
+  margin-bottom: 12px;
   color: white;
 }
 
@@ -262,6 +312,15 @@ footer {
   background-color: #0F484D;
 }
 
+.overflow-parent {
+  position: absolute;
+}
+
+.overflow-child {
+  position: relative;
+  top: -33px;
+}
+
 #welcome-section {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -351,14 +410,18 @@ footer {
   font-size: 16px;
 }
 
+.shortcuts .container {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
 .link {
 	display: flex;
-	justify-content: center;
 	align-items: center;
 }
 
-.link p {
-	text-align: center;
+.link h3 {
+  font-weight: 400;
 }
 
 .article {
