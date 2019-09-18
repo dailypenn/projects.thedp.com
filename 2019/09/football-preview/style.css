@@ -26,7 +26,7 @@ footer {
   height: calc(100vh - 50px);
   max-width: 100%;
   width: 100%;
-  background-image: url(https://s3.amazonaws.com/snwceomedia/dpn/0c512dc3-b63f-4936-b5d8-d111dec61f22.original.png);
+  background-image: url(https://s3.amazonaws.com/snwceomedia/dpn/8cc750db-fbc8-4398-94dd-f738fe4f996d.original.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -86,6 +86,10 @@ footer {
 	font-size: 36px;
 }
 
+.grey {
+  color: #425666;
+}
+
 .shortcuts {
 	display: flex;
 	align-items: center;
@@ -106,14 +110,27 @@ footer {
 	margin: 0 15px;
 }
 
+.ad-block {
+  background-color: #E2E8E6;
+}
+
 .ad {
 	display: flex;
 	justify-content: center;
 }
 
-.standings, .video {
+.video {
 	display: flex;
-	background-color: #425666;
+	background-color: #E2E8E6;
+}
+
+.standings, .video-two {
+  display: flex;
+  background-color: #425666;
+}
+
+.offense, .defense {
+  background-color: #E2E8E6;
 }
 
 .standings-header{
@@ -127,7 +144,7 @@ footer {
   display: inline;
   float: left;
   font-weight: bolder;
-  color: white;
+  color: #63C083;
   font-size: 72px;
 }
 
@@ -195,7 +212,7 @@ footer {
 }
 
 .standings-line{
-  height: 1px;
+  height: 3px;
   background-color: #F6C415;
   margin-top: -10px;
   text-align: left;
@@ -205,6 +222,11 @@ footer {
   height: 10px;
   background-color: #f9f9f9;
   margin-top: -10px;
+}
+
+.game-lines {
+  width: 33%;
+  margin-bottom: 20px;
 }
 
 .highlighted-text {
@@ -243,7 +265,7 @@ footer {
 #welcome-section {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #E2E8E6;
+  background-color:#425666;
 }
 
 .square {
@@ -287,7 +309,7 @@ footer {
 .schedule {
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background-color: #E2E8E6;
+	background-color: #425666;
 	color: white;
 }
 
@@ -309,7 +331,7 @@ footer {
 }
 
 .features {
-  background-color: #425666;
+  background-color:#E2E8E6;
 }
 
 .oppTeam{
@@ -475,7 +497,15 @@ footer {
 
 	.schedule-2018 .oppTeam {
 		margin-bottom: 0.5rem;
-	}
+  }
+  
+  .header-section {
+    height: 60vh;
+  }
+
+  .ivy-standings {
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -485,11 +515,16 @@ footer {
 		padding-left: 15px;
 		margin-right: auto;
 		margin-left: auto;
-	}
+  }
+  
+  .header-section {
+    background-image: url(https://s3.amazonaws.com/snwceomedia/dpn/00b394a3-1aaf-4678-80a3-80c1500a172f.original.png);
+    height: calc(95vh - 50px);
+  }
 
 	.shortcuts .row {
 		margin-bottom: 0;
-	}
+  }
 }
 
 @media only screen and (max-width: 480px) {
