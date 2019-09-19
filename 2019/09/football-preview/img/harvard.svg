@@ -1,34 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#63C083;}
-	.st1{fill:#75C275;}
-	.st2{fill:#65C086;}
-	.st3{fill:none;stroke:#65C086;stroke-miterlimit:10;}
+	.st0{fill:#65C086;}
+	.st1{fill:none;stroke:#65C086;stroke-miterlimit:10;}
+	.st2{enable-background:new    ;}
 </style>
 <g>
 	<g>
 		<g>
-			<path class="st1" d="M30.46,14.7v7.58H33v36.27h-2.54v7.58h13.16v-7.58h-2.56V44.39h17.88v14.16h-2.55v7.58h13.15v-7.58h-2.55
-				V22.28h2.55V14.7H56.39v7.58h2.55v14.15H41.06V22.28h2.56V14.7H30.46z"/>
+			<path class="st0" d="M30.5,14.4V22H33v36.3h-2.5v7.6h13.2v-7.6h-2.6V44.1H59v14.2h-2.5v7.6h13.1v-7.6h-2.5V22h2.5v-7.6H56.5V22
+				H59v14.2H41.1V22h2.6v-7.6C43.6,14.4,30.5,14.4,30.5,14.4z"/>
 		</g>
 	</g>
 	<g>
 		<g>
-			<path class="st1" d="M71.56,68.12H54.38V56.56h2.54V46.39H43.08v10.17h2.55v11.57h-17.2V56.56h2.55V24.27h-2.55V12.71h17.2v11.56
-				h-2.55v10.17h13.84V24.27h-2.54V12.71h17.17v11.56h-2.55v32.28h2.55V68.12z M54.77,67.72h16.38V56.95h-2.54V23.88h2.54V13.11
-				H54.77v10.77h2.55v10.96H42.68V23.88h2.55V13.11H28.84v10.77h2.56v33.08h-2.56v10.77h16.38V56.95h-2.55V45.99h14.65v10.96h-2.55
-				V67.72z"/>
+			<path class="st0" d="M71.6,67.8H54.4V56.2h2.5V46.1H43.1v10.2h2.5v11.6H28.4V56.2h2.5V24h-2.5V12.4h17.2V24h-2.5v10.2h13.8V24
+				h-2.5V12.4h17.2V24h-2.5v32.3h2.5V67.8z M54.8,67.5h16.4V56.8h-2.5V23.7h2.5V12.8H54.8v10.8h2.5v11H42.7v-11h2.5V12.8H28.8v10.8
+				h2.6v33.1h-2.6v10.8h16.4V56.8h-2.5v-11h14.6v11h-2.5V67.5z"/>
 		</g>
 	</g>
 	<g>
 		<g>
 			<g>
-				<path class="st1" d="M10.73,4.6v0.45v29.38c0,38.21,25.59,53.68,39.04,61.36L50,95.92l0.21-0.13
-					c13.46-7.68,39.06-23.15,39.06-61.36V5.05V4.6h-0.46H50H11.18H10.73z M11.64,5.5H50h38.36v28.93
-					c0,37.63-24.88,52.74-38.36,60.45c-13.47-7.71-38.37-22.82-38.37-60.45V5.5z"/>
+				<path class="st0" d="M10.7,4.3v0.4v29.4c0,38.2,25.6,53.7,39,61.4l0.2,0.1l0.2-0.1c13.5-7.7,39.1-23.2,39.1-61.4V4.8V4.4h-0.5
+					H50H11.2L10.7,4.3L10.7,4.3z M11.6,5.2H50h38.4v28.9c0,37.6-24.9,52.7-38.4,60.5c-13.5-7.7-38.4-22.8-38.4-60.5V5.2L11.6,5.2z"
+					/>
 			</g>
 		</g>
 	</g>
