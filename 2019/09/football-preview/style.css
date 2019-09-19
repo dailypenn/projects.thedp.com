@@ -312,6 +312,10 @@ footer {
   background-color: #0F484D;
 }
 
+.flex-start {
+  justify-content: flex-start !important;
+}
+
 .overflow-parent {
   position: absolute;
 }
@@ -323,7 +327,7 @@ footer {
 
 #welcome-section {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   background-color:#425666;
 }
 
@@ -364,7 +368,7 @@ footer {
   margin-right: 10px; */
 	padding: 10px 15px;
 	color: white;
-	font-weight: bold;
+	/* font-weight: bold; */
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -590,6 +594,10 @@ footer {
 
 	.shortcuts .row {
 		margin-bottom: 0;
+  }
+
+  #welcome-section {
+    padding-bottom: 40px;
   }
 }
 
