@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Football Preview 2019 | DP Sports",
+      "author": "Web Dev: Leah Wang, Daniel Salib",
+      "section": "DP Sports",
+      "date": "September 2019",
+      "description": "Penn football opens the season at Delaware on Saturday. Take a look at our 2019 Football Preview, where we preview the season to come and highlight the key players, positional groups, and coaches to watch.",
+      "sponsored": false,
+      "link": "https://projects.thedp.com/2019/09/football-preview",
+      "image": "https://snworksceo.imgix.net/dpn/416b287f-afbe-4961-916a-70ec2450387f.sized-1000x1000.png?",
+      "alt": "End of the Year Awards | DP Sports"
+    }
+    ,{
           "title": "End of the Year Awards | DP Sports",
           "author": "Web Dev: Danny Leiser, Daniel Salib",
           "section": "DP Sports",
