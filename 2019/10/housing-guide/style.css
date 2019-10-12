@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Work+Sans:400,500,600&display=swap');
+.dom-visual {
+    height: auto;
+    background-image: url('./imgs/housing_guide_dom.svg');
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 55.25%;
+
+}
+
+.navbar {
+    background-color: #FFF9EB;
+    justify-content: center;
+}
+
+.section-primary {
+    background-color: #FFF9EB;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-header {
+    text-align: center;
+    border-bottom: 5px solid yellow;
+    display: inline;
+}
+
+.coral-text {
+    color: #F47362;
+}
+
+.hg-card-row {
+    margin-top: 50px;
+}
+
+.hg-card {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px 40px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.hg-card-category {
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.hg-card-circle-img {
+    border-radius: 50%;
+    background-color: #F9BEAF;
+    height: 133px;
+    width: 133px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1550px) {
+    .dom-visual {
+        padding-bottom: 0;
+        height: 810px;
+        background-size: auto;
+    }
+}
