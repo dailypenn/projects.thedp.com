@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Work+Sans:400,500,600&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
 .dom-visual {
     height: auto;
     background-image: url('./imgs/housing_guide_dom.svg');
@@ -9,25 +13,79 @@
 
 }
 
+h1, h2 {
+    font-family: 'Old Standard TT', serif;
+}
+
 .navbar {
     background-color: #FFF9EB;
     justify-content: center;
 }
 
+section {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
 .section-primary {
     background-color: #FFF9EB;
-    padding-top: 30px;
-    padding-bottom: 30px;
+}
+
+.section-primary .section-header {
+    border-bottom-color: #FFC871;
+    color: #798FDB;
+}
+
+.section-primary .readmore-btn {
+    color: #293C72;
+    background-color: #FFC871;
+    transition: all 0.3s;
+}
+
+.section-primary .readmore-btn:hover {
+    color: #091930;
+    background-color: #F2A43D;
+}
+
+.section-alternate {
+
+}
+
+.section-alternate .section-header {
+    border-bottom-color: #7FCEEA;
+    color: #3D5891;
+}
+
+.section-top {
+    text-align: center;
 }
 
 .section-header {
     text-align: center;
-    border-bottom: 5px solid yellow;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
     display: inline;
 }
 
 .coral-text {
     color: #F47362;
+}
+
+.sky-text {
+    color: #7FCEEA;
+}
+
+.iris-text {
+    color: #798FDB;
+    transition: all 0.3s;
+}
+
+.iris-text:hover {
+    color: #B3C1E8;
+}
+
+.dark-text {
+    color: #333333;
 }
 
 .hg-card-row {
@@ -48,28 +106,76 @@
 	transition: all 0.3s;
 }
 
-.hg-card:hover{
-    -webkit-transform:scale(1.025); /* Safari and Chrome */
-    -moz-transform:scale(1.025); /* Firefox */
-    -ms-transform:scale(1.025); /* IE 9 */
-    -o-transform:scale(1.025); /* Opera */
-     transform:scale(1.025);
-
-     cursor: pointer;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, .17);
+.hg-card h2{
+    color: #293C72;
+    font-size: 24px;
+    margin-top: 30px;
+    transition: all 0.3s;
 }
 
-.hg-card-category {
+.hg-card h2:hover {
+    color: #597EB2;
+}
+
+.hg-card p {
     font-size: 14px;
-    font-family: 'Work Sans', sans-serif;
+}
+
+.hg-card:hover{
+    /* -webkit-transform:scale(1.025);
+    -moz-transform:scale(1.025);
+    -ms-transform:scale(1.025);
+    -o-transform:scale(1.025);
+     transform:scale(1.025); */
+
+    cursor: pointer;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, .17);
 }
 
 .hg-card-circle-img {
     border-radius: 50%;
     background-color: #F9BEAF;
-    height: 133px;
-    width: 133px;
+    height: 100px;
+    width: 100px;
     margin: 0 auto;
+}
+
+.readmore-btn {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 9px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.readmore-btn:hover {
+    text-decoration: none;
+}
+
+.embed-container { 
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 90%;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.17);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+} 
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.video-description {
+    max-width: 90%;
+    margin: 30px auto 0px;
 }
 
 @media screen and (min-width: 1550px) {
