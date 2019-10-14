@@ -8,6 +8,11 @@ body {
 a {
     cursor: pointer;
 }
+
+.navbar {
+    background-color: #293C72;
+}
+
 .dom-visual {
     height: auto;
     background-image: url('./imgs/housing_guide_dom.svg');
@@ -15,7 +20,6 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 55.25%;
-
 }
 
 h1, h2 {
@@ -23,7 +27,7 @@ h1, h2 {
 }
 
 .navbar {
-    background-color: #FFF9EB;
+    background-color: #798FDB;
     justify-content: center;
 }
 
@@ -45,12 +49,14 @@ section {
     color: #293C72;
     background-color: #FFC871;
     transition: all 0.3s;
+    font-weight: 500;
 }
 
 .crime .readmore-btn {
     color: #ffffff;
     background-color: #7FCEEA;
     transition: all 0.3s;
+    font-weight: 500;
 }
 
 .crime .readmore-btn:hover {
@@ -95,9 +101,9 @@ section {
     transition: all 0.3s;
 }
 
-.iris-text:hover {
+/* .iris-text:hover {
     color: #B3C1E8;
-}
+} */
 
 .dark-text {
     color: #333333;
@@ -127,6 +133,10 @@ section {
     padding-top: 40px;
 }
 
+.hg-opinion-card {
+    margin-bottom: 20px;
+}
+
 .text-container {
     padding: 0px 40px 20px;
 }
@@ -148,10 +158,15 @@ section {
 
 .hg-card h2:hover, .hg-image-card h2:hover, .hg-opinion-card h2:hover, .content-row h1:hover {
     color: #597EB2;
+    cursor: pointer;
 }
 
 .hg-card p, .hg-image-card p, .hg-opinion-card p {
     font-size: 14px;
+}
+
+.top-badge {
+    font-weight: 600;
 }
 
 .hg-card:hover, .hg-image-card:hover, .hg-opinion-card:hover{
@@ -194,6 +209,7 @@ section {
     border-radius: 50%;
     background-size: cover;
     background-position: top;
+    flex-shrink: 0;
 }
 
 .hg-card-img {
@@ -294,6 +310,10 @@ footer {
     text-align: center;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 @media screen and (min-width: 1550px) {
     .dom-visual {
         padding-bottom: 0;
@@ -313,5 +333,10 @@ footer {
 
     .content-row .col-md-8 {
         padding-left: 15px;
+    }
+
+    .dom-visual {
+        background-image: url("https://snworksceo.imgix.net/dpn/ddf70cad-d7be-44cc-a408-8b8bba87f316.sized-1000x1000.png?");
+        padding-bottom: 90vh;
     }
 }
