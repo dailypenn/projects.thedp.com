@@ -342,10 +342,16 @@ a:hover {
 
     .content-row .col-md-8 {
         padding-left: 15px;
+        text-align: initial;
     }
 
     .dom-visual {
         background-image: url("https://snworksceo.imgix.net/dpn/ddf70cad-d7be-44cc-a408-8b8bba87f316.sized-1000x1000.png?");
         padding-bottom: 90vh;
+    }
+
+    .center {
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 }
