@@ -52,6 +52,11 @@ section {
     font-weight: 500;
 }
 
+.content-row .readmore-btn {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .crime .readmore-btn {
     color: #ffffff;
     background-color: #7FCEEA;
@@ -125,7 +130,9 @@ section {
 	-webkit-transition: all 0.3s;
     transition: all 0.3s;
     padding-bottom: 30px;
+    /* height: 100%; */
 }
+  
 
 .hg-card, .hg-opinion-card {
     padding-left: 40px;
@@ -262,6 +269,10 @@ section {
 
 .content-row .col-md-8 {
     padding-left: 50px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .content-row h1 {
