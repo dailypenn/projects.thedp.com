@@ -156,6 +156,10 @@ h6 {
     height: 100%; 
 }
 
+.poll-row {
+    margin-top: 40px;
+}
+
 @media screen and (min-width: 992px) {
 }
 
