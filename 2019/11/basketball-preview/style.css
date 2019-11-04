@@ -222,6 +222,10 @@ h6 {
     display: none;
 }
 
+.shrink-spacing a {
+    letter-spacing: -0.7px;
+}
+
 @media screen and (min-width: 992px) {
 }
 
