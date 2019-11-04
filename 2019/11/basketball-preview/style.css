@@ -41,14 +41,14 @@ h6 {
 }
 
 .section {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #F0F3F5;
 }
 
 .section-inverse {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #3E4149;
 }
 
@@ -79,8 +79,11 @@ h6 {
 }
 
 .bubble-content {
-    color: white;
     margin-bottom: 10px;
+}
+
+.bubble-content a {
+    color: white;
     font-family: 'Gothic A1', sans-serif;
     font-size: 24px;
     transition: all 0.3s;
@@ -90,9 +93,10 @@ h6 {
     margin-bottom: 20px;
 }
 
-.bubble-content:hover {
+.bubble-content a:hover {
     color: rgba(255, 255, 255, 0.75);
     cursor: pointer;
+    text-decoration: none;
 }
 
 .bubble-line {
@@ -160,10 +164,20 @@ h6 {
     margin-top: 40px;
 }
 
+.schedule {
+    margin-bottom: 30px;
+}
+
 @media screen and (min-width: 992px) {
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+    .schedule-section {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 992px) {
