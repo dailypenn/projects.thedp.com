@@ -21,6 +21,7 @@ footer {
     background-repeat: no-repeat;
     margin-top: 40px;
     padding-bottom: 56.25%;
+    border-bottom: 1px #3E4149 solid;
 }
 
 h1, h2, h3, h4, h5, h6 {
