@@ -217,6 +217,10 @@ h6 {
     margin-right: -200px;
 }
 
+.hidden-lg {
+    display: none;
+}
+
 @media screen and (min-width: 992px) {
 }
 
@@ -224,6 +228,23 @@ h6 {
     .dom-visual {
         background-image: url("https://snworksceo.imgix.net/dpn/2b6859b8-9c69-46ca-93d3-6de61235f02f.sized-1000x1000.png?");
         padding-bottom: 630px;
+    }
+
+    .feature {
+        display: none;
+    }
+
+    .started .bubble {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    .started .col-md-4:nth-child(1) {
+        margin-top: 30px;
+    }
+
+    .hidden-lg {
+        display: inherit;
     }
 }
 
