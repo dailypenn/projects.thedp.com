@@ -68,9 +68,25 @@ body {
 .section-opinion .section-header {
     color: #131313;
     font-family: 'DM Serif Display', serif;
+    font-size: 52px;
     font-style: italic;
     text-align: center;
     margin-top: 88px;
+    margin-bottom: 20px;
+}
+
+.column-title {
+    color: #E7525F;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.opinion-title {
+    color:#131313;
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
 }
 
 .section-description {
