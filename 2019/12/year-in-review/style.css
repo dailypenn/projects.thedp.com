@@ -29,6 +29,20 @@ h1, h2, h3 {
     font-size: 18px;
 }
 
+.section-header {
+    color: #131313;
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: 88px;
+}
+
+.section-description {
+    max-width: 50%;
+    margin: 16px auto 40px;
+    text-align: center;
+}
+
 .story-link {
     color: inherit;
 }
