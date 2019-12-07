@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Roboto:400,500,700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'DM Serif Display', serif;
+}
+
+.section {
+    background-color: #131313;
+    padding: 120px 0px;
+}
+
+.section-inverse {
+    background-color: white;
+}
+
+.section-main-header {
+    color: white;
+    margin-top: 16px;
+}
+
+.section-inverse .section-main-header {
+    color: #131313;
+}
+
+.section-main-text {
+    color: white;
+    margin-top: 16px;
+}
