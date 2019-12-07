@@ -65,13 +65,17 @@ body {
     font-size: 18px;
 }
 
+.section-opinion {
+    background-color: #F1F5FF;
+    padding: 120px 0px;
+}
+
 .section-opinion .section-header {
     color: #131313;
     font-family: 'DM Serif Display', serif;
     font-size: 52px;
     font-style: italic;
     text-align: center;
-    margin-top: 88px;
     margin-bottom: 40px;
 }
 
@@ -90,13 +94,13 @@ body {
     margin-bottom: 12px;
 }
 
-.hg-opinion-img {
+.author-opinion-img {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.hg-opinion-img p {
+.author-opinion-img p {
     margin-bottom: 0px;
     margin-left: 16px;
     color: #8E929F;
@@ -130,7 +134,7 @@ body {
 
 .section-description {
     max-width: 50%;
-    margin: 16px auto 40px;
+    margin: 16px auto 64px;
     text-align: center;
 }
 
@@ -154,7 +158,7 @@ body {
 
 .section-inverse {
     background-color: white;
-    padding: 120px 0px;
+    padding: 80px 0px;
 }
 
 .section-inverse .section-main-header {
