@@ -8,6 +8,34 @@ h1, h2, h3 {
     font-family: 'DM Serif Display', serif;
 }
 
+/* use h3 */
+.main-header {
+    color: white;
+    margin-top: 16px;
+    font-family: 'DM Serif Display', serif;
+}
+
+/* use h4 */
+.primary-story {
+    color: white;
+    font-family: 'DM Serif Display', serif;
+}
+
+/* use h5 */
+.secondary-story{
+    color: white;
+    font-family: 'DM Serif Display', serif;
+}
+
+.story-link {
+    color: inherit;
+}
+
+.story-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
 .section {
     background-color: #131313;
     padding: 120px 0px;
@@ -15,11 +43,6 @@ h1, h2, h3 {
 
 .section-inverse {
     background-color: white;
-}
-
-.section-main-header {
-    color: white;
-    margin-top: 16px;
 }
 
 .section-inverse .section-main-header {
