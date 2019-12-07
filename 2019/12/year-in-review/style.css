@@ -19,12 +19,14 @@ h1, h2, h3 {
 .primary-story {
     color: white;
     font-family: 'DM Serif Display', serif;
+    font-size: 22px;
 }
 
 /* use h5 */
 .secondary-story{
     color: white;
     font-family: 'DM Serif Display', serif;
+    font-size: 18px;
 }
 
 .story-link {
@@ -56,4 +58,27 @@ h1, h2, h3 {
 
 .date {
     color: white;
+}
+
+.more-stories {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+
+/* Util classes */
+.right-border {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.top-border {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.narrow-col-right {
+    padding-right: 24px;
+}
+
+.narrow-col-left {
+    padding-left: 24px;
 }
