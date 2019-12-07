@@ -1,11 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Roboto:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Open+Sans:400,700&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: 'DM Serif Display', serif;
+.section-header {
+    color: #E7525F;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.more-stories .section-header {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.section-inverse .more-stories .section-header {
+    color: #131313;
 }
 
 /* use h3 */
@@ -15,6 +28,10 @@ h1, h2, h3 {
     font-family: 'DM Serif Display', serif;
 }
 
+.section-inverse .main-header {
+    color: #131313;
+}
+
 /* use h4 */
 .primary-story {
     color: white;
@@ -22,11 +39,34 @@ h1, h2, h3 {
     font-size: 22px;
 }
 
+.section-inverse .primary-story {
+    color: #131313;
+}
+
+.primary-section {
+    padding-top: 28px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 28px;
+}
+
+.primary-story-line {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 28px 0px;
+}
+
+.section-inverse .primary-story-line {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 /* use h5 */
 .secondary-story{
     color: white;
     font-family: 'DM Serif Display', serif;
     font-size: 18px;
+}
+
+.section-inverse .secondary-story {
+    color: #131313;
 }
 
 .story-link {
@@ -45,6 +85,7 @@ h1, h2, h3 {
 
 .section-inverse {
     background-color: white;
+    padding: 120px 0px;
 }
 
 .section-inverse .section-main-header {
@@ -56,8 +97,16 @@ h1, h2, h3 {
     margin-top: 16px;
 }
 
+.section-inverse .section-main-text {
+    color: #131313;
+}
+
 .date {
-    color: white;
+    color: #CFD3DD;
+}
+
+.section-inverse .date {
+    color: #6C6F78;
 }
 
 .more-stories {
@@ -65,14 +114,21 @@ h1, h2, h3 {
     padding-top: 20px;
 }
 
-
 /* Util classes */
 .right-border {
     border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.section-inverse .right-border {
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
 .top-border {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.section-inverse .top-border {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .narrow-col-right {
@@ -81,4 +137,8 @@ h1, h2, h3 {
 
 .narrow-col-left {
     padding-left: 24px;
+}
+
+@media screen and (max-width: 576px) {
+    
 }
