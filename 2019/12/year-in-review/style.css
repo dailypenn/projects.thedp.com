@@ -34,6 +34,7 @@ body {
     font-family: 'DM Serif Display', serif;
 }
 
+
 .section-inverse .main-header {
     color: #131313;
 }
@@ -147,7 +148,7 @@ body {
 }
 
 .section-description {
-    max-width: 50%;
+    max-width: 60%;
     margin: 16px auto 64px;
     text-align: center;
 }
@@ -217,6 +218,23 @@ body {
     margin-top: 20px;
     padding-top: 20px;
 }
+
+.street-card {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    height: 260px;
+    background: #E7525F;
+}
+
+.street-header {
+    color: white;
+    font-size: 40px;
+    font-family: 'DM Serif Display', serif;
+    margin-left: 28px;
+    position: absolute;
+    bottom: 72px;
+}
+
 
 /* Util classes */
 .right-border {
