@@ -4,6 +4,44 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+.navbar {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    display: flex;
+    max-height: 36px;
+}
+
+.header-section {
+    height: calc(100vh - 150px);
+    max-width: 100%;
+    width: 100%;
+    background-color: white;
+    font-family: 'DM Serif Display', serif;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.header-section h1 {
+    text-align: center;
+    font-size: 116px;
+  }
+
+.header-section h2 {
+    text-align: center;
+    font-size: 68px;
+  }
+
+  .header-description {
+    max-width: 500px;
+    margin: 20px auto 0px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
 .section-header {
     color: #E7525F;
     font-family: 'Open Sans', sans-serif;
@@ -217,7 +255,8 @@ a:hover {
 
 .section-main-text {
     color: white;
-    margin-top: 16px;
+    margin-top: 15px;
+    line-height: 1.6;
 }
 
 .section-inverse .section-main-text {
