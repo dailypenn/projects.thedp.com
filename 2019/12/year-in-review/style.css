@@ -72,6 +72,10 @@ body {
     font-size: 18px;
 }
 
+.section-opinion h5:hover{
+    color: #505050;
+}
+
 .section-opinion {
     background-color: #F1F5FF;
     padding: 120px 0px;
@@ -89,7 +93,7 @@ body {
 .column-title {
     color: #E7525F;
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     margin-bottom: 12px;
 }
@@ -99,6 +103,14 @@ body {
     font-family: 'DM Serif Display', serif;
     font-size: 28px;
     margin-bottom: 12px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.opinion-title:hover{
+    color: #505050;
 }
 
 .author-opinion-img {
@@ -113,6 +125,10 @@ body {
     color: #8E929F;
     font-weight: bold;
     font-size: 14px;
+}
+
+.author-opinion-img p:hover {
+    color: #ABAFBA;
 }
 
 .opinion-img {
@@ -137,8 +153,14 @@ body {
 
 .opinion-card-img {
     margin-bottom: 20px;
+    width: auto;
 }
 
+.author {
+    color: #8E929F;
+    font-weight: bold;
+    font-size: 14px;
+}
 
 .more-columns p {
         color: #8E929F;
