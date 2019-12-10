@@ -122,6 +122,10 @@ body {
     color: #DBDBDB;
 }
 
+.section-inverse .secondary-story:hover {
+    color: #4a4a4a;
+}
+
 .section-opinion h5:hover{
     color: #505050;
 }
@@ -157,6 +161,10 @@ body {
     font-family: 'DM Serif Display', serif;
     font-size: 28px;
     margin-bottom: 12px;
+}
+
+.photo-gallery {
+    margin-bottom: 20px;
 }
 
 a:hover {
