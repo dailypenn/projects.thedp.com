@@ -84,8 +84,16 @@ body {
     font-size: 22px;
 }
 
+.primary-story:hover {
+    color: #dbdbdb;
+}
+
 .section-inverse .primary-story {
     color: #131313;
+}
+
+.section-inverse .primary-story:hover {
+    color: #4a4a4a;
 }
 
 .primary-section {
@@ -110,8 +118,16 @@ body {
     font-size: 18px;
 }
 
+.secondary-story:hover {
+    color: #DBDBDB;
+}
+
 .section-opinion h5:hover{
     color: #505050;
+}
+
+.section-inverse .section-opinion h5:hover {
+    color: #4a4a4a;
 }
 
 .section-opinion {
@@ -254,7 +270,7 @@ a:hover {
 }
 
 .section-main-text {
-    color: white;
+    color: #f7f7f7;
     margin-top: 15px;
     line-height: 1.6;
 }
