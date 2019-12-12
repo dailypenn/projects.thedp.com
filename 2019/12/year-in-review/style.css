@@ -148,6 +148,15 @@ body {
     margin-bottom: 40px;
 }
 
+.multimedia-header {
+    color: #ffffff;
+    font-family: 'DM Serif Display', serif;
+    font-size: 52px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 .column-title {
     color: #E7525F;
     font-family: 'Open Sans', sans-serif;
