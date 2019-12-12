@@ -362,3 +362,9 @@ a:hover {
 @media screen and (max-width: 576px) {
     
 }
+
+.footer {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
