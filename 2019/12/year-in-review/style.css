@@ -246,6 +246,10 @@ a:hover {
     text-align: center;
 }
 
+.spacer {
+    margin-bottom: 50px;
+}
+
 .more-stories {
     margin-top: 20px;
     padding-top: 24px;
