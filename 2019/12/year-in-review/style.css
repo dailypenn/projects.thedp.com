@@ -4,6 +4,44 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+.navbar {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    display: flex;
+    max-height: 36px;
+}
+
+.header-section {
+    height: calc(100vh - 150px);
+    max-width: 100%;
+    width: 100%;
+    background-color: white;
+    font-family: 'DM Serif Display', serif;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.header-section h1 {
+    text-align: center;
+    font-size: 116px;
+  }
+
+.header-section h2 {
+    text-align: center;
+    font-size: 68px;
+  }
+
+  .header-description {
+    max-width: 500px;
+    margin: 20px auto 0px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
 .section-header {
     color: #E7525F;
     font-family: 'Open Sans', sans-serif;
@@ -34,6 +72,7 @@ body {
     font-family: 'DM Serif Display', serif;
 }
 
+
 .section-inverse .main-header {
     color: #131313;
 }
@@ -45,8 +84,16 @@ body {
     font-size: 22px;
 }
 
+.primary-story:hover {
+    color: #dbdbdb;
+}
+
 .section-inverse .primary-story {
     color: #131313;
+}
+
+.section-inverse .primary-story:hover {
+    color: #4a4a4a;
 }
 
 .primary-section {
@@ -71,6 +118,22 @@ body {
     font-size: 18px;
 }
 
+.secondary-story:hover {
+    color: #DBDBDB;
+}
+
+.section-inverse .secondary-story:hover {
+    color: #4a4a4a;
+}
+
+.section-opinion h5:hover{
+    color: #505050;
+}
+
+.section-inverse .section-opinion h5:hover {
+    color: #4a4a4a;
+}
+
 .section-opinion {
     background-color: #F1F5FF;
     padding: 120px 0px;
@@ -85,10 +148,19 @@ body {
     margin-bottom: 40px;
 }
 
+.multimedia-header {
+    color: #ffffff;
+    font-family: 'DM Serif Display', serif;
+    font-size: 52px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 .column-title {
     color: #E7525F;
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     margin-bottom: 12px;
 }
@@ -98,6 +170,18 @@ body {
     font-family: 'DM Serif Display', serif;
     font-size: 28px;
     margin-bottom: 12px;
+}
+
+.photo-gallery {
+    margin-bottom: 20px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.opinion-title:hover{
+    color: #505050;
 }
 
 .author-opinion-img {
@@ -112,6 +196,10 @@ body {
     color: #8E929F;
     font-weight: bold;
     font-size: 14px;
+}
+
+.author-opinion-img p:hover {
+    color: #ABAFBA;
 }
 
 .opinion-img {
@@ -136,8 +224,14 @@ body {
 
 .opinion-card-img {
     margin-bottom: 20px;
+    width: auto;
 }
 
+.author {
+    color: #8E929F;
+    font-weight: bold;
+    font-size: 14px;
+}
 
 .more-columns p {
         color: #8E929F;
@@ -147,9 +241,13 @@ body {
 }
 
 .section-description {
-    max-width: 50%;
+    max-width: 60%;
     margin: 16px auto 64px;
     text-align: center;
+}
+
+.spacer {
+    margin-bottom: 50px;
 }
 
 .more-stories {
@@ -193,8 +291,9 @@ body {
 }
 
 .section-main-text {
-    color: white;
-    margin-top: 16px;
+    color: #f7f7f7;
+    margin-top: 15px;
+    line-height: 1.6;
 }
 
 .section-inverse .section-main-text {
@@ -217,6 +316,28 @@ body {
     margin-top: 20px;
     padding-top: 20px;
 }
+
+.street-card {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    height: 260px;
+    background: #E7525F;
+}
+
+.street-card:hover {
+    background: #D23C49;
+}
+
+.street-header {
+    color: white;
+    font-size: 40px;
+    font-family: 'DM Serif Display', serif;
+    margin-left: 28px;
+    margin-right: 28px;
+    position: absolute;
+    bottom: 72px;
+}
+
 
 /* Util classes */
 .right-border {
@@ -253,4 +374,10 @@ body {
 
 @media screen and (max-width: 576px) {
     
+}
+
+.footer {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
