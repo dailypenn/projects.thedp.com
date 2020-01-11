@@ -103,7 +103,7 @@ for (var i = 0; i < edTabs.length; i++) {
         document.querySelector('section.business').style.background =
           "linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0.9)), url('https://snworksceo.imgix.net/dpn/5803b1e8-72a6-4810-9770-60123f4a066d.sized-1000x1000.jpg')";
         break;
-      case 'ad':
+      case 'consulting':
         document.querySelector('section.business').style.background =
           "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/7f265244-68c1-4483-b138-8fc49c343444.sized-1000x1000.jpg')";
         break;
