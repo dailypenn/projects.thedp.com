@@ -97,6 +97,7 @@ for (var i = 0; i < edTabs.length; i++) {
     this.classList.add('active');
     document.getElementById(this.id + '-text').classList.add('active');
 
+    console.log(this.id === 'consulting' )
     // change department images
     switch (this.id) {
       case 'marketing':
