@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 const BgStyle = styled.div`
   background: ${props => props.bg};
-  backgroundSize: 'cover';
-  backgroundPosition: 'center';
-  backgroundRepeat: 'no-repeat';
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 `;
 
 const marketing = () => (
@@ -93,13 +93,7 @@ const Business = () => {
   const circulationBG = "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/06837fc5-f166-414c-8785-9234e35205b0.sized-1000x1000.jpg')";
 
   const [background, setBackground] = useState(marketingBG)
-
-  const setActive = (tabID) => {
-    let prevTab = document.getElementsByClassName('biz-tab active');
-    prevTab[0].classList.remove('active')
-    let activeTab = document.getElementById(tabID)
-    activeTab.classList.add('active')
-  }
+  const [active, setActive] = useState('marketing')
 
   const changeTab = (tabName) => {
     switch (tabName) {
@@ -144,11 +138,11 @@ const Business = () => {
           Join one of our teams to gain an invaluable, hands-on experience unlike any other.
       </p>
         <div className="departments">
-          <span><h4 className="biz-tab active" id="marketing" onClick={() => changeTab('marketing')}>Marketing</h4></span>
-          <span><h4 className="biz-tab" id="consulting" onClick={() => changeTab('consulting')}>Consulting</h4></span>
-          <span><h4 className="biz-tab" id="analytics" onClick={() => changeTab('analytics')}>Analytics</h4></span>
-          <span><h4 className="biz-tab" id="product-lab" onClick={() => changeTab('product-lab')}>Product Lab</h4></span>
-          <span><h4 className="biz-tab" id="circulation" onClick={() => changeTab('circulation')}>Circulation</h4></span>
+          <span><h4 className={active === "marketing" ? "biz-tab active" : "biz-tab"} id="marketing" onClick={() => changeTab('marketing')}>Marketing</h4></span>
+          <span><h4 className={active === "consulting" ? "biz-tab active" : "biz-tab"} id="consulting" onClick={() => changeTab('consulting')}>Consulting</h4></span>
+          <span><h4 className={active === "analytics" ? "biz-tab active" : "biz-tab"} id="analytics" onClick={() => changeTab('analytics')}>Analytics</h4></span>
+          <span><h4 className={active === "product-lab" ? "biz-tab active" : "biz-tab"} id="product-lab" onClick={() => changeTab('product-lab')}>Product Lab</h4></span>
+          <span><h4 className={active === "circulation" ? "biz-tab active" : "biz-tab"} id="circulation" onClick={() => changeTab('circulation')}>Circulation</h4></span>
         </div>
         {tab}
       </div>

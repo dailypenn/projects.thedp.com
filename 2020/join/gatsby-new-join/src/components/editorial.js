@@ -196,13 +196,7 @@ const Editorial = () => {
   const copyBG = "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/9a678efe-73b0-4fed-9f63-2278da389db8.sized-1000x1000.jpg')";
 
   const [background, setBackground] = useState(newsBG)
-
-  const setActive = (tabID) => {
-    let prevTab = document.getElementsByClassName('ed-tab active');
-    prevTab[0].classList.remove('active')
-    let activeTab = document.getElementById(tabID)
-    activeTab.classList.add('active')
-  }
+  const [active, setActive] = useState('news')
 
   const changeTab = (tabName) => {
     switch (tabName) {
@@ -265,15 +259,15 @@ const Editorial = () => {
           Whether it's diving deep into an investigative story or capturing snapshots of people at the frontlines of Penn's history, the DP editorial side never stops making a difference.
           </p>
         <div className="departments">
-          <span><h4 className="ed-tab active" id="news" onClick={() => changeTab('news')}>News</h4></span>
-          <span><h4 className="ed-tab" id="sports" onClick={() => changeTab('sports')}>Sports</h4></span>
-          <span><h4 className="ed-tab" id="opinion" onClick={() => changeTab('opinion')}>Opinion</h4></span>
-          <span><h4 className="ed-tab" id="copy" onClick={() => changeTab('copy')}>Copy</h4></span>
-          <span><h4 className="ed-tab" id="design" onClick={() => changeTab('design')}>Design</h4></span>
-          <span><h4 className="ed-tab" id="multimedia" onClick={() => changeTab('multimedia')}>Multimedia</h4></span>
-          <span><h4 className="ed-tab" id="social" onClick={() => changeTab('social')}>Audience Engagement</h4></span>
-          <span><h4 className="ed-tab" id="web" onClick={() => changeTab('web')}>Web Dev</h4></span>
-          <span><h4 className="ed-tab" id="podcasts" onClick={() => changeTab('podcasts')}>Podcasts</h4></span>
+          <span><h4 className={active === "news" ? "ed-tab active" : "ed-tab"} id="news" onClick={() => changeTab('news')}>News</h4></span>
+          <span><h4 className={active === "sports" ? "ed-tab active" : "ed-tab"} id="sports" onClick={() => changeTab('sports')}>Sports</h4></span>
+          <span><h4 className={active === "opinion" ? "ed-tab active" : "ed-tab"} id="opinion" onClick={() => changeTab('opinion')}>Opinion</h4></span>
+          <span><h4 className={active === "copy" ? "ed-tab active" : "ed-tab"} id="copy" onClick={() => changeTab('copy')}>Copy</h4></span>
+          <span><h4 className={active === "design" ? "ed-tab active" : "ed-tab"} id="design" onClick={() => changeTab('design')}>Design</h4></span>
+          <span><h4 className={active === "multimedia" ? "ed-tab active" : "ed-tab"} id="multimedia" onClick={() => changeTab('multimedia')}>Multimedia</h4></span>
+          <span><h4 className={active === "social" ? "ed-tab active" : "ed-tab"} id="social" onClick={() => changeTab('social')}>Audience Engagement</h4></span>
+          <span><h4 className={active === "web" ? "ed-tab active" : "ed-tab"} id="web" onClick={() => changeTab('web')}>Web Dev</h4></span>
+          <span><h4 className={active === "podcasts" ? "ed-tab active" : "ed-tab"} id="podcasts" onClick={() => changeTab('podcasts')}>Podcasts</h4></span>
         </div>
         {tab}
       </div>
