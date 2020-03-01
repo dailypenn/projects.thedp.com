@@ -100,12 +100,9 @@ section.intro {
 }
 
 section.editorial {
-  background-color: #AA1E22;
-  background: linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/917417c6-2a39-487a-bd75-8913f3427445.sized-1000x1000.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #FFF;
 }
 
 section.editorial a {
@@ -117,8 +114,6 @@ section.editorial a:hover {
 }
 
 section.business {
-  background-color: #EEE;
-  background: linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/5803b1e8-72a6-4810-9770-60123f4a066d.sized-1000x1000.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
