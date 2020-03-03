@@ -1,14 +1,14 @@
-import React, { useState } from "react"
+import React, { useState } from 'react'
 import styled from 'styled-components'
 
 const BgStyle = styled.div`
-  background: ${props => props.bg};
+  background: ${({ bg }) => bg};
   background-color: #AA1E22;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFF;
-`;
+`
 
 const news = () => (
   <>
@@ -69,11 +69,10 @@ const copy = () => (
   <>
     <p>
       The Daily Pennsylvanian's Copy Department is now editing 34th Street, Under the Button, and DP Sports content! Join our super fun team in reviewing and fact-checking everything from breaking news to satirical videos. Come help us keep our content concise, consistent, and considerate.
-          </p>
+    </p>
     <p>From the people who brought the DP the Oxford comma.</p>
     <h5>Highlights</h5>
     <a href="https://docs.google.com/document/pub?id=14HoU_sCiPxD8SOSH8HvWKsvz1Elv89yzcje-sZGGahs&pli=1" target="_blank" rel="noopener noreferrer">The DP's Official Style Guide &#8594;</a>
-
   </>
 )
 
@@ -81,17 +80,16 @@ const design = () => (
   <>
     <p>
       The Design Department is looking for designers, artists, and illustrators with all ranges of experience to join us in producing The Daily Pennsylvanian and 34th Street Magazine’s print and online visual content.
-          </p>
+    </p>
     <p>
       We use the full Adobe Creative Suite &mdash; mainly Photoshop, Illustrator, and InDesign &mdash; along with various online platforms for data visualization.
-          </p>
+    </p>
     <p>
       If you are interested in creating aesthetic content, whether it be front-page print centerpieces, online graphics, or layouts for websites, then the Design department is for you!
-          </p>
+    </p>
     <h5>Highlights</h5>
     <a href="https://www.thedp.com/article/2019/10/quad-single-sink-housing-room-penn" target="_blank" rel="noopener noreferrer">Here's why your freshman-year hallmate has a sink and you don't &#8594;</a>
     <a href="https://projects.thedp.com/2019/11/basketball-preview/" target="_blank" rel="noopener noreferrer">Basketball Preview 2019 &#8594;</a>
-
   </>
 )
 
@@ -99,16 +97,16 @@ const multimedia = () => (
   <>
     <p>
       The Multimedia Department is looking for people with a love for photography and videography to join us in creating modern content for The Daily Pennsylvanian.
-          </p>
+    </p>
     <p>
       We use the Adobe Suite as well as the latest DSLR cameras, lenses, and audio and video equipment to cover major events on campus and across the country. Our staff has covered famous figures including the likes of Joe Biden and Usain Bolt, stood front row at Made in America, and traveled for special events including presidential campaign rallies and NCAA tournaments.
-          </p>
+    </p>
     <p>
       As a member of the multimedia department, you will have many opportunities to learn and improve your photography and videography skills. You will also have the ability to take part in the editing and post-production process, having an impact on our content from creation to publishing. A time commitment of 1-2 hours per week is expected.
-          </p>
+    </p>
     <p>
       No experience or personal equipment is required, but is always appreciated. Join us in making transformative content for an award-winning media company!
-          </p>
+    </p>
     <h5>Highlights</h5>
     <a href="https://youtu.be/5oKNE8fQJik" target="_blank" rel="noopener noreferrer">Holi 2019: A Burst of Color &#8594;</a>
     <a href="https://www.thedp.com/article/2019/04/photo-gallery-penn-relays-125-upenn-harvard-olympians-usa-jamaica-yale" target="_blank" rel="noopener noreferrer">Photo Gallery | The 125th Running of the Penn Relays &#8594;</a>
@@ -127,13 +125,13 @@ const social = () => (
       Joining Audience Enagement will put you on the frontline of The DP’s interaction with tens of thousands of readers and develop skills increasingly relevant in the world’s growing digital landscape. </p>
     <p>
       As a rapidly growing department, we are looking for people excited to curate, manage and grow the DP’s social media presence and interaction through Facebook, Twitter and (especially!) Instagram. We are also seeking writers interested in writing and editing our daily newsletter.
-          </p>
+    </p>
     <p>
       AE is the right department for anyone looking to work with other departments across the DP on exciting projects such as promotion strategies for special issues and events online.
-          </p>
+    </p>
     <p>
       No prior experience required, only a fire emoji game and willingness to be part of our close knit family.
-          </p>
+    </p>
     <h5>Highlights</h5>
     <a href="https://www.facebook.com/dailypenn" target="_blank" rel="noopener noreferrer">The Daily Pennsylvanian Facebook &#8594;</a>
     <a href="https://twitter.com/dailypenn" target="_blank" rel="noopener noreferrer">The Daily Pennsylvanian Twitter &#8594;</a>
@@ -147,14 +145,14 @@ const web = () => (
     <p>
       Web developers at the DP have the opportunity to work on a number of diverse and complex projects.
       The DP runs multiple full-stack apps, regularly creates standalone pages for special issues or interactive projects, and builds internal tools for both the editorial and business sides.
-</p>
+    </p>
     <p>
       As a web developer, you'll get experience working with GitHub, as well as a wide array of programming languages.
       We maintain apps built with Ruby on Rails, use HTML, CSS, and JavaScript for our project pages, and regularly build tools with JavaScript, Python, and Ruby.
-</p>
+    </p>
     <p>
       Developers at all skill levels are encouraged to join!
-</p>
+    </p>
     <h5>Highlights</h5>
     <a href="https://projects.thedp.com/" target="_blank" rel="noopener noreferrer">DP Projects, a full list of all project pages we've developed &#8594;</a>
     <a href="https://dailypenn.github.io/outquote/" target="_blank" rel="noopener noreferrer">Outquote, a JavaScript tool to make branded quote cards &#8594;</a>
@@ -169,11 +167,11 @@ const podcasts = () => (
       Calling all podcast enthusiasts! DP Podcasts is looking for new hosts, writers, and editors.
       Join this burgeoning department as we attempt to expand the breadth and depth of our current podcast offerings.
       We are looking for storytellers and commentators from diverse backgrounds.
-          </p>
+    </p>
     <p>
       Are you weirdly passionate about something on campus? Do you have interesting opinions?
       If you join our department, we can turn that into a podcast!
-          </p>
+    </p>
     <h5>Highlights</h5>
     <a href="https://www.thedp.com/multimedia/63464" target="_blank" rel="noopener noreferrer">A Legacy of Privilege, Quite Frankly &#8594;</a>
     <a href="https://www.thedp.com/multimedia/62044" target="_blank" rel="noopener noreferrer">ivyQueens, Bottoms on Top &#8594;</a>
@@ -183,8 +181,6 @@ const podcasts = () => (
 )
 
 const Editorial = () => {
-  const [tab, setTab] = useState(news)
-
   const newsBG = "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/917417c6-2a39-487a-bd75-8913f3427445.sized-1000x1000.jpg')"
   const sportsBG = "linear-gradient(rgba(170, 30, 34, 0.9), rgba(170, 30, 34, 0.9)), url('https://snworksceo.imgix.net/dpn/01fd6964-dab3-4ec3-95e5-871ab1932e34.sized-1000x1000.jpg')";
   const opinionBG = "linear-gradient(rgba(170, 30, 34, 0.9), rgba(170, 30, 34, 0.9)), url('https://snworksceo.imgix.net/dpn/63f97845-7cb5-49eb-8322-bca5667583bc.sized-1000x1000.jpg')";
@@ -195,14 +191,9 @@ const Editorial = () => {
   const podcastsBG = "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/51d7e036-6b77-402a-9d6d-b1f7b8c3ab8c.sized-1000x1000.jpg')";
   const copyBG = "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/9a678efe-73b0-4fed-9f63-2278da389db8.sized-1000x1000.jpg')";
 
+  const [tab, setTab] = useState(news)
   const [background, setBackground] = useState(newsBG)
-
-  const setActive = (tabID) => {
-    let prevTab = document.getElementsByClassName('ed-tab active');
-    prevTab[0].classList.remove('active')
-    let activeTab = document.getElementById(tabID)
-    activeTab.classList.add('active')
-  }
+  const [active, setActive] = useState('news')
 
   const changeTab = (tabName) => {
     switch (tabName) {
@@ -251,29 +242,28 @@ const Editorial = () => {
         setActive('copy')
         setBackground(copyBG)
         break;
-      default:
     }
   }
 
   return (
-    <BgStyle bg = {background}>
+    <BgStyle bg={background}>
     <section className="editorial">
       <h2>Editorial</h2>
       <div className="section">
         <p className="overall">
           The Daily Pennsylvanian editorial departments work together to find and tell the most important stories on campus.
           Whether it's diving deep into an investigative story or capturing snapshots of people at the frontlines of Penn's history, the DP editorial side never stops making a difference.
-          </p>
+        </p>
         <div className="departments">
-          <span><h4 className="ed-tab active" id="news" onClick={() => changeTab('news')}>News</h4></span>
-          <span><h4 className="ed-tab" id="sports" onClick={() => changeTab('sports')}>Sports</h4></span>
-          <span><h4 className="ed-tab" id="opinion" onClick={() => changeTab('opinion')}>Opinion</h4></span>
-          <span><h4 className="ed-tab" id="copy" onClick={() => changeTab('copy')}>Copy</h4></span>
-          <span><h4 className="ed-tab" id="design" onClick={() => changeTab('design')}>Design</h4></span>
-          <span><h4 className="ed-tab" id="multimedia" onClick={() => changeTab('multimedia')}>Multimedia</h4></span>
-          <span><h4 className="ed-tab" id="social" onClick={() => changeTab('social')}>Audience Engagement</h4></span>
-          <span><h4 className="ed-tab" id="web" onClick={() => changeTab('web')}>Web Dev</h4></span>
-          <span><h4 className="ed-tab" id="podcasts" onClick={() => changeTab('podcasts')}>Podcasts</h4></span>
+          <span><h4 className={active === "news" ? "ed-tab active" : "ed-tab"} id="news" onClick={() => changeTab('news')}>News</h4></span>
+          <span><h4 className={active === "sports" ? "ed-tab active" : "ed-tab"} id="sports" onClick={() => changeTab('sports')}>Sports</h4></span>
+          <span><h4 className={active === "opinion" ? "ed-tab active" : "ed-tab"} id="opinion" onClick={() => changeTab('opinion')}>Opinion</h4></span>
+          <span><h4 className={active === "copy" ? "ed-tab active" : "ed-tab"} id="copy" onClick={() => changeTab('copy')}>Copy</h4></span>
+          <span><h4 className={active === "design" ? "ed-tab active" : "ed-tab"} id="design" onClick={() => changeTab('design')}>Design</h4></span>
+          <span><h4 className={active === "multimedia" ? "ed-tab active" : "ed-tab"} id="multimedia" onClick={() => changeTab('multimedia')}>Multimedia</h4></span>
+          <span><h4 className={active === "social" ? "ed-tab active" : "ed-tab"} id="social" onClick={() => changeTab('social')}>Audience Engagement</h4></span>
+          <span><h4 className={active === "web" ? "ed-tab active" : "ed-tab"} id="web" onClick={() => changeTab('web')}>Web Dev</h4></span>
+          <span><h4 className={active === "podcasts" ? "ed-tab active" : "ed-tab"} id="podcasts" onClick={() => changeTab('podcasts')}>Podcasts</h4></span>
         </div>
         {tab}
       </div>
