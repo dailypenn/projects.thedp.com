@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import styled from 'styled-components'
 
 const HeaderStyle = styled.header`
@@ -7,7 +7,7 @@ const HeaderStyle = styled.header`
   justify-content: center;
   height: 50px;
   background-color: #000;
-`;
+`
 
 const Header = ({ siteTitle }) => (
   <HeaderStyle>
