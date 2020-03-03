@@ -9,7 +9,7 @@ const IntroStyle = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
   min-height: calc(100vh - 150px);
-`;
+`
 
 const IntroText = styled.div`
   color: #FFF;
@@ -17,7 +17,7 @@ const IntroText = styled.div`
   align-self: flex-end;
   display: flex;
   flex-direction: column;
-`;
+`
 
 const Intro = () => (
   <IntroStyle>
