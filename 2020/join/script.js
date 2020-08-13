@@ -29,7 +29,7 @@ for (var i = 0; i < edTabs.length; i++) {
         break;
       case 'sports':
         document.querySelector('section.editorial').style.background =
-          "linear-gradient(rgba(170, 30, 34, 0.9), rgba(170, 30, 34, 0.9)), url('https://snworksceo.imgix.net/dpn/01fd6964-dab3-4ec3-95e5-871ab1932e34.sized-1000x1000.jpg')";
+          "linear-gradient(rgba(170, 30, 34, 0.9), rgba(170, 30, 34, 0.9)), url('https://snworksceo.imgix.net/dpn/cec0e468-8fd7-4820-906d-9981ae887347.sized-1000x1000.jpg')";
         break;
       case 'opinion':
         document.querySelector('section.editorial').style.background =
