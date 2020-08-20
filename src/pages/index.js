@@ -1,11 +1,10 @@
-import React, { useEffect } from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import s from 'styled-components'
-import Ad from 'react-google-publisher-tag'
+import { DFPSlotsProvider, AdSlot } from 'react-dfp'
 
 // import Layout from "../components/layout"
-import Image from "../components/image"
 // import SEO from "../components/seo"
 
 import projectsJSON from '../content/projects.json'
@@ -177,140 +176,75 @@ const Article = ({ article }) => (
   </div>
 )
 
-const useDfpSlot = ({ path, size, id }) => {
-  useEffect(() => {
-    const googletag = window.googletag || {};
-    googletag.cmd = googletag.cmd || [];
-    console.log("hello")
-    googletag.cmd.push(function() {
-      console.log("???????????????")
-      googletag.defineSlot(path, size, id).addService(googletag.pubads());
-      console.log("!!!!!!!!!!")
-      googletag.pubads().enableSingleRequest();
-      googletag.enableServices();
-      googletag.display(id);
-      
-    });
-    googletag.cmd.push(function() {
-      
-      
-    });
-  }, []);
-};
+const IndexPage = () => (
+  <Wrapper>
+    <Helmet>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Projects | The Daily Pennsylvanian</title>
+      <link rel="stylesheet" type="text/css" href="https://d1q35ni5859stt.cloudfront.net/20161213m1eLHQrMRG/dist/css/master.min.css" />
+      <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js" />
+    </Helmet>
 
-const IndexPage = () => {
-  const path = '/12234093/DP.com-Leaderboard'
-  const size = [728, 90]
-  const id = 'div-gpt-ad-1485118541142-1'
+    <nav className="navbar navbar-inverse navbar-fixed-top">
+      <center>
+        <a href="https://www.thedp.com">
+          <img src="https://snworksceo.imgix.net/dpn/aa058626-f082-47a5-9191-86c645d2986b.sized-1000x1000.png" alt="The Daily Pennsylvanian" width="250" />
+        </a>
+      </center>
+    </nav>
 
-  useEffect(() => {
-    const googletag = window.googletag || {};
-    googletag.cmd = googletag.cmd || [];
-    console.log("hello")
-    console.log(googletag.cmd)
-    googletag.cmd.push(function() {
-      console.log("???????????????")
-      googletag.defineSlot(path, size, id).addService(googletag.pubads());
-      // console.log("!!!!!!!!!!")
-      googletag.pubads().enableSingleRequest();
-      googletag.enableServices();
-      googletag.display(id);
-    });
+    <div class="container wrapper">
+      <h1>DP Projects &amp; Guides</h1>
 
-    googletag.cmd.push(function() {
-      
-    });
-  }, []);
-
-  // useDfpSlot({
-  //   path: '/12234093/DP.com-Leaderboard',
-  //   size: [728, 90],
-  //   id: 'div-gpt-ad-1485118541142-1',
-  //  });
-  
-  //  useDfpSlot({
-  //   path: '/12234093/DP.com-mobile-leaderboard',
-  //   size: [320, 50],
-  //   id: 'div-gpt-ad-1485118541142-0'
-  //  });
-
-  return (
-    <Wrapper>
-      <Helmet>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Projects | The Daily Pennsylvanian</title>
-        <link rel="stylesheet" type="text/css" href="https://d1q35ni5859stt.cloudfront.net/20161213m1eLHQrMRG/dist/css/master.min.css" />
-        <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js" />
-      </Helmet>
-
-      <nav className="navbar navbar-inverse navbar-fixed-top">
-        <center>
-          <a href="https://www.thedp.com">
-            <img src="https://snworksceo.imgix.net/dpn/aa058626-f082-47a5-9191-86c645d2986b.sized-1000x1000.png" alt="The Daily Pennsylvanian" width="250" />
-          </a>
-        </center>
-      </nav>
-
-      <div class="container wrapper">
-        <h1>DP Projects &amp; Guides</h1>
-
-        <div class="welcome">
-          <p>Welcome to The Daily Pennsylvanian's Projects page! This site showcases the work done by the DP's web development team, such as project pages for special issues or standalone interactives.</p>
-          <p><a href="https://projects.34st.com" target="_blank">34th Street Magazine</a> and <a href="https://projects.underthebutton.com" target="_blank">Under the Button</a> have their own project pages. Check them out for more of their content!</p>
-        </div>
-
-        <hr />
-
-        <div class="row" id="featured">
-          <div class="col-sm-8" id="featured-main">
-            <MainArticle article={projectsJSON.featured[0]} />
-          </div>
-          <div class="col-xs-12 mobile-only"><hr class="mobile-only" /></div>
-          <div class="col-sm-4" id="featured-secondary">
-            {projectsJSON.featured.slice(1).map(article => <SideArticle article={article} />)}
-          </div>
-        </div>
-
-        <hr />
-
-        <div class="ad">
-          <div id='div-gpt-ad-1485118541142-1' style={{ height: '90px', width: '728px' }} />
-          <div class="hidden-xs hidden-sm">
-            {/* <!-- /12234093/DP.com-Leaderboard --> */}
-            {/* <Ad path="/12234093/DP.com-Leaderboard" /> */}
-            
-          </div>
-          <div class="hidden-md hidden-lg">
-            {/* <!-- /12234093/DP.com-mobile-leaderboard --> */}
-            <div id='div-gpt-ad-1485118541142-0' style={{ height: '50px', width: '320px' }}>
-              {/* <script>
-                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1485118541142-0') });
-              </script> */}
-            </div>
-          </div>
-        </div>
-
-        <hr />
-
-        <div class="row" id="articles">
-          {projectsJSON.articles.map(article => <Article article={article} />)}
-        </div>
-
-        <div class="credit">
-          <p>Copyright &copy; 2016-2020 The Daily Pennsylvanian. All rights reserved.</p>
-        </div>
-
+      <div class="welcome">
+        <p>Welcome to The Daily Pennsylvanian's Projects page! This site showcases the work done by the DP's web development team, such as project pages for special issues or standalone interactives.</p>
+        <p><a href="https://projects.34st.com" target="_blank">34th Street Magazine</a> and <a href="https://projects.underthebutton.com" target="_blank">Under the Button</a> have their own project pages. Check them out for more of their content!</p>
       </div>
 
-      
-      {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div> */}
-      {/* <Link to="/page-2/">Go to page 2</Link> */}
-    </Wrapper>
-  )
-}
+      <hr />
+
+      <div class="row" id="featured">
+        <div class="col-sm-8" id="featured-main">
+          <MainArticle article={projectsJSON.featured[0]} />
+        </div>
+        <div class="col-xs-12 mobile-only"><hr class="mobile-only" /></div>
+        <div class="col-sm-4" id="featured-secondary">
+          {projectsJSON.featured.slice(1).map(article => <SideArticle article={article} />)}
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="ad">
+        <div id='div-gpt-ad-1485118541142-1' style={{ height: '90px', width: '728px' }} />
+        <div class="hidden-xs hidden-sm">
+          <DFPSlotsProvider dfpNetworkId="12234093">
+            <AdSlot adUnit="DP.com-Leaderboard" sizes={[[728, 90]]} />
+          </DFPSlotsProvider>
+        </div>
+        <div class="hidden-md hidden-lg">
+          {/* <!-- /12234093/DP.com-mobile-leaderboard --> */}
+          <div id='div-gpt-ad-1485118541142-0' style={{ height: '50px', width: '320px' }}>
+            {/* <script>
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1485118541142-0') });
+            </script> */}
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row" id="articles">
+        {projectsJSON.articles.map(article => <Article article={article} />)}
+      </div>
+
+      <div class="credit">
+        <p>Copyright &copy; 2016-2020 The Daily Pennsylvanian. All rights reserved.</p>
+      </div>
+    </div>
+  </Wrapper>
+)
 
 export default IndexPage
