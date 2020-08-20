@@ -1,6 +1,5 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { withPrefix } from 'gatsby'
 
 import './join-style.css'
 
@@ -24,9 +23,6 @@ const Join = () => (
       <meta name="twitter:description" content="The Daily Pennsylvanian is looking for new students to join our team! Check out our recruitment website to see all of the opportunities we have to offer!" />
       <meta name="twitter:url" content="https://projects.thedp.com/2020/join" />
       <meta name="twitter:site" content="@dailypenn" />
-
-      {/* <link rel="stylesheet" href={withPrefix('join-style.css')} /> */}
-      <script src={withPrefix('join-script.js')} type="text/javascript"/>
     </Helmet>
 
     <header>

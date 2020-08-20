@@ -181,7 +181,6 @@ const IndexPage = () => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Projects | The Daily Pennsylvanian</title>
       <link rel="stylesheet" type="text/css" href="https://d1q35ni5859stt.cloudfront.net/20161213m1eLHQrMRG/dist/css/master.min.css" />
-      <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js" />
     </Helmet>
 
     <nav className="navbar navbar-inverse navbar-fixed-top">
@@ -215,19 +214,15 @@ const IndexPage = () => (
       <hr />
 
       <div class="ad">
-        <div id='div-gpt-ad-1485118541142-1' style={{ height: '90px', width: '728px' }} />
         <div class="hidden-xs hidden-sm">
           <DFPSlotsProvider dfpNetworkId="12234093">
             <AdSlot adUnit="DP.com-Leaderboard" sizes={[[728, 90]]} />
           </DFPSlotsProvider>
         </div>
         <div class="hidden-md hidden-lg">
-          {/* <!-- /12234093/DP.com-mobile-leaderboard --> */}
-          <div id='div-gpt-ad-1485118541142-0' style={{ height: '50px', width: '320px' }}>
-            {/* <script>
-              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1485118541142-0') });
-            </script> */}
-          </div>
+          <DFPSlotsProvider dfpNetworkId="12234093">
+            <AdSlot adUnit="DP.com-mobile-leaderboard" sizes={[[320, 50]]} />
+          </DFPSlotsProvider>
         </div>
       </div>
 
