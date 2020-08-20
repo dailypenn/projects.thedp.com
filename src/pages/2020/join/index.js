@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-import './join-style.css'
+import './index.css'
 
 const Join = () => (
   <>

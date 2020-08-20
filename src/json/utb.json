@@ -1,0 +1,34 @@
+[
+  {
+    "tag": "GENEROUS",
+    "headline": "Penn Gives Students Half-Filled Fro-Yo Punch Cards as Financial Aid",
+    "byLine": "BY KEVIN XU",
+    "image": {
+      "src": "../images/utb_generous.jpg"
+    }
+  },
+  {
+    "tag": "NEWS",
+    "headline": "Breaking: You Don’t Have to Go Home, but You Can’t Stay Here",
+    "byLine": "BY GRACE GINSBURG",
+    "image": {
+      "src": "../images/utb_news.jpeg"
+    }
+  },
+  {
+    "tag": "AWKWARD",
+    "headline": "Penn Football Games to Show No Change in Attendance Despite Canceled Season",
+    "byLine": "BY MEGAN STRIFF-CAVE",
+    "image": {
+      "src": "../images/utb_awkward.jpg"
+    }
+  },
+  {
+    "tag": "OPINION",
+    "headline": "Feeling a Little Down? You Deserve It.",
+    "byLine": "BY PAMELA DE LA CRUZ",
+    "image": {
+      "src": "../images/utb_opinion.jpg"
+    }
+  }
+]

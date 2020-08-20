@@ -15,6 +15,7 @@
     "gatsby-plugin-sharp": "^2.6.4",
     "gatsby-plugin-styled-components": "^3.3.10",
     "gatsby-source-filesystem": "^2.3.4",
+    "gatsby-transformer-json": "^2.4.11",
     "gatsby-transformer-sharp": "^2.5.2",
     "gh-pages": "^3.1.0",
     "install": "^0.13.0",
@@ -23,7 +24,6 @@
     "react": "^16.12.0",
     "react-dfp": "^0.18.0",
     "react-dom": "^16.12.0",
-    "react-google-publisher-tag": "^2.0.6",
     "react-helmet": "^6.0.0",
     "styled-components": "^5.1.0"
   },
