@@ -2,8 +2,6 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { withPrefix } from 'gatsby'
 
-import './index.css'
-
 const Join = () => (
   <>
     <Helmet>
@@ -26,6 +24,7 @@ const Join = () => (
       <meta name="twitter:url" content="https://projects.thedp.com/2020/join" />
       <meta name="twitter:site" content="@dailypenn" />
 
+      <link rel="stylesheet" href={withPrefix('join-style.css')} />
       <script src={withPrefix('join-script.js')} type="text/javascript"/>
     </Helmet>
 
