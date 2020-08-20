@@ -1,34 +1,38 @@
 [
   {
-    "title": "Jessica Gooding | Penn made the right decision. We shouldn’t be on campus",
-    "description": "Wanna be a Baller | The University's plan for the Fall is a good one",
-    "byline": "By Jessica Gooding",
+    "tag": "Column",
+    "author": "Jessica Gooding",
+    "title": "Penn made the right decision. We shouldn’t be on campus",
+    "description": "Penn’s decision to limit on-campus housing and instruction is a positive step towards protecting public health. However, the timing of Penn’s announcement leaves much to be desired.",
     "image": {
       "src": "../images/opinion-fall.jpg"
     }
   },
   {
-    "title": "Editorial | fall tktk",
-    "description": "By The Daily Pennsylvanian Editorial Board",
-    "byline": "By The Daily Pennsylvanian Editorial Board",
+    "tag": "Editorial",
+    "author": "The Daily Pennsylvanian Editorial Board",
+    "title": "fall tktk",
+    "description": "Penn’s decision to limit on-campus housing and instruction is a positive step towards protecting public health. However, the timing of Penn’s announcement leaves much to be desired.",
     "image": {
       "src": "../images/opinion-editorial.jpeg"
     }
   },
   {
-    "title": "Guest Column by a former Republican Congressman | President Trump Forgot Wharton's Lessons",
-    "description": "Wanna be a Baller | The University's plan for the Fall is a good one",
-    "byline": "By Jessica Gooding",
+    "tag": "Guest Column",
+    "author": "Charles Djou",
+    "title": "President Trump Forgot Wharton's Lessons",
+    "description": "While President Trump can flaunt his Wharton degree all he wants, it does not mean he actually learned anything at our alma mater.",
     "image": {
       "src": "../images/opinion-trump.jpg"
     }
   },
   {
-    "title": "Guest Column by Jaden Cloobeck | Lessons learned from the Influenza outbreak of 1918",
-    "description": "Wanna be a Baller | The University's plan for the Fall is a good one",
-    "byline": "By Jaden Cloobeck",
+    "tag": "Guest Column",
+    "author": "Jaden Cloobeck",
+    "title": "Lessons learned from the Influenza outbreak of 1918",
+    "description": "Even though we can’t meet them in person, we can sympathize with Penn students who attended in fall 1918. Their past can inform our present. By using history as our compass, we can get through this together. ",
     "image": {
-      "src": "../images/opinion-fall.jpg"
+      "src": "../images/opinion-4.jpg"
     }
   }
 ]

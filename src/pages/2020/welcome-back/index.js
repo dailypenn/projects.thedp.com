@@ -8,12 +8,17 @@ import NavBar from '../../../components/2020/welcome-back/Nav'
 import WordWithLine from '../../../components/2020/welcome-back/WordWithLine'
 import UTB from '../../../components/2020/welcome-back/UTB'
 import Street from '../../../components/2020/welcome-back/Street'
+
+import Featured from '../../../components/2020/welcome-back/Featured'
+import News from '../../../components/2020/welcome-back/News'
+import Opinion from '../../../components/2020/welcome-back/Opinion'
 import Sports from '../../../components/2020/welcome-back/Sports'
 
 import { ROBOTO_REGULAR } from '../../../utils/font'
+import { HEADLINE_DARK_GRAY } from '../../../utils/colors'
 
 const Credit = s.div`
-  background: #000000;
+  background: ${HEADLINE_DARK_GRAY};
   color: #FFFFFF;
   ${ROBOTO_REGULAR}
   padding: 1rem;
@@ -57,7 +62,11 @@ const IndexPage = () => (
 
     <NavBar />
 
+    <Featured />
+
     <WordWithLine word="NEWS" />
+
+    <News />
 
     <DesktopAd>  
       <DFPSlotsProvider dfpNetworkId="12234093">
@@ -71,6 +80,8 @@ const IndexPage = () => (
     </MobileAd>
 
     <WordWithLine word="OPINION" />
+
+    <Opinion />
 
     <Street />
 

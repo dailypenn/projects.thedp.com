@@ -1,0 +1,56 @@
+[
+  {
+    "tag": "student life",
+    "title": "From Van Pelt to Pottruck, students returning to Phila. will have limited campus access",
+    "description": "With the closure of on-campus housing this fall, students returning to Philadelphia to live off campus will have limited access to buildings on campus.",
+    "byline": "By Hannah Gross",
+    "image": {
+      "src": "../images/dp-2.jpg"
+    }
+  },
+  {
+    "tag": "student life",
+    "title": "Penn students create virtual platforms for club recruitment this fall",
+    "description": "Clubs overseen by SAC will use the platform Penn Clubs while those overseen by The Wharton Council will use Virtual Event to recruit new members and host group meetings over Zoom.",
+    "byline": "By Elizabeth Meisenzahl",
+    "image": {
+      "src": "../images/dp-3.jpg"
+    }
+  },
+  {
+    "tag": "administration",
+    "title": "WE NEED A TITLE FOR THIS ONE",
+    "description": "The Daily Pennsylvanian sat down with Penn's Chief Wellness Officer Benoit Dubé to discuss why Penn made the last minute decision to close campus for the fall semester.",
+    "byline": "By JONAH CHARLTON",
+    "image": {
+      "src": "../images/dp-4.jpg"
+    }
+  },
+  {
+    "tag": "FGLI",
+    "title": "'Not even the bare minimum': Penn students demand more than just tuition freeze",
+    "description": "After switching to a completely remote semester, Penn President Amy Gutmann and Provost Wendell Pritchett froze tuition – keeping it at the same value as the previous year – and decreased the fall general fee by 10%.",
+    "byline": "By Leanna Tilitei and Komal Patel",
+    "image": {
+      "src": "../images/dp-5.png"
+    }
+  },
+  {
+    "tag": "academics",
+    "title": "From pig dissection to biodiversity scavenger hunt: Inside a remote summer lab course",
+    "description": "Students said some labs were difficult to follow given the absence of immediate help and feedback from a teaching assistant who would typically oversee the labs in person.",
+    "byline": "By Jason Yan",
+    "image": {
+      "src": "../images/dp-6.jpg"
+    }
+  },
+  {
+    "tag": "administration",
+    "title": "After reversal of fall plans, students demand Penn subsidize shipping costs for dorm items",
+    "description": "Many students feel that they should not have to incur expensive shipping fees or risk contracting coronavirus on the trek to the Penn Tennis Center or their moving company's warehouse to retrieve their belongings.",
+    "byline": "By Lindsey Perlman",
+    "image": {
+      "src": "../images/dp-7.jpg"
+    }
+  }
+]
