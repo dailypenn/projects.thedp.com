@@ -1,5 +1,3 @@
-@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
-
 /* import Libre Franklin font family  */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700;900&display=swap');
 
@@ -15,6 +13,13 @@
 /* import Fjalla One font family */
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
+/* DP Join font family */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400,400i');
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
 }
