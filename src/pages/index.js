@@ -4,9 +4,6 @@ import { Helmet } from 'react-helmet'
 import s from 'styled-components'
 import { DFPSlotsProvider, AdSlot } from 'react-dfp'
 
-// import Layout from "../components/layout"
-// import SEO from "../components/seo"
-
 import projectsJSON from '../content/projects.json'
 
 const Wrapper = s.div`
