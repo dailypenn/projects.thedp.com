@@ -2,6 +2,8 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { withPrefix } from 'gatsby'
 
+import './join-style.css'
+
 const Join = () => (
   <>
     <Helmet>
@@ -9,7 +11,6 @@ const Join = () => (
       <title>Join The Daily Pennsylvanian, Inc.</title>
 
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="stylesheet" href="style.css" />
 
       <meta property="og:title" content="Join The Daily Pennsylvanian, Inc." />
       <meta property="og:image" content="https://snworksceo.imgix.net/dpn/ec790853-4028-4601-b716-108531b8baf7.sized-1000x1000.jpg" />
@@ -24,7 +25,7 @@ const Join = () => (
       <meta name="twitter:url" content="https://projects.thedp.com/2020/join" />
       <meta name="twitter:site" content="@dailypenn" />
 
-      <link rel="stylesheet" href={withPrefix('join-style.css')} />
+      {/* <link rel="stylesheet" href={withPrefix('join-style.css')} /> */}
       <script src={withPrefix('join-script.js')} type="text/javascript"/>
     </Helmet>
 
