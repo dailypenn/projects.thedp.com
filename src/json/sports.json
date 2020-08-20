@@ -1,0 +1,34 @@
+[
+  {
+    "title": "A look back at Joe Biden's days as an athlete",
+    "description": "Biden was a standout receiver in high school and played on the freshman team at the University of Delaware",
+    "byline": "By Lochlahn March",
+    "image": {
+      "src": "../images/sports-biden.jpg"
+    }
+  },
+  {
+    "title": "Why didn't Donald Trump play sports at Penn?",
+    "description": "Trump has long boasted his baseball skills, but never took to the diamond at Fordham or Penn",
+    "byline": "By Lochlahn March",
+    "image": {
+      "src": "../images/sports-trump.jpg"
+    }
+  },
+  {
+    "title": "Ivy League announces cancellation of all competitive athletics until 2021",
+    "description": "The Ivy League is the first NCAA Division I conference to make such a decision",
+    "byline": "By Brandon Pride",
+    "image": {
+      "src": "../images/sports-cancel.jpg"
+    }
+  },
+  {
+    "title": "Professional signings and transfers: what are some Quakers up to after their time at Penn",
+    "description": "Phoebe Sterba and AJ Brodeur will continue their basketball careers overseas",
+    "byline": "By Will DiGrande and Brandon Pride",
+    "image": {
+      "src": "../images/sports-alumni.jpg"
+    }
+  }
+]

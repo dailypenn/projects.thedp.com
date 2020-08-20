@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Jessica Gooding | Penn made the right decision. We shouldn’t be on campus",
+    "description": "Wanna be a Baller | The University's plan for the Fall is a good one",
+    "byline": "By Jessica Gooding",
+    "image": {
+      "src": "../images/opinion-fall.jpg"
+    }
+  },
+  {
+    "title": "Editorial | fall tktk",
+    "description": "By The Daily Pennsylvanian Editorial Board",
+    "byline": "By The Daily Pennsylvanian Editorial Board",
+    "image": {
+      "src": "../images/opinion-editorial.jpeg"
+    }
+  },
+  {
+    "title": "Guest Column by a former Republican Congressman | President Trump Forgot Wharton's Lessons",
+    "description": "Wanna be a Baller | The University's plan for the Fall is a good one",
+    "byline": "By Jessica Gooding",
+    "image": {
+      "src": "../images/opinion-trump.jpg"
+    }
+  },
+  {
+    "title": "Guest Column by Jaden Cloobeck | Lessons learned from the Influenza outbreak of 1918",
+    "description": "Wanna be a Baller | The University's plan for the Fall is a good one",
+    "byline": "By Jaden Cloobeck",
+    "image": {
+      "src": "../images/opinion-fall.jpg"
+    }
+  }
+]
