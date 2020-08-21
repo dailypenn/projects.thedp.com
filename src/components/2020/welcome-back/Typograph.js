@@ -4,10 +4,16 @@ import { PLAYFAIR_REGULAR, KARLA_REGULAR, KARLA_BOLD } from '../../../utils/font
 import { HEADLINE_DARK_GRAY, SUBHEAD_LIGHT_GRAY } from '../../../utils/colors'
 
 export const Title = s.div`
-  font-size: 150%;
+  font-size: 125%;
+  line-height: 97%;
   margin-top: ${({ noMarginTop }) => noMarginTop ? '0' : '1.5rem'};
   color: ${HEADLINE_DARK_GRAY};
   ${PLAYFAIR_REGULAR}
+
+  :hover {
+    color: ${SUBHEAD_LIGHT_GRAY};
+    transition: 0.3s;
+  }
 `
 
 export const Description = s.div`

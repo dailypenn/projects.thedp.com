@@ -32,6 +32,10 @@ const Brackets = s.div`
 const HereLink = s.text`
   color: ${({ bracketColor }) => bracketColor};
   ${KARLA_BOLD}
+
+  :hover {
+    color: ${SUBHEAD_LIGHT_GRAY};
+  }
 `
 
 const BracketsText = ({ text, bracketColor, link }) => (

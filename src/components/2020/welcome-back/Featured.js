@@ -5,13 +5,19 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import { Description, ByLine, StyledAnchor } from './Typograph'
 import { PLAYFAIR_BOLD, KARLA_BOLD } from '../../../utils/font'
-import { HEADLINE_DARK_GRAY } from '../../../utils/colors'
+import { HEADLINE_DARK_GRAY, SUBHEAD_LIGHT_GRAY } from '../../../utils/colors'
 
 const Title = s.div`
   font-size: 200%;
   margin-top: 2rem;
+  line-height: 95%;
   color: ${HEADLINE_DARK_GRAY};
   ${PLAYFAIR_BOLD}
+
+  :hover {
+    color: ${SUBHEAD_LIGHT_GRAY};
+    transition: 0.3s;
+  }
 `
 
 const Tag = s.div`
@@ -27,7 +33,7 @@ const Featured = () => (
       query {
         file(relativePath: { regex: "/dp-1.png/" }) {
           childImageSharp {
-            fluid(maxWidth: 600, maxHeight: 600) {
+            fluid(maxWidth: 1000, maxHeight: 600) {
               ...GatsbyImageSharpFluid
             }
           }

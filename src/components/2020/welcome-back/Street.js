@@ -42,6 +42,11 @@ const ArticleHeadline = s.div`
   color: ${HEADLINE_DARK_GRAY};
   line-height: 97%;
   ${PLAYFAIR_REGULAR}
+
+  :hover {
+    color: ${STREET_BLUE};
+    transition: 0.3s;
+  }
 `
 
 const ByLine = s.div`
@@ -55,12 +60,19 @@ const PHeader = s.div`
   font-size: 120%;
   color: ${HEADLINE_DARK_GRAY};
   margin-bottom: 0.5rem;
+  line-height: 98%;
   ${KARLA_REGULAR}
+
+  :hover {
+    color: ${STREET_BLUE};
+    transition: 0.3s;
+  }
 `
 
 const PContent = s.div`
-  font-size: 90%;
+  font-size: 80%;
   color: ${SUBHEAD_LIGHT_GRAY};
+  line-height: 94%;
   ${KARLA_REGULAR}
 `
 
@@ -90,6 +102,10 @@ const MoreLink = s.div`
   color: ${STREET_BLUE};
 
   ${KARLA_BOLD}
+
+  :hover {
+    color: ${SUBHEAD_LIGHT_GRAY};
+  }
 `
 
 const STREET_ARROW = () => (<div style={{ color: STREET_BLUE, fontSize: '120%' }}> &#10230; </div>)
@@ -100,7 +116,7 @@ const MostRead = () => {
       <PHeader> {paragraph.header} </PHeader>
       <PContent style={{ marginBottom: '1rem' }}> {paragraph.content} </PContent>
       <PContent> {paragraph.byline} </PContent>
-      {idx < pargraphs.length - 1 && <img src='/img/black-squiggle.png' width="50px" style={{ margin: '3rem 0' }}/>}
+      {idx < pargraphs.length - 1 && <img src='/img/black-squiggle.png' width="50px" style={{ margin: '1.5rem 0' }}/>}
     </StyledAnchor>
   ))
 }
@@ -111,7 +127,7 @@ const Street = () => (
       query {
         streetWharton: file(relativePath: {eq: "street-wharton.jpeg"}) {
           childImageSharp {
-            fluid(maxHeight: 600, maxWidth: 600) {
+            fluid(maxHeight: 600, maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -119,7 +135,7 @@ const Street = () => (
 
         streetApp: file(relativePath: {eq: "street-app.jpeg"}) {
           childImageSharp {
-            fluid(maxHeight: 600, maxWidth: 600) {
+            fluid(maxHeight: 600, maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -127,7 +143,7 @@ const Street = () => (
 
         streetCovid: file(relativePath: {eq: "street-covid.jpg"}) {
           childImageSharp {
-            fluid(maxHeight: 600, maxWidth: 600) {
+            fluid(maxHeight: 600, maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -165,10 +181,12 @@ const Street = () => (
             <div className="col">
               <StyledAnchor href="https://www.34st.com/article/2020/07/evan-thomas-foundations-album-interview-wharton-upenn-ivy-league-spotify-independent-artists" target="_blank">
                 <Img fluid={streetWharton.childImageSharp.fluid} />
-                <ArticleHeadline style={{ marginTop: '4rem' }}> Wharton alum Evan Thomas reconciles faith and identity on his debut album, ‘Foundations’ </ArticleHeadline>
-                <ByLine> Though Evan Thomas just graduated Penn, he's already in the midst of a new phase of his life: making music. </ByLine>
-                <ByLine style={{ marginTop: '2rem' }}> BY CHARDONNAY NEEDLER </ByLine>
-                <STREET_ARROW />
+                <div>
+                  <ArticleHeadline style={{ marginTop: '4rem' }}> Wharton alum Evan Thomas reconciles faith and identity on his debut album, ‘Foundations’ </ArticleHeadline>
+                  <ByLine> Though Evan Thomas just graduated Penn, he's already in the midst of a new phase of his life: making music. </ByLine>
+                  <ByLine style={{ marginTop: '2rem' }}> BY CHARDONNAY NEEDLER </ByLine>
+                  <STREET_ARROW />
+                </div>
               </StyledAnchor>
             </div>
             <div className="col-3" style={{ border: `1px solid ${STREET_BLUE}`, background: '#fff' }}>

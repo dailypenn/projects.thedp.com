@@ -16,6 +16,7 @@ import Sports from '../../../components/2020/welcome-back/Sports'
 
 import { ROBOTO_REGULAR } from '../../../utils/font'
 import { HEADLINE_DARK_GRAY } from '../../../utils/colors'
+import { StyledAnchor } from '../../../components/2020/welcome-back/Typograph'
 
 const Credit = s.div`
   background: ${HEADLINE_DARK_GRAY};
@@ -46,6 +47,12 @@ const MobileAd = s.div`
 
   @media(min-width: 850px) {
     display: none!important;
+  }
+`
+
+const NewsLetter = s.img`
+  :hover { 
+    opacity: 70%;
   }
 `
 
@@ -80,6 +87,13 @@ const IndexPage = () => (
     <WordWithLine word="NEWS" />
 
     <News />
+
+    
+    <StyledAnchor href="https://www.thedp.com/page/subscribe-dear-penn" target="_blank">
+      <div className="row" style={{ justifyContent: 'center', marginTop: '4rem' }}>
+        <NewsLetter src="/img/newsletter.png" className="img-fluid" width="60%" />
+      </div>
+    </StyledAnchor>
 
     <DesktopAd>  
       <DFPSlotsProvider dfpNetworkId="12234093">

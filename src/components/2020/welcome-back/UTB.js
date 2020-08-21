@@ -48,10 +48,15 @@ const ArticleTag = s.div`
 
 const ArticleHeadline = s.div`
   margin-top: 0.3rem;
-  font-size: 150%;
+  font-size: 125%;
   color: ${HEADLINE_DARK_GRAY};
   line-height: 97%;
   ${KARLA_BOLD}
+
+  :hover {
+    color: ${UTB_BLUE};
+    transition: 0.3s;
+  }
 `
 
 const ByLine = s.div`
@@ -66,6 +71,10 @@ const MoreLink = s.div`
   color: ${UTB_BLUE};
 
   ${KARLA_BOLD}
+
+  :hover {
+    color: ${SUBHEAD_LIGHT_GRAY};
+  }
 `
 
 const UTB_ARROW = () => (<div style={{ color: UTB_BLUE, fontSize: '120%' }}> &#10230; </div>)

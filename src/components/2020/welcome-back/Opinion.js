@@ -37,7 +37,7 @@ const Opinion = () => (
                 image {
                   src {
                     childImageSharp {
-                      fluid(maxWidth: 600, maxHeight: 600) {
+                      fluid(maxWidth: 1000, maxHeight: 600) {
                         ...GatsbyImageSharpFluid
                         src
                       }
@@ -82,7 +82,7 @@ const Opinion = () => (
                     </Tag>
                     <Title noMarginTop> {article.title} </Title>
                   </div>
-                  <div className="col-5">
+                  <div className="col-7">
                     <Img fluid={article.image.src.childImageSharp.fluid} />
                   </div>
                 </div>
