@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Welcome Back",
+      "author": "Web Dev: Peter Chen | Design: Ava Cruz",
+      "section": "Welcome Back",
+      "date": "August 2020",
+      "description": "Your guide for navigating this unprecedented virtual school year",
+      "sponsored": false,
+      "link": "https://projects.thedp.com/2020/welcome-back",
+      "image": "https://snworksceo.imgix.net/dpn/1fe2ce10-46fa-402e-a9f2-498cc011769b.sized-1000x1000.jpg",
+      "alt": "welcome-back"
+    },
+    {
       "title": "COVID-19",
       "author": "Web Dev: Peter Chen, Alex Go | Design: Ava Cruz",
       "section": "COVID",
@@ -21,7 +32,9 @@
       "link": "/2019/12/year-in-review/",
       "image": "https://s3.amazonaws.com/snwceomedia/dpn/c9f5bdfc-5a9d-450e-9a90-4e8ad3b04186.sized-1000x1000.jpg",
       "alt": "2019 Year in Review"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "Basketball Preview 2019 | DP Sports",
       "author": "Web Dev: Daniel Salib, Design: Gillian Diebold",
@@ -32,9 +45,7 @@
       "link": "/2019/11/basketball-preview",
       "image": "https://snworksceo.imgix.net/dpn/afecbda9-5424-4ab6-8d5d-3cf7ff75db55.sized-1000x1000.png?",
       "alt": "Basketball Preview | DP Sports"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "Housing Guide 2019",
       "author": "Web Dev: Daniel Salib, Design: Jess Tan, Gillian Diebold",
