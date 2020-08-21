@@ -65,14 +65,14 @@ const IndexPage = () => (
       <title>Welcome Back | The Daily Pennsylvanian</title>
       <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
       <meta property="og:title" content="Welcome Back | The Daily Pennsylvanian" />
-      <meta property="og:image" content="[this should generally be a link from our CMS]" />
+      <meta property="og:image" content="https://snworksceo.imgix.net/dpn/1fe2ce10-46fa-402e-a9f2-498cc011769b.sized-1000x1000.jpg" />
       <meta property="og:description" content="[description]" />
       <meta property="og:type" content="article" />
       <meta property="og:url" content="https://projects.thedp.com/2020/welcome-back" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Welcome Back | The Daily Pennsylvanian" />
-      <meta name="twitter:image" content="[this should generally be a link from our CMS]" />
+      <meta name="twitter:image" content="https://snworksceo.imgix.net/dpn/1fe2ce10-46fa-402e-a9f2-498cc011769b.sized-1000x1000.jpg" />
       <meta name="twitter:description" content="[description, less than 200 characters]" />
       <meta name="twitter:url" content="https://projects.thedp.com/2020/welcome-back" />
       <meta name="twitter:site" content="@dailypenn"></meta>
@@ -80,7 +80,7 @@ const IndexPage = () => (
 
     <NavBar />
 
-    {/* <SlidingText /> */}
+    <SlidingText />
 
     <Featured />
 
@@ -110,7 +110,10 @@ const IndexPage = () => (
 
     <Opinion />
 
-    <Street />
+    <WordWithLine word="SPORTS" />
+    <Sports />
+
+    
 
     <DesktopAd>  
       <DFPSlotsProvider dfpNetworkId="12234093">
@@ -123,8 +126,7 @@ const IndexPage = () => (
       </DFPSlotsProvider>
     </MobileAd>
 
-    <WordWithLine word="SPORTS" />
-    <Sports />
+    <Street />
 
     <UTB />
 

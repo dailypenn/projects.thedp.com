@@ -13,7 +13,7 @@ const Wrapper = s.div`
   border-top: 2px solid ${STREET_BLUE};
   background: #F6F7F7;
   margin: 0 5rem;
-  margin-top: 10rem;
+  margin-top: 3rem;
 
   .logo {
     left: 40%;
@@ -91,7 +91,7 @@ const pargraphs = [
   },
   {
     "header": "A Love Letter to Philadelphia in an Unexpected Place",
-    "content": "Why Queer Eye Season 5 is way more than a makeover",
+    "content": "Why 'Queer Eye' Season 5 is way more than a makeover",
     "byline": "BY DENALI SAGNER",
     "link": "https://www.34st.com/article/2020/07/queer-eye-philadelphia-netflix-fab-five-sunrise-movement-italian-market"
   }
@@ -157,7 +157,7 @@ const Street = () => (
         <Wrapper id="34st">
           <img className="logo" src='/img/street-logo-with-text.png' height="110px" style={{ transform: 'translate(0, -3.5rem)' }}/>
           <Title>34th Street is the arts and culture maganize of the Daily Pennsylvanian</Title>
-          <Subtitle>&#8211;basically the DP's coller, sexier twin.</Subtitle>
+          <Subtitle>&#8211;basically the DP's cooler, sexier twin.</Subtitle>
 
           <div className="row" style={{ margin: '2rem 0', padding: '0 2rem' }}>
             <div className="col-3">
@@ -202,7 +202,7 @@ const Street = () => (
           </StyledAnchor>
           
           <div style={{ padding: '0 15rem', marginTop: '2rem' }}>
-            <BracketsText bracketColor={STREET_BLUE} link="http://bit.ly/join34st" text="Entirely student–run, we update our website daily with student life pieces, humor, current events coverage, food reviews, movie recs, and in–depth features. Street is for witty and media–savvy creators who are in-the-know, on– and off–campus." />
+            <BracketsText bracketColor={STREET_BLUE} link="http://bit.ly/join34st" text="Entirely student–run, we update our website daily with student life pieces, humor, current events coverage, food reviews, movie recs, and in–depth features. Street is for witty and media–savvy creators who are in-the-know, on–and off–campus." />
           </div>
         </Wrapper>
       )

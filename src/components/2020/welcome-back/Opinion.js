@@ -54,7 +54,7 @@ const Opinion = () => (
       const { node: { childrenOpinionJson: articles } } = data.allFile.edges[0]
 
       return (
-        <div className="row" style={{ margin: '2rem 5rem' }} id="opinion">
+        <div className="row" style={{ margin: '2rem 5rem 10rem 5rem' }} id="opinion">
           {articles.slice(0,2).map(article => (
               <div className="col-4" style={{ borderRight: '1px solid #D8D2D2' }}>
                 <StyledAnchor href={article.link} target="_blank">

@@ -51,7 +51,9 @@ const News = () => (
             <div style={{ textAlign: 'center' }}>
               <iframe width="100%" height="350px" src="https://www.youtube.com/embed/qxklB93jWhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
               <Tag> VIDEO </Tag>
-              <Title> Students discuss the challenges of a virtual fall for each class year </Title>
+              <StyledAnchor href="https://youtu.be/qxklB93jWhs" target="_blank">
+                <Title> Students discuss the challenges of a virtual fall for each class year </Title>
+              </StyledAnchor>
               <Description> We hear from a Penn first year, sophomore, junior, and senior to compare how COVID-19 will impact their college experiences. </Description>
               <ByLine> BY SAGE LEVINE </ByLine>
             </div>

@@ -16,6 +16,9 @@
 /* DP Join font family */
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:400,400i');
 
+/* Montserrat font family */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
 html {
   scroll-behavior: smooth;
 }

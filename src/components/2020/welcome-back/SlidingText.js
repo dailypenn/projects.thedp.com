@@ -2,10 +2,9 @@ import React from 'react'
 import s from 'styled-components'
 
 const Wrapper = s.div`
-  margin: 0;
+  margin-top: 5rem;
   padding: 0;
 
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +20,7 @@ const Wrapper = s.div`
   }
 
   .left {
-    color:pink;
+    color: #F3E700;
     transform: skew(0deg, -15deg);
   }
 
@@ -44,6 +43,7 @@ const Wrapper = s.div`
   span {
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
     font-size: 10vw;
     text-transform: uppercase;
     line-height: .8;
@@ -53,30 +53,52 @@ const Wrapper = s.div`
 
 const SlidingText = () => (
   <Wrapper>
-    <div className="line">
-      <div className="left">
-        <div className="content">
-          <span className="spanSlow">WELCOME</span>
+    <div>
+          <div class="line">
+            <div class="left">
+              <div class="content">
+                <span class="spanSlow">Welcome</span>
+              </div>
+            </div><div class="right">
+              <div class="content">
+                <span class="spanSlow">welcome</span>
+              </div>
+            </div>
+          </div>
+          <div class="line">
+            <div class="left">
+              <div class="content">
+                <span class="spanSlow">back</span>
+              </div>
+            </div><div class="right">
+              <div class="content">
+                <span class="spanSlow">back</span>
+              </div>
+            </div>
+            </div>
+            {/* <div class="line">
+                <div class="left">
+                  <div class="content">
+                    <span class="spanFast">you</span>
+                  </div>
+                </div><div class="right">
+                  <div class="content">
+                    <span class="spanFast">you</span>
+                  </div>
+                </div>
+              </div>
+              <div class="line">
+                  <div class="left">
+                    <div class="content">
+                      <span class="spanSlow">want</span>
+                    </div>
+                  </div><div class="right">
+                    <div class="content">
+                      <span class="spanSlow">want</span>
+                    </div>
+                  </div>
+                </div> */}
         </div>
-      </div>
-      <div className="right">
-        <div className="content">
-          <span className="spanSlow">WELCOME</span>
-        </div>
-      </div>
-    </div>
-    <div className="line">
-      <div className="left">
-        <div className="content">
-          <span className="spanFast">BACK</span>
-        </div>
-      </div>
-      <div className="right">
-        <div className="content">
-          <span className="spanFast">BACK</span>
-        </div>
-      </div>
-    </div>
   </Wrapper>
 )
 

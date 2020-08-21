@@ -36,7 +36,7 @@ const Sports = () => (
       const { node: { childrenSportsJson: articles } } = data.allFile.edges[0]
 
       return (
-        <div className="row" style={{ margin: '2rem 5rem' }} id="sports">
+        <div className="row" style={{ margin: '3rem 5rem' }} id="sports">
           {articles.slice(0,2).map(article => (
             <div className="col-4" style={{ borderRight: '1px solid #D8D2D2' }}>
               <StyledAnchor href={article.link} target="_blank">
