@@ -54,7 +54,7 @@ const News = () => (
               <StyledAnchor href="https://youtu.be/qxklB93jWhs" target="_blank">
                 <Title> Students discuss the challenges of a virtual fall for each class year </Title>
               </StyledAnchor>
-              <Description> We hear from a Penn first year, sophomore, junior, and senior to compare how COVID-19 will impact their college experiences. </Description>
+              <Description> A Penn first year, sophomore, junior, and senior discuss how COVID-19 will affect their college experiences this fall. </Description>
               <ByLine> BY SAGE LEVINE </ByLine>
             </div>
           </div>

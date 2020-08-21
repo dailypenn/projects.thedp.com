@@ -31,7 +31,7 @@ const Credit = s.div`
 const DesktopAd = s.div`
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 4rem 0;
   padding: 0;
 
   @media(max-width: 849px) {
@@ -42,7 +42,7 @@ const DesktopAd = s.div`
 const MobileAd = s.div`
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 4rem 0;
   padding: 0;
 
   @media(min-width: 850px) {

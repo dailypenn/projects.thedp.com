@@ -13,7 +13,7 @@ const Wrapper = s.div`
   border-top: 2px solid ${STREET_BLUE};
   background: #F6F7F7;
   margin: 0 5rem;
-  margin-top: 3rem;
+  margin-top: 8rem;
 
   .logo {
     left: 40%;
