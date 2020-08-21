@@ -49,6 +49,10 @@ const Wrapper = s.div`
     line-height: .8;
     transition: ease-out .6s;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 const SlidingText = () => (

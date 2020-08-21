@@ -118,7 +118,7 @@ const UTB = () => (
 
           <div className="row" style={{ margin: '2rem 0', padding: '0 2rem' }}>
             {articles.map(article => (
-              <div className="col">
+              <div className="col-md">
                 <StyledAnchor href={article.link} target="_blank">
                   <Img fluid={article.image.src.childImageSharp.fluid} />
                   <ArticleTag> {article.tag} </ArticleTag>
@@ -133,10 +133,8 @@ const UTB = () => (
           <StyledAnchor href="https://www.underthebutton.com/" target="_blank">
             <MoreLink> More shenanigans this way &#10503; </MoreLink>
           </StyledAnchor>
-          
-          <div style={{ padding: '0 15rem', marginTop: '2rem' }}>
-            <BracketsText bracketColor={UTB_BLUE} link="http://bit.ly/2EgtJSY" text="We publish new articles everyday directly to our website, as well as to Facebook and Twitter. We’re accepting applications now, so if you’re interested in comedy, satire, or just want to subject the rest of campus to your sense of humor, we’re the club for you." />
-          </div>
+
+          <BracketsText bracketColor={UTB_BLUE} link="http://bit.ly/2EgtJSY" text="We publish new articles everyday directly to our website, as well as to Facebook and Twitter. We’re accepting applications now, so if you’re interested in comedy, satire, or just want to subject the rest of campus to your sense of humor, we’re the club for you." />
         </Wrapper>
       )
     }}

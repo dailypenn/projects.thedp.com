@@ -38,7 +38,7 @@ const Sports = () => (
       return (
         <div className="row" style={{ margin: '3rem 5rem' }} id="sports">
           {articles.slice(0,2).map(article => (
-            <div className="col-4" style={{ borderRight: '1px solid #D8D2D2' }}>
+            <div className="col-md-4 mb-4" style={{ borderRight: '1px solid #D8D2D2' }}>
               <StyledAnchor href={article.link} target="_blank">
                 <Img fluid={article.image.src.childImageSharp.fluid} />
                 <Title> {article.title} </Title>
@@ -53,11 +53,11 @@ const Sports = () => (
               <StyledAnchor href={article.link} target="_blank">
                 <div className="row"
                   style={{ borderBottom: idx === 0 ? '1px solid #D8D2D2' : '', marginBottom: '2rem', paddingBottom: '2rem' }}>
-                  <div className="col mb-3">
+                  <div className="col-md mb-3">
                     <Title noMarginTop> {article.title} </Title>
                     <ByLine> {article.byline.toUpperCase()} </ByLine>
                   </div>
-                  <div className="col-7">
+                  <div className="col-md-7">
                     <Img fluid={article.image.src.childImageSharp.fluid} />
                   </div>
                 </div>

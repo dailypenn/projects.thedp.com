@@ -5,6 +5,15 @@ import { SUBHEAD_LIGHT_GRAY } from '../../../utils/colors'
 import { KARLA_REGULAR, KARLA_BOLD } from '../../../utils/font'
 import { StyledAnchor } from './Typograph'
 
+const Wrapper = s.div`
+  padding: 0 15rem;
+  marginTop: 2rem;
+
+  @media (max-width: 768px) {
+    padding: 0rem;
+  }
+`
+
 const Brackets = s.div`
   color: ${SUBHEAD_LIGHT_GRAY};
   font-size: 80%;
@@ -39,15 +48,17 @@ const HereLink = s.text`
 `
 
 const BracketsText = ({ text, bracketColor, link }) => (
-  <Brackets bracketColor={bracketColor}>
-    {text}
-    <br />
-    <br />
-    Let us know you're interested in joining
-    <StyledAnchor href={link} target="_blank">
-      <HereLink bracketColor={bracketColor}> here. </HereLink>
-    </StyledAnchor>
-  </Brackets>
+  <Wrapper>
+    <Brackets bracketColor={bracketColor}>
+      {text}
+      <br />
+      <br />
+      Let us know you're interested in joining
+      <StyledAnchor href={link} target="_blank">
+        <HereLink bracketColor={bracketColor}> here. </HereLink>
+      </StyledAnchor>
+    </Brackets>
+  </Wrapper>
 )
 
 export default BracketsText

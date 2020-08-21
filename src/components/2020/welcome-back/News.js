@@ -1,8 +1,17 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
+import s from 'styled-components'
 
 import { Title, Description, ByLine, Tag, StyledAnchor } from './Typograph'
+
+const Video = s.iframe`
+  height: 350px;
+
+  @media (max-width: 768px) {
+    height: 200px;
+  }
+`
 
 const News = () => (
   <StaticQuery
@@ -38,7 +47,7 @@ const News = () => (
 
       return (
         <div className="row" style={{ margin: '2rem 5rem 0 5rem' }} id="news">
-          <div className="col-7" style={{ borderRight: '1px solid #D8D2D2' }}>
+          <div className="col-md-7 mb-5" style={{ borderRight: '1px solid #D8D2D2' }}>
             <StyledAnchor href={articles[0].link} target="_blank">
               <div style={{ textAlign: 'center', borderBottom: '1px solid #D8D2D2', marginBottom: '2rem', paddingBottom: '2rem' }}>
                 <Img fluid={articles[0].image.src.childImageSharp.fluid} />
@@ -49,7 +58,7 @@ const News = () => (
               </div>
             </StyledAnchor>
             <div style={{ textAlign: 'center' }}>
-              <iframe width="100%" height="350px" src="https://www.youtube.com/embed/qxklB93jWhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+              <Video width="100%" src="https://www.youtube.com/embed/qxklB93jWhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
               <Tag> VIDEO </Tag>
               <StyledAnchor href="https://youtu.be/qxklB93jWhs" target="_blank">
                 <Title> Students discuss the challenges of a virtual fall for each class year </Title>
@@ -64,12 +73,12 @@ const News = () => (
               <StyledAnchor href={article.link} target="_blank">
                 <div className="row"
                   style={{ borderBottom: idx+1 !== articles.length-1 ? '1px solid #D8D2D2' : '', marginBottom: '2rem', paddingBottom: '2rem' }}>
-                    <div className="col mb-3">
+                    <div className="col-md mb-3">
                       <Tag noMarginTop> {article.tag.toUpperCase()} </Tag>
                       <Title noMarginTop> {article.title} </Title>
                       <ByLine> {article.byline.toUpperCase()} </ByLine>
                     </div>
-                    <div className="col-5">
+                    <div className="col-md-5">
                       <Img fluid={article.image.src.childImageSharp.fluid} />
                     </div>
                 </div>

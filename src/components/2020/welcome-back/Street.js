@@ -160,7 +160,7 @@ const Street = () => (
           <Subtitle>&#8211;basically the DP's cooler, sexier twin.</Subtitle>
 
           <div className="row" style={{ margin: '2rem 0', padding: '0 2rem' }}>
-            <div className="col-3">
+            <div className="col-md-3 mb-3">
               <div>
                 <StyledAnchor href="https://www.34st.com/article/2020/08/must-have-apps-students-upenn-canvas-spotify-snackpass-ubereats-penn-mobile" target="_blank">
                   <Img fluid={streetApp.childImageSharp.fluid} />
@@ -178,7 +178,7 @@ const Street = () => (
                 </StyledAnchor>
               </div>
             </div>
-            <div className="col">
+            <div className="col-md">
               <StyledAnchor href="https://www.34st.com/article/2020/07/evan-thomas-foundations-album-interview-wharton-upenn-ivy-league-spotify-independent-artists" target="_blank">
                 <Img fluid={streetWharton.childImageSharp.fluid} />
                 <div>
@@ -189,7 +189,7 @@ const Street = () => (
                 </div>
               </StyledAnchor>
             </div>
-            <div className="col-3" style={{ border: `1px solid ${STREET_BLUE}`, background: '#fff' }}>
+            <div className="col-md-3" style={{ border: `1px solid ${STREET_BLUE}`, background: '#fff' }}>
               <div style={{ padding: '2rem 1.5rem' }}>
                 <img src="/img/must-read-full-text.png" className='img-fluid' style={{ marginBottom: '3rem' }}/>
                 <MostRead />
@@ -201,9 +201,7 @@ const Street = () => (
             <MoreLink> &#8212; More content this way &#8594;</MoreLink>
           </StyledAnchor>
           
-          <div style={{ padding: '0 15rem', marginTop: '2rem' }}>
-            <BracketsText bracketColor={STREET_BLUE} link="http://bit.ly/join34st" text="Entirely student–run, we update our website daily with student life pieces, humor, current events coverage, food reviews, movie recs, and in–depth features. Street is for witty and media–savvy creators who are in-the-know, on–and off–campus." />
-          </div>
+          <BracketsText bracketColor={STREET_BLUE} link="http://bit.ly/join34st" text="Entirely student–run, we update our website daily with student life pieces, humor, current events coverage, food reviews, movie recs, and in–depth features. Street is for witty and media–savvy creators who are in-the-know, on–and off–campus." />
         </Wrapper>
       )
     }}

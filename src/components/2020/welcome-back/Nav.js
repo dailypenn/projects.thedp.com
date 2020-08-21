@@ -41,13 +41,13 @@ const NavBar = () => {
       <div className="navbar-collapse w-100 dual-collapse2 order-1 order-md-0 collapse">
         <LeftUL className="navbar-nav ml-auto text-center">
           <li className="nav-item active">
-            <Link className="nav-link" href="#featured"> <NavText> Featured </NavText></Link>
+            <Link className="nav-link" to="#featured"> <NavText> Featured </NavText></Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" href="#news"> <NavText> News</NavText> </Link>
+            <Link className="nav-link" to="#news"> <NavText> News</NavText> </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" href="#opinion"> <NavText> Opinion </NavText> </Link>
+            <Link className="nav-link" to="#opinion"> <NavText> Opinion </NavText> </Link>
           </li>
         </LeftUL>
       </div>
@@ -62,13 +62,13 @@ const NavBar = () => {
       <div className="navbar-collapse w-100 dual-collapse2 order-2 order-md-2 collapse">
         <RightUL className="navbar-nav mr-auto text-center">
           <li className="nav-item">
-            <Link className="nav-link" href="#34st"> <NavText> 34th Street </NavText> </Link>
+            <Link className="nav-link" to="#34st"> <NavText> 34th Street </NavText> </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" href="#sports"> <NavText> Sports </NavText> </Link>
+            <Link className="nav-link" to="#sports"> <NavText> Sports </NavText> </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" href="#utb"> <NavText> UTB </NavText></Link>
+            <Link className="nav-link" to="#utb"> <NavText> UTB </NavText></Link>
           </li>
         </RightUL>
       </div>

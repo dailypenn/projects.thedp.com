@@ -45,7 +45,7 @@ const Featured = () => (
 
       return (
         <div className="row" style={{ margin: '2rem 5rem 0 5rem' }} id="featured">
-          <div className="col-5">
+          <div className="col-md-5 mb-3">
             <StyledAnchor href="https://www.thedp.com/article/2020/08/first-year-advice-list-penn-zoom-virtual-wellness" target="_blank">
               <Tag> FEATURED </Tag>
               <Title> Back to school, COVID-19 edition: Tips for first years to survive virtual college at Penn </Title>
@@ -53,7 +53,7 @@ const Featured = () => (
               <ByLine> {'By Pia Singh & Isabella Schlact'.toUpperCase()} </ByLine>
             </StyledAnchor>
           </div>
-          <div className="col">
+          <div className="col-md">
             <Img fluid={img.childImageSharp.fluid} />
           </div>
         </div>
