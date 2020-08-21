@@ -5,7 +5,8 @@
     "byline": "By Lochlahn March",
     "image": {
       "src": "../images/sports-biden.jpg"
-    }
+    },
+    "link": "https://www.thedp.com/article/2020/08/joe-biden-penn-athletics-football-archmere-2020-election-delaware"
   },
   {
     "title": "Why didn't Donald Trump play sports at Penn?",
@@ -13,7 +14,8 @@
     "byline": "By Lochlahn March",
     "image": {
       "src": "../images/sports-trump.jpg"
-    }
+    },
+    "link": "https://www.thedp.com/article/2020/07/donald-trump-penn-baseball-football-squash-fordham-sats-bob-seddon"
   },
   {
     "title": "Ivy League announces cancellation of all competitive athletics until 2021",
@@ -21,7 +23,8 @@
     "byline": "By Brandon Pride",
     "image": {
       "src": "../images/sports-cancel.jpg"
-    }
+    },
+    "link": "https://www.thedp.com/article/2020/07/ivy-league-ncaa-spring-season-fall-sports-canceled-football-penn"
   },
   {
     "title": "Professional signings and transfers: what are some Quakers up to after their time at Penn",
@@ -29,6 +32,7 @@
     "byline": "By Will DiGrande and Brandon Pride",
     "image": {
       "src": "../images/sports-alumni.jpg"
-    }
+    },
+    "link": "https://www.thedp.com/article/2020/08/penn-athletics-alumni-roundup-transfers-professional-ivy-league"
   }
 ]

@@ -3,7 +3,7 @@ import Img from 'gatsby-image'
 import s from 'styled-components'
 import { StaticQuery, graphql } from 'gatsby'
 
-import { Description, ByLine } from './Typograph'
+import { Description, ByLine, StyledAnchor } from './Typograph'
 import { PLAYFAIR_BOLD, KARLA_BOLD } from '../../../utils/font'
 import { HEADLINE_DARK_GRAY } from '../../../utils/colors'
 
@@ -38,12 +38,14 @@ const Featured = () => (
       const img = data.file
 
       return (
-        <div className="row" style={{ margin: '2rem 5rem 0 5rem' }}>
+        <div className="row" style={{ margin: '2rem 5rem 0 5rem' }} id="featured">
           <div className="col-5">
-            <Tag> FEATURED </Tag>
-            <Title> Back to school, COVID-19 edition: Tips for first years to survive virtual college at Penn </Title>
-            <Description> To help Penn's new students navigate this uniquely challenging semester, The Daily Pennsylvanian asked upperclassmen and professors for advice about how to succeed in college amid the coronavirus pandemic. </Description>
-            <ByLine> {'By Pia Singh & Isabella Schlact'.toUpperCase()} </ByLine>
+            <StyledAnchor href="https://www.thedp.com/article/2020/08/first-year-advice-list-penn-zoom-virtual-wellness" target="_blank">
+              <Tag> FEATURED </Tag>
+              <Title> Back to school, COVID-19 edition: Tips for first years to survive virtual college at Penn </Title>
+              <Description> To help Penn's new students navigate this uniquely challenging semester, The Daily Pennsylvanian asked upperclassmen and professors for advice about how to succeed in college amid the coronavirus pandemic. </Description>
+              <ByLine> {'By Pia Singh & Isabella Schlact'.toUpperCase()} </ByLine>
+            </StyledAnchor>
           </div>
           <div className="col">
             <Img fluid={img.childImageSharp.fluid} />

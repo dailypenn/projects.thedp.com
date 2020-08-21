@@ -5,7 +5,8 @@
     "byLine": "BY KEVIN XU",
     "image": {
       "src": "../images/utb_generous.jpg"
-    }
+    },
+    "link": "https://www.underthebutton.com/article/2020/07/financial-aid-froyo-punchcard"
   },
   {
     "tag": "NEWS",
@@ -13,7 +14,8 @@
     "byLine": "BY GRACE GINSBURG",
     "image": {
       "src": "../images/utb_news.jpeg"
-    }
+    },
+    "link": "https://www.underthebutton.com/article/2020/08/dont-have-go-home-cant-stay-here"
   },
   {
     "tag": "AWKWARD",
@@ -21,7 +23,8 @@
     "byLine": "BY MEGAN STRIFF-CAVE",
     "image": {
       "src": "../images/utb_awkward.jpg"
-    }
+    },
+    "link": "https://www.underthebutton.com/article/2020/07/penn-football-attendence-cancelled"
   },
   {
     "tag": "OPINION",
@@ -29,6 +32,7 @@
     "byLine": "BY PAMELA DE LA CRUZ",
     "image": {
       "src": "../images/utb_opinion.jpg"
-    }
+    },
+    "link": "https://www.underthebutton.com/article/2020/04/feeling-a-little-down-you-deserve-it"
   }
 ]

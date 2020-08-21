@@ -1,5 +1,6 @@
 import React from 'react'
 import s from 'styled-components'
+import { Link } from 'gatsby'
 
 import { NavText } from '../../shared'
 
@@ -40,13 +41,13 @@ const NavBar = () => {
       <div className="navbar-collapse w-100 dual-collapse2 order-1 order-md-0 collapse">
         <LeftUL className="navbar-nav ml-auto text-center">
           <li className="nav-item active">
-            <a className="nav-link" href="#featured"> <NavText> Featured </NavText></a>
+            <Link className="nav-link" href="#featured"> <NavText> Featured </NavText></Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#news"> <NavText> News</NavText> </a>
+            <Link className="nav-link" href="#news"> <NavText> News</NavText> </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#opinion"> <NavText> Opinion </NavText> </a>
+            <Link className="nav-link" href="#opinion"> <NavText> Opinion </NavText> </Link>
           </li>
         </LeftUL>
       </div>
@@ -61,13 +62,13 @@ const NavBar = () => {
       <div className="navbar-collapse w-100 dual-collapse2 order-2 order-md-2 collapse">
         <RightUL className="navbar-nav mr-auto text-center">
           <li className="nav-item">
-            <a className="nav-link" href="#34st"> <NavText> 34th Street </NavText> </a>
+            <Link className="nav-link" href="#34st"> <NavText> 34th Street </NavText> </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#sports"> <NavText> Sports </NavText> </a>
+            <Link className="nav-link" href="#sports"> <NavText> Sports </NavText> </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#utb"> <NavText> UTB </NavText></a>
+            <Link className="nav-link" href="#utb"> <NavText> UTB </NavText></Link>
           </li>
         </RightUL>
       </div>

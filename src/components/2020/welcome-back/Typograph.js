@@ -30,3 +30,8 @@ export const Tag = s.div`
   color: #D0C730;
   ${KARLA_BOLD}
 `
+
+export const StyledAnchor = s.a`
+  color: #000000 !important;
+  text-decoration: none !important;
+`

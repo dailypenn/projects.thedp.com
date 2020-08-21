@@ -6,7 +6,8 @@
     "byline": "By Hannah Gross",
     "image": {
       "src": "../images/dp-2.jpg"
-    }
+    },
+    "link": "https://www.thedp.com/article/2020/08/fall-semester-on-campus-buildings-closed-van-pelt-pottruck"
   },
   {
     "tag": "student life",
@@ -15,7 +16,8 @@
     "byline": "By Elizabeth Meisenzahl",
     "image": {
       "src": "../images/dp-3.jpg"
-    }
+    },
+    "link": "https://www.thedp.com/article/2020/08/penn-clubs-virtual-event-activities-fair"
   },
   {
     "tag": "administration",
@@ -24,7 +26,8 @@
     "byline": "By JONAH CHARLTON",
     "image": {
       "src": "../images/dp-4.jpg"
-    }
+    },
+    "link": "https://www.thedp.com/article/2020/08/penn-fall-decision-online-why-the-plan-changed"
   },
   {
     "tag": "FGLI",
@@ -33,7 +36,8 @@
     "byline": "By Leanna Tilitei and Komal Patel",
     "image": {
       "src": "../images/dp-5.png"
-    }
+    },
+    "link": "https://www.thedp.com/article/2020/08/tuition-reduction-fall-fee-lawsuit-endowment-penn"
   },
   {
     "tag": "academics",
@@ -42,7 +46,8 @@
     "byline": "By Jason Yan",
     "image": {
       "src": "../images/dp-6.jpg"
-    }
+    },
+    "link": "https://www.thedp.com/article/2020/08/penn-summer-biology-lab-remote-fall-pig-dissection"
   },
   {
     "tag": "administration",
@@ -51,6 +56,7 @@
     "byline": "By Lindsey Perlman",
     "image": {
       "src": "../images/dp-7.jpg"
-    }
+    },
+    "link": "https://www.thedp.com/article/2020/08/penn-storage-retrieval-process-fall-residential-services"
   }
 ]

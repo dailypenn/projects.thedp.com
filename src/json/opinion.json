@@ -6,7 +6,8 @@
     "description": "Penn’s decision to limit on-campus housing and instruction is a positive step towards protecting public health. However, the timing of Penn’s announcement leaves much to be desired.",
     "image": {
       "src": "../images/opinion-fall.jpg"
-    }
+    },
+    "link": "https://www.thedp.com/article/2020/08/upenn-coronavirus-online-college-2020"
   },
   {
     "tag": "Editorial",
@@ -15,7 +16,8 @@
     "description": "Penn’s decision to limit on-campus housing and instruction is a positive step towards protecting public health. However, the timing of Penn’s announcement leaves much to be desired.",
     "image": {
       "src": "../images/opinion-editorial.jpeg"
-    }
+    },
+    "link": "https://www.thedp.com/article/2020/08/coronavirus-fall-housing-late-penn-ivy-league"
   },
   {
     "tag": "Guest Column",
@@ -24,7 +26,8 @@
     "description": "While President Trump can flaunt his Wharton degree all he wants, it does not mean he actually learned anything at our alma mater.",
     "image": {
       "src": "../images/opinion-trump.jpg"
-    }
+    },
+    "link": "https://www.thedp.com/article/2020/08/charles-djou-upenn-hawaii-trump-republicans-wharton"
   },
   {
     "tag": "Guest Column",
@@ -33,6 +36,7 @@
     "description": "Even though we can’t meet them in person, we can sympathize with Penn students who attended in fall 1918. Their past can inform our present. By using history as our compass, we can get through this together. ",
     "image": {
       "src": "../images/opinion-4.jpg"
-    }
+    },
+    "link": "https://www.thedp.com/article/2020/08/upenn-philadelphia-coronavirus-influenza-1918"
   }
 ]

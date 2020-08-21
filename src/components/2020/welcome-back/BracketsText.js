@@ -3,6 +3,7 @@ import s from 'styled-components'
 
 import { SUBHEAD_LIGHT_GRAY } from '../../../utils/colors'
 import { KARLA_REGULAR, KARLA_BOLD } from '../../../utils/font'
+import { StyledAnchor } from './Typograph'
 
 const Brackets = s.div`
   color: ${SUBHEAD_LIGHT_GRAY};
@@ -33,12 +34,15 @@ const HereLink = s.text`
   ${KARLA_BOLD}
 `
 
-const BracketsText = ({ text, bracketColor }) => (
+const BracketsText = ({ text, bracketColor, link }) => (
   <Brackets bracketColor={bracketColor}>
     {text}
     <br />
     <br />
-    Let us know you're interested in joining <HereLink bracketColor={bracketColor}> here. </HereLink>
+    Let us know you're interested in joining
+    <StyledAnchor href={link} target="_blank">
+      <HereLink bracketColor={bracketColor}> here. </HereLink>
+    </StyledAnchor>
   </Brackets>
 )
 

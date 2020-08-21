@@ -5,6 +5,7 @@ import Img from 'gatsby-image'
 
 import { KARLA_BOLD, KARLA_REGULAR, FJALLA_REGULAR } from '../../../utils/font'
 import BracketsText from './BracketsText'
+import { StyledAnchor } from './Typograph'
 
 const UTB_BLUE = '#456CB3'
 const HEADLINE_DARK_GRAY = '#283033'
@@ -17,7 +18,7 @@ const Wrapper = s.div`
   margin: 0 5rem;
   margin-top: 10rem;
 
-  img {
+  .logo {
     left: 40%;
     background-color: #fff;
     padding: 1rem 2rem;
@@ -39,8 +40,8 @@ const Subtitle = s.div`
 `
 
 const ArticleTag = s.div`
-  margin-top: 0.5rem;
-  font-size: 120%;
+  margin-top: 1rem;
+  font-size: 80%;
   color: ${UTB_BLUE};
   ${KARLA_BOLD}
 `
@@ -79,6 +80,7 @@ const UTB = () => (
               childrenUtbJson {
                 tag
                 headline
+                link
                 byLine
                 image {
                   src {
@@ -100,27 +102,31 @@ const UTB = () => (
       const { node: { childrenUtbJson: articles } } = data.allFile.edges[0]
 
       return (
-        <Wrapper>
-          <img src='/img/utb-logo-with-text.png' height="110px" style={{ transform: 'translate(0, -3.5rem)' }}/>
+        <Wrapper id="utb">
+          <img className="logo" src='/img/utb-logo-with-text.png' height="110px" style={{ transform: 'translate(0, -3.5rem)' }}/>
           <Title>Under the Button is the University of Pennsylvania's <i>truly</i> independent satire publication</Title>
           <Subtitle>Think the Onion, but better (or worse, if you ask the DP).</Subtitle>
 
           <div className="row" style={{ margin: '2rem 0', padding: '0 2rem' }}>
             {articles.map(article => (
               <div className="col">
-                <Img fluid={article.image.src.childImageSharp.fluid} />
-                <ArticleTag> {article.tag} </ArticleTag>
-                <ArticleHeadline> {article.headline} </ArticleHeadline>
-                <ByLine> {article.byLine} </ByLine>
-                <UTB_ARROW />
+                <StyledAnchor href={article.link} target="_blank">
+                  <Img fluid={article.image.src.childImageSharp.fluid} />
+                  <ArticleTag> {article.tag} </ArticleTag>
+                  <ArticleHeadline> {article.headline} </ArticleHeadline>
+                  <ByLine> {article.byLine} </ByLine>
+                  <UTB_ARROW />
+                </StyledAnchor>
               </div>
             ))}
           </div>
-
-          <MoreLink> More shenainigans this way </MoreLink>
+          
+          <StyledAnchor href="https://www.underthebutton.com/" target="_blank">
+            <MoreLink> More shenanigans this way &#10503; </MoreLink>
+          </StyledAnchor>
           
           <div style={{ padding: '0 15rem', marginTop: '2rem' }}>
-            <BracketsText bracketColor={UTB_BLUE} text="We publish new articles everyday directly to our website, as well as to Facebook and Twitter. We’re accepting applications now, so if you’re interested in comedy, satire, or just want to subject the rest of campus to your sense of humor, we’re the club for you." />
+            <BracketsText bracketColor={UTB_BLUE} link="http://bit.ly/2EgtJSY" text="We publish new articles everyday directly to our website, as well as to Facebook and Twitter. We’re accepting applications now, so if you’re interested in comedy, satire, or just want to subject the rest of campus to your sense of humor, we’re the club for you." />
           </div>
         </Wrapper>
       )
