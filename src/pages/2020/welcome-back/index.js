@@ -50,15 +50,21 @@ const MobileAd = s.div`
   }
 `
 
-const NewsLetter = s.img`
-  width: 60%;
+const NewsLetterWrapper = s.div`
+  .newsletter {
+    justify-content: center;
+    margin-top: 4rem;
+    padding: 0 15rem;
 
+    @media(max-width: 768px) {
+      padding: 0 2rem;
+    }
+  }
+`
+
+const NewsLetter = s.img`
   :hover { 
     opacity: 70%;
-  }
-
-  @media (max-width: 768px) {
-    display: none;
   }
 `
 
@@ -100,9 +106,13 @@ const IndexPage = () => (
 
     
     <StyledAnchor href="https://www.thedp.com/page/subscribe-dear-penn" target="_blank">
-      <div className="row" style={{ justifyContent: 'center', marginTop: '4rem' }}>
-        <NewsLetter src="/img/newsletter.png" className="img-fluid" />
-      </div>
+      <NewsLetterWrapper>
+        <div className="row newsletter">
+          <div className="col">
+            <NewsLetter src="/img/newsletter.png" className="img-fluid" />
+          </div>
+        </div>
+      </NewsLetterWrapper>
     </StyledAnchor>
 
     <DesktopAd>  

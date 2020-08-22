@@ -20,6 +20,16 @@ const Tag = s.div`
   }
 `
 
+const Wrapper = s.div`
+  .main {
+    margin: 2rem 5rem 10rem 5rem;
+
+    @media (max-width: 768px) {
+      margin: 2rem 1rem 10rem 1rem;
+    }
+  }
+`
+
 
 const Opinion = () => (
   <StaticQuery
@@ -54,42 +64,44 @@ const Opinion = () => (
       const { node: { childrenOpinionJson: articles } } = data.allFile.edges[0]
 
       return (
-        <div className="row" style={{ margin: '2rem 5rem 10rem 5rem' }} id="opinion">
-          {articles.slice(0,2).map(article => (
-            <div className="col-md-4 mb-4" style={{ borderRight: '1px solid #D8D2D2' }}>
-              <StyledAnchor href={article.link} target="_blank">
-                <Img fluid={article.image.src.childImageSharp.fluid} />
-                <Tag>
-                  <text className="tag"> {article.tag.toUpperCase()} </text>
-                  <text className="author"> | {article.author} </text>
-                </Tag>
-                <Title> {article.title} </Title>
-                <Description> {article.description} </Description>
-              </StyledAnchor>
-            </div>
-          ))}
-          
-          <div className="col">
-            {articles.slice(2).map((article, idx) => (
-              <StyledAnchor href={article.link} target="_blank">
-                <div className="row"
-                  style={{ borderBottom: idx === 0 ? '1px solid #D8D2D2' : '', marginBottom: '2rem', paddingBottom: '2rem' }}>
-                  <div className="col-md mb-3">
-                    <Tag noMarginTop>
-                      <text className="tag"> {article.tag.toUpperCase()} </text>
-                      <br/>
-                      <text className="author"> {article.author} </text>
-                    </Tag>
-                    <Title noMarginTop> {article.title} </Title>
-                  </div>
-                  <div className="col-md-7">
-                    <Img fluid={article.image.src.childImageSharp.fluid} />
-                  </div>
-                </div>
-              </StyledAnchor>
+        <Wrapper>
+          <div className="row main" id="opinion">
+            {articles.slice(0,2).map(article => (
+              <div className="col-md-4 mb-4" style={{ borderRight: '1px solid #D8D2D2' }}>
+                <StyledAnchor href={article.link} target="_blank">
+                  <Img fluid={article.image.src.childImageSharp.fluid} />
+                  <Tag>
+                    <text className="tag"> {article.tag.toUpperCase()} </text>
+                    <text className="author"> | {article.author} </text>
+                  </Tag>
+                  <Title> {article.title} </Title>
+                  <Description> {article.description} </Description>
+                </StyledAnchor>
+              </div>
             ))}
+            
+            <div className="col">
+              {articles.slice(2).map((article, idx) => (
+                <StyledAnchor href={article.link} target="_blank">
+                  <div className="row"
+                    style={{ borderBottom: idx === 0 ? '1px solid #D8D2D2' : '', marginBottom: '2rem', paddingBottom: '2rem' }}>
+                    <div className="col-md mb-3">
+                      <Tag noMarginTop>
+                        <text className="tag"> {article.tag.toUpperCase()} </text>
+                        <br/>
+                        <text className="author"> {article.author} </text>
+                      </Tag>
+                      <Title noMarginTop> {article.title} </Title>
+                    </div>
+                    <div className="col-md-7">
+                      <Img fluid={article.image.src.childImageSharp.fluid} />
+                    </div>
+                  </div>
+                </StyledAnchor>
+              ))}
+            </div>
           </div>
-        </div>
+        </Wrapper>
       )
     }}
   />

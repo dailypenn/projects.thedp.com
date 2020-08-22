@@ -22,6 +22,11 @@ const Wrapper = s.div`
     border-top: 2px solid ${STREET_BLUE};
     border-bottom: 2px solid ${STREET_BLUE};
   }
+
+  @media (max-width: 768px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 `
 
 const Title = s.div`
