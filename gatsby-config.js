@@ -16,8 +16,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2019/NEC`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `json`,
         path: `${__dirname}/src/json`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/NEC-json`,
       }
     },
     `gatsby-transformer-sharp`,

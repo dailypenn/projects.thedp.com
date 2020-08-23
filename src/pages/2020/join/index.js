@@ -409,11 +409,11 @@ const Join = () => (
               Follow in the footsteps of DP News alumni who work for publications like The New York Times, Politico, Vox, and The Washington Post, to name a few. No journalistic experience required  &mdash; only curiosity and dedication.
             </p>
             <h5>Highlights</h5>
-            <a href="https://www.thedp.com/article/2020/06/west-philadelphia-small-businesses-penn-campus-closed-smokes-allegros" target="_blank">‘The neighborhood lost its life’: University City businesses suffer from COVID-19 &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/06/petition-anti-police-penn-philadelphia-george-floyd" target="_blank">Thousands petition U. to cut ties with Philly PD, reform militarized campus 'police state' &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/07/penn-projects-91-budget-deficit-covid-pandemic" target="_blank">Penn projects $91M budget deficit for FY21 in addition to $47M loss from spring 2020 &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/07/penn-fall-health-professional-safety-testing-covid" target="_blank">Here's what six Penn public health experts said about the fall semester &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/05/black-lives-matter-protest-george-floyd-philadelphia" target="_blank">Live updates — Philadelphia protests over George Floyd's murder for eighth straight day &#8594;</a>
+            <a href="https://www.thedp.com/article/2020/06/west-philadelphia-small-businesses-penn-campus-closed-smokes-allegros" target="_blank" rel="noreferrer">‘The neighborhood lost its life’: University City businesses suffer from COVID-19 &#8594;</a>
+            <a href="https://www.thedp.com/article/2020/06/petition-anti-police-penn-philadelphia-george-floyd" target="_blank" rel="noreferrer">Thousands petition U. to cut ties with Philly PD, reform militarized campus 'police state' &#8594;</a>
+            <a href="https://www.thedp.com/article/2020/07/penn-projects-91-budget-deficit-covid-pandemic" target="_blank" rel="noreferrer">Penn projects $91M budget deficit for FY21 in addition to $47M loss from spring 2020 &#8594;</a>
+            <a href="https://www.thedp.com/article/2020/07/penn-fall-health-professional-safety-testing-covid" target="_blank" rel="noreferrer">Here's what six Penn public health experts said about the fall semester &#8594;</a>
+            <a href="https://www.thedp.com/article/2020/05/black-lives-matter-protest-george-floyd-philadelphia" target="_blank" rel="noreferrer">Live updates — Philadelphia protests over George Floyd's murder for eighth straight day &#8594;</a>
           </div>
           <div class="ed-text" id="sports-text">
             <p>
@@ -426,11 +426,11 @@ const Join = () => (
               So if you like watching, playing, reading, writing, talking, photographing, or learning about sports, DP Sports is totally the place for you. No experience necessary; absolutely anyone is welcome to join!
             </p>
             <h5>Highlights</h5>
-            <a href="https://www.thedp.com/article/2020/07/donald-trump-penn-baseball-football-squash-fordham-sats-bob-seddon" target="_blank">Why didn't Donald Trump play sports at Penn? &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/03/penn-mens-basketball-columbia-aj-brodeur-leading-scorer-ivy-league" target="_blank">Brodeur's record-breaking night sees Penn men's basketball through to Ivy Madness &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/06/ryan-glover-tameka-foster-penn-football-quarterback-mother-son-usher-ivy-league" target="_blank">Born into a celebrity family, Penn quarterback Ryan Glover forges his own path &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/02/palestra-penn-mens-basketball-attendance-student-culture-ivy-league" target="_blank">An empty cathedral: Why aren't more students attending basketball games at the Palestra? &#8594;</a>
-            <a href="https://www.thedp.com/article/2019/11/penn-womens-basketball-senior-leaders-grasela-sterba" target="_blank">Freshman year they cried over cheese fries. Now seniors, Grasela and Sterba are captains &#8594;</a>
+            <a href="https://www.thedp.com/article/2020/07/donald-trump-penn-baseball-football-squash-fordham-sats-bob-seddon" target="_blank" rel="noreferrer">Why didn't Donald Trump play sports at Penn? &#8594;</a>
+            <a href="https://www.thedp.com/article/2020/03/penn-mens-basketball-columbia-aj-brodeur-leading-scorer-ivy-league" target="_blank" rel="noreferrer">Brodeur's record-breaking night sees Penn men's basketball through to Ivy Madness &#8594;</a>
+            <a href="https://www.thedp.com/article/2020/06/ryan-glover-tameka-foster-penn-football-quarterback-mother-son-usher-ivy-league" target="_blank" rel="noreferrer">Born into a celebrity family, Penn quarterback Ryan Glover forges his own path &#8594;</a>
+            <a href="https://www.thedp.com/article/2020/02/palestra-penn-mens-basketball-attendance-student-culture-ivy-league" target="_blank" rel="noreferrer">An empty cathedral: Why aren't more students attending basketball games at the Palestra? &#8594;</a>
+            <a href="https://www.thedp.com/article/2019/11/penn-womens-basketball-senior-leaders-grasela-sterba" target="_blank" rel="noreferrer">Freshman year they cried over cheese fries. Now seniors, Grasela and Sterba are captains &#8594;</a>
           </div>
           <div class="ed-text" id="opinion-text">
             <p>You have the power to decide what the campus conversation ought to be.</p>
@@ -438,11 +438,11 @@ const Join = () => (
             <p>Your writing and reporting skills will improve tremendously, you will have the rare opportunity to reach thousands of people with every column you write, and you will learn to make this award-winning media organization your home. Opinion columns often garner the most page views and comments among all the sections of the DP. Being an opinion artist requires time and dedication, as well as the ability to make a point using few words.</p>
             <p>Stimulate change, hold organizations and people accountable, and make conversation: Join us.</p>
             <h5>Highlights</h5>
-            <a href="https://www.thedp.com/article/2019/11/tokenism-racism-clubs-ivy-league-upenn-philadelphia" target="_blank">Surayya Walters | Stop ignoring tokenism at Penn &#8594;</a>
-            <a href="https://www.thedp.com/article/2019/10/philadelphia-gentrification-penn-bubble-ivy-league-upenn-philadelphia" target="_blank">Alfredo Praticò | Our relationship with Philadelphia is broken. Here’s how we fix it &#8594;</a>
-            <a href="https://www.thedp.com/article/2019/09/thrive-at-penn-mental-health-ivy-league-wharton-upenn-philadelphia" target="_blank">Julia Mitchell | ‘Thriving at Penn’ is more meme than reality &#8594;</a>
-            <a href="https://www.thedp.com/article/2019/04/mental-health-ivy-league-ariana-grande-jordan-peele-kaliyah-dorsey-upenn-philadelphia" target="_blank">Kaliyah Dorsey | At Penn, fake smiles hurt more than they help &#8594;</a>
-            <a href="https://www.thedp.com/article/2019/03/lgbtq-christianity-evangelical-church-homophobia-upenn-philadelphia" target="_blank">Ana West | Christians at Penn have a responsibility to stand by the LGBTQ community &#8594;</a>
+            <a href="https://www.thedp.com/article/2019/11/tokenism-racism-clubs-ivy-league-upenn-philadelphia" target="_blank" rel="noreferrer">Surayya Walters | Stop ignoring tokenism at Penn &#8594;</a>
+            <a href="https://www.thedp.com/article/2019/10/philadelphia-gentrification-penn-bubble-ivy-league-upenn-philadelphia" target="_blank" rel="noreferrer">Alfredo Praticò | Our relationship with Philadelphia is broken. Here’s how we fix it &#8594;</a>
+            <a href="https://www.thedp.com/article/2019/09/thrive-at-penn-mental-health-ivy-league-wharton-upenn-philadelphia" target="_blank" rel="noreferrer">Julia Mitchell | ‘Thriving at Penn’ is more meme than reality &#8594;</a>
+            <a href="https://www.thedp.com/article/2019/04/mental-health-ivy-league-ariana-grande-jordan-peele-kaliyah-dorsey-upenn-philadelphia" target="_blank" rel="noreferrer">Kaliyah Dorsey | At Penn, fake smiles hurt more than they help &#8594;</a>
+            <a href="https://www.thedp.com/article/2019/03/lgbtq-christianity-evangelical-church-homophobia-upenn-philadelphia" target="_blank" rel="noreferrer">Ana West | Christians at Penn have a responsibility to stand by the LGBTQ community &#8594;</a>
           </div>
           <div class="ed-text" id="copy-text">
             <p>
@@ -450,7 +450,7 @@ const Join = () => (
             </p>
             <p>From the people who brought the DP the Oxford comma.</p>
             <h5>Highlights</h5>
-            <a href="https://docs.google.com/document/pub?id=14HoU_sCiPxD8SOSH8HvWKsvz1Elv89yzcje-sZGGahs&pli=1" target="_blank">The DP's Official Style Guide &#8594;</a>
+            <a href="https://docs.google.com/document/pub?id=14HoU_sCiPxD8SOSH8HvWKsvz1Elv89yzcje-sZGGahs&pli=1" target="_blank" rel="noreferrer">The DP's Official Style Guide &#8594;</a>
           </div>
           <div class="ed-text" id="design-text">
             <p>
@@ -465,10 +465,10 @@ const Join = () => (
             <h5>Highlights</h5>
             <a href="https://issuu.com/dailypenn/docs/gradissue" target="_blank">The Grad Issue &#8594;</a>
             <a href="https://thedp-covid-19.herokuapp.com/" target="_blank">Coronavirus Project Page &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/06/george-whitefield-statue-rizzo-columbus-racism-slavery-penn-georgia" target="_blank">Opinion | Take down the George Whitefield statue  &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/07/doctors-are-facing-a-silent-mental-health-crisis-and-they-need-help-pre-medicine-med-penn-undergrad-residency" target="_blank">Opinion | Doctors are facing a silent mental health crisis — and they need help &#8594;</a>
-            <a href="https://www.34st.com/article/2020/02/sexual-assault-racism-harassment-fraternities-cafsa-greek-life-upenn" target="_blank">34st Feature | Who Owns Locust? &#8594;</a>
-            <a href="https://www.34st.com/article/2019/02/sydney-gelman-valentines-day-relationship-bumble-study-abroad" target="_blank">34st Word on the Street | A Bumble Date That Actually Went Right &#8594;</a>
+            <a href="https://www.thedp.com/article/2020/06/george-whitefield-statue-rizzo-columbus-racism-slavery-penn-georgia" target="_blank" rel="noreferrer">Opinion | Take down the George Whitefield statue  &#8594;</a>
+            <a href="https://www.thedp.com/article/2020/07/doctors-are-facing-a-silent-mental-health-crisis-and-they-need-help-pre-medicine-med-penn-undergrad-residency" target="_blank" rel="noreferrer">Opinion | Doctors are facing a silent mental health crisis — and they need help &#8594;</a>
+            <a href="https://www.34st.com/article/2020/02/sexual-assault-racism-harassment-fraternities-cafsa-greek-life-upenn" target="_blank" rel="noreferrer">34st Feature | Who Owns Locust? &#8594;</a>
+            <a href="https://www.34st.com/article/2019/02/sydney-gelman-valentines-day-relationship-bumble-study-abroad" target="_blank" rel="noreferrer">34st Word on the Street | A Bumble Date That Actually Went Right &#8594;</a>
           </div>
           <div class="ed-text" id="multimedia-text">
             <p>
@@ -488,10 +488,10 @@ const Join = () => (
             </p>
             <h5>Highlights</h5>
             <a href="https://youtu.be/pbMhA3_e1xE" target="_blank">Former ICE Director Returns To Penn, Met By Protesters &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/06/philadelphia-protests-george-floyd-black-lives-matter-photo-essay" target="_blank">Photo Essay | Philadelphia protests for George Floyd and racial justice &#8594;</a>
-            <a href="https://www.youtube.com/watch?v=4twQG1T1mM4&t=51s" target="_blank">Inside The Wistar Institute's Fight Against COVID-19 &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/05/coronavirus-covid-19-new-york-city-empty-students-photo-essay" target="_blank">Photo Essay | Students reflect on life inside epicenter of the coronavirus pandemic → &#8594;</a>
-            <a href="https://www.youtube.com/watch?v=AlJCgQZezhU" target="_blank">DP Sports Editor vs. Fencing Sabre Captain Miranda Gieg &#8594;</a>
+            <a href="https://www.thedp.com/article/2020/06/philadelphia-protests-george-floyd-black-lives-matter-photo-essay" target="_blank" rel="noreferrer">Photo Essay | Philadelphia protests for George Floyd and racial justice &#8594;</a>
+            <a href="https://www.youtube.com/watch?v=4twQG1T1mM4&t=51s" target="_blank" rel="noreferrer">Inside The Wistar Institute's Fight Against COVID-19 &#8594;</a>
+            <a href="https://www.thedp.com/article/2020/05/coronavirus-covid-19-new-york-city-empty-students-photo-essay" target="_blank" rel="noreferrer">Photo Essay | Students reflect on life inside epicenter of the coronavirus pandemic → &#8594;</a>
+            <a href="https://www.youtube.com/watch?v=AlJCgQZezhU" target="_blank" rel="noreferrer">DP Sports Editor vs. Fencing Sabre Captain Miranda Gieg &#8594;</a>
             <a href="https://www.thedp.com/article/2019/04/photo-gallery-penn-relays-125-upenn-harvard-olympians-usa-jamaica-yale" target="_blank">Photo Gallery | The 125th Running of the Penn Relays &#8594;</a>
             <a href="https://www.thedp.com/article/2020/01/iran-vigil-airplane-crash-goernment-trump-philadelphia-penn-tragedy-flight" target="_blank">Phila.'s Iranian community gathers at LOVE statue to honor victims of downed plane &#8594;</a>
             <a href="https://www.thedp.com/article/2019/05/tour-best-outdoor-study-spots-penn-campus" target="_blank">Photo Essay | A tour of the 20 best outdoor study spots on campus &#8594;</a>
