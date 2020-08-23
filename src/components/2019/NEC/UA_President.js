@@ -30,8 +30,6 @@ const UAPresident = () => (
     render={data => {
       const { nodes: people } = data.allUaPresident2019Json
 
-      console.log(people)
-
       return (
         <>
           {people.map(person => (

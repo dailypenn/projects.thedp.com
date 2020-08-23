@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import s from 'styled-components'
 
-import UA_President from '../../../components/2019/NEC/UA_President'
+import UA_President from '../../../../components/2019/NEC/UA_President'
 
 const Footer = s.footer`
   max-width: 1200px;

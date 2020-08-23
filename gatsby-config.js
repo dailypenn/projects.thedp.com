@@ -3,8 +3,10 @@ module.exports = {
     title: `Daily Pennsylvanian Project Pages`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@peterbaile`,
+    siteUrl: `https://projects.thedp.com/`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
