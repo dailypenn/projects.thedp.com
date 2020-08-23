@@ -15,13 +15,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/content/images/2019/NEC`,
-      },
-    },
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -33,8 +27,15 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `json`,
-        path: `${__dirname}/src/content/json/NEC-json`,
+        path: `${__dirname}/src/content/json/2019/NEC`,
       }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2019/NEC`,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
