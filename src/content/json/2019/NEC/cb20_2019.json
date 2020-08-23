@@ -1,0 +1,100 @@
+{
+  "President": [
+    {
+      "name": "Karim El Sewedy",
+      "statement": "Nobody:<br><br>My eyebrows: vote 4 me<br><br>In all seriousness, if you want to learn more about my platform and the work I've done as your Class Board 2020 President over the past 3 years, check out my Facebook Page: https://www.facebook.com/Karim2020President</a>",
+      "endorsements": "Penn Undergraduate Law Journal",
+      "image": {
+        "src": "../../../images/2019/NEC/karim.jpeg"
+      }
+    }
+  ],
+  "Executive Vice President": [
+    {
+      "name": "Jason Kim",
+      "statement": "<i>No provided statement.</i>",
+      "endorsements": "",
+      "image": {
+        "src": "../../../images/2019/NEC/jason.jpeg"
+      }
+    }
+  ],
+  "Vice President of External Affairs": [
+    {
+      "name": "Lucy Ma",
+      "statement": "<i>No provided statement.</i>",
+      "endorsements": "",
+      "image": {
+        "src": "../../../images/2019/NEC/lucy.jpeg"
+      }
+    }
+  ],
+  "Vice President of Finance": [
+    {
+      "name": "Vanessa Wanyandeh",
+      "statement": "<i>No provided statement.</i>",
+      "endorsements": "",
+      "image": {
+        "src": "../../../images/2019/NEC/vanessa.jpeg"
+      }
+    }
+  ],
+  "Vice President of Internal Affairs": [
+    {
+      "name": "Michelle Kim",
+      "statement": "<i>No provided statement.</i>",
+      "endorsements": "Alpha Kappa Psi",
+      "image": {
+        "src": "../../../images/2019/NEC/vanessa.jpeg"
+      }
+    }
+  ],
+  "College Chair": [
+    {
+      "name": "Daniella Wirtschafter",
+      "statement": "I have absolutely loved being on Class Board during my time at Penn! Serving as the Class of 2020 College Chair with co-chair Noel Zheng and the rest of the CB team has truly been an incredible experience. Having had the opportunity to help create and implement so many memorable events from Junior Brunch to Smoke’s Reunite to our many P-Sweater, treat-filled pickups, I am so grateful to be a part of a team that brings our class and community closer together each year. I cannot wait for next year and all that’s to come, especially Feb Club! Let’s make out last year the best one yet.",
+      "endorsements": "",
+      "image": {
+        "src": "../../../images/2019/NEC/daniella.jpeg"
+      }
+    },
+    {
+      "name": "Noel Zheng",
+      "statement": "After being elected to be the Class of 2020 College Chair–alongside my partner-in-crime Daniella Wirtschafter and this amazingly talented team this year–I have continued to realize the strong sense of community in our class. And that’s something I am honoured to be apart of, let alone be able to represent.<br>Throughout this past year, I have helped implement events in partnership with many campus organizations that strive to make these years so memorable.<br>Looking forward, I am excited to create social programs, both new and traditional, that continue to foster this sense of unity.<br>(And feb club, team get ready for feb club.)",
+      "endorsements": "Australians and New Zealanders at Penn",
+      "image": {
+        "src": "../../../images/2019/NEC/noel.jpeg"
+      }
+    }
+  ],
+  "Engineering Chair": [
+    {
+      "name": "James Feng",
+      "statement": "<i>No provided statement.</i>",
+      "endorsements": "",
+      "image": {
+        "src": "../../../images/2019/NEC/james.jpeg"
+      }
+    }
+  ],
+  "Wharton Chair": [
+    {
+      "name": "Andy Shao",
+      "statement": "choose ur warrior",
+      "endorsements": "",
+      "image": {
+        "src": "../../../images/2019/NEC/andy.jpeg"
+      }
+    }
+  ],
+  "Nursing Chair": [
+    {
+      "name": "Anita Itaman",
+      "statement": "<i>No provided statement.</i>",
+      "endorsements": "",
+      "image": {
+        "src": "../../../images/2019/NEC/anita.jpeg"
+      }
+    }
+  ]
+}

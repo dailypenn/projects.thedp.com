@@ -8,10 +8,10 @@ const Index = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile(filter: {relativePath: {eq: "ua_2019.json"}}) {
+        allFile(filter: {relativePath: {eq: "cb22_2019.json"}}) {
           nodes {
             childNecJson {
-              UA_President {
+              President {
                 name
                 statement
                 endorsements
@@ -26,7 +26,8 @@ const Index = () => (
                   }
                 }
               }
-              UA_Vice_President {
+
+              Executive_Vice_President {
                 name
                 statement
                 endorsements
@@ -41,7 +42,8 @@ const Index = () => (
                   }
                 }
               }
-              SAS_Representative {
+
+              Vice_President_of_External_Affairs {
                 name
                 statement
                 endorsements
@@ -56,7 +58,8 @@ const Index = () => (
                   }
                 }
               }
-              Wharton_Representative {
+        
+              Vice_President_of_Finance {
                 name
                 statement
                 endorsements
@@ -71,7 +74,72 @@ const Index = () => (
                   }
                 }
               }
-              Nursing_Representative {
+  
+              Vice_President_of_Internal_Affairs {
+                name
+                statement
+                endorsements
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
+              }
+
+              College_Chair {
+                name
+                statement
+                endorsements
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
+              }
+
+              Engineering_Chair {
+                name
+                statement
+                endorsements
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
+              }
+
+              Wharton_Chair {
+                name
+                statement
+                endorsements
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
+              }
+
+              Nursing_Chair {
                 name
                 statement
                 endorsements
