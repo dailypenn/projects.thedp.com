@@ -2,7 +2,7 @@
 
 #### Introduction
 - I am Peter Chen, the Director of the Web Department (i.e. the person who is going to create the NEC website). If you have any question, reach out to me at **chen@dailypennsylvanian.com**
-- Why you want to read this: to make things easy to work out for both you and me :)
+- Why you want to read this: to make things easy to work out for both you and me so I can deliver the best quality :)
 
 
 #### Folder Structure
@@ -38,7 +38,7 @@
 ---
 
 #### How to create `info.xlsx`
-- Use Google Sheets (unless you really enjoy the experience of using Microsoft Excel) to create a spread sheet. Follow the same format as in the picture shown (should be self-explanatory)
+- Use Google Sheets (unless you really enjoy the experience of using Microsoft Excel) to create a spread sheet. Follow the same format as shown in the picture (should be self-explanatory)
 ![info](./info.png)
 
 A few things I want to highlight:
@@ -49,6 +49,7 @@ A few things I want to highlight:
 - The quickest way to get the url for your YouTube video is to open the video, right click, and hit "copy video URL". Paste that into the spread sheet.
 ![youtube url](./youtube_url.png)
 - I assume you are using Google Sheets. If so, the preferred way is to share all spread sheets to my DP account **chen@dailypennsylvanian.com** once you finish. That way, you can ignore the `info.xlsx` file listed in the folder structure. If you are using Excel, however, please include the files in the folder and send it to me.
+- By the end of the day, you will have to give me the pictures of each candidate as well, so either you zip it and send it to via email or upload to google drive and share it with me (this is the more preferred way). 
 
 ---
 
