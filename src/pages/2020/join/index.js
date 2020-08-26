@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import s from 'styled-components'
+import JoinJSON from '../../../json/join.json'
 
 const Wrapper = s.div`
   font-size: 1em;
@@ -550,6 +551,17 @@ const Join = () => (
             <a href="https://www.thedp.com/multimedia/60649" target="_blank">Disoriented at Penn, 1600 Penn &#8594;</a>
           </div>
         </div>
+      </section>
+      <section class="editorial">
+      <h2>Editorial</h2>
+        <div class="section">
+          <p class="overall">
+            The Daily Pennsylvanian editorial departments work together to find and tell the most important stories on campus.
+            Whether it's diving deep into an investigative story or capturing snapshots of people at the frontlines of Penn's history, the DP editorial side never stops making a difference.
+            We're operating 100% remotely through the pandemic.
+          </p>
+          
+          </div>
       </section>
 
       <section class="business">
