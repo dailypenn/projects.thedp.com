@@ -4,6 +4,8 @@ import s from 'styled-components'
 
 import JoinEditorialJSON from '../../../json/joinEditorial.json'
 import JoinBusinessJSON from '../../../json/joinBusiness.json'
+import Join34thJSON from '../../../json/join34th.json'
+import JoinUTBJSON from '../../../json/joinUTB.json'
 
 const Wrapper = s.div`
   font-size: 1em;
@@ -352,44 +354,17 @@ const Business = s.div`
 `
 
 const Join = () => {
-  const [editorialImage, setEditorialImage] = useState("linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/917417c6-2a39-487a-bd75-8913f3427445.sized-1000x1000.jpg');")
-  const [editorialDescription, setEditorialDescription] = useState([
-    "By joining News, you will learn not only how to report and investigate stories relevant to Penn’s campus and students, but also the intricacies of student life and University operations. Reporters uncover news important to the Penn community by illuminating student stories and holding institutions accountable. Whether it’s breaking news or investigative journalism, your storytelling has the ability to enact real change on campus.",
-    "The Real-Time Desk is also housed in the News department, and is for those who want to report on breaking news and write aggregated news posts with a lesser time commitment.",
-    "Follow in the footsteps of DP News alumni who work for publications like The New York Times, Politico, Vox, and The Washington Post, to name a few. No journalistic experience required  &mdash; only curiosity and dedication."
-  ])
-  const [editorialHighlights, setEditorialHighlights] = useState([
-    "‘The neighborhood lost its life’: University City businesses suffer from COVID-19",
-    "Thousands petition U. to cut ties with Philly PD, reform militarized campus 'police state'",
-    "Penn projects $91M budget deficit for FY21 in addition to $47M loss from spring 2020",
-    "Here's what six Penn public health experts said about the fall semester",
-    "Live updates — Philadelphia protests over George Floyd's murder for eighth straight day"
-  ])
-  const [editorialHighlightLinks, setEditorialHighlightLinks] = useState([
-    "https://www.thedp.com/article/2020/06/west-philadelphia-small-businesses-penn-campus-closed-smokes-allegros",
-    "https://www.thedp.com/article/2020/06/petition-anti-police-penn-philadelphia-george-floyd",
-    "https://www.thedp.com/article/2020/07/penn-projects-91-budget-deficit-covid-pandemic",
-    "https://www.thedp.com/article/2020/07/penn-fall-health-professional-safety-testing-covid",
-    "https://www.thedp.com/article/2020/05/black-lives-matter-protest-george-floyd-philadelphia"
-  ])
-  const [editorialActive, setEditorialActive] = useState("news")
+  const [editorialImage, setEditorialImage] = useState(JoinEditorialJSON[0].background)
+  const [editorialDescription, setEditorialDescription] = useState(JoinEditorialJSON[0].text)
+  const [editorialHighlights, setEditorialHighlights] = useState(JoinEditorialJSON[0].highlights)
+  const [editorialHighlightLinks, setEditorialHighlightLinks] = useState(JoinEditorialJSON[0]["highlight-links"])
+  const [editorialActive, setEditorialActive] = useState(JoinEditorialJSON[0].id)
 
-  const [businessImage, setBusinessImage] = useState("linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0.9)), url('https://snworksceo.imgix.net/dpn/5803b1e8-72a6-4810-9770-60123f4a066d.sized-1000x1000.jpg')")
-  const [businessDescription, setBusinessDescription] = useState([
-    "DP Marketing works on developing and enhancing the brand identity of The DP Inc., a $3 million dollar business. Our associates work to create social media campaigns, events and merchandise that showcase the content of the DP, 34th Street Magazine and Under the Button. Associates are also given the resources and opportunities to plan and execute their own marketing projects to promote any section of the publication.",
-    "Marketing is the perfect place to develop both your creativity and your business skills because all our projects require a good mix of both. No prior experience is required, just a willingness to learn about branding, promotion and merchandising. We also have a very strong social culture as we host bi-weekly events and love to hang out with each other. Join us to gain some business experience and be a part of the best family at the DP! "
-  ])
-  const [businessHighlights, setBusinessHighlights] = useState([
-    "Battle of the Bands",
-    "UTB Comedy Night",
-    "Puck Frinceton T-shirt Sale"
-  ])
-  const [businessHighlightLinks, setBusinessHighlightLinks] = useState([
-    "https://www.facebook.com/events/2205915566180909/",
-    "https://www.facebook.com/events/2137326212971575/",
-    "https://www.facebook.com/events/440490923254900/"
-  ])
-  const [businessActive, setBusinessActive] = useState("marketing")
+  const [businessImage, setBusinessImage] = useState(JoinBusinessJSON[0].background)
+  const [businessDescription, setBusinessDescription] = useState(JoinBusinessJSON[0].text)
+  const [businessHighlights, setBusinessHighlights] = useState(JoinBusinessJSON[0].highlights)
+  const [businessHighlightLinks, setBusinessHighlightLinks] = useState(JoinBusinessJSON[0]["highlight-links"])
+  const [businessActive, setBusinessActive] = useState(JoinBusinessJSON[0].id)
 
   return (
     <>
@@ -518,45 +493,36 @@ const Join = () => {
         </Business>
 
         <section class="street">
-          <h2>34th Street Magazine</h2>
+          <h2>{Join34thJSON.department}</h2>
           <div class="section">
-            <p>
-              34th Street Magazine is your authority on Penn student life. We are a student magazine that empowers student voices, sheds light on student issues, and provides timely commentary on the arts and campus culture. We provide endless opportunities for a creative outlet: you can write cover stories, help envision marketing campaigns, design and lay out issues, attend press movie screenings, review top-rated restaurants, and even pitch your own content ideas.
-            </p>
-            <p>
-              As the hub for Penn voices and narrative, Street staffers cover arts, culture, and feature content. We are looking for writers, photographers, videographers, artists, and social media whizzes to create, package, and promote Street to the Penn audience. Writers can work for our Features, Focus, Style, Arts, Film & TV, Music, or Ego sections. Multimedia staffers work with either the Photo or Video departments. Illustrators and graphic designers create visuals, including our weekly print product, as part of the Design department. Audience Engagement associates manage our social media and our newsletter, The Toast.
-            </p>
-            <p>
-              Street provides writers the opportunity to be creative in their pursuit of journalism, teaches Audience Engagement staff how to build and promote a brand online, and gives photographers, videographers, and illustrators experience in creating engaging editorial visuals. Join Street to be part of a tight–knit community and learn from some of the most interesting and dedicated people at Penn—we promise you won’t regret it.
-            </p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJQEz55SUFAIETHN-evrZuAEeL-c3A2bVeJ-_HuVU2LUcenA/viewform" target="_blank"> For 34st interest form click here &#8594;</a>
+            {Join34thJSON.text.map(p => (
+              <p>{p}</p>
+            ))}
+            <a href={Join34thJSON.signup} target="_blank" rel="noreferrer"> For 34st interest form click here &#8594;</a>
             <h5>Highlights</h5>
-            <a href="https://www.34st.com/article/2020/04/covid-coronavirus-healthcare-essential-workers-nurses-ppe-protection-masks-hospitals-penn" target="_blank">‘You Can’t Not Take That Home’: Penn Nurses on the Emotional Toll of Coronavirus &#8594;</a>
-            <a href="https://www.34st.com/article/2020/05/penn-10-profiles-2020-university-of-pennsylvania-34th-street-magazine-special-issue" target="_blank">LEADERSHIP, COMMITMENT, AND SCHOLARSHIP: PRESENTING THE CLASS OF 2020 PENN 10 &#8594;</a>
-            <a href="https://www.34st.com/article/2020/02/upenn-why-i-left-greek-life-cafsa-wots" target="_blank">Why I Left Greek Life—And Joined CAFSA &#8594;</a>
-            <a href="https://www.34st.com/article/2020/07/tiktok-music-streaming-spotify-record-label-penelope-scott-yoza-lizzy-mcalpine" target="_blank">Is TikTok creating a musical meritocracy? &#8594;</a>
-            <a href="https://www.34st.com/article/2020/07/rick-krajewski-upenn-alum-west-philadelphia-state-representative" target="_blank">From Houston Hall to the Pennsylvania House of Representatives &#8594;</a>
+            {
+              Join34thJSON.highlights.map((h, idx) => (
+                <a href={Join34thJSON['highlight-links'][idx]}  target="_blank" rel="noreferrer">{h} &#8594;</a>
+              ))
+            }
           </div>
         </section>
 
         <section class="utb">
-          <h2>Under the Button</h2>
+          <h2>{JoinUTBJSON.department}</h2>
           <div class="section">
-            <p>
-              Under the Button is Penn’s go-to source for daily humor and satire.
-            </p>
-            <p>
-              Our writing staff works around the clock to report on the stories that other media organizations wouldn’t dare touch due to editorial standards. Our video and media staff work to capture the real Penn experience through the lens of a camera we stole from the DP. 
-            </p>
-            <p>
-              We are looking for talented writers, videographers, actors, graphic designers, coders, our dignity, ten gay rats, and your best brisket recipe. If you’re an all-around funny person looking for a way to subject the rest of campus to your sense of humor, we’re the publication for you.
-            </p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd1tL3YCBuj4BMxLQPVGZ6PCvk3fjbsiRNOCZGcwHXJnDr4UA/viewform" target="_blank"> For UTB interest form click here &#8594;</a>
+            {
+              JoinUTBJSON.text.map(p => (
+                <p>{p}</p>
+              ))
+            }
+            <a href={JoinUTBJSON.signup} target="_blank" rel="noreferrer"> For UTB interest form click here &#8594;</a>
             <h5>Highlights</h5>
-            <a href="https://www.underthebutton.com/article/2019/07/wax-trump-shame-penn" target="_blank">Wax and Trump in Heated Competition to Bring Most Shame to Penn &#8594;</a>
-            <a href="https://www.underthebutton.com/article/2019/09/if-i-had-a-girlfriend-photo-essay" target="_blank">Photo Essay: These Are All the Places on Campus I Would Kiss My Girlfriend If I Had One &#8594;</a>
-            <a href="https://www.underthebutton.com/article/2018/12/choose-your-own-adventure-jeff-writing-sem-intro" target="_blank">Choose Your Own Adventure: Will You Fuck Jeff From Writing Sem? &#8594;</a>
-            <a href="https://youtu.be/Or5lGThQTJU" target="_blank"> Pool Party Man on the Street &#8594;</a>
+            {
+              JoinUTBJSON.highlights.map((h, idx) => (
+                <a href={JoinUTBJSON['highlight-links'][idx]} target="_blank" rel="noreferrer">{h} &#8594;</a>
+              ))
+            }
           </div>
         </section>
 
