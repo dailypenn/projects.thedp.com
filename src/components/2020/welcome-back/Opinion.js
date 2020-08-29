@@ -35,10 +35,10 @@ const Opinion = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile (filter: { name: { eq: "opinion" }, sourceInstanceName: { eq: "json" } }) {
+        allFile (filter: {relativePath: {eq: "opinion_wb_2020.json"}}) {
           edges {
             node {
-              childrenOpinionJson {
+              childrenOpinionWb2020Json {
                 tag
                 author
                 title
@@ -61,7 +61,7 @@ const Opinion = () => (
       }
     `}
     render={data => {
-      const { node: { childrenOpinionJson: articles } } = data.allFile.edges[0]
+      const { node: { childrenOpinionWb2020Json: articles } } = data.allFile.edges[0]
 
       return (
         <Wrapper>

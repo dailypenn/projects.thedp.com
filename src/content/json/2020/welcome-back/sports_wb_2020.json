@@ -4,7 +4,7 @@
     "description": "Biden was a standout receiver in high school and played on the freshman team at the University of Delaware",
     "byline": "By Lochlahn March",
     "image": {
-      "src": "../images/sports-biden.jpg"
+      "src": "../../../images/2020/welcome-back/sports-biden.jpg"
     },
     "link": "https://www.thedp.com/article/2020/08/joe-biden-penn-athletics-football-archmere-2020-election-delaware"
   },
@@ -13,7 +13,7 @@
     "description": "Trump has long boasted his baseball skills, but never took to the diamond at Fordham or Penn",
     "byline": "By Lochlahn March",
     "image": {
-      "src": "../images/sports-trump.jpg"
+      "src": "../../../images/2020/welcome-back/sports-trump.jpg"
     },
     "link": "https://www.thedp.com/article/2020/07/donald-trump-penn-baseball-football-squash-fordham-sats-bob-seddon"
   },
@@ -22,7 +22,7 @@
     "description": "The Ivy League is the first NCAA Division I conference to make such a decision",
     "byline": "By Brandon Pride",
     "image": {
-      "src": "../images/sports-cancel.jpg"
+      "src": "../../../images/2020/welcome-back/sports-cancel.jpg"
     },
     "link": "https://www.thedp.com/article/2020/07/ivy-league-ncaa-spring-season-fall-sports-canceled-football-penn"
   },
@@ -31,7 +31,7 @@
     "description": "Phoebe Sterba and AJ Brodeur will continue their basketball careers overseas",
     "byline": "By Will DiGrande and Brandon Pride",
     "image": {
-      "src": "../images/sports-alumni.jpg"
+      "src": "../../../images/2020/welcome-back/sports-alumni.jpg"
     },
     "link": "https://www.thedp.com/article/2020/08/penn-athletics-alumni-roundup-transfers-professional-ivy-league"
   }

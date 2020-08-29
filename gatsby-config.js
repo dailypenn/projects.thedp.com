@@ -1,33 +1,29 @@
 module.exports = {
   siteMetadata: {
     title: `Daily Pennsylvanian Project Pages`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: ``,
     author: `@peterbaile`,
     siteUrl: `https://projects.thedp.com/`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-json`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/content/images/2020/welcome-back`,
       },
     },
-    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `json`,
-        path: `${__dirname}/src/json`,
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `json`,
-        path: `${__dirname}/src/content/json/2019/NEC`,
+        path: `${__dirname}/src/content/json/2020/welcome-back`,
       }
     },
     {
@@ -37,8 +33,13 @@ module.exports = {
         path: `${__dirname}/src/content/images/2019/NEC`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2019/NEC`,
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -57,8 +58,6 @@ module.exports = {
         trackingId: "UA-707447-4",
       },
     },
-    `gatsby-transformer-json`,
-    `gatsby-plugin-styled-components`,
     {
       resolve: 'gatsby-plugin-load-script',
       options: {

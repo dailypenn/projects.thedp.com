@@ -88,10 +88,10 @@ const UTB = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile (filter: { name: { eq: "utb" }, sourceInstanceName: { eq: "json" } }) {
+        allFile (filter: {relativePath: {eq: "utb_wb_2020.json"}}) {
           edges {
             node {
-              childrenUtbJson {
+              childrenUtbWb2020Json {
                 tag
                 headline
                 link
@@ -113,7 +113,7 @@ const UTB = () => (
       }
     `}
     render={data => {
-      const { node: { childrenUtbJson: articles } } = data.allFile.edges[0]
+      const { node: { childrenUtbWb2020Json: articles } } = data.allFile.edges[0]
 
       return (
         <Wrapper id="utb">
