@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import { Helmet } from 'react-helmet'
 import s from 'styled-components'
+import { Link } from 'gatsby'
 
-import JoinEditorialJSON from '../../../json/joinEditorial.json'
-import JoinBusinessJSON from '../../../json/joinBusiness.json'
-import Join34thJSON from '../../../json/join34th.json'
-import JoinUTBJSON from '../../../json/joinUTB.json'
+import JoinEditorialJSON from '../../../content/json/2020/join/joinEditorial.json'
+import JoinBusinessJSON from '../../../content/json/2020/join/joinBusiness.json'
+import Join34thJSON from '../../../content/json/2020/join/join34th.json'
+import JoinUTBJSON from '../../../content/json/2020/join/joinUTB.json'
 
 const Wrapper = s.div`
   font-size: 1em;
@@ -390,7 +391,7 @@ const Join = () => {
 
       <Wrapper>
         <header>
-          <a href="https://www.thedp.com" target="_blank">
+          <a href="https://www.thedp.com" target="_blank" rel="noreferrer">
             <img src="https://snworksceo.imgix.net/dpn/d2453b29-fc87-458c-b226-ece3042946bb.sized-1000x1000.png" alt="The Daily Pennsylvanian" width="250" class="logo" />
           </a>
         </header>
@@ -399,7 +400,7 @@ const Join = () => {
           <div class="intro-text">
             <h1>The Daily Pennsylvanian, Inc.</h1>
             <h3>Don't just live the story of a lifetime. Tell it.</h3>
-            <a href="#apply"><div class="join-button">Join Now</div></a>
+            <Link to="#apply"><div class="join-button">Join Now</div></Link>
           </div>
         </section>
 
@@ -432,9 +433,9 @@ const Join = () => {
                 {editorialDescription.map(p => (
                   <p>{p}</p>
                 ))}
-                <h5>{(editorialHighlights.length == 0) ? '': 'Highlights'}</h5>
+                <h5>{(editorialHighlights.length === 0) ? '': 'Highlights'}</h5>
                 {
-                  (editorialHighlights.length == editorialHighlightLinks.length)
+                  (editorialHighlights.length === editorialHighlightLinks.length)
                   ? editorialHighlights.map((l, idx) => (
                     <a href={editorialHighlightLinks[idx]} target="_blank" rel="noreferrer">{l} &#8594;</a>
                   ))
@@ -461,7 +462,7 @@ const Join = () => {
             <div class="departments">
               {JoinBusinessJSON.map((dpt, idx) => (
               <span>
-                <h4 class={(businessActive == dpt.id) ? 'biz-tab active' : 'biz-tab'} id={dpt.id} onClick={() => {
+                <h4 class={(businessActive === dpt.id) ? 'biz-tab active' : 'biz-tab'} id={dpt.id} onClick={() => {
                   setBusinessImage(dpt.background)
                   setBusinessDescription(dpt.text)
                   setBusinessHighlights(dpt.highlights)
@@ -477,9 +478,9 @@ const Join = () => {
                 {businessDescription.map(p => (
                   <p>{p}</p>
                 ))}
-                <h5>{(businessHighlights.length == 0) ? '': 'Highlights'}</h5>
+                <h5>{(businessHighlights.length === 0) ? '': 'Highlights'}</h5>
                 {
-                  (businessHighlights.length == businessHighlightLinks.length)
+                  (businessHighlights.length === businessHighlightLinks.length)
                   ? businessHighlights.map((l, idx) => (
                     <a href={businessHighlightLinks[idx]} target="_blank" rel="noreferrer">{l} &#8594;</a>
                   ))
