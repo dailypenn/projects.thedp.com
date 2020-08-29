@@ -74,8 +74,10 @@ const IndexPage = () => (
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="Your guide for navigating this unprecedented virtual school year" />
       <title>Welcome Back | The Daily Pennsylvanian</title>
       <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+      
       <meta property="og:title" content="Welcome Back | The Daily Pennsylvanian" />
       <meta property="og:image" content="https://snworksceo.imgix.net/dpn/1fe2ce10-46fa-402e-a9f2-498cc011769b.sized-1000x1000.jpg" />
       <meta property="og:description" content="Your guide for navigating this unprecedented virtual school year" />

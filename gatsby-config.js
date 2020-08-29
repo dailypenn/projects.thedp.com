@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Daily Pennsylvanian Project Pages`,
-    description: ``,
+    description: `This site showcases the work done by the DP's web development department, such as project pages for special issues or standalone interactives.`,
     author: `@peterbaile`,
     siteUrl: `https://projects.thedp.com/`,
   },
@@ -49,7 +49,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/DP-500.png`, // This path is relative to the root of the site.
+        icon: `src/content/images/DP-500.png`, // This path is relative to the root of the site.
       },
     },
     {

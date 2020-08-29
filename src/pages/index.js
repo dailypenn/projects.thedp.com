@@ -180,6 +180,7 @@ const IndexPage = () => (
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Projects | The Daily Pennsylvanian</title>
+      <meta name="description" content="This site showcases the work done by the DP's web development department, such as project pages for special issues or standalone interactives" />
       <link rel="stylesheet" type="text/css" href="https://d1q35ni5859stt.cloudfront.net/20161213m1eLHQrMRG/dist/css/master.min.css" />
     </Helmet>
 
