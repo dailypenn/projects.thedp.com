@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{w2l6:function(n,t,o){"use strict";o.r(t);var e=o("q1tI"),i=o("Wbzz");t.default=function(){return Object(e.useEffect)((function(){var n=window.location.href.substring(window.location.href.indexOf("/"));Object(i.navigate)("https://dailypenn.github.io/old.projects.thedp.com"+n)}),[]),null}}}]);
-//# sourceMappingURL=component---src-pages-404-js-5606373321808e0880e3.js.map
