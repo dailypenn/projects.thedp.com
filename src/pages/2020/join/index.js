@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Helmet } from 'react-helmet'
 import s from 'styled-components'
+import { Link } from 'gatsby'
+
+import JoinEditorialJSON from '../../../content/json/2020/join/joinEditorial.json'
+import JoinBusinessJSON from '../../../content/json/2020/join/joinBusiness.json'
+import Join34thJSON from '../../../content/json/2020/join/join34th.json'
+import JoinUTBJSON from '../../../content/json/2020/join/joinUTB.json'
 
 const Wrapper = s.div`
   font-size: 1em;
@@ -94,39 +100,6 @@ const Wrapper = s.div`
     background-size: cover;
     background-repeat: no-repeat;
     min-height: calc(100vh - 150px);
-  }
-
-  section.editorial {
-    background-color: #AA1E22;
-    background: linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/917417c6-2a39-487a-bd75-8913f3427445.sized-1000x1000.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #FFF;
-  }
-
-  section.editorial a {
-    color: #DDD;
-  }
-
-  section.editorial a:hover {
-    color: #AAA;
-  }
-
-  section.business {
-    background-color: #EEE;
-    background: linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/5803b1e8-72a6-4810-9770-60123f4a066d.sized-1000x1000.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  section.business a {
-    color: #AA1E22;
-  }
-
-  section.business a:hover {
-    color: #777;
   }
 
   section.street {
@@ -340,346 +313,232 @@ const Wrapper = s.div`
     }
   }
 `
+const Editorial = s.div`
+  font-size: 1em;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: #000;
+  background-color: #EEE;
+  section.editorial {
+    background-color: #AA1E22;
+    background: ${({ background }) => background};
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+  }
 
-const Join = () => (
-  <>
-    <Helmet>
-      <meta charset="utf-8" />
-      <title>Join The Daily Pennsylvanian, Inc.</title>
+  section.editorial a {
+    color: #DDD;
+  }
 
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+  section.editorial a:hover {
+    color: #AAA;
+  }
+`
+const Business = s.div`
+  section.business {
+    background-color: #EEE;
+    background: ${({ background }) => background};
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
-      <meta property="og:title" content="Join The Daily Pennsylvanian, Inc." />
-      <meta property="og:image" content="https://snworksceo.imgix.net/dpn/ec790853-4028-4601-b716-108531b8baf7.sized-1000x1000.jpg" />
-      <meta property="og:description" content="The Daily Pennsylvanian is looking for new students to join our team! Check out our recruitment website to see all of the opportunities we have to offer!" />
-      <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://projects.thedp.com/2020/join" />
+  section.business a {
+    color: #AA1E22;
+  }
 
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Join The Daily Pennsylvanian, Inc." />
-      <meta name="twitter:image" content="https://snworksceo.imgix.net/dpn/ec790853-4028-4601-b716-108531b8baf7.sized-1000x1000.jpg" />
-      <meta name="twitter:description" content="The Daily Pennsylvanian is looking for new students to join our team! Check out our recruitment website to see all of the opportunities we have to offer!" />
-      <meta name="twitter:url" content="https://projects.thedp.com/2020/join" />
-      <meta name="twitter:site" content="@dailypenn" />
-    </Helmet>
+  section.business a:hover {
+    color: #777;
+  }
+`
 
-    <Wrapper>
-      <header>
-        <a href="https://www.thedp.com" target="_blank">
-          <img src="https://snworksceo.imgix.net/dpn/d2453b29-fc87-458c-b226-ece3042946bb.sized-1000x1000.png" alt="The Daily Pennsylvanian" width="250" class="logo" />
-        </a>
-      </header>
+const Join = () => {
+  const [editorialImage, setEditorialImage] = useState(JoinEditorialJSON[0].background)
+  const [editorialDescription, setEditorialDescription] = useState(JoinEditorialJSON[0].text)
+  const [editorialHighlights, setEditorialHighlights] = useState(JoinEditorialJSON[0].highlights)
+  const [editorialHighlightLinks, setEditorialHighlightLinks] = useState(JoinEditorialJSON[0]["highlight-links"])
+  const [editorialActive, setEditorialActive] = useState(JoinEditorialJSON[0].id)
 
-      <section class="intro">
-        <div class="intro-text">
-          <h1>The Daily Pennsylvanian, Inc.</h1>
-          <h3>Don't just live the story of a lifetime. Tell it.</h3>
-          <a href="#apply"><div class="join-button">Join Now</div></a>
-        </div>
-      </section>
+  const [businessImage, setBusinessImage] = useState(JoinBusinessJSON[0].background)
+  const [businessDescription, setBusinessDescription] = useState(JoinBusinessJSON[0].text)
+  const [businessHighlights, setBusinessHighlights] = useState(JoinBusinessJSON[0].highlights)
+  const [businessHighlightLinks, setBusinessHighlightLinks] = useState(JoinBusinessJSON[0]["highlight-links"])
+  const [businessActive, setBusinessActive] = useState(JoinBusinessJSON[0].id)
 
-      <section class="editorial">
+  return (
+    <>
+      <Helmet>
+        <meta charset="utf-8" />
+        <title>Join The Daily Pennsylvanian, Inc.</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta property="og:title" content="Join The Daily Pennsylvanian, Inc." />
+        <meta property="og:image" content="https://snworksceo.imgix.net/dpn/ec790853-4028-4601-b716-108531b8baf7.sized-1000x1000.jpg" />
+        <meta property="og:description" content="The Daily Pennsylvanian is looking for new students to join our team! Check out our recruitment website to see all of the opportunities we have to offer!" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://projects.thedp.com/2020/join" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Join The Daily Pennsylvanian, Inc." />
+        <meta name="twitter:image" content="https://snworksceo.imgix.net/dpn/ec790853-4028-4601-b716-108531b8baf7.sized-1000x1000.jpg" />
+        <meta name="twitter:description" content="The Daily Pennsylvanian is looking for new students to join our team! Check out our recruitment website to see all of the opportunities we have to offer!" />
+        <meta name="twitter:url" content="https://projects.thedp.com/2020/join" />
+        <meta name="twitter:site" content="@dailypenn" />
+      </Helmet>
+
+      <Wrapper>
+        <header>
+          <a href="https://www.thedp.com" target="_blank" rel="noreferrer">
+            <img src="https://snworksceo.imgix.net/dpn/d2453b29-fc87-458c-b226-ece3042946bb.sized-1000x1000.png" alt="The Daily Pennsylvanian" width="250" class="logo" />
+          </a>
+        </header>
+
+        <section class="intro">
+          <div class="intro-text">
+            <h1>The Daily Pennsylvanian, Inc.</h1>
+            <h3>Don't just live the story of a lifetime. Tell it.</h3>
+            <Link to="#apply"><div class="join-button">Join Now</div></Link>
+          </div>
+        </section>
+
+        <Editorial background={editorialImage}>
+        <section class="editorial">
         <h2>Editorial</h2>
-        <div class="section">
-          <p class="overall">
-            The Daily Pennsylvanian editorial departments work together to find and tell the most important stories on campus.
-            Whether it's diving deep into an investigative story or capturing snapshots of people at the frontlines of Penn's history, the DP editorial side never stops making a difference.
-            We're operating 100% remotely through the pandemic.
-          </p>
-          {/* <a href="#apply"><p class="overall">click to see interest form</p></a> */}
-          <div class="departments">
-            <span><h4 class="ed-tab active" id="news">News</h4></span>
-            <span><h4 class="ed-tab" id="sports">Sports</h4></span>
-            <span><h4 class="ed-tab" id="opinion">Opinion</h4></span>
-            <span><h4 class="ed-tab" id="copy">Copy</h4></span>
-            <span><h4 class="ed-tab" id="design">Design</h4></span>
-            <span><h4 class="ed-tab" id="multimedia">Multimedia</h4></span>
-            <span><h4 class="ed-tab" id="social">Audience Engagement</h4></span>
-            <span><h4 class="ed-tab" id="web">Web Dev</h4></span>
-            <span><h4 class="ed-tab" id="podcasts">Podcasts</h4></span>
-          </div>
-          <div class="ed-text active" id="news-text">
-            <p>
-              By joining News, you will learn not only how to report and investigate stories relevant to Penn’s campus and students, but also the intricacies of student life and University operations. Reporters uncover news important to the Penn community by illuminating student stories and holding institutions accountable. Whether it’s breaking news or investigative journalism, your storytelling has the ability to enact real change on campus.
+          <div class="section">
+            <p class="overall">
+              The Daily Pennsylvanian editorial departments work together to find and tell the most important stories on campus.
+              Whether it's diving deep into an investigative story or capturing snapshots of people at the frontlines of Penn's history, the DP editorial side never stops making a difference.
+              We're operating 100% remotely through the pandemic.
             </p>
-            <p>
-              The Real-Time Desk is also housed in the News department, and is for those who want to report on breaking news and write aggregated news posts with a lesser time commitment.
-            </p>
-            <p>
-              Follow in the footsteps of DP News alumni who work for publications like The New York Times, Politico, Vox, and The Washington Post, to name a few. No journalistic experience required  &mdash; only curiosity and dedication.
-            </p>
-            <h5>Highlights</h5>
-            <a href="https://www.thedp.com/article/2020/06/west-philadelphia-small-businesses-penn-campus-closed-smokes-allegros" target="_blank" rel="noreferrer">‘The neighborhood lost its life’: University City businesses suffer from COVID-19 &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/06/petition-anti-police-penn-philadelphia-george-floyd" target="_blank" rel="noreferrer">Thousands petition U. to cut ties with Philly PD, reform militarized campus 'police state' &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/07/penn-projects-91-budget-deficit-covid-pandemic" target="_blank" rel="noreferrer">Penn projects $91M budget deficit for FY21 in addition to $47M loss from spring 2020 &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/07/penn-fall-health-professional-safety-testing-covid" target="_blank" rel="noreferrer">Here's what six Penn public health experts said about the fall semester &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/05/black-lives-matter-protest-george-floyd-philadelphia" target="_blank" rel="noreferrer">Live updates — Philadelphia protests over George Floyd's murder for eighth straight day &#8594;</a>
-          </div>
-          <div class="ed-text" id="sports-text">
-            <p>
-              Sports are about passion — the ability to risk it all, to become emotionally invested, to be a part of a team, and to test the limits of what you’re capable of. DP Sports provides the structure and guidance you need to explore that passion.
-            </p>
-            <p>
-              Our department is a place where anyone can feel welcome and be a part of the family. We spend valuable time with each and every person on our team to ensure that they can sharpen their storytelling and investigative skills. We’re a team, and we have an amazing time going on road trips, throwing watch parties, and getting immersed in the sports we cover and watch.
-            </p>
-            <p>
-              So if you like watching, playing, reading, writing, talking, photographing, or learning about sports, DP Sports is totally the place for you. No experience necessary; absolutely anyone is welcome to join!
-            </p>
-            <h5>Highlights</h5>
-            <a href="https://www.thedp.com/article/2020/07/donald-trump-penn-baseball-football-squash-fordham-sats-bob-seddon" target="_blank" rel="noreferrer">Why didn't Donald Trump play sports at Penn? &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/03/penn-mens-basketball-columbia-aj-brodeur-leading-scorer-ivy-league" target="_blank" rel="noreferrer">Brodeur's record-breaking night sees Penn men's basketball through to Ivy Madness &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/06/ryan-glover-tameka-foster-penn-football-quarterback-mother-son-usher-ivy-league" target="_blank" rel="noreferrer">Born into a celebrity family, Penn quarterback Ryan Glover forges his own path &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/02/palestra-penn-mens-basketball-attendance-student-culture-ivy-league" target="_blank" rel="noreferrer">An empty cathedral: Why aren't more students attending basketball games at the Palestra? &#8594;</a>
-            <a href="https://www.thedp.com/article/2019/11/penn-womens-basketball-senior-leaders-grasela-sterba" target="_blank" rel="noreferrer">Freshman year they cried over cheese fries. Now seniors, Grasela and Sterba are captains &#8594;</a>
-          </div>
-          <div class="ed-text" id="opinion-text">
-            <p>You have the power to decide what the campus conversation ought to be.</p>
-            <p>At The Daily Pennsylvanian, we are looking for creative, passionate, and hard-working writers to pen columns for Penn's independent student-led news organization. We are also looking for talented artists to create funny, insightful, and poignant cartoons.</p>
-            <p>Your writing and reporting skills will improve tremendously, you will have the rare opportunity to reach thousands of people with every column you write, and you will learn to make this award-winning media organization your home. Opinion columns often garner the most page views and comments among all the sections of the DP. Being an opinion artist requires time and dedication, as well as the ability to make a point using few words.</p>
-            <p>Stimulate change, hold organizations and people accountable, and make conversation: Join us.</p>
-            <h5>Highlights</h5>
-            <a href="https://www.thedp.com/article/2019/11/tokenism-racism-clubs-ivy-league-upenn-philadelphia" target="_blank" rel="noreferrer">Surayya Walters | Stop ignoring tokenism at Penn &#8594;</a>
-            <a href="https://www.thedp.com/article/2019/10/philadelphia-gentrification-penn-bubble-ivy-league-upenn-philadelphia" target="_blank" rel="noreferrer">Alfredo Praticò | Our relationship with Philadelphia is broken. Here’s how we fix it &#8594;</a>
-            <a href="https://www.thedp.com/article/2019/09/thrive-at-penn-mental-health-ivy-league-wharton-upenn-philadelphia" target="_blank" rel="noreferrer">Julia Mitchell | ‘Thriving at Penn’ is more meme than reality &#8594;</a>
-            <a href="https://www.thedp.com/article/2019/04/mental-health-ivy-league-ariana-grande-jordan-peele-kaliyah-dorsey-upenn-philadelphia" target="_blank" rel="noreferrer">Kaliyah Dorsey | At Penn, fake smiles hurt more than they help &#8594;</a>
-            <a href="https://www.thedp.com/article/2019/03/lgbtq-christianity-evangelical-church-homophobia-upenn-philadelphia" target="_blank" rel="noreferrer">Ana West | Christians at Penn have a responsibility to stand by the LGBTQ community &#8594;</a>
-          </div>
-          <div class="ed-text" id="copy-text">
-            <p>
-              The Daily Pennsylvanian's Copy Department is now editing 34th Street, Under the Button, and DP Sports content! Join our super fun team in reviewing and fact-checking everything from breaking news to satirical videos. Come help us keep our content concise, consistent, and considerate.
-            </p>
-            <p>From the people who brought the DP the Oxford comma.</p>
-            <h5>Highlights</h5>
-            <a href="https://docs.google.com/document/pub?id=14HoU_sCiPxD8SOSH8HvWKsvz1Elv89yzcje-sZGGahs&pli=1" target="_blank" rel="noreferrer">The DP's Official Style Guide &#8594;</a>
-          </div>
-          <div class="ed-text" id="design-text">
-            <p>
-              The Design Department is looking for designers, artists, and illustrators with all ranges of experience to join us in producing The Daily Pennsylvanian and 34th Street Magazine’s print and online visual content.
-            </p>
-            <p>
-              We use the full Adobe Creative Suite &mdash; mainly Photoshop, Illustrator, and InDesign &mdash; along with various online platforms for data visualization.
-            </p>
-            <p>
-              If you are interested in creating aesthetic content, whether it be front-page print centerpieces, online graphics, or layouts for websites, then the Design department is for you!
-            </p>
-            <h5>Highlights</h5>
-            <a href="https://issuu.com/dailypenn/docs/gradissue" target="_blank">The Grad Issue &#8594;</a>
-            <a href="https://thedp-covid-19.herokuapp.com/" target="_blank">Coronavirus Project Page &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/06/george-whitefield-statue-rizzo-columbus-racism-slavery-penn-georgia" target="_blank" rel="noreferrer">Opinion | Take down the George Whitefield statue  &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/07/doctors-are-facing-a-silent-mental-health-crisis-and-they-need-help-pre-medicine-med-penn-undergrad-residency" target="_blank" rel="noreferrer">Opinion | Doctors are facing a silent mental health crisis — and they need help &#8594;</a>
-            <a href="https://www.34st.com/article/2020/02/sexual-assault-racism-harassment-fraternities-cafsa-greek-life-upenn" target="_blank" rel="noreferrer">34st Feature | Who Owns Locust? &#8594;</a>
-            <a href="https://www.34st.com/article/2019/02/sydney-gelman-valentines-day-relationship-bumble-study-abroad" target="_blank" rel="noreferrer">34st Word on the Street | A Bumble Date That Actually Went Right &#8594;</a>
-          </div>
-          <div class="ed-text" id="multimedia-text">
-            <p>
-              The Multimedia Department is looking for people with a passion for photography and videography to join us in creating modern quality content for The Daily Pennsylvanian.
-            </p>
-            <p>
-              We use the Adobe Suite as well as the latest DSLR cameras, lenses, and audio and video equipment to cover major events on campus and across the country. Our staff has covered famous figures including the likes of Joe Biden and Usain Bolt, stood front row at Made in America, and traveled for special events including presidential campaign rallies and NCAA tournaments.
-            </p>
-            <p>
-              This semester will look different than the usual coverage. Now more than ever, we need your help in documenting the history that will unfold on our campus this fall. 
-            </p>
-            <p>
-              As a member of the multimedia department, you will have opportunities to learn and improve your photography and videography skills. You will have the ability to take part in the editing and post-production process, having an impact on our content from creation to publishing. A time commitment of 1-3 hours every week is expected.
-            </p>
-            <p>
-              At this time, we would prefer those who have experience with photography and/or videography. No personal equipment is required, but we ask you to use your own if you have it now. Join us in making transformative content for an award-winning media company!
-            </p>
-            <h5>Highlights</h5>
-            <a href="https://youtu.be/pbMhA3_e1xE" target="_blank">Former ICE Director Returns To Penn, Met By Protesters &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/06/philadelphia-protests-george-floyd-black-lives-matter-photo-essay" target="_blank" rel="noreferrer">Photo Essay | Philadelphia protests for George Floyd and racial justice &#8594;</a>
-            <a href="https://www.youtube.com/watch?v=4twQG1T1mM4&t=51s" target="_blank" rel="noreferrer">Inside The Wistar Institute's Fight Against COVID-19 &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/05/coronavirus-covid-19-new-york-city-empty-students-photo-essay" target="_blank" rel="noreferrer">Photo Essay | Students reflect on life inside epicenter of the coronavirus pandemic → &#8594;</a>
-            <a href="https://www.youtube.com/watch?v=AlJCgQZezhU" target="_blank" rel="noreferrer">DP Sports Editor vs. Fencing Sabre Captain Miranda Gieg &#8594;</a>
-            <a href="https://www.thedp.com/article/2019/04/photo-gallery-penn-relays-125-upenn-harvard-olympians-usa-jamaica-yale" target="_blank">Photo Gallery | The 125th Running of the Penn Relays &#8594;</a>
-            <a href="https://www.thedp.com/article/2020/01/iran-vigil-airplane-crash-goernment-trump-philadelphia-penn-tragedy-flight" target="_blank">Phila.'s Iranian community gathers at LOVE statue to honor victims of downed plane &#8594;</a>
-            <a href="https://www.thedp.com/article/2019/05/tour-best-outdoor-study-spots-penn-campus" target="_blank">Photo Essay | A tour of the 20 best outdoor study spots on campus &#8594;</a>
-          </div>
-          <div class="ed-text" id="social-text">
-            <p>
-              Joining Audience Enagement will put you on the frontline of The DP’s interaction with tens of thousands of readers and develop skills increasingly relevant in the world’s growing digital landscape.
-            </p>
-            <p>
-              As a rapidly growing department, we are looking for people excited to curate, manage and grow the DP’s social media presence and interaction through Facebook, Twitter and (especially!) Instagram. We are also seeking writers interested in writing and editing our daily newsletter.
-            </p>
-            <p>
-              AE is the right department for anyone looking to work with other departments across the DP on exciting projects such as promotion strategies for special issues and events online.
-            </p>
-            <p>
-              No prior experience required, only a fire emoji game and willingness to be part of our close knit family.
-            </p>
-            <h5>Highlights</h5>
-            <a href="https://www.facebook.com/dailypenn" target="_blank">The Daily Pennsylvanian Facebook &#8594;</a>
-            <a href="https://twitter.com/dailypenn" target="_blank">The Daily Pennsylvanian Twitter &#8594;</a>
-            <a href="https://twitter.com/dailypennsports" target="_blank">DP Sports Twitter &#8594;</a>
-            <a href="https://www.instagram.com/dailypenn/" target="_blank">The Daily Pennsylvanian Instagram &#8594;</a>
-          </div>
-          <div class="ed-text" id="web-text">
-            <p>
-              Web developers at the DP have the opportunity to work on a number of diverse and complex projects.
-              The DP runs multiple full-stack apps, regularly creates standalone pages for special issues or interactive projects, and builds internal tools for both the editorial and business sides.
-            </p>
-            <p>
-              As a web developer, you'll get experience working with GitHub, as well as a wide array of programming languages.
-              We maintain apps built with Ruby on Rails, use HTML, CSS, and JavaScript for our project pages, and regularly build tools with JavaScript, Python, and Ruby.
-            </p>
-            <p>
-              Developers at all skill levels are encouraged to join!
-            </p>
-            <h5>Highlights</h5>
-            <a href="https://projects.thedp.com/" target="_blank">DP Projects, a full list of all project pages we've developed &#8594;</a>
-            <a href="https://dailypenn.github.io/outquote/" target="_blank">Outquote, a JavaScript tool to make branded quote cards &#8594;</a>
-            <a href="https://github.com/dailypenn/data" target="_blank">Explore the data, code, and methodology behind our data projects &#8594;</a>
-            <a href="https://github.com/dailypenn" target="_blank">Check out all of our open source work on our GitHub &#8594;</a>
-          </div>
-          <div class="ed-text" id="podcasts-text">
-            <p>
-              Calling all podcast enthusiasts! DP Podcasts is looking for new hosts, writers, and editors.
-              Join this burgeoning department as we attempt to expand the breadth and depth of our current podcast offerings.
-              We are looking for storytellers and commentators from diverse backgrounds.
-            </p>
-            <p>
-              Are you weirdly passionate about something on campus? Do you have interesting opinions?
-              If you join our department, we can turn that into a podcast!
-            </p>
-            <h5>Highlights</h5>
-            <a href="https://www.thedp.com/multimedia/63464" target="_blank">A Legacy of Privilege, Quite Frankly &#8594;</a>
-            <a href="https://www.thedp.com/multimedia/62044" target="_blank">ivyQueens, Bottoms on Top &#8594;</a>
-            <a href="https://www.thedp.com/multimedia/61202" target="_blank">Gay Christmas, Bottoms on Top &#8594;</a>
-            <a href="https://www.thedp.com/multimedia/60649" target="_blank">Disoriented at Penn, 1600 Penn &#8594;</a>
-          </div>
-        </div>
-      </section>
 
-      <section class="business">
+            <div class="departments">
+              {JoinEditorialJSON.map((dpt, idx) => (
+              <span>
+                <h4 class={(editorialActive == dpt.id) ? 'ed-tab active' : 'ed-tab'} id={dpt.id} onClick={() => {
+                  setEditorialImage(dpt.background)
+                  setEditorialDescription(dpt.text)
+                  setEditorialHighlights(dpt.highlights)
+                  setEditorialHighlightLinks(dpt["highlight-links"])
+                  setEditorialActive(dpt.id)
+                }}>
+                  {dpt.department}
+                </h4>
+              </span>
+              ))}
+            </div>
+            <div className="ed-text active">
+                {editorialDescription.map(p => (
+                  <p>{p}</p>
+                ))}
+                <h5>{(editorialHighlights.length === 0) ? '': 'Highlights'}</h5>
+                {
+                  (editorialHighlights.length === editorialHighlightLinks.length)
+                  ? editorialHighlights.map((l, idx) => (
+                    <a href={editorialHighlightLinks[idx]} target="_blank" rel="noreferrer">{l} &#8594;</a>
+                  ))
+                  : editorialHighlights.map((l, idx) => (
+                    <p>{l}</p>
+                  ))
+                }
+            </div>
+          </div>
+        </section>
+        </Editorial>
+        
+        <Business background={businessImage}>
+        <section class="business">
         <h2>Business</h2>
-        <div class="section">
-          <p class="overall">
-            The Daily Pennsylvanian is a $3-million, student-run media organization.
-            Our incredible teams work together to market our products and sustain our business.
-            Through the DP, students experience working for a real company, with real staffers, clients, and revenues.
-            Join one of our teams to gain an invaluable, hands-on experience unlike any other.
-          </p>
-          <div class="departments">
-            <span><h4 class="biz-tab active" id="marketing">Marketing</h4></span>
-            <span><h4 class="biz-tab" id="consulting">Consulting</h4></span>
-            <span><h4 class="biz-tab" id="analytics">Analytics</h4></span>
-            <span><h4 class="biz-tab" id="product-lab">Product Lab</h4></span>
-            {/* <span><h4 class="biz-tab" id="circulation">Circulation</h4></span> */}
-          </div>
-          <div class="biz-text active" id="marketing-text">
-            <p>
-              DP Marketing works on developing and enhancing the brand identity of The DP Inc., a $3 million dollar business. Our associates work to create social media campaigns, events and merchandise that showcase the content of the DP, 34th Street Magazine and Under the Button. Associates are also given the resources and opportunities to plan and execute their own marketing projects to promote any section of the publication.
+          <div class="section">
+            <p class="overall">
+              The Daily Pennsylvanian is a $3-million, student-run media organization.
+              Our incredible teams work together to market our products and sustain our business.
+              Through the DP, students experience working for a real company, with real staffers, clients, and revenues.
+              Join one of our teams to gain an invaluable, hands-on experience unlike any other.
             </p>
-            <p>
-              Marketing is the perfect place to develop both your creativity and your business skills because all our projects require a good mix of both. No prior experience is required, just a willingness to learn about branding, promotion and merchandising. We also have a very strong social culture as we host bi-weekly events and love to hang out with each other. Join us to gain some business experience and be a part of the best family at the DP! 
-            </p>
-            <h5>Highlights</h5>
-            <a href="https://www.facebook.com/events/2205915566180909/" target="_blank">Battle of the Bands &#8594;</a>
-            <a href="https://www.facebook.com/events/2137326212971575/" target="_blank">UTB Comedy Night &#8594;</a>
-            <a href="https://www.facebook.com/events/440490923254900/" target="_blank">Puck Frinceton T-shirt Sale &#8594;</a>
-          </div>
-          <div class="biz-text" id="consulting-text">
-            <p>
-              Consulting Analysts source potential clients, develop strategic marketing campaign and produce pitch materials for client presentations. By working with our outstanding business teams DP Consultants will learn to use creative problem solving and analytical skills to help our clients successfully reach the Penn community. 
-            </p>
-            <h5>Highlights</h5>
-            <p>DP Consultants helped clients during the COVID-19 pandemic develop social media strategies to keep up with customers while away from campus.</p>
-          </div>
-          <div class="biz-text" id="analytics-text">
-            <p>
-              DP Analytics is the data science hub of the Daily Pennsylvanian. At Analytics, we seek to use data to help propel DP into the digital first age.
-            </p>
-            <p>
-              In particular, this department taps into three main areas: Core Data Science(Machine Learning), Product Analytics(Data Manipulation and Analysis), and Data Infrastructure(Web development and data visualization). All these areas cohesively work together to improve the overall DP experience on and offline.
-            </p>
-            <p>
-              Being an independent company, DP provides not only a chance to create something but also project opportunities that actually reaches a huge audience on a regular basis (~200k/month).
-            </p>
-            <h5>Highlights</h5>
-            <p>ML Driven Content Based Recommendation Engine</p>
-            <p>Advertisement Optimization Through Ad Network Redesign</p>
-            <p>Geo-based Interactive Dashboard To Facilitate Circulation Path Diagnosis and Analy</p>
-          </div>
-          <div class="biz-text" id="product-lab-text">
-            <p>
-              The DP Product Lab Department creates marketing content and brands what The DP can provide to external clients. Also, as the company develops, we explore new fields and build new services. We hold responsibility for working on innovation products and coming up with revenue-generating initiatives.
-            </p>
-            <p>
-              With a large amount of creative freedom, this is the place to make your idea a reality. Our weekly commitment is approximately 6 hours.
-            </p>
-            <h5>Highlights</h5>
-            <a href="https://www.facebook.com/dailypenn/videos/vb.6356558804/10155858850708805/" target="_blank">Verb Energy Bars Sponsored Video &#8594;</a>
-            <a href="https://www.thedp.com/article/2018/04/sponsored-woven-treasures-video" target="_blank">Meet Parvis and his micro-world at Woven Treasures &#8594;</a>
-            <a href="https://www.thedp.com/article/2017/11/sponsored-gia-pronto-quiz" target="_blank">Which Gia Pronto Kitchen salad are you? &#8594;</a>
-          </div>
-          <div class="biz-text" id="circulation-text">
-            <p>
-              Circulation staffers are the DP's street team, and they are the ones you see handing out papers on Locust Walk and across campus every day.
-            </p>
-            <p>
-              If you're friendly, dependable, and loud &mdash; and want to earn $10 an hour &mdash; this is the department for you.
-              Join an incredible team with a great culture filled with good times and social activities.
-            </p>
-          </div>
-        </div>
-      </section>
 
-      <section class="street">
-        <h2>34th Street Magazine</h2>
-        <div class="section">
-          <p>
-            34th Street Magazine is your authority on Penn student life. We are a student magazine that empowers student voices, sheds light on student issues, and provides timely commentary on the arts and campus culture. We provide endless opportunities for a creative outlet: you can write cover stories, help envision marketing campaigns, design and lay out issues, attend press movie screenings, review top-rated restaurants, and even pitch your own content ideas.
-          </p>
-          <p>
-            As the hub for Penn voices and narrative, Street staffers cover arts, culture, and feature content. We are looking for writers, photographers, videographers, artists, and social media whizzes to create, package, and promote Street to the Penn audience. Writers can work for our Features, Focus, Style, Arts, Film & TV, Music, or Ego sections. Multimedia staffers work with either the Photo or Video departments. Illustrators and graphic designers create visuals, including our weekly print product, as part of the Design department. Audience Engagement associates manage our social media and our newsletter, The Toast.
-          </p>
-          <p>
-            Street provides writers the opportunity to be creative in their pursuit of journalism, teaches Audience Engagement staff how to build and promote a brand online, and gives photographers, videographers, and illustrators experience in creating engaging editorial visuals. Join Street to be part of a tight–knit community and learn from some of the most interesting and dedicated people at Penn—we promise you won’t regret it.
-          </p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJQEz55SUFAIETHN-evrZuAEeL-c3A2bVeJ-_HuVU2LUcenA/viewform" target="_blank"> For 34st interest form click here &#8594;</a>
-          <h5>Highlights</h5>
-          <a href="https://www.34st.com/article/2020/04/covid-coronavirus-healthcare-essential-workers-nurses-ppe-protection-masks-hospitals-penn" target="_blank">‘You Can’t Not Take That Home’: Penn Nurses on the Emotional Toll of Coronavirus &#8594;</a>
-          <a href="https://www.34st.com/article/2020/05/penn-10-profiles-2020-university-of-pennsylvania-34th-street-magazine-special-issue" target="_blank">LEADERSHIP, COMMITMENT, AND SCHOLARSHIP: PRESENTING THE CLASS OF 2020 PENN 10 &#8594;</a>
-          <a href="https://www.34st.com/article/2020/02/upenn-why-i-left-greek-life-cafsa-wots" target="_blank">Why I Left Greek Life—And Joined CAFSA &#8594;</a>
-          <a href="https://www.34st.com/article/2020/07/tiktok-music-streaming-spotify-record-label-penelope-scott-yoza-lizzy-mcalpine" target="_blank">Is TikTok creating a musical meritocracy? &#8594;</a>
-          <a href="https://www.34st.com/article/2020/07/rick-krajewski-upenn-alum-west-philadelphia-state-representative" target="_blank">From Houston Hall to the Pennsylvania House of Representatives &#8594;</a>
-        </div>
-      </section>
+            <div class="departments">
+              {JoinBusinessJSON.map((dpt, idx) => (
+              <span>
+                <h4 class={(businessActive === dpt.id) ? 'biz-tab active' : 'biz-tab'} id={dpt.id} onClick={() => {
+                  setBusinessImage(dpt.background)
+                  setBusinessDescription(dpt.text)
+                  setBusinessHighlights(dpt.highlights)
+                  setBusinessHighlightLinks(dpt["highlight-links"])
+                  setBusinessActive(dpt.id)
+                }}>
+                  {dpt.department}
+                </h4>
+              </span>
+              ))}
+            </div>
+            <div className="biz-text active">
+                {businessDescription.map(p => (
+                  <p>{p}</p>
+                ))}
+                <h5>{(businessHighlights.length === 0) ? '': 'Highlights'}</h5>
+                {
+                  (businessHighlights.length === businessHighlightLinks.length)
+                  ? businessHighlights.map((l, idx) => (
+                    <a href={businessHighlightLinks[idx]} target="_blank" rel="noreferrer">{l} &#8594;</a>
+                  ))
+                  : businessHighlights.map((l, idx) => (
+                    <p>{l}</p>
+                  ))
+                }
+            </div>
+          </div>
+        </section>
+        </Business>
 
-      <section class="utb">
-        <h2>Under the Button</h2>
-        <div class="section">
-          <p>
-            Under the Button is Penn’s go-to source for daily humor and satire.
-          </p>
-          <p>
-            Our writing staff works around the clock to report on the stories that other media organizations wouldn’t dare touch due to editorial standards. Our video and media staff work to capture the real Penn experience through the lens of a camera we stole from the DP. 
-          </p>
-          <p>
-            We are looking for talented writers, videographers, actors, graphic designers, coders, our dignity, ten gay rats, and your best brisket recipe. If you’re an all-around funny person looking for a way to subject the rest of campus to your sense of humor, we’re the publication for you.
-          </p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd1tL3YCBuj4BMxLQPVGZ6PCvk3fjbsiRNOCZGcwHXJnDr4UA/viewform" target="_blank"> For UTB interest form click here &#8594;</a>
-          <h5>Highlights</h5>
-          <a href="https://www.underthebutton.com/article/2019/07/wax-trump-shame-penn" target="_blank">Wax and Trump in Heated Competition to Bring Most Shame to Penn &#8594;</a>
-          <a href="https://www.underthebutton.com/article/2019/09/if-i-had-a-girlfriend-photo-essay" target="_blank">Photo Essay: These Are All the Places on Campus I Would Kiss My Girlfriend If I Had One &#8594;</a>
-          <a href="https://www.underthebutton.com/article/2018/12/choose-your-own-adventure-jeff-writing-sem-intro" target="_blank">Choose Your Own Adventure: Will You Fuck Jeff From Writing Sem? &#8594;</a>
-          <a href="https://youtu.be/Or5lGThQTJU" target="_blank"> Pool Party Man on the Street &#8594;</a>
-        </div>
-      </section>
+        <section class="street">
+          <h2>{Join34thJSON.department}</h2>
+          <div class="section">
+            {Join34thJSON.text.map(p => (
+              <p>{p}</p>
+            ))}
+            <a href={Join34thJSON.signup} target="_blank" rel="noreferrer"> For 34st interest form click here &#8594;</a>
+            <h5>Highlights</h5>
+            {
+              Join34thJSON.highlights.map((h, idx) => (
+                <a href={Join34thJSON['highlight-links'][idx]}  target="_blank" rel="noreferrer">{h} &#8594;</a>
+              ))
+            }
+          </div>
+        </section>
 
-      <section class="join" id="apply">
-        <h2>Join The Daily Pennsylvanian, Inc.</h2>
-        <div class="section form">
-          <p class="overall">
-            Fill out the form below to apply!
-          </p>
-          <iframe class="join-form" src="https://docs.google.com/forms/d/e/1FAIpQLSeNzxYf1qLmjDTGeBS0xksY2IQPwbWQkBi9guJkji8vgePp1g/viewform" width="100%" height="600" frameBorder="0" marginHeight="0" marginWidth="0">Loading...</iframe>
-        </div>
-      </section>
-    </Wrapper>
-  </>
-)
+        <section class="utb">
+          <h2>{JoinUTBJSON.department}</h2>
+          <div class="section">
+            {
+              JoinUTBJSON.text.map(p => (
+                <p>{p}</p>
+              ))
+            }
+            <a href={JoinUTBJSON.signup} target="_blank" rel="noreferrer"> For UTB interest form click here &#8594;</a>
+            <h5>Highlights</h5>
+            {
+              JoinUTBJSON.highlights.map((h, idx) => (
+                <a href={JoinUTBJSON['highlight-links'][idx]} target="_blank" rel="noreferrer">{h} &#8594;</a>
+              ))
+            }
+          </div>
+        </section>
+
+        <section class="join" id="apply">
+          <h2>Join The Daily Pennsylvanian, Inc.</h2>
+          <div class="section form">
+            <p class="overall">
+              Fill out the form below to apply!
+            </p>
+            <iframe class="join-form" src="https://docs.google.com/forms/d/e/1FAIpQLSeNzxYf1qLmjDTGeBS0xksY2IQPwbWQkBi9guJkji8vgePp1g/viewform" width="100%" height="600" frameBorder="0" marginHeight="0" marginWidth="0">Loading...</iframe>
+          </div>
+        </section>
+      </Wrapper>
+    </>
+  )
+}
 
 export default Join
