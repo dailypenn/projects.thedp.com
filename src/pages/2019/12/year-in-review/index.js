@@ -409,6 +409,8 @@ const Index = () => (
         <meta name="twitter:description" content="Take a look back on 2019's most memorable moments with The Daily Pennsylvanian's Year in Review." />
         <meta name="twitter:url" content="https://projects.thedp.com/2019/12/year-in-review/" />
         <meta name="twitter:site" content="@dailypenn" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></link>
     </Helmet>
     <Wrapper>
       <section className="header-section d-flex flex-column">
