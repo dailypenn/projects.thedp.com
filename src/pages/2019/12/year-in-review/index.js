@@ -2,71 +2,14 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import s from 'styled-components'
 import NavBar from '../../../../components/2019/year-in-review/Nav'
+import MultiMedia from '../../../../components/2019/year-in-review/Multimedia'
+import HeaderSection from '../../../../components/2019/year-in-review/HeaderSection'
+
+import { SectionHeader, SubSectionHeader } from '../../../../components/2019/year-in-review/Typograph'
+
+import { OPEN_SANS_REGULAR, OPEN_SANS_BOLD, DM_SERIF_DISPLAY_REGULAR } from '../../../../utils/font'
 
 const Wrapper = s.div`
-    body {
-        font-family: 'Open Sans', sans-serif;
-    }
-
-
-    nav.navbar {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 600;
-        display: flex;
-        max-height: 36px;
-        background-color: #E7525F;
-        display:flex;
-        width: 100%!important
-    }
-
-    .header-section {
-        height: calc(100vh - 150px);
-        max-width: 100%;
-        width: 100%;
-        background-color: white;
-        font-family: 'DM Serif Display', serif;
-        color: black;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column!important;
-        display: flex!important;
-    }
-
-    .header-section h1 {
-        text-align: center;
-        font-size: 116px;
-    }
-
-    .header-section h2 {
-        text-align: center;
-        font-size: 68px;
-    }
-
-    .header-description {
-        max-width: 500px;
-        margin: 20px auto 0px;
-        text-align: center;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 14px;
-    }
-
-    .section-header {
-        color: #E7525F;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 16px;
-    }
-
-    .more-stories .section-header {
-        color: white;
-        margin-bottom: 20px;
-    }
-
-    .section-inverse .more-stories .section-header {
-        color: #131313;
-    }
-
     .more-stories .opinion {
         color:#131313;
         font-weight: bold;
@@ -77,9 +20,8 @@ const Wrapper = s.div`
     .main-header {
         color: white;
         margin-top: 16px;
-        font-family: 'DM Serif Display', serif;
+        ${DM_SERIF_DISPLAY_REGULAR}
     }
-
 
     .section-inverse .main-header {
         color: #131313;
@@ -88,7 +30,7 @@ const Wrapper = s.div`
     /* use h4 */
     .primary-story {
         color: white;
-        font-family: 'DM Serif Display', serif;
+        ${DM_SERIF_DISPLAY_REGULAR}
         font-size: 22px;
     }
 
@@ -122,7 +64,7 @@ const Wrapper = s.div`
     /* use h5 */
     .secondary-story{
         color: white;
-        font-family: 'DM Serif Display', serif;
+        ${DM_SERIF_DISPLAY_REGULAR}
         font-size: 18px;
     }
 
@@ -156,18 +98,9 @@ const Wrapper = s.div`
         margin-bottom: 40px;
     }
 
-    .multimedia-header {
-        color: #ffffff;
-        font-family: 'DM Serif Display', serif;
-        font-size: 52px;
-        font-style: italic;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
     .column-title {
         color: #E7525F;
-        font-family: 'Open Sans', sans-serif;
+        ${OPEN_SANS_BOLD}
         font-size: 16px;
         font-weight: bold;
         margin-bottom: 12px;
@@ -175,7 +108,7 @@ const Wrapper = s.div`
 
     .opinion-title {
         color:#131313;
-        font-family: 'DM Serif Display', serif;
+        ${DM_SERIF_DISPLAY_REGULAR}
         font-size: 28px;
         margin-bottom: 12px;
     }
@@ -228,6 +161,7 @@ const Wrapper = s.div`
         margin-bottom: 60px;
         padding-bottom: 30px;
         padding-right: 20px;
+        ${OPEN_SANS_REGULAR}
     }
 
     .opinion-card-img {
@@ -242,20 +176,17 @@ const Wrapper = s.div`
     }
 
     .more-columns p {
-            color: #8E929F;
-            font-weight: bold;
-            font-size: 14px;
-            margin-top: 20px;
+        color: #8E929F;
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: 20px;
     }
 
     .section-description {
+        ${OPEN_SANS_REGULAR}
         max-width: 60%;
         margin: 16px auto 64px;
         text-align: center;
-    }
-
-    .spacer {
-        margin-bottom: 50px;
     }
 
     .more-stories {
@@ -299,6 +230,7 @@ const Wrapper = s.div`
     }
 
     .section-main-text {
+        ${OPEN_SANS_REGULAR}
         color: #f7f7f7;
         margin-top: 15px;
         line-height: 1.6;
@@ -309,6 +241,7 @@ const Wrapper = s.div`
     }
 
     .date {
+        ${OPEN_SANS_REGULAR}
         color: #CFD3DD;
     }
 
@@ -379,16 +312,13 @@ const Wrapper = s.div`
     .narrow-col-left {
         padding-left: 24px;
     }
+`
 
-    @media screen and (max-width: 576px) {
-        
-    }
-
-    .footer {
-        text-align: center;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
+const Footer = s.div`
+    ${OPEN_SANS_REGULAR}
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 `
 
 const Index = () => (
@@ -413,24 +343,13 @@ const Index = () => (
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></link>
     </Helmet>
     <Wrapper>
-      <section className="header-section d-flex flex-column">
-        <div>
-          <h1>2019</h1>
-        </div>
-        <div>
-          <h2>Year <em>in</em> Review</h2>
-        </div>
-        <div class="header-description">
-          <p>2019 at Penn was a year to remember. This year saw Penn take center stage in national news, when former Penn men’s basketball coach Jerome Allen was ensnared in the college admissions scandal and when two former Penn professors launched their presidential campaigns. On campus, students challenged the administration on multiple fronts. Fossil Free Penn demanded climate action at a Board of Trustees meeting, students protested Penn Law professor Amy Wax’s controversial comments, and a petition postponed the renaming of Penn Law. Take a look back at this year’s most defining moments with The Daily Pennsylvanian’s Year in Review.</p>
-        </div>
-      </section>
+    <HeaderSection/>
     <NavBar/>
-
 
     {/* NEWS */}
     <section class="section" id="news">
       <div class="container">
-        <h5 class="section-header">PENN ADMISSIONS SCANDAL</h5>
+        <SubSectionHeader>PENN ADMISSIONS SCANDAL</SubSectionHeader>
         <div class="row">
             <div class="col-md-6 right-border narrow-col-right">
                 <img class="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/f880ab9e-bc8a-4f3d-a44b-541a31e6c13c.sized-1000x1000.jpg" />
@@ -484,7 +403,7 @@ const Index = () => (
             </div>
         </div>
         <div class="top-border more-stories">
-            <h5 class="section-header">MORE STORIES</h5>
+            <SubSectionHeader color={"white"}>MORE STORIES</SubSectionHeader>
             <div class="row">
                 <div class="col-md-3 right-border">
                     <a href="https://www.thedp.com/article/2019/03/penn-athletics-jerome-allen-philip-esformes-trial-update-bribery-basketball-morris" class="story-link">
@@ -517,7 +436,7 @@ const Index = () => (
 
     <section class="section-inverse">
         <div class="container">
-            <h5 class="section-header">SCHOOL RENAMINGS</h5>
+            <SubSectionHeader>SCHOOL RENAMINGS</SubSectionHeader>
             <div class="row">
                 <div class="col-md-6 right-border narrow-col-right">
                     <img class="img-fluid"
@@ -573,7 +492,7 @@ const Index = () => (
             </div>
 
             <div class="top-border more-stories">
-                <h5 class="section-header">MORE STORIES</h5>
+                <SubSectionHeader color={"#131313"}>MORE STORIES</SubSectionHeader>
                 <div class="row">
                     <div class="col-md-3 right-border">
                         <a href="https://www.thedp.com/article/2019/02/penn-design-stuart-weitzman-donation-fashion-philadelphia" class="story-link">
@@ -607,7 +526,7 @@ const Index = () => (
     {/* NEWS 3 */}
     <section class="section">
         <div class="container">
-            <h5 class="section-header">AMY WAX BACKLASH</h5>
+            <SubSectionHeader>AMY WAX BACKLASH</SubSectionHeader>
             <div class="row">
                 <div class="col-md-6 right-border narrow-col-right">
                     <img class="img-fluid"
@@ -652,7 +571,7 @@ const Index = () => (
             </div>
 
             <div class="top-border more-stories">
-                <h5 class="section-header">MORE STORIES</h5>
+                <SubSectionHeader color={"white"}>MORE STORIES</SubSectionHeader>
                 <div class="row">
                     <div class="col-md-3 right-border">
                         <a href="https://www.thedp.com/article/2019/07/penn-amy-wax-national-conservatism-conference-immigration-racism" class="story-link">
@@ -686,7 +605,7 @@ const Index = () => (
     {/* <!-- NEWS 4--> */}
     <section class="section-inverse">
             <div class="container">
-                <h5 class="section-header">STUDENTS PUSH FOR CLIMATE CHANGE</h5>
+                <SubSectionHeader color={""}>STUDENTS PUSH FOR CLIMATE CHANGE</SubSectionHeader>
                 <div class="row">
                     <div class="col-md-6 right-border narrow-col-right">
                         <img class="img-fluid"
@@ -731,7 +650,7 @@ const Index = () => (
                 </div>
 
             <div class="top-border more-stories">
-                <h5 class="section-header">MORE STORIES</h5>
+                <SubSectionHeader color={"#131313"}>MORE STORIES</SubSectionHeader>
                 <div class="row">
                     <div class="col-md-3 right-border">
                         <a href="https://www.thedp.com/article/2019/09/climate-strike-philadelphia-fossil-free-penn" class="story-link">
@@ -759,32 +678,30 @@ const Index = () => (
                     </div>
                 </div>
             </div>
-
             <div class="top-border more-stories">
-                    <h5 class="section-header">PHOTO GALLERIES</h5>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <a href="https://www.thedp.com/article/2019/09/climate-change-strike-philadelphia-philly-penn-protest-march-photo-gallery">
-                                <img class="img-fluid photo-gallery" src="https://snworksceo.imgix.net/dpn/708b89e3-630c-477b-bc3a-5d05932b1427.original.jpg" />
-                                <h4 class="primary-story">Highlights from the 2019 Philadelphia Climate Strike</h4>
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="https://www.thedp.com/article/2019/11/photo-essay-fossil-free-penn-board-of-trustees-meeting">
-                                <img class="img-fluid photo-gallery" src="https://snworksceo.imgix.net/dpn/0c0aae5d-a26c-4fbb-8693-c2abc211ab2b.original.jpg" />
-                                <h4 class="primary-story">The Fossil Free Penn protest that shut down Board of Trustees meeting</h4>
-                            </a>
-                        </div>
+                <SubSectionHeader color={"#131313"}>PHOTO GALLERIES</SubSectionHeader>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="https://www.thedp.com/article/2019/09/climate-change-strike-philadelphia-philly-penn-protest-march-photo-gallery">
+                            <img class="img-fluid photo-gallery" src="https://snworksceo.imgix.net/dpn/708b89e3-630c-477b-bc3a-5d05932b1427.original.jpg" />
+                            <h4 class="primary-story">Highlights from the 2019 Philadelphia Climate Strike</h4>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://www.thedp.com/article/2019/11/photo-essay-fossil-free-penn-board-of-trustees-meeting">
+                            <img class="img-fluid photo-gallery" src="https://snworksceo.imgix.net/dpn/0c0aae5d-a26c-4fbb-8693-c2abc211ab2b.original.jpg" />
+                            <h4 class="primary-story">The Fossil Free Penn protest that shut down Board of Trustees meeting</h4>
+                        </a>
                     </div>
                 </div>
-    
+            </div>
         </div>
     </section>
 
     {/* <!-- NEWS 5--> */}
     <section class="section">
             <div class="container">
-                <h5 class="section-header">2020 PRESIDENTIAL CAMPAIGNS</h5>
+                <SubSectionHeader>2020 PRESIDENTIAL CAMPAIGNS</SubSectionHeader>
                 <div class="row">
                     <div class="col-md-6 right-border narrow-col-right">
                         <img class="img-fluid"
@@ -818,7 +735,7 @@ const Index = () => (
                 </div>    
 
             <div class="top-border more-stories">
-                <h5 class="section-header">MORE STORIES</h5>
+                <SubSectionHeader color={"white"}>MORE STORIES</SubSectionHeader>
                 <div class="row">
                     <div class="col-md-3 right-border">
                         <a href="https://www.thedp.com/article/2019/02/michael-cohen-testimony-donald-trump-wharton-penn-college-grades" class="story-link">
@@ -852,7 +769,7 @@ const Index = () => (
     {/* <!-- NEWS 6--> */}
     <section class="section-inverse">
             <div class="container">
-                <h5 class="section-header">NEW BUILDINGS</h5>
+                <SubSectionHeader>NEW BUILDINGS</SubSectionHeader>
                 <div class="row">
                     <div class="col-md-6 right-border narrow-col-right">
                         <img class="img-fluid"
@@ -897,7 +814,7 @@ const Index = () => (
                 </div>
 
             <div class="top-border more-stories">
-                <h5 class="section-header">MORE STORIES</h5>
+                <SubSectionHeader color={"#131313"}>MORE STORIES</SubSectionHeader>
                 <div class="row">
                     <div class="col-md-3 right-border">
                         <a href="https://www.thedp.com/article/2019/01/new-college-house-west-construction-penn-january-update" class="story-link">
@@ -931,7 +848,7 @@ const Index = () => (
     <section class="opinion" id="opinion">
         <div class="container">
             <div class="section-top">
-                <h1 class="section-header">Opinion</h1>
+                <SectionHeader>Opinion</SectionHeader>
             </div>
             <div class="section-description">
                 <p>This year, our columnists reacted to some of the most pressing issues affecting Penn students and the
@@ -1020,12 +937,13 @@ const Index = () => (
             </div>
         </div>
     </section>
+    {/* <OpinionSec/> */}
 
 {/* <!-- SPORTS --> */}
     {/* <!-- SPORTS 1--> */}
     <section class="section" id="sports">
             <div class="container">
-                <h5 class="section-header">VOLLEYBALL</h5>
+                <SubSectionHeader>VOLLEYBALL</SubSectionHeader>
                 <div class="row">
                     <div class="col-md-6 right-border narrow-col-right">
                         <img class="img-fluid"
@@ -1084,7 +1002,7 @@ const Index = () => (
     {/* <!-- SPORTS 2--> */}
         <section class="section-inverse">
             <div class="container">
-                <h5 class="section-header">FRANKLIN FIELD</h5>
+                <SubSectionHeader>FRANKLIN FIELD</SubSectionHeader>
                 <div class="row">
                     <div class="col-md-6 right-border narrow-col-right">
                         <img class="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/183bc931-cf87-45eb-bde8-2c315e521412.sized-1000x1000.jpg" />
@@ -1125,7 +1043,7 @@ const Index = () => (
                             </div>
                         </div>
                         <div class="top-border more-stories">
-                            <h5 class="section-header">MORE STORIES</h5>
+                            <SubSectionHeader color={"#131313"}>MORE STORIES</SubSectionHeader>
                             <a href="https://www.thedp.com/article/2019/08/125-years-franklin-field-anniversary-penn-track-and-field-penn-relays-jesse-owens-john-haines" class="story-link">
                                     <h6 class="secondary-story"> 125 years of Franklin Field: The birthplace of Penn Relays </h6>
                                 </a>
@@ -1143,7 +1061,7 @@ const Index = () => (
     {/* <!-- SPORTS 3--> */}
     <section class="section">
         <div class="container">
-            <h5 class="section-header">JEROME ALLEN</h5>
+            <SubSectionHeader>JEROME ALLEN</SubSectionHeader>
             <div class="row">
                 <div class="col-md-6 right-border narrow-col-right">
                     <img class="img-fluid"
@@ -1174,7 +1092,7 @@ const Index = () => (
                         </div>
                     </div>
                 <div class="top-border more-stories">
-                    <h5 class="section-header">MORE STORIES</h5>
+                    <SubSectionHeader color={"#131313"}>MORE STORIES</SubSectionHeader>
                     <a href="https://www.thedp.com/article/2019/07/jerome-allen-probation-accepting-bribes-penn-mens-basketball-college-admissions-scandal-esformes" class="story-link">
                             <h6 class="secondary-story"> Former Penn coach Jerome Allen avoids jail time in admissions bribery scandal </h6>
                         </a>
@@ -1197,7 +1115,7 @@ const Index = () => (
     {/* <!-- SPORTS 4--> */}
     <section class="section-inverse">
         <div class="container">
-            <h5 class="section-header">BASKETBALL</h5>
+            <SubSectionHeader>BASKETBALL</SubSectionHeader>
             <div class="row">
                 <div class="col-md-6 right-border narrow-col-right">
                     <img class="img-fluid"
@@ -1239,7 +1157,7 @@ const Index = () => (
                         </div>
                     </div>
                 <div class="top-border more-stories">
-                    <h5 class="section-header">MORE STORIES</h5>
+                    <SubSectionHeader color={"#131313"}>MORE STORIES</SubSectionHeader>
                     <a href="https://www.thedp.com/article/2019/03/penn-mens-basketball-ivy-league-tournament-madness-semifinal-recap-harvard" class="story-link">
                             <h6 class="secondary-story"> Penn men's basketball falls to Harvard, 66-58, in Ivy Tournament semifinals </h6>
                         </a>
@@ -1258,7 +1176,7 @@ const Index = () => (
     <section class="opinion" id="street">
             <div class="container">
                 <div class="section-top">
-                    <h1 class="section-header">34th Street</h1>
+                    <SectionHeader>34th Street</SectionHeader>
                 </div>
                 <div class="section-description">
                     <p>2019 is nearly over. And with the new decade comes reflection, retrospection, and some top picks. This decade gave us an onslaught of pop culture, and now Street has endeavored to choose the best of all of it — best movies, best albums, and best television shows from this year, based on staff’s picks.</p>
@@ -1288,33 +1206,10 @@ const Index = () => (
                 </div>
             </div>
         </section>
-
- {/* <!-- MULTIMEDIA--> */}
-    <section class="section" id="multimedia">
-            <div class="container">
-                <div class="section-top">
-                    <h1 class="multimedia-header">Multimedia</h1>
-                </div>
-                <div>
-                    <a href="https://www.thedp.com/article/2019/12/penn-decade-in-review-2010s-highlights-photo-essay-gallery">
-                        <img class="img-fluid photo-gallery" src="https://snworksceo.imgix.net/dpn/8baab047-09cd-40cf-9033-87fc736f07b8.original.jpg" />
-                        <h3 class="main-header">Photo Essay | Penn’s standout moments from the 2010s</h3>
-                    </a>
-                    <p class="section-main-text">The 2010s are coming to a close, and a lot has happened at Penn in the last decade. It was a decade of firsts: the first Penn alumnus to be to elected President of the United States, the first Philadelphia Eagles Super Bowl victory, and the first Women's March. There were several record-breaking and newsworthy athletic achievements. Important figures such as Pope Francis and LeBron James visited the University. And Penn's campus continued to expand with new construction projects.
-
-                            Take a look back at the past decade at Penn in photos.</p>
-                </div>
-                <div class="spacer"></div>
-                <div>
-                    <div class="embed-container d-flex justify-content-center">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/FMH7sXPXf7c" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> </div>
-                    <div>
-                </div>
-                    <h3 class="main-header mt-4">The Story of 2019</h3>
-                    <p class="section-main-text">As 2019 comes to a close, The Daily Pennsylvanian looked back on some of the highlights from the year.</p>
-                </div>
-            </div>
-        </section>
+        <MultiMedia/>
+        <Footer>
+            Made with 🎉 by The Daily Pennsylvanian, © 2018. All rights reversed.
+        </Footer>
     </Wrapper>
   </>
 )

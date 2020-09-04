@@ -48,6 +48,31 @@ export const ROBOTO_BOLD = `
   font-weight: 700;
 `
 
+export const OPEN_SANS_LIGHT = `
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+`
+
+export const OPEN_SANS_REGULAR = `
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+`
+
+export const OPEN_SANS_BOLD = `
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+`
+
+export const DM_SERIF_DISPLAY_BOLD = `
+  font-family: 'DM Serif Display', sans-serif;
+  font-weight: 700;
+`
+
+export const DM_SERIF_DISPLAY_REGULAR = `
+  font-family: 'DM Serif Display', sans-serif;
+  font-weight: 400;
+`
+
 export const GEORGIA_REGULAR = `font-family: 'Georgia', serif;`
 
 export const KARLA_REGULAR = `
