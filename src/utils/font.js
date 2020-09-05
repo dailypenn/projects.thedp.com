@@ -48,11 +48,6 @@ export const ROBOTO_BOLD = `
   font-weight: 700;
 `
 
-export const OPEN_SANS_LIGHT = `
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 100;
-`
-
 export const OPEN_SANS_REGULAR = `
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
