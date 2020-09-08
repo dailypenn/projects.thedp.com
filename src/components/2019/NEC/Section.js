@@ -241,14 +241,14 @@ const Section = ({ data }) => (
           The purpose of the four Class Boards is to provide social programming that instills a sense of class and school spirit, unity and pride, and breaks through social barriers.
           Each class popularly elects a president, executive vice president, vice president for internal affairs, vice president for external affairs, vice president for finance, and class chairs.
         </p>
-        <VoteBtn href="https://www.pennstudgov.com" target="_blank" class="vote-btn">Vote Here</VoteBtn>
+        <VoteBtn href="https://www.pennstudgov.com" target="_blank">Vote Here</VoteBtn>
       </Intro>
 
       <Branches>
-        <StyledLink to="/2019/03/NEC" class="branch-link vote-btn">Undergraduate Assembly</StyledLink>
-        <StyledLink to="/2019/03/NEC/cb20" class="branch-link">Class Board '20</StyledLink>
-				<StyledLink to="/2019/03/NEC/cb21" class="branch-link">Class Board '21</StyledLink>
-				<StyledLink to="/2019/03/NEC/cb22" class="branch-link">Class Board '22</StyledLink>
+        <StyledLink to="/2019/03/NEC">Undergraduate Assembly</StyledLink>
+        <StyledLink to="/2019/03/NEC/cb20">Class Board '20</StyledLink>
+				<StyledLink to="/2019/03/NEC/cb21">Class Board '21</StyledLink>
+				<StyledLink to="/2019/03/NEC/cb22">Class Board '22</StyledLink>
       </Branches>
 
       {Object.entries(data).map(([key, val]) => (

@@ -61,12 +61,6 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-load-script',
       options: {
-        src: '/join-script.js',
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-load-script',
-      options: {
         src: '/welcome-back-script.js',
       },
     }
