@@ -42,7 +42,16 @@ const Index = () => (
               }
               VP_External {
                 facebook_url
-                image_name
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
                 instagram_handle
                 introduction
                 name
@@ -52,7 +61,16 @@ const Index = () => (
               VP_Internal {
                 campaign_website
                 facebook_url
-                image_name
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
                 instagram_handle
                 introduction
                 name
@@ -61,7 +79,16 @@ const Index = () => (
               }
               VP_Finance {
                 facebook_url
-                image_name
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
                 instagram_handle
                 introduction
                 name
