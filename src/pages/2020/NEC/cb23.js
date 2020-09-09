@@ -33,7 +33,16 @@ const Index = () => (
               }
               Executive_VP {
                 facebook_url
-                
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
                 instagram_handle
                 name
                 introduction
@@ -43,6 +52,16 @@ const Index = () => (
               VP_External {
                 facebook_url
                 image_name
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
                 instagram_handle
                 introduction
                 name
@@ -53,6 +72,16 @@ const Index = () => (
                 campaign_website
                 facebook_url
                 image_name
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
                 instagram_handle
                 introduction
                 name
@@ -62,6 +91,16 @@ const Index = () => (
               VP_Finance {
                 facebook_url
                 image_name
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
                 instagram_handle
                 introduction
                 name

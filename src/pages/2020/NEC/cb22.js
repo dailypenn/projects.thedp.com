@@ -33,7 +33,16 @@ const Index = () => (
               }
               Executive_VP {
                 facebook_url
-                
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
                 instagram_handle
                 name
                 introduction
@@ -42,7 +51,16 @@ const Index = () => (
               }
               VP_External {
                 facebook_url
-              
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
                 instagram_handle
                 introduction
                 name
@@ -52,9 +70,18 @@ const Index = () => (
               VP_Internal {
                 campaign_website
                 facebook_url
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
                 instagram_handle
                 introduction
-                
                 name
                 youtube_video_url
                 platform_points

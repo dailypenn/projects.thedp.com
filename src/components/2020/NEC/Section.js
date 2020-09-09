@@ -141,7 +141,10 @@ const Candidates = ({ people, title }) => {
       <Category>
         {people.map(person => (
           <Candidate>
-            {person.image && <CandidateImage fluid={person.image.src.childImageSharp.fluid}/>}
+            {
+              (!person.image || !person.image.src) ? console.log(person.name) : ''
+            }
+            {person.image && person.image.src && <CandidateImage fluid={person.image.src.childImageSharp.fluid}/>}
             <CandidateName> {person.name} </CandidateName>
             <Icons>
             {/* replace with real social media links */}
