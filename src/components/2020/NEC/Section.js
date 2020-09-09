@@ -29,6 +29,11 @@ const Wrapper = s.div`
   h1, h2, h3, h4 {
     text-align: center;
   }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0;
+  }
 `
 
 const Intro = s.div`
@@ -196,6 +201,12 @@ const Filler = s.div`
     text-align: center;
     padding: 30px;
     margin: 0 200px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      padding: 5px;
+      margin: 0;
+    }
 `
 
 const Header = s.h1`
@@ -205,6 +216,10 @@ const Header = s.h1`
     padding-top: 50px;
     text-transform: uppercase;
     opacity: 1;
+
+    @media screen and (max-width: 768px) {
+      font: normal normal normal 35px/45px Tenor Sans
+    }
 `
 
 const SubHeader = s.p`
@@ -218,24 +233,14 @@ const SubHeader = s.p`
     border-bottom: 1px solid #000; 
     line-height: 0.1em;
     margin: 10px 0 20px;
+    @media screen and (max-width: 768px) {
+      border-bottom: 0; 
+      font: italic normal 600 16px/18px Cormorant;
+    }
 `
 const SubHeaderText = s.span` 
     background:#3AAEA9; 
     padding:0 10px; 
-`
-
-const IntroWrapper = s.span`
-color: #707070;
-font-size: 15px;
-${KARLA_REGULAR};
-    :before {
-      content: "[";
-      font-size:10em;
-    }
-    :after {
-      content: "]";
-      font-size:10em;
-    }
 `
 
 const IntroText = s.p`
