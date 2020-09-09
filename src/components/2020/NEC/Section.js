@@ -83,7 +83,7 @@ const Candidate = s.div`
   }
 `
 
-const Statement = s.p`
+const Statement = s.div`
   display: ${({ show }) => show ? 'block' : 'none'};
 `
 
@@ -141,9 +141,6 @@ const Candidates = ({ people, title }) => {
       <Category>
         {people.map(person => (
           <Candidate>
-            {
-              (!person.image || !person.image.src) ? console.log(person.name) : ''
-            }
             {person.image && person.image.src && <CandidateImage fluid={person.image.src.childImageSharp.fluid}/>}
             <CandidateName> {person.name} </CandidateName>
             <Icons>
@@ -168,7 +165,13 @@ const Candidates = ({ people, title }) => {
             <ToggleButton onClick={() => toggleShow(person.name)}>
               Read Platform Points{' >'} 
             </ToggleButton>
-            <Statement show={showPoints.has(person.name)}> {person.platform_points} </Statement>
+            <Statement show={showPoints.has(person.name)}> 
+              { 
+                person.platform_points.map((p, i) => (
+                  <p>{i + 1}) {p}</p>
+                ))
+              } 
+            </Statement>
           </Candidate>
         ))}
       </Category>
@@ -207,14 +210,67 @@ const SubHeader = s.p`
     color: #17242A;
     margin: 10px 0 20px; 
     opacity: 1;
-
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px;
 `
+const SubHeaderText = s.span` 
+    background:#3AAEA9; 
+    padding:0 10px; 
+`
+
+const IntroWrapper = s.span`
+color: #707070;
+font-size: 15px;
+${KARLA_REGULAR};
+    :before {
+      content: "[";
+      font-size:10em;
+    }
+    :after {
+      content: "]";
+      font-size:10em;
+    }
+`
+
 const IntroText = s.p`
     color: #707070;
     font-size: 15px;
-    ${KARLA_REGULAR}
-
+    ${KARLA_REGULAR};
 `
+const Brackets = s.div`
+  color: #707070;
+  font-size: 80%;
+  ${KARLA_REGULAR}
+
+  background-image:
+    linear-gradient(#2B7A77, #2B7A77),
+    linear-gradient(#2B7A77, #2B7A77),
+    linear-gradient(#2B7A77, #2B7A77),
+    linear-gradient(#2B7A77, #2B7A77);
+
+  background-repeat: no-repeat;
+  background-size: 8px 2px;
+  background-position: top left, top right, bottom left, bottom right;
+
+  border: solid #2B7A77;
+  text-align: center;
+  border-width: 0 2px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 2rem;
+  margin: 20px;
+`
+
+const BracketsText = ({ text }) => (
+    <Brackets>
+      {text.map(p => (
+        <IntroText>{ p }</IntroText>
+      ))}
+    </Brackets>
+)
 
 const Section = ({ data }) => (
   <>
@@ -256,7 +312,9 @@ const Section = ({ data }) => (
     <Wrapper>
       <Filler>
         <Header>NEC Candidate Center</Header>
-        <SubHeader>Presented by The Daily Pennsylvanian</SubHeader>
+        <SubHeader>
+          <SubHeaderText>Presented by The Daily Pennsylvanian</SubHeaderText>
+        </SubHeader>
       </Filler>
       <Intro>
         <div class="row">
@@ -292,14 +350,8 @@ const Section = ({ data }) => (
             {/* <VoteButton href="https://www.pennstudgov.com" target="_blank">VOTE HERE!</VoteButton> */}
           </div>
           <div class="col-md">
-            <IntroText>
-                The Undergraduate Assembly is the elected, representative branch of student government at Penn, charged with improving life for all students through funding, services, and advocacy.
-                The highest authority is the President of the student body, followed by the Vice President.
-                The UA Vice President oversees UA Steering, a group of influential student groups on campus that meet to discuss issues pertaining to student life.
-            </IntroText>
-            <IntroText>
-                The purpose of the four Class Boards is to provide social programming that instills a sense of class and school spirit, unity and pride, and breaks through social barriers. Each class popularly elects a president, executive vice president, vice president for internal affairs, vice president for external affairs, vice president for finance, and class chairs.
-            </IntroText>
+            <BracketsText  text = {["The Undergraduate Assembly is the elected, representative branch of student government at Penn, charged with improving life for all students through funding, services, and advocacy. The highest authority is the President of the student body, followed by the Vice President. The UA Vice President oversees UA Steering, a group of influential student groups on campus that meet to discuss issues pertaining to student life.",
+                "The purpose of the four Class Boards is to provide social programming that instills a sense of class and school spirit, unity and pride, and breaks through social barriers. Each class popularly elects a president, executive vice president, vice president for internal affairs, vice president for external affairs, vice president for finance, and class chairs."]}/>
           </div>
         </div>
       </Intro>
