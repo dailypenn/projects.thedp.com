@@ -88,7 +88,7 @@ const Statement = s.p`
 `
 
 const Icon = s.a`
-  margin: 10px 0;
+  margin: 5px 0;
 `
 
 const Icons = s.div`
@@ -145,18 +145,18 @@ const Candidates = ({ people, title }) => {
             <CandidateName> {person.name} </CandidateName>
             <Icons>
             {/* replace with real social media links */}
-                <a href={person.facebook_url} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
+                {person.facebook_url && <Icon href={person.facebook_url} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
                     <span className="navbar-toggler-icon"><img src="/icons/facebook.svg" /></span>
-                </a>
-                <Icon href={person.instagram_handle} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
+                </Icon>}
+                {person.instagram_handle && <Icon href={"https://instagram.com/" + person.instagram_handle} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
                     <span className="navbar-toggler-icon"><img src="/icons/instagram.svg" /></span>
-                </Icon>
-                <Icon href={person.youtube_video_url} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
+                </Icon>}
+                {person.youtube_video_url && <Icon href={person.youtube_video_url} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
                     <span className="navbar-toggler-icon"><img src="/icons/youtube.svg" /></span>
-                </Icon>
-                <Icon href={person.campaign_website} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
+                </Icon>}
+                {person.campaign_website && <Icon href={person.campaign_website} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
                     <span className="navbar-toggler-icon"><img src="/icons/globe.svg" /></span>
-                </Icon>
+                </Icon>}
             </Icons>
             <ToggleButton onClick={() => toggleShow(person.name, true)}>
               Introduction{' >'} 
