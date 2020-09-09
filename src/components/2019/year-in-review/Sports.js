@@ -1,7 +1,18 @@
 import React from 'react'
 import s from 'styled-components'
 
-import { MoreStories, Date, SectionMainText, PrimaryStory, StyledStoryLink, SecondaryStory, PrimaryStoryLine, SubSectionHeader, MainHeader } from './Typograph'
+import { 
+    MoreStories, 
+    Date, 
+    SectionMainText, 
+    PrimaryStory, 
+    StyledStoryLink, 
+    SecondaryStory, 
+    PrimaryStoryLine, 
+    SubSectionHeader, 
+    MoreStoriesHeader,
+    MainHeader,
+    Section } from './Typograph'
 
 const Wrapper = s.div`
     /* Util classes */
@@ -22,13 +33,7 @@ const Wrapper = s.div`
     }
 `
 
-const Section = s.div`
-    background-color: ${({ inverse }) => inverse ? "white" : "#131313"};
-    padding: ${({ inverse }) => inverse ? "80px 0px" : "120px 0px"};
-
-`
-const Sports = () => {
-  return (
+const Sports = () => (
     <Wrapper id="sports">
         <Section>
                 <div class="container">
@@ -43,7 +48,9 @@ const Sports = () => {
                         <div class="col-md-6 narrow-col-left">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <a href="https://www.thedp.com/article/2019/04/penn-volleyball-iain-braddak-athletics-mistreatment-mental-health-upenn-coach"><PrimaryStory> 'No one is listening': Under new coach, players lose hope amid alleged mistreatment </PrimaryStory></a>
+                                    <a href="https://www.thedp.com/article/2019/04/penn-volleyball-iain-braddak-athletics-mistreatment-mental-health-upenn-coach">
+                                        <PrimaryStory> 'No one is listening': Under new coach, players lose hope amid alleged mistreatment </PrimaryStory>
+                                    </a>
                                         <Date> Apr. 18 </Date>
                                 </div>
                                 <div class="col-md-6">
@@ -54,7 +61,9 @@ const Sports = () => {
                             <PrimaryStoryLine/>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <a href="https://www.thedp.com/article/2019/05/penn-volleyball-coach-iain-braddak-mistreatment-upenn-hiring-rudy-fuller-valenti"><PrimaryStory> Amid volleyball controversy, Penn Athletics stands with coach despite players' concerns </PrimaryStory></a>
+                                    <a href="https://www.thedp.com/article/2019/05/penn-volleyball-coach-iain-braddak-mistreatment-upenn-hiring-rudy-fuller-valenti">
+                                        <PrimaryStory> Amid volleyball controversy, Penn Athletics stands with coach despite players' concerns </PrimaryStory>
+                                    </a>
                                     <Date> May 5 </Date>
                                 </div>
                                 <div class="col-md-6">
@@ -65,7 +74,9 @@ const Sports = () => {
                             <PrimaryStoryLine/>
                             <div class="row">
                                     <div class="col-md-6">
-                                        <a href="https://www.thedp.com/article/2019/10/penn-volleyball-post-allegations-focus-margaret-planek-autumn-leak-iain-braddak"><PrimaryStory> After last spring's mediation efforts, Penn volleyball says its focus is on the future </PrimaryStory></a>
+                                        <a href="https://www.thedp.com/article/2019/10/penn-volleyball-post-allegations-focus-margaret-planek-autumn-leak-iain-braddak">
+                                            <PrimaryStory> After last spring's mediation efforts, Penn volleyball says its focus is on the future </PrimaryStory>
+                                        </a>
                                         <Date> Oct. 2 </Date>
                                     </div>
                                     <div class="col-md-6">
@@ -76,7 +87,9 @@ const Sports = () => {
                             <PrimaryStoryLine/>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <a href="https://www.thedp.com/article/2019/11/penn-volleyball-season-canceled-2019-posters"><PrimaryStory> Remainder of Penn volleyball's season canceled, Penn Athletics announces </PrimaryStory></a>
+                                    <a href="https://www.thedp.com/article/2019/11/penn-volleyball-season-canceled-2019-posters">
+                                        <PrimaryStory> Remainder of Penn volleyball's season canceled, Penn Athletics announces </PrimaryStory>
+                                    </a>
                                     <Date> Nov. 13 </Date>
                                 </div>
                                 <div class="col-md-6">
@@ -89,58 +102,64 @@ const Sports = () => {
             </Section>
 
         {/* <!-- SPORTS 2--> */}
-            <Section inverse={true}>
+            <Section inverse>
                 <div class="container">
                     <SubSectionHeader>FRANKLIN FIELD</SubSectionHeader>
                     <div class="row">
                         <div class="col-md-6 right-border-inverse narrow-col-right">
                             <img class="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/183bc931-cf87-45eb-bde8-2c315e521412.sized-1000x1000.jpg" />
-                            <MainHeader color={"#131313"}>Franklin Field Turns 125</MainHeader>
-                            <SectionMainText inverse={true}>Penn’s own Franklin Field turned 125 years old in 2019, and the party lasted all year long. From the Philadelphia Eagles to the service academies to the Red and Blue’s own squads, the Frank has been home to scores of teams across its history. But nowadays the stadium is arguably most full for the annual Penn Relays in late April, where thousands from around the world come to see the world’s best athletes compete in track and field. Penn football ushered in the historic milestone with commemorative all-red throwback uniforms, which they wore for select home games this season. Whether for football, sprint football, lacrosse, or track, Franklin Field will remain one of the nation’s most sacred venues for years to come.</SectionMainText>
+                            <MainHeader inverse>Franklin Field Turns 125</MainHeader>
+                            <SectionMainText inverse>Penn’s own Franklin Field turned 125 years old in 2019, and the party lasted all year long. From the Philadelphia Eagles to the service academies to the Red and Blue’s own squads, the Frank has been home to scores of teams across its history. But nowadays the stadium is arguably most full for the annual Penn Relays in late April, where thousands from around the world come to see the world’s best athletes compete in track and field. Penn football ushered in the historic milestone with commemorative all-red throwback uniforms, which they wore for select home games this season. Whether for football, sprint football, lacrosse, or track, Franklin Field will remain one of the nation’s most sacred venues for years to come.</SectionMainText>
                         </div>
                         <div class="col-md-6 narrow-col-left">
                             <div class="row">
                                 <div class="col-md-6">
-                                        <a href="https://www.thedp.com/article/2019/01/penn-football-125-years-franklin-field-celebration-campaign"><PrimaryStory inverse={true}> Yearlong celebration announced for Penn's Franklin Field </PrimaryStory></a>
-                                        <Date inverse={true}> Jan. 17 </Date>
+                                        <a href="https://www.thedp.com/article/2019/01/penn-football-125-years-franklin-field-celebration-campaign">
+                                            <PrimaryStory inverse> Yearlong celebration announced for Penn's Franklin Field </PrimaryStory>
+                                        </a>
+                                        <Date inverse> Jan. 17 </Date>
                                 </div>
                                 <div class="col-md-6">
                                     <img class="img-fluid"
                                         src="https://snworksceo.imgix.net/dpn/285580a4-2ee5-4715-bd17-b0f1b0018d6e.sized-1000x1000.jpg?w=1000" />
                                 </div>
                             </div>
-                            <PrimaryStoryLine inverse={true}/>
+                            <PrimaryStoryLine inverse/>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <a href="https://www.thedp.com/article/2019/04/penn-relays-track-125-history-owens-bannister-batdorf-haines"><PrimaryStory inverse={true}> 125 years strong: A look back at some of the biggest moments in Penn Relays history </PrimaryStory></a>
-                                    <Date inverse={true}> Apr. 24 </Date>
+                                    <a href="https://www.thedp.com/article/2019/04/penn-relays-track-125-history-owens-bannister-batdorf-haines">
+                                        <PrimaryStory inverse> 125 years strong: A look back at some of the biggest moments in Penn Relays history </PrimaryStory>
+                                    </a>
+                                    <Date inverse> Apr. 24 </Date>
                                 </div>
                                 <div class="col-md-6">
                                     <img class="img-fluid"
                                         src="https://snworksceo.imgix.net/dpn/5e5f7877-e726-4ca4-bb62-356f9716c9dd.sized-1000x1000.jpg?w=1000" />
                                 </div>
                             </div>
-                            <PrimaryStoryLine inverse={true}/>
+                            <PrimaryStoryLine inverse/>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <a href="https://www.thedp.com/article/2019/08/125-years-franklin-field-anniversary-penn-football-ivy-league-ncaa-george-h-woodruff-ray-priore"><PrimaryStory inverse={true}> 125 years of Franklin Field: The home of Penn football </PrimaryStory></a>
-                                    <Date inverse={true}> Aug. 8 </Date>
+                                    <a href="https://www.thedp.com/article/2019/08/125-years-franklin-field-anniversary-penn-football-ivy-league-ncaa-george-h-woodruff-ray-priore">
+                                        <PrimaryStory inverse> 125 years of Franklin Field: The home of Penn football </PrimaryStory>
+                                    </a>
+                                    <Date inverse> Aug. 8 </Date>
                                 </div>
                                 <div class="col-md-6">
                                     <img class="img-fluid"
                                         src="https://snworksceo.imgix.net/dpn/0b49deee-8069-446d-83ae-a04e26ae1de5.sized-1000x1000.jpg?w=1000" />
                                 </div>
                             </div>
-                            <MoreStories inverse={true}>
-                                <SubSectionHeader color={"#131313"}>MORE STORIES</SubSectionHeader>
+                            <MoreStories inverse>
+                                <MoreStoriesHeader inverse>MORE STORIES</MoreStoriesHeader>
                                 <StyledStoryLink href="https://www.thedp.com/article/2019/08/125-years-franklin-field-anniversary-penn-track-and-field-penn-relays-jesse-owens-john-haines"  >
-                                        <SecondaryStory inverse={true}> 125 years of Franklin Field: The birthplace of Penn Relays </SecondaryStory>
+                                        <SecondaryStory inverse> 125 years of Franklin Field: The birthplace of Penn Relays </SecondaryStory>
                                     </StyledStoryLink>
-                                <Date inverse={true}> Aug. 16 </Date>
+                                <Date inverse> Aug. 16 </Date>
                                 <StyledStoryLink href="https://www.thedp.com/article/2019/09/penn-football-throwback-uniforms-red-blue-franklin-field-125-anniversary"  >
-                                        <SecondaryStory inverse={true}> Penn football unveils throwback uniforms for 125th anniversary of Franklin Field </SecondaryStory>
+                                        <SecondaryStory inverse> Penn football unveils throwback uniforms for 125th anniversary of Franklin Field </SecondaryStory>
                                     </StyledStoryLink>
-                            <Date inverse={true}> Sep. 25 </Date>
+                            <Date inverse> Sep. 25 </Date>
                             </MoreStories>
                         </div>
                     </div>
@@ -155,13 +174,15 @@ const Sports = () => {
                     <div class="col-md-6 right-border narrow-col-right">
                         <img class="img-fluid"
                             src="https://s3.amazonaws.com/snwceomedia/dpn/3bdda7fa-b81f-4a72-9c12-f97b554f0373.sized-1000x1000.jpg" />
-                        <MainHeader>Jerome Allen scandal continues</MainHeader>
+                        <MainHeader inverse>Jerome Allen scandal continues</MainHeader>
                         <SectionMainText>While news of the scandal first broke in July of 2018, the Jerome Allen bribery scandal remains unresolved nearly a year and a half later. In March, Allen testified against Penn parent Philip Esformes in federal court, saying that Esformes bribed him in order to secure admission for his son, Morris, who graduated from Wharton in May. Allen’s testimony resulted in Esformes’ conviction, the implication of former Penn men’s basketball assistant coach Ira Bowman, Allen’s removal from the Penn Athletics Hall of Fame, and the avoidance of jail time for the charges against him. Allen, who was forced to pay over $200,000 in fines and forfeitures, pleaded guilty. Penn Athletics has not commented on Allen or its pending investigation into his conduct since July.</SectionMainText>
                     </div>
                     <div class="col-md-6 narrow-col-left">
                         <div class="row">
                             <div class="col-md-6">
-                                    <a href="https://www.thedp.com/article/2019/03/penn-athletics-jerome-allen-philip-esformes-trial-update-bribery-basketball-morris"><PrimaryStory> Updated: Former Penn coach Jerome Allen testifies, implicating former assistant </PrimaryStory></a>
+                                    <a href="https://www.thedp.com/article/2019/03/penn-athletics-jerome-allen-philip-esformes-trial-update-bribery-basketball-morris">
+                                        <PrimaryStory> Updated: Former Penn coach Jerome Allen testifies, implicating former assistant </PrimaryStory>
+                                    </a>
                                     <Date> Mar. 10 </Date>
                             </div>
                             <div class="col-md-6">
@@ -172,7 +193,9 @@ const Sports = () => {
                         <PrimaryStoryLine/>
                         <div class="row">
                             <div class="col-md-6">
-                                    <a href="https://www.thedp.com/article/2019/03/penn-jerome-allen-esformes-ira-bowman-smrt-investigation-bribery-scandal-ncaa-admission"><PrimaryStory> Penn Athletics declines to further comment on Jerome Allen investigation </PrimaryStory></a>
+                                    <a href="https://www.thedp.com/article/2019/03/penn-jerome-allen-esformes-ira-bowman-smrt-investigation-bribery-scandal-ncaa-admission">
+                                        <PrimaryStory> Penn Athletics declines to further comment on Jerome Allen investigation </PrimaryStory>
+                                    </a>
                                     <Date> Mar. 14 </Date>
                             </div>
                             <div class="col-md-6">
@@ -181,7 +204,7 @@ const Sports = () => {
                             </div>
                         </div>
                     <MoreStories>
-                        <SubSectionHeader color={"#131313"}>MORE STORIES</SubSectionHeader>
+                        <MoreStoriesHeader>MORE STORIES</MoreStoriesHeader>
                             <StyledStoryLink href="https://www.thedp.com/article/2019/07/jerome-allen-probation-accepting-bribes-penn-mens-basketball-college-admissions-scandal-esformes"  >
                                 <SecondaryStory> Former Penn coach Jerome Allen avoids jail time in admissions bribery scandal </SecondaryStory>
                             </StyledStoryLink>
@@ -202,59 +225,65 @@ const Sports = () => {
 
 
         {/* <!-- SPORTS 4--> */}
-        <Section inverse={true}>
+        <Section inverse>
             <div class="container">
                 <SubSectionHeader>BASKETBALL</SubSectionHeader>
                 <div class="row">
                     <div class="col-md-6 right-border-inverse narrow-col-right">
                         <img class="img-fluid"
                             src="https://s3.amazonaws.com/snwceomedia/dpn/ccf77784-1ddd-400d-879f-a48367e7475f.sized-1000x1000.jpg" />
-                        <MainHeader color={"#131313"}>Basketball has historic year</MainHeader>
-                        <SectionMainText inverse={true}>Penn men’s basketball started 2019 with a major milestone, winning its first Big 5 title since 2002 with a final win over Saint Joseph’s in January. Despite that success, however, the Quakers struggled in Ivy League play, clinching a spot in the Ivy Tournament on the final day of the regular season with a 7-7 record. The Red and Blue then lost to Harvard in the Tournament semifinal. Penn women’s basketball won a title of its own, sharing the Ivy League regular season championship with Princeton. However, the Quakers lost to the Tigers in the Ivy Tournament final, leaving them a game short of March Madness.</SectionMainText>
+                        <MainHeader inverse>Basketball has historic year</MainHeader>
+                        <SectionMainText inverse>Penn men’s basketball started 2019 with a major milestone, winning its first Big 5 title since 2002 with a final win over Saint Joseph’s in January. Despite that success, however, the Quakers struggled in Ivy League play, clinching a spot in the Ivy Tournament on the final day of the regular season with a 7-7 record. The Red and Blue then lost to Harvard in the Tournament semifinal. Penn women’s basketball won a title of its own, sharing the Ivy League regular season championship with Princeton. However, the Quakers lost to the Tigers in the Ivy Tournament final, leaving them a game short of March Madness.</SectionMainText>
                     </div>
                     <div class="col-md-6 narrow-col-left">
                         <div class="row">
                             <div class="col-md-6">
-                                <a href="https://www.thedp.com/article/2019/01/penn-mens-basketball-saint-josephs-big-5-washington-three-point-shooting-charlie-brown"><PrimaryStory inverse={true}> Penn men's basketball completes sweep of Big 5 opponents by beating Saint Joseph's, 78-70 </PrimaryStory></a>
-                                <Date inverse={true}> Jan. 26 </Date>
+                                <a href="https://www.thedp.com/article/2019/01/penn-mens-basketball-saint-josephs-big-5-washington-three-point-shooting-charlie-brown">
+                                    <PrimaryStory inverse> Penn men's basketball completes sweep of Big 5 opponents by beating Saint Joseph's, 78-70 </PrimaryStory>
+                                </a>
+                                <Date inverse> Jan. 26 </Date>
                             </div>
                             <div class="col-md-6">
                                 <img class="img-fluid"
                                     src="https://snworksceo.imgix.net/dpn/03db02a2-838b-4e0d-a3c6-e49aa8536999.sized-1000x1000.jpg?w=1000" />
                             </div>
                         </div>
-                        <PrimaryStoryLine inverse={true}/>
+                        <PrimaryStoryLine inverse/>
                         <div class="row">
                             <div class="col-md-6">
-                                <a href="https://www.thedp.com/article/2019/03/penn-mens-basketball-brown-recap-ivy-league-tournament-goodman-brodeur"><PrimaryStory inverse={true}> Penn men's basketball clinches Ivy Tournament berth with win over Brown </PrimaryStory></a>
-                                <Date inverse={true}> Mar. 9 </Date>
+                                <a href="https://www.thedp.com/article/2019/03/penn-mens-basketball-brown-recap-ivy-league-tournament-goodman-brodeur">
+                                    <PrimaryStory inverse> Penn men's basketball clinches Ivy Tournament berth with win over Brown </PrimaryStory>
+                                </a>
+                                <Date inverse> Mar. 9 </Date>
                             </div>
                             <div class="col-md-6">
                                 <img class="img-fluid"
                                     src="https://snworksceo.imgix.net/dpn/4bcf5f6e-896e-439a-a390-00304e0ccd83.sized-1000x1000.jpg?w=1000" />
                             </div>
                         </div>
-                        <PrimaryStoryLine inverse={true}/>
+                        <PrimaryStoryLine inverse/>
                         <div class="row">
                             <div class="col-md-6">
-                                <a href="https://www.thedp.com/article/2019/03/penn-womens-basketball-recap-brown-ivy-league-champions-parker-sterba"><PrimaryStory inverse={true}> Penn women's basketball overpowers last-place Brown to win share of Ivy League title </PrimaryStory></a>
-                                <Date inverse={true}> Mar. 9 </Date>
+                                <a href="https://www.thedp.com/article/2019/03/penn-womens-basketball-recap-brown-ivy-league-champions-parker-sterba">
+                                    <PrimaryStory inverse> Penn women's basketball overpowers last-place Brown to win share of Ivy League title </PrimaryStory>
+                                </a>
+                                <Date inverse> Mar. 9 </Date>
                             </div>
                             <div class="col-md-6">
                                 <img class="img-fluid"
                                     src="https://snworksceo.imgix.net/dpn/999b53a1-7e52-420c-9ec4-aaf30a5ffb54.sized-1000x1000.jpg?w=1000" />
                             </div>
                         </div>
-                    <MoreStories inverse={true}>
-                        <SubSectionHeader color={"#131313"}>MORE STORIES</SubSectionHeader>
+                    <MoreStories inverse>
+                        <MoreStoriesHeader inverse>MORE STORIES</MoreStoriesHeader>
                         <StyledStoryLink href="https://www.thedp.com/article/2019/03/penn-mens-basketball-ivy-league-tournament-madness-semifinal-recap-harvard"  >
-                                <SecondaryStory inverse={true}> Penn men's basketball falls to Harvard, 66-58, in Ivy Tournament semifinals </SecondaryStory>
+                                <SecondaryStory inverse> Penn men's basketball falls to Harvard, 66-58, in Ivy Tournament semifinals </SecondaryStory>
                             </StyledStoryLink>
-                        <Date inverse={true}> Mar. 16 </Date>
+                        <Date inverse> Mar. 16 </Date>
                         <StyledStoryLink href="https://www.thedp.com/article/2019/03/penn-womens-basketball-princeton-recap-ivy-league-championship-ncaa"  >
-                                <SecondaryStory inverse={true}> Penn women's basketball falls to Princeton in Ivy Tournament final, 65-54 </SecondaryStory>
+                                <SecondaryStory inverse> Penn women's basketball falls to Princeton in Ivy Tournament final, 65-54 </SecondaryStory>
                             </StyledStoryLink>
-                        <Date inverse={true}> Mar. 17 </Date>
+                        <Date inverse> Mar. 17 </Date>
                     </MoreStories>
                 </div>
                 </div>
@@ -262,6 +291,6 @@ const Sports = () => {
         </Section>
     </Wrapper>
   )
-}
+
 
 export default Sports

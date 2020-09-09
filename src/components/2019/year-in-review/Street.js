@@ -1,15 +1,19 @@
 import React from 'react'
 import s from 'styled-components'
 
-import { StreetCard, StreetHeader, SectionHeader, SectionDescription } from './Typograph'
+import { 
+    StreetCard, 
+    StreetHeader, 
+    SectionHeader, 
+    SectionDescription
+ } from './Typograph'
 
 const Wrapper = s.div`
     background-color: #F1F5FF;
     padding: 120px 0px;
 `
 
-const Street = () => {
-  return (
+const Street = () => (
       <Wrapper id="street">
             <div class="container">
                 <SectionHeader>34th Street</SectionHeader>
@@ -42,6 +46,5 @@ const Street = () => {
             </div>
       </Wrapper>
   )
-}
 
 export default Street

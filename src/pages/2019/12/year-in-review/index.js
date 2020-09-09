@@ -20,14 +20,12 @@ const Wrapper = s.div`
 const Footer = s.div`
     ${OPEN_SANS_REGULAR}
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0;
 `
 
 const Index = () => (
   <>
     <Helmet>
-        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Year In Review 2019 | The Daily Pennsylvanian</title>
 
@@ -56,7 +54,7 @@ const Index = () => (
         <Sports/>
         <Street/>
         <MultiMedia/>
-        <Footer> Made with 🎉 by The Daily Pennsylvanian, © 2018. All rights reversed. </Footer>
+        <Footer> Made with 🎉 by The Daily Pennsylvanian, © 2018. All rights reserved. </Footer>
     </Wrapper>
   </>
 )

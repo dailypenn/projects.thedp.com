@@ -5,14 +5,11 @@ import { OPEN_SANS_REGULAR, DM_SERIF_DISPLAY_BOLD } from '../../../utils/font'
 
 const Wrapper = s.section`
     height: calc(100vh - 150px);
-    max-width: 100%;
-    width: 100%;
-    background-color: white;
+    background-color: #ffffff;
     ${DM_SERIF_DISPLAY_BOLD}
     color: black;
     align-items: center;
     justify-content: center;
-  
 `
 
 const Header = s.h1`
@@ -33,8 +30,7 @@ const Description = s.p`
   ${OPEN_SANS_REGULAR}
 `
 
-const HeaderSection = () => {
-  return (
+const HeaderSection = () => (
     <Wrapper className="header-section d-flex flex-column">
       <Header>2019</Header>
       <SubHeader>Year <em>in</em> Review</SubHeader>
@@ -42,7 +38,7 @@ const HeaderSection = () => {
         2019 at Penn was a year to remember. This year saw Penn take center stage in national news, when former Penn men’s basketball coach Jerome Allen was ensnared in the college admissions scandal and when two former Penn professors launched their presidential campaigns. On campus, students challenged the administration on multiple fronts. Fossil Free Penn demanded climate action at a Board of Trustees meeting, students protested Penn Law professor Amy Wax’s controversial comments, and a petition postponed the renaming of Penn Law. Take a look back at this year’s most defining moments with The Daily Pennsylvanian’s Year in Review.
       </Description>
     </Wrapper>
-  )
-}
+)
+
 
 export default HeaderSection
