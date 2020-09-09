@@ -12,9 +12,8 @@ const Index = () => (
           nodes {
             childNecJson {
               President {
-                name
-                statement
-                endorsements
+                campaign_website
+                facebook_url
                 image {
                   src {
                     childImageSharp {
@@ -25,76 +24,59 @@ const Index = () => (
                     }
                   }
                 }
-              }
-
-              Executive_Vice_President {
+                instagram_handle
+                introduction
                 name
-                statement
-                endorsements
-                image {
-                  src {
-                    childImageSharp {
-                      fluid(maxWidth: 400, maxHeight: 400) {
-                        ...GatsbyImageSharpFluid
-                        src
-                      }
-                    }
-                  }
-                }
+                platform_points
+                photo
+                youtube_video_url
               }
-
-              Vice_President_of_External_Affairs {
+              Executive_VP {
+                facebook_url
+                
+                instagram_handle
                 name
-                statement
-                endorsements
-                image {
-                  src {
-                    childImageSharp {
-                      fluid(maxWidth: 400, maxHeight: 400) {
-                        ...GatsbyImageSharpFluid
-                        src
-                      }
-                    }
-                  }
-                }
+                introduction
+                platform_points
+                youtube_video_url
               }
-        
-              Vice_President_of_Finance {
+              VP_External {
+                facebook_url
+                image_name
+                instagram_handle
+                introduction
                 name
-                statement
-                endorsements
-                image {
-                  src {
-                    childImageSharp {
-                      fluid(maxWidth: 400, maxHeight: 400) {
-                        ...GatsbyImageSharpFluid
-                        src
-                      }
-                    }
-                  }
-                }
+                platform_points
+                youtube_video_url
               }
-  
-              Vice_President_of_Internal_Affairs {
+              VP_Internal {
+                campaign_website
+                facebook_url
+                image_name
+                instagram_handle
+                introduction
                 name
-                statement
-                endorsements
-                image {
-                  src {
-                    childImageSharp {
-                      fluid(maxWidth: 400, maxHeight: 400) {
-                        ...GatsbyImageSharpFluid
-                        src
-                      }
-                    }
-                  }
-                }
+                youtube_video_url
+                platform_points
               }
-
+              VP_Finance {
+                facebook_url
+                image_name
+                instagram_handle
+                introduction
+                name
+                platform_points
+                youtube_video_url
+              }
               College_Chair {
+                facebook_url
+                image_name
+                introduction
+                instagram_handle
                 name
+                platform_points
                 statement
-                endorsements
+                youtube_video_url
                 image {
                   src {
                     childImageSharp {
@@ -106,11 +88,8 @@ const Index = () => (
                   }
                 }
               }
-
               Engineering_Chair {
-                name
-                statement
-                endorsements
+                facebook_url
                 image {
                   src {
                     childImageSharp {
@@ -121,28 +100,14 @@ const Index = () => (
                     }
                   }
                 }
-              }
-
-              Wharton_Chair {
+                instagram_handle
+                introduction
                 name
+                platform_points
                 statement
-                endorsements
-                image {
-                  src {
-                    childImageSharp {
-                      fluid(maxWidth: 400, maxHeight: 400) {
-                        ...GatsbyImageSharpFluid
-                        src
-                      }
-                    }
-                  }
-                }
               }
-
               Nursing_Chair {
-                name
-                statement
-                endorsements
+                facebook_url
                 image {
                   src {
                     childImageSharp {
@@ -153,6 +118,31 @@ const Index = () => (
                     }
                   }
                 }
+                instagram_handle
+                introduction
+                name
+                platform_points
+                statement
+                youtube_video_url
+              }
+              Wharton_Chair {
+                campaign_website
+                facebook_url
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
+                introduction
+                instagram_handle
+                name
+                platform_points
+                youtube_video_url
               }
             }
           }

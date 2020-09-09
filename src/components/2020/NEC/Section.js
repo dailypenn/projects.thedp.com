@@ -72,11 +72,12 @@ const NavBarLink = s.a`
 const Category = s.div`
   display: flex;
   flex-wrap: wrap;
+  padding: 0 30px;
   justify-content: center;
 `
 
 const Candidate = s.div`
-  width: 33%;
+  width: 30%;
   padding: 10px;
 
   @media screen and (max-width: 768px) {
@@ -130,25 +131,25 @@ const Candidates = ({ people, title }) => {
             <h3> {person.name} </h3>
             <Branches>
             {/* replace with real social media links */}
-                <Icon href="https://www.facebook.com" className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
+                <Icon href={person.facebook_url} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
                     <span className="navbar-toggler-icon"><img src="/icons/facebook.svg" /></span>
                 </Icon>
-                <Icon href="https://www.instagram.com" className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
+                <Icon href="" className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
                     <span className="navbar-toggler-icon"><img src="/icons/instagram.svg" /></span>
                 </Icon>
-                <Icon href="https://www.youtube.com" className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
+                <Icon href={person.youtube_video_url} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
                     <span className="navbar-toggler-icon"><img src="/icons/youtube.svg" /></span>
                 </Icon>
-                <Icon href="https://www.google.com" className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
+                <Icon href={person.campaign_website} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
                     <span className="navbar-toggler-icon"><img src="/icons/globe.svg" /></span>
                 </Icon>
             </Branches>
-            <p> <i> Endorsements: </i> {person.endorsements} </p>
+            <p> <i> INTRODUCTION: </i> {person.introduction} </p>
             <StatementButton onClick={() => toggleShow(person.name)}>
-              Read Statement
+              Read Platform Points
               <span> {showSet.has(person.name) ? '↑' : '↓'} </span>
             </StatementButton>
-            <Statement show={showSet.has(person.name)}> {person.statement} </Statement>
+            <Statement show={showSet.has(person.name)}> {person.platform_points} </Statement>
           </Candidate>
         ))}
       </Category>
@@ -172,6 +173,8 @@ const Branches = s.div`
 
 const StyledLink = s(Link)`
     padding: 5px 10px;
+    color: rgb(136, 136, 136);
+    text-decoration: none;
 `
 
 const Section = ({ data }) => (

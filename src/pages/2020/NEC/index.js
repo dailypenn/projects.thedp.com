@@ -11,10 +11,8 @@ const Index = () => (
         allFile(filter: {relativePath: {eq: "ua_2020.json"}}) {
           nodes {
             childNecJson {
-              UA_President {
-                name
-                statement
-                endorsements
+              Undergraduate_Assembly_President {
+                facebook_url
                 image {
                   src {
                     childImageSharp {
@@ -25,11 +23,14 @@ const Index = () => (
                     }
                   }
                 }
+                instagram_handle
+                introduction
+                name
+                platform_points
+                youtube_video_url
               }
-              UA_Vice_President {
-                name
-                statement
-                endorsements
+              Undergraduate_Assembly_VP {
+                facebook_url
                 image {
                   src {
                     childImageSharp {
@@ -40,11 +41,15 @@ const Index = () => (
                     }
                   }
                 }
+                instagram_handle
+                introduction
+                name
+                platform_points
+                youtube_video_url
               }
-              SAS_Representative {
-                name
-                statement
-                endorsements
+              College_of_Arts___Sciences_Representative {
+                campaign_website
+                facebook_url
                 image {
                   src {
                     childImageSharp {
@@ -55,11 +60,15 @@ const Index = () => (
                     }
                   }
                 }
+                introduction
+                instagram_handle
+                name
+                platform_points
+                youtube_video_url
               }
               Wharton_Representative {
-                name
-                statement
-                endorsements
+                campaign_website
+                facebook_url
                 image {
                   src {
                     childImageSharp {
@@ -70,11 +79,30 @@ const Index = () => (
                     }
                   }
                 }
+                instagram_handle
+                introduction
+                name
+                platform_points
+                youtube_video_url
+              }
+              SEAS_Representative {
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
+                introduction
+                name
+                platform_points
               }
               Nursing_Representative {
-                name
-                statement
-                endorsements
+                facebook_url
+                introduction
                 image {
                   src {
                     childImageSharp {
@@ -85,6 +113,10 @@ const Index = () => (
                     }
                   }
                 }
+                instagram_handle
+                name
+                platform_points
+                statement
               }
             }
           }
