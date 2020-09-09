@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "NEC Election",
+      "author": "Web Dev: Alex Go, Laurel Lee, Peter Chen | Design: Ava Cruz",
+      "section": "NEC Election",
+      "date": "Septemer 2020",
+      "description": "Read about the candidates for UA and 2021, 2022, and 2023 Class Boards.",
+      "sponsored": false,
+      "link": "/2020/NEC",
+      "image": "https://snworksceo.imgix.net/dpn/24007398-2064-463e-bb03-129867d0db63.sized-1000x1000.png",
+      "alt": "nec election"
+    },
+    {
       "title": "Welcome Back",
       "author": "Web Dev: Peter Chen | Design: Ava Cruz",
       "section": "Welcome Back",
@@ -21,7 +32,9 @@
       "link": "https://thedp-covid-19.herokuapp.com/",
       "image": "https://snworksceo.imgix.net/dpn/ffa1291a-df92-4ed0-8ce5-6ad3f04b082f.sized-1000x1000.png",
       "alt": "COVID-19"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "2019 Year in Review",
       "author": "Web Dev: Jess Tan, Daniel Salib, Design: Jess Tan",
@@ -32,9 +45,7 @@
       "link": "https://dailypenn.github.io/old.projects.thedp.com/2019/12/year-in-review/",
       "image": "https://s3.amazonaws.com/snwceomedia/dpn/c9f5bdfc-5a9d-450e-9a90-4e8ad3b04186.sized-1000x1000.jpg",
       "alt": "2019 Year in Review"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "Basketball Preview 2019 | DP Sports",
       "author": "Web Dev: Daniel Salib, Design: Gillian Diebold",
