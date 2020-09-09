@@ -41,6 +41,20 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2020/NEC`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2020/NEC`,
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
@@ -62,6 +76,12 @@ module.exports = {
       resolve: 'gatsby-plugin-load-script',
       options: {
         src: '/welcome-back-script.js',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/nec-script.js',
       },
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality

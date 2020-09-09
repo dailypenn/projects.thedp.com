@@ -19,6 +19,12 @@
 /* Montserrat font family */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
+/* Tenor Sans font family */
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans:wght@400&display=swap');
+
+/* Cormorant font family */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
