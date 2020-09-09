@@ -4,6 +4,11 @@ import s from 'styled-components'
 import { Helmet } from 'react-helmet'
 import { Link } from 'gatsby'
 
+import { KARLA_REGULAR, KARLA_BOLD } from '../../../utils/font'
+import { ClassButton,
+    ToggleButton,
+        VoteButton } from './Typograph'
+
 const Footer = s.footer`
   max-width: 1200px;
   margin: 20px auto;
@@ -19,7 +24,7 @@ const Wrapper = s.div`
   padding: 0;
   margin: 0;
   font-family: 'neuzeit-grotesk', sans-serif;
-  background: #F9F9F9;
+  background: #F5FAFA;
   
   h1, h2, h3, h4 {
     text-align: center;
@@ -28,25 +33,8 @@ const Wrapper = s.div`
 
 const Intro = s.div`
   max-width: 900px;
-  margin: 60px auto;
+  margin: 60px auto 30px;
   text-align: center;
-
-  h1 {
-    font-size: 2.5em;
-    margin: 10px 0;
-    font-weight: 700;
-    color: #aa1e22;
-  }
-
-  h3 {
-    margin: 0;
-    font-weight: 400;
-    color: #aa1e22;
-  }
-
-  p:last-of-type {
-    margin-bottom: 40px;
-  }
 `
 
 const NavBar = s.nav`
@@ -56,7 +44,6 @@ const NavBar = s.nav`
   width: 100%;
   padding: 10px;
   background-color: #FFF;
-  border-bottom: 1px solid #777;
   z-index: 200;
 
   img {
@@ -76,9 +63,19 @@ const Category = s.div`
   justify-content: center;
 `
 
+const CategoryTitle = s.h2`
+    text-align: center;
+    font: normal normal normal 35px/41px Tenor Sans;
+    letter-spacing: 0px;
+    color: #17242A;
+    margin-top: 20px;
+    text-transform: uppercase;
+    opacity: 1;
+`
+
 const Candidate = s.div`
-  width: 30%;
-  padding: 10px;
+  width: 33%;
+  padding: 10px 30px;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -86,55 +83,72 @@ const Candidate = s.div`
   }
 `
 
-const StatementButton = s.h4`
-  color: #888;
-  font-weight: 400;
-  cursor: pointer;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-`
-
 const Statement = s.p`
   display: ${({ show }) => show ? 'block' : 'none'};
 `
 
 const Icon = s.a`
-  margin: 10px;
+  margin: 10px 0;
 `
+
+const Icons = s.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`
+
+const CandidateName = s.h3`
+  color: #3AAEA9;
+  margin-top: 10px;
+  ${KARLA_BOLD}
+`
+
+const CandidateImage = s(Img)`
+  border-radius: 40px;
+`
+
 
 const Candidates = ({ people, title }) => {
   // candidate statement is shown if id in showSet
   const [showSet, setShowSet] = useState(new Set())
+  const [showPoints, setShowPoints] = useState(new Set())
 
-  const toggleShow = id => {
-    let newSet = new Set(showSet)
-    if (newSet.has(id)) {
-      newSet.delete(id)
-      setShowSet(newSet)
+  const toggleShow = (id, statement) => {
+    if (statement) {
+        let newSet = new Set(showSet)
+        if (newSet.has(id)) {
+            newSet.delete(id)
+            setShowSet(newSet)
+        } else {
+            newSet.add(id)
+            setShowSet(newSet)
+        }
     } else {
-      newSet.add(id)
-      setShowSet(newSet)
+        let newSet = new Set(showPoints)
+        if (newSet.has(id)) {
+            newSet.delete(id)
+            setShowPoints(newSet)
+        } else {
+            newSet.add(id)
+            setShowPoints(newSet)
+        }
     }
   }
 
   return (
     <>
-      <h2> {title} </h2>
+      <CategoryTitle> {title} </CategoryTitle>
       <Category>
         {people.map(person => (
           <Candidate>
-            {person.image && <Img fluid={person.image.src.childImageSharp.fluid} />}
-            <h3> {person.name} </h3>
-            <Branches>
+            {person.image && <CandidateImage fluid={person.image.src.childImageSharp.fluid}/>}
+            <CandidateName> {person.name} </CandidateName>
+            <Icons>
             {/* replace with real social media links */}
-                <Icon href={person.facebook_url} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
+                <a href={person.facebook_url} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
                     <span className="navbar-toggler-icon"><img src="/icons/facebook.svg" /></span>
-                </Icon>
-                <Icon href="" className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
+                </a>
+                <Icon href={person.instagram_handle} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
                     <span className="navbar-toggler-icon"><img src="/icons/instagram.svg" /></span>
                 </Icon>
                 <Icon href={person.youtube_video_url} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
@@ -143,13 +157,15 @@ const Candidates = ({ people, title }) => {
                 <Icon href={person.campaign_website} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
                     <span className="navbar-toggler-icon"><img src="/icons/globe.svg" /></span>
                 </Icon>
-            </Branches>
-            <p> <i> INTRODUCTION: </i> {person.introduction} </p>
-            <StatementButton onClick={() => toggleShow(person.name)}>
-              Read Platform Points
-              <span> {showSet.has(person.name) ? '↑' : '↓'} </span>
-            </StatementButton>
-            <Statement show={showSet.has(person.name)}> {person.platform_points} </Statement>
+            </Icons>
+            <ToggleButton onClick={() => toggleShow(person.name, true)}>
+              Introduction{' >'} 
+            </ToggleButton>
+            <Statement show={showSet.has(person.name)}> {person.introduction} </Statement>
+            <ToggleButton onClick={() => toggleShow(person.name)}>
+              Read Platform Points{' >'} 
+            </ToggleButton>
+            <Statement show={showPoints.has(person.name)}> {person.platform_points} </Statement>
           </Candidate>
         ))}
       </Category>
@@ -157,24 +173,44 @@ const Candidates = ({ people, title }) => {
   )
 }
 
-const VoteButton = s.a`
-	padding: 5px 10px;
-	border-radius: 2px;
-	background: #AA1E22;
-    color: #FFF;
-    text-decoration: none;
-`
-
 const Branches = s.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 30px;
 `
 
-const StyledLink = s(Link)`
-    padding: 5px 10px;
-    color: rgb(136, 136, 136);
-    text-decoration: none;
+const Filler = s.div`
+    background: #3AAEA9 0% 0% no-repeat padding-box;
+    border-radius: 67px;
+    opacity: 1;
+    text-align: center;
+    padding: 30px;
+    margin: 0 200px;
+`
+
+const Header = s.h1`
+    font: normal normal normal 55px/65px Tenor Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    padding-top: 50px;
+    text-transform: uppercase;
+    opacity: 1;
+`
+
+const SubHeader = s.p`
+    font: italic normal 600 18px/22px Cormorant;
+    letter-spacing: 0px;
+    color: #17242A;
+    margin: 10px 0 20px; 
+    opacity: 1;
+
+`
+const IntroText = s.p`
+    color: #707070;
+    font-size: 15px;
+    ${KARLA_REGULAR}
+
 `
 
 const Section = ({ data }) => (
@@ -197,36 +233,79 @@ const Section = ({ data }) => (
       <meta name="twitter:description" content="Read about the candidates for UA and 2021 2022, and 2023 Class Boards." />
       <meta name="twitter:url" content="https://projects.thedp.com/2020/NEC/" />
       <meta name="twitter:site" content="@dailypenn" />
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossOrigin="anonymous"></script>
+
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
     </Helmet>
     <header>
-      <NavBar>
+      <NavBar style={{
+        fontFamily: 'Libre Franklin',
+        backgroundColor: '#FFFFFF',
+        boxShadow: '0px 5px 6px #00000029',
+        opacity: 1
+      }}>
         <NavBarLink href="https://www.thedp.com/">
-          <img alt="The Daily Pennsylvanian" src="https://d1q35ni5859stt.cloudfront.net/20161213m1eLHQrMRG/dist/img/header-logo.svg" />
+          <img alt="The Daily Pennsylvanian" src="/img/DP-Logo-Full.png"  />
         </NavBarLink>
       </NavBar>
     </header>
 
     <Wrapper>
+      <Filler>
+        <Header>NEC Candidate Center</Header>
+        <SubHeader>Presented by The Daily Pennsylvanian</SubHeader>
+      </Filler>
       <Intro>
-        <h1>NEC Candidate Center</h1>
-        <h3>Presented by The Daily Pennsylvanian</h3>
-        <p>
-          The Undergraduate Assembly is the elected, representative branch of student government at Penn, charged with improving life for all students through funding, services, and advocacy.
-          The highest authority is the President of the student body, followed by the Vice President.
-          The UA Vice President oversees UA Steering, a group of influential student groups on campus that meet to discuss issues pertaining to student life.
-        </p>
-        <p>
-          The purpose of the four Class Boards is to provide social programming that instills a sense of class and school spirit, unity and pride, and breaks through social barriers.
-          Each class popularly elects a president, executive vice president, vice president for internal affairs, vice president for external affairs, vice president for finance, and class chairs.
-        </p>
-        <VoteButton href="https://www.pennstudgov.com" target="_blank">Vote Here</VoteButton>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <VoteButton>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                <defs>
+                    <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                    <feComposite in="SourceGraphic" in2="goo"/>
+                    </filter>
+                </defs>
+                </svg>
+
+                <span class="button--bubble__container">
+                <a href="https://www.pennstudgov.com" class="button button--bubble">
+                    Vote Here
+                </a>
+                <span class="button--bubble__effect-container">
+                    <span class="circle top-left"></span>
+                    <span class="circle top-left"></span>
+                    <span class="circle top-left"></span>
+
+                    <span class="button effect-button"></span>
+
+                    <span class="circle bottom-right"></span>
+                    <span class="circle bottom-right"></span>
+                    <span class="circle bottom-right"></span>
+                </span>
+                </span>
+            </VoteButton>
+            {/* <VoteButton href="https://www.pennstudgov.com" target="_blank">VOTE HERE!</VoteButton> */}
+          </div>
+          <div class="col-md">
+            <IntroText>
+                The Undergraduate Assembly is the elected, representative branch of student government at Penn, charged with improving life for all students through funding, services, and advocacy.
+                The highest authority is the President of the student body, followed by the Vice President.
+                The UA Vice President oversees UA Steering, a group of influential student groups on campus that meet to discuss issues pertaining to student life.
+            </IntroText>
+            <IntroText>
+                The purpose of the four Class Boards is to provide social programming that instills a sense of class and school spirit, unity and pride, and breaks through social barriers. Each class popularly elects a president, executive vice president, vice president for internal affairs, vice president for external affairs, vice president for finance, and class chairs.
+            </IntroText>
+          </div>
+        </div>
       </Intro>
 
       <Branches>
-        <StyledLink to="/2020/NEC" class="branch-link vote-btn">Undergraduate Assembly</StyledLink>
-		<StyledLink to="/2020/NEC/cb21" class="branch-link">Class Board '21</StyledLink>
-		<StyledLink to="/2020/NEC/cb22" class="branch-link">Class Board '22</StyledLink>
-        <StyledLink to="/2020/NEC/cb23" class="branch-link">Class Board '23</StyledLink>
+        <ClassButton to="/2020/NEC" class="branch-link vote-btn">Undergraduate Assembly</ClassButton>
+		<ClassButton to="/2020/NEC/cb21" class="branch-link">Class Board '21</ClassButton>
+		<ClassButton to="/2020/NEC/cb22" class="branch-link">Class Board '22</ClassButton>
+        <ClassButton to="/2020/NEC/cb23" class="branch-link">Class Board '23</ClassButton>
       </Branches>
 
       {Object.entries(data).map(([key, val]) => (
