@@ -85,6 +85,7 @@ const Candidate = s.div`
 
 const Statement = s.div`
   display: ${({ show }) => show ? 'block' : 'none'};
+  margin-bottom: 10px;
 `
 
 const Icon = s.a`
@@ -145,25 +146,27 @@ const Candidates = ({ people, title }) => {
             <CandidateName> {person.name} </CandidateName>
             <Icons>
             {/* replace with real social media links */}
-                {person.facebook_url && <Icon href={person.facebook_url} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
+                {person.facebook_url && <Icon href={person.facebook_url} className="navbar-toggler collapsed" target='_blank' type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
                     <span className="navbar-toggler-icon"><img src="/icons/facebook.svg" /></span>
                 </Icon>}
-                {person.instagram_handle && <Icon href={"https://instagram.com/" + person.instagram_handle} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
+                {person.instagram_handle && <Icon href={"https://instagram.com/" + person.instagram_handle} className="navbar-toggler collapsed" target='_blank' type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
                     <span className="navbar-toggler-icon"><img src="/icons/instagram.svg" /></span>
                 </Icon>}
-                {person.youtube_video_url && <Icon href={person.youtube_video_url} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
+                {person.youtube_video_url && <Icon href={person.youtube_video_url} className="navbar-toggler collapsed" target='_blank' type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
                     <span className="navbar-toggler-icon"><img src="/icons/youtube.svg" /></span>
                 </Icon>}
-                {person.campaign_website && <Icon href={person.campaign_website} className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
+                {person.campaign_website && <Icon href={person.campaign_website} className="navbar-toggler collapsed" target='_blank' type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
                     <span className="navbar-toggler-icon"><img src="/icons/globe.svg" /></span>
                 </Icon>}
             </Icons>
             <ToggleButton onClick={() => toggleShow(person.name, true)}>
-              Introduction{' >'} 
+              Introduction
+              <span> {showSet.has(person.name) ? ' ↑' : ' >'} </span>	
             </ToggleButton>
             <Statement show={showSet.has(person.name)}> {person.introduction} </Statement>
             <ToggleButton onClick={() => toggleShow(person.name)}>
-              Read Platform Points{' >'} 
+              Read Platform Points
+              <span> {showPoints.has(person.name) ? ' ↑' : ' >'} </span>	
             </ToggleButton>
             <Statement show={showPoints.has(person.name)}> 
               { 
@@ -331,7 +334,7 @@ const Section = ({ data }) => (
                 </svg>
 
                 <span class="button--bubble__container">
-                <a href="https://www.pennstudgov.com" class="button button--bubble">
+                <a target='_blank' href="https://www.pennstudgov.com" class="button button--bubble">
                     Vote Here
                 </a>
                 <span class="button--bubble__effect-container">
@@ -358,8 +361,8 @@ const Section = ({ data }) => (
 
       <Branches>
         <ClassButton to="/2020/NEC" class="branch-link vote-btn">Undergraduate Assembly</ClassButton>
-		<ClassButton to="/2020/NEC/cb21" class="branch-link">Class Board '21</ClassButton>
-		<ClassButton to="/2020/NEC/cb22" class="branch-link">Class Board '22</ClassButton>
+        <ClassButton to="/2020/NEC/cb21" class="branch-link">Class Board '21</ClassButton>
+        <ClassButton to="/2020/NEC/cb22" class="branch-link">Class Board '22</ClassButton>
         <ClassButton to="/2020/NEC/cb23" class="branch-link">Class Board '23</ClassButton>
       </Branches>
 
