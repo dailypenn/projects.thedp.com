@@ -75,13 +75,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-load-script',
       options: {
-        src: '/join-script.js',
+        src: '/welcome-back-script.js',
       },
     },
     {
       resolve: 'gatsby-plugin-load-script',
       options: {
-        src: '/welcome-back-script.js',
+        src: '/nec-script.js',
       },
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality

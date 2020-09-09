@@ -2,20 +2,17 @@ import React, { useState } from 'react'
 import Img from 'gatsby-image'
 import s from 'styled-components'
 import { Helmet } from 'react-helmet'
-import { Link } from 'gatsby'
 
 import { KARLA_REGULAR, KARLA_BOLD } from '../../../utils/font'
-import { ClassButton,
-    ToggleButton,
-        VoteButton } from './Typograph'
+import { ClassButton, ToggleButton, VoteButton } from './Typograph'
 
 const Footer = s.footer`
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 0 auto 20px auto;
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    margin: 20px 15px;
+    margin: 0 15px 20px 15px;
   }
 `
 
@@ -73,7 +70,7 @@ const CategoryTitle = s.h2`
     font: normal normal normal 35px/41px Tenor Sans;
     letter-spacing: 0px;
     color: #17242A;
-    margin-top: 20px;
+    margin-top: 3rem;
     text-transform: uppercase;
     opacity: 1;
 `
@@ -91,6 +88,8 @@ const Candidate = s.div`
 const Statement = s.div`
   display: ${({ show }) => show ? 'block' : 'none'};
   margin-bottom: 10px;
+  letter-spacing: -0.45px;
+  ${KARLA_REGULAR}
 `
 
 const Icon = s.a`
@@ -166,12 +165,12 @@ const Candidates = ({ people, title }) => {
             </Icons>
             <ToggleButton onClick={() => toggleShow(person.name, true)}>
               Introduction
-              <span> {showSet.has(person.name) ? ' ↑' : ' >'} </span>	
+              <span> {showSet.has(person.name) ? '↑' : '→'} </span>	
             </ToggleButton>
             <Statement show={showSet.has(person.name)}> {person.introduction} </Statement>
             <ToggleButton onClick={() => toggleShow(person.name)}>
               Read Platform Points
-              <span> {showPoints.has(person.name) ? ' ↑' : ' >'} </span>	
+              <span> {showPoints.has(person.name) ? '↑' : '→'} </span>	
             </ToggleButton>
             <Statement show={showPoints.has(person.name)}> 
               { 
@@ -239,8 +238,8 @@ const SubHeader = s.p`
     }
 `
 const SubHeaderText = s.span` 
-    background:#3AAEA9; 
-    padding:0 10px; 
+    background: #3AAEA9; 
+    padding: 0 10px; 
 `
 
 const IntroText = s.p`
@@ -289,18 +288,23 @@ const Section = ({ data }) => (
       <title>NEC Candidate Center | The Daily Pennsylvanian</title>
 
       <meta property="og:title" content="NEC Candidate Center Fall 2020" />
-      <meta property="og:image" content="https://snworksceo.imgix.net/dpn/cc71cb56-4feb-406c-b6a0-07b27aa36bf7.sized-1000x1000.png" />
+      <meta property="og:image" content="https://snworksceo.imgix.net/dpn/24007398-2064-463e-bb03-129867d0db63.sized-1000x1000.png" />
       <meta property="og:description" content="Read about the candidates for UA and 2021, 2022, and 2023 Class Boards." />
       <meta property="og:type" content="article" />
       <meta property="og:url" content="https://projects.thedp.com/2020/NEC/" />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="NEC Candidate Center Spring 2019" />
-      <meta name="twitter:image" content="https://snworksceo.imgix.net/dpn/cc71cb56-4feb-406c-b6a0-07b27aa36bf7.sized-1000x1000.png" />
+      <meta name="twitter:title" content="NEC Candidate Center Fall 2020" />
+      <meta name="twitter:image" content="https://snworksceo.imgix.net/dpn/24007398-2064-463e-bb03-129867d0db63.sized-1000x1000.png" />
       <meta name="twitter:description" content="Read about the candidates for UA and 2021 2022, and 2023 Class Boards." />
       <meta name="twitter:url" content="https://projects.thedp.com/2020/NEC/" />
       <meta name="twitter:site" content="@dailypenn" />
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossOrigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossOrigin="anonymous" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" />
 
       <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
     </Helmet>
@@ -339,7 +343,7 @@ const Section = ({ data }) => (
                 </svg>
 
                 <span class="button--bubble__container">
-                <a target='_blank' href="https://www.pennstudgov.com" class="button button--bubble">
+                <a target='_blank' href="https://www.pennstudgov.com" className="button button--bubble">
                     Vote Here
                 </a>
                 <span class="button--bubble__effect-container">
@@ -365,10 +369,10 @@ const Section = ({ data }) => (
       </Intro>
 
       <Branches>
-        <ClassButton to="/2020/NEC" class="branch-link vote-btn">Undergraduate Assembly</ClassButton>
-        <ClassButton to="/2020/NEC/cb21" class="branch-link">Class Board '21</ClassButton>
-        <ClassButton to="/2020/NEC/cb22" class="branch-link">Class Board '22</ClassButton>
-        <ClassButton to="/2020/NEC/cb23" class="branch-link">Class Board '23</ClassButton>
+        <ClassButton to="/2020/NEC">Undergraduate Assembly</ClassButton>
+        <ClassButton to="/2020/NEC/cb21">Class Board '21</ClassButton>
+        <ClassButton to="/2020/NEC/cb22">Class Board '22</ClassButton>
+        <ClassButton to="/2020/NEC/cb23">Class Board '23</ClassButton>
       </Branches>
 
       {Object.entries(data).map(([key, val]) => (
@@ -378,7 +382,7 @@ const Section = ({ data }) => (
 
     <Footer>
       <hr />
-      Made with ♡ by The Daily Pennsylvanian. © 2020. All rights reserved.
+      Made with 💝 by The Daily Pennsylvanian. © 2020. All rights reserved.
     </Footer>
   </>
 )
