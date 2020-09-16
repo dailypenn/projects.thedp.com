@@ -54,6 +54,14 @@ module.exports = {
         path: `${__dirname}/src/content/json/2020/NEC`,
       }
     },
+    // images for 2020/year-book
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/images/2020/year-book`,
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

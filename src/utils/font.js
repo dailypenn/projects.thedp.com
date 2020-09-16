@@ -76,3 +76,8 @@ export const FJALLA_REGULAR = `
   font-family: 'Fjalla One', sans-serif;
   font-weight: 400;
 `
+
+export const MONTSERRAT_REGULAR = `
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+`

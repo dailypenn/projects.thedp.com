@@ -25,6 +25,9 @@
 /* Cormorant font family */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600&display=swap');
 
+/* Montserrat font family */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
