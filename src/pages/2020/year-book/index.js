@@ -5,6 +5,9 @@ import s from 'styled-components'
 import Img from 'gatsby-image'
 
 import Nav from '../../../components/2020/year-book/Nav'
+import Sixty from '../../../components/2020/year-book/60s'
+import Seventy from '../../../components/2020/year-book/70s'
+
 import { MONTSERRAT_REGULAR } from '../../../utils/font'
 
 const Credit = s.div`
@@ -15,6 +18,10 @@ const Credit = s.div`
   font-size: 80%;
   margin-top: 2rem;
   text-align: center;
+`
+
+const Header = s(Img)`
+  margin: 60px;
 `
 
 const IndexPage = () => (
@@ -39,7 +46,7 @@ const IndexPage = () => (
       }
     `}
     render={data => {
-      const { headline, book } = data
+      const { headline, book} = data
       return (
         <>
           <Helmet>
@@ -67,17 +74,20 @@ const IndexPage = () => (
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossOrigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossOrigin="anonymous"></script>
           </Helmet>
-
           <Nav />
 
           <div className="row">
             <div className="col-md" style={{ padding: '1rem 5rem 2rem 5rem' }}>
-              <Img fluid={headline.childImageSharp.fluid} />
+              <Header fluid={headline.childImageSharp.fluid} />
             </div>
             <div className="col-md">
               <Img fluid={book.childImageSharp.fluid} />
             </div>
           </div>
+
+          <Sixty/>
+          <Seventy/>
+
 
           <Credit> Made with <span role="img"> 🎒</span> by The Daily Pennsylvanian © 2020. All rights reserved.  </Credit>
         </>

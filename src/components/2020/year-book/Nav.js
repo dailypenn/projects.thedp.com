@@ -34,7 +34,7 @@ const RightUL = s.ul`
   }
 `
 
-const NavBar = () => {
+const NavBar = (data) => {
   return (
     <nav
       className="navbar sticky-top navbar-expand-lg"
@@ -48,10 +48,10 @@ const NavBar = () => {
       <div className="navbar-collapse w-100 dual-collapse2 order-1 order-md-0 collapse">
         <LeftUL className="navbar-nav ml-auto text-center">
           <li className="nav-item active">
-            <Link className="nav-link" to="#featured"> <NavTextNew> 1960's </NavTextNew></Link>
+            <Link className="nav-link" to="#60s"> <NavTextNew> 1960's </NavTextNew></Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="#news"> <NavTextNew> 1970's </NavTextNew> </Link>
+            <Link className="nav-link" to="#70s"> <NavTextNew> 1970's </NavTextNew> </Link>
           </li>
         </LeftUL>
       </div>
