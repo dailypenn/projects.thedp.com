@@ -74,7 +74,7 @@ const Sixty = () => (
             }
           }
 
-          mainImg: file(relativePath: {eq: "f5ce4e3439c89eaa0e8b86991bee9f7f.jpg"}) {
+          mainImg: file(relativePath: {eq: "Photos/1960s/f5ce4e3439c89eaa0e8b86991bee9f7f.jpg"}) {
             childImageSharp {
               fluid(maxWidth: 1000) {
                 ...GatsbyImageSharpFluid
@@ -85,12 +85,12 @@ const Sixty = () => (
         }
       `}
       render={data => {
-        const { avrom, barbara, sidney, sixtyheadline } = data
+        const { avrom, barbara, sidney, sixtyheadline, mainImg } = data
         return (
             <>
               <div className="row" id="60s">
                 <div className="col-md">
-                  <Img src={sideImg} alt="sideImg"/>
+                  <Img fluid={mainImg.childImageSharp.fluid} alt="sideImg"/>
                 </div>
                 <div className="col-md">
                   <HeaderBackground>
