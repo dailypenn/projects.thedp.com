@@ -2,7 +2,6 @@ import React from 'react'
 import s from 'styled-components'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
-import sideImg from '../../../content/images/2020/year-book/Photos/1960s/dea2a414c512428eeb0afb3599304fba.jpg';
 
 import { ROBOTO_REGULAR } from '../../../utils/font'
 
@@ -34,8 +33,9 @@ const FancyAuthor = s(Img)`
   margin: 10px 0;
 `
 
-const SeventyHeader = s.div`
-  background-color: #6CB4AA;
+const PinkFiller = s.div`
+  background-color: #E9338A;
+  height: 40px;
 `
 
 const Sixty = () => (
@@ -74,23 +74,82 @@ const Sixty = () => (
             }
           }
 
-          mainImg: file(relativePath: {eq: "Photos/1960s/f5ce4e3439c89eaa0e8b86991bee9f7f.jpg"}) {
+          mainImg: file(relativePath: {eq: "Photos/1960s/Img1.jpg"}) {
             childImageSharp {
-              fluid(maxWidth: 1000) {
+              fluid(maxWidth: 800) {
                 ...GatsbyImageSharpFluid
               }
             }
           }
 
+          img2: file(relativePath: {eq: "Photos/1960s/img2.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+
+          img3: file(relativePath: {eq: "Photos/1960s/img3.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+
+          img4: file(relativePath: {eq: "Photos/1960s/img4.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+
+          img5: file(relativePath: {eq: "Photos/1960s/img5.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+
+          img6: file(relativePath: {eq: "Photos/1960s/img6.jpg"}) {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       `}
       render={data => {
-        const { avrom, barbara, sidney, sixtyheadline, mainImg } = data
+        const { avrom, barbara, img2, img3, img4, img5, img6, sidney, sixtyheadline, mainImg } = data
         return (
             <>
               <div className="row" id="60s">
                 <div className="col-md">
                   <Img fluid={mainImg.childImageSharp.fluid} alt="sideImg"/>
+                  <PinkFiller/>
+                  <div className="row" style={{height: "400px", display: "flex"}}>
+                    <div className="col-md">
+                      <Img fluid={img2.childImageSharp.fluid} alt="sideImg"/>
+                    </div>
+                    <div className="col-md">
+                      <Img fluid={img3.childImageSharp.fluid} alt="sideImg"/>
+                    </div>
+                    <div className="col-md">
+                      <Img fluid={img4.childImageSharp.fluid} alt="sideImg"/>
+                    </div>
+                  </div>
+                  <div className="row" style={{height: "400px", display: "flex"}}>
+                    <div className="col-md-8">
+                      <Img fluid={img5.childImageSharp.fluid} alt="sideImg"/>
+                    </div>
+                    <div className="col-md">
+                      <Img fluid={img6.childImageSharp.fluid} alt="sideImg"/>
+                    </div>
+                  </div>
                 </div>
                 <div className="col-md">
                   <HeaderBackground>
