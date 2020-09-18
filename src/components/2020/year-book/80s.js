@@ -141,7 +141,7 @@ const Eighties = () => (
                 <div class="main" style={{ float: 'right' }}>
                   <Header fluid={eightyheadline.childImageSharp.fluid}/>
                   <p style={{ textAlign: 'right' }}>
-                    The 80s were the decade of Madonna, MTV, and John Hughes movies. The hair was big, the clothes were neon, and the world was quickly entering into the new world of computer technology. Ronald Reagan occupied the Oval Office for most of the decade and Americans watched the news as the Communist Bloc began to disintegrate and the AIDs crisis tore through the country. In 1985, the Philadelphia Police Department bombed the headquarters of MOVE, a Black liberation group, just blocks from Penn’s campus. Flora Stewart (E ‘84) and Robin Briggs (C ‘89) remember University City back in the days of neon and Cyndi Lauper.
+                    The 80s were the decade of Madonna, MTV, and John Hughes movies. The hair was big, the clothes were neon, and the world was quickly entering into the new era of computer technology. Ronald Reagan occupied the Oval Office for most of the decade and Americans watched the news as the Communist Bloc began to disintegrate and the AIDs crisis tore through the country. In 1985, the Philadelphia Police Department <a href="https://collaborativehistory.gse.upenn.edu/stories/move-osage-avenue">bombed the headquarters</a> of MOVE, a Black liberation group, just blocks from Penn’s campus. Flora Stewart (E ’84) and Robin Briggs (C ’89) remember University City back in the days of neon and Cyndi Lauper.
                   </p>
                 </div>
                 <div className="row">

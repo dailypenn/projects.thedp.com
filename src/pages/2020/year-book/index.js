@@ -65,21 +65,21 @@ const IndexPage = () => (
             <meta charset="utf-8" />
             <meta http-equiv="X-UA-Compatible" content="IE=edge" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <meta name="description" content="Your guide for navigating this unprecedented virtual school year" />
-            <title>Year Book | The Daily Pennsylvanian</title>
+            <meta name="description" content="A look back on move-in, New Student Orientation, and fall at Penn over the past 50 years." />
+            <title>Remembering Dear Old Penn | The Daily Pennsylvanian</title>
             <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
             
             <meta property="og:title" content="Year Book | The Daily Pennsylvanian" />
-            <meta property="og:image" content="https://snworksceo.imgix.net/dpn/1fe2ce10-46fa-402e-a9f2-498cc011769b.sized-1000x1000.jpg" />
-            <meta property="og:description" content="Your guide for navigating this unprecedented virtual school year" />
+            <meta property="og:image" content="https://snworksceo.imgix.net/dpn-34s/bf6ebbed-3730-4eb1-8a94-21f5a136e2a4.sized-1000x1000.jpg" />
+            <meta property="og:description" content="A look back on move-in, New Student Orientation, and fall at Penn over the past 50 years." />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://projects.thedp.com/2020/welcome-back" />
+            <meta property="og:url" content="https://projects.thedp.com/2020/year-book/" />
 
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content="Welcome Back | The Daily Pennsylvanian" />
-            <meta name="twitter:image" content="https://snworksceo.imgix.net/dpn/1fe2ce10-46fa-402e-a9f2-498cc011769b.sized-1000x1000.jpg" />
-            <meta name="twitter:description" content="Your guide for navigating this unprecedented virtual school year" />
-            <meta name="twitter:url" content="https://projects.thedp.com/2020/welcome-back" />
+            <meta name="twitter:image" content="https://snworksceo.imgix.net/dpn-34s/bf6ebbed-3730-4eb1-8a94-21f5a136e2a4.sized-1000x1000.jpg" />
+            <meta name="twitter:description" content="A look back on move-in, New Student Orientation, and fall at Penn over the past 50 years." />
+            <meta name="twitter:url" content="https://projects.thedp.com/2020/year-book/" />
             <meta name="twitter:site" content="@dailypenn"></meta>
 
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossOrigin="anonymous"></script>

@@ -159,7 +159,7 @@ const Sixty = () => (
               <div className="col-md" style={{ padding: "0", margin: "0" }}>
                 <Img fluid={mainImg.childImageSharp.fluid} alt="sideImg"/>
                 <PinkFiller/>
-                <Row className="row" style={{marginBottom: "20px"}}>
+                <Row className="row" style={{ marginBottom: "20px" }}>
                   <div className="col-md">
                     <Image fluid={img2.childImageSharp.fluid} alt="sideImg"/>
                   </div>
@@ -190,11 +190,11 @@ const Sixty = () => (
                 </HeaderBackground>
                 <SixtyBody>
                   <p>
-                    The Kennedy assasination, the Vietnam War, the March on Washington, the Moon Landing, Bonnie and Clyde. The 1960’s were an era of social change, technological innovation, and the Summer of Love. In Philadelphia, trolleys rolled over cobblestone streets throughout the city and notorious police chief Frank Rizzo was on the rise. In 1960, a year at Penn cost $1,250. By 1969 it was $1,950. Undergraduate women and men were educated separately, with women attending College of Liberal Arts for Women. 
+                    The Kennedy assasination, the Vietnam War, the March on Washington, the Moon Landing, and Bonnie and Clyde. The 1960’s were an era of social change, technological innovation, and the Summer of Love. In Philadelphia, trolleys rolled over cobblestone streets throughout the city and notorious police chief Frank Rizzo was on the rise. In 1960, a year at Penn cost $1,250. By 1969 it was $1,950. Undergraduate women and men were educated separately, with women attending the College of Liberal Arts for Women. 
                   </p>
                   <FancyAuthor fluid={avrom.childImageSharp.fluid} />
                   <p>
-                    Avrom Doft (W ‘60), Barbara Russo (CW ‘68), and Sidney Rodbell (W ‘68) talk back-to-school 50 NSO seasons ago. Avrom Doft (W ‘60) “When my parents brought me down to Philly, I had never seen the campus. They dropped me off on a Sunday, and later that night at 1:30 in the morning, a few of the guys in my dorm picked up and went to a nightclub to see the Will Mastin Trio, starring Sammy Davis Jr. He was an entertainer who hung around with Frank Sinatra and Dean Martin. He was great. He went on at 1:30 and stayed on stage for two hours. I’ll never forget, that was my first night at Penn. 
+                    Avrom Doft (W ’60), Barbara Russo (CW ’68), and Sidney Rodbell (W ’68) talk back-to-school 50 seasons ago. Avrom Doft (W ‘60) “When my parents brought me down to Philly, I had never seen the campus. They dropped me off on a Sunday, and later that night at 1:30 in the morning, a few of the guys in my dorm picked up and went to a nightclub to see the Will Mastin Trio, starring Sammy Davis Jr. He was an entertainer who hung around with Frank Sinatra and Dean Martin. He was great. He went on at 1:30 and stayed on stage for two hours. I’ll never forget, that was my first night at Penn. 
                   </p>
                   <FancyAuthor fluid={barbara.childImageSharp.fluid} />
                   <p>
