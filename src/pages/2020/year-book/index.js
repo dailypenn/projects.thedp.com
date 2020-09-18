@@ -26,6 +26,16 @@ const Header = s(Img)`
   margin: 60px;
 `
 
+const Wrapper = s.div`
+  .main {
+    padding: 1rem 5rem 2rem 5rem;
+
+    @media (max-width: 768px) {
+      padding: 2rem 0 2rem 0;
+    }
+  }
+`
+
 const IndexPage = () => (
   <StaticQuery
     query={graphql`
@@ -78,10 +88,10 @@ const IndexPage = () => (
           </Helmet>
           <Nav />
 
-          <div className="row">
-            <div className="col-md" style={{ padding: '1rem 5rem 2rem 5rem' }}>
+          <div className="row" style={{ marginBottom: '1rem' }}>
+            <Wrapper className="col-md main">
               <Header fluid={headline.childImageSharp.fluid} />
-            </div>
+            </Wrapper>
             <div className="col-md">
               <Img fluid={book.childImageSharp.fluid} />
             </div>
