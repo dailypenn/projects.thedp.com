@@ -102,7 +102,7 @@ const IndexPage = () => (
           <Eighty/>
           <Ninety/>
 
-          <Credit> Made with <span role="img"> 🎒</span> by The Daily Pennsylvanian © 2020. All rights reserved.  </Credit>
+          <Credit> Made with <span role="img"> 💓 </span> by The Daily Pennsylvanian © 2020. All rights reserved.  </Credit>
         </>
       )
     }}

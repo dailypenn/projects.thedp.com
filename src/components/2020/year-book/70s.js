@@ -6,7 +6,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import { ROBOTO_REGULAR } from '../../../utils/font'
 
 const SeventyBody = s.div`
-  padding: 0 5rem;
+  padding: 0 4rem;
   font-size: 15px;
   ${ROBOTO_REGULAR}
 
@@ -22,6 +22,16 @@ const FancyAuthor = s(Img)`
 
 const Image = s(Img)`
   margin-bottom: 20px;
+`
+
+const Wrapper = s.div`
+  .main {
+    padding-right: 5rem;
+
+    @media (max-width: 768px) {
+      padding: 0 1rem;
+    }
+  }
 `
 
 const Sixtys = () => (
@@ -96,7 +106,7 @@ const Sixtys = () => (
       render={data => {
         const { img1, img2, img3, img4, img5, eileen, rainbow, seventyheadline } = data
         return (
-          <>
+          <Wrapper>
             <div className="row" id="70s">                   
               <div className="col">
                 <Img fluid={seventyheadline.childImageSharp.fluid} />
@@ -109,19 +119,19 @@ const Sixtys = () => (
                     As Billy Joel once famously sang, “Watergate, punk rock / Begin, Reagan, Palestine, terror on the airline.” The 1970s at Penn stood out distinctly from the buttoned-up early-60s. Students in bootcut jeans, long hair, and platform shoes walked up and down Locust as Penn’s campus rapidly expanded further into the neighborhood. “All in the Family” and “Happy Days” were the hottest shows on the air and Fleetwood Mac and Elton John ruled the radio waves. The environmental movement and women’s rights grew, as well as the anti-war movement throughout the decade. Eileen O’Brien (C ‘76) remembers her first move in and the excitement of being at Penn in the fall of 1973. 
                   </p>
                   <FancyAuthor fluid={eileen.childImageSharp.fluid}/>
-                  <p style={{ margin: '2rem 0 3rem 0' }}>
+                  <p style={{ margin: '2rem 0 1.5rem 0' }}>
                     “I arrived as a sophomore, I spent my freshman year at a different college. A high school friend drove me down and in a very friendly but fast-moving way - because everything was so new to me - dropped me off and helped me get things upstairs. I was on the fourth floor of what they used to call High Rise East. That was my first move-in. It was a little bit hectic but not bad. It was the fall of 1973, which may sound like 1873 now.” “I knew it would be a big change. I transferred specifically to get the big school experience and I could tell right away I was at a big school. I was there to go to school in a big city and meet a lot of people. It was not much of a party school, but I didn’t go there to get that or to get away from that, so it was kind of a non-factor.” “I was in one of those four person suites and somewhere over the first weekend I met my suite-mates as well as the four suite-mates across the hall. Two of the people who lived across the hall worked for the Daily Pennsylvanian, and that’s how I decided to go over. I would have gone over anyway but at least I could go over dropping names.”
                   </p>
                   <Image fluid={img1.childImageSharp.fluid} style={{ height: "330px", overflow: "hidden" }}/>
                 </SeventyBody>
               </div>
               <div className="col-md">
-                <Image fluid={img2.childImageSharp.fluid} style={{ height: "630px", overflow: "hidden" }}/>
+                <Image fluid={img2.childImageSharp.fluid} style={{ height: '630px', overflow: 'hidden' }}/>
                 <Image fluid={img3.childImageSharp.fluid} style={{ height: '360px' }}/>
               </div>
-              <div className="col-md" style={{ paddingRight: '5rem' }}>
-                <Image fluid={img4.childImageSharp.fluid} />
-                <Image fluid={img5.childImageSharp.fluid} style={{ height: "590px", overflow: "hidden" }}/>
+              <div className="col-md main">
+                <Image fluid={img4.childImageSharp.fluid} style={{ height: '490px', overflow: "hidden" }} />
+                <Image fluid={img5.childImageSharp.fluid} style={{ height: '500px', overflow: "hidden" }}/>
               </div>
             </div>
             <div className="row" id="70s">                   
@@ -129,7 +139,7 @@ const Sixtys = () => (
                 <Img fluid={rainbow.childImageSharp.fluid} />
               </div>
             </div>
-          </>
+          </Wrapper>
         )
       }}
     />

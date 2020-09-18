@@ -58,23 +58,7 @@ const Nineties = () => (
             }
           }
 
-          img1: file(relativePath: {eq: "Photos/1990s/img1.jpg"}) {
-            childImageSharp {
-              fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-
-          img2: file(relativePath: {eq: "Photos/1990s/img2.jpg"}) {
-            childImageSharp {
-              fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-
-          img3: file(relativePath: {eq: "Photos/1990s/img3.jpg"}) {
+          main: file(relativePath: {eq: "Photos/1990s/main.png"}) {
             childImageSharp {
               fluid(maxWidth: 800) {
                 ...GatsbyImageSharpFluid
@@ -100,11 +84,11 @@ const Nineties = () => (
         }
       `}
       render={data => {
-        const { asima, rebecca, img1, img2, img3, accent, ninetyheadline } = data
+        const { asima, rebecca, main, accent, ninetyheadline } = data
         return (
             <>
               <div className="row" id="90s">      
-                <SeventyColumn className="col-md-5" style={{padding: "0", margin: "0"}}>
+                <SeventyColumn className="col-md-6" style={{padding: "0", margin: "0"}}>
                   <ImgWrapper>
                     <NinetyHeader fluid={ninetyheadline.childImageSharp.fluid} />
                   </ImgWrapper>
@@ -132,12 +116,8 @@ const Nineties = () => (
                     </p>
                   </SeventyBody>
                 </SeventyColumn>             
-                <div className="col" style={{margin: "10px 0", backgroundImage: `url(${accentImage})`}}>
-                    <div style={{width: "60%"}}>
-                    <Img fluid={img1.childImageSharp.fluid} />
-                    <Img fluid={img2.childImageSharp.fluid}/>
-                    <Img fluid={img3.childImageSharp.fluid}/>
-                    </div>
+                <div className="col" style={{ paddingRight: '2rem' }}>
+                  <Img fluid={main.childImageSharp.fluid} />
                 </div>
               </div>
             </>

@@ -19,7 +19,7 @@ const HeaderBackground = s.div`
 `
 
 const SixtyBody = s.div`
-  padding: 0 10rem;
+  padding: 0 5rem;
   margin-top: 3rem;
 
   @media (max-width: 768px) {
@@ -184,19 +184,19 @@ const Sixty = () => (
               
               <SixtyColumn className="col-md" style={{ padding: '0', margin: '0' }}>
                 <HeaderBackground>
-                  <div style={{ padding: '0 5rem' }}>
-                    <SixtyHeader fluid={sixtyheadline.childImageSharp.fluid} />
+                  <div style={{ padding: '3rem' }}>
+                    <SixtyHeader fluid={sixtyheadline.childImageSharp.fluid} style={{ display: 'block', margin: '0 auto' }} />
                   </div>
                 </HeaderBackground>
                 <SixtyBody>
                   <p>
                     The Kennedy assasination, the Vietnam War, the March on Washington, the Moon Landing, Bonnie and Clyde. The 1960’s were an era of social change, technological innovation, and the Summer of Love. In Philadelphia, trolleys rolled over cobblestone streets throughout the city and notorious police chief Frank Rizzo was on the rise. In 1960, a year at Penn cost $1,250. By 1969 it was $1,950. Undergraduate women and men were educated separately, with women attending College of Liberal Arts for Women. 
                   </p>
-                  <FancyAuthor fluid ={avrom.childImageSharp.fluid}/>
+                  <FancyAuthor fluid={avrom.childImageSharp.fluid} />
                   <p>
                     Avrom Doft (W ‘60), Barbara Russo (CW ‘68), and Sidney Rodbell (W ‘68) talk back-to-school 50 NSO seasons ago. Avrom Doft (W ‘60) “When my parents brought me down to Philly, I had never seen the campus. They dropped me off on a Sunday, and later that night at 1:30 in the morning, a few of the guys in my dorm picked up and went to a nightclub to see the Will Mastin Trio, starring Sammy Davis Jr. He was an entertainer who hung around with Frank Sinatra and Dean Martin. He was great. He went on at 1:30 and stayed on stage for two hours. I’ll never forget, that was my first night at Penn. 
                   </p>
-                  <FancyAuthor fluid ={barbara.childImageSharp.fluid}/>
+                  <FancyAuthor fluid={barbara.childImageSharp.fluid} />
                   <p>
                     We still were a college for women, we had a Dean of women and we even had a women’s lounge at the top of Bennett Hall because in the forties and early fifties women couldn’t go to Houston Hall. By the time I came, of course, that was different.” 
                   </p>

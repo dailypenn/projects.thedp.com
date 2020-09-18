@@ -8,6 +8,21 @@ import { ROBOTO_REGULAR } from '../../../utils/font'
 const Wrapper = s.div`
   .main {
     padding: 0 5rem;
+
+    @media (max-width: 768px) {
+      padding: 0 1rem;
+    }
+  }
+
+  .main2 {
+    @media (max-width: 768px) {
+      padding: 0 1rem;
+    }
+  }
+
+  .main3 {
+    padding-right: 5rem;
+
     @media (max-width: 768px) {
       padding: 0 1rem;
     }
@@ -19,6 +34,10 @@ const Header = s(Img)`
   width: 35%;
   margin-right:0;
   margin-left: auto;
+
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+  }
 `
 
 const Body = s.div`
@@ -28,6 +47,7 @@ const Body = s.div`
 `
 
 const FancyAuthor = s(Img)`
+  margin-bottom: 3rem;
 `
 
 const SmallImage = s(Img)`
@@ -113,9 +133,9 @@ const Eighties = () => (
         const { img1, img2, img3, img4, img5, img6, accents, eightyheadline } = data
         return (
           <Wrapper>
-            <div className="row" id="80s" style={{ marginBottom: '3rem' }}>      
-              <div className="col-md-3" style={{ padding: "0", margin: "0" }}>
-                <FancyAuthor fluid={accents.childImageSharp.fluid} style={{height: "1000px", overflow: "hidden"}} />
+            <div className="row main2" id="80s" style={{ marginBottom: '3rem' }}>      
+              <div className="col-md-3">
+                <FancyAuthor fluid={{...accents.childImageSharp.fluid, aspectRatio: 2/9}} />
               </div>        
               <div className="col">
                 <div class="main" style={{ float: 'right' }}>
@@ -124,7 +144,7 @@ const Eighties = () => (
                     The 80s were the decade of Madonna, MTV, and John Hughes movies. The hair was big, the clothes were neon, and the world was quickly entering into the new world of computer technology. Ronald Reagan occupied the Oval Office for most of the decade and Americans watched the news as the Communist Bloc began to disintegrate and the AIDs crisis tore through the country. In 1985, the Philadelphia Police Department bombed the headquarters of MOVE, a Black liberation group, just blocks from Penn’s campus. Flora Stewart (E ‘84) and Robin Briggs (C ‘89) remember University City back in the days of neon and Cyndi Lauper.
                   </p>
                 </div>
-                <div className="row main">
+                <div className="row">
                   <Body className="col-md-5">
                     <h4><b>Flora Stewart (E ‘84) </b></h4>
                     <p>
@@ -141,8 +161,8 @@ const Eighties = () => (
                       “We went to Chinatown and explored Philadelphia. I remember convocation, which was really fun. It was very meaningful and kind of like, ‘Oh, wow, this is the start of a big thing.’”
                     </p>
                   </Body>
-                  <div className="col-md">
-                    <div className="row" style={{marginTop: "30px", marginBottom: "10px"}}>
+                  <div className="col-md main3">
+                    <div className="row" style={{ marginTop: "30px", marginBottom: "10px" }}>
                         <div className="col">
                           <SmallImage fluid={img1.childImageSharp.fluid} />
                         </div>
@@ -155,14 +175,14 @@ const Eighties = () => (
                           <BigImage fluid={img3.childImageSharp.fluid} />
                         </div>
                     </div>
-                    <div className="row" style={{marginBottom: "10px"}}>
-                        <div className="col" style={{marginRight: "-10px"}}>
-                          <Img fluid={img4.childImageSharp.fluid} style={{height: "401px", overflow: "hidden"}}/>
-                        </div>
-                        <div className="col">
-                          <SmallImage fluid={img5.childImageSharp.fluid} style={{marginBottom: "10px"}}/>
-                          <SmallImage fluid={img6.childImageSharp.fluid} />                                
-                        </div>
+                    <div className="row" style={{ marginBottom: "10px" }}>
+                      <div className="col" style={{ marginRight: "-10px" }}>
+                        <Img fluid={img4.childImageSharp.fluid} style={{ height: "401px", overflow: "hidden" }}/>
+                      </div>
+                      <div className="col">
+                        <SmallImage fluid={img5.childImageSharp.fluid} style={{marginBottom: "10px"}}/>
+                        <SmallImage fluid={img6.childImageSharp.fluid} />                                
+                      </div>
                     </div>
                   </div>
                 </div>
