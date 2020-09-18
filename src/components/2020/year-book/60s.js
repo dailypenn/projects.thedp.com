@@ -5,14 +5,15 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import { ROBOTO_REGULAR } from '../../../utils/font'
 
-
-const Header = s(Img)`
-  margin: 60px;
+const Row = s.div`
+  height: 450px;
+  margin-left: -5px;
 `
 
 const SixtyHeader = s(Img)`
   width: 80%;
 `
+
 const HeaderBackground = s.div`
   background-color: #E9338A;
 `
@@ -25,7 +26,7 @@ const SixtyColumn = s.div`
   padding: 50px 0;
   ${ROBOTO_REGULAR}
   background-color: #FFF8E8;
-  font-size: 16px;
+  font-size: 15px;
 `
 
 const FancyAuthor = s(Img)`
@@ -35,9 +36,20 @@ const FancyAuthor = s(Img)`
 
 const PinkFiller = s.div`
   background-color: #E9338A;
-  height: 40px;
+  height: 70px;
 `
 
+const OrangeFiller = s.div`
+  background-color: #EC690E;
+  width: 5%;
+  margin: 0;
+`
+
+const Image = s(Img)`
+  overflow: hidden;
+  height: 450px;
+  padding: 10px;
+`
 const Sixty = () => (
     <StaticQuery
       query={graphql`
@@ -128,32 +140,33 @@ const Sixty = () => (
         return (
             <>
               <div className="row" id="60s">
-                <div className="col-md">
+                <div className="col-md" style={{padding: "0", margin: "0"}}>
                   <Img fluid={mainImg.childImageSharp.fluid} alt="sideImg"/>
                   <PinkFiller/>
-                  <div className="row" style={{height: "400px", display: "flex"}}>
+                  <Row className="row" style={{marginBottom: "20px"}}>
                     <div className="col-md">
-                      <Img fluid={img2.childImageSharp.fluid} alt="sideImg"/>
-                    </div>
-                    <div className="col-md">
-                      <Img fluid={img3.childImageSharp.fluid} alt="sideImg"/>
+                      <Image fluid={img2.childImageSharp.fluid} alt="sideImg"/>
                     </div>
                     <div className="col-md">
-                      <Img fluid={img4.childImageSharp.fluid} alt="sideImg"/>
-                    </div>
-                  </div>
-                  <div className="row" style={{height: "400px", display: "flex"}}>
-                    <div className="col-md-8">
-                      <Img fluid={img5.childImageSharp.fluid} alt="sideImg"/>
+                      <Image fluid={img3.childImageSharp.fluid} alt="sideImg"/>
                     </div>
                     <div className="col-md">
-                      <Img fluid={img6.childImageSharp.fluid} alt="sideImg"/>
+                      <Image fluid={img4.childImageSharp.fluid} alt="sideImg"/>
                     </div>
-                  </div>
+                  </Row>
+                  <Row className="row">
+                    <div className="col-md-8" >
+                      <Image fluid={img5.childImageSharp.fluid} alt="sideImg"/>
+                    </div>
+                    <div className="col-md">
+                      <Image fluid={img6.childImageSharp.fluid} alt="sideImg"/>
+                    </div>
+                  </Row>
                 </div>
-                <div className="col-md">
+                <OrangeFiller/>
+                <div className="col-md" style={{padding: "0", margin: "0"}}>
                   <HeaderBackground>
-                    <div style={{padding: "30px 0 30px 60px"}}>
+                    <div style={{padding: "50px 0 50px 60px"}}>
                       <SixtyHeader fluid={sixtyheadline.childImageSharp.fluid} />
                     </div>
                   </HeaderBackground>
