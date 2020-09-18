@@ -27,6 +27,8 @@ const FancyAuthor = s(Img)`
 
 const NinetyHeader = s(Img)`
   width: 80%;
+  display: block;
+  margin: 0 auto;
 `
 
 const ImgWrapper = s.div`
