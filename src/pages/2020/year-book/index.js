@@ -8,6 +8,7 @@ import Nav from '../../../components/2020/year-book/Nav'
 import Sixty from '../../../components/2020/year-book/60s'
 import Seventy from '../../../components/2020/year-book/70s'
 import Eighty from '../../../components/2020/year-book/80s'
+import Ninety from '../../../components/2020/year-book/90s'
 
 import { MONTSERRAT_REGULAR } from '../../../utils/font'
 
@@ -89,7 +90,7 @@ const IndexPage = () => (
           <Sixty/>
           <Seventy/>
           <Eighty/>
-
+          <Ninety/>
 
           <Credit> Made with <span role="img"> 🎒</span> by The Daily Pennsylvanian © 2020. All rights reserved.  </Credit>
         </>

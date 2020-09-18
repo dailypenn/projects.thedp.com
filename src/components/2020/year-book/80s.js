@@ -44,7 +44,7 @@ const SeventyHeader = s.div`
   background-color: #6CB4AA;
 `
 
-const Sixtys = () => (
+const Eighties = () => (
     <StaticQuery
       query={graphql`
       query {
@@ -117,7 +117,7 @@ const Sixtys = () => (
         const { img1, img2, img3, img4, img5, img6, accents, eightyheadline } = data
         return (
             <>
-              <div className="row" style={{margin: "-70px"}} id="70s">      
+              <div className="row" style={{marginTop: "-70px"}} id="80s">      
                 <div className="col-md-3" style={{padding: "0", margin: "0"}}>
                   <Img fluid={accents.childImageSharp.fluid} />
                 </div>             
@@ -171,4 +171,4 @@ const Sixtys = () => (
     />
   )
 
-export default Sixtys
+export default Eighties

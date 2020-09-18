@@ -66,10 +66,10 @@ const NavBar = (data) => {
       <div className="navbar-collapse w-100 dual-collapse2 order-2 order-md-2 collapse">
         <RightUL className="navbar-nav mr-auto text-center">
           <li className="nav-item">
-            <Link className="nav-link" to="#34st"> <NavTextNew> 1980's </NavTextNew> </Link>
+            <Link className="nav-link" to="#80s"> <NavTextNew> 1980's </NavTextNew> </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="#sports"> <NavTextNew> 1990's </NavTextNew> </Link>
+            <Link className="nav-link" to="#90s"> <NavTextNew> 1990's </NavTextNew> </Link>
           </li>
         </RightUL>
       </div>
