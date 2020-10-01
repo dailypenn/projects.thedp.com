@@ -44,7 +44,7 @@ export const News = () => (
         <SubSectionHeader>PENN ADMISSIONS SCANDAL</SubSectionHeader>
         <div className="row">
           <div className="col-md-6 right-border narrow-col-right">
-            <img className="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/f880ab9e-bc8a-4f3d-a44b-541a31e6c13c.sized-1000x1000.jpg" />
+            <img alt="" className="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/f880ab9e-bc8a-4f3d-a44b-541a31e6c13c.sized-1000x1000.jpg" />
             <MainHeader>College admissions scandal hits Penn men’s basketball</MainHeader>
             <SectionMainText>Former Penn men’s basketball coach Jerome Allen has remained a key witness for the investigation into the college admissions bribery scandal that came to light in March 2019. He plead guilty in October 2018 to accepting bribes in exchange for recruitment of a player. In March, Allen testified in a federal trial that Philip Esformes paid him to facilitate his son’s recruitment in 2015. Although the national scandal that broke days after Allen's testimony did not name Penn, Dean of Admissions Eric Furda said Penn would consider revising its recruitment process. During Esformes' trial, news broke that he had also sent more than $400,000 to the consultant at the center of the national scandal after contacting him about his son’s recruitment. Esformes’ trial ended in April when he was found guilty on 20 charges, including bribery. In July, a judge sentenced Allen to four years probation, community service, and a fine, avoiding jail time. The next day, Penn Athletics removed Allen from its Hall of Fame.</SectionMainText>
           </div>
@@ -57,7 +57,7 @@ export const News = () => (
                 <Date> Mar. 14 </Date>
               </div>
               <div className="col-md-6">
-                <img className="img-fluid" src="https://snworksceo.imgix.net/dpn/e5056ee4-a56c-4e68-9a6c-03306604ee29.sized-1000x1000.png?w=1000" />
+                <img alt="" className="img-fluid" src="https://snworksceo.imgix.net/dpn/e5056ee4-a56c-4e68-9a6c-03306604ee29.sized-1000x1000.png?w=1000" />
               </div>
             </div>
             <PrimaryStoryLine/>
@@ -69,7 +69,7 @@ export const News = () => (
                   <Date> Mar. 18 </Date>
                 </div>
                 <div className="col-md-6">
-                  <img className="img-fluid" src="https://snworksceo.imgix.net/dpn/b5b78f08-7bf1-425b-8b18-8b222d87c8f7.sized-1000x1000.jpg?w=1000" />
+                  <img alt="" className="img-fluid" src="https://snworksceo.imgix.net/dpn/b5b78f08-7bf1-425b-8b18-8b222d87c8f7.sized-1000x1000.jpg?w=1000" />
                 </div>
               </div>
             <PrimaryStoryLine/>
@@ -81,7 +81,7 @@ export const News = () => (
                 <Date> Apr. 5 </Date>
               </div>
               <div className="col-md-6">
-                <img className="img-fluid" src="https://snworksceo.imgix.net/dpn/b5b78f08-7bf1-425b-8b18-8b222d87c8f7.sized-1000x1000.jpg?w=1000" />
+                <img alt="" className="img-fluid" src="https://snworksceo.imgix.net/dpn/b5b78f08-7bf1-425b-8b18-8b222d87c8f7.sized-1000x1000.jpg?w=1000" />
               </div>
             </div>
             <PrimaryStoryLine/>
@@ -93,7 +93,7 @@ export const News = () => (
                 <Date> July 2 </Date>
               </div>
               <div className="col-md-6">
-                <img className="img-fluid" src="https://snworksceo.imgix.net/dpn/a9f9468c-3601-4dbc-b59b-13f9abd1d03e.sized-1000x1000.jpg?w=1000" />
+                <img alt="" className="img-fluid" src="https://snworksceo.imgix.net/dpn/a9f9468c-3601-4dbc-b59b-13f9abd1d03e.sized-1000x1000.jpg?w=1000" />
               </div>
             </div>
           </div>
@@ -136,7 +136,7 @@ export const News = () => (
         <SubSectionHeader>SCHOOL RENAMINGS</SubSectionHeader>
         <div className="row">
           <div className="col-md-6 right-border-inverse narrow-col-right">
-            <img className="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/e96e9108-c45b-468e-94c6-dde38d382089.sized-1000x1000.jpg" />
+            <img alt="" className="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/e96e9108-c45b-468e-94c6-dde38d382089.sized-1000x1000.jpg" />
             <MainHeader inverse>Penn Design and Penn Law renamed after large donations</MainHeader>
             <SectionMainText inverse>Penn renamed two of their twelve schools this year after receiving large donations. In February, Penn’s School of Design was renamed the University of Pennsylvania Stuart Weitzman School of Design after the fashion icon and 1963 Wharton alumnus. Students voiced anger over the renaming, arguing that Weitzman’s career as a designer has no relation to any academic program at Penn. Students added administrators should have considered student input before the decision. In November, the University renamed Penn Law School to the University of Pennsylvania Carey Law School after the largest donation to any law school. A petition demanding the school change its short-form name from “Carey Law” back to “Penn Law” garnered over 500 signatures from students and alumni within two days of the announcement. Ten days after the initial announcement of the name change, Penn Law Dean Ted Ruger announced the school will change its short-form name back to “Penn Law” after widespread backlash from students and alumni.</SectionMainText>
           </div>
@@ -149,7 +149,7 @@ export const News = () => (
                 <Date inverse> Oct. 2 </Date>
               </div>
               <div className="col-md-6">
-                <img className="img-fluid" src="https://snworksceo.imgix.net/dpn/d1ada725-0263-4c46-8371-8a5a252d8e90.sized-1000x1000.jpg?w=1000" />
+                <img alt="" className="img-fluid" src="https://snworksceo.imgix.net/dpn/d1ada725-0263-4c46-8371-8a5a252d8e90.sized-1000x1000.jpg?w=1000" />
               </div>
             </div>
             <PrimaryStoryLine inverse/>
@@ -161,7 +161,7 @@ export const News = () => (
                 <Date inverse> Nov. 10 </Date>
               </div>
               <div className="col-md-6">
-                <img className="img-fluid" src="https://snworksceo.imgix.net/dpn/5310ad2b-76cb-425a-9d77-fe407f8d0161.sized-1000x1000.jpg?w=1000" />
+                <img alt="" className="img-fluid" src="https://snworksceo.imgix.net/dpn/5310ad2b-76cb-425a-9d77-fe407f8d0161.sized-1000x1000.jpg?w=1000" />
               </div>
             </div>
             <PrimaryStoryLine inverse/>
@@ -173,7 +173,7 @@ export const News = () => (
                 <Date inverse> Nov. 18 </Date>
               </div>
               <div className="col-md-6">
-                <img className="img-fluid" src="https://snworksceo.imgix.net/dpn/7cc33872-8190-43f4-815b-779365b9c883.sized-1000x1000.png?w=1000" />
+                <img alt="" className="img-fluid" src="https://snworksceo.imgix.net/dpn/7cc33872-8190-43f4-815b-779365b9c883.sized-1000x1000.png?w=1000" />
               </div>
             </div>
             <PrimaryStoryLine inverse/>
@@ -185,7 +185,7 @@ export const News = () => (
                 <Date inverse> Nov. 18 </Date>
               </div>
               <div className="col-md-6">
-                  <img className="img-fluid" src="https://snworksceo.imgix.net/dpn/0d4576c9-3211-4213-b1c9-20068b954eeb.sized-1000x1000.jpg?w=1000" />
+                  <img alt="" className="img-fluid" src="https://snworksceo.imgix.net/dpn/0d4576c9-3211-4213-b1c9-20068b954eeb.sized-1000x1000.jpg?w=1000" />
               </div>
             </div>
           </div>
@@ -228,7 +228,7 @@ export const News = () => (
         <SubSectionHeader>AMY WAX BACKLASH</SubSectionHeader>
         <div className="row">
           <div className="col-md-6 right-border narrow-col-right">
-            <img className="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/ba12e558-4276-446d-b046-7a8442a60a54.sized-1000x1000.jpg" />
+            <img alt="" className="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/ba12e558-4276-446d-b046-7a8442a60a54.sized-1000x1000.jpg" />
             <MainHeader>Students demand University to reprimand Wax for “racist” statements</MainHeader>
             <SectionMainText>Penn Law professor Amy Wax sparked controversy again this summer after claiming that the United States would be “better off with more whites and fewer nonwhites.” Her comments prompted student activism through marching protests and petitions calling for the University to relieve her of all teaching duties. In October, the Undergraduate Assembly passed a resolution demanding the administration fire Wax. Wax previously caused controversy in 2017 when she claimed that white, Anglo-Saxon cultural norms are superior, and that she had never seen a black Penn Law student graduate in the top quarter of their class.</SectionMainText>
           </div>
@@ -241,7 +241,7 @@ export const News = () => (
                   <Date> July 23 </Date>
                 </div>
                 <div className="col-md-6">
-                  <img className="img-fluid"src="https://snworksceo.imgix.net/dpn/bd14c6b0-77e5-4843-ad76-a8fe201f868a.sized-1000x1000.jpg?w=1000" />
+                  <img alt="" className="img-fluid"src="https://snworksceo.imgix.net/dpn/bd14c6b0-77e5-4843-ad76-a8fe201f868a.sized-1000x1000.jpg?w=1000" />
                 </div>
               </div>
               <PrimaryStoryLine/>
@@ -253,7 +253,7 @@ export const News = () => (
                   <Date> July 24 </Date>
                 </div>
                 <div className="col-md-6">
-                  <img className="img-fluid" src="https://snworksceo.imgix.net/dpn/a01cd39a-1ab7-4452-aef7-f85b8708aaea.sized-1000x1000.PNG?w=1000" />
+                  <img alt="" className="img-fluid" src="https://snworksceo.imgix.net/dpn/a01cd39a-1ab7-4452-aef7-f85b8708aaea.sized-1000x1000.PNG?w=1000" />
                 </div>
               </div>
               <PrimaryStoryLine/>
@@ -265,7 +265,7 @@ export const News = () => (
                   <Date> Oct. 14 </Date>
                 </div>
                 <div className="col-md-6">
-                  <img className="img-fluid" src="https://snworksceo.imgix.net/dpn/8b5c32c9-9b2e-487d-b69c-947a4030c5e4.sized-1000x1000.jpg?w=1000" />
+                  <img alt="" className="img-fluid" src="https://snworksceo.imgix.net/dpn/8b5c32c9-9b2e-487d-b69c-947a4030c5e4.sized-1000x1000.jpg?w=1000" />
                 </div>
               </div>
             </div>
@@ -302,7 +302,7 @@ export const News = () => (
         <SubSectionHeader>STUDENTS PUSH FOR CLIMATE CHANGE</SubSectionHeader>
         <div className="row">
           <div className="col-md-6 right-border-inverse narrow-col-right">
-            <img className="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/fdc1e3a4-09e6-42fa-a884-6c7a229fb3c2.sized-1000x1000.jpg" />
+            <img alt="" className="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/fdc1e3a4-09e6-42fa-a884-6c7a229fb3c2.sized-1000x1000.jpg" />
             <MainHeader inverse>Students pressure University to address the climate crisis</MainHeader>
             <SectionMainText inverse>Pressure mounted this semester from students opposing Penn’s investment in the fossil fuel industry. In light of Penn's Board of Trustees' refusal to review Fossil Free Penn’s most recent divestment proposal last year, leaders said the club had no choice but to rethink its strategy and engage in direct action. FFP began holding weekly sit-ins outside of Penn President Amy Gutmann’s office in September. Weeks after the first sit-in, the University announced a Climate Action Plan 3.0, outlining more incremental steps to reduce Penn’s carbon emissions. Some student climate activists criticized the plan for its vagueness and potential harm to disadvantaged Philadelphia communities. In November, FFP protested at Penn’s annual Board of Trustees meeting, ultimately shutting the meeting down. Student protesters aim to pressure Penn to host a climate town hall, with Chief Investment Officer Peter Ammon, Chair of the Board of Trustees David Cohen, and Gutmann all in attendance.</SectionMainText>
           </div>
@@ -315,7 +315,7 @@ export const News = () => (
                 <Date inverse> Sep. 29 </Date>
               </div>
               <div className="col-md-6">
-                <img className="img-fluid" src="https://snworksceo.imgix.net/dpn/e2a1bb84-33af-4a53-9a52-f7c31e2567e3.sized-1000x1000.jpg?w=1000" />
+                <img alt="" className="img-fluid" src="https://snworksceo.imgix.net/dpn/e2a1bb84-33af-4a53-9a52-f7c31e2567e3.sized-1000x1000.jpg?w=1000" />
               </div>
             </div>
             <PrimaryStoryLine inverse/>
@@ -327,7 +327,7 @@ export const News = () => (
                 <Date inverse> Oct. 16 </Date>
               </div>
                 <div className="col-md-6">
-                  <img className="img-fluid" src="https://snworksceo.imgix.net/dpn/d7db5dbe-f2b2-498b-9a05-d56affc3322b.sized-1000x1000.JPG?w=1000" />
+                  <img alt="" className="img-fluid" src="https://snworksceo.imgix.net/dpn/d7db5dbe-f2b2-498b-9a05-d56affc3322b.sized-1000x1000.JPG?w=1000" />
                 </div>
             </div>
             <PrimaryStoryLine inverse/>
@@ -339,7 +339,7 @@ export const News = () => (
                 <Date inverse> Nov. 8 </Date>
               </div>
               <div className="col-md-6">
-                <img className="img-fluid" src="https://snworksceo.imgix.net/dpn/31817325-b341-4be7-adec-315ab261772e.sized-1000x1000.JPG?w=1000" />
+                <img alt="" className="img-fluid" src="https://snworksceo.imgix.net/dpn/31817325-b341-4be7-adec-315ab261772e.sized-1000x1000.JPG?w=1000" />
               </div>
             </div>
           </div>
@@ -399,7 +399,7 @@ export const News = () => (
         <SubSectionHeader>2020 PRESIDENTIAL CAMPAIGNS</SubSectionHeader>
         <div className="row">
           <div className="col-md-6 right-border narrow-col-right">
-            <img className="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/d530ada1-ab07-4ca3-90cf-582389d5273a.sized-1000x1000.jpg" />
+            <img alt="" className="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/d530ada1-ab07-4ca3-90cf-582389d5273a.sized-1000x1000.jpg" />
             <MainHeader>Two former Penn professors launch presidential campaigns</MainHeader>
             <SectionMainText>Two of the front-runners for the Democratic presidential nomination have served as Penn professors – former United States Vice President Joe Biden and current U.S. Senator Elizabeth Warren (D-Mass.). The two candidates launched their campaigns earlier this year, aiming to win in 2020 against incumbent President Donald Trump in 2020 — a 1968 Wharton graduate. Penn President Amy Gutmann announced on Feb. 7, 2017 that Biden would serve as a Benjamin Franklin Presidential Practice Professor and lead the Penn Biden Center for Diplomacy and Global Engagement. Warren taught contract and bankruptcy law at the University of Pennsylvania Carey Law School from 1987 to 1995, when she left to teach at Harvard Law School.</SectionMainText>
           </div>
@@ -412,7 +412,7 @@ export const News = () => (
                 <Date> Jan. 22 </Date>
               </div>
               <div className="col-md-6">
-                <img className="img-fluid" src="https://snworksceo.imgix.net/dpn/a83270c2-27b4-40e0-a32c-b9a2febe7a1f.sized-1000x1000.jpg?w=1000" />
+                <img alt="" className="img-fluid" src="https://snworksceo.imgix.net/dpn/a83270c2-27b4-40e0-a32c-b9a2febe7a1f.sized-1000x1000.jpg?w=1000" />
               </div>
             </div>
               <PrimaryStoryLine/>
@@ -424,7 +424,7 @@ export const News = () => (
                   <Date> Apr. 28 </Date>
                 </div>
                 <div className="col-md-6">
-                  <img className="img-fluid" src="https://snworksceo.imgix.net/dpn/f6beec97-98e5-46b8-92d2-fa0d6c69eaf0.sized-1000x1000.jpg?w=1000" />
+                  <img alt="" className="img-fluid" src="https://snworksceo.imgix.net/dpn/f6beec97-98e5-46b8-92d2-fa0d6c69eaf0.sized-1000x1000.jpg?w=1000" />
                 </div>
               </div>
             </div>
@@ -467,7 +467,7 @@ export const News = () => (
         <SubSectionHeader>NEW BUILDINGS</SubSectionHeader>
         <div className="row">
           <div className="col-md-6 right-border-inverse narrow-col-right">
-            <img className="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/291c3ee4-a6d6-4a05-955a-b6444e51837c.sized-1000x1000.jpg" />
+            <img alt="" className="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/291c3ee4-a6d6-4a05-955a-b6444e51837c.sized-1000x1000.jpg" />
             <MainHeader inverse>Campus construction noise prompts student criticism</MainHeader>
             <SectionMainText inverse>Penn announced plans to create a slate of new buildings this year and continued constructing its record-breaking $163 million dorm New College House West, shaping up major changes to campus. Additionally, Penn continued construction of the Pavilion at the Hospital of the University of Pennsylvania, Tangen Hall, and the Wharton Academic Research Building. Residents living near construction zones criticized the noise, claiming they were frequently woken up by construction early in the morning. Students said they felt their concerns were largely unaddressed by administrators. Penn's construction of NCHW will provide more room to house students once sophomores will be required to live on campus in 2021. Students who criticized the sophomore housing policy voiced concerns about the costs of on-campus housing and its impact on Greek Life.</SectionMainText>
           </div>
@@ -480,7 +480,7 @@ export const News = () => (
                   <Date inverse> Oct. 27 </Date>
                 </div>
                 <div className="col-md-6">
-                  <img className="img-fluid" src="https://snworksceo.imgix.net/dpn/10a66465-25bf-4d15-8d21-b42787a52618.sized-1000x1000.jpg?w=1000" />
+                  <img alt="" className="img-fluid" src="https://snworksceo.imgix.net/dpn/10a66465-25bf-4d15-8d21-b42787a52618.sized-1000x1000.jpg?w=1000" />
                 </div>
               </div>
               <PrimaryStoryLine inverse/>
@@ -492,7 +492,7 @@ export const News = () => (
                   <Date inverse> Sep. 20 </Date>
                 </div>
                 <div className="col-md-6">
-                  <img className="img-fluid" src="https://snworksceo.imgix.net/dpn/c04fb1c8-8cab-49ba-8d30-fab7c7190f81.sized-1000x1000.JPG?w=1000" />
+                  <img alt="" className="img-fluid" src="https://snworksceo.imgix.net/dpn/c04fb1c8-8cab-49ba-8d30-fab7c7190f81.sized-1000x1000.JPG?w=1000" />
                 </div>
               </div>
               <PrimaryStoryLine inverse/>
@@ -504,7 +504,7 @@ export const News = () => (
                   <Date inverse> Nov. 25 </Date>
                 </div>
                 <div className="col-md-6">
-                  <img className="img-fluid" src="https://snworksceo.imgix.net/dpn/5ea7cd52-1b49-4228-9500-fc2607b87008.sized-1000x1000.jpg?w=1000" />
+                  <img alt="" className="img-fluid" src="https://snworksceo.imgix.net/dpn/5ea7cd52-1b49-4228-9500-fc2607b87008.sized-1000x1000.jpg?w=1000" />
                 </div>
               </div>
             </div>

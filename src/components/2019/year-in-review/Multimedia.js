@@ -33,7 +33,7 @@ export const MultiMedia = () => (
       <Spacer/>
       <div>
         <div class="embed-container d-flex justify-content-center">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/FMH7sXPXf7c" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
+            <iframe title="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/FMH7sXPXf7c" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
         </div>
         <MainHeader inverse>The Story of 2019</MainHeader>
         <SectionMainText color={TINT_WHITE}>As 2019 comes to a close, The Daily Pennsylvanian looked back on some of the highlights from the year.</SectionMainText>

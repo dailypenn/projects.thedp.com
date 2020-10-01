@@ -43,7 +43,7 @@ export const Sports = () => (
       <SubSectionHeader>VOLLEYBALL</SubSectionHeader>
       <div class="row">
         <div class="col-md-6 right-border narrow-col-right">
-          <img class="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/b1fbebf6-e8bf-47d5-9101-8dec2939a32e.sized-1000x1000.jpg" />
+          <img alt="" class="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/b1fbebf6-e8bf-47d5-9101-8dec2939a32e.sized-1000x1000.jpg" />
           <MainHeader>Volleyball in Turmoil</MainHeader>
           <SectionMainText>Penn volleyball’s first season under the direction of coach Iain Braddak was a tumultuous one. Despite several players having reservations about Braddak during the hiring process, Penn Athletics gave him the job in 2018. In addition to being the worst season in program history, eight players filed formal grievances with Penn Athletics against their coach for his conduct during the year. The administration responded to the situation by setting up a team-wide mediation session called restorative justice, in which a third-party firm administered a three-hour meeting attended by all 20 players on the team, Braddak, and Associate Athletic Director Matt Valenti. Braddak returned for the 2019 season with the hope of focusing on the future of the program. However, a different type of setback occurred near the end of the season when Penn Athletics announced that the remaining two games of the team’s season would be canceled following the administration’s discovery of “vulgar, offensive, and disrespectful posters” in the team’s locker room. Multiple athletes on the team did not respond to requests for comment, while Penn Athletics stated that the cancellation had nothing to do with last season’s grievances.</SectionMainText>
         </div>
@@ -56,7 +56,7 @@ export const Sports = () => (
               <Date> Apr. 18 </Date>
             </div>
             <div class="col-md-6">
-              <img class="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/b1fbebf6-e8bf-47d5-9101-8dec2939a32e.sized-1000x1000.jpg" />
+              <img alt="" class="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/b1fbebf6-e8bf-47d5-9101-8dec2939a32e.sized-1000x1000.jpg" />
             </div>
           </div>
           <PrimaryStoryLine/>
@@ -68,7 +68,7 @@ export const Sports = () => (
               <Date> May 5 </Date>
             </div>
             <div class="col-md-6">
-              <img class="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/be1d6df5-19a0-4adf-80ff-6b4cd9c0af89.sized-1000x1000.jpg" />
+              <img alt="" class="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/be1d6df5-19a0-4adf-80ff-6b4cd9c0af89.sized-1000x1000.jpg" />
             </div>
           </div>
           <PrimaryStoryLine/>
@@ -80,7 +80,7 @@ export const Sports = () => (
               <Date> Oct. 2 </Date>
             </div>
             <div class="col-md-6">
-              <img class="img-fluid" src="https://snworksceo.imgix.net/dpn/361e7d67-dacf-4498-9650-783291133c0f.sized-1000x1000.jpg?w=1000" />
+              <img alt="" class="img-fluid" src="https://snworksceo.imgix.net/dpn/361e7d67-dacf-4498-9650-783291133c0f.sized-1000x1000.jpg?w=1000" />
             </div>
           </div>
           <PrimaryStoryLine/>
@@ -92,7 +92,7 @@ export const Sports = () => (
                 <Date> Nov. 13 </Date>
               </div>
               <div class="col-md-6">
-                <img class="img-fluid" src="https://snworksceo.imgix.net/dpn/1dc3a81b-b82f-453e-91dc-a38410bb110c.sized-1000x1000.jpg?w=1000" />
+                <img alt="" class="img-fluid" src="https://snworksceo.imgix.net/dpn/1dc3a81b-b82f-453e-91dc-a38410bb110c.sized-1000x1000.jpg?w=1000" />
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ export const Sports = () => (
         <SubSectionHeader>FRANKLIN FIELD</SubSectionHeader>
         <div class="row">
           <div class="col-md-6 right-border-inverse narrow-col-right">
-            <img class="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/183bc931-cf87-45eb-bde8-2c315e521412.sized-1000x1000.jpg" />
+            <img alt="" class="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/183bc931-cf87-45eb-bde8-2c315e521412.sized-1000x1000.jpg" />
             <MainHeader inverse>Franklin Field Turns 125</MainHeader>
             <SectionMainText inverse>Penn’s own Franklin Field turned 125 years old in 2019, and the party lasted all year long. From the Philadelphia Eagles to the service academies to the Red and Blue’s own squads, the Frank has been home to scores of teams across its history. But nowadays the stadium is arguably most full for the annual Penn Relays in late April, where thousands from around the world come to see the world’s best athletes compete in track and field. Penn football ushered in the historic milestone with commemorative all-red throwback uniforms, which they wore for select home games this season. Whether for football, sprint football, lacrosse, or track, Franklin Field will remain one of the nation’s most sacred venues for years to come.</SectionMainText>
           </div>
@@ -118,7 +118,7 @@ export const Sports = () => (
                 <Date inverse> Jan. 17 </Date>
               </div>
               <div class="col-md-6">
-                <img class="img-fluid" src="https://snworksceo.imgix.net/dpn/285580a4-2ee5-4715-bd17-b0f1b0018d6e.sized-1000x1000.jpg?w=1000" />
+                <img alt="" class="img-fluid" src="https://snworksceo.imgix.net/dpn/285580a4-2ee5-4715-bd17-b0f1b0018d6e.sized-1000x1000.jpg?w=1000" />
               </div>
             </div>
             <PrimaryStoryLine inverse/>
@@ -130,7 +130,7 @@ export const Sports = () => (
                 <Date inverse> Apr. 24 </Date>
               </div>
               <div class="col-md-6">
-                <img class="img-fluid" src="https://snworksceo.imgix.net/dpn/5e5f7877-e726-4ca4-bb62-356f9716c9dd.sized-1000x1000.jpg?w=1000" />
+                <img alt="" class="img-fluid" src="https://snworksceo.imgix.net/dpn/5e5f7877-e726-4ca4-bb62-356f9716c9dd.sized-1000x1000.jpg?w=1000" />
               </div>
             </div>
             <PrimaryStoryLine inverse/>
@@ -142,7 +142,7 @@ export const Sports = () => (
                 <Date inverse> Aug. 8 </Date>
               </div>
               <div class="col-md-6">
-                <img class="img-fluid" src="https://snworksceo.imgix.net/dpn/0b49deee-8069-446d-83ae-a04e26ae1de5.sized-1000x1000.jpg?w=1000" />
+                <img alt="" class="img-fluid" src="https://snworksceo.imgix.net/dpn/0b49deee-8069-446d-83ae-a04e26ae1de5.sized-1000x1000.jpg?w=1000" />
               </div>
             </div>
             <MoreStories inverse>
@@ -166,7 +166,7 @@ export const Sports = () => (
         <SubSectionHeader>JEROME ALLEN</SubSectionHeader>
         <div class="row">
           <div class="col-md-6 right-border narrow-col-right">
-            <img class="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/3bdda7fa-b81f-4a72-9c12-f97b554f0373.sized-1000x1000.jpg" />
+            <img alt="" class="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/3bdda7fa-b81f-4a72-9c12-f97b554f0373.sized-1000x1000.jpg" />
             <MainHeader>Jerome Allen scandal continues</MainHeader>
             <SectionMainText>While news of the scandal first broke in July of 2018, the Jerome Allen bribery scandal remains unresolved nearly a year and a half later. In March, Allen testified against Penn parent Philip Esformes in federal court, saying that Esformes bribed him in order to secure admission for his son, Morris, who graduated from Wharton in May. Allen’s testimony resulted in Esformes’ conviction, the implication of former Penn men’s basketball assistant coach Ira Bowman, Allen’s removal from the Penn Athletics Hall of Fame, and the avoidance of jail time for the charges against him. Allen, who was forced to pay over $200,000 in fines and forfeitures, pleaded guilty. Penn Athletics has not commented on Allen or its pending investigation into his conduct since July.</SectionMainText>
           </div>
@@ -179,7 +179,7 @@ export const Sports = () => (
                 <Date> Mar. 10 </Date>
               </div>
               <div class="col-md-6">
-                <img class="img-fluid" src="https://snworksceo.imgix.net/dpn/fc33bfcb-c2b5-4247-b482-fee5946add6e.sized-1000x1000.jpg?w=1000" />
+                <img alt="" class="img-fluid" src="https://snworksceo.imgix.net/dpn/fc33bfcb-c2b5-4247-b482-fee5946add6e.sized-1000x1000.jpg?w=1000" />
               </div>
             </div>
             <PrimaryStoryLine/>
@@ -191,7 +191,7 @@ export const Sports = () => (
                 <Date> Mar. 14 </Date>
               </div>
               <div class="col-md-6">
-                <img class="img-fluid" src="https://snworksceo.imgix.net/dpn/3aa540e0-9f7c-4858-b6a9-6ab2f91e3dbc.sized-1000x1000.jpg?w=1000" />
+                <img alt="" class="img-fluid" src="https://snworksceo.imgix.net/dpn/3aa540e0-9f7c-4858-b6a9-6ab2f91e3dbc.sized-1000x1000.jpg?w=1000" />
               </div>
             </div>
             <MoreStories>
@@ -219,7 +219,7 @@ export const Sports = () => (
         <SubSectionHeader>BASKETBALL</SubSectionHeader>
         <div class="row">
           <div class="col-md-6 right-border-inverse narrow-col-right">
-            <img class="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/ccf77784-1ddd-400d-879f-a48367e7475f.sized-1000x1000.jpg" />
+            <img alt="" class="img-fluid" src="https://s3.amazonaws.com/snwceomedia/dpn/ccf77784-1ddd-400d-879f-a48367e7475f.sized-1000x1000.jpg" />
             <MainHeader inverse>Basketball has historic year</MainHeader>
             <SectionMainText inverse>Penn men’s basketball started 2019 with a major milestone, winning its first Big 5 title since 2002 with a final win over Saint Joseph’s in January. Despite that success, however, the Quakers struggled in Ivy League play, clinching a spot in the Ivy Tournament on the final day of the regular season with a 7-7 record. The Red and Blue then lost to Harvard in the Tournament semifinal. Penn women’s basketball won a title of its own, sharing the Ivy League regular season championship with Princeton. However, the Quakers lost to the Tigers in the Ivy Tournament final, leaving them a game short of March Madness.</SectionMainText>
           </div>
@@ -232,7 +232,7 @@ export const Sports = () => (
                 <Date inverse> Jan. 26 </Date>
               </div>
               <div class="col-md-6">
-                <img class="img-fluid" src="https://snworksceo.imgix.net/dpn/03db02a2-838b-4e0d-a3c6-e49aa8536999.sized-1000x1000.jpg?w=1000" />
+                <img alt="" class="img-fluid" src="https://snworksceo.imgix.net/dpn/03db02a2-838b-4e0d-a3c6-e49aa8536999.sized-1000x1000.jpg?w=1000" />
               </div>
             </div>
             <PrimaryStoryLine inverse/>
@@ -244,7 +244,7 @@ export const Sports = () => (
                 <Date inverse> Mar. 9 </Date>
               </div>
               <div class="col-md-6">
-                <img class="img-fluid" src="https://snworksceo.imgix.net/dpn/4bcf5f6e-896e-439a-a390-00304e0ccd83.sized-1000x1000.jpg?w=1000" />
+                <img alt="" class="img-fluid" src="https://snworksceo.imgix.net/dpn/4bcf5f6e-896e-439a-a390-00304e0ccd83.sized-1000x1000.jpg?w=1000" />
               </div>
             </div>
             <PrimaryStoryLine inverse/>
@@ -256,7 +256,7 @@ export const Sports = () => (
                 <Date inverse> Mar. 9 </Date>
               </div>
               <div class="col-md-6">
-                <img class="img-fluid" src="https://snworksceo.imgix.net/dpn/999b53a1-7e52-420c-9ec4-aaf30a5ffb54.sized-1000x1000.jpg?w=1000" />
+                <img alt="" class="img-fluid" src="https://snworksceo.imgix.net/dpn/999b53a1-7e52-420c-9ec4-aaf30a5ffb54.sized-1000x1000.jpg?w=1000" />
               </div>
             </div>
             <MoreStories inverse>
