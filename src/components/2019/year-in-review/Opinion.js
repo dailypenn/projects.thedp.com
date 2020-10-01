@@ -9,7 +9,7 @@ import {
     SecondaryStory, 
     SectionHeader, 
     MoreStoriesHeader,
-    SectionDescription } from './Typograph'
+    SectionDescription } from './Typography'
 import { OPEN_SANS_REGULAR, DM_SERIF_DISPLAY_REGULAR } from '../../../utils/font'
 
 const Wrapper = s.div`

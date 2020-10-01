@@ -4,7 +4,7 @@ import {
     PhotoGallery, 
     SectionHeader, 
     SectionMainText, 
-    MainHeader } from './Typograph'
+    MainHeader } from './Typography'
 
 const Spacer = s.div`
     margin-bottom: 50px;

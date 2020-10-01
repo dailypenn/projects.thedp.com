@@ -6,7 +6,7 @@ import {
     StreetHeader, 
     SectionHeader, 
     SectionDescription
- } from './Typograph'
+ } from './Typography'
 
 const Wrapper = s.div`
     background-color: #F1F5FF;

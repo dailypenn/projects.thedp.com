@@ -13,7 +13,7 @@ import {
     MoreStoriesHeader,
     PrimaryStoryLine, 
     SubSectionHeader, 
-    MainHeader } from './Typograph'
+    MainHeader } from './Typography'
 
 const Wrapper = s.div`
     /* Util classes */

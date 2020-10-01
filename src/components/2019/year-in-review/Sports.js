@@ -12,7 +12,7 @@ import {
     SubSectionHeader, 
     MoreStoriesHeader,
     MainHeader,
-    Section } from './Typograph'
+    Section } from './Typography'
 
 const Wrapper = s.div`
     /* Util classes */
