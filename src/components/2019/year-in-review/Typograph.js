@@ -1,10 +1,26 @@
 import s from 'styled-components'
 import { 
-    OPEN_SANS_REGULAR, 
-    OPEN_SANS_BOLD, 
-    DM_SERIF_DISPLAY_BOLD, 
-    DM_SERIF_DISPLAY_REGULAR } 
-    from '../../../utils/font'
+  OPEN_SANS_REGULAR, 
+  OPEN_SANS_BOLD, 
+  DM_SERIF_DISPLAY_BOLD, 
+  DM_SERIF_DISPLAY_REGULAR
+} from '../../../utils/font'
+
+// Color Palette
+const WHITE = '#FFFFFF'
+const BLACK = '#131313'
+const DARK_GREY = '#4A4A4A'
+const METALLIC_GREY = '#8E929F'
+const BLUE_GREY = '#6C6F78'
+const BLUE_WHITE = '#CFD3DD'
+const PINK_WHITE = '#DBDBDB'
+const TINT_WHITE = '#F7F7F7'
+const ROUGE_RED = '#E7525F' 
+const DARK_ROUGE_RED = '#D23C49'
+
+const FAINT_WHITE = 'rgba(0, 0, 0, 0.3)';
+const FAINT_BLACK = 'rgba(255, 255, 255, 0.3)';
+
 
 export const SectionHeader = s.h1`
   ${DM_SERIF_DISPLAY_BOLD}
@@ -16,7 +32,7 @@ export const SectionHeader = s.h1`
 `
 
 export const Section = s.div`
-  background-color: ${({ inverse }) => inverse ? "#ffffff" : "#131313"};
+  background-color: ${({ inverse }) => inverse ? WHITE : BLACK};
   padding: ${({ inverse }) => inverse ? "80px" : "120px"} 0px;
 `
 
@@ -28,14 +44,14 @@ export const SectionDescription = s.p`
 `
 
 export const MoreStories = s.div`
-  border-top: 1px solid ${({ inverse }) => inverse ? "rgba(0, 0, 0, 0.3)" : "rgba(255, 255, 255, 0.3)"}; 
+  border-top: 1px solid ${({ inverse }) => inverse ? FAINT_WHITE : FAINT_BLACK}; 
   margin-top: 20px;
   padding-top: 20px;
   background-color: inherit;
 `
 
 export const PrimaryStoryLine = s.hr`
-  background-color: ${({ inverse }) => inverse ? "rgba(0, 0, 0, 0.3)" : "rgba(255, 255, 255, 0.3)"};
+  background-color: ${({ inverse }) => inverse ? FAINT_WHITE : FAINT_BLACK};
   margin: 28px 0px;
 `
 
@@ -50,27 +66,27 @@ export const StyledStoryLink = s.a`
 
 export const PrimaryStory = s.h4`
   ${DM_SERIF_DISPLAY_REGULAR}
-  color: ${({ inverse }) => inverse ? "#131313" : "#ffffff"};
+  color: ${({ inverse }) => inverse ? BLACK : WHITE};
   font-size: 22px;
 
   :hover {
-    color: ${({ inverse }) => inverse ? "#4a4a4a" : "#dbdbdb"};
+    color: ${({ inverse }) => inverse ? DARK_GREY : PINK_WHITE};
   }
 `
 
 export const SecondaryStory = s.h5`
   ${DM_SERIF_DISPLAY_REGULAR}
-  color: ${({ inverse }) => inverse ? "#131313" : "#ffffff"};
+  color: ${({ inverse }) => inverse ? BLACK : WHITE};
   font-size: 18px;
 
   :hover {
-    color: ${({ inverse }) => inverse ? "#4a4a4a" : "#DBDBDB"};
+    color: ${({ inverse }) => inverse ? DARK_GREY : PINK_WHITE};
   }
 `
 
 export const ColumnTitle = s.p`
   ${OPEN_SANS_BOLD} 
-  color: #E7525F;
+  color: ${ROUGE_RED};
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 12px;
@@ -78,7 +94,7 @@ export const ColumnTitle = s.p`
 
 export const StreetHeader = s.h3`
   ${DM_SERIF_DISPLAY_REGULAR}
-  color: #ffffff;
+  color: ${WHITE};
   font-size: 40px;
   margin: 0 28px;
   position: absolute;
@@ -89,46 +105,46 @@ export const StreetCard = s.div`
   margin-bottom: 60px;
   padding-bottom: 60px;
   height: 260px;
-  background: #E7525F;
+  background: ${ROUGE_RED};
 
   :hover {
-      background: #D23C49;
+      background: ${DARK_ROUGE_RED};
   }
 `
 
 export const Date = s.p`
   ${OPEN_SANS_REGULAR}
-  color: ${({ inverse }) => inverse ? "#6C6F78" : "#CFD3DD"};
+  color: ${({ inverse }) => inverse ? BLUE_GREY : BLUE_WHITE};
 `
 
 export const Author = s.p`
   ${({ opinion }) => opinion ? OPEN_SANS_REGULAR : ""};
-  color: #8E929F;
+  color: ${METALLIC_GREY};
   font-weight: bold;
   font-size: 14px;
 `
 
 export const MainHeader = s.h3`
   ${DM_SERIF_DISPLAY_REGULAR}
-  color: ${({ inverse }) => inverse ? "#131313" : "#ffffff"};
+  color: ${({ inverse }) => inverse ? BLACK : WHITE};
   margin-top: 1.5rem;
 `
 
 export const SubSectionHeader = s.h5`
   ${OPEN_SANS_BOLD}
-  color: ${({ color }) => color ? color : "#E7525F"};
+  color: ${({ color }) => color || ROUGE_RED};
   margin-bottom: 16px;
   font-size: 18px;
 `
 
 export const MoreStoriesHeader = s(SubSectionHeader)`
-  color: ${({ inverse }) => inverse ? "#131313" : "#ffffff"};
+  color: ${({ inverse }) => inverse ? BLACK : WHITE};
   font-size: ${({ opinion }) => opinion ? "1.25rem" : ""};
 `
 
 export const SectionMainText = s.p`
   ${OPEN_SANS_REGULAR}
-  color: ${({ inverse }) => inverse ? "#131313" : "#f7f7f7"};
+  color: ${({ inverse }) => inverse ? BLACK : TINT_WHITE};
   margin-top: 15px;
   line-height: 1.6;
 `
