@@ -5,11 +5,12 @@ import {
     StreetCard, 
     StreetHeader, 
     SectionHeader, 
-    SectionDescription
+    SectionDescription,
+    LIGHT_BLUE_WHITE
  } from './Typography'
 
 const Wrapper = s.div`
-    background-color: #F1F5FF;
+    background-color: ${LIGHT_BLUE_WHITE};
     padding: 120px 0px;
 `
 

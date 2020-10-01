@@ -2,35 +2,38 @@ import React from 'react'
 import s from 'styled-components'
 
 import { 
-    MoreStories, 
-    Date, 
-    SectionMainText, 
-    PrimaryStory, 
-    StyledStoryLink, 
-    SecondaryStory, 
-    PrimaryStoryLine, 
-    SubSectionHeader, 
-    MoreStoriesHeader,
-    MainHeader,
-    Section } from './Typography'
+  MoreStories, 
+  Date, 
+  SectionMainText, 
+  PrimaryStory, 
+  StyledStoryLink, 
+  SecondaryStory, 
+  PrimaryStoryLine, 
+  SubSectionHeader, 
+  MoreStoriesHeader,
+  MainHeader,
+  Section,
+  FAINT_WHITE,
+  FAINT_BLACK
+} from './Typography'
 
 const Wrapper = s.div`
-    /* Util classes */
-    .right-border {
-        border-right: 1px solid rgba(255, 255, 255, 0.3);
-    }
+  /* Util classes */
+  .right-border {
+    border-right: 1px solid ${FAINT_WHITE};
+  }
 
-    .right-border-inverse {
-        border-right: 1px solid rgba(0, 0, 0, 0.3);
-    }
+  .right-border-inverse {
+    border-right: 1px solid ${FAINT_BLACK};
+  }
 
-    .narrow-col-right {
-        padding-right: 24px;
-    }
+  .narrow-col-right {
+    padding-right: 24px;
+  }
 
-    .narrow-col-left {
-        padding-left: 24px;
-    }
+  .narrow-col-left {
+    padding-left: 24px;
+  }
 `
 
 export const Sports = () => (

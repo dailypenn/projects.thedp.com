@@ -7,19 +7,20 @@ import {
 } from '../../../utils/font'
 
 // Color Palette
-const WHITE = '#FFFFFF'
-const BLACK = '#131313'
-const DARK_GREY = '#4A4A4A'
-const METALLIC_GREY = '#8E929F'
-const BLUE_GREY = '#6C6F78'
-const BLUE_WHITE = '#CFD3DD'
-const PINK_WHITE = '#DBDBDB'
-const TINT_WHITE = '#F7F7F7'
-const ROUGE_RED = '#E7525F' 
-const DARK_ROUGE_RED = '#D23C49'
+export const WHITE = '#FFFFFF'
+export const BLACK = '#131313'
+export const DARK_GREY = '#4A4A4A'
+export const METALLIC_GREY = '#8E929F'
+export const BLUE_GREY = '#6C6F78'
+export const LIGHT_BLUE_WHITE = '#F1F5FF'
+export const BLUE_WHITE = '#CFD3DD'
+export const PINK_WHITE = '#DBDBDB'
+export const TINT_WHITE = '#F7F7F7'
+export const ROUGE_RED = '#E7525F' 
+export const DARK_ROUGE_RED = '#D23C49'
 
-const FAINT_WHITE = 'rgba(0, 0, 0, 0.3)';
-const FAINT_BLACK = 'rgba(255, 255, 255, 0.3)';
+export const FAINT_BLACK = 'rgba(0, 0, 0, 0.3)';
+export const FAINT_WHITE = 'rgba(255, 255, 255, 0.3)';
 
 
 export const SectionHeader = s.h1`
@@ -44,14 +45,14 @@ export const SectionDescription = s.p`
 `
 
 export const MoreStories = s.div`
-  border-top: 1px solid ${({ inverse }) => inverse ? FAINT_WHITE : FAINT_BLACK}; 
+  border-top: 1px solid ${({ inverse }) => inverse ? FAINT_BLACK : FAINT_WHITE}; 
   margin-top: 20px;
   padding-top: 20px;
   background-color: inherit;
 `
 
 export const PrimaryStoryLine = s.hr`
-  background-color: ${({ inverse }) => inverse ? FAINT_WHITE : FAINT_BLACK};
+  background-color: ${({ inverse }) => inverse ? FAINT_BLACK : FAINT_WHITE};
   margin: 28px 0px;
 `
 

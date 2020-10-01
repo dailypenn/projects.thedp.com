@@ -2,83 +2,88 @@ import React from 'react'
 import s from 'styled-components'
 
 import { 
-    MoreStories, 
-    ColumnTitle, 
-    Author, 
-    StyledStoryLink, 
-    SecondaryStory, 
-    SectionHeader, 
-    MoreStoriesHeader,
-    SectionDescription } from './Typography'
+  MoreStories, 
+  ColumnTitle, 
+  Author, 
+  StyledStoryLink, 
+  SecondaryStory, 
+  SectionHeader, 
+  MoreStoriesHeader,
+  SectionDescription,
+  BLACK,
+  METALLIC_GREY,
+  LIGHT_BLUE_WHITE,
+  FAINT_BLACK
+} from './Typography'
 import { OPEN_SANS_REGULAR, DM_SERIF_DISPLAY_REGULAR } from '../../../utils/font'
 
 const Wrapper = s.div`
-    background-color: #F1F5FF;
-    padding: 120px 0px;
+  background-color: ${LIGHT_BLUE_WHITE};
+  padding: 120px 0px;
 
-    .right-border-op {
-        border-right: 1px solid rgba(0, 0, 0, 0.3);
-    }
+  .right-border-op {
+      border-right: 1px solid ${FAINT_BLACK};
+  }
 
-    .narrow-col-left {
-        padding-left: 24px;
-    }
+  .narrow-col-left {
+      padding-left: 24px;
+  }
 `
 
 const OpinionImg = s.div`
-    background-image: url(${({background}) => background});
-    height: 54px;
-    width: 54px;
-    background-color: #f9f9f9;
-    float: left;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: top;
-    flex-shrink: 0;
+  background-image: url(${({background}) => background});
+  height: 54px;
+  width: 54px;
+  background-color: #f9f9f9;
+  float: left;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: top;
+  flex-shrink: 0;
 `
 
 const OpinionCard = s.div`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 60px;
-    padding-bottom: 30px;
-    padding-right: 20px;
-    ${OPEN_SANS_REGULAR}
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  ${OPEN_SANS_REGULAR}
 `
 
 const OpinionCardImg = s.img`
-    margin-bottom: 20px;
-    width: auto;
+  margin-bottom: 20px;
+  width: auto;
 `
 
 const AuthorImg = s.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-    p {
-        margin-bottom: 0px;
-        margin-left: 16px;
-        color: #8E929F;
-        font-weight: bold;
-        font-size: 14px;
-    }
+  p {
+      margin-bottom: 0px;
+      margin-left: 16px;
+      color: ${METALLIC_GREY};
+      font-weight: bold;
+      font-size: 14px;
+  }
 
-    p:hover {
-        color: #ABAFBA;
-    }
+  p:hover {
+      color: #ABAFBA;
+  }
 `
 
 const OpinionTitle = s.h4`
-    color:#131313;
-    ${DM_SERIF_DISPLAY_REGULAR}
-    font-size: 28px;
-    margin-bottom: 12px;
-    
-    :hover {
-        color: #505050;
-    }
+  color: ${BLACK};
+  ${DM_SERIF_DISPLAY_REGULAR}
+  font-size: 28px;
+  margin-bottom: 12px;
+  
+  :hover {
+      color: #505050;
+  }
 `
 
 export const Opinion = () => (
