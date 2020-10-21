@@ -81,3 +81,13 @@ export const MONTSERRAT_REGULAR = `
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 `
+
+export const LORA_REGULAR = `
+  font-family: 'Lora', serif;
+  font-weight: 400;
+`
+
+export const RADIANT_REGULAR = `
+  font-family: 'URWRadiantW01-CondensedBold', sans-serif;
+  font-weight: 400;
+`
