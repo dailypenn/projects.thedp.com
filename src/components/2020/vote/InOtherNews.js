@@ -9,10 +9,10 @@ const InOtherNews = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile (filter: {relativePath: {eq: "InOtherNews.json"}}) {
+        allFile (filter: {relativePath: {eq: "vote_2020_InOtherNews.json"}}) {
           edges {
             node {
-              childrenInOtherNewsJson{
+              childrenVote2020InOtherNewsJson{
                 title
                 description
                 author
@@ -34,7 +34,7 @@ const InOtherNews = () => (
       }
     `}
     render={data => {
-      const { node: { childrenInOtherNewsJson: articles } } = data.allFile.edges[0]
+      const { node: { childrenVote2020InOtherNewsJson: articles } } = data.allFile.edges[0]
 
       return (
         <Wrapper>

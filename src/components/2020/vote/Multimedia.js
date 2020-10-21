@@ -9,10 +9,10 @@ const Multimedia = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile (filter: {relativePath: {eq: "Multimedia.json"}}) {
+        allFile (filter: {relativePath: {eq: "vote_2020_multimedia.json"}}) {
           edges {
             node {
-              childrenMultimediaJson{
+              childrenVote2020MultimediaJson{
                 title
                 description
                 author
@@ -34,7 +34,7 @@ const Multimedia = () => (
       }
     `}
     render={data => {
-      const { node: { childrenMultimediaJson: articles } } = data.allFile.edges[0]
+      const { node: { childrenVote2020MultimediaJson: articles } } = data.allFile.edges[0]
 
       return (
         <Wrapper>

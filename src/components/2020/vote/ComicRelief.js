@@ -9,10 +9,10 @@ const ComicRelief = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile (filter: {relativePath: {eq: "Utb.json"}}) {
+        allFile (filter: {relativePath: {eq: "vote_2020_utb.json"}}) {
           edges {
             node {
-              childrenUtbJson{
+              childrenVote2020UtbJson{
                 title
                 description
                 author
@@ -34,7 +34,7 @@ const ComicRelief = () => (
       }
     `}
     render={data => {
-      const { node: { childrenUtbJson: articles } } = data.allFile.edges[0]
+      const { node: { childrenVote2020UtbJson: articles } } = data.allFile.edges[0]
 
       return (
         <Wrapper>
