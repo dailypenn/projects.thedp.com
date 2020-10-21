@@ -62,6 +62,21 @@ module.exports = {
         path: `${__dirname}/src/content/images/2020/year-book`,
       }
     },
+    // json and image for 2020 elections
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2020/vote`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2020/vote`,
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

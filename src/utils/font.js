@@ -91,3 +91,10 @@ export const RADIANT_REGULAR = `
   font-family: 'URWRadiantW01-CondensedBold', sans-serif;
   font-weight: 400;
 `
+
+// temporary futura until we get the embed
+export const FUTURA_REGULAR = `
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+`
