@@ -120,7 +120,7 @@ const ComicRelief = () => (
         </div>
         <Shenanigans>PRESS FOR SHENANIGANS</Shenanigans>
         {/*
-        I tried all of these seperatley and none of them worked
+        I tried all of these seperately and none of them worked
         <Img fluid={"../content/images/2020/vote/shenanigans-button.png"}/>
         <img src ={"../content/images/2020/vote/shenanigans-button.png"}/>
         <img src ={require("../content/images/2020/vote/shenanigans-button.png")}/>
