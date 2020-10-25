@@ -3,8 +3,14 @@ import s from 'styled-components'
 import Img from 'gatsby-image'
 import { RADIANT_REGULAR } from '../../../utils/font'
 
-import { Wrapper, WordWithLine } from './shared'
+import { Wrapper, 
+  WordWithLine, 
+  ArticleHeader, 
+  ArticleDescription,
+  ArticleAuthor, 
+  RedSectionHeader} from './shared'
 import { StaticQuery, graphql } from 'gatsby'
+import Stars from '../../../content/images/2020/vote/stars.png'
 
 const H2 = s.h2` 
   text-align: center; 
@@ -21,8 +27,8 @@ const MustReadArticle = ({article}) => (
       <Img fluid={article.img.src.childImageSharp.fluid} className="border border-dark" />
     </div>
     <div className="col-8">
-      <p style={{fontSize:20, lineHeight: 1}}>{article.title}</p>
-      <p className="text-uppercase">BY {article.author}</p>
+      <ArticleHeader>{article.title}</ArticleHeader>
+      <ArticleAuthor>BY {article.author}</ArticleAuthor>
     </div>
   </div>
   
@@ -31,7 +37,7 @@ const MustReadArticle = ({article}) => (
 const MustRead = ({articles}) => (
   <div className="col-md-4 pl-0" style={{backgroundColor: "#e4e4e4"}}>
     <div className="d-flex justify-content-center">
-      <p className="pt-3">red and blue star here</p>
+    <img src={Stars} style={{margin:'auto', display:'block', width:'2rem'}}/>
     </div>
     <H2> MUST READ: </H2>
     <MustReadArticle article={articles[0]}/>
@@ -40,7 +46,7 @@ const MustRead = ({articles}) => (
     <MustReadArticle article={articles[0]}/>
     <MustReadArticle article={articles[0]}/>
     <div className="d-flex justify-content-center">
-      <p className="pt-3">red and blue star here</p>
+    <img src={Stars} style={{margin:'auto', display:'block', width:'2rem'}}/>
     </div>
   </div>
 )
@@ -48,10 +54,10 @@ const Editorial = ({articles}) => (
   <div className="px-3">
     <div className="row" style={{backgroundColor: "#e4e4e4"}}>
       <div className="col-6 pl-5 pt-5">
-        <p className="text-danger font-weight-bold"> EDITORIAL </p>
-        <p className="w-100" style={{fontSize: 36, lineHeight: 1}}> {articles[0].title} </p>
-        <p style={{lineHeight: 1}}> {articles[0].description} </p>
-        <p className="text-uppercase"> BY {articles[0].author} </p>
+        <RedSectionHeader> EDITORIAL </RedSectionHeader>
+        <ArticleHeader style={{fontSize:'2.5rem'}}> {articles[0].title} </ArticleHeader>
+        <ArticleDescription> {articles[0].description} </ArticleDescription>
+        <ArticleAuthor> BY {articles[0].author} </ArticleAuthor>
       </div>
       <div className="col-6">
         <Img fluid={articles[0].img.src.childImageSharp.fluid} className="border border-dark" />
@@ -70,8 +76,8 @@ const ExtraArticle = ({article}) => (
     <ExtraArticleImage>
       <Img fluid={article.img.src.childImageSharp.fluid} className="border border-dark" />
     </ExtraArticleImage>
-    <p style={{fontSize:20, lineHeight: 1}}>{article.title}</p>
-    <p className="text-uppercase">BY {article.author}</p>
+    <ArticleHeader>{article.title}</ArticleHeader>
+    <ArticleAuthor>BY {article.author}</ArticleAuthor>
   </div>
 
 )

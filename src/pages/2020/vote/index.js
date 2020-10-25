@@ -40,7 +40,9 @@ const IndexPage = () => (
     </Helmet>
 
     <NavBar />
-    <img src = {VoteHeader}></img>
+    <div>
+      <img src = {VoteHeader} style={{width:'100%'}}/>
+    </div>
     <ExplainItToMe />
     <InOtherNews />
     <InMyOpinion />

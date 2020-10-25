@@ -1,7 +1,16 @@
 [
   {
-    "title": "Ben May has been doing cool stuff on the biden campaign",
-    "description": "Lorem ipsum dolor sit amet",
+    "title": "1 Ben May has been doing cool stuff on the biden campaign",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "author": "Ashley Ahn",
+    "link":"https://thedp.com",
+    "img": {
+      "src": "../../../images/2020/vote/Temp2.png"
+    }
+  },
+  {
+    "title": "2 How Safe is Your Mail In Ballot",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "author": "Ashley Ahn",
     "link":"https://thedp.com",
     "img": {
@@ -9,8 +18,17 @@
     }
   },
   {
-    "title": "How Safe is Your Mail In Ballot",
-    "description": "Lorem ipsum dolor sit amet",
+    "title": "3 Ben May has been doing cool stuff on the biden campaign",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "author": "Ashley Ahn",
+    "link":"https://thedp.com",
+    "img": {
+      "src": "../../../images/2020/vote/Temp.png"
+    }
+  },
+  {
+    "title": "4 How Safe is Your Mail In Ballot",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "author": "Ashley Ahn",
     "link":"https://thedp.com",
     "img": {
