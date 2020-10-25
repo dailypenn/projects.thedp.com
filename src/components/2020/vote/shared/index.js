@@ -1,11 +1,10 @@
 import React from 'react'
 import s from 'styled-components'
-import { RADIANT_REGULAR } from '../../../../utils/font'
+import { RADIANT_REGULAR} from '../../../../utils/font'
 
 export const Wrapper = s.div`
   padding: 0 15rem;
   marginTop: 2rem;
-
   @media (max-width: 768px) {
     padding: 0rem;
   }
