@@ -25,9 +25,12 @@
     "npm": "^6.14.8",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
+    "react-bootstrap": "^1.4.0",
+    "react-bootstrap-carousel": "^4.1.0",
     "react-dfp": "^0.18.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
+    "react-multi-carousel": "^2.5.5",
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
