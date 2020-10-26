@@ -47,7 +47,7 @@ const InOtherNews = () => (
                 img {
                   src {
                     childImageSharp {
-                      fluid(maxWidth: 1000, maxHeight: 1000) {
+                      fluid(maxWidth: 2000, maxHeight: 1200) {
                         ...GatsbyImageSharpFluid
                         src
                       }
@@ -96,8 +96,8 @@ const InOtherNews = () => (
               <Carousel>
                 {articles.slice(1,).map(article => (
                   <Carousel.Item interval={3000}>
-                    <Img fluid={article.img.src.childImageSharp.fluid} style={{ height: '300px' }} />
-                    <Carousel.Caption style ={{ backgroundColor: '#000000' }}>
+                    <Img fluid={{...article.img.src.childImageSharp.fluid, aspectRatio: 7/3}} />
+                    <Carousel.Caption style ={{ backgroundColor: '#000000', opacity: 0.57 }}>
                       <ArticleHeader>{article.title}</ArticleHeader>
                     </Carousel.Caption>
                   </Carousel.Item>
