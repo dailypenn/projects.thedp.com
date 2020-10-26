@@ -21,11 +21,19 @@ const Subtitle = s.div`
   ${FUTURA_BOLD}
   font-size: 90%;
   margin-top: -1.5rem;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }
 `
 
 const ArticleRow = s.div`
   margin-top: 5rem;
   padding: 0 4rem;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 3rem;
+  }
 `
 
 const Article = s.div`
@@ -72,6 +80,16 @@ const ImageWithLine = s.div`
     }
 
     padding: 0 1rem;
+    padding-top: 1rem;
+  }
+`
+
+const ButtonImg = s.img`
+  display: block;
+  margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 2rem;
   }
 `
 
@@ -106,6 +124,7 @@ const ComicRelief = () => (
       const { node: { childrenVote2020UtbJson: articles } } = data.allFile.edges[0]
       return (
         <Wrapper>
+          <div id="utb" />
           <ImageWithLine>
             <h1> <img src="/img/utb-header.png" /> </h1>
           </ImageWithLine>
@@ -128,11 +147,12 @@ const ComicRelief = () => (
           <Shenanigans>
             PRESS FOR SHENANIGANS
           </Shenanigans>
-          <img
+          <ButtonImg
             src="/img/shenanigans-button.png"
             className="img-fluid"
-            style={{ display: 'block', margin: '0 auto', height: '100px' }}
+            style={{ height: '100px' }}
           />
+
         </Wrapper>
       )
     }}

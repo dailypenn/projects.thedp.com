@@ -13,12 +13,12 @@ import {
 
 const Card = ({ article }) => (
   <div className = "row">
-    <div className="col-md-5">
+    <div className="col-md-7">
       <StyledAnchor href={article.link}>
         <Img fluid={article.img.src.childImageSharp.fluid} />
       </StyledAnchor>
     </div>
-    <div className="col-md-7">
+    <div className="col-md-5">
       <StyledAnchor href={article.link} style={{ padding: '1rem' }}>
         <ArticleHeader>{article.title}</ArticleHeader>
         <ArticleDescription>{article.description}</ArticleDescription>

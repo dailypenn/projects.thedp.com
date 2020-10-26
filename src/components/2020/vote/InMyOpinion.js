@@ -9,7 +9,8 @@ import {
   ArticleHeader, 
   ArticleDescription,
   ArticleAuthor, 
-  RedSectionHeader
+  RedSectionHeader,
+  StyledAnchor
 } from './shared'
 
 import { RADIANT_REGULAR } from '../../../utils/font'
@@ -21,79 +22,89 @@ const H2 = s.h2`
   margin-bottom: 4rem;
 `
 
-const Editorial = ({ articles }) => (
-  <div className="row" style={{ backgroundColor: '#F5F4F7', padding: '1rem' }}>
-    <div className="col-6">
-      <RedSectionHeader> EDITORIAL </RedSectionHeader>
-      <ArticleHeader style={{ fontSize: '200%' }}> {articles[0].title} </ArticleHeader>
-      <ArticleDescription style={{ marginTop: '2rem' }}> {articles[0].description} </ArticleDescription>
-      <ArticleAuthor style={{ marginTop: '2rem' }}> BY {articles[0].author} </ArticleAuthor>
+const Editorial = ({ article }) => (
+  <StyledAnchor href={article.link} target="_blank">
+    <div className="row" style={{ backgroundColor: '#F5F4F7', padding: '1rem' }}>
+      <div className="col-6">
+        <RedSectionHeader> EDITORIAL </RedSectionHeader>
+        <ArticleHeader style={{ fontSize: '200%' }}> {article.title} </ArticleHeader>
+        <ArticleDescription style={{ marginTop: '2rem' }}> {article.description} </ArticleDescription>
+        <ArticleAuthor style={{ marginTop: '2rem' }}> BY {article.author} </ArticleAuthor>
+      </div>
+      <div className="col-6">
+        <Img fluid={article.img.src.childImageSharp.fluid} />
+      </div>
     </div>
-    <div className="col-6">
-      <Img fluid={articles[0].img.src.childImageSharp.fluid} />
-    </div>
-  </div>
+  </StyledAnchor>
 )
 
-const ExtraArticleImage = s.div`
-  height: 70%;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-`
-
-const ExtraArticle = ({article}) => (
-  <div className="col-6 text-center px-3">
-    <ExtraArticleImage>
+const ExtraArticle = ({ article }) => (
+  <div className="col-md-6 text-center">
+    <StyledAnchor href={article.link} target="_blank">
       <Img fluid={article.img.src.childImageSharp.fluid} />
-    </ExtraArticleImage>
-    <ArticleHeader>{article.title}</ArticleHeader>
-    <ArticleAuthor>BY {article.author}</ArticleAuthor>
+      <ArticleHeader style={{ marginTop: '1.5rem' }}>{article.title}</ArticleHeader>
+      <ArticleAuthor style={{ marginTop: '0.5rem' }}>BY {article.author}</ArticleAuthor>
+    </StyledAnchor>
   </div>
 )
 
 const Extra = ({ articles }) => (
   <div>
-    <div className="row pt-3">
+    <div className="row" style={{ margin: '2rem 0' }}>
       <ExtraArticle article={articles[0]}/>
-      <ExtraArticle article={articles[0]}/>
+      <ExtraArticle article={articles[1]}/>
     </div>
-    <div className="row pt-3">
-      <ExtraArticle article={articles[0]}/>
-      <ExtraArticle article={articles[0]}/>
+    <div className="row">
+      <ExtraArticle article={articles[2]}/>
+      <ExtraArticle article={articles[3]}/>
     </div>
   </div>
 )
 
 const MustReadArticle = ({ article }) => (
-  <div className="row" style={{ marginBottom: '3rem' }}>
-    <div className="col-6">
-      <Img fluid={article.img.src.childImageSharp.fluid} />
+  <StyledAnchor href={article.link} target="_blank">
+    <div className="row" style={{ marginBottom: '3rem' }}>
+      <div className="col-md-6">
+        <Img fluid={article.img.src.childImageSharp.fluid} />
+      </div>
+      <div className="col-md-6">
+        <ArticleHeader style={{ fontSize: '110%' }}> {article.title} </ArticleHeader>
+        <ArticleAuthor style={{ fontSize: '80%' }}> BY {article.author} </ArticleAuthor>
+      </div>
     </div>
-    <div className="col-6">
-      <ArticleHeader style={{ fontSize: '110%' }}> {article.title} </ArticleHeader>
-      <ArticleAuthor style={{ fontSize: '80%' }}> BY {article.author} </ArticleAuthor>
-    </div>
-  </div>
+  </StyledAnchor>
 )
 
 const MustRead = ({ articles }) => (
   <div className="col-md-4" style={{ backgroundColor: '#F8F8F8' }}>
-    <div className="d-flex justify-content-center" style={{ margin: '2rem 0' }}>
+    <div className="d-flex justify-content-center" style={{ margin: '2rem 0 1rem 0' }}>
       <img src="/img/stars.png" style={{ height: '25px' }} />
     </div>
     <H2> MUST READ: </H2>
-    {articles.map(article => <MustReadArticle article={article} />)}
-    <div className="d-flex justify-content-center">
+    <div style={{ padding: '0 1rem' }}>
+      {articles.map(article => <MustReadArticle article={article} />)}
+    </div>
+    <div className="d-flex justify-content-center" style={{ margin: '2rem 0' }}>
       <img src="/img/stars.png" style={{ height: '25px' }} />
     </div>
   </div>
 )
+
+const ArticlesWrapper = s.div`
+  .article-wrapper {
+    padding-left: 4rem;
+
+    @media screen and (max-width: 768px) {
+      padding-left: 0rem;
+    }
+  }
+`
 
 const InMyOpinion = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile (filter: {relativePath: {eq: "vote_2020_opinion.json"}}) {
+        allFile (filter: {relativePath: { eq: "vote_2020_opinion.json" }}) {
           edges {
             node {
               childrenVote2020OpinionJson{
@@ -125,11 +136,13 @@ const InMyOpinion = () => (
           <div id="opinion">
             <WordWithLine word="IN MY OPINION" lineColor="#F05237"/>
             <div className="row">
-              <MustRead articles={articles} />
-              <div className="col-md-7" style={{ marginLeft: '4rem' }}>
-                <Editorial articles={articles} />
-                <Extra articles={articles} />
-              </div>
+              <MustRead articles={articles.slice(0, 5)} />
+              <ArticlesWrapper className="col-md-8">
+                <div className="article-wrapper">
+                  <Editorial article={articles[5]} />
+                  <Extra articles={articles.slice(6, )} />
+                </div>
+              </ArticlesWrapper>
             </div>
           </div>
         </Wrapper>

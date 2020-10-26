@@ -1,20 +1,12 @@
 [
   {
-    "title": "Penn Prof. Mitchell Berman Discusses Legitimacy Of Election, Politicization Of Courts",
-    "caption": "The Daily Pennsylvanian sat down with Professor Mitchell Berman, Leon Meltzer Professor of Law at the University of Pennsylvania Law School, to discuss threats to the legitimacy of the 2020 election and the politicization of courts.",
-    "link": "https://www.youtube.com/embed/3KJrlF9T4Rc",
-    "tag": "video"
-  },
-  {
-    "title": "Penn Students On Activism And Politics In The Age Of COVID-19",
-    "caption": "Penn students from liberal and conservative political organizations on campus consider the stakes of the upcoming election and what civic engagement means to them.",
-    "link": "https://www.youtube.com/embed/3KJrlF9T4Rc",
-    "tag": "video"
-  },
-  {
-    "title": "Penn Democrats Deliver Mail-In Ballot Applications To Off-Campus Student Apartments",
-    "caption": "On Oct. 4, Penn Democrats distributed voter materials to off-campus apartments in an attempt to increase student voter turnout.",
-    "link": "https://www.youtube.com/embed/3KJrlF9T4Rc",
-    "tag": "video"
+    "title": "Politicians in Philadelphia since the 2018 Midterms",
+    "link": "https://www.thedp.com/article/2020/10/politicians-visit-penn-and-philadelphia-since-2018-midterm-elections-vote-voting-election-guide-photo-gallery",
+    "authors": "Sukhmani Kaur and Chase Sutton",
+    "tag": "photo gallery",
+    "abstract": "As a historic 2020 Election Day approaches, The Daily Pennsylvanian looks back on ten major United States politicians that have visited Penn’s campus and Philadelphia since the 2018 Midterm Elections.",
+    "img": {
+      "src": "../../../images/2020/vote/multimedia-1.jpg"
+    }
   }
 ]
