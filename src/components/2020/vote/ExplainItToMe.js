@@ -2,25 +2,28 @@ import React from 'react'
 import s from 'styled-components'
 import Img from 'gatsby-image'
 import BackgroundImage from 'gatsby-background-image'
+import { StaticQuery, graphql } from 'gatsby'
 
-import { Wrapper, 
+import { 
+  Wrapper, 
   WordWithLine, 
   ArticleHeader, 
   ArticleDescription,
   ArticleAuthor, 
-  RedSectionHeader} from './shared'
-import { StaticQuery, graphql } from 'gatsby'
+  RedSectionHeader
+} from './shared'
+
 import DividerLine from '../../../content/images/2020/vote/divider-line.png'
 
-const Explainer = ({articles}) => (
+const Explainer = ({ article }) => (
   <div className="col-md-4 pr-0">
-    <div class="border border-dark">
-      <Img fluid={articles[0].img.src.childImageSharp.fluid} />
+    <div>
+      <Img fluid={article.img.src.childImageSharp.fluid} />
     </div>
     <RedSectionHeader style={{textAlign:'center'}}> EXPLAINER </RedSectionHeader>
-    <ArticleHeader style={{textAlign:'center'}}> {articles[0].title} </ArticleHeader>
-    <ArticleDescription style={{textAlign:'center'}}> {articles[0].description} </ArticleDescription>
-    <ArticleAuthor  style={{textAlign:'center'}}> BY {articles[0].author} </ArticleAuthor>
+    <ArticleHeader style={{textAlign:'center'}}> {article.title} </ArticleHeader>
+    <ArticleDescription style={{textAlign:'center'}}> {article.description} </ArticleDescription>
+    <ArticleAuthor  style={{textAlign:'center'}}> BY {article.author} </ArticleAuthor>
   </div>
 )
 
@@ -30,19 +33,17 @@ const FeatureText = s.div`
   color: #FFFFFF;
   text-align: left;
 `
-const Feature = ({articles}) => (
-  <div className="col-md-8 pl-0">
-    <BackgroundImage className="h-100 border border-dark" fluid={articles[0].img.src.childImageSharp.fluid}>
-    <FeatureText>
-      <RedSectionHeader> FEATURE </RedSectionHeader>
-      <p className="w-50" style={{fontSize: 36}}> {articles[0].title} </p>
-      <p> {articles[0].description} </p>
-      <p className="pt-3 text-uppercase"> BY {articles[0].author} </p>
-    </FeatureText>
-    
-    
+
+const Feature = ({ article }) => (
+  <div className="col-md-8">
+    <BackgroundImage fluid={article.img.src.childImageSharp.fluid} style={{ border: 'none' }}>
+      <FeatureText>
+        <RedSectionHeader> FEATURE </RedSectionHeader>
+        <p className="w-50" style={{fontSize: 36}}> {article.title} </p>
+        <p> {article.description} </p>
+        <p className="pt-3 text-uppercase"> BY {article.author} </p>
+      </FeatureText>
     </BackgroundImage>
-    
   </div>
 )
 
@@ -51,20 +52,19 @@ const NewText = s.div`
   text-align: center;
 `
 
-
-const New = ({articles}) => (
-  <div className="row" style={{marginTop:'2rem'}}>
+const New = ({ article }) => (
+  <div className="row" style={{ marginTop: '2rem' }}>
     <div className="col-md-4 pl-0">
       <NewText>
         <RedSectionHeader> NEW! </RedSectionHeader>
-        <ArticleHeader style={{fontSize: '2.5rem'}}> {articles[0].title} </ArticleHeader>
+        <ArticleHeader style={{fontSize: '2.5rem'}}> {article.title} </ArticleHeader>
         <img src={DividerLine} style={{width:'4em', margin:'1em 0em'}}/>
-        <ArticleDescription> {articles[0].description} </ArticleDescription>
-        <ArticleAuthor> BY {articles[0].author} </ArticleAuthor>
+        <ArticleDescription> {article.description} </ArticleDescription>
+        <ArticleAuthor> BY {article.author} </ArticleAuthor>
       </NewText>
     </div>
     <div className="col-md-8 pr-0">
-      <Img fluid={articles[0].img.src.childImageSharp.fluid} className="border border-dark" />
+      <Img fluid={article.img.src.childImageSharp.fluid} />
     </div>
   </div>
 )
@@ -99,21 +99,15 @@ const ExplainItToMe = () => (
     `}
     render={data => {
       const { node: { childrenVote2020ExplainItToMeJson: articles } } = data.allFile.edges[0]
-      console.log(articles)
       return (
         <Wrapper>
           <div id="explainers">
             <WordWithLine word="EXPLAIN IT TO ME" lineColor="#F05237"/>
               <div className="row">
-                <Feature articles={articles}/>
-                <Explainer articles={articles}/>
+                <Feature article={articles[0]}/>
+                <Explainer article={articles[1]}/>
               </div>
-
-              <New articles={articles}/>
-            
-
-
-
+              <New article={articles[2]}/>
           </div>
         </Wrapper>
       )

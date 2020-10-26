@@ -1,76 +1,79 @@
 import React from 'react'
 import s from 'styled-components'
 import Img from 'gatsby-image'
-
-import {WordWithLine } from './shared'
 import { StaticQuery, graphql } from 'gatsby'
-import { RADIANT_REGULAR, LORA_REGULAR, FUTURA_REGULAR} from '../../../utils/font'
 
-const BlackWrapper = s.div`
-  padding: 1rem 15rem 42rem 15rem;
+import { FUTURA_REGULAR, FUTURA_BOLD } from '../../../utils/font'
+import { StyledAnchor } from './shared'
+
+const Wrapper = s.div`
+  padding: 3rem 0rem 3rem 0rem;
   background-color: black;
-  height: 39rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-
-  #subtitle {
-    color: #f05237;
-    margin: auto;
-    width: 65%;
-    text-align: center;
-    margin-top: -1rem;
-    ${FUTURA_REGULAR}
-    font-style: normal;
-    font-size: 0.75rem;
-  }
-
-  #articleRow {
-    margin-top: 2rem;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 3rem;
-  }
 
   @media (max-width: 768px) {
     padding: 0rem;
   }
 `
 
-const IndividualArticle = s.div`
+const Subtitle = s.div`
+  color: #F05237;
   text-align: center;
-  width: 12rem;
-  color: #ffeddc;
+  ${FUTURA_BOLD}
+  font-size: 90%;
+  margin-top: -1.5rem;
+`
+
+const ArticleRow = s.div`
+  margin-top: 5rem;
+  padding: 0 4rem;
+`
+
+const Article = s.div`
+  color: #FFEDDC;
   ${FUTURA_REGULAR}
-  font-style: normal;
-  font-weight: 10;
+  text-align: center;
 `
-const ImageDiv = s.div`
-  width: 12rem;
-  height: 12rem;
-  margin-bottom: 31rem;
-  display: table-cell;
-  vertical-align: middle;
-`
-const AuthorDiv = s.p`
-  color: #ffeddc;
-  margin-top: 1rem;
-`
-const TitlePara = s.p`
-  color: #ffeddc;
-  margin-top: 1rem;
-`
+
 const Shenanigans = s.p`
   width: 100%;
   text-align: center;
-  color: #f05237;
+  color: #F05237;
   margin-top: 2rem;
-  ${FUTURA_REGULAR}
-  font-size: 0.9rem;
-  font-style: normal;
+  ${FUTURA_BOLD}
+  font-size: 90%;
 `
 
+// Adapted from https://www.geeksforgeeks.org/how-to-make-horizontal-line-with-words-in-the-middle-using-css/
+const ImageWithLine = s.div`
+  padding: 0 6rem;
 
+  h1 {
+    display: flex; 
+    flex-direction: row; 
+  }
+  
+
+  h1:before, h1:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #F05237;
+    margin: auto;
+  }
+
+  img {
+    margin: 0 1rem;
+    height: 125px;
+  }
+
+  @media screen and (max-width: 768px) {
+    img {
+      height: 50px;
+      margin: 0;
+    }
+
+    padding: 0 1rem;
+  }
+`
 
 const ComicRelief = () => (
   <StaticQuery
@@ -81,13 +84,12 @@ const ComicRelief = () => (
             node {
               childrenVote2020UtbJson{
                 title
-                description
                 author
                 link
                 img {
                   src {
                     childImageSharp {
-                      fluid(maxWidth: 1000, maxHeight: 600) {
+                      fluid(maxWidth: 600, maxHeight: 600) {
                         ...GatsbyImageSharpFluid
                         src
                       }
@@ -103,30 +105,35 @@ const ComicRelief = () => (
     render={data => {
       const { node: { childrenVote2020UtbJson: articles } } = data.allFile.edges[0]
       return (
-        <BlackWrapper >
-          <div id="utb">
-            <WordWithLine word="For some comic relief" lineColor="#F05237"/>
-            <div id = "subtitle">BROUGHT TO YOU BY UNDER THE BUTTON</div>
-          </div>
+        <Wrapper>
+          <ImageWithLine>
+            <h1> <img src="/img/utb-header.png" /> </h1>
+          </ImageWithLine>
+          <Subtitle>BROUGHT TO YOU BY UNDER THE BUTTON</Subtitle>
 
-          <div id="articleRow">
-            {articles.map((article) => (
-             <IndividualArticle>
-              <ImageDiv><Img fluid={article.img.src.childImageSharp.fluid}/></ImageDiv>
-               <TitlePara>{article.title}</TitlePara>
-                <AuthorDiv>{article.author}</AuthorDiv>
-             </IndividualArticle>
+          <ArticleRow className="row">
+            {articles.map(article => (
+              <div className="col-md">
+                <StyledAnchor href={article.link}>
+                  <Article>
+                    <Img fluid={article.img.src.childImageSharp.fluid} />
+                    <p style={{ marginTop: '1rem', fontSize: '120%' }}>{article.title}</p>
+                    <p style={{ marginTop: '1rem', fontSize: '90%' }}>BY {article.author}</p>
+                  </Article>
+                </StyledAnchor>
+              </div>
             ))}       
-        </div>
-        <Shenanigans>PRESS FOR SHENANIGANS</Shenanigans>
-        {/*
-        I tried all of these seperately and none of them worked
-        <Img fluid={"../content/images/2020/vote/shenanigans-button.png"}/>
-        <img src ={"../content/images/2020/vote/shenanigans-button.png"}/>
-        <img src ={require("../content/images/2020/vote/shenanigans-button.png")}/>
-        */}
-        </BlackWrapper>
-        
+          </ArticleRow>
+
+          <Shenanigans>
+            PRESS FOR SHENANIGANS
+          </Shenanigans>
+          <img
+            src="/img/shenanigans-button.png"
+            className="img-fluid"
+            style={{ display: 'block', margin: '0 auto', height: '100px' }}
+          />
+        </Wrapper>
       )
     }}
   />

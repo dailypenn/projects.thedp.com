@@ -1,67 +1,36 @@
 import React from 'react'
 import s from 'styled-components'
+import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import { RADIANT_REGULAR } from '../../../utils/font'
 
-import { Wrapper, 
+import {
+  Wrapper, 
   WordWithLine, 
   ArticleHeader, 
   ArticleDescription,
   ArticleAuthor, 
-  RedSectionHeader} from './shared'
-import { StaticQuery, graphql } from 'gatsby'
-import Stars from '../../../content/images/2020/vote/stars.png'
+  RedSectionHeader
+} from './shared'
+
+import { RADIANT_REGULAR } from '../../../utils/font'
 
 const H2 = s.h2` 
   text-align: center; 
-  line-height: 0.1em;
-  margin-bottom: 3.2rem;
-  margin-top: 2rem;
   font-size: 4em;
-  letter-spacing: -2px;
   ${RADIANT_REGULAR}
+  margin-bottom: 4rem;
 `
-const MustReadArticle = ({article}) => (
-  <div className="row pl-3 py-3">
-    <div className="col-4 py-3 border border-dark">
-      <Img fluid={article.img.src.childImageSharp.fluid} className="border border-dark" />
-    </div>
-    <div className="col-8">
-      <ArticleHeader>{article.title}</ArticleHeader>
-      <ArticleAuthor>BY {article.author}</ArticleAuthor>
-    </div>
-  </div>
-  
-)
 
-const MustRead = ({articles}) => (
-  <div className="col-md-4 pl-0" style={{backgroundColor: "#e4e4e4"}}>
-    <div className="d-flex justify-content-center">
-    <img src={Stars} style={{margin:'auto', display:'block', width:'2rem'}}/>
+const Editorial = ({ articles }) => (
+  <div className="row" style={{ backgroundColor: '#F5F4F7', padding: '1rem' }}>
+    <div className="col-6">
+      <RedSectionHeader> EDITORIAL </RedSectionHeader>
+      <ArticleHeader style={{ fontSize: '200%' }}> {articles[0].title} </ArticleHeader>
+      <ArticleDescription style={{ marginTop: '2rem' }}> {articles[0].description} </ArticleDescription>
+      <ArticleAuthor style={{ marginTop: '2rem' }}> BY {articles[0].author} </ArticleAuthor>
     </div>
-    <H2> MUST READ: </H2>
-    <MustReadArticle article={articles[0]}/>
-    <MustReadArticle article={articles[0]}/>
-    <MustReadArticle article={articles[0]}/>
-    <MustReadArticle article={articles[0]}/>
-    <MustReadArticle article={articles[0]}/>
-    <div className="d-flex justify-content-center">
-    <img src={Stars} style={{margin:'auto', display:'block', width:'2rem'}}/>
-    </div>
-  </div>
-)
-const Editorial = ({articles}) => (
-  <div className="px-3">
-    <div className="row" style={{backgroundColor: "#e4e4e4"}}>
-      <div className="col-6 pl-5 pt-5">
-        <RedSectionHeader> EDITORIAL </RedSectionHeader>
-        <ArticleHeader style={{fontSize:'2.5rem'}}> {articles[0].title} </ArticleHeader>
-        <ArticleDescription> {articles[0].description} </ArticleDescription>
-        <ArticleAuthor> BY {articles[0].author} </ArticleAuthor>
-      </div>
-      <div className="col-6">
-        <Img fluid={articles[0].img.src.childImageSharp.fluid} className="border border-dark" />
-      </div>
+    <div className="col-6">
+      <Img fluid={articles[0].img.src.childImageSharp.fluid} />
     </div>
   </div>
 )
@@ -71,18 +40,18 @@ const ExtraArticleImage = s.div`
   padding-top: 1rem;
   padding-bottom: 1.5rem;
 `
+
 const ExtraArticle = ({article}) => (
   <div className="col-6 text-center px-3">
     <ExtraArticleImage>
-      <Img fluid={article.img.src.childImageSharp.fluid} className="border border-dark" />
+      <Img fluid={article.img.src.childImageSharp.fluid} />
     </ExtraArticleImage>
     <ArticleHeader>{article.title}</ArticleHeader>
     <ArticleAuthor>BY {article.author}</ArticleAuthor>
   </div>
-
 )
 
-const Extra = ({articles}) => (
+const Extra = ({ articles }) => (
   <div>
     <div className="row pt-3">
       <ExtraArticle article={articles[0]}/>
@@ -93,8 +62,33 @@ const Extra = ({articles}) => (
       <ExtraArticle article={articles[0]}/>
     </div>
   </div>
-  
 )
+
+const MustReadArticle = ({ article }) => (
+  <div className="row" style={{ marginBottom: '3rem' }}>
+    <div className="col-6">
+      <Img fluid={article.img.src.childImageSharp.fluid} />
+    </div>
+    <div className="col-6">
+      <ArticleHeader style={{ fontSize: '110%' }}> {article.title} </ArticleHeader>
+      <ArticleAuthor style={{ fontSize: '80%' }}> BY {article.author} </ArticleAuthor>
+    </div>
+  </div>
+)
+
+const MustRead = ({ articles }) => (
+  <div className="col-md-4" style={{ backgroundColor: '#F8F8F8' }}>
+    <div className="d-flex justify-content-center" style={{ margin: '2rem 0' }}>
+      <img src="/img/stars.png" style={{ height: '25px' }} />
+    </div>
+    <H2> MUST READ: </H2>
+    {articles.map(article => <MustReadArticle article={article} />)}
+    <div className="d-flex justify-content-center">
+      <img src="/img/stars.png" style={{ height: '25px' }} />
+    </div>
+  </div>
+)
+
 const InMyOpinion = () => (
   <StaticQuery
     query={graphql`
@@ -110,7 +104,7 @@ const InMyOpinion = () => (
                 img {
                   src {
                     childImageSharp {
-                      fluid(maxWidth: 1000, maxHeight: 600) {
+                      fluid(maxWidth: 1000, maxHeight: 1000) {
                         ...GatsbyImageSharpFluid
                         src
                       }
@@ -131,11 +125,10 @@ const InMyOpinion = () => (
           <div id="opinion">
             <WordWithLine word="IN MY OPINION" lineColor="#F05237"/>
             <div className="row">
-              <MustRead articles={articles}/>
-              <div className="col-md-1"></div>
-              <div className="col-md-7 px-0">
-                <Editorial articles={articles}/>
-                <Extra articles={articles}/>
+              <MustRead articles={articles} />
+              <div className="col-md-7" style={{ marginLeft: '4rem' }}>
+                <Editorial articles={articles} />
+                <Extra articles={articles} />
               </div>
             </div>
           </div>

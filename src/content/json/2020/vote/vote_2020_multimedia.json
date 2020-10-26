@@ -1,38 +1,20 @@
 [
   {
-    "title": "1 Ben May has been doing cool stuff on the biden campaign",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
-    "img": {
-      "src": "../../../images/2020/vote/Temp.png"
-    }
+    "title": "Penn Prof. Mitchell Berman Discusses Legitimacy Of Election, Politicization Of Courts",
+    "caption": "The Daily Pennsylvanian sat down with Professor Mitchell Berman, Leon Meltzer Professor of Law at the University of Pennsylvania Law School, to discuss threats to the legitimacy of the 2020 election and the politicization of courts.",
+    "link": "https://www.youtube.com/embed/3KJrlF9T4Rc",
+    "tag": "video"
   },
   {
-    "title": "2 How Safe is Your Mail In Ballot",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
-    "img": {
-      "src": "../../../images/2020/vote/Temp.png"
-    }
+    "title": "Penn Students On Activism And Politics In The Age Of COVID-19",
+    "caption": "Penn students from liberal and conservative political organizations on campus consider the stakes of the upcoming election and what civic engagement means to them.",
+    "link": "https://www.youtube.com/embed/3KJrlF9T4Rc",
+    "tag": "video"
   },
   {
-    "title": "3 Ben May has been doing cool stuff on the biden campaign",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
-    "img": {
-      "src": "../../../images/2020/vote/Temp.png"
-    }
-  },
-  {
-    "title": "4 How Safe is Your Mail In Ballot",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
-    "img": {
-      "src": "../../../images/2020/vote/Temp.png"
-    }
+    "title": "Penn Democrats Deliver Mail-In Ballot Applications To Off-Campus Student Apartments",
+    "caption": "On Oct. 4, Penn Democrats distributed voter materials to off-campus apartments in an attempt to increase student voter turnout.",
+    "link": "https://www.youtube.com/embed/3KJrlF9T4Rc",
+    "tag": "video"
   }
 ]

@@ -1,16 +1,17 @@
 import React from 'react'
-import s from 'styled-components'
 import Img from 'gatsby-image'
 import Carousel from 'react-bootstrap/Carousel'
+import { StaticQuery, graphql } from 'gatsby'
 
-import { Wrapper, 
+import {
+  Wrapper, 
   WordWithLine, 
   ArticleHeader, 
   ArticleDescription, 
   ArticleAuthor, 
-  StyledLink,
-  RedSectionHeader } from './shared'
-import { StaticQuery, graphql } from 'gatsby'
+  StyledAnchor,
+  RedSectionHeader
+} from './shared'
 import DividerLine from '../../../content/images/2020/vote/divider-line.png'
 
 // const responsive = {
@@ -46,7 +47,7 @@ const InOtherNews = () => (
                 img {
                   src {
                     childImageSharp {
-                      fluid(maxWidth: 1000, maxHeight: 600) {
+                      fluid(maxWidth: 1000, maxHeight: 1000) {
                         ...GatsbyImageSharpFluid
                         src
                       }
@@ -66,34 +67,37 @@ const InOtherNews = () => (
         <Wrapper>
           <div id="inOtherNews">
             <WordWithLine word="IN OTHER NEWS" lineColor="#7BA3D3"/>
-            <div className = "row">
-              <div className="col-md-4">
-                <StyledLink href={articles[0].link}>
-                  <Img fluid={articles[0].img.src.childImageSharp.fluid} className="border border-dark" />
-                </StyledLink>
+            <div className="row">
+              <div className="col-md-5">
+                <StyledAnchor href={articles[0].link}>
+                  <Img fluid={articles[0].img.src.childImageSharp.fluid} />
+                </StyledAnchor>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4" style={{ padding: '2rem 2rem' }}>
                 <RedSectionHeader>Feature</RedSectionHeader>
-                <StyledLink href={articles[0].link}>
-                  <ArticleHeader style={{fontSize: '2.5rem'}}>{articles[0].title}</ArticleHeader>
-                </StyledLink>
-                <img src={DividerLine} style={{width:'4em', margin:'1em 0em'}}/>
-                <StyledLink href={articles[0].link}>
-                  <ArticleDescription>{articles[0].description}</ArticleDescription>
+                <StyledAnchor href={articles[0].link}>
+                  <ArticleHeader style={{ fontSize: '200%' }}>{articles[0].title}</ArticleHeader>
+                </StyledAnchor>
+                <img src={DividerLine} style={{ width:'4em', margin:'1em 0em' }} />
+                <StyledAnchor href={articles[0].link}>
+                  <ArticleDescription style={{ marginTop: '1rem' }}>
+                    {articles[0].description}
+                  </ArticleDescription>
                   <ArticleAuthor>BY {articles[0].author}</ArticleAuthor>
-                </StyledLink>
+                </StyledAnchor>
               </div>
-              <div className="col-md-4" style={{backgroundColor:'gray'}}>
+              <div className="col-md" style={{backgroundColor:'gray'}}>
                 ads
               </div>
             </div>
-            <div className = "row" style={{margin:'1rem'}}>
-              <div className = "col-md-12">
+
+            <div className="row" style={{ marginTop: '3rem' }}>
+              <div className="col-md-12">
               <Carousel>
                 {articles.slice(1,).map(article => (
-                  <Carousel.Item interval={1000}>
-                    <Img fluid={article.img.src.childImageSharp.fluid}/>
-                    <Carousel.Caption style ={{backgroundColor: 'rgb(128, 128, 128, 0.5)'}}>
+                  <Carousel.Item interval={3000}>
+                    <Img fluid={article.img.src.childImageSharp.fluid} style={{ height: '300px' }} />
+                    <Carousel.Caption style ={{ backgroundColor: '#000000' }}>
                       <ArticleHeader>{article.title}</ArticleHeader>
                     </Carousel.Caption>
                   </Carousel.Item>
