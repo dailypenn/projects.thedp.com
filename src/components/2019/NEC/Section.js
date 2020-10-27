@@ -4,6 +4,30 @@ import s from 'styled-components'
 import { Helmet } from 'react-helmet'
 import { Link } from 'gatsby'
 
+const Body = s.div`
+  font-family: 'neuzeit-grotesk', sans-serif;
+  background: #F9F9F9;
+
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
+  
+  h4 {
+    color: #888;
+    font-weight: 400;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  p {
+    font-family: 'Lora', georgia, serif;
+  }  
+`
 const Footer = s.footer`
   max-width: 1200px;
   margin: 20px auto;
@@ -17,9 +41,8 @@ const Footer = s.footer`
 const Wrapper = s.div`
   font-size: 100%;
   padding: 0;
-  margin: 0;
-  font-family: 'neuzeit-grotesk', sans-serif;
-  background: #F9F9F9;
+  max-width: 1200px;
+  margin: auto;
   
   h1, h2, h3, h4 {
     text-align: center;
@@ -67,6 +90,32 @@ const NavBar = s.nav`
 const NavBarLink = s.a`
   display: flex;
   justify-content: center;
+
+  img {
+    height: 25px;
+  }
+`
+
+const Branches = s.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`
+
+const StyledImg = s(Img)`
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+`
+
+const StyledLink = s(Link)`
+  padding: 5px 10px;
+  color: #888;
+  text-decoration: none;
+
+  :active, :hover, :focus {
+    color: #d3d3d3;
+  }
 `
 
 const Category = s.div`
@@ -78,10 +127,23 @@ const Category = s.div`
 const Candidate = s.div`
   width: 33%;
   padding: 10px;
+  box-sizing: border-box;
 
   @media screen and (max-width: 768px) {
     width: 100%;
     padding: 0;
+  }
+`
+
+const VoteBtn = s.a`
+  padding: 5px 10px;
+  border-radius: 2px;
+  background: #AA1E22;
+  color: #FFF;
+  text-decoration: none;
+
+  :hover, :active, :focus {
+    color: #d3d3d3;
   }
 `
 
@@ -122,7 +184,7 @@ const Candidates = ({ people, title }) => {
       <Category>
         {people.map(person => (
           <Candidate>
-            {person.image && <Img fluid={person.image.src.childImageSharp.fluid} />}
+            {person.image && <StyledImg fluid={person.image.src.childImageSharp.fluid} />}
             <h3> {person.name} </h3>
             <p> <i> Endorsements: </i> {person.endorsements} </p>
             <StatementButton onClick={() => toggleShow(person.name)}>
@@ -136,12 +198,6 @@ const Candidates = ({ people, title }) => {
     </>
   )
 }
-
-const Branches = s.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-`
 
 const Section = ({ data }) => (
   <>
@@ -171,7 +227,7 @@ const Section = ({ data }) => (
         </NavBarLink>
       </NavBar>
     </header>
-
+<Body>
     <Wrapper>
       <Intro>
         <h1>NEC Candidate Center</h1>
@@ -185,14 +241,14 @@ const Section = ({ data }) => (
           The purpose of the four Class Boards is to provide social programming that instills a sense of class and school spirit, unity and pride, and breaks through social barriers.
           Each class popularly elects a president, executive vice president, vice president for internal affairs, vice president for external affairs, vice president for finance, and class chairs.
         </p>
-        <a href="https://www.pennstudgov.com" target="_blank" class="vote-btn">Vote Here</a>
+        <VoteBtn href="https://www.pennstudgov.com" target="_blank">Vote Here</VoteBtn>
       </Intro>
 
       <Branches>
-        <Link to="/2019/03/NEC" class="branch-link vote-btn">Undergraduate Assembly</Link>
-        <Link to="/2019/03/NEC/cb20" class="branch-link">Class Board '20</Link>
-				<Link to="/2019/03/NEC/cb21" class="branch-link">Class Board '21</Link>
-				<Link to="/2019/03/NEC/cb22" class="branch-link">Class Board '22</Link>
+        <StyledLink to="/2019/03/NEC">Undergraduate Assembly</StyledLink>
+        <StyledLink to="/2019/03/NEC/cb20">Class Board '20</StyledLink>
+				<StyledLink to="/2019/03/NEC/cb21">Class Board '21</StyledLink>
+				<StyledLink to="/2019/03/NEC/cb22">Class Board '22</StyledLink>
       </Branches>
 
       {Object.entries(data).map(([key, val]) => (
@@ -203,7 +259,7 @@ const Section = ({ data }) => (
     <Footer>
       <hr />
       Made with ♡ by The Daily Pennsylvanian. © 2019. All rights reserved.
-    </Footer>
+    </Footer></Body>
   </>
 )
 

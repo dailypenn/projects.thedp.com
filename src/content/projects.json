@@ -1,6 +1,28 @@
 {
   "featured": [
     {
+      "title": "Election Guide 2020",
+      "author": "Web Dev: Alex Go, Calvin Hu, Nassim Motya, Peter Chen | Design: Ava Cruz",
+      "section": "Presidential Election",
+      "date": "October 2020",
+      "description": "The Penn community’s guide on how to vote, who’s running, and how students are getting involved.",
+      "sponsored": false,
+      "link": "/2020/election",
+      "image": "https://snworksceo.imgix.net/dpn/a15d5bfd-cb4c-4588-a420-ebdca0fb2b78.sized-1000x1000.jpg",
+      "alt": "election guide"
+    },
+    {
+      "title": "NEC Election",
+      "author": "Web Dev: Alex Go, Laurel Lee, Peter Chen | Design: Ava Cruz",
+      "section": "NEC Election",
+      "date": "Septemer 2020",
+      "description": "Read about the candidates for UA and 2021, 2022, and 2023 Class Boards.",
+      "sponsored": false,
+      "link": "/2020/NEC",
+      "image": "https://snworksceo.imgix.net/dpn/24007398-2064-463e-bb03-129867d0db63.sized-1000x1000.png",
+      "alt": "nec election"
+    },
+    {
       "title": "Welcome Back",
       "author": "Web Dev: Peter Chen | Design: Ava Cruz",
       "section": "Welcome Back",
@@ -10,7 +32,9 @@
       "link": "/2020/welcome-back",
       "image": "https://snworksceo.imgix.net/dpn/1fe2ce10-46fa-402e-a9f2-498cc011769b.sized-1000x1000.jpg",
       "alt": "welcome-back"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "COVID-19",
       "author": "Web Dev: Peter Chen, Alex Go | Design: Ava Cruz",
@@ -32,9 +56,7 @@
       "link": "/2019/12/year-in-review",
       "image": "https://s3.amazonaws.com/snwceomedia/dpn/c9f5bdfc-5a9d-450e-9a90-4e8ad3b04186.sized-1000x1000.jpg",
       "alt": "2019 Year in Review"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "Basketball Preview 2019 | DP Sports",
       "author": "Web Dev: Daniel Salib, Design: Gillian Diebold",

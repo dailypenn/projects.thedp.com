@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Students, profs., and politicians fear disenfranchisement of voters of color this election",
+    "description": "For Penn-affiliated politics aficionados, President Donald Trump and the COVID-19 pandemic exacerbate America's sordid history of voter disenfranchisement.",
+    "author": "HADRIANA LOWENKRON",
+    "link":"https://www.thedp.com/article/2020/10/election-voting-disenfranchisement-suppression-mail-in-ballots-philadelphia",
+    "img": {
+      "src": "../../../images/2020/vote/news-1.jpg"
+    }
+  },
+  {
+    "title": "From Locust tabling to organizing Floridians: Penn students grind in Biden's final stretch",
+    "description": "As the campaign reaches its final stretch, politically active students are grinding nonstop to help the former vice president emerge victorious in key battleground states like Pennsylvania and Florida next week.",
+    "author": "Hannah Gross",
+    "link":"https://www.thedp.com/article/2020/10/penn-students-working-biden-campaign-2020-election",
+    "img": {
+      "src": "../../../images/2020/vote/news-5.jpeg"
+    }
+  }
+]

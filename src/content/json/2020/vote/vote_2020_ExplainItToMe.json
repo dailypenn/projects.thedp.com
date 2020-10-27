@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Who's who on the ballot for Philadelphia voters this year?",
+    "description": "Who exactly is on your ballot, what do they do, and who do they stand for? We summarize everything you need to know.",
+    "author": "Tori Sousa",
+    "link":"https://www.thedp.com/article/2020/10/elections-representatives-democrat-republican-green-libertarian-pennsylvania",
+    "img": {
+      "src": "../../../images/2020/vote/news-4.jpg"
+    }
+  },
+  {
+    "title": "Penn students flock to early voting, using mail-in ballots and city-run offices",
+    "description": "In-person early voting began on Sept. 29 and will conclude on Oct. 27, coinciding with the last day to request a mail-in ballot. ",
+    "author": "Elizabeth Meisenzahl",
+    "link":"https://www.thedp.com/article/2020/10/penn-early-voting-election-day-absentee",
+    "img": {
+      "src": "../../../images/2020/vote/news-2.jpg"
+    }
+  },
+  {
+    "title": "Looking to vote in Philadelphia? Here's how to cast your ballot.",
+    "description": "Your vote is a key part of the county's democracy. It can help shape policy and government to reflect America’s diverse population.",
+    "author": "Pia Singh",
+    "link":"https://www.thedp.com/article/2020/10/how-to-vote-pennsylvania-2020-election-register",
+    "img": {
+      "src": "../../../images/2020/vote/news-3.jpg"
+    }
+  }
+]

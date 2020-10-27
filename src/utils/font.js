@@ -96,3 +96,27 @@ export const FJALLA_REGULAR = `
   font-family: 'Fjalla One', sans-serif;
   font-weight: 400;
 `
+
+export const MONTSERRAT_REGULAR = `
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+`
+
+export const LORA_REGULAR = `
+  font-family: 'Lora', serif;
+  font-weight: 400;
+`
+
+export const RADIANT_REGULAR = `
+  font-family: 'Radiant';
+  font-weight: 400;
+`
+
+export const FUTURA_REGULAR = `
+  font-family: 'Futura-PT', sans-serif;
+  font-weight: 400;
+`
+export const FUTURA_BOLD = `
+  font-family: 'Futura-PT', sans-serif;
+  font-weight: 700;
+`

@@ -41,6 +41,43 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2020/NEC`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2020/NEC`,
+      }
+    },
+    // images for 2020/year-book
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/images/2020/year-book`,
+      }
+    },
+    // json and image for 2020 elections
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2020/vote`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2020/vote`,
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
@@ -61,14 +98,31 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-load-script',
       options: {
-        src: '/join-script.js',
+        src: '/welcome-back-script.js',
       },
     },
     {
       resolve: 'gatsby-plugin-load-script',
       options: {
-        src: '/welcome-back-script.js',
+        src: '/nec-script.js',
       },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.svg$/
+        }
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-your-fonts',
+      options: {
+        host: 'dailypenn.github.io/font',
+        fonts: [
+          `radiant.css`
+        ]
+      }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
