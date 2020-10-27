@@ -1,20 +1,29 @@
 [
   {
-    "title": "How Safe is Your Mail In Ballot",
-    "description": "Lorem ipsum dolor sit amet",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
+    "title": "Students, profs., and politicians fear disenfranchisement of voters of color this election",
+    "description": "not available atm",
+    "author": "HADRIANA LOWENKRON",
+    "link":"https://www.thedp.com/article/2020/10/election-voting-disenfranchisement-suppression-mail-in-ballots-philadelphia",
     "img": {
-      "src": "../../../images/2020/vote/Temp.png"
+      "src": "../../../images/2020/vote/news-1.jpg"
     }
   },
   {
-    "title": "How Safe is Your Mail In Ballot",
-    "description": "Lorem ipsum dolor sit amet",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
+    "title": "Penn students flock to early voting, using mail-in ballots and city-run offices",
+    "description": "not available atm",
+    "author": "Elizabeth Meisenzahl",
+    "link":"https://www.thedp.com/article/2020/10/penn-early-voting-election-day-absentee",
     "img": {
-      "src": "../../../images/2020/vote/Temp.png"
+      "src": "../../../images/2020/vote/news-2.jpg"
+    }
+  },
+  {
+    "title": "Looking to vote in Philadelphia? Here's how to cast your ballot.",
+    "description": "not available atm",
+    "author": "Pia Singh",
+    "link":"https://www.thedp.com/article/2020/10/how-to-vote-pennsylvania-2020-election-register",
+    "img": {
+      "src": "../../../images/2020/vote/news-3.jpg"
     }
   }
 ]

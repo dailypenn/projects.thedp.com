@@ -1,30 +1,29 @@
 import React from 'react'
-import s from 'styled-components'
 import Img from 'gatsby-image'
+import { StaticQuery, graphql } from 'gatsby'
 
-import { Wrapper, 
+import {
+  Wrapper, 
   WordWithLine, 
   ArticleHeader, 
   ArticleDescription, 
   ArticleAuthor, 
-  StyledLink } from './shared'
-import { StaticQuery, graphql } from 'gatsby'
+  StyledAnchor
+} from './shared'
 
-
-
-const Card = ({article}) => (
+const Card = ({ article }) => (
   <div className = "row">
-    <div className="col-md-5">
-      <StyledLink href={article.link}>
-        <Img fluid={article.img.src.childImageSharp.fluid} className="border border-dark"/>
-      </StyledLink>
-    </div>
     <div className="col-md-7">
-      <StyledLink href={article.link}>
+      <StyledAnchor href={article.link}>
+        <Img fluid={article.img.src.childImageSharp.fluid} />
+      </StyledAnchor>
+    </div>
+    <div className="col-md-5">
+      <StyledAnchor href={article.link} style={{ padding: '1rem' }}>
         <ArticleHeader>{article.title}</ArticleHeader>
         <ArticleDescription>{article.description}</ArticleDescription>
         <ArticleAuthor>BY {article.author}</ArticleAuthor>
-      </StyledLink>
+      </StyledAnchor>
     </div>
   </div>
 )
@@ -44,7 +43,7 @@ const Sports = () => (
                 img {
                   src {
                     childImageSharp {
-                      fluid(maxWidth: 1000, maxHeight: 600) {
+                      fluid(maxWidth: 1000, maxHeight: 1000) {
                         ...GatsbyImageSharpFluid
                         src
                       }

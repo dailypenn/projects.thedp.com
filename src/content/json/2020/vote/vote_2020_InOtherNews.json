@@ -9,30 +9,73 @@
     }
   },
   {
-    "title": "2 How Safe is Your Mail In Ballot",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
+    "title": "Penn says it can’t give Election Day off, but it’s unclear what state regulations prevent it",
+    "link":"https://www.thedp.com/article/2020/10/penn-election-day-holiday-announcement-academic-calendar",
     "img": {
-      "src": "../../../images/2020/vote/Temp.png"
+      "src": "../../../images/2020/vote/carousel-1.jpg"
     }
   },
   {
-    "title": "3 Ben May has been doing cool stuff on the biden campaign",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
+    "title": "Pennsylvania will allow mail-in ballots this election. Here’s all you need to know.",
+    "link": "https://www.thedp.com/article/2020/09/philadelphia-selections-vote-by-mail-and-absentee-ballots",
     "img": {
-      "src": "../../../images/2020/vote/Temp.png"
+      "src": "../../../images/2020/vote/carousel-2.jpg"
     }
   },
   {
-    "title": "4 How Safe is Your Mail In Ballot",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
+    "title": "In exclusive interview, Andrew Yang highlights electoral importance of Penn students",
+    "link":"https://www.thedp.com/article/2020/10/andrew-yang-pennsylvania-biden-harris-penn",
     "img": {
-      "src": "../../../images/2020/vote/Temp.png"
+      "src": "../../../images/2020/vote/carousel-3.jpg"
+    }
+  },
+  {
+    "title": "In Philadelphia, Obama urges Penn community to ‘get to work’ and vote for Biden",
+    "link":"https://www.thedp.com/article/2020/10/philly-obama-campaigns-for-biden-penn-students-election",
+    "img": {
+      "src": "../../../images/2020/vote/carousel-4.jpg"
+    }
+  },
+  {
+    "title": "Penn’s election experts claim media outlets will responsibly call the presidential race",
+    "link":"https://www.thedp.com/article/2020/10/penn-professors-guardian-article-us-media-calling-2020-election",
+    "img": {
+      "src": "../../../images/2020/vote/carousel-5.jpg"
+    }
+  },
+  {
+    "title": "‘Avalanche of lies’: Election experts, students critique Trump’s presidential debate antics",
+    "link":"https://www.thedp.com/article/2020/10/election-presidential-debate-biden-trump-penn-students-professors-react",
+    "img": {
+      "src": "../../../images/2020/vote/carousel-6.jpg"
+    }
+  },
+  {
+    "title": "Are ‘bad things’ happening at the Philadelphia polls? Student political organizers say no.",
+    "link":"https://www.thedp.com/article/2020/10/bad-things-happen-in-philadelphia-student-poll-workers-penn-dems-penn-leads-the-vote",
+    "img": {
+      "src": "../../../images/2020/vote/carousel-7.jpg"
+    }
+  },
+  {
+    "title": "’Out now!’: Penn students join protests outside President Trump’s Philadelphia town hall",
+    "link":"https://www.thedp.com/article/2020/09/trump-town-hall-in-philadelphia",
+    "img": {
+      "src": "../../../images/2020/vote/carousel-8.jpg"
+    }
+  },
+  {
+    "title": "Penn AAPI Politics and Pa. AAPI for Biden co-host virtual rally with Andrew Yang, Helen Gym",
+    "link":"https://www.thedp.com/article/2020/10/biden-pennsylvania-congressional-aapi-bus-tour",
+    "img": {
+      "src": "../../../images/2020/vote/carousel-9.jpg"
+    }
+  },
+  {
+    "title": "Penn Dems and College Republicans face off in Penn’s edition of the presidential debate",
+    "link":"https://www.thedp.com/article/2020/10/politics-penn-debate-republicans-democrats-biden-trump",
+    "img": {
+      "src": "../../../images/2020/vote/carousel-10.jpg"
     }
   }
 ]
