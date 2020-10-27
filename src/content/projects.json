@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Election Guide 2020",
+      "author": "Web Dev: Alex Go, Calvin Hu, Nassim Motya, Peter Chen | Design: Ava Cruz",
+      "section": "Presidential Election",
+      "date": "October 2020",
+      "description": "The Penn community’s guide on how to vote, who’s running, and how students are getting involved.",
+      "sponsored": false,
+      "link": "/2020/election",
+      "image": "https://snworksceo.imgix.net/dpn/a15d5bfd-cb4c-4588-a420-ebdca0fb2b78.sized-1000x1000.jpg",
+      "alt": "election guide"
+    },
+    {
       "title": "NEC Election",
       "author": "Web Dev: Alex Go, Laurel Lee, Peter Chen | Design: Ava Cruz",
       "section": "NEC Election",
@@ -21,7 +32,9 @@
       "link": "/2020/welcome-back",
       "image": "https://snworksceo.imgix.net/dpn/1fe2ce10-46fa-402e-a9f2-498cc011769b.sized-1000x1000.jpg",
       "alt": "welcome-back"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "COVID-19",
       "author": "Web Dev: Peter Chen, Alex Go | Design: Ava Cruz",
@@ -32,9 +45,7 @@
       "link": "https://thedp-covid-19.herokuapp.com/",
       "image": "https://snworksceo.imgix.net/dpn/ffa1291a-df92-4ed0-8ce5-6ad3f04b082f.sized-1000x1000.png",
       "alt": "COVID-19"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "2019 Year in Review",
       "author": "Web Dev: Jess Tan, Daniel Salib, Design: Jess Tan",
