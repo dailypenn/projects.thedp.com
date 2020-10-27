@@ -133,7 +133,7 @@ const ComicRelief = () => (
           <ArticleRow className="row">
             {articles.map(article => (
               <div className="col-md">
-                <StyledAnchor href={article.link}>
+                <StyledAnchor href={article.link} target="_blank">
                   <Article>
                     <Img fluid={article.img.src.childImageSharp.fluid} />
                     <p style={{ marginTop: '1rem', fontSize: '120%' }}>{article.title}</p>

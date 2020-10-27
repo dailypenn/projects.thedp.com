@@ -136,11 +136,11 @@ const InMyOpinion = () => (
           <div id="opinion">
             <WordWithLine word="IN MY OPINION" lineColor="#F05237"/>
             <div className="row">
-              <MustRead articles={articles.slice(0, 5)} />
+              <MustRead articles={articles.slice(5,)} />
               <ArticlesWrapper className="col-md-8">
                 <div className="article-wrapper">
-                  <Editorial article={articles[5]} />
-                  <Extra articles={articles.slice(6, )} />
+                  <Editorial article={articles[0]} />
+                  <Extra articles={articles.slice(1, 5)} />
                 </div>
               </ArticlesWrapper>
             </div>
