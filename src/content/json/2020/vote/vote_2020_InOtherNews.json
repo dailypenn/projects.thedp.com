@@ -1,11 +1,11 @@
 [
   {
-    "title": "Who's who on the ballot for Philadelphia voters this year?",
-    "description": "Who exactly is on your ballot, what do they do, and who do they stand for? We summarize everything you need to know.",
-    "author": "Tori Sousa",
-    "link":"https://www.thedp.com/article/2020/10/elections-representatives-democrat-republican-green-libertarian-pennsylvania",
+    "title": "Students, profs., and politicians fear disenfranchisement of voters of color this election",
+    "description": "For Penn-affiliated politics aficionados, President Donald Trump and the COVID-19 pandemic exacerbate America's sordid history of voter disenfranchisement.",
+    "author": "HADRIANA LOWENKRON",
+    "link":"https://www.thedp.com/article/2020/10/election-voting-disenfranchisement-suppression-mail-in-ballots-philadelphia",
     "img": {
-      "src": "../../../images/2020/vote/news-4.jpg"
+      "src": "../../../images/2020/vote/news-1.jpg"
     }
   },
   {
@@ -15,6 +15,27 @@
     "link":"https://www.thedp.com/article/2020/10/penn-students-working-biden-campaign-2020-election",
     "img": {
       "src": "../../../images/2020/vote/news-5.jpeg"
+    }
+  },
+  {
+    "title": "Amid a poll worker shortage, Penn students are stepping up to work on Election Day",
+    "link": "https://www.thedp.com/article/2020/10/philadelphia-penn-student-poll-workers-election-day",
+    "img": {
+      "src": "../../../images/2020/vote/carousel-0-0.jpg"
+    }
+  },
+  {
+    "title": "Penn faculty have donated about 100 times more money to Biden’s campaign than Trump’s",
+    "link": "https://www.thedp.com/article/2020/10/penn-donations-fec-professors-faculty-biden-trump",
+    "img": {
+      "src": "../../../images/2020/vote/carousel-0-1.jpg"
+    }
+  },
+  {
+    "title": "84% of surveyed Penn students plan to vote for Joe Biden",
+    "link": "https://www.thedp.com/article/2020/10/penn-students-poll-biden-trump-2020-election",
+    "img": {
+      "src": "../../../images/2020/vote/carousel-0-2.jpg"
     }
   },
   {

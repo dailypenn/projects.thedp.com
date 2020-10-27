@@ -39,7 +39,7 @@ const Explainer = ({ article }) => (
 )
 
 const FeatureText = s.div`
-  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+  padding: 5rem 1.5rem 5rem 2.5rem;
   color: #FFFFFF;
   text-align: left;
 `
@@ -93,7 +93,11 @@ const New = ({ article }) => (
       </div>
       <div className="col-md-8">
         <iframe src="https://flo.uri.sh/visualisation/3639321/embed" title="Interactive or visual content" frameborder="0" scrolling="no" style={{ width: '100%', height: '600px' }} />
-        <div style={{ width:'100%', marginTop: '4px' }}><a className="flourish-credit" href="https://public.flourish.studio/visualisation/3639321/?utm_source=embed&utm_campaign=visualisation/3639321" target="_top" ><img alt="Made with Flourish" src="https://public.flourish.studio/resources/made_with_flourish.svg" /> </a></div>
+        <div style={{ width:'100%', marginTop: '4px' }}>
+          <a className="flourish-credit" href="https://public.flourish.studio/visualisation/3639321/?utm_source=embed&utm_campaign=visualisation/3639321" target="_top">
+            <img alt="Made with Flourish" src="https://public.flourish.studio/resources/made_with_flourish.svg" />
+          </a>
+        </div>
       </div>
     </div>
   </StyledAnchor>
