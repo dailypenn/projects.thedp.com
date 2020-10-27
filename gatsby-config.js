@@ -108,6 +108,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '/data-fluorish.js',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {

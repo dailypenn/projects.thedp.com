@@ -25,18 +25,17 @@ const ExplainWrapper = s.div`
 `
 
 const Explainer = ({ article }) => (
-  
-    <div className="col-md-4">
-      <ExplainWrapper>
-        <StyledAnchor href={article.link} target="_blank">
-          <Img fluid={article.img.src.childImageSharp.fluid} />
-          <RedSectionHeader style={{textAlign:'center', marginTop: '2rem'}}> EXPLAINER </RedSectionHeader>
-          <ArticleHeader style={{textAlign:'center', marginTop: '1rem'}}> {article.title} </ArticleHeader>
-          <ArticleDescription style={{textAlign:'center', marginTop: '1rem'}}> {article.description} </ArticleDescription>
-          <ArticleAuthor style={{textAlign:'center', marginTop: '1rem'}}> BY {article.author} </ArticleAuthor>
-        </StyledAnchor>
-      </ExplainWrapper>
-    </div>
+  <div className="col-md-4">
+    <ExplainWrapper>
+      <StyledAnchor href={article.link} target="_blank">
+        <Img fluid={article.img.src.childImageSharp.fluid} />
+        <RedSectionHeader style={{textAlign:'center', marginTop: '2rem'}}> EXPLAINER </RedSectionHeader>
+        <ArticleHeader style={{textAlign:'center', marginTop: '1rem'}}> {article.title} </ArticleHeader>
+        <ArticleDescription style={{textAlign:'center', marginTop: '1rem'}}> {article.description} </ArticleDescription>
+        <ArticleAuthor style={{textAlign:'center', marginTop: '1rem'}}> BY {article.author} </ArticleAuthor>
+      </StyledAnchor>
+    </ExplainWrapper>
+  </div>
 )
 
 const FeatureText = s.div`
