@@ -114,6 +114,15 @@ module.exports = {
           include: /\.svg$/
         }
       }
+    },
+    {
+      resolve: 'gatsby-plugin-your-fonts',
+      options: {
+        host: 'dailypenn.github.io/font',
+        fonts: [
+          `radiant.css`
+        ]
+      }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

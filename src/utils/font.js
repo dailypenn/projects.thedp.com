@@ -88,7 +88,7 @@ export const LORA_REGULAR = `
 `
 
 export const RADIANT_REGULAR = `
-  font-family: 'URWRadiantW01-CondensedBold', sans-serif;
+  font-family: 'Radiant';
   font-weight: 400;
 `
 

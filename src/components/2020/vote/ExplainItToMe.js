@@ -12,6 +12,7 @@ import {
   ArticleAuthor, 
   RedSectionHeader
 } from './shared'
+import { FUTURA_REGULAR, LORA_REGULAR } from '../../../utils/font'
 
 import DividerLine from '../../../content/images/2020/vote/divider-line.png'
 
@@ -20,18 +21,31 @@ const Explainer = ({ article }) => (
     <div>
       <Img fluid={article.img.src.childImageSharp.fluid} />
     </div>
-    <RedSectionHeader style={{textAlign:'center'}}> EXPLAINER </RedSectionHeader>
-    <ArticleHeader style={{textAlign:'center'}}> {article.title} </ArticleHeader>
-    <ArticleDescription style={{textAlign:'center'}}> {article.description} </ArticleDescription>
-    <ArticleAuthor  style={{textAlign:'center'}}> BY {article.author} </ArticleAuthor>
+    <RedSectionHeader style={{textAlign:'center', marginTop: '2rem'}}> EXPLAINER </RedSectionHeader>
+    <ArticleHeader style={{textAlign:'center', marginTop: '1rem'}}> {article.title} </ArticleHeader>
+    <ArticleDescription style={{textAlign:'center', marginTop: '1rem'}}> {article.description} </ArticleDescription>
+    <ArticleAuthor style={{textAlign:'center', marginTop: '1rem'}}> BY {article.author} </ArticleAuthor>
   </div>
 )
 
 const FeatureText = s.div`
-  padding-left: 9%;
-  padding-top: 12%;
+  padding: 1.5rem 0rem 1.5rem 2.5rem;
   color: #FFFFFF;
   text-align: left;
+`
+
+const Title = s.p`
+  ${FUTURA_REGULAR}
+  font-size: 200%;
+`
+
+const Description = s.p`
+  ${LORA_REGULAR}
+  margin-top: 1rem;
+`
+
+const Author = s.p`
+  ${FUTURA_REGULAR}
 `
 
 const Feature = ({ article }) => (
@@ -39,21 +53,21 @@ const Feature = ({ article }) => (
     <BackgroundImage fluid={article.img.src.childImageSharp.fluid} style={{ border: 'none' }}>
       <FeatureText>
         <RedSectionHeader> FEATURE </RedSectionHeader>
-        <p className="w-50" style={{fontSize: 36}}> {article.title} </p>
-        <p> {article.description} </p>
-        <p className="pt-3 text-uppercase"> BY {article.author} </p>
+        <Title className="w-50"> {article.title} </Title>
+        <Description> {article.description} </Description>
+        <Author className="pt-3 text-uppercase"> BY {article.author} </Author>
       </FeatureText>
     </BackgroundImage>
   </div>
 )
 
 const NewText = s.div`
-  padding-top: 25%;
+  padding-top: 1.5rem;
   text-align: center;
 `
 
 const New = ({ article }) => (
-  <div className="row" style={{ marginTop: '2rem' }}>
+  <div className="row" style={{ marginTop: '4rem' }}>
     <div className="col-md-4 pl-0">
       <NewText>
         <RedSectionHeader> NEW! </RedSectionHeader>

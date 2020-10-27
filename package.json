@@ -17,6 +17,7 @@
     "gatsby-plugin-sharp": "^2.6.43",
     "gatsby-plugin-sitemap": "^2.4.11",
     "gatsby-plugin-styled-components": "^3.3.10",
+    "gatsby-plugin-your-fonts": "0.0.1",
     "gatsby-source-filesystem": "^2.3.4",
     "gatsby-transformer-json": "^2.4.11",
     "gatsby-transformer-sharp": "^2.5.19",
