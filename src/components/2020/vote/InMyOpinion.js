@@ -76,16 +76,18 @@ const MustReadArticle = ({ article }) => (
 )
 
 const MustRead = ({ articles }) => (
-  <div className="col-md-4" style={{ backgroundColor: '#F8F8F8' }}>
-    <div className="d-flex justify-content-center" style={{ margin: '2rem 0 1rem 0' }}>
-      <img src="/img/stars.png" style={{ height: '25px' }} />
-    </div>
-    <H2> MUST READ: </H2>
-    <div style={{ padding: '0 1rem' }}>
-      {articles.map(article => <MustReadArticle article={article} />)}
-    </div>
-    <div className="d-flex justify-content-center" style={{ margin: '2rem 0' }}>
-      <img src="/img/stars.png" style={{ height: '25px' }} />
+  <div className="col-md-4">
+    <div style={{ backgroundColor: '#F8F8F8' }}>
+      <div className="d-flex justify-content-center" style={{ padding: '2rem 0 1rem 0' }}>
+        <img src="/img/stars.png" style={{ height: '25px' }} />
+      </div>
+      <H2> MUST READ: </H2>
+      <div style={{ padding: '0 1rem' }}>
+        {articles.map(article => <MustReadArticle article={article} />)}
+      </div>
+      <div className="d-flex justify-content-center" style={{ padding: '2rem 0' }}>
+        <img src="/img/stars.png" style={{ height: '25px' }} />
+      </div>
     </div>
   </div>
 )

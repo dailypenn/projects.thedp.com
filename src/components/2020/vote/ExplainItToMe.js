@@ -39,7 +39,7 @@ const Explainer = ({ article }) => (
 )
 
 const FeatureText = s.div`
-  padding: 5rem 1.5rem 5rem 2.5rem;
+  padding: 5.5rem 1.5rem 5.5rem 2.5rem;
   color: #FFFFFF;
   text-align: left;
 `
@@ -64,7 +64,7 @@ const Feature = ({ article }) => (
     <BackgroundImage fluid={article.img.src.childImageSharp.fluid} style={{ border: 'none' }}>
       <StyledAnchor href={article.link} target="_blank">
         <FeatureText>
-          <RedSectionHeader> FEATURE </RedSectionHeader>
+          <RedSectionHeader style={{ color: 'white' }}> EXPLAINER </RedSectionHeader>
           <Title className="w-50"> {article.title} </Title>
           <Description> {article.description} </Description>
           <Author className="pt-3 text-uppercase"> BY {article.author} </Author>
