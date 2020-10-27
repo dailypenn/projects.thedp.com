@@ -9,6 +9,7 @@ export const Wrapper = s.div`
 
   @media (max-width: 768px) {
     padding: 0rem 1rem;
+    margin-top: 4rem;
   }
 `
 
@@ -34,6 +35,7 @@ export const WordWithLine = ({ word, lineColor }) => (
 export const ArticleHeader = s.h3`
   ${FUTURA_REGULAR}
   font-size: 1.5em;
+  line-height: 1.1;
 
   :hover {
     color: #707070;

@@ -1,29 +1,29 @@
 [
   {
     "title": "Recommendations for Philadelphia ballot questions",
-    "description": "",
-    "author": "Ashley Ahn",
+    "description": "While much attention has been paid to the presidential race, far less heralded are local issues, including four ballot questions. Here's how The Daily Pennsylvanian Editorial Board recommends handling the questions.",
+    "author": "The Daily Pennsylvanian Editorial Board",
     "link":"https://www.thedp.com/article/2020/10/philadelphia-voter-questions-2020-ballot-pennsylvania",
     "img": {
-      "src": "../../../images/2020/vote/Temp.png"
+      "src": "../../../images/2020/vote/opinion-1.jpeg"
     }
   },
   {
-    "title": "Case for Biden Francois",
+    "title": "Why you should vote for Joe Biden",
     "description": "",
-    "author": "Ashley Ahn",
+    "author": "Francois Barrilleaux",
     "link":"https://www.thedp.com/article/2020/10/upenn-democrats-joe-biden-2020-philadelphia",
     "img": {
       "src": "../../../images/2020/vote/opinion-2.jpg"
     }
   },
   {
-    "title": "Justin Greenman TK Whether your “side” wins or loses, open dialogue must triumph",
+    "title": "Whether your “side” wins or loses, open dialogue must triumph",
     "description": "",
-    "author": "",
+    "author": "Justin Greenman",
     "link": "https://www.thedp.com/article/2020/10/upenn-elections-polarization-philadelphia-students-protest",
     "img": {
-      "src": "../../../images/2020/vote/opinion-3.jpg"
+      "src": "../../../images/2020/vote/opinion-3.jpeg"
     }
   },
   {
@@ -36,30 +36,21 @@
     }
   },
   {
-    "title": "Penn Justice Dems TK",
+    "title": "Don’t try to take the high road this election",
     "description": "",
-    "author": "",
-    "link": "https://www.thedp.com/article/2020/10/upenn-justice-democrats-voting-bernie-sanders-progressivism",
+    "author": "Valerie Wang",
+    "link": "https://www.thedp.com/article/2020/10/high-road-election-2020-third-party-voting",
     "img": {
       "src": "../../../images/2020/vote/opinion-5.jpg"
     }
   },
   {
-    "title": "Valerie Wang | Don’t try to take the high road this election",
+    "title": "Why STEM students should support Biden",
     "description": "",
-    "author": "Valerie Wang",
-    "link": "https://www.thedp.com/article/2020/10/high-road-election-2020-third-party-voting",
-    "img": {
-      "src": "../../../images/2020/vote/opinion-6.jpg"
-    }
-  },
-  {
-    "title": "Matthew Liu Biden Science TK",
-    "description": "",
-    "author": "",
+    "author": "Matthew Liu",
     "link": "https://www.thedp.com/article/2020/10/upenn-biden-trump-science-stem-ivy-league",
     "img": {
-      "src": "../../../images/2020/vote/opinion-7.jpg"
+      "src": "../../../images/2020/vote/opinion-6.jpg"
     }
   },
   {
@@ -68,25 +59,16 @@
     "author": "Isabella Glassman",
     "link": "https://www.thedp.com/article/2020/10/women-sexism-trump-biden-kamala-harris-debate-will-you-shut-up",
     "img": {
-      "src": "../../../images/2020/vote/Temp.png"
+      "src": "../../../images/2020/vote/opinion-7.jpeg"
     }
   },
   {
-    "title": "Urooba",
-    "description": "",
-    "author": "",
-    "link": "",
-    "img": {
-      "src": "../../../images/2020/vote/Temp.png"
-    }
-  },
-  {
-    "title": "Varun Saraswathula | Policy is more important than politics",
+    "title": "Policy is more important than politics",
     "description": "",
     "author": "Varun Saraswathula",
     "link": "https://www.thedp.com/article/2020/10/upenn-policy-politics-activism-lawmakers",
     "img": {
-      "src": "../../../images/2020/vote/opinion-10.jpg"
+      "src": "../../../images/2020/vote/opinion-8.jpg"
     }
   }
 ]

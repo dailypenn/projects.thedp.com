@@ -10,26 +10,37 @@ import {
   ArticleHeader, 
   ArticleDescription,
   ArticleAuthor, 
-  RedSectionHeader
+  RedSectionHeader,
+  StyledAnchor
 } from './shared'
 import { FUTURA_REGULAR, LORA_REGULAR } from '../../../utils/font'
-
 import DividerLine from '../../../content/images/2020/vote/divider-line.png'
 
+const ExplainWrapper = s.div`
+  margin-top: 0rem;
+
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+  }
+`
+
 const Explainer = ({ article }) => (
-  <div className="col-md-4 pr-0">
-    <div>
-      <Img fluid={article.img.src.childImageSharp.fluid} />
+  
+    <div className="col-md-4">
+      <ExplainWrapper>
+        <StyledAnchor href={article.link} target="_blank">
+          <Img fluid={article.img.src.childImageSharp.fluid} />
+          <RedSectionHeader style={{textAlign:'center', marginTop: '2rem'}}> EXPLAINER </RedSectionHeader>
+          <ArticleHeader style={{textAlign:'center', marginTop: '1rem'}}> {article.title} </ArticleHeader>
+          <ArticleDescription style={{textAlign:'center', marginTop: '1rem'}}> {article.description} </ArticleDescription>
+          <ArticleAuthor style={{textAlign:'center', marginTop: '1rem'}}> BY {article.author} </ArticleAuthor>
+        </StyledAnchor>
+      </ExplainWrapper>
     </div>
-    <RedSectionHeader style={{textAlign:'center', marginTop: '2rem'}}> EXPLAINER </RedSectionHeader>
-    <ArticleHeader style={{textAlign:'center', marginTop: '1rem'}}> {article.title} </ArticleHeader>
-    <ArticleDescription style={{textAlign:'center', marginTop: '1rem'}}> {article.description} </ArticleDescription>
-    <ArticleAuthor style={{textAlign:'center', marginTop: '1rem'}}> BY {article.author} </ArticleAuthor>
-  </div>
 )
 
 const FeatureText = s.div`
-  padding: 1.5rem 0rem 1.5rem 2.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
   color: #FFFFFF;
   text-align: left;
 `
@@ -37,6 +48,7 @@ const FeatureText = s.div`
 const Title = s.p`
   ${FUTURA_REGULAR}
   font-size: 200%;
+  line-height: 1.1;
 `
 
 const Description = s.p`
@@ -51,36 +63,40 @@ const Author = s.p`
 const Feature = ({ article }) => (
   <div className="col-md-8">
     <BackgroundImage fluid={article.img.src.childImageSharp.fluid} style={{ border: 'none' }}>
-      <FeatureText>
-        <RedSectionHeader> FEATURE </RedSectionHeader>
-        <Title className="w-50"> {article.title} </Title>
-        <Description> {article.description} </Description>
-        <Author className="pt-3 text-uppercase"> BY {article.author} </Author>
-      </FeatureText>
+      <StyledAnchor href={article.link} target="_blank">
+        <FeatureText>
+          <RedSectionHeader> FEATURE </RedSectionHeader>
+          <Title className="w-50"> {article.title} </Title>
+          <Description> {article.description} </Description>
+          <Author className="pt-3 text-uppercase"> BY {article.author} </Author>
+        </FeatureText>
+      </StyledAnchor>
     </BackgroundImage>
   </div>
 )
 
 const NewText = s.div`
-  padding-top: 1.5rem;
+  padding-top: 4rem;
   text-align: center;
 `
 
 const New = ({ article }) => (
-  <div className="row" style={{ marginTop: '4rem' }}>
-    <div className="col-md-4 pl-0">
-      <NewText>
-        <RedSectionHeader> NEW! </RedSectionHeader>
-        <ArticleHeader style={{fontSize: '2.5rem'}}> {article.title} </ArticleHeader>
-        <img src={DividerLine} style={{width:'4em', margin:'1em 0em'}}/>
-        <ArticleDescription> {article.description} </ArticleDescription>
-        <ArticleAuthor> BY {article.author} </ArticleAuthor>
-      </NewText>
+  <StyledAnchor href={article.link} target="_blank">
+    <div className="row" style={{ marginTop: '4rem' }}>
+      <div className="col-md-4 pl-0">
+        <NewText>
+          <RedSectionHeader> NEW! </RedSectionHeader>
+          <ArticleHeader style={{fontSize: '2.5rem'}}> {article.title} </ArticleHeader>
+          <img src={DividerLine} style={{width:'4em', margin:'1em 0em'}}/>
+          <ArticleDescription> {article.description} </ArticleDescription>
+          <ArticleAuthor> BY {article.author} </ArticleAuthor>
+        </NewText>
+      </div>
+      <div className="col-md-8">
+        <div class="flourish-embed" data-src="visualisation/3639321"></div>
+      </div>
     </div>
-    <div className="col-md-8 pr-0">
-      <Img fluid={article.img.src.childImageSharp.fluid} />
-    </div>
-  </div>
+  </StyledAnchor>
 )
 
 const ExplainItToMe = () => (

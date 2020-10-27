@@ -25,13 +25,13 @@ const H2 = s.h2`
 const Editorial = ({ article }) => (
   <StyledAnchor href={article.link} target="_blank">
     <div className="row" style={{ backgroundColor: '#F5F4F7', padding: '1rem' }}>
-      <div className="col-6">
+      <div className="col-md-6">
         <RedSectionHeader> EDITORIAL </RedSectionHeader>
         <ArticleHeader style={{ fontSize: '200%' }}> {article.title} </ArticleHeader>
         <ArticleDescription style={{ marginTop: '2rem' }}> {article.description} </ArticleDescription>
         <ArticleAuthor style={{ marginTop: '2rem' }}> BY {article.author} </ArticleAuthor>
       </div>
-      <div className="col-6">
+      <div className="col-md-6">
         <Img fluid={article.img.src.childImageSharp.fluid} />
       </div>
     </div>

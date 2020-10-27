@@ -11,13 +11,15 @@ import {
   StyledAnchor, 
   RedSectionHeader
 } from './shared'
+import { FUTURA_REGULAR } from '../../../utils/font'
+import Ads from '../../shared/Ads'
 
 const NewsLetterWrapper = s.div`
   margin-bottom: 2rem;
 
   .newsletter {
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 1rem;
     padding: 0 10rem;
 
     @media(max-width: 768px) {
@@ -66,7 +68,7 @@ const videos = [
 ]
 
 const Video = s.iframe`
-  height: 275px;
+  height: ${({ height = '275px' }) => height};
 
   @media (max-width: 768px) {
     height: 200px;
@@ -78,22 +80,27 @@ const PhotoEssay = ({ article }) => (
     <Img fluid={article.img.src.childImageSharp.fluid}/>
     <div style={{ textAlign: 'center', marginTop: '1rem' }}>
       <RedSectionHeader> {article.tag.toUpperCase()} </RedSectionHeader>
-      <ArticleHeader>{article.title}</ArticleHeader>
-      <ArticleAuthor>BY {article.abstract}</ArticleAuthor>
+      <ArticleHeader style={{ lineHeight: 1.1 }}>{article.title}</ArticleHeader>
+      <Caption>{article.abstract}</Caption>
       <ArticleAuthor>BY {article.authors}</ArticleAuthor>
     </div>
   </StyledAnchor>
 )
 
-const VideoArticle = ({ article }) => (
+const Caption = s.p`
+  ${FUTURA_REGULAR}
+  margin-top: 1rem;
+`
+
+const VideoArticle = ({ article, height }) => (
   <>
-    <Video width="100%" src={article.link} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+    <Video height={height} width="100%" src={article.link} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
     <div style={{ textAlign: 'center', marginTop: '1rem' }}>
       <RedSectionHeader style={{ textAlign: 'center' }}>{article.tag.toUpperCase()}</RedSectionHeader>
     </div>
     <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-      <ArticleHeader style={{ fontSize: '170%' }}>{article.title}</ArticleHeader>
-      <ArticleAuthor style={{ fontSize: '90%' }}>{article.caption}</ArticleAuthor>
+      <ArticleHeader style={{ fontSize: '170%', lineHeight: 1.1 }}>{article.title}</ArticleHeader>
+      <Caption>{article.caption}</Caption>
     </div>
   </>
 )
@@ -131,28 +138,25 @@ const Multimedia = () => (
       const { node: { childVote2020MultimediaJson: articles } } = data.allFile.edges[0]
 
       return (
-        <Wrapper>
-          <div id="multimedia">
-            <StreetIssue />
-            <WordWithLine word="MULTIMEDIA" lineColor="#F05237"/>
-            <div className="row">
-              <div className="col-md-8">
-                <VideoArticle article={videos[0]}/>
-              </div>
-              <div className="col-md-4" style={{ backgroundColor: "gray" }}>
-                adss
-              </div>
-            </div>
-            <div className="row" style={{ margin: '2rem -15px' }}>
-              <div className="col-md-6">
-                <PhotoEssay article={articles} />
-              </div>
-              <div className="col-md">
-                {videos.slice(1, ).map(article => <VideoArticle article={article}/>)}
+        <>
+          <Wrapper>
+            <div id="multimedia">
+              <StreetIssue />
+              <WordWithLine word="MULTIMEDIA" lineColor="#F05237"/>
+              <VideoArticle article={videos[0]} height="400px" />
+              <div className="row" style={{ margin: '2rem -15px' }}>
+                <div className="col-md-6">
+                  <PhotoEssay article={articles} />
+                </div>
+                <div className="col-md">
+                  {videos.slice(1, ).map(article => <VideoArticle article={article}/>)}
+                </div>
               </div>
             </div>
-          </div>
-        </Wrapper>
+          </Wrapper>
+
+          <Ads />
+        </>
       )
     }}
   />

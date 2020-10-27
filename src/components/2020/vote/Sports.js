@@ -10,9 +10,10 @@ import {
   ArticleAuthor, 
   StyledAnchor
 } from './shared'
+import Ads from '../../shared/Ads'
 
 const Card = ({ article }) => (
-  <div className = "row">
+  <div className="row">
     <div className="col-md-7">
       <StyledAnchor href={article.link}>
         <Img fluid={article.img.src.childImageSharp.fluid} />
@@ -60,19 +61,22 @@ const Sports = () => (
       const { node: { childrenVote2020SportsJson: articles } } = data.allFile.edges[0]
 
       return (
-        <Wrapper>
-          <div id="sports">
-            <WordWithLine word="SPORTS" lineColor="#7BA3D3"/>
-            <div className = "row">
-              <div className="col-md-6">
-                <Card article = {articles[0]}  />
-              </div>
-              <div className="col-md-6">
-                <Card article = {articles[1]}  />
+        <>
+          <Wrapper style={{ marginBottom: '1rem' }}>
+            <div id="sports">
+              <WordWithLine word="SPORTS" lineColor="#7BA3D3"/>
+              <div className = "row">
+                <div className="col-md-6">
+                  <Card article = {articles[0]}  />
+                </div>
+                <div className="col-md-6">
+                  <Card article = {articles[1]}  />
+                </div>
               </div>
             </div>
-          </div>
-        </Wrapper>
+          </Wrapper>
+          <Ads />
+        </>
       )
     }}
   />

@@ -136,7 +136,7 @@ const ComicRelief = () => (
                 <StyledAnchor href={article.link} target="_blank">
                   <Article>
                     <Img fluid={article.img.src.childImageSharp.fluid} />
-                    <p style={{ marginTop: '1rem', fontSize: '120%' }}>{article.title}</p>
+                    <p style={{ marginTop: '1rem', fontSize: '120%', lineHeight: 1.1 }}>{article.title}</p>
                     <p style={{ marginTop: '1rem', fontSize: '90%' }}>BY {article.author}</p>
                   </Article>
                 </StyledAnchor>
@@ -144,14 +144,16 @@ const ComicRelief = () => (
             ))}       
           </ArticleRow>
 
-          <Shenanigans>
-            PRESS FOR SHENANIGANS
-          </Shenanigans>
-          <ButtonImg
-            src="/img/shenanigans-button.png"
-            className="img-fluid"
-            style={{ height: '100px' }}
-          />
+          <StyledAnchor href="https://www.underthebutton.com/" target="_blank">
+            <Shenanigans>
+              PRESS FOR SHENANIGANS
+            </Shenanigans>
+            <ButtonImg
+              src="/img/shenanigans-button.png"
+              className="img-fluid"
+              style={{ height: '100px' }}
+            />
+          </StyledAnchor>
 
         </Wrapper>
       )
