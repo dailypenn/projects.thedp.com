@@ -17,19 +17,29 @@ import Ads from '../../shared/Ads'
 
 const Slideshows = [
   {
+    "title": "Over 7,000 people petition Penn to give its 41,000 employees time off on Election Day",
+    "link": "https://www.thedp.com/article/2020/11/penn-election-day-employees-paid-time-off",
+    "img":  "/img/election/carousel-0-0.jpg"
+  },
+  {
+    "title": "Tiffany Trump's 2016 thesis analyzed racial injustices in America's criminal justice system",
+    "link": "https://www.thedp.com/article/2020/11/tiffany-trump-penn-human-rights-thesis",
+    "img":  "/img/election/carousel-0-1.jpg"
+  },
+  {
     "title": "Amid a poll worker shortage, Penn students are stepping up to work on Election Day",
     "link": "https://www.thedp.com/article/2020/10/philadelphia-penn-student-poll-workers-election-day",
-    "img":  "/img/election/carousel-0-0.jpg"
+    "img":  "/img/election/carousel-0-2.jpg"
   },
   {
     "title": "Penn faculty have donated about 100 times more money to Biden’s campaign than Trump’s",
     "link": "https://www.thedp.com/article/2020/10/penn-donations-fec-professors-faculty-biden-trump",
-    "img": "/img/election/carousel-0-1.jpg"
+    "img": "/img/election/carousel-0-3.jpg"
   },
   {
     "title": "84% of surveyed Penn students plan to vote for Joe Biden",
     "link": "https://www.thedp.com/article/2020/10/penn-students-poll-biden-trump-2020-election",
-    "img": "/img/election/carousel-0-2.jpg"
+    "img": "/img/election/carousel-0-4.jpg"
   },
   {
     "title": "Penn says it can’t give Election Day off, but it’s unclear what state regulations prevent it",
