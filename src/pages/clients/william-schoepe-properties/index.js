@@ -113,10 +113,11 @@ const App = () => (
         <div class="inner-container">
           <div class="title-box">
             <h1>William Schoepe Properties</h1>
-            <p>40th &amp; Spruce</p>
+            <h3>40th &amp; Spruce</h3>
             <p>House Available</p>
             <p>10+ Bedrooms, 5 baths</p>
             <p> New Kitchen &amp; Floors </p>
+            <br />
             <h3>7 Bedroom Available</h3>
             <h3>Interested? Text (215) 880-7077</h3>
           </div>
@@ -124,10 +125,11 @@ const App = () => (
       </div>
       <div class="mobile-information">
         <h1>William Schoepe Properties</h1>
-        <p>40th &amp; Spruce</p>
-        <p> <b> House Available </b> </p>
+        <h3>40th &amp; Spruce</h3>
+        <p>House Available</p>
         <p>10+ Bedrooms, 5 baths</p>
         <p> New Kitchen &amp; Floors </p>
+        <br />
         <h3>7 Bedroom Available</h3>
         <h3>Interested? Text (215) 880-7077</h3>
       </div>
