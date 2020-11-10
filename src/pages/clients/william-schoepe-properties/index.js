@@ -68,7 +68,7 @@ const Wrapper = s.div`
     }
 
     h1 {
-      padding-top: 50px;
+      padding-top: 40px;
     }
 
     .container {
@@ -112,25 +112,40 @@ const App = () => (
       <div class="container">
         <div class="inner-container">
           <div class="title-box">
-            <h1>William Schoepe Properties</h1>
-            <h3>40th &amp; Spruce</h3>
-            <p>House Available</p>
-            <p>10+ Bedrooms, 5 baths</p>
-            <p> New Kitchen &amp; Floors </p>
-            <br />
-            <h3>7 Bedroom Available</h3>
+            <h1>
+              William Schoepe Properties
+              <br />
+              40th &amp; Spruce
+            </h1>
+            <ul>
+              <li>
+                <h3>House Available</h3>
+                <p>10+ Bedrooms, 5 baths</p>
+                <p> New Kitchen &amp; Floors </p>
+             </li>
+             <li>
+              <h3>7 Bedroom Available</h3>
+             </li>
+            </ul>
+            
             <h3>Interested? Text (215) 880-7077</h3>
           </div>
         </div>
       </div>
       <div class="mobile-information">
-        <h1>William Schoepe Properties</h1>
-        <h3>40th &amp; Spruce</h3>
-        <p>House Available</p>
-        <p>10+ Bedrooms, 5 baths</p>
-        <p> New Kitchen &amp; Floors </p>
+        <h1>
+          William Schoepe Properties
+          <br />
+          40th &amp; Spruce
+        </h1>
+
+            <h3>House Available</h3>
+            <p>10+ Bedrooms, 5 baths</p>
+            <p> New Kitchen &amp; Floors </p>
+            <br />
+          <h3>7 Bedroom Available</h3>
+
         <br />
-        <h3>7 Bedroom Available</h3>
         <h3>Interested? Text (215) 880-7077</h3>
       </div>
     </Wrapper>
