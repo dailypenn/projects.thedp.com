@@ -7,6 +7,7 @@ import { DFPSlotsProvider, AdSlot } from 'react-dfp'
 
 import {
   Card,
+  CardContent,
   Header,
   Hero,
   Navbar
@@ -14,8 +15,12 @@ import {
 
 import Thumbnail from '../../../content/images/2020/housing-guide/hero.png'
 
+import explainerArticle from '../../../content/json/2020/housing-guide/explainer.json'
 const WHITE = `#FFFFFF`;
 const ORANGE = `#F29F4D`;
+const LIGHT_MAGENTA = `#F9EDF4`;
+const DARK_ORANGE = `#A56021`;
+const BROWN = `#70380A`
 
 const Metadata = () => (
   <Helmet>
@@ -59,21 +64,27 @@ export default () => <>
     <Container>
       <Card padding>
         <Row>
-          <Header>
-            Explainers
-          </Header>
+      <Header>Guide</Header>
         </Row>
-
+    <Container>
         <SpacedRow>
           <Col>
-            <Card padding>
-              wowowow
+          <Card>
+            <CardContent
+              {...explainerArticle}
+              primary={BROWN}
+              secondary={DARK_ORANGE}
+            />
             </Card>
           </Col>
           <Col>
-            <DFPSlotsProvider dfpNetworkId="12234093">
-              <AdSlot adUnit="DP.com-Leaderboard" sizes={[[300, 200]]} />
-            </DFPSlotsProvider>
+          {/* TODO: MORE ADS */}
+          <div>Ad1</div>
+          <div>Ad2</div>
+        </Col>
+      </SpacedRow>
+    </Container>
+  </Section>
             <DFPSlotsProvider dfpNetworkId="12234093">
               <AdSlot adUnit="DP.com-Leaderboard" sizes={[[300, 200]]} />
             </DFPSlotsProvider>
