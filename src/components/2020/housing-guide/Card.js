@@ -1,5 +1,7 @@
 import React from "react"
 import s from "styled-components"
+import Img from "gatsby-image"
+
 import { BRANDON_GROTESQUE_MEDIUM, LORA_REGULAR } from "../../../utils/font"
 
 // TODO: Extract these into constants file
@@ -27,12 +29,6 @@ export const Card = ({ className, children, flush }) => (
     {children}
   </CardWrapper>
 )
-
-const Image = s.img.attrs(() => ({
-  className: "img-fluid",
-}))`
-  width: 100%;
-`
 
 const Link = s.a`
   :hover {
@@ -69,12 +65,13 @@ export const CardContent = ({
   link,
   authors,
   abstract,
-  img,
+  image,
   primary,
   secondary,
+  noImg
 }) => (
   <Link href={link} target="_blank">
-    {img && <Image src={img} />}
+    {!noImg && <Img fluid={image.src.childImageSharp.fluid} className="img-fluid" />}
     <Header href={link} color={primary}>
       {title}
     </Header>

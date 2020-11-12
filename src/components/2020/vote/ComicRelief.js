@@ -124,6 +124,7 @@ const ComicRelief = () => (
       const {
         node: { childrenVote2020UtbJson: articles },
       } = data.allFile.edges[0]
+
       return (
         <Wrapper>
           <div id="utb" />

@@ -1,5 +1,7 @@
 import React from "react"
 import s from "styled-components"
+import { StaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import { Helmet } from "react-helmet"
 import { Col, Container, Row, Image } from "react-bootstrap"
@@ -11,12 +13,6 @@ import {
   Hero,
   Navbar,
 } from "../../../components/2020/housing-guide"
-
-import explainerArticle from "../../../content/json/2020/housing-guide/explainer.json"
-import subletsArticle from "../../../content/json/2020/housing-guide/sublets.json"
-import profileArticle from "../../../content/json/2020/housing-guide/profile.json"
-import constructionArticle from "../../../content/json/2020/housing-guide/construction.json"
-import opinionArticle from "../../../content/json/2020/housing-guide/opinion.json"
 
 // TODO: Extract these colors into a constants file
 const WHITE = `#FFFFFF`
@@ -97,119 +93,179 @@ const DomCard = s(Card)`
   }
 `
 
-const AdUnit = () => (
+const BroadStreetAdUnit = () => (
   <div style={{ marginBottom: '1rem' }}>
     <broadstreet-zone zone-id="69577" />
   </div>
 )
 
-// TODO: Extract out add component for DP usage
 export default () => (
-  <>
-    <Metadata />
-    <Navbar />
-    <Hero />
-    <Section>
-      <Row>
-        <Header>Guide</Header>
-      </Row>
-      <Container>
-        <SpacedRow>
-          <Col>
-            <Card>
-              <CardContent
-                {...explainerArticle}
-                primary={BROWN}
-                secondary={DARK_ORANGE}
-              />
-            </Card>
-          </Col>
-          <Col>
-            {/* TODO: MORE ADS */}
-            <div>Ad1</div>
-            <div>Ad2</div>
-          </Col>
-        </SpacedRow>
-      </Container>
-    </Section>
-    <Section background={LIGHT_MAGENTA}>
-      <Container>
-        <Row>
-          <Header inverted>News</Header>
-        </Row>
-        <SpacedRow>
-          <Col sm={12} md={6}>
-            <Card>
-              <CardContent
-                {...subletsArticle}
-                primary={DARK_PURPLE}
-                secondary={LIGHT_PURPLE}
-              />
-            </Card>
-          </Col>
-          <Col sm={12} md={6}>
-            <Card>
-              <CardContent
-                {...profileArticle}
-                primary={DARK_PURPLE}
-                secondary={LIGHT_PURPLE}
-              />
-            </Card>
-          </Col>
-        </SpacedRow>
-        <Row>
-          <Col sm={12} md={6}>
-            <Card>
-              <CardContent
-                {...constructionArticle}
-                primary={DARK_PURPLE}
-                secondary={LIGHT_PURPLE}
-              />
-            </Card>
-          </Col>
-          <Col md={12} md={6}>
-            {/* TODO: MORE ADS */}
-            <div>Ad1</div>
-            <div>Ad2</div>
-          </Col>
-        </Row>
-      </Container>
-    </Section>
+  <StaticQuery query={graphql`
+    query {
+      news: allFile(filter: { relativePath: { eq: "news_HG_2020.json" } }) {
+        edges {
+          node {
+            childrenNewsHg2020Json {
+              title
+              link
+              authors
+              abstract
+              image {
+                src {
+                  childImageSharp {
+                    fluid(maxWidth: 600, maxHeight: 600) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
 
-    <Section>
-      <Container>
-        <Row>
-          <Ads />
-        </Row>
-        <Row>
-          <Header> Opinion </Header>
-        </Row>
-        <SpacedRow>
-          <Col sm={12} md={8}>
-            <Card flush>
-              {/* TODO: REPLACE THIS LATER */}
-              <Image src="https://snworksceo.imgix.net/dpn/897c5d64-848b-4525-9fd5-94fa4c8b0646.original.png" fluid />
-            </Card>
-            <DomCard>
-              <CardContent
-                {...opinionArticle}
-                primary={BROWN}
-                secondary={DARK_ORANGE}
-              />
-            </DomCard>
-          </Col>
-          <Col>
-            <AdUnit />
-            <AdUnit />
-            <AdUnit />
-          </Col>
-        </SpacedRow>
-      </Container>
-    </Section>
+      opinion: allFile(filter: { relativePath: { eq: "opinion_HG_2020.json" } }) {
+        edges {
+          node {
+            childOpinionHg2020Json {
+              title
+              link
+              authors
+              abstract
+              image {
+                src {
+                  childImageSharp {
+                    fluid(maxWidth: 1900, maxHeight: 1280) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `}
+  render={data => {
+    const {
+      node: { childrenNewsHg2020Json: newsArticles }
+    } = data.news.edges[0]
 
+    const {
+      node: { childOpinionHg2020Json: opinionArticle }
+    } = data.opinion.edges[0]
 
-    <Footer>
-      Made with 🏠 by The Daily Pennsylvanian © 2020. All rights reserved.
-    </Footer>
-  </>
+    return (
+      <>
+        <Metadata />
+        <Navbar />
+        <Hero />
+        <Section>
+          <Row>
+            <Header>Guide</Header>
+          </Row>
+          <Container>
+            <SpacedRow>
+              <Col sm={12} md={6}>
+                <Card>
+                  <CardContent
+                    {...newsArticles[0]}
+                    primary={BROWN}
+                    secondary={DARK_ORANGE}
+                  />
+                </Card>
+              </Col>
+              <Col sm={12} md={6}>
+                {/* TODO: MORE ADS */}
+                <div>Ad1</div>
+                <div>Ad2</div>
+              </Col>
+            </SpacedRow>
+          </Container>
+        </Section>
+        <Section background={LIGHT_MAGENTA}>
+          <Container>
+            <Row>
+              <Header inverted>News</Header>
+            </Row>
+            <SpacedRow>
+              <Col sm={12} md={6}>
+                <Card>
+                  <CardContent
+                    {...newsArticles[1]}
+                    primary={DARK_PURPLE}
+                    secondary={LIGHT_PURPLE}
+                  />
+                </Card>
+              </Col>
+              <Col sm={12} md={6}>
+                <Card>
+                  <CardContent
+                    {...newsArticles[2]}
+                    primary={DARK_PURPLE}
+                    secondary={LIGHT_PURPLE}
+                  />
+                </Card>
+              </Col>
+            </SpacedRow>
+            <Row>
+              <Col sm={12} md={6}>
+                <Card>
+                  <CardContent
+                    {...newsArticles[3]}
+                    primary={DARK_PURPLE}
+                    secondary={LIGHT_PURPLE}
+                  />
+                </Card>
+              </Col>
+              <Col md={12} md={6}>
+                {/* TODO: MORE ADS */}
+                <div>Ad1</div>
+                <BroadStreetAdUnit />
+              </Col>
+            </Row>
+          </Container>
+        </Section>
+
+        <Section>
+          <Container>
+            <Row>
+              <Ads />
+            </Row>
+            <Row>
+              <Header> Opinion </Header>
+            </Row>
+            <SpacedRow>
+              <Col sm={12} md={8}>
+                <Card flush>
+                  {/* TODO: REPLACE THIS LATER */}
+                  <Img fluid={opinionArticle.image.src.childImageSharp.fluid} className="img-fluid" />
+                </Card>
+                <DomCard>
+                  <CardContent
+                    {...opinionArticle}
+                    primary={BROWN}
+                    secondary={DARK_ORANGE}
+                    noImg
+                  />
+                </DomCard>
+              </Col>
+              <Col>
+                <BroadStreetAdUnit />
+                <BroadStreetAdUnit />
+                <BroadStreetAdUnit />
+              </Col>
+            </SpacedRow>
+          </Container>
+        </Section>
+
+        <Footer>
+          Made with 🏠 by The Daily Pennsylvanian © 2020. All rights reserved.
+        </Footer>
+      </>
+    )}}
+  />
 )
