@@ -1,12 +1,16 @@
-import s from 'styled-components'
+import s from "styled-components"
 
-import { PLAYFAIR_REGULAR, KARLA_REGULAR, KARLA_BOLD } from '../../../utils/font'
-import { HEADLINE_DARK_GRAY, SUBHEAD_LIGHT_GRAY } from '../../../utils/colors'
+import {
+  PLAYFAIR_REGULAR,
+  KARLA_REGULAR,
+  KARLA_BOLD,
+} from "../../../utils/font"
+import { HEADLINE_DARK_GRAY, SUBHEAD_LIGHT_GRAY } from "../../../utils/colors"
 
 export const Title = s.div`
   font-size: 125%;
   line-height: 97%;
-  margin-top: ${({ noMarginTop }) => noMarginTop ? '0' : '1.5rem'};
+  margin-top: ${({ noMarginTop }) => (noMarginTop ? "0" : "1.5rem")};
   color: ${HEADLINE_DARK_GRAY};
   ${PLAYFAIR_REGULAR}
 
@@ -32,7 +36,7 @@ export const ByLine = s.div`
 
 export const Tag = s.div`
   font-size: 80%;
-  margin-top: ${({ noMarginTop }) => noMarginTop ? '0' : '1.5rem'};
+  margin-top: ${({ noMarginTop }) => (noMarginTop ? "0" : "1.5rem")};
   color: #D0C730;
   ${KARLA_BOLD}
 `

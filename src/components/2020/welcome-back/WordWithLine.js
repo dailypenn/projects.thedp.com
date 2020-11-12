@@ -1,7 +1,7 @@
-import React from 'react'
-import s from 'styled-components'
+import React from "react"
+import s from "styled-components"
 
-import { FJALLA_REGULAR } from '../../../utils/font'
+import { FJALLA_REGULAR } from "../../../utils/font"
 
 const H2 = s.h2` 
   text-align: center; 
@@ -18,7 +18,9 @@ const H2 = s.h2`
 `
 
 const WordWithLine = ({ word }) => (
-  <H2 className="divider"><span>{word}</span></H2>
+  <H2 className="divider">
+    <span>{word}</span>
+  </H2>
 )
 
 export default WordWithLine

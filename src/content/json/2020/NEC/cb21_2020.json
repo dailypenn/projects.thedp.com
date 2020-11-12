@@ -1,136 +1,132 @@
 {
-    "VP Finance": [
-        {
-            "platform points": [],
-            "name": "Jude Dartey",
-            "introduction": "Hello everyone, my name is Jude Dartey and I am running to be the VP of Finance for Class Board 2021. I would appreciate your support and please feel free to reach out to me at judartey@sas.upenn.edu if you have any questions or concerns"
-        }
-    ],
-    "Engineering Chair": [
-        {
-            "platform points": [
-                "Continue the financial aid program for all class board related events and apparel",
-                "Lit feb club "
-            ],
-            "name": "Joey Abdo ",
-            "introduction": "My name is Joey and I am a senior from New Jersey studying Systems Engineering in SEAS. I am running for engineering chair to work with the class board to have an amazing senior year filled with as many fun events and good times as the climate allows.",
-            "instagram handle": "joeyvabdo"
-        }
-    ],
-    "Nursing Chair": [
-        {
-            "platform points": [],
-            "name": "Tommy Seaman",
-            "introduction": "Hey Seniors! Since our freshmen year I have had the pleasure of serving as the Nursing Chair and have worked with my fellow Class Board members to plan enjoyable events for the Class of 2021 and specifically the nursing class. During this unprecedented time, I will continue finding ways for our class to stay connected in this virtual setting. I will also make sure plans are in place to have a hopefully incredible spring semester with Feb Club, Hey Day, and more. Let\u2019s make our last year at Penn Nursing one to remember!",
-            "image": {
-                "src": "../../../images/2020/NEC/tommy-seaman.jpeg"
-            },
-            "image name": "tommy-seaman.jpeg"
-        }
-    ],
-    "Executive VP": [
-        {
-            "platform points": [
-                "MAKING OUR FINAL MEMS  ",
-                "CELEBRATING TRADITIONS (done safely) ",
-                "LEAVING OUR LGEACY "
-            ],
-            "name": "Anthony Scarpone-Lambert ",
-            "introduction": "Hi Class of 2021! It's scary to think we are already seniors... I feel like yesterday was NSO. It's been a pleasure serving as your Executive Vice President this year and I'm so excited to be running for re-election. COVID may have forced us to have virtual classes this semester, however, I will continue to work hard to ensure it doesn't stop us from having the fun (and safe) senior year we deserve. Hey Day, Feb Club, and more... coming soon! Reach out if you have any suggestions, comments, or questions about our senior year! (Insta: @anthonyscarponelambert). ",
-            "facebook url": "https://www.facebook.com/AnthonySLExecVP2021/",
-            "instagram handle": "anthonyscarponelambert ",
-            "image": {
-                "src": "../../../images/2020/NEC/anthony-scarpone-lambert.jpeg"
-            },
-            "image name": "anthony-scarpone-lambert.jpeg ",
-            "youtube video url": "https://www.youtube.com/watch?v=6od8yUjS7kE&t=6s"
-        }
-    ],
-    "College Chair": [
-        {
-            "platform points": [],
-            "name": "Daniel Gordon",
-            "introduction": "Hello Class of 2021! It has been my absolute pleasure to be your College Chair for the past three years. Even with the restrictions surrounding this year, I will work diligently to make our senior year an amazing experience. If you have any suggestions/ideas, I would love to hear from you at dagord@sas.upenn.edu. I\u2019m excited to share another wonderful year with you all!",
-            "facebook url": "https://www.facebook.com/danielforcollegechair",
-            "image": {
-                "src": "../../../images/2020/NEC/daniel-gordon.jpeg"
-            },
-            "image name": "daniel-gordon.jpeg"
-        },
-        {
-            "platform points": [
-                "Community",
-                "Perseverance",
-                "Memories"
-            ],
-            "name": "Charles Curtis-Thomas",
-            "introduction": "Hey\u200b \u200beveryone!\u200b \u200bMy\u200b \u200bname\u200b \u200bis\u200b \u200bCharles\u200b \u200bCurtis-Thomas\u200b, \u200band\u200b \u200bI\u2019m\u200b \u200brunning\u200b \u200bfor\u200b \u200bCollege Chair.\u200b \u200bI\u2019ve\u200b \u200bmet many\u200b \u200bof\u200b \u200byou\u200b \u200bover\u200b \u200bthe\u200b \u200bpast\u200b \u200bfew\u200b \u200byears\u200b,\u200b \u200band\u200b \u200b\u200bI\u200b feel like I've made a family with you all at Penn.\u200b \u200b30\u200b \u200byears\u200b \u200bfrom\u200b \u200bnow,\u200b \u200bI\u200b \u200bwant to\u200b \u200blook\u200b \u200bback\u200b \u200bon\u200b \u200bthe\u200b \u200bClass\u200b \u200bof\u200b \u200b2021\u200b \u200bas\u200b \u200bone of the\u200b \u200bgreatest\u200b \u200bclasses\u200b \u200bin\u200b \u200bPenn\u2019s\u200b \u200bhistory.\u200b \u200bI\u2019m\u200b \u200bexcited\u200b \u200bto\u200b \u200bfinish our senior year together in these tough times, and work\u200b \u200bwith\u200b \u200byou\u200b \u200bto\u200b \u200bhelp\u200b \u200bimprove\u200b \u200bour already\u200b \u200bimpressive\u200b \u200bcommunity.\u200b \u200bIf\u200b \u200byou\u200b \u200bwant\u200b \u200bPenn\u200b \u200bto\u200b \u200bbe\u200b \u200bthe\u200b \u200bbest\u200b \u200bit\u200b \u200bcan\u200b \u200bbe,\u200b \u200bexpress\u200b \u200byour\u200b \u200bright\u200b \u200band vote\u200b \u200bfor\u200b \u200bCCT.",
-            "facebook url": "https://www.facebook.com/charles.thomas.39142072/",
-            "instagram handle": "charles.act",
-            "image": {
-                "src": "../../../images/2020/NEC/charles-curtis-thomas.jpg"
-            },
-            "image name": "charles-curtis-thomas.jpg"
-        }
-    ],
-    "Wharton Chair": [
-        {
-            "platform points": [
-                "Plan an incredible Feb Club: the thing I was most excited for throughout being on Class Board has been Feb Club senior spring, and it's my top priority this year",
-                "Make sure Hey Day is back and better than ever: it's disappointing that we never had Hey Day junior year, but it's a priority to have a similar experience in-person this spring",
-                "Be a voice for seniors that are away from campus: I'm currently the only member on CB that's living outside of Philadelphia for the semester permanently"
-            ],
-            "name": "Jay Mudholkar",
-            "introduction": "What\u2019s up everyone! My name is Jay Mudholkar, and I\u2019m running for re-election for Wharton Chair on Class Board. Literally can\u2019t believe it\u2019s been three years since I first joined, but the experience has been incredible: from Econ Scream freshman year, to U-Night sophomore year, to P-Sweaters junior year, I\u2019ve loved every minute of it and deciding to run was one of my best decisions at Penn. My goal for senior year on Class Board is to make the absolute most out of our modified senior year events, and help plan an unreal spring.",
-            "facebook url": "https://www.facebook.com/jaywhartonchair21",
-            "image": {
-                "src": "../../../images/2020/NEC/jay-mudholkar.jpeg"
-            },
-            "image name": "jay-mudholkar.jpeg"
-        }
-    ],
-    "President": [
-        {
-            "platform points": [],
-            "name": "Lizzie Youshaei",
-            "introduction": "So...if second semester last year didn't really happen, can we just pretend we're not seniors?? #whendidwegetsoold\n\nClass of '21, never did I think that we'd be celebrating our senior year like this, but if there is any class to make the most of this situation, it's ours. And the best part is that we still have so much time to celebrate, laugh and create memories together. This includes getting to celebrate our much awaited traditions like Hey Day, Feb Club, and Oktoberfest --- We are committed to that, no matter when that my be. \n\nIt's been a great honor to serve as your class president these last two years and I can't wait for what is in store. I promise to continuously fight for our class, using this platform to amplify your voices. Thank you for this opportunity, it's been the greatest honor serving a class that is filled with people as amazing as yourselves. \n\n(air) hugs and love (from a distance), \nLizzie",
-            "facebook url": "https://www.facebook.com/LizYoushaei2021",
-            "instagram handle": "lizyoushaei",
-            "image": {
-                "src": "../../../images/2020/NEC/lizzie-youshaei.jpeg"
-            },
-            "image name": "lizzie-youshaei.jpeg"
-        }
-    ],
-    "VP Internal": [
-        {
-            "platform points": [
-                "Ensuring the safety and health of the Class of 2021 on campus (testing, preventative guidelines)",
-                "Making sure students are able to access education wherever they are (Wifi, financial assistance)",
-                "Creating virtual Class of 2021 programming to make sure we can all still have fun for our senior year (game nights, escape rooms \u2026 anything else?) \ud83d\ude0a"
-            ],
-            "name": "Seung (Sophia) Kim",
-            "introduction": "Hi! My name is Sophia Kim but most people call me Skim. I\u2019m so excited to be RE-RUNNING as your VP of Internal Affairs for the fourth time in a row! With the virtual nature of our fall semester, I know the Class of 2021 will be facing a unique year ahead: navigating classes over Zoom, keeping in touch with friends over Facetime- all while juggling various responsibilities in real life. Though challenging, I'm ready to adapt my organization and managing skills within Class Board 2021 to put forth the best possible memories for our senior year.",
-            "facebook url": "facebook.com/soph.sy.kim/ ",
-            "instagram handle": "soph.skim",
-            "campaign website": "facebook.com/SophiaKimforVPIA2021",
-            "image": {
-                "src": "../../../images/2020/NEC/seung-kim.jpeg"
-            },
-            "image name": "seung-kim.jpeg"
-        }
-    ],
-    "VP External": [
-        {
-            "platform points": [],
-            "name": "Julie Chen",
-            "introduction": "yuh let's do this thing ~virtually~ ",
-            "facebook url": "https://www.facebook.com/julieechenn",
-            "instagram handle": "julieechenn",
-            "image": {
-                "src": "../../../images/2020/NEC/julie-chen.jpeg"
-            },
-            "image name": "julie.chen.jpeg"
-        }
-    ]
+  "VP Finance": [
+    {
+      "platform points": [],
+      "name": "Jude Dartey",
+      "introduction": "Hello everyone, my name is Jude Dartey and I am running to be the VP of Finance for Class Board 2021. I would appreciate your support and please feel free to reach out to me at judartey@sas.upenn.edu if you have any questions or concerns"
+    }
+  ],
+  "Engineering Chair": [
+    {
+      "platform points": [
+        "Continue the financial aid program for all class board related events and apparel",
+        "Lit feb club "
+      ],
+      "name": "Joey Abdo ",
+      "introduction": "My name is Joey and I am a senior from New Jersey studying Systems Engineering in SEAS. I am running for engineering chair to work with the class board to have an amazing senior year filled with as many fun events and good times as the climate allows.",
+      "instagram handle": "joeyvabdo"
+    }
+  ],
+  "Nursing Chair": [
+    {
+      "platform points": [],
+      "name": "Tommy Seaman",
+      "introduction": "Hey Seniors! Since our freshmen year I have had the pleasure of serving as the Nursing Chair and have worked with my fellow Class Board members to plan enjoyable events for the Class of 2021 and specifically the nursing class. During this unprecedented time, I will continue finding ways for our class to stay connected in this virtual setting. I will also make sure plans are in place to have a hopefully incredible spring semester with Feb Club, Hey Day, and more. Let\u2019s make our last year at Penn Nursing one to remember!",
+      "image": {
+        "src": "../../../images/2020/NEC/tommy-seaman.jpeg"
+      },
+      "image name": "tommy-seaman.jpeg"
+    }
+  ],
+  "Executive VP": [
+    {
+      "platform points": [
+        "MAKING OUR FINAL MEMS  ",
+        "CELEBRATING TRADITIONS (done safely) ",
+        "LEAVING OUR LGEACY "
+      ],
+      "name": "Anthony Scarpone-Lambert ",
+      "introduction": "Hi Class of 2021! It's scary to think we are already seniors... I feel like yesterday was NSO. It's been a pleasure serving as your Executive Vice President this year and I'm so excited to be running for re-election. COVID may have forced us to have virtual classes this semester, however, I will continue to work hard to ensure it doesn't stop us from having the fun (and safe) senior year we deserve. Hey Day, Feb Club, and more... coming soon! Reach out if you have any suggestions, comments, or questions about our senior year! (Insta: @anthonyscarponelambert). ",
+      "facebook url": "https://www.facebook.com/AnthonySLExecVP2021/",
+      "instagram handle": "anthonyscarponelambert ",
+      "image": {
+        "src": "../../../images/2020/NEC/anthony-scarpone-lambert.jpeg"
+      },
+      "image name": "anthony-scarpone-lambert.jpeg ",
+      "youtube video url": "https://www.youtube.com/watch?v=6od8yUjS7kE&t=6s"
+    }
+  ],
+  "College Chair": [
+    {
+      "platform points": [],
+      "name": "Daniel Gordon",
+      "introduction": "Hello Class of 2021! It has been my absolute pleasure to be your College Chair for the past three years. Even with the restrictions surrounding this year, I will work diligently to make our senior year an amazing experience. If you have any suggestions/ideas, I would love to hear from you at dagord@sas.upenn.edu. I\u2019m excited to share another wonderful year with you all!",
+      "facebook url": "https://www.facebook.com/danielforcollegechair",
+      "image": {
+        "src": "../../../images/2020/NEC/daniel-gordon.jpeg"
+      },
+      "image name": "daniel-gordon.jpeg"
+    },
+    {
+      "platform points": ["Community", "Perseverance", "Memories"],
+      "name": "Charles Curtis-Thomas",
+      "introduction": "Hey\u200b \u200beveryone!\u200b \u200bMy\u200b \u200bname\u200b \u200bis\u200b \u200bCharles\u200b \u200bCurtis-Thomas\u200b, \u200band\u200b \u200bI\u2019m\u200b \u200brunning\u200b \u200bfor\u200b \u200bCollege Chair.\u200b \u200bI\u2019ve\u200b \u200bmet many\u200b \u200bof\u200b \u200byou\u200b \u200bover\u200b \u200bthe\u200b \u200bpast\u200b \u200bfew\u200b \u200byears\u200b,\u200b \u200band\u200b \u200b\u200bI\u200b feel like I've made a family with you all at Penn.\u200b \u200b30\u200b \u200byears\u200b \u200bfrom\u200b \u200bnow,\u200b \u200bI\u200b \u200bwant to\u200b \u200blook\u200b \u200bback\u200b \u200bon\u200b \u200bthe\u200b \u200bClass\u200b \u200bof\u200b \u200b2021\u200b \u200bas\u200b \u200bone of the\u200b \u200bgreatest\u200b \u200bclasses\u200b \u200bin\u200b \u200bPenn\u2019s\u200b \u200bhistory.\u200b \u200bI\u2019m\u200b \u200bexcited\u200b \u200bto\u200b \u200bfinish our senior year together in these tough times, and work\u200b \u200bwith\u200b \u200byou\u200b \u200bto\u200b \u200bhelp\u200b \u200bimprove\u200b \u200bour already\u200b \u200bimpressive\u200b \u200bcommunity.\u200b \u200bIf\u200b \u200byou\u200b \u200bwant\u200b \u200bPenn\u200b \u200bto\u200b \u200bbe\u200b \u200bthe\u200b \u200bbest\u200b \u200bit\u200b \u200bcan\u200b \u200bbe,\u200b \u200bexpress\u200b \u200byour\u200b \u200bright\u200b \u200band vote\u200b \u200bfor\u200b \u200bCCT.",
+      "facebook url": "https://www.facebook.com/charles.thomas.39142072/",
+      "instagram handle": "charles.act",
+      "image": {
+        "src": "../../../images/2020/NEC/charles-curtis-thomas.jpg"
+      },
+      "image name": "charles-curtis-thomas.jpg"
+    }
+  ],
+  "Wharton Chair": [
+    {
+      "platform points": [
+        "Plan an incredible Feb Club: the thing I was most excited for throughout being on Class Board has been Feb Club senior spring, and it's my top priority this year",
+        "Make sure Hey Day is back and better than ever: it's disappointing that we never had Hey Day junior year, but it's a priority to have a similar experience in-person this spring",
+        "Be a voice for seniors that are away from campus: I'm currently the only member on CB that's living outside of Philadelphia for the semester permanently"
+      ],
+      "name": "Jay Mudholkar",
+      "introduction": "What\u2019s up everyone! My name is Jay Mudholkar, and I\u2019m running for re-election for Wharton Chair on Class Board. Literally can\u2019t believe it\u2019s been three years since I first joined, but the experience has been incredible: from Econ Scream freshman year, to U-Night sophomore year, to P-Sweaters junior year, I\u2019ve loved every minute of it and deciding to run was one of my best decisions at Penn. My goal for senior year on Class Board is to make the absolute most out of our modified senior year events, and help plan an unreal spring.",
+      "facebook url": "https://www.facebook.com/jaywhartonchair21",
+      "image": {
+        "src": "../../../images/2020/NEC/jay-mudholkar.jpeg"
+      },
+      "image name": "jay-mudholkar.jpeg"
+    }
+  ],
+  "President": [
+    {
+      "platform points": [],
+      "name": "Lizzie Youshaei",
+      "introduction": "So...if second semester last year didn't really happen, can we just pretend we're not seniors?? #whendidwegetsoold\n\nClass of '21, never did I think that we'd be celebrating our senior year like this, but if there is any class to make the most of this situation, it's ours. And the best part is that we still have so much time to celebrate, laugh and create memories together. This includes getting to celebrate our much awaited traditions like Hey Day, Feb Club, and Oktoberfest --- We are committed to that, no matter when that my be. \n\nIt's been a great honor to serve as your class president these last two years and I can't wait for what is in store. I promise to continuously fight for our class, using this platform to amplify your voices. Thank you for this opportunity, it's been the greatest honor serving a class that is filled with people as amazing as yourselves. \n\n(air) hugs and love (from a distance), \nLizzie",
+      "facebook url": "https://www.facebook.com/LizYoushaei2021",
+      "instagram handle": "lizyoushaei",
+      "image": {
+        "src": "../../../images/2020/NEC/lizzie-youshaei.jpeg"
+      },
+      "image name": "lizzie-youshaei.jpeg"
+    }
+  ],
+  "VP Internal": [
+    {
+      "platform points": [
+        "Ensuring the safety and health of the Class of 2021 on campus (testing, preventative guidelines)",
+        "Making sure students are able to access education wherever they are (Wifi, financial assistance)",
+        "Creating virtual Class of 2021 programming to make sure we can all still have fun for our senior year (game nights, escape rooms \u2026 anything else?) \ud83d\ude0a"
+      ],
+      "name": "Seung (Sophia) Kim",
+      "introduction": "Hi! My name is Sophia Kim but most people call me Skim. I\u2019m so excited to be RE-RUNNING as your VP of Internal Affairs for the fourth time in a row! With the virtual nature of our fall semester, I know the Class of 2021 will be facing a unique year ahead: navigating classes over Zoom, keeping in touch with friends over Facetime- all while juggling various responsibilities in real life. Though challenging, I'm ready to adapt my organization and managing skills within Class Board 2021 to put forth the best possible memories for our senior year.",
+      "facebook url": "facebook.com/soph.sy.kim/ ",
+      "instagram handle": "soph.skim",
+      "campaign website": "facebook.com/SophiaKimforVPIA2021",
+      "image": {
+        "src": "../../../images/2020/NEC/seung-kim.jpeg"
+      },
+      "image name": "seung-kim.jpeg"
+    }
+  ],
+  "VP External": [
+    {
+      "platform points": [],
+      "name": "Julie Chen",
+      "introduction": "yuh let's do this thing ~virtually~ ",
+      "facebook url": "https://www.facebook.com/julieechenn",
+      "instagram handle": "julieechenn",
+      "image": {
+        "src": "../../../images/2020/NEC/julie-chen.jpeg"
+      },
+      "image name": "julie.chen.jpeg"
+    }
+  ]
 }

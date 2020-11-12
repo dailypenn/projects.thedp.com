@@ -1,10 +1,10 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { Helmet } from 'react-helmet'
-import s from 'styled-components'
-import { DFPSlotsProvider, AdSlot } from 'react-dfp'
+import React from "react"
+import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
+import s from "styled-components"
+import { DFPSlotsProvider, AdSlot } from "react-dfp"
 
-import projectsJSON from '../content/projects.json'
+import projectsJSON from "../content/projects.json"
 
 const Wrapper = s.div`
   body {
@@ -112,24 +112,47 @@ const Wrapper = s.div`
 `
 
 const URL = ({ link, children }) => {
-  if (link.includes('http')) return <a href={link} target="_blank"> {children} </a>
-  return <Link to={link} target="_blank"> {children} </Link>
+  if (link.includes("http"))
+    return (
+      <a href={link} target="_blank">
+        {" "}
+        {children}{" "}
+      </a>
+    )
+  return (
+    <Link to={link} target="_blank">
+      {" "}
+      {children}{" "}
+    </Link>
+  )
 }
 
 const MainArticle = ({ article }) => (
   <>
     <div>
-      <img src={article.image} class="img img-responsive img-full" alt={article.alt} />
+      <img
+        src={article.image}
+        class="img img-responsive img-full"
+        alt={article.alt}
+      />
     </div>
     <div>
       <div class="proj-section row">
         <div class="col-xs-6"> {article.section} </div>
         <div class="col-xs-6 text-right"> {article.date} </div>
       </div>
-      <URL link={article.link}> <h1> {article.title} </h1> </URL>
+      <URL link={article.link}>
+        {" "}
+        <h1> {article.title} </h1>{" "}
+      </URL>
       <div class="proj-desc"> {article.description} </div>
       <br />
-      <span class="author pull-right"> {article.sponsored ? 'Sponsored by ' + article.author : article.author} </span>
+      <span class="author pull-right">
+        {" "}
+        {article.sponsored
+          ? "Sponsored by " + article.author
+          : article.author}{" "}
+      </span>
     </div>
   </>
 )
@@ -138,17 +161,29 @@ const SideArticle = ({ article }) => (
   <>
     <div class="secondary-feature">
       <div>
-        <img src={article.image} class="img img-responsive img-full" alt={article.alt} />
+        <img
+          src={article.image}
+          class="img img-responsive img-full"
+          alt={article.alt}
+        />
       </div>
-    <div>
-      <div class="proj-section row">
-        <div class="col-xs-5"> {article.section} </div>
-        <div class="col-xs-7 text-right"> {article.date} </div>
-      </div>
-        <URL link={article.link}> <h3> {article.title} </h3> </URL>
+      <div>
+        <div class="proj-section row">
+          <div class="col-xs-5"> {article.section} </div>
+          <div class="col-xs-7 text-right"> {article.date} </div>
+        </div>
+        <URL link={article.link}>
+          {" "}
+          <h3> {article.title} </h3>{" "}
+        </URL>
         <div class="proj-desc"> {article.description} </div>
         <br />
-        <span class="author pull-right"> {article.sponsored ? 'Sponsored by ' + article.author : article.author} </span>
+        <span class="author pull-right">
+          {" "}
+          {article.sponsored
+            ? "Sponsored by " + article.author
+            : article.author}{" "}
+        </span>
       </div>
     </div>
   </>
@@ -164,12 +199,23 @@ const Article = ({ article }) => (
         <div class="col-xs-6"> {article.section} </div>
         <div class="col-xs-6 text-right"> {article.date} </div>
       </div>
-      <URL link={article.link}> <h2> {article.title} </h2> </URL>
+      <URL link={article.link}>
+        {" "}
+        <h2> {article.title} </h2>{" "}
+      </URL>
       <div class="proj-desc"> {article.description} </div>
       <br />
-      <span class="author pull-right"> {article.sponsored ? 'Sponsored by ' + article.author : article.author} </span>
+      <span class="author pull-right">
+        {" "}
+        {article.sponsored
+          ? "Sponsored by " + article.author
+          : article.author}{" "}
+      </span>
     </div>
-    <div class="col-xs-12"> <hr /> </div>
+    <div class="col-xs-12">
+      {" "}
+      <hr />{" "}
+    </div>
   </div>
 )
 
@@ -180,14 +226,25 @@ const IndexPage = () => (
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Projects | The Daily Pennsylvanian</title>
-      <meta name="description" content="This site showcases the work done by the DP's web development department, such as project pages for special issues or standalone interactives" />
-      <link rel="stylesheet" type="text/css" href="https://d1q35ni5859stt.cloudfront.net/20161213m1eLHQrMRG/dist/css/master.min.css" />
+      <meta
+        name="description"
+        content="This site showcases the work done by the DP's web development department, such as project pages for special issues or standalone interactives"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://d1q35ni5859stt.cloudfront.net/20161213m1eLHQrMRG/dist/css/master.min.css"
+      />
     </Helmet>
 
     <nav className="navbar navbar-inverse navbar-fixed-top">
       <center>
         <a href="https://www.thedp.com">
-          <img src="https://snworksceo.imgix.net/dpn/aa058626-f082-47a5-9191-86c645d2986b.sized-1000x1000.png" alt="The Daily Pennsylvanian" width="250" />
+          <img
+            src="https://snworksceo.imgix.net/dpn/aa058626-f082-47a5-9191-86c645d2986b.sized-1000x1000.png"
+            alt="The Daily Pennsylvanian"
+            width="250"
+          />
         </a>
       </center>
     </nav>
@@ -196,8 +253,22 @@ const IndexPage = () => (
       <h1>DP Projects &amp; Guides</h1>
 
       <div class="welcome">
-        <p>Welcome to The Daily Pennsylvanian's Projects page! This site showcases the work done by the DP's web development team, such as project pages for special issues or standalone interactives.</p>
-        <p><a href="https://projects.34st.com" target="_blank">34th Street Magazine</a> and <a href="https://projects.underthebutton.com" target="_blank">Under the Button</a> have their own project pages. Check them out for more of their content!</p>
+        <p>
+          Welcome to The Daily Pennsylvanian's Projects page! This site
+          showcases the work done by the DP's web development team, such as
+          project pages for special issues or standalone interactives.
+        </p>
+        <p>
+          <a href="https://projects.34st.com" target="_blank">
+            34th Street Magazine
+          </a>{" "}
+          and{" "}
+          <a href="https://projects.underthebutton.com" target="_blank">
+            Under the Button
+          </a>{" "}
+          have their own project pages. Check them out for more of their
+          content!
+        </p>
       </div>
 
       <hr />
@@ -206,9 +277,13 @@ const IndexPage = () => (
         <div class="col-sm-8" id="featured-main">
           <MainArticle article={projectsJSON.featured[0]} />
         </div>
-        <div class="col-xs-12 mobile-only"><hr class="mobile-only" /></div>
+        <div class="col-xs-12 mobile-only">
+          <hr class="mobile-only" />
+        </div>
         <div class="col-sm-4" id="featured-secondary">
-          {projectsJSON.featured.slice(1).map(article => <SideArticle article={article} />)}
+          {projectsJSON.featured.slice(1).map(article => (
+            <SideArticle article={article} />
+          ))}
         </div>
       </div>
 
@@ -230,11 +305,16 @@ const IndexPage = () => (
       <hr />
 
       <div class="row" id="articles">
-        {projectsJSON.articles.map(article => <Article article={article} />)}
+        {projectsJSON.articles.map(article => (
+          <Article article={article} />
+        ))}
       </div>
 
       <div class="credit">
-        <p>Copyright &copy; 2016-2020 The Daily Pennsylvanian. All rights reserved.</p>
+        <p>
+          Copyright &copy; 2016-2020 The Daily Pennsylvanian. All rights
+          reserved.
+        </p>
       </div>
     </div>
   </Wrapper>
