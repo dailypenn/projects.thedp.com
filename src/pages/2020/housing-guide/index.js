@@ -16,6 +16,9 @@ import {
 import Thumbnail from '../../../content/images/2020/housing-guide/hero.png'
 
 import explainerArticle from '../../../content/json/2020/housing-guide/explainer.json'
+import subletsArticle from '../../../content/json/2020/housing-guide/sublets.json'
+import profileArticle from '../../../content/json/2020/housing-guide/profile.json'
+import constructionArticle from '../../../content/json/2020/housing-guide/construction.json'
 const WHITE = `#FFFFFF`;
 const ORANGE = `#F29F4D`;
 const LIGHT_MAGENTA = `#F9EDF4`;
@@ -49,6 +52,7 @@ const Metadata = () => (
 const Section = s.section`
     padding-top: 60px;
     padding-bottom: 60px;
+  ${({ background }) => background && `background-color: ${background}`}
 `
 
 const SpacedRow = s(Row)`
@@ -85,6 +89,50 @@ export default () => <>
       </SpacedRow>
     </Container>
   </Section>
+  <Section background={LIGHT_MAGENTA}>
+    <Container>
+      <Row>
+        <Header inverted>News</Header>
+      </Row>
+      <SpacedRow>
+        <Col sm={12} md={6}>
+          <Card>
+            <CardContent
+              {...subletsArticle}
+              primary={DARK_PURPLE}
+              secondary={LIGHT_PURPLE}
+            />
+          </Card>
+        </Col>
+        <Col sm={12} md={6}>
+          <Card>
+            <CardContent
+              {...profileArticle}
+              primary={DARK_PURPLE}
+              secondary={LIGHT_PURPLE}
+            />
+          </Card>
+        </Col>
+      </SpacedRow>
+      <Row>
+        <Col sm={12} md={6}>
+          <Card>
+            <CardContent
+              {...constructionArticle}
+              primary={DARK_PURPLE}
+              secondary={LIGHT_PURPLE}
+            />
+          </Card>
+        </Col>
+        <Col md={12} md={6}>
+          {/* TODO: MORE ADS */}
+          <div>Ad1</div>
+          <div>Ad2</div>
+        </Col>
+      </Row>
+    </Container>
+  </Section>
+
             <DFPSlotsProvider dfpNetworkId="12234093">
               <AdSlot adUnit="DP.com-Leaderboard" sizes={[[300, 200]]} />
             </DFPSlotsProvider>
