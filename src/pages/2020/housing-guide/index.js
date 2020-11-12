@@ -2,9 +2,10 @@ import React from "react"
 import s from "styled-components"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import { DFPSlotsProvider, AdSlot } from "react-dfp"
 
 import { Helmet } from "react-helmet"
-import { Col, Container, Row, Image } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
 import { Ads } from '../../../components/shared'
 import {
   Card,
@@ -94,8 +95,16 @@ const DomCard = s(Card)`
 `
 
 const BroadStreetAdUnit = () => (
-  <div style={{ marginBottom: '1rem' }}>
+  <div style={{ margin: '1rem' }}>
     <broadstreet-zone zone-id="69577" />
+  </div>
+)
+
+const GoogleAdRectangle = () => (
+  <div style={{ margin: '1rem' }}>
+    <DFPSlotsProvider dfpNetworkId="15047813">
+      <AdSlot adUnit="DP.com-Top-Rectangle" sizes={[[300, 250]]} />
+    </DFPSlotsProvider>
   </div>
 )
 
@@ -180,8 +189,8 @@ export default () => (
               </Col>
               <Col sm={12} md={6}>
                 {/* TODO: MORE ADS */}
-                <div>Ad1</div>
-                <div>Ad2</div>
+                <GoogleAdRectangle />
+                <GoogleAdRectangle />
               </Col>
             </SpacedRow>
           </Container>
@@ -223,7 +232,7 @@ export default () => (
               </Col>
               <Col md={12} md={6}>
                 {/* TODO: MORE ADS */}
-                <div>Ad1</div>
+                <GoogleAdRectangle />
                 <BroadStreetAdUnit />
               </Col>
             </Row>
