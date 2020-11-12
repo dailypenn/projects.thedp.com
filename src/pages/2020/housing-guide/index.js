@@ -11,7 +11,6 @@ import {
   Hero,
   Navbar
 } from "../../../components/2020/housing-guide";
-import Thumbnail from '../../../content/images/2020/housing-guide/hero.png'
 
 import explainerArticle from '../../../content/json/2020/housing-guide/explainer.json'
 import subletsArticle from '../../../content/json/2020/housing-guide/sublets.json'
@@ -35,14 +34,14 @@ const Metadata = () => (
     <title>Housing Guide 2020 | The Daily Pennsylvanian</title>
 
     <meta property="og:title" content="Housing Guide 2020 | The Daily Pennsylvanian" />
-    <meta property="og:image" content={Thumbnail} />
+    <meta property="og:image" content="https://snworksceo.imgix.net/dpn/9cc22c52-fbc5-48f7-a43c-bfda087332ec.sized-1000x1000.png" />
     <meta property="og:description" content="Your guide to living at Penn" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://projects.thedp.com/2020/housing-guide/" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Housing Guide 2020 | The Daily Pennsylvanian" />
-    <meta name="twitter:image" content={Thumbnail} />
+    <meta name="twitter:image" content="https://snworksceo.imgix.net/dpn/9cc22c52-fbc5-48f7-a43c-bfda087332ec.sized-1000x1000.png" />
     <meta name="twitter:description" content="Your guide to living at Penn" />
     <meta name="twitter:url" content="https://projects.thedp.com/2020/housing-guide/" />
     <meta name="twitter:site" content="@dailypenn" />
