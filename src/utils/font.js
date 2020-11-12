@@ -112,6 +112,11 @@ export const LORA_REGULAR = `
   font-weight: 400;
 `
 
+export const TENOR_SANS_REGULAR = `
+  font-family: 'Tenor Sans', serif;
+  font-weight: 400;
+`
+
 export const RADIANT_REGULAR = `
   font-family: 'Radiant';
   font-weight: 400;
