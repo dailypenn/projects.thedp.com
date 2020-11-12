@@ -107,6 +107,11 @@ export const LORA_REGULAR = `
   font-weight: 400;
 `
 
+export const LORA_ITALIC = `
+  font-family: 'Lora', serif;
+  font-weight: 400;
+`
+
 export const RADIANT_REGULAR = `
   font-family: 'Radiant';
   font-weight: 400;
