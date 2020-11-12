@@ -58,6 +58,11 @@ export const OPEN_SANS_BOLD = `
   font-weight: 700;
 `
 
+export const CANELA_REGULAR = `
+  font-family: 'Canela', sans-serif;
+  font-weight: 400;
+`
+
 export const DM_SERIF_DISPLAY_BOLD = `
   font-family: 'DM Serif Display', sans-serif;
   font-weight: 700;

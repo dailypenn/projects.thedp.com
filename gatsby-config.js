@@ -120,7 +120,8 @@ module.exports = {
       options: {
         host: 'dailypenn.github.io/font',
         fonts: [
-          `radiant.css`
+          `radiant.css`,
+          `canela.css`
         ]
       }
     }
