@@ -81,7 +81,7 @@ const Features = () => (
                 </LeftAuthor>
             </div>
             <RightDiv>
-                <RightTitle>In the wake of a Trump loss, the future of the Republican Party lies in the hans of some of its youngest members.</RightTitle>
+                <RightTitle>In the wake of a Trump loss, the future of the Republican Party lies in the hands of some of its youngest members.</RightTitle>
                 <RightAuthor>BY DELANI SAGNER</RightAuthor>
             </RightDiv>
         </ArticleGrid>
