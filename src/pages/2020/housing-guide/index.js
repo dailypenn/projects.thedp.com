@@ -2,7 +2,7 @@ import React from 'react'
 import s from 'styled-components'
 
 import { Helmet } from 'react-helmet'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row, Image } from 'react-bootstrap'
 import { DFPSlotsProvider, AdSlot } from 'react-dfp'
 import {
   Card,
@@ -10,7 +10,7 @@ import {
   Header,
   Hero,
   Navbar
-} from "../../../components/2020/housing-guide";
+} from "../../../components/2020/housing-guide"
 import Thumbnail from '../../../content/images/2020/housing-guide/hero.png'
 
 import explainerArticle from '../../../content/json/2020/housing-guide/explainer.json'
@@ -20,12 +20,12 @@ import constructionArticle from '../../../content/json/2020/housing-guide/constr
 import opinionArticle from '../../../content/json/2020/housing-guide/opinion.json'
 
 // TODO: Extract these colors into a constants file
-const WHITE = `#FFFFFF`;
-const ORANGE = `#F29F4D`;
-const LIGHT_MAGENTA = `#F9EDF4`;
-const DARK_ORANGE = `#A56021`;
-const DARK_PURPLE  = `#60113E`;
-const LIGHT_PURPLE = `#932C6C`;
+const WHITE = `#FFFFFF`
+const ORANGE = `#F29F4D`
+const LIGHT_MAGENTA = `#F9EDF4`
+const DARK_ORANGE = `#A56021`
+const DARK_PURPLE  = `#60113E`
+const LIGHT_PURPLE = `#932C6C`
 const BROWN = `#70380A`
 
 const Metadata = () => (
@@ -49,6 +49,8 @@ const Metadata = () => (
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <script src="https://cdn.broadstreetads.com/init-2.min.js" />
+    <script>{broadstreet.watch({ networkId: 5889 })}</script>
   </Helmet>
 )
 
@@ -159,18 +161,22 @@ export default () => <>
         <Header> Opinion </Header>
       </Row>
       <SpacedRow>
-        <Card flush>
-          {/* TODO: REPLACE THIS LATER */}
-          <img src="https://snworksceo.imgix.net/dpn/897c5d64-848b-4525-9fd5-94fa4c8b0646.original.png" />
-        </Card>
-        <DomCard>
-          <CardContent
-            {...opinionArticle}
-            primary={BROWN}
-            secondary={DARK_ORANGE}
-          />
-        </DomCard>
-        {/* TODO: ADD MORE ADS */}
+        <Col sm={12} md={8}>
+          <Card flush>
+            {/* TODO: REPLACE THIS LATER */}
+            <Image src="https://snworksceo.imgix.net/dpn/897c5d64-848b-4525-9fd5-94fa4c8b0646.original.png" fluid />
+          </Card>
+          <DomCard>
+            <CardContent
+              {...opinionArticle}
+              primary={BROWN}
+              secondary={DARK_ORANGE}
+            />
+          </DomCard>
+        </Col>
+        <Col>
+          <broadstreet-zone zone-id="69577"></broadstreet-zone>
+        </Col>
       </SpacedRow>
     </Container>
   </Section>
