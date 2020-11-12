@@ -102,7 +102,7 @@ const BroadStreetAdUnit = () => (
 
 const GoogleAdRectangle = () => (
   <div style={{ margin: '1rem' }}>
-    <DFPSlotsProvider dfpNetworkId="15047813">
+    <DFPSlotsProvider dfpNetworkId="12234093">
       <AdSlot adUnit="DP.com-Top-Rectangle" sizes={[[300, 250]]} />
     </DFPSlotsProvider>
   </div>
