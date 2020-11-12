@@ -4,7 +4,6 @@ import s from 'styled-components'
 import { Helmet } from 'react-helmet'
 import { Col, Container, Row } from 'react-bootstrap'
 import { DFPSlotsProvider, AdSlot } from 'react-dfp'
-
 import {
   Card,
   CardContent,
@@ -12,7 +11,6 @@ import {
   Hero,
   Navbar
 } from "../../../components/2020/housing-guide";
-
 import Thumbnail from '../../../content/images/2020/housing-guide/hero.png'
 
 import explainerArticle from '../../../content/json/2020/housing-guide/explainer.json'
@@ -55,13 +53,13 @@ const Metadata = () => (
 )
 
 const Section = s.section`
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   ${({ background }) => background && `background-color: ${background}`}
 `
 
 const SpacedRow = s(Row)`
-    margin-top: 50px;
+  margin-top: 50px;
 `
 
 const Footer = s.footer`
@@ -84,23 +82,21 @@ export default () => <>
   <Navbar />
   <Hero />
   <Section>
-    <Container>
-      <Card padding>
-        <Row>
+    <Row>
       <Header>Guide</Header>
-        </Row>
+    </Row>
     <Container>
-        <SpacedRow>
-          <Col>
+      <SpacedRow>
+        <Col>
           <Card>
             <CardContent
               {...explainerArticle}
               primary={BROWN}
               secondary={DARK_ORANGE}
             />
-            </Card>
-          </Col>
-          <Col>
+          </Card>
+        </Col>
+        <Col>
           {/* TODO: MORE ADS */}
           <div>Ad1</div>
           <div>Ad2</div>
@@ -155,9 +151,9 @@ export default () => <>
   <Section>
     <Container>
       <Row>
-            <DFPSlotsProvider dfpNetworkId="12234093">
-              <AdSlot adUnit="DP.com-Leaderboard" sizes={[[300, 200]]} />
-            </DFPSlotsProvider>
+        <DFPSlotsProvider dfpNetworkId="12234093">
+          <AdSlot adUnit="DP.com-Leaderboard" sizes={[[300, 200]]} />
+        </DFPSlotsProvider>
       </Row>
       <Row>
         <Header> Opinion </Header>
@@ -175,7 +171,12 @@ export default () => <>
           />
         </DomCard>
         {/* TODO: ADD MORE ADS */}
-        </SpacedRow>
+      </SpacedRow>
     </Container>
   </Section>
+
+
+  <Footer>
+    Made with 🏠 by The Daily Pennsylvanian © 2020. All rights reserved.
+  </Footer>
 </>;
