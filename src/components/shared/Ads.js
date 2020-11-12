@@ -24,7 +24,7 @@ const MobileAd = s.div`
   }
 `
 
-const Ads = () => (
+export const Ads = () => (
   <>
     <DesktopAd>
       <DFPSlotsProvider dfpNetworkId="12234093">
@@ -38,5 +38,3 @@ const Ads = () => (
     </MobileAd>
   </>
 )
-
-export default Ads

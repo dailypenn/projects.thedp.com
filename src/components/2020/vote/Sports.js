@@ -10,7 +10,7 @@ import {
   ArticleAuthor,
   StyledAnchor,
 } from "./shared"
-import Ads from "../../shared/Ads"
+import { Ads } from '../../shared'
 
 const Card = ({ article }) => (
   <div className="row">

@@ -3,7 +3,7 @@ import s from "styled-components"
 
 import { Helmet } from "react-helmet"
 import { Col, Container, Row, Image } from "react-bootstrap"
-import { DFPSlotsProvider, AdSlot } from "react-dfp"
+import { Ads } from '../../../components/shared'
 import {
   Card,
   CardContent,
@@ -97,6 +97,12 @@ const DomCard = s(Card)`
   }
 `
 
+const AdUnit = () => (
+  <div style={{ marginBottom: '1rem' }}>
+    <broadstreet-zone zone-id="69577" />
+  </div>
+)
+
 // TODO: Extract out add component for DP usage
 export default () => (
   <>
@@ -173,9 +179,7 @@ export default () => (
     <Section>
       <Container>
         <Row>
-          <DFPSlotsProvider dfpNetworkId="12234093">
-            <AdSlot adUnit="DP.com-Leaderboard" sizes={[[300, 200]]} />
-          </DFPSlotsProvider>
+          <Ads />
         </Row>
         <Row>
           <Header> Opinion </Header>
@@ -195,7 +199,9 @@ export default () => (
             </DomCard>
           </Col>
           <Col>
-            <broadstreet-zone zone-id="69577"></broadstreet-zone>
+            <AdUnit />
+            <AdUnit />
+            <AdUnit />
           </Col>
         </SpacedRow>
       </Container>

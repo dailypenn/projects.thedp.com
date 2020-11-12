@@ -12,7 +12,7 @@ import {
   RedSectionHeader,
 } from "./shared"
 import { FUTURA_REGULAR } from "../../../utils/font"
-import Ads from "../../shared/Ads"
+import { Ads } from '../../shared'
 
 const NewsLetterWrapper = s.div`
   margin-bottom: 2rem;

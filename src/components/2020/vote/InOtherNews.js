@@ -13,7 +13,7 @@ import {
   RedSectionHeader,
 } from "./shared"
 import DividerLine from "../../../content/images/2020/vote/divider-line.png"
-import Ads from "../../shared/Ads"
+import { Ads } from '../../shared'
 
 const Slideshows = [
   {
