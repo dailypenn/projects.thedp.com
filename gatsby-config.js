@@ -135,8 +135,6 @@ module.exports = {
       options: {
         host: 'dailypenn.github.io/font',
         fonts: [
-          `cooper-black.css`,
-          `brandon-grotesque.css`,
           `radiant.css`,
         ]
       }
