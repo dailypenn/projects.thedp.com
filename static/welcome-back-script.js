@@ -28,3 +28,12 @@ function handleMouseMove(e) {
 function handleWindowResize() {
   width = window.innerWidth
 }
+
+let broadstreetScript = document.createElement('script');
+broadstreetScript.src = 'https://cdn.broadstreetads.com/init-2.min.js'; // URL for the third-party library being loaded.
+document.body.appendChild(broadstreetScript);
+
+window.broadstreet = window.broadstreet || { run: [] };
+window.broadstreet.run.push(function() {
+  broadstreet.watch({ networkId: 5889 });
+});

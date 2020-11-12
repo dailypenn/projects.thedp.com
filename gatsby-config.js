@@ -117,12 +117,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-load-script",
-      options: {
-        src: "/nec-script.js",
-      },
-    },
-    {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
