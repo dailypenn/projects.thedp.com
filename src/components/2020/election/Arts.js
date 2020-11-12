@@ -1,13 +1,6 @@
-import React from 'react'
-import { render } from 'react-dom'
-import { TemporarySectionHeader } from './shared'
+import React from "react"
+import { TemporarySectionHeader } from "./shared"
 
-const Arts = () =>{
-    render = {
-        return(){
-            <TemporarySectionHeader>Arts</TemporarySectionHeader>
-        }     
-    }
-}
+const Arts = () => <TemporarySectionHeader>Arts</TemporarySectionHeader>
 
 export default Arts
