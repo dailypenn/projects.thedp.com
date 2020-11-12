@@ -2,9 +2,25 @@ import React from 'react'
 import s from 'styled-components'
 import { Helmet } from 'react-helmet'
 
-import { Navbar } from '../../../components/2020/election'
+import Arts from 'src/components/2020/election/Arts.js'
+import Ego from 'src/components/2020/election/Ego.js'
+import Features from 'src/components/2020/election/Features.js'
+import HotTakes from 'src/components/2020/election/HotTakes.js'
+import WatchingListening from 'src/components/2020/election/WatchingListening.js'
 
-export default () => {
+import ExplainItToMe from '../../../components/2020/vote/ExplainItToMe'
+
+import { Navbar } from '../../../components/2020/election/Navbar'
+
+const Credit = s.div`
+  color: #000000;
+  padding: 1rem;
+  font-size: 80%;
+  margin: 1rem 0;
+  text-align: center;
+`
+
+const IndexPage = () => {
   return <>
     <Helmet>
       <meta charset="utf-8" />
@@ -32,5 +48,12 @@ export default () => {
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossOrigin="anonymous"></script>
     </Helmet>
     <Navbar />
+    <Features />
+    <Ego />
+    <HotTakes />
+    <Arts />
+    <WatchingListening />
   </>
 }
+
+export default IndexPage
