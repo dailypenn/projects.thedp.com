@@ -1,10 +1,10 @@
-import React from 'react'
-import s from 'styled-components'
-import Img from 'gatsby-image'
-import { StaticQuery, graphql } from 'gatsby'
+import React from "react"
+import s from "styled-components"
+import Img from "gatsby-image"
+import { StaticQuery, graphql } from "gatsby"
 
-import { FUTURA_REGULAR, FUTURA_BOLD } from '../../../utils/font'
-import { StyledAnchor } from './shared'
+import { FUTURA_REGULAR, FUTURA_BOLD } from "../../../utils/font"
+import { StyledAnchor } from "./shared"
 
 const Wrapper = s.div`
   padding: 3rem 0rem 3rem 0rem;
@@ -97,10 +97,10 @@ const ComicRelief = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile (filter: {relativePath: {eq: "vote_2020_utb.json"}}) {
+        allFile(filter: { relativePath: { eq: "vote_2020_utb.json" } }) {
           edges {
             node {
-              childrenVote2020UtbJson{
+              childrenVote2020UtbJson {
                 title
                 author
                 link
@@ -121,12 +121,17 @@ const ComicRelief = () => (
       }
     `}
     render={data => {
-      const { node: { childrenVote2020UtbJson: articles } } = data.allFile.edges[0]
+      const {
+        node: { childrenVote2020UtbJson: articles },
+      } = data.allFile.edges[0]
       return (
         <Wrapper>
           <div id="utb" />
           <ImageWithLine>
-            <h1> <img src="/img/utb-header.png" /> </h1>
+            <h1>
+              {" "}
+              <img src="/img/utb-header.png" />{" "}
+            </h1>
           </ImageWithLine>
           <Subtitle>BROUGHT TO YOU BY UNDER THE BUTTON</Subtitle>
 
@@ -136,32 +141,36 @@ const ComicRelief = () => (
                 <StyledAnchor href={article.link} target="_blank">
                   <Article>
                     <Img fluid={article.img.src.childImageSharp.fluid} />
-                    <p style={{ marginTop: '1rem', fontSize: '120%', lineHeight: 1.1 }}>{article.title}</p>
-                    <p style={{ marginTop: '1rem', fontSize: '90%' }}>BY {article.author}</p>
+                    <p
+                      style={{
+                        marginTop: "1rem",
+                        fontSize: "120%",
+                        lineHeight: 1.1,
+                      }}
+                    >
+                      {article.title}
+                    </p>
+                    <p style={{ marginTop: "1rem", fontSize: "90%" }}>
+                      BY {article.author}
+                    </p>
                   </Article>
                 </StyledAnchor>
               </div>
-            ))}       
+            ))}
           </ArticleRow>
 
           <StyledAnchor href="https://www.underthebutton.com/" target="_blank">
-            <Shenanigans>
-              PRESS FOR SHENANIGANS
-            </Shenanigans>
+            <Shenanigans>PRESS FOR SHENANIGANS</Shenanigans>
             <ButtonImg
               src="/img/shenanigans-button.png"
               className="img-fluid"
-              style={{ height: '100px' }}
+              style={{ height: "100px" }}
             />
           </StyledAnchor>
-
         </Wrapper>
       )
     }}
   />
 )
 
-
-
 export default ComicRelief
-
