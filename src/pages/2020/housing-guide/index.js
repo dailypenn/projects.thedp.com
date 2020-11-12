@@ -19,10 +19,15 @@ import explainerArticle from '../../../content/json/2020/housing-guide/explainer
 import subletsArticle from '../../../content/json/2020/housing-guide/sublets.json'
 import profileArticle from '../../../content/json/2020/housing-guide/profile.json'
 import constructionArticle from '../../../content/json/2020/housing-guide/construction.json'
+import opinionArticle from '../../../content/json/2020/housing-guide/opinion.json'
+
+// TODO: Extract these colors into a constants file
 const WHITE = `#FFFFFF`;
 const ORANGE = `#F29F4D`;
 const LIGHT_MAGENTA = `#F9EDF4`;
 const DARK_ORANGE = `#A56021`;
+const DARK_PURPLE  = `#60113E`;
+const LIGHT_PURPLE = `#932C6C`;
 const BROWN = `#70380A`
 
 const Metadata = () => (
@@ -57,6 +62,20 @@ const Section = s.section`
 
 const SpacedRow = s(Row)`
     margin-top: 50px;
+`
+
+const Footer = s.footer`
+  color: ${BROWN};
+  padding: 20px 0px;
+  text-align: center;
+`
+
+const DomCard = s(Card)`
+  @media (min-width: 768px) {
+    width: 45%;
+    margin-left: auto;
+    margin-top: -300px;
+  }
 `
 
 // TODO: Extract out add component for DP usage
@@ -133,12 +152,30 @@ export default () => <>
     </Container>
   </Section>
 
+  <Section>
+    <Container>
+      <Row>
             <DFPSlotsProvider dfpNetworkId="12234093">
               <AdSlot adUnit="DP.com-Leaderboard" sizes={[[300, 200]]} />
             </DFPSlotsProvider>
-          </Col>
+      </Row>
+      <Row>
+        <Header> Opinion </Header>
+      </Row>
+      <SpacedRow>
+        <Card flush>
+          {/* TODO: REPLACE THIS LATER */}
+          <img src="https://snworksceo.imgix.net/dpn/897c5d64-848b-4525-9fd5-94fa4c8b0646.original.png" />
+        </Card>
+        <DomCard>
+          <CardContent
+            {...opinionArticle}
+            primary={BROWN}
+            secondary={DARK_ORANGE}
+          />
+        </DomCard>
+        {/* TODO: ADD MORE ADS */}
         </SpacedRow>
-      </Card>
     </Container>
   </Section>
 </>;
