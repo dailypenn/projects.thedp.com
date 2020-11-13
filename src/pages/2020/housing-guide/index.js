@@ -198,7 +198,7 @@ export default () => (
               </Col>
               <Col sm={12} md={6}>
                 <GoogleAdRectangle />
-                {/* <GoogleAdRectangle /> */}
+                <GoogleAdRectangle />
               </Col>
             </SpacedRow>
           </Container>
@@ -239,7 +239,7 @@ export default () => (
                 </Card>
               </Col>
               <Col md={12} md={6}>
-                {/* <GoogleAdRectangle /> */}
+                <GoogleAdRectangle />
                 <BroadStreetAdUnit />
               </Col>
             </Row>
