@@ -86,11 +86,20 @@ const Footer = s.footer`
   text-align: center;
 `
 
+const ImgCard = s(Card)`
+  @media (min-width: 768px) {
+    width: 80%;
+    float: left;
+  }
+`
+
 const DomCard = s(Card)`
   @media (min-width: 768px) {
-    width: 45%;
-    margin-left: auto;
-    margin-top: -300px;
+    width: 60%;
+    margin-top: -200px;
+    z-index: 999;
+    position: relative;
+    float: right;
   }
 `
 
@@ -188,9 +197,8 @@ export default () => (
                 </Card>
               </Col>
               <Col sm={12} md={6}>
-                {/* TODO: MORE ADS */}
                 <GoogleAdRectangle />
-                <GoogleAdRectangle />
+                {/* <GoogleAdRectangle /> */}
               </Col>
             </SpacedRow>
           </Container>
@@ -231,8 +239,7 @@ export default () => (
                 </Card>
               </Col>
               <Col md={12} md={6}>
-                {/* TODO: MORE ADS */}
-                <GoogleAdRectangle />
+                {/* <GoogleAdRectangle /> */}
                 <BroadStreetAdUnit />
               </Col>
             </Row>
@@ -249,10 +256,9 @@ export default () => (
             </Row>
             <SpacedRow>
               <Col sm={12} md={8}>
-                <Card flush>
-                  {/* TODO: REPLACE THIS LATER */}
+                <ImgCard flush>
                   <Img fluid={opinionArticle.image.src.childImageSharp.fluid} className="img-fluid" />
-                </Card>
+                </ImgCard>
                 <DomCard>
                   <CardContent
                     {...opinionArticle}
