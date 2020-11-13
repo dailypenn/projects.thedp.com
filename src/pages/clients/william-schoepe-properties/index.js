@@ -1,7 +1,7 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
+import React from "react"
+import { Helmet } from "react-helmet"
 
-import s from 'styled-components'
+import s from "styled-components"
 
 const Wrapper = s.div`
   body {
@@ -88,7 +88,6 @@ const Wrapper = s.div`
   }
 `
 
-
 const App = () => (
   <>
     <Helmet>
@@ -98,14 +97,26 @@ const App = () => (
       <title>William Schoepe Properties</title>
 
       <meta property="og:title" content="William Schoepe Properties" />
-      <meta property="og:image" content="https://snworksceo.imgix.net/dpn/120078a5-e00e-45a1-92f4-56743ad95825.sized-1000x1000.jpg" />
+      <meta
+        property="og:image"
+        content="https://snworksceo.imgix.net/dpn/120078a5-e00e-45a1-92f4-56743ad95825.sized-1000x1000.jpg"
+      />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://projects.thedp.com/clients/william-schoepe-properties/" />
+      <meta
+        property="og:url"
+        content="https://projects.thedp.com/clients/william-schoepe-properties/"
+      />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="William Schoepe Properties" />
-      <meta name="twitter:image" content="https://snworksceo.imgix.net/dpn/120078a5-e00e-45a1-92f4-56743ad95825.sized-1000x1000.jpg" />
-      <meta name="twitter:url" content="https://projects.thedp.com/clients/william-schoepe-properties/" />
+      <meta
+        name="twitter:image"
+        content="https://snworksceo.imgix.net/dpn/120078a5-e00e-45a1-92f4-56743ad95825.sized-1000x1000.jpg"
+      />
+      <meta
+        name="twitter:url"
+        content="https://projects.thedp.com/clients/william-schoepe-properties/"
+      />
     </Helmet>
 
     <Wrapper>
@@ -122,12 +133,12 @@ const App = () => (
                 <h3>House Available</h3>
                 <p>10+ Bedrooms, 5 baths</p>
                 <p> New Kitchen &amp; Floors </p>
-             </li>
-             <li>
-              <h3>7 Bedroom Available</h3>
-             </li>
+              </li>
+              <li>
+                <h3>7 Bedroom Available</h3>
+              </li>
             </ul>
-            
+
             <h3>Interested? Text (215) 880-7077</h3>
           </div>
         </div>
@@ -139,11 +150,11 @@ const App = () => (
           40th &amp; Spruce
         </h1>
 
-            <h3>House Available</h3>
-            <p>10+ Bedrooms, 5 baths</p>
-            <p> New Kitchen &amp; Floors </p>
-            <br />
-          <h3>7 Bedroom Available</h3>
+        <h3>House Available</h3>
+        <p>10+ Bedrooms, 5 baths</p>
+        <p> New Kitchen &amp; Floors </p>
+        <br />
+        <h3>7 Bedroom Available</h3>
 
         <br />
         <h3>Interested? Text (215) 880-7077</h3>

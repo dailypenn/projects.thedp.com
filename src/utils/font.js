@@ -107,6 +107,11 @@ export const LORA_REGULAR = `
   font-weight: 400;
 `
 
+export const LORA_ITALIC = `
+  font-family: 'Lora', serif;
+  font-weight: 400;
+`
+
 export const RADIANT_REGULAR = `
   font-family: 'Radiant';
   font-weight: 400;
@@ -119,4 +124,14 @@ export const FUTURA_REGULAR = `
 export const FUTURA_BOLD = `
   font-family: 'Futura-PT', sans-serif;
   font-weight: 700;
+`
+
+export const COOPER_BLACK_REGULAR = `
+  font-family: 'cooper-black-std';
+  font-weight: 400;
+`
+
+export const BRANDON_GROTESQUE_MEDIUM = `
+  font-family: 'BrandonGrotesque-Medium';
+  font-weight: 400;
 `

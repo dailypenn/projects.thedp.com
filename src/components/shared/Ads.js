@@ -1,6 +1,6 @@
-import React from 'react'
-import { DFPSlotsProvider, AdSlot } from 'react-dfp'
-import s from 'styled-components'
+import React from "react"
+import { DFPSlotsProvider, AdSlot } from "react-dfp"
+import s from "styled-components"
 
 const DesktopAd = s.div`
   display: flex;
@@ -24,19 +24,17 @@ const MobileAd = s.div`
   }
 `
 
-const Ads = () => (
+export const Ads = () => (
   <>
-    <DesktopAd>  
+    <DesktopAd>
       <DFPSlotsProvider dfpNetworkId="12234093">
         <AdSlot adUnit="DP.com-Leaderboard" sizes={[[728, 90]]} />
       </DFPSlotsProvider>
     </DesktopAd>
-    <MobileAd>  
+    <MobileAd>
       <DFPSlotsProvider dfpNetworkId="12234093">
         <AdSlot adUnit="DP.com-mobile-leaderboard" sizes={[[320, 50]]} />
       </DFPSlotsProvider>
     </MobileAd>
   </>
 )
-
-export default Ads

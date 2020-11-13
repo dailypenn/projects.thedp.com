@@ -1,9 +1,9 @@
-import React from 'react'
-import s from 'styled-components'
+import React from "react"
+import s from "styled-components"
 
-import { SUBHEAD_LIGHT_GRAY } from '../../../utils/colors'
-import { KARLA_REGULAR, KARLA_BOLD } from '../../../utils/font'
-import { StyledAnchor } from './Typograph'
+import { SUBHEAD_LIGHT_GRAY } from "../../../utils/colors"
+import { KARLA_REGULAR, KARLA_BOLD } from "../../../utils/font"
+import { StyledAnchor } from "./Typograph"
 
 const Wrapper = s.div`
   padding: 0 15rem;
@@ -20,10 +20,18 @@ const Brackets = s.div`
   ${KARLA_REGULAR}
 
   background-image:
-    linear-gradient(${({ bracketColor }) => bracketColor}, ${({ bracketColor }) => bracketColor}),
-    linear-gradient(${({ bracketColor }) => bracketColor}, ${({ bracketColor }) => bracketColor}),
-    linear-gradient(${({ bracketColor }) => bracketColor}, ${({ bracketColor }) => bracketColor}),
-    linear-gradient(${({ bracketColor }) => bracketColor}, ${({ bracketColor }) => bracketColor});
+    linear-gradient(${({ bracketColor }) => bracketColor}, ${({
+  bracketColor,
+}) => bracketColor}),
+    linear-gradient(${({ bracketColor }) => bracketColor}, ${({
+  bracketColor,
+}) => bracketColor}),
+    linear-gradient(${({ bracketColor }) => bracketColor}, ${({
+  bracketColor,
+}) => bracketColor}),
+    linear-gradient(${({ bracketColor }) => bracketColor}, ${({
+  bracketColor,
+}) => bracketColor});
 
   background-repeat: no-repeat;
   background-size: 8px 2px;

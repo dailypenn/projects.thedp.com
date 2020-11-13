@@ -1,6 +1,11 @@
-import React from 'react'
-import s from 'styled-components'
-import { RADIANT_REGULAR, FUTURA_REGULAR, LORA_REGULAR, FUTURA_BOLD } from '../../../../utils/font'
+import React from "react"
+import s from "styled-components"
+import {
+  RADIANT_REGULAR,
+  FUTURA_REGULAR,
+  LORA_REGULAR,
+  FUTURA_BOLD,
+} from "../../../../utils/font"
 
 export const Wrapper = s.div`
   padding: 0 10rem;
@@ -15,7 +20,7 @@ export const Wrapper = s.div`
 
 const H2 = s.h2` 
   text-align: center; 
-  border-bottom: 4px solid ${({ lineColor }) => lineColor }; 
+  border-bottom: 4px solid ${({ lineColor }) => lineColor}; 
   line-height: 0.1em;
   margin: 3rem -1rem;
   font-size: 4em;
@@ -29,7 +34,9 @@ const H2 = s.h2`
 `
 
 export const WordWithLine = ({ word, lineColor }) => (
-  <H2 lineColor={lineColor} className="divider" ><span>{word}</span></H2>
+  <H2 lineColor={lineColor} className="divider">
+    <span>{word}</span>
+  </H2>
 )
 
 export const ArticleHeader = s.h3`
