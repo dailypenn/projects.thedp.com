@@ -38,7 +38,7 @@ const Metadata = () => (
       property="og:image"
       content="https://snworksceo.imgix.net/dpn/9cc22c52-fbc5-48f7-a43c-bfda087332ec.sized-1000x1000.png"
     />
-    <meta property="og:description" content="Your guide to living at Penn" />
+    <meta property="og:description" content="Your guide to living at Penn during the COVID-19 pandemic" />
     <meta property="og:type" content="article" />
     <meta
       property="og:url"
@@ -54,7 +54,7 @@ const Metadata = () => (
       name="twitter:image"
       content="https://snworksceo.imgix.net/dpn/9cc22c52-fbc5-48f7-a43c-bfda087332ec.sized-1000x1000.png"
     />
-    <meta name="twitter:description" content="Your guide to living at Penn" />
+    <meta name="twitter:description" content="Your guide to living at Penn during the COVID-19 pandemic" />
     <meta
       name="twitter:url"
       content="https://projects.thedp.com/2020/housing-guide/"
