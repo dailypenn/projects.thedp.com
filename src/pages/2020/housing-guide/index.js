@@ -104,13 +104,13 @@ const DomCard = s(Card)`
 `
 
 const BroadStreetAdUnit = () => (
-  <div style={{ margin: '1rem' }}>
+  <div style={{ margin: '1rem', display: 'flex', justifyContent: 'center' }}>
     <broadstreet-zone zone-id="69577" />
   </div>
 )
 
 const GoogleAdRectangle = () => (
-  <div style={{ margin: '1rem' }}>
+  <div style={{ margin: '1rem', display: 'flex', justifyContent: 'center' }}>
     <DFPSlotsProvider dfpNetworkId="12234093">
       <AdSlot adUnit="DP.com-Top-Rectangle" sizes={[[300, 250]]} />
     </DFPSlotsProvider>
@@ -197,6 +197,7 @@ export default () => (
                 </Card>
               </Col>
               <Col sm={12} md={6}>
+                <BroadStreetAdUnit />
                 <GoogleAdRectangle />
                 <GoogleAdRectangle />
               </Col>
@@ -241,6 +242,7 @@ export default () => (
               <Col md={12} md={6}>
                 <GoogleAdRectangle />
                 <BroadStreetAdUnit />
+                <BroadStreetAdUnit />
               </Col>
             </Row>
           </Container>
@@ -269,7 +271,6 @@ export default () => (
                 </DomCard>
               </Col>
               <Col>
-                <BroadStreetAdUnit />
                 <BroadStreetAdUnit />
                 <BroadStreetAdUnit />
               </Col>
