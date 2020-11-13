@@ -19,6 +19,9 @@ export const CardWrapper = s.div.attrs(({ className }) => ({
   justify-content: center;
   flex-direction: column;
   ${({ flush }) => flush || `padding-bottom: 30px;`}
+  ${({ fixed }) => fixed || `:hover {
+    transform: scale(1.01);
+  }`}
   transition: all 0.3s;
   margin-bottom: 60px;
   overflow: hidden;

@@ -256,7 +256,7 @@ export default () => (
             </Row>
             <SpacedRow>
               <Col sm={12} md={8}>
-                <ImgCard flush>
+                <ImgCard flush fixed>
                   <Img fluid={opinionArticle.image.src.childImageSharp.fluid} className="img-fluid" />
                 </ImgCard>
                 <DomCard>
