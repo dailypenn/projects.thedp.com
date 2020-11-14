@@ -1,8 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
+import s from 'styled-components'
 
 import { Navbar } from "../../../components/2020/election/Navbar"
+import { FUTURA_REGULAR } from '../../../utils/font'
 
 import Arts from "../../../components/2020/election/Arts.js"
 import Ego from "../../../components/2020/election/Ego.js"
@@ -11,6 +13,16 @@ import HotTakes from "../../../components/2020/election/HotTakes.js"
 import WatchingListening from "../../../components/2020/election/WatchingListening.js"
 
 const HEADER = `https://s3.amazonaws.com/snwceomedia/dpn/87ba14cb-b4db-4ff6-9278-4483d77881d1.original.gif`
+
+const Credit = s.div`
+  ${FUTURA_REGULAR}
+  color: #000000;
+  padding: 1rem;
+  font-size: 80%;
+  margin: 1 0rem;
+  text-align: center;
+  background-color: #FFD4DD;
+`
 
 const IndexPage = () => (
   <>
@@ -89,6 +101,8 @@ const IndexPage = () => (
     <HotTakes />
     <Arts />
     <WatchingListening />
+
+    <Credit> Made with <span role="img"> 🇺🇸 </span> by The Daily Pennsylvanian © 2020. All rights reserved.  </Credit>
   </>
 )
 

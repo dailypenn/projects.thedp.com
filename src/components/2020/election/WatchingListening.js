@@ -2,6 +2,8 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { Container, Row, Col } from "react-bootstrap"
+import s from 'styled-components'
+
 import { SectionHeader, Title, Author } from "./shared"
 
 
@@ -63,26 +65,48 @@ const Background = s.div`
 const ComicHeader = s(Title)`
   
 `
-const StarBar = s.div`
 
+const StarWrapper = s.div`
+  margin: '2rem 0 2rem 0';
 `
-const ComicRelief = () => {
-  return <Background>
-    <Col>
 
+const StarImg = s.img`
+  height: 25px;
+`
+
+const StarBar = () => (
+  <StarWrapper>
+    <Col md={5}/>
+    <Col><StarImg src="/img/stars.png"></StarImg></Col>
+    <Col><StarImg src="/img/stars.png"></StarImg></Col>
+    <Col md={5}/>
+  </StarWrapper>
+)
+
+const ComicSubtitle = s.h1`
+  color: #1500FF;
+  font-size: .75em;
+  margin-top: 1vw;
+  margin-bottom: -1vw;
+`
+
+const ComicRelief = () => (
+  <Background>
+    <Col/>
+    <Col md={10}>
+      <StarBar/>
+        <Title>For Some Comic Relief</Title>
+        <ComicSubtitle></ComicSubtitle>
+      <StarBar/>
     </Col>
-    <div className="d-flex justify-content-center" style={{ padding: '2rem 0 1rem 0' }}>
-      <img src="/img/stars.png" style={{ height: '25px' }} />
-    </div>
-    <H2> MUST READ: </H2>
-    <div style={{ padding: '0 1rem' }}>
+    {/* <div style={{ padding: '0 1rem' }}>
       {articles.map(article => <MustReadArticle article={article} />)}
-    </div>
+    </div> */}
     <div className="d-flex justify-content-center" style={{ padding: '2rem 0' }}>
-      <img src="/img/stars.png" style={{ height: '25px' }} />
     </div>
+    <Col/>
   </Background>
-}
+)
 
 const WatchingListening = () => (
   <>
