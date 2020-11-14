@@ -5,11 +5,8 @@ import { Container, Row, Col } from "react-bootstrap"
 import s from 'styled-components'
 
 import { SectionHeader, Title, Author } from "./shared"
+import { FUTURA_BOLD } from "../../../utils/font"
 
-
-const ColoredColBox = s(Col)`
-  min-height: 40%
-`
 
 const Articles = () => {
   const { borat, music } = useStaticQuery(graphql`
@@ -63,11 +60,14 @@ const Background = s.div`
   background-color: #F8F8F8;
 `
 const ComicHeader = s(Title)`
-  
+  font-size: 3em;
+  padding: 0 2rem;
 `
 
 const StarWrapper = s.div`
-  margin: 2rem 0;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
 `
 
 const StarImg = s.img`
@@ -76,35 +76,65 @@ const StarImg = s.img`
 
 const StarBar = () => (
   <StarWrapper>
-    <Col md={5}> sdsdsd </Col>
-    <Col><StarImg src="/img/stars.png"></StarImg></Col>
-    <Col><StarImg src="/img/stars.png"></StarImg></Col>
-    <Col md={5}/>
+    <StarImg src="/img/stars.png"/>
   </StarWrapper>
 )
 
 const ComicSubtitle = s.h1`
-  color: #1500FF;
+  ${FUTURA_BOLD}
+  color: #019459;
   font-size: .75em;
+  text-align: center;
   margin-top: 1vw;
   margin-bottom: -1vw;
 `
-
+const ComicContent = s.div`
+  margin: 0, 2rem; 
+`
+const ComicArticleWrapper = s(Row)`
+  margin: 1rem 0;
+`
 const ComicRelief = () => (
   <Background>
-    <Col/>
-    <Col md={10}>
+    <ComicContent>
       <StarBar />
-      <Title>For Some Comic Relief</Title>
-      <ComicSubtitle></ComicSubtitle>
+      <ComicHeader>For Some Comic Relief</ComicHeader>
+      <ComicSubtitle>BROUGHT TO YOU BY</ComicSubtitle>
+      <ComicSubtitle>UNDER THE BUTTON</ComicSubtitle>
+      {/*<ComicArticleWrapper>
+       <Col>
+        <Img fluid= />
+      </Col>
+      <div className="col-md-6">
+        <Title> {article.title} </Title>
+        <Author style={{ fontSize: '80%' }}> BY {article.author} </Author>
+      </div>
+    </ComicArticleWrapper>
+      <ComicArticleWrapper>
+        <Col>
+          <Img fluid={article.img.src.childImageSharp.fluid} />
+        </Col>
+        <div className="col-md-6">
+          <Title> None of Our Articles As Funny as Four Seasons Total Landscaping Debacle </Title>
+          <Author style={{ fontSize: '80%' }}> BY {article.author} </Author>
+        </div>
+      </ComicArticleWrapper>
+      <ComicArticleWrapper>
+        <Col>
+          <Img fluid={article.img.src.childImageSharp.fluid} />
+        </Col>
+        <div className="col-md-6">
+          <Title> {article.title} </Title>
+          <Author style={{ fontSize: '80%' }}> BY {article.author} </Author>
+        </div>
+      </ComicArticleWrapper> */}
       <StarBar/>
-    </Col>
+    </ComicContent>
     {/* <div style={{ padding: '0 1rem' }}>
       {articles.map(article => <MustReadArticle article={article} />)}
     </div> */}
     <div className="d-flex justify-content-center" style={{ padding: '2rem 0' }}>
     </div>
-    <Col/>
   </Background>
 )
 
