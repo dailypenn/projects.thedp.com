@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import { Container, Row, Col } from 'react-bootstrap'
 
-import { SectionHeader, Title, Author } from "./shared"
+import { SectionHeader, Title, Author } from './shared'
 import { CANELA_REGULAR, FUTURA_REGULAR } from '../../../utils/font'
 
 const FeatureWrapper = s.div`
@@ -38,6 +38,10 @@ const FeatureAuthor = s.div`
   font-weight: light;
 `
 
+const Wrapper = s.div`
+  margin: 3rem 0;
+`
+
 const Features = () => {
   const { left, right } = useStaticQuery(graphql`
     query {
@@ -58,30 +62,32 @@ const Features = () => {
       }
     }
   `)
-  return <>
-    <SectionHeader>FEATURES</SectionHeader>
-    <Container>
-      <Row>
-        <Col md={5}>
-          <Img fluid={left.childImageSharp.fluid} />
-          <Title>
-            <b>There's a limit to what can be expressed through the voting process</b>, but civic engagement doesn't end on Election Day.
-          </Title>
-          <Author>
-            BY PEARL LIU
-          </Author>
-        </Col>
-        <Col md={7}>
-          <Img fluid={right.childImageSharp.fluid} style={{ filter: `brightness(.7)` }} />
-          <FeatureWrapper>
-            <FeatureTitle>In the wake of a Trump loss, the future of the Republican Party lies in the hands of some of its youngest members.</FeatureTitle>
-            <FeatureAuthor>BY DELANI SAGNER</FeatureAuthor>
-          </FeatureWrapper>
-        </Col>
-      </Row>
-      </Container>
-    {/* TODO: ADD AD HERE */}
-  </>
+  return (
+    <Wrapper>
+      <SectionHeader>FEATURES</SectionHeader>
+      <Container>
+        <Row>
+          <Col md={5}>
+            <Img fluid={left.childImageSharp.fluid} />
+            <Title>
+              <b>There's a limit to what can be expressed through the voting process</b>, but civic engagement doesn't end on Election Day.
+            </Title>
+            <Author>
+              BY PEARL LIU
+            </Author>
+          </Col>
+          <Col md={7}>
+            <Img fluid={right.childImageSharp.fluid} style={{ filter: `brightness(.7)` }} />
+            <FeatureWrapper>
+              <FeatureTitle>In the wake of a Trump loss, the future of the Republican Party lies in the hands of some of its youngest members.</FeatureTitle>
+              <FeatureAuthor>BY DELANI SAGNER</FeatureAuthor>
+            </FeatureWrapper>
+          </Col>
+        </Row>
+        </Container>
+      {/* TODO: ADD AD HERE */}
+    </Wrapper>
+  )
 }
 
 
