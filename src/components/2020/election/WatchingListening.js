@@ -67,7 +67,7 @@ const ComicHeader = s(Title)`
 `
 
 const StarWrapper = s.div`
-  margin: '2rem 0 2rem 0';
+  margin: 2rem 0;
 `
 
 const StarImg = s.img`
@@ -76,7 +76,7 @@ const StarImg = s.img`
 
 const StarBar = () => (
   <StarWrapper>
-    <Col md={5}/>
+    <Col md={5}> sdsdsd </Col>
     <Col><StarImg src="/img/stars.png"></StarImg></Col>
     <Col><StarImg src="/img/stars.png"></StarImg></Col>
     <Col md={5}/>
@@ -94,9 +94,9 @@ const ComicRelief = () => (
   <Background>
     <Col/>
     <Col md={10}>
-      <StarBar/>
-        <Title>For Some Comic Relief</Title>
-        <ComicSubtitle></ComicSubtitle>
+      <StarBar />
+      <Title>For Some Comic Relief</Title>
+      <ComicSubtitle></ComicSubtitle>
       <StarBar/>
     </Col>
     {/* <div style={{ padding: '0 1rem' }}>
