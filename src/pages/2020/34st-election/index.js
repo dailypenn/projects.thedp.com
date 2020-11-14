@@ -94,8 +94,11 @@ const IndexPage = () => (
         crossOrigin="anonymous"
       ></script>
     </Helmet>
+
     <Navbar />
     <img src={HEADER} className="img-fluid"/>
+
+    
     <Features />
     <Ego />
     <HotTakes />

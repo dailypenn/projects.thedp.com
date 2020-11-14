@@ -56,19 +56,19 @@ export const Navbar = () => {
     <div className="navbar-collapse w-100 dual-collapse2 order-1 order-md-0 collapse">
       <LeftUL className="navbar-nav ml-auto text-center">
         <li className="nav-item active">
-          <NavLink className="nav-link" to="#featured">
+          <NavLink className="nav-link" to="#features">
             {" "}
             <StyledNavText>FEATURES</StyledNavText>
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="#news">
+          <NavLink className="nav-link" to="#ego">
             {" "}
             <StyledNavText>EGO</StyledNavText>{" "}
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="#opinion">
+          <NavLink className="nav-link" to="#hot-takes">
             {" "}
             <StyledNavText>HOT TAKES</StyledNavText>{" "}
           </NavLink>
@@ -101,15 +101,15 @@ export const Navbar = () => {
     <div className="navbar-collapse w-100 dual-collapse2 order-2 order-md-2 collapse">
       <RightUL className="navbar-nav mr-auto text-center">
         <li className="nav-item">
-          <NavLink className="nav-link" to="#34st">
+          <NavLink className="nav-link" to="#art">
             {" "}
             <StyledNavText>ART</StyledNavText>{" "}
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="#sports">
+          <NavLink className="nav-link" to="#watching-listening">
             {" "}
-            <StyledNavText>WATCHING & LISTENING</StyledNavText>{" "}
+            <StyledNavText>WATCHING &amp; LISTENING</StyledNavText>{" "}
           </NavLink>
         </li>
       </RightUL>

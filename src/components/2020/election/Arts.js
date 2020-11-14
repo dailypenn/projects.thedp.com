@@ -1,36 +1,28 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { Row, Col } from 'react-bootstrap'
-import Img from "gatsby-image"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import { Col } from 'react-bootstrap'
+import Img from 'gatsby-image'
 import s from 'styled-components'
+import BackgroundImage from 'gatsby-background-image'
 
-import { SectionHeader, Title, Author, StyledRow } from "./shared"
-import { FUTURA_REGULAR} from "../../../utils/font"
+import { SectionHeader, Title, Author, StyledRow, Wrapper } from './shared'
+import { FUTURA_REGULAR } from '../../../utils/font'
 
 const LeftTitle = s.div`
-  position: relative;
-  bottom: 60%;
-  width: 40%;
-	color: white;
-	margin-left: 7%;
+  color: white;
+  padding: 2rem 8rem 15rem 1.5rem;
 `
 
 const EditorTitle = s.h1`
   ${FUTURA_REGULAR}
   color: white;
-  font-size: .75em;
-  margin-top: 1vw;
-	margin-bottom: -1vw;
-`
-
-const Wrapper = s.div`
-  margin: 3rem 0;
+  font-size: 110%;
 `
 
 const Arts = () => {
   const { billStrobel, vote } = useStaticQuery(graphql`
     query {
-      billStrobel: file(relativePath: {eq: "bill-strobel.jpg"}) {
+      billStrobel: file(relativePath: { eq: "bill-strobel.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000, maxHeight: 1000) {
             ...GatsbyImageSharpFluid
@@ -38,7 +30,7 @@ const Arts = () => {
         }
       }
 
-      vote: file(relativePath: {eq: "vote.jpg"}) {
+      vote: file(relativePath: { eq: "vote.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
@@ -48,21 +40,26 @@ const Arts = () => {
     }
   `)
   return (
-    <Wrapper>
+    <Wrapper id="art">
       <SectionHeader>ARTS</SectionHeader>
       <StyledRow padding="10">
-        <Col md={6} >
-          <Img fluid={billStrobel.childImageSharp.fluid} style={{ filter: `brightness(.7)` }} />
-          <LeftTitle>
-            <EditorTitle><b>PHOTO ESSAY</b></EditorTitle>
+        <Col md={6} style={{ marginBottom: '1rem' }}>
+          <BackgroundImage fluid={billStrobel.childImageSharp.fluid}>
+            <LeftTitle>
+              <EditorTitle>
+                <b>PHOTO ESSAY</b>
+              </EditorTitle>
               <Title left larger style={{ color: 'white' }}>
                 Philly Artist Bill Strobel Recreates Lady Justice With Chalk
               </Title>
-          </LeftTitle>
+            </LeftTitle>
+          </BackgroundImage>
         </Col>
         <Col md={6}>
           <Img fluid={vote.childImageSharp.fluid} />
-          <Title center larger> Pre-2020 Election, Protest Art Demands Change</Title>
+          <Title center larger>
+            Pre-2020 Election, Protest Art Demands Change
+          </Title>
           <Author center>BY ALLISON STILLMAN</Author>
         </Col>
       </StyledRow>

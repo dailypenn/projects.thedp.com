@@ -1,17 +1,25 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
-import { Container, Row, Col } from "react-bootstrap"
+import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
+import { Row, Col } from 'react-bootstrap'
 import s from 'styled-components'
 
-import { SectionHeader, Title, Author } from "./shared"
-import { FUTURA_BOLD } from "../../../utils/font"
+import { SectionHeader, Title, Author, StyledRow, Wrapper, ColWithMargin } from './shared'
+import { FUTURA_BOLD } from '../../../utils/font'
 
+const ColoredColBox = s(Col)`
+  border: 5px solid ${({ borderColor }) => borderColor};
+  padding: 1rem;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
+`
 
 const Articles = () => {
   const { borat, music } = useStaticQuery(graphql`
     query {
-      borat: file(relativePath: {eq: "borat.png"}) {
+      borat: file(relativePath: { eq: "borat.png" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
@@ -19,7 +27,7 @@ const Articles = () => {
         }
       }
 
-      music: file(relativePath: {eq: "radio.png"}) {
+      music: file(relativePath: { eq: "radio.png" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
@@ -28,32 +36,36 @@ const Articles = () => {
       }
     }
   `)
-  return <Container>
-  <Row>
-    <Col>
-      <Img fluid={borat.childImageSharp.fluid} />
-      <Title>Borat Subsequent Moviefilm:' A Review</Title>
-      <Author>BY CAYLEN DAVID</Author>
-    </Col>
-  </Row>
-  <Row>
-    <Col>
-      <Title>'Star Trek', Syncopes, and the Hypothetical Fall of America</Title>
-      <Author>BY JULIA POLSTER</Author>
-    </Col>
-    <Col>
-      <Title>What Does An Election Sound Like?</Title>
-      <Author>BY NORA YOUN</Author>
-    </Col>
-  </Row>
-  <Row>
-    <Col>
-      <Img fluid={music.childImageSharp.fluid} />
-      <Title>Does the Music Industry Actually Care if You Voted</Title>
-      <Author>BY PHIL STEINKRAUSS</Author>
-    </Col>
-  </Row>
-</Container>
+  return (
+    <>
+      <div>
+        <Img fluid={borat.childImageSharp.fluid} />
+        <Title>Borat Subsequent Moviefilm:' A Review</Title>
+        <Author>BY CAYLEN DAVID</Author>
+      </div>
+      <Row style={{ margin: '2rem 0' }}>
+        <ColoredColBox sm={12} md={5} borderColor="#019459">
+          <Title>
+            'Star Trek', Syncopes, and the Hypothetical Fall of America
+          </Title>
+          <Author>BY JULIA POLSTER</Author>
+        </ColoredColBox>
+        <ColoredColBox
+          sm={12}
+          md={{ span: 5, offset: 2 }}
+          borderColor="#1500FF"
+        >
+          <Title>What Does An Election Sound Like?</Title>
+          <Author>BY NORA YOUN</Author>
+        </ColoredColBox>
+      </Row>
+      <div>
+        <Img fluid={music.childImageSharp.fluid} />
+        <Title>Does the Music Industry Actually Care if You Voted</Title>
+        <Author>BY PHIL STEINKRAUSS</Author>
+      </div>
+    </>
+  )
 }
 
 const Background = s.div`
@@ -76,7 +88,7 @@ const StarImg = s.img`
 
 const StarBar = () => (
   <StarWrapper>
-    <StarImg src="/img/stars.png"/>
+    <StarImg src="/img/star-bg.png" />
   </StarWrapper>
 )
 
@@ -88,12 +100,15 @@ const ComicSubtitle = s.h1`
   margin-top: 1vw;
   margin-bottom: -1vw;
 `
+
 const ComicContent = s.div`
   margin: 0, 2rem; 
 `
+
 const ComicArticleWrapper = s(Row)`
   margin: 1rem 0;
 `
+
 const ComicRelief = () => (
   <Background>
     <ComicContent>
@@ -128,30 +143,30 @@ const ComicRelief = () => (
           <Author style={{ fontSize: '80%' }}> BY {article.author} </Author>
         </div>
       </ComicArticleWrapper> */}
-      <StarBar/>
+      <StarBar />
     </ComicContent>
     {/* <div style={{ padding: '0 1rem' }}>
       {articles.map(article => <MustReadArticle article={article} />)}
     </div> */}
-    <div className="d-flex justify-content-center" style={{ padding: '2rem 0' }}>
-    </div>
+    <div
+      className="d-flex justify-content-center"
+      style={{ padding: '2rem 0' }}
+    ></div>
   </Background>
 )
 
 const WatchingListening = () => (
-  <>
-    <SectionHeader>WATCHING & LISTENING</SectionHeader>
-    <Container>
-      <Row>
-        <Col md={8}>
-          <Articles />
-        </Col>
-        <Col md={4}>
-          <ComicRelief />
-        </Col>
-      </Row>
-    </Container>
-  </>
+  <Wrapper id="watching-listening">
+    <SectionHeader>WATCHING &amp; LISTENING</SectionHeader>
+    <StyledRow padding="12">
+      <ColWithMargin md={7}>
+        <Articles />
+      </ColWithMargin>
+      <Col md={4}>
+        <ComicRelief />
+      </Col>
+    </StyledRow>
+  </Wrapper>
 )
 
 export default WatchingListening

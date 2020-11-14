@@ -82,7 +82,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/content/images/2020/election`,
+        path: `${__dirname}/src/content/images/2020/34st-election`,
       },
     },
     // {
