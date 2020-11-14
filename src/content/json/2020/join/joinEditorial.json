@@ -1,6 +1,6 @@
 [
   {
-    "department":"News",
+    "department": "News",
     "text": [
       "By joining News, you will learn not only how to report and investigate stories relevant to Penn’s campus and students, but also the intricacies of student life and University operations. Reporters uncover news important to the Penn community by illuminating student stories and holding institutions accountable. Whether it’s breaking news or investigative journalism, your storytelling has the ability to enact real change on campus.",
       "The Real-Time Desk is also housed in the News department, and is for those who want to report on breaking news and write aggregated news posts with a lesser time commitment.",
@@ -24,7 +24,7 @@
     "id": "news"
   },
   {
-    "department":"Sports",
+    "department": "Sports",
     "text": [
       "Sports are about passion — the ability to risk it all, to become emotionally invested, to be a part of a team, and to test the limits of what you’re capable of. DP Sports provides the structure and guidance you need to explore that passion.",
       "Our department is a place where anyone can feel welcome and be a part of the family. We spend valuable time with each and every person on our team to ensure that they can sharpen their storytelling and investigative skills. We’re a team, and we have an amazing time going on road trips, throwing watch parties, and getting immersed in the sports we cover and watch.",
@@ -48,7 +48,7 @@
     "id": "sports"
   },
   {
-    "department":"Opinion",
+    "department": "Opinion",
     "text": [
       "You have the power to decide what the campus conversation ought to be.",
       "At The Daily Pennsylvanian, we are looking for creative, passionate, and hard-working writers to pen columns for Penn's independent student-led news organization. We are also looking for talented artists to create funny, insightful, and poignant cartoons.",
@@ -73,14 +73,12 @@
     "id": "opinion"
   },
   {
-    "department":"Copy",
+    "department": "Copy",
     "text": [
       "The Daily Pennsylvanian's Copy Department is now editing 34th Street, Under the Button, and DP Sports content! Join our super fun team in reviewing and fact-checking everything from breaking news to satirical videos. Come help us keep our content concise, consistent, and considerate.",
       "From the people who brought the DP the Oxford comma."
     ],
-    "highlights": [
-      "The DP's Official Style Guide"
-    ],
+    "highlights": ["The DP's Official Style Guide"],
     "highlight-links": [
       "https://docs.google.com/document/pub?id=14HoU_sCiPxD8SOSH8HvWKsvz1Elv89yzcje-sZGGahs&pli=1"
     ],
@@ -88,7 +86,7 @@
     "id": "copy"
   },
   {
-    "department":"Design",
+    "department": "Design",
     "text": [
       "The Design Department is looking for designers, artists, and illustrators with all ranges of experience to join us in producing The Daily Pennsylvanian and 34th Street Magazine’s print and online visual content.",
       "We use the full Adobe Creative Suite &mdash; mainly Photoshop, Illustrator, and InDesign &mdash; along with various online platforms for data visualization.",
@@ -114,7 +112,7 @@
     "id": "design"
   },
   {
-    "department":"Multimedia",
+    "department": "Multimedia",
     "text": [
       "The Multimedia Department is looking for people with a passion for photography and videography to join us in creating modern quality content for The Daily Pennsylvanian.",
       "We use the Adobe Suite as well as the latest DSLR cameras, lenses, and audio and video equipment to cover major events on campus and across the country. Our staff has covered famous figures including the likes of Joe Biden and Usain Bolt, stood front row at Made in America, and traveled for special events including presidential campaign rallies and NCAA tournaments.",
@@ -146,7 +144,7 @@
     "id": "multimedia"
   },
   {
-    "department":"Audience Engagement",
+    "department": "Audience Engagement",
     "text": [
       "Joining Audience Enagement will put you on the frontline of The DP’s interaction with tens of thousands of readers and develop skills increasingly relevant in the world’s growing digital landscape.",
       "As a rapidly growing department, we are looking for people excited to curate, manage and grow the DP’s social media presence and interaction through Facebook, Twitter and (especially!) Instagram. We are also seeking writers interested in writing and editing our daily newsletter.",
@@ -169,7 +167,7 @@
     "id": "social"
   },
   {
-    "department":"Web Dev",
+    "department": "Web Dev",
     "text": [
       "Web developers at the DP have the opportunity to work on a number of diverse and complex projects. The DP runs multiple full-stack apps, regularly creates standalone pages for special issues or interactive projects, and builds internal tools for both the editorial and business sides.",
       "As a web developer, you'll get experience working with GitHub, as well as a wide array of programming languages. We maintain apps built with Ruby on Rails, use HTML, CSS, and JavaScript for our project pages, and regularly build tools with JavaScript, Python, and Ruby.",
@@ -191,7 +189,7 @@
     "id": "web"
   },
   {
-    "department":"Podcasts",
+    "department": "Podcasts",
     "text": [
       "Calling all podcast enthusiasts! DP Podcasts is looking for new hosts, writers, and editors. Join this burgeoning department as we attempt to expand the breadth and depth of our current podcast offerings. We are looking for storytellers and commentators from diverse backgrounds.",
       "Are you weirdly passionate about something on campus? Do you have interesting opinions? If you join our department, we can turn that into a podcast!"

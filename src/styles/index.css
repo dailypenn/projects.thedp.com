@@ -40,6 +40,9 @@
 /*Futura PT font family */
 @import url("https://use.typekit.net/qmg7ofa.css");
 
+/*Brandon Grotesque and Cooper Black font families */
+@import url("https://use.typekit.net/kgg5alo.css");
+
 html {
   scroll-behavior: smooth;
 }

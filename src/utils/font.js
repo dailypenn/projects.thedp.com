@@ -114,6 +114,10 @@ export const LORA_REGULAR = `
 
 export const TENOR_SANS_REGULAR = `
   font-family: 'Tenor Sans', serif;
+`
+
+export const LORA_ITALIC = `
+  font-family: 'Lora', serif;
   font-weight: 400;
 `
 
@@ -129,4 +133,14 @@ export const FUTURA_REGULAR = `
 export const FUTURA_BOLD = `
   font-family: 'Futura-PT', sans-serif;
   font-weight: 700;
+`
+
+export const COOPER_BLACK_REGULAR = `
+  font-family: 'cooper-black-std';
+  font-weight: 400;
+`
+
+export const BRANDON_GROTESQUE_MEDIUM = `
+  font-family: 'BrandonGrotesque-Medium';
+  font-weight: 400;
 `

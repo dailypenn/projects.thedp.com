@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import Img from 'gatsby-image'
-import s from 'styled-components'
-import { Helmet } from 'react-helmet'
+import React, { useState } from "react"
+import Img from "gatsby-image"
+import s from "styled-components"
+import { Helmet } from "react-helmet"
 
-import { KARLA_REGULAR, KARLA_BOLD } from '../../../utils/font'
-import { ClassButton, ToggleButton, VoteButton } from './Typograph'
+import { KARLA_REGULAR, KARLA_BOLD } from "../../../utils/font"
+import { ClassButton, ToggleButton, VoteButton } from "./Typograph"
 
 const Footer = s.footer`
   max-width: 1200px;
@@ -86,7 +86,7 @@ const Candidate = s.div`
 `
 
 const Statement = s.div`
-  display: ${({ show }) => show ? 'block' : 'none'};
+  display: ${({ show }) => (show ? "block" : "none")};
   margin-bottom: 10px;
   letter-spacing: -0.45px;
   ${KARLA_REGULAR}
@@ -112,7 +112,6 @@ const CandidateImage = s(Img)`
   border-radius: 40px;
 `
 
-
 const Candidates = ({ people, title }) => {
   // candidate statement is shown if id in showSet
   const [showSet, setShowSet] = useState(new Set())
@@ -120,23 +119,23 @@ const Candidates = ({ people, title }) => {
 
   const toggleShow = (id, statement) => {
     if (statement) {
-        let newSet = new Set(showSet)
-        if (newSet.has(id)) {
-            newSet.delete(id)
-            setShowSet(newSet)
-        } else {
-            newSet.add(id)
-            setShowSet(newSet)
-        }
+      let newSet = new Set(showSet)
+      if (newSet.has(id)) {
+        newSet.delete(id)
+        setShowSet(newSet)
+      } else {
+        newSet.add(id)
+        setShowSet(newSet)
+      }
     } else {
-        let newSet = new Set(showPoints)
-        if (newSet.has(id)) {
-            newSet.delete(id)
-            setShowPoints(newSet)
-        } else {
-            newSet.add(id)
-            setShowPoints(newSet)
-        }
+      let newSet = new Set(showPoints)
+      if (newSet.has(id)) {
+        newSet.delete(id)
+        setShowPoints(newSet)
+      } else {
+        newSet.add(id)
+        setShowPoints(newSet)
+      }
     }
   }
 
@@ -146,38 +145,91 @@ const Candidates = ({ people, title }) => {
       <Category>
         {people.map(person => (
           <Candidate>
-            {person.image && person.image.src && <CandidateImage fluid={person.image.src.childImageSharp.fluid}/>}
+            {person.image && person.image.src && (
+              <CandidateImage fluid={person.image.src.childImageSharp.fluid} />
+            )}
             <CandidateName> {person.name} </CandidateName>
             <Icons>
-            {/* replace with real social media links */}
-                {person.facebook_url && <Icon href={person.facebook_url} className="navbar-toggler collapsed" target='_blank' type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
-                    <span className="navbar-toggler-icon"><img src="/icons/facebook.svg" /></span>
-                </Icon>}
-                {person.instagram_handle && <Icon href={"https://instagram.com/" + person.instagram_handle} className="navbar-toggler collapsed" target='_blank' type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
-                    <span className="navbar-toggler-icon"><img src="/icons/instagram.svg" /></span>
-                </Icon>}
-                {person.youtube_video_url && <Icon href={person.youtube_video_url} className="navbar-toggler collapsed" target='_blank' type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
-                    <span className="navbar-toggler-icon"><img src="/icons/youtube.svg" /></span>
-                </Icon>}
-                {person.campaign_website && <Icon href={person.campaign_website} className="navbar-toggler collapsed" target='_blank' type="button" data-toggle="collapse" data-target=".dual-collapse2" aria-expanded="false">
-                    <span className="navbar-toggler-icon"><img src="/icons/globe.svg" /></span>
-                </Icon>}
+              {/* replace with real social media links */}
+              {person.facebook_url && (
+                <Icon
+                  href={person.facebook_url}
+                  className="navbar-toggler collapsed"
+                  target="_blank"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target=".dual-collapse2"
+                  aria-expanded="false"
+                >
+                  <span className="navbar-toggler-icon">
+                    <img src="/icons/facebook.svg" />
+                  </span>
+                </Icon>
+              )}
+              {person.instagram_handle && (
+                <Icon
+                  href={"https://instagram.com/" + person.instagram_handle}
+                  className="navbar-toggler collapsed"
+                  target="_blank"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target=".dual-collapse2"
+                  aria-expanded="false"
+                >
+                  <span className="navbar-toggler-icon">
+                    <img src="/icons/instagram.svg" />
+                  </span>
+                </Icon>
+              )}
+              {person.youtube_video_url && (
+                <Icon
+                  href={person.youtube_video_url}
+                  className="navbar-toggler collapsed"
+                  target="_blank"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target=".dual-collapse2"
+                  aria-expanded="false"
+                >
+                  <span className="navbar-toggler-icon">
+                    <img src="/icons/youtube.svg" />
+                  </span>
+                </Icon>
+              )}
+              {person.campaign_website && (
+                <Icon
+                  href={person.campaign_website}
+                  className="navbar-toggler collapsed"
+                  target="_blank"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target=".dual-collapse2"
+                  aria-expanded="false"
+                >
+                  <span className="navbar-toggler-icon">
+                    <img src="/icons/globe.svg" />
+                  </span>
+                </Icon>
+              )}
             </Icons>
             <ToggleButton onClick={() => toggleShow(person.name, true)}>
               Introduction
-              <span> {showSet.has(person.name) ? '↑' : '→'} </span>	
+              <span> {showSet.has(person.name) ? "↑" : "→"} </span>
             </ToggleButton>
-            <Statement show={showSet.has(person.name)}> {person.introduction} </Statement>
+            <Statement show={showSet.has(person.name)}>
+              {" "}
+              {person.introduction}{" "}
+            </Statement>
             <ToggleButton onClick={() => toggleShow(person.name)}>
               Read Platform Points
-              <span> {showPoints.has(person.name) ? '↑' : '→'} </span>	
+              <span> {showPoints.has(person.name) ? "↑" : "→"} </span>
             </ToggleButton>
-            <Statement show={showPoints.has(person.name)}> 
-              { 
-                person.platform_points.map((p, i) => (
-                  <p>{i + 1}) {p}</p>
-                ))
-              } 
+            <Statement show={showPoints.has(person.name)}>
+              {person.platform_points.map((p, i) => (
+                <p>
+                  {i + 1}) {p}
+                </p>
+              ))}
             </Statement>
           </Candidate>
         ))}
@@ -272,11 +324,11 @@ const Brackets = s.div`
 `
 
 const BracketsText = ({ text }) => (
-    <Brackets>
-      {text.map(p => (
-        <IntroText>{ p }</IntroText>
-      ))}
-    </Brackets>
+  <Brackets>
+    {text.map(p => (
+      <IntroText>{p}</IntroText>
+    ))}
+  </Brackets>
 )
 
 const Section = ({ data }) => (
@@ -288,35 +340,57 @@ const Section = ({ data }) => (
       <title>NEC Candidate Center | The Daily Pennsylvanian</title>
 
       <meta property="og:title" content="NEC Candidate Center Fall 2020" />
-      <meta property="og:image" content="https://snworksceo.imgix.net/dpn/24007398-2064-463e-bb03-129867d0db63.sized-1000x1000.png" />
-      <meta property="og:description" content="Read about the candidates for UA and 2021, 2022, and 2023 Class Boards." />
+      <meta
+        property="og:image"
+        content="https://snworksceo.imgix.net/dpn/24007398-2064-463e-bb03-129867d0db63.sized-1000x1000.png"
+      />
+      <meta
+        property="og:description"
+        content="Read about the candidates for UA and 2021, 2022, and 2023 Class Boards."
+      />
       <meta property="og:type" content="article" />
       <meta property="og:url" content="https://projects.thedp.com/2020/NEC/" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="NEC Candidate Center Fall 2020" />
-      <meta name="twitter:image" content="https://snworksceo.imgix.net/dpn/24007398-2064-463e-bb03-129867d0db63.sized-1000x1000.png" />
-      <meta name="twitter:description" content="Read about the candidates for UA and 2021 2022, and 2023 Class Boards." />
+      <meta
+        name="twitter:image"
+        content="https://snworksceo.imgix.net/dpn/24007398-2064-463e-bb03-129867d0db63.sized-1000x1000.png"
+      />
+      <meta
+        name="twitter:description"
+        content="Read about the candidates for UA and 2021 2022, and 2023 Class Boards."
+      />
       <meta name="twitter:url" content="https://projects.thedp.com/2020/NEC/" />
       <meta name="twitter:site" content="@dailypenn" />
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossOrigin="anonymous" />
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossOrigin="anonymous"
+      />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" />
 
-      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      />
     </Helmet>
     <header>
-      <NavBar style={{
-        fontFamily: 'Libre Franklin',
-        backgroundColor: '#FFFFFF',
-        boxShadow: '0px 5px 6px #00000029',
-        opacity: 1
-      }}>
+      <NavBar
+        style={{
+          fontFamily: "Libre Franklin",
+          backgroundColor: "#FFFFFF",
+          boxShadow: "0px 5px 6px #00000029",
+          opacity: 1,
+        }}
+      >
         <NavBarLink href="https://www.thedp.com/">
-          <img alt="The Daily Pennsylvanian" src="/img/DP-Logo-Full.png"  />
+          <img alt="The Daily Pennsylvanian" src="/img/DP-Logo-Full.png" />
         </NavBarLink>
       </NavBar>
     </header>
@@ -332,38 +406,55 @@ const Section = ({ data }) => (
         <div class="row">
           <div class="col-md-3 mb-3">
             <VoteButton>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
                 <defs>
-                    <filter id="goo">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-                    <feComposite in="SourceGraphic" in2="goo"/>
-                    </filter>
+                  <filter id="goo">
+                    <feGaussianBlur
+                      in="SourceGraphic"
+                      stdDeviation="10"
+                      result="blur"
+                    />
+                    <feColorMatrix
+                      in="blur"
+                      mode="matrix"
+                      values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                      result="goo"
+                    />
+                    <feComposite in="SourceGraphic" in2="goo" />
+                  </filter>
                 </defs>
-                </svg>
+              </svg>
 
-                <span class="button--bubble__container">
-                <a target='_blank' href="https://www.pennstudgov.com" className="button button--bubble">
-                    Vote Here
+              <span class="button--bubble__container">
+                <a
+                  target="_blank"
+                  href="https://www.pennstudgov.com"
+                  className="button button--bubble"
+                >
+                  Vote Here
                 </a>
                 <span class="button--bubble__effect-container">
-                    <span class="circle top-left"></span>
-                    <span class="circle top-left"></span>
-                    <span class="circle top-left"></span>
+                  <span class="circle top-left"></span>
+                  <span class="circle top-left"></span>
+                  <span class="circle top-left"></span>
 
-                    <span class="button effect-button"></span>
+                  <span class="button effect-button"></span>
 
-                    <span class="circle bottom-right"></span>
-                    <span class="circle bottom-right"></span>
-                    <span class="circle bottom-right"></span>
+                  <span class="circle bottom-right"></span>
+                  <span class="circle bottom-right"></span>
+                  <span class="circle bottom-right"></span>
                 </span>
-                </span>
+              </span>
             </VoteButton>
             {/* <VoteButton href="https://www.pennstudgov.com" target="_blank">VOTE HERE!</VoteButton> */}
           </div>
           <div class="col-md">
-            <BracketsText  text = {["The Undergraduate Assembly is the elected, representative branch of student government at Penn, charged with improving life for all students through funding, services, and advocacy. The highest authority is the President of the student body, followed by the Vice President. The UA Vice President oversees UA Steering, a group of influential student groups on campus that meet to discuss issues pertaining to student life.",
-                "The purpose of the four Class Boards is to provide social programming that instills a sense of class and school spirit, unity and pride, and breaks through social barriers. Each class popularly elects a president, executive vice president, vice president for internal affairs, vice president for external affairs, vice president for finance, and class chairs."]}/>
+            <BracketsText
+              text={[
+                "The Undergraduate Assembly is the elected, representative branch of student government at Penn, charged with improving life for all students through funding, services, and advocacy. The highest authority is the President of the student body, followed by the Vice President. The UA Vice President oversees UA Steering, a group of influential student groups on campus that meet to discuss issues pertaining to student life.",
+                "The purpose of the four Class Boards is to provide social programming that instills a sense of class and school spirit, unity and pride, and breaks through social barriers. Each class popularly elects a president, executive vice president, vice president for internal affairs, vice president for external affairs, vice president for finance, and class chairs.",
+              ]}
+            />
           </div>
         </div>
       </Intro>
@@ -376,7 +467,7 @@ const Section = ({ data }) => (
       </Branches>
 
       {Object.entries(data).map(([key, val]) => (
-        <Candidates people={val} title={key.replace(/_/g, ' ')} />
+        <Candidates people={val} title={key.replace(/_/g, " ")} />
       ))}
     </Wrapper>
 

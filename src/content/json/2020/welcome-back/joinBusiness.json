@@ -1,6 +1,6 @@
 [
   {
-    "department":"Marketing",
+    "department": "Marketing",
     "text": [
       "DP Marketing works on developing and enhancing the brand identity of The DP Inc., a $3 million dollar business. Our associates work to create social media campaigns, events and merchandise that showcase the content of the DP, 34th Street Magazine and Under the Button. Associates are also given the resources and opportunities to plan and execute their own marketing projects to promote any section of the publication.",
       "Marketing is the perfect place to develop both your creativity and your business skills because all our projects require a good mix of both. No prior experience is required, just a willingness to learn about branding, promotion and merchandising. We also have a very strong social culture as we host bi-weekly events and love to hang out with each other. Join us to gain some business experience and be a part of the best family at the DP! "
@@ -19,21 +19,19 @@
     "id": "marketing"
   },
   {
-    "department":"Consulting",
+    "department": "Consulting",
     "text": [
       "Consulting Analysts source potential clients, develop strategic marketing campaign and produce pitch materials for client presentations. By working with our outstanding business teams DP Consultants will learn to use creative problem solving and analytical skills to help our clients successfully reach the Penn community."
     ],
     "highlights": [
       "DP Consultants helped clients during the COVID-19 pandemic develop social media strategies to keep up with customers while away from campus."
     ],
-    "highlight-links": [
-
-    ],
+    "highlight-links": [],
     "background": "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/7f265244-68c1-4483-b138-8fc49c343444.sized-1000x1000.jpg')",
     "id": "consulting"
   },
   {
-    "department":"Analytics",
+    "department": "Analytics",
     "text": [
       "DP Analytics is the data science hub of the Daily Pennsylvanian. At Analytics, we seek to use data to help propel DP into the digital first age.",
       "In particular, this department taps into three main areas: Core Data Science(Machine Learning), Product Analytics(Data Manipulation and Analysis), and Data Infrastructure(Web development and data visualization). All these areas cohesively work together to improve the overall DP experience on and offline.",
@@ -43,16 +41,13 @@
       "ML Driven Content Based Recommendation Engine",
       "Advertisement Optimization Through Ad Network Redesign",
       "Geo-based Interactive Dashboard To Facilitate Circulation Path Diagnosis and Analy"
-            
     ],
-    "highlight-links": [
-
-    ],
+    "highlight-links": [],
     "background": "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/68726eb4-7df0-4e26-9d83-3ad542d33846.sized-1000x1000.jpg')",
     "id": "analytics"
   },
   {
-    "department":"Product Lab",
+    "department": "Product Lab",
     "text": [
       "The DP Product Lab Department creates marketing content and brands what The DP can provide to external clients. Also, as the company develops, we explore new fields and build new services. We hold responsibility for working on innovation products and coming up with revenue-generating initiatives.",
       "With a large amount of creative freedom, this is the place to make your idea a reality. Our weekly commitment is approximately 6 hours."
@@ -71,17 +66,13 @@
     "id": "product-lab"
   },
   {
-    "department":"Circulation",
+    "department": "Circulation",
     "text": [
       "Circulation staffers are the DP's street team, and they are the ones you see handing out papers on Locust Walk and across campus every day.",
       "If you're friendly, dependable, and loud—and want to earn $10 an hour—this is the department for you. Join an incredible team with a great culture filled with good times and social activities."
     ],
-    "highlights": [
-      
-    ],
-    "highlight-links": [
-      
-    ],
+    "highlights": [],
+    "highlight-links": [],
     "background": "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/06837fc5-f166-414c-8785-9234e35205b0.sized-1000x1000.jpg')",
     "id": "circulation"
   }

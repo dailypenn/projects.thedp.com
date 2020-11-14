@@ -1,14 +1,13 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import React from "react"
+import { StaticQuery, graphql } from "gatsby"
 
-import Section from '../../../components/2020/NEC/Section'
-
+import Section from "../../../components/2020/NEC/Section"
 
 const Index = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile(filter: {relativePath: {eq: "ua_2020.json"}}) {
+        allFile(filter: { relativePath: { eq: "ua_2020.json" } }) {
           nodes {
             childNecJson {
               Undergraduate_Assembly_President {
@@ -123,9 +122,7 @@ const Index = () => (
         }
       }
     `}
-    render={data => (
-      <Section data={data.allFile.nodes[0].childNecJson} />
-    )}
+    render={data => <Section data={data.allFile.nodes[0].childNecJson} />}
   />
 )
 

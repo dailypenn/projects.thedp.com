@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import Img from 'gatsby-image'
-import s from 'styled-components'
-import { Helmet } from 'react-helmet'
-import { Link } from 'gatsby'
+import React, { useState } from "react"
+import Img from "gatsby-image"
+import s from "styled-components"
+import { Helmet } from "react-helmet"
+import { Link } from "gatsby"
 
 const Body = s.div`
   font-family: 'neuzeit-grotesk', sans-serif;
@@ -160,7 +160,7 @@ const StatementButton = s.h4`
 `
 
 const Statement = s.p`
-  display: ${({ show }) => show ? 'block' : 'none'};
+  display: ${({ show }) => (show ? "block" : "none")};
 `
 
 const Candidates = ({ people, title }) => {
@@ -184,14 +184,22 @@ const Candidates = ({ people, title }) => {
       <Category>
         {people.map(person => (
           <Candidate>
-            {person.image && <StyledImg fluid={person.image.src.childImageSharp.fluid} />}
+            {person.image && (
+              <StyledImg fluid={person.image.src.childImageSharp.fluid} />
+            )}
             <h3> {person.name} </h3>
-            <p> <i> Endorsements: </i> {person.endorsements} </p>
+            <p>
+              {" "}
+              <i> Endorsements: </i> {person.endorsements}{" "}
+            </p>
             <StatementButton onClick={() => toggleShow(person.name)}>
               Read Statement
-              <span> {showSet.has(person.name) ? '↑' : '↓'} </span>
+              <span> {showSet.has(person.name) ? "↑" : "↓"} </span>
             </StatementButton>
-            <Statement show={showSet.has(person.name)}> {person.statement} </Statement>
+            <Statement show={showSet.has(person.name)}>
+              {" "}
+              {person.statement}{" "}
+            </Statement>
           </Candidate>
         ))}
       </Category>
@@ -208,58 +216,90 @@ const Section = ({ data }) => (
       <title>NEC Candidate Center | The Daily Pennsylvanian</title>
 
       <meta property="og:title" content="NEC Candidate Center Spring 2019" />
-      <meta property="og:image" content="https://snworksceo.imgix.net/dpn/cc71cb56-4feb-406c-b6a0-07b27aa36bf7.sized-1000x1000.png" />
-      <meta property="og:description" content="Read about the candidates for UA and 2020, 2021, and 2022 Class Boards." />
+      <meta
+        property="og:image"
+        content="https://snworksceo.imgix.net/dpn/cc71cb56-4feb-406c-b6a0-07b27aa36bf7.sized-1000x1000.png"
+      />
+      <meta
+        property="og:description"
+        content="Read about the candidates for UA and 2020, 2021, and 2022 Class Boards."
+      />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://projects.thedp.com/2019/03/NEC/" />
+      <meta
+        property="og:url"
+        content="https://projects.thedp.com/2019/03/NEC/"
+      />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="NEC Candidate Center Spring 2019" />
-      <meta name="twitter:image" content="https://snworksceo.imgix.net/dpn/cc71cb56-4feb-406c-b6a0-07b27aa36bf7.sized-1000x1000.png" />
-      <meta name="twitter:description" content="Read about the candidates for UA and 2020, 2021, and 2022 Class Boards." />
-      <meta name="twitter:url" content="https://projects.thedp.com/2019/03/NEC/" />
+      <meta
+        name="twitter:image"
+        content="https://snworksceo.imgix.net/dpn/cc71cb56-4feb-406c-b6a0-07b27aa36bf7.sized-1000x1000.png"
+      />
+      <meta
+        name="twitter:description"
+        content="Read about the candidates for UA and 2020, 2021, and 2022 Class Boards."
+      />
+      <meta
+        name="twitter:url"
+        content="https://projects.thedp.com/2019/03/NEC/"
+      />
       <meta name="twitter:site" content="@dailypenn" />
     </Helmet>
     <header>
       <NavBar>
         <NavBarLink href="https://www.thedp.com/">
-          <img alt="The Daily Pennsylvanian" src="https://d1q35ni5859stt.cloudfront.net/20161213m1eLHQrMRG/dist/img/header-logo.svg" />
+          <img
+            alt="The Daily Pennsylvanian"
+            src="https://d1q35ni5859stt.cloudfront.net/20161213m1eLHQrMRG/dist/img/header-logo.svg"
+          />
         </NavBarLink>
       </NavBar>
     </header>
-<Body>
-    <Wrapper>
-      <Intro>
-        <h1>NEC Candidate Center</h1>
-        <h3>Presented by The Daily Pennsylvanian</h3>
-        <p>
-          The Undergraduate Assembly is the elected, representative branch of student government at Penn, charged with improving life for all students through funding, services, and advocacy.
-          The highest authority is the President of the student body, followed by the Vice President.
-          The UA Vice President oversees UA Steering, a group of influential student groups on campus that meet to discuss issues pertaining to student life.
-        </p>
-        <p>
-          The purpose of the four Class Boards is to provide social programming that instills a sense of class and school spirit, unity and pride, and breaks through social barriers.
-          Each class popularly elects a president, executive vice president, vice president for internal affairs, vice president for external affairs, vice president for finance, and class chairs.
-        </p>
-        <VoteBtn href="https://www.pennstudgov.com" target="_blank">Vote Here</VoteBtn>
-      </Intro>
+    <Body>
+      <Wrapper>
+        <Intro>
+          <h1>NEC Candidate Center</h1>
+          <h3>Presented by The Daily Pennsylvanian</h3>
+          <p>
+            The Undergraduate Assembly is the elected, representative branch of
+            student government at Penn, charged with improving life for all
+            students through funding, services, and advocacy. The highest
+            authority is the President of the student body, followed by the Vice
+            President. The UA Vice President oversees UA Steering, a group of
+            influential student groups on campus that meet to discuss issues
+            pertaining to student life.
+          </p>
+          <p>
+            The purpose of the four Class Boards is to provide social
+            programming that instills a sense of class and school spirit, unity
+            and pride, and breaks through social barriers. Each class popularly
+            elects a president, executive vice president, vice president for
+            internal affairs, vice president for external affairs, vice
+            president for finance, and class chairs.
+          </p>
+          <VoteBtn href="https://www.pennstudgov.com" target="_blank">
+            Vote Here
+          </VoteBtn>
+        </Intro>
 
-      <Branches>
-        <StyledLink to="/2019/03/NEC">Undergraduate Assembly</StyledLink>
-        <StyledLink to="/2019/03/NEC/cb20">Class Board '20</StyledLink>
-				<StyledLink to="/2019/03/NEC/cb21">Class Board '21</StyledLink>
-				<StyledLink to="/2019/03/NEC/cb22">Class Board '22</StyledLink>
-      </Branches>
+        <Branches>
+          <StyledLink to="/2019/03/NEC">Undergraduate Assembly</StyledLink>
+          <StyledLink to="/2019/03/NEC/cb20">Class Board '20</StyledLink>
+          <StyledLink to="/2019/03/NEC/cb21">Class Board '21</StyledLink>
+          <StyledLink to="/2019/03/NEC/cb22">Class Board '22</StyledLink>
+        </Branches>
 
-      {Object.entries(data).map(([key, val]) => (
-        <Candidates people={val} title={key.replace(/_/g, ' ')} />
-      ))}
-    </Wrapper>
+        {Object.entries(data).map(([key, val]) => (
+          <Candidates people={val} title={key.replace(/_/g, " ")} />
+        ))}
+      </Wrapper>
 
-    <Footer>
-      <hr />
-      Made with ♡ by The Daily Pennsylvanian. © 2019. All rights reserved.
-    </Footer></Body>
+      <Footer>
+        <hr />
+        Made with ♡ by The Daily Pennsylvanian. © 2019. All rights reserved.
+      </Footer>
+    </Body>
   </>
 )
 

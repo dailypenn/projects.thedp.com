@@ -1,27 +1,26 @@
-import s from 'styled-components'
-import { 
-  OPEN_SANS_REGULAR, 
-  OPEN_SANS_BOLD, 
-  DM_SERIF_DISPLAY_BOLD, 
-  DM_SERIF_DISPLAY_REGULAR
-} from '../../../utils/font'
+import s from "styled-components"
+import {
+  OPEN_SANS_REGULAR,
+  OPEN_SANS_BOLD,
+  DM_SERIF_DISPLAY_BOLD,
+  DM_SERIF_DISPLAY_REGULAR,
+} from "../../../utils/font"
 
 // Color Palette
-export const WHITE = '#FFFFFF'
-export const BLACK = '#131313'
-export const DARK_GREY = '#4A4A4A'
-export const METALLIC_GREY = '#8E929F'
-export const BLUE_GREY = '#6C6F78'
-export const LIGHT_BLUE_WHITE = '#F1F5FF'
-export const BLUE_WHITE = '#CFD3DD'
-export const PINK_WHITE = '#DBDBDB'
-export const TINT_WHITE = '#F7F7F7'
-export const ROUGE_RED = '#E7525F' 
-export const DARK_ROUGE_RED = '#D23C49'
+export const WHITE = "#FFFFFF"
+export const BLACK = "#131313"
+export const DARK_GREY = "#4A4A4A"
+export const METALLIC_GREY = "#8E929F"
+export const BLUE_GREY = "#6C6F78"
+export const LIGHT_BLUE_WHITE = "#F1F5FF"
+export const BLUE_WHITE = "#CFD3DD"
+export const PINK_WHITE = "#DBDBDB"
+export const TINT_WHITE = "#F7F7F7"
+export const ROUGE_RED = "#E7525F"
+export const DARK_ROUGE_RED = "#D23C49"
 
-export const FAINT_BLACK = 'rgba(0, 0, 0, 0.3)';
-export const FAINT_WHITE = 'rgba(255, 255, 255, 0.3)';
-
+export const FAINT_BLACK = "rgba(0, 0, 0, 0.3)"
+export const FAINT_WHITE = "rgba(255, 255, 255, 0.3)"
 
 export const SectionHeader = s.h1`
   ${DM_SERIF_DISPLAY_BOLD}
@@ -33,8 +32,8 @@ export const SectionHeader = s.h1`
 `
 
 export const Section = s.div`
-  background-color: ${({ inverse }) => inverse ? WHITE : BLACK};
-  padding: ${({ inverse }) => inverse ? "80px" : "120px"} 0px;
+  background-color: ${({ inverse }) => (inverse ? WHITE : BLACK)};
+  padding: ${({ inverse }) => (inverse ? "80px" : "120px")} 0px;
 `
 
 export const SectionDescription = s.p`
@@ -45,14 +44,15 @@ export const SectionDescription = s.p`
 `
 
 export const MoreStories = s.div`
-  border-top: 1px solid ${({ inverse }) => inverse ? FAINT_BLACK : FAINT_WHITE}; 
+  border-top: 1px solid ${({ inverse }) =>
+    inverse ? FAINT_BLACK : FAINT_WHITE}; 
   margin-top: 20px;
   padding-top: 20px;
   background-color: inherit;
 `
 
 export const PrimaryStoryLine = s.hr`
-  background-color: ${({ inverse }) => inverse ? FAINT_BLACK : FAINT_WHITE};
+  background-color: ${({ inverse }) => (inverse ? FAINT_BLACK : FAINT_WHITE)};
   margin: 28px 0px;
 `
 
@@ -67,21 +67,21 @@ export const StyledStoryLink = s.a`
 
 export const PrimaryStory = s.h4`
   ${DM_SERIF_DISPLAY_REGULAR}
-  color: ${({ inverse }) => inverse ? BLACK : WHITE};
+  color: ${({ inverse }) => (inverse ? BLACK : WHITE)};
   font-size: 22px;
 
   :hover {
-    color: ${({ inverse }) => inverse ? DARK_GREY : PINK_WHITE};
+    color: ${({ inverse }) => (inverse ? DARK_GREY : PINK_WHITE)};
   }
 `
 
 export const SecondaryStory = s.h5`
   ${DM_SERIF_DISPLAY_REGULAR}
-  color: ${({ inverse }) => inverse ? BLACK : WHITE};
+  color: ${({ inverse }) => (inverse ? BLACK : WHITE)};
   font-size: 18px;
 
   :hover {
-    color: ${({ inverse }) => inverse ? DARK_GREY : PINK_WHITE};
+    color: ${({ inverse }) => (inverse ? DARK_GREY : PINK_WHITE)};
   }
 `
 
@@ -115,11 +115,11 @@ export const StreetCard = s.div`
 
 export const Date = s.p`
   ${OPEN_SANS_REGULAR}
-  color: ${({ inverse }) => inverse ? BLUE_GREY : BLUE_WHITE};
+  color: ${({ inverse }) => (inverse ? BLUE_GREY : BLUE_WHITE)};
 `
 
 export const Author = s.p`
-  ${({ opinion }) => opinion ? OPEN_SANS_REGULAR : ""};
+  ${({ opinion }) => (opinion ? OPEN_SANS_REGULAR : "")};
   color: ${METALLIC_GREY};
   font-weight: bold;
   font-size: 14px;
@@ -127,7 +127,7 @@ export const Author = s.p`
 
 export const MainHeader = s.h3`
   ${DM_SERIF_DISPLAY_REGULAR}
-  color: ${({ inverse }) => inverse ? BLACK : WHITE};
+  color: ${({ inverse }) => (inverse ? BLACK : WHITE)};
   margin-top: 1.5rem;
 `
 
@@ -139,13 +139,13 @@ export const SubSectionHeader = s.h5`
 `
 
 export const MoreStoriesHeader = s(SubSectionHeader)`
-  color: ${({ inverse }) => inverse ? BLACK : WHITE};
-  font-size: ${({ opinion }) => opinion ? "1.25rem" : ""};
+  color: ${({ inverse }) => (inverse ? BLACK : WHITE)};
+  font-size: ${({ opinion }) => (opinion ? "1.25rem" : "")};
 `
 
 export const SectionMainText = s.p`
   ${OPEN_SANS_REGULAR}
-  color: ${({ inverse }) => inverse ? BLACK : TINT_WHITE};
+  color: ${({ inverse }) => (inverse ? BLACK : TINT_WHITE)};
   margin-top: 15px;
   line-height: 1.6;
 `
