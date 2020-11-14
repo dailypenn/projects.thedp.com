@@ -1,16 +1,21 @@
 import React from "react"
 import s from "styled-components"
-import { Link } from "gatsby"
+import { useStaticQuery, graphql, Link as NavLink } from "gatsby"
+import Img from "gatsby-image"
 
 import { NavText } from "../../shared"
+import { TENOR_SANS_REGULAR } from "../../../utils/font"
 
-const Image = s.img`
+const ImgLink = s.a`
   max-height: 90px;
-
+  width: 100%;
   @media (max-width: 768px) {
     max-height: 30px;
   }
 `
+
+const StyledNavText = props => <NavText {...props} font={TENOR_SANS_REGULAR}>{props.children}</NavText>
+
 const LeftUL = s.ul`
   margin-right: 1rem;
 
@@ -27,8 +32,19 @@ const RightUL = s.ul`
   }
 `
 
-export const Navbar = () => (
-  <nav
+export const Navbar = () => {
+  const { logo } = useStaticQuery(graphql`
+    query {
+      logo: file(relativePath: {eq: "street-logo-black.png"}) {
+        childImageSharp {
+          fixed(width: 100) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
+  return <nav
     className="navbar sticky-top navbar-expand-lg"
     style={{
       fontFamily: "Libre Franklin",
@@ -40,22 +56,22 @@ export const Navbar = () => (
     <div className="navbar-collapse w-100 dual-collapse2 order-1 order-md-0 collapse">
       <LeftUL className="navbar-nav ml-auto text-center">
         <li className="nav-item active">
-          <Link className="nav-link" to="#featured">
+          <NavLink className="nav-link" to="#featured">
             {" "}
-            <NavText> Featured </NavText>
-          </Link>
+            <StyledNavText>FEATURES</StyledNavText>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="#news">
+          <NavLink className="nav-link" to="#news">
             {" "}
-            <NavText> News</NavText>{" "}
-          </Link>
+            <StyledNavText>EGO</StyledNavText>{" "}
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="#opinion">
+          <NavLink className="nav-link" to="#opinion">
             {" "}
-            <NavText> Opinion </NavText>{" "}
-          </Link>
+            <StyledNavText>HOT TAKES</StyledNavText>{" "}
+          </NavLink>
         </li>
       </LeftUL>
     </div>
@@ -63,9 +79,10 @@ export const Navbar = () => (
       className="mx-auto my-2 order-0 order-md-1 position-relative"
       style={{ textAlign: "center" }}
     >
-      <a className="mx-auto" href="https://www.thedp.com/">
-        <Image src="/img/street-logo.png" className="img-fluid" />
-      </a>
+      <ImgLink className="mx-auto" href="https://www.thedp.com/">
+        <Img fixed={logo.childImageSharp.fixed} alt="34st Street" />
+      </ImgLink>
+
       <button
         className="navbar-toggler collapsed"
         type="button"
@@ -84,24 +101,18 @@ export const Navbar = () => (
     <div className="navbar-collapse w-100 dual-collapse2 order-2 order-md-2 collapse">
       <RightUL className="navbar-nav mr-auto text-center">
         <li className="nav-item">
-          <Link className="nav-link" to="#34st">
+          <NavLink className="nav-link" to="#34st">
             {" "}
-            <NavText> 34th Street </NavText>{" "}
-          </Link>
+            <StyledNavText>ART</StyledNavText>{" "}
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="#sports">
+          <NavLink className="nav-link" to="#sports">
             {" "}
-            <NavText> Sports </NavText>{" "}
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="#utb">
-            {" "}
-            <NavText> UTB </NavText>
-          </Link>
+            <StyledNavText>WATCHING & LISTENING</StyledNavText>{" "}
+          </NavLink>
         </li>
       </RightUL>
     </div>
   </nav>
-)
+}
