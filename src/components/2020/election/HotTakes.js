@@ -2,9 +2,9 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Container, Row, Col } from 'react-bootstrap'
 import Img from "gatsby-image"
-import { SectionHeader, Title, Author, VerticalCol } from "./shared"
 import s from 'styled-components'
 
+import { SectionHeader, Title, Author, VerticalCol, StyledRow } from "./shared"
 import { FUTURA_REGULAR } from "../../../utils/font"
 
 const SpacedRow = s(Row)`
@@ -57,8 +57,7 @@ const HotTakes = () => {
 `)
   return <>
     <SectionHeader>HOT TAKES</SectionHeader>
-    <Container>
-      <Row>
+      <StyledRow padding="13">
         <Col>
           <Row>
             <Col >
@@ -94,8 +93,7 @@ const HotTakes = () => {
           <Title left larger>Hope, hangovers,<br />and some profanity.</Title>
           <Author left>BY KARIN HANANEL</Author>
         </Col>
-      </Row>
-    </Container>
+      </StyledRow>
   </>
 }
 
