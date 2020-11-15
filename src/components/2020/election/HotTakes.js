@@ -14,6 +14,8 @@ import {
   Wrapper
 } from './shared'
 import { FUTURA_REGULAR } from '../../../utils/font'
+import { StyledLink } from '../../shared'
+import Articles from '../../../content/json/2020/34st-election/hot_takes.json'
 
 const SpacedRow = s(Row)`
   margin-top: 1vw;
@@ -25,6 +27,7 @@ const EditorTitle = s.h1`
   font-size: .75em;
   margin-top: 1vw;
   margin-bottom: -1vw;
+  text-transform: uppercase;
 `
 
 const HotTakes = () => {
@@ -68,47 +71,49 @@ const HotTakes = () => {
       <SectionHeader>HOT TAKES</SectionHeader>
       <StyledRow padding="13">
         <ColWithMargin sm={12} md={5}>
-          <Row>
-            <Col>
-              <Img fluid={melania.childImageSharp.fluid} />
-            </Col>
-            <VerticalCol>
-              <Title left>Why We Don't Need to #FreeMelania</Title>
-              <Author left>BY KIRA WANG</Author>
-            </VerticalCol>
-          </Row>
-          <SpacedRow>
-            <Col>
-              <Img fluid={harris.childImageSharp.fluid} />
-            </Col>
-            <VerticalCol>
-              <Title left>
-                Why Are We Still Talking About Kamala Harris's Outfits?
-              </Title>
-              <Author left>BY EMILY WHITE</Author>
-            </VerticalCol>
-          </SpacedRow>
-          <SpacedRow>
-            <Col>
-              <Img fluid={biden.childImageSharp.fluid} />
-            </Col>
-            <VerticalCol>
-              <Title left>Biden Won- Now What?</Title>
-              <Author left>BY HANNAH YUSUF</Author>
-            </VerticalCol>
-          </SpacedRow>
+          <StyledLink href={Articles[0].link} target="_blank">
+            <Row>
+              <Col>
+                <Img fluid={melania.childImageSharp.fluid} />
+              </Col>
+              <VerticalCol>
+                <Title left> {Articles[0].title} </Title>
+                <Author left>BY KIRA WANG</Author>
+              </VerticalCol>
+            </Row>
+          </StyledLink>
+          <StyledLink href={Articles[1].link} target="_blank">
+            <SpacedRow>
+              <Col>
+                <Img fluid={harris.childImageSharp.fluid} />
+              </Col>
+              <VerticalCol>
+                <Title left> {Articles[1].title} </Title>
+                <Author left>BY EMILY WHITE</Author>
+              </VerticalCol>
+            </SpacedRow>
+          </StyledLink>
+
+          <StyledLink href={Articles[2].link} target="_blank">
+            <SpacedRow>
+              <Col>
+                <Img fluid={biden.childImageSharp.fluid} />
+              </Col>
+              <VerticalCol>
+                <Title left> {Articles[2].title} </Title>
+                <Author left>BY HANNAH YUSUF</Author>
+              </VerticalCol>
+            </SpacedRow>
+          </StyledLink>
         </ColWithMargin>
+
         <Col sm={12} md={6}>
-          <Img fluid={whiteHouse.childImageSharp.fluid} />
-          <EditorTitle>
-            <b>LETTER FROM THE EDITOR</b>
-          </EditorTitle>
-          <Title left larger>
-            Hope, hangovers,
-            <br />
-            and some profanity.
-          </Title>
-          <Author left>BY KARIN HANANEL</Author>
+          <StyledLink href={Articles[3].link} target="_blank">
+            <Img fluid={whiteHouse.childImageSharp.fluid} />
+            <EditorTitle> <b>{Articles[3].title}</b> </EditorTitle>
+            <Title left larger> {Articles[3].abstract} </Title>
+            <Author left>BY KARIN HANANEL</Author>
+          </StyledLink>
         </Col>
       </StyledRow>
     </Wrapper>

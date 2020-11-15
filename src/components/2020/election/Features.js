@@ -7,6 +7,9 @@ import BackgroundImage from 'gatsby-background-image'
 
 import { SectionHeader, Title, Author, Wrapper, StyledRow } from './shared'
 import { CANELA_REGULAR, FUTURA_REGULAR } from '../../../utils/font'
+import { StyledLink, Ads} from '../../shared'
+
+import Articles from '../../../content/json/2020/34st-election/features.json'
 
 const FeatureWrapper = s.div`
   text-align: right;
@@ -55,32 +58,30 @@ const Features = () => {
       <SectionHeader>FEATURES</SectionHeader>
       <StyledRow padding="10">
         <Col md={5}>
-          <Img fluid={left.childImageSharp.fluid} />
-          <Title>
-            <b>
-              There's a limit to what can be expressed through the voting
-              process
-            </b>
-            , but civic engagement doesn't end on Election Day.
-          </Title>
-          <Author>BY PEARL LIU</Author>
+          <StyledLink href={Articles[0].link} target="_blank">
+            <Img fluid={left.childImageSharp.fluid} />
+            <Title>
+              <b>
+                There's a limit to what can be expressed through the voting
+                process
+              </b>
+              , but civic engagement doesn't end on Election Day.
+            </Title>
+            <Author>BY PEARL LIU</Author>
+          </StyledLink>
         </Col>
         <Col md={7}>
-          <BackgroundImage
-            fluid={right.childImageSharp.fluid}
-            style={{ border: 'none' }}
-          >
-            <FeatureWrapper>
-              <FeatureTitle>
-                In the wake of a Trump loss, the future of the Republican Party
-                lies in the hands of some of its youngest members.
-              </FeatureTitle>
-              <FeatureAuthor>BY DELANI SAGNER</FeatureAuthor>
-            </FeatureWrapper>
-          </BackgroundImage>
+          <StyledLink href={Articles[1].link} target="_blank">
+            <BackgroundImage fluid={right.childImageSharp.fluid} style={{ border: 'none' }}>
+              <FeatureWrapper>
+                <FeatureTitle> {Articles[1].abstract} </FeatureTitle>
+                <FeatureAuthor> BY DENALI SAGNER </FeatureAuthor>
+              </FeatureWrapper>
+            </BackgroundImage>
+          </StyledLink>
         </Col>
       </StyledRow>
-      {/* TODO: ADD AD HERE */}
+      <Ads />
     </Wrapper>
   )
 }

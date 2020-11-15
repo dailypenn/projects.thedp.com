@@ -13,6 +13,9 @@ import {
   Wrapper,
   ColWithMargin,
 } from './shared'
+import { StyledLink, Ads } from '../../shared'
+
+import Articles from '../../../content/json/2020/34st-election/ego.json'
 
 const Ego = () => {
   const { sarah, melania, campaign } = useStaticQuery(graphql`
@@ -48,12 +51,11 @@ const Ego = () => {
       <SectionHeader>EGO</SectionHeader>
       <StyledRow padding="12">
         <ColWithMargin md={5}>
-          <Img fluid={sarah.childImageSharp.fluid} />
-          <Title left>
-            Meet Sarah Min, the Community Organizer Dedicating Her Life to
-            Social Change
-          </Title>
-          <Author left>BY ANGELA SHEN</Author>
+          <StyledLink href={Articles[0].link} target="_blank">
+            <Img fluid={sarah.childImageSharp.fluid} />
+            <Title left> {Articles[0].title} </Title>
+            <Author left>BY ANGELA SHEN</Author>
+          </StyledLink>
         </ColWithMargin>
         <Col md={6}>
           <Row>
@@ -61,8 +63,10 @@ const Ego = () => {
               <Img fluid={melania.childImageSharp.fluid} />
             </Col>
             <Vertical md={7}>
-              <Title left>Olivia Troye headline will go here & kick ass</Title>
-              <Author left>BY TAMSYN BRANN</Author>
+              <StyledLink href={Articles[1].link} target="_blank">
+                <Title left> {Articles[1].title} </Title>
+                <Author left>BY TAMSYN BRANN</Author>
+              </StyledLink>
             </Vertical>
           </Row>
           <Row style={{ marginTop: '2vw' }}>
@@ -70,16 +74,15 @@ const Ego = () => {
               <Img fluid={campaign.childImageSharp.fluid} />
             </Col>
             <Vertical md={7}>
-              <Title left>
-                From the Campaign Trail: These Two Penn Students Reflect on the
-                Biden Campaign
-              </Title>
-              <Author left>BY MADDIE MULDOON</Author>
+              <StyledLink href={Articles[2].link} target="_blank">
+                <Title left> {Articles[2].title} </Title>
+                <Author left>BY MADDIE MULDOON</Author>
+              </StyledLink>
             </Vertical>
           </Row>
         </Col>
       </StyledRow>
-      {/* TODO: ADD AD HERE */}
+      <Ads />
     </Wrapper>
   )
 }

@@ -29,6 +29,12 @@ export const Title = s.p`
   font-size: 1.1em;
   line-height: 1.1;
   ${({ larger }) => larger && 'font-size: 2em;'}
+
+  :hover {
+    color: #707070;
+    cursor: pointer;
+    transition: 0.3s;
+  }
 `
 
 export const Author = s.p`
@@ -41,6 +47,7 @@ export const Author = s.p`
   ${FUTURA_REGULAR}
   color: black;
   font-size: 0.7em;
+  text-transform: uppercase;
 `
 export const StyledRow = s(Row)`
   padding: 0 ${({ padding }) => padding}rem;

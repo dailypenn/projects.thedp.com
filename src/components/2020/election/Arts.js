@@ -7,6 +7,8 @@ import BackgroundImage from 'gatsby-background-image'
 
 import { SectionHeader, Title, Author, StyledRow, Wrapper } from './shared'
 import { FUTURA_REGULAR } from '../../../utils/font'
+import { StyledLink } from '../../shared'
+import Articles from '../../../content/json/2020/34st-election/arts.json'
 
 const LeftTitle = s.div`
   color: white;
@@ -44,23 +46,21 @@ const Arts = () => {
       <SectionHeader>ARTS</SectionHeader>
       <StyledRow padding="10">
         <Col md={6} style={{ marginBottom: '1rem' }}>
-          <BackgroundImage fluid={billStrobel.childImageSharp.fluid}>
-            <LeftTitle>
-              <EditorTitle>
-                <b>PHOTO ESSAY</b>
-              </EditorTitle>
-              <Title left larger style={{ color: 'white' }}>
-                Philly Artist Bill Strobel Recreates Lady Justice With Chalk
-              </Title>
-            </LeftTitle>
-          </BackgroundImage>
+          <StyledLink href={Articles[0].link} target="_blank">
+            <BackgroundImage fluid={billStrobel.childImageSharp.fluid}>
+              <LeftTitle>
+                <EditorTitle> <b>PHOTO ESSAY</b> </EditorTitle>
+                <Title left larger style={{ color: 'white' }}> {Articles[0].title} </Title>
+              </LeftTitle>
+            </BackgroundImage>
+          </StyledLink>
         </Col>
         <Col md={6}>
-          <Img fluid={vote.childImageSharp.fluid} />
-          <Title center larger>
-            Pre-2020 Election, Protest Art Demands Change
-          </Title>
-          <Author center>BY ALLISON STILLMAN</Author>
+          <StyledLink href={Articles[1].link} target="_blank">
+            <Img fluid={vote.childImageSharp.fluid} />
+            <Title center larger> {Articles[1].title} </Title>
+            <Author center>BY {Articles[1].authors}</Author>
+          </StyledLink>
         </Col>
       </StyledRow>
     </Wrapper>
