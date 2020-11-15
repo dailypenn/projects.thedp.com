@@ -54,7 +54,7 @@ const Ego = () => {
           <StyledLink href={Articles[0].link} target="_blank">
             <Img fluid={troye.childImageSharp.fluid} />
             <Title left> {Articles[0].title} </Title>
-            <Author left>BY ANGELA SHEN</Author>
+            <Author left>BY {Articles[0].authors}</Author>
           </StyledLink>
         </ColWithMargin>
         <Col md={6}>
@@ -65,7 +65,7 @@ const Ego = () => {
             <Vertical md={7}>
               <StyledLink href={Articles[1].link} target="_blank">
                 <Title left> {Articles[1].title} </Title>
-                <Author left>BY TAMSYN BRANN</Author>
+                <Author left>BY {Articles[1].authors}</Author>
               </StyledLink>
             </Vertical>
           </Row>
