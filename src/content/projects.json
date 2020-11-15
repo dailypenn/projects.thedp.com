@@ -1,6 +1,28 @@
 {
   "featured": [
     {
+      "title": "34th Street Election 2020",
+      "author": "Web Dev: Daniel Tao, Nassim Motya, Calvin Hu, Peter Chen | Design: Ava Cruz",
+      "section": "Street Election",
+      "date": "November 2020",
+      "description": "How civic engagement resulted in a Biden win",
+      "sponsored": false,
+      "link": "/2020/34st-election",
+      "image": "https://snworksceo.imgix.net/dpn-34s/84b5b953-d567-41a8-b56a-882659847cdc.sized-1000x1000.png",
+      "alt": "election issue"
+    },
+    {
+      "title": "Housing Guide 2020",
+      "author": "Web Dev: Daniel Tao, Peter Chen | Design: Ava Cruz",
+      "section": "Housing Guide",
+      "date": "November 2020",
+      "description": "Your guide to living at Penn during the COVID-19 pandemic",
+      "sponsored": false,
+      "link": "/2020/housing-guide",
+      "image": "https://snworksceo.imgix.net/dpn/9cc22c52-fbc5-48f7-a43c-bfda087332ec.sized-1000x1000.png",
+      "alt": "housing guide"
+    },
+    {
       "title": "Election Guide 2020",
       "author": "Web Dev: Alex Go, Calvin Hu, Nassim Motya, Peter Chen | Design: Ava Cruz",
       "section": "Presidential Election",
@@ -10,7 +32,9 @@
       "link": "/2020/election",
       "image": "https://snworksceo.imgix.net/dpn/a15d5bfd-cb4c-4588-a420-ebdca0fb2b78.sized-1000x1000.jpg",
       "alt": "election guide"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "NEC Election",
       "author": "Web Dev: Alex Go, Laurel Lee, Peter Chen | Design: Ava Cruz",
@@ -32,9 +56,7 @@
       "link": "/2020/welcome-back",
       "image": "https://snworksceo.imgix.net/dpn/1fe2ce10-46fa-402e-a9f2-498cc011769b.sized-1000x1000.jpg",
       "alt": "welcome-back"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "COVID-19",
       "author": "Web Dev: Peter Chen, Alex Go | Design: Ava Cruz",
