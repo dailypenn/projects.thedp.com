@@ -24,7 +24,7 @@ const EditorTitle = s.h1`
 const Arts = () => {
   const { billStrobel, vote } = useStaticQuery(graphql`
     query {
-      billStrobel: file(relativePath: { eq: "bill-strobel.jpg" }) {
+      billStrobel: file(relativePath: { eq: "bill-strobel.png" }) {
         childImageSharp {
           fluid(maxWidth: 1000, maxHeight: 1000) {
             ...GatsbyImageSharpFluid
@@ -49,7 +49,7 @@ const Arts = () => {
           <StyledLink href={Articles[0].link} target="_blank">
             <BackgroundImage fluid={billStrobel.childImageSharp.fluid}>
               <LeftTitle>
-                <EditorTitle> <b>PHOTO ESSAY</b> </EditorTitle>
+                <EditorTitle style={{ paddingTop: '1rem' }}> <b>PHOTO ESSAY</b> </EditorTitle>
                 <Title left larger style={{ color: 'white' }}> {Articles[0].title} </Title>
               </LeftTitle>
             </BackgroundImage>

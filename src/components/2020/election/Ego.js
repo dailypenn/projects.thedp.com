@@ -18,19 +18,19 @@ import { StyledLink, Ads } from '../../shared'
 import Articles from '../../../content/json/2020/34st-election/ego.json'
 
 const Ego = () => {
-  const { sarah, melania, campaign } = useStaticQuery(graphql`
+  const { troye, sarah, campaign } = useStaticQuery(graphql`
     query {
-      sarah: file(relativePath: { eq: "sarah-min.jpg" }) {
+      troye: file(relativePath: { eq: "troye.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 1000, maxHeight: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
       }
 
-      melania: file(relativePath: { eq: "free-melania.png" }) {
+      sarah: file(relativePath: { eq: "sarah-min.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1000, maxHeight: 1000) {
+          fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -52,7 +52,7 @@ const Ego = () => {
       <StyledRow padding="12">
         <ColWithMargin md={5}>
           <StyledLink href={Articles[0].link} target="_blank">
-            <Img fluid={sarah.childImageSharp.fluid} />
+            <Img fluid={troye.childImageSharp.fluid} />
             <Title left> {Articles[0].title} </Title>
             <Author left>BY ANGELA SHEN</Author>
           </StyledLink>
@@ -60,7 +60,7 @@ const Ego = () => {
         <Col md={6}>
           <Row>
             <Col md={5}>
-              <Img fluid={melania.childImageSharp.fluid} />
+              <Img fluid={sarah.childImageSharp.fluid} />
             </Col>
             <Vertical md={7}>
               <StyledLink href={Articles[1].link} target="_blank">

@@ -80,7 +80,7 @@ const Articles = () => {
 const WatchingListening = () => (
   <Wrapper id="watching-listening">
     <SectionHeader>WATCHING &amp; LISTENING</SectionHeader>
-    <StyledRow padding="11">
+    <StyledRow padding="9">
       <ColWithMargin md={7}>
         <Articles />
       </ColWithMargin>

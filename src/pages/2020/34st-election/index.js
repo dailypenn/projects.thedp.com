@@ -1,5 +1,4 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import s from 'styled-components'
 
@@ -32,9 +31,9 @@ const IndexPage = () => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta
         name="description"
-        content="4 years undone in 4 days"
+        content="How civic engagement resulted in a Biden win"
       />
-      <title>The Election | 34th Street Magazine</title>
+      <title>Election 2020 | 34th Street Magazine</title>
       <link
         rel="stylesheet"
         type="text/css"
@@ -43,15 +42,15 @@ const IndexPage = () => (
 
       <meta
         property="og:title"
-        content="The Election | 34th Street Magazine"
+        content="Election 2020 | 34th Street Magazine"
       />
       <meta
         property="og:image"
-        content="https://snworksceo.imgix.net/dpn/1fe2ce10-46fa-402e-a9f2-498cc011769b.sized-1000x1000.jpg"
+        content="https://snworksceo.imgix.net/dpn-34s/84b5b953-d567-41a8-b56a-882659847cdc.sized-1000x1000.png"
       />
       <meta
         property="og:description"
-        content="4 years undone in 4 days"
+        content="How civic engagement resulted in a Biden win"
       />
       <meta property="og:type" content="article" />
       <meta
@@ -62,15 +61,15 @@ const IndexPage = () => (
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:title"
-        content="The Election | 34th Street Magazine"
+        content="Election 2020 | 34th Street Magazine"
       />
       <meta
         name="twitter:image"
-        content="https://snworksceo.imgix.net/dpn/1fe2ce10-46fa-402e-a9f2-498cc011769b.sized-1000x1000.jpg"
+        content="https://snworksceo.imgix.net/dpn-34s/84b5b953-d567-41a8-b56a-882659847cdc.sized-1000x1000.png"
       />
       <meta
         name="twitter:description"
-        content="4 years undone in 4 days"
+        content="How civic engagement resulted in a Biden win."
       />
       <meta
         name="twitter:url"
