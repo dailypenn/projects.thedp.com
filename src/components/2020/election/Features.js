@@ -7,7 +7,7 @@ import BackgroundImage from 'gatsby-background-image'
 
 import { SectionHeader, Title, Author, Wrapper, StyledRow } from './shared'
 import { CANELA_REGULAR, FUTURA_REGULAR } from '../../../utils/font'
-import { StyledLink, Ads} from '../../shared'
+import { StyledLink, Ads } from '../../shared'
 
 import Articles from '../../../content/json/2020/34st-election/features.json'
 
@@ -72,7 +72,10 @@ const Features = () => {
         </Col>
         <Col md={7}>
           <StyledLink href={Articles[1].link} target="_blank">
-            <BackgroundImage fluid={right.childImageSharp.fluid} style={{ border: 'none' }}>
+            <BackgroundImage
+              fluid={right.childImageSharp.fluid}
+              style={{ border: 'none' }}
+            >
               <FeatureWrapper>
                 <FeatureTitle> {Articles[1].abstract} </FeatureTitle>
                 <FeatureAuthor> BY DENALI SAGNER </FeatureAuthor>

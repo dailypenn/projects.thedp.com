@@ -1,8 +1,8 @@
-import React from "react"
-import s from "styled-components"
-import Img from "gatsby-image"
+import React from 'react'
+import s from 'styled-components'
+import Img from 'gatsby-image'
 
-import { BRANDON_GROTESQUE_MEDIUM, LORA_REGULAR } from "../../../utils/font"
+import { BRANDON_GROTESQUE_MEDIUM, LORA_REGULAR } from '../../../utils/font'
 
 // TODO: Extract these into constants file
 const WHITE = `#FFFFFF`
@@ -19,7 +19,9 @@ export const CardWrapper = s.div.attrs(({ className }) => ({
   justify-content: center;
   flex-direction: column;
   ${({ flush }) => flush || `padding-bottom: 30px;`}
-  ${({ fixed }) => fixed || `:hover {
+  ${({ fixed }) =>
+    fixed ||
+    `:hover {
     transform: scale(1.01);
   }`}
   transition: all 0.3s;
@@ -71,10 +73,12 @@ export const CardContent = ({
   image,
   primary,
   secondary,
-  noImg
+  noImg,
 }) => (
   <Link href={link} target="_blank">
-    {!noImg && <Img fluid={image.src.childImageSharp.fluid} className="img-fluid" />}
+    {!noImg && (
+      <Img fluid={image.src.childImageSharp.fluid} className="img-fluid" />
+    )}
     <Header href={link} color={primary}>
       {title}
     </Header>

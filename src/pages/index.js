@@ -1,10 +1,10 @@
-import React from "react"
-import { Link } from "gatsby"
-import { Helmet } from "react-helmet"
-import s from "styled-components"
-import { DFPSlotsProvider, AdSlot } from "react-dfp"
+import React from 'react'
+import { Link } from 'gatsby'
+import { Helmet } from 'react-helmet'
+import s from 'styled-components'
+import { DFPSlotsProvider, AdSlot } from 'react-dfp'
 
-import projectsJSON from "../content/projects.json"
+import projectsJSON from '../content/projects.json'
 
 const Wrapper = s.div`
   body {
@@ -112,17 +112,17 @@ const Wrapper = s.div`
 `
 
 const URL = ({ link, children }) => {
-  if (link.includes("http"))
+  if (link.includes('http'))
     return (
       <a href={link} target="_blank">
-        {" "}
-        {children}{" "}
+        {' '}
+        {children}{' '}
       </a>
     )
   return (
     <Link to={link} target="_blank">
-      {" "}
-      {children}{" "}
+      {' '}
+      {children}{' '}
     </Link>
   )
 }
@@ -142,16 +142,16 @@ const MainArticle = ({ article }) => (
         <div class="col-xs-6 text-right"> {article.date} </div>
       </div>
       <URL link={article.link}>
-        {" "}
-        <h1> {article.title} </h1>{" "}
+        {' '}
+        <h1> {article.title} </h1>{' '}
       </URL>
       <div class="proj-desc"> {article.description} </div>
       <br />
       <span class="author pull-right">
-        {" "}
+        {' '}
         {article.sponsored
-          ? "Sponsored by " + article.author
-          : article.author}{" "}
+          ? 'Sponsored by ' + article.author
+          : article.author}{' '}
       </span>
     </div>
   </>
@@ -173,16 +173,16 @@ const SideArticle = ({ article }) => (
           <div class="col-xs-7 text-right"> {article.date} </div>
         </div>
         <URL link={article.link}>
-          {" "}
-          <h3> {article.title} </h3>{" "}
+          {' '}
+          <h3> {article.title} </h3>{' '}
         </URL>
         <div class="proj-desc"> {article.description} </div>
         <br />
         <span class="author pull-right">
-          {" "}
+          {' '}
           {article.sponsored
-            ? "Sponsored by " + article.author
-            : article.author}{" "}
+            ? 'Sponsored by ' + article.author
+            : article.author}{' '}
         </span>
       </div>
     </div>
@@ -200,21 +200,21 @@ const Article = ({ article }) => (
         <div class="col-xs-6 text-right"> {article.date} </div>
       </div>
       <URL link={article.link}>
-        {" "}
-        <h2> {article.title} </h2>{" "}
+        {' '}
+        <h2> {article.title} </h2>{' '}
       </URL>
       <div class="proj-desc"> {article.description} </div>
       <br />
       <span class="author pull-right">
-        {" "}
+        {' '}
         {article.sponsored
-          ? "Sponsored by " + article.author
-          : article.author}{" "}
+          ? 'Sponsored by ' + article.author
+          : article.author}{' '}
       </span>
     </div>
     <div class="col-xs-12">
-      {" "}
-      <hr />{" "}
+      {' '}
+      <hr />{' '}
     </div>
   </div>
 )
@@ -261,11 +261,11 @@ const IndexPage = () => (
         <p>
           <a href="https://projects.34st.com" target="_blank">
             34th Street Magazine
-          </a>{" "}
-          and{" "}
+          </a>{' '}
+          and{' '}
           <a href="https://projects.underthebutton.com" target="_blank">
             Under the Button
-          </a>{" "}
+          </a>{' '}
           have their own project pages. Check them out for more of their
           content!
         </p>

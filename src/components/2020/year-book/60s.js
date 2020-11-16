@@ -1,9 +1,9 @@
-import React from "react"
-import s from "styled-components"
-import Img from "gatsby-image"
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react'
+import s from 'styled-components'
+import Img from 'gatsby-image'
+import { StaticQuery, graphql } from 'gatsby'
 
-import { ROBOTO_REGULAR } from "../../../utils/font"
+import { ROBOTO_REGULAR } from '../../../utils/font'
 
 const Row = s.div`
   height: 450px;
@@ -156,10 +156,10 @@ const Sixty = () => (
       return (
         <>
           <div className="row" id="60s">
-            <div className="col-md" style={{ padding: "0", margin: "0" }}>
+            <div className="col-md" style={{ padding: '0', margin: '0' }}>
               <Img fluid={mainImg.childImageSharp.fluid} alt="sideImg" />
               <PinkFiller />
-              <Row className="row" style={{ marginBottom: "20px" }}>
+              <Row className="row" style={{ marginBottom: '20px' }}>
                 <div className="col-md">
                   <Image fluid={img2.childImageSharp.fluid} alt="sideImg" />
                 </div>
@@ -184,13 +184,13 @@ const Sixty = () => (
 
             <SixtyColumn
               className="col-md"
-              style={{ padding: "0", margin: "0" }}
+              style={{ padding: '0', margin: '0' }}
             >
               <HeaderBackground>
-                <div style={{ padding: "3rem" }}>
+                <div style={{ padding: '3rem' }}>
                   <SixtyHeader
                     fluid={sixtyheadline.childImageSharp.fluid}
-                    style={{ display: "block", margin: "0 auto" }}
+                    style={{ display: 'block', margin: '0 auto' }}
                   />
                 </div>
               </HeaderBackground>

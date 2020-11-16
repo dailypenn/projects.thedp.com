@@ -4,7 +4,14 @@ import Img from 'gatsby-image'
 import { Row, Col } from 'react-bootstrap'
 import s from 'styled-components'
 
-import { SectionHeader, Title, Author, StyledRow, Wrapper, ColWithMargin } from './shared'
+import {
+  SectionHeader,
+  Title,
+  Author,
+  StyledRow,
+  Wrapper,
+  ColWithMargin,
+} from './shared'
 import { StyledLink } from '../../shared'
 import ComicRelief from './ComicRelief'
 

@@ -1,16 +1,16 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import { StaticQuery, graphql } from "gatsby"
-import s from "styled-components"
-import Img from "gatsby-image"
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import { StaticQuery, graphql } from 'gatsby'
+import s from 'styled-components'
+import Img from 'gatsby-image'
 
-import Nav from "../../../components/2020/year-book/Nav"
-import Sixty from "../../../components/2020/year-book/60s"
-import Seventy from "../../../components/2020/year-book/70s"
-import Eighty from "../../../components/2020/year-book/80s"
-import Ninety from "../../../components/2020/year-book/90s"
+import Nav from '../../../components/2020/year-book/Nav'
+import Sixty from '../../../components/2020/year-book/60s'
+import Seventy from '../../../components/2020/year-book/70s'
+import Eighty from '../../../components/2020/year-book/80s'
+import Ninety from '../../../components/2020/year-book/90s'
 
-import { MONTSERRAT_REGULAR } from "../../../utils/font"
+import { MONTSERRAT_REGULAR } from '../../../utils/font'
 
 const Credit = s.div`
   background: #000000;
@@ -134,7 +134,7 @@ const IndexPage = () => (
           </Helmet>
           <Nav />
 
-          <div className="row" style={{ marginBottom: "1rem" }}>
+          <div className="row" style={{ marginBottom: '1rem' }}>
             <Wrapper className="col-md main">
               <Header fluid={headline.childImageSharp.fluid} />
             </Wrapper>
@@ -149,9 +149,9 @@ const IndexPage = () => (
           <Ninety />
 
           <Credit>
-            {" "}
+            {' '}
             Made with <span role="img"> 💓 </span> by The Daily Pennsylvanian ©
-            2020. All rights reserved.{" "}
+            2020. All rights reserved.{' '}
           </Credit>
         </>
       )

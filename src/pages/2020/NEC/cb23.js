@@ -1,7 +1,7 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 
-import Section from "../../../components/2020/NEC/Section"
+import Section from '../../../components/2020/NEC/Section'
 
 const Index = () => (
   <StaticQuery

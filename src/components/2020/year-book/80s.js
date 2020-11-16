@@ -1,9 +1,9 @@
-import React from "react"
-import s from "styled-components"
-import Img from "gatsby-image"
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react'
+import s from 'styled-components'
+import Img from 'gatsby-image'
+import { StaticQuery, graphql } from 'gatsby'
 
-import { ROBOTO_REGULAR } from "../../../utils/font"
+import { ROBOTO_REGULAR } from '../../../utils/font'
 
 const Wrapper = s.div`
   .main {
@@ -142,26 +142,26 @@ const Eighties = () => (
       } = data
       return (
         <Wrapper>
-          <div className="row main2" id="80s" style={{ marginBottom: "3rem" }}>
+          <div className="row main2" id="80s" style={{ marginBottom: '3rem' }}>
             <div className="col-md-3">
               <FancyAuthor
                 fluid={{ ...accents.childImageSharp.fluid, aspectRatio: 2 / 9 }}
               />
             </div>
             <div className="col">
-              <div class="main" style={{ float: "right" }}>
+              <div class="main" style={{ float: 'right' }}>
                 <Header fluid={eightyheadline.childImageSharp.fluid} />
-                <p style={{ textAlign: "right" }}>
+                <p style={{ textAlign: 'right' }}>
                   The 80s were the decade of Madonna, MTV, and John Hughes
                   movies. The hair was big, the clothes were neon, and the world
                   was quickly entering into the new era of computer technology.
                   Ronald Reagan occupied the Oval Office for most of the decade
                   and Americans watched the news as the Communist Bloc began to
                   disintegrate and the AIDs crisis tore through the country. In
-                  1985, the Philadelphia Police Department{" "}
+                  1985, the Philadelphia Police Department{' '}
                   <a href="https://collaborativehistory.gse.upenn.edu/stories/move-osage-avenue">
                     bombed the headquarters
-                  </a>{" "}
+                  </a>{' '}
                   of MOVE, a Black liberation group, just blocks from Penn’s
                   campus. Flora Stewart (E ’84) and Robin Briggs (C ’89)
                   remember University City back in the days of neon and Cyndi
@@ -217,7 +217,7 @@ const Eighties = () => (
                 <div className="col-md main3">
                   <div
                     className="row"
-                    style={{ marginTop: "30px", marginBottom: "10px" }}
+                    style={{ marginTop: '30px', marginBottom: '10px' }}
                   >
                     <div className="col">
                       <SmallImage fluid={img1.childImageSharp.fluid} />
@@ -226,22 +226,22 @@ const Eighties = () => (
                       <SmallImage fluid={img2.childImageSharp.fluid} />
                     </div>
                   </div>
-                  <div className="row" style={{ marginBottom: "10px" }}>
+                  <div className="row" style={{ marginBottom: '10px' }}>
                     <div className="col">
                       <BigImage fluid={img3.childImageSharp.fluid} />
                     </div>
                   </div>
-                  <div className="row" style={{ marginBottom: "10px" }}>
-                    <div className="col" style={{ marginRight: "-10px" }}>
+                  <div className="row" style={{ marginBottom: '10px' }}>
+                    <div className="col" style={{ marginRight: '-10px' }}>
                       <Img
                         fluid={img4.childImageSharp.fluid}
-                        style={{ height: "401px", overflow: "hidden" }}
+                        style={{ height: '401px', overflow: 'hidden' }}
                       />
                     </div>
                     <div className="col">
                       <SmallImage
                         fluid={img5.childImageSharp.fluid}
-                        style={{ marginBottom: "10px" }}
+                        style={{ marginBottom: '10px' }}
                       />
                       <SmallImage fluid={img6.childImageSharp.fluid} />
                     </div>

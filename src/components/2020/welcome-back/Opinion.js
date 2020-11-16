@@ -1,14 +1,14 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import s from "styled-components"
-import Img from "gatsby-image"
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import s from 'styled-components'
+import Img from 'gatsby-image'
 
-import { KARLA_BOLD, KARLA_REGULAR } from "../../../utils/font"
-import { Title, Description, StyledAnchor } from "./Typograph"
+import { KARLA_BOLD, KARLA_REGULAR } from '../../../utils/font'
+import { Title, Description, StyledAnchor } from './Typograph'
 
 const Tag = s.div`
   font-size: 80%;
-  margin-top: ${({ noMarginTop }) => (noMarginTop ? "0" : "1.5rem")};
+  margin-top: ${({ noMarginTop }) => (noMarginTop ? '0' : '1.5rem')};
   .tag {
     color: #D0C730;
     ${KARLA_BOLD}
@@ -70,7 +70,7 @@ const Opinion = () => (
             {articles.slice(0, 2).map(article => (
               <div
                 className="col-md-4 mb-4"
-                style={{ borderRight: "1px solid #D8D2D2" }}
+                style={{ borderRight: '1px solid #D8D2D2' }}
               >
                 <StyledAnchor href={article.link} target="_blank">
                   <Img fluid={article.image.src.childImageSharp.fluid} />
@@ -90,16 +90,16 @@ const Opinion = () => (
                   <div
                     className="row"
                     style={{
-                      borderBottom: idx === 0 ? "1px solid #D8D2D2" : "",
-                      marginBottom: "2rem",
-                      paddingBottom: "2rem",
+                      borderBottom: idx === 0 ? '1px solid #D8D2D2' : '',
+                      marginBottom: '2rem',
+                      paddingBottom: '2rem',
                     }}
                   >
                     <div className="col-md mb-3">
                       <Tag noMarginTop>
                         <text className="tag">
-                          {" "}
-                          {article.tag.toUpperCase()}{" "}
+                          {' '}
+                          {article.tag.toUpperCase()}{' '}
                         </text>
                         <br />
                         <text className="author"> {article.author} </text>

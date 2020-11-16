@@ -1,11 +1,11 @@
-import React from "react"
-import Img from "gatsby-image"
-import s from "styled-components"
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react'
+import Img from 'gatsby-image'
+import s from 'styled-components'
+import { StaticQuery, graphql } from 'gatsby'
 
-import { Description, ByLine, StyledAnchor } from "./Typograph"
-import { PLAYFAIR_BOLD, KARLA_BOLD } from "../../../utils/font"
-import { HEADLINE_DARK_GRAY, SUBHEAD_LIGHT_GRAY } from "../../../utils/colors"
+import { Description, ByLine, StyledAnchor } from './Typograph'
+import { PLAYFAIR_BOLD, KARLA_BOLD } from '../../../utils/font'
+import { HEADLINE_DARK_GRAY, SUBHEAD_LIGHT_GRAY } from '../../../utils/colors'
 
 const Wrapper = s.div`
   .row {
@@ -63,20 +63,20 @@ const Featured = () => (
               >
                 <Tag> FEATURED </Tag>
                 <Title>
-                  {" "}
+                  {' '}
                   Back to school, COVID-19 edition: Tips for first years to
-                  survive virtual college at Penn{" "}
+                  survive virtual college at Penn{' '}
                 </Title>
                 <Description>
-                  {" "}
+                  {' '}
                   To help Penn's new students navigate this uniquely challenging
                   semester, The Daily Pennsylvanian asked upperclassmen and
                   professors for advice about how to succeed in college amid the
-                  coronavirus pandemic.{" "}
+                  coronavirus pandemic.{' '}
                 </Description>
                 <ByLine>
-                  {" "}
-                  {"By Pia Singh & Isabella Schlact".toUpperCase()}{" "}
+                  {' '}
+                  {'By Pia Singh & Isabella Schlact'.toUpperCase()}{' '}
                 </ByLine>
               </StyledAnchor>
             </div>

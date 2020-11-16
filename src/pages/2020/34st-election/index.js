@@ -1,15 +1,15 @@
-import React from "react"
-import { Helmet } from "react-helmet"
+import React from 'react'
+import { Helmet } from 'react-helmet'
 import s from 'styled-components'
 
-import { Navbar } from "../../../components/2020/election/Navbar"
+import { Navbar } from '../../../components/2020/election/Navbar'
 import { FUTURA_REGULAR } from '../../../utils/font'
 
-import Arts from "../../../components/2020/election/Arts.js"
-import Ego from "../../../components/2020/election/Ego.js"
-import Features from "../../../components/2020/election/Features.js"
-import HotTakes from "../../../components/2020/election/HotTakes.js"
-import WatchingListening from "../../../components/2020/election/WatchingListening.js"
+import Arts from '../../../components/2020/election/Arts.js'
+import Ego from '../../../components/2020/election/Ego.js'
+import Features from '../../../components/2020/election/Features.js'
+import HotTakes from '../../../components/2020/election/HotTakes.js'
+import WatchingListening from '../../../components/2020/election/WatchingListening.js'
 
 const HEADER = `https://s3.amazonaws.com/snwceomedia/dpn/87ba14cb-b4db-4ff6-9278-4483d77881d1.original.gif`
 
@@ -95,16 +95,19 @@ const IndexPage = () => (
     </Helmet>
 
     <Navbar />
-    <img src={HEADER} className="img-fluid"/>
+    <img src={HEADER} className="img-fluid" />
 
-    
     <Features />
     <Ego />
     <HotTakes />
     <Arts />
     <WatchingListening />
 
-    <Credit> Made with <span role="img"> 🇺🇸 </span> by The Daily Pennsylvanian © 2020. All rights reserved.  </Credit>
+    <Credit>
+      {' '}
+      Made with <span role="img"> 🇺🇸 </span> by The Daily Pennsylvanian © 2020.
+      All rights reserved.{' '}
+    </Credit>
   </>
 )
 

@@ -1,11 +1,11 @@
-import React from "react"
-import s from "styled-components"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import { DFPSlotsProvider, AdSlot } from "react-dfp"
+import React from 'react'
+import s from 'styled-components'
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import { DFPSlotsProvider, AdSlot } from 'react-dfp'
 
-import { Helmet } from "react-helmet"
-import { Col, Container, Row } from "react-bootstrap"
+import { Helmet } from 'react-helmet'
+import { Col, Container, Row } from 'react-bootstrap'
 import { Ads } from '../../../components/shared'
 import {
   Card,
@@ -13,7 +13,7 @@ import {
   Header,
   Hero,
   Navbar,
-} from "../../../components/2020/housing-guide"
+} from '../../../components/2020/housing-guide'
 
 // TODO: Extract these colors into a constants file
 const WHITE = `#FFFFFF`
@@ -38,7 +38,10 @@ const Metadata = () => (
       property="og:image"
       content="https://snworksceo.imgix.net/dpn/9cc22c52-fbc5-48f7-a43c-bfda087332ec.sized-1000x1000.png"
     />
-    <meta property="og:description" content="Your guide to living at Penn during the COVID-19 pandemic" />
+    <meta
+      property="og:description"
+      content="Your guide to living at Penn during the COVID-19 pandemic"
+    />
     <meta property="og:type" content="article" />
     <meta
       property="og:url"
@@ -54,7 +57,10 @@ const Metadata = () => (
       name="twitter:image"
       content="https://snworksceo.imgix.net/dpn/9cc22c52-fbc5-48f7-a43c-bfda087332ec.sized-1000x1000.png"
     />
-    <meta name="twitter:description" content="Your guide to living at Penn during the COVID-19 pandemic" />
+    <meta
+      name="twitter:description"
+      content="Your guide to living at Penn during the COVID-19 pandemic"
+    />
     <meta
       name="twitter:url"
       content="https://projects.thedp.com/2020/housing-guide/"
@@ -118,22 +124,49 @@ const GoogleAdRectangle = () => (
 )
 
 export default () => (
-  <StaticQuery query={graphql`
-    query {
-      news: allFile(filter: { relativePath: { eq: "news_HG_2020.json" } }) {
-        edges {
-          node {
-            childrenNewsHg2020Json {
-              title
-              link
-              authors
-              abstract
-              image {
-                src {
-                  childImageSharp {
-                    fluid(maxWidth: 600, maxHeight: 600) {
-                      ...GatsbyImageSharpFluid
-                      src
+  <StaticQuery
+    query={graphql`
+      query {
+        news: allFile(filter: { relativePath: { eq: "news_HG_2020.json" } }) {
+          edges {
+            node {
+              childrenNewsHg2020Json {
+                title
+                link
+                authors
+                abstract
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 600, maxHeight: 600) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        opinion: allFile(
+          filter: { relativePath: { eq: "opinion_HG_2020.json" } }
+        ) {
+          edges {
+            node {
+              childOpinionHg2020Json {
+                title
+                link
+                authors
+                abstract
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 1900, maxHeight: 1280) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
                     }
                   }
                 }
@@ -142,146 +175,126 @@ export default () => (
           }
         }
       }
+    `}
+    render={data => {
+      const {
+        node: { childrenNewsHg2020Json: newsArticles },
+      } = data.news.edges[0]
 
-      opinion: allFile(filter: { relativePath: { eq: "opinion_HG_2020.json" } }) {
-        edges {
-          node {
-            childOpinionHg2020Json {
-              title
-              link
-              authors
-              abstract
-              image {
-                src {
-                  childImageSharp {
-                    fluid(maxWidth: 1900, maxHeight: 1280) {
-                      ...GatsbyImageSharpFluid
-                      src
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `}
-  render={data => {
-    const {
-      node: { childrenNewsHg2020Json: newsArticles }
-    } = data.news.edges[0]
+      const {
+        node: { childOpinionHg2020Json: opinionArticle },
+      } = data.opinion.edges[0]
 
-    const {
-      node: { childOpinionHg2020Json: opinionArticle }
-    } = data.opinion.edges[0]
-
-    return (
-      <>
-        <Metadata />
-        <Navbar />
-        <Hero />
-        <Section>
-          <Row>
-            <Header>Guide</Header>
-          </Row>
-          <Container>
-            <SpacedRow>
-              <Col sm={12} md={6}>
-                <Card>
-                  <CardContent
-                    {...newsArticles[0]}
-                    primary={BROWN}
-                    secondary={DARK_ORANGE}
-                  />
-                </Card>
-              </Col>
-              <Col sm={12} md={6}>
-                <BroadStreetAdUnit />
-                <GoogleAdRectangle />
-                <GoogleAdRectangle />
-              </Col>
-            </SpacedRow>
-          </Container>
-        </Section>
-        <Section background={LIGHT_MAGENTA}>
-          <Container>
+      return (
+        <>
+          <Metadata />
+          <Navbar />
+          <Hero />
+          <Section>
             <Row>
-              <Header inverted>News</Header>
+              <Header>Guide</Header>
             </Row>
-            <SpacedRow>
-              <Col sm={12} md={6}>
-                <Card>
-                  <CardContent
-                    {...newsArticles[1]}
-                    primary={DARK_PURPLE}
-                    secondary={LIGHT_PURPLE}
-                  />
-                </Card>
-              </Col>
-              <Col sm={12} md={6}>
-                <Card>
-                  <CardContent
-                    {...newsArticles[2]}
-                    primary={DARK_PURPLE}
-                    secondary={LIGHT_PURPLE}
-                  />
-                </Card>
-              </Col>
-            </SpacedRow>
-            <Row>
-              <Col sm={12} md={6}>
-                <Card>
-                  <CardContent
-                    {...newsArticles[3]}
-                    primary={DARK_PURPLE}
-                    secondary={LIGHT_PURPLE}
-                  />
-                </Card>
-              </Col>
-              <Col md={12} md={6}>
-                <GoogleAdRectangle />
-                <BroadStreetAdUnit />
-                <BroadStreetAdUnit />
-              </Col>
-            </Row>
-          </Container>
-        </Section>
+            <Container>
+              <SpacedRow>
+                <Col sm={12} md={6}>
+                  <Card>
+                    <CardContent
+                      {...newsArticles[0]}
+                      primary={BROWN}
+                      secondary={DARK_ORANGE}
+                    />
+                  </Card>
+                </Col>
+                <Col sm={12} md={6}>
+                  <BroadStreetAdUnit />
+                  <GoogleAdRectangle />
+                  <GoogleAdRectangle />
+                </Col>
+              </SpacedRow>
+            </Container>
+          </Section>
+          <Section background={LIGHT_MAGENTA}>
+            <Container>
+              <Row>
+                <Header inverted>News</Header>
+              </Row>
+              <SpacedRow>
+                <Col sm={12} md={6}>
+                  <Card>
+                    <CardContent
+                      {...newsArticles[1]}
+                      primary={DARK_PURPLE}
+                      secondary={LIGHT_PURPLE}
+                    />
+                  </Card>
+                </Col>
+                <Col sm={12} md={6}>
+                  <Card>
+                    <CardContent
+                      {...newsArticles[2]}
+                      primary={DARK_PURPLE}
+                      secondary={LIGHT_PURPLE}
+                    />
+                  </Card>
+                </Col>
+              </SpacedRow>
+              <Row>
+                <Col sm={12} md={6}>
+                  <Card>
+                    <CardContent
+                      {...newsArticles[3]}
+                      primary={DARK_PURPLE}
+                      secondary={LIGHT_PURPLE}
+                    />
+                  </Card>
+                </Col>
+                <Col md={12} md={6}>
+                  <GoogleAdRectangle />
+                  <BroadStreetAdUnit />
+                  <BroadStreetAdUnit />
+                </Col>
+              </Row>
+            </Container>
+          </Section>
 
-        <Section>
-          <Container>
-            <Row>
-              <Ads />
-            </Row>
-            <Row>
-              <Header> Opinion </Header>
-            </Row>
-            <SpacedRow>
-              <Col sm={12} md={8}>
-                <ImgCard flush fixed>
-                  <Img fluid={opinionArticle.image.src.childImageSharp.fluid} className="img-fluid" />
-                </ImgCard>
-                <DomCard>
-                  <CardContent
-                    {...opinionArticle}
-                    primary={BROWN}
-                    secondary={DARK_ORANGE}
-                    noImg
-                  />
-                </DomCard>
-              </Col>
-              <Col>
-                <BroadStreetAdUnit />
-                <BroadStreetAdUnit />
-              </Col>
-            </SpacedRow>
-          </Container>
-        </Section>
+          <Section>
+            <Container>
+              <Row>
+                <Ads />
+              </Row>
+              <Row>
+                <Header> Opinion </Header>
+              </Row>
+              <SpacedRow>
+                <Col sm={12} md={8}>
+                  <ImgCard flush fixed>
+                    <Img
+                      fluid={opinionArticle.image.src.childImageSharp.fluid}
+                      className="img-fluid"
+                    />
+                  </ImgCard>
+                  <DomCard>
+                    <CardContent
+                      {...opinionArticle}
+                      primary={BROWN}
+                      secondary={DARK_ORANGE}
+                      noImg
+                    />
+                  </DomCard>
+                </Col>
+                <Col>
+                  <BroadStreetAdUnit />
+                  <BroadStreetAdUnit />
+                </Col>
+              </SpacedRow>
+            </Container>
+          </Section>
 
-        <Footer>
-          Made with 🏠 by The Daily Pennsylvanian © 2020. All rights reserved.
-        </Footer>
-      </>
-    )}}
+          <Footer>
+            Made with 🏠 by The Daily Pennsylvanian © 2020. All rights reserved.
+          </Footer>
+        </>
+      )
+    }}
   />
 )

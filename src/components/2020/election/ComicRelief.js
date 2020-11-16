@@ -54,19 +54,16 @@ const ColMarginBottom = s(Col)`
 
 const MustReadArticle = ({ article }) => (
   <StyledLink href={article.link} target="_blank">
-    <div className="row" style={{ marginBottom: "2rem" }}>
+    <div className="row" style={{ marginBottom: '2rem' }}>
       <ColMarginBottom md={6}>
         <Img fluid={article.image.src.childImageSharp.fluid} />
       </ColMarginBottom>
       <Col md={6}>
-        <Title style={{ fontSize: "90%", marginTop: 0 }}>
-          {" "}
-          {article.title}{" "}
+        <Title style={{ fontSize: '90%', marginTop: 0 }}>
+          {' '}
+          {article.title}{' '}
         </Title>
-        <Author style={{ fontSize: "80%" }}>
-          {" "}
-          BY {article.author}{" "}
-        </Author>
+        <Author style={{ fontSize: '80%' }}> BY {article.author} </Author>
       </Col>
     </div>
   </StyledLink>
@@ -75,7 +72,7 @@ const MustReadArticle = ({ article }) => (
 const ComicRelief = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: {relativePath: {eq: "utb_34e_2020.json"}}) {
+      allFile(filter: { relativePath: { eq: "utb_34e_2020.json" } }) {
         edges {
           node {
             childrenUtb34E2020Json {
@@ -99,7 +96,9 @@ const ComicRelief = () => {
     }
   `)
 
-  const { node: { childrenUtb34E2020Json: articles } } = data.allFile.edges[0]
+  const {
+    node: { childrenUtb34E2020Json: articles },
+  } = data.allFile.edges[0]
 
   return (
     <Background>
@@ -109,7 +108,9 @@ const ComicRelief = () => {
         <ComicSubtitle>BROUGHT TO YOU BY UNDER THE BUTTON</ComicSubtitle>
       </ComicContent>
       <div style={{ padding: '0 1rem' }}>
-        {articles.map(article => <MustReadArticle article={article} />)}
+        {articles.map(article => (
+          <MustReadArticle article={article} />
+        ))}
       </div>
       <StarBar />
     </Background>

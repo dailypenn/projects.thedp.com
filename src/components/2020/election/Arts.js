@@ -49,8 +49,14 @@ const Arts = () => {
           <StyledLink href={Articles[0].link} target="_blank">
             <BackgroundImage fluid={billStrobel.childImageSharp.fluid}>
               <LeftTitle>
-                <EditorTitle style={{ paddingTop: '1rem' }}> <b>PHOTO ESSAY</b> </EditorTitle>
-                <Title left larger style={{ color: 'white' }}> {Articles[0].title} </Title>
+                <EditorTitle style={{ paddingTop: '1rem' }}>
+                  {' '}
+                  <b>PHOTO ESSAY</b>{' '}
+                </EditorTitle>
+                <Title left larger style={{ color: 'white' }}>
+                  {' '}
+                  {Articles[0].title}{' '}
+                </Title>
               </LeftTitle>
             </BackgroundImage>
           </StyledLink>
@@ -58,7 +64,10 @@ const Arts = () => {
         <Col md={6}>
           <StyledLink href={Articles[1].link} target="_blank">
             <Img fluid={vote.childImageSharp.fluid} />
-            <Title center larger> {Articles[1].title} </Title>
+            <Title center larger>
+              {' '}
+              {Articles[1].title}{' '}
+            </Title>
             <Author center>BY {Articles[1].authors}</Author>
           </StyledLink>
         </Col>

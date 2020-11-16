@@ -1,17 +1,17 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import s from "styled-components"
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import s from 'styled-components'
 
-import NavBar from "../../../components/2020/vote/Nav"
-import VoteHeader from "../../../content/images/2020/vote/vote-header.png"
-import ExplainItToMe from "../../../components/2020/vote/ExplainItToMe"
-import InOtherNews from "../../../components/2020/vote/InOtherNews"
-import InMyOpinion from "../../../components/2020/vote/InMyOpinion"
-import Sports from "../../../components/2020/vote/Sports"
-import Multimedia from "../../../components/2020/vote/Multimedia"
-import ComicRelief from "../../../components/2020/vote/ComicRelief"
+import NavBar from '../../../components/2020/vote/Nav'
+import VoteHeader from '../../../content/images/2020/vote/vote-header.png'
+import ExplainItToMe from '../../../components/2020/vote/ExplainItToMe'
+import InOtherNews from '../../../components/2020/vote/InOtherNews'
+import InMyOpinion from '../../../components/2020/vote/InMyOpinion'
+import Sports from '../../../components/2020/vote/Sports'
+import Multimedia from '../../../components/2020/vote/Multimedia'
+import ComicRelief from '../../../components/2020/vote/ComicRelief'
 
-import { FUTURA_REGULAR } from "../../../utils/font"
+import { FUTURA_REGULAR } from '../../../utils/font'
 
 const Credit = s.div`
   color: #000000;
@@ -94,12 +94,12 @@ const IndexPage = () => (
     </Helmet>
 
     <div>
-      <img src="/img/election-ad.jpg" style={{ width: "100%" }} />
+      <img src="/img/election-ad.jpg" style={{ width: '100%' }} />
     </div>
 
     <NavBar />
     <div>
-      <img src={VoteHeader} style={{ width: "100%" }} />
+      <img src={VoteHeader} style={{ width: '100%' }} />
     </div>
     <ExplainItToMe />
     <InOtherNews />
@@ -109,9 +109,9 @@ const IndexPage = () => (
     <ComicRelief />
 
     <Credit>
-      {" "}
+      {' '}
       Made with <span role="img"> 🇺🇸 </span> by The Daily Pennsylvanian © 2020.
-      All rights reserved.{" "}
+      All rights reserved.{' '}
     </Credit>
   </>
 )

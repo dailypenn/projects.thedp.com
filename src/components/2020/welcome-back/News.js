@@ -1,9 +1,9 @@
-import React from "react"
-import Img from "gatsby-image"
-import { StaticQuery, graphql } from "gatsby"
-import s from "styled-components"
+import React from 'react'
+import Img from 'gatsby-image'
+import { StaticQuery, graphql } from 'gatsby'
+import s from 'styled-components'
 
-import { Title, Description, ByLine, Tag, StyledAnchor } from "./Typograph"
+import { Title, Description, ByLine, Tag, StyledAnchor } from './Typograph'
 
 const Wrapper = s.div`
   .main {
@@ -62,15 +62,15 @@ const News = () => (
           <div className="row main" id="news">
             <div
               className="col-md-7 mb-5"
-              style={{ borderRight: "1px solid #D8D2D2" }}
+              style={{ borderRight: '1px solid #D8D2D2' }}
             >
               <StyledAnchor href={articles[0].link} target="_blank">
                 <div
                   style={{
-                    textAlign: "center",
-                    borderBottom: "1px solid #D8D2D2",
-                    marginBottom: "2rem",
-                    paddingBottom: "2rem",
+                    textAlign: 'center',
+                    borderBottom: '1px solid #D8D2D2',
+                    marginBottom: '2rem',
+                    paddingBottom: '2rem',
                   }}
                 >
                   <Img fluid={articles[0].image.src.childImageSharp.fluid} />
@@ -80,7 +80,7 @@ const News = () => (
                   <ByLine> {articles[0].byline.toUpperCase()} </ByLine>
                 </div>
               </StyledAnchor>
-              <div style={{ textAlign: "center" }}>
+              <div style={{ textAlign: 'center' }}>
                 <Video
                   width="100%"
                   src="https://www.youtube.com/embed/qxklB93jWhs"
@@ -94,15 +94,15 @@ const News = () => (
                   target="_blank"
                 >
                   <Title>
-                    {" "}
+                    {' '}
                     Students discuss the challenges of a virtual fall for each
-                    class year{" "}
+                    class year{' '}
                   </Title>
                 </StyledAnchor>
                 <Description>
-                  {" "}
+                  {' '}
                   A Penn first year, sophomore, junior, and senior discuss how
-                  COVID-19 will affect their college experiences this fall.{" "}
+                  COVID-19 will affect their college experiences this fall.{' '}
                 </Description>
                 <ByLine> BY SAGE LEVINE </ByLine>
               </div>
@@ -116,10 +116,10 @@ const News = () => (
                     style={{
                       borderBottom:
                         idx + 1 !== articles.length - 1
-                          ? "1px solid #D8D2D2"
-                          : "",
-                      marginBottom: "2rem",
-                      paddingBottom: "2rem",
+                          ? '1px solid #D8D2D2'
+                          : '',
+                      marginBottom: '2rem',
+                      paddingBottom: '2rem',
                     }}
                   >
                     <div className="col-md mb-3">

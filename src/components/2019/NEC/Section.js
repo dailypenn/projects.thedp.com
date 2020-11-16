@@ -1,8 +1,8 @@
-import React, { useState } from "react"
-import Img from "gatsby-image"
-import s from "styled-components"
-import { Helmet } from "react-helmet"
-import { Link } from "gatsby"
+import React, { useState } from 'react'
+import Img from 'gatsby-image'
+import s from 'styled-components'
+import { Helmet } from 'react-helmet'
+import { Link } from 'gatsby'
 
 const Body = s.div`
   font-family: 'neuzeit-grotesk', sans-serif;
@@ -160,7 +160,7 @@ const StatementButton = s.h4`
 `
 
 const Statement = s.p`
-  display: ${({ show }) => (show ? "block" : "none")};
+  display: ${({ show }) => (show ? 'block' : 'none')};
 `
 
 const Candidates = ({ people, title }) => {
@@ -189,16 +189,16 @@ const Candidates = ({ people, title }) => {
             )}
             <h3> {person.name} </h3>
             <p>
-              {" "}
-              <i> Endorsements: </i> {person.endorsements}{" "}
+              {' '}
+              <i> Endorsements: </i> {person.endorsements}{' '}
             </p>
             <StatementButton onClick={() => toggleShow(person.name)}>
               Read Statement
-              <span> {showSet.has(person.name) ? "↑" : "↓"} </span>
+              <span> {showSet.has(person.name) ? '↑' : '↓'} </span>
             </StatementButton>
             <Statement show={showSet.has(person.name)}>
-              {" "}
-              {person.statement}{" "}
+              {' '}
+              {person.statement}{' '}
             </Statement>
           </Candidate>
         ))}
@@ -291,7 +291,7 @@ const Section = ({ data }) => (
         </Branches>
 
         {Object.entries(data).map(([key, val]) => (
-          <Candidates people={val} title={key.replace(/_/g, " ")} />
+          <Candidates people={val} title={key.replace(/_/g, ' ')} />
         ))}
       </Wrapper>
 

@@ -1,12 +1,12 @@
-import React, { useState } from "react"
-import { Helmet } from "react-helmet"
-import s from "styled-components"
-import { Link } from "gatsby"
+import React, { useState } from 'react'
+import { Helmet } from 'react-helmet'
+import s from 'styled-components'
+import { Link } from 'gatsby'
 
-import JoinEditorialJSON from "../../../content/json/2020/join/joinEditorial.json"
-import JoinBusinessJSON from "../../../content/json/2020/join/joinBusiness.json"
-import Join34thJSON from "../../../content/json/2020/join/join34th.json"
-import JoinUTBJSON from "../../../content/json/2020/join/joinUTB.json"
+import JoinEditorialJSON from '../../../content/json/2020/join/joinEditorial.json'
+import JoinBusinessJSON from '../../../content/json/2020/join/joinBusiness.json'
+import Join34thJSON from '../../../content/json/2020/join/join34th.json'
+import JoinUTBJSON from '../../../content/json/2020/join/joinUTB.json'
 
 const Wrapper = s.div`
   font-size: 1em;
@@ -365,7 +365,7 @@ const Join = () => {
     JoinEditorialJSON[0].highlights
   )
   const [editorialHighlightLinks, setEditorialHighlightLinks] = useState(
-    JoinEditorialJSON[0]["highlight-links"]
+    JoinEditorialJSON[0]['highlight-links']
   )
   const [editorialActive, setEditorialActive] = useState(
     JoinEditorialJSON[0].id
@@ -381,7 +381,7 @@ const Join = () => {
     JoinBusinessJSON[0].highlights
   )
   const [businessHighlightLinks, setBusinessHighlightLinks] = useState(
-    JoinBusinessJSON[0]["highlight-links"]
+    JoinBusinessJSON[0]['highlight-links']
   )
   const [businessActive, setBusinessActive] = useState(JoinBusinessJSON[0].id)
 
@@ -471,14 +471,14 @@ const Join = () => {
                   <span>
                     <h4
                       class={
-                        editorialActive == dpt.id ? "ed-tab active" : "ed-tab"
+                        editorialActive == dpt.id ? 'ed-tab active' : 'ed-tab'
                       }
                       id={dpt.id}
                       onClick={() => {
                         setEditorialImage(dpt.background)
                         setEditorialDescription(dpt.text)
                         setEditorialHighlights(dpt.highlights)
-                        setEditorialHighlightLinks(dpt["highlight-links"])
+                        setEditorialHighlightLinks(dpt['highlight-links'])
                         setEditorialActive(dpt.id)
                       }}
                     >
@@ -491,7 +491,7 @@ const Join = () => {
                 {editorialDescription.map(p => (
                   <p>{p}</p>
                 ))}
-                <h5>{editorialHighlights.length === 0 ? "" : "Highlights"}</h5>
+                <h5>{editorialHighlights.length === 0 ? '' : 'Highlights'}</h5>
                 {editorialHighlights.length === editorialHighlightLinks.length
                   ? editorialHighlights.map((l, idx) => (
                       <a
@@ -526,14 +526,14 @@ const Join = () => {
                   <span>
                     <h4
                       class={
-                        businessActive === dpt.id ? "biz-tab active" : "biz-tab"
+                        businessActive === dpt.id ? 'biz-tab active' : 'biz-tab'
                       }
                       id={dpt.id}
                       onClick={() => {
                         setBusinessImage(dpt.background)
                         setBusinessDescription(dpt.text)
                         setBusinessHighlights(dpt.highlights)
-                        setBusinessHighlightLinks(dpt["highlight-links"])
+                        setBusinessHighlightLinks(dpt['highlight-links'])
                         setBusinessActive(dpt.id)
                       }}
                     >
@@ -546,7 +546,7 @@ const Join = () => {
                 {businessDescription.map(p => (
                   <p>{p}</p>
                 ))}
-                <h5>{businessHighlights.length === 0 ? "" : "Highlights"}</h5>
+                <h5>{businessHighlights.length === 0 ? '' : 'Highlights'}</h5>
                 {businessHighlights.length === businessHighlightLinks.length
                   ? businessHighlights.map((l, idx) => (
                       <a
@@ -570,13 +570,13 @@ const Join = () => {
               <p>{p}</p>
             ))}
             <a href={Join34thJSON.signup} target="_blank" rel="noreferrer">
-              {" "}
+              {' '}
               For 34st interest form click here &#8594;
             </a>
             <h5>Highlights</h5>
             {Join34thJSON.highlights.map((h, idx) => (
               <a
-                href={Join34thJSON["highlight-links"][idx]}
+                href={Join34thJSON['highlight-links'][idx]}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -593,13 +593,13 @@ const Join = () => {
               <p>{p}</p>
             ))}
             <a href={JoinUTBJSON.signup} target="_blank" rel="noreferrer">
-              {" "}
+              {' '}
               For UTB interest form click here &#8594;
             </a>
             <h5>Highlights</h5>
             {JoinUTBJSON.highlights.map((h, idx) => (
               <a
-                href={JoinUTBJSON["highlight-links"][idx]}
+                href={JoinUTBJSON['highlight-links'][idx]}
                 target="_blank"
                 rel="noreferrer"
               >

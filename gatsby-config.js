@@ -105,7 +105,7 @@ module.exports = {
       options: {
         name: `json`,
         path: `${__dirname}/src/content/json/2020/34st-election`,
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -122,17 +122,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-707447-4",
+        trackingId: 'UA-707447-4',
       },
     },
     {
-      resolve: "gatsby-plugin-load-script",
+      resolve: 'gatsby-plugin-load-script',
       options: {
-        src: "/welcome-back-script.js",
+        src: '/welcome-back-script.js',
       },
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
           include: /\.svg$/,
@@ -143,12 +143,9 @@ module.exports = {
       resolve: 'gatsby-plugin-your-fonts',
       options: {
         host: 'dailypenn.github.io/font',
-        fonts: [
-          `radiant.css`,
-          `canela.css`
-        ]
-      }
-    }
+        fonts: [`radiant.css`, `canela.css`],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

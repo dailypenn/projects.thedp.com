@@ -11,7 +11,7 @@ import {
   VerticalCol,
   StyledRow,
   ColWithMargin,
-  Wrapper
+  Wrapper,
 } from './shared'
 import { FUTURA_REGULAR } from '../../../utils/font'
 import { StyledLink } from '../../shared'
@@ -110,8 +110,14 @@ const HotTakes = () => {
         <Col sm={12} md={6}>
           <StyledLink href={Articles[3].link} target="_blank">
             <Img fluid={whiteHouse.childImageSharp.fluid} />
-            <EditorTitle> <b>{Articles[3].title}</b> </EditorTitle>
-            <Title left larger> {Articles[3].abstract} </Title>
+            <EditorTitle>
+              {' '}
+              <b>{Articles[3].title}</b>{' '}
+            </EditorTitle>
+            <Title left larger>
+              {' '}
+              {Articles[3].abstract}{' '}
+            </Title>
             <Author left>BY KARIN HANANEL</Author>
           </StyledLink>
         </Col>

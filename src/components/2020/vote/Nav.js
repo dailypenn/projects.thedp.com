@@ -1,8 +1,8 @@
-import React from "react"
-import s from "styled-components"
-import { Link } from "gatsby"
+import React from 'react'
+import s from 'styled-components'
+import { Link } from 'gatsby'
 
-import { NavText } from "../../shared"
+import { NavText } from '../../shared'
 
 const Image = s.img`
   max-height: 90px;
@@ -32,9 +32,9 @@ const NavBar = () => {
     <nav
       className="navbar sticky-top navbar-expand-lg"
       style={{
-        fontFamily: "Libre Franklin",
-        backgroundColor: "#FFFFFF",
-        boxShadow: "0px 5px 6px #00000029",
+        fontFamily: 'Libre Franklin',
+        backgroundColor: '#FFFFFF',
+        boxShadow: '0px 5px 6px #00000029',
         opacity: 1,
       }}
     >
@@ -42,27 +42,27 @@ const NavBar = () => {
         <LeftUL className="navbar-nav ml-auto text-center">
           <li className="nav-item active">
             <Link className="nav-link" to="#explainers">
-              {" "}
+              {' '}
               <NavText> Explainers </NavText>
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="#inOtherNews">
-              {" "}
-              <NavText> In Other News</NavText>{" "}
+              {' '}
+              <NavText> In Other News</NavText>{' '}
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="#opinion">
-              {" "}
-              <NavText> Opinion </NavText>{" "}
+              {' '}
+              <NavText> Opinion </NavText>{' '}
             </Link>
           </li>
         </LeftUL>
       </div>
       <div
         className="mx-auto my-2 order-0 order-md-1 position-relative"
-        style={{ textAlign: "center" }}
+        style={{ textAlign: 'center' }}
       >
         <a className="mx-auto" href="https://www.thedp.com/">
           <Image src="/img/DP-Logo-Full.png" className="img-fluid" />
@@ -77,7 +77,7 @@ const NavBar = () => {
           <span className="navbar-toggler-icon">
             <img
               src="/icons/menu.svg"
-              style={{ transform: "translate(0, 0.2rem)" }}
+              style={{ transform: 'translate(0, 0.2rem)' }}
             />
           </span>
         </button>
@@ -86,19 +86,19 @@ const NavBar = () => {
         <RightUL className="navbar-nav mr-auto text-center">
           <li className="nav-item">
             <Link className="nav-link" to="#sports">
-              {" "}
-              <NavText> Sports </NavText>{" "}
+              {' '}
+              <NavText> Sports </NavText>{' '}
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="#multimedia">
-              {" "}
-              <NavText> Multimedia </NavText>{" "}
+              {' '}
+              <NavText> Multimedia </NavText>{' '}
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="#utb">
-              {" "}
+              {' '}
               <NavText> Under The Button </NavText>
             </Link>
           </li>
