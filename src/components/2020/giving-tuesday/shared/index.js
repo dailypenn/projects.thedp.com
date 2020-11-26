@@ -6,6 +6,8 @@ export const PINK = '#DD666E'
 export const WHITE = '#FFFFFF'
 export const YELLOW = '#FBE73F'
 export const BLACK = '#000000'
+export const STREET_GREEN = '#67BCBE'
+export const UTB_BLUE = '#456DB3'
 
 
 // COMPONENTS

@@ -107,6 +107,21 @@ module.exports = {
         path: `${__dirname}/src/content/json/2020/34st-election`,
       },
     },
+    // json and images for 2020 giving tuesday
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2020/giving-tuesday`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2020/giving-tuesday`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
