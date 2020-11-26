@@ -31,94 +31,90 @@ const EditorTitle = s.h1`
 `
 
 const HotTakes = () => {
-  const { biden, melania, harris, whiteHouse } = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
-      biden: file(relativePath: { eq: "biden.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-
-      melania: file(relativePath: { eq: "free-melania.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-
-      harris: file(relativePath: { eq: "harris.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-
-      whiteHouse: file(relativePath: { eq: "white-house.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
+      allFile(filter: {relativePath: {eq: "hot_takes.json"}}) {
+        edges {
+          node {
+            childrenHotTakesJson {
+              title
+              abstract
+              authors
+              link
+              image {
+                src {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
     }
   `)
+
+  const {
+    node: { childrenHotTakesJson: articles },
+  } = data.allFile.edges[0]
+
   return (
     <Wrapper id="hot-takes">
       <SectionHeader>HOT TAKES</SectionHeader>
       <StyledRow padding="13">
         <ColWithMargin sm={12} md={5}>
-          <StyledLink href={Articles[0].link} target="_blank">
+          <StyledLink href={articles[0].link} target="_blank">
             <Row>
               <Col>
-                <Img fluid={melania.childImageSharp.fluid} />
+                <Img fluid={articles[0].image.src.childImageSharp.fluid} />
               </Col>
               <VerticalCol>
-                <Title left> {Articles[0].title} </Title>
-                <Author left>BY KIRA WANG</Author>
+                <Title left> {articles[0].title} </Title>
+                <Author left>BY {articles[0].authors}</Author>
               </VerticalCol>
             </Row>
           </StyledLink>
-          <StyledLink href={Articles[1].link} target="_blank">
+          <StyledLink href={articles[1].link} target="_blank">
             <SpacedRow>
               <Col>
-                <Img fluid={harris.childImageSharp.fluid} />
+                <Img fluid={articles[1].image.src.childImageSharp.fluid} />
               </Col>
               <VerticalCol>
-                <Title left> {Articles[1].title} </Title>
-                <Author left>BY EMILY WHITE</Author>
+                <Title left> {articles[1].title} </Title>
+                <Author left>BY {articles[1].authors}</Author>
               </VerticalCol>
             </SpacedRow>
           </StyledLink>
 
-          <StyledLink href={Articles[2].link} target="_blank">
+          <StyledLink href={articles[2].link} target="_blank">
             <SpacedRow>
               <Col>
-                <Img fluid={biden.childImageSharp.fluid} />
+                <Img fluid={articles[2].image.src.childImageSharp.fluid} />
               </Col>
               <VerticalCol>
-                <Title left> {Articles[2].title} </Title>
-                <Author left>BY HANNAH YUSUF</Author>
+                <Title left> {articles[2].title} </Title>
+                <Author left>BY {articles[2].authors}</Author>
               </VerticalCol>
             </SpacedRow>
           </StyledLink>
         </ColWithMargin>
 
         <Col sm={12} md={6}>
-          <StyledLink href={Articles[3].link} target="_blank">
-            <Img fluid={whiteHouse.childImageSharp.fluid} />
+          <StyledLink href={articles[3].link} target="_blank">
+            <Img fluid={articles[3].image.src.childImageSharp.fluid} />
             <EditorTitle>
               {' '}
-              <b>{Articles[3].title}</b>{' '}
+              <b>{articles[3].title}</b>{' '}
             </EditorTitle>
             <Title left larger>
               {' '}
-              {Articles[3].abstract}{' '}
+              {articles[3].abstract}{' '}
             </Title>
-            <Author left>BY KARIN HANANEL</Author>
+            <Author left>BY {articles[3].authors}</Author>
           </StyledLink>
         </Col>
       </StyledRow>

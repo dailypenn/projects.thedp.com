@@ -3,24 +3,36 @@
     "title": "Why We Don't Need to #FreeMelania",
     "link": "https://www.34st.com/article/2020/11/melania-trump-donald-ivanka-politics-first-lady-white-house-president",
     "authors": "Kira Wang",
-    "abstract": "Despite her husband’s repulsive nature, Melania Trump is not a victim."
+    "abstract": "Despite her husband’s repulsive nature, Melania Trump is not a victim.",
+    "image": {
+      "src": "../../../images/2020/34st-election/free-melania.png"
+    }
   },
   {
     "title": "Why Are We Still Talking About Kamala Harris's Outfits?",
     "link": "https://www.34st.com/article/2020/11/kamala-harris-campaign-election-outfits-scrutiny-women-in-politics-media-joe-biden",
     "authors": "Emily White",
-    "abstract": "Harris has made headlines multiple times for her “remarkably unremarkable fashion.” But why is this a topic of conversation in the first place?"
+    "abstract": "Harris has made headlines multiple times for her “remarkably unremarkable fashion.” But why is this a topic of conversation in the first place?",
+    "image": {
+      "src": "../../../images/2020/34st-election/harris.png"
+    }
   },
   {
     "title": "Biden Won—Now What?",
     "link": "https://www.34st.com/article/2020/11/biden-won-the-election-who-won-trump-or-biden",
     "authors": "Hannah Yusuf",
-    "abstract": "Biden won the election, but there's still more work to be done."
+    "abstract": "Biden won the election, but there's still more work to be done.",
+    "image": {
+      "src": "../../../images/2020/34st-election/biden.jpg"
+    }
   },
   {
     "title": "Letter From the Election Issue Editor",
     "link": "https://www.34st.com/article/2020/11/letter-from-the-election-issue-editor-karin-hananel",
     "authors": "Karin Hananel",
-    "abstract": "Hope, hangovers, and some profanity."
+    "abstract": "Hope, hangovers, and some profanity.",
+    "image": {
+      "src": "../../../images/2020/34st-election/white-house.png"
+    }
   }
 ]

@@ -2,7 +2,10 @@
   {
     "title": "'Borat Subsequent Moviefilm:' A Review",
     "link": "https://www.34st.com/article/2020/11/borat-subsequent-moviefilm-sequel-sacha-baron-cohen-maria-bakalova-cultural-learning-america-politics-election-coronavirus",
-    "authors": "Caylen David"
+    "authors": "Caylen David",
+    "image": {
+      "src": "../../../images/2020/34st-election/borat.png"
+    }
   },
   {
     "title": "‘Star Trek,’ Syncopes, and the Hypothetical Fall of America",
@@ -17,6 +20,9 @@
   {
     "title": "Does the Music Industry Actually Care if You Voted?",
     "link": "https://www.34st.com/article/2020/11/payola-vote-election-music-business-democracy-big-three-voting-initiative-pr-rhetoric",
-    "authors": "Phil Steinkrauss"
+    "authors": "Phil Steinkrauss",
+    "image": {
+      "src": "../../../images/2020/34st-election/radio.png"
+    }
   }
 ]

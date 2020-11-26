@@ -2,11 +2,17 @@
   {
     "title": "Philly Artist Bill Strobel Recreates Lady Justice With Chalk",
     "link": "https://www.34st.com/article/2020/11/bill-strobel-lady-justice-chalk-mtv-vote-early-day-love-park",
-    "authors": ""
+    "authors": "",
+    "image": {
+      "src": "../../../images/2020/34st-election/bill-strobel.png"
+    }
   },
   {
     "title": "Pre–2020 Election, Protest Art Demands Change",
     "link": "https://www.34st.com/article/2020/11/protest-art-enough-of-trump-philadelphia-lgbtq",
-    "authors": "Allison Stillman"
+    "authors": "Allison Stillman",
+    "image": {
+      "src": "../../../images/2020/34st-election/vote.jpg"
+    }
   }
 ]

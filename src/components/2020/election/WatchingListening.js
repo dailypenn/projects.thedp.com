@@ -27,39 +27,50 @@ const ColoredColBox = s(Col)`
 `
 
 const Articles = () => {
-  const { borat, music } = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
-      borat: file(relativePath: { eq: "borat.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-
-      music: file(relativePath: { eq: "radio.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
+      allFile(filter: {relativePath: {eq: "watching.json"}}) {
+        edges {
+          node {
+            childrenWatchingJson {
+              title
+              authors
+              link
+              image {
+                src {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
     }
   `)
+
+  const {
+    node: { childrenWatchingJson: articles },
+  } = data.allFile.edges[0]
+
   return (
     <>
       <div>
-        <StyledLink href={StreetArticles[0].link} target="_blank">
-          <Img fluid={borat.childImageSharp.fluid} />
-          <Title>{StreetArticles[0].title}</Title>
-          <Author>BY {StreetArticles[0].authors}</Author>
+        <StyledLink href={articles[0].link} target="_blank">
+          <Img fluid={articles[0].image.src.childImageSharp.fluid} />
+          <Title>{articles[0].title}</Title>
+          <Author>BY {articles[0].authors}</Author>
         </StyledLink>
       </div>
       <Row style={{ margin: '2rem 0' }}>
         <ColoredColBox sm={12} md={5} borderColor="#019459">
-          <StyledLink href={StreetArticles[1].link} target="_blank">
-            <Title> {StreetArticles[1].title} </Title>
-            <Author>BY {StreetArticles[1].authors}</Author>
+          <StyledLink href={articles[1].link} target="_blank">
+            <Title> {articles[1].title} </Title>
+            <Author>BY {articles[1].authors}</Author>
           </StyledLink>
         </ColoredColBox>
         <ColoredColBox
@@ -67,17 +78,17 @@ const Articles = () => {
           md={{ span: 5, offset: 2 }}
           borderColor="#1500FF"
         >
-          <StyledLink href={StreetArticles[2].link} target="_blank">
-            <Title> {StreetArticles[2].title} </Title>
-            <Author>BY {StreetArticles[2].authors}</Author>
+          <StyledLink href={articles[2].link} target="_blank">
+            <Title> {articles[2].title} </Title>
+            <Author>BY {articles[2].authors}</Author>
           </StyledLink>
         </ColoredColBox>
       </Row>
       <div>
-        <StyledLink href={StreetArticles[3].link} target="_blank">
-          <Img fluid={music.childImageSharp.fluid} />
-          <Title> {StreetArticles[3].title} </Title>
-          <Author>BY {StreetArticles[3].authors}</Author>
+        <StyledLink href={articles[3].link} target="_blank">
+          <Img fluid={articles[3].image.src.childImageSharp.fluid} />
+          <Title> {articles[3].title} </Title>
+          <Author>BY {articles[3].authors}</Author>
         </StyledLink>
       </div>
     </>

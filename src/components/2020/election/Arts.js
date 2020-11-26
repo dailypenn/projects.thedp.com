@@ -22,32 +22,43 @@ const EditorTitle = s.h1`
 `
 
 const Arts = () => {
-  const { billStrobel, vote } = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
-      billStrobel: file(relativePath: { eq: "bill-strobel.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000, maxHeight: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-
-      vote: file(relativePath: { eq: "vote.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
+      allFile(filter: {relativePath: {eq: "arts.json"}}) {
+        edges {
+          node {
+            childrenArtsJson {
+              title
+              authors
+              link
+              image {
+                src {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
     }
   `)
+
+const {
+  node: { childrenArtsJson: articles },
+} = data.allFile.edges[0]
+
   return (
     <Wrapper id="art">
       <SectionHeader>ARTS</SectionHeader>
       <StyledRow padding="10">
         <Col md={6} style={{ marginBottom: '1rem' }}>
-          <StyledLink href={Articles[0].link} target="_blank">
-            <BackgroundImage fluid={billStrobel.childImageSharp.fluid}>
+          <StyledLink href={articles[0].link} target="_blank">
+            <BackgroundImage fluid={articles[0].image.src.childImageSharp.fluid}>
               <LeftTitle>
                 <EditorTitle style={{ paddingTop: '1rem' }}>
                   {' '}
@@ -55,20 +66,20 @@ const Arts = () => {
                 </EditorTitle>
                 <Title left larger style={{ color: 'white' }}>
                   {' '}
-                  {Articles[0].title}{' '}
+                  {articles[0].title}{' '}
                 </Title>
               </LeftTitle>
             </BackgroundImage>
           </StyledLink>
         </Col>
         <Col md={6}>
-          <StyledLink href={Articles[1].link} target="_blank">
-            <Img fluid={vote.childImageSharp.fluid} />
+          <StyledLink href={articles[1].link} target="_blank">
+            <Img fluid={articles[1].image.src.childImageSharp.fluid} />
             <Title center larger>
               {' '}
-              {Articles[1].title}{' '}
+              {articles[1].title}{' '}
             </Title>
-            <Author center>BY {Articles[1].authors}</Author>
+            <Author center>BY {articles[1].authors}</Author>
           </StyledLink>
         </Col>
       </StyledRow>

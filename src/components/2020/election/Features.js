@@ -9,8 +9,6 @@ import { SectionHeader, Title, Author, Wrapper, StyledRow } from './shared'
 import { CANELA_REGULAR, FUTURA_REGULAR } from '../../../utils/font'
 import { StyledLink, Ads } from '../../shared'
 
-import Articles from '../../../content/json/2020/34st-election/features.json'
-
 const FeatureWrapper = s.div`
   text-align: right;
   padding: 6.5rem 1.5rem 6.5rem 8rem;
@@ -34,51 +32,62 @@ const FeatureAuthor = s.div`
 `
 
 const Features = () => {
-  const { left, right } = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
-      left: file(relativePath: { eq: "engagement.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-
-      right: file(relativePath: { eq: "republican.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000, maxHeight: 600) {
-            ...GatsbyImageSharpFluid
+      allFile(filter: {relativePath: {eq: "features.json"}}) {
+        edges {
+          node {
+            childrenFeaturesJson {
+              title
+              abstract
+              authors
+              link
+              image {
+                src {
+                  childImageSharp {
+                    fluid(maxWidth: 1000, maxHeight: 1000) {
+                      ...GatsbyImageSharpFluid
+                      src
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
     }
   `)
+
+  const {
+    node: { childrenFeaturesJson: articles },
+  } = data.allFile.edges[0]
+
   return (
     <Wrapper id="features">
       <SectionHeader>FEATURES</SectionHeader>
       <StyledRow padding="10">
         <Col md={5}>
-          <StyledLink href={Articles[0].link} target="_blank">
-            <Img fluid={left.childImageSharp.fluid} />
+          <StyledLink href={articles[0].link} target="_blank">
+            <Img fluid={articles[0].image.src.childImageSharp.fluid} />
             <Title>
               <b>
-                There's a limit to what can be expressed through the voting
-                process
+                {articles[0].abstract.split(',')[0]}
               </b>
-              , but civic engagement doesn't end on Election Day.
+              ,{articles[0].abstract.split(',')[1]}
             </Title>
-            <Author>BY PEARL LIU</Author>
+            <Author>BY {articles[0].authors}</Author>
           </StyledLink>
         </Col>
         <Col md={7}>
-          <StyledLink href={Articles[1].link} target="_blank">
+          <StyledLink href={articles[1].link} target="_blank">
             <BackgroundImage
-              fluid={right.childImageSharp.fluid}
+              fluid={articles[1].image.src.childImageSharp.fluid}
               style={{ border: 'none' }}
             >
               <FeatureWrapper>
-                <FeatureTitle> {Articles[1].abstract} </FeatureTitle>
-                <FeatureAuthor> BY DENALI SAGNER </FeatureAuthor>
+                <FeatureTitle> {articles[1].abstract} </FeatureTitle>
+                <FeatureAuthor> BY {articles[1].author} </FeatureAuthor>
               </FeatureWrapper>
             </BackgroundImage>
           </StyledLink>
