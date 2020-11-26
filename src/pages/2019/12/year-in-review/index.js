@@ -1,6 +1,6 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import s from "styled-components"
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import s from 'styled-components'
 
 import {
   NavBar,
@@ -10,8 +10,8 @@ import {
   Opinion,
   Sports,
   Street,
-} from "../../../../components/2019/year-in-review"
-import { OPEN_SANS_REGULAR } from "../../../../utils/font"
+} from '../../../../components/2019/year-in-review'
+import { OPEN_SANS_REGULAR } from '../../../../utils/font'
 
 const Wrapper = s.div`
     a:hover {
@@ -83,8 +83,8 @@ const Index = () => (
       <Street />
       <MultiMedia />
       <Footer>
-        {" "}
-        Made with 🎉 by The Daily Pennsylvanian, © 2018. All rights reserved.{" "}
+        {' '}
+        Made with 🎉 by The Daily Pennsylvanian, © 2018. All rights reserved.{' '}
       </Footer>
     </Wrapper>
   </>

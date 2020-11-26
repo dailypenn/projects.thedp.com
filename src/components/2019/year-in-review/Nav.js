@@ -1,8 +1,8 @@
-import React from "react"
-import s from "styled-components"
-import { Link } from "gatsby"
-import { ROUGE_RED } from "./Typography"
-import { OPEN_SANS_BOLD } from "../../../utils/font"
+import React from 'react'
+import s from 'styled-components'
+import { Link } from 'gatsby'
+import { ROUGE_RED } from './Typography'
+import { OPEN_SANS_BOLD } from '../../../utils/font'
 
 const Nav = s.div`
     ${OPEN_SANS_BOLD}  

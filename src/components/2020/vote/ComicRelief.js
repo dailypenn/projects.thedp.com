@@ -1,10 +1,10 @@
-import React from "react"
-import s from "styled-components"
-import Img from "gatsby-image"
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react'
+import s from 'styled-components'
+import Img from 'gatsby-image'
+import { StaticQuery, graphql } from 'gatsby'
 
-import { FUTURA_REGULAR, FUTURA_BOLD } from "../../../utils/font"
-import { StyledAnchor } from "./shared"
+import { FUTURA_REGULAR, FUTURA_BOLD } from '../../../utils/font'
+import { StyledAnchor } from './shared'
 
 const Wrapper = s.div`
   padding: 3rem 0rem 3rem 0rem;
@@ -130,8 +130,8 @@ const ComicRelief = () => (
           <div id="utb" />
           <ImageWithLine>
             <h1>
-              {" "}
-              <img src="/img/utb-header.png" />{" "}
+              {' '}
+              <img src="/img/utb-header.png" />{' '}
             </h1>
           </ImageWithLine>
           <Subtitle>BROUGHT TO YOU BY UNDER THE BUTTON</Subtitle>
@@ -144,14 +144,14 @@ const ComicRelief = () => (
                     <Img fluid={article.img.src.childImageSharp.fluid} />
                     <p
                       style={{
-                        marginTop: "1rem",
-                        fontSize: "120%",
+                        marginTop: '1rem',
+                        fontSize: '120%',
                         lineHeight: 1.1,
                       }}
                     >
                       {article.title}
                     </p>
-                    <p style={{ marginTop: "1rem", fontSize: "90%" }}>
+                    <p style={{ marginTop: '1rem', fontSize: '90%' }}>
                       BY {article.author}
                     </p>
                   </Article>
@@ -165,7 +165,7 @@ const ComicRelief = () => (
             <ButtonImg
               src="/img/shenanigans-button.png"
               className="img-fluid"
-              style={{ height: "100px" }}
+              style={{ height: '100px' }}
             />
           </StyledAnchor>
         </Wrapper>

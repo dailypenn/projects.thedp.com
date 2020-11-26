@@ -1,5 +1,5 @@
-import React from "react"
-import s from "styled-components"
+import React from 'react'
+import s from 'styled-components'
 
 import {
   MoreStories,
@@ -14,11 +14,11 @@ import {
   METALLIC_GREY,
   LIGHT_BLUE_WHITE,
   FAINT_BLACK,
-} from "./Typography"
+} from './Typography'
 import {
   OPEN_SANS_REGULAR,
   DM_SERIF_DISPLAY_REGULAR,
-} from "../../../utils/font"
+} from '../../../utils/font'
 
 const Wrapper = s.div`
   background-color: ${LIGHT_BLUE_WHITE};
@@ -118,7 +118,7 @@ export const Opinion = () => (
             <AuthorImg>
               <OpinionImg
                 background={
-                  "https://snworksceo.imgix.net/dpn/416973f1-cfe6-4915-ad58-a2f69c16a950.sized-1000x1000.jpg?w=1000"
+                  'https://snworksceo.imgix.net/dpn/416973f1-cfe6-4915-ad58-a2f69c16a950.sized-1000x1000.jpg?w=1000'
                 }
               />
               <a href="https://www.thedp.com/staff/urooba-abid">
@@ -143,7 +143,7 @@ export const Opinion = () => (
             <AuthorImg>
               <OpinionImg
                 background={
-                  "https://snworksceo.imgix.net/dpn/debec73b-b048-4d5c-90fa-1892021d2c37.sized-1000x1000.png?w=1000"
+                  'https://snworksceo.imgix.net/dpn/debec73b-b048-4d5c-90fa-1892021d2c37.sized-1000x1000.png?w=1000'
                 }
               />
               <a href="https://www.thedp.com/staff/sophia-durose">
@@ -168,7 +168,7 @@ export const Opinion = () => (
             <AuthorImg>
               <OpinionImg
                 background={
-                  "https://pbs.twimg.com/profile_images/913471917004222464/nfI7Z1AG_400x400.jpg"
+                  'https://pbs.twimg.com/profile_images/913471917004222464/nfI7Z1AG_400x400.jpg'
                 }
               />
               <a href="https://www.thedp.com/staff/the-daily-pennsylvanian">
@@ -204,9 +204,9 @@ export const Opinion = () => (
             <div class="col-md-3 right-border-op narrow-col-left">
               <StyledStoryLink href="https://www.thedp.com/article/2019/10/philadelphia-gentrification-penn-bubble-ivy-league-upenn-philadelphia">
                 <SecondaryStory inverse>
-                  {" "}
+                  {' '}
                   Our relationship with Philadelphia is broken. Here’s how we
-                  fix it.{" "}
+                  fix it.{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Author opinion>ALFREDO PRATICÒ</Author>
@@ -214,8 +214,8 @@ export const Opinion = () => (
             <div class="col-md-3 narrow-col-left">
               <StyledStoryLink href="https://www.thedp.com/article/2019/01/admissions-ivy-league-harvard-duke-christy-qiu-upenn-philadelphia">
                 <SecondaryStory inverse>
-                  {" "}
-                  I looked at my Penn admissions file, and you should too{" "}
+                  {' '}
+                  I looked at my Penn admissions file, and you should too{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Author opinion> CHRISTY QIU </Author>

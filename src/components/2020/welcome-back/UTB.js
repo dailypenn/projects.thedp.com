@@ -1,15 +1,15 @@
-import React from "react"
-import s from "styled-components"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from 'react'
+import s from 'styled-components'
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
-import { KARLA_BOLD, KARLA_REGULAR, FJALLA_REGULAR } from "../../../utils/font"
-import BracketsText from "./BracketsText"
-import { StyledAnchor } from "./Typograph"
+import { KARLA_BOLD, KARLA_REGULAR, FJALLA_REGULAR } from '../../../utils/font'
+import BracketsText from './BracketsText'
+import { StyledAnchor } from './Typograph'
 
-const UTB_BLUE = "#456CB3"
-const HEADLINE_DARK_GRAY = "#283033"
-const SUBHEAD_LIGHT_GRAY = "#707070"
+const UTB_BLUE = '#456CB3'
+const HEADLINE_DARK_GRAY = '#283033'
+const SUBHEAD_LIGHT_GRAY = '#707070'
 
 const Wrapper = s.div` 
   text-align: center; 
@@ -83,7 +83,7 @@ const MoreLink = s.div`
 `
 
 const UTB_ARROW = () => (
-  <div style={{ color: UTB_BLUE, fontSize: "120%" }}> &#10230; </div>
+  <div style={{ color: UTB_BLUE, fontSize: '120%' }}> &#10230; </div>
 )
 
 const UTB = () => (
@@ -125,17 +125,17 @@ const UTB = () => (
             className="logo"
             src="/img/utb-logo-with-text.png"
             height="110px"
-            style={{ transform: "translate(0, -3.5rem)" }}
+            style={{ transform: 'translate(0, -3.5rem)' }}
           />
           <Title>
-            Under the Button is the University of Pennsylvania's <i>truly</i>{" "}
+            Under the Button is the University of Pennsylvania's <i>truly</i>{' '}
             independent satire publication
           </Title>
           <Subtitle>
             Think the Onion, but better (or worse, if you ask the DP).
           </Subtitle>
 
-          <div className="row" style={{ margin: "2rem 0", padding: "0 2rem" }}>
+          <div className="row" style={{ margin: '2rem 0', padding: '0 2rem' }}>
             {articles.map(article => (
               <div className="col-md">
                 <StyledAnchor href={article.link} target="_blank">

@@ -1,5 +1,5 @@
-import React from "react"
-import s from "styled-components"
+import React from 'react'
+import s from 'styled-components'
 
 import {
   Section,
@@ -16,7 +16,7 @@ import {
   MainHeader,
   FAINT_WHITE,
   FAINT_BLACK,
-} from "./Typography"
+} from './Typography'
 
 const Wrapper = s.div`
   /* Util classes */
@@ -76,9 +76,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/03/upenn-admissions-bribery-eric-furda-jerome-allen-college">
                   <PrimaryStory>
-                    {" "}
+                    {' '}
                     Furda says Penn will revisit admissions procedures in light
-                    of national bribery scandal{" "}
+                    of national bribery scandal{' '}
                   </PrimaryStory>
                 </a>
                 <Date> Mar. 14 </Date>
@@ -96,9 +96,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/03/admissions-scandal-upenn-singer-esformes-basketball-bribery">
                   <PrimaryStory>
-                    {" "}
+                    {' '}
                     Penn parent sent more than $400,000 to consultant at center
-                    of national admissions scandal{" "}
+                    of national admissions scandal{' '}
                   </PrimaryStory>
                 </a>
                 <Date> Mar. 18 </Date>
@@ -116,9 +116,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/04/penn-jerome-allen-philip-esformes-trial-jury-convicts-usc-yale-admissions-20-federal-charges">
                   <PrimaryStory>
-                    {" "}
+                    {' '}
                     Penn parent found guilty in case involving bribery of Jerome
-                    Allen for college admission{" "}
+                    Allen for college admission{' '}
                   </PrimaryStory>
                 </a>
                 <Date> Apr. 5 </Date>
@@ -136,9 +136,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/07/penn-athletics-jerome-allen-removed-hall-of-fame-trial-bribery-esformes-mens-basketball">
                   <PrimaryStory>
-                    {" "}
+                    {' '}
                     Penn Athletics removes Jerome Allen from its Hall of Fame
-                    after federal conviction{" "}
+                    after federal conviction{' '}
                   </PrimaryStory>
                 </a>
                 <Date> July 2 </Date>
@@ -160,9 +160,9 @@ export const News = () => (
             <div className="col-md-3 right-border">
               <StyledStoryLink href="https://www.thedp.com/article/2019/03/penn-athletics-jerome-allen-philip-esformes-trial-update-bribery-basketball-morris">
                 <SecondaryStory>
-                  {" "}
+                  {' '}
                   Updated: Former Penn coach Jerome Allen testifies, implicating
-                  former assistant{" "}
+                  former assistant{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date> Mar. 10 </Date>
@@ -170,9 +170,9 @@ export const News = () => (
             <div className="col-md-3 right-border narrow-col-left">
               <StyledStoryLink href="https://www.thedp.com/article/2019/03/ivy-league-college-admissions-bribery-justice-department-jerome-allen">
                 <SecondaryStory>
-                  {" "}
+                  {' '}
                   Penn not among schools named in nationwide college admissions
-                  scandal{" "}
+                  scandal{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date> Mar. 12 </Date>
@@ -180,9 +180,9 @@ export const News = () => (
             <div className="col-md-3 right-border narrow-col-left">
               <StyledStoryLink href="https://www.thedp.com/article/2019/03/bribery-esformes-scandal-william-singer-college-admissions">
                 <SecondaryStory>
-                  {" "}
+                  {' '}
                   Parent who bribed former Penn coach contacted consultant at
-                  center of admissions scandal{" "}
+                  center of admissions scandal{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date> Mar. 16 </Date>
@@ -190,9 +190,9 @@ export const News = () => (
             <div className="col-md-3 narrow-col-left">
               <StyledStoryLink href="https://www.thedp.com/article/2019/07/jerome-allen-probation-accepting-bribes-penn-mens-basketball-college-admissions-scandal-esformes">
                 <SecondaryStory>
-                  {" "}
+                  {' '}
                   Former Penn coach Jerome Allen avoids jail time in admissions
-                  bribery scandal{" "}
+                  bribery scandal{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date> July 2 </Date>
@@ -239,9 +239,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/10/stuart-weitzman-school-of-design-penn-wharton">
                   <PrimaryStory inverse>
-                    {" "}
+                    {' '}
                     ‘We were completely blindsided': PennDesign students
-                    frustrated by the school’s renaming{" "}
+                    frustrated by the school’s renaming{' '}
                   </PrimaryStory>
                 </a>
                 <Date inverse> Oct. 2 </Date>
@@ -259,9 +259,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/11/penn-carey-law-school-ruger-donation-renaming">
                   <PrimaryStory inverse>
-                    {" "}
+                    {' '}
                     Hundreds sign petition calling to change new 'Carey Law'
-                    name back to 'Penn Law'{" "}
+                    name back to 'Penn Law'{' '}
                   </PrimaryStory>
                 </a>
                 <Date inverse> Nov. 10 </Date>
@@ -279,9 +279,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/11/penn-carey-law-twitter-parody-accounts">
                   <PrimaryStory inverse>
-                    {" "}
+                    {' '}
                     A student took over the @PennLaw Twitter. Now, the school
-                    has shut down the parody account.{" "}
+                    has shut down the parody account.{' '}
                   </PrimaryStory>
                 </a>
                 <Date inverse> Nov. 18 </Date>
@@ -299,9 +299,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/11/penn-law-carey-renaming-change">
                   <PrimaryStory inverse>
-                    {" "}
+                    {' '}
                     ‘Carey Law’ changes its shortened name back to ‘Penn Law’
-                    after extensive backlash{" "}
+                    after extensive backlash{' '}
                   </PrimaryStory>
                 </a>
                 <Date inverse> Nov. 18 </Date>
@@ -323,9 +323,9 @@ export const News = () => (
             <div className="col-md-3 right-border-inverse">
               <StyledStoryLink href="https://www.thedp.com/article/2019/02/penn-design-stuart-weitzman-donation-fashion-philadelphia">
                 <SecondaryStory inverse>
-                  {" "}
+                  {' '}
                   PennDesign renamed after fashion icon Stuart Weitzman —
-                  relieving financial uncertainty{" "}
+                  relieving financial uncertainty{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date inverse> Feb. 26 </Date>
@@ -333,9 +333,9 @@ export const News = () => (
             <div className="col-md-3 right-border-inverse narrow-col-left">
               <StyledStoryLink href="https://www.thedp.com/article/2019/11/penn-law-carey-foundation-donation-renaming">
                 <SecondaryStory inverse>
-                  {" "}
+                  {' '}
                   Penn Law renamed ‘Carey Law School’ following record $125
-                  million donation{" "}
+                  million donation{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date inverse> Nov. 8 </Date>
@@ -343,9 +343,9 @@ export const News = () => (
             <div className="col-md-3 right-border-inverse narrow-col-left">
               <StyledStoryLink href="https://www.thedp.com/article/2019/11/penn-carey-law-ruger-rename-backlash-student-alumni">
                 <SecondaryStory inverse>
-                  {" "}
+                  {' '}
                   'A complete nightmare': Penn Law students and alums reflect on
-                  name-change process{" "}
+                  name-change process{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date inverse> Nov. 19 </Date>
@@ -353,9 +353,9 @@ export const News = () => (
             <div className="col-md-3 narrow-col-left">
               <StyledStoryLink href="https://www.thedp.com/article/2019/11/penn-law-carey-ruger-rename-town-hall">
                 <SecondaryStory inverse>
-                  {" "}
+                  {' '}
                   Admin considers changing 'Carey Law' back to 'Penn Law' after
-                  student backlash{" "}
+                  student backlash{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date inverse> Nov. 12 </Date>
@@ -397,9 +397,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/07/amy-wax-penn-law-dean-immigration">
                   <PrimaryStory>
-                    {" "}
+                    {' '}
                     Penn Law Dean Ted Ruger on Amy Wax’s remarks: 'bigoted' at
-                    best, 'racist' at worst{" "}
+                    best, 'racist' at worst{' '}
                   </PrimaryStory>
                 </a>
                 <Date> July 23 </Date>
@@ -417,9 +417,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/07/amy-wax-penn-petition-racism-immigration-conservativism-conference">
                   <PrimaryStory>
-                    {" "}
+                    {' '}
                     Thousands petition for Amy Wax to be reprimanded by Penn
-                    over racist remarks{" "}
+                    over racist remarks{' '}
                   </PrimaryStory>
                 </a>
                 <Date> July 24 </Date>
@@ -437,9 +437,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/10/penn-amy-wax-protest-law-philadelphia">
                   <PrimaryStory>
-                    {" "}
+                    {' '}
                     Marching together, Penn Law students call on University to
-                    fire Amy Wax{" "}
+                    fire Amy Wax{' '}
                   </PrimaryStory>
                 </a>
                 <Date> Oct. 14 </Date>
@@ -461,9 +461,9 @@ export const News = () => (
             <div className="col-md-3 right-border">
               <StyledStoryLink href="https://www.thedp.com/article/2019/07/penn-amy-wax-national-conservatism-conference-immigration-racism">
                 <SecondaryStory>
-                  {" "}
+                  {' '}
                   Penn Law prof Amy Wax claims America is 'better off with more
-                  whites and fewer nonwhites'{" "}
+                  whites and fewer nonwhites'{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date> July 18 </Date>
@@ -471,9 +471,9 @@ export const News = () => (
             <div className="col-md-3 right-border narrow-col-left">
               <StyledStoryLink href="https://www.thedp.com/article/2019/10/amy-wax-tenure-undergraduate-assembly-resolution">
                 <SecondaryStory>
-                  {" "}
+                  {' '}
                   Undergraduate Assembly demands that Penn fire Amy Wax for
-                  violating University policy{" "}
+                  violating University policy{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date> Oct. 7 </Date>
@@ -481,9 +481,9 @@ export const News = () => (
             <div className="col-md-3 narrow-col-left">
               <StyledStoryLink href="https://www.thedp.com/article/2019/11/amy-wax-resolution-undergraduate-assembly-penn-law-update">
                 <SecondaryStory>
-                  {" "}
+                  {' '}
                   NEC amends UA resolution to demand Penn bar Amy Wax from
-                  teaching instead of firing her{" "}
+                  teaching instead of firing her{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date> Nov. 14 </Date>
@@ -530,9 +530,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/09/penn-fossil-free-fridays-sit-ins-climate-change">
                   <PrimaryStory inverse>
-                    {" "}
+                    {' '}
                     Weekly Fossil Free Penn sit-ins demand a public town hall on
-                    University's investments{" "}
+                    University's investments{' '}
                   </PrimaryStory>
                 </a>
                 <Date inverse> Sep. 29 </Date>
@@ -550,9 +550,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/10/climate-sustainability-action-plan-3-0-environment-upenn">
                   <PrimaryStory inverse>
-                    {" "}
+                    {' '}
                     Penn's third climate action plan incorporates sustainability
-                    and student outreach{" "}
+                    and student outreach{' '}
                   </PrimaryStory>
                 </a>
                 <Date inverse> Oct. 16 </Date>
@@ -570,9 +570,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/11/penn-board-of-trustees-meeting-fossil-free-protest">
                   <PrimaryStory inverse>
-                    {" "}
+                    {' '}
                     About 100 Fossil Free Penn members shut down Board of
-                    Trustees meeting{" "}
+                    Trustees meeting{' '}
                   </PrimaryStory>
                 </a>
                 <Date inverse> Nov. 8 </Date>
@@ -594,9 +594,9 @@ export const News = () => (
             <div className="col-md-3 right-border-inverse">
               <StyledStoryLink href="https://www.thedp.com/article/2019/09/climate-strike-philadelphia-fossil-free-penn">
                 <SecondaryStory inverse>
-                  {" "}
+                  {' '}
                   Students and faculty march in 'Philly Climate Strike' to
-                  demand action on climate change{" "}
+                  demand action on climate change{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date inverse> Sep. 21 </Date>
@@ -604,9 +604,9 @@ export const News = () => (
             <div className="col-md-3 right-border-inverse narrow-col-left">
               <StyledStoryLink href="https://www.thedp.com/article/2019/11/fossil-free-penn-fossil-fuels-ivy-league-upenn-philadelphia">
                 <SecondaryStory inverse>
-                  {" "}
+                  {' '}
                   Guest Column by seven Penn faculty members | We support
-                  student climate change action{" "}
+                  student climate change action{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date inverse> Nov. 11 </Date>
@@ -614,9 +614,9 @@ export const News = () => (
             <div className="col-md-3 narrow-col-left">
               <StyledStoryLink href="https://www.thedp.com/article/2019/12/penn-environmental-innovations-initiative-amy-gutmann-pritchett">
                 <SecondaryStory inverse>
-                  {" "}
+                  {' '}
                   Penn announces new 'Environmental Innovations Initiative' for
-                  climate change research{" "}
+                  climate change research{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date inverse>Dec. 4</Date>
@@ -693,9 +693,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/01/elizabeth-warren-president-penn-law-professor-students">
                   <PrimaryStory>
-                    {" "}
+                    {' '}
                     'Whip-smart' and 'well-liked': Elizabeth Warren's Penn Law
-                    students remember their professor{" "}
+                    students remember their professor{' '}
                   </PrimaryStory>
                 </a>
                 <Date> Jan. 22 </Date>
@@ -713,9 +713,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/04/joe-biden-president-2020-penn-center-democrat">
                   <PrimaryStory>
-                    {" "}
+                    {' '}
                     Joe's leaving Penn for now. But the Biden Center isn't going
-                    anywhere.{" "}
+                    anywhere.{' '}
                   </PrimaryStory>
                 </a>
                 <Date> Apr. 28 </Date>
@@ -737,9 +737,9 @@ export const News = () => (
             <div className="col-md-3 right-border">
               <StyledStoryLink href="https://www.thedp.com/article/2019/02/michael-cohen-testimony-donald-trump-wharton-penn-college-grades">
                 <SecondaryStory>
-                  {" "}
+                  {' '}
                   Michael Cohen testifies that he threatened Penn not to release
-                  Trump's grades{" "}
+                  Trump's grades{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date> Feb. 27 </Date>
@@ -747,9 +747,9 @@ export const News = () => (
             <div className="col-md-3 right-border narrow-col-left">
               <StyledStoryLink href="https://www.thedp.com/article/2019/08/penn-for-joe-biden-president-2020-democrat-campaign">
                 <SecondaryStory>
-                  {" "}
+                  {' '}
                   Meet Penn for Biden: the group backing the former vice
-                  president’s bid for the White House{" "}
+                  president’s bid for the White House{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date> Aug. 22 </Date>
@@ -757,9 +757,9 @@ export const News = () => (
             <div className="col-md-3 narrow-col-left">
               <StyledStoryLink href="https://www.thedp.com/article/2019/02/elizabeth-warren-presidential-campaign-2020-launch-penn-law">
                 <SecondaryStory>
-                  {" "}
+                  {' '}
                   Former Penn prof. Elizabeth Warren officially launches 2020
-                  presidential bid{" "}
+                  presidential bid{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date> Feb. 9 </Date>
@@ -810,9 +810,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/08/penn-new-college-house-west-construction-noise">
                   <PrimaryStory inverse>
-                    {" "}
+                    {' '}
                     Students protest 'ridiculous' New College House West
-                    construction noise{" "}
+                    construction noise{' '}
                   </PrimaryStory>
                 </a>
                 <Date inverse> Oct. 27 </Date>
@@ -830,9 +830,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/09/penn-new-college-house-west-construction">
                   <PrimaryStory inverse>
-                    {" "}
+                    {' '}
                     Dining porch, courtyard, meditation rooms: Penn reveals NCHW
-                    details{" "}
+                    details{' '}
                   </PrimaryStory>
                 </a>
                 <Date inverse> Sep. 20 </Date>
@@ -850,9 +850,9 @@ export const News = () => (
               <div className="col-md-6">
                 <a href="https://www.thedp.com/article/2019/11/quad-residents-wharton-building-noise-construction-penn">
                   <PrimaryStory inverse>
-                    {" "}
+                    {' '}
                     Quad residents upset with noisy construction of the Wharton
-                    Academic Research Building{" "}
+                    Academic Research Building{' '}
                   </PrimaryStory>
                 </a>
                 <Date inverse> Nov. 25 </Date>
@@ -874,9 +874,9 @@ export const News = () => (
             <div className="col-md-3 right-border-inverse">
               <StyledStoryLink href="https://www.thedp.com/article/2019/01/new-college-house-west-construction-penn-january-update">
                 <SecondaryStory inverse>
-                  {" "}
+                  {' '}
                   New College House West construction on schedule for fall 2021
-                  opening{" "}
+                  opening{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date inverse> Jan. 15 </Date>
@@ -884,9 +884,9 @@ export const News = () => (
             <div className="col-md-3 right-border-inverse narrow-col-left">
               <StyledStoryLink href="https://www.thedp.com/article/2019/02/pavilion-upenn-hospital-university-of-pennsylvania-2021-floorplan-design">
                 <SecondaryStory inverse>
-                  {" "}
+                  {' '}
                   Penn Medicine changes design for $1.5 billion Pavilion to
-                  optimize patient room layouts{" "}
+                  optimize patient room layouts{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date inverse> Feb. 12 </Date>
@@ -894,9 +894,9 @@ export const News = () => (
             <div className="col-md-3 narrow-col-left">
               <StyledStoryLink href="https://www.thedp.com/article/2019/03/penn-wharton-tangen-hall-student-entrepreneurship-amy-gutmann">
                 <SecondaryStory inverse>
-                  {" "}
+                  {' '}
                   Construction for Tangen Hall, $46 million student
-                  entrepreneurial hub, will finish by 2020{" "}
+                  entrepreneurial hub, will finish by 2020{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date inverse> Feb. 28 </Date>

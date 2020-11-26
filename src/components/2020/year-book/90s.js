@@ -1,9 +1,9 @@
-import React from "react"
-import s from "styled-components"
-import Img from "gatsby-image"
-import { StaticQuery, graphql } from "gatsby"
-import accentImage from "../../../content/images/2020/year-book/90s-accent.png"
-import { ROBOTO_REGULAR } from "../../../utils/font"
+import React from 'react'
+import s from 'styled-components'
+import Img from 'gatsby-image'
+import { StaticQuery, graphql } from 'gatsby'
+import accentImage from '../../../content/images/2020/year-book/90s-accent.png'
+import { ROBOTO_REGULAR } from '../../../utils/font'
 
 const SeventyBody = s.div`
   ${ROBOTO_REGULAR}
@@ -92,7 +92,7 @@ const Nineties = () => (
           <div className="row" id="90s">
             <SeventyColumn
               className="col-md-6"
-              style={{ padding: "0", margin: "0" }}
+              style={{ padding: '0', margin: '0' }}
             >
               <ImgWrapper>
                 <NinetyHeader fluid={ninetyheadline.childImageSharp.fluid} />
@@ -152,7 +152,7 @@ const Nineties = () => (
                 </p>
               </SeventyBody>
             </SeventyColumn>
-            <div className="col" style={{ paddingRight: "2rem" }}>
+            <div className="col" style={{ paddingRight: '2rem' }}>
               <Img fluid={main.childImageSharp.fluid} />
             </div>
           </div>

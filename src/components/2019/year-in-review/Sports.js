@@ -1,5 +1,5 @@
-import React from "react"
-import s from "styled-components"
+import React from 'react'
+import s from 'styled-components'
 
 import {
   MoreStories,
@@ -15,7 +15,7 @@ import {
   Section,
   FAINT_WHITE,
   FAINT_BLACK,
-} from "./Typography"
+} from './Typography'
 
 const Wrapper = s.div`
   /* Util classes */
@@ -76,9 +76,9 @@ export const Sports = () => (
               <div class="col-md-6">
                 <a href="https://www.thedp.com/article/2019/04/penn-volleyball-iain-braddak-athletics-mistreatment-mental-health-upenn-coach">
                   <PrimaryStory>
-                    {" "}
+                    {' '}
                     'No one is listening': Under new coach, players lose hope
-                    amid alleged mistreatment{" "}
+                    amid alleged mistreatment{' '}
                   </PrimaryStory>
                 </a>
                 <Date> Apr. 18 </Date>
@@ -96,9 +96,9 @@ export const Sports = () => (
               <div class="col-md-6">
                 <a href="https://www.thedp.com/article/2019/05/penn-volleyball-coach-iain-braddak-mistreatment-upenn-hiring-rudy-fuller-valenti">
                   <PrimaryStory>
-                    {" "}
+                    {' '}
                     Amid volleyball controversy, Penn Athletics stands with
-                    coach despite players' concerns{" "}
+                    coach despite players' concerns{' '}
                   </PrimaryStory>
                 </a>
                 <Date> May 5 </Date>
@@ -116,9 +116,9 @@ export const Sports = () => (
               <div class="col-md-6">
                 <a href="https://www.thedp.com/article/2019/10/penn-volleyball-post-allegations-focus-margaret-planek-autumn-leak-iain-braddak">
                   <PrimaryStory>
-                    {" "}
+                    {' '}
                     After last spring's mediation efforts, Penn volleyball says
-                    its focus is on the future{" "}
+                    its focus is on the future{' '}
                   </PrimaryStory>
                 </a>
                 <Date> Oct. 2 </Date>
@@ -136,9 +136,9 @@ export const Sports = () => (
               <div class="col-md-6">
                 <a href="https://www.thedp.com/article/2019/11/penn-volleyball-season-canceled-2019-posters">
                   <PrimaryStory>
-                    {" "}
+                    {' '}
                     Remainder of Penn volleyball's season canceled, Penn
-                    Athletics announces{" "}
+                    Athletics announces{' '}
                   </PrimaryStory>
                 </a>
                 <Date> Nov. 13 </Date>
@@ -187,8 +187,8 @@ export const Sports = () => (
               <div class="col-md-6">
                 <a href="https://www.thedp.com/article/2019/01/penn-football-125-years-franklin-field-celebration-campaign">
                   <PrimaryStory inverse>
-                    {" "}
-                    Yearlong celebration announced for Penn's Franklin Field{" "}
+                    {' '}
+                    Yearlong celebration announced for Penn's Franklin Field{' '}
                   </PrimaryStory>
                 </a>
                 <Date inverse> Jan. 17 </Date>
@@ -206,9 +206,9 @@ export const Sports = () => (
               <div class="col-md-6">
                 <a href="https://www.thedp.com/article/2019/04/penn-relays-track-125-history-owens-bannister-batdorf-haines">
                   <PrimaryStory inverse>
-                    {" "}
+                    {' '}
                     125 years strong: A look back at some of the biggest moments
-                    in Penn Relays history{" "}
+                    in Penn Relays history{' '}
                   </PrimaryStory>
                 </a>
                 <Date inverse> Apr. 24 </Date>
@@ -226,8 +226,8 @@ export const Sports = () => (
               <div class="col-md-6">
                 <a href="https://www.thedp.com/article/2019/08/125-years-franklin-field-anniversary-penn-football-ivy-league-ncaa-george-h-woodruff-ray-priore">
                   <PrimaryStory inverse>
-                    {" "}
-                    125 years of Franklin Field: The home of Penn football{" "}
+                    {' '}
+                    125 years of Franklin Field: The home of Penn football{' '}
                   </PrimaryStory>
                 </a>
                 <Date inverse> Aug. 8 </Date>
@@ -244,16 +244,16 @@ export const Sports = () => (
               <MoreStoriesHeader inverse>MORE STORIES</MoreStoriesHeader>
               <StyledStoryLink href="https://www.thedp.com/article/2019/08/125-years-franklin-field-anniversary-penn-track-and-field-penn-relays-jesse-owens-john-haines">
                 <SecondaryStory inverse>
-                  {" "}
-                  125 years of Franklin Field: The birthplace of Penn Relays{" "}
+                  {' '}
+                  125 years of Franklin Field: The birthplace of Penn Relays{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date inverse> Aug. 16 </Date>
               <StyledStoryLink href="https://www.thedp.com/article/2019/09/penn-football-throwback-uniforms-red-blue-franklin-field-125-anniversary">
                 <SecondaryStory inverse>
-                  {" "}
+                  {' '}
                   Penn football unveils throwback uniforms for 125th anniversary
-                  of Franklin Field{" "}
+                  of Franklin Field{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date inverse> Sep. 25 </Date>
@@ -295,9 +295,9 @@ export const Sports = () => (
               <div class="col-md-6">
                 <a href="https://www.thedp.com/article/2019/03/penn-athletics-jerome-allen-philip-esformes-trial-update-bribery-basketball-morris">
                   <PrimaryStory>
-                    {" "}
+                    {' '}
                     Updated: Former Penn coach Jerome Allen testifies,
-                    implicating former assistant{" "}
+                    implicating former assistant{' '}
                   </PrimaryStory>
                 </a>
                 <Date> Mar. 10 </Date>
@@ -315,9 +315,9 @@ export const Sports = () => (
               <div class="col-md-6">
                 <a href="https://www.thedp.com/article/2019/03/penn-jerome-allen-esformes-ira-bowman-smrt-investigation-bribery-scandal-ncaa-admission">
                   <PrimaryStory>
-                    {" "}
+                    {' '}
                     Penn Athletics declines to further comment on Jerome Allen
-                    investigation{" "}
+                    investigation{' '}
                   </PrimaryStory>
                 </a>
                 <Date> Mar. 14 </Date>
@@ -334,25 +334,25 @@ export const Sports = () => (
               <MoreStoriesHeader>MORE STORIES</MoreStoriesHeader>
               <StyledStoryLink href="https://www.thedp.com/article/2019/07/jerome-allen-probation-accepting-bribes-penn-mens-basketball-college-admissions-scandal-esformes">
                 <SecondaryStory>
-                  {" "}
+                  {' '}
                   Former Penn coach Jerome Allen avoids jail time in admissions
-                  bribery scandal{" "}
+                  bribery scandal{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date> July 2 </Date>
               <StyledStoryLink href="https://www.thedp.com/article/2019/07/penn-athletics-jerome-allen-removed-hall-of-fame-trial-bribery-esformes-mens-basketball">
                 <SecondaryStory>
-                  {" "}
+                  {' '}
                   Penn Athletics removes Jerome Allen from its Hall of Fame
-                  after federal conviction{" "}
+                  after federal conviction{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date> July 2 </Date>
               <StyledStoryLink href="https://www.thedp.com/article/2019/07/penn-athletics-jerome-allen-admissions-bribery-scandal-varsity-blues-ncaa-ivy-league-mens-basketball">
                 <SecondaryStory>
-                  {" "}
+                  {' '}
                   A year after the scandal broke, Penn Athletics remains quiet
-                  on Jerome Allen{" "}
+                  on Jerome Allen{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date> July 20 </Date>
@@ -391,9 +391,9 @@ export const Sports = () => (
               <div class="col-md-6">
                 <a href="https://www.thedp.com/article/2019/01/penn-mens-basketball-saint-josephs-big-5-washington-three-point-shooting-charlie-brown">
                   <PrimaryStory inverse>
-                    {" "}
+                    {' '}
                     Penn men's basketball completes sweep of Big 5 opponents by
-                    beating Saint Joseph's, 78-70{" "}
+                    beating Saint Joseph's, 78-70{' '}
                   </PrimaryStory>
                 </a>
                 <Date inverse> Jan. 26 </Date>
@@ -411,9 +411,9 @@ export const Sports = () => (
               <div class="col-md-6">
                 <a href="https://www.thedp.com/article/2019/03/penn-mens-basketball-brown-recap-ivy-league-tournament-goodman-brodeur">
                   <PrimaryStory inverse>
-                    {" "}
+                    {' '}
                     Penn men's basketball clinches Ivy Tournament berth with win
-                    over Brown{" "}
+                    over Brown{' '}
                   </PrimaryStory>
                 </a>
                 <Date inverse> Mar. 9 </Date>
@@ -431,9 +431,9 @@ export const Sports = () => (
               <div class="col-md-6">
                 <a href="https://www.thedp.com/article/2019/03/penn-womens-basketball-recap-brown-ivy-league-champions-parker-sterba">
                   <PrimaryStory inverse>
-                    {" "}
+                    {' '}
                     Penn women's basketball overpowers last-place Brown to win
-                    share of Ivy League title{" "}
+                    share of Ivy League title{' '}
                   </PrimaryStory>
                 </a>
                 <Date inverse> Mar. 9 </Date>
@@ -450,17 +450,17 @@ export const Sports = () => (
               <MoreStoriesHeader inverse>MORE STORIES</MoreStoriesHeader>
               <StyledStoryLink href="https://www.thedp.com/article/2019/03/penn-mens-basketball-ivy-league-tournament-madness-semifinal-recap-harvard">
                 <SecondaryStory inverse>
-                  {" "}
+                  {' '}
                   Penn men's basketball falls to Harvard, 66-58, in Ivy
-                  Tournament semifinals{" "}
+                  Tournament semifinals{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date inverse> Mar. 16 </Date>
               <StyledStoryLink href="https://www.thedp.com/article/2019/03/penn-womens-basketball-princeton-recap-ivy-league-championship-ncaa">
                 <SecondaryStory inverse>
-                  {" "}
+                  {' '}
                   Penn women's basketball falls to Princeton in Ivy Tournament
-                  final, 65-54{" "}
+                  final, 65-54{' '}
                 </SecondaryStory>
               </StyledStoryLink>
               <Date inverse> Mar. 17 </Date>

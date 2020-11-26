@@ -1,5 +1,5 @@
-import React from "react"
-import s from "styled-components"
+import React from 'react'
+import s from 'styled-components'
 import {
   PhotoGallery,
   SectionHeader,
@@ -8,7 +8,7 @@ import {
   BLACK,
   WHITE,
   TINT_WHITE,
-} from "./Typography"
+} from './Typography'
 
 const Spacer = s.div`
     margin-bottom: 50px;

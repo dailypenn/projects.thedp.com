@@ -1,7 +1,7 @@
-import s from "styled-components"
-import { Link } from "gatsby"
+import s from 'styled-components'
+import { Link } from 'gatsby'
 
-import { KARLA_REGULAR, KARLA_BOLD } from "../../../utils/font"
+import { KARLA_REGULAR, KARLA_BOLD } from '../../../utils/font'
 
 export const ClassButton = s(Link)`
     margin: 10px;

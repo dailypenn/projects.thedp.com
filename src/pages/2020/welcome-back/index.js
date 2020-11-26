@@ -1,22 +1,22 @@
-import React from "react"
-import { DFPSlotsProvider, AdSlot } from "react-dfp"
-import s from "styled-components"
-import { Helmet } from "react-helmet"
+import React from 'react'
+import { DFPSlotsProvider, AdSlot } from 'react-dfp'
+import s from 'styled-components'
+import { Helmet } from 'react-helmet'
 
-import NavBar from "../../../components/2020/welcome-back/Nav"
-import SlidingText from "../../../components/2020/welcome-back/SlidingText"
-import WordWithLine from "../../../components/2020/welcome-back/WordWithLine"
-import UTB from "../../../components/2020/welcome-back/UTB"
-import Street from "../../../components/2020/welcome-back/Street"
+import NavBar from '../../../components/2020/welcome-back/Nav'
+import SlidingText from '../../../components/2020/welcome-back/SlidingText'
+import WordWithLine from '../../../components/2020/welcome-back/WordWithLine'
+import UTB from '../../../components/2020/welcome-back/UTB'
+import Street from '../../../components/2020/welcome-back/Street'
 
-import Featured from "../../../components/2020/welcome-back/Featured"
-import News from "../../../components/2020/welcome-back/News"
-import Opinion from "../../../components/2020/welcome-back/Opinion"
-import Sports from "../../../components/2020/welcome-back/Sports"
+import Featured from '../../../components/2020/welcome-back/Featured'
+import News from '../../../components/2020/welcome-back/News'
+import Opinion from '../../../components/2020/welcome-back/Opinion'
+import Sports from '../../../components/2020/welcome-back/Sports'
 
-import { ROBOTO_REGULAR } from "../../../utils/font"
-import { HEADLINE_DARK_GRAY } from "../../../utils/colors"
-import { StyledAnchor } from "../../../components/2020/welcome-back/Typograph"
+import { ROBOTO_REGULAR } from '../../../utils/font'
+import { HEADLINE_DARK_GRAY } from '../../../utils/colors'
+import { StyledAnchor } from '../../../components/2020/welcome-back/Typograph'
 
 const Credit = s.div`
   background: ${HEADLINE_DARK_GRAY};
@@ -196,9 +196,9 @@ const IndexPage = () => (
     <UTB />
 
     <Credit>
-      {" "}
+      {' '}
       Made with <span role="img"> 🎒</span> by The Daily Pennsylvanian © 2020.
-      All rights reserved.{" "}
+      All rights reserved.{' '}
     </Credit>
   </>
 )

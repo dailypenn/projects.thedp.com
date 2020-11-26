@@ -1,6 +1,6 @@
-import React from "react"
-import Img from "gatsby-image"
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react'
+import Img from 'gatsby-image'
+import { StaticQuery, graphql } from 'gatsby'
 
 import {
   Wrapper,
@@ -9,7 +9,7 @@ import {
   ArticleDescription,
   ArticleAuthor,
   StyledAnchor,
-} from "./shared"
+} from './shared'
 import { Ads } from '../../shared'
 
 const Card = ({ article }) => (
@@ -20,7 +20,7 @@ const Card = ({ article }) => (
       </StyledAnchor>
     </div>
     <div className="col-md-5">
-      <StyledAnchor href={article.link} style={{ padding: "1rem" }}>
+      <StyledAnchor href={article.link} style={{ padding: '1rem' }}>
         <ArticleHeader>{article.title}</ArticleHeader>
         <ArticleDescription>{article.description}</ArticleDescription>
         <ArticleAuthor>BY {article.author}</ArticleAuthor>
@@ -64,7 +64,7 @@ const Sports = () => (
 
       return (
         <>
-          <Wrapper style={{ marginBottom: "1rem" }}>
+          <Wrapper style={{ marginBottom: '1rem' }}>
             <div id="sports">
               <WordWithLine word="SPORTS" lineColor="#7BA3D3" />
               <div className="row">

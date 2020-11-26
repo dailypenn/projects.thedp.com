@@ -1,5 +1,5 @@
-import React from "react"
-import s from "styled-components"
+import React from 'react'
+import s from 'styled-components'
 
 import {
   StreetCard,
@@ -7,7 +7,7 @@ import {
   SectionHeader,
   SectionDescription,
   LIGHT_BLUE_WHITE,
-} from "./Typography"
+} from './Typography'
 
 const Wrapper = s.div`
     background-color: ${LIGHT_BLUE_WHITE};

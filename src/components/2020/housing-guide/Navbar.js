@@ -1,9 +1,9 @@
-import React from "react"
-import { Navbar as UnstyledWrapper } from "react-bootstrap"
-import s from "styled-components"
+import React from 'react'
+import { Navbar as UnstyledWrapper } from 'react-bootstrap'
+import s from 'styled-components'
 
 const Image = s.img.attrs(() => ({
-  className: "header",
+  className: 'header',
 }))`
   width: 250px;
   max-height: 90px;
@@ -14,11 +14,11 @@ const Image = s.img.attrs(() => ({
 `
 
 // TODO: Consolidate constants
-const WHITE = "#FFFFFF"
+const WHITE = '#FFFFFF'
 
 const Wrapper = s(UnstyledWrapper).attrs(() => ({
-  sticky: "top",
-  expand: "lg",
+  sticky: 'top',
+  expand: 'lg',
 }))`
   background-color: ${WHITE};
   box-shadow: 0px 5px 6px #00000029;

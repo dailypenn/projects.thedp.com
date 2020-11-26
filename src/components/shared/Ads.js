@@ -1,6 +1,6 @@
-import React from "react"
-import { DFPSlotsProvider, AdSlot } from "react-dfp"
-import s from "styled-components"
+import React from 'react'
+import { DFPSlotsProvider, AdSlot } from 'react-dfp'
+import s from 'styled-components'
 
 const DesktopAd = s.div`
   display: flex;

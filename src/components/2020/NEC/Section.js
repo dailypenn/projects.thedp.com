@@ -1,10 +1,10 @@
-import React, { useState } from "react"
-import Img from "gatsby-image"
-import s from "styled-components"
-import { Helmet } from "react-helmet"
+import React, { useState } from 'react'
+import Img from 'gatsby-image'
+import s from 'styled-components'
+import { Helmet } from 'react-helmet'
 
-import { KARLA_REGULAR, KARLA_BOLD } from "../../../utils/font"
-import { ClassButton, ToggleButton, VoteButton } from "./Typograph"
+import { KARLA_REGULAR, KARLA_BOLD } from '../../../utils/font'
+import { ClassButton, ToggleButton, VoteButton } from './Typograph'
 
 const Footer = s.footer`
   max-width: 1200px;
@@ -86,7 +86,7 @@ const Candidate = s.div`
 `
 
 const Statement = s.div`
-  display: ${({ show }) => (show ? "block" : "none")};
+  display: ${({ show }) => (show ? 'block' : 'none')};
   margin-bottom: 10px;
   letter-spacing: -0.45px;
   ${KARLA_REGULAR}
@@ -168,7 +168,7 @@ const Candidates = ({ people, title }) => {
               )}
               {person.instagram_handle && (
                 <Icon
-                  href={"https://instagram.com/" + person.instagram_handle}
+                  href={'https://instagram.com/' + person.instagram_handle}
                   className="navbar-toggler collapsed"
                   target="_blank"
                   type="button"
@@ -214,15 +214,15 @@ const Candidates = ({ people, title }) => {
             </Icons>
             <ToggleButton onClick={() => toggleShow(person.name, true)}>
               Introduction
-              <span> {showSet.has(person.name) ? "↑" : "→"} </span>
+              <span> {showSet.has(person.name) ? '↑' : '→'} </span>
             </ToggleButton>
             <Statement show={showSet.has(person.name)}>
-              {" "}
-              {person.introduction}{" "}
+              {' '}
+              {person.introduction}{' '}
             </Statement>
             <ToggleButton onClick={() => toggleShow(person.name)}>
               Read Platform Points
-              <span> {showPoints.has(person.name) ? "↑" : "→"} </span>
+              <span> {showPoints.has(person.name) ? '↑' : '→'} </span>
             </ToggleButton>
             <Statement show={showPoints.has(person.name)}>
               {person.platform_points.map((p, i) => (
@@ -383,9 +383,9 @@ const Section = ({ data }) => (
     <header>
       <NavBar
         style={{
-          fontFamily: "Libre Franklin",
-          backgroundColor: "#FFFFFF",
-          boxShadow: "0px 5px 6px #00000029",
+          fontFamily: 'Libre Franklin',
+          backgroundColor: '#FFFFFF',
+          boxShadow: '0px 5px 6px #00000029',
           opacity: 1,
         }}
       >
@@ -451,8 +451,8 @@ const Section = ({ data }) => (
           <div class="col-md">
             <BracketsText
               text={[
-                "The Undergraduate Assembly is the elected, representative branch of student government at Penn, charged with improving life for all students through funding, services, and advocacy. The highest authority is the President of the student body, followed by the Vice President. The UA Vice President oversees UA Steering, a group of influential student groups on campus that meet to discuss issues pertaining to student life.",
-                "The purpose of the four Class Boards is to provide social programming that instills a sense of class and school spirit, unity and pride, and breaks through social barriers. Each class popularly elects a president, executive vice president, vice president for internal affairs, vice president for external affairs, vice president for finance, and class chairs.",
+                'The Undergraduate Assembly is the elected, representative branch of student government at Penn, charged with improving life for all students through funding, services, and advocacy. The highest authority is the President of the student body, followed by the Vice President. The UA Vice President oversees UA Steering, a group of influential student groups on campus that meet to discuss issues pertaining to student life.',
+                'The purpose of the four Class Boards is to provide social programming that instills a sense of class and school spirit, unity and pride, and breaks through social barriers. Each class popularly elects a president, executive vice president, vice president for internal affairs, vice president for external affairs, vice president for finance, and class chairs.',
               ]}
             />
           </div>
@@ -467,7 +467,7 @@ const Section = ({ data }) => (
       </Branches>
 
       {Object.entries(data).map(([key, val]) => (
-        <Candidates people={val} title={key.replace(/_/g, " ")} />
+        <Candidates people={val} title={key.replace(/_/g, ' ')} />
       ))}
     </Wrapper>
 

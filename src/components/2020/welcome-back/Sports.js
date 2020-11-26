@@ -1,9 +1,9 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import s from "styled-components"
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import s from 'styled-components'
 
-import { Title, Description, ByLine, StyledAnchor } from "./Typograph"
+import { Title, Description, ByLine, StyledAnchor } from './Typograph'
 
 const Wrapper = s.div`
   .main {
@@ -54,7 +54,7 @@ const Sports = () => (
             {articles.slice(0, 2).map(article => (
               <div
                 className="col-md-4 mb-4"
-                style={{ borderRight: "1px solid #D8D2D2" }}
+                style={{ borderRight: '1px solid #D8D2D2' }}
               >
                 <StyledAnchor href={article.link} target="_blank">
                   <Img fluid={article.image.src.childImageSharp.fluid} />
@@ -71,9 +71,9 @@ const Sports = () => (
                   <div
                     className="row"
                     style={{
-                      borderBottom: idx === 0 ? "1px solid #D8D2D2" : "",
-                      marginBottom: "2rem",
-                      paddingBottom: "2rem",
+                      borderBottom: idx === 0 ? '1px solid #D8D2D2' : '',
+                      marginBottom: '2rem',
+                      paddingBottom: '2rem',
                     }}
                   >
                     <div className="col-md mb-3">

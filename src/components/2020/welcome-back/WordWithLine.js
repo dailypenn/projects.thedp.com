@@ -1,7 +1,7 @@
-import React from "react"
-import s from "styled-components"
+import React from 'react'
+import s from 'styled-components'
 
-import { FJALLA_REGULAR } from "../../../utils/font"
+import { FJALLA_REGULAR } from '../../../utils/font'
 
 const H2 = s.h2` 
   text-align: center; 

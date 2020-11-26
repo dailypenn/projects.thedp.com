@@ -1,7 +1,7 @@
-import React from "react"
-import s from "styled-components"
-import Img from "gatsby-image"
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react'
+import s from 'styled-components'
+import Img from 'gatsby-image'
+import { StaticQuery, graphql } from 'gatsby'
 
 import {
   Wrapper,
@@ -10,8 +10,8 @@ import {
   ArticleAuthor,
   StyledAnchor,
   RedSectionHeader,
-} from "./shared"
-import { FUTURA_REGULAR } from "../../../utils/font"
+} from './shared'
+import { FUTURA_REGULAR } from '../../../utils/font'
 import { Ads } from '../../shared'
 
 const NewsLetterWrapper = s.div`
@@ -49,31 +49,31 @@ const StreetIssue = () => (
 const videos = [
   {
     title:
-      "Penn Prof. Mitchell Berman Discusses Legitimacy Of Election, Politicization Of Courts",
-    link: "https://www.youtube.com/embed/eIQGxVNwhUs",
+      'Penn Prof. Mitchell Berman Discusses Legitimacy Of Election, Politicization Of Courts',
+    link: 'https://www.youtube.com/embed/eIQGxVNwhUs',
     caption:
-      "The Daily Pennsylvanian sat down with Professor Mitchell Berman, Leon Meltzer Professor of Law at the University of Pennsylvania Law School, to discuss threats to the legitimacy of the 2020 election and the politicization of courts.",
-    tag: "video",
+      'The Daily Pennsylvanian sat down with Professor Mitchell Berman, Leon Meltzer Professor of Law at the University of Pennsylvania Law School, to discuss threats to the legitimacy of the 2020 election and the politicization of courts.',
+    tag: 'video',
   },
   {
-    title: "Penn Students On Activism And Politics In The Age Of COVID-19",
-    link: "https://www.youtube.com/embed/hguRV7U5Q94",
+    title: 'Penn Students On Activism And Politics In The Age Of COVID-19',
+    link: 'https://www.youtube.com/embed/hguRV7U5Q94',
     caption:
-      "Penn student activists from different political organizations on campus consider the stakes of the upcoming election and what civic engagement means to them.",
-    tag: "video",
+      'Penn student activists from different political organizations on campus consider the stakes of the upcoming election and what civic engagement means to them.',
+    tag: 'video',
   },
   {
     title:
-      "Penn Democrats Deliver Mail-In Ballot Applications To Off-Campus Student Apartments",
-    link: "https://www.youtube.com/embed/3KJrlF9T4Rc",
+      'Penn Democrats Deliver Mail-In Ballot Applications To Off-Campus Student Apartments',
+    link: 'https://www.youtube.com/embed/3KJrlF9T4Rc',
     caption:
-      "On Oct. 4, Penn Democrats distributed voter materials to off-campus apartments in an attempt to increase student voter turnout.",
-    tag: "video",
+      'On Oct. 4, Penn Democrats distributed voter materials to off-campus apartments in an attempt to increase student voter turnout.',
+    tag: 'video',
   },
 ]
 
 const Video = s.iframe`
-  height: ${({ height = "275px" }) => height};
+  height: ${({ height = '275px' }) => height};
 
   @media (max-width: 768px) {
     height: 200px;
@@ -83,7 +83,7 @@ const Video = s.iframe`
 const PhotoEssay = ({ article }) => (
   <StyledAnchor href={article.link} target="_blank">
     <Img fluid={article.img.src.childImageSharp.fluid} />
-    <div style={{ textAlign: "center", marginTop: "1rem" }}>
+    <div style={{ textAlign: 'center', marginTop: '1rem' }}>
       <RedSectionHeader> {article.tag.toUpperCase()} </RedSectionHeader>
       <ArticleHeader style={{ lineHeight: 1.1 }}>{article.title}</ArticleHeader>
       <Caption>{article.abstract}</Caption>
@@ -107,13 +107,13 @@ const VideoArticle = ({ article, height }) => (
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
     />
-    <div style={{ textAlign: "center", marginTop: "1rem" }}>
-      <RedSectionHeader style={{ textAlign: "center" }}>
+    <div style={{ textAlign: 'center', marginTop: '1rem' }}>
+      <RedSectionHeader style={{ textAlign: 'center' }}>
         {article.tag.toUpperCase()}
       </RedSectionHeader>
     </div>
-    <div style={{ textAlign: "center", marginBottom: "3rem" }}>
-      <ArticleHeader style={{ fontSize: "170%", lineHeight: 1.1 }}>
+    <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+      <ArticleHeader style={{ fontSize: '170%', lineHeight: 1.1 }}>
         {article.title}
       </ArticleHeader>
       <Caption>{article.caption}</Caption>
@@ -162,7 +162,7 @@ const Multimedia = () => (
               <StreetIssue />
               <WordWithLine word="MULTIMEDIA" lineColor="#F05237" />
               <VideoArticle article={videos[0]} height="400px" />
-              <div className="row" style={{ margin: "2rem -15px" }}>
+              <div className="row" style={{ margin: '2rem -15px' }}>
                 <div className="col-md-6">
                   <PhotoEssay article={articles} />
                 </div>

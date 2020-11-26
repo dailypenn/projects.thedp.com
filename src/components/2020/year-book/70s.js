@@ -1,9 +1,9 @@
-import React from "react"
-import s from "styled-components"
-import Img from "gatsby-image"
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react'
+import s from 'styled-components'
+import Img from 'gatsby-image'
+import { StaticQuery, graphql } from 'gatsby'
 
-import { ROBOTO_REGULAR } from "../../../utils/font"
+import { ROBOTO_REGULAR } from '../../../utils/font'
 
 const SeventyBody = s.div`
   padding: 0 4rem;
@@ -124,14 +124,14 @@ const Sixtys = () => (
           <div
             className="row"
             style={{
-              paddingTop: "50px",
-              backgroundColor: "#FFF8E8",
-              paddingBottom: "2rem",
+              paddingTop: '50px',
+              backgroundColor: '#FFF8E8',
+              paddingBottom: '2rem',
             }}
           >
             <div className="col-md-5">
               <SeventyBody>
-                <p style={{ marginBottom: "2rem" }}>
+                <p style={{ marginBottom: '2rem' }}>
                   As Billy Joel once famously sang, “Watergate, punk rock /
                   Begin, Reagan, Palestine, terror on the airline.” The 1970s at
                   Penn stood out distinctly from the buttoned-up early-60s.
@@ -146,7 +146,7 @@ const Sixtys = () => (
                   of 1973.
                 </p>
                 <FancyAuthor fluid={eileen.childImageSharp.fluid} />
-                <p style={{ margin: "2rem 0 1.5rem 0" }}>
+                <p style={{ margin: '2rem 0 1.5rem 0' }}>
                   “I arrived as a sophomore, I spent my freshman year at a
                   different college. A high school friend drove me down and in a
                   very friendly but fast-moving way - because everything was so
@@ -169,28 +169,28 @@ const Sixtys = () => (
                 </p>
                 <Image
                   fluid={img1.childImageSharp.fluid}
-                  style={{ height: "330px", overflow: "hidden" }}
+                  style={{ height: '330px', overflow: 'hidden' }}
                 />
               </SeventyBody>
             </div>
             <div className="col-md">
               <Image
                 fluid={img2.childImageSharp.fluid}
-                style={{ height: "630px", overflow: "hidden" }}
+                style={{ height: '630px', overflow: 'hidden' }}
               />
               <Image
                 fluid={img3.childImageSharp.fluid}
-                style={{ height: "360px" }}
+                style={{ height: '360px' }}
               />
             </div>
             <div className="col-md main">
               <Image
                 fluid={img4.childImageSharp.fluid}
-                style={{ height: "490px", overflow: "hidden" }}
+                style={{ height: '490px', overflow: 'hidden' }}
               />
               <Image
                 fluid={img5.childImageSharp.fluid}
-                style={{ height: "500px", overflow: "hidden" }}
+                style={{ height: '500px', overflow: 'hidden' }}
               />
             </div>
           </div>

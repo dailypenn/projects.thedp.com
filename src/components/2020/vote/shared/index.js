@@ -1,11 +1,11 @@
-import React from "react"
-import s from "styled-components"
+import React from 'react'
+import s from 'styled-components'
 import {
   RADIANT_REGULAR,
   FUTURA_REGULAR,
   LORA_REGULAR,
   FUTURA_BOLD,
-} from "../../../../utils/font"
+} from '../../../../utils/font'
 
 export const Wrapper = s.div`
   padding: 0 10rem;

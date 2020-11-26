@@ -1,7 +1,7 @@
-import React from "react"
-import s from "styled-components"
-import { WHITE } from "./Typography"
-import { OPEN_SANS_REGULAR, DM_SERIF_DISPLAY_BOLD } from "../../../utils/font"
+import React from 'react'
+import s from 'styled-components'
+import { WHITE } from './Typography'
+import { OPEN_SANS_REGULAR, DM_SERIF_DISPLAY_BOLD } from '../../../utils/font'
 
 const Wrapper = s.section`
     height: calc(100vh - 150px);
