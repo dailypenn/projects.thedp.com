@@ -22,7 +22,7 @@ const Title = s.div`
   justify-content: center;
   align-items: center;
 
-  line-height: 0.6
+  line-height: 0.66
 `
 
 const SubTitle = s.div`

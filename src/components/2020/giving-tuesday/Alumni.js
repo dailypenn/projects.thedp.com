@@ -131,7 +131,7 @@ const Alumni = () => {
     <Wrapper>
       <Header title="alumni" subtitle="always here" />
       
-      <RowWithPadding padding="4">
+      <RowWithPadding padding="6">
         {alumni.map((person, idx) => (
           <Person {...person} idx={idx} />
         ))}
