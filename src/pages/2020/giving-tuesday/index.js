@@ -5,10 +5,11 @@ import s from 'styled-components'
 import { NavBar, Footer } from '../../../components/shared'
 import Alumni from '../../../components/2020/giving-tuesday/Alumni'
 import Students from '../../../components/2020/giving-tuesday/Students'
-import Years from '../../../components/2020/giving-tuesday/Years'
 import Numbers from '../../../components/2020/giving-tuesday/Numbers'
-import Social from '../../../components/2020/giving-tuesday/Social'
+import AlwaysTheDP from '../../../components/2020/giving-tuesday/AlwaysTheDP'
+import AlwaysThere from '../../../components/2020/giving-tuesday/AlwaysThere'
 import AlwaysHere from '../../../components/2020/giving-tuesday/AlwaysHere'
+import { GREY } from '../../../components/2020/giving-tuesday/shared'
 
 const NavBarTitles = {
   left: [
@@ -97,13 +98,13 @@ const Index = () => (
     <Meta />
     <NavBar titles={NavBarTitles} />
     <AlwaysHere />
-    <Alumni />
     <Students />
-    <Years />
+    <Alumni />
     <Numbers />
-    <Social />
+    <AlwaysThere />
+    <AlwaysTheDP />
 
-    <Footer emoji="💖" />
+    <Footer emoji="💖" bgColor={GREY} />
   </>
 )
 

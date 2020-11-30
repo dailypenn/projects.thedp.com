@@ -8,36 +8,56 @@ export const YELLOW = '#FBE73F'
 export const BLACK = '#000000'
 export const STREET_GREEN = '#67BCBE'
 export const UTB_BLUE = '#456DB3'
+export const GREY = '#F5F4F4'
+export const DARK_BLACK = '#131313'
 
 
 // COMPONENTS
 const Title = s.div`
   font-size: 8em;
-  color: ${({ color = '#131313' }) => color};
+  color: ${({ color = DARK_BLACK }) => color};
   text-transform: uppercase;
   padding-left: 2rem;
-  letter-spacing: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  line-height: 0.66
+  line-height: 0.66;
+  margin-bottom: 3rem;
 `
 
-const SubTitle = s.div`
-  color: ${({ color = YELLOW }) => color};
+export const Header = ({ title, color }) => (
+  <Title color={color}>
+    {title}
+  </Title>
+)
+
+const Button = s.div`
   text-transform: uppercase;
-  font-size: 0.2em;
+  background-color: ${({ bgColor }) => bgColor};
+  color: ${({ textColor }) => textColor};
+  text-align: center;
+  width: ${({ width = '40' }) => width}%;
+  padding: 0.4rem 0;
+  margin: 3rem 0;
 
-  padding-left: 1rem;
+  :hover {
+    cursor: pointer;
+  }
 `
 
-export const Header = ({ title, subtitle, titleColor, subColor }) => (
-  <div style={{ display: 'flex', marginBottom: '4rem' }}>
-    <Title color={titleColor}>
-      {title}
-      <SubTitle color={subColor}> {subtitle} </SubTitle>
-    </Title>
+export const CenteredButton = ({ text, textColor, bgColor, posCenter, width }) => {
+  if (!posCenter) return (
+    <Button textColor={textColor} bgColor={bgColor} width={width}> {text} </Button>
+  )
+
+  return (
+    <div style={{ justifyContent: 'center', display: 'flex' }}>
+      <Button textColor={textColor} bgColor={bgColor} width={width}> {text} </Button>
+    </div>
+  )
+}
+
+export const TextYellowUnderLine = ({ text, textColor = BLACK }) => (
+  <div style={{ margin: '0 0 3rem 2rem', paddingTop: '2rem' }}>
+    <span style={{ borderBottom: `5px solid ${YELLOW}`, textTransform: 'uppercase', paddingBottom: '5px', color: textColor }}>
+      {text}
+    </span>
   </div>
 )

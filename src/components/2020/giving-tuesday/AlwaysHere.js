@@ -1,10 +1,10 @@
 import React from 'react'
 import s from 'styled-components'
 
-import { Header, PINK, WHITE, BLACK } from './shared'
 import { RowWithPadding } from '../../shared'
 import { GOPHER_REGULAR, GOPHER_BOLD } from '../../../utils/font'
 import { Row, Col } from 'react-bootstrap'
+import { Header, PINK, CenteredButton, BLACK, WHITE } from './shared'
 
 const Wrapper = s.div`
   background-color: ${PINK};
@@ -27,18 +27,6 @@ const AlwaysHereText = s.div`
 const TextWrapper = s.div`
   margin-right: 200px;
   line-height: 1.3rem;
-`
-const ButtonWrapper = s.div`
-  padding: 4rem 0;
-  display: flex;
-  justify-content: center;
-`
-const DonateButton = s.div`
-  text-transform: uppercase;
-  background-color: ${BLACK};
-  color: ${WHITE};
-  text-align: center;
-  padding: 0.5rem 3rem;
 `
 const AlwaysHere = () => (
   <Wrapper>
@@ -70,12 +58,8 @@ const AlwaysHere = () => (
         </TextWrapper>
       </Col>
     </Row>
-    <ButtonWrapper>
-      <DonateButton>DONATE</DonateButton>
-    </ButtonWrapper>
+    <CenteredButton text="donate" bgColor={BLACK} textColor={WHITE} posCenter width="10" />
   </Wrapper>
 )
 
 export default AlwaysHere
-
-

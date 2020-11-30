@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import s from 'styled-components'
 import Img from 'gatsby-image'
 
-import { Header, PINK, BLACK, YELLOW, STREET_GREEN, UTB_BLUE, WHITE } from './shared'
+import { Header, PINK, BLACK, YELLOW, STREET_GREEN, UTB_BLUE, WHITE, TextYellowUnderLine } from './shared'
 import { RowWithPadding, StyledLink } from '../../shared'
 import { Card } from '../housing-guide'
 
@@ -81,7 +81,7 @@ const Students = () => {
 
   return (
     <>
-      <Header title="students" subtitle="always here" titleColor={PINK} subColor={BLACK} />
+      <TextYellowUnderLine text="students" />
 
       <RowWithPadding>
         <Col sm={12} md={6}>
