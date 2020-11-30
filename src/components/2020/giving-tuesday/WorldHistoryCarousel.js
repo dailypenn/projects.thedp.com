@@ -35,8 +35,8 @@ const {
 
     return(
       <>
-        <RightDiv >
-          <Title>IN PENN HISTORY</Title>
+        <RightDiv>
+          <Title>IN WORLD HISTORY</Title>
           <Carousel autoPlay infiniteLoop>
             {stories.map((story) => (
               <div>

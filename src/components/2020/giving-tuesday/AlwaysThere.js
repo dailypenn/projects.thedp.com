@@ -40,37 +40,7 @@ export const RightDiv = s.div`
   width: 60%;
   margin: auto;
 `
-const DemoCarousel = ({ article }) =>(
-  <Carousel>
-      <div>
-          <img src="/img/34st-shoutout.png" />
-          <p className="legend">Legend 1</p>
-      </div>
-      <div>
-          <img src="assets/2.jpeg" />
-          <p className="legend">Legend 2</p>
-      </div>
-      <div>
-          <img src="assets/3.jpeg" />
-          <p className="legend">Legend 3</p>
-      </div>
-      <div>
-          <img src="assets/4.jpeg" />
-          <p className="legend">Legend 4</p>
-      </div>
-      <div>
-          <img src="assets/5.jpeg" />
-          <p className="legend">Legend 5</p>
-      </div>
-      <div>
-          <img src="assets/6.jpeg" />
-          <p className="legend">Legend 6</p>
-      </div>
-  </Carousel>
-)
-
-
-
+//renderArrowPrev = (clickHandler: () => void, hasPrev: boolean, label: string) => React.ReactNode;
 const AlwaysThere = () => {
   const data = useStaticQuery(graphql`
   query {
@@ -124,9 +94,9 @@ const {
             </ParaDiv>
           </Col>
         </Row>
-        <div style = {{textAlign: "center", backgroundColor: WHITE}}>
+        <div style = {{textAlign: "center", backgroundColor: "#F8F7F7"}}>
           <Row>
-            <Col sm={12} md={6} >
+            <Col sm={12} md={6} style ={{borderRight: "2px dotted #747373"}} >
               <PennHistory/>
             </Col>
             <Col sm={12} md={6} >
