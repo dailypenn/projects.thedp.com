@@ -8,6 +8,7 @@ import Students from '../../../components/2020/giving-tuesday/Students'
 import Years from '../../../components/2020/giving-tuesday/Years'
 import Numbers from '../../../components/2020/giving-tuesday/Numbers'
 import Social from '../../../components/2020/giving-tuesday/Social'
+import AlwaysHere from '../../../components/2020/giving-tuesday/AlwaysHere'
 
 const NavBarTitles = {
   left: [
@@ -95,7 +96,7 @@ const Index = () => (
   <>
     <Meta />
     <NavBar titles={NavBarTitles} />
-
+    <AlwaysHere />
     <Alumni />
     <Students />
     <Years />
