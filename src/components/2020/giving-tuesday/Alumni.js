@@ -1,10 +1,10 @@
 import React from 'react'
 import s from 'styled-components'
-import { Row, Col } from 'react-bootstrap'
+import { Col } from 'react-bootstrap'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-import { Header, WHITE, BLACK } from './shared'
+import { WHITE, BLACK, TextYellowUnderLine, CenteredButton, YELLOW } from './shared'
 import { RowWithPadding } from '../../shared'
 
 const Wrapper = s.div`
@@ -20,18 +20,7 @@ const AlumniText = s.div`
 const AlumniName = s.text`
   text-transform: uppercase;
   color: ${WHITE};
-`
-
-const AlumniImg = s(Img)`
-  border-radius: 50%;
-  width: 70%;
-  margin: auto;
-  margin-bottom: 3rem;
-`
-
-const LogoImg = s(Img)`
-  margin: auto;
-  width: 40%;
+  font-size: 1.2em;
 `
 
 const BorderedCol = ({ idx, children }) => {
@@ -62,29 +51,17 @@ const BorderedCol = ({ idx, children }) => {
   )
 }
 
-const Person = ({ name, description, image, logo, idx }) => (
+const Person = ({ name, description, idx }) => (
   <BorderedCol idx={idx}>
-    <Row>
-      <Col md={6}>
-        <AlumniImg fluid={image.src.childImageSharp.fluid} />
-        <LogoImg fluid={logo.src.childImageSharp.fluid} />
-      </Col>
-      <Col md={6}>
-        <AlumniText>
-          <AlumniName> {name} </AlumniName>
-          {description}
-        </AlumniText>
-        
-      </Col>
-    </Row>
+    <AlumniText>
+      <AlumniName> {name} </AlumniName>
+      {description}
+    </AlumniText>
   </BorderedCol>
 )
 
-const CompanyText = s.h3`
-  text-transform: uppercase;
-  color: #FFFFFF;
-  text-align: center;
-  margin: 1rem 0 0 0;
+const Paragraph = s.p`
+  color: ${WHITE};
 `
 
 const Alumni = () => {
@@ -129,15 +106,25 @@ const Alumni = () => {
 
   return (
     <Wrapper>
-      <Header title="alumni" subtitle="always here" />
+      <TextYellowUnderLine text="alumni" textColor={YELLOW} />
+
+      <RowWithPadding padding="12">
+        <Col sm={12} md={7}>
+        </Col>
+        <Col sm={12} md={5}>
+          <h4> DP ALUMNI ASSOCIATION </h4>
+          <Paragraph> DP ALUMNI ASSOCIATION An association, a network and really just a family! The DPAA and our alumni are the heartbeat of our organization. Every year, DP alumni generously give time, guidance and the funds we need to operate and advance our organization. Our students are incredibly lucky to have such an available and supportive volunteer alumni community working closely with them. </Paragraph>
+          <Paragraph> The best part about the DPAA is that it will ALWAYS be a loyal network of support for our students and alumni long after their Penn journeys have ended. </Paragraph>
+          <Paragraph> Make your annual gift today and become a proud member of the DPAA. </Paragraph>
+          <CenteredButton text="donate" textColor={WHITE} bgColor={BLACK} />
+        </Col>
+      </RowWithPadding>
       
-      <RowWithPadding padding="6">
+      <RowWithPadding padding="14" paddingTB="5">
         {alumni.map((person, idx) => (
           <Person {...person} idx={idx} />
         ))}
       </RowWithPadding>
-
-      <CompanyText> you can find DP alum at the following companies: </CompanyText>
 
     </Wrapper>
   )
