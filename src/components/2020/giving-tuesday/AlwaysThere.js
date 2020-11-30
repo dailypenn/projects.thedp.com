@@ -1,10 +1,14 @@
-import React from 'react'
+import React , { Component }from 'react'
 import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Header, WHITE, BLACK, YELLOW, PINK, CenteredButton } from './shared'
 import { RowWithPadding } from '../../shared'
 import Img from 'gatsby-image'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import { Carousel } from 'react-responsive-carousel';
+import PennHistory from "./PennHistoryCarousel.js"
+import WorldHistory from "./WorldHistoryCarousel.js"
 
 const Wrapper = s.div`
   background-color: ${PINK};
@@ -12,15 +16,60 @@ const Wrapper = s.div`
 `
 const ImagesDiv = s.div`
   margin-top: 1vw;
-`
-const SpacedRow = s(Row)`
-  margin-top: 1vw;
+  margin-bottom: 4vw;
 `
 const ParaDiv = s.div`
-  margin-top: 10vw;
+  margin-top: 7vw;
   margin-left: 4vw;
   font-family: 'Gopher', sans-serif;
 `
+export const Title = s.p`
+  font-size: 4em;
+  color: ${PINK};
+  text-transform: uppercase;
+  padding-left: 2rem;
+  line-height: 0.66;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+`
+export const LeftDiv = s.div`
+  width: 60%;
+  margin: auto;
+`
+export const RightDiv = s.div`
+  width: 60%;
+  margin: auto;
+`
+const DemoCarousel = ({ article }) =>(
+  <Carousel>
+      <div>
+          <img src="/img/34st-shoutout.png" />
+          <p className="legend">Legend 1</p>
+      </div>
+      <div>
+          <img src="assets/2.jpeg" />
+          <p className="legend">Legend 2</p>
+      </div>
+      <div>
+          <img src="assets/3.jpeg" />
+          <p className="legend">Legend 3</p>
+      </div>
+      <div>
+          <img src="assets/4.jpeg" />
+          <p className="legend">Legend 4</p>
+      </div>
+      <div>
+          <img src="assets/5.jpeg" />
+          <p className="legend">Legend 5</p>
+      </div>
+      <div>
+          <img src="assets/6.jpeg" />
+          <p className="legend">Legend 6</p>
+      </div>
+  </Carousel>
+)
+
+
 
 const AlwaysThere = () => {
   const data = useStaticQuery(graphql`
@@ -75,9 +124,20 @@ const {
             </ParaDiv>
           </Col>
         </Row>
+        <div style = {{textAlign: "center", backgroundColor: WHITE}}>
+          <Row>
+            <Col sm={12} md={6} >
+              <PennHistory/>
+            </Col>
+            <Col sm={12} md={6} >
+              <WorldHistory/>
+            </Col>        
+          </Row>             
+        </div>
       </Wrapper>
     </>  
   )
 }
 
 export default AlwaysThere
+
