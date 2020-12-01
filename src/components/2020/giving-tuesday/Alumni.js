@@ -15,9 +15,7 @@ import { RowWithPadding } from '../../shared'
 
 import {
   GOPHER_MEDIUM,
-  GOPHER_REGULAR,
   GOPHER_BOLD,
-  RAMA_GOTHIC_BOLD
 } from '../../../utils/font'
 
 const Wrapper = s.div`
@@ -25,17 +23,26 @@ const Wrapper = s.div`
 `
 
 const AlumniText = s.div`
-  ${GOPHER_REGULAR}
+  ${GOPHER_MEDIUM}
   @media screen and (max-width: 1300px) {
     font-size: 0.9em;
   }
 `
 
-const AlumniName = s.text`
-  ${GOPHER_REGULAR}
+const AlumniName = s.p`
+  ${GOPHER_MEDIUM}
   text-transform: uppercase;
   color: ${WHITE};
-  font-size: 1.2em;
+  font-size: 0.9em;
+  margin-top: 1rem;
+`
+
+const AlumniPosition = s.p`
+  ${GOPHER_MEDIUM}
+  color: ${WHITE};
+  font-size: 0.9em;
+  padding-left: 1rem;
+  margin-top: -1rem;
 `
 
 const AlumniHeader = s.h4`
@@ -87,11 +94,13 @@ const BorderedCol = ({ idx, children }) => {
   )
 }
 
-const Person = ({ name, description, idx }) => (
+const Person = ({ name, description, dpPosition, currPosition, idx }) => (
   <BorderedCol idx={idx}>
     <AlumniText>
-      <AlumniName> {name} </AlumniName>
-      {description}
+      &ldquo;{description}&rdquo;
+      <AlumniName> &#8212;{name} </AlumniName>
+      {dpPosition && <AlumniPosition> {dpPosition} </AlumniPosition>}
+      <AlumniPosition> {currPosition} </AlumniPosition>
     </AlumniText>
   </BorderedCol>
 )
@@ -118,6 +127,8 @@ const Alumni = () => {
           node {
             childrenAlumniGt2020Json {
               name
+              dpPosition
+              currPosition
               description
             }
           }

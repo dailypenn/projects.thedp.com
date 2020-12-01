@@ -33,11 +33,11 @@ const AlwaysTheDP = () => (
   <Wrapper id="always-the-dp">
     <Header title="always the dp" color={WHITE} lineHeight="0.7" />
 
-    <RowWithPadding padding="5" paddingTB="2">
+    <RowWithPadding padding="4" paddingTB="2">
       <HideWrapper>
         <HCenteredCol sm={12} md={4}>
           <FacebookProvider appId="947756802416627">
-            <EmbeddedPost href="https://www.facebook.com/dailypenn/posts/10158826652488805" width="200" />
+            <EmbeddedPost href="https://www.facebook.com/dailypenn/posts/10158826623513805" width="320" />
           </FacebookProvider>
         </HCenteredCol>
       </HideWrapper>

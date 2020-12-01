@@ -1,18 +1,26 @@
 [
   {
     "name": "Stuart Friedman",
+    "dpPosition": "DP Associate Editor, 1965-1966",
+    "currPosition": "Judge, Court of Common Press, Ohio",
     "description": "I am proud of the role our Board played in this pivotal time for the University and for American Society."
   },
   {
     "name": "Thomas Scotes",
+    "dpPosition": "DP Managing Editor 1953",
+    "currPosition": "",
     "description": "The Daily Pennsylvanian was one of the most prestigious activities on campus, even though journalism was not one of the stronger undergraduate programs. Most were there for the experience, access and fun."
   },
   {
     "name": "Patrick Gallagher",
+    "dpPosition": "DP Features Editor, 1974",
+    "currPosition": "Senior VP, Edward Howard",
     "description": "I remember being the DP newsroom when the news crossed the wire that Vice President Agnew resigned. For the first time, I really felt a part of the national news media."
   },
   {
     "name": "Alex Wong",
+    "dpPosition": "DP Columnist, 2000-01",
+    "currPosition": "Judicial Clerk, US Appeals Court",
     "description": "On 9/11/2001: It had been a long and horrific day. But we took a moment to quietly recognize the obvious: this was the biggest one-day news story in history. And, in our humble way, we had the solemn privilege of being there to cover it."
   }
 ]
