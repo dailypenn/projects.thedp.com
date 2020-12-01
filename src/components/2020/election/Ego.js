@@ -18,7 +18,7 @@ import { StyledLink, Ads } from '../../shared'
 const Ego = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: {relativePath: {eq: "ego.json"}}) {
+      allFile(filter: { relativePath: { eq: "ego.json" } }) {
         edges {
           node {
             childrenEgoJson {

@@ -11,7 +11,6 @@ export const UTB_BLUE = '#456DB3'
 export const GREY = '#F5F4F4'
 export const DARK_BLACK = '#131313'
 
-
 // COMPONENTS
 const Title = s.div`
   font-size: 8em;
@@ -22,11 +21,7 @@ const Title = s.div`
   margin-bottom: 3rem;
 `
 
-export const Header = ({ title, color }) => (
-  <Title color={color}>
-    {title}
-  </Title>
-)
+export const Header = ({ title, color }) => <Title color={color}>{title}</Title>
 
 const Button = s.div`
   text-transform: uppercase;
@@ -42,21 +37,41 @@ const Button = s.div`
   }
 `
 
-export const CenteredButton = ({ text, textColor, bgColor, posCenter, width }) => {
-  if (!posCenter) return (
-    <Button textColor={textColor} bgColor={bgColor} width={width}> {text} </Button>
-  )
+export const CenteredButton = ({
+  text,
+  textColor,
+  bgColor,
+  posCenter,
+  width,
+}) => {
+  if (!posCenter)
+    return (
+      <Button textColor={textColor} bgColor={bgColor} width={width}>
+        {' '}
+        {text}{' '}
+      </Button>
+    )
 
   return (
     <div style={{ justifyContent: 'center', display: 'flex' }}>
-      <Button textColor={textColor} bgColor={bgColor} width={width}> {text} </Button>
+      <Button textColor={textColor} bgColor={bgColor} width={width}>
+        {' '}
+        {text}{' '}
+      </Button>
     </div>
   )
 }
 
 export const TextYellowUnderLine = ({ text, textColor = BLACK }) => (
   <div style={{ margin: '0 0 3rem 2rem', paddingTop: '2rem' }}>
-    <span style={{ borderBottom: `5px solid ${YELLOW}`, textTransform: 'uppercase', paddingBottom: '5px', color: textColor }}>
+    <span
+      style={{
+        borderBottom: `5px solid ${YELLOW}`,
+        textTransform: 'uppercase',
+        paddingBottom: '5px',
+        color: textColor,
+      }}
+    >
       {text}
     </span>
   </div>
