@@ -4,7 +4,7 @@ import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import { Header, WHITE, BLACK, YELLOW, PINK, CenteredButton } from './shared'
+import { Header, WHITE, BLACK, PINK, CenteredButton } from './shared'
 import { RowWithPadding } from '../../shared'
 import { GOPHER_REGULAR, GOPHER_BOLD } from '../../../utils/font'
 
@@ -77,9 +77,8 @@ const AlwaysThere = () => {
 
       <Header
         title="ALWAYS THERE"
-        titleColor={PINK}
-        subColor={YELLOW}
-        lineHeight="1"
+        color={PINK}
+        lineHeight="0.7"
       />
 
       <Row>
@@ -101,14 +100,14 @@ const AlwaysThere = () => {
         <Col sm={12} md={4}>
           <ParaDiv>
             <StyledHeader4>THROUGH THE DECADES</StyledHeader4>
-            <p>
+            <p style={{ fontSize: '0.9em' }}>
               UPenn students have always been at the forefront of social
               justice issues and its solutions, and wherever it happens, the
               DP is there to spotlight extraordinary causes and individuals to
               spread awareness and to bring to our attention important events
               that demand to be noticed.
             </p>
-            <p>
+            <p style={{ fontSize: '0.9em' }}>
               From uncovering unjust surveillance, participating in sit-ins,
               and protesting police brutality, student activism has evolved
               tremendously over the years and continues to be one of the
@@ -117,11 +116,12 @@ const AlwaysThere = () => {
               achievements and dedicated to sharing them to the wider world.
             </p>
             <CenteredButton
-              text="donate"
+              text="Explore Our Archives"
               bgColor={BLACK}
               textColor={WHITE}
               posLeft
-              width="30"
+              width="80"
+              link="https://dparchives.library.upenn.edu/"
             />
           </ParaDiv>
         </Col>

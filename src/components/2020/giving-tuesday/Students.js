@@ -38,21 +38,21 @@ const Description = s.p`
 
 const StoryHeader = s.h2`
   ${RAMA_GOTHIC_BOLD}  
-  font-size: 6em;
+  font-size: 5em;
   color: ${({ idx }) => (idx === 0 ? STREET_GREEN : UTB_BLUE)};
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 `
 
 const StoryTitle = s.p`
  ${GOPHER_BOLD}
- margin-top: 3rem;
+ margin-top: 1rem;
 `
 
 const StoryDescription = s.p`
-  ${GOPHER_REGULAR}  
-  margin: 3rem 0;
+  ${GOPHER_MEDIUM}
+  margin: 1rem 0;
 `
 
 const LearnMoreButton = s.div`
@@ -62,9 +62,11 @@ const LearnMoreButton = s.div`
   text-align: center;
   width: 50%;
   padding: 0.5rem 0;
+  ${GOPHER_MEDIUM}
 
   :hover {
     background-color: ${({ idx }) => (idx === 0 ? '#317C7E' : '#183569')};
+    transition: 0.3s;
   }
 `
 
@@ -76,15 +78,9 @@ const AlumniImg = s(Img)`
 `
 
 const CardContent = ({ description, image, idx, title, link }) => (
-  <StyledLink style={{ padding: '3rem' }} href={link} target="_blank">
+  <StyledLink style={{ padding: '2rem' }} href={link} target="_blank">
     <StoryHeader idx={idx}>
-      {idx === 0 ? (
-        <text>
-          34<sup>th </sup> street
-        </text>
-      ) : (
-        'under the button'
-      )}
+      {idx === 0 ? '34th street' :  'under the button'}
     </StoryHeader>
     <img src={image} className="img-fluid" />
     <StoryTitle> {title} </StoryTitle>
@@ -178,7 +174,7 @@ const Students = () => {
         ))}
       </RowWithPadding>
 
-      <RowWithPadding>
+      <RowWithPadding padding="13">
         {stories.map((story, idx) => (
           <Col sm={12} md={6}>
             <Card>

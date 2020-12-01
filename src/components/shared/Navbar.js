@@ -27,6 +27,20 @@ const RightUL = s.ul`
   }
 `
 
+const URL = ({ link, children }) => {
+  if (link.includes('http'))
+    return (
+      <a href={link} className="nav-link" target="_blank">
+        {children}
+      </a>
+    )
+  return (
+    <Link to={`#${link}`} className="nav-link" target="_blank">
+      {children}
+    </Link>
+  )
+}
+
 // titles: { left: [{ text, link }*], right: [{ text, link }*] }
 
 export const NavBar = ({ titles, font }) => {
@@ -46,10 +60,9 @@ export const NavBar = ({ titles, font }) => {
         <LeftUL className="navbar-nav ml-auto text-center">
           {left.map(({ text, link }) => (
             <li className="nav-item">
-              <Link className="nav-link" to={`#${link}`}>
-                {' '}
+              <URL link={link}>
                 <NavText font={font}> {text} </NavText>
-              </Link>
+              </URL>
             </li>
           ))}
         </LeftUL>
@@ -80,10 +93,9 @@ export const NavBar = ({ titles, font }) => {
         <RightUL className="navbar-nav mr-auto text-center">
           {right.map(({ text, link }) => (
             <li className="nav-item">
-              <Link className="nav-link" to={`#${link}`}>
-                {' '}
+              <URL link={link}>
                 <NavText font={font}> {text} </NavText>
-              </Link>
+              </URL>
             </li>
           ))}
         </RightUL>

@@ -93,8 +93,9 @@ const Person = ({ name, description, idx }) => (
 )
 
 const Paragraph = s.p`
-  ${GOPHER_REGULAR}
+  ${GOPHER_MEDIUM}
   color: ${WHITE};
+  font-size: 0.9em;
 `
 
 const Alumni = () => {

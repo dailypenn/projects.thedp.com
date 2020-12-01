@@ -19,7 +19,7 @@ const NavBarTitles = {
   ],
   right: [
     { text: 'Always The DP', link: 'always-the-dp' },
-    { text: 'Social', link: 'social' },
+    { text: 'Donate', link: 'https://www.thedp.com/page/donate' },
   ],
 }
 

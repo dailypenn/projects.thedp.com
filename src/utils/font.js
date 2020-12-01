@@ -135,6 +135,7 @@ export const FUTURA_REGULAR = `
   font-family: 'Futura-PT', sans-serif;
   font-weight: 400;
 `
+
 export const FUTURA_BOLD = `
   font-family: 'Futura-PT', sans-serif;
   font-weight: 700;
@@ -149,6 +150,7 @@ export const BRANDON_GROTESQUE_MEDIUM = `
   font-family: 'BrandonGrotesque-Medium';
   font-weight: 400;
 `
+
 export const GOPHER_REGULAR = `
   font-family: 'Gopher', sans-serif;
   font-weight: 400;

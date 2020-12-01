@@ -49,6 +49,7 @@ const Button = s.div`
   width: ${({ width = '40' }) => width}%;
   padding: 0.4rem 0;
   margin: 3rem 0;
+  ${GOPHER_MEDIUM}
 
   :hover {
     cursor: pointer;
@@ -58,7 +59,7 @@ const Button = s.div`
 
   @media screen and (max-width: 768px) {
     margin-top: 1rem;
-    width: 30%;
+    width: ${({ width }) => width > '50' ? '60' : '30'}%;
   }
 `
 
@@ -68,10 +69,11 @@ export const CenteredButton = ({
   bgColor,
   posCenter,
   width,
+  link = 'https://www.thedp.com/page/donate'
 }) => {
   if (!posCenter)
     return (
-      <StyledAnchor href="https://www.thedp.com/page/donate" target="_blank">
+      <StyledAnchor href={link} target="_blank">
         <Button textColor={textColor} bgColor={bgColor} width={width}>
           {' '}
           {text}{' '}
@@ -80,7 +82,7 @@ export const CenteredButton = ({
     )
 
   return (
-    <StyledAnchor href="https://www.thedp.com/page/donate" target="_blank">
+    <StyledAnchor href={link} target="_blank">
       <div style={{ justifyContent: 'center', display: 'flex' }}>
         <Button textColor={textColor} bgColor={bgColor} width={width}>
           {' '}

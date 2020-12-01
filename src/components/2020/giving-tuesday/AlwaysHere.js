@@ -1,9 +1,9 @@
 import React from 'react'
 import s from 'styled-components'
+import { Col } from 'react-bootstrap'
 
 import { RowWithPadding } from '../../shared'
-import { GOPHER_REGULAR, GOPHER_BOLD } from '../../../utils/font'
-import { Row, Col } from 'react-bootstrap'
+import { GOPHER_BOLD, GOPHER_MEDIUM } from '../../../utils/font'
 import { Header, PINK, CenteredButton, BLACK, WHITE } from './shared'
 
 const Wrapper = s.div`
@@ -22,8 +22,8 @@ const Subheading = s.div`
 `
 
 const AlwaysHereText = s.div`
-  ${GOPHER_REGULAR};
-  font-size: 1em;
+  ${GOPHER_MEDIUM}
+  font-size: 0.9em;
   color: ${WHITE};
   margin-top: 15px;
 `
