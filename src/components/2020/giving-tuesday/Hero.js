@@ -36,7 +36,7 @@ export default () => (
       <Row>
         <HeroLink className="mx-auto" to="#always-here">ALWAYS HERE</HeroLink>
         <HeroLink className="mx-auto" to="#always-there">ALWAYS THERE</HeroLink>
-        <HeroLink className="mx-auto">ALWAYS THE DP</HeroLink>
+        <HeroLink className="mx-auto" to="#always-the-dp">ALWAYS THE DP</HeroLink>
       </Row>
     </Container>
     <br />

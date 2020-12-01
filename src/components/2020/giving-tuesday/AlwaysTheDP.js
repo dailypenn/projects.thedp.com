@@ -24,7 +24,7 @@ const HCenteredCol = s(Col)`
 `
 
 const AlwaysTheDP = () => (
-  <Wrapper>
+  <Wrapper id="always-the-dp">
     <Header title="always the dp" color={WHITE} lineHeight="0.7" />
 
     <RowWithPadding padding="5" paddingTB="2">
