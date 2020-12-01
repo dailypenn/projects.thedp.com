@@ -1,6 +1,8 @@
 import React from 'react'
 import s from 'styled-components'
 
+import { RAMA_GOTHIC_BOLD, GOPHER_MEDIUM } from '../../../../utils/font'
+
 // COLOR CONSTANTS
 export const PINK = '#DD666E'
 export const WHITE = '#FFFFFF'
@@ -18,7 +20,8 @@ const StyledAnchor = s.a`
 `
 
 const Title = s.div`
-  font-size: 8em;
+  ${RAMA_GOTHIC_BOLD}
+  font-size: 24em;
   color: ${({ color = DARK_BLACK }) => color};
   text-transform: uppercase;
   padding-left: 2rem;
@@ -87,10 +90,12 @@ export const TextYellowUnderLine = ({ text, textColor = BLACK }) => (
   <div style={{ margin: '0 0 3rem 2rem', paddingTop: '2rem' }}>
     <span
       style={{
+        fontSize: '3em',
         borderBottom: `5px solid ${YELLOW}`,
         textTransform: 'uppercase',
         paddingBottom: '5px',
         color: textColor,
+        fontFamily: GOPHER_MEDIUM
       }}
     >
       {text}

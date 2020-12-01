@@ -5,10 +5,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { Header, WHITE, BLACK, YELLOW, PINK, CenteredButton } from './shared'
 import { RowWithPadding } from '../../shared'
 import Img from 'gatsby-image'
+import { GOPHER_REGULAR, GOPHER_BOLD } from '../../../utils/font'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import { Carousel } from 'react-responsive-carousel'
-import PennHistory from './PennHistoryCarousel.js'
-import WorldHistory from './WorldHistoryCarousel.js'
 
 const Wrapper = s.div`
   background-color: ${PINK};
@@ -40,6 +38,11 @@ export const RightDiv = s.div`
   width: 60%;
   margin: auto;
 `
+
+const StyledHeader4 = s.h4`
+  ${GOPHER_BOLD}
+`
+
 //renderArrowPrev = (clickHandler: () => void, hasPrev: boolean, label: string) => React.ReactNode;
 const AlwaysThere = () => {
   const data = useStaticQuery(graphql`
@@ -91,15 +94,15 @@ const AlwaysThere = () => {
           </Col>
           <Col sm={12} md={4}>
             <ParaDiv>
-              <h4>THROUGH THE DECADES</h4>
-              <p style={{ color: WHITE }}>
+              <StyledHeader4>THROUGH THE DECADES</StyledHeader4>
+              <p style={{ color: WHITE, fontFamily: GOPHER_REGULAR }}>
                 UPenn students have always been at the forefront of social
                 justice issues and its solutions, and wherever it happens, the
                 DP is there to spotlight extraordinary causes and individuals to
                 spread awareness and to bring to our attention important events
                 that demand to be noticed.
               </p>
-              <p style={{ color: WHITE }}>
+              <p style={{ color: WHITE,  fontFamily: GOPHER_REGULAR  }}>
                 From uncovering unjust surveillance, participating in sit-ins,
                 and protesting police brutality, student activism has evolved
                 tremendously over the years and continues to be one of the
@@ -117,16 +120,6 @@ const AlwaysThere = () => {
             </ParaDiv>
           </Col>
         </Row>
-        <div style={{ textAlign: 'center', backgroundColor: '#F8F7F7' }}>
-          <Row>
-            <Col sm={12} md={6} style={{ borderRight: '2px dotted #747373' }}>
-              <PennHistory />
-            </Col>
-            <Col sm={12} md={6}>
-              <WorldHistory />
-            </Col>
-          </Row>
-        </div>
       </Wrapper>
     </>
   )

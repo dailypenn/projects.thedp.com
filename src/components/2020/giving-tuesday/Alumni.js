@@ -13,20 +13,33 @@ import {
 } from './shared'
 import { RowWithPadding } from '../../shared'
 
+import {
+  GOPHER_MEDIUM,
+  GOPHER_REGULAR,
+  GOPHER_BOLD,
+  RAMA_GOTHIC_BOLD
+} from '../../../utils/font'
+
 const Wrapper = s.div`
   background-color: #DD666E;
 `
 
 const AlumniText = s.div`
+  ${GOPHER_REGULAR}
   @media screen and (max-width: 1300px) {
     font-size: 0.8em;
   }
 `
 
 const AlumniName = s.text`
+  ${GOPHER_REGULAR}
   text-transform: uppercase;
   color: ${WHITE};
   font-size: 1.2em;
+`
+
+const AlumniHeader = s.h4`
+  ${GOPHER_BOLD}
 `
 
 const BorderedCol = ({ idx, children }) => {
@@ -80,6 +93,7 @@ const Person = ({ name, description, idx }) => (
 )
 
 const Paragraph = s.p`
+  ${GOPHER_REGULAR}
   color: ${WHITE};
 `
 
@@ -130,7 +144,7 @@ const Alumni = () => {
       <RowWithPadding padding="12">
         <Col sm={12} md={7}></Col>
         <Col sm={12} md={5}>
-          <h4> DP ALUMNI ASSOCIATION </h4>
+          <AlumniHeader> DP ALUMNI ASSOCIATION </AlumniHeader>
           <Paragraph>
             {' '}
             DP ALUMNI ASSOCIATION An association, a network and really just a

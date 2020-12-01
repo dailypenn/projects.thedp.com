@@ -1,8 +1,9 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
 import s from 'styled-components'
+import { CenteredButton, PINK, WHITE } from './shared'
 
-import { GOPHER_REGULAR } from '../../../utils/font'
+import { GOPHER_REGULAR, GOPHER_BOLD } from '../../../utils/font'
 
 import Arrow from '../../../content/images/2020/giving-tuesday/arrow.gif'
 const HEADER = `https://s3.amazonaws.com/snwceomedia/dpn/9d4051bc-8350-4343-9ee9-8887455bf3b6.original.gif`
@@ -22,6 +23,11 @@ const HeroLink = s.a`
     color: white !important;
 `
 
+const ButtonLayout = s.div`
+    justify-content: center;
+    display: flex;
+`
+
 export default () => (
     <Section>
         <img src={HEADER} className="img-fluid" />
@@ -38,5 +44,8 @@ export default () => (
         </Row>
         <br />
         <br />
+        <ButtonLayout>
+        <CenteredButton width={10} textColor={WHITE} bgColor={PINK} text="DONATE" />
+        </ButtonLayout>
     </Section>
 )
