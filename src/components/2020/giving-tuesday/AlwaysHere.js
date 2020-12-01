@@ -9,25 +9,30 @@ import { Header, PINK, CenteredButton, BLACK, WHITE } from './shared'
 const Wrapper = s.div`
   background-color: ${PINK};
 `
+
 const Video = s.iframe`
   height: 600px;
   margin-left: 30px;
 `
+
 const Subheading = s.div`
   ${GOPHER_BOLD};
   font-size: 1.4em;
   color: ${BLACK};
 `
+
 const AlwaysHereText = s.div`
   ${GOPHER_REGULAR};
   font-size: 1em;
   color: ${WHITE};
   margin-top: 15px;
 `
+
 const TextWrapper = s.div`
   margin-right: 200px;
   line-height: 1.3rem;
 `
+
 const AlwaysHere = () => (
   <Wrapper>
     <Header title="ALWAYS HERE" />
