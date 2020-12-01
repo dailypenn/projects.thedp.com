@@ -93,6 +93,15 @@ export const CenteredButton = ({
   )
 }
 
+const TextWrapper = s.div`
+  margin: 0 0 8rem 2rem;
+  padding-top: 2rem;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 4rem;
+  }
+`
+
 const TextSpan = s.span`
   font-size: 1.5em;
   border-bottom: 5px solid ${YELLOW};
@@ -103,7 +112,7 @@ const TextSpan = s.span`
 `
 
 export const TextYellowUnderLine = ({ text, textColor = BLACK }) => (
-  <div style={{ margin: '0 0 8rem 2rem', paddingTop: '2rem' }}>
+  <TextWrapper>
     <TextSpan textColor={textColor}> {text} </TextSpan>
-  </div>
+  </TextWrapper>
 )

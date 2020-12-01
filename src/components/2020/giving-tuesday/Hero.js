@@ -4,7 +4,7 @@ import s from 'styled-components'
 import { CenteredButton, PINK, WHITE } from './shared'
 import { Link } from 'gatsby'
 
-import { GOPHER_REGULAR, GOPHER_BOLD } from '../../../utils/font'
+import { GOPHER_REGULAR } from '../../../utils/font'
 
 import Arrow from '../../../content/images/2020/giving-tuesday/arrow.gif'
 const HEADER = `https://s3.amazonaws.com/snwceomedia/dpn/9d4051bc-8350-4343-9ee9-8887455bf3b6.original.gif`
@@ -15,14 +15,18 @@ const Section = s.div`
 `
 
 const DownArrow = s.img`
-    width: 4vw;
+  height: 50px;
+
+  @media screen and (max-width: 768px) {
+    height: 30px;
+  }
 `
 
 const HeroLink = s(Link)`
-    ${GOPHER_REGULAR}
-    font-size: 2vw;
-    color: white !important;
-    text-decoration: none !important;
+  ${GOPHER_REGULAR}
+  font-size: 2vw;
+  color: white !important;
+  text-decoration: none !important;
 `
 
 export default () => (

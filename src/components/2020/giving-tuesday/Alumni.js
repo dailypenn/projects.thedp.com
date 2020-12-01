@@ -40,6 +40,10 @@ const AlumniName = s.text`
 
 const AlumniHeader = s.h4`
   ${GOPHER_BOLD}
+
+  @media screen and (max-width: 768px) {
+    margin-top: 2rem;
+  }
 `
 
 const BorderedCol = ({ idx, children }) => {

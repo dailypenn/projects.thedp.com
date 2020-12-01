@@ -12,7 +12,10 @@ const Wrapper = s.div`
 
 const Video = s.iframe`
   height: 400px;
-  margin-left: 30px;
+
+  @media screen and (max-width: 768px) {
+    height: 200px;
+  }
 `
 
 const Subheading = s.div`
@@ -32,11 +35,16 @@ const TextWrapper = s.div`
   line-height: 1.3rem;
 `
 
+const HCenterCol = s(Col)`
+  display: flex;
+  justify-content: center;
+`
+
 const AlwaysHere = () => (
   <Wrapper id="always-here">
     <Header title="ALWAYS HERE" />
     <RowWithPadding padding="5">
-      <Col sm={12} md={7}>
+      <HCenterCol sm={12} md={7}>
         <Video
           width="90%"
           src="https://www.youtube.com/embed/39BO5V3SQIY"
@@ -44,7 +52,7 @@ const AlwaysHere = () => (
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         />
-      </Col>
+      </HCenterCol>
       <Col sm={12} md={5} style={{ marginTop: '2rem' }}>
         <TextWrapper>
           <Subheading>
