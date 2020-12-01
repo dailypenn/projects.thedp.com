@@ -33,7 +33,7 @@ const EditorTitle = s.h1`
 const HotTakes = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: {relativePath: {eq: "hot_takes.json"}}) {
+      allFile(filter: { relativePath: { eq: "hot_takes.json" } }) {
         edges {
           node {
             childrenHotTakesJson {

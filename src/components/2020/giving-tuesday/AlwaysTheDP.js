@@ -36,8 +36,20 @@ const AlwaysTheDP = () => (
       </Col>
       <CenteredCol sm={12} md={5}>
         <h4> #GIVING TUESDAY </h4>
-        <p> What an exciting day for our organization and students! Hundreds of donors and thousands of dollars given all to help ensure the future of news, information and media. If you have not had the chance to make your gift today, time is running out! </p>
-        <p> If you have already donated, thank you for your participation today. Your gifts go directly to our students through scholarships, financial aid, training and much more. Your support means that we are ALWAYS HERE. ALWAYS THERE. ALWAYS THE DP! </p>
+        <p>
+          {' '}
+          What an exciting day for our organization and students! Hundreds of
+          donors and thousands of dollars given all to help ensure the future of
+          news, information and media. If you have not had the chance to make
+          your gift today, time is running out!{' '}
+        </p>
+        <p>
+          {' '}
+          If you have already donated, thank you for your participation today.
+          Your gifts go directly to our students through scholarships, financial
+          aid, training and much more. Your support means that we are ALWAYS
+          HERE. ALWAYS THERE. ALWAYS THE DP!{' '}
+        </p>
         <CenteredButton text="donate" textColor={WHITE} bgColor={PINK} />
       </CenteredCol>
     </RowWithPadding>
@@ -45,12 +57,9 @@ const AlwaysTheDP = () => (
     <TextYellowUnderLine text="social media" />
 
     <RowWithPadding padding="8">
-      <Col sm={12} md={4}>
-      </Col>
-      <Col sm={12} md={4}>
-      </Col>
-      <Col sm={12} md={4}>
-      </Col>
+      <Col sm={12} md={4}></Col>
+      <Col sm={12} md={4}></Col>
+      <Col sm={12} md={4}></Col>
     </RowWithPadding>
   </>
 )
