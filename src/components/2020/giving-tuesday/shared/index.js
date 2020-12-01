@@ -12,6 +12,11 @@ export const GREY = '#F5F4F4'
 export const DARK_BLACK = '#131313'
 
 // COMPONENTS
+const StyledAnchor = s.a`
+  color: #000000 !important;
+  text-decoration: none !important;
+`
+
 const Title = s.div`
   font-size: 8em;
   color: ${({ color = DARK_BLACK }) => color};
@@ -22,6 +27,16 @@ const Title = s.div`
 `
 
 export const Header = ({ title, color }) => <Title color={color}>{title}</Title>
+
+const HOVER_COLOR = bgColor => {
+  switch (bgColor) {
+    case PINK:
+      return '#9A3C42'
+
+    default:
+      return '#3B3939'
+  }
+}
 
 const Button = s.div`
   text-transform: uppercase;
@@ -34,6 +49,8 @@ const Button = s.div`
 
   :hover {
     cursor: pointer;
+    transition: 0.3s;
+    background-color: ${({ bgColor }) => HOVER_COLOR(bgColor)};
   }
 `
 
@@ -46,19 +63,23 @@ export const CenteredButton = ({
 }) => {
   if (!posCenter)
     return (
-      <Button textColor={textColor} bgColor={bgColor} width={width}>
-        {' '}
-        {text}{' '}
-      </Button>
+      <StyledAnchor href="https://www.thedp.com/page/donate" target="_blank">
+        <Button textColor={textColor} bgColor={bgColor} width={width}>
+          {' '}
+          {text}{' '}
+        </Button>
+      </StyledAnchor>
     )
 
   return (
-    <div style={{ justifyContent: 'center', display: 'flex' }}>
-      <Button textColor={textColor} bgColor={bgColor} width={width}>
-        {' '}
-        {text}{' '}
-      </Button>
-    </div>
+    <StyledAnchor href="https://www.thedp.com/page/donate" target="_blank">
+      <div style={{ justifyContent: 'center', display: 'flex' }}>
+        <Button textColor={textColor} bgColor={bgColor} width={width}>
+          {' '}
+          {text}{' '}
+        </Button>
+      </div>
+    </StyledAnchor>
   )
 }
 
