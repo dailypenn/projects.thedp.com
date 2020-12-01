@@ -100,7 +100,7 @@ const Index = () => (
     <Students />
     <Alumni />
     <AlwaysThere />
-    {/* <AlwaysTheDP /> */}
+    <AlwaysTheDP />
 
     <Footer emoji="💖" bgColor={GREY} />
   </>

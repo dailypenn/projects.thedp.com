@@ -30,7 +30,9 @@
     "react-bootstrap-carousel": "^4.1.0",
     "react-dfp": "^0.18.0",
     "react-dom": "^16.12.0",
+    "react-facebook": "^8.1.4",
     "react-helmet": "^6.0.0",
+    "react-instagram-embed": "^2.0.0",
     "react-multi-carousel": "^2.5.5",
     "react-responsive-carousel": "^3.2.10",
     "styled-components": "^5.1.0"
