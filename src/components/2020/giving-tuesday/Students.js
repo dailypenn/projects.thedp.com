@@ -5,9 +5,6 @@ import s from 'styled-components'
 import Img from 'gatsby-image'
 
 import {
-  Header,
-  PINK,
-  BLACK,
   YELLOW,
   STREET_GREEN,
   UTB_BLUE,
@@ -17,18 +14,29 @@ import {
 import { RowWithPadding, StyledLink } from '../../shared'
 import { Card } from '../housing-guide'
 
+import {
+  GOPHER_MEDIUM,
+  GOPHER_REGULAR,
+  RAMA_GOTHIC_BOLD
+} from '../../../utils/font'
+
 const Quotation = s.p`
+  ${GOPHER_REGULAR}  
   color: ${YELLOW};
-  font-size: 5em;
+  font-size: 10em;
   line-height: 0;
 `
 
 const Description = s.p`
+  ${GOPHER_MEDIUM}
+  font-size: 1em;
   padding: 1rem;
   margin-top: -3rem;
 `
 
 const StoryTitle = s.h2`
+  ${RAMA_GOTHIC_BOLD}  
+  font-size: 8em;
   color: ${({ idx }) => (idx === 0 ? STREET_GREEN : UTB_BLUE)};
   text-transform: uppercase;
   text-align: center;
@@ -36,6 +44,7 @@ const StoryTitle = s.h2`
 `
 
 const StoryDescription = s.p`
+  ${GOPHER_REGULAR}  
   margin: 3rem 0;
 `
 
