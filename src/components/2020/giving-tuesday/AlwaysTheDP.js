@@ -49,7 +49,7 @@ const AlwaysTheDP = () => (
         />
       </HCenteredCol>
       <HCenteredCol sm={12} md={4}>
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6737049624894349312" width="320" height="800" frameborder="0" allowfullscreen="" title="Embedded post" />
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6739503450989625344" height="665" width="320" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
       </HCenteredCol>
     </RowWithPadding>
   </Wrapper>
