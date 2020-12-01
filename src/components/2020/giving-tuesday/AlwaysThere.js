@@ -6,9 +6,6 @@ import { Header, WHITE, BLACK, YELLOW, PINK, CenteredButton } from './shared'
 import { RowWithPadding } from '../../shared'
 import Img from 'gatsby-image'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import { Carousel } from 'react-responsive-carousel'
-import PennHistory from './PennHistoryCarousel.js'
-import WorldHistory from './WorldHistoryCarousel.js'
 
 const Wrapper = s.div`
   background-color: ${PINK};
@@ -117,16 +114,6 @@ const AlwaysThere = () => {
             </ParaDiv>
           </Col>
         </Row>
-        <div style={{ textAlign: 'center', backgroundColor: '#F8F7F7' }}>
-          <Row>
-            <Col sm={12} md={6} style={{ borderRight: '2px dotted #747373' }}>
-              <PennHistory />
-            </Col>
-            <Col sm={12} md={6}>
-              <WorldHistory />
-            </Col>
-          </Row>
-        </div>
       </Wrapper>
     </>
   )
