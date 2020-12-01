@@ -27,6 +27,10 @@ const Title = s.div`
   padding-left: 2rem;
   line-height: ${({ lineHeight = '0.66' }) => lineHeight};
   margin-bottom: 3rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 8em;
+  }
 `
 
 export const Header = ({ title, color, lineHeight }) => <Title color={color} lineHeight={lineHeight}>{title}</Title>

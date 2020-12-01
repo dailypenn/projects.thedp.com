@@ -23,16 +23,24 @@ const HCenteredCol = s(Col)`
   }
 `
 
+const HideWrapper = s.div`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`
+
 const AlwaysTheDP = () => (
   <Wrapper id="always-the-dp">
     <Header title="always the dp" color={WHITE} lineHeight="0.7" />
 
     <RowWithPadding padding="5" paddingTB="2">
-      <HCenteredCol sm={12} md={4}>
-        <FacebookProvider appId="947756802416627">
-          <EmbeddedPost href="https://www.facebook.com/dailypenn/posts/10158826652488805" width="200" />
-        </FacebookProvider>
-      </HCenteredCol>
+      <HideWrapper>
+        <HCenteredCol sm={12} md={4}>
+          <FacebookProvider appId="947756802416627">
+            <EmbeddedPost href="https://www.facebook.com/dailypenn/posts/10158826652488805" width="200" />
+          </FacebookProvider>
+        </HCenteredCol>
+      </HideWrapper>
       <HCenteredCol sm={12} md={4}>
         <InstagramEmbed
           url='https://www.instagram.com/p/CIQkttXHTCI/'
