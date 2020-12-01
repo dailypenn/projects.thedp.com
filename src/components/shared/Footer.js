@@ -8,7 +8,7 @@ const Credit = s.div`
   ${({ font = FUTURA_REGULAR }) => font}
   padding: 1rem;
   font-size: 80%;
-  margin: 1rem 0;
+  margin-top: 1rem;
   text-align: center;
   background-color: ${({ bgColor = '#FFFFFF' }) => bgColor};
 `

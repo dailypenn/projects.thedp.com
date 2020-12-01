@@ -1,42 +1,18 @@
 [
   {
-    "name": "sarah fortinsky",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "image": {
-      "src": "../../../images/2020/giving-tuesday/sarah.jpg"
-    },
-    "logo": {
-      "src": "../../../images/2020/giving-tuesday/cnn.png"
-    }
+    "name": "Stuart Friedman",
+    "description": "I am proud of the role our Board played in this pivotal time for the University and for American Society."
   },
   {
-    "name": "sarah fortinsky",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "image": {
-      "src": "../../../images/2020/giving-tuesday/sarah.jpg"
-    },
-    "logo": {
-      "src": "../../../images/2020/giving-tuesday/cnn.png"
-    }
+    "name": "Thomas Scotes",
+    "description": "The daily Pennsylvanian was one of the most prestigious activities on campus, even though journalism was not one of the stronger undergraduate programs. Most were there for the experience, access and fun."
   },
   {
-    "name": "sarah fortinsky",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "image": {
-      "src": "../../../images/2020/giving-tuesday/sarah.jpg"
-    },
-    "logo": {
-      "src": "../../../images/2020/giving-tuesday/cnn.png"
-    }
+    "name": "Patrick Gallagher",
+    "description": "I remember being the DP newsroom when the news crossed the wire that Vice President Agnew resigned. For the first time, I really felt a part of the national news media."
   },
   {
-    "name": "sarah fortinsky",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "image": {
-      "src": "../../../images/2020/giving-tuesday/sarah.jpg"
-    },
-    "logo": {
-      "src": "../../../images/2020/giving-tuesday/cnn.png"
-    }
+    "name": "Alex Wong",
+    "description": "It had been a long and horrific day. But we took a moment to quietly recognize the obvious: this was the biggest one-day news story in history. And, in our humble way, we had the solemn privilege of being there to cover it."
   }
 ]

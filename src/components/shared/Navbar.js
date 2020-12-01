@@ -29,7 +29,7 @@ const RightUL = s.ul`
 
 // titles: { left: [{ text, link }*], right: [{ text, link }*] }
 
-export const NavBar = ({ titles }) => {
+export const NavBar = ({ titles, font }) => {
   const { left, right } = titles
 
   return (
@@ -48,7 +48,7 @@ export const NavBar = ({ titles }) => {
             <li className="nav-item">
               <Link className="nav-link" to={`#${link}`}>
                 {' '}
-                <NavText> {text} </NavText>
+                <NavText font={font}> {text} </NavText>
               </Link>
             </li>
           ))}
@@ -82,7 +82,7 @@ export const NavBar = ({ titles }) => {
             <li className="nav-item">
               <Link className="nav-link" to={`#${link}`}>
                 {' '}
-                <NavText> {text} </NavText>
+                <NavText font={font}> {text} </NavText>
               </Link>
             </li>
           ))}

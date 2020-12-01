@@ -5,13 +5,12 @@ import { NavBar, Footer } from '../../../components/shared'
 import Hero from '../../../components/2020/giving-tuesday/Hero'
 import Alumni from '../../../components/2020/giving-tuesday/Alumni'
 import Students from '../../../components/2020/giving-tuesday/Students'
-import Numbers from '../../../components/2020/giving-tuesday/Numbers'
 import AlwaysTheDP from '../../../components/2020/giving-tuesday/AlwaysTheDP'
 import AlwaysThere from '../../../components/2020/giving-tuesday/AlwaysThere'
 import AlwaysHere from '../../../components/2020/giving-tuesday/AlwaysHere'
 import { GREY } from '../../../components/2020/giving-tuesday/shared'
 
-
+import { GOPHER_REGULAR } from '../../../utils/font'
 
 const NavBarTitles = {
   left: [
@@ -32,9 +31,9 @@ const Index = () => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta
         name="description"
-        content="Your guide for voting in the 2020 elections"
+        content="#GivingTuesday"
       />
-      <title>2020 Giving Tuesday | The Daily Pennsylvanian</title>
+      <title>Always The DP</title>
       <link
         rel="stylesheet"
         type="text/css"
@@ -43,38 +42,38 @@ const Index = () => (
 
       <meta
         property="og:title"
-        content="2020 Election Guide | The Daily Pennsylvanian"
+        content="Always The DP"
       />
       <meta
         property="og:image"
-        content="https://snworksceo.imgix.net/dpn/a15d5bfd-cb4c-4588-a420-ebdca0fb2b78.sized-1000x1000.jpg"
+        content="https://snworksceo.imgix.net/dpn/eb48484c-3a7a-4089-9cfb-8c064987cd4f.sized-1000x1000.png"
       />
       <meta
         property="og:description"
-        content="Your guide for voting in the 2020 elections"
+        content="#GivingTuesday"
       />
       <meta property="og:type" content="article" />
       <meta
         property="og:url"
-        content="https://projects.thedp.com/2020/election"
+        content="https://projects.thedp.com/2020/giving-tuesday"
       />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:title"
-        content="2020 Election Guide | The Daily Pennsylvanian"
+        content="Always The DP"
       />
       <meta
         name="twitter:image"
-        content="https://snworksceo.imgix.net/dpn/a15d5bfd-cb4c-4588-a420-ebdca0fb2b78.sized-1000x1000.jpg"
+        content="https://snworksceo.imgix.net/dpn/eb48484c-3a7a-4089-9cfb-8c064987cd4f.sized-1000x1000.png"
       />
       <meta
         name="twitter:description"
-        content="Your guide for navigating this unprecedented virtual school year"
+        content="#GivingTuesday"
       />
       <meta
         name="twitter:url"
-        content="https://projects.thedp.com/2020/election"
+        content="https://projects.thedp.com/2020/giving-tuesday"
       />
       <meta name="twitter:site" content="@dailypenn"></meta>
 
@@ -94,14 +93,14 @@ const Index = () => (
         crossOrigin="anonymous"
       ></script>
     </Helmet>
-    <NavBar titles={NavBarTitles} />
+
+    <NavBar titles={NavBarTitles} font={GOPHER_REGULAR} />
     <Hero />
     <AlwaysHere />
     <Students />
     <Alumni />
-    <Numbers />
     <AlwaysThere />
-    <AlwaysTheDP />
+    {/* <AlwaysTheDP /> */}
 
     <Footer emoji="💖" bgColor={GREY} />
   </>

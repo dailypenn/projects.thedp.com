@@ -21,15 +21,15 @@ const StyledAnchor = s.a`
 
 const Title = s.div`
   ${RAMA_GOTHIC_BOLD}
-  font-size: 24em;
+  font-size: 10em;
   color: ${({ color = DARK_BLACK }) => color};
   text-transform: uppercase;
   padding-left: 2rem;
-  line-height: 0.66;
+  line-height: ${({ lineHeight = '0.66' }) => lineHeight};
   margin-bottom: 3rem;
 `
 
-export const Header = ({ title, color }) => <Title color={color}>{title}</Title>
+export const Header = ({ title, color, lineHeight }) => <Title color={color} lineHeight={lineHeight}>{title}</Title>
 
 const HOVER_COLOR = bgColor => {
   switch (bgColor) {
@@ -54,6 +54,11 @@ const Button = s.div`
     cursor: pointer;
     transition: 0.3s;
     background-color: ${({ bgColor }) => HOVER_COLOR(bgColor)};
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 1rem;
+    width: 30%;
   }
 `
 
@@ -86,19 +91,17 @@ export const CenteredButton = ({
   )
 }
 
+const TextSpan = s.span`
+  font-size: 1.5em;
+  border-bottom: 5px solid ${YELLOW};
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  color: ${({ textColor }) => textColor};
+  ${GOPHER_MEDIUM}
+`
+
 export const TextYellowUnderLine = ({ text, textColor = BLACK }) => (
-  <div style={{ margin: '0 0 3rem 2rem', paddingTop: '2rem' }}>
-    <span
-      style={{
-        fontSize: '3em',
-        borderBottom: `5px solid ${YELLOW}`,
-        textTransform: 'uppercase',
-        paddingBottom: '5px',
-        color: textColor,
-        fontFamily: GOPHER_MEDIUM
-      }}
-    >
-      {text}
-    </span>
+  <div style={{ margin: '0 0 8rem 2rem', paddingTop: '2rem' }}>
+    <TextSpan textColor={textColor}> {text} </TextSpan>
   </div>
 )

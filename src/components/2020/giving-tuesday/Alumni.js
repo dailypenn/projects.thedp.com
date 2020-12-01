@@ -27,7 +27,7 @@ const Wrapper = s.div`
 const AlumniText = s.div`
   ${GOPHER_REGULAR}
   @media screen and (max-width: 1300px) {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 `
 
@@ -100,32 +100,20 @@ const Paragraph = s.p`
 const Alumni = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: { relativePath: { eq: "alumni_GT_2020.json" } }) {
+      dpaa: file(relativePath: { eq: "dpaa.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000, maxHeight: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      alumni: allFile(filter: { relativePath: { eq: "alumni_GT_2020.json" } }) {
         edges {
           node {
             childrenAlumniGt2020Json {
               name
               description
-              image {
-                src {
-                  childImageSharp {
-                    fluid(maxWidth: 1000, maxHeight: 1000) {
-                      ...GatsbyImageSharpFluid
-                      src
-                    }
-                  }
-                }
-              }
-              logo {
-                src {
-                  childImageSharp {
-                    fluid(maxWidth: 1000) {
-                      ...GatsbyImageSharpFluid
-                      src
-                    }
-                  }
-                }
-              }
             }
           }
         }
@@ -135,40 +123,38 @@ const Alumni = () => {
 
   const {
     node: { childrenAlumniGt2020Json: alumni },
-  } = data.allFile.edges[0]
+  } = data.alumni.edges[0]
+
+  const { dpaa } = data
 
   return (
     <Wrapper>
       <TextYellowUnderLine text="alumni" textColor={YELLOW} />
 
-      <RowWithPadding padding="12">
-        <Col sm={12} md={7}></Col>
+      <RowWithPadding padding="8">
+        <Col sm={12} md={7}>
+          <Img fluid={dpaa.childImageSharp.fluid} className="img-fluid" />
+        </Col>
         <Col sm={12} md={5}>
           <AlumniHeader> DP ALUMNI ASSOCIATION </AlumniHeader>
           <Paragraph>
-            {' '}
-            DP ALUMNI ASSOCIATION An association, a network and really just a
+            An association, a network and really just a
             family! The DPAA and our alumni are the heartbeat of our
             organization. Every year, DP alumni generously give time, guidance
             and the funds we need to operate and advance our organization. Our
             students are incredibly lucky to have such an available and
-            supportive volunteer alumni community working closely with them.{' '}
+            supportive volunteer alumni community working closely with them.
           </Paragraph>
           <Paragraph>
-            {' '}
             The best part about the DPAA is that it will ALWAYS be a loyal
             network of support for our students and alumni long after their Penn
-            journeys have ended.{' '}
-          </Paragraph>
-          <Paragraph>
-            {' '}
-            Make your annual gift today and become a proud member of the DPAA.{' '}
+            journeys have ended.
           </Paragraph>
           <CenteredButton text="donate" textColor={WHITE} bgColor={BLACK} />
         </Col>
       </RowWithPadding>
 
-      <RowWithPadding padding="14" paddingTB="5">
+      <RowWithPadding padding="14" paddingTB="4">
         {alumni.map((person, idx) => (
           <Person {...person} idx={idx} />
         ))}

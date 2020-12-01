@@ -11,7 +11,7 @@ const Wrapper = s.div`
 `
 
 const Video = s.iframe`
-  height: 600px;
+  height: 400px;
   margin-left: 30px;
 `
 
@@ -29,70 +29,36 @@ const AlwaysHereText = s.div`
 `
 
 const TextWrapper = s.div`
-  margin-right: 200px;
   line-height: 1.3rem;
 `
 
 const AlwaysHere = () => (
-  <Wrapper>
+  <Wrapper id="always-here">
     <Header title="ALWAYS HERE" />
-    <Row>
-      <Col md={7}>
+    <RowWithPadding padding="5">
+      <Col sm={12} md={7}>
         <Video
           width="90%"
-          src="https://www.youtube.com/embed/XqZsoesa55w"
+          src="https://www.youtube.com/embed/39BO5V3SQIY"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         />
       </Col>
-      <Col md={5}>
+      <Col sm={12} md={5} style={{ marginTop: '2rem' }}>
         <TextWrapper>
           <Subheading>
             JOIN THE GLOBAL GENEROSITY MOVEMENT ON #GIVINGTUESDAY
           </Subheading>
           <AlwaysHereText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus
-            est pellentesque elit ullamcorper. Ipsum a arcu cursus vitae congue
-            mauris. Vitae congue mauris rhoncus aenean vel elit scelerisque
-            mauris pellentesque. Cursus euismod quis viverra nibh cras pulvinar.
-            Velit euismod in pellentesque massa placerat duis ultricies.
-            Pellentesque habitant morbi tristique senectus et netus. Euismod
-            quis viverra nibh cras pulvinar mattis nunc. Risus in hendrerit
-            gravida rutrum quisque non tellus. Scelerisque mauris pellentesque
-            pulvinar pellentesque habitant morbi tristique. Arcu cursus vitae
-            congue mauris rhoncus aenean vel. A condimentum vitae sapien
-            pellentesque habitant morbi. Aenean pharetra magna ac placerat
-            vestibulum lectus mauris. Ultrices neque ornare aenean euismod
-            elementum nisi quis eleifend. Amet massa vitae tortor condimentum
-            lacinia.
+            For close to 140 years the Daily Pennsylvanian has been a news publication, a Penn student activity and a life-changing educational non-profit organization. Our organization has always and continues to be driven by our student staff’s dedication and determination to deliver news, content and information, unfiltered, to the Penn community. Supporting the DP today will help to ensure that tradition and sustain our legacy of providing Penn students with transformational experiences for generations to come.
           </AlwaysHereText>
           <AlwaysHereText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus
-            est pellinar mattis nunc. Risus in hendrerit gravida rutrum quisque
-            non tellus. Sc viverra nibh cras pulvinar mattis nunc. Risus in
-            hendrerit gr congue mauris rhoncus aenean vel. A condimentum vitae
-            sapien pellentesque habitant morbi. Aenean pharetra magna ac
-            placerat vestibavida rutrum quisque non tellus. Scelerisque mauris
-            pellentesque pulvinar elerisque mauris pellentlementum nisi quis
-            eleifend. Amet massa vitae tortor condimentum lacinia.
-          </AlwaysHereText>
-          <AlwaysHereText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus
-            est pellinar mattis nunc. Risus in hendrerit gravida rutrum quisque
-            non tellus. Scelerisque mauris pellentesque pulvinar pellentesque
-            habitant morbi tristique. Arcu cursus vitae congue mauris rhoncus
-            aenean vel. A condimentum vitae sapien pellentesque habitant morbi.
-            Aenean pharetra magna ac placerat vestibulum lectus mauris. Ultrices
-            neque ornare aenean euismod elementum nisi quis eleifend. Amet massa
-            vitae tortor condimentum lacinia.
+            All dollars raised today will go directly to our students through scholarships, financial assistance, internships, training, resources and tools.
           </AlwaysHereText>
         </TextWrapper>
       </Col>
-    </Row>
+    </RowWithPadding>
     <CenteredButton
       text="donate"
       bgColor={BLACK}
