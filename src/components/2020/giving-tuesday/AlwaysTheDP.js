@@ -2,6 +2,7 @@ import React from 'react'
 import s from 'styled-components'
 import { Col } from 'react-bootstrap'
 
+import { GOPHER_REGULAR, GOPHER_BOLD } from '../../../utils/font'
 import {
   WHITE,
   PINK,
@@ -17,6 +18,10 @@ const Video = s.iframe`
   @media (max-width: 768px) {
     height: 200px;
   }
+`
+
+const StyledHeader4 = s.h4`
+  ${GOPHER_BOLD}
 `
 
 const AlwaysTheDP = () => (
@@ -35,7 +40,7 @@ const AlwaysTheDP = () => (
         />
       </Col>
       <CenteredCol sm={12} md={5}>
-        <h4> #GIVING TUESDAY </h4>
+        <StyledHeader4> #GIVING TUESDAY </StyledHeader4>
         <p>
           {' '}
           What an exciting day for our organization and students! Hundreds of
