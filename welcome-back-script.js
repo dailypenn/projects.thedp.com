@@ -4,11 +4,11 @@
 // Red Staper made a NICE tutorial about this effect! You should check it out!
 // https://www.youtube.com/watch?v=LgiadQQM6mo&t=5s
 
-window.addEventListener("mousemove", handleMouseMove)
-window.addEventListener("resize", handleWindowResize)
+window.addEventListener('mousemove', handleMouseMove)
+window.addEventListener('resize', handleWindowResize)
 
-const spansSlow = document.getElementsByClassName("spanSlow")
-const spansFast = document.getElementsByClassName("spanFast")
+const spansSlow = document.getElementsByClassName('spanSlow')
+const spansFast = document.getElementsByClassName('spanFast')
 
 let width = window.innerWidth
 
@@ -29,11 +29,11 @@ function handleWindowResize() {
   width = window.innerWidth
 }
 
-let broadstreetScript = document.createElement('script');
-broadstreetScript.src = 'https://cdn.broadstreetads.com/init-2.min.js'; // URL for the third-party library being loaded.
-document.body.appendChild(broadstreetScript);
+let broadstreetScript = document.createElement('script')
+broadstreetScript.src = 'https://cdn.broadstreetads.com/init-2.min.js' // URL for the third-party library being loaded.
+document.body.appendChild(broadstreetScript)
 
-window.broadstreet = window.broadstreet || { run: [] };
-window.broadstreet.run.push(function() {
-  broadstreet.watch({ networkId: 5889 });
-});
+window.broadstreet = window.broadstreet || { run: [] }
+window.broadstreet.run.push(function () {
+  broadstreet.watch({ networkId: 5889 })
+})
