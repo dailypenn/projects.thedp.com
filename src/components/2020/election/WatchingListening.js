@@ -29,7 +29,7 @@ const ColoredColBox = s(Col)`
 const Articles = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: {relativePath: {eq: "watching.json"}}) {
+      allFile(filter: { relativePath: { eq: "watching.json" } }) {
         edges {
           node {
             childrenWatchingJson {

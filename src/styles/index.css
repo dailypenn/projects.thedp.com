@@ -43,6 +43,9 @@
 /*Brandon Grotesque and Cooper Black font families */
 @import url("https://use.typekit.net/kgg5alo.css");
 
+/*Rama Gothic C Bold */
+@import url("https://use.typekit.net/ijd8cks.css");
+
 html {
   scroll-behavior: smooth;
 }

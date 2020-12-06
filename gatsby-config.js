@@ -107,6 +107,21 @@ module.exports = {
         path: `${__dirname}/src/content/json/2020/34st-election`,
       },
     },
+    // json and images for 2020 giving tuesday
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2020/giving-tuesday`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2020/giving-tuesday`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -143,7 +158,7 @@ module.exports = {
       resolve: 'gatsby-plugin-your-fonts',
       options: {
         host: 'dailypenn.github.io/font',
-        fonts: [`radiant.css`, `canela.css`],
+        fonts: [`radiant.css`, `canela.css`, `gopher.css`],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

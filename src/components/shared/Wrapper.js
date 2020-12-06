@@ -24,3 +24,11 @@ export const NavbarWrapper = s.nav`
   position: fixed;
   z-index: 1;
 `
+
+export const WrapperWithPadding = s.div`
+  padding: 0 ${({ padding = '10' }) => padding}rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 1rem;
+  }
+`

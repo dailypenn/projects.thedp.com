@@ -8,7 +8,6 @@ import BackgroundImage from 'gatsby-background-image'
 import { SectionHeader, Title, Author, StyledRow, Wrapper } from './shared'
 import { FUTURA_REGULAR } from '../../../utils/font'
 import { StyledLink } from '../../shared'
-import Articles from '../../../content/json/2020/34st-election/arts.json'
 
 const LeftTitle = s.div`
   color: white;
@@ -24,7 +23,7 @@ const EditorTitle = s.h1`
 const Arts = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: {relativePath: {eq: "arts.json"}}) {
+      allFile(filter: { relativePath: { eq: "arts.json" } }) {
         edges {
           node {
             childrenArtsJson {
@@ -48,9 +47,9 @@ const Arts = () => {
     }
   `)
 
-const {
-  node: { childrenArtsJson: articles },
-} = data.allFile.edges[0]
+  const {
+    node: { childrenArtsJson: articles },
+  } = data.allFile.edges[0]
 
   return (
     <Wrapper id="art">
@@ -58,7 +57,9 @@ const {
       <StyledRow padding="10">
         <Col md={6} style={{ marginBottom: '1rem' }}>
           <StyledLink href={articles[0].link} target="_blank">
-            <BackgroundImage fluid={articles[0].image.src.childImageSharp.fluid}>
+            <BackgroundImage
+              fluid={articles[0].image.src.childImageSharp.fluid}
+            >
               <LeftTitle>
                 <EditorTitle style={{ paddingTop: '1rem' }}>
                   {' '}

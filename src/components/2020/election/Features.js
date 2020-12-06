@@ -34,7 +34,7 @@ const FeatureAuthor = s.div`
 const Features = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: {relativePath: {eq: "features.json"}}) {
+      allFile(filter: { relativePath: { eq: "features.json" } }) {
         edges {
           node {
             childrenFeaturesJson {
@@ -71,10 +71,8 @@ const Features = () => {
           <StyledLink href={articles[0].link} target="_blank">
             <Img fluid={articles[0].image.src.childImageSharp.fluid} />
             <Title>
-              <b>
-                {articles[0].abstract.split(',')[0]}
-              </b>
-              ,{articles[0].abstract.split(',')[1]}
+              <b>{articles[0].abstract.split(',')[0]}</b>,
+              {articles[0].abstract.split(',')[1]}
             </Title>
             <Author>BY {articles[0].authors}</Author>
           </StyledLink>

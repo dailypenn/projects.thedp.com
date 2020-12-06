@@ -126,10 +126,16 @@ export const RADIANT_REGULAR = `
   font-weight: 400;
 `
 
+export const RAMA_GOTHIC_BOLD = `
+  font-family: 'rama-gothic-c';
+  font-weight: 700;
+`
+
 export const FUTURA_REGULAR = `
   font-family: 'Futura-PT', sans-serif;
   font-weight: 400;
 `
+
 export const FUTURA_BOLD = `
   font-family: 'Futura-PT', sans-serif;
   font-weight: 700;
@@ -143,4 +149,19 @@ export const COOPER_BLACK_REGULAR = `
 export const BRANDON_GROTESQUE_MEDIUM = `
   font-family: 'BrandonGrotesque-Medium';
   font-weight: 400;
+`
+
+export const GOPHER_REGULAR = `
+  font-family: 'Gopher', sans-serif;
+  font-weight: 400;
+`
+
+export const GOPHER_MEDIUM = `
+  font-family: 'Gopher', sans-serif;
+  font-weight: 500;
+`
+
+export const GOPHER_BOLD = `
+  font-family: 'Gopher', sans-serif;
+  font-weight: 700;
 `
