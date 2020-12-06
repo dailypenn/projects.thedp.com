@@ -37,13 +37,13 @@ const AlwaysTheDP = () => (
       <HideWrapper>
         <HCenteredCol sm={12} md={4}>
           <FacebookProvider appId="947756802416627">
-            <EmbeddedPost href="https://www.facebook.com/dailypenn/posts/10158826623513805" width="320" />
+            <EmbeddedPost href="https://www.facebook.com/dailypenn/posts/10158828539653805" width="320" />
           </FacebookProvider>
         </HCenteredCol>
       </HideWrapper>
       <HCenteredCol sm={12} md={4}>
         <InstagramEmbed
-          url='https://www.instagram.com/p/CIQkttXHTCI/'
+          url='https://www.instagram.com/p/CIRN65vDAfS/'
           clientAccessToken='947756802416627|a36b8dffc1596399ee685a4677ebc2a2'
           maxWidth={320}
           hideCaption
