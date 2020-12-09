@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 import { NavBar, Footer } from '../../../components/shared'
 import News from '../../../components/2020/final-issue/News'
 import Opinion from '../../../components/2020/final-issue/Opinion'
+import Street from '../../../components/2020/final-issue/Street'
 
 import { GOPHER_REGULAR } from '../../../utils/font'
 
@@ -94,6 +95,7 @@ const Index = () => (
     <NavBar titles={NavBarTitles} font={GOPHER_REGULAR} />
     <News />
     <Opinion />
+    <Street />
 
     <Footer emoji="💖" bgColor={'#F5F4F4'} />
   </>
