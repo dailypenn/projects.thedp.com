@@ -5,8 +5,10 @@ import { NavBar, Footer } from '../../../components/shared'
 import News from '../../../components/2020/final-issue/News'
 import Opinion from '../../../components/2020/final-issue/Opinion'
 import Street from '../../../components/2020/final-issue/Street'
+import UTB from '../../../components/2020/final-issue/UTB'
+import Multimedia from '../../../components/2020/final-issue/Multimedia'
 
-import { GOPHER_REGULAR } from '../../../utils/font'
+import { GOPHER_REGULAR, CANELA_REGULAR } from '../../../utils/font'
 
 const NavBarTitles = {
   left: [
@@ -95,8 +97,9 @@ const Index = () => (
     <NavBar titles={NavBarTitles} font={GOPHER_REGULAR} />
     <News />
     <Opinion />
+    <Multimedia/>
     <Street />
-
+    <UTB />
     <Footer emoji="💖" bgColor={'#F5F4F4'} />
   </>
 )

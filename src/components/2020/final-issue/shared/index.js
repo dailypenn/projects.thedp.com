@@ -1,8 +1,11 @@
 import React from 'react'
 import s from 'styled-components'
+import Img from 'gatsby-image'
+
 import {
   FUTURA_REGULAR,
   LORA_REGULAR,
+  RADIANT_REGULAR,
   FUTURA_BOLD,
 } from '../../../../utils/font'
 
@@ -17,6 +20,13 @@ export const Wrapper = s.div`
   }
 `
 
+export const SubsectionTitle = s.p`
+  ${FUTURA_BOLD}
+  color: #639E7D;
+  font-size: 16px;
+  padding-top: .5rem;
+`
+
 export const GreenSectionHeader = s.p`
   ${FUTURA_BOLD}
   letter-spacing: 1.6px;
@@ -26,15 +36,17 @@ export const GreenSectionHeader = s.p`
 
 export const SectionHeader = s.h1`
   color: #032FB7;
-  margin: 1em;
   text-align: center;
+  margin: 1em;
+  margin-left: auto;
+  margin-right: auto;
 `
 
 export const ArticleHeader = s.h3`
   ${FUTURA_REGULAR}
   line-height: 1.1;
   color: #032FB7;
-  font-size: 2em;
+  font-size: 30px;
 
   :hover {
     color: #707070;
@@ -46,10 +58,75 @@ export const ArticleHeader = s.h3`
   }
 `
 
+export const H2 = s.h2` 
+  text-align: center; 
+  font-size: 4em;
+  ${RADIANT_REGULAR}
+  color: #639E7D;
+  margin: 2rem;
+`
+
+export const MustReadArticle = ({ article }) => (
+  <StyledAnchor href={article.link} target="_blank" >
+    <div className="row" style={{ marginBottom: '4.5rem', paddingLeft: '2rem', paddingRight: '2rem'}}>
+      <div className="col-md-6">
+        <Img fluid={article.image.src.childImageSharp.fluid}/>
+      </div>
+      <div className="col-md-6">
+        <ArticleHeader>
+          {' '}
+          {article.title}{' '}
+        </ArticleHeader>
+        <ArticleAuthor style={{ fontSize: '80%' }}>
+          {' '}
+          BY {article.author}{' '}
+        </ArticleAuthor>
+      </div>
+    </div>
+  </StyledAnchor>
+)
+
+export const MustRead = ({ articles }) => (
+  <div className="col-md-6">
+    <div style={{ backgroundColor: '#F8FC57' }}>
+      <div
+        className="d-flex justify-content-center"
+        style={{ padding: '1rem' }}
+      />
+      <H2> STREET'S PICKS OF 2020:</H2>
+      <div style={{ padding: '0 1rem' }}>
+        {articles.map(article => (
+          <MustReadArticle article={article} />
+        ))}
+      </div>
+      <div
+        className="d-flex justify-content-center"
+        style={{ padding: '1rem' }}
+      />
+    </div>
+  </div>
+)
+
+export const BigArticle = ({ article }) => (
+  <div className="text-center">
+    <StyledAnchor href={article.link} target="_blank" >
+      <Img style fluid={article.image.src.childImageSharp.fluid} style={{marginLeft: 'auto', marginRight: 'auto',maxWidth: '600px', maxHeight: '300px'}} />
+      <SubsectionTitle>{article.section}</SubsectionTitle>
+      <LargeArticleHeader>
+        {article.title}
+      </LargeArticleHeader>
+      <ArticleAuthor style={{ marginTop: '0.5rem' }}>
+        BY {article.author}
+      </ArticleAuthor>
+    </StyledAnchor>
+  </div>
+)
+
 export const LargeArticleHeader = s.h3`
   ${FUTURA_REGULAR}
-  font-size: 2em;
-  line-height: 1.1;
+  margin: -5px;
+  font-size: 25px;
+  line-height: 1;
 
   :hover {
     color: #707070;
@@ -69,7 +146,9 @@ export const ArticleDescription = s.p`
 
 export const ArticleAuthor = s.p`
   ${FUTURA_REGULAR}
+  font-size: 14px;
   text-transform: uppercase;
+  padding-top: 1rem;
 `
 
 export const StyledAnchor = s.a`
