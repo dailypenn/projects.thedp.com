@@ -48,11 +48,11 @@ const Index = () => (
       />
       <meta
         property="og:image"
-        content="https://snworksceo.imgix.net/dpn/eb48484c-3a7a-4089-9cfb-8c064987cd4f.sized-1000x1000.png"
+        content="https://snworksceo.imgix.net/dpn/6240fb3c-f7fb-4ac9-b404-d97f0246684f.sized-1000x1000.png"
       />
       <meta
         property="og:description"
-        content="#GivingTuesday"
+        content="Final Issue"
       />
       <meta property="og:type" content="article" />
       <meta
@@ -67,7 +67,7 @@ const Index = () => (
       />
       <meta
         name="twitter:image"
-        content="https://snworksceo.imgix.net/dpn/eb48484c-3a7a-4089-9cfb-8c064987cd4f.sized-1000x1000.png"
+        content="https://snworksceo.imgix.net/dpn/6240fb3c-f7fb-4ac9-b404-d97f0246684f.sized-1000x1000.png"
       />
       <meta
         name="twitter:description"
