@@ -1,10 +1,12 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
+import s from 'styled-components'
 
 import {
   Wrapper,
   SectionHeader,
-  BigArticleStaticImg
+  BigArticleStaticImg,
+  BigArticleVideo
 } from './shared'
 
 const ArticlesJSON = [
@@ -16,11 +18,10 @@ const ArticlesJSON = [
     "img": "https://s3.amazonaws.com/snwceomedia/dpn/45adb6db-3fdb-43f5-901a-479d942a20e0.original.gif"
   },
   {
-    "title": "2020 Year in Review",
-    "link": "",
-    "author": "SAGE LEVINE",
+    "title": "The Story of 2020",
+    "link": "https://youtu.be/_DJKKm6T3SE",
+    "author": "SOPHIE HUANG",
     "section": "VIDEO",
-    "img": "https://s3.amazonaws.com/snwceomedia/dpn/45adb6db-3fdb-43f5-901a-479d942a20e0.original.gif"
   }
 ]
 
@@ -31,8 +32,12 @@ const Multimedia = () => {
         <Col>
           <SectionHeader>MULTIMEDIA</SectionHeader>
           <div className="row">
-            <Col><BigArticleStaticImg article={ArticlesJSON[0]} /></Col>
-            <Col><BigArticleStaticImg article={ArticlesJSON[1]} /></Col>
+            <Col sm={12} md={6}>
+              <BigArticleStaticImg article={ArticlesJSON[0]} />
+            </Col>
+            <Col sm={12} md={6}>
+              <BigArticleVideo article={ArticlesJSON[1]} />
+            </Col>
           </div>
         </Col>
       </div>

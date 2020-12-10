@@ -213,6 +213,46 @@ export const BigArticleStaticImg = ({ article }) => (
   </div>
 )
 
+const Video = s.div`
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 66.66%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+`
+
+export const BigArticleVideo = ({ article }) => (
+  <div className="text-center">
+    <StyledAnchor href={article.link} target="_blank">
+      <Video>
+        <iframe
+          src="https://www.youtube.com/embed/_DJKKm6T3SE"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+      </Video>
+      
+      <SubsectionTitle>{article.section}</SubsectionTitle>
+      <LargeArticleHeader>
+        {article.title}
+      </LargeArticleHeader>
+      <ArticleAuthor style={{ marginTop: '0.5rem' }}>
+        BY {article.author}
+      </ArticleAuthor>
+    </StyledAnchor>
+  </div>
+)
+
 export const LargeArticleHeader = s.h3`
   ${FUTURA_REGULAR}
   margin: -5px;
