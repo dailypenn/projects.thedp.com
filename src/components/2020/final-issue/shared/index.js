@@ -1,6 +1,7 @@
 import React from 'react'
 import s from 'styled-components'
 import Img from 'gatsby-image'
+import { Image } from 'react-bootstrap'
 
 import {
   FUTURA_REGULAR,
@@ -114,6 +115,21 @@ export const BigArticle = ({ article }) => (
   <div className="text-center">
     <StyledAnchor href={article.link} target="_blank" >
       <Img style fluid={article.image.src.childImageSharp.fluid} style={{marginLeft: 'auto', marginRight: 'auto',maxWidth: '600px', maxHeight: '300px'}} />
+      <SubsectionTitle>{article.section}</SubsectionTitle>
+      <LargeArticleHeader>
+        {article.title}
+      </LargeArticleHeader>
+      <ArticleAuthor style={{ marginTop: '0.5rem' }}>
+        BY {article.author}
+      </ArticleAuthor>
+    </StyledAnchor>
+  </div>
+)
+
+export const BigArticleStaticImg = ({ article }) => (
+  <div className="text-center">
+    <StyledAnchor href={article.link} target="_blank" >
+      <Image src={article.img}  fluid/>
       <SubsectionTitle>{article.section}</SubsectionTitle>
       <LargeArticleHeader>
         {article.title}

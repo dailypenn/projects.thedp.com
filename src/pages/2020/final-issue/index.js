@@ -8,7 +8,7 @@ import Street from '../../../components/2020/final-issue/Street'
 import UTB from '../../../components/2020/final-issue/UTB'
 import Multimedia from '../../../components/2020/final-issue/Multimedia'
 
-import { GOPHER_REGULAR, CANELA_REGULAR } from '../../../utils/font'
+import { GOPHER_REGULAR, LIBRE_REGULAR } from '../../../utils/font'
 
 const NavBarTitles = {
   left: [
@@ -94,7 +94,7 @@ const Index = () => (
       ></script>
     </Helmet>
 
-    <NavBar titles={NavBarTitles} font={GOPHER_REGULAR} />
+    <NavBar titles={NavBarTitles} font={GOPHER_REGULAR} font={LIBRE_REGULAR} />
     <News />
     <Opinion />
     <Multimedia/>
