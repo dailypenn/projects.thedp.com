@@ -2,7 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import s from 'styled-components'
 
-import { BottomTextImage, TextImage } from '../../shared'
+import { BottomTextImage, TextImage, LCol, RCol } from '../../shared'
 import { Wrapper, SectionHeader } from './shared'
 
 const News = () => (
@@ -40,7 +40,6 @@ const News = () => (
 
       return (
         <Wrapper>
-          <SectionHeader> NEWS </SectionHeader>
           <div className="row main" id="news">
             <div className='col-md-12'>
               <SectionHeader>NEWS</SectionHeader>
