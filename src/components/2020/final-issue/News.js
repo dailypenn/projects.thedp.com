@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import s from 'styled-components'
+import { Row, Col } from 'react-bootstrap'
 
 import { BottomTextImage, TextImage, LCol, RCol } from '../../shared'
 import { Wrapper, SectionHeader } from './shared'
@@ -39,21 +39,17 @@ const News = () => (
       } = data.allFile.edges[0]
 
       return (
-        <Wrapper>
-          <div className="row main" id="news">
+        <Wrapper id="news">
+          <div className="row main">
             <div className='col-md-12'>
               <SectionHeader>NEWS</SectionHeader>
-              <div className='row'>
-                <LCol md={6}>
-                  <TextImage article = {articles[0]}/>
-                  <TextImage article = {articles[1]} />
-                </LCol>
-                <RCol md={6}>
-                  <TextImage article = {articles[2]} />
-                  <TextImage article = {articles[3]} />
-                </RCol>
-              </div>
-              <div className="row">
+              <Row>
+                <TextImage article={articles[0]}/>
+                <TextImage article={articles[1]} />
+                <TextImage article={articles[2]} />
+                <TextImage article={articles[3]} />
+              </Row>
+              <Row style={{ padding: '0 1rem' }}>
                 <BottomTextImage 
                   article = {articles[1]} 
                   miniHeader = {'Student'}
@@ -69,7 +65,7 @@ const News = () => (
                   miniHeader = {'Student'}
                   color = {'rgba(3,47,183, 0.57)'} 
                   md = {4}/>
-              </div>
+              </Row>
             </div>
           </div>
         </Wrapper>

@@ -2,6 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 import s from 'styled-components'
+import { Row, Col } from 'react-bootstrap'
 
 import { BigTextImage } from '../../shared'
 import { 
@@ -29,7 +30,7 @@ const TextWrapper = s.div`
 const SportsPiece = ({ article }) => (
   <div className="col-md-6">
     <StyledLink href={article.link} target='_blank'>
-      <Img fluid={article.image.src.childImageSharp.fluid}/>
+      <Img fluid={article.image.src.childImageSharp.fluid} className="img-fluid" />
     </StyledLink>
     <StyledLink href={article.link} target='_blank'>
       <TextWrapper>
@@ -91,8 +92,7 @@ const Sports = () => (
       }
     `}
     render={data => {
-      const { SquareArticles, RectangleArticles } = data 
-      console.log(SquareArticles)
+      const { SquareArticles, RectangleArticles } = data
       const { node: { childrenFinalSports2020Json: articles } } = SquareArticles.edges[0]
       const { node: { childrenFinalSports2020Json: rectArticles } } = RectangleArticles.edges[0]
       // const {
@@ -104,19 +104,19 @@ const Sports = () => (
           <div className="row main" id="sports">
             <div className='col-md-12'>
               <SectionHeader>SPORTS</SectionHeader>
-              <div className='row'>
+              <Row>
                 <LCol md={6}>
                   <BigTextImage article = {articles[0]} />
                 </LCol>
                 <RCol md={6}>
                   <SportsReads articles = {articles.slice(1, 3)} />
                 </RCol>
-              </div>
+              </Row>
             </div>
-            <div className="row">
-              <SportsPiece article = {rectArticles[0]} style={{paddingLeft:0}}/>
-              <SportsPiece article = {rectArticles[2]} style={{paddingRight:0}}/>
-            </div>
+            <Row style={{ marginTop: '2rem' }}>
+              <SportsPiece article={rectArticles[0]} style={{paddingLeft:0}}/>
+              <SportsPiece article={rectArticles[2]} style={{paddingRight:0}}/>
+            </Row>
           </div>
         </Wrapper>
       )

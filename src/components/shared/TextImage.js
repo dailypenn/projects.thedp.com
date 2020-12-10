@@ -52,17 +52,10 @@ const DarkBackgroundImage = s(BackgroundImage)`
   background-size: cover;
 `
 
-const StyledRow = s(Row)`
-<<<<<<< HEAD
-  margin-bottom: 5%;
-=======
->>>>>>> 4e3b18118879a582aa26bad66bddd9957615a74e
-`
-
 const MiniHeader = s.p`
   ${FUTURA_REGULAR}
   padding: 1rem 2rem 0;
-  font-size:0.4em;
+  font-size: 1em;
 `
 const BottomDescription = s.p`
 ${FUTURA_REGULAR}
@@ -72,36 +65,34 @@ line-height:1.1em;
 `
 
 export const TextImage = ({ article }) => (
-  <StyledRow>
-    <Col>
-      <StyledLink href={article.link} target="_blank">
-        <DarkBackgroundImage
-          fluid={article.image.src.childImageSharp.fluid}
-          style={{ border: 'none' }}
-          Dark = {true}
-        >
-          <FeatureText>
-            <Title>{article.title} </Title>
-            <BottomWrapper>
-              <Description> {article.description} </Description>
-              <ArticleAuthor> {article.author} </ArticleAuthor>
-            </BottomWrapper>
-          </FeatureText>
-        </DarkBackgroundImage>
-      </StyledLink>
-    </Col>
-  </StyledRow>
+  <Col md={6} style={{ padding: '1rem' }}>
+    <StyledLink href={article.link} target="_blank">
+      <DarkBackgroundImage
+        fluid={article.image.src.childImageSharp.fluid}
+        style={{ border: 'none' }}
+        Dark
+      >
+        <FeatureText>
+          <Title>{article.title} </Title>
+          <BottomWrapper>
+            <Description> {article.description} </Description>
+            <ArticleAuthor> {article.author} </ArticleAuthor>
+          </BottomWrapper>
+        </FeatureText>
+      </DarkBackgroundImage>
+    </StyledLink>
+  </Col>
 )
 
-export const BottomTextImage = ({ article, miniHeader, color, md = 12 }) => (
-  <Col md = {md} style={{padding:'0px'}}>
+export const BottomTextImage = ({ article, miniHeader, color, md=12 }) => (
+  <Col md={md} style={{ padding: 0 }}>
     <StyledLink href={article.link} target="_blank">
       <DarkBackgroundImage
         fluid={article.image.src.childImageSharp.fluid}
         style={{ border: 'none' }}
       >
         <FeatureText>
-          <BottomWrapper color ={color}>
+          <BottomWrapper color={color}>
             <MiniHeader> {miniHeader} </MiniHeader>
             <BottomDescription> {article.title} </BottomDescription>
           </BottomWrapper>
@@ -121,7 +112,7 @@ const BigTitle = s.p`
 `
 
 export const BigTextImage = ({ article }) => (
-  <StyledRow>
+  <Row>
     <Col>
       <StyledLink href={article.link} target="_blank">
         <DarkBackgroundImage
@@ -137,5 +128,5 @@ export const BigTextImage = ({ article }) => (
         </DarkBackgroundImage>
       </StyledLink>
     </Col>
-  </StyledRow>
+  </Row>
 )

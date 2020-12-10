@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { Image } from 'react-bootstrap'
 
 import { NavBar, Footer } from '../../../components/shared'
 import News from '../../../components/2020/final-issue/News'
@@ -96,6 +97,7 @@ const Index = () => (
     </Helmet>
 
     <NavBar titles={NavBarTitles} font={GOPHER_REGULAR} font={LIBRE_REGULAR} />
+    <Image fluid src="/img/final-issue/hero.png" />
     <News />
     <Opinion />
     <Sports />
