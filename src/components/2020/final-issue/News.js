@@ -2,22 +2,8 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import s from 'styled-components'
 
-import { BottomTextImage, TextImage, LCol, RCol } from '../../shared'
+import { BottomTextImage, TextImage } from '../../shared'
 import { Wrapper, SectionHeader } from './shared'
-
-const LSquares = s.div`
-  padding-right:2rem;
-  @media (max-width: 768px) {
-    padding: 0;
-  }
-`
-
-const RSquares = s.div`
-  padding-left:2rem
-  @media (max-width: 768px) {
-    padding:0;
-  }
-`
 
 const News = () => (
   <StaticQuery
@@ -54,6 +40,7 @@ const News = () => (
 
       return (
         <Wrapper>
+          <SectionHeader> NEWS </SectionHeader>
           <div className="row main" id="news">
             <div className='col-md-12'>
               <SectionHeader>NEWS</SectionHeader>

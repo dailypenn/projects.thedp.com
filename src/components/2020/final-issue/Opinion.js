@@ -2,12 +2,10 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 import s from 'styled-components'
+import { Row, Col } from 'react-bootstrap'
 
 import { StyledLink } from '../../shared'
-import { 
-  Wrapper, 
-  GreenSectionHeader, 
-  SectionHeader } from './shared'
+import { Wrapper, GreenSectionHeader, SectionHeader } from './shared'
 import {
   FUTURA_REGULAR,
   FUTURA_BOLD,
@@ -84,8 +82,8 @@ const OpinionRow = s.div`
 `
 
 const OpinionPieces = ({ article }) => (
-  <OpinionRow className="row">
-    <div className="col-md-6">
+  <Row style={{marginTop:'2rem'}}>
+    <Col sm={12} md={6} lg={6}>
       <StyledLink href={article.link} target='_blank'>
         <TextWrapper>
           <OpinionHeader> {article.title} </OpinionHeader>
@@ -93,13 +91,13 @@ const OpinionPieces = ({ article }) => (
           <OpinionAuthor> {article.author} </OpinionAuthor>
         </TextWrapper>
       </StyledLink>
-    </div>
-    <div className="col-md-6">
+    </Col>
+    <Col sm={12} md={6} lg={6}>
       <StyledLink href={article.link} target='_blank'>
         <Img fluid={article.image.src.childImageSharp.fluid} />
       </StyledLink>
-    </div>
-  </OpinionRow>
+    </Col>
+  </Row>
 )
 
 const Opinion = () => (

@@ -19,7 +19,7 @@ const NavBarTitles = {
   ],
   right: [
     { text: 'Multimedia', link: 'multimedia' },
-    { text: '34th Street', link: '34thst' },
+    { text: '34th Street', link: '34st' },
     { text: 'Under the Button', link: 'utb' },
   ],
 }
@@ -102,8 +102,7 @@ const Index = () => (
     <Multimedia/>
     <Street />
     <UTB />
-
-    <Footer emoji="💖" bgColor={'#F5F4F4'} />
+    <Footer emoji="💖" bgColor={'white'} />
   </>
 )
 

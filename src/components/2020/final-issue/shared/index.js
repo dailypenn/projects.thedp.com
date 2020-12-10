@@ -7,6 +7,7 @@ import {
   LORA_REGULAR,
   RADIANT_REGULAR,
   FUTURA_BOLD,
+  MARGO
 } from '../../../../utils/font'
 
 export const Wrapper = s.div`
@@ -36,11 +37,13 @@ export const GreenSectionHeader = s.p`
 `
 
 export const SectionHeader = s.h1`
+  ${MARGO}
   color: #032FB7;
   text-align: center;
   margin: 1em;
   margin-left: auto;
   margin-right: auto;
+  font-size: 4rem;
 `
 
 export const ArticleHeader = s.h3`

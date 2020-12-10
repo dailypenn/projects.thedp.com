@@ -53,7 +53,10 @@ const DarkBackgroundImage = s(BackgroundImage)`
 `
 
 const StyledRow = s(Row)`
+<<<<<<< HEAD
   margin-bottom: 5%;
+=======
+>>>>>>> 4e3b18118879a582aa26bad66bddd9957615a74e
 `
 
 const MiniHeader = s.p`
