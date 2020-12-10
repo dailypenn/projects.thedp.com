@@ -5,7 +5,7 @@ import s from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 
 import { BottomTextImage, TextImage } from '../../shared'
-import { Wrapper } from './shared'
+import { Wrapper, SectionHeader } from './shared'
 
 const News = () => (
   <StaticQuery
@@ -43,6 +43,7 @@ const News = () => (
 
       return (
         <Wrapper>
+          <SectionHeader> NEWS </SectionHeader>
           <div className="row main" id="news">
             <div className='col-md-6'>
               <TextImage article = {articles[0]} />

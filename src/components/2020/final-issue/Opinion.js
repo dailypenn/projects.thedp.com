@@ -2,9 +2,10 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 import s from 'styled-components'
+import { Row, Col } from 'react-bootstrap'
 
 import { StyledLink } from '../../shared'
-import { Wrapper, GreenSectionHeader } from './shared'
+import { Wrapper, GreenSectionHeader, SectionHeader } from './shared'
 import {
   FUTURA_REGULAR,
   FUTURA_BOLD,
@@ -75,8 +76,8 @@ const TextWrapper = s.div`
 `
 
 const OpinionPieces = ({ article }) => (
-  <div className="row" style={{marginTop:'2rem'}}>
-    <div className="col-md-6 pr-0">
+  <Row style={{marginTop:'2rem'}}>
+    <Col sm={12} md={6} lg={6}>
       <StyledLink href={article.link} target='_blank'>
         <TextWrapper>
           <OpinionHeader> {article.title} </OpinionHeader>
@@ -84,13 +85,13 @@ const OpinionPieces = ({ article }) => (
           <OpinionAuthor> {article.byline} </OpinionAuthor>
         </TextWrapper>
       </StyledLink>
-    </div>
-    <div className="col-md-6 pl-0">
+    </Col>
+    <Col sm={12} md={6} lg={6}>
       <StyledLink href={article.link} target='_blank'>
         <Img fluid={article.image.src.childImageSharp.fluid} />
       </StyledLink>
-    </div>
-  </div>
+    </Col>
+  </Row>
 )
 
 const Opinion = () => (
@@ -129,6 +130,7 @@ const Opinion = () => (
 
       return (
         <Wrapper>
+          <SectionHeader> OPINION </SectionHeader>
           <div className="row main" id="opinion">
             <Editorial article = {articles[1]} />
             {articles.slice(1,4).map(article => <OpinionPieces article = {article} />)}

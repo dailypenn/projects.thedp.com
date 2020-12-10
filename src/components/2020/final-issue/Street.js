@@ -60,7 +60,7 @@ const Street = () => {
   return (
     <Wrapper>
       <div className="row main" id="34thst">
-        <SectionHeader>34TH STREET MAGAZINE</SectionHeader>
+        <SectionHeader>34th STREET MAGAZINE</SectionHeader>
         <div className="row">
           <MustRead articles={articles.slice(0, 3)} />
           <ArticlesWrapper className="col-md-6">

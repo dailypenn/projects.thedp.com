@@ -51,7 +51,6 @@ const DarkBackgroundImage = s(BackgroundImage)`
 `
 
 const StyledRow = s(Row)`
-  margin: 10%;
 `
 
 const miniHeader = s.p`

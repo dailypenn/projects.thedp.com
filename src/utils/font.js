@@ -165,3 +165,8 @@ export const GOPHER_BOLD = `
   font-family: 'Gopher', sans-serif;
   font-weight: 700;
 `
+
+export const MARGO = `
+  font-family: 'Margo', sans-serif;
+  font-weight: 500;
+`

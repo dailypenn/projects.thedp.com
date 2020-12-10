@@ -5,17 +5,31 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import { StyledLink } from '../../shared'
-import { FUTURA_REGULAR } from '../../../utils/font'
+import { FUTURA_REGULAR, MARGO } from '../../../utils/font'
 
 const Background = s.div`
   background-color: #032FB7;
-  padding: 1rem 3rem;
+  padding: 1rem 8rem;
+  margin-top: 3rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem 1rem;
+  }
+`
+
+const Header = s.h1`
+  ${MARGO}
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  padding: 0 1rem;
+  margin: 0 1rem;
 `
 
 const ComicHeader = s.h1`
   ${FUTURA_REGULAR}
-  font-size: 24px;
-  color: #FFEDDC;
+  font-size: 2rem;
+  color: white;
   text-align: center;
   padding: 0 1rem;
 `
@@ -27,10 +41,10 @@ const HeaderArea = s(Row)`
 
 const ComicSubtitle = s.h1`
   ${FUTURA_REGULAR}
-  color: #FFEDDC;
+  color: white;
   font-size: 20px;
   text-align: center;
-  padding-top: 3px;
+  margin-top: 1rem;
 `
 
 const Circle = s.div`
@@ -38,7 +52,7 @@ const Circle = s.div`
   border-radius: 50%;
   width: 25px;
   height: 25px;
-  margin-top: 5px;
+  margin-top: 15px;
 `
 
 const MustReadArticle = ({ article }) => (
@@ -46,8 +60,7 @@ const MustReadArticle = ({ article }) => (
     <StyledLink href={article.link} target="_blank">
       <Img fluid={article.image.src.childImageSharp.fluid} />
       <ComicHeader style={{ fontSize: '90%', marginTop: '10px' }}>
-        {' '}
-        {article.title}{' '}
+        {article.title}
       </ComicHeader>
       <ComicSubtitle style={{ fontSize: '80%' }}> BY {article.author} </ComicSubtitle>
     </StyledLink>
@@ -89,11 +102,11 @@ const UTB = () => {
   return (
     <Background id="utb">
       <HeaderArea>
-        <Circle style={{right: '10px'}}/>
-        <ComicHeader style={{fontSize: '2rem'}}>UNDER THE BUTTON</ComicHeader>
+        <Circle />
+        <Header>UNDER THE BUTTON</Header>
         <Circle/>
       </HeaderArea>
-      <Row style={{ padding: '2rem 1rem'}}>
+      <Row style={{ padding: '3rem 1rem'}}>
         {articles.map(article => (
           <MustReadArticle article={article} />
         ))}
