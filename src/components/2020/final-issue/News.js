@@ -1,24 +1,35 @@
 import React from 'react'
-import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 import s from 'styled-components'
-import BackgroundImage from 'gatsby-background-image'
 
-import { BottomTextImage, TextImage } from '../../shared'
-import { Wrapper } from './shared'
+import { BottomTextImage, TextImage, LCol, RCol } from '../../shared'
+import { Wrapper, SectionHeader } from './shared'
+
+const LSquares = s.div`
+  padding-right:2rem;
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+`
+
+const RSquares = s.div`
+  padding-left:2rem
+  @media (max-width: 768px) {
+    padding:0;
+  }
+`
 
 const News = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile(filter: { relativePath: { eq: "news_wb_2020.json" } }) {
+        allFile(filter: { relativePath: { eq: "final-news-2020.json" } }) {
           edges {
             node {
-              childrenNewsWb2020Json {
-                tag
+              childrenFinalNews2020Json {
                 title
                 description
-                byline
+                author
                 link
                 image {
                   src {
@@ -38,37 +49,42 @@ const News = () => (
     `}
     render={data => {
       const {
-        node: { childrenNewsWb2020Json: articles },
+        node: { childrenFinalNews2020Json: articles },
       } = data.allFile.edges[0]
 
       return (
         <Wrapper>
           <div className="row main" id="news">
-            <div className='col-md-6'>
-              <TextImage article = {articles[0]} />
-              <TextImage article = {articles[1]} />
+            <div className='col-md-12'>
+              <SectionHeader>NEWS</SectionHeader>
+              <div className='row'>
+                <LCol md={6}>
+                  <TextImage article = {articles[0]}/>
+                  <TextImage article = {articles[1]} />
+                </LCol>
+                <RCol md={6}>
+                  <TextImage article = {articles[2]} />
+                  <TextImage article = {articles[3]} />
+                </RCol>
+              </div>
+              <div className="row">
+                <BottomTextImage 
+                  article = {articles[1]} 
+                  miniHeader = {'Student'}
+                  color = {'rgba(3,47,183, 0.57)'} 
+                  md = {4}/>
+                <BottomTextImage 
+                  article = {articles[2]} 
+                  miniHeader = {'Student'}
+                  color = {'rgba(3,47,183, 0.57)'} 
+                  md = {4}/>
+                <BottomTextImage 
+                  article = {articles[1]} 
+                  miniHeader = {'Student'}
+                  color = {'rgba(3,47,183, 0.57)'} 
+                  md = {4}/>
+              </div>
             </div>
-            <div className='col-md-6'>
-              <TextImage article = {articles[2]} />
-              <TextImage article = {articles[3]} />
-            </div>
-          </div>
-          <div className="row main">
-            <BottomTextImage 
-              article = {articles[1]} 
-              miniHeader = {'Student'}
-              color = {'rgba(3,47,183, 0.57)'} 
-              md = {4}/>
-            <BottomTextImage 
-              article = {articles[2]} 
-              miniHeader = {'Student'}
-              color = {'rgba(3,47,183, 0.57)'} 
-              md = {4}/>
-            <BottomTextImage 
-              article = {articles[1]} 
-              miniHeader = {'Student'}
-              color = {'rgba(3,47,183, 0.57)'} 
-              md = {4}/>
           </div>
         </Wrapper>
       )
