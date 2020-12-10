@@ -13,7 +13,7 @@ import {
 
 const ArticleHeader = s.h3`
   ${FUTURA_BOLD}
-  font-size: 2.5em;
+  font-size: 2em;
   line-height: 1;
   color: #032FB7;
   @media (max-width: 1024px) {
@@ -33,18 +33,18 @@ const ArticleDescription = s.p`
 `
 
 const Editorial = ({ article }) => (
-  <div className="row" style={{marginTop:'2rem'}}>
-    <div className="col-md-8 pl-0">
+  <div className="row">
+    <div className="col-md-8">
       <StyledLink href={article.link} target='_blank'>
         <Img fluid={article.image.src.childImageSharp.fluid} />
       </StyledLink>
     </div>
-    <div className="col-md-4 pr-0">
+    <div className="col-md-4">
       <StyledLink href={article.link} target='_blank'>
         <GreenSectionHeader> EDITORIAL </GreenSectionHeader>
         <ArticleHeader> {article.title} </ArticleHeader>
         <ArticleDescription> {article.description} </ArticleDescription>
-        <ArticleAuthor> {article.byline} </ArticleAuthor>
+        <ArticleAuthor> {article.author} </ArticleAuthor>
       </StyledLink>
     </div>
   </div>
@@ -74,6 +74,12 @@ const TextWrapper = s.div`
   text-align: center;
   padding: 1rem;
 `
+const OpinionRow = s.div`
+  margin-top: 2rem;
+  @media (max-width: 600px) {
+    flex-direction: column-reverse;
+  }
+`
 
 const OpinionPieces = ({ article }) => (
   <Row style={{marginTop:'2rem'}}>
@@ -82,7 +88,7 @@ const OpinionPieces = ({ article }) => (
         <TextWrapper>
           <OpinionHeader> {article.title} </OpinionHeader>
           <OpinionDescription> {article.description} </OpinionDescription>
-          <OpinionAuthor> {article.byline} </OpinionAuthor>
+          <OpinionAuthor> {article.author} </OpinionAuthor>
         </TextWrapper>
       </StyledLink>
     </Col>
@@ -98,14 +104,13 @@ const Opinion = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile(filter: { relativePath: { eq: "news_wb_2020.json" } }) {
+        allFile(filter: { relativePath: { eq: "final-opinion-2020.json" } }) {
           edges {
             node {
-              childrenNewsWb2020Json {
-                tag
+              childrenFinalOpinion2020Json {
                 title
                 description
-                byline
+                author
                 link
                 image {
                   src {
@@ -125,15 +130,19 @@ const Opinion = () => (
     `}
     render={data => {
       const {
-        node: { childrenNewsWb2020Json: articles },
+        node: { childrenFinalOpinion2020Json: articles },
       } = data.allFile.edges[0]
 
       return (
         <Wrapper>
-          <SectionHeader> OPINION </SectionHeader>
           <div className="row main" id="opinion">
-            <Editorial article = {articles[1]} />
-            {articles.slice(1,4).map(article => <OpinionPieces article = {article} />)}
+            <div className='col-md-12'>
+              <SectionHeader>OPINION</SectionHeader>
+              <div className='row'>
+                <Editorial article = {articles[1]} />
+                {articles.slice(1,4).map(article => <OpinionPieces article = {article} />)}
+              </div>
+            </div>
           </div>
         </Wrapper>
       )

@@ -2,7 +2,7 @@ import React from 'react'
 import s from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 import { StyledLink } from './Typograph'
-import { FUTURA_REGULAR } from '../../utils/font'
+import { FUTURA_BOLD, FUTURA_REGULAR } from '../../utils/font'
 import { Row, Col } from 'react-bootstrap'
 
 const FeatureText = s.div`
@@ -25,19 +25,21 @@ const Description = s.p`
   ${FUTURA_REGULAR}
   font-size:1em;
   line-height:1.1em;
+  padding: 1rem 2rem 0;
   @media (max-width: 1024px) {
     display: None;
   }
 `
 const ArticleAuthor = s.p`
   ${FUTURA_REGULAR}
+  padding: 0 2rem;
   text-transform: uppercase;
 `
 const BottomWrapper = s.div`
   background: ${({ color }) => `linear-gradient(${color}, ${color})`};
-  padding: 1rem 2rem 0;
   position: absolute;
   bottom: 0rem;
+  width:100%;
 `
 
 const DarkBackgroundImage = s(BackgroundImage)`
@@ -51,14 +53,20 @@ const DarkBackgroundImage = s(BackgroundImage)`
 `
 
 const StyledRow = s(Row)`
+<<<<<<< HEAD
+  margin-bottom: 5%;
+=======
+>>>>>>> 4e3b18118879a582aa26bad66bddd9957615a74e
 `
 
-const miniHeader = s.p`
+const MiniHeader = s.p`
   ${FUTURA_REGULAR}
+  padding: 1rem 2rem 0;
   font-size:0.4em;
 `
 const BottomDescription = s.p`
 ${FUTURA_REGULAR}
+padding: 0 2rem;
 font-size:1em;
 line-height:1.1em;
 `
@@ -76,7 +84,7 @@ export const TextImage = ({ article }) => (
             <Title>{article.title} </Title>
             <BottomWrapper>
               <Description> {article.description} </Description>
-              <ArticleAuthor> {article.byline} </ArticleAuthor>
+              <ArticleAuthor> {article.author} </ArticleAuthor>
             </BottomWrapper>
           </FeatureText>
         </DarkBackgroundImage>
@@ -94,11 +102,40 @@ export const BottomTextImage = ({ article, miniHeader, color, md = 12 }) => (
       >
         <FeatureText>
           <BottomWrapper color ={color}>
-            <miniHeader> {miniHeader} </miniHeader>
+            <MiniHeader> {miniHeader} </MiniHeader>
             <BottomDescription> {article.title} </BottomDescription>
           </BottomWrapper>
         </FeatureText>
       </DarkBackgroundImage>
     </StyledLink>
   </Col>
+)
+const BigTitle = s.p`
+  ${FUTURA_BOLD}
+  font-size: 250%;
+  padding: 0 2rem;
+  line-height: 1.1;
+  @media (max-width: 1024px) {
+    font-size: 150%;
+  }
+`
+
+export const BigTextImage = ({ article }) => (
+  <StyledRow>
+    <Col>
+      <StyledLink href={article.link} target="_blank">
+        <DarkBackgroundImage
+          fluid={article.image.src.childImageSharp.fluid}
+          style={{ border: 'none' }}
+          Dark = {true}
+        >
+          <FeatureText>
+            <BigTitle>{article.title} </BigTitle>
+            <Description> {article.description} </Description>
+            <ArticleAuthor> {article.author} </ArticleAuthor>
+          </FeatureText>
+        </DarkBackgroundImage>
+      </StyledLink>
+    </Col>
+  </StyledRow>
 )

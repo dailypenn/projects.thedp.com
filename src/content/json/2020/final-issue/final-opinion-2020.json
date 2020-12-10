@@ -1,0 +1,56 @@
+[
+  {
+    "title": "From Van Pelt to Pottruck, students returning to Phila. will have limited campus access",
+    "description": "All students must abide by The Student Campus Compact and use the PennOpen Pass, a daily symptom checker that gives students a “Day Pass” to enter Penn buildings.",
+    "author": "Hannah Gross",
+    "image": {
+      "src": "../../../images/2020/welcome-back/dp-2.jpg"
+    },
+    "link": "https://www.thedp.com/article/2020/08/fall-semester-on-campus-buildings-closed-van-pelt-pottruck"
+  },
+  {
+    "title": "Penn students create virtual platforms for club recruitment this fall",
+    "description": "Clubs overseen by SAC will use the platform Penn Clubs while those overseen by The Wharton Council will use Virtual Event to recruit new members and host group meetings over Zoom.",
+    "author": "Elizabeth Meisenzahl",
+    "image": {
+      "src": "../../../images/2020/welcome-back/dp-3.jpg"
+    },
+    "link": "https://www.thedp.com/article/2020/08/penn-clubs-virtual-event-activities-fair"
+  },
+  {
+    "title": "Why did Penn suddenly reverse its fall plans? Here's what happened.",
+    "description": "The Daily Pennsylvanian sat down with Penn's Chief Wellness Officer Benoit Dubé to discuss why Penn made the last minute decision to close campus for the fall semester.",
+    "author": "JONAH CHARLTON",
+    "image": {
+      "src": "../../../images/2020/welcome-back/dp-4.jpg"
+    },
+    "link": "https://www.thedp.com/article/2020/08/penn-fall-decision-online-why-the-plan-changed"
+  },
+  {
+    "title": "'Not even the bare minimum': Penn students demand more than just tuition freeze",
+    "description": "After switching to a completely remote semester, Penn President Amy Gutmann and Provost Wendell Pritchett froze tuition – keeping it at the same value as the previous year – and decreased the fall general fee by 10%.",
+    "author": "Leanna Tilitei and Komal Patel",
+    "image": {
+      "src": "../../../images/2020/welcome-back/dp-5.png"
+    },
+    "link": "https://www.thedp.com/article/2020/08/tuition-reduction-fall-fee-lawsuit-endowment-penn"
+  },
+  {
+    "title": "From pig dissection to biodiversity scavenger hunt: Inside a remote summer lab course",
+    "description": "Students said some labs were difficult to follow given the absence of immediate help and feedback from a teaching assistant who would typically oversee the labs in person.",
+    "author": "Jason Yan",
+    "image": {
+      "src": "../../../images/2020/welcome-back/dp-6.jpg"
+    },
+    "link": "https://www.thedp.com/article/2020/08/penn-summer-biology-lab-remote-fall-pig-dissection"
+  },
+  {
+    "title": "After reversal of fall plans, students demand Penn subsidize shipping costs for dorm items",
+    "description": "Many students feel that they should not have to incur expensive shipping fees or risk contracting coronavirus on the trek to the Penn Tennis Center or their moving company's warehouse to retrieve their belongings.",
+    "author": "Lindsey Perlman",
+    "image": {
+      "src": "../../../images/2020/welcome-back/dp-7.jpg"
+    },
+    "link": "https://www.thedp.com/article/2020/08/penn-storage-retrieval-process-fall-residential-services"
+  }
+]

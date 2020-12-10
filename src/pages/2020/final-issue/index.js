@@ -7,6 +7,7 @@ import Opinion from '../../../components/2020/final-issue/Opinion'
 import Street from '../../../components/2020/final-issue/Street'
 import UTB from '../../../components/2020/final-issue/UTB'
 import Multimedia from '../../../components/2020/final-issue/Multimedia'
+import Sports from '../../../components/2020/final-issue/Sports'
 
 import { GOPHER_REGULAR, LIBRE_REGULAR } from '../../../utils/font'
 
@@ -97,10 +98,11 @@ const Index = () => (
     <NavBar titles={NavBarTitles} font={GOPHER_REGULAR} font={LIBRE_REGULAR} />
     <News />
     <Opinion />
+    <Sports />
     <Multimedia/>
     <Street />
     <UTB />
-    <Footer emoji="💖" bgColor="white" />
+    <Footer emoji="💖" bgColor={'white'} />
   </>
 )
 

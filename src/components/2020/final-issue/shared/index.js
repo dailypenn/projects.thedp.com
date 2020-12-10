@@ -17,7 +17,7 @@ export const Wrapper = s.div`
     padding-left: 15%;
     @media (max-width: 768px) {
       margin: 2rem 1rem 0 1rem;
-      padding: 1em;
+      padding: 1rem;
     }
   }
 `
@@ -33,6 +33,7 @@ export const GreenSectionHeader = s.p`
   ${FUTURA_BOLD}
   letter-spacing: 1.6px;
   color: #639E7D;
+  padding-top: 1rem;
   text-transform: uppercase;
 `
 
@@ -107,6 +108,77 @@ export const MustRead = ({ articles }) => (
         className="d-flex justify-content-center"
         style={{ padding: '1rem' }}
       />
+    </div>
+  </div>
+)
+const SmallHeader = s.h3`
+  ${FUTURA_REGULAR}
+  font-size: 140%;
+  line-height: 1;
+  color: #032FB7;
+
+  :hover {
+    color: #707070;
+    cursor: pointer;
+  }
+
+  @media (max-width: 1024px) {
+    font-size:100%
+  }
+`
+
+const Square = s.div`
+  width:100%;
+  padding-top:100%;
+  position: relative;
+  background-color: #F8FC57;
+  @media (max-width: 768px) {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+`
+const SportsArticleWrapper = s.div`
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  top: 5%;
+  left: 0;
+  @media (min-width: 768px) and (max-width: 1200px) {
+    font-size:100%;
+  }
+  @media (max-width: 768px) {
+    position: relative;
+  }
+`
+
+const SportsReadArticle = ({ article }) => (
+  <StyledAnchor href={article.link} target="_blank" >
+    <div className="row" style={{padding:'5%'}}>
+      <div className="col-md-5">
+        <Img fluid={article.image.src.childImageSharp.fluid}/>
+      </div>
+      <div className="col-md-7">
+        <SmallHeader>
+          {article.title}
+        </SmallHeader>
+        <ArticleAuthor style={{ fontSize: '80%', padding:0 }}>
+          BY {article.author}
+        </ArticleAuthor>
+      </div>
+    </div>
+  </StyledAnchor>
+)
+
+export const SportsReads = ({ articles }) => (
+  <div className = 'row'>
+    <div className="col-md-12">
+      <Square>
+        <SportsArticleWrapper>
+          {articles.map(article => (
+            <SportsReadArticle article={article} />
+          ))}
+        </SportsArticleWrapper>
+      </Square>
     </div>
   </div>
 )
