@@ -109,7 +109,7 @@ const UTB = () => {
         <Header>UNDER THE BUTTON</Header>
         <Circle/>
       </HeaderArea>
-      <Row style={{ padding: '3rem 1rem'}}>
+      <Row style={{ padding: '3rem 1rem' }}>
         {articles.map(article => (
           <MustReadArticle article={article} />
         ))}

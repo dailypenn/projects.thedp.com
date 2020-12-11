@@ -35,7 +35,9 @@ const Editorial = ({ article }) => (
   <Row style={{ width: "100%" }}>
     <Col sm={12} md={8}>
       <StyledLink href={article.link} target='_blank'>
-        <Img fluid={article.image.src.childImageSharp.fluid} />
+        <div style={{ display: 'block' }}>
+          <Img fluid={article.image.src.childImageSharp.fluid} style={{ margin: '0 auto' }} />
+        </div>
       </StyledLink>
     </Col>
     <Col sm={12} md={4}>

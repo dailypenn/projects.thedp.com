@@ -1,9 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { Row, Col, Image } from 'react-bootstrap'
-import s from 'styled-components'
+import { Row, Col } from 'react-bootstrap'
 
-import { NavBar, Footer } from '../../../components/shared'
+import { NavBar, Footer, Ads } from '../../../components/shared'
 import Timeline from '../../../components/2020/final-issue/Timeline'
 import News from '../../../components/2020/final-issue/News'
 import Opinion from '../../../components/2020/final-issue/Opinion'
@@ -12,12 +11,6 @@ import UTB from '../../../components/2020/final-issue/UTB'
 import Multimedia from '../../../components/2020/final-issue/Multimedia'
 
 import { GOPHER_REGULAR, LIBRE_REGULAR } from '../../../utils/font'
-
-const DomImg = s(Image)`
-  media screen and (max-width: 768px) {
-    height: 500px;
-  }
-`
 
 const NavBarTitles = {
   left: [
@@ -104,7 +97,9 @@ const Index = () => (
     </Helmet>
 
     <NavBar titles={NavBarTitles} font={GOPHER_REGULAR} font={LIBRE_REGULAR} />
-    <DomImg fluid src="/img/final-issue/hero.png" />
+    <div>
+      <img src="/img/final-issue/hero.png" style={{ width: '100%' }} />
+    </div>
     <Row>
       <Col lg={2} md={0}>
         <Timeline />
@@ -116,8 +111,11 @@ const Index = () => (
         <Street />
       </Col>
     </Row>
+
+    <Ads />
+
     <UTB />
-    <Footer emoji="💖" bgColor={'white'} />
+    <Footer emoji="💖" bgColor='white' />
   </>
 )
 
