@@ -124,7 +124,7 @@ export const BigTextImage = ({ article }) => (
           <FeatureText>
             <BigTitle>{article.title} </BigTitle>
             <Description> {article.description} </Description>
-            <ArticleAuthor> {article.author} </ArticleAuthor>
+            <ArticleAuthor> BY {article.author} </ArticleAuthor>
           </FeatureText>
         </DarkBackgroundImage>
       </StyledLink>

@@ -35,7 +35,7 @@ const SportsPiece = ({ article }) => (
     <StyledLink href={article.link} target='_blank'>
       <TextWrapper>
         <SportsHeader> {article.title} </SportsHeader>
-        <Author> {article.author} </Author>
+        <Author> BY {article.author} </Author>
       </TextWrapper>
     </StyledLink>
   </div>
@@ -114,8 +114,8 @@ const Sports = () => (
               </Row>
             </div>
             <Row style={{ marginTop: '2rem' }}>
-              <SportsPiece article={rectArticles[0]} style={{paddingLeft:0}}/>
-              <SportsPiece article={rectArticles[2]} style={{paddingRight:0}}/>
+              <SportsPiece article={rectArticles[3]} style={{paddingLeft:0}}/>
+              <SportsPiece article={rectArticles[4]} style={{paddingRight:0}}/>
             </Row>
           </div>
         </Wrapper>
