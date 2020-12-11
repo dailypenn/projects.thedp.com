@@ -11,18 +11,18 @@ import UTB from '../../../components/2020/final-issue/UTB'
 import Multimedia from '../../../components/2020/final-issue/Multimedia'
 import Sports from '../../../components/2020/final-issue/Sports'
 
-import { GOPHER_REGULAR, LIBRE_REGULAR } from '../../../utils/font'
+import { LIBRE_REGULAR } from '../../../utils/font'
 
 const NavBarTitles = {
   left: [
-    { text: 'News', link: 'news' },
-    { text: 'Opinion', link: 'opinion' },
-    { text: 'Sports', link: 'sports' },
+    { text: 'NEWS', link: 'news' },
+    { text: 'OPINION', link: 'opinion' },
+    { text: 'SPORTS', link: 'sports' },
   ],
   right: [
-    { text: 'Multimedia', link: 'multimedia' },
-    { text: '34th Street', link: '34st' },
-    { text: 'Under the Button', link: 'utb' },
+    { text: 'MULTIMEDIA', link: 'multimedia' },
+    { text: '34th ST', link: '34st' },
+    { text: 'UNDER THE BUTTON', link: 'utb' },
   ],
 }
 
@@ -97,7 +97,7 @@ const Index = () => (
       ></script>
     </Helmet>
 
-    <NavBar titles={NavBarTitles} font={GOPHER_REGULAR} font={LIBRE_REGULAR} />
+    <NavBar titles={NavBarTitles} font={LIBRE_REGULAR} />
     <div>
       <img src="/img/final-issue/hero.png" style={{ width: '100%' }} />
     </div>
