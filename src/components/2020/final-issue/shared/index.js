@@ -12,7 +12,6 @@ import {
 export const Wrapper = s.div`
   .main {
     margin: 2rem 5rem 0 5rem;
-    padding-left: 15%;
     @media (max-width: 768px) {
       margin: 2rem 1rem 0 1rem;
       padding: 1em;
