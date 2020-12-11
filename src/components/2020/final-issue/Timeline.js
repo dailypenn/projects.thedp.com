@@ -43,7 +43,7 @@ const BlueTitle = s.h1`
     transform: rotate(-90deg);
     transform-origin: right bottom 0;
     font-size: 3vw;
-    padding-top: 2rem;
+    padding-top: 4.5rem;
 
     @media (max-width: 991px) {
         display: none;
