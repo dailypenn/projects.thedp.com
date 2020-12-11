@@ -44,6 +44,10 @@ export const SectionHeader = s.h1`
   margin-left: auto;
   margin-right: auto;
   font-size: 6rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 4em;
+  }
 `
 
 export const ArticleHeader = s.h3`

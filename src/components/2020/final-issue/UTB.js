@@ -24,6 +24,10 @@ const Header = s.h1`
   text-align: center;
   padding: 0 1rem;
   margin: 0 1rem;
+  
+  @media screen and (max-width: 768px) {
+    margin-top: 1rem;
+  }
 `
 
 const ComicHeader = s.h1`
@@ -56,7 +60,7 @@ const Circle = s.div`
 `
 
 const MustReadArticle = ({ article }) => (
-  <Col>
+  <Col style={{ marginTop: '2rem' }}>
     <StyledLink href={article.link} target="_blank">
       <Img fluid={article.image.src.childImageSharp.fluid} />
       <ComicHeader style={{ fontSize: '90%', marginTop: '10px' }}>
@@ -65,7 +69,6 @@ const MustReadArticle = ({ article }) => (
       <ComicSubtitle style={{ fontSize: '80%' }}> BY {article.author} </ComicSubtitle>
     </StyledLink>
   </Col>
-
 )
 
 const UTB = () => {

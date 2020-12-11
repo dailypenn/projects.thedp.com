@@ -1,6 +1,5 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
-import s from 'styled-components'
 
 import {
   Wrapper,
@@ -28,7 +27,7 @@ const ArticlesJSON = [
 const Multimedia = () => {
   return (
     <Wrapper>
-      <div className="row main" id="34thst">
+      <div className="row main" id="34st">
         <Col>
           <SectionHeader>MULTIMEDIA</SectionHeader>
           <div className="row">
