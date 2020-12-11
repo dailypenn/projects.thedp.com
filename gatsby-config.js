@@ -172,7 +172,7 @@ module.exports = {
       resolve: 'gatsby-plugin-your-fonts',
       options: {
         host: 'dailypenn.github.io/font',
-        fonts: [`radiant.css`, `canela.css`, `gopher.css`],
+        fonts: [`radiant.css`, `canela.css`, `gopher.css`, `margo.css`],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Image } from 'react-bootstrap'
 
 import { NavBar, Footer } from '../../../components/shared'
 import Timeline from '../../../components/2020/final-issue/Timeline'
@@ -9,8 +9,9 @@ import Opinion from '../../../components/2020/final-issue/Opinion'
 import Street from '../../../components/2020/final-issue/Street'
 import UTB from '../../../components/2020/final-issue/UTB'
 import Multimedia from '../../../components/2020/final-issue/Multimedia'
+import Sports from '../../../components/2020/final-issue/Sports'
 
-import { GOPHER_REGULAR, CANELA_REGULAR } from '../../../utils/font'
+import { GOPHER_REGULAR, LIBRE_REGULAR } from '../../../utils/font'
 
 const NavBarTitles = {
   left: [
@@ -20,7 +21,7 @@ const NavBarTitles = {
   ],
   right: [
     { text: 'Multimedia', link: 'multimedia' },
-    { text: '34th Street', link: '34thst' },
+    { text: '34th Street', link: '34st' },
     { text: 'Under the Button', link: 'utb' },
   ],
 }
@@ -48,11 +49,11 @@ const Index = () => (
       />
       <meta
         property="og:image"
-        content="https://snworksceo.imgix.net/dpn/eb48484c-3a7a-4089-9cfb-8c064987cd4f.sized-1000x1000.png"
+        content="https://snworksceo.imgix.net/dpn/6240fb3c-f7fb-4ac9-b404-d97f0246684f.sized-1000x1000.png"
       />
       <meta
         property="og:description"
-        content="#GivingTuesday"
+        content="Final Issue"
       />
       <meta property="og:type" content="article" />
       <meta
@@ -67,7 +68,7 @@ const Index = () => (
       />
       <meta
         name="twitter:image"
-        content="https://snworksceo.imgix.net/dpn/eb48484c-3a7a-4089-9cfb-8c064987cd4f.sized-1000x1000.png"
+        content="https://snworksceo.imgix.net/dpn/6240fb3c-f7fb-4ac9-b404-d97f0246684f.sized-1000x1000.png"
       />
       <meta
         name="twitter:description"
@@ -96,7 +97,8 @@ const Index = () => (
       ></script>
     </Helmet>
 
-    <NavBar titles={NavBarTitles} font={GOPHER_REGULAR} />
+    <NavBar titles={NavBarTitles} font={GOPHER_REGULAR} font={LIBRE_REGULAR} />
+    <Image fluid src="/img/final-issue/hero.png" />
     <Row>
       <Col md={2}>
         <Timeline />
@@ -109,7 +111,7 @@ const Index = () => (
       </Col>
     </Row>
     <UTB />
-    <Footer emoji="💖" bgColor={'#F5F4F4'} />
+    <Footer emoji="💖" bgColor={'white'} />
   </>
 )
 

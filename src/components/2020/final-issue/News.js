@@ -1,24 +1,21 @@
 import React from 'react'
-import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
-import s from 'styled-components'
-import BackgroundImage from 'gatsby-background-image'
+import { Row, Col } from 'react-bootstrap'
 
-import { BottomTextImage, TextImage } from '../../shared'
-import { Wrapper } from './shared'
+import { BottomTextImage, TextImage, LCol, RCol } from '../../shared'
+import { Wrapper, SectionHeader } from './shared'
 
 const News = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile(filter: { relativePath: { eq: "news_wb_2020.json" } }) {
+        allFile(filter: { relativePath: { eq: "final-news-2020.json" } }) {
           edges {
             node {
-              childrenNewsWb2020Json {
-                tag
+              childrenFinalNews2020Json {
                 title
                 description
-                byline
+                author
                 link
                 image {
                   src {
@@ -38,37 +35,38 @@ const News = () => (
     `}
     render={data => {
       const {
-        node: { childrenNewsWb2020Json: articles },
+        node: { childrenFinalNews2020Json: articles },
       } = data.allFile.edges[0]
 
       return (
-        <Wrapper>
-          <div className="row main" id="news">
-            <div className='col-md-6'>
-              <TextImage article = {articles[0]} />
-              <TextImage article = {articles[1]} />
-            </div>
-            <div className='col-md-6'>
-              <TextImage article = {articles[2]} />
-              <TextImage article = {articles[3]} />
-            </div>
-          </div>
+        <Wrapper id="news">
           <div className="row main">
-            <BottomTextImage 
-              article = {articles[1]} 
-              miniHeader = {'Student'}
-              color = {'rgba(3,47,183, 0.57)'} 
-              md = {4}/>
-            <BottomTextImage 
-              article = {articles[2]} 
-              miniHeader = {'Student'}
-              color = {'rgba(3,47,183, 0.57)'} 
-              md = {4}/>
-            <BottomTextImage 
-              article = {articles[1]} 
-              miniHeader = {'Student'}
-              color = {'rgba(3,47,183, 0.57)'} 
-              md = {4}/>
+            <div className='col-md-12'>
+              <SectionHeader>NEWS</SectionHeader>
+              <Row>
+                <TextImage article={articles[0]}/>
+                <TextImage article={articles[1]} />
+                <TextImage article={articles[2]} />
+                <TextImage article={articles[3]} />
+              </Row>
+              <Row style={{ padding: '0 1rem' }}>
+                <BottomTextImage 
+                  article = {articles[1]} 
+                  miniHeader = {'Student'}
+                  color = {'rgba(3,47,183, 0.57)'} 
+                  md = {4}/>
+                <BottomTextImage 
+                  article = {articles[2]} 
+                  miniHeader = {'Student'}
+                  color = {'rgba(3,47,183, 0.57)'} 
+                  md = {4}/>
+                <BottomTextImage 
+                  article = {articles[1]} 
+                  miniHeader = {'Student'}
+                  color = {'rgba(3,47,183, 0.57)'} 
+                  md = {4}/>
+              </Row>
+            </div>
           </div>
         </Wrapper>
       )

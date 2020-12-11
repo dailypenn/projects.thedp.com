@@ -2,7 +2,7 @@ import React from 'react'
 import s from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 import { StyledLink } from './Typograph'
-import { FUTURA_REGULAR } from '../../utils/font'
+import { FUTURA_BOLD, FUTURA_REGULAR } from '../../utils/font'
 import { Row, Col } from 'react-bootstrap'
 
 const FeatureText = s.div`
@@ -25,19 +25,21 @@ const Description = s.p`
   ${FUTURA_REGULAR}
   font-size:1em;
   line-height:1.1em;
+  padding: 1rem 2rem 0;
   @media (max-width: 1024px) {
     display: None;
   }
 `
 const ArticleAuthor = s.p`
   ${FUTURA_REGULAR}
+  padding: 0 2rem;
   text-transform: uppercase;
 `
 const BottomWrapper = s.div`
   background: ${({ color }) => `linear-gradient(${color}, ${color})`};
-  padding: 1rem 2rem 0;
   position: absolute;
   bottom: 0rem;
+  width:100%;
 `
 
 const DarkBackgroundImage = s(BackgroundImage)`
@@ -50,22 +52,67 @@ const DarkBackgroundImage = s(BackgroundImage)`
   background-size: cover;
 `
 
-const StyledRow = s(Row)`
-  margin: 10%;
-`
-
-const miniHeader = s.p`
+const MiniHeader = s.p`
   ${FUTURA_REGULAR}
-  font-size:0.4em;
+  padding: 1rem 2rem 0;
+  font-size: 1em;
 `
 const BottomDescription = s.p`
 ${FUTURA_REGULAR}
+padding: 0 2rem;
 font-size:1em;
 line-height:1.1em;
 `
 
 export const TextImage = ({ article }) => (
-  <StyledRow>
+  <Col md={6} style={{ padding: '1rem' }}>
+    <StyledLink href={article.link} target="_blank">
+      <DarkBackgroundImage
+        fluid={article.image.src.childImageSharp.fluid}
+        style={{ border: 'none' }}
+        Dark
+      >
+        <FeatureText>
+          <Title>{article.title} </Title>
+          <BottomWrapper>
+            <Description> {article.description} </Description>
+            <ArticleAuthor> {article.author} </ArticleAuthor>
+          </BottomWrapper>
+        </FeatureText>
+      </DarkBackgroundImage>
+    </StyledLink>
+  </Col>
+)
+
+export const BottomTextImage = ({ article, miniHeader, color, md=12 }) => (
+  <Col md={md} style={{ padding: 0 }}>
+    <StyledLink href={article.link} target="_blank">
+      <DarkBackgroundImage
+        fluid={article.image.src.childImageSharp.fluid}
+        style={{ border: 'none' }}
+      >
+        <FeatureText>
+          <BottomWrapper color={color}>
+            <MiniHeader> {miniHeader} </MiniHeader>
+            <BottomDescription> {article.title} </BottomDescription>
+          </BottomWrapper>
+        </FeatureText>
+      </DarkBackgroundImage>
+    </StyledLink>
+  </Col>
+)
+const BigTitle = s.p`
+  ${FUTURA_BOLD}
+  font-size: 250%;
+  padding: 0 2rem;
+  line-height: 1.1;
+  @media (max-width: 1024px) {
+    font-size: 150%;
+  }
+`
+
+export const BigTextImage = ({ article }) => (
+  <Row>
     <Col>
       <StyledLink href={article.link} target="_blank">
         <DarkBackgroundImage
@@ -74,32 +121,12 @@ export const TextImage = ({ article }) => (
           Dark = {true}
         >
           <FeatureText>
-            <Title>{article.title} </Title>
-            <BottomWrapper>
-              <Description> {article.description} </Description>
-              <ArticleAuthor> {article.byline} </ArticleAuthor>
-            </BottomWrapper>
+            <BigTitle>{article.title} </BigTitle>
+            <Description> {article.description} </Description>
+            <ArticleAuthor> {article.author} </ArticleAuthor>
           </FeatureText>
         </DarkBackgroundImage>
       </StyledLink>
     </Col>
-  </StyledRow>
-)
-
-export const BottomTextImage = ({ article, miniHeader, color, md = 12 }) => (
-  <Col md = {md} style={{padding:'0px'}}>
-    <StyledLink href={article.link} target="_blank">
-      <DarkBackgroundImage
-        fluid={article.image.src.childImageSharp.fluid}
-        style={{ border: 'none' }}
-      >
-        <FeatureText>
-          <BottomWrapper color ={color}>
-            <miniHeader> {miniHeader} </miniHeader>
-            <BottomDescription> {article.title} </BottomDescription>
-          </BottomWrapper>
-        </FeatureText>
-      </DarkBackgroundImage>
-    </StyledLink>
-  </Col>
+  </Row>
 )
