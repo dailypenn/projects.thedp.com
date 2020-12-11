@@ -56,6 +56,7 @@ const MiniHeader = s.p`
   ${FUTURA_REGULAR}
   padding: 1rem 2rem 0;
   font-size: 1em;
+  text-transform: uppercase;
 `
 
 const BottomDescription = s.p`
@@ -85,7 +86,7 @@ export const TextImage = ({ article, padding }) => (
   </Col>
 )
 
-export const BottomTextImage = ({ article, miniHeader, color, md=12 }) => (
+export const BottomTextImage = ({ article, color, md=12 }) => (
   <Col md={md} style={{ padding: 0 }}>
     <StyledLink href={article.link} target="_blank">
       <DarkBackgroundImage
@@ -94,7 +95,7 @@ export const BottomTextImage = ({ article, miniHeader, color, md=12 }) => (
       >
         <FeatureText>
           <BottomWrapper color={color}>
-            <MiniHeader> {miniHeader} </MiniHeader>
+            <MiniHeader> BY {article.author} </MiniHeader>
             <BottomDescription> {article.title} </BottomDescription>
           </BottomWrapper>
         </FeatureText>

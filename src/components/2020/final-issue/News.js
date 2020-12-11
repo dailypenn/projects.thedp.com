@@ -52,17 +52,14 @@ const News = () => (
               <Row style={{ padding: '0 1rem' }}>
                 <BottomTextImage 
                   article = {bottomArticles[0]} 
-                  miniHeader = {'Student'}
                   color = {'rgba(3,47,183, 0.57)'} 
                   md = {4}/>
                 <BottomTextImage 
                   article = {bottomArticles[1]} 
-                  miniHeader = {'Student'}
                   color = {'rgba(3,47,183, 0.57)'} 
                   md = {4}/>
                 <BottomTextImage 
                   article = {bottomArticles[2]}
-                  miniHeader="Student"
                   color="rgba(3,47,183, 0.57)"
                   md={4} />
               </Row>
