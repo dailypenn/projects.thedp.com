@@ -9,7 +9,6 @@ import Opinion from '../../../components/2020/final-issue/Opinion'
 import Street from '../../../components/2020/final-issue/Street'
 import UTB from '../../../components/2020/final-issue/UTB'
 import Multimedia from '../../../components/2020/final-issue/Multimedia'
-import Sports from '../../../components/2020/final-issue/Sports'
 
 import { GOPHER_REGULAR, LIBRE_REGULAR } from '../../../utils/font'
 
@@ -100,10 +99,10 @@ const Index = () => (
     <NavBar titles={NavBarTitles} font={GOPHER_REGULAR} font={LIBRE_REGULAR} />
     <Image fluid src="/img/final-issue/hero.png" />
     <Row>
-      <Col md={2}>
+      <Col lg={2} md={0}>
         <Timeline />
       </Col>
-      <Col md={10}>
+      <Col lg={10} md={12}>
         <News />
         <Opinion />
         <Multimedia/>
