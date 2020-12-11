@@ -122,6 +122,18 @@ export default () => (
             </Box>
             <Line />
             <Box>
+                <BoxTitle>June 11</BoxTitle>
+                <br />
+                <BoxContent>After multiple delays, Penn canceled all fall 2020 study abroad programs as a result of the global travel restrictions and health risks from the COVID-19 pandemic.</BoxContent>
+            </Box>
+            <Line />
+            <Box>
+                <BoxTitle>June 25</BoxTitle>
+                <br />
+                <BoxContent>Penn announced it would reopen campus for a hybrid fall semester. The semester would start on Sept. 1, and in-person operations would be suspended on Nov. 20.</BoxContent>
+            </Box>
+            <Line />
+            <Box>
                 <BoxTitle>Aug. 11</BoxTitle>
                 <br />
                 <BoxContent>Following a spike in COVID-19 cases across the country, Penn decided to close on-campus housing for the fall and conduct a completely virtual semester.</BoxContent>
@@ -137,18 +149,6 @@ export default () => (
                 <BoxTitle>Nov. 4</BoxTitle>
                 <br />
                 <BoxContent>Penn reported what was at the time a semester-high weekly count of positive COVID-19 cases, with 107 recorded in the last week of October.</BoxContent>
-            </Box>
-            <Line />
-            <Box>
-                <BoxTitle>Jan.26</BoxTitle>
-                <br />
-                <BoxContent>No cases had yet been reported at Penn, but the University announced in an email to undergraduates that it was monitoring the pandemic and communicating with students studying abroad in China.</BoxContent>
-            </Box>
-            <Line />
-            <Box>
-                <BoxTitle>Jan.26</BoxTitle>
-                <br />
-                <BoxContent>No cases had yet been reported at Penn, but the University announced in an email to undergraduates that it was monitoring the pandemic and communicating with students studying abroad in China.</BoxContent>
             </Box>
             <Line height="10vw"/>
             <Circle/>
