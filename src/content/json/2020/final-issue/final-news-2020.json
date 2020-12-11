@@ -1,56 +1,65 @@
 [
   {
-    "title": "Penn Transitions to Unprecedented Virtual Learning",
-    "description": "All students must abide by The Student Campus Compact and use the PennOpen Pass, a daily symptom checker that gives students a “Day Pass” to enter Penn buildings.",
-    "author": "Hannah Gross",
+    "title": "Penn and Philadelphia show up for Black Lives Matter",
+    "description": "After the police killing of George Floyd sparked a nationwide Black Lives Matter movement in May, protests for racial justice flooded the streets of Philadelphia.",
+    "author": "Jonah Charlton",
     "image": {
-      "src": "../../../images/2020/welcome-back/dp-2.jpg"
+      "src": "../../../images/2020/final-issue/news-1.jpg"
     },
-    "link": "https://www.thedp.com/article/2020/08/fall-semester-on-campus-buildings-closed-van-pelt-pottruck"
+    "link": "https://www.thedp.com/article/2020/12/penn-black-lives-matter-blm-protest-year-in-review-2020"
   },
   {
-    "title": "Penn students create virtual platforms for club recruitment this fall",
-    "description": "Clubs overseen by SAC will use the platform Penn Clubs while those overseen by The Wharton Council will use Virtual Event to recruit new members and host group meetings over Zoom.",
-    "author": "Elizabeth Meisenzahl",
+    "title": "Penn shakes up University leadership",
+    "description": "Wharton made history by appointing the school's first Black and female dean, and the University Chaplain is taking on additional responsibilities as Vice President for Social Equity and Community.",
+    "author": "Anya Tullman",
     "image": {
-      "src": "../../../images/2020/welcome-back/dp-3.jpg"
+      "src": "../../../images/2020/final-issue/news-2.jpeg"
     },
-    "link": "https://www.thedp.com/article/2020/08/penn-clubs-virtual-event-activities-fair"
+    "link": "https://www.thedp.com/article/2020/12/penn-administration-wharton-board-of-trustees"
   },
   {
-    "title": "Why did Penn suddenly reverse its fall plans? Here's what happened.",
-    "description": "The Daily Pennsylvanian sat down with Penn's Chief Wellness Officer Benoit Dubé to discuss why Penn made the last minute decision to close campus for the fall semester.",
-    "author": "JONAH CHARLTON",
+    "title": "The fight for Penn to pay PILOTs intensifies",
+    "description": "Student and faculty demands for Penn to pay PILOTs were reignited this summer amid the Black Lives Matter movement.",
+    "author": "Shirali Shah",
     "image": {
-      "src": "../../../images/2020/welcome-back/dp-4.jpg"
+      "src": "../../../images/2020/final-issue/news-3.jpg"
     },
-    "link": "https://www.thedp.com/article/2020/08/penn-fall-decision-online-why-the-plan-changed"
+    "link": "https://www.thedp.com/article/2020/12/penn-refusal-pay-pilots-philadelphia-school-district-contribution"
   },
   {
-    "title": "'Not even the bare minimum': Penn students demand more than just tuition freeze",
+    "title": "Penn takes center stage in the 2020 presidential election",
+    "description": "The history-making presidential election saw an intense battle between former Penn professor Joe Biden and 1968 Wharton graduate and Republican incumbent Donald Trump, with Pennsylvania flipping blue to propel Biden to the White House. ",
+    "author": "Celia Kreth and Tori Sousa",
+    "image": {
+      "src": "../../../images/2020/final-issue/news-4.jpeg"
+    },
+    "link": "https://www.thedp.com/article/2020/12/presidential-election-biden-trump-year-in-review-2020"
+  },
+  {
+    "title": "Penn transitions to remote learning",
     "description": "After switching to a completely remote semester, Penn President Amy Gutmann and Provost Wendell Pritchett froze tuition – keeping it at the same value as the previous year – and decreased the fall general fee by 10%.",
-    "author": "Leanna Tilitei and Komal Patel",
+    "author": "Komal Patel",
     "image": {
-      "src": "../../../images/2020/welcome-back/dp-5.png"
+      "src": "../../../images/2020/final-issue/news-5.jpeg"
     },
-    "link": "https://www.thedp.com/article/2020/08/tuition-reduction-fall-fee-lawsuit-endowment-penn"
+    "link": "https://www.thedp.com/article/2020/12/penn-transitions-remote-learning-2020-covid-19"
   },
   {
-    "title": "From pig dissection to biodiversity scavenger hunt: Inside a remote summer lab course",
+    "title": "Students struggle to adapt to virtual classes",
     "description": "Students said some labs were difficult to follow given the absence of immediate help and feedback from a teaching assistant who would typically oversee the labs in person.",
-    "author": "Jason Yan",
-    "image": {
-      "src": "../../../images/2020/welcome-back/dp-6.jpg"
-    },
-    "link": "https://www.thedp.com/article/2020/08/penn-summer-biology-lab-remote-fall-pig-dissection"
-  },
-  {
-    "title": "After reversal of fall plans, students demand Penn subsidize shipping costs for dorm items",
-    "description": "Many students feel that they should not have to incur expensive shipping fees or risk contracting coronavirus on the trek to the Penn Tennis Center or their moving company's warehouse to retrieve their belongings.",
     "author": "Lindsey Perlman",
     "image": {
-      "src": "../../../images/2020/welcome-back/dp-7.jpg"
+      "src": "../../../images/2020/final-issue/news-6.jpeg"
     },
-    "link": "https://www.thedp.com/article/2020/08/penn-storage-retrieval-process-fall-residential-services"
+    "link": "https://www.thedp.com/article/2020/12/finals-issue-adapt-to-online-learning"
+  },
+  {
+    "title": "COVID-19, civil unrest cause Philadelphia businesses to suffer",
+    "description": "Many students feel that they should not have to incur expensive shipping fees or risk contracting coronavirus on the trek to the Penn Tennis Center or their moving company's warehouse to retrieve their belongings.",
+    "author": "Elizabeth Meisenzahl",
+    "image": {
+      "src": "../../../images/2020/final-issue/news-7.jpg"
+    },
+    "link": "https://www.thedp.com/article/2020/12/west-philadelphia-penn-businesses-covid19-protests-impact-close-smokey-joes"
   }
 ]

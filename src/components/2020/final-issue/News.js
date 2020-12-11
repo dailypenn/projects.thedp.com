@@ -38,33 +38,33 @@ const News = () => (
         node: { childrenFinalNews2020Json: articles },
       } = data.allFile.edges[0]
 
+      const topArticles = articles.slice(0, 4)
+      const bottomArticles = articles.slice(4)
+
       return (
         <Wrapper id="news">
           <div className="row main">
             <div className='col-md-12'>
               <SectionHeader>NEWS</SectionHeader>
               <Row>
-                <TextImage article={articles[0]}/>
-                <TextImage article={articles[1]} />
-                <TextImage article={articles[2]} />
-                <TextImage article={articles[3]} />
+                {topArticles.map(article => <TextImage article={article}/>)}
               </Row>
               <Row style={{ padding: '0 1rem' }}>
                 <BottomTextImage 
-                  article = {articles[1]} 
+                  article = {bottomArticles[0]} 
                   miniHeader = {'Student'}
                   color = {'rgba(3,47,183, 0.57)'} 
                   md = {4}/>
                 <BottomTextImage 
-                  article = {articles[2]} 
+                  article = {bottomArticles[1]} 
                   miniHeader = {'Student'}
                   color = {'rgba(3,47,183, 0.57)'} 
                   md = {4}/>
                 <BottomTextImage 
-                  article = {articles[1]} 
-                  miniHeader = {'Student'}
-                  color = {'rgba(3,47,183, 0.57)'} 
-                  md = {4}/>
+                  article = {bottomArticles[2]}
+                  miniHeader="Student"
+                  color="rgba(3,47,183, 0.57)"
+                  md={4} />
               </Row>
             </div>
           </div>

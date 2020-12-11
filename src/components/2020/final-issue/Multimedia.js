@@ -27,7 +27,7 @@ const ArticlesJSON = [
 const Multimedia = () => {
   return (
     <Wrapper>
-      <div className="row main" id="34st">
+      <div className="row main" id="multimedia">
         <Col>
           <SectionHeader>MULTIMEDIA</SectionHeader>
           <div className="row">

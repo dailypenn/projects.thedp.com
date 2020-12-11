@@ -13,8 +13,7 @@ import {
 
 const ArticleHeader = s.h3`
   ${FUTURA_BOLD}
-  font-size: 3em;
-  line-height: 1;
+  font-size: 2.5em;
   color: #032FB7;
   @media (max-width: 1024px) {
     font-size: 1.5em;
@@ -33,63 +32,55 @@ const ArticleDescription = s.p`
 `
 
 const Editorial = ({ article }) => (
-  <div className="row" style={{
-    width: "100%"
-  }}>
-    <div className="col-md-8">
+  <Row style={{ width: "100%" }}>
+    <Col sm={12} md={8}>
       <StyledLink href={article.link} target='_blank'>
         <Img fluid={article.image.src.childImageSharp.fluid} />
       </StyledLink>
-    </div>
-    <div className="col-md-4">
+    </Col>
+    <Col sm={12} md={4}>
       <StyledLink href={article.link} target='_blank'>
         <GreenSectionHeader> EDITORIAL </GreenSectionHeader>
         <ArticleHeader> {article.title} </ArticleHeader>
         <ArticleDescription> {article.description} </ArticleDescription>
-        <ArticleAuthor> {article.author} </ArticleAuthor>
+        <ArticleAuthor> BY {article.author} </ArticleAuthor>
       </StyledLink>
-    </div>
-  </div>
+    </Col>
+  </Row>
 )
 
 const OpinionHeader = s.h3`
   ${FUTURA_REGULAR}
-  font-size: 3em;
-  line-height: 1;
+  font-size: 2.3em;
   color: #639E7D;
-  @media (max-width: 1024px) {
-    font-size: 2em;
+  @media screen and (min-width: 1920px) {
+    font-size: 4em;
   }
 `
+
 const OpinionAuthor = s.p`
   ${FUTURA_REGULAR}
   text-transform: uppercase;
 `
+
 const OpinionDescription = s.p`
   ${FUTURA_REGULAR}
-  font-size: 1.5em;
-  line-height:1em;
-
+  font-size: 1em;
 `
+
 const TextWrapper = s.div`
   text-align: center;
   padding: 1rem;
 `
-const OpinionRow = s.div`
-  margin-top: 2rem;
-  @media (max-width: 600px) {
-    flex-direction: column-reverse;
-  }
-`
 
 const OpinionPieces = ({ article }) => (
-  <Row style={{marginTop:'2rem', width: "100%"}}>
+  <Row style={{ marginTop: '3rem', width: "100%" }}>
     <Col sm={12} md={6} lg={6}>
       <StyledLink href={article.link} target='_blank'>
         <TextWrapper>
           <OpinionHeader> {article.title} </OpinionHeader>
           <OpinionDescription> {article.description} </OpinionDescription>
-          <OpinionAuthor> {article.author} </OpinionAuthor>
+          <OpinionAuthor> BY {article.author} </OpinionAuthor>
         </TextWrapper>
       </StyledLink>
     </Col>
@@ -139,10 +130,10 @@ const Opinion = () => (
           <div className="row main" id="opinion">
             <div className='col-md-12'>
               <SectionHeader>OPINION</SectionHeader>
-              <div className='row'>
-                <Editorial article = {articles[1]} />
-                {articles.slice(1,4).map(article => <OpinionPieces article = {article} />)}
-              </div>
+              <Row>
+                <Editorial article={articles[0]} />
+                {articles.slice(1).map(article => <OpinionPieces article = {article} />)}
+              </Row>
             </div>
           </div>
         </Wrapper>
