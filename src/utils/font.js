@@ -75,6 +75,8 @@ export const DM_SERIF_DISPLAY_REGULAR = `
 
 export const GEORGIA_REGULAR = `font-family: 'Georgia', serif;`
 
+export const SPECTRAL_REGULAR = `font-family: 'Spectral', serif;`
+
 export const KARLA_REGULAR = `
   font-family: 'Karla', sans-serif;
   font-weight: 400;
