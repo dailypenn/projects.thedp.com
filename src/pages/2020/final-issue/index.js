@@ -1,7 +1,9 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { Row, Col } from 'react-bootstrap'
 
 import { NavBar, Footer } from '../../../components/shared'
+import Timeline from '../../../components/2020/final-issue/Timeline'
 import News from '../../../components/2020/final-issue/News'
 import Opinion from '../../../components/2020/final-issue/Opinion'
 import Street from '../../../components/2020/final-issue/Street'
@@ -95,10 +97,17 @@ const Index = () => (
     </Helmet>
 
     <NavBar titles={NavBarTitles} font={GOPHER_REGULAR} />
-    <News />
-    <Opinion />
-    <Multimedia/>
-    <Street />
+    <Row>
+      <Col md={2}>
+        <Timeline />
+      </Col>
+      <Col md={10}>
+        <News />
+        <Opinion />
+        <Multimedia/>
+        <Street />
+      </Col>
+    </Row>
     <UTB />
     <Footer emoji="💖" bgColor={'#F5F4F4'} />
   </>
