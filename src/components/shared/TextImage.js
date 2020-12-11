@@ -64,8 +64,8 @@ font-size:1em;
 line-height:1.1em;
 `
 
-export const TextImage = ({ article }) => (
-  <Col md={6} style={{ padding: '1rem' }}>
+export const TextImage = ({ article, padding }) => (
+  <Col md={6} style={{ padding: padding || '1rem' }}>
     <StyledLink href={article.link} target="_blank">
       <DarkBackgroundImage
         fluid={article.image.src.childImageSharp.fluid}
