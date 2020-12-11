@@ -66,3 +66,80 @@ const Line = s.div`
     margin: auto;
 `
 
+export default () => (
+    <div>
+        <BlueTitle>
+            Tracking Covid-19
+        </BlueTitle>
+        <Timeline>
+            <Circle/>
+            <Line height="25vw"/>
+            <Box>
+                <BoxTitle>Jan 26</BoxTitle>
+                <BoxContent>No cases had yet been reported at Penn, but the University announced in an email to undergraduates that it was monitoring the pandemic and communicating with students studying abroad in China.</BoxContent>
+            </Box>
+            <Line />
+            <Box>
+                <BoxTitle>Feb 4</BoxTitle>
+                <br />
+                <BoxContent>COVID-19 prompted the Penn Wharton China Center in Beijing to remain closed until at least Feb. 10. At this point, the COVID-19 case count was 20,000 worldwide, 11 of which were in the United States.</BoxContent>
+            </Box>
+            <Line />
+            <Box>
+                <BoxTitle>March 11</BoxTitle>
+                <br />
+                <BoxContent>Penn moved to a completely virtual semester following the COVID-19 outbreak. Spring break was extended another week, and virtual learning began on March 23. Students on campus were expected to leave campus by March 17.</BoxContent>
+            </Box>
+            <Line />
+            <Box>
+                <BoxTitle>March 12</BoxTitle>
+                <br />
+                <BoxContent>Penn extended the deadline to move off campus by two days to March 17 after students expressed frustration with the short timeline. Penn Abroad urged students studying in Europe, the United Kingdom, and Ireland to return home immediately.</BoxContent>
+            </Box>
+            <Line />
+            <Box>
+                <BoxTitle>March 16</BoxTitle>
+                <br />
+                <BoxContent>Three Penn students tested positive for COVID-19 after traveling abroad for spring break. Of the three students, two were off campus and one was on campus.</BoxContent>
+            </Box>
+            <Line />
+            <Box>
+                <BoxTitle>April 13</BoxTitle>
+                <br />
+                <BoxContent>As the COVID-19 pandemic raged on across the nation, Penn announced it would conduct all of its summer courses virtually.</BoxContent>
+            </Box>
+            <Line />
+            <Box>
+                <BoxTitle>Aug. 11</BoxTitle>
+                <br />
+                <BoxContent>Following a spike in COVID-19 cases across the country, Penn decided to close on-campus housing for the fall and conduct a completely virtual semester.</BoxContent>
+            </Box>
+            <Line />
+            <Box>
+                <BoxTitle>Oct. 30</BoxTitle>
+                <br />
+                <BoxContent>Penn announced it would reopen on-campus housing for the spring semester, while the majority of classes would still be taught remotely.</BoxContent>
+            </Box>
+            <Line />
+            <Box>
+                <BoxTitle>Nov. 4</BoxTitle>
+                <br />
+                <BoxContent>Penn reported what was at the time a semester-high weekly count of positive COVID-19 cases, with 107 recorded in the last week of October.</BoxContent>
+            </Box>
+            <Line />
+            <Box>
+                <BoxTitle>Jan.26</BoxTitle>
+                <br />
+                <BoxContent>No cases had yet been reported at Penn, but the University announced in an email to undergraduates that it was monitoring the pandemic and communicating with students studying abroad in China.</BoxContent>
+            </Box>
+            <Line />
+            <Box>
+                <BoxTitle>Jan.26</BoxTitle>
+                <br />
+                <BoxContent>No cases had yet been reported at Penn, but the University announced in an email to undergraduates that it was monitoring the pandemic and communicating with students studying abroad in China.</BoxContent>
+            </Box>
+            <Line height="10vw"/>
+            <Circle/>
+        </Timeline>
+    </div>
+)
