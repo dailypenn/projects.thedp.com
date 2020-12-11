@@ -2,6 +2,8 @@ import React from 'react'
 import s from 'styled-components'
 import { Row } from "react-bootstrap"
 
+import { SPECTRAL_REGULAR, MARGO } from "../../../utils/font"
+
 const GREEN = "#639E7D"
 const BLUE = "#032FB7"
 const YELLOW = "#FEFAD8"
@@ -13,13 +15,15 @@ const Box = s(Row)`
 `
 
 const BoxTitle = s.div`
+    ${MARGO}
     color: ${BLUE};
-    font-size: 250%;
+    font-size: 300%;
     word-break: keep-all;
     width: 100%;
 `
 
 const BoxContent = s.div`
+    ${SPECTRAL_REGULAR}
     padding: 4%;
     padding-top 0;
     text-align: left;
@@ -29,6 +33,7 @@ const BoxContent = s.div`
 `
 
 const BlueTitle = s.h1`
+    ${MARGO}
     position: absolute;
     margin-left: 4vw;
     margin-top: -60%;
