@@ -57,11 +57,12 @@ const MiniHeader = s.p`
   padding: 1rem 2rem 0;
   font-size: 1em;
 `
+
 const BottomDescription = s.p`
-${FUTURA_REGULAR}
-padding: 0 2rem;
-font-size:1em;
-line-height:1.1em;
+  ${FUTURA_REGULAR}
+  padding: 0 2rem;
+  font-size: 1em;
+  line-height: 1.1em;
 `
 
 export const TextImage = ({ article, padding }) => (

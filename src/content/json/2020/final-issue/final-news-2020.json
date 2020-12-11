@@ -1,5 +1,14 @@
 [
   {
+    "title": "Penn transitions to remote learning",
+    "description": "The coronavirus outbreak in March plunged academics and student life at Penn into uncertainty, indefinitely.",
+    "author": "Komal Patel",
+    "image": {
+      "src": "../../../images/2020/final-issue/news-5.jpeg"
+    },
+    "link": "https://www.thedp.com/article/2020/12/penn-transitions-remote-learning-2020-covid-19"
+  },
+  {
     "title": "Penn and Philadelphia show up for Black Lives Matter",
     "description": "After the police killing of George Floyd sparked a nationwide Black Lives Matter movement in May, protests for racial justice flooded the streets of Philadelphia.",
     "author": "Jonah Charlton",
@@ -7,15 +16,6 @@
       "src": "../../../images/2020/final-issue/news-1.jpg"
     },
     "link": "https://www.thedp.com/article/2020/12/penn-black-lives-matter-blm-protest-year-in-review-2020"
-  },
-  {
-    "title": "Penn shakes up University leadership",
-    "description": "Wharton made history by appointing the school's first Black and female dean, and the University Chaplain is taking on additional responsibilities as Vice President for Social Equity and Community.",
-    "author": "Anya Tullman",
-    "image": {
-      "src": "../../../images/2020/final-issue/news-2.jpeg"
-    },
-    "link": "https://www.thedp.com/article/2020/12/penn-administration-wharton-board-of-trustees"
   },
   {
     "title": "The fight for Penn to pay PILOTs intensifies",
@@ -36,13 +36,13 @@
     "link": "https://www.thedp.com/article/2020/12/presidential-election-biden-trump-year-in-review-2020"
   },
   {
-    "title": "Penn transitions to remote learning",
-    "description": "After switching to a completely remote semester, Penn President Amy Gutmann and Provost Wendell Pritchett froze tuition – keeping it at the same value as the previous year – and decreased the fall general fee by 10%.",
-    "author": "Komal Patel",
+    "title": "Penn shakes up University leadership",
+    "description": "Wharton made history by appointing the school's first Black and female dean, and the University Chaplain is taking on additional responsibilities as Vice President for Social Equity and Community.",
+    "author": "Anya Tullman",
     "image": {
-      "src": "../../../images/2020/final-issue/news-5.jpeg"
+      "src": "../../../images/2020/final-issue/news-2.jpeg"
     },
-    "link": "https://www.thedp.com/article/2020/12/penn-transitions-remote-learning-2020-covid-19"
+    "link": "https://www.thedp.com/article/2020/12/penn-administration-wharton-board-of-trustees"
   },
   {
     "title": "Students struggle to adapt to virtual classes",
