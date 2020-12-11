@@ -42,7 +42,10 @@ const BlueTitle = s.h1`
     height: 5%;
     transform: rotate(-90deg);
     transform-origin: right bottom 0;
-    font-size: 2vw;
+    font-size: 3vw;
+    @media (max-width: 991px) {
+        display: none;
+    }
 `
 
 const Timeline = s.div`
@@ -50,6 +53,10 @@ const Timeline = s.div`
     margin-left: 40%;
     width: 60%;
     text-align: center;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
 `
 
 const Circle = () => (
