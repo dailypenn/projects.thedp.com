@@ -43,7 +43,7 @@ export const SectionHeader = s.h1`
   margin: 1em;
   margin-left: auto;
   margin-right: auto;
-  font-size: 4rem;
+  font-size: 6rem;
 `
 
 export const ArticleHeader = s.h3`

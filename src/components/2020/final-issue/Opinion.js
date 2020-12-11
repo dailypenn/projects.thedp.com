@@ -13,7 +13,7 @@ import {
 
 const ArticleHeader = s.h3`
   ${FUTURA_BOLD}
-  font-size: 2em;
+  font-size: 3em;
   line-height: 1;
   color: #032FB7;
   @media (max-width: 1024px) {
@@ -33,7 +33,9 @@ const ArticleDescription = s.p`
 `
 
 const Editorial = ({ article }) => (
-  <div className="row">
+  <div className="row" style={{
+    width: "100%"
+  }}>
     <div className="col-md-8">
       <StyledLink href={article.link} target='_blank'>
         <Img fluid={article.image.src.childImageSharp.fluid} />
@@ -52,21 +54,20 @@ const Editorial = ({ article }) => (
 
 const OpinionHeader = s.h3`
   ${FUTURA_REGULAR}
-  font-size: 2em;
+  font-size: 3em;
   line-height: 1;
   color: #639E7D;
   @media (max-width: 1024px) {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 `
 const OpinionAuthor = s.p`
   ${FUTURA_REGULAR}
   text-transform: uppercase;
-
 `
 const OpinionDescription = s.p`
   ${FUTURA_REGULAR}
-  font-size:1em;
+  font-size: 1.5em;
   line-height:1em;
 
 `
@@ -82,7 +83,7 @@ const OpinionRow = s.div`
 `
 
 const OpinionPieces = ({ article }) => (
-  <Row style={{marginTop:'2rem'}}>
+  <Row style={{marginTop:'2rem', width: "100%"}}>
     <Col sm={12} md={6} lg={6}>
       <StyledLink href={article.link} target='_blank'>
         <TextWrapper>
