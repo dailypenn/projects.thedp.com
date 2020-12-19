@@ -15,7 +15,6 @@ import {
 } from './shared'
 import { FUTURA_REGULAR } from '../../../utils/font'
 import { StyledLink } from '../../shared'
-import Articles from '../../../content/json/2020/34st-election/hot_takes.json'
 
 const SpacedRow = s(Row)`
   margin-top: 1vw;

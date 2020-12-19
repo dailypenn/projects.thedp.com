@@ -123,6 +123,20 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2020/final-issue`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2020/final-issue`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
@@ -158,7 +172,7 @@ module.exports = {
       resolve: 'gatsby-plugin-your-fonts',
       options: {
         host: 'dailypenn.github.io/font',
-        fonts: [`radiant.css`, `canela.css`, `gopher.css`],
+        fonts: [`radiant.css`, `canela.css`, `gopher.css`, `margo.css`],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
