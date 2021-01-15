@@ -615,7 +615,7 @@ const Join = () => {
             <p class="overall">Fill out the form below to apply!</p>
             <iframe
               class="join-form"
-              src="https://docs.google.com/forms/d/e/1FAIpQLSeNzxYf1qLmjDTGeBS0xksY2IQPwbWQkBi9guJkji8vgePp1g/viewform"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSeI4bsvaRNnM7CppjBjr-jwqv2DeETLq49XuQapITtoSaz7ig/viewform"
               width="100%"
               height="600"
               frameBorder="0"
