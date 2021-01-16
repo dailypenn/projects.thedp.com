@@ -355,16 +355,34 @@ const Business = s.div`
 `
 
 const Join = () => {
-  const [editorialImage, setEditorialImage] = useState(JoinEditorialJSON[0].background)
-  const [editorialDescription, setEditorialDescription] = useState(JoinEditorialJSON[0].text)
-  const [editorialHighlights, setEditorialHighlights] = useState(JoinEditorialJSON[0].highlights)
-  const [editorialHighlightLinks, setEditorialHighlightLinks] = useState(JoinEditorialJSON[0]["highlight-links"])
-  const [editorialActive, setEditorialActive] = useState(JoinEditorialJSON[0].id)
+  const [editorialImage, setEditorialImage] = useState(
+    JoinEditorialJSON[0].background
+  )
+  const [editorialDescription, setEditorialDescription] = useState(
+    JoinEditorialJSON[0].text
+  )
+  const [editorialHighlights, setEditorialHighlights] = useState(
+    JoinEditorialJSON[0].highlights
+  )
+  const [editorialHighlightLinks, setEditorialHighlightLinks] = useState(
+    JoinEditorialJSON[0]['highlight-links']
+  )
+  const [editorialActive, setEditorialActive] = useState(
+    JoinEditorialJSON[0].id
+  )
 
-  const [businessImage, setBusinessImage] = useState(JoinBusinessJSON[0].background)
-  const [businessDescription, setBusinessDescription] = useState(JoinBusinessJSON[0].text)
-  const [businessHighlights, setBusinessHighlights] = useState(JoinBusinessJSON[0].highlights)
-  const [businessHighlightLinks, setBusinessHighlightLinks] = useState(JoinBusinessJSON[0]["highlight-links"])
+  const [businessImage, setBusinessImage] = useState(
+    JoinBusinessJSON[0].background
+  )
+  const [businessDescription, setBusinessDescription] = useState(
+    JoinBusinessJSON[0].text
+  )
+  const [businessHighlights, setBusinessHighlights] = useState(
+    JoinBusinessJSON[0].highlights
+  )
+  const [businessHighlightLinks, setBusinessHighlightLinks] = useState(
+    JoinBusinessJSON[0]['highlight-links']
+  )
   const [businessActive, setBusinessActive] = useState(JoinBusinessJSON[0].id)
 
   return (
@@ -375,24 +393,53 @@ const Join = () => {
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <meta property="og:title" content="Join The Daily Pennsylvanian, Inc." />
-        <meta property="og:image" content="https://snworksceo.imgix.net/dpn/ec790853-4028-4601-b716-108531b8baf7.sized-1000x1000.jpg" />
-        <meta property="og:description" content="The Daily Pennsylvanian is looking for new students to join our team! Check out our recruitment website to see all of the opportunities we have to offer!" />
+        <meta
+          property="og:title"
+          content="Join The Daily Pennsylvanian, Inc."
+        />
+        <meta
+          property="og:image"
+          content="https://snworksceo.imgix.net/dpn/ec790853-4028-4601-b716-108531b8baf7.sized-1000x1000.jpg"
+        />
+        <meta
+          property="og:description"
+          content="The Daily Pennsylvanian is looking for new students to join our team! Check out our recruitment website to see all of the opportunities we have to offer!"
+        />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://projects.thedp.com/2020/join" />
+        <meta
+          property="og:url"
+          content="https://projects.thedp.com/2020/join"
+        />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Join The Daily Pennsylvanian, Inc." />
-        <meta name="twitter:image" content="https://snworksceo.imgix.net/dpn/ec790853-4028-4601-b716-108531b8baf7.sized-1000x1000.jpg" />
-        <meta name="twitter:description" content="The Daily Pennsylvanian is looking for new students to join our team! Check out our recruitment website to see all of the opportunities we have to offer!" />
-        <meta name="twitter:url" content="https://projects.thedp.com/2020/join" />
+        <meta
+          name="twitter:title"
+          content="Join The Daily Pennsylvanian, Inc."
+        />
+        <meta
+          name="twitter:image"
+          content="https://snworksceo.imgix.net/dpn/ec790853-4028-4601-b716-108531b8baf7.sized-1000x1000.jpg"
+        />
+        <meta
+          name="twitter:description"
+          content="The Daily Pennsylvanian is looking for new students to join our team! Check out our recruitment website to see all of the opportunities we have to offer!"
+        />
+        <meta
+          name="twitter:url"
+          content="https://projects.thedp.com/2020/join"
+        />
         <meta name="twitter:site" content="@dailypenn" />
       </Helmet>
 
       <Wrapper>
         <header>
           <a href="https://www.thedp.com" target="_blank" rel="noreferrer">
-            <img src="https://snworksceo.imgix.net/dpn/d2453b29-fc87-458c-b226-ece3042946bb.sized-1000x1000.png" alt="The Daily Pennsylvanian" width="250" class="logo" />
+            <img
+              src="https://snworksceo.imgix.net/dpn/d2453b29-fc87-458c-b226-ece3042946bb.sized-1000x1000.png"
+              alt="The Daily Pennsylvanian"
+              width="250"
+              class="logo"
+            />
           </a>
         </header>
 
@@ -400,97 +447,120 @@ const Join = () => {
           <div class="intro-text">
             <h1>The Daily Pennsylvanian, Inc.</h1>
             <h3>Don't just live the story of a lifetime. Tell it.</h3>
-            <Link to="#apply"><div class="join-button">Join Now</div></Link>
+            <Link to="#apply">
+              <div class="join-button">Join Now</div>
+            </Link>
           </div>
         </section>
 
         <Editorial background={editorialImage}>
-        <section class="editorial">
-        <h2>Editorial</h2>
-          <div class="section">
-            <p class="overall">
-              The Daily Pennsylvanian editorial departments work together to find and tell the most important stories on campus.
-              Whether it's diving deep into an investigative story or capturing snapshots of people at the frontlines of Penn's history, the DP editorial side never stops making a difference.
-              We're operating 100% remotely through the pandemic.
-            </p>
+          <section class="editorial">
+            <h2>Editorial</h2>
+            <div class="section">
+              <p class="overall">
+                The Daily Pennsylvanian editorial departments work together to
+                find and tell the most important stories on campus. Whether it's
+                diving deep into an investigative story or capturing snapshots
+                of people at the frontlines of Penn's history, the DP editorial
+                side never stops making a difference. We're operating 100%
+                remotely through the pandemic.
+              </p>
 
-            <div class="departments">
-              {JoinEditorialJSON.map((dpt, idx) => (
-              <span>
-                <h4 class={(editorialActive == dpt.id) ? 'ed-tab active' : 'ed-tab'} id={dpt.id} onClick={() => {
-                  setEditorialImage(dpt.background)
-                  setEditorialDescription(dpt.text)
-                  setEditorialHighlights(dpt.highlights)
-                  setEditorialHighlightLinks(dpt["highlight-links"])
-                  setEditorialActive(dpt.id)
-                }}>
-                  {dpt.department}
-                </h4>
-              </span>
-              ))}
-            </div>
-            <div className="ed-text active">
+              <div class="departments">
+                {JoinEditorialJSON.map((dpt, idx) => (
+                  <span>
+                    <h4
+                      class={
+                        editorialActive == dpt.id ? 'ed-tab active' : 'ed-tab'
+                      }
+                      id={dpt.id}
+                      onClick={() => {
+                        setEditorialImage(dpt.background)
+                        setEditorialDescription(dpt.text)
+                        setEditorialHighlights(dpt.highlights)
+                        setEditorialHighlightLinks(dpt['highlight-links'])
+                        setEditorialActive(dpt.id)
+                      }}
+                    >
+                      {dpt.department}
+                    </h4>
+                  </span>
+                ))}
+              </div>
+              <div className="ed-text active">
                 {editorialDescription.map(p => (
                   <p>{p}</p>
                 ))}
-                <h5>{(editorialHighlights.length === 0) ? '': 'Highlights'}</h5>
-                {
-                  (editorialHighlights.length === editorialHighlightLinks.length)
+                <h5>{editorialHighlights.length === 0 ? '' : 'Highlights'}</h5>
+                {editorialHighlights.length === editorialHighlightLinks.length
                   ? editorialHighlights.map((l, idx) => (
-                    <a href={editorialHighlightLinks[idx]} target="_blank" rel="noreferrer">{l} &#8594;</a>
-                  ))
-                  : editorialHighlights.map((l, idx) => (
-                    <p>{l}</p>
-                  ))
-                }
+                      <a
+                        href={editorialHighlightLinks[idx]}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {l} &#8594;
+                      </a>
+                    ))
+                  : editorialHighlights.map((l, idx) => <p>{l}</p>)}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
         </Editorial>
-        
-        <Business background={businessImage}>
-        <section class="business">
-        <h2>Business</h2>
-          <div class="section">
-            <p class="overall">
-              The Daily Pennsylvanian is a $3-million, student-run media organization.
-              Our incredible teams work together to market our products and sustain our business.
-              Through the DP, students experience working for a real company, with real staffers, clients, and revenues.
-              Join one of our teams to gain an invaluable, hands-on experience unlike any other.
-            </p>
 
-            <div class="departments">
-              {JoinBusinessJSON.map((dpt, idx) => (
-              <span>
-                <h4 class={(businessActive === dpt.id) ? 'biz-tab active' : 'biz-tab'} id={dpt.id} onClick={() => {
-                  setBusinessImage(dpt.background)
-                  setBusinessDescription(dpt.text)
-                  setBusinessHighlights(dpt.highlights)
-                  setBusinessHighlightLinks(dpt["highlight-links"])
-                  setBusinessActive(dpt.id)
-                }}>
-                  {dpt.department}
-                </h4>
-              </span>
-              ))}
-            </div>
-            <div className="biz-text active">
+        <Business background={businessImage}>
+          <section class="business">
+            <h2>Business</h2>
+            <div class="section">
+              <p class="overall">
+                The Daily Pennsylvanian is a $3-million, student-run media
+                organization. Our incredible teams work together to market our
+                products and sustain our business. Through the DP, students
+                experience working for a real company, with real staffers,
+                clients, and revenues. Join one of our teams to gain an
+                invaluable, hands-on experience unlike any other.
+              </p>
+
+              <div class="departments">
+                {JoinBusinessJSON.map((dpt, idx) => (
+                  <span>
+                    <h4
+                      class={
+                        businessActive === dpt.id ? 'biz-tab active' : 'biz-tab'
+                      }
+                      id={dpt.id}
+                      onClick={() => {
+                        setBusinessImage(dpt.background)
+                        setBusinessDescription(dpt.text)
+                        setBusinessHighlights(dpt.highlights)
+                        setBusinessHighlightLinks(dpt['highlight-links'])
+                        setBusinessActive(dpt.id)
+                      }}
+                    >
+                      {dpt.department}
+                    </h4>
+                  </span>
+                ))}
+              </div>
+              <div className="biz-text active">
                 {businessDescription.map(p => (
                   <p>{p}</p>
                 ))}
-                <h5>{(businessHighlights.length === 0) ? '': 'Highlights'}</h5>
-                {
-                  (businessHighlights.length === businessHighlightLinks.length)
+                <h5>{businessHighlights.length === 0 ? '' : 'Highlights'}</h5>
+                {businessHighlights.length === businessHighlightLinks.length
                   ? businessHighlights.map((l, idx) => (
-                    <a href={businessHighlightLinks[idx]} target="_blank" rel="noreferrer">{l} &#8594;</a>
-                  ))
-                  : businessHighlights.map((l, idx) => (
-                    <p>{l}</p>
-                  ))
-                }
+                      <a
+                        href={businessHighlightLinks[idx]}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {l} &#8594;
+                      </a>
+                    ))
+                  : businessHighlights.map((l, idx) => <p>{l}</p>)}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
         </Business>
 
         <section class="street">
@@ -499,41 +569,61 @@ const Join = () => {
             {Join34thJSON.text.map(p => (
               <p>{p}</p>
             ))}
-            <a href={Join34thJSON.signup} target="_blank" rel="noreferrer"> For 34st interest form click here &#8594;</a>
+            <a href={Join34thJSON.signup} target="_blank" rel="noreferrer">
+              {' '}
+              For 34st interest form click here &#8594;
+            </a>
             <h5>Highlights</h5>
-            {
-              Join34thJSON.highlights.map((h, idx) => (
-                <a href={Join34thJSON['highlight-links'][idx]}  target="_blank" rel="noreferrer">{h} &#8594;</a>
-              ))
-            }
+            {Join34thJSON.highlights.map((h, idx) => (
+              <a
+                href={Join34thJSON['highlight-links'][idx]}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {h} &#8594;
+              </a>
+            ))}
           </div>
         </section>
 
         <section class="utb">
           <h2>{JoinUTBJSON.department}</h2>
           <div class="section">
-            {
-              JoinUTBJSON.text.map(p => (
-                <p>{p}</p>
-              ))
-            }
-            <a href={JoinUTBJSON.signup} target="_blank" rel="noreferrer"> For UTB interest form click here &#8594;</a>
+            {JoinUTBJSON.text.map(p => (
+              <p>{p}</p>
+            ))}
+            <a href={JoinUTBJSON.signup} target="_blank" rel="noreferrer">
+              {' '}
+              For UTB interest form click here &#8594;
+            </a>
             <h5>Highlights</h5>
-            {
-              JoinUTBJSON.highlights.map((h, idx) => (
-                <a href={JoinUTBJSON['highlight-links'][idx]} target="_blank" rel="noreferrer">{h} &#8594;</a>
-              ))
-            }
+            {JoinUTBJSON.highlights.map((h, idx) => (
+              <a
+                href={JoinUTBJSON['highlight-links'][idx]}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {h} &#8594;
+              </a>
+            ))}
           </div>
         </section>
 
         <section class="join" id="apply">
           <h2>Join The Daily Pennsylvanian, Inc.</h2>
           <div class="section form">
-            <p class="overall">
-              Fill out the form below to apply!
-            </p>
-            <iframe class="join-form" src="https://docs.google.com/forms/d/e/1FAIpQLSeNzxYf1qLmjDTGeBS0xksY2IQPwbWQkBi9guJkji8vgePp1g/viewform" width="100%" height="600" frameBorder="0" marginHeight="0" marginWidth="0">Loading...</iframe>
+            <p class="overall">Fill out the form below to apply!</p>
+            <iframe
+              class="join-form"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSeNzxYf1qLmjDTGeBS0xksY2IQPwbWQkBi9guJkji8vgePp1g/viewform"
+              width="100%"
+              height="600"
+              frameBorder="0"
+              marginHeight="0"
+              marginWidth="0"
+            >
+              Loading...
+            </iframe>
           </div>
         </section>
       </Wrapper>

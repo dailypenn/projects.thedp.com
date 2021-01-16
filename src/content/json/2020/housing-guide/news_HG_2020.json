@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Here’s what you need to know about housing and dining in the spring",
+    "link": "https://www.thedp.com/article/2020/11/penn-housing-dining-move-in-spring-2021-covid",
+    "authors": "Lindsey Perlman",
+    "abstract": "Penn’s announcement inviting undergraduate students back to campus this spring, here’s what you need to know about housing and dining.",
+    "image": {
+      "src": "../../../images/2020/housing-guide/news-1.jpg"
+    }
+  },
+  {
+    "title": "Students scramble to find off-campus spring housing, fearing another dorm shutdown",
+    "link": "https://www.thedp.com/article/2020/11/penn-spring-off-campus-housing-search-sublets",
+    "authors": "Elizabeth Meisenzahl",
+    "abstract": "Following Penn's closure of on-campus housing just weeks before the start of the fall semester, students are concerned that the University will go back on its word once again, particularly as COVID-19 cases continue to rise during the winter months.",
+    "image": {
+      "src": "../../../images/2020/housing-guide/news-2.png"
+    }
+  },
+  {
+    "title": "Behind the Zoom screen: students reflect on housing in the time of COVID-19",
+    "link": "https://www.thedp.com/article/2020/11/penn-housing-on-campus-remote-profile-covid",
+    "authors": "Lindsey Perlman",
+    "abstract": "As some students are deciding whether to return to campus for the hybrid spring semester, The Daily Pennsylvanian virtually sat down to talk with three students, each of whom offered a glimpse into their different fall semester experiences living on campus, off campus in University City, or at home with their family.",
+    "image": {
+      "src": "../../../images/2020/housing-guide/news-3.jpg"
+    }
+  },
+  {
+    "title": "Gregory College House to get air conditioning by May 2021, nine months behind schedule",
+    "link": "https://www.thedp.com/article/2020/11/construction-new-college-house-gregory",
+    "authors": "Anya Tullman",
+    "abstract": "Although Penn had planned to complete air conditioning installation for the last dorm without AC by the end of the summer, the COVID-19 pandemic and limited supply of equipment upended the project timeline. ",
+    "image": {
+      "src": "../../../images/2020/housing-guide/news-4.jpg"
+    }
+  }
+]

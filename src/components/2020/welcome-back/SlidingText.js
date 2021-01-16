@@ -58,29 +58,31 @@ const Wrapper = s.div`
 const SlidingText = () => (
   <Wrapper>
     <div>
-          <div class="line">
-            <div class="left">
-              <div class="content">
-                <span class="spanSlow">Welcome</span>
-              </div>
-            </div><div class="right">
-              <div class="content">
-                <span class="spanSlow">welcome</span>
-              </div>
-            </div>
+      <div class="line">
+        <div class="left">
+          <div class="content">
+            <span class="spanSlow">Welcome</span>
           </div>
-          <div class="line">
-            <div class="left">
-              <div class="content">
-                <span class="spanSlow">back</span>
-              </div>
-            </div><div class="right">
-              <div class="content">
-                <span class="spanSlow">back</span>
-              </div>
-            </div>
-            </div>
-            {/* <div class="line">
+        </div>
+        <div class="right">
+          <div class="content">
+            <span class="spanSlow">welcome</span>
+          </div>
+        </div>
+      </div>
+      <div class="line">
+        <div class="left">
+          <div class="content">
+            <span class="spanSlow">back</span>
+          </div>
+        </div>
+        <div class="right">
+          <div class="content">
+            <span class="spanSlow">back</span>
+          </div>
+        </div>
+      </div>
+      {/* <div class="line">
                 <div class="left">
                   <div class="content">
                     <span class="spanFast">you</span>
@@ -102,7 +104,7 @@ const SlidingText = () => (
                     </div>
                   </div>
                 </div> */}
-        </div>
+    </div>
   </Wrapper>
 )
 

@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Ivy League remains firm in sports cancellations",
+    "description": "When the COVID-19 pandemic hit the United States, the sports world went into disarray. The Ivy League was among the first to act, and while their move to cancel sports was at first widely criticized, almost every other sports body eventually followed suit.",
+    "author": "Brandon Pride",
+    "image": {
+      "src": "../../../images/2020/final-issue/sports-1.jpg"
+    },
+    "link": "https://www.thedp.com/article/2020/12/year-in-review-cancellations-2020"
+  },
+  {
+    "title": "Remembering this year's journey in Penn basketball",
+    "description": "On March 12, the Ivy League became the first major athletic conference to cancel its spring sports. Though Penn's athletic teams hoped to take their seasons a bit further into the playoffs, both Penn basketball teams wound up having to be satisfied with just clinching spots in the Ivy League tournament.",
+    "author": "Nicky Belgrad",
+    "image": {
+      "src": "../../../images/2020/final-issue/sports-2.png"
+    },
+    "link": "https://www.thedp.com/article/2020/12/end-of-year-penn-mens-and-womens-basketball-highlights"
+  },
+  {
+    "title": "In with the new: Looking back on a trio of Penn coaching changes over 2020",
+    "description": "Outside of the craziness of 2020, a number of Penn teams also went through coaching changes this year. Here's a recap of which coaches left the Red and Blue and who replaced them.",
+    "author": "Will DiGrande",
+    "image": {
+      "src": "../../../images/2020/final-issue/sports-3.jpeg"
+    },
+    "link": "https://www.thedp.com/article/2020/12/year-in-review-penn-athletics-coaching-changes-volleyball-womens-soccer-gymnastics"
+  },
+  {
+    "title": "Fighting racial injustice: From breaking color barriers to Black Lives Matter",
+    "description": "2020 is a critical year, one where even in the absence of Ivy League sports, Penn athletes used their platforms to raise awareness of the Black Lives Matter movement and ongoing issues of racial injustice and police brutality.",
+    "author": "Kathryn Xu",
+    "image": {
+      "src": "../../../images/2020/final-issue/sports-4.jpg"
+    },
+    "link": "https://www.thedp.com/article/2020/12/year-in-review-penn-athletics-black-lives-matter"
+  },
+  {
+    "title": "A look back at Penn’s forgotten sports history",
+    "description": "Without live sports for most of 2020, the Daily Pennsylvanian looked back at the history of the Red and Blue.",
+    "author": "Lochlahn March",
+    "image": {
+      "src": "../../../images/2020/final-issue/sports-5.jpeg"
+    },
+    "link": "https://www.thedp.com/article/2020/12/end-of-year-sports-historical-features"
+  }
+]

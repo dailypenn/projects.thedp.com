@@ -24,7 +24,7 @@ module.exports = {
       options: {
         name: `json`,
         path: `${__dirname}/src/content/json/2020/welcome-back`,
-      }
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -38,7 +38,7 @@ module.exports = {
       options: {
         name: `json`,
         path: `${__dirname}/src/content/json/2019/NEC`,
-      }
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -52,7 +52,7 @@ module.exports = {
       options: {
         name: `json`,
         path: `${__dirname}/src/content/json/2020/NEC`,
-      }
+      },
     },
     // images for 2020/year-book
     {
@@ -60,7 +60,7 @@ module.exports = {
       options: {
         name: `json`,
         path: `${__dirname}/src/content/images/2020/year-book`,
-      }
+      },
     },
     // json and image for 2020 elections
     {
@@ -75,7 +75,81 @@ module.exports = {
       options: {
         name: `json`,
         path: `${__dirname}/src/content/json/2020/vote`,
-      }
+      },
+    },
+    // json and image for 2020 housing-guide
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2020/housing-guide`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2020/housing-guide`,
+      },
+    },
+    // json and image for 34st 2020 elections
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2020/34st-election`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2020/34st-election`,
+      },
+    },
+    // json and images for 2020 giving tuesday
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2020/giving-tuesday`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2020/giving-tuesday`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2020/final-issue`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2020/final-issue`,
+      },
+    },
+    //2021 best-of-penn
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2021/best-of-penn`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2021/best-of-penn`,
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -92,7 +166,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-707447-4",
+        trackingId: 'UA-707447-4',
       },
     },
     {
@@ -102,19 +176,20 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-load-script',
-      options: {
-        src: '/nec-script.js',
-      },
-    },
-    {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: /\.svg$/
-        }
-      }
-    }
+          include: /\.svg$/,
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-your-fonts',
+      options: {
+        host: 'dailypenn.github.io/font',
+        fonts: [`radiant.css`, `canela.css`, `gopher.css`, `margo.css`],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

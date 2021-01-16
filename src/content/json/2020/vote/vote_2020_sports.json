@@ -1,20 +1,20 @@
 [
   {
-    "title": "Ben May has been doing cool stuff on the biden campaign",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
+    "title": "A look back at Joe Biden's days as an athlete",
+    "description": "Biden was a standout receiver in high school and played on the University of Delaware's freshman team",
+    "author": "Lochlahn March",
+    "link": "https://www.thedp.com/article/2020/08/joe-biden-penn-athletics-football-archmere-2020-election-delaware",
     "img": {
-      "src": "../../../images/2020/vote/Temp.png"
+      "src": "../../../images/2020/welcome-back/sports-biden.jpg"
     }
   },
   {
-    "title": "How Safe is Your Mail In Ballot",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
+    "title": "Why didn't Donald Trump play sports at Penn?",
+    "description": "Trump has long boasted his baseball skills, but never took to the diamond at Fordham or Penn",
+    "author": "Lochlahn March",
+    "link": "https://www.thedp.com/article/2020/07/donald-trump-penn-baseball-football-squash-fordham-sats-bob-seddon",
     "img": {
-      "src": "../../../images/2020/vote/Temp.png"
+      "src": "../../../images/2020/welcome-back/sports-trump.jpg"
     }
   }
 ]

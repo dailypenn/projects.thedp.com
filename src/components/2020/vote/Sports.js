@@ -1,30 +1,30 @@
 import React from 'react'
-import s from 'styled-components'
 import Img from 'gatsby-image'
-
-import { Wrapper, 
-  WordWithLine, 
-  ArticleHeader, 
-  ArticleDescription, 
-  ArticleAuthor, 
-  StyledLink } from './shared'
 import { StaticQuery, graphql } from 'gatsby'
 
+import {
+  Wrapper,
+  WordWithLine,
+  ArticleHeader,
+  ArticleDescription,
+  ArticleAuthor,
+  StyledAnchor,
+} from './shared'
+import { Ads } from '../../shared'
 
-
-const Card = ({article}) => (
-  <div className = "row">
-    <div className="col-md-5">
-      <StyledLink href={article.link}>
-        <Img fluid={article.img.src.childImageSharp.fluid} className="border border-dark"/>
-      </StyledLink>
-    </div>
+const Card = ({ article }) => (
+  <div className="row">
     <div className="col-md-7">
-      <StyledLink href={article.link}>
+      <StyledAnchor href={article.link}>
+        <Img fluid={article.img.src.childImageSharp.fluid} />
+      </StyledAnchor>
+    </div>
+    <div className="col-md-5">
+      <StyledAnchor href={article.link} style={{ padding: '1rem' }}>
         <ArticleHeader>{article.title}</ArticleHeader>
         <ArticleDescription>{article.description}</ArticleDescription>
         <ArticleAuthor>BY {article.author}</ArticleAuthor>
-      </StyledLink>
+      </StyledAnchor>
     </div>
   </div>
 )
@@ -33,10 +33,10 @@ const Sports = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile (filter: {relativePath: {eq: "vote_2020_sports.json"}}) {
+        allFile(filter: { relativePath: { eq: "vote_2020_sports.json" } }) {
           edges {
             node {
-              childrenVote2020SportsJson{
+              childrenVote2020SportsJson {
                 title
                 description
                 author
@@ -44,7 +44,7 @@ const Sports = () => (
                 img {
                   src {
                     childImageSharp {
-                      fluid(maxWidth: 1000, maxHeight: 600) {
+                      fluid(maxWidth: 1000, maxHeight: 1000) {
                         ...GatsbyImageSharpFluid
                         src
                       }
@@ -58,22 +58,27 @@ const Sports = () => (
       }
     `}
     render={data => {
-      const { node: { childrenVote2020SportsJson: articles } } = data.allFile.edges[0]
+      const {
+        node: { childrenVote2020SportsJson: articles },
+      } = data.allFile.edges[0]
 
       return (
-        <Wrapper>
-          <div id="sports">
-            <WordWithLine word="SPORTS" lineColor="#7BA3D3"/>
-            <div className = "row">
-              <div className="col-md-6">
-                <Card article = {articles[0]}  />
-              </div>
-              <div className="col-md-6">
-                <Card article = {articles[1]}  />
+        <>
+          <Wrapper style={{ marginBottom: '1rem' }}>
+            <div id="sports">
+              <WordWithLine word="SPORTS" lineColor="#7BA3D3" />
+              <div className="row">
+                <div className="col-md-6">
+                  <Card article={articles[0]} />
+                </div>
+                <div className="col-md-6">
+                  <Card article={articles[1]} />
+                </div>
               </div>
             </div>
-          </div>
-        </Wrapper>
+          </Wrapper>
+          <Ads />
+        </>
       )
     }}
   />

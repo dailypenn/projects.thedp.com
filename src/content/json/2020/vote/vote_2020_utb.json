@@ -1,47 +1,42 @@
 [
   {
-    "title": "Ben May has been doing cool stuff on the biden campaign",
-    "description": "Lorem ipsum dolor sit amet",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
+    "title": "Under the Button’s Guide to Voting (For Girls and Gays)",
+    "author": "GRACE GINSBURG AND SCOTT NEWMAN",
+    "link": "https://www.underthebutton.com/article/2020/10/utb-voting-guide-girls-gays",
     "img": {
-      "src": "../../../images/2020/vote/Temp.png"
+      "src": "../../../images/2020/vote/utb-1.jpeg"
     }
   },
   {
-    "title": "Ben May has been doing cool stuff on the biden campaign",
-    "description": "Lorem ipsum dolor sit amet",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
+    "title": "City of Philadelphia to Dispatch Gritties to Protect Philly From Voter Intimidation",
+    "author": "EVAN SHREFFLER",
+    "link": "https://www.underthebutton.com/article/2020/10/city-of-philadelphia-to-dispatch-gritties",
     "img": {
-      "src": "../../../images/2020/vote/Temp.png"
+      "src": "../../../images/2020/vote/utb-2.jpeg"
     }
   },
   {
-    "title": "Ben May has been doing cool stuff on the biden campaign",
-    "description": "Lorem ipsum dolor sit amet",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
+    "title": "QUIZ: Are YOU the Silent Majority?",
+    "author": "ALICIA LOPEZ",
+    "link": "https://www.underthebutton.com/article/2020/10/quiz-are-you-silent-majority",
     "img": {
-      "src": "../../../images/2020/vote/Temp.png"
+      "src": "../../../images/2020/vote/utb-3.jpg"
     }
   },
   {
-    "title": "Ben May has been doing cool stuff on the biden campaign",
-    "description": "Lorem ipsum dolor sit amet",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
+    "title": "Voter Worried He Won’t Receive Mail-in Bride on Time",
+    "author": "MERESA GARCÍA",
+    "link": "https://www.underthebutton.com/article/2020/10/voter-worried-receive-mail-bride",
     "img": {
-      "src": "../../../images/2020/vote/Temp.png"
+      "src": "../../../images/2020/vote/utb-4.jpg"
     }
   },
   {
-    "title": "Ben May has been doing cool stuff on the biden campaign",
-    "description": "Lorem ipsum dolor sit amet",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
+    "title": "BREAKING: Trump and Biden Put Aside Differences, Agree Bulbasaur Best Starter Pokémon",
+    "author": "IAN ONG",
+    "link": "https://www.underthebutton.com/article/2020/10/trump-biden-bulbasaur-pokemon",
     "img": {
-      "src": "../../../images/2020/vote/Temp.png"
+      "src": "../../../images/2020/vote/utb-5.jpeg"
     }
   }
 ]

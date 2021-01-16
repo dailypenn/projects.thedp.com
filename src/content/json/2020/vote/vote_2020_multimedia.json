@@ -1,38 +1,12 @@
 [
   {
-    "title": "1 Ben May has been doing cool stuff on the biden campaign",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
+    "title": "Politicians in Philadelphia since 2018",
+    "link": "https://www.thedp.com/article/2020/10/politicians-visit-penn-and-philadelphia-since-2018-midterm-elections-vote-voting-election-guide-photo-gallery",
+    "authors": "Sukhmani Kaur and Chase Sutton",
+    "tag": "photo gallery",
+    "abstract": "As a historic 2020 Election Day approaches, The Daily Pennsylvanian looks back on ten major United States politicians that have visited Penn's campus and Philadelphia since 2018.",
     "img": {
-      "src": "../../../images/2020/vote/Temp.png"
-    }
-  },
-  {
-    "title": "2 How Safe is Your Mail In Ballot",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
-    "img": {
-      "src": "../../../images/2020/vote/Temp.png"
-    }
-  },
-  {
-    "title": "3 Ben May has been doing cool stuff on the biden campaign",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
-    "img": {
-      "src": "../../../images/2020/vote/Temp.png"
-    }
-  },
-  {
-    "title": "4 How Safe is Your Mail In Ballot",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
-    "img": {
-      "src": "../../../images/2020/vote/Temp.png"
+      "src": "../../../images/2020/vote/multimedia-1.jpg"
     }
   }
 ]

@@ -3,12 +3,11 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Section from '../../../../components/2019/NEC/Section'
 
-
 const Index = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile(filter: {relativePath: {eq: "cb20_2019.json"}}) {
+        allFile(filter: { relativePath: { eq: "cb20_2019.json" } }) {
           nodes {
             childNecJson {
               President {
@@ -58,7 +57,7 @@ const Index = () => (
                   }
                 }
               }
-        
+
               Vice_President_of_Finance {
                 name
                 statement
@@ -74,7 +73,7 @@ const Index = () => (
                   }
                 }
               }
-  
+
               Vice_President_of_Internal_Affairs {
                 name
                 statement
@@ -159,9 +158,7 @@ const Index = () => (
         }
       }
     `}
-    render={data => (
-      <Section data={data.allFile.nodes[0].childNecJson} />
-    )}
+    render={data => <Section data={data.allFile.nodes[0].childNecJson} />}
   />
 )
 

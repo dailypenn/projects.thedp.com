@@ -48,7 +48,37 @@ export const ROBOTO_BOLD = `
   font-weight: 700;
 `
 
+export const OPEN_SANS_REGULAR = `
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+`
+
+export const OPEN_SANS_BOLD = `
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+`
+
+export const CANELA_REGULAR = `
+  font-family: 'Canela', sans-serif;
+  font-weight: 400;
+`
+
+export const DM_SERIF_DISPLAY_BOLD = `
+  font-family: 'DM Serif Display', sans-serif;
+  font-weight: 700;
+`
+
+export const DM_SERIF_DISPLAY_REGULAR = `
+  font-family: 'DM Serif Display', sans-serif;
+  font-weight: 400;
+`
+
 export const GEORGIA_REGULAR = `font-family: 'Georgia', serif;`
+
+export const SPECTRAL_REGULAR = `
+  font-family: 'Spectral', serif;
+  font-weight: 400;
+`
 
 export const KARLA_REGULAR = `
   font-family: 'Karla', sans-serif;
@@ -87,16 +117,76 @@ export const LORA_REGULAR = `
   font-weight: 400;
 `
 
-export const RADIANT_REGULAR = `
-  font-family: 'URWRadiantW01-CondensedBold', sans-serif;
+export const TENOR_SANS_REGULAR = `
+  font-family: 'Tenor Sans', serif;
+`
+
+export const LORA_ITALIC = `
+  font-family: 'Lora', serif;
   font-weight: 400;
+`
+
+export const RADIANT_REGULAR = `
+  font-family: 'Radiant';
+  font-weight: 400;
+`
+
+export const RAMA_GOTHIC_BOLD = `
+  font-family: 'rama-gothic-c';
+  font-weight: 700;
 `
 
 export const FUTURA_REGULAR = `
   font-family: 'Futura-PT', sans-serif;
   font-weight: 400;
 `
+
 export const FUTURA_BOLD = `
   font-family: 'Futura-PT', sans-serif;
   font-weight: 700;
+`
+
+export const COOPER_BLACK_REGULAR = `
+  font-family: 'cooper-black-std';
+  font-weight: 400;
+`
+
+export const BRANDON_GROTESQUE_MEDIUM = `
+  font-family: 'BrandonGrotesque-Medium';
+  font-weight: 400;
+`
+
+export const GOPHER_REGULAR = `
+  font-family: 'Gopher', sans-serif;
+  font-weight: 400;
+`
+
+export const GOPHER_MEDIUM = `
+  font-family: 'Gopher', sans-serif;
+  font-weight: 500;
+`
+
+export const GOPHER_BOLD = `
+  font-family: 'Gopher', sans-serif;
+  font-weight: 700;
+`
+
+export const MARGO = `
+  font-family: 'Margo', sans-serif;
+  font-weight: 500;
+`
+
+export const ANTON_BOLD = `
+  font-family: 'Anton', sans-serif;
+  font-weight: 900;
+`
+
+export const POPPINS_BOLD = `
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+`
+
+export const POPPINS_REGULAR = `
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 `

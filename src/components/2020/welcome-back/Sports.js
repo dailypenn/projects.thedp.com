@@ -19,7 +19,7 @@ const Sports = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile (filter: {relativePath: {eq: "sports_wb_2020.json"}}) {
+        allFile(filter: { relativePath: { eq: "sports_wb_2020.json" } }) {
           edges {
             node {
               childrenSportsWb2020Json {
@@ -44,13 +44,18 @@ const Sports = () => (
       }
     `}
     render={data => {
-      const { node: { childrenSportsWb2020Json: articles } } = data.allFile.edges[0]
+      const {
+        node: { childrenSportsWb2020Json: articles },
+      } = data.allFile.edges[0]
 
       return (
         <Wrapper>
           <div className="row main" id="sports">
-            {articles.slice(0,2).map(article => (
-              <div className="col-md-4 mb-4" style={{ borderRight: '1px solid #D8D2D2' }}>
+            {articles.slice(0, 2).map(article => (
+              <div
+                className="col-md-4 mb-4"
+                style={{ borderRight: '1px solid #D8D2D2' }}
+              >
                 <StyledAnchor href={article.link} target="_blank">
                   <Img fluid={article.image.src.childImageSharp.fluid} />
                   <Title> {article.title} </Title>
@@ -59,12 +64,18 @@ const Sports = () => (
                 </StyledAnchor>
               </div>
             ))}
-        
+
             <div className="col">
               {articles.slice(2).map((article, idx) => (
                 <StyledAnchor href={article.link} target="_blank">
-                  <div className="row"
-                    style={{ borderBottom: idx === 0 ? '1px solid #D8D2D2' : '', marginBottom: '2rem', paddingBottom: '2rem' }}>
+                  <div
+                    className="row"
+                    style={{
+                      borderBottom: idx === 0 ? '1px solid #D8D2D2' : '',
+                      marginBottom: '2rem',
+                      paddingBottom: '2rem',
+                    }}
+                  >
                     <div className="col-md mb-3">
                       <Title noMarginTop> {article.title} </Title>
                       <ByLine> {article.byline.toUpperCase()} </ByLine>

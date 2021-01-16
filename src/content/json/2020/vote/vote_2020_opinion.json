@@ -1,20 +1,74 @@
 [
   {
-    "title": "Ben May has been doing cool stuff on the biden campaign",
-    "description": "Lorem ipsum dolor sit amet",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
+    "title": "Recommendations for Philadelphia ballot questions",
+    "description": "While much attention has been paid to the presidential race, far less heralded are local issues, including four ballot questions. Here's how The Daily Pennsylvanian Editorial Board recommends handling the questions.",
+    "author": "The Daily Pennsylvanian Editorial Board",
+    "link": "https://www.thedp.com/article/2020/10/philadelphia-voter-questions-2020-ballot-pennsylvania",
     "img": {
-      "src": "../../../images/2020/vote/Temp.png"
+      "src": "../../../images/2020/vote/opinion-1.jpeg"
     }
   },
   {
-    "title": "How Safe is Your Mail In Ballot",
-    "description": "Lorem ipsum dolor sit amet",
-    "author": "Ashley Ahn",
-    "link":"https://thedp.com",
+    "title": "Why you should vote for Joe Biden",
+    "description": "",
+    "author": "Francois Barrilleaux",
+    "link": "https://www.thedp.com/article/2020/10/upenn-democrats-joe-biden-2020-philadelphia",
     "img": {
-      "src": "../../../images/2020/vote/Temp.png"
+      "src": "../../../images/2020/vote/opinion-2.jpg"
+    }
+  },
+  {
+    "title": "Whether your “side” wins or loses, open dialogue must triumph",
+    "description": "",
+    "author": "Justin Greenman",
+    "link": "https://www.thedp.com/article/2020/10/upenn-elections-polarization-philadelphia-students-protest",
+    "img": {
+      "src": "../../../images/2020/vote/opinion-3.jpeg"
+    }
+  },
+  {
+    "title": "Why We Vote",
+    "description": "",
+    "author": "Harrison Feinman and Eva Gonzalez",
+    "link": "https://www.thedp.com/article/2020/10/upenn-voter-turnout-why-vote-college",
+    "img": {
+      "src": "../../../images/2020/vote/opinion-4.jpg"
+    }
+  },
+  {
+    "title": "Don’t try to take the high road this election",
+    "description": "",
+    "author": "Valerie Wang",
+    "link": "https://www.thedp.com/article/2020/10/high-road-election-2020-third-party-voting",
+    "img": {
+      "src": "../../../images/2020/vote/opinion-5.jpg"
+    }
+  },
+  {
+    "title": "Why STEM students should support Biden",
+    "description": "",
+    "author": "Matthew Liu",
+    "link": "https://www.thedp.com/article/2020/10/upenn-biden-trump-science-stem-ivy-league",
+    "img": {
+      "src": "../../../images/2020/vote/opinion-6.jpg"
+    }
+  },
+  {
+    "title": "Why a Woman Couldn’t Say 'Will You Shut Up, Man'",
+    "description": "",
+    "author": "Isabella Glassman",
+    "link": "https://www.thedp.com/article/2020/10/women-sexism-trump-biden-kamala-harris-debate-will-you-shut-up",
+    "img": {
+      "src": "../../../images/2020/vote/opinion-7.jpeg"
+    }
+  },
+  {
+    "title": "Policy is more important than politics",
+    "description": "",
+    "author": "Varun Saraswathula",
+    "link": "https://www.thedp.com/article/2020/10/upenn-policy-politics-activism-lawmakers",
+    "img": {
+      "src": "../../../images/2020/vote/opinion-8.jpg"
     }
   }
 ]

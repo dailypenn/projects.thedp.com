@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Street's Top 10 Albums of 2020",
+    "link": "https://www.34st.com/article/2020/12/34-street-best-albums-2020-folklore-punisher-after-hours-circles-sawayama-ungodly-hour-set-my-heart-on-fire-immediately",
+    "author": "AAKRUTI GANESHAN",
+    "image": {
+      "src": "../../../images/2020/final-issue/34st-1.jpeg"
+    }
+  },
+  {
+    "title": "Street's Favorite TV Shows and Movies of 2020",
+    "link": "https://www.34st.com/article/2020/12/10-ten-best-tv-shows-2020-best-new-shows-on-netflix-hulu-hbo-max-binge-watch-stream-right-now-apple-tv",
+    "author": "34TH STREET MAGAZINE",
+    "image": {
+      "src": "../../../images/2020/final-issue/34st-2.jpeg"
+    }
+  },
+  {
+    "title": "Street's Best and Worst Internet Trends of 2020",
+    "link": "https://www.34st.com/article/2020/12/34-street-best-and-worst-internet-trends-2020-animal-crossing-banana-bread-among-us-tik-tok-instagram-influencers",
+    "author": "34TH STREET MAGAZINE",
+    "image": {
+      "src": "../../../images/2020/final-issue/34st-3.jpeg"
+    }
+  },
+  {
+    "title": "Amira Chow: Activist of the Year",
+    "link": "https://www.34st.com/article/2020/12/amira-chow-activist-of-the-year-upenn-bernie-sanders-democratic-socialist-justice",
+    "author": "MADDIE MULDOON",
+    "section": "EGO",
+    "image": {
+      "src": "../../../images/2020/final-issue/34st-4.jpg"
+    }
+  },
+  {
+    "title": "The Year of Apoliticism: How 2020 Has Made Apathy Easy",
+    "link": "https://www.34st.com/article/2020/12/holden-caulfield-aesthetic-of-indifference-roth-catcher-in-the-rye-election-politics-2020-covid",
+    "author": "AAKRUTI GANESHAN",
+    "section": "FOCUS",
+    "image": {
+      "src": "../../../images/2020/final-issue/34st-5.jpeg"
+    }
+  }
+]

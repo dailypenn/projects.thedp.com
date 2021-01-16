@@ -20,10 +20,18 @@ const Brackets = s.div`
   ${KARLA_REGULAR}
 
   background-image:
-    linear-gradient(${({ bracketColor }) => bracketColor}, ${({ bracketColor }) => bracketColor}),
-    linear-gradient(${({ bracketColor }) => bracketColor}, ${({ bracketColor }) => bracketColor}),
-    linear-gradient(${({ bracketColor }) => bracketColor}, ${({ bracketColor }) => bracketColor}),
-    linear-gradient(${({ bracketColor }) => bracketColor}, ${({ bracketColor }) => bracketColor});
+    linear-gradient(${({ bracketColor }) => bracketColor}, ${({
+  bracketColor,
+}) => bracketColor}),
+    linear-gradient(${({ bracketColor }) => bracketColor}, ${({
+  bracketColor,
+}) => bracketColor}),
+    linear-gradient(${({ bracketColor }) => bracketColor}, ${({
+  bracketColor,
+}) => bracketColor}),
+    linear-gradient(${({ bracketColor }) => bracketColor}, ${({
+  bracketColor,
+}) => bracketColor});
 
   background-repeat: no-repeat;
   background-size: 8px 2px;

@@ -2,7 +2,6 @@ import s from 'styled-components'
 
 import { ROBOTO_REGULAR } from '../../../utils/font'
 
-
 export const Body = s.div`
   margin: 0 110px;
 `

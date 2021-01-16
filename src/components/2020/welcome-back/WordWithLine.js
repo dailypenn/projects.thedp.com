@@ -18,7 +18,9 @@ const H2 = s.h2`
 `
 
 const WordWithLine = ({ word }) => (
-  <H2 className="divider"><span>{word}</span></H2>
+  <H2 className="divider">
+    <span>{word}</span>
+  </H2>
 )
 
 export default WordWithLine

@@ -1,108 +1,145 @@
 import React from 'react'
 import s from 'styled-components'
-import Img from 'gatsby-image'
-import { RADIANT_REGULAR } from '../../../utils/font'
-
-import { Wrapper, 
-  WordWithLine, 
-  ArticleHeader, 
-  ArticleDescription,
-  ArticleAuthor, 
-  RedSectionHeader} from './shared'
 import { StaticQuery, graphql } from 'gatsby'
-import Stars from '../../../content/images/2020/vote/stars.png'
+import Img from 'gatsby-image'
+
+import {
+  Wrapper,
+  WordWithLine,
+  ArticleHeader,
+  ArticleDescription,
+  ArticleAuthor,
+  RedSectionHeader,
+  StyledAnchor,
+} from './shared'
+
+import { RADIANT_REGULAR } from '../../../utils/font'
 
 const H2 = s.h2` 
   text-align: center; 
-  line-height: 0.1em;
-  margin-bottom: 3.2rem;
-  margin-top: 2rem;
   font-size: 4em;
-  letter-spacing: -2px;
   ${RADIANT_REGULAR}
+  margin-bottom: 4rem;
 `
-const MustReadArticle = ({article}) => (
-  <div className="row pl-3 py-3">
-    <div className="col-4 py-3 border border-dark">
-      <Img fluid={article.img.src.childImageSharp.fluid} className="border border-dark" />
-    </div>
-    <div className="col-8">
-      <ArticleHeader>{article.title}</ArticleHeader>
-      <ArticleAuthor>BY {article.author}</ArticleAuthor>
-    </div>
-  </div>
-  
-)
 
-const MustRead = ({articles}) => (
-  <div className="col-md-4 pl-0" style={{backgroundColor: "#e4e4e4"}}>
-    <div className="d-flex justify-content-center">
-    <img src={Stars} style={{margin:'auto', display:'block', width:'2rem'}}/>
-    </div>
-    <H2> MUST READ: </H2>
-    <MustReadArticle article={articles[0]}/>
-    <MustReadArticle article={articles[0]}/>
-    <MustReadArticle article={articles[0]}/>
-    <MustReadArticle article={articles[0]}/>
-    <MustReadArticle article={articles[0]}/>
-    <div className="d-flex justify-content-center">
-    <img src={Stars} style={{margin:'auto', display:'block', width:'2rem'}}/>
-    </div>
-  </div>
-)
-const Editorial = ({articles}) => (
-  <div className="px-3">
-    <div className="row" style={{backgroundColor: "#e4e4e4"}}>
-      <div className="col-6 pl-5 pt-5">
+const Editorial = ({ article }) => (
+  <StyledAnchor href={article.link} target="_blank">
+    <div
+      className="row"
+      style={{ backgroundColor: '#F5F4F7', padding: '1rem' }}
+    >
+      <div className="col-md-6">
         <RedSectionHeader> EDITORIAL </RedSectionHeader>
-        <ArticleHeader style={{fontSize:'2.5rem'}}> {articles[0].title} </ArticleHeader>
-        <ArticleDescription> {articles[0].description} </ArticleDescription>
-        <ArticleAuthor> BY {articles[0].author} </ArticleAuthor>
+        <ArticleHeader style={{ fontSize: '200%' }}>
+          {' '}
+          {article.title}{' '}
+        </ArticleHeader>
+        <ArticleDescription style={{ marginTop: '2rem' }}>
+          {' '}
+          {article.description}{' '}
+        </ArticleDescription>
+        <ArticleAuthor style={{ marginTop: '2rem' }}>
+          {' '}
+          BY {article.author}{' '}
+        </ArticleAuthor>
       </div>
-      <div className="col-6">
-        <Img fluid={articles[0].img.src.childImageSharp.fluid} className="border border-dark" />
+      <div className="col-md-6">
+        <Img fluid={article.img.src.childImageSharp.fluid} />
       </div>
     </div>
+  </StyledAnchor>
+)
+
+const ExtraArticle = ({ article }) => (
+  <div className="col-md-6 text-center">
+    <StyledAnchor href={article.link} target="_blank">
+      <Img fluid={article.img.src.childImageSharp.fluid} />
+      <ArticleHeader style={{ marginTop: '1.5rem' }}>
+        {article.title}
+      </ArticleHeader>
+      <ArticleAuthor style={{ marginTop: '0.5rem' }}>
+        BY {article.author}
+      </ArticleAuthor>
+    </StyledAnchor>
   </div>
 )
 
-const ExtraArticleImage = s.div`
-  height: 70%;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-`
-const ExtraArticle = ({article}) => (
-  <div className="col-6 text-center px-3">
-    <ExtraArticleImage>
-      <Img fluid={article.img.src.childImageSharp.fluid} className="border border-dark" />
-    </ExtraArticleImage>
-    <ArticleHeader>{article.title}</ArticleHeader>
-    <ArticleAuthor>BY {article.author}</ArticleAuthor>
-  </div>
-
-)
-
-const Extra = ({articles}) => (
+const Extra = ({ articles }) => (
   <div>
-    <div className="row pt-3">
-      <ExtraArticle article={articles[0]}/>
-      <ExtraArticle article={articles[0]}/>
+    <div className="row" style={{ margin: '2rem 0' }}>
+      <ExtraArticle article={articles[0]} />
+      <ExtraArticle article={articles[1]} />
     </div>
-    <div className="row pt-3">
-      <ExtraArticle article={articles[0]}/>
-      <ExtraArticle article={articles[0]}/>
+    <div className="row">
+      <ExtraArticle article={articles[2]} />
+      <ExtraArticle article={articles[3]} />
     </div>
   </div>
-  
 )
+
+const MustReadArticle = ({ article }) => (
+  <StyledAnchor href={article.link} target="_blank">
+    <div className="row" style={{ marginBottom: '3rem' }}>
+      <div className="col-md-6">
+        <Img fluid={article.img.src.childImageSharp.fluid} />
+      </div>
+      <div className="col-md-6">
+        <ArticleHeader style={{ fontSize: '110%' }}>
+          {' '}
+          {article.title}{' '}
+        </ArticleHeader>
+        <ArticleAuthor style={{ fontSize: '80%' }}>
+          {' '}
+          BY {article.author}{' '}
+        </ArticleAuthor>
+      </div>
+    </div>
+  </StyledAnchor>
+)
+
+const MustRead = ({ articles }) => (
+  <div className="col-md-4">
+    <div style={{ backgroundColor: '#F8F8F8' }}>
+      <div
+        className="d-flex justify-content-center"
+        style={{ padding: '2rem 0 1rem 0' }}
+      >
+        <img src="/img/stars.png" style={{ height: '25px' }} />
+      </div>
+      <H2> MUST READ: </H2>
+      <div style={{ padding: '0 1rem' }}>
+        {articles.map(article => (
+          <MustReadArticle article={article} />
+        ))}
+      </div>
+      <div
+        className="d-flex justify-content-center"
+        style={{ padding: '2rem 0' }}
+      >
+        <img src="/img/stars.png" style={{ height: '25px' }} />
+      </div>
+    </div>
+  </div>
+)
+
+const ArticlesWrapper = s.div`
+  .article-wrapper {
+    padding-left: 4rem;
+
+    @media screen and (max-width: 768px) {
+      padding-left: 0rem;
+    }
+  }
+`
+
 const InMyOpinion = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile (filter: {relativePath: {eq: "vote_2020_opinion.json"}}) {
+        allFile(filter: { relativePath: { eq: "vote_2020_opinion.json" } }) {
           edges {
             node {
-              childrenVote2020OpinionJson{
+              childrenVote2020OpinionJson {
                 title
                 description
                 author
@@ -110,7 +147,7 @@ const InMyOpinion = () => (
                 img {
                   src {
                     childImageSharp {
-                      fluid(maxWidth: 1000, maxHeight: 600) {
+                      fluid(maxWidth: 1000, maxHeight: 1000) {
                         ...GatsbyImageSharpFluid
                         src
                       }
@@ -124,19 +161,22 @@ const InMyOpinion = () => (
       }
     `}
     render={data => {
-      const { node: { childrenVote2020OpinionJson: articles } } = data.allFile.edges[0]
+      const {
+        node: { childrenVote2020OpinionJson: articles },
+      } = data.allFile.edges[0]
 
       return (
         <Wrapper>
           <div id="opinion">
-            <WordWithLine word="IN MY OPINION" lineColor="#F05237"/>
+            <WordWithLine word="IN MY OPINION" lineColor="#F05237" />
             <div className="row">
-              <MustRead articles={articles}/>
-              <div className="col-md-1"></div>
-              <div className="col-md-7 px-0">
-                <Editorial articles={articles}/>
-                <Extra articles={articles}/>
-              </div>
+              <MustRead articles={articles.slice(5)} />
+              <ArticlesWrapper className="col-md-8">
+                <div className="article-wrapper">
+                  <Editorial article={articles[0]} />
+                  <Extra articles={articles.slice(1, 5)} />
+                </div>
+              </ArticlesWrapper>
             </div>
           </div>
         </Wrapper>

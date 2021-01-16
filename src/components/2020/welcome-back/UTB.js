@@ -82,13 +82,15 @@ const MoreLink = s.div`
   }
 `
 
-const UTB_ARROW = () => (<div style={{ color: UTB_BLUE, fontSize: '120%' }}> &#10230; </div>)
+const UTB_ARROW = () => (
+  <div style={{ color: UTB_BLUE, fontSize: '120%' }}> &#10230; </div>
+)
 
 const UTB = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile (filter: {relativePath: {eq: "utb_wb_2020.json"}}) {
+        allFile(filter: { relativePath: { eq: "utb_wb_2020.json" } }) {
           edges {
             node {
               childrenUtbWb2020Json {
@@ -113,13 +115,25 @@ const UTB = () => (
       }
     `}
     render={data => {
-      const { node: { childrenUtbWb2020Json: articles } } = data.allFile.edges[0]
+      const {
+        node: { childrenUtbWb2020Json: articles },
+      } = data.allFile.edges[0]
 
       return (
         <Wrapper id="utb">
-          <img className="logo" src='/img/utb-logo-with-text.png' height="110px" style={{ transform: 'translate(0, -3.5rem)' }}/>
-          <Title>Under the Button is the University of Pennsylvania's <i>truly</i> independent satire publication</Title>
-          <Subtitle>Think the Onion, but better (or worse, if you ask the DP).</Subtitle>
+          <img
+            className="logo"
+            src="/img/utb-logo-with-text.png"
+            height="110px"
+            style={{ transform: 'translate(0, -3.5rem)' }}
+          />
+          <Title>
+            Under the Button is the University of Pennsylvania's <i>truly</i>{' '}
+            independent satire publication
+          </Title>
+          <Subtitle>
+            Think the Onion, but better (or worse, if you ask the DP).
+          </Subtitle>
 
           <div className="row" style={{ margin: '2rem 0', padding: '0 2rem' }}>
             {articles.map(article => (
@@ -134,12 +148,16 @@ const UTB = () => (
               </div>
             ))}
           </div>
-          
+
           <StyledAnchor href="https://www.underthebutton.com/" target="_blank">
             <MoreLink> More shenanigans this way &#10503; </MoreLink>
           </StyledAnchor>
 
-          <BracketsText bracketColor={UTB_BLUE} link="http://bit.ly/2EgtJSY" text="We publish new articles everyday directly to our website, as well as to Facebook and Twitter. We’re accepting applications now, so if you’re interested in comedy, satire, or just want to subject the rest of campus to your sense of humor, we’re the club for you." />
+          <BracketsText
+            bracketColor={UTB_BLUE}
+            link="http://bit.ly/2EgtJSY"
+            text="We publish new articles everyday directly to our website, as well as to Facebook and Twitter. We’re accepting applications now, so if you’re interested in comedy, satire, or just want to subject the rest of campus to your sense of humor, we’re the club for you."
+          />
         </Wrapper>
       )
     }}
