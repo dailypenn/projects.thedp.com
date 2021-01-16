@@ -175,3 +175,18 @@ export const MARGO = `
   font-family: 'Margo', sans-serif;
   font-weight: 500;
 `
+
+export const ANTON_BOLD = `
+  font-family: 'Anton', sans-serif;
+  font-weight: 900;
+`
+
+export const POPPINS_BOLD = `
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+`
+
+export const POPPINS_REGULAR = `
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+`
