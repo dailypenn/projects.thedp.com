@@ -51,7 +51,7 @@ const YourPick = s.div`
   position: absolute;
   width: 5rem;
   height: 5rem;
-  left: -4rem;
+  left: 0rem;
   padding: 1rem 1rem;
   padding-top: 1.2rem;
   margin-top: -2rem;
@@ -64,31 +64,37 @@ const YourPick = s.div`
   ${ANTON_BOLD};
 `
 
+const YourPickColWrapper = s.div`
+  margin-left: -60px;
+`
+
 const Card = ({ image }) => (
   <StyledAnchor href='' target="_blank">
-      <Row>
-        <Col sm={10} md={10}>
-          <Img fluid={image} />
-          <CardTitle>
-            BEST PIZZA
-          </CardTitle>
-          <CardName>
-            SHAKE SHACK
-          </CardName>
-          <CardDescription>
-            "Looking for a late night bite?..."
-          </CardDescription>
-          <CardAddress>
-            <strong>ADDRESS:</strong> 40th and Spruce St.
-          </CardAddress>
-          <CardHours>
-            <strong>HOURS:</strong> Sun-Wed: 9AM-12AM, Thurs-Sat: 9AM-3AM.
-          </CardHours>
-        </Col>
-        <Col sm={2} md={2}>
+    <Row>
+      <Col xs={11} sm={11} md={11}>
+        <Img fluid={image} />
+        <CardTitle>
+          BEST PIZZA
+        </CardTitle>
+        <CardName>
+          SHAKE SHACK
+        </CardName>
+        <CardDescription>
+          "Looking for a late night bite?..."
+        </CardDescription>
+        <CardAddress>
+          <strong>ADDRESS:</strong> 40th and Spruce St.
+        </CardAddress>
+        <CardHours>
+          <strong>HOURS:</strong> Sun-Wed: 9AM-12AM, Thurs-Sat: 9AM-3AM.
+        </CardHours>
+      </Col>
+      <YourPickColWrapper>
+        <Col xs={1} sm={1} md={1}>
           <YourPick><span>YOUR<br/>PICK</span></YourPick>
         </Col>
-      </Row>
+      </YourPickColWrapper>
+    </Row>
   </StyledAnchor>
 )
 
@@ -101,13 +107,17 @@ const ComponentDescription = s.p`
 `
 
 const CardsWrapper = s.div`
-  padding-left: 4rem;
+  padding-left: 5%;
+  padding-right: 2.5%;
+  @media(max-width: 768px) {
+    padding-left: 10%;
+  }
 `
 
 const HeadlineWrapper = s.div`
-  padding: 0rem 3rem;
+  padding: 0% 4%;
   @media(max-width: 768px) {
-    padding: 0rem 0rem;
+    padding: 0% 0%;
   }
 `
 
