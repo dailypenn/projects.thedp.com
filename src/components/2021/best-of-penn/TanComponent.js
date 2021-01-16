@@ -10,7 +10,7 @@ import { ANTON_BOLD, POPPINS_BOLD, POPPINS_REGULAR } from '../../../utils/font'
 const StyledAnchor = s.a`
   color: #000000 !important;
   text-decoration: none !important;
-  padding: 5rem 0rem;
+  margin-top: 4rem;
 `
 const CardTitle = s.p`
   color: ${RED};
@@ -20,6 +20,7 @@ const CardTitle = s.p`
   margin-bottom: 0rem;
   ${ANTON_BOLD};
 `
+
 const CardName = s.p`
   font-size: 1rem;
   text-align: center;
@@ -39,58 +40,56 @@ const CardAddress = s.p`
   ${POPPINS_REGULAR};
 `
 
+const CardHours = s.p`
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  ${POPPINS_REGULAR};
+`
+
 const YourPick = s.div`
   position: absolute;
   width: 5rem;
   height: 5rem;
-  left: 78%;
+  left: -4rem;
   padding: 1rem 1rem;
-  padding-top: 1.5rem;
-  margin-top: -65%;
+  padding-top: 1.2rem;
+  margin-top: -2rem;
   font-size: 1rem;
   text-align: center;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
   color: ${TAN};
   background-color: ${BLUE};
   border-radius: 50%;
   ${ANTON_BOLD};
-
-  @media(max-width: 768px) {
-    padding: 0 0rem;
-    padding-top: 1rem;
-    width: 4rem;
-    height: 4rem;
-  }
-`
-
-const CardWrapper = s.p`
-  padding: 0rem 2rem;
 `
 
 const Card = ({ image }) => (
-  <CardWrapper>
-    <StyledAnchor href='' target="_blank">
-      <>
-        <Img fluid={image} />
-        <YourPick><span>YOUR<br/>PICK</span></YourPick>
-      </>
-      <CardTitle>
-        BEST PIZZA
-      </CardTitle>
-      <CardName>
-        SHAKE SHACK
-      </CardName>
-      <CardDescription>
-        "Looking for a late night bite?..."
-      </CardDescription>
-      <CardAddress>
-        <strong>ADDRESS:</strong> 40th and Spruce St.
-      </CardAddress>
-      <CardDescription>
-        <strong>HOURS:</strong> Sun-Wed: 9AM-12AM, Thurs-Sat: 9AM-3AM.
-      </CardDescription>
-    </StyledAnchor>
-  </CardWrapper>
+  <StyledAnchor href='' target="_blank">
+      <Row>
+        <Col sm={10} md={10}>
+          <Img fluid={image} />
+          <CardTitle>
+            BEST PIZZA
+          </CardTitle>
+          <CardName>
+            SHAKE SHACK
+          </CardName>
+          <CardDescription>
+            "Looking for a late night bite?..."
+          </CardDescription>
+          <CardAddress>
+            <strong>ADDRESS:</strong> 40th and Spruce St.
+          </CardAddress>
+          <CardHours>
+            <strong>HOURS:</strong> Sun-Wed: 9AM-12AM, Thurs-Sat: 9AM-3AM.
+          </CardHours>
+        </Col>
+        <Col sm={2} md={2}>
+          <YourPick><span>YOUR<br/>PICK</span></YourPick>
+        </Col>
+      </Row>
+  </StyledAnchor>
 )
 
 const ComponentDescription = s.p`
@@ -101,14 +100,16 @@ const ComponentDescription = s.p`
   ${POPPINS_REGULAR};
 `
 
-const ComponentWrapper = s.div`
-  padding: 0rem 4rem;
-  @media(max-width: 768px) {
-    padding: 0 0rem;
-  }
+const CardsWrapper = s.div`
+  padding-left: 4rem;
 `
 
-
+const HeadlineWrapper = s.div`
+  padding: 0rem 3rem;
+  @media(max-width: 768px) {
+    padding: 0rem 0rem;
+  }
+`
 
 const TanComponent = ({ colmd, word}) => {
   const data = useStaticQuery(graphql`
@@ -139,29 +140,34 @@ const TanComponent = ({ colmd, word}) => {
   } = data.allFile.edges[0]
 
   return (
-    <ComponentWrapper>
+    <>
+    <HeadlineWrapper>
       <WordWithLine word={word} lineColor={RED}/>
       <ComponentDescription> From Coffee to ...</ComponentDescription>
+    </HeadlineWrapper>
+
+    <CardsWrapper>
       <Row>
-        <Col sm={12} md={4}>
+        <Col sm={12} md={colmd}>
           <Card image={articles[0].img.src.childImageSharp.fluid}/>
         </Col>
-        <Col sm={12} md={4}>
+        <Col sm={12} md={colmd}>
           <Card image={articles[0].img.src.childImageSharp.fluid}/>
         </Col>
-        <Col sm={12} md={4}>
+        <Col sm={12} md={colmd}>
           <Card image={articles[0].img.src.childImageSharp.fluid}/>
         </Col>
       </Row>
       <Row>
-        <Col sm={12} md={4}>
+        <Col sm={12} md={colmd}>
           <Card image={articles[0].img.src.childImageSharp.fluid}/>
         </Col>
-        <Col sm={12} md={4}>
+        <Col sm={12} md={colmd}>
           <Card image={articles[0].img.src.childImageSharp.fluid}/>
         </Col>
       </Row>
-    </ComponentWrapper>
+    </CardsWrapper>
+    </>
   )
 }
 

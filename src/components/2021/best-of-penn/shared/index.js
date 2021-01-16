@@ -31,10 +31,6 @@ const H2 = s.h2`
   }
 `
 
-const H2WordWrapper = s.div`
-  padding-right: 10px;
-`
-
 export const WordWithLine = ({ word, lineColor }) => (
   <H2 lineColor={lineColor} className="divider">
     <span> {word} </span>
