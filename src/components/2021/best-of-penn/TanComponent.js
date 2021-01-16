@@ -120,8 +120,10 @@ const HeadlineWrapper = s.div`
     padding: 0% 0%;
   }
 `
-
-const TanComponent = ({ colmd, word}) => {
+const StyledRow = s(Row)`
+  justify-content: center;
+`
+const TanComponent = ({ colmd, word }) => {
   const data = useStaticQuery(graphql`
     query {
       allFile(filter: { relativePath: { eq: "best-of-penn-content.json" } }) {
@@ -157,7 +159,7 @@ const TanComponent = ({ colmd, word}) => {
     </HeadlineWrapper>
 
     <CardsWrapper>
-      <Row>
+      <StyledRow>
         <Col sm={12} md={colmd}>
           <Card image={articles[0].img.src.childImageSharp.fluid}/>
         </Col>
@@ -167,15 +169,13 @@ const TanComponent = ({ colmd, word}) => {
         <Col sm={12} md={colmd}>
           <Card image={articles[0].img.src.childImageSharp.fluid}/>
         </Col>
-      </Row>
-      <Row>
         <Col sm={12} md={colmd}>
           <Card image={articles[0].img.src.childImageSharp.fluid}/>
         </Col>
         <Col sm={12} md={colmd}>
           <Card image={articles[0].img.src.childImageSharp.fluid}/>
         </Col>
-      </Row>
+      </StyledRow>
     </CardsWrapper>
     </>
   )
