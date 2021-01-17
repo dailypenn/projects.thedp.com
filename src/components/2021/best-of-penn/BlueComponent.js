@@ -11,40 +11,58 @@ import { ANTON_BOLD, POPPINS_BOLD, POPPINS_REGULAR } from '../../../utils/font'
 const Background = s.div `
   background-color: ${BLUE};
   width: 100%;
+  padding-bottom: 5rem;
+`
+
+const HorizontalLine = s.hr`
+  background: ${TAN}; 
+  padding-bottom: 8px;
 `
 
 const Card = ({ image }) => (
-  <StyledAnchor href='' target="_blank">
+  <StyledAnchor href='' target="_blank" alignment="center">
     <Row>
       <Col xs={11} sm={11} md={11}>
         <Img fluid={image} />
-        <CardTitle style={{color: RED}}>
+        <CardTitle color={TAN}>
           BEST PIZZA
         </CardTitle>
-        <CardName>
-          SHAKE SHACK
-        </CardName>
-        <CardDescription>
-          "Looking for a late night bite?..."
-        </CardDescription>
-        <CardAddress>
-          <strong>ADDRESS:</strong> 40th and Spruce St.
-        </CardAddress>
-        <CardHours>
-          <strong>HOURS:</strong> Sun-Wed: 9AM-12AM, Thurs-Sat: 9AM-3AM.
-        </CardHours>
       </Col>
       <YourPickColWrapper>
         <Col xs={1} sm={1} md={1}>
-          <YourPick style={{color: TAN, backgroundColor: BLUE}} ><span>YOUR<br/>PICK</span></YourPick>
+          <YourPick color={TAN} BgColor={RED} ><span>YOUR<br/>PICK</span></YourPick>
         </Col>
       </YourPickColWrapper>
     </Row>
   </StyledAnchor>
 )
 
+const CardText = () => (
+  <StyledAnchor href='' target="_blank" color={TAN}>
+    <CardName>
+      SHAKE SHACK
+    </CardName>
+    <CardDescription>
+      "Looking for a late night bite?..."
+    </CardDescription>
+    <CardAddress>
+      <strong>ADDRESS:</strong> 40th and Spruce St.
+    </CardAddress>
+    <CardHours>
+      <strong>HOURS:</strong> Sun-Wed: 9AM-12AM, Thurs-Sat: 9AM-3AM.
+    </CardHours>
+  </StyledAnchor>
+)
 
-const BlueComponent = ({ colmd, word}) => {
+
+const HeadlineWrapper = s.div`
+  padding: 0% 4% 4%;
+  @media(max-width: 768px) {
+    padding: 0% 0% 4%;
+  }
+`
+
+const BlueComponent = ({colmd, word}) => {
   const data = useStaticQuery(graphql`
     query {
       allFile(filter: { relativePath: { eq: "best-of-penn-drinks.json" } }) {
@@ -77,7 +95,30 @@ const BlueComponent = ({ colmd, word}) => {
       <Row>
         <Col sm={12} md={{ span: 10, offset: 1 }}>
           <Background>
-
+            <HeadlineWrapper>
+              <WordWithLine word={word} lineColor={RED} spanColor={BLUE}/>
+            </HeadlineWrapper>
+            <Row>
+                <Col xs={{span: 10, offset: 1 }} sm={{span: 10, offset: 1 }} md={{ span: 4, offset: 2 }}>
+                  <Card image={articles[0].img.src.childImageSharp.fluid}/>
+                </Col>
+                <Col xs={{span: 10, offset: 1 }} sm={{span: 10, offset: 1 }} md={{span: 4}}>
+                  <CardText/>
+                </Col>
+                <Col xs={{span: 10, offset: 1 }} sm={{span: 10, offset: 1 }} md={{ span: 4, offset: 2 }}>
+                  <Card image={articles[0].img.src.childImageSharp.fluid}/>
+                </Col>
+                <Col xs={{span: 10, offset: 1 }} sm={{span: 10, offset: 1 }} md={{span: 4}}>
+                  <CardText/>
+                </Col>
+                <Col xs={{span: 10, offset: 1 }} sm={{span: 10, offset: 1 }} md={{ span: 4, offset: 2 }}>
+                  <Card image={articles[0].img.src.childImageSharp.fluid}/>
+                </Col>
+                <Col xs={{span: 10, offset: 1 }} sm={{span: 10, offset: 1 }} md={{span: 4}}>
+                  <CardText/>
+                </Col>
+            </Row>
+            <HorizontalLine/>
           </Background>
         </Col>
       </Row>
@@ -85,4 +126,4 @@ const BlueComponent = ({ colmd, word}) => {
   )
 }
 
-  export default BlueComponent
+export default BlueComponent

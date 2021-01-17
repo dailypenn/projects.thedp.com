@@ -79,7 +79,7 @@ const IndexPage = () => (
 
   <BackgroundWrapper>
     <TanComponent articles='' colmd={4} word='FOOD'/>
-    <BlueComponent articles='' colmd={4} word='FOOD'/>
+    <BlueComponent articles='' colmd={4} word='DRINKS'/>
   </BackgroundWrapper>
   </>
 )

@@ -26,13 +26,13 @@ const H2 = s.h2`
   ${ANTON_BOLD}
 
   span {
-    background: ${TAN}; 
+    background: ${({ spanColor }) => spanColor}; 
     padding: 0 0.5rem; 
   }
 `
 
-export const WordWithLine = ({ word, lineColor }) => (
-  <H2 lineColor={lineColor} className="divider">
+export const WordWithLine = ({ word, lineColor, spanColor }) => (
+  <H2 lineColor={lineColor} spanColor={spanColor} className="divider">
     <span> {word} </span>
   </H2>
 )
@@ -40,31 +40,28 @@ export const WordWithLine = ({ word, lineColor }) => (
 // CARD COMPONENTS
 
 export const StyledAnchor = s.a`
-  color: #000000 !important;
   text-decoration: none !important;
   margin-top: 4rem;
+  text-align: ${({ alignment}) => alignment};
+  color: ${({ color }) => color} !important;
 `
 export const CardName = s.p`
   font-size: 1rem;
-  text-align: center;
   margin-bottom: 0rem;
   ${POPPINS_BOLD};
 `
 export const CardDescription = s.p`
   font-size: 1rem;
-  text-align: center;
   ${POPPINS_REGULAR};
 `
 
 export const CardAddress = s.p`
   font-size: 1rem;
-  text-align: center;
   margin-bottom: 0rem;
   ${POPPINS_REGULAR};
 `
 export const CardHours = s.p`
   font-size: 1rem;
-  text-align: center;
   margin-bottom: 4rem;
   ${POPPINS_REGULAR};
 `
@@ -75,9 +72,17 @@ export const YourPickColWrapper = s.div`
 export const CardTitle = s.p`
   text-transform: uppercase;
   font-size: 1.5rem;
-  text-align: center;
   margin-bottom: 0rem;
   ${ANTON_BOLD};
+  color: ${({ color }) => color};
+`
+
+export const ComponentDescription = s.p`
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  ${POPPINS_REGULAR};
+  text-align: center;
 `
 export const YourPick = s.div`
   position: absolute;
@@ -88,8 +93,24 @@ export const YourPick = s.div`
   padding-top: 1.2rem;
   margin-top: -2rem;
   font-size: 1rem;
-  text-align: center;
   line-height: 1.5rem;
   border-radius: 50%;
   ${ANTON_BOLD};
+  color: ${({ color }) => color};
+  background-color: ${({ BgColor }) => BgColor};
+`
+
+export const CardsWrapper = s.div`
+  padding-left: 5%;
+  padding-right: 2.5%;
+  @media(max-width: 768px) {
+    padding-left: 10%;
+  }
+`
+
+export const HeadlineWrapper = s.div`
+  padding: 0% 4%;
+  @media(max-width: 768px) {
+    padding: 0% 0%;
+  }
 `

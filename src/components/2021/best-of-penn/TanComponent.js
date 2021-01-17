@@ -5,16 +5,17 @@ import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import { RED, BLUE, TAN, WordWithLine, CardName, CardDescription, 
-  CardHours, CardAddress, StyledAnchor, YourPickColWrapper, CardTitle, YourPick} from './shared'
+  CardHours, CardAddress, StyledAnchor, YourPickColWrapper, 
+  CardTitle, YourPick, ComponentDescription, CardsWrapper, HeadlineWrapper } from './shared' 
 import { ANTON_BOLD, POPPINS_BOLD, POPPINS_REGULAR} from '../../../utils/font'
 
 
 const Card = ({ image }) => (
-  <StyledAnchor href='' target="_blank">
+  <StyledAnchor href='' target="_blank" alignment ="center" color="#000000">
     <Row>
       <Col xs={11} sm={11} md={11}>
         <Img fluid={image} />
-        <CardTitle style={{color: RED}}>
+        <CardTitle color={RED}>
           BEST PIZZA
         </CardTitle>
         <CardName>
@@ -32,35 +33,13 @@ const Card = ({ image }) => (
       </Col>
       <YourPickColWrapper>
         <Col xs={1} sm={1} md={1}>
-          <YourPick style={{color: TAN, backgroundColor: BLUE}} ><span>YOUR<br/>PICK</span></YourPick>
+          <YourPick color={TAN} BgColor={BLUE}><span>YOUR<br/>PICK</span></YourPick>
         </Col>
       </YourPickColWrapper>
     </Row>
   </StyledAnchor>
 )
 
-const ComponentDescription = s.p`
-  font-size: 1.3rem;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 4rem;
-  ${POPPINS_REGULAR};
-`
-
-const CardsWrapper = s.div`
-  padding-left: 5%;
-  padding-right: 2.5%;
-  @media(max-width: 768px) {
-    padding-left: 10%;
-  }
-`
-
-const HeadlineWrapper = s.div`
-  padding: 0% 4%;
-  @media(max-width: 768px) {
-    padding: 0% 0%;
-  }
-`
 const StyledRow = s(Row)`
   justify-content: center;
 `
@@ -95,7 +74,7 @@ const TanComponent = ({ colmd, word }) => {
   return (
     <>
     <HeadlineWrapper>
-      <WordWithLine word={word} lineColor={RED}/>
+      <WordWithLine word={word} lineColor={RED} spanColor={TAN}/>
       <ComponentDescription> From Coffee to ...</ComponentDescription>
     </HeadlineWrapper>
 
