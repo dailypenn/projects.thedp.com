@@ -5,8 +5,7 @@ import { Row, Col } from 'react-bootstrap'
 
 import { BackgroundWrapper } from '../../../components/2021/best-of-penn/shared'
 import TanComponent from '../../../components/2021/best-of-penn/TanComponent.js'
-import BlueComponent from  '../../../components/2021/best-of-penn/BlueComponent.js'
-
+import BlueComponent from '../../../components/2021/best-of-penn/BlueComponent.js'
 const IndexPage = () => (
   <>
   <Helmet>
