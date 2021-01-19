@@ -1,7 +1,7 @@
 import React from 'react'
 import s from 'styled-components'
 
-import { ANTON_BOLD, POPPINS_BOLD, POPPINS_REGULAR } from '../../../../utils/font'
+import { ANTON, POPPINS_BOLD, POPPINS_REGULAR } from '../../../../utils/font'
 
 // COLOR CONSTANTS
 export const TAN = '#E1E1D7'
@@ -18,12 +18,11 @@ const H2 = s.h2`
   border-bottom: 8px solid ${({ lineColor }) => lineColor}; 
   line-height: 0em;
   padding-top: 3rem;
-  margin: 0rem 1rem;
   margin-bottom: 2rem;
   font-size: 4rem;
   color: ${({ lineColor }) => lineColor};
-  letter-spacing: -2px;
-  ${ANTON_BOLD}
+  letter-spacing: 2px;
+  ${ANTON}
 
   span {
     background: ${({ spanColor }) => spanColor}; 
@@ -46,23 +45,23 @@ export const StyledAnchor = s.a`
   color: ${({ color }) => color} !important;
 `
 export const CardName = s.p`
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-bottom: 0rem;
+  text-transform: uppercase;
   ${POPPINS_BOLD};
 `
 export const CardDescription = s.p`
-  font-size: 1rem;
+  font-size: 0.8rem;
   ${POPPINS_REGULAR};
 `
 
 export const CardAddress = s.p`
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-bottom: 0rem;
   ${POPPINS_REGULAR};
 `
 export const CardHours = s.p`
-  font-size: 1rem;
-  margin-bottom: 4rem;
+  font-size: 0.8rem;
   ${POPPINS_REGULAR};
 `
 export const YourPickColWrapper = s.div`
@@ -71,31 +70,32 @@ export const YourPickColWrapper = s.div`
 
 export const CardTitle = s.p`
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 0rem;
-  ${ANTON_BOLD};
+  ${ANTON};
   color: ${({ color }) => color};
 `
 
 export const ComponentDescription = s.p`
   font-size: 1.3rem;
   text-transform: uppercase;
-  margin-bottom: 4rem;
+  padding: 0rem 5rem;
   ${POPPINS_REGULAR};
+  font-weight: 500;
   text-align: center;
 `
 export const YourPick = s.div`
   position: absolute;
-  width: 5rem;
-  height: 5rem;
-  left: 0rem;
+  width: 4rem;
+  height: 4rem;
+  left: 0.5rem;
   padding: 1rem 1rem;
-  padding-top: 1.2rem;
-  margin-top: -2rem;
+  padding-top: 0.7rem;
+  margin-top: -1.5rem;
   font-size: 1rem;
   line-height: 1.5rem;
   border-radius: 50%;
-  ${ANTON_BOLD};
+  ${ANTON};
   color: ${({ color }) => color};
   background-color: ${({ BgColor }) => BgColor};
 `
@@ -103,13 +103,18 @@ export const YourPick = s.div`
 export const CardsWrapper = s.div`
   padding-left: 5%;
   padding-right: 2.5%;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
   @media(max-width: 768px) {
     padding-left: 10%;
   }
 `
+export const CardWrapper = s.div`
+  padding-top: 1.5rem;
+`
 
 export const HeadlineWrapper = s.div`
-  padding: 0% 4%;
+  padding: 0 6rem;
   @media(max-width: 768px) {
     padding: 0% 0%;
   }

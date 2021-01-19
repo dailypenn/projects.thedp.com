@@ -1,7 +1,349 @@
 [
   {
-    "img": {
-      "src": "../../../images/2021/best-of-penn/Allegro.jpg"
-    }
+    "section": "FOOD",
+    "description": "From coffee to cocktails, check out Penn students’ favorite place to eat and drink. Here are the Best of Penn 2020 winners for the category Food & Drink.",
+    "items": [
+      {
+        "category": "BEST BRUNCH",
+        "place": "Sabrina’s Cafe",
+        "blurb": "Looking for a brunch spot on campus? Look no further than Sabrina’s Cafe, this year’s pick for Best Brunch Penn. Located on 227 N 34th St, Sabrina’s is convenient for both Penn and Drexel students looking for a delicious brunch or breakfast. Make sure to check out the sweet and simple breakfast plates.",
+        "address": "227 N 34th St.",
+        "hours": "8AM-3PM, Closed on Tuesday",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Sabrina's.png"
+        }
+      },
+      {
+        "category": "BEST VEGAN",
+        "place": "HipCityVeg",
+        "blurb": "Check out HipCityVeg, the Best of Penn winner for a vegan restaurant. Located on 214 S 40th St, HipCityVeg boasts an entirely vegan menu from appetizer to entree, complete with brownies and banana whips for dessert! HipCityVeg also has an extensive breakfast menu, which includes bagels, cereals, and yogurt parfait.",
+        "address": "214 S 40th St.",
+        "hours": "11AM-9PM",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/HipCity.png"
+        }
+      },
+      {
+        "category": "BEST PIZZA",
+        "place": "&pizza",
+        "blurb": "Grab a slice of pizza, or rather a personal pizza, at &pizza, this year’s winner of Best Pizza at Penn. &pizza, located at 3925 Walnut St, allows you to customize your individual pie or choose from a menu of pre-created pizzas. &pizza’s modern, thin-crust, oval style and convenience is what makes them a student body favorite.",
+        "address": "3925 Walnut St.",
+        "hours": "Sun-Thurs: 11AM-10PM, Fri-Sat: 11AM-11PM",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/&Pizza.png"
+        }
+      },
+      {
+        "category": "BEST FOOD TRUCK",
+        "place": "Penn Halal Gyro",
+        "blurb": "For a quick bite on the go, visit the Halal Food Truck in University City. The food truck serves sizable portions of traditional halal food with the option of beef, chicken, or lamb. The truck also offers platters with deals that include drinks and sides. Make sure to add the white sauce to your platter, but try the hot sauce at your own risk! ",
+        "address": "237 S 40th St, Philadelphia, PA 19104",
+        "hours": "10:30AM-8PM",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST CHINESE FOOD",
+        "place": "Dim Sum House by Jane G’s",
+        "blurb": "Searching for the best Chinese food on Penn’s campus? Tucked away at 3939 Chestnut St, Dim Sum is a great place to enjoy Chinese food with friends, or dorm-in with take out food. Dim Sum House serves authentic cuisine like pork bao, lo mein, and shrimp shumai in a traditional dim sum setting. Make sure to try the pork soup dumplings, a student favorite!",
+        "address": "3939 Chestnut St.",
+        "hours": "Sun, Tues-Thurs: 12:30PM-8:30PM, Fri-Sat: 12:30PM-10:30PM",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST JAPANESE FOOD",
+        "place": "Terakawa",
+        "blurb": "For the best Japanese food on campus, visit Terakawa on 125 S 40th St. Terakawa serves a wide variety of ramen dishes, making it the perfect place to warm up during cold winters in Philadelphia. In addition to ramen dishes, Terakawa offers vegetarian options, curry platters, donburi, and appetizers. Make sure to check the menu before you go, Terakawa updates their new and specialty menu items frequently.",
+        "address": "125 S 40th St.",
+        "hours": "Sun-Thurs: 11:30AM-9:45PM, Thurs-Sat:11:30AM-10:45PM",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST LATE NIGHT",
+        "place": "Allegro",
+        "blurb": "Looking for a late night bite? Allegro Pizza and Grill is the perfect place to grab a slice with friends long after other restaurants close. Located at the corner of 40th and Spruce Street, Allegro serves pizza by the slice, full pizza pies, and other Italian classics. Allegro’s student-friendly hours, convenient location, and delicious pizza makes it a favorite for students returning to their dorms after a night out!",
+        "address": "40th and Spruce St.",
+        "hours": "Sun-Wed: 9AM-12AM, Thurs-Sat: 9AM-3AM",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST KOREAN FOOD",
+        "place": "Koreana",
+        "blurb": "For the best Korean food at Penn, visit Koreana at 3801 Chestnut Street. Koreana’s menu is filled with traditional Korean favorites including Dol Sot dishes, Cup Bap, and Yuk Gal Tang. Students rave about the triangle kimbap and the wings, which are available in spicy, soy, and half and half. Don’t forget to try the bubble tea! ",
+        "address": "3801 Chestnut St.",
+        "hours": "11AM-10PM, Closed Monday",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST INDIAN FOOD",
+        "place": "New Delhi",
+        "blurb": "New Delhi, located on 4004 Chestnut St, is this year’s Best Indian Food at Penn winner. New Delhi offers a buffet option for lunch and on weekends in addition to their expansive menu of authentic indian cuisine. If you're looking to finish your meal with something sweet, New Delhi offers traditional indian fare. The kheer, gulab jamun, and kulfi are highly recommended and a great way to end lunch or dinner. New Delhi, is Delhi-cious!",
+        "address": "4004 Chestnut St.",
+        "hours": "Sun, Tues-Thurs: 11:30PM-9PM, Fri-Sat: 11:30PM-10PM, Closed on Monday",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST SOUTHEAST ASIAN FOOD",
+        "place": "Pattaya",
+        "blurb": "Pattaya, tucked away on 4006 Chestnut St, serves delicious Thai cuisine to Penn students year round. Pattaya’s unique culinary offering, thai cuisine with a french influence, draws in Penn students looking for something different. Pattaya’s expansive menu features curry dishes, noodle dishes, and other Thai favorites. Pattaya also offers early-bird specials.",
+        "address": "4006 Chestnut St.",
+        "hours": "Sun-Thurs: 5PM-9PM, Fri-Sat: 5PM-10PM",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST DESSERT PLACE",
+        "place": "Kiwi",
+        "blurb": "Craving something sweet? Kiwi offers a wide variety of frozen yogurt flavors and toppings for Penn students to indulge in. From fruit to cookies and crunch, Kiwi has a topping and flavor for everyone.  Head over to 3606 Chestnut Street to check out Kiwi for yourself!",
+        "address": "3606 Chestnut St.",
+        "hours": "Sun-Thurs: 12AM-10PM, Fri-Sat: 12PM-11PM",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST BURGER",
+        "place": "Shake Shack",
+        "blurb": "For the best burger at Penn, look no further than Shake Shack on 3200 Chestnut St. In addition to their delicious beef burgers, Shake Shack offers a burger made out of portobello mushrooms, milkshakes, french fries, chicken, and hotdogs. Ordering with a furry friend? Shake Shack also has a completely separate section of their menu dedicated to dogs!",
+        "address": "3200 Chestnut St.",
+        "hours": "Sun-Wed: 11AM-10PM, Thurs-Sat: 11AM-11PM",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST SALAD PLACE",
+        "place": "Sweetgreen",
+        "blurb": "Sweetgreen, at 3925 Walnut Street, is the Best Salad at Penn winner for 2020. Sweetgreen offers counter-served organic soups, salads, and bowls. Sweetgreen’s quick preparation and farm-fresh ingredients make it the salad destination for Penn students. Make sure to check out Sweetgreen’s seasonal menu for a rotating mix of scrumptious salads and bowls.",
+        "address": "3925 Walnut St.",
+        "hours": "10:30AM-8PM",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST GRAB AND GO",
+        "place": "Chipotle",
+        "blurb": "Looking for a quick bite on the go? Chipotle has you covered. This fan-favorite at 3925 Walnut St. is the perfect place for busy students to get a cheap, filling meal. Between burritos, bowls, tacos, and salads, Chipotle has an option for everyone. Download the Chipotle app to take advantage of monthly deals.",
+        "address": "3925 Walnut St.",
+        "hours": "10:45AM-10PM",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST DEALS",
+        "place": "Distrito",
+        "blurb": "For the best dinner deals on campus, visit Distrito on the corner of 40th and Chestnut. Take advantage of the substantial discounts on margaritas, appetizers, and other beverages by going during happy hour from 4PM-6PM daily. Distrito offers both indoor and outdoor seating, so check the weather and latest guidelines before you call ahead.",
+        "address": "40th and Chestnut St.",
+        "hours": "Mon-Thurs: 4PM-9PM, Fri: 4PM-10PM, Sat: 12PM-10PM, Sun: 12PM-9PM, Happy Hour: 4PM-6PM",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "section": "DRINKS",
+    "items": [
+      {
+        "category": "BEST COFFEE",
+        "place": "Starbucks",
+        "blurb": "Starbucks, a familiar favorite, is the favorite place for Penn students to grab a cup of coffee in 2020. With multiple locations across campus, Starbucks is an easy, reliable option for students on the go. Visit 39th and Walnut, 1920 Commons, or the new Achme to get your Starbucks fix at Penn. Get their mobile app to start earning rewards and stop in before the end of december to take in the beautiful holiday decorations.",
+        "address": "39th and Walnut, 1920 Commons",
+        "hours": "Mon-Fri: 5:30AM-9PM, Sat-Sun: 6AM-8PM",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST BYO",
+        "place": "Thai Singha",
+        "blurb": "Looking to save some money on dinner by bringing your own drinks? Thai Singha is the place to go. The 2020 Best of Penn BYO winner is located on 3906B Chestnut St and has an expansive menu of Thai dishes, including dessert! Check out Singha’s Specialties, which include Pad Thai, drunken noodles, and pad see ew.",
+        "address": "3906B Chestnut St.",
+        "hours": "Sun-Thurs: 5PM-8:30 PM, Fri-Sat: 5PM-9:30PM",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST BOBA",
+        "place": "TeaDo",
+        "blurb": "For the best boba at Penn, visit TeaDo in Hamilton Court Apartments at the corner of 39th and Samsom. TeaDo’s menu features a wide range of bubble teas, coffees, smoothies, and hot beverages. Students are particularly complimentary of TeaDo’s precise ordering system. The boba shop offers four different levels of ice and four different servings of sugar, so your boba is just how you like it every time you go.",
+        "address": "39th and Samsom",
+        "hours": "Sun-Thurs: 11AM-10PM, Fri-Sat: 11AM-11PM",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST HAPPY HOUR",
+        "place": "Louie Louie",
+        "blurb": "Happy hour has never been better than at Louie Louie, this year’s Best of Penn Happy Hour winner. Located in the Inn at Penn on 3611 Walnut Street, Louie Louie offers great happy hour deals and both indoor and outdoor seating. On Monday through Friday from 3-6PM, Louie Louie offers $6 cocktails, $5 beer, and $6 wine, which can be paired with appetizers, small, and large plates.",
+        "address": "3611 Walnut Street",
+        "hours": "Mon-Thurs: 12PM-8PM, Fri: 12PM-9PM, Sat: 11AM-9PM, Sun: 11AM-8PM, Happy Hour: Mon-Fri 3PM-6PM",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST DRINK",
+        "place": "Distrito",
+        "blurb": "Distrito is the Best Drink at Penn 2020 winner for its selection of cocktails, including the famous margaritas. Distrito serves two different flavors of margarita, the Distrito Margaria and the Strawberry Margarita. Distrito serves their margaritas on ice or frozen and in a glass or a pitcher. Their cocktail menu also includes a selection of beers, wines, and non-alcoholic beverages.",
+        "address": "40th and Chestnut St.",
+        "hours": "Mon-Thurs: 4PM-9PM, Fri: 4PM-10PM, Sat: 12PM-10PM, Sun: 12PM-9PM, Happy Hour: 4PM-6PM",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "section": "ACTIVITIES",
+    "description": "Check out the activities section to find the perfect place for a date, an evening with friends, or for when your parents come into town.",
+    "items": [
+      {
+        "category": "BEST DATE SPOT",
+        "place": "Cira Green",
+        "blurb": "Looking for the perfect date spot? Cira Green, twelve floors up on 129 S 30th Street, has you covered. This outdoor rooftop park in University City serves food and drink and hosts events. Searching for some friendly competition? Cira Green has games like Giant Jenga and cornhole which make it Cira-ously a fun first date idea.",
+        "address": "129 S 30th Street",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST BOOK SHOP",
+        "place": "Penn Bookstore",
+        "blurb": "Visit the Penn Bookstore at the corner of 36th and Walnut to find textbooks, bestsellers, and everything in between. The Penn Bookstore also has an expansive selection of Penn merchandise and clothing items, perfect for the prospective student or visiting parent. The bookstore is also your one-stop shop for all of your school supplies and technology.",
+        "address": "36th and Walnut St.",
+        "hours": "Mon-Fri: 9AM-6:30PM , Sat-Sun: 10AM-5PM ",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "section": "LIVING",
+    "description": "Trying to determine the best place to live? Best of Penn 2020 Living section asks the important questions.",
+    "items": [
+      {
+        "category": "BEST OFF CAMPUS HOUSING",
+        "place": "Campus Apartments",
+        "blurb": "Penn students have named Campus Apartments the Best of Penn Off Campus Housing winner for 2020. Campus Apartments has properties all over University City, making it easy to find the best options for living off-campus. Call the leasing office at (215) 382-1300 or look online at livecampusapts.com to see the properties for yourself.",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST APARTMENT BUILDING AMENITIES",
+        "place": "Domus",
+        "blurb": "Looking for the best amenities when deciding on an apartment building? Domus, on the corner of 34th and Chestnut, offers access to a pool, fitness center, parking garage, and even a movie theater. Domus is close to both Penn and Drexel’s campuses, and hosts a grocery store, Heirloom Market, on the first floor of the building.",
+        "address": "34th and Chestnut St.",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "section": "BEAUTY",
+    "description": "Whether you’re getting ready for a night out in the city or just want to relax with a foot massage, the beauty section gives you insight into student favorites for haircuts and nails.",
+    "items": [
+      {
+        "category": "BEST PLACE TO GET YOUR NAILS DONE",
+        "place": "Luxe Nail Bar",
+        "blurb": "Luxe Nail Bar, on 212 S 40th St, is the place to go to get your nails done at Penn. The nail salon offers a full suite of services from acrylic, dip powder, 3D design, gel, and more! Customers rave about the friendliness and service of the staff. Luxe Nail Bar offers reservation services, so call ahead to make an appointment today for a truly de-Luxe spa experience.",
+        "address": "212 S 40th St.",
+        "hours": "Mon-Wed: 10AM-7PM , Thurs-Fri: 10AM-8PM, Sat: 10AM-6PM Sun: Closed",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST HAIRCUT",
+        "place": "Joseph Anthony Hairstyling",
+        "blurb": "Joseph Anthony Hairstyling, on the corner of 38th and Walnut is the Best Haircut at Penn 2020 winner. By appointment or by walk-in, Joseph Anthony’s barbers offer haircuts for women and men, along with tanning and waxing services. The friendly barbers and short wait make Joseph Anthony the perfect place for stylish and quick cut for college students.",
+        "address": "38th and Walnut St.",
+        "hours": "Mon-Fri: 9AM-6PM, Sat: 9AM-5PM, Sun: Closed",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "section": "QUARANTINE",
+    "description": "In the midst of the global pandemic, Penn students shared their preferred methods of adjustment",
+    "items": [
+      {
+        "category": "FASTEST FOOD DELIVERY",
+        "place": "UberEats",
+        "blurb": "For the quickest and safest way to get food during the pandemic, look toward UberEats. A favorite of Penn students during COVID, UberEats delivers food from almost any restaurant within a 20 mile radius. UberEats also offers non-contact delivery, so you can stay safe while enjoying your local University City favorites.",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "FAVORITE ONLINE VIDEO CONFERENCING PLATFORM",
+        "place": "Zoom",
+        "blurb": "Looking to connect virtually with friends and family? Penn students turn to Zoom in the age of COVID for videoconferencing. Widely used as the virtual classroom for the university, zoom also offers a chance for students to connect with their peers while the environment at Penn remains virtual.",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST QUARANTINE GAME OR ACTIVITIES",
+        "place": "Among Us",
+        "blurb": "With other activities shut down or postponed, Penn students turned to Among Us to keep themselves entertained during the pandemic. Among Us is a multiplayer online game that pits “crewmates” against each other in a race to determine which one(s) of them is the “imposter.” Among Us also makes it easy to play with friends, via a code or private lobby.",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST BINGES",
+        "place": "Avatar",
+        "blurb": "Downtime during quarantine manifested itself in binge-watching Netflix for so many individuals. While Tiger King and the Office were both popular choices, Penn students most enjoyed spending time with Aang on his journey to unite the four nations.",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST GYM",
+        "place": "OrangeTheory Fitness",
+        "blurb": "With Pottruck shut down for the Fall of 2020, Penn students ventured to University City gyms in order to stay physically fit. OrangeTheory Fitness, on 37th and Market, is the preferred choice of students during the pandemic. OrangeTheory has a unique, heart rate-based approach to fitness that aims to optimize a workout with High-Intensity Interval Training. It’s a HIIT!",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST OUTDOOR DINING",
+        "place": "Copabanana",
+        "blurb": "For the best outdoor dining experience in University City during the COVID pandemic, visit Copabanana on 40th and Spruce. Affectionately nicknamed “Copa” by the student body, the restaurant has capitalized on outdoor dining by setting tables in a roped-off area on 40th street. The margaritas and burgers are student favorites, so make sure to head over before the winter.",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      },
+      {
+        "category": "BEST SELF-CARE ROUTINE",
+        "place": "Sleep",
+        "blurb": "To combat the stress of the pandemic, Penn students turned to sleep. Instead of a bath or a day at the spa, Penn students felt that getting more sleep was most effective when dealing with COVID-induced anxiety or pressure.",
+        "img": {
+          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+        }
+      }
+    ]
   }
 ]
