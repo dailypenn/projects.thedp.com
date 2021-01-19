@@ -2,8 +2,8 @@
   {
     "department": "Marketing",
     "text": [
-      "DP Marketing works on developing and enhancing the brand identity of The DP Inc., a $3 million dollar business. Our associates work to create social media campaigns, events and merchandise that showcase the content of the DP, 34th Street Magazine and Under the Button. Associates are also given the resources and opportunities to plan and execute their own marketing projects to promote any section of the publication.",
-      "Marketing is the perfect place to develop both your creativity and your business skills because all our projects require a good mix of both. No prior experience is required, just a willingness to learn about branding, promotion and merchandising. We also have a very strong social culture as we host bi-weekly events and love to hang out with each other. Join us to gain some business experience and be a part of the best family at the DP! "
+      "DP Marketing works on developing and enhancing the brand identity of The Daily Pennsylvanian Inc., a $3 million dollar business. Our associates work to create social media campaigns, events, and merchandise that showcase the content of the DP, 34th Street Magazine, and Under the Button. We work closely with all departments in the DP. Associates are also given the resources and opportunities to plan and execute their own marketing projects to promote any section of the publication.",
+      "Marketing is the perfect place to develop both your creativity and your business skills because all our projects require a good mix of both. No prior experience is required — just a willingness to learn about branding, promotion, and merchandising. Join us to gain some business experience and be a part of this great organization!"
     ],
     "highlights": [
       "Battle of the Bands",
@@ -21,7 +21,8 @@
   {
     "department": "Consulting",
     "text": [
-      "Consulting Analysts source potential clients, develop strategic marketing campaign and produce pitch materials for client presentations. By working with our outstanding business teams DP Consultants will learn to use creative problem solving and analytical skills to help our clients successfully reach the Penn community."
+      "Consulting analysts source potential clients, develop strategic marketing campaigns, and produce pitch materials for client presentations. By working with our outstanding business teams, DP consultants will learn to use creative problem solving and analytical skills to help our clients successfully reach the Penn community.",
+      "The Consulting Team also runs many initiatives between the other Ivy League newspapers and facilitates collaborative Ivy-wide efforts. The analysts will often find themselves speaking to other analysts from different schools and will often find themselves working in teams with people they may have never met before. The consulting team promotes quick thinking and strong teamwork."
     ],
     "highlights": [
       "DP Consultants helped clients during the COVID-19 pandemic develop social media strategies to keep up with customers while away from campus."
@@ -31,11 +32,34 @@
     "id": "consulting"
   },
   {
+    "department": "Tech",
+    "text": [
+      "Both mobile & web developers at the DP have the opportunity to work on a number of diverse and complex projects. The DP runs multiple full-stack apps, regularly creates standalone pages for special issues or interactive projects, and builds internal tools for both the editorial and business sides.",
+      "As a web developer, you'll get experience working with GitHub, as well as a wide array of programming languages. We use React, GatsbyJS, and NextJS for our project pages, Express, Apollo, and GraphQL for our backend servers, and regularly build tools with JavaScript, Python, and Ruby.",
+      "As a mobile developer, you'll get experience working with React Native and improve upon the DP mobile app which is soon to be released.",
+      "Developers who are experienced in HTML, CSS, Javascript are encouraged to join!"
+    ],
+    "highlights": [
+      "DP Projects, a full list of all project pages we've developed",
+      "DP mobile GraphQL Server",
+      "DP+: DP Mobile App",
+      "Check out all of our open source work on our GitHub"
+    ],
+    "highlight-links": [
+      "https://projects.thedp.com/",
+      "https://github.com/dailypenn/jay",
+      "https://github.com/dailypenn/canada-goose",
+      "https://github.com/dailypenn"
+    ],
+    "background": "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/85611786-a619-4496-9c5c-59ece6432fa5.sized-1000x1000.jpg')",
+    "id": "web"
+  },
+  {
     "department": "Analytics",
     "text": [
-      "DP Analytics is the data science hub of the Daily Pennsylvanian. At Analytics, we seek to use data to help propel DP into the digital first age.",
-      "In particular, this department taps into three main areas: Core Data Science(Machine Learning), Product Analytics(Data Manipulation and Analysis), and Data Infrastructure(Web development and data visualization). All these areas cohesively work together to improve the overall DP experience on and offline.",
-      "Being an independent company, DP provides not only a chance to create something but also project opportunities that actually reaches a huge audience on a regular basis (~200k/month)."
+      "DP Analytics is the data science and business analytics hub of the Daily Pennsylvanian. In Analytics, we seek to leverage modern tools and technologies to enhance the digital and data analytics capabilities of the DP.",
+      "Analytics staffers have the option to work in one of two sub-departments: Core Data Science and Product Analytics. Examples of data science projects include ML-driven recommendation engines and natural language processing analyses of DP articles. Examples of product analytics projects include market segmentation and search engine optimization (SEO).",
+      "Whether it’s deeply technical machine learning work or cross-functional business analytics initiatives (or both!), DP Analytics staffers work on projects with direct impact on the DP, the Penn community, and a global readership audience. Apply today!"
     ],
     "highlights": [
       "ML Driven Content Based Recommendation Engine",
@@ -49,8 +73,8 @@
   {
     "department": "Product Lab",
     "text": [
-      "The DP Product Lab Department creates marketing content and brands what The DP can provide to external clients. Also, as the company develops, we explore new fields and build new services. We hold responsibility for working on innovation products and coming up with revenue-generating initiatives.",
-      "With a large amount of creative freedom, this is the place to make your idea a reality. Our weekly commitment is approximately 6 hours."
+      "The DP Product Lab Department’s main focus is to create marketing content for local businesses. As the company develops, we explore new fields and build new services. We hold responsibility for developing innovative products and coming up with revenue-generating initiatives. Some projects we are involved in include Best of Penn, Summer at Penn, and the Dining Guide. Positions in product lab range from creative writing, marketing, design, web development, and analytics. If you have interdisciplinary interests, this may be the perfect department for you!",
+      "Our weekly commitment is approximately 6 hours."
     ],
     "highlights": [
       "Verb Energy Bars Sponsored Video",

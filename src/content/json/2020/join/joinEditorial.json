@@ -3,22 +3,22 @@
     "department": "News",
     "text": [
       "By joining News, you will learn not only how to report and investigate stories relevant to Penn’s campus and students, but also the intricacies of student life and University operations. Reporters uncover news important to the Penn community by illuminating student stories and holding institutions accountable. Whether it’s breaking news or investigative journalism, your storytelling has the ability to enact real change on campus.",
-      "The Real-Time Desk is also housed in the News department, and is for those who want to report on breaking news and write aggregated news posts with a lesser time commitment.",
-      "Follow in the footsteps of DP News alumni who work for publications like The New York Times, Politico, Vox, and The Washington Post, to name a few. No journalistic experience required  &mdash; only curiosity and dedication."
+      "The Real-Time Desk is also housed in the News department and is for those who want to report on breaking news and write aggregated news posts with a lesser time commitment.",
+      "Follow in the footsteps of DP News alumni who work for publications like The New York Times, Politico, Vox, and The Washington Post, to name a few. No journalistic experience required — only curiosity and dedication."
     ],
     "highlights": [
-      "‘The neighborhood lost its life’: University City businesses suffer from COVID-19",
-      "Thousands petition U. to cut ties with Philly PD, reform militarized campus 'police state'",
-      "Penn projects $91M budget deficit for FY21 in addition to $47M loss from spring 2020",
-      "Here's what six Penn public health experts said about the fall semester",
-      "Live updates — Philadelphia protests over George Floyd's murder for eighth straight day"
+      "Penn Med staff among first frontline healthcare workers in U.S. to receive COVID-19 vaccine",
+      "Penn Police superintendent utters expletives, accidentally interrupting U. Council meeting",
+      "Penn Med's frontline health care workers praised for courage, yet denied COVID-19 tests",
+      "Students demand Penn fire anthropology professor who used Nazi phrase and salute",
+      "Live Updates — More than 1,000 ballots cast at Houston Hall, ARCH, Walnut Street Library"
     ],
     "highlight-links": [
-      "https://www.thedp.com/article/2020/06/west-philadelphia-small-businesses-penn-campus-closed-smokes-allegros",
-      "https://www.thedp.com/article/2020/06/petition-anti-police-penn-philadelphia-george-floyd",
-      "https://www.thedp.com/article/2020/07/penn-projects-91-budget-deficit-covid-pandemic",
-      "https://www.thedp.com/article/2020/07/penn-fall-health-professional-safety-testing-covid",
-      "https://www.thedp.com/article/2020/05/black-lives-matter-protest-george-floyd-philadelphia"
+      "https://www.thedp.com/article/2021/01/covid-19-vaccine-rollout-penn-health-system-staff-researchers-pennsylvania",
+      "https://www.thedp.com/article/2020/12/penn-university-council-open-forum-maureen-rush-expletive-comment",
+      "https://www.thedp.com/article/2020/12/routine-testing-penn-healthcare-workers",
+      "https://www.thedp.com/article/2021/01/penn-professor-hitler-nazi-salute-anthropology-reactions-fire",
+      "https://www.thedp.com/article/2020/11/penn-philadelphia-election-day-live-updates"
     ],
     "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/917417c6-2a39-487a-bd75-8913f3427445.sized-1000x1000.jpg')",
     "id": "news"
@@ -52,22 +52,22 @@
     "text": [
       "You have the power to decide what the campus conversation ought to be.",
       "At The Daily Pennsylvanian, we are looking for creative, passionate, and hard-working writers to pen columns for Penn's independent student-led news organization. We are also looking for talented artists to create funny, insightful, and poignant cartoons.",
-      "Your writing and reporting skills will improve tremendously, you will have the rare opportunity to reach thousands of people with every column you write, and you will learn to make this award-winning media organization your home. Opinion columns often garner the most page views and comments among all the sections of the DP. Being an opinion artist requires time and dedication, as well as the ability to make a point using few words.",
-      "Stimulate change, hold organizations and people accountable, and make conversation: Join us."
+      "Your writing and reporting skills will improve tremendously, you will have the rare opportunity to reach thousands of people with every column you write, and you will learn to make this award-winning media organization your home. Opinion columns often garner the most page views of all DP sections, and columnists are known around campus. Being an opinion artist requires time and dedication, as well as the ability to make a point using few words.",
+      "Make conversation, stimulate change, and hold organizations and people accountable. Join us."
     ],
     "highlights": [
       "Surayya Walters | Stop ignoring tokenism at Penn",
-      "Alfredo Praticò | Our relationship with Philadelphia is broken. Here’s how we fix it",
-      "Julia Mitchell | ‘Thriving at Penn’ is more meme than reality",
+      "Alfredo Praticò | David Cohen is Wrong",
+      "Varun Saraswathula | Doctors are facing a silent mental health crisis — and they need help",
       "Kaliyah Dorsey | At Penn, fake smiles hurt more than they help",
-      "Ana West | Christians at Penn have a responsibility to stand by the LGBTQ community"
+      "Jessica Gooding | Paying PILOTs will save lives"
     ],
     "highlight-links": [
       "https://www.thedp.com/article/2019/11/tokenism-racism-clubs-ivy-league-upenn-philadelphia",
-      "https://www.thedp.com/article/2019/10/philadelphia-gentrification-penn-bubble-ivy-league-upenn-philadelphia",
-      "https://www.thedp.com/article/2019/09/thrive-at-penn-mental-health-ivy-league-wharton-upenn-philadelphia",
+      "https://www.thedp.com/article/2020/07/paying-pilots-will-save-lives-philadelphia-penn-campus",
+      "https://www.thedp.com/article/2020/07/doctors-are-facing-a-silent-mental-health-crisis-and-they-need-help-pre-medicine-med-penn-undergrad-residency",
       "https://www.thedp.com/article/2019/04/mental-health-ivy-league-ariana-grande-jordan-peele-kaliyah-dorsey-upenn-philadelphia",
-      "https://www.thedp.com/article/2019/03/lgbtq-christianity-evangelical-church-homophobia-upenn-philadelphia"
+      "https://www.thedp.com/article/2020/07/paying-pilots-will-save-lives-philadelphia-penn-campus"
     ],
     "background": "linear-gradient(rgba(170, 30, 34, 0.9), rgba(170, 30, 34, 0.9)), url('https://snworksceo.imgix.net/dpn/63f97845-7cb5-49eb-8322-bca5667583bc.sized-1000x1000.jpg')",
     "id": "opinion"
@@ -75,7 +75,7 @@
   {
     "department": "Copy",
     "text": [
-      "The Daily Pennsylvanian's Copy Department is now editing 34th Street, Under the Button, and DP Sports content! Join our super fun team in reviewing and fact-checking everything from breaking news to satirical videos. Come help us keep our content concise, consistent, and considerate.",
+      "The Daily Pennsylvanian’s Copy Department is now editing 34th Street, Under the Button, and DP Sports content! Join our super fun team in reviewing and fact-checking everything from breaking news to satirical videos to social media captions. Come help us keep our content concise, consistent, and considerate.",
       "From the people who brought the DP the Oxford comma."
     ],
     "highlights": ["The DP's Official Style Guide"],
@@ -114,31 +114,29 @@
   {
     "department": "Multimedia",
     "text": [
-      "The Multimedia Department is looking for people with a passion for photography and videography to join us in creating modern quality content for The Daily Pennsylvanian.",
-      "We use the Adobe Suite as well as the latest DSLR cameras, lenses, and audio and video equipment to cover major events on campus and across the country. Our staff has covered famous figures including the likes of Joe Biden and Usain Bolt, stood front row at Made in America, and traveled for special events including presidential campaign rallies and NCAA tournaments.",
-      "This semester will look different than the usual coverage. Now more than ever, we need your help in documenting the history that will unfold on our campus this fall.",
-      "As a member of the multimedia department, you will have opportunities to learn and improve your photography and videography skills. You will have the ability to take part in the editing and post-production process, having an impact on our content from creation to publishing. A time commitment of 1-3 hours every week is expected.",
-      "At this time, we would prefer those who have experience with photography and/or videography. No personal equipment is required, but we ask you to use your own if you have it now. Join us in making transformative content for an award-winning media company!"
+      "As a member of the Multimedia Department, you will learn how to create engaging visual storytelling content, have the opportunity to cover historic events on campus and throughout the country, and take part in the editing and publishing processes.",
+      "In 2020, our staff notably covered Philadelphia’s Black Lives Matter protests, the presidential election throughout Pennsylvania and at the New Hampshire primaries, and explored the University’s efforts to combat COVID-19.",
+      "We use the Adobe Creative Suite, as well as high-quality DSLR cameras, lenses, and audio and video equipment. No experience with photography or videography is necessary. No personal equipment is required, but we ask you to use your own if you have it now. Join us in making transformative content for an award-winning media company!"
     ],
     "highlights": [
-      "Former ICE Director Returns To Penn, Met By Protesters",
       "Photo Essay | Philadelphia protests for George Floyd and racial justice",
-      "Inside The Wistar Institute's Fight Against COVID-19",
-      "Photo Essay | Students reflect on life inside epicenter of the coronavirus pandemic",
-      "DP Sports Editor vs. Fencing Sabre Captain Miranda Gieg",
-      "Photo Gallery | The 125th Running of the Penn Relays",
-      "Phila.'s Iranian community gathers at LOVE statue to honor victims of downed plane",
-      "Photo Essay | A tour of the 20 best outdoor study spots on campus"
+      "Penn Democrats Deliver Mail-In Ballot Applications To Off-Campus Student Apartments",
+      "Photo Essay | Meet six Philadelphia Black-owned businesses facing the COVID-19 pandemic",
+      "Philadelphia Celebrates Biden-Harris Win",
+      "In Photos: Philadelphians rejoice in the streets as Pa. propels Biden to presidency",
+      "Penn Students On Activism And Politics In The Age Of COVID-19",
+      "Photo Essay | Meet seven essential workers keeping Penn’s campus running during the pandemic",
+      "Students Discuss The Challenges Of A Virtual Fall For Each Class Year"
     ],
     "highlight-links": [
-      "https://youtu.be/pbMhA3_e1xE",
       "https://www.thedp.com/article/2020/06/philadelphia-protests-george-floyd-black-lives-matter-photo-essay",
-      "https://www.youtube.com/watch?v=4twQG1T1mM4&t=51s",
-      "https://www.thedp.com/article/2020/05/coronavirus-covid-19-new-york-city-empty-students-photo-essay",
-      "https://www.youtube.com/watch?v=AlJCgQZezhU",
-      "https://www.thedp.com/article/2019/04/photo-gallery-penn-relays-125-upenn-harvard-olympians-usa-jamaica-yale",
-      "https://www.thedp.com/article/2020/01/iran-vigil-airplane-crash-goernment-trump-philadelphia-penn-tragedy-flight",
-      "https://www.thedp.com/article/2019/05/tour-best-outdoor-study-spots-penn-campus"
+      "https://www.youtube.com/watch?v=3KJrlF9T4Rc",
+      "https://www.thedp.com/article/2020/07/black-owned-businesses-philadelphia-coronavirus-black-lives-matter-photo-essay",
+      "https://www.youtube.com/watch?v=GGOQUr0pZ4o",
+      "https://www.thedp.com/article/2020/11/penn-philadelphia-celebrations-joe-biden-election-2020-pennsylvania-victory-party",
+      "https://www.youtube.com/watch?v=hguRV7U5Q94",
+      "https://www.thedp.com/article/2020/11/penn-essential-workers-coronavirus-covid19-photo-essay",
+      "https://www.youtube.com/watch?v=qxklB93jWhs"
     ],
     "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://media.giphy.com/media/KHKlf5Cnvzm1HDkVrL/giphy.gif')",
     "id": "multimedia"
@@ -146,10 +144,10 @@
   {
     "department": "Audience Engagement",
     "text": [
-      "Joining Audience Enagement will put you on the frontline of The DP’s interaction with tens of thousands of readers and develop skills increasingly relevant in the world’s growing digital landscape.",
-      "As a rapidly growing department, we are looking for people excited to curate, manage and grow the DP’s social media presence and interaction through Facebook, Twitter and (especially!) Instagram. We are also seeking writers interested in writing and editing our daily newsletter.",
+      "Joining Audience Engagement will put you on the frontline of the DP’s interaction with tens of thousands of readers and develop skills increasingly relevant in the world’s growing digital landscape.",
+      "As a rapidly growing department, we are looking for people excited to curate, manage, and develop the DP’s social media presence and interaction through Facebook, Twitter and (especially!) Instagram. We are also seeking writers interested in writing and editing our daily newsletter. This year, we have created a new division under AE in partnership with Analytics for those interested in the more technical side of analyzing audience engagement data.",
       "AE is the right department for anyone looking to work with other departments across the DP on exciting projects such as promotion strategies for special issues and events online.",
-      "No prior experience required, only a fire emoji game and willingness to be part of our close knit family."
+      "No prior experience required for the social media and newsletter division — only a fire emoji game and willingness to be part of our close knit family. Familiarity or willingness to learn Google Analytics and Excel is required for the analytics division, and it’s a bonus if familiar with Python or R."
     ],
     "highlights": [
       "The Daily Pennsylvanian Facebook",
@@ -167,31 +165,9 @@
     "id": "social"
   },
   {
-    "department": "Web Dev",
-    "text": [
-      "Web developers at the DP have the opportunity to work on a number of diverse and complex projects. The DP runs multiple full-stack apps, regularly creates standalone pages for special issues or interactive projects, and builds internal tools for both the editorial and business sides.",
-      "As a web developer, you'll get experience working with GitHub, as well as a wide array of programming languages. We maintain apps built with Ruby on Rails, use HTML, CSS, and JavaScript for our project pages, and regularly build tools with JavaScript, Python, and Ruby.",
-      "Developers at all skill levels are encouraged to join!"
-    ],
-    "highlights": [
-      "DP Projects, a full list of all project pages we've developed",
-      "Outquote, a JavaScript tool to make branded quote cards",
-      "Explore the data, code, and methodology behind our data projects",
-      "Check out all of our open source work on our GitHub"
-    ],
-    "highlight-links": [
-      "https://projects.thedp.com/",
-      "https://dailypenn.github.io/outquote/",
-      "https://github.com/dailypenn/data",
-      "https://github.com/dailypenn"
-    ],
-    "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/85611786-a619-4496-9c5c-59ece6432fa5.sized-1000x1000.jpg')",
-    "id": "web"
-  },
-  {
     "department": "Podcasts",
     "text": [
-      "Calling all podcast enthusiasts! DP Podcasts is looking for new hosts, writers, and editors. Join this burgeoning department as we attempt to expand the breadth and depth of our current podcast offerings. We are looking for storytellers and commentators from diverse backgrounds.",
+      "Calling all podcast enthusiasts! DP Podcasts is looking for new storytellers, hosts, writers, editors, and assistants! Those looking to edit podcasts or learn the behind the scenes process are especially welcomed by our hosts. Join this burgeoning department as we attempt to expand the breadth and depth of our current podcast offerings. We are looking for storytellers and commentators from diverse backgrounds.",
       "Are you weirdly passionate about something on campus? Do you have interesting opinions? If you join our department, we can turn that into a podcast!"
     ],
     "highlights": [
