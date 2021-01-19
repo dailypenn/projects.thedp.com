@@ -37,13 +37,6 @@ export const WordWithLine = ({ word, lineColor, spanColor }) => (
 )
 
 // CARD COMPONENTS
-
-export const StyledAnchor = s.a`
-  text-decoration: none !important;
-  margin-top: 4rem;
-  text-align: ${({ alignment}) => alignment};
-  color: ${({ color }) => color} !important;
-`
 export const CardName = s.p`
   font-size: 0.8rem;
   margin-bottom: 0rem;
@@ -72,6 +65,7 @@ export const CardTitle = s.p`
   text-transform: uppercase;
   font-size: 2rem;
   margin-bottom: 0rem;
+  text-align: center;
   ${ANTON};
   color: ${({ color }) => color};
 `
@@ -100,22 +94,8 @@ export const YourPick = s.div`
   background-color: ${({ BgColor }) => BgColor};
 `
 
-export const CardsWrapper = s.div`
-  padding-left: 5%;
-  padding-right: 2.5%;
-  padding-bottom: 2rem;
-  margin-bottom: 4rem;
-  @media(max-width: 768px) {
-    padding-left: 10%;
-  }
-`
 export const CardWrapper = s.div`
   padding-top: 1.5rem;
+  text-align: center;
 `
 
-export const HeadlineWrapper = s.div`
-  padding: 0 6rem;
-  @media(max-width: 768px) {
-    padding: 0% 0%;
-  }
-`

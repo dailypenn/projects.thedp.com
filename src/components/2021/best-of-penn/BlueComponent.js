@@ -4,7 +4,7 @@ import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
 
 import { RED, BLUE, TAN, WordWithLine, CardName, CardDescription, 
-  CardHours, CardAddress, StyledAnchor, YourPickColWrapper, CardTitle, YourPick, CardWrapper} from './shared'
+  CardHours, CardAddress, YourPickColWrapper, CardTitle, YourPick, CardWrapper} from './shared'
 
 const Background = s.div `
   background-color: ${BLUE};
@@ -20,45 +20,46 @@ const HorizontalLine = s.hr`
 
 const Card = ({ item }) => (
   <CardWrapper>
-    <StyledAnchor href='' target="_blank" alignment="center">
-      <Row>
-        <Col xs={11} sm={11} md={11}>
-          <Img fluid={item.img.src.childImageSharp.fluid} />
-          <CardTitle color={TAN}>
-            {item.category}
-          </CardTitle>
+    <Row>
+      <Col xs={11} sm={11} md={11}>
+        <Img fluid={item.img.src.childImageSharp.fluid} />
+        <CardTitle color={TAN}>
+          {item.category}
+        </CardTitle>
+      </Col>
+      <YourPickColWrapper>
+        <Col xs={1} sm={1} md={1}>
+          <YourPick color={TAN} BgColor={RED} ><span>YOUR<br/>PICK</span></YourPick>
         </Col>
-        <YourPickColWrapper>
-          <Col xs={1} sm={1} md={1}>
-            <YourPick color={TAN} BgColor={RED} ><span>YOUR<br/>PICK</span></YourPick>
-          </Col>
-        </YourPickColWrapper>
-      </Row>
-    </StyledAnchor>
+      </YourPickColWrapper>
+    </Row>
   </CardWrapper>
 )
 
+const BlueCardWrapper = s(CardWrapper)`
+  text-align: left;
+  color: ${TAN};
+`
+
 const CardText = ({ item }) => (
-  <CardWrapper>
-    <StyledAnchor href='' target="_blank" color={TAN}>
-      <CardName>
-        {item.place}
-      </CardName>
-      <CardDescription>
-        {item.blurb}
-      </CardDescription>
-      {item.address && (
-        <CardAddress>
-          <strong>ADDRESS:</strong> {item.address}
-        </CardAddress>
-      )}
-      {item.hours && (
-        <CardHours>
-          <strong>HOURS:</strong> {item.hours}
-        </CardHours>
-      )}
-    </StyledAnchor>
-  </CardWrapper>
+  <BlueCardWrapper>
+    <CardName>
+      {item.place}
+    </CardName>
+    <CardDescription>
+      {item.blurb}
+    </CardDescription>
+    {item.address && (
+      <CardAddress>
+        <strong>ADDRESS:</strong> {item.address}
+      </CardAddress>
+    )}
+    {item.hours && (
+      <CardHours>
+        <strong>HOURS:</strong> {item.hours}
+      </CardHours>
+    )}
+  </BlueCardWrapper>
 )
 
 

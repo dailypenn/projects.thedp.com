@@ -1,7 +1,5 @@
 import React from 'react'
-import s from 'styled-components'
 import { Helmet } from 'react-helmet'
-import { Row, Col } from 'react-bootstrap'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import { BackgroundWrapper } from '../../../components/2021/best-of-penn/shared'
