@@ -43,7 +43,7 @@ const URL = ({ link, children }) => {
 
 // titles: { left: [{ text, link }*], right: [{ text, link }*] }
 
-export const NavBar = ({ titles, font, bgColor, fontColor, img}) => {
+export const NavBar = ({ titles, font, bgColor, fontColor, img }) => {
   const { left, right } = titles
 
   if (!bgColor) {
@@ -68,7 +68,10 @@ export const NavBar = ({ titles, font, bgColor, fontColor, img}) => {
           {left.map(({ text, link }) => (
             <li className="nav-item">
               <URL link={link}>
-                <NavText font={font} style={{color: fontColor}}> {text} </NavText>
+                <NavText font={font} style={{ color: fontColor }}>
+                  {' '}
+                  {text}{' '}
+                </NavText>
               </URL>
             </li>
           ))}
@@ -79,7 +82,10 @@ export const NavBar = ({ titles, font, bgColor, fontColor, img}) => {
         style={{ textAlign: 'center' }}
       >
         <a className="mx-auto" href="https://www.thedp.com/">
-          <Image src={img ? img : '/img/DP-Logo-Full.png'} className="img-fluid" />
+          <Image
+            src={img ? img : '/img/DP-Logo-Full.png'}
+            className="img-fluid"
+          />
         </a>
         <button
           className="navbar-toggler collapsed"
@@ -89,10 +95,17 @@ export const NavBar = ({ titles, font, bgColor, fontColor, img}) => {
           aria-expanded="false"
         >
           <span className="navbar-toggler-icon">
-            <img
-              src="/icons/menu.svg"
-              style={{ transform: 'translate(0, 0.2rem)' }}
-            />
+            {bgColor === '#FFFFFF' ? (
+              <img
+                src="/icons/menu.svg"
+                style={{ transform: 'translate(0, 0.2rem)' }}
+              />
+            ) : (
+              <img
+                src="/icons/menu-white.svg"
+                style={{ transform: 'translate(0, 0.2rem)' }}
+              />
+            )}
           </span>
         </button>
       </div>
@@ -101,7 +114,10 @@ export const NavBar = ({ titles, font, bgColor, fontColor, img}) => {
           {right.map(({ text, link }) => (
             <li className="nav-item">
               <URL link={link}>
-                <NavText font={font} style={{color: fontColor}}> {text} </NavText>
+                <NavText font={font} style={{ color: fontColor }}>
+                  {' '}
+                  {text}{' '}
+                </NavText>
               </URL>
             </li>
           ))}

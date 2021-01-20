@@ -145,7 +145,7 @@ const IndexPage = () => {
           <TanComponent section={beauty} colmd={5} />
         </div>
         <div id="quarantine">
-          <BlueComponent section={quarantine} />
+          <BlueComponent section={quarantine} marginBottom="3" />
         </div>
       </BackgroundWrapper>
       <Footer emoji="💖" bgColor="#000000" fontColor="#FFFFFF" year="2021" />
