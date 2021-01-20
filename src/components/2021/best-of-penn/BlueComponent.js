@@ -21,7 +21,7 @@ const Background = s.div`
   background-color: ${BLUE};
   width: 100%;
   padding-bottom: 5rem;
-  margin-bottom: 7rem;
+  margin-bottom: ${({ marginBottom = '7' }) => marginBottom}rem;
 `
 
 const HorizontalLine = s.hr`
@@ -81,10 +81,10 @@ const HeadlineWrapper = s.div`
   padding: 2rem 0rem 4rem;
 `
 
-const BlueComponent = ({ section }) => (
+const BlueComponent = ({ section, marginBottom }) => (
   <Row>
     <Col sm={12} md={{ span: 10, offset: 1 }}>
-      <Background>
+      <Background marginBottom={marginBottom}>
         <HeadlineWrapper>
           <WordWithLine
             word={section.section}
