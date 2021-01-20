@@ -19,7 +19,7 @@ const HorizontalLine = s.hr`
 `
 
 const Card = ({ item }) => (
-  <CardWrapper>
+  <BlueCardWrapper>
     <Row>
       <Col xs={11} sm={11} md={11}>
         <Img fluid={item.img.src.childImageSharp.fluid} />
@@ -33,32 +33,38 @@ const Card = ({ item }) => (
         </Col>
       </YourPickColWrapper>
     </Row>
-  </CardWrapper>
+  </BlueCardWrapper>
 )
 
 const BlueCardWrapper = s(CardWrapper)`
   text-align: left;
   color: ${TAN};
+  @media(max-width: 768px) {
+    text-align: center;
+    padding-left: 5%;
+  }
 `
 
 const CardText = ({ item }) => (
   <BlueCardWrapper>
-    <CardName>
-      {item.place}
-    </CardName>
-    <CardDescription>
-      {item.blurb}
-    </CardDescription>
-    {item.address && (
-      <CardAddress>
-        <strong>ADDRESS:</strong> {item.address}
-      </CardAddress>
-    )}
-    {item.hours && (
-      <CardHours>
-        <strong>HOURS:</strong> {item.hours}
-      </CardHours>
-    )}
+    <Col xs={11} sm={11} md={11}>
+      <CardName>
+        {item.place}
+      </CardName>
+      <CardDescription>
+        {item.blurb}
+      </CardDescription>
+      {item.address && (
+        <CardAddress>
+          <strong>ADDRESS:</strong> {item.address}
+        </CardAddress>
+      )}
+      {item.hours && (
+        <CardHours>
+          <strong>HOURS:</strong> {item.hours}
+        </CardHours>
+      )}
+    </Col>
   </BlueCardWrapper>
 )
 

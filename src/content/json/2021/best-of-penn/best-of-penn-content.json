@@ -40,7 +40,7 @@
         "address": "237 S 40th St, Philadelphia, PA 19104",
         "hours": "10:30AM-8PM",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/PennHalalGyroFoodTruck.jpg"
         }
       },
       {
@@ -50,7 +50,7 @@
         "address": "3939 Chestnut St.",
         "hours": "Sun, Tues-Thurs: 12:30PM-8:30PM, Fri-Sat: 12:30PM-10:30PM",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/DimSumHouse.png"
         }
       },
       {
@@ -60,7 +60,7 @@
         "address": "125 S 40th St.",
         "hours": "Sun-Thurs: 11:30AM-9:45PM, Thurs-Sat:11:30AM-10:45PM",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/Terakawa.jpg"
         }
       },
       {
@@ -70,7 +70,7 @@
         "address": "40th and Spruce St.",
         "hours": "Sun-Wed: 9AM-12AM, Thurs-Sat: 9AM-3AM",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/Allegro.png"
         }
       },
       {
@@ -80,7 +80,7 @@
         "address": "3801 Chestnut St.",
         "hours": "11AM-10PM, Closed Monday",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/Koreana.JPG"
         }
       },
       {
@@ -90,7 +90,7 @@
         "address": "4004 Chestnut St.",
         "hours": "Sun, Tues-Thurs: 11:30PM-9PM, Fri-Sat: 11:30PM-10PM, Closed on Monday",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/NewDelhi.png"
         }
       },
       {
@@ -100,7 +100,7 @@
         "address": "4006 Chestnut St.",
         "hours": "Sun-Thurs: 5PM-9PM, Fri-Sat: 5PM-10PM",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/Pattaya.jpg"
         }
       },
       {
@@ -110,7 +110,7 @@
         "address": "3606 Chestnut St.",
         "hours": "Sun-Thurs: 12AM-10PM, Fri-Sat: 12PM-11PM",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/Kiwi.jpg"
         }
       },
       {
@@ -120,7 +120,7 @@
         "address": "3200 Chestnut St.",
         "hours": "Sun-Wed: 11AM-10PM, Thurs-Sat: 11AM-11PM",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/ShakeShack.png"
         }
       },
       {
@@ -130,7 +130,7 @@
         "address": "3925 Walnut St.",
         "hours": "10:30AM-8PM",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/Sweetgreen.png"
         }
       },
       {
@@ -140,7 +140,7 @@
         "address": "3925 Walnut St.",
         "hours": "10:45AM-10PM",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/Chipotle.jpeg"
         }
       },
       {
@@ -150,7 +150,7 @@
         "address": "40th and Chestnut St.",
         "hours": "Mon-Thurs: 4PM-9PM, Fri: 4PM-10PM, Sat: 12PM-10PM, Sun: 12PM-9PM, Happy Hour: 4PM-6PM",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/Distrito.png"
         }
       }
     ]
@@ -165,7 +165,7 @@
         "address": "39th and Walnut, 1920 Commons",
         "hours": "Mon-Fri: 5:30AM-9PM, Sat-Sun: 6AM-8PM",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/Starbucks.jpg"
         }
       },
       {
@@ -175,7 +175,7 @@
         "address": "3906B Chestnut St.",
         "hours": "Sun-Thurs: 5PM-8:30 PM, Fri-Sat: 5PM-9:30PM",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/ThaiSingha.jpg"
         }
       },
       {
@@ -185,7 +185,7 @@
         "address": "39th and Samsom",
         "hours": "Sun-Thurs: 11AM-10PM, Fri-Sat: 11AM-11PM",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/Teado.jpg"
         }
       },
       {
@@ -195,7 +195,7 @@
         "address": "3611 Walnut Street",
         "hours": "Mon-Thurs: 12PM-8PM, Fri: 12PM-9PM, Sat: 11AM-9PM, Sun: 11AM-8PM, Happy Hour: Mon-Fri 3PM-6PM",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/LouieLouie.JPG"
         }
       },
       {
@@ -205,7 +205,7 @@
         "address": "40th and Chestnut St.",
         "hours": "Mon-Thurs: 4PM-9PM, Fri: 4PM-10PM, Sat: 12PM-10PM, Sun: 12PM-9PM, Happy Hour: 4PM-6PM",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/DistritoDrink.jpg"
         }
       }
     ]
@@ -220,7 +220,7 @@
         "blurb": "Looking for the perfect date spot? Cira Green, twelve floors up on 129 S 30th Street, has you covered. This outdoor rooftop park in University City serves food and drink and hosts events. Searching for some friendly competition? Cira Green has games like Giant Jenga and cornhole which make it Cira-ously a fun first date idea.",
         "address": "129 S 30th Street",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/CiraGreen.png"
         }
       },
       {
@@ -230,7 +230,7 @@
         "address": "36th and Walnut St.",
         "hours": "Mon-Fri: 9AM-6:30PM , Sat-Sun: 10AM-5PM ",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/PennBookstore.JPG"
         }
       }
     ]
@@ -244,7 +244,7 @@
         "place": "Campus Apartments",
         "blurb": "Penn students have named Campus Apartments the Best of Penn Off Campus Housing winner for 2020. Campus Apartments has properties all over University City, making it easy to find the best options for living off-campus. Call the leasing office at (215) 382-1300 or look online at livecampusapts.com to see the properties for yourself.",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/CampusApartments.jpg"
         }
       },
       {
@@ -253,7 +253,7 @@
         "blurb": "Looking for the best amenities when deciding on an apartment building? Domus, on the corner of 34th and Chestnut, offers access to a pool, fitness center, parking garage, and even a movie theater. Domus is close to both Penn and Drexel’s campuses, and hosts a grocery store, Heirloom Market, on the first floor of the building.",
         "address": "34th and Chestnut St.",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/Domus.jpg"
         }
       }
     ]
@@ -269,7 +269,7 @@
         "address": "212 S 40th St.",
         "hours": "Mon-Wed: 10AM-7PM , Thurs-Fri: 10AM-8PM, Sat: 10AM-6PM Sun: Closed",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/LuxeNailBar.JPG"
         }
       },
       {
@@ -279,7 +279,7 @@
         "address": "38th and Walnut St.",
         "hours": "Mon-Fri: 9AM-6PM, Sat: 9AM-5PM, Sun: Closed",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/JosephAnthony.JPG"
         }
       }
     ]
@@ -293,7 +293,7 @@
         "place": "UberEats",
         "blurb": "For the quickest and safest way to get food during the pandemic, look toward UberEats. A favorite of Penn students during COVID, UberEats delivers food from almost any restaurant within a 20 mile radius. UberEats also offers non-contact delivery, so you can stay safe while enjoying your local University City favorites.",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/UberEats.jpeg"
         }
       },
       {
@@ -301,7 +301,7 @@
         "place": "Zoom",
         "blurb": "Looking to connect virtually with friends and family? Penn students turn to Zoom in the age of COVID for videoconferencing. Widely used as the virtual classroom for the university, zoom also offers a chance for students to connect with their peers while the environment at Penn remains virtual.",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/Zoom.jpeg"
         }
       },
       {
@@ -309,7 +309,7 @@
         "place": "Among Us",
         "blurb": "With other activities shut down or postponed, Penn students turned to Among Us to keep themselves entertained during the pandemic. Among Us is a multiplayer online game that pits “crewmates” against each other in a race to determine which one(s) of them is the “imposter.” Among Us also makes it easy to play with friends, via a code or private lobby.",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/AmongUs.jpeg"
         }
       },
       {
@@ -317,7 +317,7 @@
         "place": "Avatar",
         "blurb": "Downtime during quarantine manifested itself in binge-watching Netflix for so many individuals. While Tiger King and the Office were both popular choices, Penn students most enjoyed spending time with Aang on his journey to unite the four nations.",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/Avatar.jpeg"
         }
       },
       {
@@ -325,7 +325,7 @@
         "place": "OrangeTheory Fitness",
         "blurb": "With Pottruck shut down for the Fall of 2020, Penn students ventured to University City gyms in order to stay physically fit. OrangeTheory Fitness, on 37th and Market, is the preferred choice of students during the pandemic. OrangeTheory has a unique, heart rate-based approach to fitness that aims to optimize a workout with High-Intensity Interval Training. It’s a HIIT!",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/OrangeTheory.jpeg"
         }
       },
       {
@@ -333,7 +333,7 @@
         "place": "Copabanana",
         "blurb": "For the best outdoor dining experience in University City during the COVID pandemic, visit Copabanana on 40th and Spruce. Affectionately nicknamed “Copa” by the student body, the restaurant has capitalized on outdoor dining by setting tables in a roped-off area on 40th street. The margaritas and burgers are student favorites, so make sure to head over before the winter.",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/Copabanana.png"
         }
       },
       {
@@ -341,7 +341,7 @@
         "place": "Sleep",
         "blurb": "To combat the stress of the pandemic, Penn students turned to sleep. Instead of a bath or a day at the spa, Penn students felt that getting more sleep was most effective when dealing with COVID-induced anxiety or pressure.",
         "img": {
-          "src": "../../../images/2021/best-of-penn/Allegro.jpg"
+          "src": "../../../images/2021/best-of-penn/Sleep.jpeg"
         }
       }
     ]
