@@ -3,9 +3,20 @@ import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
 
-import { RED, BLUE, TAN, WordWithLine, CardName, CardDescription, 
-  CardHours, CardAddress, YourPickColWrapper, 
-  CardTitle, YourPick, ComponentDescription, CardWrapper } from './shared'
+import {
+  RED,
+  BLUE,
+  TAN,
+  WordWithLine,
+  CardName,
+  CardDescription,
+  CardHours,
+  CardAddress,
+  CardTitle,
+  YourPick,
+  ComponentDescription,
+  CardWrapper,
+} from './shared'
 
 const TanCardWrapper = s(CardWrapper)`
   padding-left: 2rem;
@@ -17,17 +28,9 @@ const Card = ({ item }) => (
     <Row>
       <Col xs={11} sm={11} md={11}>
         <Img fluid={item.img.src.childImageSharp.fluid} />
-        <CardTitle color={RED}>
-          {item.category}
-        </CardTitle>
-        <CardName>
-          {item.place}
-        </CardName>
-        {item.blurb && (
-          <CardDescription>
-            {item.blurb}
-          </CardDescription>
-        )}
+        <CardTitle color={RED}>{item.category}</CardTitle>
+        <CardName>{item.place}</CardName>
+        {item.blurb && <CardDescription>{item.blurb}</CardDescription>}
         {item.address && (
           <CardAddress>
             <strong>ADDRESS:</strong> {item.address}
@@ -39,16 +42,20 @@ const Card = ({ item }) => (
           </CardHours>
         )}
       </Col>
-      <YourPickColWrapper>
-        <Col xs={1} sm={1} md={1}>
-          <YourPick color={TAN} BgColor={BLUE}><span>YOUR<br/>PICK</span></YourPick>
-        </Col>
-      </YourPickColWrapper>
+      <Col xs={1} sm={1} md={1} style={{ marginLeft: '-60px' }}>
+        <YourPick color={TAN} bgColor={BLUE}>
+          <span>
+            YOUR
+            <br />
+            PICK
+          </span>
+        </YourPick>
+      </Col>
     </Row>
   </TanCardWrapper>
 )
 
- const HeadlineWrapper = s.div`
+const HeadlineWrapper = s.div`
   padding: 0 6rem;
   @media(max-width: 768px) {
     padding: 0% 0%;
@@ -71,19 +78,20 @@ const StyledRow = s(Row)`
 
 const TanComponent = ({ section, colmd }) => (
   <>
-  <HeadlineWrapper>
-    <WordWithLine word={section.section} lineColor={RED} spanColor={TAN}/>
-    <ComponentDescription> {section.description} </ComponentDescription>
-  </HeadlineWrapper>
-  <CardsWrapper>
-    <StyledRow>
-      {section.items && section.items.map(item => (
-        <Col sm={12} md={colmd}>
-          <Card item={item}/>
-        </Col>
-      ))}
-    </StyledRow>
-  </CardsWrapper>
+    <HeadlineWrapper>
+      <WordWithLine word={section.section} lineColor={RED} spanColor={TAN} />
+      <ComponentDescription> {section.description} </ComponentDescription>
+    </HeadlineWrapper>
+    <CardsWrapper>
+      <StyledRow>
+        {section.items &&
+          section.items.map(item => (
+            <Col sm={12} md={colmd}>
+              <Card item={item} />
+            </Col>
+          ))}
+      </StyledRow>
+    </CardsWrapper>
   </>
 )
 

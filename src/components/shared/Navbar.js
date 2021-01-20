@@ -43,15 +43,22 @@ const URL = ({ link, children }) => {
 
 // titles: { left: [{ text, link }*], right: [{ text, link }*] }
 
-export const NavBar = ({ titles, font }) => {
+export const NavBar = ({ titles, font, bgColor, fontColor, img}) => {
   const { left, right } = titles
 
+  if (!bgColor) {
+    bgColor = '#FFFFFF'
+  }
+
+  if (!fontColor) {
+    fontColor = '#283033'
+  }
   return (
     <nav
       className="navbar sticky-top navbar-expand-lg"
       style={{
         fontFamily: 'Libre Franklin',
-        backgroundColor: '#FFFFFF',
+        backgroundColor: bgColor,
         boxShadow: '0px 5px 6px #00000029',
         opacity: 1,
       }}
@@ -61,7 +68,7 @@ export const NavBar = ({ titles, font }) => {
           {left.map(({ text, link }) => (
             <li className="nav-item">
               <URL link={link}>
-                <NavText font={font}> {text} </NavText>
+                <NavText font={font} style={{color: fontColor}}> {text} </NavText>
               </URL>
             </li>
           ))}
@@ -72,7 +79,7 @@ export const NavBar = ({ titles, font }) => {
         style={{ textAlign: 'center' }}
       >
         <a className="mx-auto" href="https://www.thedp.com/">
-          <Image src="/img/DP-Logo-Full.png" className="img-fluid" />
+          <Image src={img ? img : '/img/DP-Logo-Full.png'} className="img-fluid" />
         </a>
         <button
           className="navbar-toggler collapsed"
@@ -94,7 +101,7 @@ export const NavBar = ({ titles, font }) => {
           {right.map(({ text, link }) => (
             <li className="nav-item">
               <URL link={link}>
-                <NavText font={font}> {text} </NavText>
+                <NavText font={font} style={{color: fontColor}}> {text} </NavText>
               </URL>
             </li>
           ))}

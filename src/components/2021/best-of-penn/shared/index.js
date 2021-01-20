@@ -57,9 +57,6 @@ export const CardHours = s.p`
   font-size: 0.8rem;
   ${POPPINS_REGULAR};
 `
-export const YourPickColWrapper = s.div`
-  margin-left: -60px;
-`
 
 export const CardTitle = s.p`
   text-transform: uppercase;
@@ -91,7 +88,7 @@ export const YourPick = s.div`
   border-radius: 50%;
   ${ANTON};
   color: ${({ color }) => color};
-  background-color: ${({ BgColor }) => BgColor};
+  background-color: ${({ bgColor }) => bgColor};
 `
 
 export const CardWrapper = s.div`
