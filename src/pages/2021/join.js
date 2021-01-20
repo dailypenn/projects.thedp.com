@@ -3,10 +3,10 @@ import { Helmet } from 'react-helmet'
 import s from 'styled-components'
 import { Link } from 'gatsby'
 
-import JoinEditorialJSON from '../../../content/json/2020/join/joinEditorial.json'
-import JoinBusinessJSON from '../../../content/json/2020/join/joinBusiness.json'
-import Join34thJSON from '../../../content/json/2020/join/join34th.json'
-import JoinUTBJSON from '../../../content/json/2020/join/joinUTB.json'
+import JoinEditorialJSON from '../../content/json/2020/join/joinEditorial.json'
+import JoinBusinessJSON from '../../content/json/2020/join/joinBusiness.json'
+import Join34thJSON from '../../content/json/2020/join/join34th.json'
+import JoinUTBJSON from '../../content/json/2020/join/joinUTB.json'
 
 const Wrapper = s.div`
   font-size: 1em;
