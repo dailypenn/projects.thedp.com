@@ -2,11 +2,11 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import { Footer, NavBar } from '../../../components/shared'
-import BestOfPennCoverImg from '../../../content/images/2021/best-of-penn/best-of-penn-cover-2020.png'
-import { BackgroundWrapper } from '../../../components/2021/best-of-penn/shared'
-import TanComponent from '../../../components/2021/best-of-penn/TanComponent.js'
-import BlueComponent from '../../../components/2021/best-of-penn/BlueComponent.js'
+import { Footer, NavBar } from '../../components/shared'
+import BestOfPennCoverImg from '../../content/images/2021/best-of-penn/best-of-penn-cover-2020.png'
+import { BackgroundWrapper } from '../../components/2021/best-of-penn/shared'
+import TanComponent from '../../components/2021/best-of-penn/TanComponent.js'
+import BlueComponent from '../../components/2021/best-of-penn/BlueComponent.js'
 
 const navBarTitles = {
   left: [
@@ -66,7 +66,7 @@ const IndexPage = () => {
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="" />
+        <meta name="description" content="Best of Penn" />
         <title>Best of Penn 2020 | The Daily Pennsylvanian</title>
         <link
           rel="stylesheet"
@@ -78,8 +78,8 @@ const IndexPage = () => {
           property="og:title"
           content="Best of Penn | The Daily Pennsylvanian"
         />
-        <meta property="og:image" content="" />
-        <meta property="og:description" content="" />
+        <meta property="og:image" content="https://snworksceo.imgix.net/dpn/911a0997-d5e4-44f9-a21c-b4641280f6fe.sized-1000x1000.png" />
+        <meta property="og:description" content="Best of Penn" />
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
@@ -91,10 +91,10 @@ const IndexPage = () => {
           name="twitter:title"
           content="Best of Penn | The Daily Pennsylvanian"
         />
-        <meta name="twitter:image" content="" />
+        <meta name="twitter:image" content="https://snworksceo.imgix.net/dpn/911a0997-d5e4-44f9-a21c-b4641280f6fe.sized-1000x1000.png" />
         <meta
           name="twitter:description"
-          content="Your guide for navigating this unprecedented virtual school year"
+          content="Best of Penn"
         />
         <meta
           name="twitter:url"
