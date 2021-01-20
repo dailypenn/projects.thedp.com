@@ -129,12 +129,24 @@ const IndexPage = () => {
         <img src={BestOfPennCoverImg} style={{ width: '100%' }} />
       </div>
       <BackgroundWrapper>
-        <TanComponent section={food} colmd={4} />
-        <BlueComponent section={drinks} />
-        <TanComponent section={activities} colmd={5} />
-        <TanComponent section={living} colmd={5} />
-        <TanComponent section={beauty} colmd={5} />
-        <BlueComponent section={quarantine} />
+        <div id="food">
+          <TanComponent section={food} colmd={4} />
+        </div>
+        <div id="drinks">
+          <BlueComponent section={drinks} />
+        </div>
+        <div id="activities">
+          <TanComponent section={activities} colmd={5} />
+        </div>
+        <div id="living">
+          <TanComponent section={living} colmd={5} />
+        </div>
+        <div id="beauty">
+          <TanComponent section={beauty} colmd={5} />
+        </div>
+        <div id="quarantine">
+          <BlueComponent section={quarantine} />
+        </div>
       </BackgroundWrapper>
       <Footer emoji="💖" bgColor="#000000" fontColor="#FFFFFF" year="2021" />
     </>
