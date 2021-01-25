@@ -15,30 +15,31 @@ import {
   CardTitle,
   YourPick,
   ComponentDescription,
-  CardWrapper,
 } from './shared'
 
-const TanCardWrapper = s(CardWrapper)`
+const TanCardFormat = s.div`
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-top: 1.5rem;
+  text-align: center;
 `
 
-const Card = ({ item }) => (
-  <TanCardWrapper>
+const Card = ({ item: { img, category, place, blurb, address, hours } }) => (
+  <TanCardFormat>
     <Row>
       <Col xs={11} sm={11} md={11}>
-        <Img fluid={item.img.src.childImageSharp.fluid} />
-        <CardTitle color={RED}>{item.category}</CardTitle>
-        <CardName>{item.place}</CardName>
-        {item.blurb && <CardDescription>{item.blurb}</CardDescription>}
-        {item.address && (
+        <Img fluid={img.src.childImageSharp.fluid} />
+        <CardTitle color={RED}>{category}</CardTitle>
+        <CardName>{place}</CardName>
+        {blurb && <CardDescription>{blurb}</CardDescription>}
+        {address && (
           <CardAddress>
-            <strong>ADDRESS:</strong> {item.address}
+            <strong>ADDRESS:</strong> {address}
           </CardAddress>
         )}
-        {item.hours && (
+        {hours && (
           <CardHours>
-            <strong>HOURS:</strong> {item.hours}
+            <strong>HOURS:</strong> {hours}
           </CardHours>
         )}
       </Col>
@@ -52,7 +53,7 @@ const Card = ({ item }) => (
         </YourPick>
       </Col>
     </Row>
-  </TanCardWrapper>
+  </TanCardFormat>
 )
 
 const HeadlineWrapper = s.div`
@@ -62,7 +63,8 @@ const HeadlineWrapper = s.div`
   }
 `
 
-const CardsWrapper = s.div`
+const StyledRow = s(Row)`
+  justify-content: center;
   padding-left: 5%;
   padding-right: 2.5%;
   padding-bottom: 2rem;
@@ -72,27 +74,21 @@ const CardsWrapper = s.div`
   }
 `
 
-const StyledRow = s(Row)`
-  justify-content: center;
-`
-
-const TanComponent = ({ section, colmd }) => (
+const TanBestOfPenn = ({ section: { section, description, items }, colmd }) => (
   <>
     <HeadlineWrapper>
-      <WordWithLine word={section.section} lineColor={RED} spanColor={TAN} />
-      <ComponentDescription> {section.description} </ComponentDescription>
+      <WordWithLine word={section} lineColor={RED} spanColor={TAN} />
+      <ComponentDescription> {description} </ComponentDescription>
     </HeadlineWrapper>
-    <CardsWrapper>
-      <StyledRow>
-        {section.items &&
-          section.items.map(item => (
-            <Col sm={12} md={colmd}>
-              <Card item={item} />
-            </Col>
-          ))}
-      </StyledRow>
-    </CardsWrapper>
+    <StyledRow>
+      {items &&
+        items.map(item => (
+          <Col sm={12} md={colmd}>
+            <Card item={item} />
+          </Col>
+        ))}
+    </StyledRow>
   </>
 )
 
-export default TanComponent
+export default TanBestOfPenn

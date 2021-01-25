@@ -5,10 +5,10 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { Footer, NavBar } from '../../components/shared'
 import BestOfPennCoverImg from '../../content/images/2021/best-of-penn/best-of-penn-cover-2020.png'
 import { BackgroundWrapper } from '../../components/2021/best-of-penn/shared'
-import TanComponent from '../../components/2021/best-of-penn/TanComponent.js'
-import BlueComponent from '../../components/2021/best-of-penn/BlueComponent.js'
+import TanBestOfPenn from '../../components/2021/best-of-penn/TanBestOfPenn.js'
+import BlueBestOfPenn from '../../components/2021/best-of-penn/BlueBestOfPenn.js'
 
-const navBarTitles = {
+const NAVBAR_TITLES = {
   left: [
     { text: 'FOOD', link: 'food' },
     { text: 'DRINKS', link: 'drinks' },
@@ -78,7 +78,10 @@ const IndexPage = () => {
           property="og:title"
           content="Best of Penn | The Daily Pennsylvanian"
         />
-        <meta property="og:image" content="https://snworksceo.imgix.net/dpn/911a0997-d5e4-44f9-a21c-b4641280f6fe.sized-1000x1000.png" />
+        <meta
+          property="og:image"
+          content="https://snworksceo.imgix.net/dpn/911a0997-d5e4-44f9-a21c-b4641280f6fe.sized-1000x1000.png"
+        />
         <meta property="og:description" content="Best of Penn" />
         <meta property="og:type" content="article" />
         <meta
@@ -91,11 +94,11 @@ const IndexPage = () => {
           name="twitter:title"
           content="Best of Penn | The Daily Pennsylvanian"
         />
-        <meta name="twitter:image" content="https://snworksceo.imgix.net/dpn/911a0997-d5e4-44f9-a21c-b4641280f6fe.sized-1000x1000.png" />
         <meta
-          name="twitter:description"
-          content="Best of Penn"
+          name="twitter:image"
+          content="https://snworksceo.imgix.net/dpn/911a0997-d5e4-44f9-a21c-b4641280f6fe.sized-1000x1000.png"
         />
+        <meta name="twitter:description" content="Best of Penn" />
         <meta
           name="twitter:url"
           content="https://projects.thedp.com/2021/best-of-penn"
@@ -120,7 +123,7 @@ const IndexPage = () => {
       </Helmet>
 
       <NavBar
-        titles={navBarTitles}
+        titles={NAVBAR_TITLES}
         bgColor="#000000"
         fontColor="#FFFFFF"
         img="/img/DP-Logo-Full-White.png"
@@ -130,22 +133,22 @@ const IndexPage = () => {
       </div>
       <BackgroundWrapper>
         <div id="food">
-          <TanComponent section={food} colmd={4} />
+          <TanBestOfPenn section={food} colmd={4} />
         </div>
         <div id="drinks">
-          <BlueComponent section={drinks} />
+          <BlueBestOfPenn section={drinks} />
         </div>
         <div id="activities">
-          <TanComponent section={activities} colmd={5} />
+          <TanBestOfPenn section={activities} colmd={5} />
         </div>
         <div id="living">
-          <TanComponent section={living} colmd={5} />
+          <TanBestOfPenn section={living} colmd={5} />
         </div>
         <div id="beauty">
-          <TanComponent section={beauty} colmd={5} />
+          <TanBestOfPenn section={beauty} colmd={5} />
         </div>
         <div id="quarantine">
-          <BlueComponent section={quarantine} marginBottom="3" />
+          <BlueBestOfPenn section={quarantine} marginBottom="3" />
         </div>
       </BackgroundWrapper>
       <Footer emoji="💖" bgColor="#000000" fontColor="#FFFFFF" year="2021" />

@@ -90,9 +90,3 @@ export const YourPick = s.div`
   color: ${({ color }) => color};
   background-color: ${({ bgColor }) => bgColor};
 `
-
-export const CardWrapper = s.div`
-  padding-top: 1.5rem;
-  text-align: center;
-`
-
