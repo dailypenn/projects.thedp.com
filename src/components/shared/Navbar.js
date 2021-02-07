@@ -43,7 +43,13 @@ const URL = ({ link, children }) => {
 
 // titles: { left: [{ text, link }*], right: [{ text, link }*] }
 
-export const NavBar = ({ titles, font }) => {
+export const NavBar = ({
+  titles,
+  font,
+  bgColor = '#FFFFFF',
+  fontColor = '#283033',
+  img = '/img/DP-Logo-Full.png',
+}) => {
   const { left, right } = titles
 
   return (
@@ -51,7 +57,8 @@ export const NavBar = ({ titles, font }) => {
       className="navbar sticky-top navbar-expand-lg"
       style={{
         fontFamily: 'Libre Franklin',
-        backgroundColor: '#FFFFFF',
+        backgroundColor: bgColor,
+        color: fontColor,
         boxShadow: '0px 5px 6px #00000029',
         opacity: 1,
       }}
@@ -61,7 +68,10 @@ export const NavBar = ({ titles, font }) => {
           {left.map(({ text, link }) => (
             <li className="nav-item">
               <URL link={link}>
-                <NavText font={font}> {text} </NavText>
+                <NavText font={font} color={fontColor}>
+                  {' '}
+                  {text}{' '}
+                </NavText>
               </URL>
             </li>
           ))}
@@ -72,7 +82,7 @@ export const NavBar = ({ titles, font }) => {
         style={{ textAlign: 'center' }}
       >
         <a className="mx-auto" href="https://www.thedp.com/">
-          <Image src="/img/DP-Logo-Full.png" className="img-fluid" />
+          <Image src={img} className="img-fluid" />
         </a>
         <button
           className="navbar-toggler collapsed"
@@ -82,10 +92,17 @@ export const NavBar = ({ titles, font }) => {
           aria-expanded="false"
         >
           <span className="navbar-toggler-icon">
-            <img
-              src="/icons/menu.svg"
-              style={{ transform: 'translate(0, 0.2rem)' }}
-            />
+            {bgColor === '#FFFFFF' ? (
+              <img
+                src="/icons/menu.svg"
+                style={{ transform: 'translate(0, 0.2rem)' }}
+              />
+            ) : (
+              <img
+                src="/icons/menu-white.svg"
+                style={{ transform: 'translate(0, 0.2rem)' }}
+              />
+            )}
           </span>
         </button>
       </div>
@@ -94,7 +111,10 @@ export const NavBar = ({ titles, font }) => {
           {right.map(({ text, link }) => (
             <li className="nav-item">
               <URL link={link}>
-                <NavText font={font}> {text} </NavText>
+                <NavText font={font} color={fontColor}>
+                  {' '}
+                  {text}{' '}
+                </NavText>
               </URL>
             </li>
           ))}

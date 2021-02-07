@@ -10,7 +10,7 @@ export const StyledLink = s.a`
 export const NavText = s.text`
   font-size: 80%;
   font-family: 'Libre Franklin', sans-serif;
-  color: #283033;
+  color: ${({ color = '#283033' }) => color};
 
   transition: 0.3s;
 
