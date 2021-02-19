@@ -131,12 +131,13 @@ const App = () => (
             <ul>
               <li>
                 <h3>House Available</h3>
-                <p>10+ Bedrooms, 5 baths</p>
-                <p> New Kitchen &amp; Floors </p>
+                <p>8 Bedrooms, 3 Bathroom</p>
+                {/* <p> New Kitchen &amp; Floors </p> */}
+                <p> Available June 1st </p>
               </li>
-              <li>
-                <h3>7 Bedroom Available</h3>
-              </li>
+              {/* <li>
+                <h3>5 Bedroom Available</h3>
+              </li> */}
             </ul>
 
             <h3>Interested? Text (215) 880-7077</h3>
