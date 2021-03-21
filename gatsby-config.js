@@ -151,6 +151,21 @@ module.exports = {
         path: `${__dirname}/src/content/json/2021/best-of-penn`,
       },
     },
+    //2021 52-faces
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2021/fifty-two-faces`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2021/fifty-two-faces`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
