@@ -9,16 +9,8 @@ import Quotes from '../../components/2021/fifty-two-faces/Quotes.js'
 import Description from '../../components/2021/fifty-two-faces/Description.js'
 
 const NAVBAR_TITLES = {
-  left: [
-    // { text: 'FOOD', link: 'food' },
-    // { text: 'DRINKS', link: 'drinks' },
-    // { text: 'ACTIVITIES', link: 'activities' },
-  ],
-  right: [
-    // { text: 'LIVING', link: 'living' },
-    // { text: 'BEAUTY', link: 'beauty' },
-    // { text: 'QUARANTINE', link: 'quarantine' },
-  ],
+  left: [],
+  right: [],
 }
 
 const IndexPage = () => {
@@ -55,8 +47,8 @@ const IndexPage = () => {
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Best of Penn" />
-        <title>52 weeks, faces, and stories | The Daily Pennsylvanian</title>
+        <meta name="description" content="Fifty Two Faces" />
+        <title>52 Weeks, Faces, and Stories | The Daily Pennsylvanian</title>
         <link
           rel="stylesheet"
           type="text/css"
@@ -65,7 +57,7 @@ const IndexPage = () => {
 
         <meta
           property="og:title"
-          content="52 weeks, faces, and stories | The Daily Pennsylvanian"
+          content="52 Weeks, Faces, and Stories | The Daily Pennsylvanian"
         />
         <meta
           property="og:image"
@@ -81,7 +73,7 @@ const IndexPage = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="52 weeks, faces, stories | The Daily Pennsylvanian"
+          content="52 Weeks, Faces, Stories | The Daily Pennsylvanian"
         />
         <meta
           name="twitter:image"
