@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Coronaversary (52 Weeks, Faces, Stories) 2021",
+      "author": "Web Dev: Raunaq Singh | Design: Raunaq Singh",
+      "section": "COVID",
+      "date": "March 2021",
+      "description": "To commemorate the 52 weeks since the University was evacuated, The Daily Pennsylvanian spoke to 52 members of the Penn community, who shared how the pandemic has impacted their lives.",
+      "sponsored": false,
+      "link": "/2021/fifty-two-faces",
+      "image": "https://snworksceo.imgix.net/dpn/b3bba7ba-632d-480d-9fbd-3c4caf2e9f21.sized-1000x1000.png?",
+      "alt": "CORONAVERSARY"
+    },
+    {
       "title": "34th Street Election 2020",
       "author": "Web Dev: Daniel Tao, Nassim Motya, Calvin Hu, Peter Chen | Design: Ava Cruz",
       "section": "Street Election",
