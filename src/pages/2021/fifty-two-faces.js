@@ -56,7 +56,7 @@ const IndexPage = () => {
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Best of Penn" />
-        <title>52 Faces | The Daily Pennsylvanian</title>
+        <title>52 weeks, faces, and stories | The Daily Pennsylvanian</title>
         <link
           rel="stylesheet"
           type="text/css"
@@ -65,7 +65,7 @@ const IndexPage = () => {
 
         <meta
           property="og:title"
-          content="Fifty-Two Faces | The Daily Pennsylvanian"
+          content="52 weeks, faces, and stories | The Daily Pennsylvanian"
         />
         <meta
           property="og:image"
@@ -81,7 +81,7 @@ const IndexPage = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Fifty-Two Faces | The Daily Pennsylvanian"
+          content="52 weeks, faces, stories | The Daily Pennsylvanian"
         />
         <meta
           name="twitter:image"
