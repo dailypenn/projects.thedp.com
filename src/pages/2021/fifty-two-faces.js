@@ -120,7 +120,7 @@ const IndexPage = () => {
           <Quotes section={section1} bgColor="#ffffff" textColor="#171717" dashColor="#bf1919"/>
         </div>
         <div>
-          <img src={FiftyTwoFacesCoverImg} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
+          <img src={"https://snworksceo.imgix.net/dpn/16294047-a025-4359-8d48-9356bc14b8c7.sized-1000x1000.jpg?"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes2">
           <Quotes section={section2} bgColor="#ffffff" textColor="#171717" dashColor="#bf1919"/>
