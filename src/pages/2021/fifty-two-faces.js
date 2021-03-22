@@ -69,7 +69,7 @@ const IndexPage = () => {
         />
         <meta
           property="og:image"
-          content="https://snworksceo.imgix.net/dpn/911a0997-d5e4-44f9-a21c-b4641280f6fe.sized-1000x1000.png"
+          content="https://snworksceo.imgix.net/dpn/d06c9f9c-11a9-41cb-9fd6-05e5a83aa1dd.sized-1000x1000.JPG?"
         />
         <meta property="og:description" content="Fifty-Two Faces" />
         <meta property="og:type" content="article" />
@@ -85,7 +85,7 @@ const IndexPage = () => {
         />
         <meta
           name="twitter:image"
-          content="https://snworksceo.imgix.net/dpn/911a0997-d5e4-44f9-a21c-b4641280f6fe.sized-1000x1000.png"
+          content="https://snworksceo.imgix.net/dpn/d06c9f9c-11a9-41cb-9fd6-05e5a83aa1dd.sized-1000x1000.JPG?"
         />
         <meta name="twitter:description" content="Fifty-Two Faces" />
         <meta
