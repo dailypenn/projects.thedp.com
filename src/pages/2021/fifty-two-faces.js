@@ -120,7 +120,7 @@ const IndexPage = () => {
       <div>
         <img src={FiftyTwoFacesCoverImg} style={{ width: '100%', boxShadow: '0px 5px 6px #00000029', }} />
       </div>
-      <BackgroundWrapper color={"#EAD2AC"}>
+      <BackgroundWrapper color={"#b1cbde"}>
         <div id="overview">
           <Description author={description.author} brief={description.brief} description={description.description}/>
         </div>
