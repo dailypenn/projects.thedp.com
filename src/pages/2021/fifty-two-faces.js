@@ -125,13 +125,13 @@ const IndexPage = () => {
           <Description author={description.author} brief={description.brief} description={description.description}/>
         </div>
         <div id="quotes1">
-          <Quotes section={section1} bgColor="#6B0504" textColor="#FBFFFE" dashColor="#E6AF2E"/>
+          <Quotes section={section1} bgColor="#b1cbde" textColor="#FBFFFE" dashColor="#E6AF2E"/>
         </div>
         <div>
           <img src={FiftyTwoFacesCoverImg} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes2">
-          <Quotes section={section2} bgColor="#FFEEDB" textColor="#A53860" dashColor="#4C3B4D"/>
+          <Quotes section={section2} bgColor="#b1cbde" textColor="#A53860" dashColor="#4C3B4D"/>
         </div>
         <div>
           <img src={FiftyTwoFacesCoverImg} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
