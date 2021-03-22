@@ -137,64 +137,64 @@ const IndexPage = () => {
           <img src={FiftyTwoFacesCoverImg} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes3">
-          <Quotes section={section3} bgColor="#25283D" textColor="#EFD9CE" dashColor="#8F3985"/>
+          <Quotes section={section3} bgColor="#b1cbde" textColor="#EFD9CE" dashColor="#8F3985"/>
         </div>
         <div>
           <img src={FiftyTwoFacesCoverImg} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes4">
-          <Quotes section={section4} bgColor="#FFF05A" textColor="#191919" dashColor="#FF785A"/>
+          <Quotes section={section4} bgColor="#b1cbde" textColor="#191919" dashColor="#FF785A"/>
         </div>
         <div>
           <img src={FiftyTwoFacesCoverImg} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes5">
-          <Quotes section={section5} bgColor="#DEC1FF" textColor="#343633" dashColor="#7D70BA"/>
+          <Quotes section={section5} bgColor="#b1cbde" textColor="#343633" dashColor="#7D70BA"/>
         </div>
         <div>
           <img src={FiftyTwoFacesCoverImg} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes6">
-          <Quotes section={section6} bgColor="#233329" textColor="#EEE0CB" dashColor="#839788"/>
+          <Quotes section={section6} bgColor="#b1cbde" textColor="#EEE0CB" dashColor="#839788"/>
         </div>
         <div>
           <img src={FiftyTwoFacesCoverImg} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes7">
-          <Quotes section={section7} bgColor="#DF928E" textColor="#FFF" dashColor="#1D201F"/>
+          <Quotes section={section7} bgColor="#b1cbde" textColor="#FFF" dashColor="#1D201F"/>
         </div>
         <div>
           <img src={FiftyTwoFacesCoverImg} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes8">
-          <Quotes section={section8} bgColor="#90C3C8" textColor="#463730" dashColor="#1F5673"/>
+          <Quotes section={section8} bgColor="#b1cbde" textColor="#463730" dashColor="#1F5673"/>
         </div>
         <div>
           <img src={FiftyTwoFacesCoverImg} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes9">
-          <Quotes section={section9} bgColor="#F6AE2D" textColor="#2D2A32" dashColor="#D62246"/>
+          <Quotes section={section9} bgColor="#b1cbde" textColor="#2D2A32" dashColor="#D62246"/>
         </div>
         <div>
           <img src={FiftyTwoFacesCoverImg} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes10">
-          <Quotes section={section10} bgColor="#36453B" textColor="#F5F9E9" dashColor="#C2C1A5"/>
+          <Quotes section={section10} bgColor="#b1cbde" textColor="#F5F9E9" dashColor="#C2C1A5"/>
         </div>
         <div>
           <img src={FiftyTwoFacesCoverImg} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes11">
-          <Quotes section={section11} bgColor="#F4F9E9" textColor="#153243" dashColor="#B4B8AB"/>
+          <Quotes section={section11} bgColor="#b1cbde" textColor="#153243" dashColor="#B4B8AB"/>
         </div>
         <div>
           <img src={FiftyTwoFacesCoverImg} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes12">
-          <Quotes section={section12} bgColor="#F38D68" textColor="#33312E" dashColor="#EE6C4D"/>
+          <Quotes section={section12} bgColor="#b1cbde" textColor="#33312E" dashColor="#EE6C4D"/>
         </div>
       </BackgroundWrapper>
-      <Footer emoji="💖" bgColor="#241F20" fontColor="#FFF" year="2021" />
+      <Footer emoji="💖" bgColor="#b1cbde" fontColor="#FFF" year="2021" />
     </>
   )
 }
