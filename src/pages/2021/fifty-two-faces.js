@@ -120,67 +120,67 @@ const IndexPage = () => {
           <Quotes section={section1} bgColor="#ffffff" textColor="#171717" dashColor="#bf1919"/>
         </div>
         <div>
-          <img src={"https://dpn.ceo.getsnworks.com/ceo/content/f326fbd1-aead-46b7-9bae-ed294b0bb4bd"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
+          <img src={"https://snworksceo.imgix.net/dpn/8a461aa4-3d3b-443d-821c-09058b91fcdc.sized-1000x1000.png?"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes2">
           <Quotes section={section2} bgColor="#ffffff" textColor="#171717" dashColor="#bf1919"/>
         </div>
         <div>
-          <img src={"https://dpn.ceo.getsnworks.com/ceo/content/0d53f58f-8653-4367-873e-99b636c1c760"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
+          <img src={"https://snworksceo.imgix.net/dpn/84d2fdfa-eccd-4086-a331-2a9ac8dc967e.sized-1000x1000.png?"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes3">
           <Quotes section={section3} bgColor="#ffffff" textColor="#171717" dashColor="#bf1919"/>
         </div>
         <div>
-          <img src={"https://dpn.ceo.getsnworks.com/ceo/content/52f609e9-728c-4f04-be8f-fc4c2aafca45"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
+          <img src={"https://snworksceo.imgix.net/dpn/a61383c3-cfaf-4746-845d-36261338e109.sized-1000x1000.png?"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes4">
           <Quotes section={section4} bgColor="#ffffff" textColor="#171717" dashColor="#bf1919"/>
         </div>
         <div>
-          <img src={"https://dpn.ceo.getsnworks.com/ceo/content/5559c169-f6a9-448c-980d-949a6591d82a"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
+          <img src={"https://snworksceo.imgix.net/dpn/310b7cb6-563e-4fe6-98f6-77d2b05ed657.sized-1000x1000.png?"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes5">
           <Quotes section={section5} bgColor="#ffffff" textColor="#171717" dashColor="#bf1919"/>
         </div>
         <div>
-          <img src={"https://dpn.ceo.getsnworks.com/ceo/content/05cc7f07-9ad6-4254-b2b9-bd466db67e68"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
+          <img src={"https://snworksceo.imgix.net/dpn/6a17ffce-9a6a-4a29-b859-bd666560bb4e.sized-1000x1000.png?"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes6">
           <Quotes section={section6} bgColor="#ffffff" textColor="#171717" dashColor="#bf1919"/>
         </div>
         <div>
-          <img src={"https://dpn.ceo.getsnworks.com/ceo/content/80f8d486-36dc-4262-b4c5-dfc4f75f55a4"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
+          <img src={"https://snworksceo.imgix.net/dpn/e2297b65-6249-444f-8a46-3e91df2991ec.sized-1000x1000.png?"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes7">
           <Quotes section={section7} bgColor="#ffffff" textColor="#171717" dashColor="#bf1919"/>
         </div>
         <div>
-          <img src={"https://dpn.ceo.getsnworks.com/ceo/content/e195aeec-0188-4a8f-a99c-85f760f7082d"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
+          <img src={"https://snworksceo.imgix.net/dpn/c8e57897-3bf3-46d5-8e71-aff6f510a329.sized-1000x1000.png?"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes8">
           <Quotes section={section8} bgColor="#ffffff" textColor="#171717" dashColor="#bf1919"/>
         </div>
         <div>
-          <img src={"https://dpn.ceo.getsnworks.com/ceo/content/f0a3f4ae-0a99-42e2-94f6-4d806a7162e1"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
+          <img src={"https://snworksceo.imgix.net/dpn/4b608cc1-9f4f-457f-b535-8472f8a2d433.sized-1000x1000.png?"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes9">
           <Quotes section={section9} bgColor="#ffffff" textColor="#171717" dashColor="#bf1919"/>
         </div>
         <div>
-          <img src={"https://dpn.ceo.getsnworks.com/ceo/content/c950a79a-caae-49f5-aa00-04a0cc794ebd"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
+          <img src={"https://snworksceo.imgix.net/dpn/b6816d0b-f13b-48b3-ac25-0d3f7ed8db46.sized-1000x1000.png?"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes10">
           <Quotes section={section10} bgColor="#ffffff" textColor="#171717" dashColor="#bf1919"/>
         </div>
         <div>
-          <img src={"https://dpn.ceo.getsnworks.com/ceo/content/c1864d3b-c3a7-45c5-bb6c-00788910220f"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
+          <img src={"https://snworksceo.imgix.net/dpn/0d26923d-017d-435c-954c-0d178d9a7ccd.sized-1000x1000.png?"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes11">
           <Quotes section={section11} bgColor="#ffffff" textColor="#171717" dashColor="#bf1919"/>
         </div>
         <div>
-          <img src={"https://dpn.ceo.getsnworks.com/ceo/content/198ed8f7-91db-4be1-afb2-ebdb59d3d71c"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
+          <img src={"https://snworksceo.imgix.net/dpn/e8077e1f-b259-4081-9104-c4f8824cb474.sized-1000x1000.png?"} style={{ width: '100%', boxShadow: '0px 0px 7px 7px #00000029', }} />
         </div>
         <div id="quotes12">
           <Quotes section={section12} bgColor="#ffffff" textColor="#171717" dashColor="#bf1919"/>
