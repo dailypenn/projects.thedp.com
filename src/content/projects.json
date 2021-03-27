@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Masthead Madness",
+      "author": "Web Dev: Jennifer Yen",
+      "section": "",
+      "date": "",
+      "description": "",
+      "sponsored": false,
+      "link": "/2021/masthead-madness",
+      "image": "",
+      "alt": ""
+    },
+    {
       "title": "34th Street Election 2020",
       "author": "Web Dev: Daniel Tao, Nassim Motya, Calvin Hu, Peter Chen | Design: Ava Cruz",
       "section": "Street Election",
