@@ -7,7 +7,7 @@ const Index = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile(filter: { relativePath: { eq: "cb21_2020.json" } }) {
+        allFile(filter: { relativePath: { eq: "cb21_2021.json" } }) {
           nodes {
             childNecJson {
               President {
