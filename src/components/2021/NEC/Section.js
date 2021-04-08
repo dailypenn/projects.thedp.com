@@ -462,8 +462,8 @@ const Section = ({ data }) => (
       <Branches>
         <ClassButton to="/2021/NEC">Undergraduate Assembly</ClassButton>
         <ClassButton to="/2021/NEC/cb21">Class Board '21</ClassButton>
-        <ClassButton to="/2022/NEC/cb22">Class Board '22</ClassButton>
-        <ClassButton to="/2023/NEC/cb23">Class Board '23</ClassButton>
+        <ClassButton to="/2021/NEC/cb22">Class Board '22</ClassButton>
+        <ClassButton to="/2021/NEC/cb23">Class Board '23</ClassButton>
       </Branches>
 
       {Object.entries(data).map(([key, val]) => (
