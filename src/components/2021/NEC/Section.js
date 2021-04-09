@@ -346,7 +346,7 @@ const Section = ({ data }) => (
       />
       <meta
         property="og:description"
-        content="Read about the candidates for UA and 2021, 2022, and 2023 Class Boards."
+        content="Read about the candidates for UA and 2022, 2023, and 2024 Class Boards."
       />
       <meta property="og:type" content="article" />
       <meta property="og:url" content="https://projects.thedp.com/2021/NEC/" />
@@ -359,7 +359,7 @@ const Section = ({ data }) => (
       />
       <meta
         name="twitter:description"
-        content="Read about the candidates for UA and 2021 2022, and 2023 Class Boards."
+        content="Read about the candidates for UA and 2022, 2023, and 2024 Class Boards."
       />
       <meta name="twitter:url" content="https://projects.thedp.com/2021/NEC/" />
       <meta name="twitter:site" content="@dailypenn" />
@@ -461,9 +461,9 @@ const Section = ({ data }) => (
 
       <Branches>
         <ClassButton to="/2021/NEC">Undergraduate Assembly</ClassButton>
-        <ClassButton to="/2021/NEC/cb21">Class Board '21</ClassButton>
         <ClassButton to="/2021/NEC/cb22">Class Board '22</ClassButton>
         <ClassButton to="/2021/NEC/cb23">Class Board '23</ClassButton>
+        <ClassButton to="/2021/NEC/cb24">Class Board '24</ClassButton>
       </Branches>
 
       {Object.entries(data).map(([key, val]) => (

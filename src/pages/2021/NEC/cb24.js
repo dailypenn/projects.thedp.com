@@ -7,12 +7,13 @@ const Index = () => (
   <StaticQuery
     query={graphql`
       query {
-        allFile(filter: { relativePath: { eq: "cb21_2021.json" } }) {
+        allFile(filter: { relativePath: { eq: "cb24_2021.json" } }) {
           nodes {
             childNecJson {
               President {
                 campaign_website
                 facebook_url
+                image_name
                 image {
                   src {
                     childImageSharp {
@@ -32,6 +33,7 @@ const Index = () => (
               }
               Executive_VP {
                 facebook_url
+                image_name
                 image {
                   src {
                     childImageSharp {
