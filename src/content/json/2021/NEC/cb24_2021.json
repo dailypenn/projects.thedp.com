@@ -85,7 +85,7 @@
         "In-person events: This will help foster unity and class spirit. As we transition next fall, I want to host as many events in-person as possible.",
         "Inclusion: Unity is not possible without including everyone. I want to ensure that no one is left behind and everyone feels welcome in everything we do.",
         "Social justice: With the recent events, it is up to us to fight for equality and equal treatment. As one of the country’s leading institutions, we can lead this effort.",
-        "Transparency: In every interaction, I want all of you to be aware of what is happening and why. I will send monthly updates and host open discussions to do so. "," Communicate: You can\u2019t take advantage of opportunities that you don\u2019t know about. I\u2019ll make sure that conversations outside and inside the university are concisely conveyed to the class of 2023.",
+        "Transparency: In every interaction, I want all of you to be aware of what is happening and why. I will send monthly updates and host open discussions to do so.",
         "Resources: Educational resources and advising advocacy is important, including extending the pass/fail deadline and helping better pre-major advising. Supporting everyone academically is essential, especially at an institution like Penn."
       ],
       "name": "Drake Goodman",
@@ -325,9 +325,9 @@
       "campaign website": "",
       "youtube video url": "",
       "image": {
-        "src": "../../../images/2021/NEC/.jpeg"
+        "src": "../../../images/2021/NEC/Venkatesh-Shenoy.jpeg"
       },
-      "image name": ".jpeg"
+      "image name": "Venkatesh-Shenoy.jpeg"
     },
     {
       "platform points": [
@@ -564,26 +564,6 @@
         "src": "../../../images/2021/NEC/Shan-Shan-Liang.jpeg"
       },
       "image name": "Shan-Shan-Liang.jpeg"
-    }
-  ],
-  "VP Internal": [
-    {
-      "platform points": [
-        "Community Cohesion: We want to promote social interactions and unify student body in safe environments",
-        "Mental Health: We want to prioritize workshops that raise awareness about mental",
-        "Fundraising: We want to combine fun social events with charity fundraisers so that we can support social causes while having fun",
-        "FGLI Outreach: We want to listen to the experiences of our FGLI peers and take their feedback and incorporate it into our inclusive social events"
-      ],
-      "name": "Cody Eskandarian",
-      "introduction": "Hi everyone! My name is Cody Eskandarian and I’m running for Class Board because I want to dedicate myself to giving back to a community that I love. We are all enduring a unique obstacle this year, and we need to provide more support for each other, both inside and outside of social events. I want to share innovative ideas to create inclusive and unifying events that build a stronger sense of community and develop a new culture. Mental health outreach will be a top priority as I want all of my peers to strive for greatness in healthy ways.",
-      "facebook url": "",
-      "instagram handle": "codyesk",
-      "campaign website": "",
-      "youtube video url": "https://www.youtube.com/watch?v=nHqoQciyFuo",
-      "image": {
-        "src": "../../../images/2021/NEC/Cody-Eskandarian.jpeg"
-      },
-      "image name": "Cody-Eskandarian.jpeg"
     },
     {
       "platform points": [
@@ -604,6 +584,26 @@
         "src": "../../../images/2021/NEC/Brinn-Gammer.jpeg"
       },
       "image name": "Brinn-Gammer.jpeg"
+    }
+  ],
+  "VP Internal": [
+    {
+      "platform points": [
+        "Community Cohesion: We want to promote social interactions and unify student body in safe environments",
+        "Mental Health: We want to prioritize workshops that raise awareness about mental",
+        "Fundraising: We want to combine fun social events with charity fundraisers so that we can support social causes while having fun",
+        "FGLI Outreach: We want to listen to the experiences of our FGLI peers and take their feedback and incorporate it into our inclusive social events"
+      ],
+      "name": "Cody Eskandarian",
+      "introduction": "Hi everyone! My name is Cody Eskandarian and I’m running for Class Board because I want to dedicate myself to giving back to a community that I love. We are all enduring a unique obstacle this year, and we need to provide more support for each other, both inside and outside of social events. I want to share innovative ideas to create inclusive and unifying events that build a stronger sense of community and develop a new culture. Mental health outreach will be a top priority as I want all of my peers to strive for greatness in healthy ways.",
+      "facebook url": "",
+      "instagram handle": "codyesk",
+      "campaign website": "",
+      "youtube video url": "https://www.youtube.com/watch?v=nHqoQciyFuo",
+      "image": {
+        "src": "../../../images/2021/NEC/Cody-Eskandarian.jpeg"
+      },
+      "image name": "Cody-Eskandarian.jpeg"
     },
     {
       "platform points": [
