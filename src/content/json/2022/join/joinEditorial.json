@@ -86,32 +86,6 @@
     "id": "copy"
   },
   {
-    "department": "Design",
-    "text": [
-      "The Design Department is looking for designers, artists, and illustrators with all ranges of experience to join us in producing The Daily Pennsylvanian and 34th Street Magazine’s print and online visual content.",
-      "We use the full Adobe Creative Suite—mainly Photoshop, Illustrator, and InDesign—along with various online platforms for data visualization.",
-      "If you are interested in creating aesthetic content, whether it be front-page print centerpieces, online graphics, or layouts for websites, then the Design department is for you!"
-    ],
-    "highlights": [
-      "The Grad Issue",
-      "Coronavirus Project Page",
-      "Opinion | Take down the George Whitefield statue",
-      "Opinion | Doctors are facing a silent mental health crisis — and they need help",
-      "34st Feature | Who Owns Locust?",
-      "34st Word on the Street | A Bumble Date That Actually Went Right"
-    ],
-    "highlight-links": [
-      "https://issuu.com/dailypenn/docs/gradissue",
-      "https://thedp-covid-19.herokuapp.com/",
-      "https://www.thedp.com/article/2020/06/george-whitefield-statue-rizzo-columbus-racism-slavery-penn-georgia",
-      "https://www.thedp.com/article/2020/07/doctors-are-facing-a-silent-mental-health-crisis-and-they-need-help-pre-medicine-med-penn-undergrad-residency",
-      "https://www.34st.com/article/2020/02/sexual-assault-racism-harassment-fraternities-cafsa-greek-life-upenn",
-      "https://www.34st.com/article/2019/02/sydney-gelman-valentines-day-relationship-bumble-study-abroad"
-    ],
-    "background": "linear-gradient(rgba(170, 30, 34, 0.9), rgba(170, 30, 34, 0.9)), url('https://snworksceo.imgix.net/dpn/90337c0f-5064-4457-917f-c728ffcf8e58.sized-1000x1000.jpg')",
-    "id": "design"
-  },
-  {
     "department": "Multimedia",
     "text": [
       "As a member of the Multimedia Department, you will learn how to create engaging visual storytelling content, have the opportunity to cover historic events on campus and throughout the country, and take part in the editing and publishing processes.",

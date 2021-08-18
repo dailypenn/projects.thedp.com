@@ -32,48 +32,6 @@
     "id": "consulting"
   },
   {
-    "department": "Developers",
-    "text": [
-      "Both mobile & web developers at the DP have the opportunity to work on a number of diverse and complex projects. The DP runs multiple full-stack apps, regularly creates standalone pages for special issues or interactive projects, and builds internal tools for both the editorial and business sides.",
-      "As a web developer, you'll get experience working with GitHub, as well as a wide array of programming languages. We use React, GatsbyJS, and NextJS for our project pages, Express, Apollo, and GraphQL for our backend servers, and regularly build tools with JavaScript, Python, and Ruby.",
-      "As a mobile developer, you'll get experience working with React Native and improve upon the DP mobile app.",
-      "Developers who are experienced in HTML, CSS, Javascript are encouraged to join!",
-      "Apply here: https://developers.thedp.com/apply."
-    ],
-    "highlights": [
-      "DP Developers Website",
-      "DP Projects, a full list of all project pages we've developed",
-      "DP mobile GraphQL Server",
-      "DP+: DP Mobile App",
-      "Check out all of our open source work on our GitHub"
-    ],
-    "highlight-links": [
-      "https://developers.thedp.com/",
-      "https://projects.thedp.com/",
-      "https://github.com/dailypenn/jay",
-      "https://github.com/dailypenn/canada-goose",
-      "https://github.com/dailypenn"
-    ],
-    "background": "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/85611786-a619-4496-9c5c-59ece6432fa5.sized-1000x1000.jpg')",
-    "id": "web"
-  },
-  {
-    "department": "Analytics",
-    "text": [
-      "DP Analytics is the data science and business analytics hub of the Daily Pennsylvanian. In Analytics, we seek to leverage modern tools and technologies to enhance the digital and data analytics capabilities of the DP.",
-      "Analytics staffers have the option to work in one of two sub-departments: Core Data Science and Product Analytics. Examples of data science projects include ML-driven recommendation engines and natural language processing analyses of DP articles. Examples of product analytics projects include market segmentation and search engine optimization (SEO).",
-      "Whether it’s deeply technical machine learning work or cross-functional business analytics initiatives (or both!), DP Analytics staffers work on projects with direct impact on the DP, the Penn community, and a global readership audience. Apply today!"
-    ],
-    "highlights": [
-      "ML Driven Content Based Recommendation Engine",
-      "Advertisement Optimization Through Ad Network Redesign",
-      "Geo-based Interactive Dashboard To Facilitate Circulation Path Diagnosis and Analy"
-    ],
-    "highlight-links": [],
-    "background": "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/68726eb4-7df0-4e26-9d83-3ad542d33846.sized-1000x1000.jpg')",
-    "id": "analytics"
-  },
-  {
     "department": "Product Lab",
     "text": [
       "The DP Product Lab Department’s main focus is to create marketing content for local businesses. As the company develops, we explore new fields and build new services. We hold responsibility for developing innovative products and coming up with revenue-generating initiatives. Some projects we are involved in include Best of Penn, Summer at Penn, and the Dining Guide. Positions in product lab range from creative writing, marketing, design, web development, and analytics. If you have interdisciplinary interests, this may be the perfect department for you!"
@@ -101,24 +59,5 @@
     "highlight-links": [],
     "background": "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/06837fc5-f166-414c-8785-9234e35205b0.sized-1000x1000.jpg')",
     "id": "circulation"
-  },
-  {
-    "department": "Institutional Advancement",
-    "text": [
-      "The DP is more than an award winning editorial entity and media business proving ground, it is also a leading educational non-profit organization that for close to 140 years has been providing transformative experiences and financial support for Penn students. The Institutional Advancement  team works closely with professional staff and alumni on organizational storytelling, fundraising campaign design, volunteer engagement, donor stewardship, media content generation and management, and more.",
-      "The IA team will help to tell the story of the DP, past, present and future, in order to generate the needed financial support and volunteer opportunities that will propel the DP forward. Working with our IA team is an exciting opportunity for students who are interested in nonprofit management, social entrepreneurship and organizational leadership. The work of the IA team directly impacts the lives of fellow students on staff. All dollars raised go directly to fellow Penn students at the DP, through: financial aid, salary stipends, internships, fellowships and more."
-    ],
-    "highlights": [
-      "The DP Alumni Association",
-      "Masthead Madness",
-      "DP Advances campaign"
-    ],
-    "highlight-links": [
-      "https://dpalumni.com/",
-      "https://dpalumni.com/2021/03/masthead-madness-2021-tips-off/?utm_source=rss&utm_medium=rss&utm_campaign=masthead-madness-2021-tips-off",
-      "https://indd.adobe.com/view/7420b1fc-8b29-43d0-ab07-da2ef22f94db"
-    ],
-    "background": "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/06837fc5-f166-414c-8785-9234e35205b0.sized-1000x1000.jpg')",
-    "id": "institutional-advancement"
   }
 ]

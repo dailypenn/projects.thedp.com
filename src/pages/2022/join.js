@@ -7,6 +7,8 @@ import JoinEditorialJSON from '../../content/json/2022/join/joinEditorial.json'
 import JoinBusinessJSON from '../../content/json/2022/join/joinBusiness.json'
 import Join34thJSON from '../../content/json/2022/join/join34th.json'
 import JoinUTBJSON from '../../content/json/2022/join/joinUTB.json'
+import JoinIAJSON from '../../content/json/2022/join/joinIA.json'
+import JoinEngineeringJSON from '../../content/json/2022/join/joinEngineering.json'
 
 const Wrapper = s.div`
   font-size: 1em;
@@ -198,28 +200,28 @@ const Wrapper = s.div`
     margin-bottom: 10px;
   }
 
-  .ed-tab, .biz-tab {
+  .ed-tab, .biz-tab, .eng-tab {
     cursor: pointer;
   }
 
-  .ed-text, .biz-text {
+  .ed-text, .biz-text, .eng-text {
     visibility: hidden;
     margin: auto;
     height: 0;
     width: 90%;
   }
 
-  .ed-text p, .biz-text p {
+  .ed-text p, .biz-text p, .eng-text p {
     margin: 0;
     height: 0;
   }
 
-  .ed-text.active, .biz-text.active {
+  .ed-text.active, .biz-text.active, .eng-text.active {
     visibility: visible;
     height: auto;
   }
 
-  .ed-text.active p, .biz-text.active p {
+  .ed-text.active p, .biz-text.active p, .eng-text.active p {
     margin: 1em 0;
     height: auto;
   }
@@ -232,6 +234,11 @@ const Wrapper = s.div`
   .biz-tab.active {
     font-weight: 700;
     border-bottom: 3px solid #000;
+  }
+
+  .eng-tab.active {
+    font-weight: 700;
+    border-bottom: 3px solid #FFF;
   }
 
   .inline-link {
@@ -248,7 +255,7 @@ const Wrapper = s.div`
       width: 33%;
     }
 
-    .ed-text, .biz-text {
+    .ed-text, .biz-text, .eng-text {
       width: 100%;
     }
   }
@@ -336,6 +343,7 @@ const Editorial = s.div`
     color: #AAA;
   }
 `
+
 const Business = s.div`
   section.business {
     background-color: #EEE;
@@ -351,6 +359,38 @@ const Business = s.div`
 
   section.business a:hover {
     color: #777;
+  }
+`
+
+const Engineering = s.div`
+  font-size: 1em;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: #000;
+  background-color: #EEE;
+  section.engineering {
+    background-color: #AA1E22;
+    background: ${({ background }) => background};
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+  }
+
+  section.engineering a {
+    color: #FFF;
+  }
+
+  section.engineering a:hover {
+    color: #777;
+  }
+
+  applylink {
+    color: #F00;
+  }
+
+  applylink:hover {
+    color: #F0F;
   }
 `
 
@@ -384,6 +424,21 @@ const Join = () => {
     JoinBusinessJSON[0]['highlight-links']
   )
   const [businessActive, setBusinessActive] = useState(JoinBusinessJSON[0].id)
+
+
+  const [engineeringImage, setEngineeringImage] = useState(
+    JoinEngineeringJSON[0].background
+  )
+  const [engineeringDescription, setEngineeringDescription] = useState(
+    JoinEngineeringJSON[0].text
+  )
+  const [engineeringHighlights, setEngineeringHighlights] = useState(
+    JoinEngineeringJSON[0].highlights
+  )
+  const [engineeringHighlightLinks, setEngineeringHighlightLinks] = useState(
+    JoinEngineeringJSON[0]['highlight-links']
+  )
+  const [engineeringActive, setEngineeringActive] = useState(JoinEngineeringJSON[0].id)
 
   return (
     <>
@@ -561,6 +616,85 @@ const Join = () => {
             </div>
           </section>
         </Business>
+
+        <Engineering background={engineeringImage}>
+          <section class="engineering">
+            <h2>Engineering</h2>
+            <div class="section">
+              <p class="overall">
+                We are a group of student engineers dedicated to positively 
+                expanding the digital influence of The Daily Pennsylvanian around campus. 
+                Building useful and elegant products is the mission that unites
+                our team. Our members include web and mobile developers, 
+                UI/UX designers, and data analysts.
+              </p>
+
+              <div class="departments">
+                {JoinEngineeringJSON.map((dpt, idx) => (
+                  <span>
+                    <h4
+                      class={
+                        engineeringActive === dpt.id ? 'eng-tab active' : 'eng-tab'
+                      }
+                      id={dpt.id}
+                      onClick={() => {
+                        setEngineeringImage(dpt.background)
+                        setEngineeringDescription(dpt.text)
+                        setEngineeringHighlights(dpt.highlights)
+                        setEngineeringHighlightLinks(dpt['highlight-links'])
+                        setEngineeringActive(dpt.id)
+                      }}
+                    >
+                      {dpt.department}
+                    </h4>
+                  </span>
+                ))}
+              </div>
+              <div className="eng-text active">
+                {engineeringDescription.map(p => (
+                  <p>{p}</p>
+                ))}
+                <a href={"https://developers.thedp.com/apply"} target="_blank" rel="noreferrer"
+                   style={{ fontSize: "18px", marginBottom: "20px", fontWeight: "bold" }}
+                >
+                  {' '}
+                  Apply here! &#8594;
+                </a>
+                <h5>{engineeringHighlights.length === 0 ? '' : 'Highlights'}</h5>
+                {engineeringHighlights.length === engineeringHighlightLinks.length
+                  ? engineeringHighlights.map((l, idx) => (
+                      <a
+                        href={engineeringHighlightLinks[idx]}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {l} &#8594;
+                      </a>
+                    ))
+                  : engineeringHighlights.map((l, idx) => <p>{l}</p>)}
+              </div>
+            </div>
+          </section>
+        </Engineering>
+
+        <section class="institutional-advancement">
+          <h2>{JoinIAJSON.department}</h2>
+          <div class="section">
+            {JoinIAJSON.text.map(p => (
+              <p>{p}</p>
+            ))}
+            <h5>Highlights</h5>
+            {JoinIAJSON.highlights.map((h, idx) => (
+              <a
+                href={JoinIAJSON['highlight-links'][idx]}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {h} &#8594;
+              </a>
+            ))}
+          </div>
+        </section>
 
         <section class="street">
           <h2>{Join34thJSON.department}</h2>
