@@ -7,7 +7,7 @@ import { NavText } from '../../shared'
 const Image = s.img`
   max-height: 90px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     max-height: 30px;
   }
 `
@@ -18,7 +18,6 @@ const LeftUL = s.ul`
     margin-right: 0;
   }
 `
-
 const RightUL = s.ul`
   margin-left: 1rem;
 

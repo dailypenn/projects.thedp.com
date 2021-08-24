@@ -80,6 +80,15 @@ const Wrapper = s.div`
     background-color: #000;
   }
 
+  .header-responsive-logo {
+    opacity: 1;
+    display: block;
+    margin: 0 20px 0 20px;
+    width: 200px;
+    margin-top: -6px;
+    transition: opacity 0.4s;
+  }
+
   iframe {
     width: 100%;
   }
@@ -135,6 +144,23 @@ const Wrapper = s.div`
   }
 
   section.utb a:hover {
+    color: #999;
+  }
+
+  section.institutional-advancement {
+    background-color: #446CB3;
+    background: linear-gradient(rgba(50, 50, 50, 0.8), rgba(50, 50, 50, 0.8)), url('https://snworksceo.imgix.net/dpn/cf166941-4632-4e79-9425-bb6b357c2b95.sized-1000x1000.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+  }
+
+  section.institutional-advancement a {
+    color: #CCC;
+  }
+
+  section.institutional-advancement a:hover {
     color: #999;
   }
 
@@ -263,6 +289,18 @@ const Wrapper = s.div`
   @media screen and (max-width: 800px) {
     .section {
       width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 710px) {
+    .header-responsive-logo {
+      opacity: 0;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .header-responsive-logo {
+      display: none;
     }
   }
 
@@ -488,11 +526,30 @@ const Join = () => {
 
       <Wrapper>
         <header>
-          <a href="https://www.thedp.com" target="_blank" rel="noreferrer">
+          <a class="header-responsive-logo" href="https://www.34st.com" target="_blank" rel="noreferrer">
+            <img
+              src={require("../../content/images/2022/join/street-logo-large-teal.png")}
+              alt="34th Street"
+              // width="100"
+              height="16"
+              class="logo"
+              style={{ float: 'right' }}
+            />
+          </a>
+          <a href="https://www.thedp.com" target="_blank" rel="noreferrer" style={{ margin: '0 12px 0 12px'}}>
             <img
               src="https://snworksceo.imgix.net/dpn/d2453b29-fc87-458c-b226-ece3042946bb.sized-1000x1000.png"
               alt="The Daily Pennsylvanian"
-              width="250"
+              width="225"
+              class="logo"
+            />
+          </a>
+          <a class="header-responsive-logo" href="https://www.underthebutton.com" target="_blank" rel="noreferrer">
+            <img
+              src={require("../../content/images/2022/join/utb-logo-large-blue.png")}
+              alt="Under The Button"
+              // width="150"
+              height="16"
               class="logo"
             />
           </a>
