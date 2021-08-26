@@ -135,7 +135,7 @@ const IndexPage = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta
                     name="description"
-                    content="Your guide for navigating this unprecedented virtual school year"
+                    content="A guide for first years and sophomores navigating their first in-person semester at Penn."
                 />
                 <title>Welcome Back | The Daily Pennsylvanian</title>
                 <link
@@ -146,7 +146,7 @@ const IndexPage = () => {
 
                 <meta
                     property="og:title"
-                    content="Welcome Back | The Daily Pennsylvanian"
+                    content="Welcome Back 2021-22 | The Daily Pennsylvanian"
                 />
                 <meta
                     property="og:image"
@@ -154,7 +154,7 @@ const IndexPage = () => {
                 />
                 <meta
                     property="og:description"
-                    content="Your guide for navigating this unprecedented virtual school year"
+                    content="A guide for first years and sophomores navigating their first in-person semester at Penn."
                 />
                 <meta property="og:type" content="article" />
                 <meta
@@ -173,7 +173,7 @@ const IndexPage = () => {
                 />
                 <meta
                     name="twitter:description"
-                    content="Your guide for navigating this unprecedented virtual school year"
+                    content="A guide for first years and sophomores navigating their first in-person semester at Penn."
                 />
                 <meta
                     name="twitter:url"

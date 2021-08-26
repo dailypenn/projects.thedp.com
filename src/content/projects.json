@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Welcome Back 2021-22",
+      "author": "Web Dev: Raunaq Singh | Design: Isabel Liang",
+      "section": "Welcome Back",
+      "date": "August 2021",
+      "description": "A guide for first years and sophomores navigating their first in-person semester at Penn.",
+      "sponsored": false,
+      "link": "/2022/welcome-back/",
+      "image": "https://snworksceo.imgix.net/dpn/43b65210-d098-4343-9b99-db203343769d.sized-1000x1000.png?",
+      "alt": "welcome back 22"
+    },
+    {
       "title": "NEC Election Spring 2021",
       "author": "Web Dev: Raunaq Singh",
       "section": "NEC Election",
