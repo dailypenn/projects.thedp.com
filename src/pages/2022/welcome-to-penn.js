@@ -139,7 +139,7 @@ const IndexPage = () => {
                     name="description"
                     content="A guide for first years and sophomores navigating their first in-person semester at Penn."
                 />
-                <title>Welcome Back | The Daily Pennsylvanian</title>
+                <title>Welcome to Penn | The Daily Pennsylvanian</title>
                 <link
                     rel="stylesheet"
                     type="text/css"
@@ -148,7 +148,7 @@ const IndexPage = () => {
 
                 <meta
                     property="og:title"
-                    content="Welcome Back 2021-22 | The Daily Pennsylvanian"
+                    content="Welcome to Penn | The Daily Pennsylvanian"
                 />
                 <meta
                     property="og:image"
@@ -161,13 +161,13 @@ const IndexPage = () => {
                 <meta property="og:type" content="article" />
                 <meta
                     property="og:url"
-                    content="https://projects.thedp.com/2022/welcome-back"
+                    content="https://projects.thedp.com/2022/welcome-to-penn"
                 />
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta
                     name="twitter:title"
-                    content="Welcome Back | The Daily Pennsylvanian"
+                    content="Welcome to Penn | The Daily Pennsylvanian"
                 />
                 <meta
                     name="twitter:image"
@@ -179,7 +179,7 @@ const IndexPage = () => {
                 />
                 <meta
                     name="twitter:url"
-                    content="https://projects.thedp.com/2022/welcome-back"
+                    content="https://projects.thedp.com/2022/welcome-to-penn"
                 />
                 <meta name="twitter:site" content="@dailypenn"></meta>
 

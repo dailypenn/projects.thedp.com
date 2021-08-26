@@ -36,7 +36,7 @@ const Opinion = ({ articles }) => (
           <div className="row main" id="opinion">
             {articles.slice(0).map(article => (
               <div
-                className="col-md-6 mb-4"
+                className="col-md-4 mb-4"
                 style={{ borderRight: '1px solid #D8D2D2' }}
               >
                 <StyledAnchor href={article.published_link} target="_blank">
