@@ -180,6 +180,14 @@ module.exports = {
         path: `${__dirname}/src/content/json/2021/fifty-two-faces`,
       },
     },
+    //2022 welcome-back
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2022/welcome-back`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
