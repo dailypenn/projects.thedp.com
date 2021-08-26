@@ -106,6 +106,8 @@ const IndexPage = () => {
               }
               utb {
                 headline
+                byline
+                image_link
                 published_link
               }
               street_articles {

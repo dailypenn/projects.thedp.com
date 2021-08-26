@@ -109,7 +109,7 @@ const UTB = ({ articles }) => (
         <div className="col-md">
           <StyledAnchor href={article.published_link} target="_blank">
             <Fade delay={200}>
-            <img src={article.image_link} style={{ maxWidth: "100%" }} />
+            <img src={article.image_link} style={{ maxWidth: "100%", marginBottom: "1rem" }} />
             <ArticleHeadline> {article.headline} </ArticleHeadline>
             <ByLine>BY {article.byline} </ByLine>
             <UTB_ARROW />
