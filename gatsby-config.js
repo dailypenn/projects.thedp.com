@@ -188,6 +188,21 @@ module.exports = {
         path: `${__dirname}/src/content/json/2022/welcome-back`,
       },
     },
+    //2021 nec-fall
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2021/nec-fall`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2021/nec-fall`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
