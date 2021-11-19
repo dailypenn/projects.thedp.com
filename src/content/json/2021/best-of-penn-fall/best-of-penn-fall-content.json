@@ -97,7 +97,7 @@
         "category": "BEST SOUTHEAST ASIAN",
         "place": "Pattaya",
         "blurb": "Pattaya offers a wide range of Thai dishes, with a hint of French influence. They serve traditional Thai dishes, but also specialty menu options such as a rack of lamb or alligator. Their dessert options include mango sticky rice, crispy banana rolls, and thai coconut pudding. Recently, they moved to a brand new location, so consider checking them out!",
-        "address": "4006 Locust St.",
+        "address": "4040 Locust St.",
         "hours": "Monday – Thursday: 11 a.m. – 3 p.m. and 5 – 9 p.m., Friday: 11 a.m. – 3 p.m. and 5 p.m. – 10 p.m., Saturday: 5 – 10 p.m., Sunday: 5 – 9 p.m.",
         "img": {
           "src": "../../../images/2021/best-of-penn-fall/Pattaya.jpg"
@@ -110,7 +110,7 @@
         "address": "Insomnia: 3417 Spruce St.\n Paris Baguette: 3816 Chestnut St.",
         "hours": "Insomnia: Monday – Thursday: 11 a.m. – 1 a.m., Friday: 11 a.m. – 3 a.m., Saturday: 12 p.m. – 3 a.m., Sunday: 12 p.m. – 1 a.m.\nParis Baguette: Monday – Sunday: 8 a.m. – 9 p.m.",
         "img": {
-          "src": "../../../images/2021/best-of-penn-fall/Tampons.jpg"
+          "src": "../../../images/2021/best-of-penn-fall/ParisBaguette.jpg"
         }
       },
       {
@@ -192,7 +192,7 @@
         "category": "BEST BOBA",
         "place": "TeaDo",
         "blurb": "Looking for a refreshing drink? Stop by TeaDo! Their menu offers an assortment of milk bubble teas and fruity teas, so everyone can discover their new favorite drink. If you are also looking for a quick bite, come try out their onigiris or takoyaki. Grab a drink, a straw, and a comfy seat at TeaDo!",
-        "address": "3816 Chestnut St.",
+        "address": "3816-36 Chestnut St.",
         "hours": "Monday – Sunday: 11 a.m. – 10 p.m.",
         "img": {
           "src": "../../../images/2021/best-of-penn-fall/TeaDo.jpg"
@@ -257,7 +257,7 @@
         "category": "BEST UPPERCLASSMEN DORM",
         "place": "New College House West",
         "blurb": "This semester, New College House West opened its doors to 430 sophomores, juniors, and seniors. Layouts include doubles, quads, and five- to six-person suites. Some of the amenities include communal lounge areas, music rooms, an in-house coffee bar, and kitchens. New College House West also offers open spaces to have a picnic or play some spike ball with friends. Last but not least, don’t forget to check out the Quaker Kitchen for cooking classes led by Chef Daniel Stern and Penn Dining.",
-        "address": "211 South 40th St.",
+        "address": "201 S. 40th St.",
         "img": {
           "src": "../../../images/2021/best-of-penn-fall/NCHW.jpg"
         }
@@ -266,7 +266,7 @@
         "category": "BEST NAIL SALON",
         "place": "Luxe Nail Bar",
         "blurb": "Luxe Nail Bar is the perfect place to get a manicure or pedicure before a night out! They offer a variety of services ranging from gel color nails, SNS dipping powder, and acrylic nails. Notable for their friendly and skilled staff, you will definitely have a great experience here!",
-        "address": "212 South 40th St.",
+        "address": "212 S. 40th St.",
         "img": {
           "src": "../../../images/2021/best-of-penn-fall/LuxeNailBar.jpg"
         }

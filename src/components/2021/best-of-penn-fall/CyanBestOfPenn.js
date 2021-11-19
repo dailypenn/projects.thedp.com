@@ -7,6 +7,7 @@ import {
   RED,
   WHITE_BLUE,
   CYAN,
+  INDIGO,
   YELLOW,
   WordWithLine,
   CardName,
@@ -23,7 +24,7 @@ const CyanCardFormat = s.div`
   padding-right: 2rem;
   padding-top: 1.5rem;
   text-align: center;
-  color: ${CYAN};
+  color: ${INDIGO};
 `
 
 const Card = ({ item: { img, category, place, blurb, address, hours } }) => (
@@ -79,7 +80,7 @@ const StyledRow = s(Row)`
 const CyanBestOfPenn = ({ section: { section, description, items }, colmd }) => (
   <>
     <HeadlineWrapper>
-      <WordWithLine word={section} lineColor={CYAN} spanColor={WHITE_BLUE} />
+      <WordWithLine word={section} lineColor={INDIGO} spanColor={WHITE_BLUE} />
       <ComponentDescription> {description} </ComponentDescription>
     </HeadlineWrapper>
     <StyledRow>
