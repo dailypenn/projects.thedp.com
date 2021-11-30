@@ -29,7 +29,25 @@ const Wrapper = s.div`
     width: 100vw;
     height: 100vh;
     position: relative;
+  }
+
+  .container-left {
+    width: 50vw;
+    height: 100vh;
+    position: relative;
     background-image: url('https://snworksceo.imgix.net/dpn/e47b650c-95a7-421f-8f9d-be141856111e.sized-1000x1000.jpg?');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container-right {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('https://snworksceo.imgix.net/dpn/75a9f4d3-6919-4e10-b45b-c597a46ffc92.sized-1000x1000.jpg?');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,7 +76,7 @@ const Wrapper = s.div`
 
   @media screen and (min-width: 1000px) {
     .container {
-      background-image: url('https://snworksceo.imgix.net/dpn/e47b650c-95a7-421f-8f9d-be141856111e.sized-1000x1000.jpg?');
+      // background-image: url('https://snworksceo.imgix.net/dpn/e47b650c-95a7-421f-8f9d-be141856111e.sized-1000x1000.jpg?');
     }
   }
 
@@ -73,6 +91,18 @@ const Wrapper = s.div`
 
     .container {
       height: 50vh;
+      background-image: url('https://snworksceo.imgix.net/dpn/e47b650c-95a7-421f-8f9d-be141856111e.sized-1000x1000.jpg?');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .container-left {
+      display: none;
+    }
+
+    .container-right {
+      display: none;
     }
 
     .inner-container {
@@ -121,6 +151,8 @@ const App = () => (
 
     <Wrapper>
       <div class="container">
+        <div class="container-left"/>
+        <div class="container-right"/>
         <div class="inner-container">
           <div class="title-box">
             <h1>
@@ -135,7 +167,6 @@ const App = () => (
                 <p> Available June 1st </p>
               </li>
             </ul>
-
             <h3>Interested? Text (215) 880-7077</h3>
           </div>
         </div>
