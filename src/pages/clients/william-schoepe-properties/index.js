@@ -35,7 +35,7 @@ const Wrapper = s.div`
     width: 50vw;
     height: 100vh;
     position: relative;
-    background-image: url('https://snworksceo.imgix.net/dpn/e47b650c-95a7-421f-8f9d-be141856111e.sized-1000x1000.jpg?');
+    background-image: url('https://snworksceo.imgix.net/dpn/75a9f4d3-6919-4e10-b45b-c597a46ffc92.sized-1000x1000.jpg?');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,7 +47,7 @@ const Wrapper = s.div`
     position: absolute;
     top: 0;
     right: 0;
-    background-image: url('https://snworksceo.imgix.net/dpn/75a9f4d3-6919-4e10-b45b-c597a46ffc92.sized-1000x1000.jpg?');
+    background-image: url('https://snworksceo.imgix.net/dpn/e47b650c-95a7-421f-8f9d-be141856111e.sized-1000x1000.jpg?');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
