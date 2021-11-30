@@ -29,7 +29,7 @@ const Wrapper = s.div`
     width: 100vw;
     height: 100vh;
     position: relative;
-    background-image: url('https://snworksceo.imgix.net/dpn/120078a5-e00e-45a1-92f4-56743ad95825.sized-1000x1000.jpg');
+    background-image: url('https://snworksceo.imgix.net/dpn/e47b650c-95a7-421f-8f9d-be141856111e.sized-1000x1000.jpg?');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,7 +58,7 @@ const Wrapper = s.div`
 
   @media screen and (min-width: 1000px) {
     .container {
-      background-image: url('https://s3.amazonaws.com/snwceomedia/dpn/120078a5-e00e-45a1-92f4-56743ad95825.original.jpg');
+      background-image: url('https://snworksceo.imgix.net/dpn/e47b650c-95a7-421f-8f9d-be141856111e.sized-1000x1000.jpg?');
     }
   }
 
@@ -99,7 +99,7 @@ const App = () => (
       <meta property="og:title" content="William Schoepe Properties" />
       <meta
         property="og:image"
-        content="https://snworksceo.imgix.net/dpn/120078a5-e00e-45a1-92f4-56743ad95825.sized-1000x1000.jpg"
+        content="https://snworksceo.imgix.net/dpn/e47b650c-95a7-421f-8f9d-be141856111e.sized-1000x1000.jpg?"
       />
       <meta property="og:type" content="website" />
       <meta
@@ -111,7 +111,7 @@ const App = () => (
       <meta name="twitter:title" content="William Schoepe Properties" />
       <meta
         name="twitter:image"
-        content="https://snworksceo.imgix.net/dpn/120078a5-e00e-45a1-92f4-56743ad95825.sized-1000x1000.jpg"
+        content="https://snworksceo.imgix.net/dpn/e47b650c-95a7-421f-8f9d-be141856111e.sized-1000x1000.jpg?"
       />
       <meta
         name="twitter:url"
@@ -130,14 +130,10 @@ const App = () => (
             </h1>
             <ul>
               <li>
-                <h3>House Available</h3>
-                <p>8 Bedrooms, 3 Bathroom</p>
-                {/* <p> New Kitchen &amp; Floors </p> */}
+                <h3>Apartment Available</h3>
+                <p>2 Bedroom</p>
                 <p> Available June 1st </p>
               </li>
-              {/* <li>
-                <h3>5 Bedroom Available</h3>
-              </li> */}
             </ul>
 
             <h3>Interested? Text (215) 880-7077</h3>
@@ -151,11 +147,9 @@ const App = () => (
           40th &amp; Spruce
         </h1>
 
-        <h3>House Available</h3>
-        <p>10+ Bedrooms, 5 baths</p>
-        <p> New Kitchen &amp; Floors </p>
-        <br />
-        <h3>7 Bedroom Available</h3>
+        <h3>Apartment Available</h3>
+        <p>2 Bedroom</p>
+        <p> Available June 1st </p>
 
         <br />
         <h3>Interested? Text (215) 880-7077</h3>
