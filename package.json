@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "ansi-html": "^0.0.7",
     "gatsby": "^2.30.1",
     "gatsby-background-image": "^1.3.1",
     "gatsby-image": "^2.9.0",
@@ -28,6 +29,7 @@
     "react": "^16.14.0",
     "react-bootstrap": "^1.4.3",
     "react-bootstrap-carousel": "^4.1.1",
+    "react-dev-utils": "^11.0.4",
     "react-dfp": "^0.18.0",
     "react-dom": "^16.14.0",
     "react-facebook": "^8.1.4",
@@ -36,8 +38,10 @@
     "react-multi-carousel": "^2.6.1",
     "react-responsive-carousel": "^3.2.11",
     "react-reveal": "^1.2.2",
+    "semver-regex": "^4.0.2",
     "sharp": "^0.29.3",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "trim": "^1.0.1"
   },
   "devDependencies": {
     "prettier": "2.0.5"
