@@ -19,10 +19,31 @@
     "id": "marketing"
   },
   {
+    "department": "Finance",
+    "text": [
+      "You can study the theory of finance in Wharton, but the DP gives you an ideal business laboratory and the money is real. As a member of our finance team you will:",
+      "\u2022 Analyze and advise on investments",
+      "\u2022 Design effective budget models for departments and the entire company",
+      "\u2022 Analyze financial information (revenues, expenditures & cash management) to ensure all operations are within budget",
+      "\u2022 Present annual budgets to top leadership",
+      "\u2022 Review budget requests for approval",
+      "\u2022 Forecast future budget needs",
+      "\u2022 Identify variances between actual and budgeted financial results at the end of each reporting period",
+      "\u2022 Suggest spending improvements that increase profits",
+      "\u2022 Ensure department managers meet budget submission deadlines",
+      "\u2022 Design and implement effective budgeting policies and procedures"
+    ],
+    "highlights": [
+    ],
+    "highlight-links": [
+    ],
+    "background": "linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0.9)), url('https://cf.ltkcdn.net/antiques/images/orig/226165-2121x1414-Antique-cash-register.jpg')",
+    "id": "finance"
+  },
+  {
     "department": "Consulting",
     "text": [
-      "Consulting analysts source potential clients, develop strategic marketing campaigns, and produce pitch materials for client presentations. By working with our outstanding business teams, DP consultants will learn to use creative problem solving and analytical skills to help our clients successfully reach the Penn community.",
-      "The Consulting Team also runs many initiatives between the other Ivy League newspapers and facilitates collaborative Ivy-wide efforts. The analysts will often find themselves speaking to other analysts from different schools and will often find themselves working in teams with people they may have never met before. The consulting team promotes quick thinking and strong teamwork."
+      "Consulting analysts source potential clients, develop strategic marketing campaigns, and produce pitch materials for client presentations. By working with our outstanding business teams, DP consultants will learn to use creative problem solving and analytical skills to help our clients successfully reach the Penn community. The consulting team promotes quick thinking and strong teamwork."
     ],
     "highlights": [
       "DP Consultants helped clients during the COVID-19 pandemic develop social media strategies to keep up with customers while away from campus."
@@ -34,7 +55,7 @@
   {
     "department": "Product Lab",
     "text": [
-      "The DP Product Lab Department’s main focus is to create marketing content for local businesses. As the company develops, we explore new fields and build new services. We hold responsibility for developing innovative products and coming up with revenue-generating initiatives. Some projects we are involved in include Best of Penn, Summer at Penn, and the Dining Guide. Positions in product lab range from creative writing, marketing, design, web development, and analytics. If you have interdisciplinary interests, this may be the perfect department for you!"
+      "The DP Product Lab explores new revenue ideas including newsletters and special issues. Some projects we are involved in include Best of Penn, Summer at Penn, and the Visitors Guide. Positions in product lab range from creative writing, marketing, design, web development, and analytics. If you have interdisciplinary interests, this may be the perfect department for you!"
     ],
     "highlights": [
       "Verb Energy Bars Sponsored Video",
@@ -53,7 +74,7 @@
     "department": "Circulation",
     "text": [
       "Circulation staffers are the DP's street team, and they are the ones you see handing out papers on Locust Walk and across campus every day.",
-      "If you're friendly, dependable, and loud—and want to earn $10 an hour—this is the department for you. Join an incredible team with a great culture filled with good times and social activities."
+      "If you’re friendly, dependable, and loud—and want to earn $15 an hour—this is the department for you. Join an incredible team with a great culture filled with good times and social activities."
     ],
     "highlights": [],
     "highlight-links": [],

@@ -805,7 +805,7 @@ const Join = () => {
             <p class="overall">Fill out the form below to apply!</p>
             <iframe
               class="join-form"
-              src="https://docs.google.com/forms/d/e/1FAIpQLSdd1RD2dKyEgoD6Gwg9waWTjwfybjtiwOuqa8woZOR_Q-A2zA/viewform"
+              src="https://docs.google.com/forms/d/e/1FAIpQLScyy94EZkLdbUqfa333Ok17pGn_lNPBW3ncUWc7OaDY27l1gg/viewform"
               width="100%"
               height="600"
               frameBorder="0"
