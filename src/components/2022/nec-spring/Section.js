@@ -339,29 +339,29 @@ const Section = ({ data }) => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>NEC Candidate Center | The Daily Pennsylvanian</title>
 
-      <meta property="og:title" content="NEC Candidate Center Fall 2021" />
+      <meta property="og:title" content="NEC Candidate Center Spring 2022" />
       <meta
         property="og:image"
         content="https://snworksceo.imgix.net/dpn/24007398-2064-463e-bb03-129867d0db63.sized-1000x1000.png"
       />
       <meta
         property="og:description"
-        content="Read about the candidates for UA and 2022, 2023, and 2024 Class Boards."
+        content="Read about the candidates for UA and 2023, 2024, and 2025 Class Boards."
       />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://projects.thedp.com/2021/NEC/" />
+      <meta property="og:url" content="https://projects.thedp.com/2022/NEC/" />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="NEC Candidate Center Fall 2021" />
+      <meta name="twitter:title" content="NEC Candidate Center Spring 2022" />
       <meta
         name="twitter:image"
         content="https://snworksceo.imgix.net/dpn/24007398-2064-463e-bb03-129867d0db63.sized-1000x1000.png"
       />
       <meta
         name="twitter:description"
-        content="Read about the candidates for UA and 2022, 2023, and 2024 Class Boards."
+        content="Read about the candidates for UA and 2023, 2024, and 2025 Class Boards."
       />
-      <meta name="twitter:url" content="https://projects.thedp.com/2021/NEC/" />
+      <meta name="twitter:url" content="https://projects.thedp.com/2022/NEC/" />
       <meta name="twitter:site" content="@dailypenn" />
       <script
         src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
