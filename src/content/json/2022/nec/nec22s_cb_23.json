@@ -88,5 +88,25 @@
       "facebook url": "",
       "campaign website": ""
     }
+  ],
+  "Nursing Chair": [
+    {
+      "name": "Marissa Kesse",
+      "introduction": "Marissa is a first-generation Ghanaian student from LI, NY who loves exploring food in Philly! In the short term, she’s interested in trauma/emergency care but hopes to transition into law and attend law school. She is a familiar face around the nursing school who her classmates can often turn to when in need. She is VP of MNO, Program Director for Penn Model Congress, President of Penn Ghana, and a Black Student League board member. She loves teaching and mentoring younger students and is a part of philanthropy in West Philadelphia through the Netter Center. She is running because she finds her unique experience at Penn has informed her of her classmates' diverse perspectives and concerns and she hopes to bring this to the forefront and amplify the voices of the ordinarily extraordinary who may often be overlooked.",
+      "platform points": [
+        "Wellness in nursing students as they navigate intense clinical rotations - Delivering babies… suicide these are all intense themes we may experience as we navigate clinical often without foundational wellness pre-setup",
+        "Increasing visibility of nursing students across campus- How do we shape the timing and types of events so nursing students can actually attend despite clinical/lab?",
+        "Improving networking within the School of Nursing (SON)- Many times we stay within our class year, how can we create more fluidity with the SON to emphasize mentorship and community",
+        "Free printing for nursing students- Care plans, lab assignments, etc. these are all documents we must print for school yet FGLI students have no method of reduced cost printing",
+        "Promoting cross-disciplinary studies- It isn’t until late in our time at Penn do we find ways we can explore minors and classes we like outside of SON",
+        "Ultimately, I want to be your friend that can listen and act on what you think is important. Reach out to me anytime, and I will be there for you! :)"
+      ],
+      "image": {
+        "src": "../../../images/2022/nec/Marissa_Kesse_DPPhoto.jpeg"
+      },
+      "instagram handle": "",
+      "facebook url": "https://www.facebook.com/marissa.kesse/",
+      "campaign website": "mk.always_"
+    }
   ]
 }
