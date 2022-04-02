@@ -100,6 +100,24 @@ const Index = () => (
                 platform_points
                 campaign_website
               }
+              Nursing_Chair {
+                facebook_url
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
+                instagram_handle
+                introduction
+                name
+                platform_points
+                campaign_website
+              }
             }
           }
         }
