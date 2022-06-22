@@ -39,7 +39,7 @@
     "react-multi-carousel": "^2.6.1",
     "react-responsive-carousel": "^3.2.11",
     "react-reveal": "^1.2.2",
-    "semver-regex": "^4.0.2",
+    "semver-regex": "^4.0.3",
     "sharp": "^0.29.3",
     "styled-components": "^5.2.1",
     "trim": "^1.0.1"
