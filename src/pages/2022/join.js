@@ -528,7 +528,7 @@ const Join = () => {
         <header>
           <a class="header-responsive-logo" href="https://www.34st.com" target="_blank" rel="noreferrer">
             <img
-              src={require("../../content/images/2022/join/street-logo-large-teal.png")}
+              src={require("../../content/images/2022/join/street-logo-updated.png")}
               alt="34th Street"
               // width="100"
               height="16"
@@ -805,7 +805,7 @@ const Join = () => {
             <p class="overall">Fill out the form below to apply!</p>
             <iframe
               class="join-form"
-              src="https://docs.google.com/forms/d/e/1FAIpQLScyy94EZkLdbUqfa333Ok17pGn_lNPBW3ncUWc7OaDY27l1gg/viewform"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSfLMoma-nD4VFeDGr1BE-fKV7Twt1xIdv1OPDfzxU81HhFIaA/viewform"
               width="100%"
               height="600"
               frameBorder="0"
