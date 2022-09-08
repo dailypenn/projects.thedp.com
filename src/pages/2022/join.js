@@ -476,6 +476,9 @@ const Join = () => {
   const [engineeringHighlightLinks, setEngineeringHighlightLinks] = useState(
     JoinEngineeringJSON[0]['highlight-links']
   )
+  const [engineeringApplyLink, setEngineeringApplyLink] = useState(
+    JoinEngineeringJSON[0]['apply-link']
+  )
   const [engineeringActive, setEngineeringActive] = useState(JoinEngineeringJSON[0].id)
 
   return (
@@ -699,6 +702,7 @@ const Join = () => {
                         setEngineeringDescription(dpt.text)
                         setEngineeringHighlights(dpt.highlights)
                         setEngineeringHighlightLinks(dpt['highlight-links'])
+                        setEngineeringApplyLink(dpt['apply-link'])
                         setEngineeringActive(dpt.id)
                       }}
                     >
@@ -711,7 +715,7 @@ const Join = () => {
                 {engineeringDescription.map(p => (
                   <p>{p}</p>
                 ))}
-                <a href={"https://developers.thedp.com/apply"} target="_blank" rel="noreferrer"
+                <a href={engineeringApplyLink} target="_blank" rel="noreferrer"
                    style={{ fontSize: "18px", marginBottom: "20px", fontWeight: "bold" }}
                 >
                   {' '}
