@@ -25,6 +25,21 @@ const Index = () => (
                 name
                 platform_points
               }
+              New_Student_Transfer_Representative {
+                image {
+                  src {
+                    childImageSharp {
+                      fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                        src
+                      }
+                    }
+                  }
+                }
+                introduction
+                name
+                platform_points
+              }
             }
           }
         }
