@@ -151,8 +151,8 @@ const App = () => (
 
     <Wrapper>
       <div class="container">
-        <div class="container-left"/>
-        <div class="container-right"/>
+        <div class="container-left" />
+        <div class="container-right" />
         <div class="inner-container">
           <div class="title-box">
             <h1>

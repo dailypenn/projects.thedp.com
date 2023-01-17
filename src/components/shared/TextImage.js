@@ -47,8 +47,8 @@ const DarkBackgroundImage = s(BackgroundImage)`
   padding-top: 100%;
   postion: relative;
   opacity: 1 !important;
-  background: ${({ Dark }) => Dark ? `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))`
-    : 'none'};
+  background: ${({ Dark }) =>
+    Dark ? `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))` : 'none'};
   background-size: cover;
 `
 
@@ -86,7 +86,7 @@ export const TextImage = ({ article, padding }) => (
   </Col>
 )
 
-export const BottomTextImage = ({ article, color, md=12 }) => (
+export const BottomTextImage = ({ article, color, md = 12 }) => (
   <Col md={md} style={{ padding: 0 }}>
     <StyledLink href={article.link} target="_blank">
       <DarkBackgroundImage
@@ -120,7 +120,7 @@ export const BigTextImage = ({ article }) => (
         <DarkBackgroundImage
           fluid={article.image.src.childImageSharp.fluid}
           style={{ border: 'none' }}
-          Dark = {true}
+          Dark={true}
         >
           <FeatureText>
             <BigTitle>{article.title} </BigTitle>

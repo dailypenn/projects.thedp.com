@@ -133,59 +133,57 @@ const STREET_ARROW = () => (
 )
 
 const Street = ({ articles }) => (
-<Fade>
-  <Wrapper id="34st">
-    <img
-      className="logo"
-      src="/img/street-logo-with-text.png"
-      height="110px"
-      style={{ transform: 'translate(0, -3.5rem)' }}
-    />
-    <Title>
-      34th Street is the arts and culture maganize of the Daily
-      Pennsylvanian
-    </Title>
-    <Subtitle>&#8211;basically the DP's cooler, sexier twin.</Subtitle>
+  <Fade>
+    <Wrapper id="34st">
+      <img
+        className="logo"
+        src="/img/street-logo-with-text.png"
+        height="110px"
+        style={{ transform: 'translate(0, -3.5rem)' }}
+      />
+      <Title>
+        34th Street is the arts and culture maganize of the Daily Pennsylvanian
+      </Title>
+      <Subtitle>&#8211;basically the DP's cooler, sexier twin.</Subtitle>
 
-    <div className="row" style={{ margin: '2rem 0', padding: '0 2rem' }}>
+      <div className="row" style={{ margin: '2rem 0', padding: '0 2rem' }}>
         {articles.slice(0).map(article => (
           <div
             className="col-md-6 mb-4"
             style={{ borderRight: '1px solid #D8D2D2' }}
           >
-          <StyledAnchor
-            href={article.published_link}
-            target="_blank"
-          >
-            <Fade delay={200}>
-            <img src={article.image_link} style={{ maxWidth: "100%" }} />
-            <div>
-              <ArticleHeadline style={{ marginTop: '4rem' }}>
-                {article.headline}
-              </ArticleHeadline>
-              <ByLine style={{ marginTop: '2rem' }}>
-                BY {article.byline.toUpperCase()}
-              </ByLine>
-              <STREET_ARROW />
-            </div>
-            </Fade>
-          </StyledAnchor>
+            <StyledAnchor href={article.published_link} target="_blank">
+              <Fade delay={200}>
+                <img src={article.image_link} style={{ maxWidth: '100%' }} />
+                <div>
+                  <ArticleHeadline style={{ marginTop: '4rem' }}>
+                    {article.headline}
+                  </ArticleHeadline>
+                  <ByLine style={{ marginTop: '2rem' }}>
+                    BY {article.byline.toUpperCase()}
+                  </ByLine>
+                  <STREET_ARROW />
+                </div>
+              </Fade>
+            </StyledAnchor>
           </div>
         ))}
-    </div>
+      </div>
 
-    <StyledAnchor href="https://www.34st.com/" target="_blank">
-     <Fade><MoreLink> &#8212; More content this way &#8594;</MoreLink></Fade>
-    </StyledAnchor>
+      <StyledAnchor href="https://www.34st.com/" target="_blank">
+        <Fade>
+          <MoreLink> &#8212; More content this way &#8594;</MoreLink>
+        </Fade>
+      </StyledAnchor>
 
-    <Fade>
-      <BracketsText
-        bracketColor={STREET_BLUE}
-        link="http://bit.ly/join34st"
-        text="Entirely student–run, we update our website daily with student life pieces, humor, current events coverage, food reviews, movie recs, and in–depth features. Street is for witty and media–savvy creators who are in-the-know, on–and off–campus."
-      />
-    </Fade>
-  </Wrapper>
+      <Fade>
+        <BracketsText
+          bracketColor={STREET_BLUE}
+          link="http://bit.ly/join34st"
+          text="Entirely student–run, we update our website daily with student life pieces, humor, current events coverage, food reviews, movie recs, and in–depth features. Street is for witty and media–savvy creators who are in-the-know, on–and off–campus."
+        />
+      </Fade>
+    </Wrapper>
   </Fade>
 )
 

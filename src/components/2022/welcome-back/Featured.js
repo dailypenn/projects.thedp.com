@@ -43,27 +43,21 @@ const Featured = ({ content }) => (
   <Wrapper>
     <div className="row" id="featured">
       <Fade delay={200}>
-      <div className="col-md-5 mb-3">
-        <StyledAnchor
-          href={content.published_link}
-          target="_blank"
-        >
-          <Tag> FEATURED </Tag>
-          <Title>
-            {content.title}
-          </Title>
-          <Description>
-            {content.description}
-          </Description>
-          <ByLine>
-            {'BY '}{content.byline.toUpperCase()}
-          </ByLine>
-        </StyledAnchor>
-      </div>
-      <div className="col-md">
-        <img src={content.image_link} style={{ maxWidth: "100%" }}/>
-      </div>
-    </Fade>
+        <div className="col-md-5 mb-3">
+          <StyledAnchor href={content.published_link} target="_blank">
+            <Tag> FEATURED </Tag>
+            <Title>{content.title}</Title>
+            <Description>{content.description}</Description>
+            <ByLine>
+              {'BY '}
+              {content.byline.toUpperCase()}
+            </ByLine>
+          </StyledAnchor>
+        </div>
+        <div className="col-md">
+          <img src={content.image_link} style={{ maxWidth: '100%' }} />
+        </div>
+      </Fade>
     </div>
   </Wrapper>
 )

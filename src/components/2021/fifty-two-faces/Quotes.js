@@ -4,9 +4,7 @@ import { Col, Row } from 'react-bootstrap'
 
 import { DM_SERIF_DISPLAY_BOLD } from '../../../utils/font'
 
-import {
-  BackgroundWrapper,
-} from './shared'
+import { BackgroundWrapper } from './shared'
 
 const QuoteWrapper = s.div`
   padding-left: 10%;
@@ -45,33 +43,34 @@ const QuoteDivider = s.div`
   background-color: ${({ bgColor }) => bgColor};
 `
 
-const Quote = ({item: { text, person }, color, dashColor}) => (
+const Quote = ({ item: { text, person }, color, dashColor }) => (
   <>
     <QuoteWrapper>
       <QuoteMark color={color}>
-        <strong>“</strong> 
+        <strong>“</strong>
       </QuoteMark>
-      <QuoteText color={color}>
-        {text}
-      </QuoteText>
-      <QuoteDivider bgColor={dashColor}/>
-      <QuotePerson color={color}>
-        {person}
-      </QuotePerson>
+      <QuoteText color={color}>{text}</QuoteText>
+      <QuoteDivider bgColor={dashColor} />
+      <QuotePerson color={color}>{person}</QuotePerson>
     </QuoteWrapper>
   </>
 )
 
-const Quotes = ({ section: { section, items } , bgColor, textColor, dashColor}) => (
+const Quotes = ({
+  section: { section, items },
+  bgColor,
+  textColor,
+  dashColor,
+}) => (
   <>
-  <BackgroundWrapper color={bgColor}>
-    {items &&
+    <BackgroundWrapper color={bgColor}>
+      {items &&
         items.map(item => (
           <Col sm={12} md={12}>
-            <Quote item={item} color={textColor} dashColor={dashColor}/>
+            <Quote item={item} color={textColor} dashColor={dashColor} />
           </Col>
         ))}
-  </BackgroundWrapper>
+    </BackgroundWrapper>
   </>
 )
 

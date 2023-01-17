@@ -75,11 +75,7 @@ const AlwaysThere = () => {
     <>
       <div id="always-there" />
 
-      <Header
-        title="ALWAYS THERE"
-        color={PINK}
-        lineHeight="0.7"
-      />
+      <Header title="ALWAYS THERE" color={PINK} lineHeight="0.7" />
 
       <Row>
         <Col sm={12} md={7}>
@@ -101,19 +97,19 @@ const AlwaysThere = () => {
           <ParaDiv>
             <StyledHeader4>THROUGH THE DECADES</StyledHeader4>
             <p style={{ fontSize: '0.9em' }}>
-              UPenn students have always been at the forefront of social
-              justice issues and its solutions, and wherever it happens, the
-              DP is there to spotlight extraordinary causes and individuals to
-              spread awareness and to bring to our attention important events
-              that demand to be noticed.
+              UPenn students have always been at the forefront of social justice
+              issues and its solutions, and wherever it happens, the DP is there
+              to spotlight extraordinary causes and individuals to spread
+              awareness and to bring to our attention important events that
+              demand to be noticed.
             </p>
             <p style={{ fontSize: '0.9em' }}>
-              From uncovering unjust surveillance, participating in sit-ins,
-              and protesting police brutality, student activism has evolved
-              tremendously over the years and continues to be one of the
-              Quakers community’s most distinctive characteristics. The DP
-              evolves just as our community does, inspired to keep up with its
-              achievements and dedicated to sharing them to the wider world.
+              From uncovering unjust surveillance, participating in sit-ins, and
+              protesting police brutality, student activism has evolved
+              tremendously over the years and continues to be one of the Quakers
+              community’s most distinctive characteristics. The DP evolves just
+              as our community does, inspired to keep up with its achievements
+              and dedicated to sharing them to the wider world.
             </p>
             <CenteredButton
               text="Explore Our Archives"

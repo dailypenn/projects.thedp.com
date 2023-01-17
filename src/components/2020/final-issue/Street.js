@@ -3,16 +3,11 @@ import s from 'styled-components'
 
 import { useStaticQuery, graphql } from 'gatsby'
 
-import {
-  Wrapper,
-  SectionHeader,
-  MustRead,
-  BigArticle,
-} from './shared'
+import { Wrapper, SectionHeader, MustRead, BigArticle } from './shared'
 
 const Extra = ({ articles }) => (
   <div>
-    <div className="col" style={{padding: '2rem 0'}}>
+    <div className="col" style={{ padding: '2rem 0' }}>
       <BigArticle article={articles[0]} />
       <BigArticle article={articles[1]} />
     </div>
@@ -28,7 +23,7 @@ const ArticlesWrapper = s.div`
 const Street = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: {relativePath: {eq: "final-34st.json"}}) {
+      allFile(filter: { relativePath: { eq: "final-34st.json" } }) {
         edges {
           node {
             childrenFinal34StJson {

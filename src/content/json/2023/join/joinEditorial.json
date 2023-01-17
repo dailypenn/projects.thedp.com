@@ -2,23 +2,25 @@
   {
     "department": "News",
     "text": [
-      "By joining News, you will learn not only how to report and investigate stories relevant to Penn’s campus and students, but also the intricacies of student life and University operations. Reporters uncover news important to the Penn community by illuminating student stories and holding institutions accountable. Whether it’s breaking news or investigative journalism, your storytelling has the ability to enact real change on campus.",
-      "The Real-Time Desk is also housed in the News department and is for those who want to report on breaking news and write aggregated news posts with a lesser time commitment.",
-      "Follow in the footsteps of DP News alumni who work for publications like The New York Times, Politico, Vox, and The Washington Post, to name a few. No journalistic experience required — only curiosity and dedication."
+      "By joining News, you will learn not only how to report and investigate stories relevant to Penn’s campus and students, but also the intricacies of student life and University operations and key skills transferable to many careers. Reporters uncover news important to the Penn community by illuminating student stories and holding institutions accountable. Whether it’s breaking news, data-driven stories, or investigative journalism, your storytelling can enact real change on campus.",
+      "Start your DP career as a General Assignments reporter where you learn the basics of college journalism by working on a three week rotation. Move up to become a beat reporter where you will be able to specialize in one area of coverage.",
+      "Follow in the footsteps of DP News alumni who work for top publications and companies like the New York Times, The Washington Post, Forbes, Vox, MTV, Politico and The Wall Street Journal — in addition to various former DPers practicing law and working in business.",
+      "No journalistic experience required — only curiosity and dedication.",
+      "The News Department also fosters a supportive and welcoming community where reporters learn from each other and grow lifelong friendships."
     ],
     "highlights": [
-      "Penn Med staff among first frontline healthcare workers in U.S. to receive COVID-19 vaccine",
-      "Penn Police superintendent utters expletives, accidentally interrupting U. Council meeting",
-      "Penn Med's frontline health care workers praised for courage, yet denied COVID-19 tests",
-      "Students demand Penn fire anthropology professor who used Nazi phrase and salute",
-      "Live Updates — More than 1,000 ballots cast at Houston Hall, ARCH, Walnut Street Library"
+      "Obama and Biden host Philadelphia rally for Pa. Democrats, stressing importance of midterms",
+      "Former classmates, girlfriend of Elon Musk reflect on his time at Penn",
+      "Protestors crash Convocation, cutting Liz Magill’s first major speech short",
+      "Fossil Free Penn ends encampment after 39 days following Homecoming football game protest",
+      "The full interview: Liz Magill talks to the DP one year after her presidential nomination"
     ],
     "highlight-links": [
-      "https://www.thedp.com/article/2021/01/covid-19-vaccine-rollout-penn-health-system-staff-researchers-pennsylvania",
-      "https://www.thedp.com/article/2020/12/penn-university-council-open-forum-maureen-rush-expletive-comment",
-      "https://www.thedp.com/article/2020/12/routine-testing-penn-healthcare-workers",
-      "https://www.thedp.com/article/2021/01/penn-professor-hitler-nazi-salute-anthropology-reactions-fire",
-      "https://www.thedp.com/article/2020/11/penn-philadelphia-election-day-live-updates"
+      "https://www.thedp.com/article/2022/11/obama-biden-pennsylvania-midterms-rally-shapiro-fetterman-rally",
+      "https://www.thedp.com/article/2022/11/elon-musk-penn-grad-wharton-twitter-auction",
+      "https://www.thedp.com/article/2022/08/penn-convocation-uc-townhomes-liz-magill-class-of-2026",
+      "https://www.thedp.com/article/2022/10/encampment-removed-fossil-free-penn-protest-arrests",
+      "https://www.thedp.com/article/2023/01/penn-president-liz-magill-second-semester-full-interview"
     ],
     "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/917417c6-2a39-487a-bd75-8913f3427445.sized-1000x1000.jpg')",
     "id": "news"
@@ -31,18 +33,18 @@
       "So if you like watching, playing, reading, writing, talking, photographing, or learning about sports, DP Sports is totally the place for you. No experience necessary; absolutely anyone is welcome to join!"
     ],
     "highlights": [
-      "Brodeur's record-breaking night sees Penn men's basketball through to Ivy Madness",
-      "Why didn't Donald Trump play sports at Penn?",
-      "Born into a celebrity family, Penn quarterback Ryan Glover forges his own path",
-      "An empty cathedral: Why aren't more students attending basketball games at the Palestra?",
-      "Freshman year they cried over cheese fries. Now seniors, Grasela and Sterba are captains"
+      "Men's soccer captures Ivy title with 3-0 rout at Princeton",
+      "‘Leave a legacy of winning’: Inside Jordan Dingle's quest for redemption",
+      "Wearing Filipino heritage in the Red and Blue: Kayla Padilla fortifies her culture in the game",
+      "‘The best quarterback Penn’s ever had’: Aidan Sayin aims high for Quaker career and beyond",
+      "Lia Thomas takes eighth place in her final swim of the NCAA Championships"
     ],
     "highlight-links": [
-      "https://www.thedp.com/article/2020/03/penn-mens-basketball-columbia-aj-brodeur-leading-scorer-ivy-league",
-      "https://www.thedp.com/article/2020/07/donald-trump-penn-baseball-football-squash-fordham-sats-bob-seddon",
-      "https://www.thedp.com/article/2020/06/ryan-glover-tameka-foster-penn-football-quarterback-mother-son-usher-ivy-league",
-      "https://www.thedp.com/article/2020/02/palestra-penn-mens-basketball-attendance-student-culture-ivy-league",
-      "https://www.thedp.com/article/2019/11/penn-womens-basketball-senior-leaders-grasela-sterba"
+      "https://www.thedp.com/article/2022/11/penn-mens-soccer-princeton-ivy-title",
+      "https://www.thedp.com/article/2022/11/jordan-dingle-penn-guard-basketball-profile",
+      "https://www.thedp.com/article/2022/11/penn-womens-basketball-kayla-padilla-profile-filipino-american-heritage-month",
+      "https://www.thedp.com/article/2022/09/aidan-sayin-penn-quarterback-football-nfl-profile",
+      "https://www.thedp.com/article/2022/03/lia-thomas-ncaa-championships-100-freestyle"
     ],
     "background": "linear-gradient(rgba(170, 30, 34, 0.9), rgba(170, 30, 34, 0.9)), url('https://snworksceo.imgix.net/dpn/cec0e468-8fd7-4820-906d-9981ae887347.sized-1000x1000.jpg')",
     "id": "sports"
@@ -56,18 +58,20 @@
       "Make conversation, stimulate change, and hold organizations and people accountable. Join us."
     ],
     "highlights": [
-      "Surayya Walters | Stop ignoring tokenism at Penn",
-      "Alfredo Praticò | David Cohen is Wrong",
-      "Varun Saraswathula | Doctors are facing a silent mental health crisis — and they need help",
-      "Kaliyah Dorsey | At Penn, fake smiles hurt more than they help",
-      "Jessica Gooding | Paying PILOTs will save lives"
+      "Liala Sofi & Allison Santa-Cruz | We believe you, Mackenzie, and Penn’s administration should, too",
+      "Sam Zou | When institutions cheat, they get a pass",
+      "Lexi Boccuzzi | Is meeting Mr. Right at Penn all wrong?",
+      "Yomi Abdi | White Boys' Town",
+      "Vinay Khosla | Penn’s privilege dilemma",
+      "Riane Lumer | We must hold celebrities accountable for antisemitism"
     ],
     "highlight-links": [
-      "https://www.thedp.com/article/2019/11/tokenism-racism-clubs-ivy-league-upenn-philadelphia",
-      "https://www.thedp.com/article/2020/07/paying-pilots-will-save-lives-philadelphia-penn-campus",
-      "https://www.thedp.com/article/2020/07/doctors-are-facing-a-silent-mental-health-crisis-and-they-need-help-pre-medicine-med-penn-undergrad-residency",
-      "https://www.thedp.com/article/2019/04/mental-health-ivy-league-ariana-grande-jordan-peele-kaliyah-dorsey-upenn-philadelphia",
-      "https://www.thedp.com/article/2020/07/paying-pilots-will-save-lives-philadelphia-penn-campus"
+      "https://www.thedp.com/article/2022/04/we-believe-mackenzie-fierceton-upenn",
+      "https://www.thedp.com/article/2022/07/college-rankings-columbia-inaccuracies-irresponsibility",
+      "https://www.thedp.com/article/2022/02/how-hook-up-culture-jeopardizes-romance",
+      "https://www.thedp.com/article/2022/04/daily-penn-exclusion-history",
+      "https://www.thedp.com/article/2022/04/penn-customer-service-privilege",
+      "https://www.thedp.com/article/2022/12/hold-celebrities-accountable-for-antisemitism"
     ],
     "background": "linear-gradient(rgba(170, 30, 34, 0.9), rgba(170, 30, 34, 0.9)), url('https://snworksceo.imgix.net/dpn/63f97845-7cb5-49eb-8322-bca5667583bc.sized-1000x1000.jpg')",
     "id": "opinion"
@@ -122,21 +126,9 @@
       "We use the full Adobe Creative Suite—mainly Photoshop, Illustrator, and InDesign—along with various online platforms for data visualization.",
       "If you are interested in creating aesthetic content, whether it be front-page print centerpieces, online graphics, or layouts for websites, then the Design department is for you!"
     ],
-    "highlights": [
-      "The Grad Issue",
-      "Coronavirus Project Page",
-      "Opinion | Take down the George Whitefield statue",
-      "Opinion | Doctors are facing a silent mental health crisis — and they need help",
-      "34st Feature | Who Owns Locust?",
-      "34st Word on the Street | A Bumble Date That Actually Went Right"
-    ],
+    "highlights": ["DP Design Showcase: 2022"],
     "highlight-links": [
-      "https://issuu.com/dailypenn/docs/gradissue",
-      "https://thedp-covid-19.herokuapp.com/",
-      "https://www.thedp.com/article/2020/06/george-whitefield-statue-rizzo-columbus-racism-slavery-penn-georgia",
-      "https://www.thedp.com/article/2020/07/doctors-are-facing-a-silent-mental-health-crisis-and-they-need-help-pre-medicine-med-penn-undergrad-residency",
-      "https://www.34st.com/article/2020/02/sexual-assault-racism-harassment-fraternities-cafsa-greek-life-upenn",
-      "https://www.34st.com/article/2019/02/sydney-gelman-valentines-day-relationship-bumble-study-abroad"
+      "https://www.thedp.com/article/2022/12/dp-design-showcase-2022-penn"
     ],
     "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/90337c0f-5064-4457-917f-c728ffcf8e58.sized-1000x1000.jpg')",
     "id": "design"
@@ -145,7 +137,7 @@
     "department": "Social Media",
     "text": [
       "Joining Social Media will put you on the frontline of the DP’s interaction with tens of thousands of readers and develop skills increasingly relevant in the world’s growing digital landscape.",
-      "As a rapidly growing department, we are looking for people excited to curate, manage, and develop the DP’s social media presence and interaction through Facebook, Twitter and (especially!) Instagram. We are also seeking writers interested in writing and editing our daily newsletter. This year, we have created a new division under Social Media in partnership with Analytics for those interested in the more technical side of analyzing social media data.",
+      "As a rapidly growing department, we are looking for people excited to curate, manage, and develop the DP’s social media presence and interaction through Facebook, Twitter and (especially!) Instagram. This year, we have created many opportunities under social media to work with Analytics in analyzing social media department, to work with Marketing to create digital marketing campaigns, and to work with the News, Sports, and Opinion departments to translate their stories into engaging digital content.",
       "Social Media is the right department for anyone looking to work with other departments across the DP on exciting projects such as promotion strategies for special issues and events online.",
       "No prior experience required for the social media and newsletter division — only a fire emoji game and willingness to be part of our close knit family. Familiarity or willingness to learn Google Analytics and Excel is required for the analytics division, and it’s a bonus if familiar with Python or R."
     ],
@@ -177,10 +169,10 @@
       "Disoriented at Penn, 1600 Penn"
     ],
     "highlight-links": [
-      "https://www.thedp.com/multimedia/63464",
-      "https://www.thedp.com/multimedia/62044",
-      "https://www.thedp.com/multimedia/61202",
-      "https://www.thedp.com/multimedia/60649"
+      "https://www.thedp.com/multimedia/legacy_final",
+      "https://www.thedp.com/multimedia/bot_s2e6",
+      "https://www.thedp.com/multimedia/bot_1022",
+      "https://www.thedp.com/multimedia/5130593e-a08d-479b-a141-f11021ab55d4"
     ],
     "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/51d7e036-6b77-402a-9d6d-b1f7b8c3ab8c.sized-1000x1000.jpg')",
     "id": "podcasts"

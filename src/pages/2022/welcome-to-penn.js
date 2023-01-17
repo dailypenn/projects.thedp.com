@@ -70,7 +70,7 @@ const NewsLetter = s.img`
 `
 
 const IndexPage = () => {
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
       allFile(filter: { relativePath: { eq: "welcome-back-2022.json" } }) {
         edges {
@@ -123,146 +123,146 @@ const IndexPage = () => {
     }
   `)
 
-    const {
-        node: { childWelcomeBackJson: sections },
-    } = data.allFile.edges[0]
+  const {
+    node: { childWelcomeBackJson: sections },
+  } = data.allFile.edges[0]
 
-    const { featured, news, opinion, sports, utb, street_articles } = sections
+  const { featured, news, opinion, sports, utb, street_articles } = sections
 
-    return (
-        <>
-            <Helmet>
-                <meta charset="utf-8" />
-                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta
-                    name="description"
-                    content="A guide for first years and sophomores navigating their first in-person semester at Penn."
-                />
-                <title>Welcome to Penn | The Daily Pennsylvanian</title>
-                <link
-                    rel="stylesheet"
-                    type="text/css"
-                    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-                />
+  return (
+    <>
+      <Helmet>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="A guide for first years and sophomores navigating their first in-person semester at Penn."
+        />
+        <title>Welcome to Penn | The Daily Pennsylvanian</title>
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        />
 
-                <meta
-                    property="og:title"
-                    content="Welcome to Penn | The Daily Pennsylvanian"
-                />
-                <meta
-                    property="og:image"
-                    content="https://snworksceo.imgix.net/dpn/43b65210-d098-4343-9b99-db203343769d.sized-1000x1000.png?"
-                />
-                <meta
-                    property="og:description"
-                    content="A guide for first years and sophomores navigating their first in-person semester at Penn."
-                />
-                <meta property="og:type" content="article" />
-                <meta
-                    property="og:url"
-                    content="https://projects.thedp.com/2022/welcome-to-penn"
-                />
+        <meta
+          property="og:title"
+          content="Welcome to Penn | The Daily Pennsylvanian"
+        />
+        <meta
+          property="og:image"
+          content="https://snworksceo.imgix.net/dpn/43b65210-d098-4343-9b99-db203343769d.sized-1000x1000.png?"
+        />
+        <meta
+          property="og:description"
+          content="A guide for first years and sophomores navigating their first in-person semester at Penn."
+        />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:url"
+          content="https://projects.thedp.com/2022/welcome-to-penn"
+        />
 
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta
-                    name="twitter:title"
-                    content="Welcome to Penn | The Daily Pennsylvanian"
-                />
-                <meta
-                    name="twitter:image"
-                    content="https://snworksceo.imgix.net/dpn/43b65210-d098-4343-9b99-db203343769d.sized-1000x1000.png?"
-                />
-                <meta
-                    name="twitter:description"
-                    content="A guide for first years and sophomores navigating their first in-person semester at Penn."
-                />
-                <meta
-                    name="twitter:url"
-                    content="https://projects.thedp.com/2022/welcome-to-penn"
-                />
-                <meta name="twitter:site" content="@dailypenn"></meta>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Welcome to Penn | The Daily Pennsylvanian"
+        />
+        <meta
+          name="twitter:image"
+          content="https://snworksceo.imgix.net/dpn/43b65210-d098-4343-9b99-db203343769d.sized-1000x1000.png?"
+        />
+        <meta
+          name="twitter:description"
+          content="A guide for first years and sophomores navigating their first in-person semester at Penn."
+        />
+        <meta
+          name="twitter:url"
+          content="https://projects.thedp.com/2022/welcome-to-penn"
+        />
+        <meta name="twitter:site" content="@dailypenn"></meta>
 
-                <script
-                    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-                    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-                    crossOrigin="anonymous"
-                ></script>
-                <script
-                    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-                    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                    crossOrigin="anonymous"
-                ></script>
-                <script
-                    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-                    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                    crossOrigin="anonymous"
-                ></script>
-            </Helmet>
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossOrigin="anonymous"
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossOrigin="anonymous"
+        ></script>
+        <script
+          src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossOrigin="anonymous"
+        ></script>
+      </Helmet>
 
-            <NavBar />
+      <NavBar />
 
-            <Header />
+      <Header />
 
-            <Featured content={featured[0]}/>
+      <Featured content={featured[0]} />
 
-            <WordWithLine word="NEWS" />
+      <WordWithLine word="NEWS" />
 
-            <News articles={news}/>
+      <News articles={news} />
 
-            <StyledAnchor
-                href="https://www.thedp.com/page/subscribe-dear-penn"
-                target="_blank"
-            >
-                <NewsLetterWrapper>
-                    <div className="row newsletter">
-                        <div className="col">
-                            <NewsLetter src="/img/newsletter.png" className="img-fluid" />
-                        </div>
-                    </div>
-                </NewsLetterWrapper>
-            </StyledAnchor>
+      <StyledAnchor
+        href="https://www.thedp.com/page/subscribe-dear-penn"
+        target="_blank"
+      >
+        <NewsLetterWrapper>
+          <div className="row newsletter">
+            <div className="col">
+              <NewsLetter src="/img/newsletter.png" className="img-fluid" />
+            </div>
+          </div>
+        </NewsLetterWrapper>
+      </StyledAnchor>
 
-            <DesktopAd>
-                <DFPSlotsProvider dfpNetworkId="12234093">
-                    <AdSlot adUnit="DP.com-Leaderboard" sizes={[[728, 90]]} />
-                </DFPSlotsProvider>
-            </DesktopAd>
-            <MobileAd>
-                <DFPSlotsProvider dfpNetworkId="12234093">
-                    <AdSlot adUnit="DP.com-mobile-leaderboard" sizes={[[320, 50]]} />
-                </DFPSlotsProvider>
-            </MobileAd>
+      <DesktopAd>
+        <DFPSlotsProvider dfpNetworkId="12234093">
+          <AdSlot adUnit="DP.com-Leaderboard" sizes={[[728, 90]]} />
+        </DFPSlotsProvider>
+      </DesktopAd>
+      <MobileAd>
+        <DFPSlotsProvider dfpNetworkId="12234093">
+          <AdSlot adUnit="DP.com-mobile-leaderboard" sizes={[[320, 50]]} />
+        </DFPSlotsProvider>
+      </MobileAd>
 
-            <WordWithLine word="OPINION" />
+      <WordWithLine word="OPINION" />
 
-            <Opinion articles={opinion}/>
+      <Opinion articles={opinion} />
 
-            <WordWithLine word="SPORTS" />
-            <Sports articles={sports}/>
+      <WordWithLine word="SPORTS" />
+      <Sports articles={sports} />
 
-            <DesktopAd>
-                <DFPSlotsProvider dfpNetworkId="12234093">
-                    <AdSlot adUnit="DP.com-Leaderboard" sizes={[[728, 90]]} />
-                </DFPSlotsProvider>
-            </DesktopAd>
-            <MobileAd>
-                <DFPSlotsProvider dfpNetworkId="12234093">
-                    <AdSlot adUnit="DP.com-mobile-leaderboard" sizes={[[320, 50]]} />
-                </DFPSlotsProvider>
-            </MobileAd>
+      <DesktopAd>
+        <DFPSlotsProvider dfpNetworkId="12234093">
+          <AdSlot adUnit="DP.com-Leaderboard" sizes={[[728, 90]]} />
+        </DFPSlotsProvider>
+      </DesktopAd>
+      <MobileAd>
+        <DFPSlotsProvider dfpNetworkId="12234093">
+          <AdSlot adUnit="DP.com-mobile-leaderboard" sizes={[[320, 50]]} />
+        </DFPSlotsProvider>
+      </MobileAd>
 
-            <Street articles={street_articles}/>
+      <Street articles={street_articles} />
 
-            <UTB articles={utb}/>
+      <UTB articles={utb} />
 
-            <Credit>
-                {' '}
-                Made with <span role="img"> 🎒</span> by The Daily Pennsylvanian © 2021.
-                All rights reserved.{' '}
-            </Credit>
-        </>
-    )
+      <Credit>
+        {' '}
+        Made with <span role="img"> 🎒</span> by The Daily Pennsylvanian © 2021.
+        All rights reserved.{' '}
+      </Credit>
+    </>
+  )
 }
 
 export default IndexPage

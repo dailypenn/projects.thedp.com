@@ -32,10 +32,7 @@ const Index = () => (
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta
-        name="final-issue"
-        content="#FinalIssue"
-      />
+      <meta name="final-issue" content="#FinalIssue" />
       <title>Final Issue</title>
       <link
         rel="stylesheet"
@@ -43,18 +40,12 @@ const Index = () => (
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       />
 
-      <meta
-        property="og:title"
-        content="Final Issue"
-      />
+      <meta property="og:title" content="Final Issue" />
       <meta
         property="og:image"
         content="https://snworksceo.imgix.net/dpn/6240fb3c-f7fb-4ac9-b404-d97f0246684f.sized-1000x1000.png"
       />
-      <meta
-        property="og:description"
-        content="Final Issue"
-      />
+      <meta property="og:description" content="Final Issue" />
       <meta property="og:type" content="article" />
       <meta
         property="og:url"
@@ -62,18 +53,12 @@ const Index = () => (
       />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta
-        name="twitter:title"
-        content="Final Issue"
-      />
+      <meta name="twitter:title" content="Final Issue" />
       <meta
         name="twitter:image"
         content="https://snworksceo.imgix.net/dpn/6240fb3c-f7fb-4ac9-b404-d97f0246684f.sized-1000x1000.png"
       />
-      <meta
-        name="twitter:description"
-        content="#FinalIssue"
-      />
+      <meta name="twitter:description" content="#FinalIssue" />
       <meta
         name="twitter:url"
         content="https://projects.thedp.com/2020/final-issue"
@@ -109,7 +94,7 @@ const Index = () => (
         <News />
         <Opinion />
         <Sports />
-        <Multimedia/>
+        <Multimedia />
         <Street />
       </Col>
     </Row>
@@ -117,7 +102,7 @@ const Index = () => (
     <Ads />
 
     <UTB />
-    <Footer emoji="💖" bgColor='white' />
+    <Footer emoji="💖" bgColor="white" />
   </>
 )
 

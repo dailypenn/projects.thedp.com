@@ -33,7 +33,11 @@ const Title = s.div`
   }
 `
 
-export const Header = ({ title, color, lineHeight }) => <Title color={color} lineHeight={lineHeight}>{title}</Title>
+export const Header = ({ title, color, lineHeight }) => (
+  <Title color={color} lineHeight={lineHeight}>
+    {title}
+  </Title>
+)
 
 const HOVER_COLOR = bgColor => {
   switch (bgColor) {
@@ -63,7 +67,7 @@ const Button = s.div`
 
   @media screen and (max-width: 768px) {
     margin-top: 1rem;
-    width: ${({ width }) => width > '50' ? '60' : '30'}%;
+    width: ${({ width }) => (width > '50' ? '60' : '30')}%;
   }
 `
 
@@ -73,7 +77,7 @@ export const CenteredButton = ({
   bgColor,
   posCenter,
   width,
-  link = 'https://www.thedp.com/page/donate'
+  link = 'https://www.thedp.com/page/donate',
 }) => {
   if (!posCenter)
     return (

@@ -29,10 +29,7 @@ const Index = () => (
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta
-        name="description"
-        content="#GivingTuesday"
-      />
+      <meta name="description" content="#GivingTuesday" />
       <title>Always The DP</title>
       <link
         rel="stylesheet"
@@ -40,18 +37,12 @@ const Index = () => (
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       />
 
-      <meta
-        property="og:title"
-        content="Always The DP"
-      />
+      <meta property="og:title" content="Always The DP" />
       <meta
         property="og:image"
         content="https://snworksceo.imgix.net/dpn/eb48484c-3a7a-4089-9cfb-8c064987cd4f.sized-1000x1000.png"
       />
-      <meta
-        property="og:description"
-        content="#GivingTuesday"
-      />
+      <meta property="og:description" content="#GivingTuesday" />
       <meta property="og:type" content="article" />
       <meta
         property="og:url"
@@ -59,18 +50,12 @@ const Index = () => (
       />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta
-        name="twitter:title"
-        content="Always The DP"
-      />
+      <meta name="twitter:title" content="Always The DP" />
       <meta
         name="twitter:image"
         content="https://snworksceo.imgix.net/dpn/eb48484c-3a7a-4089-9cfb-8c064987cd4f.sized-1000x1000.png"
       />
-      <meta
-        name="twitter:description"
-        content="#GivingTuesday"
-      />
+      <meta name="twitter:description" content="#GivingTuesday" />
       <meta
         name="twitter:url"
         content="https://projects.thedp.com/2020/giving-tuesday"

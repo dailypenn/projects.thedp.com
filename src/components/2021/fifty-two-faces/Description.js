@@ -3,7 +3,11 @@ import s from 'styled-components'
 import { Col, Row } from 'react-bootstrap'
 import Img from 'gatsby-image'
 
-import { DM_SERIF_DISPLAY_BOLD, DM_SERIF_DISPLAY_REGULAR, GEORGIA_REGULAR } from '../../../utils/font'
+import {
+  DM_SERIF_DISPLAY_BOLD,
+  DM_SERIF_DISPLAY_REGULAR,
+  GEORGIA_REGULAR,
+} from '../../../utils/font'
 
 const BriefDescription = s.p`
   text-align: center; 
@@ -12,7 +16,7 @@ const BriefDescription = s.p`
   padding-top: 3rem;
   margin-bottom: 2rem;
   font-size: 1.1rem;
-  color: ${"1D201F"};
+  color: ${'1D201F'};
   letter-spacing: 2px;
   ${GEORGIA_REGULAR}
 `
@@ -24,7 +28,7 @@ const Author = s.p`
   margin-top: 1rem;
   margin-bottom: 2rem;
   font-size: 1rem;
-  color: ${"1D201F"};
+  color: ${'1D201F'};
   letter-spacing: 2px;
   ${DM_SERIF_DISPLAY_BOLD}
 `
@@ -34,7 +38,7 @@ const FullDescription = s.p`
   margin-top: 1rem;
   margin-bottom: 2rem;
   font-size: 1rem;
-  color: ${"1D201F"};
+  color: ${'1D201F'};
   letter-spacing: 2px;
   white-space: pre-line;
   ${DM_SERIF_DISPLAY_REGULAR}
@@ -49,12 +53,12 @@ const DescriptionWrapper = s.div`
 
 const Description = ({ author, brief, description }) => (
   <>
-    <DescriptionWrapper color={"#FFF"}>
-        <Col sm={12} md={12}>
-            <BriefDescription>{brief}</BriefDescription>
-            <Author>{author}</Author>
-            <FullDescription>{description}</FullDescription>
-        </Col>
+    <DescriptionWrapper color={'#FFF'}>
+      <Col sm={12} md={12}>
+        <BriefDescription>{brief}</BriefDescription>
+        <Author>{author}</Author>
+        <FullDescription>{description}</FullDescription>
+      </Col>
     </DescriptionWrapper>
   </>
 )

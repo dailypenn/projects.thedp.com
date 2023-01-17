@@ -29,8 +29,8 @@
     "department": "Analytics",
     "text": [
       "DP Analytics is the data science and business analytics hub of the Daily Pennsylvanian. In Analytics, we seek to leverage modern tools and technologies to enhance the digital and data analytics capabilities of the DP.",
-      "Analytics staffers have the option to work in one of two sub-departments: Core Data Science and Product Analytics. Examples of data science projects include ML-driven recommendation engines and natural language processing analyses of DP articles. Examples of product analytics projects include market segmentation and search engine optimization (SEO).",
-      "Whether it’s deeply technical machine learning work or cross-functional business analytics initiatives (or both!), DP Analytics staffers work on projects with direct impact on the DP, the Penn community, and a global readership audience. Apply today!"
+      "Analytics staffers work intersectionality with departments including marketing, social media, and editorial to provide valuable insights and drive key decisions. Members of the team will have the option to work in technical roles such as the development of a content recommendation engine and automated metrics dashboard, as well as gain experience with broader business analytics by using tools such as Google Analytics and Data Studio. We use Python, Javascript, and Github, and scrape data from Instagram, Facebook, Mailchimp, and more to comprehensively track the DP’s products, progress, and reach.",
+      "Whether it is building beautiful and interactive visualizations on Python, developing an algorithm to analyze popular article topics, or working with various teams to track business initiatives, DP Analytics staffers work on projects with direct impact on the DP, the Penn community, and a global readership audience. Apply today!"
     ],
     "highlights": [
       "ML Driven Content Based Recommendation Engine",

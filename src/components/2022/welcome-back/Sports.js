@@ -26,10 +26,10 @@ const Sports = ({ articles }) => (
         >
           <StyledAnchor href={article.published_link} target="_blank">
             <Fade>
-            <img src={article.image_link} style={{ maxWidth: "100%" }} />
-            <Title> {article.title} </Title>
-            <Description> {article.description} </Description>
-            <ByLine>BY {article.byline.toUpperCase()} </ByLine>
+              <img src={article.image_link} style={{ maxWidth: '100%' }} />
+              <Title> {article.title} </Title>
+              <Description> {article.description} </Description>
+              <ByLine>BY {article.byline.toUpperCase()} </ByLine>
             </Fade>
           </StyledAnchor>
         </div>
@@ -47,13 +47,13 @@ const Sports = ({ articles }) => (
               }}
             >
               <Fade>
-              <div className="col-md mb-3">
-                <Title noMarginTop> {article.title} </Title>
-                <ByLine>BY {article.byline.toUpperCase()} </ByLine>
-              </div>
-              <div className="col-md-7">
-                <img src={article.image_link} style={{ maxWidth: "100%" }} />
-              </div>
+                <div className="col-md mb-3">
+                  <Title noMarginTop> {article.title} </Title>
+                  <ByLine>BY {article.byline.toUpperCase()} </ByLine>
+                </div>
+                <div className="col-md-7">
+                  <img src={article.image_link} style={{ maxWidth: '100%' }} />
+                </div>
               </Fade>
             </div>
           </StyledAnchor>

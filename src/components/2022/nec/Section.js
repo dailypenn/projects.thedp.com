@@ -349,7 +349,10 @@ const Section = ({ data }) => (
         content="Read about the candidates for UA and 2026 Class Boards."
       />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://projects.thedp.com/2022/fall/NEC/" />
+      <meta
+        property="og:url"
+        content="https://projects.thedp.com/2022/fall/NEC/"
+      />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="NEC Candidate Center Fall 2022" />
@@ -361,7 +364,10 @@ const Section = ({ data }) => (
         name="twitter:description"
         content="Read about the candidates for UA and 2026 Class Boards."
       />
-      <meta name="twitter:url" content="https://projects.thedp.com/2022/fall/NEC/" />
+      <meta
+        name="twitter:url"
+        content="https://projects.thedp.com/2022/fall/NEC/"
+      />
       <meta name="twitter:site" content="@dailypenn" />
       <script
         src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

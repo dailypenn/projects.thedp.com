@@ -66,7 +66,10 @@ const MustReadArticle = ({ article }) => (
       <ComicHeader style={{ fontSize: '90%', marginTop: '10px' }}>
         {article.title}
       </ComicHeader>
-      <ComicSubtitle style={{ fontSize: '80%' }}> BY {article.author} </ComicSubtitle>
+      <ComicSubtitle style={{ fontSize: '80%' }}>
+        {' '}
+        BY {article.author}{' '}
+      </ComicSubtitle>
     </StyledLink>
   </Col>
 )
@@ -74,7 +77,7 @@ const MustReadArticle = ({ article }) => (
 const UTB = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: {relativePath: {eq: "final-utb.json"}}) {
+      allFile(filter: { relativePath: { eq: "final-utb.json" } }) {
         edges {
           node {
             childrenFinalUtbJson {
@@ -107,7 +110,7 @@ const UTB = () => {
       <HeaderArea>
         <Circle />
         <Header>UNDER THE BUTTON</Header>
-        <Circle/>
+        <Circle />
       </HeaderArea>
       <Row style={{ padding: '3rem 1rem' }}>
         {articles.map(article => (

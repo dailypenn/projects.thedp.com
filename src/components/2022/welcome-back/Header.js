@@ -23,7 +23,7 @@ const HeaderImage = s.div`
 const Header = () => (
   <Wrapper>
     <Fade top duration={500}>
-      <HeaderImage/>
+      <HeaderImage />
     </Fade>
   </Wrapper>
 )

@@ -4,11 +4,7 @@ import { Col } from 'react-bootstrap'
 import InstagramEmbed from 'react-instagram-embed'
 import { FacebookProvider, EmbeddedPost } from 'react-facebook'
 
-import {
-  WHITE,
-  PINK,
-  Header,
-} from './shared'
+import { WHITE, PINK, Header } from './shared'
 import { RowWithPadding } from '../../shared'
 
 const Wrapper = s.div`
@@ -37,18 +33,21 @@ const AlwaysTheDP = () => (
       <HideWrapper>
         <HCenteredCol sm={12} md={4}>
           <FacebookProvider appId="947756802416627">
-            <EmbeddedPost href="https://www.facebook.com/dailypenn/posts/10158828539653805" width="320" />
+            <EmbeddedPost
+              href="https://www.facebook.com/dailypenn/posts/10158828539653805"
+              width="320"
+            />
           </FacebookProvider>
         </HCenteredCol>
       </HideWrapper>
       <HCenteredCol sm={12} md={4}>
         <InstagramEmbed
-          url='https://www.instagram.com/p/CIRN65vDAfS/'
-          clientAccessToken='947756802416627|a36b8dffc1596399ee685a4677ebc2a2'
+          url="https://www.instagram.com/p/CIRN65vDAfS/"
+          clientAccessToken="947756802416627|a36b8dffc1596399ee685a4677ebc2a2"
           maxWidth={320}
           hideCaption
-          containerTagName='div'
-          protocol=''
+          containerTagName="div"
+          protocol=""
           injectScript
           onLoading={() => {}}
           onSuccess={() => {}}
@@ -57,7 +56,14 @@ const AlwaysTheDP = () => (
         />
       </HCenteredCol>
       <HCenteredCol sm={12} md={4}>
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6739503450989625344" height="665" width="320" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        <iframe
+          src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6739503450989625344"
+          height="665"
+          width="320"
+          frameborder="0"
+          allowfullscreen=""
+          title="Embedded post"
+        ></iframe>
       </HCenteredCol>
     </RowWithPadding>
   </Wrapper>

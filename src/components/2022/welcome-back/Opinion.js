@@ -32,27 +32,27 @@ const Wrapper = s.div`
 `
 
 const Opinion = ({ articles }) => (
-        <Wrapper>
-          <div className="row main" id="opinion">
-            {articles.slice(0).map(article => (
-              <div
-                className="col-md-4 mb-4"
-                style={{ borderRight: '1px solid #D8D2D2' }}
-              >
-                <StyledAnchor href={article.published_link} target="_blank">
-                  <Fade>
-                    <img src={article.image_link} style={{ maxWidth: "100%" }} />
-                    <Tag>
-                      <text className="author"> By {article.byline} </text>
-                    </Tag>
-                    <Title> {article.title} </Title>
-                    <Description> {article.description} </Description>
-                  </Fade>
-                </StyledAnchor>
-              </div>
-            ))}
-          </div>
-        </Wrapper>
+  <Wrapper>
+    <div className="row main" id="opinion">
+      {articles.slice(0).map(article => (
+        <div
+          className="col-md-4 mb-4"
+          style={{ borderRight: '1px solid #D8D2D2' }}
+        >
+          <StyledAnchor href={article.published_link} target="_blank">
+            <Fade>
+              <img src={article.image_link} style={{ maxWidth: '100%' }} />
+              <Tag>
+                <text className="author"> By {article.byline} </text>
+              </Tag>
+              <Title> {article.title} </Title>
+              <Description> {article.description} </Description>
+            </Fade>
+          </StyledAnchor>
+        </div>
+      ))}
+    </div>
+  </Wrapper>
 )
 
 export default Opinion

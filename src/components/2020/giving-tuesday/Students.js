@@ -18,7 +18,7 @@ import {
   GOPHER_MEDIUM,
   GOPHER_REGULAR,
   RAMA_GOTHIC_BOLD,
-  GOPHER_BOLD
+  GOPHER_BOLD,
 } from '../../../utils/font'
 
 const Quotation = s.p`
@@ -33,7 +33,7 @@ const Description = s.p`
   font-size: 0.9em;
   margin-top: ${({ marginT = '-3' }) => marginT}rem;
   padding-left: ${({ paddingL = '2' }) => paddingL}rem;
-  text-transform: ${({ uppercase }) => uppercase ? 'uppercase' : 'none'} ;
+  text-transform: ${({ uppercase }) => (uppercase ? 'uppercase' : 'none')} ;
 `
 
 const StoryHeader = s.h2`
@@ -80,7 +80,7 @@ const AlumniImg = s(Img)`
 const CardContent = ({ description, image, idx, title, link }) => (
   <StyledLink style={{ padding: '2rem' }} href={link} target="_blank">
     <StoryHeader idx={idx}>
-      {idx === 0 ? '34th street' :  'under the button'}
+      {idx === 0 ? '34th street' : 'under the button'}
     </StoryHeader>
     <img src={image} className="img-fluid" />
     <StoryTitle> {title} </StoryTitle>
@@ -108,8 +108,14 @@ const Person = ({ name, description, image, position }) => (
     <ColWithMargin sm={12} md={7}>
       <Quotation> &#8220; </Quotation>
       <Description> {description} </Description>
-      <Description marginT="0" uppercase> &#8212;{name} </Description>
-      <Description marginT="-1" paddingL="3"> {position} </Description>
+      <Description marginT="0" uppercase>
+        {' '}
+        &#8212;{name}{' '}
+      </Description>
+      <Description marginT="-1" paddingL="3">
+        {' '}
+        {position}{' '}
+      </Description>
     </ColWithMargin>
   </Row>
 )
@@ -117,7 +123,9 @@ const Person = ({ name, description, image, position }) => (
 const Students = () => {
   const data = useStaticQuery(graphql`
     query {
-      students: allFile(filter: { relativePath: { eq: "students_GT_2020.json" } }) {
+      students: allFile(
+        filter: { relativePath: { eq: "students_GT_2020.json" } }
+      ) {
         edges {
           node {
             childrenStudentsGt2020Json {
@@ -139,7 +147,9 @@ const Students = () => {
         }
       }
 
-      others: allFile(filter: { relativePath: { eq: "streetUTB_GT_2020.json" } }) {
+      others: allFile(
+        filter: { relativePath: { eq: "streetUTB_GT_2020.json" } }
+      ) {
         edges {
           node {
             childrenStreetUtbGt2020Json {
@@ -170,7 +180,7 @@ const Students = () => {
         {students.map(student => (
           <Col sm={12} md={6}>
             <Person {...student} />
-          </Col>          
+          </Col>
         ))}
       </RowWithPadding>
 

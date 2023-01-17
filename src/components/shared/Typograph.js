@@ -24,7 +24,7 @@ export const HeadlineText = s.div`
   margin-top: ${({ topMargin = '1.5rem' }) => topMargin};
   color: ${({ color = '#283033' }) => color};
   ${PLAYFAIR_BOLD}
-  font-size: ${({ sideArticle }) => sideArticle ? '100%' : '150%'};
+  font-size: ${({ sideArticle }) => (sideArticle ? '100%' : '150%')};
   line-height: 1.2;
 `
 
@@ -34,7 +34,7 @@ export const AbstractText = s.div`
   ${GEORGIA_REGULAR}
 
   @media (max-width: 768px) {
-    ${({ multimedia }) => multimedia ? 'display: none' : ''}
+    ${({ multimedia }) => (multimedia ? 'display: none' : '')}
   }
 `
 
@@ -62,5 +62,5 @@ export const TagText = s.div`
   color: ${({ color = '#B5B4B4' }) => color};
   font-family: 'Roboto', sans-serif;
   font-size: ${({ fontSize = '100%' }) => fontSize};
-  ${({ weightLight }) => weightLight ? 'font-weight: 300;' : '' }
+  ${({ weightLight }) => (weightLight ? 'font-weight: 300;' : '')}
 `

@@ -44,24 +44,29 @@ const News = () => (
       return (
         <Wrapper id="news">
           <div className="row main">
-            <div className='col-md-12'>
+            <div className="col-md-12">
               <SectionHeader>NEWS</SectionHeader>
               <Row>
-                {topArticles.map(article => <TextImage article={article}/>)}
+                {topArticles.map(article => (
+                  <TextImage article={article} />
+                ))}
               </Row>
               <Row style={{ padding: '0 1rem' }}>
-                <BottomTextImage 
-                  article = {bottomArticles[0]} 
-                  color = {'rgba(3,47,183, 0.57)'} 
-                  md = {4}/>
-                <BottomTextImage 
-                  article = {bottomArticles[1]} 
-                  color = {'rgba(3,47,183, 0.57)'} 
-                  md = {4}/>
-                <BottomTextImage 
-                  article = {bottomArticles[2]}
+                <BottomTextImage
+                  article={bottomArticles[0]}
+                  color={'rgba(3,47,183, 0.57)'}
+                  md={4}
+                />
+                <BottomTextImage
+                  article={bottomArticles[1]}
+                  color={'rgba(3,47,183, 0.57)'}
+                  md={4}
+                />
+                <BottomTextImage
+                  article={bottomArticles[2]}
                   color="rgba(3,47,183, 0.57)"
-                  md={4} />
+                  md={4}
+                />
               </Row>
             </div>
           </div>

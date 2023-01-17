@@ -6,10 +6,7 @@ import { Row, Col } from 'react-bootstrap'
 
 import { StyledLink } from '../../shared'
 import { Wrapper, GreenSectionHeader, SectionHeader } from './shared'
-import {
-  FUTURA_REGULAR,
-  FUTURA_BOLD,
-} from '../../../utils/font'
+import { FUTURA_REGULAR, FUTURA_BOLD } from '../../../utils/font'
 
 const ArticleHeader = s.h3`
   ${FUTURA_BOLD}
@@ -32,16 +29,19 @@ const ArticleDescription = s.p`
 `
 
 const Editorial = ({ article }) => (
-  <Row style={{ width: "100%" }}>
+  <Row style={{ width: '100%' }}>
     <Col sm={12} md={8}>
-      <StyledLink href={article.link} target='_blank'>
+      <StyledLink href={article.link} target="_blank">
         <div style={{ display: 'block' }}>
-          <Img fluid={article.image.src.childImageSharp.fluid} style={{ margin: '0 auto' }} />
+          <Img
+            fluid={article.image.src.childImageSharp.fluid}
+            style={{ margin: '0 auto' }}
+          />
         </div>
       </StyledLink>
     </Col>
     <Col sm={12} md={4}>
-      <StyledLink href={article.link} target='_blank'>
+      <StyledLink href={article.link} target="_blank">
         <GreenSectionHeader> EDITORIAL </GreenSectionHeader>
         <ArticleHeader> {article.title} </ArticleHeader>
         <ArticleDescription> {article.description} </ArticleDescription>
@@ -76,9 +76,9 @@ const TextWrapper = s.div`
 `
 
 const OpinionPieces = ({ article }) => (
-  <Row style={{ marginTop: '3rem', width: "100%" }}>
+  <Row style={{ marginTop: '3rem', width: '100%' }}>
     <Col sm={12} md={6} lg={6}>
-      <StyledLink href={article.link} target='_blank'>
+      <StyledLink href={article.link} target="_blank">
         <TextWrapper>
           <OpinionHeader> {article.title} </OpinionHeader>
           <OpinionDescription> {article.description} </OpinionDescription>
@@ -87,7 +87,7 @@ const OpinionPieces = ({ article }) => (
       </StyledLink>
     </Col>
     <Col sm={12} md={6} lg={6}>
-      <StyledLink href={article.link} target='_blank'>
+      <StyledLink href={article.link} target="_blank">
         <Img fluid={article.image.src.childImageSharp.fluid} />
       </StyledLink>
     </Col>
@@ -130,11 +130,13 @@ const Opinion = () => (
       return (
         <Wrapper>
           <div className="row main" id="opinion">
-            <div className='col-md-12'>
+            <div className="col-md-12">
               <SectionHeader>OPINION</SectionHeader>
               <Row>
                 <Editorial article={articles[0]} />
-                {articles.slice(1).map(article => <OpinionPieces article = {article} />)}
+                {articles.slice(1).map(article => (
+                  <OpinionPieces article={article} />
+                ))}
               </Row>
             </div>
           </div>

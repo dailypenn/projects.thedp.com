@@ -59,10 +59,19 @@ const AlwaysHere = () => (
             JOIN THE GLOBAL GENEROSITY MOVEMENT ON #GIVINGTUESDAY
           </Subheading>
           <AlwaysHereText>
-            For close to 140 years the Daily Pennsylvanian has been a news publication, a Penn student activity and a life-changing educational non-profit organization. Our organization has always and continues to be driven by our student staff’s dedication and determination to deliver news, content and information, unfiltered, to the Penn community. Supporting the DP today will help to ensure that tradition and sustain our legacy of providing Penn students with transformational experiences for generations to come.
+            For close to 140 years the Daily Pennsylvanian has been a news
+            publication, a Penn student activity and a life-changing educational
+            non-profit organization. Our organization has always and continues
+            to be driven by our student staff’s dedication and determination to
+            deliver news, content and information, unfiltered, to the Penn
+            community. Supporting the DP today will help to ensure that
+            tradition and sustain our legacy of providing Penn students with
+            transformational experiences for generations to come.
           </AlwaysHereText>
           <AlwaysHereText>
-            All dollars raised today will go directly to our students through scholarships, financial assistance, internships, training, resources and tools.
+            All dollars raised today will go directly to our students through
+            scholarships, financial assistance, internships, training, resources
+            and tools.
           </AlwaysHereText>
         </TextWrapper>
       </Col>

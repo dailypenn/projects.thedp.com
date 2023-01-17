@@ -13,10 +13,7 @@ import {
 } from './shared'
 import { RowWithPadding } from '../../shared'
 
-import {
-  GOPHER_MEDIUM,
-  GOPHER_BOLD,
-} from '../../../utils/font'
+import { GOPHER_MEDIUM, GOPHER_BOLD } from '../../../utils/font'
 
 const Wrapper = s.div`
   background-color: #DD666E;
@@ -154,12 +151,12 @@ const Alumni = () => {
         <Col sm={12} md={5}>
           <AlumniHeader> DP ALUMNI ASSOCIATION </AlumniHeader>
           <Paragraph>
-            An association, a network and really just a
-            family! The DPAA and our alumni are the heartbeat of our
-            organization. Every year, DP alumni generously give time, guidance
-            and the funds we need to operate and advance our organization. Our
-            students are incredibly lucky to have such an available and
-            supportive volunteer alumni community working closely with them.
+            An association, a network and really just a family! The DPAA and our
+            alumni are the heartbeat of our organization. Every year, DP alumni
+            generously give time, guidance and the funds we need to operate and
+            advance our organization. Our students are incredibly lucky to have
+            such an available and supportive volunteer alumni community working
+            closely with them.
           </Paragraph>
           <Paragraph>
             The best part about the DPAA is that it will ALWAYS be a loyal

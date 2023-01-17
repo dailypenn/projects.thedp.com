@@ -8,7 +8,7 @@ import {
   LORA_REGULAR,
   RADIANT_REGULAR,
   FUTURA_BOLD,
-  MARGO
+  MARGO,
 } from '../../../../utils/font'
 
 export const Wrapper = s.div`
@@ -75,16 +75,20 @@ export const H2 = s.h2`
 `
 
 export const MustReadArticle = ({ article }) => (
-  <StyledAnchor href={article.link} target="_blank" >
-    <div className="row" style={{ marginBottom: '4.5rem', paddingLeft: '2rem', paddingRight: '2rem'}}>
+  <StyledAnchor href={article.link} target="_blank">
+    <div
+      className="row"
+      style={{
+        marginBottom: '4.5rem',
+        paddingLeft: '2rem',
+        paddingRight: '2rem',
+      }}
+    >
       <div className="col-md-6">
-        <Img fluid={article.image.src.childImageSharp.fluid}/>
+        <Img fluid={article.image.src.childImageSharp.fluid} />
       </div>
       <div className="col-md-6">
-        <ArticleHeader>
-          {' '}
-          {article.title}{' '}
-        </ArticleHeader>
+        <ArticleHeader> {article.title} </ArticleHeader>
         <ArticleAuthor style={{ fontSize: '80%' }}>
           {' '}
           BY {article.author}{' '}
@@ -155,16 +159,14 @@ const SportsArticleWrapper = s.div`
 `
 
 const SportsReadArticle = ({ article }) => (
-  <StyledAnchor href={article.link} target="_blank" >
-    <div className="row" style={{padding:'5%'}}>
+  <StyledAnchor href={article.link} target="_blank">
+    <div className="row" style={{ padding: '5%' }}>
       <div className="col-md-5">
-        <Img fluid={article.image.src.childImageSharp.fluid}/>
+        <Img fluid={article.image.src.childImageSharp.fluid} />
       </div>
       <div className="col-md-7">
-        <SmallHeader>
-          {article.title}
-        </SmallHeader>
-        <ArticleAuthor style={{ fontSize: '80%', padding:0 }}>
+        <SmallHeader>{article.title}</SmallHeader>
+        <ArticleAuthor style={{ fontSize: '80%', padding: 0 }}>
           BY {article.author}
         </ArticleAuthor>
       </div>
@@ -173,7 +175,7 @@ const SportsReadArticle = ({ article }) => (
 )
 
 export const SportsReads = ({ articles }) => (
-  <div className = 'row'>
+  <div className="row">
     <div className="col-md-12">
       <Square>
         <SportsArticleWrapper>
@@ -188,12 +190,19 @@ export const SportsReads = ({ articles }) => (
 
 export const BigArticle = ({ article }) => (
   <div className="text-center">
-    <StyledAnchor href={article.link} target="_blank" >
-      <Img style fluid={article.image.src.childImageSharp.fluid} style={{marginLeft: 'auto', marginRight: 'auto',maxWidth: '600px', maxHeight: '300px'}} />
+    <StyledAnchor href={article.link} target="_blank">
+      <Img
+        style
+        fluid={article.image.src.childImageSharp.fluid}
+        style={{
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          maxWidth: '600px',
+          maxHeight: '300px',
+        }}
+      />
       <SubsectionTitle>{article.section}</SubsectionTitle>
-      <LargeArticleHeader>
-        {article.title}
-      </LargeArticleHeader>
+      <LargeArticleHeader>{article.title}</LargeArticleHeader>
       <ArticleAuthor style={{ marginTop: '0.5rem' }}>
         BY {article.author}
       </ArticleAuthor>
@@ -203,12 +212,10 @@ export const BigArticle = ({ article }) => (
 
 export const BigArticleStaticImg = ({ article }) => (
   <div className="text-center">
-    <StyledAnchor href={article.link} target="_blank" >
-      <Image src={article.img}  fluid/>
+    <StyledAnchor href={article.link} target="_blank">
+      <Image src={article.img} fluid />
       <SubsectionTitle>{article.section}</SubsectionTitle>
-      <LargeArticleHeader>
-        {article.title}
-      </LargeArticleHeader>
+      <LargeArticleHeader>{article.title}</LargeArticleHeader>
       <ArticleAuthor style={{ marginTop: '0.5rem' }}>
         BY {article.author}
       </ArticleAuthor>
@@ -244,11 +251,9 @@ export const BigArticleVideo = ({ article }) => (
           allowfullscreen
         />
       </Video>
-      
+
       <SubsectionTitle>{article.section}</SubsectionTitle>
-      <LargeArticleHeader>
-        {article.title}
-      </LargeArticleHeader>
+      <LargeArticleHeader>{article.title}</LargeArticleHeader>
       <ArticleAuthor style={{ marginTop: '0.5rem' }}>
         BY {article.author}
       </ArticleAuthor>
