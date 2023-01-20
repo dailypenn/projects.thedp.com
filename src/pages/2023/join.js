@@ -123,7 +123,7 @@ const Wrapper = s.div`
   }
 
   section.street a {
-    color: #044747;
+    color: white;
   }
 
   section.street a:hover {
@@ -357,6 +357,38 @@ const Wrapper = s.div`
       margin-bottom: 60px;
     }
   }
+
+  .street-apply-btn {
+    color: #44bfbf !important;
+    background: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    width: fit-content;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .street-apply-btn:hover {
+    color: white !important;
+    background: #44bfbf;
+  }
+
+  .utb-apply-btn {
+    color: #446cb3 !important;
+    background: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    width: fit-content;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .utb-apply-btn:hover {
+    color: white !important;
+    background: #446cb3;
+  }
 `
 const Editorial = s.div`
   font-size: 1em;
@@ -380,6 +412,22 @@ const Editorial = s.div`
   section.editorial a:hover {
     color: #AAA;
   }
+
+  .ed-apply-btn {
+    color: #AA1E22 !important;
+    background: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    width: fit-content;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .ed-apply-btn:hover {
+    color: #FFF !important;
+    background: #AA1E22;
+  }
 `
 
 const Business = s.div`
@@ -397,6 +445,22 @@ const Business = s.div`
 
   section.business a:hover {
     color: #777;
+  }
+
+  .biz-apply-btn {
+    color: #FFF !important;
+    background: #AA1E22;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    width: fit-content;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .biz-apply-btn:hover {
+    color: #AA1E22 !important;
+    background: white;
   }
 `
 
@@ -421,6 +485,22 @@ const Engineering = s.div`
 
   section.engineering a:hover {
     color: #777;
+  }
+
+  .eng-apply-btn {
+    color: #000 !important;
+    background: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    width: fit-content;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .eng-apply-btn:hover {
+    color: #FFF !important;
+    background: black;
   }
 
   applylink {
@@ -621,6 +701,9 @@ const Join = () => {
                 {editorialDescription.map(p => (
                   <p>{p}</p>
                 ))}
+                <Link to="#apply" target="_blank" rel="noreferrer">
+                  <div className="ed-apply-btn">Apply here &#8594;</div>
+                </Link>
                 <h5>{editorialHighlights.length === 0 ? '' : 'Highlights'}</h5>
                 {editorialHighlights.length === editorialHighlightLinks.length
                   ? editorialHighlights.map((l, idx) => (
@@ -676,6 +759,9 @@ const Join = () => {
                 {businessDescription.map(p => (
                   <p>{p}</p>
                 ))}
+                <Link to="#apply" target="_blank" rel="noreferrer">
+                  <div className="biz-apply-btn">Apply here &#8594;</div>
+                </Link>
                 <h5>{businessHighlights.length === 0 ? '' : 'Highlights'}</h5>
                 {businessHighlights.length === businessHighlightLinks.length
                   ? businessHighlights.map((l, idx) => (
@@ -733,7 +819,7 @@ const Join = () => {
                 {engineeringDescription.map(p => (
                   <p>{p}</p>
                 ))}
-                <a
+                {/* <a
                   href={engineeringApplyLink}
                   target="_blank"
                   rel="noreferrer"
@@ -742,10 +828,18 @@ const Join = () => {
                     marginBottom: '20px',
                     fontWeight: 'bold',
                   }}
+                  className='eng-apply-btn'
                 >
                   {' '}
                   Apply here! &#8594;
-                </a>
+                </a> */}
+                <Link
+                  to={engineeringApplyLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="eng-apply-btn">Apply here &#8594;</div>
+                </Link>
                 <h5>
                   {engineeringHighlights.length === 0 ? '' : 'Highlights'}
                 </h5>
@@ -766,35 +860,21 @@ const Join = () => {
           </section>
         </Engineering>
 
-        <section class="institutional-advancement">
-          <h2>{JoinIAJSON.department}</h2>
-          <div class="section">
-            {JoinIAJSON.text.map(p => (
-              <p>{p}</p>
-            ))}
-            <h5>Highlights</h5>
-            {JoinIAJSON.highlights.map((h, idx) => (
-              <a
-                href={JoinIAJSON['highlight-links'][idx]}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {h} &#8594;
-              </a>
-            ))}
-          </div>
-        </section>
-
         <section class="street">
           <h2>{Join34thJSON.department}</h2>
           <div class="section">
             {Join34thJSON.text.map(p => (
               <p>{p}</p>
             ))}
-            <a href={Join34thJSON.signup} target="_blank" rel="noreferrer">
+            {/* <a href={Join34thJSON.signup} target="_blank" rel="noreferrer">
               {' '}
-              For 34st interest form click here &#8594;
-            </a>
+              For 34st Interest Form click here &#8594;
+            </a> */}
+            <Link to={Join34thJSON.signup} target="_blank" rel="noreferrer">
+              <div className="street-apply-btn">
+                34th Street Interest Form &#8594;
+              </div>
+            </Link>
             <h5>Highlights</h5>
             {Join34thJSON.highlights.map((h, idx) => (
               <a
@@ -814,14 +894,64 @@ const Join = () => {
             {JoinUTBJSON.text.map(p => (
               <p>{p}</p>
             ))}
-            <a href={JoinUTBJSON.signup} target="_blank" rel="noreferrer">
+            {/* <a href={JoinUTBJSON.signup} target="_blank" rel="noreferrer">
               {' '}
-              For UTB interest form click here &#8594;
+              For UTB Interest Form click here &#8594;
             </a>
+            <a href={'https://docs.google.com/forms/d/e/1FAIpQLSc-NT38m8BnhlHf2dnYbV6M7C5lIc7dFnyRECFjClLn1qHTBg/viewform'} target="_blank" rel="noreferrer">
+              {' '}
+              For our Writing Application Form click here &#8594;
+            </a>
+            <a href={'https://docs.google.com/forms/d/e/1FAIpQLSc-NT38m8BnhlHf2dnYbV6M7C5lIc7dFnyRECFjClLn1qHTBg/viewform'} target="_blank" rel="noreferrer">
+              {' '}
+              For our Video Application Form click here &#8594;
+            </a> */}
+            <Link to={JoinUTBJSON.signup} target="_blank" rel="noreferrer">
+              <div className="utb-apply-btn">UTB Interest Form &#8594;</div>
+            </Link>
+            <Link
+              to={
+                'https://docs.google.com/forms/d/e/1FAIpQLSc-NT38m8BnhlHf2dnYbV6M7C5lIc7dFnyRECFjClLn1qHTBg/viewform'
+              }
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="utb-apply-btn">
+                UTB Writing Application &#8594;
+              </div>
+            </Link>
+            <Link
+              to={
+                'https://docs.google.com/forms/d/e/1FAIpQLSc-NT38m8BnhlHf2dnYbV6M7C5lIc7dFnyRECFjClLn1qHTBg/viewform'
+              }
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="utb-apply-btn">UTB Video Application &#8594;</div>
+            </Link>
             <h5>Highlights</h5>
             {JoinUTBJSON.highlights.map((h, idx) => (
               <a
                 href={JoinUTBJSON['highlight-links'][idx]}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {h} &#8594;
+              </a>
+            ))}
+          </div>
+        </section>
+
+        <section class="institutional-advancement">
+          <h2>{JoinIAJSON.department}</h2>
+          <div class="section">
+            {JoinIAJSON.text.map(p => (
+              <p>{p}</p>
+            ))}
+            <h5>Highlights</h5>
+            {JoinIAJSON.highlights.map((h, idx) => (
+              <a
+                href={JoinIAJSON['highlight-links'][idx]}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -837,7 +967,7 @@ const Join = () => {
             <p class="overall">Fill out the form below to apply!</p>
             <iframe
               class="join-form"
-              src="https://docs.google.com/forms/d/e/1FAIpQLSc-_OY3DJhpa6yTIZcg4x-iuFxVqCcHWjsl1DdkJg3UC7Pn7w/viewform"
+              src="https://docs.google.com/forms/d/1BH3-Vnbcj2DRbqVSTYY2GRMMj8zIDiCsQii0uBD8Zbc/viewform"
               width="100%"
               height="600"
               frameBorder="0"
