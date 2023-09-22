@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[50],{GSav:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),r=t.n(a),c=t("Wbzz"),u=t("6IvF");n.default=function(){return r.a.createElement(c.StaticQuery,{query:"1436189126",render:function(e){return r.a.createElement(u.a,{data:e.allFile.nodes[0].childNecJson})}})}}}]);
+//# sourceMappingURL=component---src-pages-2023-nec-legacy-cb-26-js-97acee58d2fa28da9b59.js.map
