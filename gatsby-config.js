@@ -218,6 +218,21 @@ module.exports = {
         path: `${__dirname}/src/content/json/2022/nec`,
       },
     },
+    // 2023 nec-spring
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/content/images/2023/nec`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/content/json/2023/nec`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
