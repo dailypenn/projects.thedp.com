@@ -2,25 +2,25 @@
   {
     "department": "News",
     "text": [
-      "By joining News, you will learn not only how to report and investigate stories relevant to Penn’s campus and students, but also the intricacies of student life and University operations and key skills transferable to many careers. Reporters uncover news important to the Penn community by illuminating student stories and holding institutions accountable. Whether it’s breaking news, data-driven stories, or investigative journalism, your storytelling can enact real change on campus.",
-      "Start your DP career as a General Assignments reporter where you learn the basics of college journalism by working on a three week rotation. Move up to become a beat reporter where you will be able to specialize in one area of coverage.",
+      "As a member of the News Department, you will be able to involve yourself in many of the most pressing issues on campus and in the Philadelphia community. Writing for News allows you to enact change on campus, hold institutions accountable, and understand the intricacies of student life and University operations. In News, you will learn not only how to report and investigate stories relevant to Penn’s campus and students, but also many key skills transferable to other careers.",
+      "In 2023, the News Department extensively covered administrative turmoil, student activism, Philadelphia's mayoral election and campaign, and much more. By joining News, you’ll have the opportunity to develop expertise in and report directly on the subjects that most interest you.",
       "Follow in the footsteps of DP News alumni who work for top publications and companies like the New York Times, The Washington Post, Forbes, Vox, MTV, Politico and The Wall Street Journal — in addition to various former DPers practicing law and working in business.",
       "No journalistic experience required — only curiosity and dedication.",
-      "The News Department also fosters a supportive and welcoming community where reporters learn from each other and grow lifelong friendships."
+    
     ],
     "highlights": [
-      "Obama and Biden host Philadelphia rally for Pa. Democrats, stressing importance of midterms",
-      "Former classmates, girlfriend of Elon Musk reflect on his time at Penn",
-      "Protestors crash Convocation, cutting Liz Magill’s first major speech short",
-      "Fossil Free Penn ends encampment after 39 days following Homecoming football game protest",
-      "The full interview: Liz Magill talks to the DP one year after her presidential nomination"
+      "Penn President Liz Magill resigns amid backlash over antisemitism controversies",
+      "Perelman School of Medicine Dean J. Larry Jameson named Penn's interim president",
+      "2016 Fels Institute of Government graduate Cherelle Parker first woman elected mayor of Philadelphia",
+      "How the controversy over Liz Magill's leadership has unfolded at Penn",
+      "Over 900 Penn faculty warn of 'hostile takeover' by trustees, donors in response to Marc Rowan letter"
     ],
     "highlight-links": [
-      "https://www.thedp.com/article/2022/11/obama-biden-pennsylvania-midterms-rally-shapiro-fetterman-rally",
-      "https://www.thedp.com/article/2022/11/elon-musk-penn-grad-wharton-twitter-auction",
-      "https://www.thedp.com/article/2022/08/penn-convocation-uc-townhomes-liz-magill-class-of-2026",
-      "https://www.thedp.com/article/2022/10/encampment-removed-fossil-free-penn-protest-arrests",
-      "https://www.thedp.com/article/2023/01/penn-president-liz-magill-second-semester-full-interview"
+      "https://www.thedp.com/article/2023/12/penn-president-liz-magill-resigns",
+      "https://www.thedp.com/article/2023/12/penn-larry-jameson-interim-president",
+      "https://www.thedp.com/article/2023/11/penn-cherelle-parker-election-mayoral-general-2023",
+      "https://www.thedp.com/article/2023/12/penn-donors-trustees-backlash-activism-antisemitism-2023",
+      "https://www.thedp.com/article/2023/12/penn-faculty-concern-marc-rowan-letter"
     ],
     "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/917417c6-2a39-487a-bd75-8913f3427445.sized-1000x1000.jpg')",
     "id": "news"
@@ -93,28 +93,30 @@
     "department": "Multimedia",
     "text": [
       "As a member of the Multimedia Department, you will learn how to create engaging visual storytelling content, have the opportunity to cover historic events on campus and throughout the country, and take part in the editing and publishing processes.",
-      "In 2020, our staff notably covered Philadelphia’s Black Lives Matter protests, the presidential election throughout Pennsylvania and at the New Hampshire primaries, and explored the University’s efforts to combat COVID-19.",
-      "We use the Adobe Creative Suite, as well as high-quality DSLR cameras, lenses, and audio and video equipment. No experience with photography or videography is necessary. No personal equipment is required, but we ask you to use your own if you have it now. Join us in making transformative content for an award-winning media company!"
+      "In 2023, our staff notably covered student activism, administrative turmoil, city elections, and much more. Our photographers traveled around Philadelphia and up and down the coast to document a United States House committee hearing with the former Penn and Harvard presidents, U.S. President Joe Biden’s multiple visits to campus, and our basketball team’s historic upset over Villanova.",
+      "We use the Adobe Creative Suite, as well as high-quality cameras, lenses, and audio and video equipment. No experience with photography or videography is necessary, and no personal equipment is required. Join us in making transformative content for an award-winning media company!"
     ],
     "highlights": [
-      "In Photos: Celebrating the Class of 2021 with a commencement unlike any other",
-      "Isolation Diaries: Sansom Place West",
-      "Photo Essay | Philadelphia protests for George Floyd and racial justice",
+      "In Photos: President Joe Biden visits Philadelphia",
+      "Penn Students Protest for RA Union Recognition",
+      "In Photos: Liz Magill’s 16-month presidency, from confirmation to resignation",
       "Word on the Walk | What Does Black History Month Mean to You?",
-      "In Photos: After a year off the field, Penn athletics returns to competition",
+      "In Photos: Penn men's basketball trumps Villanova in historic upset",
+      "Penn Men’s Basketball vs. Villanova –– In 60 Seconds",
       "Opinion | How a Penn Grad Turned a Neurobiology Degree into a Professional Magic Career",
-      "Photo Essay | Meet seven essential workers keeping Penn’s campus running during the pandemic",
-      "Inside the Daily Pennsylvanian | Office Tour"
+      "In Photos: 2023",
+      "73 Questions with the DP Editors"
     ],
     "highlight-links": [
-      "https://www.thedp.com/article/2021/05/penn-265th-commencement-graduation-covid-class-of-2021-photo-gallery",
-      "https://www.youtube.com/watch?v=Df4YA4vKAz4",
-      "https://www.thedp.com/article/2020/06/philadelphia-protests-george-floyd-black-lives-matter-photo-essay",
+      "https://www.thedp.com/article/2023/02/president-biden-philadelphia-visit-dnc-photo-essay",
+      "https://www.youtube.com/watch?v=vfFLs5CnIhk",
+      "https://www.thedp.com/article/2023/12/liz-magill-presidency-resignation-photo-essay",
       "https://www.youtube.com/watch?v=3meNxiAiHHA",
-      "https://www.thedp.com/article/2021/04/spring-sports-local-competition-philadelphia-2021-photo-gallery",
+      "https://www.thedp.com/article/2023/11/mens-basketball-villanova-win-photo-essay",
+      "https://www.instagram.com/reel/Cz6trZUrD5Y/",
       "https://www.youtube.com/watch?v=DQo2yGLT1mw",
-      "https://www.thedp.com/article/2020/11/penn-essential-workers-coronavirus-covid19-photo-essay",
-      "https://www.youtube.com/watch?v=eKtnt6jwOgI"
+      "https://www.thedp.com/article/2023/12/2023-year-in-photos-essay",
+      "https://www.youtube.com/watch?v=Fpv6aXmNg8g"
     ],
     "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://media.giphy.com/media/KHKlf5Cnvzm1HDkVrL/giphy.gif')",
     "id": "multimedia"
@@ -124,11 +126,17 @@
     "text": [
       "The Design Department is looking for designers, artists, and illustrators with all ranges of experience to join us in producing The Daily Pennsylvanian and 34th Street Magazine’s print and online visual content.",
       "We use the full Adobe Creative Suite—mainly Photoshop, Illustrator, and InDesign—along with various online platforms for data visualization.",
-      "If you are interested in creating aesthetic content, whether it be front-page print centerpieces, online graphics, or layouts for websites, then the Design department is for you!"
+      "If you are interested in creating aesthetic content, whether it be front-page print centerpieces, online graphics, or layouts for print/websites, then Design is for you!"
     ],
-    "highlights": ["DP Design Showcase: 2022"],
+    "highlights": [
+      "DP Design Showcase: 2022",
+      "The Daily Pennsylvanian Print Layouts",
+      "34th Street Magazine Print Layouts",
+    ],
     "highlight-links": [
-      "https://www.thedp.com/article/2022/12/dp-design-showcase-2022-penn"
+      "https://www.thedp.com/article/2022/12/dp-design-showcase-2022-penn",
+      "https://issuu.com/dailypenn",
+      "https://issuu.com/34st"
     ],
     "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/90337c0f-5064-4457-917f-c728ffcf8e58.sized-1000x1000.jpg')",
     "id": "design"
@@ -139,7 +147,7 @@
       "Joining Social Media will put you on the frontline of the DP’s interaction with tens of thousands of readers and develop skills increasingly relevant in the world’s growing digital landscape.",
       "As a rapidly growing department, we are looking for people excited to curate, manage, and develop the DP’s social media presence and interaction through Facebook, Twitter and (especially!) Instagram. This year, we have created many opportunities under social media to work with Analytics in analyzing social media department, to work with Marketing to create digital marketing campaigns, and to work with the News, Sports, and Opinion departments to translate their stories into engaging digital content.",
       "Social Media is the right department for anyone looking to work with other departments across the DP on exciting projects such as promotion strategies for special issues and events online.",
-      "No prior experience required for the social media and newsletter division — only a fire emoji game and willingness to be part of our close knit family. Familiarity or willingness to learn Google Analytics and Excel is required for the analytics division, and it’s a bonus if familiar with Python or R."
+      "No prior experience required for the social media and newsletter division — only a fire emoji game and willingness to be part of our close knit family. Familiarity with Adobe Illustrator is a plus but definitely not required."
     ],
     "highlights": [
       "The Daily Pennsylvanian Facebook",
