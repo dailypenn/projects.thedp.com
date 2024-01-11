@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 import s from 'styled-components'
 import { Link } from 'gatsby'
 
-import JoinEditorialJSON from 'src/content/json/2023/join/joinEditorial.json'
+import JoinEditorialJSON from '../../content/json/2023/join/joinEditorial.json'
 import JoinBusinessJSON from '../../content/json/2023/join/joinBusiness.json'
 import Join34thJSON from '../../content/json/2023/join/join34th.json'
 import JoinUTBJSON from '../../content/json/2023/join/joinUTB.json'
