@@ -1,43 +1,18 @@
 [
   {
-    "department": "Developers",
-    "text": [
-      "Both mobile & web developers at the DP have the opportunity to work on a number of diverse and complex projects. The DP runs multiple full-stack apps, regularly creates standalone pages for special issues or interactive projects, and builds internal tools for both the editorial and business sides.",
-      "As a web developer, you'll get experience working with GitHub, as well as a wide array of programming languages. We use React, GatsbyJS, and NextJS for our project pages, Express, Apollo, and GraphQL for our backend servers, and regularly build tools with JavaScript, Python, and Ruby.",
-      "As a mobile developer, you'll get experience working with React Native and improve upon the DP mobile app.",
-      "Developers who are experienced in HTML, CSS, Javascript are encouraged to join!"
-    ],
-    "highlights": [
-      "DP Developers Website",
-      "DP+: DP Mobile App",
-      "DP Projects, a full list of all project pages we've developed",
-      "DP mobile GraphQL Server",
-      "Check out all of our open source work on our GitHub"
-    ],
-    "highlight-links": [
-      "https://developers.thedp.com/",
-      "https://github.com/dailypenn/canada-goose",
-      "https://projects.thedp.com/",
-      "https://github.com/dailypenn/jay",
-      "https://github.com/dailypenn"
-    ],
-    "background": "linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 0, 255, 0.4)), url('https://snworksceo.imgix.net/dpn/85611786-a619-4496-9c5c-59ece6432fa5.sized-1000x1000.jpg')",
-    "id": "web",
-    "apply-link": "https://developers.thedp.com/apply"
-  },
-  {
     "department": "Analytics",
     "text": [
       "DP Analytics is the data science and business analytics hub of the Daily Pennsylvanian. In Analytics, we seek to leverage modern tools and technologies to enhance the digital and data analytics capabilities of the DP.",
-      "Analytics staffers work intersectionality with departments including marketing, social media, and editorial to provide valuable insights and drive key decisions. Members of the team will have the option to work in technical roles such as the development of a content recommendation engine and automated metrics dashboard, as well as gain experience with broader business analytics by using tools such as Google Analytics and Data Studio. We use Python, Javascript, and Github, and scrape data from Instagram, Facebook, Mailchimp, and more to comprehensively track the DP’s products, progress, and reach.",
-      "Whether it is building beautiful and interactive visualizations on Python, developing an algorithm to analyze popular article topics, or working with various teams to track business initiatives, DP Analytics staffers work on projects with direct impact on the DP, the Penn community, and a global readership audience. Apply today!"
+      "Analytics staffers collaborate with departments including Strategy & Promotion, Innovation Lab, Social Media, and Editorial to provide valuable insights and drive key decisions on the DP’s core projects and products.",
+      "Members of the team will have the option to work in programming oriented roles such as developing content recommendation engines and automated metrics dashboard, as well as other technical roles like conducting A/B testing, surveys and drawing insights from industry tools like Google Analytics, Firebase and MailChimp.",
+      "Whether it is building detailed and interactive visualizations on Python, developing algorithms to analyze popular article topics, or working with various teams to drive growth in the DP’s business initiatives, DP Analytics staffers work on projects with direct impact on the DP, the Penn community, and a global readership audience. Apply today!"
     ],
     "highlights": [
       "ML Driven Content Based Recommendation Engine",
-      "Advertisement Optimization Through Ad Network Redesign",
-      "Geo-based Interactive Dashboard To Facilitate Circulation Path Diagnosis and Analytics"
     ],
-    "highlight-links": ["https://github.com/dailypennanalytics/dpcontentrec"],
+    "highlight-links": [
+      "https://github.com/dailypenn/content-recommendation"
+    ],
     "background": "linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 0, 255, 0.4)), url('https://snworksceo.imgix.net/dpn/68726eb4-7df0-4e26-9d83-3ad542d33846.sized-1000x1000.jpg')",
     "id": "analytics",
     "apply-link": "https://docs.google.com/forms/d/e/1FAIpQLSdEZ8rr4x_xeHHCWyIWoWowuRP78TICwQTKZZC8rBhgU_ipkA/viewform"
