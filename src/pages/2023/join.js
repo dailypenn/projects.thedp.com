@@ -898,11 +898,11 @@ const Join = () => {
               {' '}
               For UTB Interest Form click here &#8594;
             </a>
-            <a href={'https://docs.google.com/forms/d/e/1FAIpQLSc-NT38m8BnhlHf2dnYbV6M7C5lIc7dFnyRECFjClLn1qHTBg/viewform'} target="_blank" rel="noreferrer">
+            <a href={'https://docs.google.com/forms/d/1iZJOLM0O4P2Zs3B2bQ9IwsVWkJ6YHAsRN2KXChCErq0/viewform?edit_requested=true'} target="_blank" rel="noreferrer">
               {' '}
               For our Writing Application Form click here &#8594;
             </a>
-            <a href={'https://docs.google.com/forms/d/e/1FAIpQLSc-NT38m8BnhlHf2dnYbV6M7C5lIc7dFnyRECFjClLn1qHTBg/viewform'} target="_blank" rel="noreferrer">
+            <a href={'https://docs.google.com/forms/d/1y8S0IUWeJaE9_FP6dlzNBiAIcS-Y1hI_NOkRqrOskwE/edit'} target="_blank" rel="noreferrer">
               {' '}
               For our Video Application Form click here &#8594;
             </a> */}
@@ -911,7 +911,7 @@ const Join = () => {
             </Link>
             <Link
               to={
-                'https://docs.google.com/forms/d/e/1FAIpQLSc-NT38m8BnhlHf2dnYbV6M7C5lIc7dFnyRECFjClLn1qHTBg/viewform'
+                'https://docs.google.com/forms/d/18F3B-WYOAZJYVbngFXa32C3XORBFjQYjwKKKmvnI6N8/edit'
               }
               target="_blank"
               rel="noreferrer"
@@ -922,7 +922,7 @@ const Join = () => {
             </Link>
             <Link
               to={
-                'https://docs.google.com/forms/d/e/1FAIpQLSc-NT38m8BnhlHf2dnYbV6M7C5lIc7dFnyRECFjClLn1qHTBg/viewform'
+                'https://docs.google.com/forms/d/1y8S0IUWeJaE9_FP6dlzNBiAIcS-Y1hI_NOkRqrOskwE/edit'
               }
               target="_blank"
               rel="noreferrer"
@@ -942,24 +942,56 @@ const Join = () => {
           </div>
         </section>
 
-        <section class="institutional-advancement">
-          <h2>{JoinIAJSON.department}</h2>
+        <section class="dp-foundation">
+          <h2>DP Foundation</h2>
           <div class="section">
-            {JoinIAJSON.text.map(p => (
-              <p>{p}</p>
-            ))}
-            <h5>Highlights</h5>
-            {JoinIAJSON.highlights.map((h, idx) => (
-              <a
-                href={JoinIAJSON['highlight-links'][idx]}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {h} &#8594;
-              </a>
-            ))}
-          </div>
-        </section>
+              <p class="overall">
+              Beyond an award winning editorial and media-business entity, the DP is a leading educational non-profit with a rich legacy of providing transformative experiences and financial support for Penn students. The DP Foundation was established in 2023 to ensure the DP’s long-term financial sustainability, spearhead institutional advancement initiatives, and manage large assets. We are seeking to build a close-knit, collaborative team of student leaders enthusiastic about our mission. The Foundation team will work closely with professional staff and alumni to tell the DP’s story, past, present and future, generating financial support and alumni involvement that will propel the organization forward. Our work directly impacts the lives of students on staff, as well as Philadelphia’s vibrant media ecosystem.
+              </p>
+              
+          <div class="departments">
+            {JoinIAJSON.highlights.map((dpt, idx) => (
+              <span>
+              <h4
+              class={
+                iaActive === dpt.id ? 'ia-tab.active' : 'ia-tab'
+              }
+               id={dpt.id}
+                      onClick={() => {
+                        setIAImage(dpt.background)
+                        setIADescription(dpt.text)
+                        setIAHighlights(dpt.highlights)
+                        setIAHighlightLinks(dpt['highlight-links'])
+                        setIAActive(dpt.id)
+                      }}
+                    >
+                      {dpt.department}
+                    </h4>
+                  </span>
+                ))}
+              </div>
+              <div className="ia-text active">
+                {iaDescription.map(p => (
+                  <p>{p}</p>
+                ))}
+                <Link to="#apply" target="_blank" rel="noreferrer">
+                  <div className="ia-apply-btn">Apply here &#8594;</div>
+                </Link>
+                <h5>{iaHighlights.length === 0 ? '' : 'Highlights'}</h5>
+                {iaHighlights.length === iaHighlightLinks.length
+                  ? iaHighlights.map((l, idx) => (
+                      <a
+                        href={iaHighlightLinks[idx]}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {l} &#8594;
+                      </a>
+                    ))
+                  : iaHighlights.map((l, idx) => <p>{l}</p>)}
+              </div>
+            </div>
+          </section>
 
         <section class="join" id="apply">
           <h2>Join The Daily Pennsylvanian, Inc.</h2>
