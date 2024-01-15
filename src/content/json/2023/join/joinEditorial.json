@@ -184,5 +184,21 @@
     ],
     "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/51d7e036-6b77-402a-9d6d-b1f7b8c3ab8c.sized-1000x1000.jpg')",
     "id": "podcasts"
+  },
+   {
+    "department": "Crosswords",
+    "text": [
+      "Founded in January 2023, Crosswords is the newest department at the DP. Our team collaboratively constructs both mini and full-size crosswords, published on a daily basis.",
+      "Our student-produced crosswords have become a smash hit across the Penn community, with nearly 61,000 total plays across our 100 mini and standard crosswords in just one year. We view our crosswords as a uniquely creative journalistic endeavor, one that allows us to engage and inform our community in new and exciting ways while bringing people together.",
+      "We invite you now to peruse our existing selection of crossword puzzles on the DP website, and we hope that you’ll consider applying to join the team — we can’t wait to have you. No experience required!"
+    ],
+    "highlights": [
+      "DP Crosswords"
+    ],
+    "highlight-links": [
+      ""https://www.thedp.com/section/crosswords"
+    ],
+    "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8))",
+    "id": "crosswords"
   }
 ]
