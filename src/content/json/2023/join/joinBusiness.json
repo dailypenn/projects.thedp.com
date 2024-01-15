@@ -1,37 +1,27 @@
 [
   {
-    "department": "Marketing",
+    "department": "Strategy & Promotions",
     "text": [
-      "DP Marketing works on developing and enhancing the brand identity of The Daily Pennsylvanian Inc., a $3 million dollar business. Our associates work to create social media campaigns, events, and merchandise that showcase the content of the DP, 34th Street Magazine, and Under the Button. We work closely with all departments in the DP. Associates are also given the resources and opportunities to plan and execute their own marketing projects to promote any section of the publication.",
-      "Marketing is the perfect place to develop both your creativity and your business skills because all our projects require a good mix of both. No prior experience is required — just a willingness to learn about branding, promotion, and merchandising. Join us to gain some business experience and be a part of this great organization!"
-    ],
-    "highlights": [
-      "Battle of the Bands",
-      "UTB Comedy Night",
-      "Puck Frinceton T-shirt Sale"
-    ],
-    "highlight-links": [
-      "https://www.facebook.com/events/2205915566180909/",
-      "https://www.facebook.com/events/2137326212971575/",
-      "https://www.facebook.com/events/440490923254900/"
+      "DP Strategy & Promotions develops and enhances the unique brand identity of The Daily Pennsylvanian Inc., a $3 million dollar business. Our associates work to strategize and launch targeted product marketing campaigns that showcase the content of the DP, 34th Street Magazine, and Under the Button. This year especially, we will be working very closely with Innovation Lab, Analytics, and Editorial departments to drive key decisions on the DP’s core projects and products.",
+      "Strategy & Promotions is the perfect place to develop your creativity and sharpen your business skills because all our projects require a good mix of both. If you’re interested in all things product marketing, strategy, data-driven storytelling, or fostering “consumer” relationships, we need you to ensure that our content is reaching the right audience at the right time.",
+      "No prior experience is required — just a willingness to learn and readiness to take project ownership of marketing a product. Join us to gain some real-world business experience and an inspiring group of people!"
     ],
     "background": "linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0.9)), url('https://snworksceo.imgix.net/dpn/5803b1e8-72a6-4810-9770-60123f4a066d.sized-1000x1000.jpg')",
     "id": "marketing"
   },
   {
-    "department": "Finance",
+    "department": "Accounting & Finance",
     "text": [
-      "You can study the theory of finance in Wharton, but the DP gives you an ideal business laboratory and the money is real. As a member of our finance team you will:",
+      "You can study the theory of finance in Wharton, but the DP gives you an ideal business laboratory and the money is real. As a member of our accounting & finance team you will be responsible for overseeing the finance and accounting functions of the Daily Pennsylvanian, Inc.",
       "\u2022 Analyze and advise on investments",
-      "\u2022 Design effective budget models for departments and the entire company",
+      "\u2022 Prepare monthly financial statements",
+      "\u2022 Design effective budget models for the entire company including reviewing budget request, forecasting future needs and making presentations to the Board of Directors.",
       "\u2022 Analyze financial information (revenues, expenditures & cash management) to ensure all operations are within budget",
-      "\u2022 Present annual budgets to top leadership",
-      "\u2022 Review budget requests for approval",
-      "\u2022 Forecast future budget needs",
       "\u2022 Identify variances between actual and budgeted financial results at the end of each reporting period",
       "\u2022 Suggest spending improvements that increase profits",
-      "\u2022 Ensure department managers meet budget submission deadlines",
-      "\u2022 Design and implement effective budgeting policies and procedures"
+      "\u2022 Assist with all accounts payable and accounts receivable functions",
+      "\u2022 Process bi-weeklly payroll",
+      "\u2022 Suggest spending improvements that increase profits"
     ],
     "highlights": [],
     "highlight-links": [],
@@ -43,40 +33,18 @@
     "text": [
       "Consulting analysts source potential clients, develop strategic marketing campaigns, and produce pitch materials for client presentations. The Consulting team works to build relationships with local businesses post-pandemic and pursues new, innovative streams of revenue generation. By working with our outstanding business teams, DP consultants will learn to use creative problem solving and analytical skills to help our clients successfully reach the Penn community. The consulting team promotes quick thinking and strong teamwork."
     ],
-    "highlights": [
-      "DP Consultants helped clients during the COVID-19 pandemic develop social media strategies to keep up with customers while away from campus."
-    ],
+    "highlights": [],
     "highlight-links": [],
     "background": "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/7f265244-68c1-4483-b138-8fc49c343444.sized-1000x1000.jpg')",
     "id": "consulting"
   },
   {
-    "department": "Product Lab",
+    "department": "Innovation Lab",
     "text": [
-      "The DP Product Lab manages and develops products that generate revenue and increase readership for the DP. Some ongoing projects include producing special issues such as Best of Penn and Summer at Penn as well as newsletters such as Recruiter’s Row. Product Lab will also be involved in the development of new features for the DP app and website. Product Lab staffers work with various departments of the DP, other student organizations on campus, and potential partners and sponsors to drive business objectives. Positions in product lab range from content and creative writing, business development, design, and more. If you have interests in the intersection of business, product management, as well as digital media and journalism, this is the perfect department for you!"
-    ],
-    "highlights": [
-      "Verb Energy Bars Sponsored Video",
-      "Meet Parvis and his micro-world at Woven Treasures",
-      "Which Gia Pronto Kitchen salad are you?"
-    ],
-    "highlight-links": [
-      "https://www.facebook.com/dailypenn/videos/vb.6356558804/10155858850708805/",
-      "https://www.thedp.com/article/2018/04/sponsored-woven-treasures-video",
-      "https://www.thedp.com/article/2017/11/sponsored-gia-pronto-quiz"
+      "The Innovation Lab team is responsible for all research and development of new revenue sources including new products, services and events. Innovation Lab members will be tasked with assessing new ideas from within the organization, sourcing and building new revenue-building products for the Daily Pennsylvanian, and fleshing out any approved new products and ventures.",
+      "The Daily Pennsylvanian’s Innovation Lab offers the perfect opportunity to gain skills in market research and entrepreneurship, being tasked with creating projects with the potential to generate tens of thousands of dollars in revenue per year. As a fully-fledged business, the DP offers a unique experience on campus, and if you have any interest in these fields, consider joining our team!"
     ],
     "background": "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/af307706-8ed7-4389-bb37-283cdb2af2d0.sized-1000x1000.jpg')",
     "id": "product-lab"
   },
-  {
-    "department": "Circulation",
-    "text": [
-      "Circulation staffers are the DP's street team, and they are the ones you see handing out papers on Locust Walk and across campus every day.",
-      "If you’re friendly, dependable, and loud—and want to earn $15 an hour—this is the department for you. Join an incredible team with a great culture filled with good times and social activities."
-    ],
-    "highlights": [],
-    "highlight-links": [],
-    "background": "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/06837fc5-f166-414c-8785-9234e35205b0.sized-1000x1000.jpg')",
-    "id": "circulation"
-  }
 ]
