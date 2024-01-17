@@ -1,0 +1,85 @@
+{
+    "President": [],
+    "Executive VP": [
+      {
+        "name": "Cody Eskandarian",
+        "introduction": "Hey! My name is Cody Eskandarian and I\u2019m a junior studying chemistry and physics from New York. I\u2019m running for re-election for Class Board and UA because I\u2019ve got innovative ideas that I\u2019m excited to bring to Penn that you can read about below! Outside of my initiatives, I bring a lot to the table; tenacity, creativity, enthusiasm, and most importantly, I make sure that the people around me have fun as we work together as a team. I\u2019m here to make quality of life improvements through the UA, and cultivate an unforgettable senior year for the class of \u201824.",
+        "platform points": [
+          "Introduce shuttles that take students to home goods stores (Walmart/Target) during NSO (already in progress with Penn administration!!)",
+          "Sports tournaments! If you enjoyed our dodgeball and basketball tournaments, I want to organize even more like volleyball, soccer, spikeball, etc.",
+          "Bolster student voices on dining hall sanitation issues",
+          "Develop more local service opportunities in West Philadelphia, such as beautifying schools and providing food for those in need",
+          "Make Feb Club for the class of \u201824 an absolute movie"
+        ],
+        "instagram_handle": "codyesk",
+        "image": {
+          "src": "../../../images/2023/nec/Cody-Eskandarian.jpeg"
+        }
+      }
+    ],
+    "VP Internal": [],
+    "VP External": [
+      {
+        "name": "Shan Shan Liang",
+        "introduction": "Hi everyone, my name is Shan Shan Liang, and I am a junior in Wharton studying Finance and Business Analytics. I'm from Johnson City, Tennessee, and I have served on both Class Board and Undergraduate Assembly for 3 years. I love the people I have met and the work we have done! I hope to keep making an impact through student government in my senior at Penn. Please email me (shan9318@wharton.upenn.edu) if you have any thoughts for what you want to see in our last year. ",
+        "platform points": [
+          "Feb Club - the best Feb Club this school has seen in 4 years!",
+          "DEI - focus on diversity and inclusion events, along with more partnerships with cultural groups on campus ",
+          "Free events - free food, free merch, anything to make senior year the best!"
+        ],
+        "instagram_handle": "shanshanliang_",
+        "image": {
+          "src": "../../../images/2023/nec/Shan-Shan-Liang.jpeg"
+        }
+      }
+    ],
+    "VP Finance": [],
+    "College Chair": [
+      {
+        "name": "Alex Eapen",
+        "introduction": "Hi! I'm Alex, a junior in the College studying HSOC, originally from the Baltimore-DC area. This past year I was UA VP which taught me a lot about Penn and our student body- I'm excited at the possibility of bringing that knowledge to a new role as Class Board 24 College Chair.",
+        "platform points": [
+          "Working with the President, Provost, VPUL, and Secretary's offices to plan a special commencement season for the Class of 2024.",
+          "Continuing the UA x CB Light Up Locust event!",
+          "Helping plan a Feb club that is inclusive and cost-productive."
+        ],
+        "instagram_handle": "alex.eapenn",
+        "image": {
+          "src": "../../../images/2023/nec/Alex-Eapen.jpeg"
+        }
+      }
+    ],
+    "Wharton Chair": [
+      {
+        "name": "Claire Zhong",
+        "introduction": "Hi everyone! My name is Claire Zhong, and I\u2019m running for re-election for Wharton Chair on Class Board. Literally can\u2019t believe it\u2019s been two years since I first joined, but the experience has been incredible. I\u2019ve loved every minute of it and deciding to run was one of my best decisions at Penn. My goal for senior year on Class Board is to make the absolute most out of our senior year events, and help plan an unreal spring.",
+        "platform points": [
+          "Plan an incredible Feb Club: the thing I was most excited for throughout being on Class Board has been Feb Club senior spring, and it's my top priority this year"
+        ],
+        "instagram_handle": "claireezhong",
+        "image": {
+          "src": "../../../images/2023/nec/Claire-Zhong.jpeg"
+        }
+      }
+    ],
+    "Engineering Chair": [
+      {
+        "name": "Nicholas Kuo",
+        "introduction": "My name is Nicholas Kuo, and I have proudly served as your Class of 2024 Engineering Chair for the last 2 years. I am re-running for the position, determined and confident that I can help create a senior year to remember. As Engineering Chair, I have initiated countless merch drops (P sweaters, Q-zips, etc.), planned memorable social/cultural gatherings (Holi celebrations, Galas, formals), and started new Penn traditions (U-Night). I\u2019m excited to continue delivering the highest quality Penn traditions, social events, and merch drops to the Class of 2024 as we venture into our last year.",
+        "platform points": [
+          "Direct fundraised money into well-executed, and well-funded large-scale events for the entire Class, such as a Senior Year Gala",
+          "Increase accessibility to graduation festivities, such as Class Board sponsored graduation photography",
+          "Consistently incorporate feedback from the Class of 2024 into our class-wide events",
+          "Foster smaller (bi-weekly) social events for our Class, from open mic nights to sponsored coffee shop meetups",
+          "Increase merch drops at Class Board events (expanding merch to items like scarves, sunglasses, etc.)",
+          "Increase collaboration with cultural groups to integrate cultural awareness into Class Board events"
+        ],
+        "facebook_url": "https://www.facebook.com/nicholas.kuo.56/",
+        "instagram_handle": "nicholasykuo",
+        "image": {
+          "src": "../../../images/2023/nec/Nicholas-Kuo.jpeg"
+        }
+      }
+    ],
+    "Nursing Chair": []
+  }

@@ -1,0 +1,50 @@
+[
+  {
+    "department": "Strategy & Promotions",
+    "text": [
+      "DP Strategy & Promotions develops and enhances the unique brand identity of The Daily Pennsylvanian Inc., a $3 million dollar business. Our associates work to strategize and launch targeted product marketing campaigns that showcase the content of the DP, 34th Street Magazine, and Under the Button. This year especially, we will be working very closely with Innovation Lab, Analytics, and Editorial departments to drive key decisions on the DP’s core projects and products.",
+      "Strategy & Promotions is the perfect place to develop your creativity and sharpen your business skills because all our projects require a good mix of both. If you’re interested in all things product marketing, strategy, data-driven storytelling, or fostering “consumer” relationships, we need you to ensure that our content is reaching the right audience at the right time.",
+      "No prior experience is required — just a willingness to learn and readiness to take project ownership of marketing a product. Join us to gain some real-world business experience and an inspiring group of people!"
+    ],
+    "background": "linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0.9)), url('https://snworksceo.imgix.net/dpn/5803b1e8-72a6-4810-9770-60123f4a066d.sized-1000x1000.jpg')",
+    "id": "marketing"
+  },
+  {
+    "department": "Accounting & Finance",
+    "text": [
+      "You can study the theory of finance in Wharton, but the DP gives you an ideal business laboratory and the money is real. As a member of our accounting & finance team you will be responsible for overseeing the finance and accounting functions of the Daily Pennsylvanian, Inc.",
+      "\u2022 Analyze and advise on investments",
+      "\u2022 Prepare monthly financial statements",
+      "\u2022 Design effective budget models for the entire company including reviewing budget request, forecasting future needs and making presentations to the Board of Directors.",
+      "\u2022 Analyze financial information (revenues, expenditures & cash management) to ensure all operations are within budget",
+      "\u2022 Identify variances between actual and budgeted financial results at the end of each reporting period",
+      "\u2022 Suggest spending improvements that increase profits",
+      "\u2022 Assist with all accounts payable and accounts receivable functions",
+      "\u2022 Process bi-weeklly payroll",
+      "\u2022 Suggest spending improvements that increase profits"
+    ],
+    "highlights": [],
+    "highlight-links": [],
+    "background": "linear-gradient(rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0.9)), url('https://cf.ltkcdn.net/antiques/images/orig/226165-2121x1414-Antique-cash-register.jpg')",
+    "id": "finance"
+  },
+  {
+    "department": "Consulting",
+    "text": [
+      "Consulting analysts source potential clients, develop strategic marketing campaigns, and produce pitch materials for client presentations. The Consulting team works to build relationships with local businesses post-pandemic and pursues new, innovative streams of revenue generation. By working with our outstanding business teams, DP consultants will learn to use creative problem solving and analytical skills to help our clients successfully reach the Penn community. The consulting team promotes quick thinking and strong teamwork."
+    ],
+    "highlights": [],
+    "highlight-links": [],
+    "background": "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/7f265244-68c1-4483-b138-8fc49c343444.sized-1000x1000.jpg')",
+    "id": "consulting"
+  },
+  {
+    "department": "Innovation Lab",
+    "text": [
+      "The Innovation Lab team is responsible for all research and development of new revenue sources including new products, services and events. Innovation Lab members will be tasked with assessing new ideas from within the organization, sourcing and building new revenue-building products for the Daily Pennsylvanian, and fleshing out any approved new products and ventures.",
+      "The Daily Pennsylvanian’s Innovation Lab offers the perfect opportunity to gain skills in market research and entrepreneurship, being tasked with creating projects with the potential to generate tens of thousands of dollars in revenue per year. As a fully-fledged business, the DP offers a unique experience on campus, and if you have any interest in these fields, consider joining our team!"
+    ],
+    "background": "linear-gradient(rgba(238, 238, 238, 0.8), rgba(238, 238, 238, 0.8)), url('https://snworksceo.imgix.net/dpn/af307706-8ed7-4389-bb37-283cdb2af2d0.sized-1000x1000.jpg')",
+    "id": "product-lab"
+  }
+]

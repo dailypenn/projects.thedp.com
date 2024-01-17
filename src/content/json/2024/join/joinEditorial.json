@@ -1,0 +1,203 @@
+[
+  {
+    "department": "News",
+    "text": [
+      "As a member of the News Department, you will be able to involve yourself in many of the most pressing issues on campus and in the Philadelphia community. Writing for News allows you to enact change on campus, hold institutions accountable, and understand the intricacies of student life and University operations. In News, you will learn not only how to report and investigate stories relevant to Penn’s campus and students, but also many key skills transferable to other careers.",
+      "In 2023, the News Department extensively covered administrative turmoil, student activism, Philadelphia's mayoral election and campaign, and much more. By joining News, you’ll have the opportunity to develop expertise in and report directly on the subjects that most interest you.",
+      "Follow in the footsteps of DP News alumni who work for top publications and companies like the New York Times, The Washington Post, Forbes, Vox, MTV, Politico and The Wall Street Journal — in addition to various former DPers practicing law and working in business.",
+      "No journalistic experience required — only curiosity and dedication."
+    ],
+    "highlights": [
+      "Penn President Liz Magill resigns amid backlash over antisemitism controversies",
+      "Perelman School of Medicine Dean J. Larry Jameson named Penn's interim president",
+      "2016 Fels Institute of Government graduate Cherelle Parker first woman elected mayor of Philadelphia",
+      "How the controversy over Liz Magill's leadership has unfolded at Penn",
+      "Over 900 Penn faculty warn of 'hostile takeover' by trustees, donors in response to Marc Rowan letter"
+    ],
+    "highlight-links": [
+      "https://www.thedp.com/article/2023/12/penn-president-liz-magill-resigns",
+      "https://www.thedp.com/article/2023/12/penn-larry-jameson-interim-president",
+      "https://www.thedp.com/article/2023/11/penn-cherelle-parker-election-mayoral-general-2023",
+      "https://www.thedp.com/article/2023/12/penn-donors-trustees-backlash-activism-antisemitism-2023",
+      "https://www.thedp.com/article/2023/12/penn-faculty-concern-marc-rowan-letter"
+    ],
+    "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/917417c6-2a39-487a-bd75-8913f3427445.sized-1000x1000.jpg')",
+    "id": "news"
+  },
+  {
+    "department": "Sports",
+    "text": [
+      "Sports are about passion — the ability to risk it all, to become emotionally invested, to be a part of a team, and to test the limits of what you’re capable of. DP Sports provides the structure and guidance you need to explore that passion.",
+      "Our department is a place where anyone can feel welcome and be a part of the family. We spend valuable time with each and every person on our team to ensure that they can sharpen their storytelling and investigative skills. We’re a team, and we have an amazing time going on road trips, throwing watch parties, and getting immersed in the sports we cover and watch.",
+      "So if you like watching, playing, reading, writing, talking, photographing, or learning about sports, DP Sports is totally the place for you. No experience necessary; absolutely anyone is welcome to join!"
+    ],
+    "highlights": [
+      "Men's soccer captures Ivy title with 3-0 rout at Princeton",
+      "‘Leave a legacy of winning’: Inside Jordan Dingle's quest for redemption",
+      "Wearing Filipino heritage in the Red and Blue: Kayla Padilla fortifies her culture in the game",
+      "‘The best quarterback Penn’s ever had’: Aidan Sayin aims high for Quaker career and beyond",
+      "Lia Thomas takes eighth place in her final swim of the NCAA Championships"
+    ],
+    "highlight-links": [
+      "https://www.thedp.com/article/2022/11/penn-mens-soccer-princeton-ivy-title",
+      "https://www.thedp.com/article/2022/11/jordan-dingle-penn-guard-basketball-profile",
+      "https://www.thedp.com/article/2022/11/penn-womens-basketball-kayla-padilla-profile-filipino-american-heritage-month",
+      "https://www.thedp.com/article/2022/09/aidan-sayin-penn-quarterback-football-nfl-profile",
+      "https://www.thedp.com/article/2022/03/lia-thomas-ncaa-championships-100-freestyle"
+    ],
+    "background": "linear-gradient(rgba(170, 30, 34, 0.9), rgba(170, 30, 34, 0.9)), url('https://snworksceo.imgix.net/dpn/cec0e468-8fd7-4820-906d-9981ae887347.sized-1000x1000.jpg')",
+    "id": "sports"
+  },
+  {
+    "department": "Opinion",
+    "text": [
+      "You have the power to decide what the campus conversation ought to be.",
+      "At The Daily Pennsylvanian, we are looking for creative, passionate, and hard-working writers to pen columns for Penn's independent student-led news organization. We are also looking for talented artists to create funny, insightful, and poignant cartoons.",
+      "Your writing and reporting skills will improve tremendously, you will have the rare opportunity to reach thousands of people with every column you write, and you will learn to make this award-winning media organization your home. Opinion columns often garner the most page views of all DP sections, and columnists are known around campus. Being an opinion artist requires time and dedication, as well as the ability to make a point using few words.",
+      "Make conversation, stimulate change, and hold organizations and people accountable. Join us."
+    ],
+    "highlights": [
+      "Liala Sofi & Allison Santa-Cruz | We believe you, Mackenzie, and Penn’s administration should, too",
+      "Sam Zou | When institutions cheat, they get a pass",
+      "Lexi Boccuzzi | Is meeting Mr. Right at Penn all wrong?",
+      "Yomi Abdi | White Boys' Town",
+      "Vinay Khosla | Penn’s privilege dilemma",
+      "Riane Lumer | We must hold celebrities accountable for antisemitism"
+    ],
+    "highlight-links": [
+      "https://www.thedp.com/article/2022/04/we-believe-mackenzie-fierceton-upenn",
+      "https://www.thedp.com/article/2022/07/college-rankings-columbia-inaccuracies-irresponsibility",
+      "https://www.thedp.com/article/2022/02/how-hook-up-culture-jeopardizes-romance",
+      "https://www.thedp.com/article/2022/04/daily-penn-exclusion-history",
+      "https://www.thedp.com/article/2022/04/penn-customer-service-privilege",
+      "https://www.thedp.com/article/2022/12/hold-celebrities-accountable-for-antisemitism"
+    ],
+    "background": "linear-gradient(rgba(170, 30, 34, 0.9), rgba(170, 30, 34, 0.9)), url('https://snworksceo.imgix.net/dpn/63f97845-7cb5-49eb-8322-bca5667583bc.sized-1000x1000.jpg')",
+    "id": "opinion"
+  },
+  {
+    "department": "Copy",
+    "text": [
+      "The Daily Pennsylvanian’s Copy Department is now editing 34th Street, Under the Button, and DP Sports content! Join our super fun team in reviewing and fact-checking everything from breaking news to satirical videos to social media captions. Come help us keep our content concise, consistent, and considerate.",
+      "From the people who brought the DP the Oxford comma."
+    ],
+    "highlights": ["The DP's Official Style Guide"],
+    "highlight-links": [
+      "https://docs.google.com/document/pub?id=14HoU_sCiPxD8SOSH8HvWKsvz1Elv89yzcje-sZGGahs&pli=1"
+    ],
+    "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/9a678efe-73b0-4fed-9f63-2278da389db8.sized-1000x1000.jpg')",
+    "id": "copy"
+  },
+  {
+    "department": "Multimedia",
+    "text": [
+      "As a member of the Multimedia Department, you will learn how to create engaging visual storytelling content, have the opportunity to cover historic events on campus and throughout the country, and take part in the editing and publishing processes.",
+      "In 2023, our staff notably covered student activism, administrative turmoil, city elections, and much more. Our photographers traveled around Philadelphia and up and down the coast to document a United States House committee hearing with the former Penn and Harvard presidents, U.S. President Joe Biden’s multiple visits to campus, and our basketball team’s historic upset over Villanova.",
+      "We use the Adobe Creative Suite, as well as high-quality cameras, lenses, and audio and video equipment. No experience with photography or videography is necessary, and no personal equipment is required. Join us in making transformative content for an award-winning media company!"
+    ],
+    "highlights": [
+      "In Photos: President Joe Biden visits Philadelphia",
+      "Penn Students Protest for RA Union Recognition",
+      "In Photos: Liz Magill’s 16-month presidency, from confirmation to resignation",
+      "Word on the Walk | What Does Black History Month Mean to You?",
+      "In Photos: Penn men's basketball trumps Villanova in historic upset",
+      "Penn Men’s Basketball vs. Villanova –– In 60 Seconds",
+      "Opinion | How a Penn Grad Turned a Neurobiology Degree into a Professional Magic Career",
+      "In Photos: 2023",
+      "73 Questions with the DP Editors"
+    ],
+    "highlight-links": [
+      "https://www.thedp.com/article/2023/02/president-biden-philadelphia-visit-dnc-photo-essay",
+      "https://www.youtube.com/watch?v=vfFLs5CnIhk",
+      "https://www.thedp.com/article/2023/12/liz-magill-presidency-resignation-photo-essay",
+      "https://www.youtube.com/watch?v=3meNxiAiHHA",
+      "https://www.thedp.com/article/2023/11/mens-basketball-villanova-win-photo-essay",
+      "https://www.instagram.com/reel/Cz6trZUrD5Y/",
+      "https://www.youtube.com/watch?v=DQo2yGLT1mw",
+      "https://www.thedp.com/article/2023/12/2023-year-in-photos-essay",
+      "https://www.youtube.com/watch?v=Fpv6aXmNg8g"
+    ],
+    "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://media.giphy.com/media/KHKlf5Cnvzm1HDkVrL/giphy.gif')",
+    "id": "multimedia"
+  },
+  {
+    "department": "Design",
+    "text": [
+      "The Design Department is looking for designers, artists, and illustrators with all ranges of experience to join us in producing The Daily Pennsylvanian and 34th Street Magazine’s print and online visual content.",
+      "We use the full Adobe Creative Suite—mainly Photoshop, Illustrator, and InDesign—along with various online platforms for data visualization.",
+      "If you are interested in creating aesthetic content, whether it be front-page print centerpieces, online graphics, or layouts for print/websites, then Design is for you!"
+    ],
+    "highlights": [
+      "DP Design Showcase: 2022",
+      "The Daily Pennsylvanian Print Layouts",
+      "34th Street Magazine Print Layouts"
+    ],
+    "highlight-links": [
+      "https://www.thedp.com/article/2022/12/dp-design-showcase-2022-penn",
+      "https://issuu.com/dailypenn",
+      "https://issuu.com/34st"
+    ],
+    "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/90337c0f-5064-4457-917f-c728ffcf8e58.sized-1000x1000.jpg')",
+    "id": "design"
+  },
+  {
+    "department": "Social Media",
+    "text": [
+      "Joining Social Media will put you on the frontline of the DP’s interaction with tens of thousands of readers and develop skills increasingly relevant in the world’s growing digital landscape.",
+      "As a rapidly growing department, we are looking for people excited to curate, manage, and develop the DP’s social media presence and interaction through Facebook, Twitter and (especially!) Instagram. This year, we have created many opportunities under social media to work with Analytics in analyzing social media department, to work with Marketing to create digital marketing campaigns, and to work with the News, Sports, and Opinion departments to translate their stories into engaging digital content.",
+      "Social Media is the right department for anyone looking to work with other departments across the DP on exciting projects such as promotion strategies for special issues and events online.",
+      "No prior experience required for the social media and newsletter division — only a fire emoji game and willingness to be part of our close knit family. Familiarity with Adobe Illustrator is a plus but definitely not required."
+    ],
+    "highlights": [
+      "The Daily Pennsylvanian Facebook",
+      "The Daily Pennsylvanian Twitter",
+      "DP Sports Twitter",
+      "The Daily Pennsylvanian Instagram"
+    ],
+    "highlight-links": [
+      "https://www.facebook.com/dailypenn",
+      "https://twitter.com/dailypenn",
+      "https://twitter.com/dailypennsports",
+      "https://www.instagram.com/dailypenn/"
+    ],
+    "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/4c31d16d-8363-41df-80a0-a5564b011215.sized-1000x1000.jpg')",
+    "id": "social"
+  },
+  {
+    "department": "Podcasts",
+    "text": [
+      "Calling all podcast enthusiasts! DP Podcasts is looking for new storytellers, hosts, writers, editors, and assistants! Those looking to edit podcasts or learn the behind the scenes process are especially welcomed by our hosts. Join this burgeoning department as we attempt to expand the breadth and depth of our current podcast offerings. We are looking for storytellers and commentators from diverse backgrounds.",
+      "Are you weirdly passionate about something on campus? Do you have interesting opinions? If you join our department, we can turn that into a podcast!"
+    ],
+    "highlights": [
+      "Quaker Nation: Penn men's basketball's Tyler Perkins joins the show",
+      "Penn Daily: Monday, Nov. 13th briefing",
+      "Breaking Bread: Season 2, Episode 4 Shreya Sharma",
+      "Penn(y) For Your Thoughts S1E3: Social Media Activism"
+    ],
+    "highlight-links": [
+      "https://www.thedp.com/multimedia/9da64a7d-3013-4b5a-95e1-8937b3066423",
+      "https://www.thedp.com/multimedia/8a60a097-7b85-4862-95d1-9600a062071a",
+      "https://www.thedp.com/multimedia/b108dd4c-a98a-4e0e-ae16-b926686eb1d3",
+      "https://www.thedp.com/multimedia/a6f357ee-8b80-44d0-b390-55e8b982e85d"
+    ],
+    "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/51d7e036-6b77-402a-9d6d-b1f7b8c3ab8c.sized-1000x1000.jpg')",
+    "id": "podcasts"
+  },
+  {
+    "department": "Crosswords",
+    "text": [
+      "Founded in January 2023, Crosswords is the newest department at the DP. Our team collaboratively constructs both mini and full-size crosswords, published on a daily basis.",
+      "Our student-produced crosswords have become a smash hit across the Penn community, with nearly 61,000 total plays across our 100 mini and standard crosswords in just one year. We view our crosswords as a uniquely creative journalistic endeavor, one that allows us to engage and inform our community in new and exciting ways while bringing people together.",
+      "We invite you now to peruse our existing selection of crossword puzzles on the DP website, and we hope that you’ll consider applying to join the team — we can’t wait to have you. No experience required!"
+    ],
+    "highlights": [
+      "DP Crosswords"
+    ],
+    "highlight-links": [
+      "https://www.thedp.com/section/crosswords"
+    ],
+    "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8))",
+    "id": "crosswords"
+  }
+]
