@@ -151,7 +151,7 @@ const Wrapper = s.div`
 
   section.dis {
     background-color: #44BFBF;
-    background: linear-gradient(rgba(140, 200, 140, 0.8), rgba(140, 200, 140, 0.8)), url('https://snworksceo.imgix.net/dpn/a7c7d5b9-59ac-420c-bd26-cfd44d0e52d2.sized-1000x1000.jpg');
+    background: linear-gradient(rgba(140, 200, 140, 0.8), rgba(140, 200, 140, 0.8));
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1074,7 +1074,7 @@ const Join = () => {
             </div>
           </section>
 
-          <section class="street">
+          <section class="dis">
             <h2>{JoinDISJson.department}</h2>
             <div class="section">
               {JoinDISJson.text.map(p => (
@@ -1098,7 +1098,7 @@ const Join = () => {
             <p class="overall">Fill out the form below to apply!</p>
             <iframe
               class="join-form"
-              src="https://docs.google.com/forms/d/1BH3-Vnbcj2DRbqVSTYY2GRMMj8zIDiCsQii0uBD8Zbc/viewform"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSe1FXakAnYpuk5vsujwN9mLCdzdYlay_Hx_Qu3wKEDbQDdYoA/viewform"
               width="100%"
               height="600"
               frameBorder="0"
