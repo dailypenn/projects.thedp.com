@@ -2,24 +2,24 @@
   {
     "department": "News",
     "text": [
-      "As a member of the News Department, you will be able to involve yourself in many of the most pressing issues on campus and in the Philadelphia community. Writing for News allows you to enact change on campus, hold institutions accountable, and understand the intricacies of student life and University operations. In News, you will learn not only how to report and investigate stories relevant to Penn’s campus and students, but also many key skills transferable to other careers.",
-      "In 2023, the News Department extensively covered administrative turmoil, student activism, Philadelphia's mayoral election and campaign, and much more. By joining News, you’ll have the opportunity to develop expertise in and report directly on the subjects that most interest you.",
+      "As a reporter for the News Department, you will be able to involve yourself in many of the most pressing issues at Penn and in the Philadelphia community. Writing for News allows you to enact change on campus, hold institutions accountable, and understand the intricacies of student life and University operations. You will learn not only how to report and investigate stories relevant to the Penn community, but also many key skills transferable to other careers.",
+      "During a year of unprecedented campus turmoil, the News Department extensively covered student activism, administrative turnover, local politics, and much more. By joining News, you’ll have the opportunity to develop expertise in and report directly on the subjects that most interest you.",
       "Follow in the footsteps of DP News alumni who work for top publications and companies like the New York Times, The Washington Post, Forbes, Vox, MTV, Politico and The Wall Street Journal — in addition to various former DPers practicing law and working in business.",
       "No journalistic experience required — only curiosity and dedication."
     ],
     "highlights": [
       "Penn President Liz Magill resigns amid backlash over antisemitism controversies",
-      "Perelman School of Medicine Dean J. Larry Jameson named Penn's interim president",
-      "2016 Fels Institute of Government graduate Cherelle Parker first woman elected mayor of Philadelphia",
-      "How the controversy over Liz Magill's leadership has unfolded at Penn",
-      "Over 900 Penn faculty warn of 'hostile takeover' by trustees, donors in response to Marc Rowan letter"
+      "From clinician to caretaker president: How Larry Jameson rose to Penn's top job",
+      "Police in riot gear arrest 33 protesters, including Penn students, at Gaza Solidarity Encampment",
+      "Here are Pennsylvania’s 2024 primary results — and how Penn differed from the rest of the state",
+      "Penn releases regular decision results for Class of 2028 after another record-breaking cycle"
     ],
     "highlight-links": [
       "https://www.thedp.com/article/2023/12/penn-president-liz-magill-resigns",
       "https://www.thedp.com/article/2023/12/penn-larry-jameson-interim-president",
-      "https://www.thedp.com/article/2023/11/penn-cherelle-parker-election-mayoral-general-2023",
-      "https://www.thedp.com/article/2023/12/penn-donors-trustees-backlash-activism-antisemitism-2023",
-      "https://www.thedp.com/article/2023/12/penn-faculty-concern-marc-rowan-letter"
+      "https://www.thedp.com/article/2024/05/penn-palestine-gaza-protests-arrests",
+      "https://www.thedp.com/article/2024/04/penn-primary-election-2024-results-turnout-voting",
+      "https://www.thedp.com/article/2024/03/penn-regular-decision-results-class-of-2028"
     ],
     "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://snworksceo.imgix.net/dpn/917417c6-2a39-487a-bd75-8913f3427445.sized-1000x1000.jpg')",
     "id": "news"
@@ -32,18 +32,18 @@
       "So if you like watching, playing, reading, writing, talking, photographing, or learning about sports, DP Sports is totally the place for you. No experience necessary; absolutely anyone is welcome to join!"
     ],
     "highlights": [
-      "Men's soccer captures Ivy title with 3-0 rout at Princeton",
-      "‘Leave a legacy of winning’: Inside Jordan Dingle's quest for redemption",
-      "Wearing Filipino heritage in the Red and Blue: Kayla Padilla fortifies her culture in the game",
-      "‘The best quarterback Penn’s ever had’: Aidan Sayin aims high for Quaker career and beyond",
-      "Lia Thomas takes eighth place in her final swim of the NCAA Championships"
+      "'Just shattered': Penn lightweight rowing accused of racism, prompting controversial University response",
+      "Unpacking the best nicknames in Penn sports",
+      "The numbers making up Penn football's attendance over the past 20 years",
+      "Pandemonium at the Palestra: Penn men's basketball stuns No. 21 Villanova 76-72",
+      "All eyes on Fallon: Inside the junior's journey to becoming a 2024 U.S. Olympic hopeful"
     ],
     "highlight-links": [
-      "https://www.thedp.com/article/2022/11/penn-mens-soccer-princeton-ivy-title",
-      "https://www.thedp.com/article/2022/11/jordan-dingle-penn-guard-basketball-profile",
-      "https://www.thedp.com/article/2022/11/penn-womens-basketball-kayla-padilla-profile-filipino-american-heritage-month",
-      "https://www.thedp.com/article/2022/09/aidan-sayin-penn-quarterback-football-nfl-profile",
-      "https://www.thedp.com/article/2022/03/lia-thomas-ncaa-championships-100-freestyle"
+      "https://www.thedp.com/article/2024/04/penn-rowing-racism-allegations-lightweight-sports-athletics",
+      "https://www.thedp.com/article/2024/04/penn-sports-nicknames-baseball-ryan-dromboski-chloe-lesko-sam-sullivan-julien-stokes",
+      "https://www.thedp.com/article/2023/11/penn-football-attendance-decline-two-decade-analysis-data",
+      "https://www.thedp.com/article/2023/11/penn-mens-basketball-villanova-big-5-palestra-home-philadephia",
+      "https://www.thedp.com/article/2023/11/penn-swimming-matt-fallon-feature-profile-olympic-mens"
     ],
     "background": "linear-gradient(rgba(170, 30, 34, 0.9), rgba(170, 30, 34, 0.9)), url('https://snworksceo.imgix.net/dpn/cec0e468-8fd7-4820-906d-9981ae887347.sized-1000x1000.jpg')",
     "id": "sports"
@@ -99,23 +99,23 @@
       "In Photos: President Joe Biden visits Philadelphia",
       "Penn Students Protest for RA Union Recognition",
       "In Photos: Liz Magill’s 16-month presidency, from confirmation to resignation",
-      "Word on the Walk | What Does Black History Month Mean to You?",
+      "Pros vs Joes with Matt Fallon",
       "In Photos: Penn men's basketball trumps Villanova in historic upset",
       "Penn Men’s Basketball vs. Villanova –– In 60 Seconds",
-      "Opinion | How a Penn Grad Turned a Neurobiology Degree into a Professional Magic Career",
+      "10 Questions with Bella Whittaker and Liv Morganti",
       "In Photos: 2023",
-      "73 Questions with the DP Editors"
+      "Meet the DP!"
     ],
     "highlight-links": [
       "https://www.thedp.com/article/2023/02/president-biden-philadelphia-visit-dnc-photo-essay",
       "https://www.youtube.com/watch?v=vfFLs5CnIhk",
       "https://www.thedp.com/article/2023/12/liz-magill-presidency-resignation-photo-essay",
-      "https://www.youtube.com/watch?v=3meNxiAiHHA",
+      "https://www.youtube.com/watch?v=XzBWXcnEOg4&t=132s",
       "https://www.thedp.com/article/2023/11/mens-basketball-villanova-win-photo-essay",
       "https://www.instagram.com/reel/Cz6trZUrD5Y/",
-      "https://www.youtube.com/watch?v=DQo2yGLT1mw",
+      "https://www.instagram.com/reel/C5WX0tTg-he/",
       "https://www.thedp.com/article/2023/12/2023-year-in-photos-essay",
-      "https://www.youtube.com/watch?v=Fpv6aXmNg8g"
+      "https://www.instagram.com/reel/C2f74m4upFI/"
     ],
     "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8)), url('https://media.giphy.com/media/KHKlf5Cnvzm1HDkVrL/giphy.gif')",
     "id": "multimedia"
@@ -185,11 +185,11 @@
     "id": "podcasts"
   },
   {
-    "department": "Crosswords",
+    "department": "Puzzles",
     "text": [
-      "Founded in January 2023, Crosswords is the newest department at the DP. Our team collaboratively constructs both mini and full-size crosswords, published on a daily basis.",
-      "Our student-produced crosswords have become a smash hit across the Penn community, with nearly 61,000 total plays across our 100 mini and standard crosswords in just one year. We view our crosswords as a uniquely creative journalistic endeavor, one that allows us to engage and inform our community in new and exciting ways while bringing people together.",
-      "We invite you now to peruse our existing selection of crossword puzzles on the DP website, and we hope that you’ll consider applying to join the team — we can’t wait to have you. No experience required!"
+      "Originally founded as Crosswords in January 2023, Puzzles is the newest department at the DP. Our team collaboratively constructs both mini and full-size crosswords, along with the more recent introduction of three brand-new puzzles for the fall: Strands, Password, and News Quiz — published in print and online on a daily basis.",
+      "Our student-produced crosswords have become a smash hit across the Penn community, with nearly 117,000 total plays across our 200+ mini and standard crosswords. With our department’s expansion this fall, we hope to amplify this success as we begin to bring new puzzles to our readers. We view our puzzles as a uniquely creative journalistic endeavor, one that allows us to engage and inform our community in new and exciting ways while bringing people together.",
+      "We invite you now to peruse our existing selection of puzzles on the DP website, and we hope that you’ll consider applying to join the team — we can’t wait to have you. No experience required!"
     ],
     "highlights": [
       "DP Crosswords"
@@ -198,6 +198,6 @@
       "https://www.thedp.com/section/crosswords"
     ],
     "background": "linear-gradient(rgba(170, 30, 34, 0.8), rgba(170, 30, 34, 0.8))",
-    "id": "crosswords"
+    "id": "puzzles"
   }
 ]
