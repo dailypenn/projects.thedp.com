@@ -252,7 +252,7 @@ a {
   position: relative;
   z-index: 5;
   min-height: auto;
-  padding: 10rem 2rem;
+  padding: 6rem 2rem 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -294,6 +294,7 @@ a {
   padding: 4.25px 34px;
   text-transform: uppercase;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .trad-section {
