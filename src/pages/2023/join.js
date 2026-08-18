@@ -226,28 +226,28 @@ const Wrapper = s.div`
     margin-bottom: 10px;
   }
 
-  .ed-tab, .biz-tab, .eng-tab {
+  .ed-tab, .biz-tab, .eng-tab, .ia-tab {
     cursor: pointer;
   }
 
-  .ed-text, .biz-text, .eng-text {
+  .ed-text, .biz-text, .eng-text, .ia-text {
     visibility: hidden;
     margin: auto;
     height: 0;
     width: 90%;
   }
 
-  .ed-text p, .biz-text p, .eng-text p {
+  .ed-text p, .biz-text p, .eng-text p, .ia-text p {
     margin: 0;
     height: 0;
   }
 
-  .ed-text.active, .biz-text.active, .eng-text.active {
+  .ed-text.active, .biz-text.active, .eng-text.active, .ia-text.active {
     visibility: visible;
     height: auto;
   }
 
-  .ed-text.active p, .biz-text.active p, .eng-text.active p {
+  .ed-text.active p, .biz-text.active p, .eng-text.active p, .ia-text.active p {
     margin: 1em 0;
     height: auto;
   }
@@ -265,6 +265,27 @@ const Wrapper = s.div`
   .eng-tab.active {
     font-weight: 700;
     border-bottom: 3px solid #FFF;
+  }
+
+  .ia-tab.active {
+    font-weight: 700;
+    border-bottom: 3px solid #000;
+  }
+
+  .ia-apply-btn {
+    color: #FFF !important;
+    background: #AA1E22;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    width: fit-content;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .ia-apply-btn:hover {
+    color: #AA1E22 !important;
+    background: white;
   }
 
   .inline-link {
@@ -561,6 +582,13 @@ const Join = () => {
   const [engineeringActive, setEngineeringActive] = useState(
     JoinEngineeringJSON[0].id
   )
+
+  const [iaDescription, setIADescription] = useState(JoinIAJSON[0].text)
+  const [iaHighlights, setIAHighlights] = useState(JoinIAJSON[0].highlights)
+  const [iaHighlightLinks, setIAHighlightLinks] = useState(
+    JoinIAJSON[0]['highlight-links']
+  )
+  const [iaActive, setIAActive] = useState(JoinIAJSON[0].id)
 
   return (
     <>
@@ -942,23 +970,22 @@ const Join = () => {
           </div>
         </section>
 
-        <section class="dp-foundation">
+        <section class="institutional-advancement">
           <h2>DP Foundation</h2>
           <div class="section">
               <p class="overall">
               Beyond an award winning editorial and media-business entity, the DP is a leading educational non-profit with a rich legacy of providing transformative experiences and financial support for Penn students. The DP Foundation was established in 2023 to ensure the DP’s long-term financial sustainability, spearhead institutional advancement initiatives, and manage large assets. We are seeking to build a close-knit, collaborative team of student leaders enthusiastic about our mission. The Foundation team will work closely with professional staff and alumni to tell the DP’s story, past, present and future, generating financial support and alumni involvement that will propel the organization forward. Our work directly impacts the lives of students on staff, as well as Philadelphia’s vibrant media ecosystem.
               </p>
-              
+
           <div class="departments">
-            {JoinIAJSON.highlights.map((dpt, idx) => (
+            {JoinIAJSON.map((dpt, idx) => (
               <span>
               <h4
               class={
-                iaActive === dpt.id ? 'ia-tab.active' : 'ia-tab'
+                iaActive === dpt.id ? 'ia-tab active' : 'ia-tab'
               }
                id={dpt.id}
                       onClick={() => {
-                        setIAImage(dpt.background)
                         setIADescription(dpt.text)
                         setIAHighlights(dpt.highlights)
                         setIAHighlightLinks(dpt['highlight-links'])

@@ -20,8 +20,9 @@
       "https://www.classy.org/campaign/shine-a-light/c540107",
       "https://www.dailypennalumni.com/2023report",
       "https://www.mastheadmadness.com/"
-    ]
-  }, 
+    ],
+    "id": "institutional-advancement"
+  },
   {
     "department": "Media & Technology",
     "text": [
@@ -43,6 +44,7 @@
       "https://www.classy.org/campaign/shine-a-light/c540107",
       "https://www.dailypennalumni.com/2023report",
       "https://www.mastheadmadness.com/"
-    ]
+    ],
+    "id": "media-technology"
   }
 ]
