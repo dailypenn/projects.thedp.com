@@ -1,5 +1,16 @@
 {
   "featured": [
+     {
+      "title": "A year of firsts",
+      "author": "Web Dev: Jack Guerin | Writers: Jack Guerin, Aidan Shaughnessy",
+      "section": "Back to School",
+      "date": "August 2026",
+      "description": "As the Class of 2030 begins their time at Penn, here's a list of events that every first-year Quaker should know.",
+      "sponsored": false,
+      "link": "/2026/08/penn-back-to-school-2026-traditions/",
+      "image": "/2026/08/penn-back-to-school-2026-traditions/img/classphoto.jpg",
+      "alt": "Class of 2030 traditions"
+    },
     {
       "title": "Welcome to Penn 2021",
       "author": "Web Dev: Raunaq Singh | Design: Isabel Liang",
